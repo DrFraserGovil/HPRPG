@@ -1,0 +1,171 @@
+\documentclass[oneside]{book}
+\usepackage{fontspec}
+\usepackage{array}
+\usepackage{subfiles}
+
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage[left = 0.42in, right = 0.67 in, top = 0.39in, bottom = 0.26in]{geometry}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{array}
+\def\apos{'}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+
+\newfontfamily{\HP}{[ParryHotter.TTF]}
+\renewcommand{\arraystretch}{0.15}
+\setlength{\tabcolsep}{4pt}
+\titleformat{\chapter} {\vspace{-10ex}\normalfont\bfseries\HP\Huge}{}{0pt}{}[\vspace{-2ex}]
+
+\titleformat{\section}{\vspace{-3ex}\normalfont\Large\it\centering}{}{0em}{\titlerule[0.3pt] \\}[{\titlerule[0.3pt]}]
+
+\titleformat{\subsection}{\vspace{-2ex}\normalfont\bf \Large}{}{0em}{}[{}]
+\begin{document}
+\title{{\HP Hogwarts \& The End of Magic }\\ {\small Story Template for HP RPG v4}}
+
+\maketitle
+
+\section{Outline}
+
+This is a long-term campaign game, designed to last for many sessions. 
+
+The game is set in the modern-day (i.e. 2019) wizarding world in the UK. The aim is to separate this from the storyline of the Harry Potter books, so only tangential mention of those characters will be made. I will also ignore the plot of the Cursed Child play. 
+
+After the Second Wizarding War (SWW), the Wizarding World has had a period of unprecedented peace and propserity. However, this has served only to cover several brewing societal ills, which are slowly bubbling to the surface. Several of the non-human species, who have been sidelined and oppressed for untold centuries are fighting for their rights. The muggles are not only on the verge of discovering the magical world -- several of them have discovered how to use magic for themselves, and are set to destroy the very foundation of wizarding society. 
+
+Will the players side with the status quo? Overthrow the government, or even destroy the nature of magic itself?
+
+This storyline is set up in terms of characters and organisations (and their plans), rather than a preset list of events and adventures. This allows much more flexibility and reactivity to the player actions. Rather than trying to force the players down a preset path, the GM should simply try and work out how -- given the description of their motivations and resources -- each NPC and group should respond to the meddlings of the PCs. 
+
+\def\p{2}
+\def\q{15}
+\def\s{0.3}
+\section{Factions}
+
+\subsection{Adherents of the 5$^\text{th}$ Order}
+
+\begin{longtable}{p{\p cm} p{\s cm} p{\q cm} }
+
+\bf Description: & ~ &\parbox[t]{\q cm}{The Adherents of the 5th order, Priests of the Nightmare King and Servants to the Sightless One are a group of religious fanatics that worship the Eldritch Horrors that occupy the other side of the Ghostly veil, believing that their ultimate goal should be to destroy the walls between reality, allowing their masters to flood into this universe to make it anew. Known to the Ministry as a bunch of (mostly) harmless weirdos, the Adherents have recently discovered a cache of incredibly rare and powerful items, as well as Merlin's grave, which make them a threat to all life on Earth.  \\~  } 
+\\
+\bf Motivation:	& ~ & \parbox[t]{\q cm}{ The Adherents aim to destroy the magical protections around the rip in space and time that they have discovered, allowing the Eldritch Horrors into this universe.  \\~  } 
+\\
+\bf Plans:	& ~ & \parbox[t]{\q cm}{In order to destroy the barriers protecting the Tear, they need to accrue magical knowledge, as well as a cache of Soul Jars. They also believe that sowing discord and chaos will weaken the walls between realities, and so will cause as much chaos as possible.\\~  } 
+\\
+\bf Resources & ~ & \parbox[t]{\q cm}{The Adherents have discovered Merlin's ``Grave'' -- a rip in the fabric of space and time, along with an enormous subterranean castle, filled with mystical artefacts from beyond this reality (most of which they do not fully understand). The group has around 50 members, of whom $\sim$20 are practitioners of the Darkest Arts.  \\ ~ }
+\\
+\bf Members	& ~ &  \parbox[t]{\q cm}{ ?? \\ ~ }
+
+\end{longtable}
+\subsection{Death-Eater Remnants}
+
+
+
+\begin{longtable}{p{\p cm} p{\s cm} p{\q cm} }
+
+\bf Description: & ~ &\parbox[t]{\q cm}{The remnants of the Death Eater movement -- supporters of He-Who-Must-Not-Be-Named and wizarding supremacists -- that the Ministry never quite managed to root out at the end of the SWW.   The Death Eater Remnants (DER) are a small group, with their most senior members being veterans of Voldemort{\apos}s campaign of terror.  Their numbers are bulked out, however, by a large number of disaffected young wizards and witches that they have managed to radicalise. \\~  } 
+\\
+\bf Motivation:	& ~ & \parbox[t]{\q cm}{ The DER seek to gain dominion over all muggles and non-human sentients, and install wizardkind as the supreme leaders of the world. They also aim to destroy the Ministry of Magic, which they view as an illigitimate government. \\~  } 
+\\
+\bf Plans:	& ~ & \parbox[t]{\q cm}{The DER is currently growing their power base by continuing to radicalise new members to their cause and gather powerful new items, whilst remaining hidden from the majority of society. They will integrate into wizarding society at the highest level, and then begin to take control. \\~  } 
+\\
+\bf Resources & ~ & \parbox[t]{\q cm}{Around 20 veterans of SWW, and $\sim$100 younger members. Several of the veterans hold key roles within the MoM. They have also stockpiled many magical supplies, including some powerful magical objects. In order to maintain secrecy, they have no central `base', but instead maintain a number of small caches and safehouses across the nation. \\ ~ }
+\\
+\bf Members	& ~ &  \parbox[t]{\q cm}{ ?? \\ ~ }
+
+\end{longtable}
+
+\subsection{Ministry of Magic}
+\begin{longtable}{p{\p cm} p{\s cm} p{\q cm} }
+
+\bf Description: & ~ &\parbox[t]{\q cm}{Formed from the remnants of the Wizard's council in 1595, in the wake of the catastrophic witch-hunt crisis, the MoM is the oldest continually operating magical government in the world, with jurisdiction across the UK, and wielding significant international influence. A key signatory of the International Statute of  Secrecy, the MoM is dedicated to maintaining peace and tranquility in the magical world, although it is often hamstrung by beaurocracy. \\~  } 
+\\
+\bf Motivation:	& ~ & \parbox[t]{\q cm}{ The MoM's primary goal is to maintain the stability and secrecy of the wizarding world in the UK, by introducing legislation to control magical life, and then enforcing those laws. They also aim to increase trust in the system, after the embarrassment of the fall of the MoM to Voldemort in 1997. \\~  } 
+\\
+\bf Plans:	& ~ & \parbox[t]{\q cm}{The MoM plans to use the Auror department (in conjunction with the Office for Muggle Affairs, among others), to reduce the level of civil unrest, and to maintain secrecy from the muggles. They also plan to suppress the NHA rebellion, to restore the status quo. \\~  } 
+\\
+\bf Resources & ~ & \parbox[t]{\q cm}{The MoM commands an enormous number of personnel, including upwards of 100 aurors, as well as members of specialist taskforces (i.e. the Dragon Control Unit). They also have legal jurisdiction over Hogwarts school, and men inside the government. Their headquarters is a massive, magically-concealed facility in central London. \\ ~ }
+\\
+\bf Members	& ~ &  \parbox[t]{\q cm}{Minister for Magic, Head Auror etc?? \\ ~ }
+
+\end{longtable}
+\subsection{Muggle Police}
+\begin{longtable}{p{\p cm} p{\s cm} p{\q cm} }
+
+\bf Description: & ~ &\parbox[t]{\q cm}{A muggle organisation dedicated to enforcing muggle law in the land. For the most part, the muggle police are totally unaware of the existence of the magical world. However, they have noticed an upsurge in mysterious events and unexplained disappearances lately, and are starting to get suspicious. \\~  } 
+\\
+\bf Motivation:	& ~ & \parbox[t]{\q cm}{ The police's main aim is to try to investigate several mysterious disappearances in the past few months, and discover what on Earth is going on.  \\~  } 
+\\
+\bf Plans:	& ~ & \parbox[t]{\q cm}{The police have several active investigations, and have arrested several suspicous individuals. However, these individuals have an annoying habit of disappearing from their cells.  \\~  } 
+\\
+\bf Resources & ~ & \parbox[t]{\q cm}{The police have set up a nationwide taskforce of more then 2000 officers, including an armed response team, to deal with the strange happenings. They also have access to surveillance footage nationwide, as well as other digital monitoring techniques.  \\ ~ }
+\\
+\bf Members	& ~ &  \parbox[t]{\q cm}{ ?? \\ ~ }
+
+\end{longtable}
+\subsection{Non-Human Alliance}
+
+\begin{longtable}{p{\p cm} p{\s cm} p{\q cm} }
+
+\bf Description: & ~ &\parbox[t]{\q cm}{The NHA is a union of organisations representing sentient non-human species, such as centaurs, giants, goblins, house elves and so on. These beings feel that, for hundreds of years, they have been oppressed by the human magic users, forced to live underground on human terms, and forced to take only menial jobs within the wider magical society. In addition, the humans have imposed laws that make it all but illegal for them to practice magic on par with the humans. They no longer believe in the status quo of segregated societies, and believe that the Ministry is an oppressive regime.\\~  } 
+\\
+\bf Motivation:	& ~ & \parbox[t]{\q cm}{ The NHA aims to convince the MoM to give them equal rights -- seats on all legislative bodies, access to the wizarding community on equal terms, and to lift the laws outlawing non-human magic.\\~  } 
+\\
+\bf Plans:	& ~ & \parbox[t]{\q cm}{The NHA act as a quasi-terrorist organisation, as the very act of them meeting is outlawed by the Ministry. They therefore are not above taking hostages and using kidknapping and extortion to get their own way -- though they are firmly against killing. Their first target is Hogwarts. \\~  } 
+\\
+\bf Resources & ~ & \parbox[t]{\q cm}{ The NHA has around 500 active members, with material backing from over 10,000 members of the consituent species. They primarily work out of the Giant fortress of Gar'nat in the Norwegian fjords, where the goblins are busy trying to create a new Great Forge.  \\ ~ }
+\\
+\bf Members	& ~ &  \parbox[t]{\q cm}{ Representatives of the giants, goblins, house elves, centaurs, merpeople etc.  \\ ~ }
+
+\end{longtable}
+\subsection{Technowizards}
+\begin{longtable}{p{\p cm} p{\s cm} p{\q cm} }
+
+\bf Description: & ~ &\parbox[t]{\q cm}{A group of muggles who have discovered the nature of magic via barbaric experimentation on magical beings -- including human torture. As a result, they have developed a number of technomagical suits (the Magic-Technology Human Interface System: MaTHIS), which allows the wearer to to use magic, even if they are a muggle. The group is somewhat split on what to do with this technology, and is split into two subfactions: the Equalists and the Domineers. For now, their interests are aligned, and the group is stable. \\~  } 
+\\
+\bf Motivation:	& ~ & \parbox[t]{\q cm}{ The Equalists believe that magic is an unfair advantage for some humans, and seek to remove this advantage from wizards. The Domineers disagree, and believe that this new power makes them the rightful ruling class.\\~  } 
+\\
+\bf Plans:	& ~ & \parbox[t]{\q cm}{Both groups believe that the first step is to gather more information on magic (and gather more Soul Jars), enabling them to cast a planet-wide antimagic spell. The Domineers then plan to stab the equalists in the back, and use this decisive advantage to become the only magic-wielders in the world, and take over . \\~  } 
+\\
+\bf Resources & ~ & \parbox[t]{\q cm}{ The Technowizards comprises of $\sim 60$ individuals (with a 40/20 Equalist/Domineer split) working out of a high tech lab in converted power station, carved into the inside of a mountain in Snowdonia. They have 6 active MaTHIS suits and 25 soul jars with thich to power them. They also have $\sim 10$ armed guards and a helicopter. Within their lab they have also contained several dangerous magical creatures. The group seem to have an infinite supply of money form a shady source. At the start of the scenario, the Technowizards only know 4 spells, the Antimagic ward, the Knockback Jynx, the Glamour Charm, and the Dragon's Breath Curse.  \\ ~ }
+\\
+\bf Members	& ~ &  \parbox[t]{\q cm}{??? \\ ~ }
+
+\end{longtable}
+\section{People}
+
+\section{Items}
+\subsection{MaTHIS Suit}
+
+
+\begin{longtable}{p{\p cm} p{\s cm} p{\q cm} }
+
+\bf Description: & ~ &\parbox[t]{\q cm}{The Magic-Technology Human Interface System (MaTHIS) is the culmination of Muggle investigation into the magical world. Visually, appears to be a cross between a space suit and a scuba set, with a thick respirator and mask covering the face, and tubes and wires tangled around the kevlar bodysuit. Lights and servos blink and whirr across the surface, and a control panel is embedded in the left forearm. Mounted on the back of the suit is a series of `tanks', housing the power source (3 soul jars embedded in a complex interface). \\ The suit allows the user to channel magic through one of the three emerald-green rings mounted on the suit: two `bracelets' around each wrist, and the third embedded in the chest, each pulsing with energy. Unlike wizards, the spells are not cast by incantations, but by pre-loading them onto the suit software, and then selecting them from the suit menu. \\~  } 
+\\
+\bf Effect:	& ~ & \parbox[t]{\q cm}{- Wearer can cast  one of the `loaded' spells once per turn, by passing a single FIN (arcane, difficulty 5) check instead of usual casting check. \\ -  Loading new spell requires taking back to the lab for 1 week with the appropriate spellbook. \\ - Soul jars may be used in the usual way to add power points \\ - Check dice determined by soul jars left: 3 jars=1d10, 2 jars=1d6, 1 jar=1d4, 0 jars = no dice.   \\~  } 
+\end{longtable}
+\subsection{Soul Jar}
+\begin{longtable}{p{\p cm} p{\s cm} p{\q cm} }
+
+\bf Description: & ~ &\parbox[t]{\q cm}{A Soul Jar is a small container that has been enchanted by inscribing an ancient arcane symbol upon the lid. Once enchanted, the jar becomes oddly heavy and glows with an otherworldly light. The Soul Jar, once enchanted, can be used to store a single human soul inside it, the jar automatically absorbs the souls of those who are killed nearby.   \\ Dark Wizards have used soul jars for centuries to bolster their power -- limited only by the fact that the jar disintegrates after being used. 
+ \\~  } 
+\\
+\bf Effect:	& ~ & \parbox[t]{\q cm}{Absorbs 1 human soul if killed within 10m radius (if multiple jars present, soul enters the closest). After filling, may use {\bf one} of the following by speaking appropriate command (must be learned): \\ - Heal the user to full HP and FP instantly \\ - Instantly cast any spell, with a `check' of 25 and zero FP cost\\ Multiple jars can be chained (for +10 casting points each), but for each jar added, must pass an EVL check (difficulty 10), else the jar explodes for 4d8 necrotic damage, though spell is still cast. \\ Jar disintegrates upon use. \\~  } 
+\end{longtable}
+
+
+\section{Locations}
+\subsection{Diagon Alley}
+\subsection{Dinorwig}
+\subsection{Gar'Nak Fortress}
+\subsection{Great Forge}
+\subsection{Gringott's Bank}
+\subsection{Hogwarts School of Witchcraft \& Wizardry}
+\subsection{The Keep}
+\subsection{Merlin's Grave}
+\subsection{Ministry of Magic}
+\end{document}
