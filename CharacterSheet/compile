@@ -1,0 +1,8 @@
+#!/bin/bash
+echo $1
+if [ $1 -eq  1 ] 
+then
+	matlab -nodisplay -nodesktop < "assembleSkills.m"
+fi
+xelatex CharacterSheet.tex
+xdg-open CharacterSheet.pdf
