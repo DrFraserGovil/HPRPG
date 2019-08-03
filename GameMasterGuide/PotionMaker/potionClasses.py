@@ -17,6 +17,7 @@ import operator as op
 global ingredientEffects
 from functools import reduce
 import copy
+import webcolors
 def nCr(n, r):
     r = min(r, n-r)
     numer = reduce(op.mul, range(n, n-r, -1), 1)
@@ -29,7 +30,11 @@ class Potion:
 		self.Difficulty = 0
 		self.PotionStore = potionEffects
 		self.RandomEffects= []
-		self.ColourName = "Clear"
+		self.ColourName = "Ugly"
+		self.Thickness = 3
+		self.R = 74.0/255
+		self.G = 65.0/255
+		self.B = 42.0/755
 		effects = [0]*len(ingredientVector[0].Vector)
 		countPlus = [0]*len(ingredientVector[0].Vector)
 		countNeg =  [0]*len(ingredientVector[0].Vector)
@@ -62,9 +67,49 @@ class Potion:
 					f = f*mult
 			effects[j] = f
 		self.Effects = effects
-		
+	
 		self.PotionOutcome = [0]*(len(potionEffects))
 		self.ScaledOutcome = [0]*(len(potionEffects))
+		
+		
+	def DetermineVisuals(self,models,xscalers,yscalers):
+		n = len(models)
+		r = self.Effects
+		r.append(self.Roll)
+		inputVector = np.array([r])
+		
+		out = []
+		for i in range(0,n):
+			inputVectorScaled = xscalers[i].transform(inputVector)
+			outputScaled= models[i].predict(inputVectorScaled,batch_size=len(inputVectorScaled))
+			output = yscalers[i].inverse_transform(outputScaled) 
+			
+			rounded = round(output[0][0])
+		
+			out.append(output)
+			
+		self.R = out[0]
+
+		self.G = out[1]
+		self.B = out[2]
+		self.Thickness = out[3]
+		
+		if self.R < 0:
+			self.R = 0
+		if self.R > 255:
+			self.R = 255
+		if self.G < 0:
+			self.G = 0
+		if self.G > 255:
+			self.G = 255
+		if self.B < 0:
+			self.B = 0
+		if self.B > 255:
+			self.B = 255
+		if self.Thickness < 0:
+			self.Thickness = 0
+		if self.Thickness > 3:
+			self.R = 3
 	def DetermineEffects(self,models,xscalers,yscalers):
 		self.display(False)
 		n = len(models)
@@ -235,7 +280,111 @@ class Potion:
 		format = "  ".join(["{:>" + str(l) + "}" for l in lens])
 		for row in q:
 			print(format.format(*row))
+		
+	def ColourSave(self):
+		f = open("potionColours.csv","a+")
+		txt = ""
+		for val in self.Effects:
+			txt += str(val) + ","
+		txt+=str(self.Roll) + ","
+		
+		txt+=str(self.R) + ","
+		txt+=str(self.G) + ","
+		txt+=str(self.B) + ","
+		
+		txt+=str(self.Thickness)
+		
+		txt+="\n"
+		f.write(txt)
+		f.close()
+		
+	def ColourAccelerate(self):
+		grossR = 74
+		grossG = 65
+		grossB = 42
+		
+		failRoll = float(self.Difficulty)/1.5
+		k = 1
+		interpBase = (np.exp(-k*failRoll) - np.exp(-k*self.Difficulty))
+		betaR = (grossR - self.R)/interpBase
+		betaG = (grossG - self.G)/interpBase
+		betaB = (grossB - self.B)/interpBase
+		
+		alphaR = grossR - betaR*np.exp(-k*failRoll)
+		alphaG = grossG - betaG*np.exp(-k*failRoll)
+		alphaB = grossB - betaB*np.exp(-k*failRoll)
+		for roll in range(1,30):
+			obj = copy.deepcopy(self)
+			obj.Roll = roll
+			if roll < failRoll:
+				obj.R = grossR
+				obj.G = grossG
+				obj.B = grossB
+				obj.Thickness = 3
+			else:
+				if roll >= self.Difficulty:
+					obj.R = self.R
+					obj.G = self.G
+					obj.B = self.B
+				else:
+					obj.R = alphaR + betaR*np.exp(-k*roll)
+					obj.G = alphaG + betaG*np.exp(-k*roll)
+					obj.B = alphaB + betaB*np.exp(-k*roll)
+			obj.ColourSave()
+	
+	def QueryColour(self,info):
+		#os.system('clear')
+		#os.system('clear')
+		os.system('cls')
+		print (info)
+		self.Roll = self.Difficulty
+		self.AutoDetermine()
+		q = textify(self,self.PotionStore)
+		
 			
+		if q==0:
+			self.Difficulty = 300
+			self.ColourAccelerate()
+			return 0
+		while True:
+			try:
+				r = raw_input("What colour is this potion?\n\t")
+			except:
+				r = input("What colour is this potion?\n\t")
+			
+			if len(r)==0:
+				return 0
+			try:
+				rgb = webcolors.name_to_rgb(r)
+				self.R = rgb[0]
+				self.G = rgb[1]
+				self.B = rgb[2]
+				
+				break
+			except:
+				print("That was probably not a valid CSS3 colourname. Try again")
+				
+		while True:
+			txt = "\nWhat thickness does this potion have?\n\t"
+			colorCode = ["Transparent","Opaque","Thick","Congealing"] 
+			for i in range(0,len(colorCode)):
+				txt += str(i+1) + ": " + colorCode[i] + "\n\t"			
+			try:
+				r = raw_input(txt)
+			except:
+				r = input(txt)
+				
+			try:
+				val = int(r)
+				if val in range(1,len(colorCode)+1):
+					self.Thickness = val-1
+					self.ColourAccelerate()
+					return True
+				else:
+					print("That was not a number between 1 and %s. Try again" % str(len(colorCode)+1))
+			except:
+				print("That was not a number between 1 and %s. Try again" % str(len(colorCode)+1))
+		
 	def QueryEffects(self,info):
 		while True:
 			os.system('clear')
@@ -364,7 +513,165 @@ class Ingredient:
 				r.append( "%s (%d)" %(self.EList[i],self.Vector[i]))
 				
 		return r
+def randomBad(potion):
+	
+	badEffects=np.genfromtxt("badEffects.csv", delimiter=";",dtype="str",usecols=np.arange(0,3))
+	badEffects = badEffects[1:len(badEffects)]
+	badStart = 0
+	badEnd = len(badEffects)
+	badUsed = [-1]
+	s = potion.PotionOutcome[0]
+	while potion.PotionOutcome[0] > 0:
+		x = -1
+		while x in badUsed:
+			x = np.random.randint(badStart,badEnd)
+		badUsed.append(x)
+		
+		potion.PotionOutcome[0] = potion.PotionOutcome[0] - 1
+		
+		text = badEffects[x][2]
+		explodeID = 0
+		nilID = 1
+		if x == explodeID:
+			potion.Catalyse +=100
+		if x == nilID:
+			n = len(potion.PotionOutcome);
+			new = [0]*n
+			potion.PotionOutcome = new
+			s = 0
+		
+		
+		potion.RandomEffects.append(text)	
+	potion.PotionOutcome[0] = s
+	return potion
+
+def randomGood(potion):
+	
+	goodEffects=np.genfromtxt("goodEffects.csv", delimiter=";",dtype="str",usecols=np.arange(0,3))
+	goodEffects = goodEffects[1:len(goodEffects)]
+	goodStart = 0
+	goodEnd = len(goodEffects)
+	goodUsed = [-1]
+	s = potion.PotionOutcome[1]
+	while potion.PotionOutcome[1] > 0:
+		x = -1
+		while x in goodUsed:
+			x = np.random.randint(goodStart,goodEnd)
+		goodUsed.append(x)
+		
+		potion.PotionOutcome[1] = potion.PotionOutcome[1] - 1
+		healID = 0
+		skillID = 2
+		ingID = 7
+		safeID = 8
+		text = goodEffects[x][2]
+		
+		if x == healID:
+			hpID = 67
+			fpID = 66
+			potion.PotionOutcome[hpID] =2*potion.PotionOutcome[hpID]
+			potion.PotionOutcome[fpID] =2*potion.PotionOutcome[fpID]
+		if x==skillID:
+			s1ID = 45
+			s2ID = 51
+			for i in range(s1ID,s2ID+1):
+				potion.PotionOutcome[i] =2*potion.PotionOutcome[i]
+		if x==ingID:
+			y = np.random.randint(0,len(potion.Ingredients))
+			iName = potion.Ingredients[y].Name
+			text = text % iName
+		if x==safeID:
+			potion.Catalyse = potion.Catalyse/8
+		potion.RandomEffects.append(text)	
+	potion.PotionOutcome[1] = s
+	return potion
+		
+
+
+def textify(potion,effects):
+	aerosolID = 8
+	aerosolActive = False
+	detonateActive = False
+	detonateID = 33
+	
+	potion = randomBad(potion)
+	potion = randomGood(potion)
+	realDetonateID = detonateID
+	explodeOnTheSpot = False
+	r = np.random.randint(0,100)
+	if r < potion.Catalyse:
+		explodeOnTheSpot = True
+		
+		explode = potion.PotionOutcome[detonateID] + float(potion.Catalyse)/20
+		detonateID = 2
+		potion.PotionOutcome[detonateID] = explode
+	txt = ""
+	if sum(potion.PotionOutcome)-potion.PotionOutcome[1] == 0:
+		txt += "   This potion has no effect"
+		return txt
+	else:
+		##mixer effects	
+		
+		trigger = False
+		for j in range(0,len(potion.RandomEffects)):
+			if len(potion.RandomEffects[j]) > 0:
+				trigger =True
+		
+		if trigger:
+			txt+="   The brewer of the potion:\n"
+			for j in range(0,len(potion.RandomEffects)):
+				if len(potion.RandomEffects[j]) > 0:
+					txt+='\n    +' + potion.RandomEffects[j] 
+		
+		##Drinking effects
+		txt+="\n\n\n\n"
+		text = "The drinker of the potion:\n"
+		
+	
+		rootDescriptionID = 8
+		descriptionID = rootDescriptionID
+	
+		if potion.PotionOutcome[aerosolID] > 0:
+			aerosolActive = True
+			descriptionID = rootDescriptionID + 1
+		if potion.PotionOutcome[detonateID] > 0:
+			detonateActive = True
+			descriptionID = rootDescriptionID + 1
+		if (aerosolActive==False) and (detonateActive==False):
+			txt+="   "+text
+		if (detonateActive==True) and (aerosolActive==False):
+			text = effects[detonateID][rootDescriptionID]
+			txt += "   "+(text % potion.PotionOutcome[detonateID])
+
+		if (aerosolActive==True) and (detonateActive==False):
+	
+			text = effects[aerosolID][rootDescriptionID]
+			txt+="   "+(text % potion.PotionOutcome[aerosolID])
+		
+		if (aerosolActive==True) and (detonateActive==True):
+			text = effects[detonateID][descriptionID]
 			
+			#print ("   "+(text % potion.PotionOutcome[detonateID]).decode('string_escape'))
+			txt+="   "+(text % potion.PotionOutcome[detonateID])
+			text = effects[aerosolID][descriptionID]
+			txt+="   "+(text % potion.PotionOutcome[aerosolID])
+			
+		c = False
+		for j in range(0,len(effects)):
+			if potion.PotionOutcome[j] != 0 and j not in [detonateID,realDetonateID,aerosolID,0,1,2]:
+				text = effects[j][descriptionID]
+				if len(text) > 0:
+					if "%" in text:
+					
+						txt+="\n    +"+(text % potion.PotionOutcome[j])
+					else:
+						txt+="    + "+text
+					c = True
+		if c == False:
+			txt+="+ (No other effects)"
+	
+		return txt
+				
 	
 def potionSlider(ingredientVector,potionEffects,Npotions):
 	step = 0
@@ -383,10 +690,10 @@ def potionSlider(ingredientVector,potionEffects,Npotions):
 		info = "Potion Slider, %d of %d" %	(step+1,Npotions)
 		p = Potion(v,0,potionEffects)	
 		#p.QueryEffects(info)
-		for roll in range(1,35):
-			p = Potion(v,roll,potionEffects)	
-			p.AutoDetermine()
-			p.Save()
+		
+		p = Potion(v,0,potionEffects)	
+		p.QueryColour(info)
+			#p.Save()
 		r.pop(0)
 
 		step+=1
@@ -402,12 +709,8 @@ def totalRandom(ingredientVector,potionEffects,Npotions):
 		for id in r:
 			v.append(ingredientVector[id])
 		info = "Random potion, %d of %d" %	(i+1,Npotions)
-		p = Potion(v,0,potionEffects)	
-		#p.QueryEffects(info)
-		for roll in range(1,35):
-			p = Potion(v,roll,potionEffects)	
-			p.AutoDetermine()
-			p.Save()
+		p = Potion(v,0,potionEffects)		
+		p.QueryColour(info)
 
 def iterator(ingredientVector,potionEffects,Niters):
 	stepPerIter = 5
@@ -429,11 +732,7 @@ def iterator(ingredientVector,potionEffects,Niters):
 			p = Potion(v,0,potionEffects)	
 			info = "Potion Iterator, iteration %d of cycle %d (of %d)" %	(s+1,i+1,Niters)
 			#p.QueryEffects(info)
-			for roll in range(1,35):
-				p = Potion(v,roll,potionEffects)	
-				p.AutoDetermine()
-				p.Save()
-
+			p.QueryColour(info)
 def effectIterator(ingredientVector, potionEffects,Niters):
 	stepPerIter = 5
 	for i in range(0,Niters):
@@ -483,11 +782,8 @@ def effectIterator(ingredientVector, potionEffects,Niters):
 				v.append(ingredientVector[id])
 			p = Potion(v,0,potionEffects)	
 			info = "%s Iterator, iteration %d of cycle %d (of %d)" %	(pEffect,s+1,i+1,Niters)
-			#p.QueryEffects(info)
-			for roll in range(1,35):
-				p = Potion(v,roll,potionEffects)	
-				p.AutoDetermine()
-				p.Save()
+			p.QueryColour(info)
+			
 
 
 def includeEffect(effect,effectList):
@@ -532,7 +828,6 @@ def generateRandomPotions(ingredients,potionEffects,Ntotal):
 		v.append(a)
 	step = 1
 	for steps in v:
-		print ("Step %d" % step)
 		step +=1
 		roll = np.random.random()
 		if roll < 0.25:

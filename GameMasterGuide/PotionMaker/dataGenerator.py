@@ -14,7 +14,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 import potionClasses as pc
 
-dataset=np.genfromtxt("../Data/ingredients.csv", delimiter=",",dtype="str",,usecols=np.arange(0,14))
+dataset=np.genfromtxt("../Data/ingredients.csv", delimiter=",",dtype="str"	,usecols=np.arange(0,14))
 cols = dataset[0]
 
 dataset = dataset[1:len(dataset)]
@@ -32,7 +32,7 @@ ingredients = pc.vectoriseIngredients(dataset,a)
 ingredientEffects = a
 
 
-potionEffects=np.genfromtxt("effectList.csv", delimiter=",",dtype="str")
+potionEffects=np.genfromtxt("effectList.csv", delimiter=";",dtype="str")
 potionEffects = potionEffects[1:len(potionEffects)]
 print(potionEffects)
 # ~ for i in range(10):

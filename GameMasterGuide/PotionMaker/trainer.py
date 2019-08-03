@@ -13,19 +13,18 @@ from sklearn.externals import joblib
 seed = 3
 np.random.seed(seed)
 
-potionEffects=np.genfromtxt("effectList.csv", delimiter=",",dtype="str")
-potionEffects = potionEffects[1:len(potionEffects)]
-n = len(potionEffects)
+titles = ["Red","Blue","Green","Thickness"]
+n = len(titles)
 for i in range(0,n):
-	pEffect = potionEffects[i][1]
+	pEffect = titles[i]
 	
 	# load dataset
-	Ninputs = 46
+	Ninputs = 40
 	targetID = Ninputs + i
-	dataset=np.genfromtxt("potionSet.csv", delimiter=",")
+	dataset=np.genfromtxt("potionColours.csv", delimiter=",")
 	
 	x=dataset[:,0:Ninputs]
-	print x[:,Ninputs-1]
+
 	y=dataset[:,targetID]
 
 	y=np.reshape(y, (-1,1))
