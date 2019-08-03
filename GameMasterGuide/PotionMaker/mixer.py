@@ -30,7 +30,7 @@ def loadEffect(pEffect,i):
 	yScalers[i] = scaler_y
 def loopLoad(start,end):
 	global models,xScalers,yScalers
-	print "Chunk model for %d->%d" % (start,end)
+	print (" model for %d->%d" % (start,end))
 	for i in range(start,end):
 		pEffect = potionEffects[i][1]
 		
@@ -62,7 +62,7 @@ def parallelLoad():
 		x.start()
 		start = start+chunk
 	#calculate 
-	print "Chunk model for %d->%d" % (start,n)
+	print("Chunk model for %d->%d" % (start,n))
 	#loopLoad(start,n)
 
 	for index, thread in enumerate(threads):
@@ -89,7 +89,7 @@ def linearLoad():
 def loadModels():
 	linearLoad()
 
-	print "\n\n Models Loaded. Initialising Learner"
+	print("\n\n Models Loaded. Initialising Learner")
 	mixPotion([0,1,2],5,False)
 
 
@@ -195,13 +195,13 @@ def textify(potion,effects):
 				trigger =True
 		
 		if trigger:
-			print "   The brewer of the potion:\n"
+			print("   The brewer of the potion:\n")
 			for j in range(0,len(potion.RandomEffects)):
 				if len(potion.RandomEffects[j]) > 0:
-					print '\t\t+' + potion.RandomEffects[j] 
+					print('\t\t+' + potion.RandomEffects[j] )
 		
 		##Drinking effects
-		print "\n\n"
+		print ("\n\n")
 		text = "The drinker of the potion:"
 		
 	
@@ -215,31 +215,48 @@ def textify(potion,effects):
 			detonateActive = True
 			descriptionID = rootDescriptionID + 1
 		if (aerosolActive==False) and (detonateActive==False):
-			print "   "+text
+			print ("   "+text)
 		if (detonateActive==True) and (aerosolActive==False):
 			text = effects[detonateID][rootDescriptionID]
-			print "   "+(text % potion.PotionOutcome[detonateID]).decode('string_escape')
+			try:
+				print ("   "+(text % potion.PotionOutcome[detonateID]).decode('string_escape'))
+			except:
+				print ("   "+(text % potion.PotionOutcome[detonateID]))
 		if (aerosolActive==True) and (detonateActive==False):
 	
 			text = effects[aerosolID][rootDescriptionID]
-			print "   "+(text % potion.PotionOutcome[aerosolID]).decode('string_escape')
+			try:
+				print ("   "+(text % potion.PotionOutcome[aerosolID]).decode('string_escape'))
+			except:
+				print ("   "+(text % potion.PotionOutcome[aerosolID]))
+		
 		if (aerosolActive==True) and (detonateActive==True):
 			text = effects[detonateID][descriptionID]
-			print (text % potion.PotionOutcome[detonateID]).decode('string_escape')
+			try:
+				print ("   "+(text % potion.PotionOutcome[detonateID]).decode('string_escape'))
+			except:
+				print ("   "+(text % potion.PotionOutcome[detonateID]))
 			text = effects[aerosolID][descriptionID]
-			print "   "+(text % potion.PotionOutcome[aerosolID]).decode('string_escape')
+			try:
+				print ("   "+(text % potion.PotionOutcome[aerosolID]).decode('string_escape'))
+			except:
+				print ("   "+(text % potion.PotionOutcome[aerosolID]))
 		c = False
 		for j in range(0,len(effects)):
 			if potion.PotionOutcome[j] != 0 and j not in [detonateID,realDetonateID,aerosolID,0,1,2]:
 				text = effects[j][descriptionID]
 				if len(text) > 0:
 					if "%" in text:
-						print ("\t\t+ "+text % potion.PotionOutcome[j]).decode('string_escape')
+					
+						try:
+							print ("\t\t+"+(text % potion.PotionOutcome[j]).decode('string_escape'))
+						except:
+							print ("\t\t+"+(text % potion.PotionOutcome[j]))
 					else:
-						print "\t\t+ "+text
+						print ("\t\t+ "+text)
 					c = True
 		if c == False:
-			print "\t\t (No other effects)"
+			print ("\t\t (No other effects)")
 		
 
 		
@@ -265,25 +282,25 @@ def potion(idVector,roll,printVal=True):
 		print("You passed an invalid number of ingredients. Try again")
 		return -1
 	head = ("="*20)
-	print "\n\n" + (head*6)
-	print "Mixing potion with ingredients: ",
+	print ("\n\n" + (head*6))
+	text ="Mixing potion with ingredients: "
 	for i in ingVec:
-		print i.Name + ", ",
-	print "with a roll of %d\n" % roll
+		text = text + i.Name + ", "
+	print (text + "with a roll of %d\n" % roll)
 	
 	p = pc.Potion(ingVec,roll,potionEffects)
 	p.AutoDetermine()
 	if printVal:
 		#p.display(True)
 		textify(p,potionEffects)
-	print  "\n" + (head*6)
+	print  ("\n" + (head*6))
 	
 	return p
 def getIngredients():
 	
 	str_arr = raw_input("Enter potion ingredient IDs, separated by a comma. Potions have between 2 and 5 ingredients, and cannot be repeated:\n\t").split(',') #will take in a string of numbers separated by a space
 	arr = [int(num) for num in str_arr]
-	print arr
+	print (arr)
 
 dataset=np.genfromtxt("../Data/ingredients.csv", delimiter=",",dtype="str",usecols=np.arange(0,14))
 cols = dataset[0]

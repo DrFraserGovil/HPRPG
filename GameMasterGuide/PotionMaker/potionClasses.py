@@ -29,6 +29,7 @@ class Potion:
 		self.Difficulty = 0
 		self.PotionStore = potionEffects
 		self.RandomEffects= []
+		self.ColourName = "Clear"
 		effects = [0]*len(ingredientVector[0].Vector)
 		countPlus = [0]*len(ingredientVector[0].Vector)
 		countNeg =  [0]*len(ingredientVector[0].Vector)
@@ -73,12 +74,12 @@ class Potion:
 		t = time.time()
 		for i in range(0,n):
 			pName = self.PotionStore[i][1]
-			print "Predicting potion value for %s...." % pName,
+			#print ("Predicting potion value for %s...." % pName)
 			inputVectorScaled = xscalers[i].transform(inputVector)
 			outputScaled= models[i].predict(inputVectorScaled,batch_size=len(inputVectorScaled))
 			#invert normalize
 			output = yscalers[i].inverse_transform(outputScaled) 
-			print "value = %f" % output 
+			#print "value = %f" % output 
 			
 			rounder = int(self.PotionStore[i][3])
 			
@@ -89,7 +90,7 @@ class Potion:
 			if outcome < minVal:
 				self.PotionOutcome[i] = 0
 				self.ScaledOutcome[i]
-		print "Potion effects determined"
+		#print "Potion effects determined"
 	def display(self,showVec):
 		self.displayIngredients()
 		
@@ -107,9 +108,9 @@ class Potion:
 			print("\nMixing difficulty is: %d" % self.Difficulty)
 		s = self.NonZeroEffects()
 		if len(s) > 0:
-			print "\n\nPotion Effects:\n\t\t" + s
+			print ("\n\nPotion Effects:\n\t\t" + s)
 		else:
-			print "\n\n Potion has no effect"
+			print("\n\n Potion has no effect")
 		
 	def Accelerate(self, effectID,roundingValue,minValue):
 
@@ -239,7 +240,7 @@ class Potion:
 		while True:
 			os.system('clear')
 			os.system('clear')
-			print info
+			print (info)
 			self.display(True)
 			
 			print("\nWhat effect does this potion have?\n")
@@ -340,7 +341,7 @@ class Potion:
 			
 class Ingredient:
 	def initialiseVector(self,entry,effectList):
-		print "Initialising %s" % self.Name
+		print("Initialising %s" % self.Name)
 		a = [0]*len(effectList)
 		self.Vector = a
 		i = 3
@@ -467,7 +468,7 @@ def effectIterator(ingredientVector, potionEffects,Niters):
 						else:
 							id = -1
 				if id == -1:
-					print "Could not find another effect, quitting at length %d" % len(r)
+					print ("Could not find another effect, quitting at length %d" % len(r))
 					break
 		for s in range(0,stepPerIter):
 			q = []
@@ -531,7 +532,7 @@ def generateRandomPotions(ingredients,potionEffects,Ntotal):
 		v.append(a)
 	step = 1
 	for steps in v:
-		print "Step %d" % step
+		print ("Step %d" % step)
 		step +=1
 		roll = np.random.random()
 		if roll < 0.25:
