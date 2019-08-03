@@ -1,0 +1,10 @@
+ID;Effects;Text
+0;Restore Amplify;
+1;Specified Amplify;may choose to double one of the effects of the potion. If they ask to double an effect that does not exist, nothing happens.
+2;Skill Amplify;
+3;Remove Effect;may choose to remove one of the effects of the potion. If they ask to remove an effect that does not exist, nothing happens.
+4;Reveal Effect;discovers up to 2 effects of the potion
+5;Calming Fumes;gets +1 to intelligence modifier for 1 hour
+6;Curse Cure;may end the effects of any curses on themselves
+7;Ingredient Unused;discovers that the %s was not used up
+8;Stop Explode;

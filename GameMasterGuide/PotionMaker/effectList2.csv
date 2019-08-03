@@ -1,0 +1,78 @@
+ID,Name,Units,Rounded To,Minimum Value,Associated With,Sign,Converter,
+0,Random Bad,Number,0,1,BadRoll,0,1,
+1,Random Good,Number,0,1,GoodRoll,0,1,
+2,Volatile,Percentage,0,5,Catalyse,1,0.8,
+3,Freeze,Degrees below 0,0,5,Heat,-1,1,is frozen to -%d centigrade for 2 hours
+4,Fire Weakness,Percentage,0,5,Heat,1,1,is %d%% weaker to Fire Damage for 1d4 hours
+5,Cold Weakness,Percentage,0,5,Heat,-1,1,is %d%% weaker to Cold Damage for 1d4 hours
+6,Ignite,Fire Damage,0,1,Heat,1,0.6,is ignited for %d Fire Damage
+7,Acid Damage,Damage,0,1,Acid,1,0.6,Is burned for %d Acid Damage
+8,Aerosol,Radius (m),1,0.4,Aerosol,0,0.2,"Potion causes fumes to be emitted in a %fm radius, which last for 1d4 hours unless dissipated \n All those who touch the fumes: "
+9,Amnesia,Duration (hours),1,0.2,Memory,-1,0.1,forgets 3 pieces of information for %f hours
+10,Attract Animal,Points,0,1,AnimalAttract,1,0.6,gets %d bonus on animal persuasion checks for 1 day
+11,Awaken,Points,0,1,Sleep,-1,0.1,"awakens, overcoming %d hours of sleep effects."
+12,Babble,Duration (hours),1,0.1,Babble,1,0.1,babbles incoherently for %f hours
+13,Bad Luck,Duration (hours),1,0.3,Luck,-1,0.1,gets Check Disadvantage for %f hours
+14,Beautify,CHR increase,0,1,Beautify,1,0.1,becomes beautiful and gets %d CHR modifier for 2 hours
+15,Boils,Severity / 10,1,0.5,Smell,-1,0.1,suffers boils for %f hours
+16,Calm,Points,0,1,Calm,1,0.6,is Calmed for %d points
+17,Change Colour,Duration (hours),1,0.1,Change Colour,0,0.1,"changes colour for %f hourse (to decide colour, roll 1d6: 1=blue,2=green,3=red,4=black,5=white,6=purple)"
+18,Choke,Damage,0,1,Choke,1,0.6,chokes for %d necrotic damage
+19,Cold Resistance,Percentage,0,5,Heat,1,1,is %d%% resistant to Cold Damage for 1d4 hours
+20,Confusion,Duration (hours),1,0.1,Concentrate,-1,0.1,is Confused for %f hours
+21,Cure Boils,Points,1,0.3,Boils,-1,0.1,"is cured of boils, overcoming %f hours of boil-causing effects"
+22,Cure Confusion,Duration (hours),1,0.1,Concentrate,1,0.1,"is cured of Confusion, overcoming %f hours of confusion-causing effects"
+23,Damage FP,Points,0,1,Invigorate,-1,0.6,is drained of %d FP points
+24,Darkness,Radius (m),1,0.2,Glow,-1,0.5,absorbs all light in %f m radius
+25,Decrease AC,Points,0,1,Stoneskin,-1,0.33,has AC decreased by %d points
+26,Decrease Dexterity,Points,0,1,Steady Hand,-1,0.1,has Dexterity decreased by %d points for 1d4 hours
+27,Decrease Intelligence,Points,0,1,Concentrate,-1,0.1,has Intelligence decreased by %d points for 1d4 hours
+28,Decrease Perception,Points,0,1,Awareness,-1,0.1,has Perception decreased by %d points for 1d4 hours
+29,Decrease Speed,Points,0,1,Speed,-1,0.1,has Speed decreased by %d points for 1d4 hours
+30,Decrease Stealth,Points,0,1,Stealthy,-1,0.1,has Stealth decreased by %d points for 1d4 hours
+31,Decrease Strength,Points,0,1,Strengthen,-1,0.1,has Strength decreased by %d points for 1d4 hours
+32,Decrease Willpower,Willpower decrease,0,1,Brave,-1,0.1,has Willpower decreased by %d points for 1d4 hours
+33,Detonate,Radius (m),1,0.2,Explode,0,0.2,"Explodes in a %fm radius, dealing 1d20 concussive damage and 1d12 Fire Damage \n All those in range:"
+34,Enable Breathing,Duration (hours),1,0.1,Choke,-1,0.1,can go without oxygen for %f hours
+35,Enrage,Points,0,1,Calm,-1,0.6,is Enraged for %d points
+36,Euphoria,Duration (hours),1,0.2,Euphoria,1,0.1,is impossibly happy for %f hours
+37,Fire Resistance,Percentage,0,5,Heat,-1,1,is %d%% resistant to Fire Damage for 1d4 hours
+38,Friendly,Persuasion Increase,0,1,Like,1,0.1,believes the brewer is their friend. Brewer gets %d Persuasion bonus against target
+39,Glow,Radius (m),1,0.3,Glow,1,0.5,"glows brightly, illuminating a region %fm in radius"
+40,Good Luck,Duration (hours),1,0.1,Luck,1,0.1,gets Check Advantage for %f hours
+41,Grow,Percentage larger,0,5,Change Size,1,1,gets %d%% larger for 1d4 hours
+42,Hatred,Persuasion decrease,0,1,Like,-1,0.6,believes the brewer is their enemy. Brewer gets %d Persuasion penalty against target
+43,Heavy,Percentage larger,0,5,Change Weight,1,1,gets %d%% heavier for 1d4 hours
+44,Increase AC,Points,0,1,Stoneskin,1,0.333,has AC increased by %d points
+45,Increase Dexterity,Points,0,1,Steady Hand,1,0.1,has Dexterity increased by %d points for 1d4 hours
+46,Increase Intelligence,Points,0,1,Concentrate,1,0.1,has Intelligence increased by %d points for 1d4 hours
+47,Increase Perception,Points,0,1,Awareness,1,0.1,has Perception increased by %d points for 1d4 hours
+48,Increase Speed,Points,0,1,Speed,1,0.1,has Speed increased by %d points for 1d4 hours
+49,Increase Stealth,Points,0,1,Stealthy,1,0.1,has Stealth increased by %d points for 1d4 hours
+50,Increase Strength,Points,0,1,Strengthen,1,0.1,has Strength increased by %d points for 1d4 hours
+51,Increase Willpower,Willpower increase,0,1,Brave,1,0.1,has Willpower increased by %d points for 1d4 hours
+52,Insomnia,Duration (hours),1,5,Insomnia,0,2,cannot sleep for %d days
+53,Itch,Duration (hours),1,0.3,Itch,1,0.1,skin begins to itch uncontrollably for %d hours. Does 1d4 damage per hour.
+54,Lighten,Percentage smaller,0,5,Change Weight,-1,1,gets %d%% lighter for 1d4 hours
+55,Lust,Duration (hours),1,0.2,Lust,1,0.1,lusts after the brewer for %d hours
+56,Magic Resistance,Percentage,0,5,Magic,-1,1,is %d%% resistant to all magic for 1d4 hours
+57,Magic Weakness,Percentage,0,5,Magic,1,1,is %d%% weak to all magic for 1d4 hours
+58,Melancholy,Duration (hours),1,0.2,Euphoria,-1,0.1,is impossibly sad for %f hours
+59,Neutralise Acid,Damage,0,1,Acid,-1,0.6,is protected from %d acid damage for 1d6 hours
+60,Poison Damage,Points,0,1,Heal,-1,0.6,suffers %d poison damage
+61,Poison Resistance,Percentage,0,5,Antidote,1,1,"is %d%% resistant to Poison Damage for 1d4 hours, or may remove up to %d%% of previously acquired potion effect"
+62,Poison Weakness,Percentage,0,5,Antidote,-1,1,is %d%% weak to Poison Damage for 1d4 hours
+63,Polyjuice,Duration (minutes),0,2,Change Form,0,1,"transforms into another being if their DNA is added. Otherwise, transform randomly."
+64,Remembering,Points,0,1,Memory,1,0.6,gets %d bonus on memory checks
+65,Repel Animal,Points,0,1,AnimalAttract,-1,0.6,gets %d penalty on animal persuasion checks for 1 day
+66,Restore FP,Points,0,1,Invigorate,1,0.6,recovers %d FP points
+67,Restore HP,Points,0,1,Heal,1,0.6,recovers %d HP points
+68,Shrink,Percentage smaller,0,5,Change Size,-1,1,becomes %d%% smaller for 1d4 hours
+69,Silence,Duration (hours),1,0.1,Babble,-1,0.1,cannot talk for %d hours
+70,Sleep,Duration (hours),1,0.4,Sleep,1,0.5,falls asleep for %d hours
+71,Smell(bad),Severity / 10,1,0.5,Smell,1,0.1,smells good ($f/10) for 1d6 hours. Gains +2 persuasion bonus during that time.
+72,Smell(good),Severity / 10,1,0.5,Smell,-1,0.1,smells bad (%f/10) for 1d6 hours. Suffers -2 persuasion penalty during that time
+73,Soothe Skin,Points,0,1,Itch,-1,0.6,"protects against %d of itching damage, and prevents itching effect"
+75,Uglify,CHR decrease,0,1,Beautify,-1,0.1,becomes ugly and gets %d CHR penalty for 2 hours
+76,Vomit,Severity /5,1,0.5,Lust,-1,0.05,vomits uncontrollably (%d/5) for 1d4 hours
+77,Wolfsbane,Radius (m),1,0.5,Wolfsbane,1,0.1,Repels werewolves in a %fm radius

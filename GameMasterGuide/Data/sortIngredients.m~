@@ -1,0 +1,36 @@
+ings= readtable('ingredients.csv');
+ings = sortrows(ings);
+
+n = size(ings);
+
+for i = 1:n
+    id = beasts.IngredientID(i);
+    name = beasts.Name{i}
+    disp(name)
+    cat = beasts.Category(i);
+    
+    e1 = beasts.Effect1{i};
+    s1 = beasts.Strength1(i);
+    e2 = beasts.Effect2{i};
+    s2 = beasts.Strength2(i);
+    e3 = beasts.Effect3{i};
+    s3 = beasts.Strength3(i);
+    e4 = beasts.Effect4{i};
+    s4 = beasts.Strength4(i);
+    es = {e1, e2, e3, e4};
+    ss = [s1 s2 s3 s4];
+    
+    trueEs = cell(1,sum(~isnan(ss)));
+    trueSs = zeros(1,sum(~isnan(ss)));
+    c = 1;
+    for j = 1:length(es)
+       if length(es{j}) > 1 && ~isnan(ss(j))
+           trueEs{c} = es{j};
+           trueSs(c) = ss(j);
+           c = c+1;
+       end
+    end
+    [sortedTrueEs,I] = sort(trueEs)
+    trueSs
+    
+end

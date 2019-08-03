@@ -1,0 +1,11 @@
+ID;Effects;Text
+0;Potion Explodes;The potion detonates unexpectedly
+1;No Effect;
+2;Hidden Effects;cannot discern the effects of the potion, even with magic
+3;Hair White;has their hair turned white by the fumes
+4;Broadcast telepathy;broadcasts their thoughts to everyone for 2 hours
+5;Spell Amnesia;forgets 1d4 spells for 1 hour, or 1 spell permanently (GM choice)
+6;Rhyme Speak;must talk in rhyme for 1 hour (includes player!)
+7;False Life;gets + 10 health for 1 hour, but then loses 20
+8;Acidic Fumes;suffers 1d8 acid damage from the fumes
+9;Addictive;Becomes addicted to this potion. Permanent -1 INT decrease for every day that potion is not consumed.

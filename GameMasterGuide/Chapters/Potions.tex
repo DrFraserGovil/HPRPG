@@ -1,0 +1,175 @@
+\documentclass[GMGuide.tex]{subfile}
+
+\chapter{Potions \& Ingredients}	
+
+As per the Core Rulebook, potion mixing occurs when a player places a number of alchemical ingredients into a cauldron, and performs a 1d20 INT (arcane) check, along with any related bonuses.
+
+The check difficulty, and the resulting potion effects are determined by the ingredients that they place into the cauldron.
+
+Each ingredient has up to 4 individual effects, each with an associated strength (which may be negative). Mixing ingredients with effects in common results in more powerful potions with that effect. 
+
+Because of this setup, there are many different ways to mix any given potion -- so a strict recipe is not necessary. Players may find that experimentation and intuition will help them craft powerful potions. However, they may wish to learn some concrete recipes, so some basic recipes are provided below:
+
+
+\section{Determining the Effects of a Potion}
+
+There are two ways to determine the effects of a potion -- either the GM can manually observe any cross-matches in the noted effects of the selected ingredients, and then use GM fiat to decide what the most logical outcome of the potion should be.  Alternatively, a python script, \verb|mixer.py| has been provided that calculates this for you, taking into account the dice roll and any catalysts in the mixture. To load \verb|mixer|, open a python terminal and navigate to the directory in which \verb|mixer.py| is saved. Then type:
+\begin{verbatim}
+	import mixer as mix
+\end{verbatim}
+This loads in the \verb|mixer| module into the current python environment. You may then call the mixing command by typing:
+\begin{verbatim}
+	mix.potion( [id1,id2,...], check)
+\end{verbatim}
+The square brackets contain an array (separated by commas) of the ID numbers of the ingredients that are being mixed. Between 2 and 5 non-repeated ingredients may be added. \verb|check| is a positive integer that represents the total potion-making check (including bonuses and proficiencies). For example, to mix a Wiggenweld potion with a roll of 16 and an INT bonus of 2, we would type:
+
+\def\wiggenID{112}
+\def\dittanID{27}
+\def\horkID{54}
+\begin{verbatim}
+	>>> mix.potion([112,27,54],18)
+=============================================================================================
+Mixing potion with ingredients:  Wiggentree Bark,  Dittany,  Horklump Juice,  with a roll of 18
+
+   The drinker of the potion:
+                 + recovers 30 HP points
+=============================================================================================
+\end{verbatim}
+
+\verb|mixer| also takes into account any particularly good or bad rolls. If you roll below the combined mixing difficulty of the ingredients, it starts adding in random bad effects. These bad effects often affect the brewer of the potion, rather than effects in the potion itself. For example, if we had rolled only a 4 for the Wiggenweld potion, we would find:
+\begin{verbatim}
+>>> mix.potion([112,27,54],6)
+===============================================================================================
+Mixing potion with ingredients:  Wiggentree Bark,  Dittany,  Horklump Juice,  with a roll of 6
+
+   The brewer of the potion:
+        +Becomes addicted to this potion. Permanent -1 INT decrease for every day that potion is not consumed.
+   The drinker of the potion:
+        + recovers 12 HP points
+================================================================================================
+\end{verbatim}
+\section{Some Recipes}
+
+\begin{center}
+\begin{tabular}{|c||c|c|c|c|}
+\hline
+\bf Name		&		\bf Ingredient		&\bf 		Ingredient		&		\bf Ingredient		&\bf 	Effect
+\\ \hline
+\bf  Wiggenweld Potion	&	Wiggenweld Bark	&	Dittany		&		Horklump Juice		&	Restore HP
+\\
+\bf Pepperup Potion	&	Chizpurfle Fang		&	Honeywater		&	Tea Leaf	& Restore FP
+\\
+\bf Heart-Stopping Potion	&	Venemous Tentacula	&	Hellbore	&	Nightshade	& Poison Damage
+\\
+\bf Draught of Living Death	&	Wormwood		&   Asphodel	&	Sloth Brain	&	Sleep
+\\
+\bf Amortentia		&	Ashwinder Eggs		&		Rose Petals		&		Nightshade		& Love Potion
+\\
+\bf Antidote to Common Poisons	&	Bezoar	&	Mandrake Root	&	Sea Serpent Spine	&	Antidote/Resist Poison
+\\
+\hline 
+\end{tabular}
+\end{center}
+
+\section{Ingredient List}
+\def\p{1.5}
+\def\q{2.87}
+\def\s{1}
+\def\r{0.6}
+\def\t{-1}
+\def\u{0.4}
+
+\newcommand{\effects}[8]
+{
+	Effects:
+	\def\tab{~~~}
+	
+	 \def\catcherone{#2}
+	 \def\catchertwo{#4}
+	 \def\catcherthree{#6}
+	 \def\catcherfour{#8}
+	 \if\catcherone0
+	 	%do nothing
+	\else
+		\tab#1 (#2)
+	\fi
+	
+	\if\catchertwo0
+	 	%do nothing
+	\else
+		\tab#3 (#4)
+	\fi
+	
+	\if\catcherthree0
+	 	%do nothing
+	\else
+		\tab#5 (#6)
+	\fi
+	
+	\if\catcherfour0
+	 	%do nothing
+	\else
+		\tab#7 (#8)
+	\fi
+}
+\newcommand{\dndline}{%
+  \noindent
+  \begin{tikzpicture}[]
+    \draw [linecol, fill=linecol] (0, 0) --(0,0.1) -- ({\textwidth}, 0.05);
+  \end{tikzpicture}%
+  \par%
+}
+\newcommand{\ingredient}[7]
+{
+	\def\mode{#3}
+	
+	\if\mode0
+		\definecolor{backcol}{HTML}{1C5816}
+		\definecolor{linecol}{HTML}{22741A}
+	\fi
+	\if\mode1
+		\definecolor{backcol}{HTML}{58180D}
+		\definecolor{linecol}{HTML}{9C2B1B}
+		
+	\fi
+	\if\mode2
+		\definecolor{backcol}{HTML}{656764}
+		\definecolor{linecol}{HTML}{BDBDBD}
+	\fi
+	\begin{tcolorbox}[  before skip=0pt,
+	  boxrule=0pt,
+	  boxsep=0pt,
+	  toptitle=3pt,
+	  left=8pt,
+	  right=1pt,
+	  bottom=1pt,
+	  arc=0.5mm,
+	  oversize=0pt,
+	  colback=white,
+	 colbacktitle=backcol,
+	colframe=backcol, title=\vspace{-4ex}
+	]
+		
+		\parbox[c]{\q cm}{\centering \bf #1: #2}
+
+		\vspace{0.3ex}
+		
+		\dndline
+		
+		\effects#4
+		
+		
+		\dndline
+	
+		{\raggedright Cost: #5     \\ Mixing Difficulty: #6}
+		
+		\dndline
+		\parbox[t]{\q cm}{\raggedright #7}
+		\vspace{1.4 ex}
+		
+	\end{tcolorbox}
+}
+\scriptsize
+%%IngBegin
+\begin{longtable}{p{\q cm}p{\t cm}p{\q cm}p{\t cm}p{\q cm}p{\t cm}p{\q cm}p{\t cm}p{\q cm}p{\t cm}p{\q cm}p{\t cm}}\ingredient{0}{Abyssinian Shrivelfig}{0}{{Aerosol}{2}{Change Form}{2}{Change Size}{-6}{Euphoria}{4} }{ 30}{7}{A purple fruit found in the African desert. Dries up and shrinks when picked.}&~&\ingredient{1}{Aconite}{0}{{Heal}{-3}{Sleep}{-5}{SteadyHand}{-2}{Wolfsbane}{5} }{ 2}{2}{A poisonous blue plant with the ability to awaken sleeping beings.}&~&\ingredient{2}{Acromantula Venom}{1}{{Change Size}{-1}{Concentrate}{-6}{Heal}{-10}{Sleep}{-3} }{ 100}{9}{Thick, black venom of the giant spiders. Very rare and potent.}&~&\ingredient{3}{Alihotsy Leaves}{0}{{Change Weight}{-2}{Euphoria}{7}{Insomnia}{1}{Invigorate}{3} }{ 3}{3}{Consuming these speckled leaves results in uncontrollable laughter}&~&\ingredient{4}{Antimony}{2}{{Beautify}{5}{Change Form}{3}{Invigorate}{-2}{SteadyHand}{-2} }{ 8}{4}{A silver metal used as a cosmetic throughout muggle history}&~&\ingredient{5}{Ash}{2}{{Acid}{-2}{Catalyse}{3}{Choke}{4}{Glow}{-3} }{ 1}{2}{Burned and blackened organic matter.} \\ \ingredient{6}{Ashwinder Eggs}{1}{{Glow}{3}{Heat}{6}{Luck}{2}{Lust}{4} }{ 40}{6}{Eggs of a fire-snake. They are red-hot, and are renowned in love potions.}&~&\ingredient{7}{Asphodel}{0}{{Babble}{-6}{Calm}{5}{Heal}{3}{Sleep}{2} }{ 2}{3}{A mundane member of the lily family, used in sleeping potions}&~&\ingredient{8}{Basilisk Venom}{1}{{Acid}{7}{Calm}{-7}{Heal}{-10}{Sleep}{-6} }{ 120}{9}{Potent purple venom from the fangs of a monstrous snake.}&~&\ingredient{9}{Bezoar}{1}{{Antidote}{10}{Catalyse}{-8}{Change Weight}{4}{Magic}{-2} }{ 8}{4}{A hard, brown lump formed in the stomach of a goat. }&~&\ingredient{10}{Bicorn Horn}{1}{{Change Form}{8}{Invigorate}{5}{Luck}{-5}{}{0} }{ 15}{6}{The golden horn of a legendary beast, with many properties.}&~&\ingredient{11}{Billywig Sting}{1}{{Antidote}{-3}{Change Weight}{-8}{Euphoria}{8}{Invigorate}{3} }{ 0}{3}{The venom inside causes giddiness and levitation.} \\ \ingredient{12}{Boomberry}{0}{{Catalyse}{-3}{Explode}{3}{Glow}{-3}{SteadyHand}{-3} }{ 0}{1}{A small brown nut that explodes when disturbed.}&~&\ingredient{13}{Boomslang Skin}{0}{{Beautify}{-4}{Change Colour}{4}{Change Form}{8}{Heal}{-3} }{ 0}{2}{The brown, sloughed of skin of a nonmagical snake.}&~&\ingredient{14}{Bowtruckle Thorn}{1}{{Itch}{1}{Like}{4}{SteadyHand}{6}{Stealthy}{3} }{ 0}{4}{Living green wood harvested from the forest-dweller}&~&\ingredient{15}{Bubotuber Juice}{0}{{Babble}{-3}{Boils}{4}{Smell}{-3}{Strengthen}{2} }{ 0}{6}{White  sap from the magic tree causes boils on contact.}&~&\ingredient{16}{Bulbadox Powder}{0}{{Boils}{5}{Catalyse}{3}{Explode}{3}{Itch}{8} }{ 0}{2}{Volatile orange powder capable of causing boils and itching}&~&\ingredient{17}{Bundium Fluid}{1}{{Acid}{9}{Invigorate}{4}{Lust}{-6}{Smell}{-7} }{ 0}{3}{A powerfully acidic, foul smelling grey secretion.} \\ \ingredient{18}{Caterpillar}{1}{{Change Form}{3}{Change Size}{3}{Heal}{3}{Memory}{-3} }{ 0}{1}{Pupae form of a butterfly. A variety of species and colours.}&~&\ingredient{19}{Centaur Hoof}{1}{{Awareness}{7}{Concentrate}{7}{Invigorate}{3}{Memory}{6} }{ 0}{5}{Shavings from the hoof is said to contain the wisdom of the mystical people.}&~&\ingredient{20}{Chizpurfle Carapace}{1}{{Antidote}{-5}{Magic}{-6}{Stoneskin}{6}{}{0} }{ 0}{3}{A hard, blue shell that is very difficult to prepare.}&~&\ingredient{21}{Chizpurfle Fang}{1}{{Catalyse}{8}{Invigorate}{9}{Luck}{3}{Lust}{1} }{ 0}{8}{The fang of the magic-absorbing insects is a powerful restorative.}&~&\ingredient{22}{Copper}{2}{{Change Colour}{3}{Itch}{-2}{Magic}{3}{Stoneskin}{2} }{ 0}{1}{An chemical element with many intruiging properties.}&~&\ingredient{23}{Daisy}{0}{{Brave}{2}{Change Colour}{2}{Glow}{3}{Smell}{1} }{ 0}{1}{A small white and yellow flower familiar to muggles.} \\ \ingredient{24}{Dementor Cloak}{1}{{Brave}{-10}{Heat}{-7}{Insomnia}{4}{Invigorate}{-8} }{ 0}{7}{A cutting from the cloak of a dementor. Oozes cold, and saps your will.}&~&\ingredient{25}{Demiguise Hair}{1}{{AnimalAttract}{6}{Change Colour}{8}{Like}{5}{Stealthy}{10} }{ 0}{5}{An invisible strand of hair, with many beneficial properties.}&~&\ingredient{26}{Diricawl Feather}{1}{{Awareness}{5}{Invigorate}{3}{Memory}{2}{Speed}{7} }{ 0}{7}{A purple feather that teleports 1cm to the left every few minutes.}&~&\ingredient{27}{Dittany}{0}{{Calm}{4}{Heal}{8}{Invigorate}{2}{Sleep}{2} }{ 0}{3}{A mundane green leaf with powerful healing properties.}&~&\ingredient{28}{Doxy Eggs}{1}{{Brave}{-2}{Heal}{-4}{Lust}{2}{Magic}{6} }{ 0}{4}{The nright blue eggs of the doxy are mildly poisonous. }&~&\ingredient{29}{Doxy Venom}{1}{{Babble}{1}{Concentrate}{-7}{Heal}{-3}{Memory}{-2} }{ 0}{3}{This clear fluid deeply affects the brain of the victim.} \\ \ingredient{30}{Dragon Blood}{1}{{Acid}{3}{Explode}{5}{Heat}{8}{Lust}{8} }{ 0}{7}{Dumbledore is said to have discovered 12 uses for this scarlet substance.}&~&\ingredient{31}{Dragon Claw}{1}{{AnimalAttract}{-5}{Antidote}{8}{Concentrate}{7}{Magic}{-6} }{ 0}{7}{The powdered claw of a dragon is said to provide a potent brain-boost.}&~&\ingredient{32}{Dragon Fire Gland}{1}{{Aerosol}{6}{Calm}{-5}{Glow}{5}{Heat}{6} }{ 0}{7}{The red-hot glands that sit inside the mouth of a dragon, responsible for their fire-breathing.}&~&\ingredient{33}{Dragon Liver}{1}{{Catalyse}{9}{Heat}{7}{Insomnia}{4}{Invigorate}{10} }{ 0}{8}{The liver of a dragon takes on the qualities of the food that the dragon eats.}&~&\ingredient{34}{Dugbog Bark}{1}{{AnimalAttract}{2}{Change Weight}{3}{Heal}{3}{Stoneskin}{7} }{ 0}{3}{Very dense wood-like material from the back of a dugbog.}&~&\ingredient{35}{Erumpet Horn}{1}{{Catalyse}{12}{Explode}{10}{Luck}{4}{Magic}{-8} }{ 0}{8}{A grey, twisted horn that has a nasty habit of exploding.} \\ \ingredient{36}{Fairy Wings}{1}{{Antidote}{-3}{Awareness}{2}{Beautify}{6}{Change Weight}{3} }{ 0}{4}{Fairies regrow their iridescent wings regularly, though fresh-plucked wings are the most potent.}&~&\ingredient{37}{Fire Crab Shell}{1}{{Glow}{1}{Heat}{6}{Lust}{7}{Stoneskin}{8} }{ 0}{5}{A jewel-encrusted ruby shell that occaisionally emits a gout of flame.}&~&\ingredient{38}{Fire Seed}{0}{{Awareness}{6}{Calm}{-8}{Heat}{4}{Lust}{6} }{ 0}{4}{A seed that burns with a hot flame whilst growing. Takes hours to cool once picked.}&~&\ingredient{39}{Flobberworm Mucous}{1}{{Acid}{-3}{Calm}{6}{Catalyse}{-10}{Strengthen}{-2} }{ 0}{1}{The green-grey goo extruded by the most useless of creatures.}&~&\ingredient{40}{Fluxweed}{0}{{Change Form}{7}{Choke}{3}{Euphoria}{-1}{Heal}{4} }{ 0}{3}{A magical plant known for its healing and transformative properties.}&~&\ingredient{41}{Frost Salamander Blood}{1}{{Catalyse}{-5}{Euphoria}{4}{Heat}{-10}{Memory}{-3} }{ 0}{7}{The ice-cold blood of the frost salamander, a pleasant sky-b lue colour.} \\ \ingredient{42}{Galanthus Nivalis}{0}{{AnimalAttract}{-2}{Catalyse}{3}{Heal}{-2}{Memory}{6} }{ 0}{3}{A mundane herb known for its memory-inducing effects.}&~&\ingredient{43}{Gillyweed}{0}{{Babble}{-8}{Choke}{-10}{Concentrate}{-2}{Smell}{-6} }{ 0}{4}{A magical plant with the ability to confer the consumer with gills.}&~&\ingredient{44}{Ginger Root}{0}{{Awareness}{5}{Concentrate}{4}{Invigorate}{4}{Smell}{3} }{ 0}{2}{A pleasant smelling plant and foostuff. Gives life a bit of zing.}&~&\ingredient{45}{Glumbumble Treacle}{1}{{Babble}{-7}{Calm}{5}{Euphoria}{-10}{Speed}{-3} }{ 0}{6}{A melancholy inducing substance that looks like pink honey.}&~&\ingredient{46}{Gold}{2}{{Beautify}{6}{Change Form}{2}{Stealthy}{-5}{Strengthen}{3} }{ 0}{2}{A rare and lustrous metal. The goal of alchemists throughout history.}&~&\ingredient{47}{Graphorn Horn}{1}{{Antidote}{6}{Heal}{5}{Luck}{-6}{Stoneskin}{-8} }{ 0}{6}{The horn of the dangerous graphorn. Very difficult to obtain, but powerful.} \\ \ingredient{48}{Griffin Claw}{1}{{Brave}{7}{Catalyse}{3}{Concentrate}{4}{Memory}{3} }{ 0}{6}{A magic raptor-like claw. Said to confer its great intelligence to the owner.}&~&\ingredient{49}{Grindylow Claw}{1}{{Change Size}{-3}{Choke}{6}{Heat}{-4}{SteadyHand}{6} }{ 0}{4}{A grey talon used by the creature to suffocate its victims.}&~&\ingredient{50}{Hellebore}{0}{{Calm}{-4}{Heal}{-3}{Insomnia}{7}{Sleep}{-7} }{ 0}{2}{A poisonous plant that interferes with sleep.}&~&\ingredient{51}{Hemlock Essence}{0}{{Antidote}{-4}{Concentrate}{-5}{Heal}{-6}{Magic}{3} }{ 0}{3}{A well known poison, known for its purple hue.}&~&\ingredient{52}{Hippocampus Hair}{1}{{Beautify}{3}{Calm}{3}{Choke}{-4}{Memory}{7} }{ 0}{7}{This multicoloured hair is said to help the memory.}&~&\ingredient{53}{Honeywater}{2}{{Awareness}{-2}{Catalyse}{-7}{Itch}{-7}{Strengthen}{-1} }{ 0}{2}{A dilute form of honey. Useful as a potion base.} \\ \ingredient{54}{Horklump Juice}{0}{{Calm}{-2}{Heal}{5}{Luck}{1}{Smell}{-2} }{ 0}{5}{The deep red juice of the horklump is a healing agent.}&~&\ingredient{55}{Iron}{2}{{Heat}{-1}{Like}{-1}{Stoneskin}{3}{Strengthen}{3} }{ 0}{3}{A plentiful, hard metal. Used as a base in alchemy.}&~&\ingredient{56}{Jarvey Fang}{1}{{Babble}{7}{Concentrate}{2}{Euphoria}{1}{Invigorate}{3} }{ 0}{6}{A curved fang containing a venom that causes involuntary babbling.}&~&\ingredient{57}{Jobberknoll Feather}{1}{{Babble}{6}{Memory}{10}{Sleep}{-2}{Stealthy}{-3} }{ 0}{7}{This black feather forces the bearer to relive their memories in exquisite detail.}&~&\ingredient{58}{Kelpie Hair}{1}{{Change Colour}{2}{Change Form}{2}{Choke}{5}{Heat}{-5} }{ 0}{4}{The grey hair of the shapeshifter retains some of this magic.}&~&\ingredient{59}{Kneazle Claw}{1}{{Acid}{1}{AnimalAttract}{2}{Awareness}{9}{Memory}{3} }{ 0}{7}{When powdered, increases the consumer{\apos}s perception enormously.} \\ \ingredient{60}{Lavender}{0}{{Brave}{3}{Calm}{8}{Concentrate}{7}{Smell}{6} }{ 0}{2}{A pleasant smelling purple plant with powerful calming effects.}&~&\ingredient{61}{Leeches}{1}{{Change Form}{6}{Change Size}{2}{Heal}{3}{Lust}{-2} }{ 0}{2}{Animals that feed off blood. Powerful healing properties, but gross.}&~&\ingredient{62}{Lemon Juice}{0}{{Acid}{5}{Heal}{3}{Luck}{-1}{Speed}{2} }{ 0}{2}{Cloudy, acidic juice with healing properties.}&~&\ingredient{63}{Lethe River Water}{2}{{Awareness}{-4}{Concentrate}{-8}{Lust}{-4}{Memory}{-10} }{ 0}{9}{Water from a magic river. A powerful amnesiac.}&~&\ingredient{64}{Lobalug Venom}{1}{{Concentrate}{-2}{Heal}{-2}{Heat}{-2}{Speed}{-3} }{ 0}{4}{This white fluid is a mild poison, often used to amplify other ingredients.}&~&\ingredient{65}{Lovage}{0}{{Concentrate}{-2}{Heal}{-2}{Lust}{-2}{Memory}{-4} }{ 0}{3}{A mundane plant with nausea inducing qualities.} \\ \ingredient{66}{Mackled Malaclaw Tail}{1}{{Heat}{-2}{Luck}{-8}{Magic}{-6}{SteadyHand}{9} }{ 0}{7}{A powerful iridescent blue ingredient, useful but unstable.}&~&\ingredient{67}{Mallowsweet}{0}{{Awareness}{4}{Beautify}{4}{Invigorate}{7}{Luck}{2} }{ 0}{5}{The yellow berries of this plant have many beneficial properties.}&~&\ingredient{68}{Mandrake Root}{0}{{Antidote}{8}{Catalyse}{4}{Heal}{7}{Sleep}{4} }{ 0}{7}{Trimmings from a sentient plant that act as a powerful antidote.}&~&\ingredient{69}{Manticore Skin}{1}{{Antidote}{-6}{Awareness}{-6}{Lust}{7}{Magic}{-10} }{ 0}{10}{The manticore{\apos}s magic resistance resides within its tanned skin.}&~&\ingredient{70}{Mercury}{2}{{Change Form}{8}{Concentrate}{-7}{Invigorate}{-7}{Luck}{8} }{ 0}{4}{A liquid silver metal that is constantly changing shape and form. }&~&\ingredient{71}{Mint}{0}{{Acid}{-1}{Beautify}{4}{Euphoria}{3}{Smell}{5} }{ 0}{2}{A pleasant smelling and tasting herb. Fresh!} \\ \ingredient{72}{Moke Skin}{1}{{Awareness}{4}{Change Size}{-6}{Stoneskin}{-6}{}{0} }{ 0}{4}{A green scaled pouch that shrinks at the sign of approaching danger.}&~&\ingredient{73}{Moly}{0}{{Awareness}{8}{Beautify}{5}{Heal}{7}{Luck}{10} }{ 0}{9}{A golden, glowing plant that helps to heal the wounded and break curses.}&~&\ingredient{74}{Mooncalf Tears}{1}{{Boils}{-2}{Glow}{2}{Like}{9}{Luck}{1} }{ 0}{4}{Glowing fluid that seems to calm you down just by looking at it.}&~&\ingredient{75}{Moondew}{2}{{Catalyse}{-6}{Glow}{-8}{Heal}{1}{Stoneskin}{-2} }{ 0}{3}{Dew gathered at midnight on a new moon. Absorbs all light that hits it.}&~&\ingredient{76}{Moonstone}{2}{{Antidote}{5}{Explode}{2}{Glow}{5}{Lust}{3} }{ 0}{3}{A gemstone of unknown provenance. Glows with an inner light.}&~&\ingredient{77}{Murtlap Tentacles}{1}{{Heal}{3}{Invigorate}{4}{Itch}{-6}{SteadyHand}{7} }{ 0}{4}{The pink tentacles have a soothing effect on the skin.} \\ \ingredient{78}{Nettles}{0}{{Beautify}{-2}{Choke}{2}{Heal}{2}{Itch}{7} }{ 0}{2}{Stinging plant, but has restorative properties when brewed.}&~&\ingredient{79}{Newt Eye}{1}{{Beautify}{-5}{Catalyse}{-6}{Choke}{-6}{Like}{-7} }{ 0}{3}{A classic potion ingredient, these black orbs can halt the explosion of a potion.}&~&\ingredient{80}{Niffler Fang}{1}{{Brave}{-6}{Like}{8}{SteadyHand}{8}{Stealthy}{8} }{ 0}{6}{A small white fang that excudes mischief.}&~&\ingredient{81}{Nightshade}{0}{{Beautify}{8}{Concentrate}{-2}{Heal}{-7}{Lust}{8} }{ 0}{3}{A poisonous purple flower, used as a cosmetic by muggles throughout history.}&~&\ingredient{82}{Nogtail Trotter}{1}{{Boils}{1}{Calm}{-1}{Luck}{-6}{Speed}{10} }{ 0}{6}{The foot of the nogtail makes one as fleet as the beast itself.}&~&\ingredient{83}{Nundu Venom Sac}{1}{{Aerosol}{10}{Brave}{5}{Heal}{-10}{Magic}{-10} }{ 0}{10}{A black lump of flesh responsible for producing the poisonous aura of the nundu. } \\ \ingredient{84}{Occamy Egg}{1}{{Change Size}{7}{Luck}{-4}{Speed}{3}{Stoneskin}{8} }{ 0}{7}{Seemingly made of solid silver, yet constantly growing in size.}&~&\ingredient{85}{Octopus Powder}{1}{{Boils}{-1}{Catalyse}{7}{Lust}{-5}{}{0} }{ 0}{4}{A disgusting orange powder, but a powerful catalyst.}&~&\ingredient{86}{Owl Feather}{1}{{AnimalAttract}{2}{Change Weight}{-6}{SteadyHand}{3}{Wolfsbane}{2} }{ 0}{3}{Proximity to wizards mean that an owls feathers pick up many properties.}&~&\ingredient{87}{Pearl Dust}{2}{{Beautify}{4}{Heal}{3}{Like}{8}{Magic}{-1} }{ 0}{6}{A lustrous powder that gleams with positive energy.}&~&\ingredient{88}{Peppermint}{0}{{Aerosol}{3}{Brave}{4}{Sleep}{-3}{Smell}{4} }{ 0}{2}{A more potent form of mint, produces gas when immersed in acid.}&~&\ingredient{89}{Pheonix Feather}{1}{{Antidote}{10}{Brave}{10}{Heal}{10}{Luck}{4} }{ 0}{8}{A scarlet feather with many wonderful magical properties. } \\ \ingredient{90}{Pogrebin Shell}{1}{{Calm}{-8}{Change Form}{6}{Change Weight}{7}{Stoneskin}{8} }{ 0}{6}{A lump of hardened flesh that resembles stone. Exudes an ominous aura.}&~&\ingredient{91}{Pungent Onion}{0}{{Brave}{-4}{Luck}{3}{Smell}{-10}{SteadyHand}{2} }{ 0}{3}{A bright green onion with a powerfully repulsive odour.}&~&\ingredient{92}{Quintaped Leg}{1}{{Awareness}{-5}{Beautify}{-6}{Calm}{-10}{Change Form}{4} }{ 0}{9}{A brown, hairy leg from a magic abomination. Filled with hatred and power.}&~&\ingredient{93}{Re{\apos}em Blood}{1}{{Calm}{-7}{Like}{-2}{Speed}{-4}{Strengthen}{10} }{ 0}{8}{A vibrant yellow fluid that imbues the drinker with immense strength.}&~&\ingredient{94}{Rose Petals}{0}{{Antidote}{3}{Like}{5}{Lust}{7}{Smell}{4} }{ 0}{1}{Red petals that exude lust. }&~&\ingredient{95}{Runespoor Egg}{1}{{Concentrate}{9}{Euphoria}{3}{Invigorate}{8}{Luck}{-4} }{ 0}{7}{Deep blue eggs with an orange aura, they are said to focus the mind} \\ \ingredient{96}{Salamander Blood}{1}{{Catalyse}{8}{Explode}{3}{Heat}{7}{Invigorate}{3} }{ 0}{2}{Bright red fluid that emits huge amounts of heat. A powerful catalyst. }&~&\ingredient{97}{Sea Serpent Spine}{1}{{Antidote}{3}{Heal}{-3}{Heat}{-3}{Speed}{-4} }{ 0}{4}{Shed from the fins of aquatic beasts, these spines are used by poisoners worldwide.}&~&\ingredient{98}{Silver}{2}{{Beautify}{2}{Change Colour}{3}{Strengthen}{-2}{Wolfsbane}{10} }{ 0}{1}{A rare and lustrous metal, second only to gold in its value. Feared by the undead.}&~&\ingredient{99}{Sloth Brain}{1}{{Awareness}{-4}{Brave}{-2}{Sleep}{9}{Speed}{-8} }{ 0}{8}{The diced brain of a sloth is said to contain the essence of the being.}&~&\ingredient{100}{Slug Slime}{1}{{Acid}{-6}{AnimalAttract}{-3}{Catalyse}{-5}{Speed}{-8} }{ 0}{1}{Horned slugs produce an acidic green-grey fluid that slow their targets down. }&~&\ingredient{101}{Sphinx Saliva}{1}{{Acid}{9}{Concentrate}{7}{Heat}{-10}{Magic}{-10} }{ 0}{9}{Used to keep the sphynx cool in the hot deserts, this fluid is also incredibly acidic.} \\ \ingredient{102}{Stinksap}{0}{{Catalyse}{3}{Concentrate}{3}{Heal}{-2}{Smell}{-6} }{ 0}{4}{A foul smelling green sap that permeates all surfaces it touches.}&~&\ingredient{103}{Styx River Water}{2}{{Calm}{-6}{Like}{-8}{Stoneskin}{9}{Strengthen}{7} }{ 0}{8}{Water from a magic river. Gives the drinker protection, but they fly into a rage.}&~&\ingredient{104}{Tea Leaf}{0}{{Awareness}{9}{Brave}{3}{Invigorate}{8}{Sleep}{-6} }{ 0}{1}{A muggle plant that awakens the brain, and broadens the senses. Good with milk.}&~&\ingredient{105}{Tormentil Tincture}{0}{{Calm}{3}{Heal}{5}{Itch}{-6}{Lust}{2} }{ 0}{4}{A bright yellow fluid extracted from a plant known for its soothing properties.}&~&\ingredient{106}{Troll Snot}{1}{{Boils}{2}{Concentrate}{-8}{Speed}{-2}{Strengthen}{6} }{ 0}{5}{A thick grey goo that dulls the senses, but bolsters the muscles.}&~&\ingredient{107}{Unicorn Blood}{1}{{Beautify}{-6}{Heal}{10}{Luck}{-10}{Magic}{-7} }{ 0}{8}{Visibly similar to mercury, the blood of a unicorn carries a powerful curse.} \\ \ingredient{108}{Unicorn Hair}{1}{{Beautify}{6}{Brave}{3}{Euphoria}{6}{Glow}{3} }{ 0}{5}{A pure-white hair with many beneficial properties, if taken politely.}&~&\ingredient{109}{Valerian}{0}{{Concentrate}{-2}{Heal}{3}{Itch}{2}{Sleep}{6} }{ 0}{4}{A sleep-inducing plant. Poisonous in high concentrations.}&~&\ingredient{110}{Venemous Tentacula }{0}{{Heal}{-6}{Memory}{-3}{Speed}{-6}{Stealthy}{-3} }{ 0}{7}{A green goo formed from the mashed plant. Highly toxic.}&~&\ingredient{111}{Wartcap Powder}{0}{{Boils}{-3}{Choke}{4}{Explode}{3}{Like}{-4} }{ 0}{4}{A sickly yellow powder that causes boils and rashes to break out.}&~&\ingredient{112}{Wiggentree Bark}{0}{{Acid}{-1}{Brave}{-1}{Calm}{5}{Heal}{8} }{ 0}{2}{A thick lump of bark from a magical tree. Powerful restorative properties.}&~&\ingredient{113}{Wormwood}{0}{{Heal}{-1}{Heat}{-3}{Sleep}{9}{Wolfsbane}{3} }{ 0}{7}{A calming, healing plant that helps you drift off to sleep.} \\ \end{longtable}%%IngEnd
+\normalsize
