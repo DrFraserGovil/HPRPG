@@ -1,0 +1,212 @@
+\documentclass[CoreRulebook.tex]{subfile}
+
+
+\chapter{Character Creation}
+
+The most important step in playing the game is to create your own character. Your character can be whatever or whoever you want it to be. The following should serve as a guide to building a well-rounded and interesting player character. If you want to diverge from the ideas laid out here, you may be able to come to an agreement with your GM. 
+\vspace{-2ex}
+
+\section{Main Attributes}
+
+Attributes are the defining characteristics of your character. They define how strong willed, how athletic and how popular your character is. These characteristics in turn define how good your character is at certain skills -- a character with a large willpower, for instance, will be good at combat magic, whilst a character with a low athleticism would find themselves unable to run away from threats!
+
+\begin{itemize}
+\item Athleticism (ATH):  Your character{\apos}s ability to exert themselves physically; to run, jump and deal physical attacks. Athletic characters are often harder to kill, and able to recover more quickly from wounds. 
+
+\item     Finesse (FIN): Your character{\apos}s ability to execute actions with delicacy and precision. Picking pockets, hiding and casting spells in an unusual fashion require finesse in order to execute properly. 
+  \item Spirit (SPR): Your character{\apos}s ability to face down external threats without flinching, to be sure of themselves, and to resist when the odds are against them. A character with a large spirit can often resist the effects of mind-altering spells, and can summon the strength to carry on when all others would have submitted. Typically considered the defining characteristic of Gryffindor House. 
+    \item Charisma (CHR): The ability of a leader, and those who influence others. Charisma helps your character convince others of what you say, and make them like and trust you. Charisma also helps cast magic that alters their perception of reality, allowing you to convince them that it is real. A trait typically associated with Slytherin House.
+   \item Intelligence (INT): Intelligence lets your character know that what they are doing is indeed the correct way forward. Though not always a substitute for raw magical power, an intelligent character learns spells more quickly, and can often be helpful in identifying threats (and their weak points). Typically considered the defining trait of Ravenclaw House.
+    \item Empathy (EMP): Empathy allows your character to understand other characters, to identify when something is wrong, and to be able to help. Empathy is often required for healing and protective magics. Though often mocked by dark wizards throughout history, it is empathetic magic -- love -- that has often conquered the most evil characters in history. Typically a trait associated with Hufflepuff House.
+    \item Power (POW): Sometimes you don{\apos}t want to levitate a single brick our of a wall: you want the wall to explode. When finesse and trickery fail, throwing huge amounts of magical power at a problem can sometimes be beneficial. Some of the most spectacular magics require a large power,  but when a powerful spell goes wrong, the effects can be devastating and unforeseeable. 
+   \item  Evil (EVL): Evil characters commit atrocities in the name of furthering their own goals. They will go to any lengths to get what they desire, including killing, maiming and torturing. Evil magics may grant you enormous powers, but are you willing to pay the price?
+   
+ \end{itemize}
+ 
+ The first thing to do is to determine the attributes that your character is going to get. This is done by rolling a 2d6 ten times. This gives you 10 numbers between 1 and 12. You may then allocate 6 of these numbers to your non-EVL attributes at will. 
+ 
+Generally speaking, you will want to allocate the largest of these values to the attributes which your character will rely on the most -- so a powerful magical warrior will get the largest values allotted to SPR and POW, whilst a healer gets the largest value given to EMP. 
+ 
+ \newpage
+ \section{Playable Species}
+ 
+ Different magical races have different characteristics, abilities, and affinities with different kinds of magic. Each choice of race/species modifies your attribute values by a set amount and provides a pool of extra points which you can allocate to attributes at will, and some race-specific Abilities and Skills. 
+ 
+It is generally impossible to switch species once a character has been created, except where it makes sense within the story (i.e. a human transitioning to a Vampire after being bitten). 
+ \newline
+ 
+ \newcommand{\speciestable}[8]{
+ % \begin{center}
+ \begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+ ATH & FIN & SPR & CHR & INT & EMP & POW & EVL
+ \\
+ \hline
+ #1 & #2 & #3 & #4 & #5 & #6 & #7 & #8 
+ \\ \hline
+ \end{tabular}
+ %\end{center}
+ }
+ \newcommand{\species}[4]{ \vspace{1.4ex}
+ \centerline{ \large \textbf{#1} } 
+ \vspace{1.2ex}
+ \begin{minipage}[c]{0.5 \textwidth}
+  \raggedright #2 
+  \end{minipage} \qquad 
+  \begin{minipage}{0.5 \textwidth}
+  
+ \vspace{0.1ex}
+#3, on top of the following basic attributes:
+
+\small
+\vspace{1.5 ex}
+\speciestable#4
+ \vspace{3ex}
+ \end{minipage}
+ }
+ 
+ %ATH   FIN   SPR   CHR    INT    EMP     POW      EVL     
+ \species{Pure-Blood Human}{ Typically the strongest magic users, pure-bloods find it  easiest to interact with other members of the magical community, whilst struggling to stay hidden amongst the muggles. Because of their lifelong reliance on magic, most pure-bloods are not very athletic or good with their hands.}{ Pure-Blood humans get 4 extra points to spend, and two Beginner Skills to pick from those available}{{-1}{-1}{+2}{+1}{+0}{-1}{+2}{+0}}
+
+
+ \species{Half-Blood Human}{Not as in-tune with magic as purebloods, nor as adept at blending in as the muggle-borns, half-bloods strike a balance between the two, matching their empathy with magical power. Being a half-blood does not inherently mean only one magical parent: it is a catchall term for those with a non-trivial amount of muggle relatives in the recent past. As a result, the vast majority of magical folk are Half-bloods.}{Half-Blood humans get 3 extra points to spend, and two Beginner Skills to pick from those available}{ {+0} {+1} {+2} {+0} {+1} {+0} {-1} {0}    }
+ 
+ 
+ \species{Muggle-Born Human}{Coming from a non-magical background, muggle-borns often lack in raw magical power. However, being brought up in a muggle household means that they are often adept at blending in. They are also used to getting by without magic, and will often find themselves more handy and athletic than those born into their magic.}{Muggle-Borns get 5 extra points to spend, and one Beginner  Skill to pick from those available}{ {+1} {+0} {-1} {+1} {+0} {+1} {-1} {+0}   } 
+ \species{Half Giant}{Though rather a rare sight, the offspring of a giant and a human are not unheard of. Their magic is rather weak, but their giant blood gives them extreme strength, physical stamina and a large resistance to magical attacks. Half-giants often find it very hard to disguise themselves -- both from the muggles, and from their wizarding compatriots, who regard them with suspicion.}{Half-Giants get 3 extra points to spend, and one Beginner Skill to pick from those available, as well as the Enormous Size ability}{ {+2} {-3} {+2} {+0} {-2} {+0} {-1} {0}   }
+ 
+ \species{House-Elf}{Usually overlooked by all other sentient beings, house elves are in fact mischievous and quick-witted beings, with a natural propensity for illusion magic. All house-elves are born with the innate ability to apparate, and to move unseen and unheard through large crowds. Though many house elves submit themselves to a life of subservience, those who break free -- the Free Elves --  often find themselves employed in professions where stealth is a requirement.}{House Elves get 2 extra points to spend and start with the Apparate (Adept) and Wandless Magic (Novice) skills, and the Behind the Scenes ability}{{-3} {+1}  {-2}  {+3}  {+0}  {+2}  {-3} {+0}   }
+ 
+ \species{Goblin}{Goblins are highly intelligent non-humans, living alongside the magical world. Though viewed by many as inferior to their wizard brethren, Goblins are often far more powerful than humans expect, able to perform feats of magic without the use of a wand. They are expert artificers, able to create artefacts  and imbue them with immense powers. Goblins are also adept at the use of warding magic, with their most powerful work being displayed in the security systems at Gringott{\apos}s Bank. Goblins find it difficult (though not entirely impossible) to interact with the non-wizarding world.}{Goblins get 3 extra points to spend on attributes, as well as the Artificer (Novice), Wandless Magic (Novice) and Warder (Novice) skills}{ {-2} {+4} {+0} {-2} {+5} {+0}  {-1} {0} }
+ 
+ \species{Half-Veela}{Inheriting the enchanting beauty of the Veela, and the magical ability of humans, the half-Veela are often able to charm their way through most interactions, having a natural affinity for magic which persuades and influences others. When this does not work in their favour, however, they can call upon the Fury, transforming into a demonic form and possessing the ability to throw fireballs at their foes.}{Half-Veela get 5 extra points to spend and start with the Fury ability}{ {+0} {+1} {+1}  {+3} {-1} {-4} {-2} {+2}   }
+ 
+ \species{Werewolf}{A werewolf is a human who has been afflicted by lycanthropy. At the full moon, a werewolf forgoes their human form, and takes the form of a monstrous wolf. They become a mindless killing machine, immeasurably strong and almost immune to magic, the beast within is a terrifying monster. The wolfblood dampens the magical abilities of the wizard, but gives them an increased resistance to magic in return.}{Werewolves get 3 extra points to spend, as well as the WolfBlood ability, and one other Beginner skill}{ {+2} {+0} {+4} {-2} {-1}  {-1} {-1} {+5}   }
+ 
+ \species{Vampire}{A human who has contracted the disease sanguinus vampiris, a vampire is a creature of the night, possessing a great affinity for the dark arts, but mortally afraid of the sun. Subsisting only on the blood of humanoids, vampires are feared and hated by all. Vampires often possess astonishingly powerful magic, but can be defeated by Holy Wards, wooden stakes, and garlic. It is also said that vampires cannot cross a threshold that they have not been invited over.}{Vampires get 2 extra points, as well as the Drain Life and Night{\apos}s Child abilities}{{+0} {+0} {+5} {+3} {-2} {-4} {+3} {+7}   }
+ 
+ 
+ 
+ \onecolumn
+ \section{Species Abilities}
+ 
+ Abilities are those traits unique to a given species. 
+
+\def\w{11}
+ \begin{center}
+ \begin{tabular}{|m{3.4cm}|m{2.3cm}|m{\w cm}|}
+ \hline
+ Name 		& Species 		& Effect
+ \\ \hline \hline
+ {\bf Behind the Scenes }		& House Elf 		& \parbox[t]{\w cm}{For better or for worse, you are beneath most people{\apos}s attention. You can get things done whilst nobody else is paying attention, and are able to move around without being spotted. \par  FIN (stealth) +3. You may also, once per day, perform a second action whilst another character is executing their turn (including the GMs). Apparation checks get a + 3 bonus. }
+ \\
+ \hline {\bf Enormous Size} 	& Half-Giant 	& \parbox[t]{\w cm}{You are enormous. You cannot fit down narrow passageways, and it is very difficult for you to go without being recognised. However, you are also enormously strong, and very hard to hurt. \\ ATH (strength) + 3, ATH (health) + 3, all FIN proficiencies: -1, SPR (endurance) + 3, CHR (deception) -2}
+ \\ \hline
+ {\bf Fury} 					& Half-Veela		&   \parbox[t]{\w cm}{Shed your beautiful facade and reveal the Fury within. The Fury is a powerful beast which is nearly immune to magic, and can throw powerful fireballs. \\ In human form, get FIN (persuasion) + 4.  Once per day, take a temporary stat boost, ATH: + 2, STR: +4, SPR: + 2, POW: + 4, CHR: - 5. Get a + 3 boost to resist magic checks.  Replace all active spells with Fury{\apos}s Fire. These changes revert when retaking human form. }
+ \\ \hline
+ {\bf Drain Life} 				& Vampire		& \parbox[t]{\w cm}{You can drain the life-force of your enemies, using it to restore your own health. \\ When within close-combat range, can deal 2d6 necrotic damage to the enemy, and restore yourself the same number of HP that you remove. Only works on living beings.  }
+ \\ \hline
+ {\bf Night{\apos}s Child} 			& Vampire		& \parbox[t]{\w cm}{As one of the undead, the raw sun drastically weakens your power, opens up your defences, and reduces your ability to think clearly. For every hour exposed to the sun, suffer a -1 hit to SPR, INT and POW. Magical defences are 50\% less effective. This counter is reset after feeding on a human.  \\ You also gain the ability to see in the dark. }
+ \\ \hline
+ {\bf Wolf Blood}			& Wolfblood	& \parbox[t]{\w cm}{When the full moon rises, you take on the form of a monstrous, mindless wolf -- unless a wolfsbane potion is applied.  For 12 hours, your character becomes the Beast Inside, and is placed under the control of the Game Master.  \\ Silver is a deadly poison to you, and wounds caused by you are infectious. Even in human form, get SPR (endurance) +3 and ATH (speed) +2}
+\\ \hline
+ 
+ \end{tabular} 
+ \end{center}
+ 
+ \newpage
+ \section{Background}
+ 
+ The background of your character determines where they have come from, and their history in turn effects what they know, and how they progress.  There are two types of background, depending on the character you wish to create. A child character has little life experience outside of school, and will therefore be largely defined by their House at Hogwarts, whilst an adult character will be defined by their profession.
+ 
+ Each background comes associated with a skill, or some initial items. These are to be added on \textbf{before} you complete the extra skills you gain due to your race. 
+ 
+ The backgrounds listed here provide some numerical boosts to your character{\apos}s stats, and may act as a framework for you to build your character around, but you are encouraged to build up your own story about who your character is, where they come from and what drives them to take part in this adventure. You may also negotiate with the GM for a background (and associated skillset) if you have one in mind that would better fit in with the narritave of your character. 
+ 
+ \subsection*{Hogwarts Houses}
+ 
+ The four Hogwarts houses are Gryffindor, Hufflepuff, Ravenclaw and Slytherin. Each house embodies different ideals, and will encourage their students to follow different paths in life.  The House of each student is determined at the Sorting Ceremony when they first arrive at Hogwarts, when the Sorting Hat sees deep into their soul, and sees their inner potential.
+ 
+\def\w{8}
+\def\x{6}
+\def \h{7}
+ \begin{center}
+ \begin{tabular}{|m{3.4cm}|m{\x cm}|m{\w cm}|}
+ \hline
+ \bf House & \bf Poem & \bf Bonuses
+ \\ \hline \hline
+ \vspace{\h ex} Gryffindor \vspace{\h  ex} & \parbox[t]{\x cm}{ \it You might belong in Gryffindor,\\Where dwell the brave at heart, \\Their daring, nerve, and chivalry\\Set Gryffindors apart}  &  \parbox[t]{\w cm}{Gryffindor House prizes bravery and strength of spirit. Students of this house are given the Heart of Bravery skill, which boosts SPR checks by +2, and negates the affects of fear-causing spells and effects. }
+ \\ \hline
+ \vspace{\h ex}  Hufflepuff  \vspace{\h ex} & \parbox[t]{\x cm}{ \it You might belong in Hufflepuff, \\Where they are just and loyal,\\Those patient Hufflepuffs are true,\\And unafraid of toil.}   & \parbox[t]{\w cm}{Hufflepuff prizes kindness, empathy and hard work. Hufflepuff students are given the Heart of Compassion skill, which boosts EMP checks by +2, and increases the effectiveness of spells cast upon your friends and allies by 50\%.}
+ \\ \hline
+  \vspace{\h ex}  Ravenclaw  \vspace{\h ex}  & \parbox[t]{\x cm}{\it Or yet in wise old Ravenclaw,\\If you{\apos}ve a ready mind, \\ Where those of wit and learning, \\Will always find their kind.}  &  \parbox[t]{\w cm}{Ravenclaw prizes knowledge and intelligence. Students are given the Heart of Wisdom skill, which boosts INT checks by +2, and allows students to learn from their experiences and improve at a faster rate, by gaining 10\% more experience from each encounter.}
+  \\ \hline
+  \vspace{\h ex} Slytherin \vspace{\h ex}  & \parbox[t]{\x cm}{\it Or perhaps in Slytherin,\\ You{\apos}ll make your real friends,\\Those cunning folk use any means,\\To achieve their ends.}  & \parbox[t]{\w cm}{Slytherin prizes ambition and charisma. Slytherin students are given the Heart of Ambition skill, which boosts CHR checks by +2, and allows students to use their ambition to gain access to abilities of a higher level}
+  \\ \hline
+ \end{tabular} 
+ \end{center}
+ 
+ \newpage
+ \subsection*{Adults: Professions}
+ \def\w{2.4}
+ \def\x{4.2}
+ \def\y{4}
+ \def\z{6}
+ 
+ \footnotesize
+%%ProfessionBegin
+
+\begin{center} \begin{longtable}{|m{\w cm}|m{\x cm}|m{\y cm}|m{\z cm}|}\hline \normalsize \bf Profession & \normalsize \bf Description & \normalsize \bf Associated Skills & \normalsize \bf Notes \\ \hline \hline \bf \begin{flushleft} Apothecary\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You are a master potioneer, making the finest potions in the land.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Alchemy (Novice), Herbologist (Beginner), INT (Flora \& Fauna) +1\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}Start with the ingredients for a number of potions, and the knowledge of how to mix them.\end{flushleft}}  \\ \hline \bf \begin{flushleft} Assasin\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You kill people for a living; not for ideology, but for gold.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Battlemage (Novice), Brawler (Novice), EVL +3, FIN (stealth) + 2\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}Start with a bladed weapon that does 1d6 damage\end{flushleft}}  \\ \hline \bf \begin{flushleft} Auror\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}Magical-Law enforcement. You hunt down and capture those who endanger the wizarding world.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Battlemage (Novice), Defender (Beginner), SPR (endurance) + 1\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}Start with the Stunning Curse and the Disarming Hex\end{flushleft}}  \\ \hline \bf \begin{flushleft} Bard\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You are a magical musician, mixing music and magic together is one of the most primal magics there is.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Musician (Novice), Nimble Fingers (Beginner), CHR (performance) + 3\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}Specify your instrument at creation. \\ Start with the Piper`s illusion charm, as well as your instrument in inventory.\end{flushleft}}  \\ \hline \bf \begin{flushleft} Caretaker\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You are entrusted to look after a very important building. You are its guardian.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}My House, My Rules (Beginner), Familiar (Novice)\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}The region you oversee is chosen at creation, though can be changed\end{flushleft}}  \\ \hline \bf \begin{flushleft} Craftsman\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You manufacture items (magical or mundane) for a living. A highly skilled individual, you are an expert with your hands, and your knowledge of your field is unsurpassed.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Artificer (Adept), Nimble Fingers (Novice), FIN (dexterity) +4\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}You must declare your craft at character creation, and the GM will inform you of the ingredients you need to create said object.\end{flushleft}}  \\ \hline \bf \begin{flushleft} Dark Wizard\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You want nothing more than to dominate and enslave, to mutilate and torture entire civilisations. Evil has a name, and it is you.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Battlemage (Novice), Necromancer (Adept), EVL +4, EVL (chaos) + 1\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}Start with 2 extra Adept-level Dark Magic spells\end{flushleft}}  \\ \hline \bf \begin{flushleft} Guard\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You are charged with defending a person or place.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Warder (Novice), Defender (Novice), ATH (speed) +1 , ATH(health) + 2\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}Start with Caterwauling Charm and Shielding Charm.\end{flushleft}}  \\ \hline \bf \begin{flushleft} Healer\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You are a doctor, dedicating your life to improving the lives of others.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Defender (Adept),  EMP (healing) + 3, EMP (understand other) + 1\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}Start with the Mend Wounds spell.\end{flushleft}}  \\ \hline \bf \begin{flushleft} Librarian\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You are in charge of a library, surrounded by books and knowledge.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Bookworm (Adept), My House, My Rules (Beginner), all INT proficiencies + 1\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}The MHMR skill applies only within your library.\end{flushleft}}  \\ \hline \bf \begin{flushleft} Magical Researcher\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You conduct research into the fundamental nature of magic, uncovering the mysteries of the universe.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Bookworm (Novice), Improvise (Beginner).  Spellmaker minimum requirements are reduced by 50\% (rounded up), Int(research) + 2, INT (arcane knowledge) + 1\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}Begin with Revealing Charm.\end{flushleft}}  \\ \hline \bf \begin{flushleft} Magizoologist\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You are in love with magical animals, and have dedicated your life to studying and protecting them.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Familiar (Beginner), Animal Lover (Adept), INT (Flora \& Fauna) + 3\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}Start with Summon Creature spell.\end{flushleft}}  \\ \hline \bf \begin{flushleft} Ministry Official\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You work for the Ministry of Magic, in one of their departments.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Man On the Inside (Novice), department-specific skill (Beginner), consult with GM as to what this skills is.\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}The department must be chosen at character creation.\end{flushleft}}  \\ \hline \bf \begin{flushleft} Quidditch Player\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You are a professional quidditch player.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Broomstick lessons (Adept), Quick (Beginner), ATH (speed) + 3, ATH (strength) + 2\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}Start with a basic broomstick.\end{flushleft}}  \\ \hline \bf \begin{flushleft} Seer\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You can see past the veil of this world, into the next.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Clairvoyant (Adept), EMP (understand other) + 2, EMP (perception) + 3\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}Start with the detect magic spell.\end{flushleft}}  \\ \hline \bf \begin{flushleft} Shopkeeper\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You own a shop, and are an experienced salesperson.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Persuasive (Beginner), Golden Fingers (Novice), CHR (persuasion) + 2\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}At character creation, specify what it is you sell.\end{flushleft}}  \\ \hline \bf \begin{flushleft} Soldier\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You are a highly trained warrior, fighting for your cause.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Battlemage (Novice) , Quick (Novice), ATH (health) + 2, SPR (endurance) + 1\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}Start with the Blasting Curse.\end{flushleft}}  \\ \hline \bf \begin{flushleft} Subject Professor\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You teach one of the subjects at Hogwarts.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Teacher{\apos}s Sacrifice (Beginner) and one subject-Skill (Adept)\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}Subject must be chosen at character creation.  Subject skills include the 6 non-Dark areas of magic, as well as Herbology, Potion making, artificing etc.\end{flushleft}}  \\ \hline \bf \begin{flushleft} Thief\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You steal things for a living, and are adept at finding traps.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Nimble Fingers (Novice), Trap Finder (Beginner), FIN (dexterity) + 3, FIN (stealth) + 1\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}Begin with Muffling Charm.\end{flushleft}}  \\ \hline \bf \begin{flushleft} Vampire Hunter\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}You are the enemy of the undead: you hunt down an exterminate abominations.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Holy Aura (Beginner), Defence Against the Dark Arts (Beginner), SPR (willpower) + 4\end{flushleft}}  &   \parbox[t]{\z cm}{\begin{flushleft}EVL must be below 3 at all times\end{flushleft}}  \\ \hline \end{longtable} \end{center}%%ProfessionEnd
+ \normalsize
+ 
+ 
+ \twocolumn 
+ \section{Wands}
+
+All witches and wizards start off with their very own magic wand. The wand chooses the wizard, not the other way around,  so the process for selecting your wand is to roll two d6 successively. The first roll determines the wood your wand is made of, the second determines the core. 
+
+Different materials have an affinity with different kinds of magic, and make casting those spells easier. Wood makes the spell type easier to cast (+1 to checks), and the core reduces the mental strain of casting that class of spell (-1 FP cost). 
+ \footnotesize
+ \begin{center}
+ \begin{tabular}{|c|c|c|c|}
+ \hline
+ \bf Roll & \bf Magic School & \bf Wood& \bf Core
+ \\ \hline \hline
+ 1 & Defensive & Apple & Pheonix feather
+ \\\hline 
+ 2 & Hexes \& Curses & Holly & Dragon heartstring
+ \\\hline 
+ 3 & Divination & Beech & Unicorn Tail hair
+ \\\hline 
+ 4 & Transifguration & Oak & Thunderbird feather
+ \\\hline 
+ 5 & Charms & Hawthorn & Kelpie hair
+ \\\hline 
+ 6 & Illusion & Hazel & Veela hair
+ \\\hline 
+ - & Dark Arts & Human Bone & Dementor Robe
+ \\ \hline
+ \end{tabular}
+ \end{center}
+\normalsize
+ If your original wand is destroyed or lost, you need to find someone who can sell (or make) you a new one, and perform the selection process anew. 
+ 
+The only way to access the 7th and final category of wand is to have an EVL greater than 8. This then bypasses all other wand selection checks, and your wand is necessarily evil. It should of course be noted that wandmakers aren{\apos}t too happy to sell these evil objects -- you might have to cut a few bits off in order to sufficiently motivate them.  
+ 
+ \section{Final Setup}
+ 
+Once you have selected your wand, you are ready to begin the final phases of character creation: picking your skills, and then your initial spells, for which you should refer to the relevant chapters later on in this text.
+
+Many of the playable species get a number of extra skills that they can add to their character at creation, after the Profession or House skill has been added: this is the time for you to choose them. You can only add LVL 1 skills to your character at this time. 
+
+After picking these skills, you are ready to pick your first set of spells! Some professions get a spell or two assigned to them at first, which are automatically added to your character. On top of this, you may then pick \textbf{five spells from the schools of magic that you can cast}, and add them to you character. After this stage, learning new spells is covered by the process detailed in the Spells section of this document. 
+
+You will also get an initial set of clothes (usually plain black robes, unless otherwise stated by your GM), as well as any of the items assigned to you by your profession, which you should add to your inventory.  All characters also get 50 gold pieces\footnote{Harry Potter technically uses Knuts, Sickles and Galleons as the currency, but with 29 Knuts to a sickle, and 17 sickles to a galleon, that just sounds like hard work. We{\apos}ll stick to just using ``gold pieces\apos\apos. } at the start of the game, except Goblins and House-Elves:  Goblins get 100, whilst House-Elves get only 25. 
+\newline
+~
+\newline
+~
+\begin{center}
+{\Huge \bf You are now ready to begin!}
+\end{center}
+ 

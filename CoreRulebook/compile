@@ -1,0 +1,10 @@
+#!/bin/bash
+echo $1
+if [ $1 -eq  1 ] 
+then
+	cd Data;
+	matlab -nodisplay -nodesktop < "MasterAssembly.m"
+	cd ..
+fi
+xelatex CoreRulebook.tex
+xdg-open CoreRulebook.pdf

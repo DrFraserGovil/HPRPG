@@ -1,0 +1,68 @@
+\documentclass[oneside, twocolumn]{book}
+\usepackage{fontspec}
+\usepackage{array}
+\usepackage{subfiles}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage[left = 0.65in, right = 0.65 in, top = 0.7in, bottom = 0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{lscape}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{float}
+\def\apos{'}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{0.7cm}
+
+
+\newfontfamily{\HP}{[ParryHotter.TTF]}
+
+\titleformat{\chapter} {\vspace{-10ex}\normalfont\bfseries\HP\Huge}{}{0pt}{}[\vspace{-2ex}]
+
+\titleformat{\section}{\vspace{-3ex}\normalfont\Large\it\centering}{}{0em}{\titlerule[0.3pt] \\}[{\titlerule[0.3pt]}]
+
+
+\begin{document}
+
+\begin{titlepage}
+    %\newgeometry{left=2.12cm, right = 1.74cm, bottom=1cm}
+    \centering
+    \vfill
+    {\bfseries
+        {\HP \fontsize{40}{35}\selectfont Player Handbook}
+    }    
+    \vfill
+    \includegraphics[scale = 0.7]{../Images/glasses} % also works with logo.pdf
+    \vfill
+    {\HP \fontsize{30}{24} \selectfont  Harry Potter \\\&\\ The Role Playing Game}
+    \normalsize
+    \vfill
+    {\HP \fontsize{22}{0} \selectfont Version 4.0 \hfill Jack Fraser}
+\end{titlepage}
+
+\footnotesize
+\tableofcontents
+\normalsize
+\subfile{Chapters/CoreMechanic}
+
+\subfile{Chapters/CharacterCreation}
+
+\subfile{Chapters/HealthFortitudeStatuses}
+
+\subfile{Chapters/Experience}
+
+\subfile{Chapters/Skills}
+
+\subfile{Chapters/Actions}
+
+\subfile{Chapters/Environment}
+
+\subfile{Chapters/Items}
+
+\subfile{Chapters/Artificing}
+
+\subfile{Chapters/Spells}
+\end{document}
