@@ -1,0 +1,9 @@
+#ignore tex build files
+*.log
+*.aux
+*.swp
+*.gz
+
+#ignore monsterbuilder
+GameMasterGuide/MonsterGenerator
+
