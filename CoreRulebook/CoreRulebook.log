@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.11.15)  4 AUG 2019 19:37
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.11.15)  4 AUG 2019 20:24
 entering extended mode
 **./CoreRulebook.tex
 (CoreRulebook.tex
@@ -807,132 +807,67 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ])
-(Chapters/CharacterCreation.tex [4
-
-]
+(Chapters/CharacterCreation.tex [4]
 Chapter 2.
 [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 69--70
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 123--124
 []$[]$
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 69--70
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 123--124
 []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 72--73
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 126--127
 []$[]$
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 72--73
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 126--127
 []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 75--77
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 129--131
 []$[]$
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 75--77
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 129--131
 []$
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 75--77
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 129--131
 $[]$
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 75--77
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 129--131
 []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--77
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 78--79
-[]$[]$
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 78--79
-[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
-
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 80--81
-[]$[]$
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 80--81
-[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
-
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 82--83
-[]$[]$
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 82--83
-[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
-
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 84--85
-[]$[]$
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 84--85
-[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
 
@@ -940,35 +875,96 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--85
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 86--87
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 132--133
 []$[]$
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 86--87
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 132--133
 []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
-[7
 
-] [8
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 134--135
+[]$[]$
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 134--135
+[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 136--137
+[]$[]$
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 136--137
+[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 138--139
+[]$[]$
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 138--139
+[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 140--141
+[]$[]$
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 140--141
+[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+[7] [8
 
 ] [9]
-Underfull \vbox (badness 10000) detected at line 159
+Underfull \vbox (badness 10000) detected at line 213
  []
 
 [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 204--209
+Underfull \hbox (badness 10000) in paragraph at lines 258--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--209
+Underfull \hbox (badness 10000) in paragraph at lines 258--263
 
  []
 
@@ -980,66 +976,60 @@ Chapter 3.
 [13
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 []|\TU/lmr/m/n/9 Perform
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 \TU/lmr/m/n/9 FIN(stealth) check
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 \TU/lmr/m/n/9 to remain hidden
  []
 
-[14]
-Underfull \vbox (badness 6927) has occurred while \output is active []
+[14] [15] [16]) (Chapters/HealthFortitudeStatuses.tex [17
 
- [15])
-(Chapters/Items.tex [16]
+]
 Chapter 4.
-[17
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18
+
+]
+Missing character: There is no � in font [lmroman7-regular]:mapping=tex-text;!
+Missing character: There is no � in font [lmroman7-regular]:mapping=tex-text;!
+
+Underfull \vbox (badness 10000) detected at line 110
+ []
+
+Missing character: There is no � in font [lmroman7-regular]:mapping=tex-text;!
+[19
+
+] [20]) (Chapters/Items.tex
+Chapter 5.
+[21
+
 
 ]
 Overfull \hbox (6.25923pt too wide) in paragraph at lines 79--98
  [] 
  []
 
-[18]
-Underfull \hbox (badness 1092) in paragraph at lines 146--146
+[22]
+Underfull \hbox (badness 1092) in paragraph at lines 128--128
 []\TU/lmr/m/n/8 Requires arrows. Minimum
  []
 
-[19
+[23
 
 ]) (Chapters/Artificing.tex
-Chapter 5.
-) (Chapters/HealthFortitudeStatuses.tex [20
-
-
-]
 Chapter 6.
-[21
+) (Chapters/Environment.tex [24
 
-]
-Invalid UTF-8 byte or sequence at line 46 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 46 replaced by U+FFFD.
-Missing character: There is no � in font [lmroman7-regular]:mapping=tex-text;!
-Missing character: There is no � in font [lmroman7-regular]:mapping=tex-text;!
-Invalid UTF-8 byte or sequence at line 48 replaced by U+FFFD.
-
-Underfull \vbox (badness 10000) detected at line 48
- []
-
-Missing character: There is no � in font [lmroman7-regular]:mapping=tex-text;!
-[22
-
-] [23]) (Chapters/Environment.tex
-Underfull \vbox (badness 4608) has occurred while \output is active []
-
- [24
 
 ]
 Chapter 7.
@@ -1173,12 +1163,12 @@ Underfull \vbox (badness 10000) detected at line 173
 
 [52]) [53] (CoreRulebook.aux) ) 
 Here is how much of TeX's memory you used:
- 13670 strings out of 427834
- 280661 string characters out of 3152469
- 464892 words of memory out of 3000000
- 17495 multiletter control sequences out of 15000+200000
+ 13673 strings out of 427834
+ 280684 string characters out of 3152469
+ 463927 words of memory out of 3000000
+ 17498 multiletter control sequences out of 15000+200000
  536434 words of font info for 67 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 39i,11n,58p,9088b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,11n,58p,9088b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on CoreRulebook.pdf (54 pages).

@@ -1,34 +1,36 @@
 \contentsline {chapter}{\numberline {1}Core Mechanic}{3}
-\contentsline {section}{\numberline {1.1}Computing Checks}{3}
+\contentsline {section}{\numberline {1.1}Computing Checks}{4}
 \contentsline {section}{\numberline {1.2}Using these Rules}{4}
 \contentsline {chapter}{\numberline {2}Character Creation}{5}
 \contentsline {section}{\numberline {2.1}Main Attributes}{5}
-\contentsline {section}{\numberline {2.2}Playable Species}{6}
-\contentsline {section}{\numberline {2.3}Species Abilities}{8}
-\contentsline {section}{\numberline {2.4}Background}{9}
-\contentsline {section}{\numberline {2.5}Wands}{12}
-\contentsline {section}{\numberline {2.6}Final Setup}{12}
+\contentsline {section}{\numberline {2.2}Health \& Fortitude}{6}
+\contentsline {section}{\numberline {2.3}Playable Species}{6}
+\contentsline {section}{\numberline {2.4}Species Abilities}{8}
+\contentsline {section}{\numberline {2.5}Background}{9}
+\contentsline {section}{\numberline {2.6}Wands}{12}
+\contentsline {section}{\numberline {2.7}Final Setup}{12}
 \contentsline {chapter}{\numberline {3}Performing Actions}{13}
 \contentsline {section}{\numberline {3.1}Checks, Modifiers \& Proficiencies}{13}
+\contentsline {subsection}{\numberline {3.1.1}Modifiers}{13}
+\contentsline {subsection}{\numberline {3.1.2}Proficiencies}{13}
 \contentsline {section}{\numberline {3.2}Success \& Failure}{14}
 \contentsline {section}{\numberline {3.3}Non-Combat Actions}{14}
-\contentsline {section}{\numberline {3.4}Combat Actions}{14}
+\contentsline {section}{\numberline {3.4}Combat Actions}{15}
 \contentsline {section}{\numberline {3.5}Stealth, Perception \& Passive Checks}{16}
 \contentsline {section}{\numberline {3.6}Sneak Attacks \& Attacks of Opportunity}{16}
-\contentsline {chapter}{\numberline {4}Items}{17}
-\contentsline {section}{\numberline {4.1}Equipped Items}{17}
-\contentsline {section}{\numberline {4.2}Storing Items}{17}
-\contentsline {section}{\numberline {4.3}Physical Weapons}{17}
-\contentsline {section}{\numberline {4.4}Armour}{18}
-\contentsline {section}{\numberline {4.5}Weapon List}{19}
-\contentsline {chapter}{\numberline {5}Artificing}{20}
-\contentsline {section}{\numberline {5.1}Enchanting}{20}
-\contentsline {section}{\numberline {5.2}Potion Making}{20}
-\contentsline {chapter}{\numberline {6}Health, Fortitude \& Statuses}{21}
-\contentsline {section}{\numberline {6.1}Health}{21}
-\contentsline {section}{\numberline {6.2}Fortitude}{21}
-\contentsline {section}{\numberline {6.3}Statuses}{21}
-\contentsline {section}{\numberline {6.4}Damage \& Damage Types}{24}
+\contentsline {chapter}{\numberline {4}Taking Damage}{18}
+\contentsline {section}{\numberline {4.1}Damage \& Damage Types}{18}
+\contentsline {section}{\numberline {4.2}Armour Class}{18}
+\contentsline {section}{\numberline {4.3}Statuses}{18}
+\contentsline {chapter}{\numberline {5}Items}{21}
+\contentsline {section}{\numberline {5.1}Equipped Items}{21}
+\contentsline {section}{\numberline {5.2}Storing Items}{21}
+\contentsline {section}{\numberline {5.3}Physical Weapons}{21}
+\contentsline {section}{\numberline {5.4}Armour}{22}
+\contentsline {section}{\numberline {5.5}Weapon List}{23}
+\contentsline {chapter}{\numberline {6}Artificing}{24}
+\contentsline {section}{\numberline {6.1}Enchanting}{24}
+\contentsline {section}{\numberline {6.2}Potion Making}{24}
 \contentsline {chapter}{\numberline {7}Environment Effects \& Vision}{25}
 \contentsline {section}{\numberline {7.1}Terrain}{25}
 \contentsline {section}{\numberline {7.2}Falling}{25}
