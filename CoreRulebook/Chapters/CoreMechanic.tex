@@ -4,20 +4,56 @@
 
 Harry Potter \& The Role Playing Game is a freeform role playing game, where you take control of a character living in the world of Harry Potter. All you need to play this game is a pen, some paper, and a set of dice – the rest is up to your imagination. If it is reasonable for you character to do something, then you may direct them to do that – to run towards evil head on and fight injustices, to run away and save yourself, or even to become the malevolent evil itself; the world really is your oyster.  
 
-In this game, whenever the result of an action is uncertain – be it an attack, an attempt to persuade someone, or checking for clues – your character must rely upon their abilities and skills, as well as sheer luck.
-An action is deemed successful if your natural abilities, and the outcome of a dice roll (called a ‘check’)  surpasses a certain minimum requirement (called the ‘difficulty’ of the action). If you do not meet the minimum requirement, the action fails – and you may face repercussions!
+Of course, in order to separate this from the games we all played as children, where actions were completed simply by claiming that it is so, this rulebook provides a framework for resolving the success and subsequent effects of the actions that you wish your character to undertake, as well as keeping track of the various abilities and attributes that your character possesses.
 
-A check is often specified as “ndx”. Here n refers to the number of dice to use, and “dx” refers to the type of dice to be use – x is the number of sides on the dice. A d10 is a ten-sided dice, for example.
-Hence, to complete an action; for example, a “2d10 Intelligence Check”, we would roll two, ten-sided dice, and then calculate:
+To this end, whenever the result of an action is uncertain, be it an attack, an attempt to persuade someone, or checking for clues, your character must rely on a `check'. This `check' takes into account the abilities, skills, afflictions and bonuses that your character has accumulated over their lifetime, and then adds in an element of randomness, through a dice roll, all of which are combined into a single `check value' (or CV). 
+ 
+ If this CV surpasses a certain minimum requirement (called the ‘difficulty value’ of the action, or DV) then the action is said to succeed. If you do not meet the minimum requirement, the action fails – and you may face repercussions!
+ 
+But how is the DV of an action determined? This is where the Game Master (GM) comes into play. The GM is one of the players who has agreed to act as a referee for the story that the players wish to tell. The GM is the overseer of the narrative: they are responsible for describing the encounters, adventures and environments that the other players are taking part in. Though the GM controls the characters who oppose the players, the GM does not ‘win’ if these enemy characters prevail – the purpose of the GM is not to defeat the player characters (PCs), but to drive the story and present interesting and challenging scenarios for them to overcome. 
 
-$$\text{check} = \text{dice roll} + \text{intelligence modifier} + \text{bonuses} $$
+As a corollary to this, the only completely unassailable rule in this book is that {\bf the Game Master's judgments are always correct and final}. The  GM has complete freedom to override the rules in this booklet, in the name of an interesting yet challenging story. Of course, if they have simply misread or misremembered a rule, they might self-correct when this is pointed out to them -- however, in a true conflict between what the rules say and what the GM says, the GM wins every time.
 
-If the check value exceeds the minimum threshold – the difficulty – then the action is successful. If the check exceeds the threshold by a significant margin, the action might be more than just ‘successful’, and might have benefits beyond that which you originally intended!
+An example of this would be the GM changing the requirements of a spell because of the way it is being used. For example, the Patronus Charm is usually cast using a SPR check, as it requires great strength of will to cast – but if you are using a Patronus as a diversion, the GM might decide that an intelligence check is more suitable. The GM is also the arbiter of what is allowed, what bonuses you may apply to a given check, and whether a tactic was successful. 
+
+Of course, this is not to say that the GM should always use this power in opposition to the players. These rules are only the basic framework upon which the GM and PCs weave their narrative -- if a PC wishes to do something that is not covered in this manual, then the GM can use their power (`GM fiat') to work with the PCs to determine the outcome. Equally, if a player wants to create a PC with traits not covered in the character creation chapter, the GM may be willing to work with the PC to create the appropriate rules. 
+
+With this basic set of rules in mind, the flow of the game is rather simple:
+
+\begin{enumerate}
+	\item {\bf The GM describes the environment},  they may describe the sights, sounds and smells that your PCs would experience in the situation that they find themselves in. The GM should give the basic lay of the land -- the things that every person in that situation would be able to spot. 
+	\item {\bf The players decide what they would like to do}, they might decide that they'd like to investigate a certain aspect of the room more carefully, or they might decide to cast a spell, or hit somebody with a big stick. They then inform the GM of their final decisions
+	\item {\bf The players and GM work together to resolve these actions}, some resolutions are simple (`you walk through the door', `you drink the potion'), others may require checks and the GM thinking carefully about the success of such an action. In some `modes of play' (i.e. combat), this resolution needs to be done in a specific order with players taking turns. Other times, it may be more fluid and conversational.
+ 	\item {\bf The GM narrates the result of this action}, telling the players what happened and how the success (or failure) of their actions impacted the world around them. 
+\end{enumerate} 
+
+This cycle then continues, as you build up your narrative!
+
+\section{Computing Checks}
+
+Computing the CV of a given check is perhaps the most important mechanics for playing this game (beyond raw imagination), so it is worthwhile to consider this in more detial. 
+
+A check has three ingredients, the dice roll, the attribute modifier and the bonus modifier. 
+
+The dice roll is, as you might expect, the outcome of a dice roll. A roll can occur on one of 6 different dice: a d4, d6, d8, d10, d12 or d20, with the number simply signifying the number of sides that the dice has (so a d6 is the usual cubic dice). You may also see the $d$ preceeded by another number, i.e. $n$d6. This tells you to roll the d6 $n$ times. Unless otherwise specified, you should generally assume that the check being asked for is using the d20 dice. For all ability-related checks, this will be your go-to dice. Magic casting and physical attacks will often require different dice. 
+
+On to the dice roll, you then add your `attribute modifier'. This number is derived from your character's {\it attributes}, the key defining traits of your character. There are 8 of these attributes: {\bf Athleticism, Finesse, Spirit, Charisma, Intelligence, Empathy, Power} and {\bf Evil}. They typically take values between 5 and 18. A larger attribute score will give you a larger modifier in that attribute (and hence a bonus on these checks), and a smaller value can result in a {\it negative} modifier, making these checks harder. A check is (nearly) always specified to be a check related to one of these 8 attributes, which tells you which modifier to use. 
+
+Finally, you may then add on any situation-dependent modifiers. This may take the form of a temporary buff (such as a potion), any penalties from injuries, or any other abilities that your character has acquired along the way (such as {\it Proficiencies} or {\it Skill bonuses}). Anything that the GM feels will affect how good your character is at this test, is added on here. 
+
+Hence, to complete an action; for example, a “1d20 Intelligence (Research) Check”, we would roll a single 20-sided dice to get a value $x$, and then calculate:
+
+$$\text{CV} = x+ \text{intelligence modifier} + \text{bonuses} $$
+
+If the check value exceeds the minimum threshold (the DV) then the action is successful. If the check exceeds the threshold by a significant margin, the action might be more than just ‘successful’, and might have benefits beyond that which you originally intended!
 
 Conversely, if you fail the check, then the action will fail. If you fail by a significant margin, then the action will not only not happen, it might backfire on you spectacularly, and rather than blasting your opponent into oblivion, you might find yourself vomiting slugs over the school field… 
 
-The single most important rule in an RPG such as this is that the Game Master is always correct. Magic is a fickle thing, and there are rarely hard and fast rules. A spell that worked with a certain check last time might misfire a second time! A creature that fell at a single flipendo a second ago might suddenly require legions of wizards to put down – listen to your Game Master, and don’t rely on just raw numbers!
 
-The Game Master (GM) also has complete freedom to override the rules in this booklet, in the name of an interesting yet challenging story. An example of this would be changing the requirements of a spell because of the way it is being used. For example, the Patronus Charm is usually cast using a SPR check, as it requires great strength of will to cast – but if you are using a Patronus as a diversion, the GM might decide that an intelligence check is more suitable. The GM is also the arbiter of what is allowed, and whether a tactic was successful. 
+\section{Using these Rules}
 
-Though the GM controls the characters who oppose the players, the GM does not ‘win’ if these enemy characters prevail – the purpose of the GM is not to defeat you, but to drive the story and present interesting and challenging scenarios for you to overcome. Sometimes, that necessitates a little bit of ‘fudging’, and doing so is absolutely not against the rules!
+For the most part, these rules sections provide nothing more than a list of when, how and under what circumstances you can aqcuire the various bonuses and penalties to plug into the above equation, although -- of course -- there's rather more to it than that!
+
+Chapter 2 deals with character creation, and the various routes one may take to defining the character you will be playing, including playable races, professions and starting equipment. Chapter 3 focusses on some specifics of action resolution, including combat actions and movement. Chapter 4 discusses items and equipment. Chapter 5 discusses the magical art of Artificing -- the creation of magical items and potions. Chapter 6 deals with the Environment and related concerns, such as vision and impaired movement. Chapter 7 contains information about character progression and levelling up, and finall (and perhaps most importantly), Chapter 8 dicusses the nature and use of Magic and Spells.
+
+The GM also has their own rulebook, the Game Master's Guide, which contains some rules, instructions and a compedium of information which might want to be kept secret from the players so that they can discover it along with their players, to prevent `metagaming'. Players should only view this document with the GM's consent.
