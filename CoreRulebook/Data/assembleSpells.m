@@ -9,13 +9,11 @@ filler ={'Combat-based magic, used to incapacitate or even inflict pain upon you
 fileName = '../Chapters/Spells.tex';
 readFile = fileread(fileName);
 
-
 insertPoint = strfind(readFile, '%%SpellBegin');
 
 endPoint = strfind(readFile, '%%SpellEnd');
 
 firstHalf = readFile(1:insertPoint+12);
-
 secondHalf = readFile(endPoint:end);
 text = '';
 
@@ -42,8 +40,8 @@ for i = 1:length(files)
     statuses = sortrows(statuses,8);
     
     title = ['\subsection*{', sectionHeads{i}, '} \addcontentsline{toc}{subsection}{Spell School: ',sectionHeads{i},' } ', filler{i} '\\ '];
-    preamble = '\footnotesize \begin{center} \begin{longtable}{|m{\t cm}|m{\u cm}| m{\v cm}|m{\w cm}|m{\x cm}|m{\z cm}|}';
-    headers = '\hline  {\normalsize \bf Name } & {\normalsize \bf Class} & {\normalsize \bf Mastery}& {\normalsize \bf FP}  & {\normalsize \bf Check} & \bf {\normalsize Effect}  \\ \hline \hline ';
+    preamble = '\footnotesize \begin{center} \tablealternate \begin{longtable}{|m{\t cm} m{\u cm} m{\v cm} m{\w cm} m{\x cm} m{\z cm}|}';
+    headers = '\hline \tablehead {\normalsize \bf Name } & {\normalsize \bf Class} & {\normalsize \bf Mastery}& {\normalsize \bf FP}  & {\normalsize \bf Check} & \bf {\normalsize Effect}  \\ \hline \hline ';
     
     text = [text title preamble headers];
     
@@ -54,14 +52,13 @@ for i = 1:length(files)
             '  &   \parbox[t]{\v cm}{\begin{center}', statuses.Level{i}(3:end), '\end{center}}',...
             '  &   \parbox[t]{\w cm}{\begin{center}', num2str(statuses.Fortitude(i)), '\end{center}}',...
             ' &    \parbox[t]{\x cm}{\begin{center} ',  statuses.Check{i} '\\~\\ Target:', num2str(statuses.Difficulty(i)),'\end{center}}',...
-            '&      \parbox[t]{\z cm}{\begin{flushleft}', statuses.Effect{i}, '\end{flushleft}} \\ \hline '];
+            '&      \parbox[t]{\z cm}{\begin{flushleft}', statuses.Effect{i}, '\end{flushleft}} \\  '];
         text = [text line];
     end
-    ender = '\end{longtable} \end{center} \normalsize \vspace{4ex}';
+    ender = '\hline\end{longtable} \end{center} \normalsize \vspace{4ex}';
     
     text = [text ender];
 end
 fullText = [firstHalf, text, secondHalf];
-
 FID = fopen(fileName,'w');
 fwrite(FID, fullText);

@@ -16,8 +16,8 @@ firstHalf = readFile(1:insertPoint+14);
 secondHalf = readFile(endPoint:end);
 
 
-preamble = ' \begin{tabular}{|c|c|c|c|c|m {\l cm}|}';
-headers = '\hline \normalsize \bf Weapon & \normalsize \bf Type & \normalsize \bf Brawler & \normalsize \bf Damage Check & \normalsize \bf Damage Type & \bf Notes\\ \hline \hline ';
+preamble = ' \tablealternate\begin{tabular}{|c c c c c m {\l cm}|}';
+headers = '\hline \tablehead \normalsize \bf Weapon & \normalsize \bf Type & \normalsize \bf Brawler & \normalsize \bf Damage Check & \normalsize \bf Damage Type & \bf Notes\\ \hline \hline ';
 
 text = [preamble headers];
 
@@ -35,11 +35,11 @@ for (i = 1:n)
         lvl = ' ';
     end
     line = ['\bf ', weapon, ' &  ', professions.Type{i}, ' & ', lvl,...
-        ' & ', check, ' & ', type, '& ', notes, '\\ \hline '];
+        ' & ', check, ' & ', type, '& ', notes, '\\  '];
      
     text = [text line];
 end
-ender = '\end{tabular} ';
+ender = '\hline\end{tabular} ';
 
 fullText = [firstHalf, text, ender, secondHalf];
 
