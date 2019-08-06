@@ -17,7 +17,7 @@
 \contentsline {section}{\numberline {3.3}Non-Combat Actions}{12}
 \contentsline {section}{\numberline {3.4}Combat Actions}{13}
 \contentsline {section}{\numberline {3.5}Stealth, Perception \& Passive Checks}{14}
-\contentsline {section}{\numberline {3.6}Sneak Attacks \& Attacks of Opportunity}{14}
+\contentsline {section}{\numberline {3.6}Sneak Attacks \& Attacks of Opportunity}{15}
 \contentsline {chapter}{\numberline {4}Taking Damage}{16}
 \contentsline {section}{\numberline {4.1}Damage \& Damage Types}{16}
 \contentsline {section}{\numberline {4.2}Armour Class}{16}
@@ -40,7 +40,7 @@
 \contentsline {chapter}{\numberline {8}Character Progression \& Skills}{25}
 \contentsline {section}{\numberline {8.1}Levelling Up}{25}
 \contentsline {section}{\numberline {8.2}Skills}{25}
-\contentsline {subsection}{\numberline {8.2.1}Aquiring Skills}{25}
+\contentsline {subsection}{\numberline {8.2.1}Aquiring Skills}{26}
 \contentsline {subsection}{\numberline {8.2.2}Automatic Skill Aquiring}{26}
 \contentsline {section}{\numberline {8.3}Skill List}{27}
 \contentsline {chapter}{\numberline {9}Spells}{33}

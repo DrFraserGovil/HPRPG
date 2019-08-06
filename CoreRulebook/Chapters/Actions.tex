@@ -121,9 +121,9 @@ You are always allowed to ask the GM if a proficiency applies to a specific chec
 
 A character's {\it Arcane Wisdom} is a check-modifier earned by general widsom in the magical arts. In effect, this means that it increases by one every five levels:
 \begin{center}
-\begin{tabular}{|c|c|}
+\begin{rndtable}{|c c|}
 \hline \bf Character Level 	&\bf 	Arcane Wisdom
-\\ \hline\hline 
+\\ \hline
 1-4	&	+0
 \\
 5-9	&	+1
@@ -135,7 +135,7 @@ A character's {\it Arcane Wisdom} is a check-modifier earned by general widsom i
 20+	&	+4
 \\
 \hline
-\end{tabular}
+\end{rndtable}
 \end{center}
 However, characters may also increase their arcane wisdom by learning the magic-school skills during the levelling-up process (see section \ref{S:Auto}).
 
@@ -148,10 +148,10 @@ After having performed the check, you will end up with a single number -- a resu
 
 Generally speaking, the following table gives a rough outline of the check required to pass actions of a certain difficulty:
 \begin{center}
-\begin{tabular}{|c|c|}
+\begin{rndtable}{|c c|}
 \hline
 Task Difficulty & Check
-\\ \hline \hline
+\\ \hline 
 Very Easy & 5
 \\
 Easy & 10
@@ -164,7 +164,7 @@ Very Hard & 25
 \\
 Nigh-impossible & 30
 \\ \hline
-\end{tabular}
+\end{rndtable}
 \end{center}
 
 It is up to the GM to decide the difficulty of the task (they do not need to reveal this to you), and they may of course deviate from this table. 
@@ -205,23 +205,23 @@ If you are travelling more than 1 hour, then the following table gives a variety
 
 
 \begin{center}
-\begin{tabular}{|c|c|c|m {3 cm}|}
+\begin{rndtable}{|c c c m {3 cm}|}
 \hline
 Pace & Speed & Duration & Effect
 \\
-\hline \hline
+\hline 
 Slow & 2km/h & 8 hours & Perform FIN(stealth) check to remain hidden every 30 minutes
-\\ \hline
+\\ 
 Normal & 4 km/h & 7 hours & (None)
-\\ \hline
+\\ 
 Rapid & 6 km/h & 5 hours & -5 penalty to passive perception. 4 FP per hour.
+\\ 
+Breakneck & 10km/h & 1 hour & {\raggedright- 10 penalty to passive perception. 6 FP per hour. 5 HP per hour.}
 \\ \hline
-Breakneck & 10km/h & 1 hour & - 10 penalty to passive perception. 6 FP per hour. 5 HP per hour.
-\\ \hline
-\end{tabular}
+\end{rndtable}
 \end{center}
 
-If you attempt to travel for longer than the `duration' of the selected pace, then you aquire the `exhausted' status effect, and lose 50\% of your max HP for every time you another half-duration (so at Breakneck you would lose 50\% of your max HP after 1 hour 30 minutes, at Normal, you would lose it after 10 hours 30 minutes).
+If you attempt to travel for longer than the `duration' of the selected pace, then you aquire the `exhausted' status effect, and lose 50\% of your max HP for every time you exceed another half-duration (so at Breakneck you would lose 50\% of your max HP after 1 hour 30 minutes, at Normal, you would lose it after 10 hours 30 minutes).
 
 This timer resets after a rest of more than 8 hours, after which time you can take up your pace again. 
 
@@ -323,13 +323,13 @@ Critical attacks (i.e. triggered by a nat20, or otherwise through a skill) are m
 If you perform a critical {\it during} a Critical attack, then you do get to use two multipliers, but they are {\it added}. For example, a critical-opportunity attack would roll two dice, and use the following table to determine the dice:
 
 \begin{center}
-\begin{tabular}{|c||c|c|}
+\begin{rndtable}{|c c c|}
 \hline
 ~ & odd & even
 \\ \hline \hline
-odd & 2 & 3
+\cellcolor{\tablecolorhead }odd & 2 & 3
 \\ \hline
-even & 3  & 4
+\cellcolor{\tablecolorhead}even & 3  & 4
 \\ \hline
-\end{tabular}
+\end{rndtable}
 \end{center}

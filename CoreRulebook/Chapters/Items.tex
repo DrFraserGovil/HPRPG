@@ -76,25 +76,25 @@ The weapon list is given assuming the weapon is a base-level iron weapon. Use th
 \def\y{2.6}
 \small
 \begin{center}
-\begin{tabular}{|c|c|c|m {\y cm}|}
+\begin{rndtable}{|c c c m {\y cm}|}
 \hline
 \bf Material & \bf Damage & \bf Blunting & \bf Notes
-\\ \hline
+\\
 Wood & -3  & 10 uses  & \parbox[t]{\y cm}{\raggedright Illusion magics bind strongly to wood}
-\\ \hline
+\\
 Bone & -1  & 20 uses &  \parbox[t]{\y cm}{\raggedright Dark Arts bind strongly to bone}
-\\\hline
+\\
 Iron & +0 & 30 uses & 
-\\\hline
+\\
 Steel & +1 & 50 uses & 
-\\\hline
+\\
 Meteorite-iron & +2 & 100 uses &  \parbox[t]{\y cm}{\raggedright Especially powerful enchantments can be bound to meteorite-iron.}
-\\\hline
+\\
 Adamantium & + 3 & Does not blunt &  \parbox[t]{\y cm}{\raggedright Cannot be forged or enchanted }
-\\ \hline
+\\ 
 Silver & +1 & 30 uses & \parbox[t]{\y cm}{\raggedright Does double damage to undead}
-\\ \hline
-\end{tabular}
+\\ 
+\end{rndtable}
 \end{center}
 
 Other materials and/or bonuses may be introduced as is story appropriate. 
@@ -124,7 +124,8 @@ You cannot repair your own armour whilst it is being worn: you must take it off,
 \section{Weapon List}
 \small
 \def\l{4}
-%%WeaponsBegin \tablealternate\begin{tabular}{|c c c c c m {\l cm}|}\hline \tablehead \normalsize \bf Weapon & \normalsize \bf Type & \normalsize \bf Brawler & \normalsize \bf Damage Check & \normalsize \bf Damage Type & \bf Notes\\ \hline \hline \bf Club &  Melee & 2 & 1d4 ATH (Strength)  & Bludgeoning& \parbox[t]{\l cm}{Does not blunt}\\  \bf Dagger &  Melee & 2 & 1d6 ATH (Speed)  & Piercing& \parbox[t]{\l cm}{Can be thrown 10m, damage gets disadvantage}\\  \bf Improvised &  Melee & 2 & 1d2 ATH (Strength)  & Various& \parbox[t]{\l cm}{(i.e. sticks, household objects)}\\  \bf Quarterstaff &  Melee & 2 & 1d6 ATH (Dexterity)  & Bludgeoning& \parbox[t]{\l cm}{Can be used 2 handed (use 2d4 check), does not blunt}\\  \bf Scythe &  Melee & 2 & 1d6 ATH (Speed)  & Slashing& \parbox[t]{\l cm}{}\\  \bf Light Axe &  Melee & 3 & 1d6 ATH (Strength)  & Slashing& \parbox[t]{\l cm}{Can be thrown 5m}\\  \bf Longsword &  Melee & 3 & 2d4 ATH (Strength)  & Slashing& \parbox[t]{\l cm}{}\\  \bf Mace &  Melee & 3 & 1d8 ATH (Strength)  & Bludgeoning& \parbox[t]{\l cm}{Does not go blunt}\\  \bf Rapier &  Melee & 3 & 1d8 FIN (Precision)  & Piercing& \parbox[t]{\l cm}{}\\  \bf Shortsword &  Melee & 3 & 1d6 ATH (Speed)  & Slashing& \parbox[t]{\l cm}{}\\  \bf Spear &  Melee & 3 & 1d8 ATH (Strength)  & Piercing& \parbox[t]{\l cm}{Can be thrown 20m (disadvantage), melee reach 2m}\\  \bf Greataxe &  Melee & 4 & 1d10 ATH (Strength)  & Slashing& \parbox[t]{\l cm}{Two-handed}\\  \bf Greatsword &  Melee & 4 & 2d6 ATH (Strength)  & Slashing& \parbox[t]{\l cm}{Two-handed}\\  \bf Trident &  Melee & 4 & 1d8 ATH (Strength)  & Piercing& \parbox[t]{\l cm}{}\\  \bf Warhammer &  Melee & 4 & 4d4 ATH (Strength)  & Bludgeoning& \parbox[t]{\l cm}{Two-handed}\\  \bf Glaive &  Melee & 5 & 1d20 ATH (Precision)  & Slashing& \parbox[t]{\l cm}{Two-handed, reach 2m}\\  \bf Lance &  Melee & 5 & 1d12 ATH (Precision)  & Piercing& \parbox[t]{\l cm}{Requires mount, reach 2m}\\  \bf Pike &  Melee & 5 & 1d12 ATH (Strength)  & Piercing& \parbox[t]{\l cm}{Two-handed, reach 2m}\\  \bf Whip &  Melee & 5 & 1d4 ATH (Precision)  & Slashing& \parbox[t]{\l cm}{Reach 5m}\\  \bf Blowdart &  Ranged &   & 1d6 FIN (Precision)  & Poison& \parbox[t]{\l cm}{Can be coated in a variety of toxins}\\  \bf Crossbow &  Ranged &   & 1d12 FIN (Precision)  & Piercing& \parbox[t]{\l cm}{Max range 20m, requires bolts}\\  \bf Improvised &  Ranged &   & 1d4 FIN (Precision)  & Various& \parbox[t]{\l cm}{(i.e. thrown rocks)}\\  \bf Longbow &  Ranged &   & 1d20 ATH (Strength)  & Piercing& \parbox[t]{\l cm}{Requires arrows. Minimum strength 15 to use.}\\  \bf Shortbow &  Ranged &   & 1d10 ATH (Strength)  & Piercing& \parbox[t]{\l cm}{Max range 30m, requires arrows}\\  \bf Sling &  Ranged &   & 1d6 FIN (Strength)  & Bludgeoning& \parbox[t]{\l cm}{Max range 20m, can use rocks as ammunition}\\  \hline\end{tabular} %%WeaponsEnd
-
+\begin{center}
+%%WeaponsBegin \tablealternate\begin{rndtable}{|c c c c c m {\l cm}|}\hline \tablehead \normalsize \bf Weapon & \normalsize \bf Type & \normalsize \bf Brawler & \normalsize \bf Damage Check & \normalsize \bf Damage Type & \bf Notes\\  \bf Club &  Melee & 2 & 1d4 ATH (Strength)  & Bludgeoning& \parbox[t]{\l cm}{Does not blunt}\\  \bf Dagger &  Melee & 2 & 1d6 ATH (Speed)  & Piercing& \parbox[t]{\l cm}{Can be thrown 10m, damage gets disadvantage}\\  \bf Improvised &  Melee & 2 & 1d2 ATH (Strength)  & Various& \parbox[t]{\l cm}{(i.e. sticks, household objects)}\\  \bf Quarterstaff &  Melee & 2 & 1d6 ATH (Dexterity)  & Bludgeoning& \parbox[t]{\l cm}{Can be used 2 handed (use 2d4 check), does not blunt}\\  \bf Scythe &  Melee & 2 & 1d6 ATH (Speed)  & Slashing& \parbox[t]{\l cm}{}\\  \bf Light Axe &  Melee & 3 & 1d6 ATH (Strength)  & Slashing& \parbox[t]{\l cm}{Can be thrown 5m}\\  \bf Longsword &  Melee & 3 & 2d4 ATH (Strength)  & Slashing& \parbox[t]{\l cm}{}\\  \bf Mace &  Melee & 3 & 1d8 ATH (Strength)  & Bludgeoning& \parbox[t]{\l cm}{Does not go blunt}\\  \bf Rapier &  Melee & 3 & 1d8 FIN (Precision)  & Piercing& \parbox[t]{\l cm}{}\\  \bf Shortsword &  Melee & 3 & 1d6 ATH (Speed)  & Slashing& \parbox[t]{\l cm}{}\\  \bf Spear &  Melee & 3 & 1d8 ATH (Strength)  & Piercing& \parbox[t]{\l cm}{Can be thrown 20m (disadvantage), melee reach 2m}\\  \bf Greataxe &  Melee & 4 & 1d10 ATH (Strength)  & Slashing& \parbox[t]{\l cm}{Two-handed}\\  \bf Greatsword &  Melee & 4 & 2d6 ATH (Strength)  & Slashing& \parbox[t]{\l cm}{Two-handed}\\  \bf Trident &  Melee & 4 & 1d8 ATH (Strength)  & Piercing& \parbox[t]{\l cm}{}\\  \bf Warhammer &  Melee & 4 & 4d4 ATH (Strength)  & Bludgeoning& \parbox[t]{\l cm}{Two-handed}\\  \bf Glaive &  Melee & 5 & 1d20 ATH (Precision)  & Slashing& \parbox[t]{\l cm}{Two-handed, reach 2m}\\  \bf Lance &  Melee & 5 & 1d12 ATH (Precision)  & Piercing& \parbox[t]{\l cm}{Requires mount, reach 2m}\\  \bf Pike &  Melee & 5 & 1d12 ATH (Strength)  & Piercing& \parbox[t]{\l cm}{Two-handed, reach 2m}\\  \bf Whip &  Melee & 5 & 1d4 ATH (Precision)  & Slashing& \parbox[t]{\l cm}{Reach 5m}\\  \bf Blowdart &  Ranged &   & 1d6 FIN (Precision)  & Poison& \parbox[t]{\l cm}{Can be coated in a variety of toxins}\\  \bf Crossbow &  Ranged &   & 1d12 FIN (Precision)  & Piercing& \parbox[t]{\l cm}{Max range 20m, requires bolts}\\  \bf Improvised &  Ranged &   & 1d4 FIN (Precision)  & Various& \parbox[t]{\l cm}{(i.e. thrown rocks)}\\  \bf Longbow &  Ranged &   & 1d20 ATH (Strength)  & Piercing& \parbox[t]{\l cm}{Requires arrows. Minimum strength 15 to use.}\\  \bf Shortbow &  Ranged &   & 1d10 ATH (Strength)  & Piercing& \parbox[t]{\l cm}{Max range 30m, requires arrows}\\  \bf Sling &  Ranged &   & 1d6 FIN (Strength)  & Bludgeoning& \parbox[t]{\l cm}{Max range 20m, can use rocks as ammunition}\\  \hline\end{rndtable} %%WeaponsEnd
+\end{center}
 \normalsize
 \twocolumn
