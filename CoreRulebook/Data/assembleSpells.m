@@ -39,7 +39,7 @@ for i = 1:length(files)
     
     statuses = sortrows(statuses,8);
     
-    title = ['\subsection*{', sectionHeads{i}, '} \addcontentsline{toc}{subsection}{Spell School: ',sectionHeads{i},' } ', filler{i} '\\ '];
+    title = ['\subsection*{', sectionHeads{i}, '} \addcontentsline{toc}{section}{Spell School: ',sectionHeads{i},' } ', filler{i} '\\ '];
     preamble = '\footnotesize \begin{center} \tablealternate \begin{longtable}{|m{\t cm} m{\u cm} m{\v cm} m{\w cm} m{\x cm} m{\z cm}|}';
     headers = '\hline \tablehead {\normalsize \bf Name } & {\normalsize \bf Class} & {\normalsize \bf Mastery}& {\normalsize \bf FP}  & {\normalsize \bf Check} & \bf {\normalsize Effect}  \\ \hline \hline ';
     

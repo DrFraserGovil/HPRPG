@@ -9,6 +9,7 @@
 \usepackage{amsmath}
 \usepackage{lscape}
 \usepackage{enumitem}
+\usepackage{setspace}
 \usepackage{multicol}
 \usepackage[table]{xcolor}  
 \usepackage{tikz}
@@ -79,10 +80,12 @@
     {\HP \fontsize{22}{0} \selectfont Version 3.0 \hfill Jack Fraser}
 \end{titlepage}
 
+\setcounter{tocdepth}{1}  
+\begin{spacing}{0.01}
 \footnotesize
 \tableofcontents
 \normalsize
-
+\end{spacing}
 \subfile{Chapters/CoreMechanic}
 
 
