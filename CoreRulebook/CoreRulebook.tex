@@ -15,27 +15,50 @@
 \usepackage{tikz}
 \usepackage{multirow}
 \usepackage{float}
-
+\usepackage{tcolorbox}
+\usepackage{keyval}
+\usepackage{pgfkeys}
 \def\apos{'}
 \usepackage{environ}
 \usepackage{array}
+%\usepackage{pagecolor}
 \setlength{\parskip}{4pt}
 \setlength{\parindent}{0pt}
 \setlength{\columnsep}{0.7cm}
 
 
-\newcommand{\tablecolorlight}{gray!7}
-\newcommand{\tablecolordark}{gray!30}
-\newcommand{\tablecolorhead}{gray!60}
+\definecolor{titlered}{HTML}{58180D} 
+\definecolor{rulered}{HTML}{9C2B1B} 
+\definecolor{papyrus}{HTML}{FDF1DC} 
+\definecolor{papDark}{HTML}{F5EEE9}
+\newcommand{\tablecolorlight}{papyrus!17}
+\newcommand{\tablecolordark}{papDark!65}
+\newcommand{\tablecolorhead}{papDark!150}
 
 \newcommand{\tablehead}{ \rowcolor{\tablecolorhead}}
 \newcommand{\tablealternate}{ \rowcolors{2}{\tablecolorlight}{\tablecolordark}}
 
 \newfontfamily{\HP}{[ParryHotter.TTF]}
+\newcommand\dndFont{texgyrebonum}
+\setmainfont[BoldFont = \dndFont-bold.otf,ItalicFont = \dndFont-italic.otf,BoldItalicFont = \dndFont-bolditalic.otf]{\dndFont-regular.otf}
+\newcommand{\dndline}{%
+  \noindent
+  \begin{tikzpicture}[]
+    \draw [rulered, fill=rulered] (0, 0) --(0,0.1) -- ({\textwidth*0.5}, 0.05);
+  \end{tikzpicture}%
+  \par%
+}
 
-\titleformat{\chapter} {\vspace{-10ex}\normalfont\bfseries\HP\Huge}{}{0pt}{}[\vspace{-2ex}]
-
-\titleformat{\section}{\vspace{-3ex}\normalfont\Large\it\centering}{}{0em}{\titlerule[0.3pt] \\}[{\titlerule[0.3pt]}]
+\newcommand{\dndlineLong}{%
+  \noindent
+  \begin{tikzpicture}[]
+    \draw [rulered, fill=rulered] (0, 0) --(0,0.1) -- ({\textwidth}, 0.05);
+  \end{tikzpicture}%
+  \par%
+}
+\titleformat{\chapter} {\vspace{-14ex}\normalfont\bfseries\centering\color{titlered}\HP\Huge}{}{0pt}{\dndline\thechapter: }[\vspace{-1.6ex}\dndline\vspace{-3ex}]
+\titleformat{name=\chapter,numberless}{\vspace{-14ex}\normalfont\bfseries\centering\color{titlered}\HP\Huge}{}{0pt}{\dndline }[\vspace{-1.6ex}\dndline\vspace{-3ex}]
+\titleformat{\section}{\vspace{-3ex}\normalfont\huge\color{titlered}\it\centering}{}{0em}{\dndline}[{\vspace{-1.4ex}\dndline}]
 
 
 
@@ -62,8 +85,11 @@
 
 
 
-\begin{document}
 
+
+
+\begin{document}
+%\pagecolor{papyrus!50}
 \begin{titlepage}
     %\newgeometry{left=2.12cm, right = 1.74cm, bottom=1cm}
     \centering
@@ -81,7 +107,7 @@
 \end{titlepage}
 
 \setcounter{tocdepth}{0}  
-\begin{spacing}{0.01}
+\begin{spacing}{0.8}
 \footnotesize
 \tableofcontents
 \normalsize
@@ -92,7 +118,7 @@
 \part{Characters} \label{C:CharacterCreation}
 
 \subfile{Chapters/CharacterCreation}
-
+%\subfile{Chapters/Archetypes}
 
 \subfile{Chapters/Skills}
 

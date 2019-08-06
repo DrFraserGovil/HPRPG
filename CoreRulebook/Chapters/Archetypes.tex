@@ -1,6 +1,9 @@
 \documentclass[CoreRulebook.tex]{subfile}
 
 
+
+
+
  \chapter{Character Archetype}\label{C:Archetype}
  
  Whilst your character is a unique individual, an adventuring soul destined for greatness, most questers find themslves falling into one of many {\it archetypes} -- are they the headstrong hero who needs to learn humilty? The academic who's quest for knowledge has led to unforseen consequences, or the plucky underdog trying to quit their life of crime? 
@@ -9,6 +12,148 @@
  
  
  
+ %% Use the matlab script archetypeWriter to modify these. Don't do it by hand!
+ \define@key{archetype}{arcaneI}{\def\arcaneI{#1}}
+ \define@key{archetype}{firstLevelFeature}[None]{\def\firstLVLf{#1}}
+ \define@key{archetype}{arcaneII}{\def\arcaneII{#1}}
+  \define@key{archetype}{secondLevelFeature}[None]{\def\secondLVLf{#1}}
+  
+\define@key{archetype}{arcaneIII}{\def\arcaneIII{#1}}
+     \define@key{archetype}{alphaFeatureIII}{\def\alphaIII{#1}}
+     \define@key{archetype}{betaFeatureIII}{\def\betaIII{#1}}
+     \define@key{archetype}{arcaneIV}{\def\arcaneIV{#1}}
+     \define@key{archetype}{alphaFeatureIV}{\def\alphaIV{#1}}
+     \define@key{archetype}{betaFeatureIV}{\def\betaIV{#1}}
+     \define@key{archetype}{arcaneV}{\def\arcaneV{#1}}
+     \define@key{archetype}{alphaFeatureV}{\def\alphaV{#1}}
+     \define@key{archetype}{betaFeatureV}{\def\betaV{#1}}
+     \define@key{archetype}{arcaneVI}{\def\arcaneVI{#1}}
+     \define@key{archetype}{alphaFeatureVI}{\def\alphaVI{#1}}
+     \define@key{archetype}{betaFeatureVI}{\def\betaVI{#1}}
+     \define@key{archetype}{arcaneVII}{\def\arcaneVII{#1}}
+     \define@key{archetype}{alphaFeatureVII}{\def\alphaVII{#1}}
+     \define@key{archetype}{betaFeatureVII}{\def\betaVII{#1}}
+     \define@key{archetype}{arcaneVIII}{\def\arcaneVIII{#1}}
+     \define@key{archetype}{alphaFeatureVIII}{\def\alphaVIII{#1}}
+     \define@key{archetype}{betaFeatureVIII}{\def\betaVIII{#1}}
+     \define@key{archetype}{arcaneIX}{\def\arcaneIX{#1}}
+     \define@key{archetype}{alphaFeatureIX}{\def\alphaIX{#1}}
+     \define@key{archetype}{betaFeatureIX}{\def\betaIX{#1}}
+     \define@key{archetype}{arcaneX}{\def\arcaneX{#1}}
+     \define@key{archetype}{alphaFeatureX}{\def\alphaX{#1}}
+     \define@key{archetype}{betaFeatureX}{\def\betaX{#1}}
+     \define@key{archetype}{arcaneXI}{\def\arcaneXI{#1}}
+     \define@key{archetype}{alphaFeatureXI}{\def\alphaXI{#1}}
+     \define@key{archetype}{betaFeatureXI}{\def\betaXI{#1}}
+     \define@key{archetype}{arcaneXII}{\def\arcaneXII{#1}}
+     \define@key{archetype}{alphaFeatureXII}{\def\alphaXII{#1}}
+     \define@key{archetype}{betaFeatureXII}{\def\betaXII{#1}}
+     \define@key{archetype}{arcaneXIII}{\def\arcaneXIII{#1}}
+     \define@key{archetype}{alphaFeatureXIII}{\def\alphaXIII{#1}}
+     \define@key{archetype}{betaFeatureXIII}{\def\betaXIII{#1}}
+     \define@key{archetype}{arcaneXIV}{\def\arcaneXIV{#1}}
+     \define@key{archetype}{alphaFeatureXIV}{\def\alphaXIV{#1}}
+     \define@key{archetype}{betaFeatureXIV}{\def\betaXIV{#1}}
+     \define@key{archetype}{arcaneXV}{\def\arcaneXV{#1}}
+     \define@key{archetype}{alphaFeatureXV}{\def\alphaXV{#1}}
+     \define@key{archetype}{betaFeatureXV}{\def\betaXV{#1}}
+     \define@key{archetype}{arcaneXVI}{\def\arcaneXVI{#1}}
+     \define@key{archetype}{alphaFeatureXVI}{\def\alphaXVI{#1}}
+     \define@key{archetype}{betaFeatureXVI}{\def\betaXVI{#1}}
+     \define@key{archetype}{arcaneXVII}{\def\arcaneXVII{#1}}
+     \define@key{archetype}{alphaFeatureXVII}{\def\alphaXVII{#1}}
+     \define@key{archetype}{betaFeatureXVII}{\def\betaXVII{#1}}
+     \define@key{archetype}{arcaneXVIII}{\def\arcaneXVIII{#1}}
+     \define@key{archetype}{alphaFeatureXVIII}{\def\alphaXVIII{#1}}
+     \define@key{archetype}{betaFeatureXVIII}{\def\betaXVIII{#1}}
+     \define@key{archetype}{arcaneXIX}{\def\arcaneXIX{#1}}
+     \define@key{archetype}{alphaFeatureXIX}{\def\alphaXIX{#1}}
+     \define@key{archetype}{betaFeatureXIX}{\def\betaXIX{#1}}
+     \define@key{archetype}{arcaneXX}{\def\arcaneXX{#1}}
+     \define@key{archetype}{alphaFeatureXX}{\def\alphaXX{#1}}
+     \define@key{archetype}{betaFeatureXX}{\def\betaXX{#1}}
+\newcommand{\archetype}[4]
+{
+\begingroup
+%keydefault. Modified again by the matlab script archetypeWriter. 
+\setkeys{archetype}{firstLevelFeature=None,secondLevelFeature=None, arcaneI=0, arcaneII=0, arcaneIII=0, alphaFeatureIII=None, betaFeatureIII=None, arcaneIV=0, alphaFeatureIV=None, betaFeatureIV=None, arcaneV=1, alphaFeatureV=None, betaFeatureV=None, arcaneVI=1, alphaFeatureVI=None, betaFeatureVI=None, arcaneVII=1, alphaFeatureVII=None, betaFeatureVII=None, arcaneVIII=1, alphaFeatureVIII=None, betaFeatureVIII=None, arcaneIX=1, alphaFeatureIX=None, betaFeatureIX=None, arcaneX=2, alphaFeatureX=None, betaFeatureX=None, arcaneXI=2, alphaFeatureXI=None, betaFeatureXI=None, arcaneXII=2, alphaFeatureXII=None, betaFeatureXII=None, arcaneXIII=2, alphaFeatureXIII=None, betaFeatureXIII=None, arcaneXIV=2, alphaFeatureXIV=None, betaFeatureXIV=None, arcaneXV=3, alphaFeatureXV=None, betaFeatureXV=None, arcaneXVI=3, alphaFeatureXVI=None, betaFeatureXVI=None, arcaneXVII=3, alphaFeatureXVII=None, betaFeatureXVII=None, arcaneXVIII=3, alphaFeatureXVIII=None, betaFeatureXVIII=None, arcaneXIX=3, alphaFeatureXIX=None, betaFeatureXIX=None, arcaneXX=4, alphaFeatureXX=None, betaFeatureXX=None}
+\def\w{5}
+\def\comma{,}
+\setkeys{archetype}{#4}
+\begin{tcolorbox}[  before skip=7pt plus 2pt,
+	  boxrule=0pt,
+	  boxsep=0pt,
+	  toptitle=4pt,
+	  left=7pt,
+	  right=7pt,
+	  bottom=11pt,
+	  arc=0.5mm,
+	  oversize=0pt,
+	  colback=papyrus,
+	 colbacktitle=titlered,
+	colframe=titlered, title=\vspace{-4ex}
+	]
+		
+		{\large \begin{center} \bf #1\end{center}}
+		\vspace{-1.3ex}
+		
+		\dndlineLong
+	
+		\begin{center}
+	
+		\begin{tabular}{c c m{\w cm} m{\w cm}}
+	
+\bf Level 	&	\bf Arcane Wisdom	&	\bf #2 Features	&	\bf #3 Features
+\\ 
+1  &  + \arcaneI & \multicolumn{2}{c}{\firstLVLf} 
+\\
+2  &  + \arcaneII & \multicolumn{2}{c}{\secondLVLf} 
+\\
+3  &  + \arcaneIII & \parbox[t]{\w cm}{\raggedright\alphaIII}  &  \parbox[t]{\w cm}{\raggedright\betaIII}
+ \\
+4  &  + \arcaneIV & \parbox[t]{\w cm}{\raggedright\alphaIV}  &  \parbox[t]{\w cm}{\raggedright\betaIV}
+ \\
+5  &  + \arcaneV & \parbox[t]{\w cm}{\raggedright\alphaV}  &  \parbox[t]{\w cm}{\raggedright\betaV}
+ \\
+6  &  + \arcaneVI & \parbox[t]{\w cm}{\raggedright\alphaVI}  &  \parbox[t]{\w cm}{\raggedright\betaVI}
+ \\
+7  &  + \arcaneVII & \parbox[t]{\w cm}{\raggedright\alphaVII}  &  \parbox[t]{\w cm}{\raggedright\betaVII}
+ \\
+8  &  + \arcaneVIII & \parbox[t]{\w cm}{\raggedright\alphaVIII}  &  \parbox[t]{\w cm}{\raggedright\betaVIII}
+ \\
+9  &  + \arcaneIX & \parbox[t]{\w cm}{\raggedright\alphaIX}  &  \parbox[t]{\w cm}{\raggedright\betaIX}
+ \\
+10  &  + \arcaneX & \parbox[t]{\w cm}{\raggedright\alphaX}  &  \parbox[t]{\w cm}{\raggedright\betaX}
+ \\
+11  &  + \arcaneXI & \parbox[t]{\w cm}{\raggedright\alphaXI}  &  \parbox[t]{\w cm}{\raggedright\betaXI}
+ \\
+12  &  + \arcaneXII & \parbox[t]{\w cm}{\raggedright\alphaXII}  &  \parbox[t]{\w cm}{\raggedright\betaXII}
+ \\
+13  &  + \arcaneXIII & \parbox[t]{\w cm}{\raggedright\alphaXIII}  &  \parbox[t]{\w cm}{\raggedright\betaXIII}
+ \\
+14  &  + \arcaneXIV & \parbox[t]{\w cm}{\raggedright\alphaXIV}  &  \parbox[t]{\w cm}{\raggedright\betaXIV}
+ \\
+15  &  + \arcaneXV & \parbox[t]{\w cm}{\raggedright\alphaXV}  &  \parbox[t]{\w cm}{\raggedright\betaXV}
+ \\
+16  &  + \arcaneXVI & \parbox[t]{\w cm}{\raggedright\alphaXVI}  &  \parbox[t]{\w cm}{\raggedright\betaXVI}
+ \\
+17  &  + \arcaneXVII & \parbox[t]{\w cm}{\raggedright\alphaXVII}  &  \parbox[t]{\w cm}{\raggedright\betaXVII}
+ \\
+18  &  + \arcaneXVIII & \parbox[t]{\w cm}{\raggedright\alphaXVIII}  &  \parbox[t]{\w cm}{\raggedright\betaXVIII}
+ \\
+19  &  + \arcaneXIX & \parbox[t]{\w cm}{\raggedright\alphaXIX}  &  \parbox[t]{\w cm}{\raggedright\betaXIX}
+ \\
+20  &  + \arcaneXX & \parbox[t]{\w cm}{\raggedright\alphaXX}  &  \parbox[t]{\w cm}{\raggedright\betaXX}
+ \\
+		\end{tabular}
+		\end{center}
+
+		\dndlineLong
+
+	\end{tcolorbox}
+	\endgroup
+}
+
  \begin{center}
  \begin{rndtable}{c c c}
  \hline
@@ -41,3 +186,9 @@
 	\hline
 \end{rndtable} 
  \end{center}
+\onecolumn
+\section{Gryffindor Student}
+\archetype{Gryffindor Student}{Sportsman}{Jester}{firstLevelFeature= Willpower and Endurance proficiencies +1,
+									   secondLevelFeature = Heart of Bravery,
+									   }
+\twocolumn
