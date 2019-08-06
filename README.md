@@ -1,4 +1,4 @@
-# HPRPG: Harry Potter and the Role-Playing Ha,e
+# HPRPG: Harry Potter and the Role-Playing Game
 
 A Harry Potter Role Playing Game
 
