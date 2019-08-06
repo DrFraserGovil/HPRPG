@@ -10,21 +10,53 @@
 \usepackage{lscape}
 \usepackage{enumitem}
 \usepackage{multicol}
+\usepackage[table]{xcolor}  
+\usepackage{tikz}
 \usepackage{multirow}
 \usepackage{float}
-\usepackage[table]{xcolor}  
+
 \def\apos{'}
+\usepackage{environ}
+\usepackage{array}
 \setlength{\parskip}{4pt}
 \setlength{\parindent}{0pt}
 \setlength{\columnsep}{0.7cm}
-\newcommand{\tablehead}{ \rowcolor{gray!30}}
-\newcommand{\tablealternate}{ \rowcolors{2}{gray!15}{white}}
+\newcommand{\tablehead}{ \rowcolor{gray!60}}
+
+\newcommand{\tablecolorlight}{gray!7}
+\newcommand{\tablecolordark}{gray!30}
+
+\newcommand{\tablealternate}{ \rowcolors{2}{\tablecolorlight}{\tablecolordark}}
 
 \newfontfamily{\HP}{[ParryHotter.TTF]}
 
 \titleformat{\chapter} {\vspace{-10ex}\normalfont\bfseries\HP\Huge}{}{0pt}{}[\vspace{-2ex}]
 
 \titleformat{\section}{\vspace{-3ex}\normalfont\Large\it\centering}{}{0em}{\titlerule[0.3pt] \\}[{\titlerule[0.3pt]}]
+
+
+
+\newsavebox{\tablebox}
+
+
+\NewEnviron{rndtable}[1]{%
+  \addtolength{\extrarowheight}{1ex}%
+  \rowcolors{2}{\tablecolorlight}{\tablecolordark}%
+  \savebox{\tablebox}{%
+    \begin{tabular}{#1}%
+		 \tablehead
+      \BODY%
+    \end{tabular}}%
+  \begin{tikzpicture}
+    \begin{scope}
+      \clip[rounded corners=1ex] (0,-\dp\tablebox) -- (\wd\tablebox,-\dp\tablebox) -- (\wd\tablebox,\ht\tablebox) -- (0,\ht\tablebox) -- cycle;
+      \node at (0,-\dp\tablebox) [anchor=south west,inner sep=0pt]{\usebox{\tablebox}};
+    \end{scope}
+    \draw[rounded corners=1ex] (0,-\dp\tablebox) -- (\wd\tablebox,-\dp\tablebox) -- (\wd\tablebox,\ht\tablebox) -- (0,\ht\tablebox) -- cycle;
+  \end{tikzpicture}
+}
+
+
 
 
 \begin{document}
