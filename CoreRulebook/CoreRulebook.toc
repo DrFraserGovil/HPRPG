@@ -1,57 +1,60 @@
 \contentsline {chapter}{\numberline {1}Core Mechanic}{3}
 \contentsline {section}{\numberline {1.1}Computing Checks}{4}
 \contentsline {section}{\numberline {1.2}Using these Rules}{4}
-\contentsline {chapter}{\numberline {2}Character Creation}{5}
-\contentsline {section}{\numberline {2.1}Main Attributes}{5}
-\contentsline {section}{\numberline {2.2}Health \& Fortitude}{6}
-\contentsline {section}{\numberline {2.3}Playable Species}{6}
-\contentsline {section}{\numberline {2.4}Species Abilities}{8}
-\contentsline {section}{\numberline {2.5}Character Role}{9}
-\contentsline {section}{\numberline {2.6}Wands}{10}
-\contentsline {section}{\numberline {2.7}Final Setup}{10}
-\contentsline {chapter}{\numberline {3}Performing Actions}{11}
-\contentsline {section}{\numberline {3.1}Checks, Modifiers \& Proficiencies}{11}
-\contentsline {subsection}{\numberline {3.1.1}Modifiers}{11}
-\contentsline {subsection}{\numberline {3.1.2}Proficiencies}{11}
-\contentsline {section}{\numberline {3.2}Success \& Failure}{12}
-\contentsline {section}{\numberline {3.3}Non-Combat Actions}{12}
-\contentsline {section}{\numberline {3.4}Combat Actions}{13}
-\contentsline {section}{\numberline {3.5}Stealth, Perception \& Passive Checks}{14}
-\contentsline {section}{\numberline {3.6}Sneak Attacks \& Attacks of Opportunity}{15}
-\contentsline {chapter}{\numberline {4}Taking Damage}{16}
-\contentsline {section}{\numberline {4.1}Damage \& Damage Types}{16}
-\contentsline {section}{\numberline {4.2}Armour Class}{16}
-\contentsline {section}{\numberline {4.3}Statuses}{16}
-\contentsline {chapter}{\numberline {5}Items}{19}
-\contentsline {section}{\numberline {5.1}Equipped Items}{19}
-\contentsline {section}{\numberline {5.2}Storing Items}{19}
-\contentsline {section}{\numberline {5.3}Physical Weapons}{19}
-\contentsline {section}{\numberline {5.4}Armour}{20}
-\contentsline {section}{\numberline {5.5}Weapon List}{21}
-\contentsline {chapter}{\numberline {6}Artificing}{22}
-\contentsline {section}{\numberline {6.1}Enchanting}{22}
-\contentsline {section}{\numberline {6.2}Potion Making}{22}
-\contentsline {chapter}{\numberline {7}Environment Effects \& Vision}{23}
-\contentsline {section}{\numberline {7.1}Terrain}{23}
-\contentsline {section}{\numberline {7.2}Falling}{23}
-\contentsline {section}{\numberline {7.3}Air}{23}
-\contentsline {section}{\numberline {7.4}Vision}{23}
-\contentsline {section}{\numberline {7.5}Living Environment}{24}
-\contentsline {chapter}{\numberline {8}Character Progression \& Skills}{25}
-\contentsline {section}{\numberline {8.1}Levelling Up}{25}
-\contentsline {section}{\numberline {8.2}Skills}{25}
-\contentsline {subsection}{\numberline {8.2.1}Aquiring Skills}{26}
-\contentsline {subsection}{\numberline {8.2.2}Automatic Skill Aquiring}{26}
-\contentsline {section}{\numberline {8.3}Skill List}{27}
-\contentsline {chapter}{\numberline {9}Spells}{33}
-\contentsline {section}{\numberline {9.1}Learning New Spells}{33}
-\contentsline {section}{\numberline {9.2}Casting Spells}{33}
-\contentsline {section}{\numberline {9.3}Resisting Magic}{33}
-\contentsline {section}{\numberline {9.4}Spell List}{35}
-\contentsline {subsection}{Spell School: Hexes \& Curses }{35}
-\contentsline {subsection}{Spell School: Transfiguration }{37}
-\contentsline {subsection}{Spell School: Charms }{40}
-\contentsline {subsection}{Spell School: Healing \& Warding }{42}
-\contentsline {subsection}{Spell School: Illusion }{45}
-\contentsline {subsection}{Spell School: Divination }{47}
-\contentsline {subsection}{Spell School: Dark Arts }{48}
+\contentsline {part}{I\hspace {1em}Characters}{5}
+\contentsline {chapter}{\numberline {2}Main Attributes}{7}
+\contentsline {section}{\numberline {2.1}Health \& Fortitude}{8}
+\contentsline {chapter}{\numberline {3}Playable Species}{9}
+\contentsline {section}{\numberline {3.1}Species Abilities}{11}
+\contentsline {chapter}{\numberline {4}Character Archetype}{12}
+\contentsline {section}{\numberline {4.1}Final Setup}{12}
+\contentsline {chapter}{\numberline {5}Character Progression \& Skills}{13}
+\contentsline {section}{\numberline {5.1}Levelling Up}{13}
+\contentsline {section}{\numberline {5.2}Skills}{13}
+\contentsline {subsection}{\numberline {5.2.1}Aquiring Skills}{14}
+\contentsline {subsection}{\numberline {5.2.2}Automatic Skill Aquiring}{14}
+\contentsline {section}{\numberline {5.3}Skill List}{15}
+\contentsline {part}{II\hspace {1em}Actions and their Consequences}{21}
+\contentsline {chapter}{\numberline {6}Performing Actions}{22}
+\contentsline {section}{\numberline {6.1}Checks, Modifiers \& Proficiencies}{22}
+\contentsline {subsection}{\numberline {6.1.1}Modifiers}{22}
+\contentsline {subsection}{\numberline {6.1.2}Proficiencies}{22}
+\contentsline {section}{\numberline {6.2}Success \& Failure}{23}
+\contentsline {section}{\numberline {6.3}Non-Combat Actions}{23}
+\contentsline {section}{\numberline {6.4}Combat Actions}{24}
+\contentsline {section}{\numberline {6.5}Stealth, Perception \& Passive Checks}{25}
+\contentsline {section}{\numberline {6.6}Sneak Attacks \& Attacks of Opportunity}{26}
+\contentsline {chapter}{\numberline {7}Taking Damage}{27}
+\contentsline {section}{\numberline {7.1}Damage \& Damage Types}{27}
+\contentsline {section}{\numberline {7.2}Armour Class}{27}
+\contentsline {section}{\numberline {7.3}Statuses}{27}
+\contentsline {chapter}{\numberline {8}Environment Effects \& Vision}{30}
+\contentsline {section}{\numberline {8.1}Terrain}{30}
+\contentsline {section}{\numberline {8.2}Falling}{30}
+\contentsline {section}{\numberline {8.3}Air}{30}
+\contentsline {section}{\numberline {8.4}Vision}{30}
+\contentsline {section}{\numberline {8.5}Living Environment}{31}
+\contentsline {part}{III\hspace {1em}Items}{32}
+\contentsline {chapter}{\numberline {9}Items}{33}
+\contentsline {section}{\numberline {9.1}Equipped Items}{33}
+\contentsline {section}{\numberline {9.2}Storing Items}{33}
+\contentsline {section}{\numberline {9.3}Physical Weapons}{33}
+\contentsline {section}{\numberline {9.4}Armour}{34}
+\contentsline {section}{\numberline {9.5}Weapon List}{35}
+\contentsline {section}{\numberline {9.6}Wands}{36}
+\contentsline {chapter}{\numberline {10}Artificing}{37}
+\contentsline {section}{\numberline {10.1}Enchanting}{37}
+\contentsline {section}{\numberline {10.2}Potion Making}{37}
+\contentsline {part}{IV\hspace {1em}Magic}{38}
+\contentsline {chapter}{\numberline {11}Spells}{39}
+\contentsline {section}{\numberline {11.1}Learning New Spells}{39}
+\contentsline {section}{\numberline {11.2}Casting Spells}{39}
+\contentsline {section}{\numberline {11.3}Resisting Magic}{39}
+\contentsline {section}{\numberline {11.4}Spell List}{41}
+\contentsline {subsection}{Spell School: Hexes \& Curses }{41}
+\contentsline {subsection}{Spell School: Transfiguration }{43}
+\contentsline {subsection}{Spell School: Charms }{46}
+\contentsline {subsection}{Spell School: Healing \& Warding }{48}
+\contentsline {subsection}{Spell School: Illusion }{51}
+\contentsline {subsection}{Spell School: Divination }{53}
+\contentsline {subsection}{Spell School: Dark Arts }{54}
