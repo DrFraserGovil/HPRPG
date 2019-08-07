@@ -9,13 +9,10 @@ N = length(readFile);
 while i <= N
     c = readFile(i);
     if c == "\"
-        readFile = char(strcat(readFile(1:i), "\",readFile(i+1:end)));
-        i = i + 1;
-        N = length(readFile);
-    end
     i = i + 1;
 end
-
+readFile;
+x = y
 %% Chunk the file
 keyBegin = strfind(readFile,"%%keyBegin");
 keyEnd = strfind(readFile,"%%keyEnd");
@@ -90,11 +87,9 @@ for i = 1:nLevels
         t3 = t3 + "\\feature" + num2roman(i);
         t3 = t3 + "} \n\\\\\n";
     end
-    if i <= nLevelsShort
-        t4 = t3;
-    end
+    
 end 
 
-fullText = chunk1 + t1 + chunk2 + t3 + chunk3 + t4 + chunk4 + t2 +  chunk5 + "\n";
-FID = fopen(fileName,'w');
-fprintf(FID,fullText);
+fullText = chunk1 + t1 + chunk2 + t2 + chunk3 + t3 + chunk4 + chunk5;
+%FID = fopen(fileName,'w');
+fprintf(fullText);
