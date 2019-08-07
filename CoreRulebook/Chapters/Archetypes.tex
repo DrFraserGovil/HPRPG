@@ -10,7 +10,10 @@
       
       The archetype (also known as the {\it class}) of your character is a way of formalising these character types. The role of your character is more than simply the job they perform, it is the prism through which they see the world -- it guides their very essence, how they perceieve themselves and others. 
       
-      \newpage%%Use the matlab script archetypeWriter to modify these. Don't do it by hand!%%t do it by hand!%%def\featureI{#1}}
+      \newpage
+      
+\define@key{archetype}{arcaneI}{\def\arcaneI{#1}}
+\define@key{archetype}{featureI}{\def\featureI{#1}}
 \define@key{archetype}{arcaneII}{\def\arcaneII{#1}}
 \define@key{archetype}{featureII}{\def\featureII{#1}}
 \define@key{archetype}{arcaneIII}{\def\arcaneIII{#1}}
@@ -156,7 +159,7 @@
 
 
 %%defaultEnd
-     \def\w{5}
+     \def\w{6.2}
        \setkeys{archetype}{#5}
  
      
@@ -164,8 +167,8 @@
      	  boxrule=0pt,
      	  boxsep=0pt,
      	  toptitle=4pt,
-     	  left=7pt,
-     	  right=7pt,
+     	  left=0pt,
+     	  right=0pt,
      	  bottom=11pt,
      	  arc=0.5mm,
      	  oversize=0pt,
@@ -181,7 +184,7 @@
      	
      		\begin{center}
      	\small
-     		      		 \begin{tabular}{c c m{\w cm} m{\w cm} }
+     		      		 \begin{tabular}{c cc  c }
 \bf Level 	&	\bf Arcane Wisdom	&	\bf #2 Features	&	\bf #3 Features
 \\ 
      		\if\mode0

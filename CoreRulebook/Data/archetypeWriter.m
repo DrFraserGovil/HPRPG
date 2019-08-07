@@ -97,7 +97,7 @@ for i = 1:nLevels
     t3 = t3 + num2str(i) + "  &  + \\arcane" + num2roman(i);
     
     if i > 2
-        pBox = "\\parbox[t]{\\w cm}{\\centering";
+        pBox = "\\parbox[t]{\\w cm}{";
         arg1 = pBox + "\\alpha" + num2roman(i) + "}";
         arg2 = pBox + "\\beta" + num2roman(i) + "}";
         t3 = t3 + " & "+ arg1 + "  &  " + arg2 +  "\n \\\\\n";
@@ -116,8 +116,12 @@ fullText = fullText + chunk2 + t3+ "\n";
 fullText = fullText +chunk3 + t4+ "\n";
 fullText = fullText + chunk4 + t2 + "\n"+  chunk5 + "\n";
 
-fullText
-fprintf(fullText)
-FID = fopen(fileName,'w');
-fprintf(FID,fullText);
+fprintf(t1)
+fprintf(t3)
+fprintf(t4)
+fprintf(t2)
+%fullText
+%fprintf(fullText)
+%FID = fopen(fileName,'w');
+%fprintf(FID,fullText);
 
