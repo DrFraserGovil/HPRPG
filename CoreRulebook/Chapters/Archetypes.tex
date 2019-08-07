@@ -10,14 +10,7 @@
       
       The archetype (also known as the {\it class}) of your character is a way of formalising these character types. The role of your character is more than simply the job they perform, it is the prism through which they see the world -- it guides their very essence, how they perceieve themselves and others. 
       
-      \newpage
-      
-      
-      % Use the matlab script archetypeWriter to modify these. Don't do it by hand!
-      
-      %keyBegin
-\define@key{archetype}{arcaneI}{\def\arcaneI{#1}}
-\define@key{archetype}{featureI}{\def\featureI{#1}}
+      \newpage%%Use the matlab script archetypeWriter to modify these. Don't do it by hand!%%t do it by hand!%%def\featureI{#1}}
 \define@key{archetype}{arcaneII}{\def\arcaneII{#1}}
 \define@key{archetype}{featureII}{\def\featureII{#1}}
 \define@key{archetype}{arcaneIII}{\def\arcaneIII{#1}}
@@ -74,71 +67,78 @@
 \define@key{archetype}{arcaneXX}{\def\arcaneXX{#1}}
 \define@key{archetype}{alphaFeatureXX}{\def\alphaXX{#1}}
 \define@key{archetype}{betaFeatureXX}{\def\betaXX{#1}}
-%keyEnd    
+
+%%keyEnd    
           
           
       \def\comma{,}
       \newcommand{\tableLong}
       {
-      		
+      
+      %%tableBegin
 
 1  &  + \arcaneI & \multicolumn{2}{c}{\featureI} 
 \\
 2  &  + \arcaneII & \multicolumn{2}{c}{\featureII} 
 \\
-3  &  + \arcaneIII & \parbox[t]{\w cm}{\raggedright\alphaIII}  &  \parbox[t]{\w cm}{\raggedright\betaIII}
+3  &  + \arcaneIII & \parbox[t]{\w cm}{\centering\alphaIII}  &  \parbox[t]{\w cm}{\centering\betaIII}
  \\
-4  &  + \arcaneIV & \parbox[t]{\w cm}{\raggedright\alphaIV}  &  \parbox[t]{\w cm}{\raggedright\betaIV}
+4  &  + \arcaneIV & \parbox[t]{\w cm}{\centering\alphaIV}  &  \parbox[t]{\w cm}{\centering\betaIV}
  \\
-5  &  + \arcaneV & \parbox[t]{\w cm}{\raggedright\alphaV}  &  \parbox[t]{\w cm}{\raggedright\betaV}
+5  &  + \arcaneV & \parbox[t]{\w cm}{\centering\alphaV}  &  \parbox[t]{\w cm}{\centering\betaV}
  \\
-6  &  + \arcaneVI & \parbox[t]{\w cm}{\raggedright\alphaVI}  &  \parbox[t]{\w cm}{\raggedright\betaVI}
+6  &  + \arcaneVI & \parbox[t]{\w cm}{\centering\alphaVI}  &  \parbox[t]{\w cm}{\centering\betaVI}
  \\
-7  &  + \arcaneVII & \parbox[t]{\w cm}{\raggedright\alphaVII}  &  \parbox[t]{\w cm}{\raggedright\betaVII}
+7  &  + \arcaneVII & \parbox[t]{\w cm}{\centering\alphaVII}  &  \parbox[t]{\w cm}{\centering\betaVII}
  \\
-8  &  + \arcaneVIII & \parbox[t]{\w cm}{\raggedright\alphaVIII}  &  \parbox[t]{\w cm}{\raggedright\betaVIII}
+8  &  + \arcaneVIII & \parbox[t]{\w cm}{\centering\alphaVIII}  &  \parbox[t]{\w cm}{\centering\betaVIII}
  \\
-9  &  + \arcaneIX & \parbox[t]{\w cm}{\raggedright\alphaIX}  &  \parbox[t]{\w cm}{\raggedright\betaIX}
+9  &  + \arcaneIX & \parbox[t]{\w cm}{\centering\alphaIX}  &  \parbox[t]{\w cm}{\centering\betaIX}
  \\
-10  &  + \arcaneX & \parbox[t]{\w cm}{\raggedright\alphaX}  &  \parbox[t]{\w cm}{\raggedright\betaX}
+10  &  + \arcaneX & \parbox[t]{\w cm}{\centering\alphaX}  &  \parbox[t]{\w cm}{\centering\betaX}
  \\
-11  &  + \arcaneXI & \parbox[t]{\w cm}{\raggedright\alphaXI}  &  \parbox[t]{\w cm}{\raggedright\betaXI}
+11  &  + \arcaneXI & \parbox[t]{\w cm}{\centering\alphaXI}  &  \parbox[t]{\w cm}{\centering\betaXI}
  \\
-12  &  + \arcaneXII & \parbox[t]{\w cm}{\raggedright\alphaXII}  &  \parbox[t]{\w cm}{\raggedright\betaXII}
+12  &  + \arcaneXII & \parbox[t]{\w cm}{\centering\alphaXII}  &  \parbox[t]{\w cm}{\centering\betaXII}
  \\
-13  &  + \arcaneXIII & \parbox[t]{\w cm}{\raggedright\alphaXIII}  &  \parbox[t]{\w cm}{\raggedright\betaXIII}
+13  &  + \arcaneXIII & \parbox[t]{\w cm}{\centering\alphaXIII}  &  \parbox[t]{\w cm}{\centering\betaXIII}
  \\
-14  &  + \arcaneXIV & \parbox[t]{\w cm}{\raggedright\alphaXIV}  &  \parbox[t]{\w cm}{\raggedright\betaXIV}
+14  &  + \arcaneXIV & \parbox[t]{\w cm}{\centering\alphaXIV}  &  \parbox[t]{\w cm}{\centering\betaXIV}
  \\
-15  &  + \arcaneXV & \parbox[t]{\w cm}{\raggedright\alphaXV}  &  \parbox[t]{\w cm}{\raggedright\betaXV}
+15  &  + \arcaneXV & \parbox[t]{\w cm}{\centering\alphaXV}  &  \parbox[t]{\w cm}{\centering\betaXV}
  \\
-16  &  + \arcaneXVI & \parbox[t]{\w cm}{\raggedright\alphaXVI}  &  \parbox[t]{\w cm}{\raggedright\betaXVI}
+16  &  + \arcaneXVI & \parbox[t]{\w cm}{\centering\alphaXVI}  &  \parbox[t]{\w cm}{\centering\betaXVI}
  \\
-17  &  + \arcaneXVII & \parbox[t]{\w cm}{\raggedright\alphaXVII}  &  \parbox[t]{\w cm}{\raggedright\betaXVII}
+17  &  + \arcaneXVII & \parbox[t]{\w cm}{\centering\alphaXVII}  &  \parbox[t]{\w cm}{\centering\betaXVII}
  \\
-18  &  + \arcaneXVIII & \parbox[t]{\w cm}{\raggedright\alphaXVIII}  &  \parbox[t]{\w cm}{\raggedright\betaXVIII}
+18  &  + \arcaneXVIII & \parbox[t]{\w cm}{\centering\alphaXVIII}  &  \parbox[t]{\w cm}{\centering\betaXVIII}
  \\
-19  &  + \arcaneXIX & \parbox[t]{\w cm}{\raggedright\alphaXIX}  &  \parbox[t]{\w cm}{\raggedright\betaXIX}
+19  &  + \arcaneXIX & \parbox[t]{\w cm}{\centering\alphaXIX}  &  \parbox[t]{\w cm}{\centering\betaXIX}
  \\
-20  &  + \arcaneXX & \parbox[t]{\w cm}{\raggedright\alphaXX}  &  \parbox[t]{\w cm}{\raggedright\betaXX}
+20  &  + \arcaneXX & \parbox[t]{\w cm}{\centering\alphaXX}  &  \parbox[t]{\w cm}{\centering\betaXX}
  \\
-%tableEnd	
+
+%%tableEnd	
       }
       
       \newcommand{\tableShort}[1]
 {
 
+%%smallTableBegin
+
+
 1  &  + \arcaneI & \multicolumn{2}{c}{\featureI} 
 \\
 2  &  + \arcaneII & \multicolumn{2}{c}{\featureII} 
 \\
-3  &  + \arcaneIII & \parbox[t]{\w cm}{\raggedright\alphaIII}  &  \parbox[t]{\w cm}{\raggedright\betaIII}
+3  &  + \arcaneIII & \parbox[t]{\w cm}{\centering\alphaIII}  &  \parbox[t]{\w cm}{\centering\betaIII}
  \\
-4  &  + \arcaneIV & \parbox[t]{\w cm}{\raggedright\alphaIV}  &  \parbox[t]{\w cm}{\raggedright\betaIV}
+4  &  + \arcaneIV & \parbox[t]{\w cm}{\centering\alphaIV}  &  \parbox[t]{\w cm}{\centering\betaIV}
  \\
-5  &  + \arcaneV & \parbox[t]{\w cm}{\raggedright\alphaV}  &  \parbox[t]{\w cm}{\raggedright\betaV}
+5  &  + \arcaneV & \parbox[t]{\w cm}{\centering\alphaV}  &  \parbox[t]{\w cm}{\centering\betaV}
  \\
-%smallTableEnd
+
+%%smallTableEnd
 
       }   
           
@@ -148,8 +148,14 @@
      \def\mode{#4}
     
      \begingroup
-     %defaultBegin
-\setkeys{archetype}{ arcaneI=0, featureI=None, arcaneII=0, featureII=None, arcaneIII=0, alphaFeatureIII=None, betaFeatureIII=None, arcaneIV=0, alphaFeatureIV=None, betaFeatureIV=None, arcaneV=1, alphaFeatureV=None, betaFeatureV=None, arcaneVI=1, alphaFeatureVI=None, betaFeatureVI=None, arcaneVII=1, alphaFeatureVII=None, betaFeatureVII=None, arcaneVIII=1, alphaFeatureVIII=None, betaFeatureVIII=None, arcaneIX=1, alphaFeatureIX=None, betaFeatureIX=None, arcaneX=2, alphaFeatureX=None, betaFeatureX=None, arcaneXI=2, alphaFeatureXI=None, betaFeatureXI=None, arcaneXII=2, alphaFeatureXII=None, betaFeatureXII=None, arcaneXIII=2, alphaFeatureXIII=None, betaFeatureXIII=None, arcaneXIV=2, alphaFeatureXIV=None, betaFeatureXIV=None, arcaneXV=3, alphaFeatureXV=None, betaFeatureXV=None, arcaneXVI=3, alphaFeatureXVI=None, betaFeatureXVI=None, arcaneXVII=3, alphaFeatureXVII=None, betaFeatureXVII=None, arcaneXVIII=3, alphaFeatureXVIII=None, betaFeatureXVIII=None, arcaneXIX=3, alphaFeatureXIX=None, betaFeatureXIX=None, arcaneXX=4, alphaFeatureXX=None, betaFeatureXX=None}%defaultEnd
+     
+     %%defaultBegin
+
+
+\setkeys{archetype}{ arcaneI=0, featureI=None, arcaneII=0, featureII=None, arcaneIII=0, alphaFeatureIII=None, betaFeatureIII=None, arcaneIV=0, alphaFeatureIV=None, betaFeatureIV=None, arcaneV=1, alphaFeatureV=None, betaFeatureV=None, arcaneVI=1, alphaFeatureVI=None, betaFeatureVI=None, arcaneVII=1, alphaFeatureVII=None, betaFeatureVII=None, arcaneVIII=1, alphaFeatureVIII=None, betaFeatureVIII=None, arcaneIX=1, alphaFeatureIX=None, betaFeatureIX=None, arcaneX=2, alphaFeatureX=None, betaFeatureX=None, arcaneXI=2, alphaFeatureXI=None, betaFeatureXI=None, arcaneXII=2, alphaFeatureXII=None, betaFeatureXII=None, arcaneXIII=2, alphaFeatureXIII=None, betaFeatureXIII=None, arcaneXIV=2, alphaFeatureXIV=None, betaFeatureXIV=None, arcaneXV=3, alphaFeatureXV=None, betaFeatureXV=None, arcaneXVI=3, alphaFeatureXVI=None, betaFeatureXVI=None, arcaneXVII=3, alphaFeatureXVII=None, betaFeatureXVII=None, arcaneXVIII=3, alphaFeatureXVIII=None, betaFeatureXVIII=None, arcaneXIX=3, alphaFeatureXIX=None, betaFeatureXIX=None, arcaneXX=4, alphaFeatureXX=None, betaFeatureXX=None}
+
+
+%%defaultEnd
      \def\w{5}
        \setkeys{archetype}{#5}
  
@@ -175,8 +181,7 @@
      	
      		\begin{center}
      	\small
-     		      		 \begin{tabular}{c c m{\w cm} m{\w cm}}
-     	%tableBegin
+     		      		 \begin{tabular}{c c m{\w cm} m{\w cm} }
 \bf Level 	&	\bf Arcane Wisdom	&	\bf #2 Features	&	\bf #3 Features
 \\ 
      		\if\mode0

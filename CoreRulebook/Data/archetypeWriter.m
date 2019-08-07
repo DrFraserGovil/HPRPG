@@ -13,29 +13,45 @@ while i <= N
         i = i + 1;
         N = length(readFile);
     end
+    if c == "%"
+        if readFile(i+1)=="%"
+            p1 = readFile(1:i-1);
+            p2 = readFile(i+2:end);
+            join = strcat(p1,"%%%%",p2);
+            i = i + 2;
+        else
+            p1 = readFile(1:i-1);
+            p2 = readFile(i+1:end);
+            join = strcat(p1,"%%",p2);
+            i = i + 1;
+        end
+         readFile = char(join);
+         N = length(readFile);
+         
+    end
     i = i + 1;
 end
 
 %% Chunk the file
-keyBegin = strfind(readFile,"%%keyBegin");
-keyEnd = strfind(readFile,"%%keyEnd");
-tableBegin = strfind(readFile,"%%tableBegin");
-tableEnd = strfind(readFile,"%%tableEnd");
+keyBegin = strfind(readFile,"%%%%keyBegin");
+keyEnd = strfind(readFile,"%%%%keyEnd");
+tableBegin = strfind(readFile,"%%%%tableBegin");
+tableEnd = strfind(readFile,"%%%%tableEnd");
 
-stableBegin = strfind(readFile,"%%smallTableBegin");
-stableEnd = strfind(readFile,"%%smallTableEnd");
+stableBegin = strfind(readFile,"%%%%smallTableBegin");
+stableEnd = strfind(readFile,"%%%%smallTableEnd");
 
-defaultBegin = strfind(readFile,"%%defaultBegin");
-defaultEnd = strfind(readFile,"%%defaultEnd");
-
-
+defaultBegin = strfind(readFile,"%%%%defaultBegin");
+defaultEnd = strfind(readFile,"%%%%defaultEnd");
 
 
 
-chunk1 = readFile(1:keyBegin +11);
-chunk2 = readFile(keyEnd:tableBegin+12);
-chunk3 = readFile(tableEnd:stableBegin+19);
-chunk4 = readFile(stableEnd:defaultBegin+14);
+
+
+chunk1 = readFile(1:keyBegin +14);
+chunk2 = readFile(keyEnd:tableBegin+16);
+chunk3 = readFile(tableEnd:stableBegin+22);
+chunk4 = readFile(stableEnd:defaultBegin+18);
 chunk5 = readFile(defaultEnd:end);
 %% Define keys
 t1 = "";
@@ -76,12 +92,12 @@ t2 = t2 + "}";
 
 
 %% Define table
-t3 = "\\bf Level 	&	\\bf Arcane Wisdom	&	\\bf #2 Features	&	\\bf #3 Features\n\\\\ \n";
+t3 = "";
 for i = 1:nLevels
     t3 = t3 + num2str(i) + "  &  + \\arcane" + num2roman(i);
     
     if i > 2
-        pBox = "\\parbox[t]{\\w cm}{\\raggedright";
+        pBox = "\\parbox[t]{\\w cm}{\\centering";
         arg1 = pBox + "\\alpha" + num2roman(i) + "}";
         arg2 = pBox + "\\beta" + num2roman(i) + "}";
         t3 = t3 + " & "+ arg1 + "  &  " + arg2 +  "\n \\\\\n";
@@ -95,6 +111,13 @@ for i = 1:nLevels
     end
 end 
 
-fullText = chunk1 + t1 + chunk2 + t3 + chunk3 + t4 + chunk4 + t2 +  chunk5 + "\n";
+fullText = chunk1 + t1 + "\n";
+fullText = fullText + chunk2 + t3+ "\n";
+fullText = fullText +chunk3 + t4+ "\n";
+fullText = fullText + chunk4 + t2 + "\n"+  chunk5 + "\n";
+
+fullText
+fprintf(fullText)
 FID = fopen(fileName,'w');
 fprintf(FID,fullText);
+
