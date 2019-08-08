@@ -25,9 +25,9 @@ while i <= N
             join = strcat(p1,"%%",p2);
             i = i + 1;
         end
-         readFile = char(join);
-         N = length(readFile);
-         
+        readFile = char(join);
+        N = length(readFile);
+        
     end
     i = i + 1;
 end
@@ -58,17 +58,17 @@ t1 = "";
 for i = 1:nLevels
     textProf = strcat("\\define@key{archetype}{arcane", num2roman(i), "}{\\def\\arcane", num2roman(i), "{#1}}");
     t1 = t1 + textProf + "\n";
-    if i > 2
-        textAlpha = strcat("\\define@key{archetype}{alphaFeature", num2roman(i), "}{\\def\\alpha", num2roman(i), "{#1}}");
-        textBeta = strcat("\\define@key{archetype}{betaFeature", num2roman(i), "}{\\def\\beta", num2roman(i), "{#1}}");
-        t1 = t1 + textAlpha + "\n";
-        t1 = t1+ textBeta + "\n";
-    else
-        text = strcat("\\define@key{archetype}{feature", num2roman(i), "}{\\def\\feature", num2roman(i), "{#1}}");
-        t1 = t1 + text + "\n";
-    end
     
-   
+    textAlpha = strcat("\\define@key{archetype}{alphaFeature", num2roman(i), "}{\\def\\alpha", num2roman(i), "{#1}}");
+    textBeta = strcat("\\define@key{archetype}{betaFeature", num2roman(i), "}{\\def\\beta", num2roman(i), "{#1}}");
+    t1 = t1 + textAlpha + "\n";
+    t1 = t1+ textBeta + "\n";
+    
+    textFeature = strcat("\\define@key{archetype}{feature", num2roman(i), "}{\\def\\feature", num2roman(i), "{#1}}");
+    t1 = t1 + textFeature + "\n";
+    
+    
+    
 end
 
 
@@ -80,12 +80,12 @@ for i = 1:nLevels
     end
     arcane =  strcat(" arcane",num2roman(i),"=", num2str(floor(i/5)));
     t2 = t2 + arcane;
-    if i > 2
-        t2 = t2 + strcat(", alphaFeature",num2roman(i),"= -- ");
-        t2 = t2 +  strcat(", betaFeature",num2roman(i),"= --");
-    else
-        t2 = t2 + strcat(", feature",num2roman(i),"= --");
-    end
+    
+    t2 = t2 + strcat(", alphaFeature",num2roman(i),"= -- ");
+    t2 = t2 +  strcat(", betaFeature",num2roman(i),"= --");
+    
+    t2 = t2 + strcat(", feature",num2roman(i),"= --");
+    
 end
 t2 = t2 + "}";
 
@@ -96,20 +96,17 @@ t3 = "";
 for i = 1:nLevels
     t3 = t3 + num2str(i) + "  &  + \\arcane" + num2roman(i);
     
-    if i > 2
-        pBox = "\\parbox[t]{\\w cm}{";
-        arg1 = pBox + "\\alpha" + num2roman(i) + "}";
-        arg2 = pBox + "\\beta" + num2roman(i) + "}";
-        t3 = t3 + " & "+ arg1 + "  &  " + arg2 +  "\n \\\\\n";
-    else
-        t3 = t3 + " & \\multicolumn{2}{c}{";
-        t3 = t3 + "\\feature" + num2roman(i);
-        t3 = t3 + "} \n\\\\\n";
-    end
+    
+    pBox = "\\parbox[t]{\\w cm}{";
+    arg0 = pBox + "\\feature" + num2roman(i) + "}";
+    arg1 = pBox + "\\alpha" + num2roman(i) + "}";
+    arg2 = pBox + "\\beta" + num2roman(i) + "}";
+    t3 = t3 + " & "+ arg0 + " & " + arg1 + "  &  " + arg2 +  "\n \\\\\n";
+    
     if i <= nLevelsShort
         t4 = t3;
     end
-end 
+end
 
 fullText = chunk1 + t1 + "\n";
 fullText = fullText + chunk2 + t3+ "\n";
@@ -119,7 +116,7 @@ fullText = fullText + chunk4 + t2 + "\n"+  chunk5 + "\n";
 fprintf(t1)
 fprintf(t3)
 fprintf(t4)
-fprintf(t2)
+fprintf(t2 + "\n")
 %fullText
 %fprintf(fullText)
 %FID = fopen(fileName,'w');
