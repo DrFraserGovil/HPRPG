@@ -81,10 +81,10 @@ for i = 1:nLevels
     arcane =  strcat(" arcane",num2roman(i),"=", num2str(floor(i/5)));
     t2 = t2 + arcane;
     if i > 2
-        t2 = t2 + strcat(", alphaFeature",num2roman(i),"=None");
-        t2 = t2 +  strcat(", betaFeature",num2roman(i),"=None");
+        t2 = t2 + strcat(", alphaFeature",num2roman(i),"= -- ");
+        t2 = t2 +  strcat(", betaFeature",num2roman(i),"= --");
     else
-        t2 = t2 + strcat(", feature",num2roman(i),"=None");
+        t2 = t2 + strcat(", feature",num2roman(i),"= --");
     end
 end
 t2 = t2 + "}";

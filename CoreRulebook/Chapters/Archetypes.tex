@@ -10,7 +10,6 @@
       
       The archetype (also known as the {\it class}) of your character is a way of formalising these character types. The role of your character is more than simply the job they perform, it is the prism through which they see the world -- it guides their very essence, how they perceieve themselves and others. 
       
-      \newpage
       
 \define@key{archetype}{arcaneI}{\def\arcaneI{#1}}
 \define@key{archetype}{featureI}{\def\featureI{#1}}
@@ -75,6 +74,7 @@
           
           
       \def\comma{,}
+      \def\dash{-}
       \newcommand{\tableLong}
       {
       
@@ -154,9 +154,7 @@
      
      %%defaultBegin
 
-
-\setkeys{archetype}{ arcaneI=0, featureI=None, arcaneII=0, featureII=None, arcaneIII=0, alphaFeatureIII=None, betaFeatureIII=None, arcaneIV=0, alphaFeatureIV=None, betaFeatureIV=None, arcaneV=1, alphaFeatureV=None, betaFeatureV=None, arcaneVI=1, alphaFeatureVI=None, betaFeatureVI=None, arcaneVII=1, alphaFeatureVII=None, betaFeatureVII=None, arcaneVIII=1, alphaFeatureVIII=None, betaFeatureVIII=None, arcaneIX=1, alphaFeatureIX=None, betaFeatureIX=None, arcaneX=2, alphaFeatureX=None, betaFeatureX=None, arcaneXI=2, alphaFeatureXI=None, betaFeatureXI=None, arcaneXII=2, alphaFeatureXII=None, betaFeatureXII=None, arcaneXIII=2, alphaFeatureXIII=None, betaFeatureXIII=None, arcaneXIV=2, alphaFeatureXIV=None, betaFeatureXIV=None, arcaneXV=3, alphaFeatureXV=None, betaFeatureXV=None, arcaneXVI=3, alphaFeatureXVI=None, betaFeatureXVI=None, arcaneXVII=3, alphaFeatureXVII=None, betaFeatureXVII=None, arcaneXVIII=3, alphaFeatureXVIII=None, betaFeatureXVIII=None, arcaneXIX=3, alphaFeatureXIX=None, betaFeatureXIX=None, arcaneXX=4, alphaFeatureXX=None, betaFeatureXX=None}
-
+\setkeys{archetype}{ arcaneI=0, featureI= --, arcaneII=0, featureII= --, arcaneIII=0, alphaFeatureIII= -- , betaFeatureIII= --, arcaneIV=0, alphaFeatureIV= -- , betaFeatureIV= --, arcaneV=1, alphaFeatureV= -- , betaFeatureV= --, arcaneVI=1, alphaFeatureVI= -- , betaFeatureVI= --, arcaneVII=1, alphaFeatureVII= -- , betaFeatureVII= --, arcaneVIII=1, alphaFeatureVIII= -- , betaFeatureVIII= --, arcaneIX=1, alphaFeatureIX= -- , betaFeatureIX= --, arcaneX=2, alphaFeatureX= -- , betaFeatureX= --, arcaneXI=2, alphaFeatureXI= -- , betaFeatureXI= --, arcaneXII=2, alphaFeatureXII= -- , betaFeatureXII= --, arcaneXIII=2, alphaFeatureXIII= -- , betaFeatureXIII= --, arcaneXIV=2, alphaFeatureXIV= -- , betaFeatureXIV= --, arcaneXV=3, alphaFeatureXV= -- , betaFeatureXV= --, arcaneXVI=3, alphaFeatureXVI= -- , betaFeatureXVI= --, arcaneXVII=3, alphaFeatureXVII= -- , betaFeatureXVII= --, arcaneXVIII=3, alphaFeatureXVIII= -- , betaFeatureXVIII= --, arcaneXIX=3, alphaFeatureXIX= -- , betaFeatureXIX= --, arcaneXX=4, alphaFeatureXX= -- , betaFeatureXX= --}
 
 %%defaultEnd
      \def\w{6.2}
@@ -205,7 +203,7 @@
      
    
      
-     
+     There are 12 Archetypes, each with two branches. 
      
       \begin{center}
       \begin{rndtable}{c c c}
@@ -241,6 +239,33 @@
       \end{center}
      
      
-     \subfile{Data/Archetypes/Gryffindor}
-     \\
-     \subfile{Data/Archetypes/Empath}
+     CHaracters who are students, however, are much less likely to know what their roll in life is yet. They are much more likely to be defined and shaped by their school environment, so there are four special Archetypes, dedicated to the 4 Houses at Hogwarts:
+     
+     \begin{center}
+      \begin{rndtable}{c c c}
+      \hline
+     	Archetype	&	Alpha Branch	&	Beta Branch
+     	\\
+     	Gryffindor Student	&	Sportsman	&	Rebel
+     	\\
+     	Hufflepuff Student	&   Hard-Worker	&	??
+     	\\
+     	Ravenclaw Student	&	Nerd	&	Prodigy
+     	\\
+     	Slytherin	&	Student Politician	&	Schemer
+     	\\
+     	\hline
+     \end{rndtable} 
+      \end{center}
+     
+     
+\clearpage
+\subfile{Data/Archetypes/Gryffindor}
+\clearpage
+\subfile{Data/Archetypes/Hufflepuff}
+\clearpage
+\subfile{Data/Archetypes/Ravenclaw}
+\clearpage
+\subfile{Data/Archetypes/Slytherin}
+\clearpage
+\subfile{Data/Archetypes/Empath}

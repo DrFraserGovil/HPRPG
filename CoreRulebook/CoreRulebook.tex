@@ -63,10 +63,20 @@
   \end{tikzpicture}%
   \par%
 }
+
+
+\newcommand{\dndlineFade}[1]{%
+  \noindent
+  \begin{tikzpicture}[]
+    \fill [#1, shading=axis, shading angle = 90] (0, 0)--({\textwidth*0.5}, 0)--({\textwidth*0.5}, 0.01)--(0, 0.01);
+  \end{tikzpicture}%
+  \par%
+}
+
 \titleformat{\chapter} {\vspace{-14ex}\normalfont\bfseries\centering\color{titlered}\HP\Huge}{}{0pt}{\dndline\thechapter: }[\vspace{-1.6ex}\dndline\vspace{-3ex}]
 \titleformat{name=\chapter,numberless}{\vspace{-14ex}\normalfont\bfseries\centering\color{titlered}\HP\Huge}{}{0pt}{\dndline }[\vspace{-1.6ex}\dndline\vspace{-3ex}]
-\titleformat{\section}{\vspace{-3ex}\normalfont\huge\color{titlered}\it\centering}{}{0em}{\dndline}[{\vspace{-1.4ex}\dndline}]
-
+\titleformat{\section}{\vspace{-3ex}\normalfont\huge\color{titlered}\it\centering}{}{0em}{}[{\vspace{-1.4ex}\dndlineFade{rulered}}]
+\titleformat{name=\subsection,numberless}{\LARGE \bf}{}{0pt}{}[{\vspace{-1.7ex}\dndlineFade{black}}]
 
 
 \newsavebox{\tablebox}
