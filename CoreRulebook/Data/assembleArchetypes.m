@@ -3,7 +3,7 @@ sList = {};
 lList = {};
 for i = 1:length(texFiles)
     fileObj = texFiles(i);
-    tableFile = "Archetypes/" + fileObj.name(1:end-4) + ".xlsx"
+    tableFile = "Archetypes/" + fileObj.name(1:end-4) + ".xlsx";
     file = char(tableFile);
     
     f = readtable(file);
@@ -60,7 +60,6 @@ for i = 1:length(texFiles)
             vars = vars+ com + t;
         end
     end
-    [i, f.(2)(i)]
     
     
     

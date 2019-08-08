@@ -1,4 +1,4 @@
-run assembleProfessions.m
+%run assembleProfessions.m
 run assembleSkills.m
 run assembleSpells.m
 run assembleStatus.m

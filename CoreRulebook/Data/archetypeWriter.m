@@ -97,7 +97,7 @@ for i = 1:nLevels
     t3 = t3 + num2str(i) + "  &  + \\arcane" + num2roman(i);
     
     
-    pBox = "\\parbox[t]{\\w cm}{";
+    pBox = "\\parbox[t]{\\w cm}{\\raggedright";
     arg0 = pBox + "\\feature" + num2roman(i) + "}";
     arg1 = pBox + "\\alpha" + num2roman(i) + "}";
     arg2 = pBox + "\\beta" + num2roman(i) + "}";
