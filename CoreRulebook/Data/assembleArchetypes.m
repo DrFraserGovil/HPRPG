@@ -96,4 +96,5 @@ for i = 1:length(long)
     t = t + "\n\\clearpage\n\\subfile{Data/Archetypes/"+s+"}";
 end
 t = t + "\n";
-fprintf(t)
+%fprintf(t)
+clear
