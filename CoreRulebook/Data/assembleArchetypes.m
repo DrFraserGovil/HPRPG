@@ -64,8 +64,6 @@ for i = 1:length(texFiles)
             com = ", ";
         end
     end
-    vars
-    
     
     fullText = "\archetype{"+name+"}{"+branch1+"}{"+branch2+"}{"+num2str(mode)+"}{" + vars +"}";
     

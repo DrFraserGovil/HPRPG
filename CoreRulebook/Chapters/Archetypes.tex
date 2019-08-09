@@ -1,5 +1,7 @@
 \documentclass[CoreRulebook.tex]{subfile}
-     
+     %%Import some important definitions and environments
+ \include{Chapters/Archetypes_Definitions}
+ %%
      
      
      
@@ -8,227 +10,18 @@
       
       Whilst your character is a unique individual, an adventuring soul destined for greatness, most questers find themslves falling into one of many {\it archetypes} -- are they the headstrong hero who needs to learn humilty? The academic who's quest for knowledge has led to unforseen consequences, or the plucky underdog trying to quit their life of crime? 
       
-      The archetype (also known as the {\it class}) of your character is a way of formalising these character types. The role of your character is more than simply the job they perform, it is the prism through which they see the world -- it guides their very essence, how they perceieve themselves and others. 
-      
-      
-\define@key{archetype}{arcaneI}{\def\arcaneI{#1}}
-\define@key{archetype}{alphaFeatureI}{\def\alphaI{#1}}
-\define@key{archetype}{betaFeatureI}{\def\betaI{#1}}
-\define@key{archetype}{featureI}{\def\featureI{#1}}
-\define@key{archetype}{arcaneII}{\def\arcaneII{#1}}
-\define@key{archetype}{alphaFeatureII}{\def\alphaII{#1}}
-\define@key{archetype}{betaFeatureII}{\def\betaII{#1}}
-\define@key{archetype}{featureII}{\def\featureII{#1}}
-\define@key{archetype}{arcaneIII}{\def\arcaneIII{#1}}
-\define@key{archetype}{alphaFeatureIII}{\def\alphaIII{#1}}
-\define@key{archetype}{betaFeatureIII}{\def\betaIII{#1}}
-\define@key{archetype}{featureIII}{\def\featureIII{#1}}
-\define@key{archetype}{arcaneIV}{\def\arcaneIV{#1}}
-\define@key{archetype}{alphaFeatureIV}{\def\alphaIV{#1}}
-\define@key{archetype}{betaFeatureIV}{\def\betaIV{#1}}
-\define@key{archetype}{featureIV}{\def\featureIV{#1}}
-\define@key{archetype}{arcaneV}{\def\arcaneV{#1}}
-\define@key{archetype}{alphaFeatureV}{\def\alphaV{#1}}
-\define@key{archetype}{betaFeatureV}{\def\betaV{#1}}
-\define@key{archetype}{featureV}{\def\featureV{#1}}
-\define@key{archetype}{arcaneVI}{\def\arcaneVI{#1}}
-\define@key{archetype}{alphaFeatureVI}{\def\alphaVI{#1}}
-\define@key{archetype}{betaFeatureVI}{\def\betaVI{#1}}
-\define@key{archetype}{featureVI}{\def\featureVI{#1}}
-\define@key{archetype}{arcaneVII}{\def\arcaneVII{#1}}
-\define@key{archetype}{alphaFeatureVII}{\def\alphaVII{#1}}
-\define@key{archetype}{betaFeatureVII}{\def\betaVII{#1}}
-\define@key{archetype}{featureVII}{\def\featureVII{#1}}
-\define@key{archetype}{arcaneVIII}{\def\arcaneVIII{#1}}
-\define@key{archetype}{alphaFeatureVIII}{\def\alphaVIII{#1}}
-\define@key{archetype}{betaFeatureVIII}{\def\betaVIII{#1}}
-\define@key{archetype}{featureVIII}{\def\featureVIII{#1}}
-\define@key{archetype}{arcaneIX}{\def\arcaneIX{#1}}
-\define@key{archetype}{alphaFeatureIX}{\def\alphaIX{#1}}
-\define@key{archetype}{betaFeatureIX}{\def\betaIX{#1}}
-\define@key{archetype}{featureIX}{\def\featureIX{#1}}
-\define@key{archetype}{arcaneX}{\def\arcaneX{#1}}
-\define@key{archetype}{alphaFeatureX}{\def\alphaX{#1}}
-\define@key{archetype}{betaFeatureX}{\def\betaX{#1}}
-\define@key{archetype}{featureX}{\def\featureX{#1}}
-\define@key{archetype}{arcaneXI}{\def\arcaneXI{#1}}
-\define@key{archetype}{alphaFeatureXI}{\def\alphaXI{#1}}
-\define@key{archetype}{betaFeatureXI}{\def\betaXI{#1}}
-\define@key{archetype}{featureXI}{\def\featureXI{#1}}
-\define@key{archetype}{arcaneXII}{\def\arcaneXII{#1}}
-\define@key{archetype}{alphaFeatureXII}{\def\alphaXII{#1}}
-\define@key{archetype}{betaFeatureXII}{\def\betaXII{#1}}
-\define@key{archetype}{featureXII}{\def\featureXII{#1}}
-\define@key{archetype}{arcaneXIII}{\def\arcaneXIII{#1}}
-\define@key{archetype}{alphaFeatureXIII}{\def\alphaXIII{#1}}
-\define@key{archetype}{betaFeatureXIII}{\def\betaXIII{#1}}
-\define@key{archetype}{featureXIII}{\def\featureXIII{#1}}
-\define@key{archetype}{arcaneXIV}{\def\arcaneXIV{#1}}
-\define@key{archetype}{alphaFeatureXIV}{\def\alphaXIV{#1}}
-\define@key{archetype}{betaFeatureXIV}{\def\betaXIV{#1}}
-\define@key{archetype}{featureXIV}{\def\featureXIV{#1}}
-\define@key{archetype}{arcaneXV}{\def\arcaneXV{#1}}
-\define@key{archetype}{alphaFeatureXV}{\def\alphaXV{#1}}
-\define@key{archetype}{betaFeatureXV}{\def\betaXV{#1}}
-\define@key{archetype}{featureXV}{\def\featureXV{#1}}
-\define@key{archetype}{arcaneXVI}{\def\arcaneXVI{#1}}
-\define@key{archetype}{alphaFeatureXVI}{\def\alphaXVI{#1}}
-\define@key{archetype}{betaFeatureXVI}{\def\betaXVI{#1}}
-\define@key{archetype}{featureXVI}{\def\featureXVI{#1}}
-\define@key{archetype}{arcaneXVII}{\def\arcaneXVII{#1}}
-\define@key{archetype}{alphaFeatureXVII}{\def\alphaXVII{#1}}
-\define@key{archetype}{betaFeatureXVII}{\def\betaXVII{#1}}
-\define@key{archetype}{featureXVII}{\def\featureXVII{#1}}
-\define@key{archetype}{arcaneXVIII}{\def\arcaneXVIII{#1}}
-\define@key{archetype}{alphaFeatureXVIII}{\def\alphaXVIII{#1}}
-\define@key{archetype}{betaFeatureXVIII}{\def\betaXVIII{#1}}
-\define@key{archetype}{featureXVIII}{\def\featureXVIII{#1}}
-\define@key{archetype}{arcaneXIX}{\def\arcaneXIX{#1}}
-\define@key{archetype}{alphaFeatureXIX}{\def\alphaXIX{#1}}
-\define@key{archetype}{betaFeatureXIX}{\def\betaXIX{#1}}
-\define@key{archetype}{featureXIX}{\def\featureXIX{#1}}
-\define@key{archetype}{arcaneXX}{\def\arcaneXX{#1}}
-\define@key{archetype}{alphaFeatureXX}{\def\alphaXX{#1}}
-\define@key{archetype}{betaFeatureXX}{\def\betaXX{#1}}
-\define@key{archetype}{featureXX}{\def\featureXX{#1}}
+      The archetype (also known as the {\it class}) of your character is a way of formalising these character types. The role of your character is more than simply the job they perform, it is the prism through which they see the world -- it guides their very essence, how they perceieve themselves and others. The Archetype of a character therefore has a drastic impact on the roleplaying aspect of the game.
+           
+	As well as informing what kind of person your character is, the Archetype serves to provide them with some unique skills ({\it Features}) that they acquire as your progress through the archetype. Each time you level up, you increase your abilities within your archetype. Your choice of path also provides you with information about your starting equipment and any proficiencies you may already have. 
+	
+	Within each Archetype, there are two sub-types to further distinguish your character, these sub-types fit into the broader Archetype, but the choice gives you a divergent set of features, in addition to those associated with your base Archetype. The choice of sub-type does not need to be made until Archetype Level 3, as they are indistinguishable up until that point. 
 
-%%keyEnd    
-          
-          
-      \def\comma{,}
-      \def\dash{-}
-      \newcommand{\tableLong}
-      {
-      
-      %%tableBegin
-1  &  + \arcaneI & \parbox[t]{\w cm}{\raggedright\featureI} & \parbox[t]{\w cm}{\raggedright\alphaI}  &  \parbox[t]{\w cm}{\raggedright\betaI}
- \\
-2  &  + \arcaneII & \parbox[t]{\w cm}{\raggedright\featureII} & \parbox[t]{\w cm}{\raggedright\alphaII}  &  \parbox[t]{\w cm}{\raggedright\betaII}
- \\
-3  &  + \arcaneIII & \parbox[t]{\w cm}{\raggedright\featureIII} & \parbox[t]{\w cm}{\raggedright\alphaIII}  &  \parbox[t]{\w cm}{\raggedright\betaIII}
- \\
-4  &  + \arcaneIV & \parbox[t]{\w cm}{\raggedright\featureIV} & \parbox[t]{\w cm}{\raggedright\alphaIV}  &  \parbox[t]{\w cm}{\raggedright\betaIV}
- \\
-5  &  + \arcaneV & \parbox[t]{\w cm}{\raggedright\featureV} & \parbox[t]{\w cm}{\raggedright\alphaV}  &  \parbox[t]{\w cm}{\raggedright\betaV}
- \\
-6  &  + \arcaneVI & \parbox[t]{\w cm}{\raggedright\featureVI} & \parbox[t]{\w cm}{\raggedright\alphaVI}  &  \parbox[t]{\w cm}{\raggedright\betaVI}
- \\
-7  &  + \arcaneVII & \parbox[t]{\w cm}{\raggedright\featureVII} & \parbox[t]{\w cm}{\raggedright\alphaVII}  &  \parbox[t]{\w cm}{\raggedright\betaVII}
- \\
-8  &  + \arcaneVIII & \parbox[t]{\w cm}{\raggedright\featureVIII} & \parbox[t]{\w cm}{\raggedright\alphaVIII}  &  \parbox[t]{\w cm}{\raggedright\betaVIII}
- \\
-9  &  + \arcaneIX & \parbox[t]{\w cm}{\raggedright\featureIX} & \parbox[t]{\w cm}{\raggedright\alphaIX}  &  \parbox[t]{\w cm}{\raggedright\betaIX}
- \\
-10  &  + \arcaneX & \parbox[t]{\w cm}{\raggedright\featureX} & \parbox[t]{\w cm}{\raggedright\alphaX}  &  \parbox[t]{\w cm}{\raggedright\betaX}
- \\
-11  &  + \arcaneXI & \parbox[t]{\w cm}{\raggedright\featureXI} & \parbox[t]{\w cm}{\raggedright\alphaXI}  &  \parbox[t]{\w cm}{\raggedright\betaXI}
- \\
-12  &  + \arcaneXII & \parbox[t]{\w cm}{\raggedright\featureXII} & \parbox[t]{\w cm}{\raggedright\alphaXII}  &  \parbox[t]{\w cm}{\raggedright\betaXII}
- \\
-13  &  + \arcaneXIII & \parbox[t]{\w cm}{\raggedright\featureXIII} & \parbox[t]{\w cm}{\raggedright\alphaXIII}  &  \parbox[t]{\w cm}{\raggedright\betaXIII}
- \\
-14  &  + \arcaneXIV & \parbox[t]{\w cm}{\raggedright\featureXIV} & \parbox[t]{\w cm}{\raggedright\alphaXIV}  &  \parbox[t]{\w cm}{\raggedright\betaXIV}
- \\
-15  &  + \arcaneXV & \parbox[t]{\w cm}{\raggedright\featureXV} & \parbox[t]{\w cm}{\raggedright\alphaXV}  &  \parbox[t]{\w cm}{\raggedright\betaXV}
- \\
-16  &  + \arcaneXVI & \parbox[t]{\w cm}{\raggedright\featureXVI} & \parbox[t]{\w cm}{\raggedright\alphaXVI}  &  \parbox[t]{\w cm}{\raggedright\betaXVI}
- \\
-17  &  + \arcaneXVII & \parbox[t]{\w cm}{\raggedright\featureXVII} & \parbox[t]{\w cm}{\raggedright\alphaXVII}  &  \parbox[t]{\w cm}{\raggedright\betaXVII}
- \\
-18  &  + \arcaneXVIII & \parbox[t]{\w cm}{\raggedright\featureXVIII} & \parbox[t]{\w cm}{\raggedright\alphaXVIII}  &  \parbox[t]{\w cm}{\raggedright\betaXVIII}
- \\
-19  &  + \arcaneXIX & \parbox[t]{\w cm}{\raggedright\featureXIX} & \parbox[t]{\w cm}{\raggedright\alphaXIX}  &  \parbox[t]{\w cm}{\raggedright\betaXIX}
- \\
-20  &  + \arcaneXX & \parbox[t]{\w cm}{\raggedright\featureXX} & \parbox[t]{\w cm}{\raggedright\alphaXX}  &  \parbox[t]{\w cm}{\raggedright\betaXX}
- \\
-
-%%tableEnd	
-      }
-      
-      \newcommand{\tableShort}[1]
-{
-
-%%smallTableBegin
-1  &  + \arcaneI & \parbox[t]{\w cm}{\raggedright\featureI} & \parbox[t]{\w cm}{\raggedright\alphaI}  &  \parbox[t]{\w cm}{\raggedright\betaI}
- \\
-2  &  + \arcaneII & \parbox[t]{\w cm}{\raggedright\featureII} & \parbox[t]{\w cm}{\raggedright\alphaII}  &  \parbox[t]{\w cm}{\raggedright\betaII}
- \\
-3  &  + \arcaneIII & \parbox[t]{\w cm}{\raggedright\featureIII} & \parbox[t]{\w cm}{\raggedright\alphaIII}  &  \parbox[t]{\w cm}{\raggedright\betaIII}
- \\
-4  &  + \arcaneIV & \parbox[t]{\w cm}{\raggedright\featureIV} & \parbox[t]{\w cm}{\raggedright\alphaIV}  &  \parbox[t]{\w cm}{\raggedright\betaIV}
- \\
-5  &  + \arcaneV & \parbox[t]{\w cm}{\raggedright\featureV} & \parbox[t]{\w cm}{\raggedright\alphaV}  &  \parbox[t]{\w cm}{\raggedright\betaV}
- \\
-
-%%smallTableEnd
-
-      }   
-          
-          
-     \newcommand{\archetype}[5]
-     {
-     \def\mode{#4}
-    
-     \begingroup
-     
-     %%defaultBegin
-
-\setkeys{archetype}{ arcaneI=0, alphaFeatureI= -- , betaFeatureI= --, featureI= --, arcaneII=0, alphaFeatureII= -- , betaFeatureII= --, featureII= --, arcaneIII=0, alphaFeatureIII= -- , betaFeatureIII= --, featureIII= --, arcaneIV=0, alphaFeatureIV= -- , betaFeatureIV= --, featureIV= --, arcaneV=1, alphaFeatureV= -- , betaFeatureV= --, featureV= --, arcaneVI=1, alphaFeatureVI= -- , betaFeatureVI= --, featureVI= --, arcaneVII=1, alphaFeatureVII= -- , betaFeatureVII= --, featureVII= --, arcaneVIII=1, alphaFeatureVIII= -- , betaFeatureVIII= --, featureVIII= --, arcaneIX=1, alphaFeatureIX= -- , betaFeatureIX= --, featureIX= --, arcaneX=2, alphaFeatureX= -- , betaFeatureX= --, featureX= --, arcaneXI=2, alphaFeatureXI= -- , betaFeatureXI= --, featureXI= --, arcaneXII=2, alphaFeatureXII= -- , betaFeatureXII= --, featureXII= --, arcaneXIII=2, alphaFeatureXIII= -- , betaFeatureXIII= --, featureXIII= --, arcaneXIV=2, alphaFeatureXIV= -- , betaFeatureXIV= --, featureXIV= --, arcaneXV=3, alphaFeatureXV= -- , betaFeatureXV= --, featureXV= --, arcaneXVI=3, alphaFeatureXVI= -- , betaFeatureXVI= --, featureXVI= --, arcaneXVII=3, alphaFeatureXVII= -- , betaFeatureXVII= --, featureXVII= --, arcaneXVIII=3, alphaFeatureXVIII= -- , betaFeatureXVIII= --, featureXVIII= --, arcaneXIX=3, alphaFeatureXIX= -- , betaFeatureXIX= --, featureXIX= --, arcaneXX=4, alphaFeatureXX= -- , betaFeatureXX= --, featureXX= --}
-
-
-%%defaultEnd
-     \def\w{4}
-       \setkeys{archetype}{#5}
- 
-     
-     \begin{tcolorbox}[  before skip=7pt plus 2pt,
-     	  boxrule=0pt,
-     	  boxsep=0pt,
-     	  toptitle=4pt,
-     	  left=0pt,
-     	  right=0pt,
-     	  bottom=5pt,
-     	  arc=0.5mm,
-     	  oversize=0pt,
-     	  colback=papyrus,
-     	 colbacktitle=titlered,
-     	colframe=titlered, title=\vspace{-4ex}
-     	]
-     		
-     		{\large \begin{center} \bf #1\end{center}}
-     		\vspace{-1.3ex}
-     		
-     		\dndlineLong
-     	
-     		\begin{center}
-     	\small
-     		      		 \begin{tabular}{c c c c  c }
-\bf Level 	&	\bf Arcane Wisdom	& \bf Archetype Features & \bf #2 Features	&	\bf #3 Features
-\\ 
-     		\if\mode0
-     			\tableLong
-		\fi
-		\if\mode1
-			\tableShort
-		\fi
-		     		\end{tabular}
-     		\end{center}
-     		\normalsize
-     		\dndlineLong
-     
-     	\end{tcolorbox}
-     	\endgroup
-     }
-     
-     
-   
-     
      There are 12 Archetypes, each with two branches. 
      
       \begin{center}
       \begin{rndtable}{c c c}
       \hline
-     	Archetype	&	Alpha Branch	&	Beta Branch
+     	\bf Archetype	&	\bf Alpha Branch	&	\bf Beta Branch
      	\\
      	Artificer	&	Enchanter		&	Potioneer
      	\\
@@ -240,13 +33,11 @@
      	\\
      	Fighter		&	Melee			&	Ranged
      	\\
-     	Sage	&	Researcher		&	Teacher
-     	\\
      	Investigator	&	Detective	&	Journalist
      	\\
      	Naturalist	&	Magizoologist	&	Druid
      	\\
-     	Oathkeeper	&	Knight	&	Paladin
+     	Oathkeeper	&	Knight	&	Acolyte
      	\\
      	Outlaw		&	Assassin	&	Thief
      	\\
@@ -254,12 +45,20 @@
      	\\
      	Ranger	&	Scout	&	Hunter
      	\\
+     	Sage	&	Researcher		&	Scholar
+     	\\
      	\hline
      \end{rndtable} 
       \end{center}
      
+     \newpage 
+     \section{Students}
+
+
+
+     Characters who are students, however, are much less likely to know what their roll in life is yet. They are much more likely to be defined and shaped by their school environment, so there are four special Archetypes, dedicated to the 4 Houses at Hogwarts. Note that these 4 Archetypes only have 5 levels of features, so students are encouraged to multiclass. 
      
-     CHaracters who are students, however, are much less likely to know what their roll in life is yet. They are much more likely to be defined and shaped by their school environment, so there are four special Archetypes, dedicated to the 4 Houses at Hogwarts:
+     Only human wizards (muggleborns, halfbloods and purebloods) may take these Archetypes, as Hogwarts does not (yet) accept non-human students.
      
      \begin{center}
       \begin{rndtable}{c c c}
@@ -277,6 +76,63 @@
      	\hline
      \end{rndtable} 
       \end{center}
+     
+     All students have the same starting spells and equipment, and the same choice of starting spells.
+     
+     \subsection*{Starting Equipment}
+     
+     All students start with:
+     \begin{itemize}
+     \itemsep0em 
+     \item  a {\it Student's Pack}
+     \item a basic Cauldron 
+     \item  a Wand (roll on the wand table to determine composition)
+     \item 2d4 $\times$ 5 gold. 
+     \end{itemize}
+     
+     \subsection*{Starting Spells}\label{S:BasicSpells}
+     
+     Students may choose any two spells from the {\it Basic Spells} set:
+     
+     {\it
+     \begin{itemize}
+     \itemsep0em 
+     \item Green Sparks
+     \item Stinging Hex
+     \item Flower Conjuring Spell
+     \item Illumination Spell
+     \item Minor Healing Spell
+     \item Throw Voice Charm
+     \item Locator Spell
+     \end{itemize}
+     }
+     
+     \newpage
+     \section{Multiclassing}
+     Although it is perfectly possible to progress with only one archetype, sometimes you might want to dip your toes into another set of abilities. This is called {\it multiclassing}. At any time, you may decide to take a new Archetype. Rather than increasing your level in your current Archetype, you may instead choose to become a Level 1 in a new class. In an ideal world, this should only be done because of a profound change in either the character, or their circumstances. 
+     
+     For example, a Level 6 Fighter might decide that, after their ordeal at the hands of an evil cult, to dedicate their life to eradicating all cults everywhere. This all consuming quest means that they decide to swear fealty to a powerful being and become an Oathkeeper. Next time the character progresses, she becomes a Level 6 Fighter/Level 1 Oathkeeper. They may decide to focus on their Oathkeeper until they are a level 6/5 Fighter/Oathkeeper -- at which point they may take another level in Fighter. You do not necessarily abandon your original archtype. 
+     
+     The sum of your archetypes should (in nearly all cases) simply be the total character level (and it is this character level that determines when you next level up). 
+     
+     Your abilities in a given archetype are based on your level {\it in that archetype}, not your total character level. Our 6/5 Fighter/Oathkeeper is a level 11 character, but only has access to Level 6 Fighter features, and so on. 
+     
+     You may multiclass as many times as you like -- though you will find yourself with considerably fewer abilities than a character who has stuck with a single archetype.
+     \subsection*{Different-Branch Multiclassing}
+     
+     If you have advanced to level 3, then your character will have chosen one of the two branches associated with that archetype. From this point, it is indeed possible to multiclass into the same archetype, if you wish to take the other branch. You will then have to keep track of your levels in each {\it branch} separately, so you may be a level 4/3 Sage(teacher)/Sage(researcher).
+     
+     If you do this, you will need to use the {\it Repeated Features} rules (see below), but note that you may only recieve a maximum of +2 arcane wisdom points from this. 
+     
+     \subsection*{Repeated Features}
+     
+     In general, when you take a new level in an archetype, you recieve all the associated features with that level. However, some archetypes may have features that provide identical or very similar effects. 
+     
+     In such a case, you generally do not get multiple uses of that feature, and they do not stack. Instead, you may use the additional refined knowledge you gain to increase your arcane wisdom by 1. If you have multiclassed into the same archetype (see above), then this bonus is capped at +2.
+     
+     \subsection*{Equipment}
+     
+     Note that the equipment detailed in each archetype is the {\it starting} equipment. If you multiclass, however, you do not automatically acquire these items, except where it makes narrative sense. 
      
      \clearpage
 \subfile{Data/Archetypes/Gryffindor}
