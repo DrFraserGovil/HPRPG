@@ -42,25 +42,29 @@ for i = 1:length(texFiles)
         if ~isempty(f.(3){i})
             t = "feature"+num2roman(i)+"=" + f.(3){i};
             vars = vars + com + t;
+            com = ", ";
             
         end
         
         if ~isempty(f.(4){i})
             t = "alphaFeature"+num2roman(i)+"=" + f.(4){i};
             vars = vars + com +  t;
+            com = ", ";
             
         end
         if ~isempty(f.(5){i})
             t = "betaFeature"+num2roman(i)+"=" + f.(5){i};
             vars = vars + com + t;
+            com = ", ";
             
         end
         if f.(2)(i) ~= floor(i/5)
             t = "arcane"+num2roman(i)+"=" +num2str( f.(2)(i));
             vars = vars+ com + t;
+            com = ", ";
         end
     end
-    
+    vars
     
     
     fullText = "\archetype{"+name+"}{"+branch1+"}{"+branch2+"}{"+num2str(mode)+"}{" + vars +"}";
@@ -94,4 +98,4 @@ for i = 1:length(long)
     t = t + "\n\\clearpage\n\\subfile{Data/Archetypes/"+s+"}";
 end
 t = t + "\n";
-%fprintf(t)
+fprintf(t)
