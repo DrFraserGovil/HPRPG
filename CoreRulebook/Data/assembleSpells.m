@@ -1,4 +1,5 @@
 files ={'hexes.xlsx','transfiguration.xlsx','charms.xlsx','healing.xlsx','illusion.xlsx','divination.xlsx','darkarts.xlsx'};
+
 sectionHeads = {'Hexes \& Curses', 'Transfiguration','Charms','Recuperation','Illusion','Divination','Dark Arts'};
 filler ={'Combat-based magic, used to incapacitate or even inflict pain upon your enemies.','Alter the very fabric of reality with these spells, changing one thing, into another and even conjuring things from thin air.  ',...
     'Manipulate objects with magic: cause things to levitate, fix things that are broken and control the elements.',...
@@ -6,6 +7,11 @@ filler ={'Combat-based magic, used to incapacitate or even inflict pain upon you
     'Impose your will on other people, and alter the way they perceive the world.',...
     'Peer through the mystic veil and perceive things beyond human comprehension: past, present and future.',...
     'Evil spells, used by evil people. Expect a heavy burden on your soul if you rely on the dark arts to accomplish your goals.'};
+[files,I] =sort(files);
+sectionHeads = sectionHeads(I);
+filler = filler(I);
+
+
 fileName = '../Chapters/Spells.tex';
 readFile = fileread(fileName);
 
@@ -38,8 +44,11 @@ for i = 1:length(files)
     
     
     statuses = sortrows(statuses,8);
-    
-    title = ['\subsection*{', sectionHeads{i}, '} \addcontentsline{toc}{section}{Spell School: ',sectionHeads{i},' } ', filler{i} '\\ '];
+    t = '';
+    if i > 1
+       t = '\newpage'; 
+    end
+    title = [t '\subsection*{', sectionHeads{i}, '} \addcontentsline{toc}{section}{Spell School: ',sectionHeads{i},' } ', filler{i} '\\ '];
     preamble = '\footnotesize \begin{center} \tablealternate \begin{longtable}{|m{\t cm} m{\u cm} m{\v cm} m{\w cm} m{\x cm} m{\z cm}|}';
     headers = '\hline \tablehead {\normalsize \bf Name } & {\normalsize \bf Class} & {\normalsize \bf Mastery}& {\normalsize \bf FP}  & {\normalsize \bf Check} & \bf {\normalsize Effect}  \\ \hline \hline ';
     
@@ -51,11 +60,11 @@ for i = 1:length(files)
         line = ['\bf \begin{center}' statuses.Name{i}, '\end{center} &  \parbox[t]{\u cm}{\begin{center}',  statuses.Class{i}, '\end{center}}',...
             '  &   \parbox[t]{\v cm}{\begin{center}', statuses.Level{i}(3:end), '\end{center}}',...
             '  &   \parbox[t]{\w cm}{\begin{center}', num2str(statuses.Fortitude(i)), '\end{center}}',...
-            ' &    \parbox[t]{\x cm}{\begin{center} ',  statuses.Check{i} '\\~\\ Target:', num2str(statuses.Difficulty(i)),'\end{center}}',...
+            ' &    \parbox[t]{\x cm}{\begin{center} ',  statuses.Check{i} '\par Target: ', num2str(statuses.Difficulty(i)),'\end{center}}',...
             '&      \parbox[t]{\z cm}{\begin{flushleft}', statuses.Effect{i}, '\end{flushleft}} \\  '];
         text = [text line];
     end
-    ender = '\hline\end{longtable} \end{center} \normalsize \vspace{4ex}';
+    ender = '\hline\end{longtable} \end{center} \normalsize \vspace{2ex}';
     
     text = [text ender];
 end
