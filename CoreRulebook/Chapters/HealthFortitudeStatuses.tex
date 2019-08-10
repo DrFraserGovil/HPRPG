@@ -2,9 +2,11 @@
 
 \chapter{Taking Damage}
 
-\section{Damage \& Damage Types}
-
 When you are attacked, or do something stupid, you must pay the price. This is called `taking damage'. There are different ways for you to take damage, and these have different effects associated with them. 
+
+\subsection{Damage Types}
+
+
 
 Many effects specify what kind of damage they do (for instance, a sword does 1d8 slashing damage). This helps the players and the GM work out how the damage is done, and also how it is affected by any weaknesses and resistances possessed by the target. 
 
@@ -66,7 +68,24 @@ Damage that originates not from the body, but from the mind. Bypasses all protec
 
 Swinging blades and flashing claws damage the HP of unprotected targets. 
 
-\section{Armour Class}\label{S:AC}
+
+\subsection{Falling}
+
+You are considered to be ``falling'' if you have dropped more than 2 metres, or have been propelled (by an explosion or a spell effect) over any distance.  
+
+For every metre that you fall, you take 1d4 bludgeoning damage, and upon landing you end up in the `prone' position on the ground. 
+
+ If the surface upon which you fall has any additional hazards (i.e. spikes, caltrops, fire), the associated damage is applied in addition to the falling damage. 
+ 
+\subsection{Air}
+
+All living beings require air to breathe. The average human being requires approximately 6 litres of air (at 1atm) per minute in order to stay conscious. This scales approximately as $L^3$, so a house elf (at $\sim$1m tall) needs only 1 litre per minute to survive, whilst a giant at 5m will require over 100 litres per minute. 
+
+The amount of time a being can go without oxygen is determined by 1 minute + 1 for every point of the ATH (survival) modifier, with a minimum of 30 seconds. After this time limit is up, the being enters into the Hypoxia status, where their brain begins to shut down, and if it is not cured, then they die. Once in the hypoxia state, it is not sufficient simply to reintroduce the being to a normal environment, you must actively cure the hypoxia with a spell or potion. 
+
+Various beings are immune to these effects to a greater or lesser extent -- the undead do not generally require oxygen to survive, and creatures such as merpeople possess the ability to breath underwater (though they may still suffocate in other ways). 
+
+\subsection{Armour Class}\label{S:AC}
 
 All protective items come with an ``Armour Class'' value (AC). The total AC of a character is given by:
 
@@ -74,19 +93,24 @@ $$\text{AC} = \text{STR modifier + } \sum_\text{clothes} \text{Item AC} + \text{
 
 Magical defences may serve to raise your AC temporarily. Beasts will also have an AC rating, determined by their inherent magic, and any defensive mechanisms they may posses. 
 
-AC acts to protect your HP from being damaged. If you are about to take damage from any of the following damage types:
-\begin{itemize}
-	\item Acid
-	\item Bludgeoning
-	\item Electric
-	\item Force
-	\item Necrotic
-	\item Piercing
-	\item Poison
-	\item Slashing
-\end{itemize}
-Then you may subtract away your AC from the damage done (minimum of 0), thus protecting you. Generally speaking, your AC only defends against physical phenomena, and hence does not protect against heat, pyschic and otherworldly damage unless otherwise specified.  Concussive damage produces a shockwave which no AC can protect against. 
+AC acts to protect your HP from being damaged. If you are about to take damage from any of the following damage types: {\bf Acid, Bludgeoning, Electric, Force, Necrotic, Piercing, Poison or Slashing}, then you may subtract away your AC from the damage done (minimum of 0), thus protecting you. Generally speaking, your AC only defends against physical phenomena, and hence does not protect against heat, pyschic and otherworldly damage unless otherwise specified.  Concussive damage produces a shockwave which no physical AC can protect against. 
 
+Some spells also provide a magical pseudo-AC. The spell effects should specify which damage effects they protect against, and any differences from the usual AC effects. 
+
+\subsection{Resisting}
+
+Not all effects of actions are cut and dried -- some effects can be {\bf Resisted}. For example, some spells, even after they have successfully been cast, can be resisted by the target, if they have a strong enough willpower to overpower the caster; spells such as {\it confundus}, and {\it stupefy}, as well as most illusion spells. Alternatively, somebody might try to restrain you, and your character can resist this action if they are strong enough. 
+
+Resist actions, like normal checks, are assigned an attribute (and possibly Proficiencies) that may boost the Resist check. Unless otherwise specified, the Resist check is performed using the dice granted to your character by the {\bf Withstand} skill. 
+
+This Resist check is then compared with the assigned DV (when resisting spells, or a direct action, this is often the CV of that action). If the Resist check is greater than the CV, then the action is either denied, or has a lesser effect. 
+
+Successfully Resisting costs 2 FP. If you have fewer than 2 FP, then you cannot Resist.
+
+You can perform multiple Resists over the course of a Turn Cycle, if multiple combatants attack you with spells that require one, for example. The only limit is when your FP runs out. However, each subsequent resist gets harder and harder: you suffer a 1 point penalty to your check for each Resist you have already performed this cycle. This counter resets at the end of the cycle.
+
+
+\onecolumn
 \section{Statuses}
 
 Statuses are temporary effects applied to a character, usually due to a spell or a magic item, though sometimes mundane objects can confer statuses such as burns. Often these effects come with a built-in time constraint, after which time, the status is removed. It is possible to have more than one status effect at any given time. 
@@ -99,7 +123,7 @@ A list of statuses is found on the next page.
 \def\x{6}
 \def\y{6}
 \def\z{3}
-\onecolumn
+
 \footnotesize
 %% This table is automatically generated from the table in a .xlsx file, compiled into text by a matlab script
 %%StatusBegin\begin{center} \tablealternate\begin{longtable}{|m{\w cm} m{\x cm} m{\y cm} m{\z cm}|}\hline  \tablehead  \normalsize {\bf Status} & \normalsize \bf Description & \normalsize \bf Effect & \normalsize \bf Duration \\  \bf \begin{flushleft} Asleep\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}Visiting the land of nod.\end{flushleft}}  &   \parbox[t]{\y cm}{\begin{flushleft}Can take no actions, but health and fortitude regenerate at a rate of 1d6 HP for every hour over 3 hours that they are asleep.
