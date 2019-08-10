@@ -36,7 +36,7 @@ function  ndx(die,advFlag)
   
       X(end+1) = t;
     end
-    hist(X,range);
+    histogram(X,'Normalization','probability');
     
 end
 
