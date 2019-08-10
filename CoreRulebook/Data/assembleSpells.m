@@ -23,7 +23,7 @@ for i = 1:length(files)
     [n,~] = size(statuses);
     statuses = sortrows(statuses);
     for j = 1:n
-        statuses.Name{j}
+        statuses.Name{j};
         m = statuses.Level{j};
         e = 6;
         if length(m) < 6
