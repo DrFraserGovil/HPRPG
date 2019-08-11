@@ -36,6 +36,8 @@ function  ndx(die,advFlag)
   
       X(end+1) = t;
     end
+    Mean = mean(X)
+    Median = median(X)
     histogram(X,'Normalization','probability');
     
 end

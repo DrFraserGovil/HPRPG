@@ -97,13 +97,15 @@
 \contentsline {subsection}{\numberline {13.1.1}Enchanting Mishaps}{63}{subsection.13.1.1}
 \contentsline {section}{\numberline {13.2}Potion Making}{63}{section.13.2}
 \contentsline {part}{IV\hspace {1em}Magic}{65}{part.4}
-\contentsline {chapter}{\numberline {14}Casting Spells}{66}{chapter.14}
-\contentsline {chapter}{\numberline {15}Learning New Spells}{67}{chapter.15}
-\contentsline {chapter}{\numberline {16}Spell List}{68}{chapter.16}
-\contentsline {section}{Spell School: Charms }{68}{chapter.16}
-\contentsline {section}{Spell School: Dark Arts }{71}{table.16.1}
-\contentsline {section}{Spell School: Divination }{73}{table.16.2}
-\contentsline {section}{Spell School: Recuperation }{75}{table.16.3}
-\contentsline {section}{Spell School: Hexes \& Curses }{78}{table.16.4}
-\contentsline {section}{Spell School: Illusion }{81}{table.16.5}
-\contentsline {section}{Spell School: Transfiguration }{83}{table.16.6}
+\contentsline {chapter}{\numberline {14}Spells}{66}{chapter.14}
+\contentsline {section}{\numberline {14.1}Casting Spells}{66}{section.14.1}
+\contentsline {section}{\numberline {14.2}Learning New Spells}{66}{section.14.2}
+\contentsline {section}{\numberline {14.3}Wards}{67}{section.14.3}
+\contentsline {chapter}{\numberline {15}Spell List}{68}{chapter.15}
+\contentsline {section}{Spell School: Charms }{68}{chapter.15}
+\contentsline {section}{Spell School: Dark Arts }{71}{table.15.1}
+\contentsline {section}{Spell School: Divination }{73}{table.15.2}
+\contentsline {section}{Spell School: Recuperation }{75}{table.15.3}
+\contentsline {section}{Spell School: Hexes \& Curses }{78}{table.15.4}
+\contentsline {section}{Spell School: Illusion }{81}{table.15.5}
+\contentsline {section}{Spell School: Transfiguration }{83}{table.15.6}
