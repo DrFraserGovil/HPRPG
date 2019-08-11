@@ -283,11 +283,11 @@ In cases such as this it is useful to remember that it is the {\it casting} of t
  
 \subsection{Movement}
 
-Moving is a very common action to take during combat, to avoid the enemy's attacks, or to maneouvre yourself to enable an attack on the enemy. Movement can be broken down into three types: minor movements, transport movements and dodges. 
+Moving is a very common action to take during combat, to avoid the enemy's attacks, or to maneouvre yourself to enable an attack on the enemy. Movement can be broken down into three types: minor movements, transport movements and considered movements. 
 
-Minor movements include things such as turning to face an enemy, or taking a step out from behind cover. The actions do not constitute the entirety of a turn, however \textbf{however, they are considered to happen at the very beginning of a turn cycle, and you cannot return to cover after emerging from it}. If you therefore emerge from cover to attack someone, and a character successfully guessed that this would happen and sent a spell in your direction, you will not be protected until you move back into cover in the next turn cycle. 
+A {\bf minor movement} includes things such as turning to face an enemy, or taking a step out from behind cover. These actions do not constitute the entirety of a turn and you may still take a major action afterwards, \textbf{however, they are considered to happen at the very beginning of a turn cycle, and you cannot return to cover after emerging from it}. If you therefore emerge from cover to attack someone, and a character successfully guessed that this would happen and sent a spell in your direction, you will not be protected until you move back into cover in the next turn cycle. 
 
-Transport movements are those designed to get you from point A to point B as quickly as possible. These actions do take up your entire turn: you can do nothing else except take a transport action. The distance that you can travel in a given trasnport action is calculated from:
+{\bf Transport movements} are those designed to get you from point A to point B as quickly as possible. These actions do take up your entire turn: you can do nothing else except take a transport action. The distance that you can travel in a given trasnport action is calculated from:
 
 $$ \text{metres travelled} = \frac{1\text{d}10 \text{ ATH (speed) check}}{5} $$  
 
@@ -295,21 +295,74 @@ This distance is rounded downwards  to the nearest half-metre, unless you are we
 
 If you do elect to continue moving the next turn, you may use the `sprint' effect to continue moving at the same pace as the previous turn, without another roll. This can be continued for a maximum of 3 turns. If you are sprinting, you may not change direction -- this would require a `new movement' to be initiated. You may also simply elect to perform a new movement roll, in order to get a better value. 
 
- An evasion movement works exactly the same as transport movement, except that the distance roll is divided in half (rounded down to the nearest 0.5m again). This sacrifice in distance, however, allows you to attempt to evade any attacks that come your way, and negate the effects of attacks of opportunity. In addition to the movement roll, you must also immediately perform a 1d8 ATH check (or FIN, if you have the relevant skill), which denotes how skillfull your dodging was. 
-Any character that attempts to cast a spell on you during this turn cycle must then perform a 1d8 EMP check to anticiapte your action. If this EMP check is less than \textbf{or equal to} your ATH check, then you succesfully dodge the spell. If not, 
-then your evasion was unsuccessful, and you take the effect of the spell. 
+A {\it considered movement} is one in which your character is not attempting to do something else. It is considered a minor action -- or `half' a major action. The check is performed exactly as above, but you then simply divide the distance by two. You may use the other half to perform another minor action, such as an evasion, or to prepare a counterspell. A consideredmovement may not then be used to trigger the `sprint' effect. 
 
 
-\subsection{Other Actions}
 
-Other actions may also be broken down into a major and a minor distinction, with major actions taking up the entirety of a turn, and minor actions being incidentals that occur before the main action of a turn cycle begins. 
+\newpage
+\section{Minor Actions}
+You may perform two minor actions in place of a single major action, all minor movement actions occur first, but otherwise you may choose the order in which the actions are completed. Some important minor actions are listed. 
 
-Examples of minor actions could be removing an item from your bag (within reason), or crouching down. Major actions would be casting spells, equipping and using items and so on. There is, as usual, a slight grey area in what constitutes a minor action -- pulling an entire suit of armour out of your bag is clearly going to take longer than a minor action!
+\subsection{Evasion}
+ 
+ Performing an evasive action allows you to dodge out of the way of a danegerous effect (be it a giant\apos{}s club, or a wayward spell). Perform an ATH(speed) Resist check. If the instigator of the effect is a being (and not, say, a falling branch), the DV of the dodge is set by them performing an EMP(perception) Resist check to anticipate your actions and adjust accordingly. If the anticipation check is greater than the evasion check, the evasion fails and the effect is applied. Otherwise, the effect misses entirely. 
+ 
+ 
+ When declared as a minor action, you may dodge only one effect per cycle. You may, however, choose to dedicate an entire major action to evasion, in which case you may attempt to dodge up to three effects. 
+
+\subsection{Counterspells}
+
+Preparing a counterspell is a form of conditional action (see below), where you may wait to cast a spell until someone directs an attack towards you. 
+
+If and when that attack comes, the GM will give you only {\bf 5 seconds} to declare which spell you are going to use to counter the attack that is headed your way. If you do not declare a spell in those 5 seconds, the attack hits you as normal. However, if you do declare a spell in those 5 seconds (and the GM will choose the first spell you declare), then you may attempt to cast that spell. If the GM judges that your counterspell negates or reflects the attack that was headed your way, then you have succesfully avoided it. Otherwise, the spell continues unabated. 
+
+If multiple attacks spells were used on you simultaneously, then it is up to the GM to decide if your counterspell affects both incoming attacks, or only one (or indeed, neither). For example, a \textit{protego} cast against two spells from the same general direction will indeed protect against both attacks. Two attacks from opposite sides, however, will not be affected by a single \textit{protego}, which may cause you problems, as you are allowed only a single counterspell per turn. 
+
+The 5 second time limit will push you to be inventive in a split second, and you should be constantly surveying your environment to spot such situations before they arise. 
+
+If you are preparing a counterspell, it is important that you declare this first to the GM, so that the appropriate 5 second deadline can be given. Failure to do so may result in the GM declaring your counterspell invalid!
+
+
+\subsection{Quickspells}
+
+A quickspell is a spell that is cast as a minor action. 
+
+Spells require a clarity of focus, so casting whilst moving, or otherwise in a hurry is generally a bad idea, if you want it to actually work. However, if you are very comfortable with spell (or a very powerful spellcaster), then you may be able get away with it. 
+
+When casting a quickspell, the dice roll is capped at half of the maximum value. If you roll higher than the capped value, you gain no additional improvements. You are also limited in the amount of attribute/modifier bonuses you can add into the casting, depending on your casting level in the associated school:
+
+\begin{center}
+\begin{rndtable}{|c  c c|}
+\hline
+\bf Casting Level 	&	\bf Roll Cap	&	\bf  Bonuses
+\\
+Beginner	&	3	& 0\%
+\\
+Novice	&	4	&	25\%
+\\
+Adept	&	5	&	33\%
+\\
+Expert	&	6	&	50\%
+\\
+Master	&	10	&	75\%
+\\\hline
+\end{rndtable}
+
+You must also take check-disadvantage on the anticipation check if the target attempts to evade. 
+
+\end{center}
+
+\section{Classifying Actions}
+
+Other actions may also be broken down into a major and a minor distinction, with major actions taking up the entirety of a turn, and minor actions being able to be used in concert with other minor actions, or with a considered movement. 
+
+Examples of minor actions could be removing an item from your bag (within reason), drinking a potion, or crouching down. Major actions would be casting spells, equipping and using weapons and so on. There is, as usual, a slight grey area in what constitutes a minor action -- pulling an entire suit of armour out of your bag is clearly going to take longer than a minor action!
 
 Some actions (i.e. putting on said suit of armour) might take a number of turn cycles to complete. You may choose to abandon the action before it is completed, but you would then need to start again from scratch to finalise it. 
 
 Classifying these actions is up to the GM: and the GM{\apos}s word on the matter is final. 
 
+As a general guide, remember that there are 5 turn cycles per minute, so a major action takes around 10 seconds to complete. Anything that takes more than 5 seconds must therefore be considered a major action. 
 \subsection{Conditional Actions}
 
 The use of the simultaneous combat system raises some interesting opportunities with conditional actions, which are actions that depend on the actions that another character takes.
@@ -322,17 +375,7 @@ You are only allowed a single conditional clause in your declaration, and if tha
 
 If a seemingly unbreakable condition-chain arises (i.e. player A says he will perform X if player B does Y, but player B says he will only perform Y if player A does X), it is up to the GM to resolve the conditionals -- in such cases the answer is usually \textit{nothing happens}, but there may be examples where the GM feels it is more appropriate that the action-chain is triggered. 
 
-\subsection{Counterspells}
 
-The only action where you can declare a conditional action without specifying exactly what that action might be is \textit{preparing a counterspell}. In this instance, you may simply decleare that you are expecting an attacking, and that you are waiting to counter that attack. 
-
-If and when that attack comes, the GM will give you only 5 seconds to declare which spell you are going to use to counter the attack that is headed your way. If you do not declare a spell in those 5 seconds, the attack hits you as normal. However, if you do declare a spell in those 5 seconds (and the GM will choose the first spell you declare), then you may attempt to cast that spell. If the GM judges that your counterspell negates or reflects the attack that was headed your way, then you have succesfully avoided it. Otherwise, the spell continues unabated. 
-
-If multiple attacks spells were used on you simultaneously, then it is up to the GM to decide if your counterspell affects both incoming attacks, or only one (or indeed, neither). For example, a \textit{protego} cast against two spells from the same general direction will indeed protect against both attacks. Two attacks from opposite sides, however, will not be affected by a single \textit{protego}, which may cause you problems, as you are allowed only a single counterspell per turn. 
-
-The 5 second time limit will push you to be inventive in a split second, and you should be constantly surveying your environment to spot such situations before they arise. 
-
-If you are preparing a counterspell, it is important that you declare this first to the GM, so that the appropriate 5 second deadline can be given. Failure to do so may result in the GM declaring your counterspell invalid!
 
 \chapter{Stealth and Critical Strikes}
 
