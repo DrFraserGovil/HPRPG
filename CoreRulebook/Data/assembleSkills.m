@@ -31,17 +31,18 @@ firstHalf = readFile(1:insertPoint+12);
 secondHalf = readFile(endPoint:end);
 
 
-preamble = '\begin{center} \tablealternate \begin{longtable}{|m{\w cm} m{\x cm} m{\y cm} m{\z cm}|}';
-headers = '\hline \tablehead \normalsize \bf Name & \normalsize \bf Description & \normalsize \bf Effect & \normalsize \bf Prerequisite \\ \hline \hline ';
+preamble = '\begin{center} \tablealternate \begin{longtable}{|m{\w cm}  m{\y cm} m{\x cm} m{\z cm}|}';
+headers = '\hline \tablehead \normalsize \bf Name  & \normalsize \bf Effect & \bf \normalsize Levels & \normalsize \bf Prerequisite \\ \hline \hline ';
 
 text = [preamble headers];
 
 
 
 for (i = 1:n)
-    line = ['\bf \begin{flushleft} ' statuses.Name{i}, '\end{flushleft}  &  \parbox[t]{\x cm}{\begin{flushleft}',  statuses.Description{i}, '\end{flushleft}}',...
+    line = ['\bf \begin{flushleft} ' statuses.Name{i}, '\end{flushleft}',...
         '  &   \parbox[t]{\y cm}{\begin{flushleft}', statuses.Effect{i}, '\end{flushleft}}',...
-        '  &   \parbox[t]{\z cm}{\begin{center}', statuses.Prerequisite{i}, '\end{center}}  \\  '];
+        '  &   \parbox[t]{\x cm}{\begin{center}', num2str(statuses.SkillLevels(i)), '\end{center}}',...
+        '  &   \parbox[t]{\z cm}{\begin{center} \it ', statuses.Prerequisite{i}, '\end{center}}  \\  '];
     inc = statuses.Include(i);
     if inc == 1
         text = [text line];
