@@ -54,7 +54,11 @@ for (i = 1:n)
     line = ['\vspace{1ex}\parbox[t]{\x cm}{\raggedright ' statuses.Name{i},...
         '}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}', statuses.Prerequisite{i},...
         '\vspace{1ex}}& {\vspace{-\top ex}',  skilldots,    '\vspace{-\bottom ex}}\\ \hline '];
-    text = [text line];
+    
+    inc = statuses.Include(i);
+    if inc == 1
+        text = [text line];
+    end
 end
 ender = '\end{longtable}';
 
