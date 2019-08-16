@@ -1,4 +1,4 @@
-\babel@toc {english}{}
+\select@language {english}
 \contentsline {part}{Introduction}{2}{chapter*.2}
 \contentsline {section}{\numberline {0.1}Computing Checks}{3}{section.0.1}
 \contentsline {section}{\numberline {0.2}Using these Rules}{3}{section.0.2}
@@ -114,10 +114,10 @@
 \contentsline {section}{\numberline {14.2}Learning New Spells}{71}{section.14.2}
 \contentsline {section}{\numberline {14.3}Wards}{72}{section.14.3}
 \contentsline {chapter}{\numberline {15}Spell List}{73}{chapter.15}
-\contentsline {section}{Spell School: Charms }{73}{chapter.15}
-\contentsline {section}{Spell School: Dark Arts }{76}{table.15.1}
-\contentsline {section}{Spell School: Divination }{78}{table.15.2}
-\contentsline {section}{Spell School: Recuperation }{80}{table.15.3}
-\contentsline {section}{Spell School: Hexes \& Curses }{83}{table.15.4}
-\contentsline {section}{Spell School: Illusion }{86}{table.15.5}
-\contentsline {section}{Spell School: Transfiguration }{88}{table.15.6}
+\contentsline {subsubsection}{Charms}{73}{subsubsection*.3}
+\contentsline {subsubsection}{Dark Arts}{73}{subsubsection*.4}
+\contentsline {subsubsection}{Divination}{73}{subsubsection*.5}
+\contentsline {subsubsection}{Hexes \& Curses}{73}{subsubsection*.6}
+\contentsline {subsubsection}{Illusion}{73}{subsubsection*.7}
+\contentsline {subsubsection}{Recuperation}{73}{subsubsection*.8}
+\contentsline {subsubsection}{Transfiguration}{73}{subsubsection*.9}

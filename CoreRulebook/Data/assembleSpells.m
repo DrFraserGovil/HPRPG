@@ -1,4 +1,4 @@
-files ={'hexes.xlsx','transfiguration.xlsx','charms.xlsx','healing.xlsx','illusion.xlsx','divination.xlsx','darkarts.xlsx'};
+files ={'hexes.xlsx','transfiguration.xlsx','charms.xlsx','recuperation.xlsx','illusion.xlsx','divination.xlsx','darkarts.xlsx'};
 
 sectionHeads = {'Hexes \& Curses', 'Transfiguration','Charms','Recuperation','Illusion','Divination','Dark Arts'};
 filler ={'Combat-based magic, used to incapacitate or even inflict pain upon your enemies.','Alter the very fabric of reality with these spells, changing one thing, into another and even conjuring things from thin air.  ',...
@@ -43,7 +43,8 @@ for i = 1:length(files)
     end
     
     
-    statuses = sortrows(statuses,8);
+    statuses = sortrows(statuses,1);
+    statuses = sortrows(statuses,3);
     t = '';
     if i > 1
        t = '\newpage'; 

@@ -49,6 +49,10 @@
 \newfontfamily{\HP}{[ParryHotter.TTF]}
 \newcommand\dndFont{texgyrebonum}
 \setmainfont[BoldFont = \dndFont-bold.otf,ItalicFont = \dndFont-italic.otf,BoldItalicFont = \dndFont-bolditalic.otf]{\dndFont-regular.otf}
+\newcommand{\minus}{-}
+\def\comma{,}
+\def\dash{-}
+
 \newcommand{\dndline}{%
   \noindent
   \begin{tikzpicture}[]
@@ -73,16 +77,23 @@
   \end{tikzpicture}%
   \par%
 }
+\newcommand{\dndlineThird}[1]{%
+  \noindent
+  \begin{tikzpicture}[]
+    \fill [left color = #1, shading=axis, shading angle = 90] (0, 0)--({\textwidth*0.22}, 0)--({\textwidth*0.22}, 0.01)--(0, 0.01);
+  \end{tikzpicture}%
+  \par%
+}
 
 \titleformat{\chapter} {\vspace{-14ex}\normalfont\bfseries\centering\color{titlered}\HP\Huge}{}{0pt}{\dndline\thechapter: }[\vspace{-1.6ex}\dndline\vspace{-3ex}]
 \titleformat{name=\chapter,numberless}{\vspace{-14ex}\normalfont\bfseries\centering\color{titlered}\HP\Huge}{}{0pt}{\dndline }[\vspace{-1.6ex}\dndline\vspace{-3ex}]
 \titleformat{\section}{\vspace{-4ex}\normalfont\huge\color{titlered}\it\centering}{}{0em}{}[{\vspace{-1.45ex}\dndlineFade{rulered}}]
 \titleformat{name=\subsection}{\LARGE \bf}{}{0pt}{}[{\vspace{-1.7ex}\dndlineFade{black}}]
-
+\titleformat{name=\subsubsection}{\large \bf}{}{0pt}{}[{\vspace{-1.7ex}\dndlineThird{black}}]
 
 \newsavebox{\tablebox}
 
-
+\raggedbottom
 \NewEnviron{rndtable}[1]{%
   \addtolength{\extrarowheight}{1ex}%
   \rowcolors{2}{\tablecolorlight}{\tablecolordark}%
