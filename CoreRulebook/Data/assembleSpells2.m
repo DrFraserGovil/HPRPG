@@ -4,11 +4,11 @@ function assembleSpells2(maxLevel)
     end
     files ={'hexes.xlsx','transfiguration.xlsx','charms.xlsx','recuperation.xlsx','illusion.xlsx','divination.xlsx','darkarts.xlsx'};
 
-    sectionHeads = {'Hexes \\& Curses', 'Transfiguration','Charms','Recuperation','Illusion','Divination','Dark Arts'};
-
+    sectionHeads = {'Hexes', 'Transfiguration','Charms','Recuperation','Illusion','Divination','Dark Arts'};
+    singularHeads = {'Hex','Transfiguration','Charm','Recuperant','Illusion','Divination','Abomination'};
     [files,I] =sort(files);
     sectionHeads = sectionHeads(I);
-
+    singularHeads = singularHeads(I);
     allSpells = Spell.empty;
     schoolSpells = {};
     c = 1;
@@ -24,7 +24,7 @@ function assembleSpells2(maxLevel)
 
         for j = 1:n
             newSpell = Spell();
-            newSpell = newSpell.ReadLine(spells(j,:),sectionHeads{i});
+            newSpell = newSpell.ReadLine(spells(j,:),singularHeads{i});
             L = newSpell.Level;
             if L <=cutoff
                 allSpells(c) = newSpell;
@@ -40,11 +40,11 @@ function assembleSpells2(maxLevel)
 
     schoolList = '\\begin{multicols}{4} \\raggedbottom';
     for j = 1:length(files)
-        pageJump = "\\vfill\\null\n\\columnbreak";
-        if cutoff <3 && mod(j,2)>0
-            pageJump = "";
-        end
-        t = "\\subsubsection{" + sectionHeads{j} + "}\n";
+%         pageJump = "\\vfill\\null\n\\columnbreak";
+%         if cutoff <3 && mod(j,2)>0
+%             pageJump = "";
+%         end
+        t = "\\subsubsection{" + sectionHeads{j} + "}\n\\vbox{\n";
         array = schoolSpells{j};
         [~,I] = sort([array.Level]);
         array = array(I);
@@ -66,6 +66,9 @@ function assembleSpells2(maxLevel)
             spellLevels = spellLevels(I);
             for k = 1:length(spellLevels)
                 n = prepareText(spellLevels(k).Name);
+                if ~isempty(spellLevels(k).HigherLevel)
+                    n = n + " (*) ";
+                end
                 tp = tp + "\\item " + n + "\n\n";
             end
             if (idx <= N)
@@ -78,9 +81,9 @@ function assembleSpells2(maxLevel)
             t = t + tp + "\n\\end{itemize}\n";
         end
 
-        schoolList = schoolList + t + pageJump;
+        schoolList = schoolList + t + "} \\vfill"; % pageJump;
     end
-    schoolList = schoolList + "\\end{multicols}\\clearpage";
+    schoolList = schoolList + "~\\vfill~\\end{multicols}\\clearpage";
 
     %% Assemble alphabetised lists
     alphList = '\\begin{multicols}{3}';

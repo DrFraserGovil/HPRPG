@@ -13,6 +13,7 @@ classdef Spell
         DV
         Effect
         Duration
+        HigherLevel
     end
     
     methods
@@ -29,6 +30,7 @@ classdef Spell
            obj.DV = 0;
            obj.Effect = "None";
            obj.Duration = 0;
+           obj.HigherLevel = "None";
         end
         
         function obj = ReadLine(obj,line,school)
@@ -49,6 +51,7 @@ classdef Spell
             obj.DV = line.Difficulty;
             obj.Effect = line.Effect{1};
             obj.Duration = line.Duration{1};
+            obj.HigherLevel = line.HigherLevel{1};
         end
         
         function t = output(sp)
@@ -71,6 +74,10 @@ classdef Spell
             t = t + "duration = " + prepareText(sp.Duration) + ",";
             if strcmp(sp.Duration,"0")==1
                 t = t + "noDur = 1, ";
+            end
+            t = t + "higher = " + prepareText(sp.HigherLevel) + ",";
+            if isempty(sp.HigherLevel)
+                t = t + "noHigh = 1, ";
             end
             t = t + "effect =" + prepareText(sp.Effect) + "}";
         end

@@ -81,13 +81,9 @@ Equally, intereference only applies if the effects of the ward compound each oth
 \onecolumn
 \chapter{Spell List}
 
-\def\t{2.9}
-\def\u{1.7}
-\def\v{1.7}
-\def\w{1.2}
-\def\x{1.5}
-%\def\y{1.2}
-\def\z{7.4}
+This section contains a list of all the spells available in the game. First, the spells are presented broken down into the school and level to which they belong. The next section then contains a full description of the spell, including its casting check, casting difficulty, and spell effects.
+
+Spells marked with a (*) gain more effects, or increase in power, at higher levels. 
 
 \define@key{spell}{name}{\def\name{#1}}
 \define@key{spell}{incant}{\def\incant{#1}}
@@ -103,9 +99,11 @@ Equally, intereference only applies if the effects of the ward compound each oth
 \define@key{spell}{noIncant}{\def\incantMode{#1}}
 \define@key{spell}{noProf}{\def\profMode{#1}}
 \define@key{spell}{noDur}{\def\durMode{#1}}
+\define@key{spell}{higher}{\def\higher{#1}}
+\define@key{spell}{noHigh}{\def\highMode{#1}}
 \newcommand{\spell}[1]
 {
-	\setkeys{spell}{name=None,incant = -, school = None, type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0,noDur=0,duration=None}
+	\setkeys{spell}{name=None,incant = -, school = None, type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0,noDur=0,duration=None,higher=None,noHigh=0}
 	\setkeys{spell}{#1}
 	\vbox{
 	{\normalsize \color{rulered}\name }
@@ -132,10 +130,20 @@ Equally, intereference only applies if the effects of the ward compound each oth
 	\if\profMode0 
 		({\it \prof})
 	\fi
+	, ~~DV  \dv
+	%~{\bf DV:}~~~~~~~~~\quad~~~~\dv
 	
 	\vspace{1ex}
 	
 	\effect
+	
+	\vspace{1 ex}
+	
+	\if\highMode0
+		{\bf Higher Level Casting: } 
+		
+		\higher
+	\fi
 	}
 	\vspace{3ex}
 	
