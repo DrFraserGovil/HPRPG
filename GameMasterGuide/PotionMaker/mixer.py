@@ -18,7 +18,7 @@ import threading
 import time
 global models,xScalers,yScalers
 import tensorflow as tf
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 #keras.backend_set_learning_phase(0)
 def loadEffect(pEffect,i):
 	global models,xScalers,yScalers
@@ -194,5 +194,5 @@ yScalers = [None]*n
 graphs = [None]*n
 
 
-loadColourModels()
+#loadColourModels()
 #getIngredients()

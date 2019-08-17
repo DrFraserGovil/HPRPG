@@ -12,6 +12,7 @@ classdef Spell
         Proficiency
         DV
         Effect
+        Duration
     end
     
     methods
@@ -27,6 +28,7 @@ classdef Spell
            obj.Proficiency = "None";
            obj.DV = 0;
            obj.Effect = "None";
+           obj.Duration = 0;
         end
         
         function obj = ReadLine(obj,line,school)
@@ -46,12 +48,31 @@ classdef Spell
             obj.Proficiency = line.Proficiency{1};
             obj.DV = line.Difficulty;
             obj.Effect = line.Effect{1};
+            obj.Duration = line.Duration{1};
         end
         
-        function outputArg = method1(obj,inputArg)
-            %METHOD1 Summary of this method goes here
-            %   Detailed explanation goes here
-            outputArg = obj.Property1 + inputArg;
+        function t = output(sp)
+            t = "\\spell{";
+            t = t+ "name = " + prepareText(sp.Name)+", ";
+            t = t + "incant = " + prepareText(sp.Incantation)+", ";
+            if isempty(sp.Incantation)
+                t = t + "noIncant = 1, ";
+            end
+            t = t + "school = " + sp.School+", ";
+            t = t + "type = " + prepareText(sp.Type)+", ";
+            t = t + "level =" + sp.LevelName+", ";
+            t = t + "fp = " + num2str(sp.FP)+", ";
+            t = t + "attribute =" + sp.Check+", ";
+            t = t + "proficiency = " + prepareText(sp.Proficiency)+", ";
+            if isempty(sp.Proficiency)
+                t = t + "noProf = 1, ";
+            end
+            t = t + "dv = " + num2str(sp.DV)+", ";
+            t = t + "duration = " + prepareText(sp.Duration) + ",";
+            if strcmp(sp.Duration,"0")==1
+                t = t + "noDur = 1, ";
+            end
+            t = t + "effect =" + prepareText(sp.Effect) + "}";
         end
     end
 end

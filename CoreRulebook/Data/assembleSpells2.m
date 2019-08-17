@@ -89,23 +89,7 @@ function assembleSpells2(maxLevel)
 
     for j = 1:length(allSpells)
         sp = allSpells(j);
-        t = "\\spell{";
-        t = t+ "name = " + prepareText(sp.Name)+", ";
-        t = t + "incant = " + prepareText(sp.Incantation)+", ";
-        if isempty(sp.Incantation)
-            t = t + "noIncant = 1, ";
-        end
-        t = t + "school = " + sp.School+", ";
-        t = t + "type = " + prepareText(sp.Type)+", ";
-        t = t + "level =" + sp.LevelName+", ";
-        t = t + "fp = " + num2str(sp.FP)+", ";
-        t = t + "attribute =" + sp.Check+", ";
-        t = t + "proficiency = " + prepareText(sp.Proficiency)+", ";
-        if isempty(sp.Proficiency)
-            t = t + "noProf = 1, ";
-        end
-        t = t + "dv = " + num2str(sp.DV)+", ";
-        t = t + "effect =" + prepareText(sp.Effect) + "}";
+        t = sp.output();
         
         alphList = strcat(alphList, t, "\n");
 
@@ -113,6 +97,9 @@ function assembleSpells2(maxLevel)
 
     fullText = schoolList + alphList + "\\end{multicols}";
     fileName = '../Chapters/SpellList.tex';
+    if cutoff < 3
+        fileName =  '../Chapters/SpellListShort.tex';
+    end
     FID = fopen(fileName,'w');
     fprintf(FID, fullText);
     fclose(FID);

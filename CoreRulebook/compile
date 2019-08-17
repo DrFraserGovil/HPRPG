@@ -7,4 +7,7 @@ then
 	cd ..
 fi
 xelatex CoreRulebook.tex
+xelatex BasicRulebook.tex
 xdg-open CoreRulebook.pdf
+rm *.aux
+rm *.log

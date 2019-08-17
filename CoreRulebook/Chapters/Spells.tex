@@ -77,7 +77,7 @@ Wards, however, have an unfortunate habit of interfering with each other when us
 The interference only applies if the wards are similar in magnitude and intent. For example, Hogwarts castle is a heavily warded region, but a small ward could be placed in a room without problem. Interference would only become a problem when a new castle-wide ward was attempted. 
 
 Equally, intereference only applies if the effects of the ward compound each other -- if they lie in opposition, then the usual spell mechanics are applied. For example, a character with a personal shield ward touches a beartrap ward -- neither ward collapses, but the beartrap ward is triggered, and the shield will attempt to protect the character. 
-
+\cleartoleftpage
 \onecolumn
 \chapter{Spell List}
 
@@ -99,11 +99,13 @@ Equally, intereference only applies if the effects of the ward compound each oth
 \define@key{spell}{proficiency}{\def\prof{#1}}
 \define@key{spell}{dv}{\def\dv{#1}}
 \define@key{spell}{effect}{\def\effect{#1}}
+\define@key{spell}{duration}{\def\duration{#1}}
 \define@key{spell}{noIncant}{\def\incantMode{#1}}
 \define@key{spell}{noProf}{\def\profMode{#1}}
+\define@key{spell}{noDur}{\def\durMode{#1}}
 \newcommand{\spell}[1]
 {
-	\setkeys{spell}{name=None,incant = -, school = None, type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0}
+	\setkeys{spell}{name=None,incant = -, school = None, type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0,noDur=0,duration=None}
 	\setkeys{spell}{#1}
 	\vbox{
 	{\normalsize \color{rulered}\name }
@@ -120,6 +122,10 @@ Equally, intereference only applies if the effects of the ward compound each oth
 	
 	{\bf Spell Type:}~~~\type
 	
+	\if\durMode0
+		{\bf Duration:}~~~~~~\duration
+	\fi
+	
 	{\bf Fortitude:}~~~~~\fp
 	
 	{\bf Check:}~~~~~~\quad~\att
@@ -135,9 +141,13 @@ Equally, intereference only applies if the effects of the ward compound each oth
 	
 	\small
 }
-
+\newcommand{\cvdv}{for each point that the casting check exceeds the difficulty value}
 
 \small
 \setlength{\parskip}{0em}
-\input{Chapters/SpellList}
-
+\if \coreMode1
+	\input{Chapters/SpellList}
+\fi
+\if \coreMode0
+	\input{Chapters/SpellListShort}
+\fi

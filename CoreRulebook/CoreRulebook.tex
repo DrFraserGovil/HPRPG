@@ -28,6 +28,11 @@
 \usepackage{array}
 \usepackage[hidelinks]{hyperref}
 
+
+%%IMPORTANT
+\def\coreMode{1}
+%%%
+
 %\usepackage{pagecolor}
 \setlength{\parskip}{4pt}
 \setlength{\parindent}{0pt}
@@ -111,6 +116,10 @@
   \end{tikzpicture}
 }
 
+\newcommand*\cleartoleftpage{%
+  \clearpage
+  \ifodd\value{page}\hbox{}\clearpage\fi
+}
 
 
 
@@ -123,9 +132,16 @@
     %\newgeometry{left=2.12cm, right = 1.74cm, bottom=1cm}
     \centering
     \vfill
+    \if\coreMode1
     {\bfseries
         {\HP \fontsize{40}{35}\selectfont Player Handbook}
     }    
+    \fi
+    \if\coreMode0
+    {\bfseries
+        {\HP \fontsize{40}{35}\selectfont Basic Handbook}
+    } 
+    \fi
     \vfill
     \includegraphics[scale = 0.7]{../Images/glasses} % also works with logo.pdf
     \vfill
@@ -143,7 +159,7 @@
 \end{spacing}
 \subfile{Chapters/CoreMechanic}
 
-
+\cleartoleftpage
 \part{Characters} \label{C:CharacterCreation}
 
 \subfile{Chapters/CharacterCreation}
@@ -151,22 +167,24 @@
 
 \subfile{Chapters/Skills}
 
+\cleartoleftpage
 \part{Actions and their Consequences}
 
 \subfile{Chapters/Actions}
 
 \subfile{Chapters/HealthFortitudeStatuses}
 
-\subfile{Chapters/Environment}
-
+\if\coreMode1	
+	\subfile{Chapters/Environment}
+\fi
 \part{Items}
 
 \subfile{Chapters/Items}
+\if \coreMode1
+	\subfile{Chapters/Artificing}
+\fi
 
-\subfile{Chapters/Artificing}
-
-
-
+\cleartoleftpage
 \part{Magic}
 \subfile{Chapters/Spells}
 \end{document}
