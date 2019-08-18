@@ -5,7 +5,7 @@
 \usepackage{subfiles}
 \usepackage{longtable}
 \usepackage{float}
-\usepackage{babel}
+\usepackage[english]{babel}
 \usepackage{cuted}
 \usepackage{csquotes}
 \usepackage{graphicx}
@@ -187,4 +187,9 @@
 \cleartoleftpage
 \part{Magic}
 \subfile{Chapters/Spells}
+\if\coreMode1
+\cleartoleftpage
+	\part{Appendices}
+	\subfile{Chapters/Cosmology}
+\fi
 \end{document}
