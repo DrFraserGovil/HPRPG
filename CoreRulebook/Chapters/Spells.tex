@@ -37,26 +37,24 @@ The dice that you get are enumerated below:
 
 As you get more and more powerful in each of the 7 schools of magic, you therefore unlock larger and larger dice, which grants you access to more powerful spells, and also makes casting spells of a lower level easier and easier (as there is less chance of failure). 
 
-There are two kinds of spell: an effect-only spell, which either succeeds or does not; and a power-dependent spell, where the outcome of the spell can vary depending on the success of the casting. 
-
-Effect-Only spells are the most basic kind of spell, for example, the Fire-Starting charm (\textit{incendio}), either starts a fire, or it does not, and the Compass Spell (\textit{point me}) either tells you which way North is, or it does not. These spells are therefore in the first class: effect-only. Contrast this with the Torturing Curse (\textit{crucio}). This can not only succeed or fail, but can cause varying amounts of pain. It is therefore a power-dependent spell, as the success of the spell can vary.
-
-Effect-only (E-Class) spells are cast by performing the check type specified in the tables below.
-
-Power-dependent (P-class) spells have the same casting mechanism except you may choose to donate PWR points towards the spell before the check is initialised, up to the total PWR of your character. Each additional PWR point dedicated towards the spell increases the effectiveness of the spell, doing more damage, or adding more side effects. However, powerful spells are more difficult to cast: for each power point you add on, you increase the difficulty value and the fortitude cost of the spell by 1.
-
-Hence, a spell which does 1d8 of damage to target, with a difficulty of 10 and costing 5 Fortitude can be boosted with 5 PWR points to do 1d8 + 5 damage, but the boosted spell has a difficulty of 15, and a Fortitude cost of 10. 
-Hence, there is a higher chance of failure, but the rewards for success are much higher! The maximum number of PWR points you can assign a spell is limited by your PWR attribute itself (you can{\apos}t assign more PWR than you have).
-
-The GM may decide that a particular usage of an E-Class spell warrants an extra effort, despite a nominal effect-only status, i.e. setting light to an entire building, rather than starting a campfire would still use incendio, but clearly is a far more powerful use of the firelighting charm! The GM has the authority to override the difficulty and checks required for a spell if the situation calls for it. 
-
-The Fortitude cost for a spell is deducted only after it is successfully cast. If the casting fails, then only half of the fortitude cost is deducted (rounded up), plus whatever negative effects the failed cast might have. 
-
-Oh, one final rule. If your character is saying the incantation, so must you. Bonus points for good acting.
+\subsection{Fortitude}
 
 
+Casting spells is not as simple as waving your wands and saying the magic words -- it takes great mental clarity to cast, and you can become exhausted from casting difficult spells. This mental burden is enumerated through the Fortitude Points attribute. 
 
-\section{Learning New Spells}
+Each spell has an associated FP cost, which is deducted only after it is successfully cast. If the casting fails, then only half of the fortitude cost is deducted (rounded up).
+ 
+You cannot cast a spell if it would send you into negative FP -- you must wait for your head to clear before attempting that spell.  
+
+\subsection{Power Points}
+
+Some spells have the option to dedicate {\it Power Points} (PP) to their casting. Adding Power Points to a spell amplifies that spells effects, it might make it do more damage, last longer or have a wider area of effect. 
+
+You must declare the number of power points you are dedicating to a spell before performing the check. Each power point dedicated increases the DV of the casting by one, and the FP cost by two. The maximum number of PP that can be dedicated is equal to one third of your POW attribute. 
+
+Some spells specify that, when cast by a character of a certain level, they acquire `free' power points. These power points do not increase the DV or FP cost of the spell, and only apply when calculating the effect. You may still add your own PP to these spells following the normal rules. 
+
+\subsection{Learning New Spells}
 
 Spells are learned by studying, either from books, or from a teacher.
  
@@ -68,17 +66,23 @@ Each spellbook contains three spells that you can learn, before you must purchas
 
 A professor who already knows the spell you want to learn is an adequate replacement for a spellbook, and may teach an unlimited number of students an unlimited number of spells, but only if they already know the spell. A professor must learn a spell in the usual fashion (unless they can find another professor to teach them!)
 
+\newpage
 \section{Spell Types}
 
 There are 4 main categories of spell, which tell you how that spell is used. These categories are {\it instant}, {\it concentration}, {\it ritual} and {\it ward} spells. 
 
 \subsection{Instant}
 
-An instant spell is cast as a single major action, and is `cast and forget': as soon as you complete the requisite casting check, the spell is `launched' (usually in the form of a magical bolt of light) towards the target. These bolts travel at speeds of 100m per major action 
+An instant spell is cast as a single major action, and is `cast and forget': as soon as you complete the requisite casting check, the spell is `launched' (usually in the form of a magical bolt of light) towards the target. These bolts travel at speeds of 100m per cycle, corresponding to about 40mph. This means that, unless the target is at ane extreme range, the effect is applied between the major action phase and the beginning of the next turn.
 
 \subsection{Concentration}
 
-\subsection{Ritual}
+A concentration spell is cast like an Instant spell, but may then be continued indefinitely, repeating the initial effects once per turn as long as you keep the spell active. No further checks are needed to continue the spell, but you must remain focussed and unless stated otherwise, the FP cost is deducted once per turn as well.
+
+Because you must remain focussed, no further spells can be cast for the duration of this spell, and all subsequent movement checks must be `considered', and no other actions (such as evasion) may be taken.   
+
+If you take damage whilst casting a concentration spell, you must pass a SPR(willpower) check (DV 10) in order to remain casting. In addition, all attacks on you are considered {\it Attacks of Opportunity} (see page \pageref{S:Sneak}). You may, however, end the spell effect at any time without it counting as an action. 
+
 
 \subsection{Ward}
 A ward is (usually) a Recuperation spell that affects a large area. A ward may be centred on a fixed point or object, or may be centred on a moving location or even a sentient being. 
@@ -89,6 +93,41 @@ The interference only applies if the wards are similar in magnitude and intent. 
 
 Equally, intereference only applies if the effects of the ward compound each other -- if they lie in opposition, then the usual spell mechanics are applied. For example, a character with a personal shield ward touches a beartrap ward -- neither ward collapses, but the beartrap ward is triggered, and the shield will attempt to protect the character. 
 
+\subsection{Ritual}
+
+A Ritual spell is a spell that requires a large amount of preparation -- be it meditation, drawing a summoning circle upon the ground, or performing a special dance. Each Ritual spell has a deisgnated time that the ritual takes to complete, to cast a ritual spell you must spend this length of time preparing for the spell, and after the requisite time has passed, {\it then} you perform the check, and the spell effect is activated. If you fail the check, or choose to stop the ritual, i.e. to take another action, you must restart the ritual spell from the beginning. 
+
+As with a concentration spell, focus is key to completing a ritual. If you are interrupted during the preparation phase, it is considered an {\it Attack of Opportunity} and you must pass a DV10 SPR(willpower) check in order to continue. 
+
+\section{Spell Shapes}
+
+Some spells produce bolts of energy which fly towards a target, whilst others projetc their energy into a given region, which are often classified via geometrical shapes: a {\it line}, a {\it cube}, a {\it sphere}, a {\it circle} a {\it cone} or a {\it cylinder}. These shapes may either originate around the caster, or from a point designated by the spell. 
+
+\subsection{Circle}
+
+A circular spell extends outwards from the point of origin in a 2D circular shockwave that lies parallel to the ground. The height of the shockwave above the ground is set by the point of origin, which is not included in the shockwave region (unless the caster chooses it to be). Because of its 2D nature, a circular spell can be avoided by ducking beneath it, or jumping over it -- it is only if the shockwave impacts you that the spell effect is applied. 
+
+\subsection{Cone}
+
+The point of origin of a cone is typically the caster's wand, and a cone extends outwards from the wand, in the direction that the wand is pointing. A cone extends forwards to the specified distance, and has a circular cross section, the radius of which is equal to the distance away from the point of origin (so it is a 45$^\circ$ cone).
+
+ The point of origin of the cone is not considered part of the spell area. 
+
+\subsection{Cube}
+
+The point of origin for a cubic spell may be selected to be either the centre of the cube, or the centre of one of its 6 sides. The cube's side-length is specified by the spell effect. The cube point of origin is only affected by the spell if you choose the centre-origin.
+
+\subsection{Cylinder}
+
+A cylinder point of origin is specified to be a point on the ground, around which a circular cross section is drawn, and then a cylinder of energy rises up vertically to a specified height. Generally, a cylinder spell adjusts its size to an individual, and if not otherwise specified, the cylinder is 5cm wider than the target individual is wide, and 5cm taller than the target. The point of origin is affected by the spell. 
+
+\subsection{Line}
+
+A line extends in a straight path from the origin (a caster's wand) towards the target for a specified distance. Unless otherwise specified, the beam is considered to have the cross section equivalent to a pencil. The point of origin is not affected by the spell. 
+
+\subsection{Sphere}
+
+A sphere's point of origin lies at the centre, and the spell effect expands equally out in all directions from that point. Generally, the spell effect cannot penetrate into the ground or through solid objects (unless, for example, it is an explosion). The point of origin is affected by the spell. 
 
 \cleartoleftpage
 \onecolumn
@@ -114,9 +153,11 @@ Spells marked with a (*) gain more effects, or increase in power, at higher leve
 \define@key{spell}{noDur}{\def\durMode{#1}}
 \define@key{spell}{higher}{\def\higher{#1}}
 \define@key{spell}{noHigh}{\def\highMode{#1}}
+\define@key{spell}{travel}{\def\travel{#1}}
+\define@key{spell}{noTravel}{\def\travelMode{#1}}
 \newcommand{\spell}[1]
 {
-	\setkeys{spell}{name=None,incant = -, school = None, type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0,noDur=0,duration=None,higher=None,noHigh=0}
+	\setkeys{spell}{name=None,incant = -, school = None, type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0,noDur=0,duration=None,higher=None,noHigh=0,travel = None,noTravel = 0}
 	\setkeys{spell}{#1}
 	\vbox{
 	{\normalsize \color{rulered}\name }
@@ -132,6 +173,10 @@ Spells marked with a (*) gain more effects, or increase in power, at higher leve
 	\fi
 	
 	{\bf Spell Type:}~~~\type
+	
+	\if\travelMode0
+		{\bf Visual:   }~~~~~~~~~\travel
+	\fi
 	
 	\if\durMode0
 		{\bf Duration:}~~~~~~\duration
@@ -152,6 +197,7 @@ Spells marked with a (*) gain more effects, or increase in power, at higher leve
 	
 	\vspace{1 ex}
 	
+
 	\if\highMode0
 		{\bf Higher Level Casting: } 
 		

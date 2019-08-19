@@ -14,6 +14,7 @@ classdef Spell
         Effect
         Duration
         HigherLevel
+        Travel
     end
     
     methods
@@ -31,6 +32,7 @@ classdef Spell
            obj.Effect = "None";
            obj.Duration = 0;
            obj.HigherLevel = "None";
+           obj.Travel = "None";
         end
         
         function obj = ReadLine(obj,line,school)
@@ -52,33 +54,50 @@ classdef Spell
             obj.Effect = line.Effect{1};
             obj.Duration = line.Duration{1};
             obj.HigherLevel = line.HigherLevel{1};
+            obj.Travel = line.TravelType{1};
         end
         
         function t = output(sp)
             t = "\\spell{";
             t = t+ "name = " + prepareText(sp.Name)+", ";
-            t = t + "incant = " + prepareText(sp.Incantation)+", ";
-            if isempty(sp.Incantation)
-                t = t + "noIncant = 1, ";
-            end
             t = t + "school = " + sp.School+", ";
-            t = t + "type = " + prepareText(sp.Type)+", ";
+            t = t + "type = " + prepareText(sp.Type)+", ";           
             t = t + "level =" + sp.LevelName+", ";
             t = t + "fp = " + num2str(sp.FP)+", ";
             t = t + "attribute =" + sp.Check+", ";
-            t = t + "proficiency = " + prepareText(sp.Proficiency)+", ";
+            t = t + "dv = " + num2str(sp.DV)+", ";
+            
+            %% conditionals  
+            if isempty(sp.Incantation)
+                t = t + "noIncant = 1, ";
+            else
+                t = t + "incant = " + prepareText(sp.Incantation)+", ";
+            end
+                  
             if isempty(sp.Proficiency)
                 t = t + "noProf = 1, ";
+            else
+                 t = t + "proficiency = " + prepareText(sp.Proficiency)+", ";
             end
-            t = t + "dv = " + num2str(sp.DV)+", ";
-            t = t + "duration = " + prepareText(sp.Duration) + ",";
+           
             if strcmp(sp.Duration,"0")==1
                 t = t + "noDur = 1, ";
+            else
+                t = t + "duration = " + prepareText(sp.Duration) + ",";
             end
-            t = t + "higher = " + prepareText(sp.HigherLevel) + ",";
+           
             if isempty(sp.HigherLevel)
                 t = t + "noHigh = 1, ";
+            else
+                t = t + "higher = " + prepareText(sp.HigherLevel) + ",";
             end
+            
+            if isempty(sp.Travel)
+                t = t + "noTravel = 1, ";
+            else
+                t = t + "travel = " + prepareText(sp.Travel) +",";
+            end
+            %% end
             t = t + "effect =" + prepareText(sp.Effect) + "}";
         end
     end

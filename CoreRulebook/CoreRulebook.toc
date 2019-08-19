@@ -47,9 +47,16 @@
 \contentsline {subsection}{\numberline {3.16.2}Starting Spells}{34}{subsection.3.16.2}
 \contentsline {subsection}{\numberline {3.16.3}Archetype Features}{34}{subsection.3.16.3}
 \contentsline {subsection}{\numberline {3.16.4}Advocate Features}{34}{subsection.3.16.4}
-\contentsline {subsection}{\numberline {3.16.5}Disciple Features}{34}{subsection.3.16.5}
-\contentsline {section}{\numberline {3.17}Oaths}{34}{section.3.17}
-\contentsline {section}{\numberline {3.18}Patrons}{34}{section.3.18}
+\contentsline {subsection}{\numberline {3.16.5}Disciple Features}{35}{subsection.3.16.5}
+\contentsline {section}{\numberline {3.17}Oaths}{35}{section.3.17}
+\contentsline {subsection}{\numberline {3.17.1}Oath of Law}{35}{subsection.3.17.1}
+\contentsline {subsection}{\numberline {3.17.2}Oath of Righteousness}{35}{subsection.3.17.2}
+\contentsline {subsection}{\numberline {3.17.3}Oath of Vengeance}{35}{subsection.3.17.3}
+\contentsline {section}{\numberline {3.18}Patrons}{35}{section.3.18}
+\contentsline {subsection}{\numberline {3.18.1}Benevolent Deity}{35}{subsection.3.18.1}
+\contentsline {subsection}{\numberline {3.18.2}Dark Power}{35}{subsection.3.18.2}
+\contentsline {subsection}{\numberline {3.18.3}Free Spirit}{35}{subsection.3.18.3}
+\contentsline {subsection}{\numberline {3.18.4}Incomprehensible Intelligence}{35}{subsection.3.18.4}
 \contentsline {section}{\numberline {3.19}Performer}{36}{section.3.19}
 \contentsline {section}{\numberline {3.20}Ranger}{38}{section.3.20}
 \contentsline {section}{\numberline {3.21}Sage}{40}{section.3.21}
@@ -111,12 +118,21 @@
 \contentsline {part}{IV\hspace {1em}Magic}{70}{part.4}
 \contentsline {chapter}{\numberline {14}Spells}{71}{chapter.14}
 \contentsline {section}{\numberline {14.1}Casting Spells}{71}{section.14.1}
-\contentsline {section}{\numberline {14.2}Learning New Spells}{71}{section.14.2}
-\contentsline {section}{\numberline {14.3}Spell Types}{72}{section.14.3}
-\contentsline {subsection}{\numberline {14.3.1}Instant}{72}{subsection.14.3.1}
-\contentsline {subsection}{\numberline {14.3.2}Concentration}{72}{subsection.14.3.2}
-\contentsline {subsection}{\numberline {14.3.3}Ritual}{72}{subsection.14.3.3}
-\contentsline {subsection}{\numberline {14.3.4}Ward}{72}{subsection.14.3.4}
+\contentsline {subsection}{\numberline {14.1.1}Fortitude}{71}{subsection.14.1.1}
+\contentsline {subsection}{\numberline {14.1.2}Power Points}{71}{subsection.14.1.2}
+\contentsline {subsection}{\numberline {14.1.3}Learning New Spells}{71}{subsection.14.1.3}
+\contentsline {section}{\numberline {14.2}Spell Types}{72}{section.14.2}
+\contentsline {subsection}{\numberline {14.2.1}Instant}{72}{subsection.14.2.1}
+\contentsline {subsection}{\numberline {14.2.2}Concentration}{72}{subsection.14.2.2}
+\contentsline {subsection}{\numberline {14.2.3}Ward}{72}{subsection.14.2.3}
+\contentsline {subsection}{\numberline {14.2.4}Ritual}{72}{subsection.14.2.4}
+\contentsline {section}{\numberline {14.3}Spell Shapes}{72}{section.14.3}
+\contentsline {subsection}{\numberline {14.3.1}Circle}{72}{subsection.14.3.1}
+\contentsline {subsection}{\numberline {14.3.2}Cone}{72}{subsection.14.3.2}
+\contentsline {subsection}{\numberline {14.3.3}Cube}{72}{subsection.14.3.3}
+\contentsline {subsection}{\numberline {14.3.4}Cylinder}{72}{subsection.14.3.4}
+\contentsline {subsection}{\numberline {14.3.5}Line}{73}{subsection.14.3.5}
+\contentsline {subsection}{\numberline {14.3.6}Sphere}{73}{subsection.14.3.6}
 \contentsline {chapter}{\numberline {15}Spell List}{74}{chapter.15}
 \contentsline {subsubsection}{Charms}{74}{subsubsection*.3}
 \contentsline {subsubsection}{Dark Arts}{74}{subsubsection*.4}
