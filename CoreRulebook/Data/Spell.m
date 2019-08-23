@@ -15,6 +15,8 @@ classdef Spell
         Duration
         HigherLevel
         Travel
+        Resist
+        ResistDV
     end
     
     methods
@@ -33,6 +35,8 @@ classdef Spell
            obj.Duration = 0;
            obj.HigherLevel = "None";
            obj.Travel = "None";
+           obj.Resist = "None";
+           obj.ResistDV = "None";
         end
         
         function obj = ReadLine(obj,line,school)
@@ -55,6 +59,9 @@ classdef Spell
             obj.Duration = line.Duration{1};
             obj.HigherLevel = line.HigherLevel{1};
             obj.Travel = line.TravelType{1};
+            
+            obj.Resist = line.Resist{1};
+            obj.ResistDV = line.ResistDV{1};
         end
         
         function t = output(sp)
@@ -96,6 +103,12 @@ classdef Spell
                 t = t + "noTravel = 1, ";
             else
                 t = t + "travel = " + prepareText(sp.Travel) +",";
+            end
+            
+            if isempty(sp.Resist)
+                t = t + "noResist =1, ";
+            else
+                t = t + "resist = " + prepareText(sp.Resist) + ", resistDV = " + prepareText(sp.ResistDV) + ", ";
             end
             %% end
             t = t + "effect =" + prepareText(sp.Effect) + "}";

@@ -154,10 +154,13 @@ Spells marked with a (*) gain more effects, or increase in power, at higher leve
 \define@key{spell}{higher}{\def\higher{#1}}
 \define@key{spell}{noHigh}{\def\highMode{#1}}
 \define@key{spell}{travel}{\def\travel{#1}}
+\define@key{spell}{resist}{\def\resist{#1}}
+\define@key{spell}{resistDV}{\def\resistDV{#1}}
 \define@key{spell}{noTravel}{\def\travelMode{#1}}
+\define@key{spell}{noResist}{\def\resistMode{#1}}
 \newcommand{\spell}[1]
 {
-	\setkeys{spell}{name=None,incant = -, school = None, type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0,noDur=0,duration=None,higher=None,noHigh=0,travel = None,noTravel = 0}
+	\setkeys{spell}{name=None,incant = -, school = None, type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0,noDur=0,duration=None,higher=None,noHigh=0,travel = None,noTravel = 0, resist = None, resistDV = none, noResist = 0}
 	\setkeys{spell}{#1}
 	\vbox{
 	{\normalsize \color{rulered}\name }
@@ -167,30 +170,37 @@ Spells marked with a (*) gain more effects, or increase in power, at higher leve
 	{\it \level{}-level \school{}} 
 	\vspace{1ex}
 	
+	\begin{tabular}{l  l }
+		\if\incantMode0 
+			{\bf Incantation:} & {\it \incant} \\
+		\fi
 	
-	\if\incantMode0 
-		{\bf Incantation:} {\it \incant}
-	\fi
 	
-	{\bf Spell Type:}~~~\type
+		
+		{\bf Spell Type:} & \type \\ 
 	
-	\if\travelMode0
-		{\bf Visual:   }~~~~~~~~~\travel
-	\fi
+		\if\travelMode0
+			{\bf Visual:} & \travel \\
+		\fi
 	
 	\if\durMode0
-		{\bf Duration:}~~~~~~\duration
+		{\bf Duration}  & \duration \\
 	\fi
 	
-	{\bf Fortitude:}~~~~~\fp
+	{\bf Fortitude:} & \fp \\
 	
-	{\bf Check:}~~~~~~\quad~\att
+	{\bf Check:} &  \att
 	\if\profMode0 
 		({\it \prof})
 	\fi
-	, ~~DV  \dv
+	,  DV  \dv \\
+	
+	\if\resistMode0
+		{\bf Resist: } & \resist,  DV \resistDV \\
+	\fi
 	%~{\bf DV:}~~~~~~~~~\quad~~~~\dv
 	
+	\end{tabular}
 	\vspace{1ex}
 	
 	\effect
