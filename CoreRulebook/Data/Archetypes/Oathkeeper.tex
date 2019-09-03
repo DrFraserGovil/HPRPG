@@ -138,26 +138,22 @@ The Oath of righteousness requires that, wherever you see it, you defend and uph
 
 From 3rd level, as a major action, you may summon a sword of blinding light into an empty hand. You are considered proficient with this sword, and it does 2+2d4 Holy damage, using either an ATH(strength) check or FIN(dexterity) check.
 \jump
+\feat{Aura of Protection}
+
+From 7th level, whenever you or any ally within 3m must make a Resist check, your aura gives a bonus equal to one quarter of your Oathkeeper level. 
+\jump
 \feat{Righteous Fury}
 
-From 7th level, if you witness an individual harm an innocent, all damage checks on that target gain a +5 bonus. 
+From 11th level, if you witness a target harm an innocent or otherwise perform a needlessly cruel or damaging act, all damage checks on that target gain a +5 bonus. 
 \jump
 \feat{Excommunicate}
 
-At 11th level, you gain the ability to excommunicate individuals whose values come into conflict with your guiding tenets. This takes a major action, and for the next 24 hours, the target is vulnerable to Holy damage. 
-\jump
-\feat{Angelic Impression}
+At 15th level, you gain the ability to excommunicate individuals whose values come into conflict with your guiding tenets. This takes a major action, and for the next 24 hours, the target is susceptible to Holy damage. Targets that were already susceptible to holy damage take triple damage from this damage type.
 
-From 15th level, you may take a major action to imbue your aura with a holy light. Targets within a 10m radius who live by your Tenets gain check advantage for 3 turns, whilst those who lie in opposition to it take the {\it Terrified} status. 
- 
-\jump
-\feat{Aura of Protection}
-
-From 20th level, whenever you or any ally within 3m must make a Resist check, your aura gives a bonus equal to one quarter of your Oathkeeper level. 
 \jump
 \feat{Cleansing Touch}
 
-At 20th level you gain the ability to purge magical effects from your allies. Once per minute you may end the effect of any ongiong magical effect affecting yourself or a willing target.
+At 20th level you gain the ability to purge magical effects from your allies with a touch. Once per minute you may end the effect of all negative ongoing magical effects on yourself or on a target in range. You may choose to leave some effects active if you wish (i.e. the definition of `negative' is somewhat flexible).
 \subsection{Oath of Vengeance}
 
 When taking the Oath of Vengeance, you swear to take your revenge on whatever it is that has wronged you in the past. 
@@ -195,6 +191,42 @@ When used, the counter value is divided in half. The counter resets to zero when
 
 \subsection{Benevolent Deity}
 
+\feat{Light in the Darkness}
+
+From 3rd level, your devotion to bevolence imbues you with a radiant aura. This grants you permanent nightvision. You may also confer nightvision on your allies for 1 hour, by maintaining physical contact and concentrating for 2 major actions. You may confer this ability on a number of individuals equal to your Disciple level per day. 
+
+\jump
+\feat{Flare}
+
+From 5th level, as a minor action you may invoke a {\it Flare}, a burst of sunlight, between you and a target. If the target attacks you this turn, they take check disadvantage on damage checks (targets immune to blinding are not affected by this). If the target fails a INT(perception) check, they also take 2d10 holy damage. This costs 5FP. 
+
+\jump
+\feat{Invocation}
+
+From 8th level, you may cast all your spells as wandless by performing a 2-major-action ritual and praying to your patron. There is no wandless penalty, and the prayer need not be aloud. You must be conscious to use this ability. 
+
+\jump
+\feat{Divine Intervention}
+
+At 11th level, when in great danger, you may pray to your patron for help. Describe the assistance you seek and roll a 
+
+\begin{rndtable}{c c c c c c}
+\hline
+\bf Disciple Lvl	&	\bf Easy	&  \bf Moderate	&	\bf Hard	& 	\bf Very Hard	&	\bf Legendary
+\\
+$<5$	&	5	&	10	&	15	&	20	&	s	
+\\
+\hline
+\end{rndtable}
+\jump
+\feat{Angelic Host}
+\jump
+
+At 16th level, you are granted a pair of ethereal, angelic wings. These wings normally remain hidden in the astral plane, but you may summon them using a major action. You may then fly with a base speed twice your land-base speed. 
+
+\feat{Wrath of God}
+
+At 20th level, your benevolence melts away and you may invoke powerful destructive magic. 
 \subsection{Dark Power}
 
 \feat{Killing Joy}
@@ -208,7 +240,7 @@ From 5th level, whenever you choose to increase an attribute as part of the leve
 \jump
 \feat{Necrotic Touch}
 
-From 8th level, you may take a major action to grasp your enemy and channel evil energies into them. Target may attempt to resist with a DV 10 ATH (strength) check. This attack does 2+1d8 necrotic per turn, plus an additional 1d8 for every 4 Disciple levels above 4th.
+From 8th level, you may take a major action to grasp your enemy and channel evil energies into them. Target may attempt to break free using DV 10 ATH (strength) Resist check. This attack does 2+2d8 necrotic per turn, plus an additional 1d8 for every 3 Disciple levels above 7th.
 \jump
 \feat{Defer to Master}
 
@@ -241,17 +273,29 @@ From 5th level, once per hour, you may teleport up to 10m in any direction upon 
 \feat{Make Wild}
 
 From 8th level, once per day you may take a major action to restore all living beings in a 10m to their wild state. Trained beasts return to their animal instincts, and all sapients in range must succeed on a DV10 SPR(willpower) Resist check, or act as if the {\it Fury} spell had been cast upon them. 
+
+\jump
+\feat{Unconstrained Knowledge}
+
+At 13th level, you may choose any other Archetype Feature designated 10th level or below, from any other Archetype. If this Feature gains additional aspects at higher levels, you may acquire them, but at 3 levels higher than the stated value. This does not include `branch-choice` features such as the {\it Powerful Patron}, but you may choose the abilities granted by these choices (i.e. you could choose {\it Immutable Spirit}, a feature granted by choosing the Oath of Law, but you could not choose {\it Oath of Fealty}, the feature that allows you to choose the Oath of Law). 
+
 \jump
 \feat{Chaotic Shield}
 
-Every time you take damage, roll a d20
+From 16th level, your patron blesses you with a powerful yet unpredictable shield. Every time you take damage, roll a d20:
+\begin{itemize}
+\item {\bf 1-5 }: No change (take damage as normal)
+\item {\bf 6-13}: Take damage with temporary +6 AC
+\item {\bf 14-15}: Attacker takes the same damage
+\item {\bf 16-17}: Cast {\it Knockback} jinx on attacker.
+\item {\bf 18-19}: Take 25\% damage
+\item {\bf 20}: Take 0 damage
+\end{itemize}
 
-\jump
-\feat{16}
 \jump
 \feat{True Freedom}
 
-From 20th level, all attempts to entrap, or slow you down fail. Manacles and ropes fall off you, and all impediments to movement are ineffective. 
+From 20th level, all attempts to entrap, or slow you down fail. Manacles and ropes fall off you, and all impediments to movement are ineffective. You may ignore all terrain costs, and once per day you may walk through up to 1m of solid material. 
 
 
 \subsection{Incomprehensible Intelligence}
