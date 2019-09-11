@@ -1,4 +1,13 @@
-function  ndx(die,advFlag)
+function  ndx(dieCompact,advFlag)
+
+    die = [];
+    for i = 1:length(dieCompact)
+        dx = dieCompact{i}(1);
+        nd = dieCompact{i}(2);
+        for j = 1:nd
+            die(end+1) = dx;
+        end
+    end
 
     n = length(die);
     
@@ -38,6 +47,7 @@ function  ndx(die,advFlag)
     end
     Mean = mean(X)
     Median = median(X)
+    sigma = std(X)
     histogram(X,'Normalization','probability');
     
 end
