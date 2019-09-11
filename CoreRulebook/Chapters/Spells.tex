@@ -37,6 +37,19 @@ The dice that you get are enumerated below:
 
 As you get more and more powerful in each of the 7 schools of magic, you therefore unlock larger and larger dice, which grants you access to more powerful spells, and also makes casting spells of a lower level easier and easier (as there is less chance of failure). 
 
+\subsection{Spellbooks and Memory}
+
+There are two ways to cast a spell -- either by reading it from the pages of a book, or by being familiar enough with the spell that you can cast it from memory. 
+
+For each of the 7 schools of magic, there are 5 textbooks. Each of these 35 textbooks is associated with a spell-level and a school, and contains all the spells in that school that a caster of the specified level is able to cast. For example, the book {\it Dark Forces: A Guide to Self Protection} is a level 4 Hexes \& Curses book, and so contains all level 1, 2, 3 and 4 level Hexes and Curses. 
+
+To cast a spell from a book, you must be holding the a book which contains the specified spell in one hand, and your wand in another. You must then perform the checks, and the spell will be cast. Casting like this {\it always} takes one major action (i.e. it is unaffected by {\it Fast Caster} feats etc. and cannot be used as a {\it quickcast}), Power Points may not be dedicated to the spell, and you are open to {\it Attacks of Opportunity} when doing this in combat. Swapping books takes a major action. 
+
+If, however, you become familiar with a spell, then it is no longer necessary to have the book in your possession -- you can cast from memory. Spells cast from memory are almost always superior, and may be used as quickcast actions etc. 
+
+A spell is considered memorised when it has been cast successfully a number of times from a book in a `real life' scenario (i.e. you have to actually use the spell for its intended purpose, not just cast it wildly into thin air). The number of successful book-casts is calculated from:
+$$N = 10 - \left( \text{INT modifier + Arcane Proficiency} \right)$$
+
 \subsection{Fortitude}
 
 
@@ -48,23 +61,13 @@ You cannot cast a spell if it would send you into negative FP -- you must wait f
 
 \subsection{Power Points}
 
-Some spells have the option to dedicate {\it Power Points} (PP) to their casting. Adding Power Points to a spell amplifies that spells effects, it might make it do more damage, last longer or have a wider area of effect. 
+Some spells have the option to dedicate {\it Power Points} (PP) to their casting when cast from memory. Adding Power Points to a spell amplifies that spells effects, it might make it do more damage, last longer or have a wider area of effect. 
 
 You must declare the number of power points you are dedicating to a spell before performing the check. Each power point dedicated increases the DV of the casting by one, and the FP cost by two. The maximum number of PP that can be dedicated is equal to one third of your POW attribute. 
 
 Some spells specify that, when cast by a character of a certain level, they acquire `free' power points. These power points do not increase the DV or FP cost of the spell, and only apply when calculating the effect. You may still add your own PP to these spells following the normal rules. 
 
-\subsection{Learning New Spells}
 
-Spells are learned by studying, either from books, or from a teacher.
- 
-To learn a spell, you must purchase a spell book from a vendor (or find a Professor who already knows the spell), and dedicate an entire day to learning that spell. When that day is up, you get three attempts to cast the spell using the usual casting check. 
-
-If at least one of these casting checks succeeds, you have successfully learned the spell, and you may add it to your arsenal. If all three checks fail, you go have to go back to the start, and begin the learning process again, losing another day in the process. 
-
-Each spellbook contains three spells that you can learn, before you must purchase another, and you are originally limited to learning only 3 spells per level. When you level up, this counter resets, and you may learn another 3 spells.
-
-A professor who already knows the spell you want to learn is an adequate replacement for a spellbook, and may teach an unlimited number of students an unlimited number of spells, but only if they already know the spell. A professor must learn a spell in the usual fashion (unless they can find another professor to teach them!)
 
 \newpage
 \section{Spell Types}
@@ -81,7 +84,7 @@ A concentration spell is cast like an Instant spell, but may then be continued i
 
 Because you must remain focussed, no further spells can be cast for the duration of this spell, and all subsequent movement checks must be `considered', and no other actions (such as evasion) may be taken.   
 
-If you take damage whilst casting a concentration spell, you must pass a SPR(willpower) check (DV 10) in order to remain casting. In addition, all attacks on you are considered {\it Attacks of Opportunity} (see page \pageref{S:Sneak}). You may, however, end the spell effect at any time without it counting as an action. 
+If you take damage whilst casting a concentration spell, you must pass a d20 SPR(willpower) check (DV 10) in order to remain casting. In addition, all attacks on you are considered {\it Attacks of Opportunity} (see page \pageref{S:Sneak}). You may, however, end the spell effect at any time without it counting as an action. 
 
 
 \subsection{Ward}
@@ -99,9 +102,10 @@ A Ritual spell is a spell that requires a large amount of preparation -- be it m
 
 As with a concentration spell, focus is key to completing a ritual. If you are interrupted during the preparation phase, it is considered an {\it Attack of Opportunity} and you must pass a DV10 SPR(willpower) check in order to continue. 
 
+\newpage
 \section{Spell Shapes}
 
-Some spells produce bolts of energy which fly towards a target, whilst others projetc their energy into a given region, which are often classified via geometrical shapes: a {\it line}, a {\it cube}, a {\it sphere}, a {\it circle} a {\it cone} or a {\it cylinder}. These shapes may either originate around the caster, or from a point designated by the spell. 
+Some spells produce bolts of energy which fly towards a target, whilst others project their energy into a given region, which are often classified via geometrical shapes: a {\it line}, a {\it cube}, a {\it sphere}, a {\it circle} a {\it cone} or a {\it cylinder}. These shapes may either originate around the caster, or from a point designated by the spell. 
 
 \subsection{Circle}
 
