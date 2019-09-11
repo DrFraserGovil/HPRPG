@@ -7,7 +7,7 @@
 
 An oathkeeper is an individual who has dedicated their life to a cause, putting it before everything else. Their every action is geared towards fufilling the promise that they have made. Oathkeepers come in two varieties, the {\bf advocate}, who has sworn to uphold a right, or a principle, with their power coming from within. The {\bf disciple} on the other hand has sworn fealty to a powerful being, which gants them immense powers. 
 
-%%archBegin\archetype{Oathkeeper}{Advocate}{Disciple}{0}{featureI=Unbreakable Vow, featureII=Detect Ally, alphaFeatureIII=Oath of Fealty\comma{} Oath Perk, betaFeatureIII=Powerful Patron\comma{} Patron Boon, featureIV=Redemption Arc, alphaFeatureV=Self Improvement, betaFeatureV=Patron Boon, featureVI=Devotion to the cause, alphaFeatureVII=Oath Perk, alphaFeatureVIII=Self Improvement, betaFeatureVIII=Patron Boon, featureIX=Fanatic\apos{}s strike, alphaFeatureIX=Singular Focus, alphaFeatureXI=Oath Perk, betaFeatureXI=Patron Infusion, featureXII=Shield of Faith, alphaFeatureXIII=Self Improvement, betaFeatureXIII=Patron Boon, alphaFeatureXV=Oath Perk, betaFeatureXVI=Patron Boon, alphaFeatureXVII=Oath Perk, betaFeatureXVII=Temple, featureXVIII=Shield of Faith II, alphaFeatureXVIII=Self Improvement, alphaFeatureXX=Oath Perk, betaFeatureXX=Patron Boon}%%archEnd
+%%archBegin\archetype{Oathkeeper}{Advocate}{Disciple}{0}{featureI=Unbreakable Vow, featureII=Detect Ally, alphaFeatureIII=Oath of Fealty\comma{} Oath Perk, betaFeatureIII=Powerful Patron\comma{} Patron Boon, featureIV=Redemption Arc, alphaFeatureV=Self Improvement, betaFeatureV=Patron Boon, featureVI=Devotion to the cause, alphaFeatureVII=Oath Perk, alphaFeatureVIII=Self Improvement, betaFeatureVIII=Patron Boon, featureIX=Fanatic\apos{}s strike, alphaFeatureIX=Singular Focus, alphaFeatureXI=Oath Perk, betaFeatureXI=Otherworldly Infusion, featureXII=Shield of Faith, alphaFeatureXIII=Self Improvement, betaFeatureXIII=Patron Boon, alphaFeatureXV=Oath Perk, betaFeatureXVI=Patron Boon, alphaFeatureXVII=Oath Perk, betaFeatureXVII=Temple, featureXVIII=Shield of Faith II, alphaFeatureXVIII=Self Improvement, alphaFeatureXX=Oath Perk, betaFeatureXX=Patron Boon}%%archEnd
 
 \end{strip}
 
@@ -83,7 +83,7 @@ From 9th level, get check advantage when casting concentration-type spells, as w
 
 At 3rd level you must choose a patron to dedicate your life to. Patrons are detailed on page \pageref{S:Patrons}. Your patron provides you with a boon at 3rd, 5th, 8th, 13th, 16th and 20th level. 
 \jump
-\feat{Patron Infusion}
+\feat{Otherworldly Infusion}
 
 From 11th level, once per day you may take 3 turns (15 sec) to concentrate and borrow some power from your patron. if any POW check is less than your Acolyte level, you may use that value instead. 
 
@@ -195,29 +195,41 @@ When used, the counter value is divided in half. The counter resets to zero when
 
 From 3rd level, your devotion to bevolence imbues you with a radiant aura. This grants you permanent nightvision. You may also confer nightvision on your allies for 1 hour, by maintaining physical contact and concentrating for 2 major actions. You may confer this ability on a number of individuals equal to your Disciple level per day. 
 
-\jump
-\feat{Flare}
-
-From 5th level, as a minor action you may invoke a {\it Flare}, a burst of sunlight, between you and a target. If the target attacks you this turn, they take check disadvantage on damage checks (targets immune to blinding are not affected by this). If the target fails a INT(perception) check, they also take 2d10 holy damage. This costs 5FP. 
+From 6th level, as a minor action you may invoke a {\it Flare}, a burst of sunlight, between you and a target. If the target attacks you this turn, they take check disadvantage on damage checks (targets immune to blinding are not affected by this). If the target fails a INT(perception) check, they also take 2d10 holy damage. This costs 5FP. 
 
 \jump
 \feat{Invocation}
 
-From 8th level, you may cast all your spells as wandless by performing a 2-major-action ritual and praying to your patron. There is no wandless penalty, and the prayer need not be aloud. You must be conscious to use this ability. 
+From 5th level, you may cast all your {\it Instant} and {\it Concentration} spells as wandless by performing a 2-major-action ritual and praying to your patron. There is no wandless penalty, and the prayer need not be aloud. You must be conscious to use this ability. After initial casting, concentration spells follow the usual rules.
 
 \jump
 \feat{Divine Intervention}
 
-At 11th level, when in great danger, you may pray to your patron for help. Describe the assistance you seek and roll a 
+At 8th level, when in great danger or dire need, you may pray to your patron for help. Taking a minor turn, describe the assistance you seek and perform a d20 CHR(persuasion) check. The DM tells you the difficulty of the action that you are about to attempt (easy to legendary, actions that fall within your patron's sphere of influence will be judged to be easier). The table below sets the DV that you must reach:
 
+\footnotesize
 \begin{rndtable}{c c c c c c}
 \hline
 \bf Disciple Lvl	&	\bf Easy	&  \bf Moderate	&	\bf Hard	& 	\bf Very Hard	&	\bf Legendary
 \\
-$<5$	&	5	&	10	&	15	&	20	&	s	
+$<10$	&	5	&	10	&	15	&	20	&	25
+\\
+10 - 13 &	4	&	8	&	12	&	16	&	21
+\\
+14-16	&	3	&	6	&	9	&	12	&	16
+\\	
+17-19 	&	2	&	4	&   6	&	10	&	13
+\\
+20+ 	&	1	&	2	&	5	&	7	&	10
 \\
 \hline
 \end{rndtable}
+\small
+
+If the check succeeds, your deity will intervene and help you, and you may not then use this ability for one week. If it fails, you cannot use this ability for 1 day.
+\jump
+\feat{13}
+
 \jump
 \feat{Angelic Host}
 \jump
@@ -277,12 +289,14 @@ From 8th level, once per day you may take a major action to restore all living b
 \jump
 \feat{Unconstrained Knowledge}
 
-At 13th level, you may choose any other Archetype Feature designated 10th level or below, from any other Archetype. If this Feature gains additional aspects at higher levels, you may acquire them, but at 3 levels higher than the stated value. This does not include `branch-choice` features such as the {\it Powerful Patron}, but you may choose the abilities granted by these choices (i.e. you could choose {\it Immutable Spirit}, a feature granted by choosing the Oath of Law, but you could not choose {\it Oath of Fealty}, the feature that allows you to choose the Oath of Law). 
+At 13th level, you may choose any other Archetype Feature designated 11th level or below, from any other Archetype. If this Feature gains additional aspects at higher levels, you may acquire them, but at 3 levels higher than the stated value. This does not include `branch-choice` features such as the {\it Powerful Patron}, but you may choose the abilities granted by these choices (i.e. you could choose {\it Immutable Spirit}, a feature granted by choosing the Oath of Law, but you could not choose {\it Oath of Fealty}, the feature that allows you to choose the Oath of Law). 
+
+You may rechoose this ability once per week. 
 
 \jump
-\feat{Chaotic Shield}
+\feat{Chaotic Aura}
 
-From 16th level, your patron blesses you with a powerful yet unpredictable shield. Every time you take damage, roll a d20:
+From 16th level, your patron blesses you with a powerful yet unpredictable aura. Every time you take damage, roll a d20:
 \begin{itemize}
 \item {\bf 1-5 }: No change (take damage as normal)
 \item {\bf 6-13}: Take damage with temporary +6 AC
@@ -291,6 +305,8 @@ From 16th level, your patron blesses you with a powerful yet unpredictable shiel
 \item {\bf 18-19}: Take 25\% damage
 \item {\bf 20}: Take 0 damage
 \end{itemize}
+
+In addition, any time that a check uses the {\it Chaos} proficiency, if the total check value is less than your Disciple level, use the larger value instead. 
 
 \jump
 \feat{True Freedom}
