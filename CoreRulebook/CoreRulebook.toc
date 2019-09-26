@@ -1,4 +1,4 @@
-\select@language {english}
+\babel@toc {english}{}
 \contentsline {part}{Introduction}{2}{chapter*.2}
 \contentsline {section}{\numberline {0.1}Computing Checks}{3}{section.0.1}
 \contentsline {section}{\numberline {0.2}Using these Rules}{3}{section.0.2}
@@ -116,6 +116,7 @@
 \contentsline {section}{\numberline {12.4}Armour}{66}{section.12.4}
 \contentsline {section}{\numberline {12.5}Weapon List}{67}{section.12.5}
 \contentsline {section}{\numberline {12.6}Wands}{68}{section.12.6}
+\contentsline {subsection}{\numberline {12.6.1}Books}{68}{subsection.12.6.1}
 \contentsline {chapter}{\numberline {13}Artificing}{69}{chapter.13}
 \contentsline {section}{\numberline {13.1}Enchanting}{69}{section.13.1}
 \contentsline {subsection}{\numberline {13.1.1}Enchanting Mishaps}{69}{subsection.13.1.1}
