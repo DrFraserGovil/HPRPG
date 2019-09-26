@@ -1,4 +1,4 @@
-\babel@toc {english}{}
+\select@language {ngerman}
 \contentsline {part}{Introduction}{2}{chapter*.2}
 \contentsline {section}{\numberline {0.1}Computing Checks}{3}{section.0.1}
 \contentsline {section}{\numberline {0.2}Using these Rules}{3}{section.0.2}
@@ -63,19 +63,19 @@
 \contentsline {subsection}{\numberline {3.21.1}Starting Equipment}{42}{subsection.3.21.1}
 \contentsline {subsection}{\numberline {3.21.2}Starting Spells}{42}{subsection.3.21.2}
 \contentsline {subsection}{\numberline {3.21.3}Archetype Features}{42}{subsection.3.21.3}
-\contentsline {subsection}{\numberline {3.21.4}Teacher Features}{42}{subsection.3.21.4}
-\contentsline {subsection}{\numberline {3.21.5}Scholar Features}{42}{subsection.3.21.5}
-\contentsline {chapter}{\numberline {4}Main Attributes}{43}{chapter.4}
-\contentsline {section}{\numberline {4.1}Health \& Fortitude}{44}{section.4.1}
-\contentsline {chapter}{\numberline {5}Character Progression \& Skills}{45}{chapter.5}
-\contentsline {section}{\numberline {5.1}Character Progression}{45}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Experience}{45}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Levelling Up}{45}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Other Changes}{45}{subsection.5.1.3}
-\contentsline {section}{\numberline {5.2}Skills}{46}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Prerequisites}{46}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Automatic Skill Aquiring}{46}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Skill List}{47}{section.5.3}
+\contentsline {subsection}{\numberline {3.21.4}Teacher Features}{43}{subsection.3.21.4}
+\contentsline {subsection}{\numberline {3.21.5}Scholar Features}{43}{subsection.3.21.5}
+\contentsline {chapter}{\numberline {4}Main Attributes}{44}{chapter.4}
+\contentsline {section}{\numberline {4.1}Health \& Fortitude}{45}{section.4.1}
+\contentsline {chapter}{\numberline {5}Character Progression \& Skills}{46}{chapter.5}
+\contentsline {section}{\numberline {5.1}Character Progression}{46}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Experience}{46}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Levelling Up}{46}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Other Changes}{46}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Skills}{47}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Prerequisites}{47}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Automatic Skill Aquiring}{47}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Skill List}{48}{section.5.3}
 \contentsline {part}{II\hspace {1em}Actions and their Consequences}{50}{part.2}
 \contentsline {chapter}{\numberline {6}Performing Actions}{51}{chapter.6}
 \contentsline {section}{\numberline {6.1}Checks, Modifiers \& Proficiencies}{51}{section.6.1}

@@ -6,8 +6,7 @@
 \section{Sage}
 \blindtext[1]
 
-%%archBegin
-\archetype{Sage}{Teacher}{Scholar}{0}{featureI=Intellectual Insight, featureII=Arcane Affinity, arcaneII=1, featureIII=Academic Discipline, alphaFeatureIII=Instructive Aura, betaFeatureIII=Research Training, arcaneIII=1, betaFeatureIV=Innovative Mind, arcaneIV=1, alphaFeatureV=Repository of Knowledge, arcaneV=2, alphaFeatureVI=Guiding Hand, arcaneVI=2, betaFeatureVII=Rapid Assimilation, arcaneVII=2, alphaFeatureVIII=Infinite Patience, arcaneVIII=3, alphaFeatureIX=Guiding Hand II, arcaneIX=3, featureX=Academic Discipline II, arcaneX=3, arcaneXI=4, arcaneXII=4, arcaneXIII=4, arcaneXIV=5, arcaneXV=5, featureXVI=Academic Discipline III, arcaneXVI=5, arcaneXVII=6, arcaneXVIII=6, arcaneXIX=6, featureXX=Academic Discipline IV, arcaneXX=7}%%archEnd
+%%archBegin\archetype{Sage}{Teacher}{Scholar}{0}{featureI=Intellectual Insight, featureII=Arcane Affinity, arcaneII=1, featureIII=Academic Discipline, alphaFeatureIII=Instructive Aura, betaFeatureIII=Research Training, arcaneIII=1, betaFeatureIV=Rapid Assimilation, arcaneIV=1, alphaFeatureV=Repository of Knowledge, arcaneV=2, alphaFeatureVI=Guiding Hand, betaFeatureVI=Innovative Mind, arcaneVI=2, featureVII=Academic Discipline II, arcaneVII=2, alphaFeatureVIII=Trustworthy Face, arcaneVIII=3, alphaFeatureIX=Guiding Hand II, betaFeatureIX=Co-author Cooperation, arcaneIX=3, featureX=Thought Experiment, arcaneX=3, arcaneXI=4, featureXII=Academic Discipline III, alphaFeatureXII=Group Control, betaFeatureXII=Spellmaker, arcaneXII=4, arcaneXIII=4, featureXIV=Conference Season, arcaneXIV=5, alphaFeatureXV=Infinite Patience, arcaneXV=5, arcaneXVI=5, featureXVII=Academic Discipline IV, betaFeatureXVII=Spellmaker II, arcaneXVII=6, alphaFeatureXVIII=Group Control II, arcaneXVIII=6, arcaneXIX=6, alphaFeatureXX=Career Advice, arcaneXX=7}%%archEnd
 
 \end{strip}
 
@@ -38,8 +37,34 @@ From 2nd level, gain bonuses to your Arcane Affinity. Arcane Affinity increases 
 \jump
 \feat{Academic Discipline}
 
-At third level, as well as deciding on your branch, you must also choose the academic field in which you specialise. Acceptable fields are the 7 schools of magic, any of the book topics mentioned on page \pageref{S:Books}, or any other academic discipline you can negotiate with your GM.
+At third level, as well as deciding on your branch, you must also choose the academic field in which you specialise. Acceptable fields are the 7 schools of magic, Resistance, any of the book topics mentioned on page \pageref{S:Books}, or any other academic discipline you can negotiate with your GM. At each level of this feat (at 3rd, 7th, 12th and 17th Sage level respectively) you gain a bonus to actions associated with your chosen field.
 
+If you chose a school of magic (or Resistance), at each level you may increase the spellcasting dice associated with that field. As usual, this does {\bf not } count towards the arcane proficency calculations detailed on page \pageref{S:Auto}. If you cannot increase your dice size further, instead take a +1 bonus to the relevent spellcasting action.
+
+If you choose a different academic field, then you may take check-advantage in checks related to your field, and then check-double, check-triple and check-quadruple advantage at subsequent levels in this feat. This bonus does not stack with other check-advantage effects. Simply take the highest such bonus. 
+
+\jump \feat{Thought Experiment}
+
+At 10th level, you may perform a Thought Experiment. When trying to solve a problem (or decide upon a course of action) you may take a major action to describe a potential solution or set of actions to the GM, and perform a DV 12 INT check. If the check succeeds, the GM will tell you if the approach will succeed or fail. 
+
+This action can be used once per day. 
+
+\jump\feat{Conference Season}
+
+At 14th level, news of your academic prowess has spread around, and you are invited to academic conferences. Once per week, you may dedicate one day to go to a conference, whereupon you may choose one of the following actions:
+
+\begin{enumerate}
+\item {\bf Give a talk}: gain a +3 bonus to persuasion proficiency 
+\item {\bf Attend skill workshop}: Choose one set of tools, you are now proficient in that set. 
+\item {\bf Attend a talk}: gain a +3 bonus to Arcane Knowledge proficency
+\item {\bf Talk to students}: gain a +3 bonus to Understand Other proficiency
+\item {\bf Notice error}: gain a +3 bonus to Perception proficiency
+\item {\bf Attend book launch}: Gain a free copy of a book of your choice 
+\end{enumerate}
+
+These bonuses last until you next attend a conference. 
+
+\clearpage
 \subsection{Teacher Features}
 
 \feat{Instructive Aura}
@@ -51,10 +76,76 @@ From 3rd level, all non-teachers in your group gain 50\% extra experience.
 
 From 5th level, you may act as a spellbook. If an ally is within touching distance, they may cast any spell that you have memorised, as if it was from a spellbook. 
 
+\jump
+\feat{Guiding Hand}
 
+From 6th level, you may take a major action to lay your hands on an ally, giving them a +1 bonus to their next action. If this action is associated with your academic discipline, this bonus increases to +3.
+
+At 9th level, this bonus increases to be equal to one-third and one-half of your Teacher level (rounded down). 
+
+You cannot do this if you are simultaneously using the {\it Repository of Knowledge} feat. 
+\jump
+\feat{Trustworthy Face}
+
+From 8th level, gain a +2 bonus to Persuasion proficiency. 
+
+
+\jump
+\feat{Group Control}
+
+ From 12th level, when casting an illusion (or otherwise behaviour-modifying) spell on a target, you may extend this effect to 1d4 targets. 
+ 
+ From 18th level, this extends to effect all targets in range. Targets must also use one dice {\it smaller} than their current Resistance level would indicate to resist such spells.
+
+
+\jump
+\feat{Infinite Patience}
+
+At 15th level, you are immune to Rage and Frenzy-causing effects, and gain a 50\% resistance to psychic damage. 
+
+\jump
+\feat{Career Advice}
+
+At 20th level, you are able to help reshape the future of one of your allies. When an ally multiclasses, they automatically begin at 3rd level in their new archetype.
+
+Alternatively, by spending 1 week with that ally, you can train them in a whole new field. This acts as a complete `respec': the character may completely forget all previous archetype abilities, and re-dedicate all their levels into a new class. A level 10 Auror could therefore retrain as a level 10 Naturalist, or as a 5/5 Empath/Barbarian. All character feats, proficiencies, casting dice and attributes must be adjusted accordingly. 
+
+\newpage
 \subsection{Scholar Features}
+
 
 \feat{Research Training}
 
 From 3rd level, gain a bonus to the Research proficiency equal to one third your Scholar level. 
+
+\jump
+\feat{Rapid Assimilation}
+
+From 4th level, you learn new information much more quickly, and so you need only half (rounded up) the usual number of book-casts, $N$, for a spell to be memorised. The new minimum value of $N$ is 2. 
+
+\jump
+\feat{Innovative Mind}
+
+From 6th level, if the GM judges that you are undertaking a particularly innovative action, or using a spell in a new and interesting way, you get a +2 bonus to the associated check. 
+
+From 10th level, if an `innovative' action succeeds, you may adopt it as your `signature move'. You take {\it either} check-advantage or a +2 bonus when performing this action in the future. You may only have 2 `signature moves' at any one time. 
+
+\jump\feat{Instant Scrutiny}
+
+Beginning at 8th level, you may instantly cast {\it Identify} as a wandless, silent action. The usual FP costs still apply, but it does not count as part of your action cycle. 
+
+\jump\feat{Co-author Cooperation}
+
+From 9th level, if you and an ally within 2m perform exactly the same action this turn cycle, you both gain a +1 bonus to the checks. If the ally is also a Scholar (of any level), this increases to +3. 
+
+\jump\feat{Spellmaker}
+
+From 12th level, you gain the ability to make your own spells. 
+
+You may define the effects of the spell, and the GM will then determine the associated level, check type, difficulty value, and any other properties, by comparison with any similar spells that already exist. The spell must be in the area of your {\it Academic Discipline} (if you chose a magic field, it must be that school of magic, if you chose a non-magic field, it must have an effect in you chosen domain). 
+
+After defining the parameters of the spell, you must then spend 2d4 days working on it. At the end of that time, you have 3 attempts to cast the spell. If you succeed in casting it, then you have the spell memorised, and may cast it as any other spell. You may  also then transcribe it onto paper, so that others can book-cast (and then memorise) it as normal.
+
+From 17th level, you may ignore the constraint that the spell must be in your area of academic discipline. 
+
 \clearpage
