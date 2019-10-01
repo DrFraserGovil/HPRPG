@@ -1,15 +1,15 @@
-statuses= readtable('skills.xlsx');
-[n,~] = size(statuses);
-statuses = sortrows(statuses);
+skills= readtable('skills.xlsx');
+[n,~] = size(skills);
+%skills = sortrows(skills);
 for i = 1:n
-    j = statuses.Prerequisite{i};
+    j = skills.Prerequisite{i};
     e = 6;
     if length(j) < 6
         e = length(j);
     end
     r = str2num(j(4:e));
     if (size(r) > 0)
-        statuses.LVL(i) = r;
+        skills.LVL(i) = r;
     end
 end
 
@@ -39,11 +39,11 @@ text = [preamble headers];
 
 
 for (i = 1:n)
-    line = ['\bf \begin{flushleft} ' statuses.Name{i}, '\end{flushleft}',...
-        '  &   \parbox[t]{\y cm}{\begin{flushleft}', statuses.Effect{i}, '\end{flushleft}}',...
-        '  &   \parbox[t]{\x cm}{\begin{center}', num2str(statuses.SkillLevels(i)), '\end{center}}',...
-        '  &   \parbox[t]{\z cm}{\begin{center} \it ', statuses.Prerequisite{i}, '\end{center}}  \\  '];
-    inc = statuses.Include(i);
+    line = ['\bf \begin{flushleft} ' skills.Name{i}, '\end{flushleft}',...
+        '  &   \parbox[t]{\y cm}{\begin{flushleft}', skills.Effect{i}, '\end{flushleft}}',...
+        '  &   \parbox[t]{\x cm}{\begin{center}', num2str(skills.SkillLevels(i)), '\end{center}}',...
+        '  &   \parbox[t]{\z cm}{\begin{center} \it ', skills.Prerequisite{i}, '\end{center}}  \\  '];
+    inc = skills.Include(i);
     if inc == 1
         text = [text line];
     end

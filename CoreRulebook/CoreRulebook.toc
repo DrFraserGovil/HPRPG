@@ -4,7 +4,6 @@
 \contentsline {part}{I\hspace {1em}Characters}{4}{part.1}
 \contentsline {chapter}{\numberline {1}Creating A Character}{5}{chapter.1}
 \contentsline {chapter}{\numberline {2}Playable Species}{6}{chapter.2}
-\contentsline {section}{\numberline {2.1}Species Abilities}{7}{section.2.1}
 \contentsline {chapter}{\numberline {3}Character Archetype}{8}{chapter.3}
 \contentsline {section}{\numberline {3.1}Students}{8}{section.3.1}
 \contentsline {section}{\numberline {3.2}Multiclassing}{9}{section.3.2}
@@ -75,95 +74,95 @@
 \contentsline {subsection}{\numberline {5.2.1}Prerequisites}{45}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Automatic Skill Aquiring}{45}{subsection.5.2.2}
 \contentsline {section}{\numberline {5.3}Skill List}{46}{section.5.3}
-\contentsline {part}{II\hspace {1em}Actions and their Consequences}{48}{part.2}
-\contentsline {chapter}{\numberline {6}Performing Actions}{49}{chapter.6}
-\contentsline {section}{\numberline {6.1}Checks, Modifiers \& Proficiencies}{49}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Modifiers}{49}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Proficiencies}{49}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Check Advantage}{50}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}Success \& Failure}{50}{subsection.6.1.4}
-\contentsline {chapter}{\numberline {7}Non-Combat Actions}{51}{chapter.7}
-\contentsline {subsection}{\numberline {7.0.1}Resting}{51}{subsection.7.0.1}
-\contentsline {subsection}{\numberline {7.0.2}Long-distance Movements}{51}{subsection.7.0.2}
-\contentsline {chapter}{\numberline {8}Combat Actions}{52}{chapter.8}
-\contentsline {subsection}{\numberline {8.0.1}The Combat Cycle}{52}{subsection.8.0.1}
-\contentsline {subsection}{\numberline {8.0.2}Movement}{52}{subsection.8.0.2}
-\contentsline {section}{\numberline {8.1}Minor Actions}{53}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Evasion}{53}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Counterspells}{53}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}Quickspells}{53}{subsection.8.1.3}
-\contentsline {section}{\numberline {8.2}Classifying Actions}{53}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Conditional Actions}{53}{subsection.8.2.1}
-\contentsline {chapter}{\numberline {9}Stealth and Critical Strikes}{55}{chapter.9}
-\contentsline {section}{\numberline {9.1}Sneak Attacks \& Attacks of Opportunity}{55}{section.9.1}
-\contentsline {chapter}{\numberline {10}Taking Damage}{56}{chapter.10}
-\contentsline {subsection}{\numberline {10.0.1}Damage Types}{56}{subsection.10.0.1}
-\contentsline {subsection}{\numberline {10.0.2}Falling}{56}{subsection.10.0.2}
-\contentsline {subsection}{\numberline {10.0.3}Air}{56}{subsection.10.0.3}
-\contentsline {subsection}{\numberline {10.0.4}Armour Class}{56}{subsection.10.0.4}
-\contentsline {subsection}{\numberline {10.0.5}Resisting}{57}{subsection.10.0.5}
-\contentsline {section}{\numberline {10.1}Statuses}{58}{section.10.1}
-\contentsline {chapter}{\numberline {11}Environment \& Vision}{60}{chapter.11}
-\contentsline {subsection}{\numberline {11.0.1}Terrain}{60}{subsection.11.0.1}
-\contentsline {subsection}{\numberline {11.0.2}Vision}{60}{subsection.11.0.2}
-\contentsline {subsection}{\numberline {11.0.3}Living Environment}{61}{subsection.11.0.3}
-\contentsline {part}{III\hspace {1em}Items}{62}{part.3}
-\contentsline {chapter}{\numberline {12}Items}{63}{chapter.12}
-\contentsline {section}{\numberline {12.1}Equipped Items}{63}{section.12.1}
-\contentsline {section}{\numberline {12.2}Storing Items}{63}{section.12.2}
-\contentsline {section}{\numberline {12.3}Physical Weapons}{63}{section.12.3}
-\contentsline {section}{\numberline {12.4}Armour}{64}{section.12.4}
-\contentsline {section}{\numberline {12.5}Weapon List}{65}{section.12.5}
-\contentsline {section}{\numberline {12.6}Wands}{66}{section.12.6}
-\contentsline {subsection}{\numberline {12.6.1}Books}{66}{subsection.12.6.1}
-\contentsline {chapter}{\numberline {13}Artificing}{67}{chapter.13}
-\contentsline {section}{\numberline {13.1}Enchanting}{67}{section.13.1}
-\contentsline {subsection}{\numberline {13.1.1}Enchanting Mishaps}{67}{subsection.13.1.1}
-\contentsline {section}{\numberline {13.2}Potion Making}{67}{section.13.2}
-\contentsline {part}{IV\hspace {1em}Magic}{70}{part.4}
-\contentsline {chapter}{\numberline {14}Spells}{71}{chapter.14}
-\contentsline {section}{\numberline {14.1}Casting Spells}{71}{section.14.1}
-\contentsline {subsection}{\numberline {14.1.1}Spellbooks and Memory}{71}{subsection.14.1.1}
-\contentsline {subsection}{\numberline {14.1.2}Fortitude}{71}{subsection.14.1.2}
-\contentsline {subsection}{\numberline {14.1.3}Power Points}{71}{subsection.14.1.3}
-\contentsline {section}{\numberline {14.2}Spell Types}{72}{section.14.2}
-\contentsline {subsection}{\numberline {14.2.1}Instant}{72}{subsection.14.2.1}
-\contentsline {subsection}{\numberline {14.2.2}Concentration}{72}{subsection.14.2.2}
-\contentsline {subsection}{\numberline {14.2.3}Ward}{72}{subsection.14.2.3}
-\contentsline {subsection}{\numberline {14.2.4}Ritual}{72}{subsection.14.2.4}
-\contentsline {section}{\numberline {14.3}Spell Shapes}{73}{section.14.3}
-\contentsline {subsection}{\numberline {14.3.1}Circle}{73}{subsection.14.3.1}
-\contentsline {subsection}{\numberline {14.3.2}Cone}{73}{subsection.14.3.2}
-\contentsline {subsection}{\numberline {14.3.3}Cube}{73}{subsection.14.3.3}
-\contentsline {subsection}{\numberline {14.3.4}Cylinder}{73}{subsection.14.3.4}
-\contentsline {subsection}{\numberline {14.3.5}Line}{73}{subsection.14.3.5}
-\contentsline {subsection}{\numberline {14.3.6}Sphere}{73}{subsection.14.3.6}
-\contentsline {chapter}{\numberline {15}Spell List}{74}{chapter.15}
-\contentsline {subsubsection}{Charms}{74}{subsubsection*.3}
-\contentsline {subsubsection}{Dark Arts}{74}{subsubsection*.4}
-\contentsline {subsubsection}{Divination}{74}{subsubsection*.5}
-\contentsline {subsubsection}{Hexes}{74}{subsubsection*.6}
-\contentsline {subsubsection}{Illusion}{75}{subsubsection*.7}
-\contentsline {subsubsection}{Recuperation}{75}{subsubsection*.8}
-\contentsline {subsubsection}{Transfiguration}{75}{subsubsection*.9}
-\contentsline {part}{V\hspace {1em}Appendices}{90}{part.5}
-\contentsline {chapter}{\numberline {16}Cosmology}{91}{chapter.16}
-\contentsline {subsection}{\numberline {16.0.1}The Mortal World}{91}{subsection.16.0.1}
-\contentsline {subsection}{\numberline {16.0.2}The Astral Realm}{91}{subsection.16.0.2}
-\contentsline {subsection}{\numberline {16.0.3}The Higher Planes}{91}{subsection.16.0.3}
-\contentsline {subsection}{\numberline {16.0.4}The Eldritch Domains}{91}{subsection.16.0.4}
-\contentsline {subsection}{\numberline {16.0.5}The Void}{92}{subsection.16.0.5}
-\contentsline {section}{\numberline {16.1}Higher Planes}{92}{section.16.1}
-\contentsline {subsection}{\numberline {16.1.1}Abyss: The Plane of Terror}{92}{subsection.16.1.1}
-\contentsline {subsection}{\numberline {16.1.2}Aeolus: The Plane of Storms and Winds}{92}{subsection.16.1.2}
-\contentsline {subsection}{\numberline {16.1.3}Eden: The Plane of Nature}{92}{subsection.16.1.3}
-\contentsline {subsection}{\numberline {16.1.4}Elysium: The Plane of Blessings}{92}{subsection.16.1.4}
-\contentsline {subsection}{\numberline {16.1.5}Hades: The Plane of Death}{92}{subsection.16.1.5}
-\contentsline {subsection}{\numberline {16.1.6}Hyperborea: The Plane of Ice}{93}{subsection.16.1.6}
-\contentsline {subsection}{\numberline {16.1.7}Machina: The Plane of Order}{93}{subsection.16.1.7}
-\contentsline {subsection}{\numberline {16.1.8}Nirvana: The Plane of Peace}{93}{subsection.16.1.8}
-\contentsline {subsection}{\numberline {16.1.9}Pand{\ae }monium: The Plane of Chaos}{93}{subsection.16.1.9}
-\contentsline {subsection}{\numberline {16.1.10}Scholomancia: The Plane of Knowledge}{93}{subsection.16.1.10}
-\contentsline {subsection}{\numberline {16.1.11}Tartarus: The Plane of Torture}{94}{subsection.16.1.11}
-\contentsline {subsection}{\numberline {16.1.12}Valhalla: The Plane of Bravery}{94}{subsection.16.1.12}
-\contentsline {subsection}{\numberline {16.1.13}Vulcan: The Plane of Fire}{94}{subsection.16.1.13}
+\contentsline {part}{II\hspace {1em}Actions and their Consequences}{50}{part.2}
+\contentsline {chapter}{\numberline {6}Performing Actions}{51}{chapter.6}
+\contentsline {section}{\numberline {6.1}Checks, Modifiers \& Proficiencies}{51}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Modifiers}{51}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Proficiencies}{51}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Check Advantage}{52}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}Success \& Failure}{52}{subsection.6.1.4}
+\contentsline {chapter}{\numberline {7}Non-Combat Actions}{53}{chapter.7}
+\contentsline {subsection}{\numberline {7.0.1}Resting}{53}{subsection.7.0.1}
+\contentsline {subsection}{\numberline {7.0.2}Long-distance Movements}{53}{subsection.7.0.2}
+\contentsline {chapter}{\numberline {8}Combat Actions}{54}{chapter.8}
+\contentsline {subsection}{\numberline {8.0.1}The Combat Cycle}{54}{subsection.8.0.1}
+\contentsline {subsection}{\numberline {8.0.2}Movement}{54}{subsection.8.0.2}
+\contentsline {section}{\numberline {8.1}Minor Actions}{55}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Evasion}{55}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Counterspells}{55}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Quickspells}{55}{subsection.8.1.3}
+\contentsline {section}{\numberline {8.2}Classifying Actions}{55}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Conditional Actions}{55}{subsection.8.2.1}
+\contentsline {chapter}{\numberline {9}Stealth and Critical Strikes}{57}{chapter.9}
+\contentsline {section}{\numberline {9.1}Sneak Attacks \& Attacks of Opportunity}{57}{section.9.1}
+\contentsline {chapter}{\numberline {10}Taking Damage}{58}{chapter.10}
+\contentsline {subsection}{\numberline {10.0.1}Damage Types}{58}{subsection.10.0.1}
+\contentsline {subsection}{\numberline {10.0.2}Falling}{58}{subsection.10.0.2}
+\contentsline {subsection}{\numberline {10.0.3}Air}{58}{subsection.10.0.3}
+\contentsline {subsection}{\numberline {10.0.4}Armour Class}{58}{subsection.10.0.4}
+\contentsline {subsection}{\numberline {10.0.5}Resisting}{59}{subsection.10.0.5}
+\contentsline {section}{\numberline {10.1}Statuses}{60}{section.10.1}
+\contentsline {chapter}{\numberline {11}Environment \& Vision}{62}{chapter.11}
+\contentsline {subsection}{\numberline {11.0.1}Terrain}{62}{subsection.11.0.1}
+\contentsline {subsection}{\numberline {11.0.2}Vision}{62}{subsection.11.0.2}
+\contentsline {subsection}{\numberline {11.0.3}Living Environment}{63}{subsection.11.0.3}
+\contentsline {part}{III\hspace {1em}Items}{64}{part.3}
+\contentsline {chapter}{\numberline {12}Items}{65}{chapter.12}
+\contentsline {section}{\numberline {12.1}Equipped Items}{65}{section.12.1}
+\contentsline {section}{\numberline {12.2}Storing Items}{65}{section.12.2}
+\contentsline {section}{\numberline {12.3}Physical Weapons}{65}{section.12.3}
+\contentsline {section}{\numberline {12.4}Armour}{66}{section.12.4}
+\contentsline {section}{\numberline {12.5}Weapon List}{67}{section.12.5}
+\contentsline {section}{\numberline {12.6}Wands}{68}{section.12.6}
+\contentsline {subsection}{\numberline {12.6.1}Books}{68}{subsection.12.6.1}
+\contentsline {chapter}{\numberline {13}Artificing}{69}{chapter.13}
+\contentsline {section}{\numberline {13.1}Enchanting}{69}{section.13.1}
+\contentsline {subsection}{\numberline {13.1.1}Enchanting Mishaps}{69}{subsection.13.1.1}
+\contentsline {section}{\numberline {13.2}Potion Making}{69}{section.13.2}
+\contentsline {part}{IV\hspace {1em}Magic}{72}{part.4}
+\contentsline {chapter}{\numberline {14}Spells}{73}{chapter.14}
+\contentsline {section}{\numberline {14.1}Casting Spells}{73}{section.14.1}
+\contentsline {subsection}{\numberline {14.1.1}Spellbooks and Memory}{73}{subsection.14.1.1}
+\contentsline {subsection}{\numberline {14.1.2}Fortitude}{73}{subsection.14.1.2}
+\contentsline {subsection}{\numberline {14.1.3}Power Points}{73}{subsection.14.1.3}
+\contentsline {section}{\numberline {14.2}Spell Types}{74}{section.14.2}
+\contentsline {subsection}{\numberline {14.2.1}Instant}{74}{subsection.14.2.1}
+\contentsline {subsection}{\numberline {14.2.2}Concentration}{74}{subsection.14.2.2}
+\contentsline {subsection}{\numberline {14.2.3}Ward}{74}{subsection.14.2.3}
+\contentsline {subsection}{\numberline {14.2.4}Ritual}{74}{subsection.14.2.4}
+\contentsline {section}{\numberline {14.3}Spell Shapes}{75}{section.14.3}
+\contentsline {subsection}{\numberline {14.3.1}Circle}{75}{subsection.14.3.1}
+\contentsline {subsection}{\numberline {14.3.2}Cone}{75}{subsection.14.3.2}
+\contentsline {subsection}{\numberline {14.3.3}Cube}{75}{subsection.14.3.3}
+\contentsline {subsection}{\numberline {14.3.4}Cylinder}{75}{subsection.14.3.4}
+\contentsline {subsection}{\numberline {14.3.5}Line}{75}{subsection.14.3.5}
+\contentsline {subsection}{\numberline {14.3.6}Sphere}{75}{subsection.14.3.6}
+\contentsline {chapter}{\numberline {15}Spell List}{76}{chapter.15}
+\contentsline {subsubsection}{Charms}{76}{subsubsection*.3}
+\contentsline {subsubsection}{Dark Arts}{76}{subsubsection*.4}
+\contentsline {subsubsection}{Divination}{76}{subsubsection*.5}
+\contentsline {subsubsection}{Hexes}{76}{subsubsection*.6}
+\contentsline {subsubsection}{Illusion}{77}{subsubsection*.7}
+\contentsline {subsubsection}{Recuperation}{77}{subsubsection*.8}
+\contentsline {subsubsection}{Transfiguration}{77}{subsubsection*.9}
+\contentsline {part}{V\hspace {1em}Appendices}{92}{part.5}
+\contentsline {chapter}{\numberline {16}Cosmology}{93}{chapter.16}
+\contentsline {subsection}{\numberline {16.0.1}The Mortal World}{93}{subsection.16.0.1}
+\contentsline {subsection}{\numberline {16.0.2}The Astral Realm}{93}{subsection.16.0.2}
+\contentsline {subsection}{\numberline {16.0.3}The Higher Planes}{93}{subsection.16.0.3}
+\contentsline {subsection}{\numberline {16.0.4}The Eldritch Domains}{93}{subsection.16.0.4}
+\contentsline {subsection}{\numberline {16.0.5}The Void}{94}{subsection.16.0.5}
+\contentsline {section}{\numberline {16.1}Higher Planes}{94}{section.16.1}
+\contentsline {subsection}{\numberline {16.1.1}Abyss: The Plane of Terror}{94}{subsection.16.1.1}
+\contentsline {subsection}{\numberline {16.1.2}Aeolus: The Plane of Storms and Winds}{94}{subsection.16.1.2}
+\contentsline {subsection}{\numberline {16.1.3}Eden: The Plane of Nature}{94}{subsection.16.1.3}
+\contentsline {subsection}{\numberline {16.1.4}Elysium: The Plane of Blessings}{94}{subsection.16.1.4}
+\contentsline {subsection}{\numberline {16.1.5}Hades: The Plane of Death}{94}{subsection.16.1.5}
+\contentsline {subsection}{\numberline {16.1.6}Hyperborea: The Plane of Ice}{95}{subsection.16.1.6}
+\contentsline {subsection}{\numberline {16.1.7}Machina: The Plane of Order}{95}{subsection.16.1.7}
+\contentsline {subsection}{\numberline {16.1.8}Nirvana: The Plane of Peace}{95}{subsection.16.1.8}
+\contentsline {subsection}{\numberline {16.1.9}Pand{\ae }monium: The Plane of Chaos}{95}{subsection.16.1.9}
+\contentsline {subsection}{\numberline {16.1.10}Scholomancia: The Plane of Knowledge}{95}{subsection.16.1.10}
+\contentsline {subsection}{\numberline {16.1.11}Tartarus: The Plane of Torture}{96}{subsection.16.1.11}
+\contentsline {subsection}{\numberline {16.1.12}Valhalla: The Plane of Bravery}{96}{subsection.16.1.12}
+\contentsline {subsection}{\numberline {16.1.13}Vulcan: The Plane of Fire}{96}{subsection.16.1.13}
