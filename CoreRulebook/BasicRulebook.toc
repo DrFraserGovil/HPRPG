@@ -1,4 +1,3 @@
-\babel@toc {english}{}
 \contentsline {part}{Introduction}{2}{chapter*.2}
 \contentsline {section}{\numberline {0.1}Computing Checks}{3}{section.0.1}
 \contentsline {section}{\numberline {0.2}Using these Rules}{3}{section.0.2}
@@ -60,6 +59,7 @@
 \contentsline {section}{\numberline {12.1}Wands}{40}{section.12.1}
 \contentsline {section}{\numberline {12.2}Weapon List}{42}{section.12.2}
 \contentsline {chapter}{\numberline {13}Armour}{43}{chapter.13}
+\contentsline {subsection}{\numberline {13.0.1}Calculating AC}{43}{subsection.13.0.1}
 \contentsline {chapter}{\numberline {14}Books}{44}{chapter.14}
 \contentsline {chapter}{\numberline {15}Tools}{45}{chapter.15}
 \contentsline {part}{IV\hspace {1em}Magic}{46}{part.4}

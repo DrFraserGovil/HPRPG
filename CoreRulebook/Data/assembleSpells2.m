@@ -60,8 +60,8 @@ function assembleSpells2(maxLevel)
                 spellLevels(c) = array(idx);
                 c = c+1;
                 idx = idx + 1;
-            end
-
+			end
+			spellLevels.Name
             [~,I] = sort({spellLevels.Name});
             spellLevels = spellLevels(I);
             for k = 1:length(spellLevels)

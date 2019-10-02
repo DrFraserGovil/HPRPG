@@ -1,7 +1,7 @@
 tools = readtable('Items/tools.xlsx');
 tools = sortrows(tools);
 
-fileName = '../Chapters/Items.tex';
+fileName = '../Chapters/Tools.tex';
 readFile = fileread(fileName);
 
 
@@ -9,30 +9,34 @@ insertPoint = strfind(readFile, '%%ToolsBegin');
 
 endPoint = strfind(readFile, '%%ToolsEnd');
 
-firstHalf = readFile(1:insertPoint+13);
+firstHalf = prepareText(readFile(1:insertPoint+13));
 
-secondHalf = readFile(endPoint:end);
+secondHalf = prepareText(readFile(endPoint:end));
 
 
 preamble = ' \begin{center}\begin{rndtable}{|l l l|}';
 headers = '\hline \tablehead \normalsize \bf Name & \normalsize \bf Weight & \normalsize \bf Cost \\ \hline ';
 
 text = [preamble headers];
-
+text = prepareText(text);
 n = size(tools);
-
+descriptionText = "";
 for (i = 1:n)
-    tool = tools.Name{i};
-    weight = tools.Weight{i};
-    cost = tools.Cost(i);
-    
-    line = ['\bf ', tool, ' &  ', weight, ' & ', num2str(cost), ' gold \\  '];
-     
-    text = [text line];
+    tool = prepareText(tools.Name{i});
+    weight = prepareText(tools.Weight{i});
+    cost = prepareText(num2str(tools.Cost(i)));
+    description = prepareText(tools.Description{i});
+    line = strcat('\t\\bf ',{' '}, tool, '\t&\t ', weight, '\t&\t', cost, ' gold  \n \\\\ \n'); 
+    text = strcat(text,line);
+	
+	entry = strcat('\n \n \\tool{',tool,'}{',description,'}');
+	descriptionText = descriptionText + entry;
 end
-ender = '\hline\end{rndtable}\end{center} ';
+ender = '\\hline\n\\end{rndtable}\n\\end{center} \n';
 
-fullText = [firstHalf, text, ender, secondHalf];
+fullText = strcat(firstHalf, text, ender, descriptionText, secondHalf);
+
+
 
 FID = fopen(fileName,'w');
-fwrite(FID, fullText);
+fprintf(FID,fullText);
