@@ -35,29 +35,32 @@ For more detail on how to calculate a check, see page \pageref{S:Checks}.
 \subsection{Modifiers}
 Each character has an associated score in each of the 8 attributes, which enables them to more reliably pass checks in these fields, via the use of the associated modifiers.  When performing an ATH check, for example, you perform the requisite check (usually a d20), and then add on your ATH modifier, which is derived from your ATH score in the following way:
 $$ \text{attribute modifier} = \frac{\text{attribute level} - 10}{2} \text{ (rounded down)} $$
-The table below gives an example:
+
+The exception to this calculation is EVL. Since most people are (generally) much less evil than they are athletic, we use 5, rather than 10, in the denominator of the calculation. The table below gives an example:
 
   
 \begin{center}
-\begin{rndtable}{|c c|}
-\hline \bf Attribute Value 	&\bf 	Modifier
+\begin{rndtable}{|c c p{0.1cm} c c|}
+\hline \bf Attribute Value 	&\bf 	Modifier & ~ & \bf EVL Value & \bf EVL Modifier
 \\ \hline
-6-7	&	-2
+6-7	&	-2	&~& 0-1	& -3
 \\
-8-9	&	-1
+8-9	&	-1	&~& 2-3	& -2
 \\
-10-11	&	+0
+10-11	&	+0	&~& 3-4 & -1
 \\
-12-13	&	+1
+12-13	&	+1	&~& 5-6 & +0
 \\
-14-15	&	+2
+14-15	&	+2	&~& 7-8 & +1
 \\
 \hline
 \end{rndtable}
 \end{center}
 
 
-Note that modifiers for attributes with a skill less than 10 are negative! You won't necessarily {\it always} be allowed to use your modifiers on every check -- if you attempt to use a weapon you are not proficient in, for example, all positive modifiers are negated.
+Note that modifiers for attributes with a skill less than 10 (or 5 for EVL) are negative! You won't necessarily {\it always} be allowed to use your modifiers on every check -- if you attempt to use a weapon you are not proficient in, for example, all positive modifiers are negated.
+
+
 \subsection{Proficiencies}
 In addition to the 8 main attributes, checks can be further subdivided up into 20 {\it proficiencies}, as follows:
 %\setlength{\columnsep}{-1cm}
@@ -264,7 +267,7 @@ This timer resets after a rest of more than 8 hours, after which time you can ta
 
 \chapter{Combat Actions}
 
-\subsection{The Combat Cycle}
+\section{The Combat Cycle}
 Unlike most RPGs, which tend to use a turn-based system for combat, this game uses a simultaneous combat system. The reason for this is that whilst the turn-based combat fits in with how we play games (I have my turn, you have yours, etc.), it is not entirely realistic: in a fight, you don't wait patiently for everyone else to complete attacking you before finally returning fire: everybody is completing actions at once. 
 
 After combat is initiated, a series of turn cycles occur. Each turn cycle allows every character in combat one major action, such as: a movement, casting a spell, or using an item. Before the turn is activated, there is a period of time (to be decided by your GM), during which you must decide on what you will do. Players may talk to each other during this time, but do be aware that discussing your tactics in front of the GM may give the game away, you wouldn't start shouting your plan out whilst fighting the enemy now, would you? 
@@ -279,21 +282,28 @@ There might also be cases where two spells are cast simultaneously where the ord
 
 In cases such as this it is useful to remember that it is the {\it casting} of the spell that is simultaneous: so the ordering in which the spell effects should take place can be inferred from the distance between the caster and the target. The issue above is resolved simply by looking at whoever is closest to the target. 
  
-\subsection{Movement}
+ \newpage
+\section{Movement}
 
 Moving is a very common action to take during combat, to avoid the enemy's attacks, or to maneouvre yourself to enable an attack on the enemy. Movement can be broken down into three types: minor movements, transport movements and considered movements. 
 
-A {\bf minor movement} includes things such as turning to face an enemy, or taking a step out from behind cover. These actions do not constitute the entirety of a turn and you may still take a major action afterwards, \textbf{however, they are considered to happen at the very beginning of a turn cycle, and you cannot return to cover after emerging from it}. If you therefore emerge from cover to attack someone, and a character successfully guessed that this would happen and sent a spell in your direction, you will not be protected until you move back into cover in the next turn cycle. 
+\subsection{Minor Movements}
+
+A { minor movement} includes things such as turning to face an enemy, or taking a step out from behind cover. These actions do not constitute the entirety of a turn and you may still take a major action afterwards, \textbf{however, they are considered to happen at the very beginning of a turn cycle, and you cannot return to cover after emerging from it}. If you therefore emerge from cover to attack someone, and a character successfully guessed that this would happen and sent a spell in your direction, you will not be protected until you move back into cover in the next turn cycle. 
+
+
+A { considered movement} is one in which your character is attempting to do something else, whilst moving. It is considered a minor action -- or `half' a major action. The check is performed exactly as above, but you then simply divi the distance by two. You may use the other half to perform another minor action, such as an evasion, or to prepare a counterspell. A consideredmovement may not then be used to trigger the `sprint' effect. 
+
+\subsection{Transport Movement}
 
 {\bf Transport movements} are those designed to get you from point A to point B as quickly as possible. These actions do take up your entire turn: you can do nothing else except take a transport action. The distance that you can travel in a given trasnport action is calculated from:
 
-$$ \text{metres travelled} = \frac{1\text{d}10 \text{ ATH (speed) check}}{5} $$  
+\small
+$$ \text{metres travelled} = \text{Base Speed } + \frac{\text{ATH modifier + Speed Proficiency }}{2}  $$  
+\normalsize
 
-This distance is rounded downwards  to the nearest half-metre, unless you are wearing ``heavy armour'' (i.e. anything more heavy than usual fabrics), in which case it is rounded downwards to the nearest integer. The direction that you are travelling in \textbf{must} be declared before performing this check. You may elect to not use all of the movement that you rolled for -- i.e. if you rolled a 1.5m movement, you may only use 1m, if you desire. If your movement check was a non-integer, and you do not continue moving in the next turn cycle, your next turn automatically uses your minor movement to move the final 0.5m and you may not use another minor movement that cycle. 
+This distance is rounded downwards  to the nearest half-metre, unless you are wearing ``heavy armour'' (i.e. anything more heavy than usual fabrics), in which case it is rounded downwards to the nearest integer. The direction that you are travelling in \textbf{must} be declared before performing this check. You may elect to not use all of the movement that you rolled for -- i.e. if you can move 1.5m in total, you may only use 1m, if you desire. 
 
-If you do elect to continue moving the next turn, you may use the `sprint' effect to continue moving at the same pace as the previous turn, without another roll. This can be continued for a maximum of 3 turns. If you are sprinting, you may not change direction -- this would require a `new movement' to be initiated. You may also simply elect to perform a new movement roll, in order to get a better value. 
-
-A {\it considered movement} is one in which your character is not attempting to do something else. It is considered a minor action -- or `half' a major action. The check is performed exactly as above, but you then simply divide the distance by two. You may use the other half to perform another minor action, such as an evasion, or to prepare a counterspell. A consideredmovement may not then be used to trigger the `sprint' effect. 
 
 
 
@@ -350,6 +360,7 @@ You must also take check-disadvantage on the anticipation check if the target at
 
 \end{center}
 
+\clearpage
 \section{Classifying Actions}
 
 Other actions may also be broken down into a major and a minor distinction, with major actions taking up the entirety of a turn, and minor actions being able to be used in concert with other minor actions, or with a considered movement. 

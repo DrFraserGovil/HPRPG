@@ -7,10 +7,7 @@ for i = 1:n
     if length(j) < 6
         e = length(j);
     end
-    r = str2num(j(4:e));
-    if (size(r) > 0)
-        statuses.LVL(i) = r;
-    end
+    
 end
 
 
