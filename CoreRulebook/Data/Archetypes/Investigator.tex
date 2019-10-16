@@ -6,7 +6,7 @@
 \section{Investigator}
 \blindtext[1]
 
-%%archBegin\archetype{Investigator}{Detective}{Journalist}{0}{featureI=Investigator's Insight, featureII=Always Alert, featureIII=Interrogator's Demeanor I, alphaFeatureIII=Arrest, betaFeatureIII=Eavesdrop I, featureIV=Interview, betaFeatureIV=Press Pass, alphaFeatureV=Combat De-Escalation I, featureVI=Interrogator's Demeanor II, alphaFeatureVII=Gut Instinct, featureVIII=Good cop/Bad cop, betaFeatureVIII=Eavesdrop II, alphaFeatureIX=Police Cordon, featureX=Research Team, featureXI=Interrogator's Demeanor III, alphaFeatureXI=Combat De-Escalation II, featureXII=Undercover, featureXIV=Interrogator's Demeanor IV, alphaFeatureXIV=Bent Copper, betaFeatureXV=Eavesdrop III, featureXVI=Illusive Deduction, alphaFeatureXX=Sherlockian Deception, betaFeatureXX=Topple Regime}%%archEnd
+%%archBegin\archetype{Investigator}{Detective}{Journalist}{0}{featureI=Investigator's Insight, featureII=Always Alert, featureIII=Interrogator's Demeanor I, alphaFeatureIII=Arrest, betaFeatureIII=Eavesdrop I, featureIV=Interview, betaFeatureIV=Press Pass, alphaFeatureV=Police Tactics I, featureVI=Interrogator's Demeanor II, alphaFeatureVII=Gut Instinct, featureVIII=Good cop/Bad cop, betaFeatureVIII=Eavesdrop II, alphaFeatureIX=Police Cordon, featureX=Research Team, featureXI=Interrogator's Demeanor III, alphaFeatureXI=Police Tactics II, featureXII=Undercover, featureXIV=Interrogator's Demeanor IV, alphaFeatureXIV=Bent Copper, betaFeatureXV=Eavesdrop III, featureXVI=Illusive Deduction, alphaFeatureXX=Sherlockian Deception, betaFeatureXX=Topple Regime}%%archEnd
 
 \end{strip}
 
@@ -29,12 +29,12 @@ A Sage begins with 4 spells from the basic spells table memorised.
 
 \feat{Investigator's Insight}
 
-From 1st level, you gain a +2 bonus to Perception 
+From 1st level, you gain a +1 bonus to Perception and Research proficiencies. 
 
 \jump
 \feat{Always Alert}
 
-At 2nd level you gain a +1 bonus to your passive perception value, and an additional +1 for every 3 Investigator levels above 2nd.
+At 2nd level you gain a +1 bonus to your passive perception value, and an additional +1 for every 4 Investigator levels above 2nd.
 
 \jump
 \feat{Interrogator\apos{}s Demeanour}
@@ -43,11 +43,8 @@ At 3rd level, and then again at 6th, 11th and 14th, you gain a +1 bonus to eithe
 
 \jump\feat{Interview}
 
-From 4th level, if you are able to isolate a captured (or willing) target, you may initiate an interview. Target performs a SPR (Willpower) Resist check against either a d10 CHR (Persuasion) check or d10 POW (Intimidation) check. If target fails to get the greater value, they must tell you at least one piece of true information. The investigator, however, does not get to know if the check succeeded. 
+From 4th level, if you are able to isolate a captured (or willing) target, you may initiate an interview. Target performs a SPR (Willpower) Resist check against either a d10 CHR (Persuasion) check {\bf or} a d10 POW (Intimidation) check. If target fails, the GM must answer any question you ask truthfully (though they may lie by omission, if the question is not specific enough), if it is reasonable that the target knows the answer. If the check fails, the GM wil lie. 
 
-\jump\feat{Good-cop/Bad-cop}
-
-From 8th level, when performing an Interview, you may perform both Persuasion and Intimidation checks and sum the result for the check. 
 
 \jump\feat{Research Team}
 
@@ -64,22 +61,44 @@ You may also take 1 hour to completely alter your appearance and create a false 
 
 At 16th level, your deductive skills are honed such that you can spot inconsistencies when someone attempts to alter your perception of reality. When an illusion spell is cast on you, in addition to the usual Perception checks, the GM rolls a d4. If it comes up as a 1, they must inform you that an illusion spell has been cast on you. 
 
+\newpage
 
 \subsection{Detective}
 
 \feat{Arrest}
 
-From 3rd level, you may place handcuffs/manacles on an incapacitated humanoid as a major action. This creature must succeed on a DV 15 ATH (Strength) check to escape. When all antagonists have been likewise incapacited, you may take 1 minute to perform a ritual spell to send them to a holding cell in Azkaban, where escape is near-impossible. 
+From 3rd level, when all antagonists have been incapacited, you may take 1 minute to perform a ritual spell to send all nearby targets wearing manacles to a holding cell in Azkaban, where escape is near-impossible. 
 
 \jump
-\feat{Combat De-Escalation}
+\feat{Police Tactics}
 
-From 5th level, you may use one of the following tactics 
+At 5th level, and then again at 11th level, you may choose to gain one of the following bonuses:
+
+\begin{itemize}
+	\item {\bf Disarming training:} gain a bonus to the casting check of the {\it Disarm} spell equal to one-third of your Detective level
+	\item {\bf Hand-to-hand Combat:} unarmed strikes do 1d4 ATH (Strength) Bludgeoning damage, and whenever contact is made, target must perform a SPR (Willpower) Resist check against a d10 POW (Intmidation) check or take the {\it Terrified} status. 
+	\item {\bf Combat De-escalation:} perform a CHR (Persuasion) check on an isolated target, DV equal to target SPR attribute. If check succeeds, target lays down their weapons and raises their hands above their head. 
+	\item {\bf Spatial Awareness:} when a pair of enemies attempt to flank you, you may perform a DV15 INT(Perception) check to automatically move up to 1m, such that only one target threatens you (if possible). 
+\end{itemize}
 
 \jump
 \feat{Gut Instinct}
 
-From 7th level if, during an {\it Interview}, you perform a check that is at least 2 below the Resist check, your gut instinct allows you to infer that the target is lying to you. 
+From 7th level if, during an {\it Interview}, the difference between your interrogation check and the resist check is greater than 2, you automatically know that the perp is lying to you.
+\jump\feat{Good-cop/Bad-cop}
+
+From 8th level, when performing an Interview, you may perform a combined d10 POW (Intimidation) and d10 CHR (Persuasion) check for the interrogation. 
+\jump
+\feat{Sherlockian Deception}
+
+From 20th level, your powers of deduction have reached legendary levels, such that you can turn your enemies own plans against them. Once per day, if you trigger a trap, or otherwise fall afoul of an enemy\apos{}s nefarious scheme, you may reveal that you were aware of this all along, and that they have in fact strayed into {\it your} nefarious scheme, upon which you may either:
+\begin{enumerate}
+	\item Turn the effect of their trap back onto them
+	\item Automatically cast any spell (memorised or not) of Expert level or below with an assumed dice roll of 20. 
+	\item Teleport in a backup team of 2d4 level 15 NPC Enforcer-Aurors you had secretely waiting in the wings. 
+\end{enumerate}
+
+
 
 \subsection{Journalist}
 
