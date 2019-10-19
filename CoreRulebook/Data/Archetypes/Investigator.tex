@@ -6,7 +6,7 @@
 \section{Investigator}
 \blindtext[1]
 
-%%archBegin\archetype{Investigator}{Detective}{Journalist}{0}{featureI=Investigator's Insight, featureII=Always Alert, featureIII=Interrogator's Demeanor I, alphaFeatureIII=Arrest, betaFeatureIII=Eavesdrop I, featureIV=Interview, betaFeatureIV=Press Pass, alphaFeatureV=Police Tactics I, featureVI=Interrogator's Demeanor II, alphaFeatureVII=Gut Instinct, featureVIII=Good cop/Bad cop, betaFeatureVIII=Eavesdrop II, alphaFeatureIX=Police Cordon, featureX=Research Team, featureXI=Interrogator's Demeanor III, alphaFeatureXI=Police Tactics II, featureXII=Undercover, featureXIV=Interrogator's Demeanor IV, alphaFeatureXIV=Bent Copper, betaFeatureXV=Eavesdrop III, featureXVI=Illusive Deduction, alphaFeatureXX=Sherlockian Deception, betaFeatureXX=Topple Regime}%%archEnd
+%%archBegin\archetype{Investigator}{Detective}{Journalist}{0}{featureI=Investigator's Insight, featureII=Interview, featureIII=Interrogator's Demeanor I, alphaFeatureIII=Arrest, betaFeatureIII=Connections, featureIV=Always Alert, betaFeatureIV=Eavesdrop I, alphaFeatureV=Police Tactics I, betaFeatureV=Silver Tongued, featureVI=Interrogator's Demeanor II, alphaFeatureVII=Gut Instinct, betaFeatureVII=Press Pass, alphaFeatureVIII=Good cop/Bad cop, betaFeatureVIII=Eavesdrop II, alphaFeatureIX=Evaluate Perp, betaFeatureIX=Hurtful Words, featureX=Research Team, featureXI=Interrogator's Demeanor III, alphaFeatureXI=Police Tactics II, betaFeatureXI=Contact Curation I, featureXII=Undercover, betaFeatureXII=Influence Opinion, alphaFeatureXIII=Evaluate Perp II, featureXIV=Interrogator's Demeanor IV, alphaFeatureXIV=Bent Copper / Honest Bobby, betaFeatureXV=Eavesdrop III, featureXVI=Illusive Deduction, betaFeatureXVIII=Contact Curation II, alphaFeatureXX=Sherlockian Deception, betaFeatureXX=Topple Regime}%%archEnd
 
 \end{strip}
 
@@ -14,16 +14,17 @@
 
 \subsection{Starting Equipment}
 
-A Sage start swith:
+An Investigator starts swith:
 \begin{itemize}[itemsep=0em]
-	\item a Scholar's pack 
+	\item A basic pack 
+	\item A notebook at Quick-Notes Quill
 	\item a Wand (roll on the wand table to determine composition)
-	\item 2d6 $\times 4$ gold
+	\item 2d6 $\times 5$ gold
 \end{itemize}
 
 \subsection{Starting Spells}
 
-A Sage begins with 4 spells from the basic spells table memorised. 
+An Investigator begins with 3 spells from the basic spells table, plus {\it Identify}, memorised.
 
 \subsection{Archetype Features}
 
@@ -31,20 +32,22 @@ A Sage begins with 4 spells from the basic spells table memorised.
 
 From 1st level, you gain a +1 bonus to Perception and Research proficiencies. 
 
-\jump
-\feat{Always Alert}
+\jump\feat{Interview}
 
-At 2nd level you gain a +1 bonus to your passive perception value, and an additional +1 for every 4 Investigator levels above 2nd.
+From 2nd level, if you are able to isolate a captured (or willing) target, you may initiate an interview. Target performs a SPR (Willpower) Resist check against either a d10 CHR (Persuasion) check {\bf or} a d10 POW (Intimidation) check. If target fails, the GM must answer any question you ask truthfully (though they may lie by omission, if the question is not specific enough), if it is reasonable that the target knows the answer. If the check fails, the GM wil lie. 
 
+You may ask up to 5 questions in an interview, before the target becomes uncooperative and refuses to answer. 
 \jump
 \feat{Interrogator\apos{}s Demeanour}
 
 At 3rd level, and then again at 6th, 11th and 14th, you gain a +1 bonus to either Persuasion or Intimidation proficiencies (you may choose a different proficiency at every increase).
 
-\jump\feat{Interview}
 
-From 4th level, if you are able to isolate a captured (or willing) target, you may initiate an interview. Target performs a SPR (Willpower) Resist check against either a d10 CHR (Persuasion) check {\bf or} a d10 POW (Intimidation) check. If target fails, the GM must answer any question you ask truthfully (though they may lie by omission, if the question is not specific enough), if it is reasonable that the target knows the answer. If the check fails, the GM wil lie. 
 
+\jump
+\feat{Always Alert}
+
+At 4th level you gain a +1 bonus to your passive perception value, and an additional +1 for every 4 Investigator levels above 2nd.
 
 \jump\feat{Research Team}
 
@@ -67,7 +70,9 @@ At 16th level, your deductive skills are honed such that you can spot inconsiste
 
 \feat{Arrest}
 
-From 3rd level, when all antagonists have been incapacited, you may take 1 minute to perform a ritual spell to send all nearby targets wearing manacles to a holding cell in Azkaban, where escape is near-impossible. 
+From 3rd level, if you are within touching distance of a target under the influence of the {\it Stunned}, {\it Trapped}, {\it Exhausted}, {\it Terrified} or {\it Major Injury} status effect, you may take a minor action to conjour a pair of mystic manacles around their wrists. The number of manacles you may have active at any one time is equal to half you Detective level. Targets may attempt to break out of these restraints (if they are able to take actions) through a ATH (Strength) resist check, with a DV equal to 3 + your Detective level. 
+
+Once per combat engagement, you may take another major action to send all such manacled entities into a `holding cell', trapping them in the Astral plane. When the combat engagement has ended you may either send all trapped entities to Azkaban, or summon them individually back out of the `cell' for questioning. Entities left in the `cell' more than 5 minutes after combat has ended are returned to this plane of existence, without their manacles.  
 
 \jump
 \feat{Police Tactics}
@@ -77,8 +82,8 @@ At 5th level, and then again at 11th level, you may choose to gain one of the fo
 \begin{itemize}
 	\item {\bf Disarming training:} gain a bonus to the casting check of the {\it Disarm} spell equal to one-third of your Detective level
 	\item {\bf Hand-to-hand Combat:} unarmed strikes do 1d4 ATH (Strength) Bludgeoning damage, and whenever contact is made, target must perform a SPR (Willpower) Resist check against a d10 POW (Intmidation) check or take the {\it Terrified} status. 
-	\item {\bf Combat De-escalation:} perform a CHR (Persuasion) check on an isolated target, DV equal to target SPR attribute. If check succeeds, target lays down their weapons and raises their hands above their head. 
-	\item {\bf Spatial Awareness:} when a pair of enemies attempt to flank you, you may perform a DV15 INT(Perception) check to automatically move up to 1m, such that only one target threatens you (if possible). 
+	\item {\bf Combat De-escalation:} perform a CHR (Persuasion) check on an isolated target, DV equal to target SPR attribute. If check succeeds, target lays down their weapons and raises their hands above their head (such entities are considered viable targest for the {\it Arrest} ability.
+	\item {\bf Spatial Awareness:} when a pair of enemies attempt to flank you, you may perform a DV15 INT(Perception) check to automatically move up to 1m, such that only one target threatens you (if possible). This is in addition to your normal actions, but does not allow you to evade any attacks on you this turn from anyone other than the flanking opponent. 
 \end{itemize}
 
 \jump
@@ -88,6 +93,18 @@ From 7th level if, during an {\it Interview}, the difference between your interr
 \jump\feat{Good-cop/Bad-cop}
 
 From 8th level, when performing an Interview, you may perform a combined d10 POW (Intimidation) and d10 CHR (Persuasion) check for the interrogation. 
+\jump\feat{Evaluate Perp}
+
+From 9th level, when encountering a new threat, your keen eye allows you to infer information about them. The GM will tell you if they are you superior, equal, or inferior in one of the following categories of your choice: ATH, CHR, INT or EVL. At 13th level, you may choose 2 categories. 
+\jump
+\feat{Bent Copper/ Honest Bobby}
+
+At 15th level, you may choose one of the following paths:
+\begin{itemize}
+	\item {\it Corruption:} you gain a +5 bonus to Intimidation proficiency, at the expense of a +4 increase in your EVL attribute. In addition, once per day you may perform an indimidation check on NPCs (DV 10) to curry bribes of up to 5d20 gp.
+	\item {\it Idealism:} you suffer a 3-point penalty to Intimidation proficiency, but whenever the total value of a non-deception CHR check is less than your CHR attribute, you may use that value instead. 
+\end{itemize}
+
 \jump
 \feat{Sherlockian Deception}
 
@@ -102,10 +119,77 @@ From 20th level, your powers of deduction have reached legendary levels, such th
 
 \subsection{Journalist}
 
-\feat{Eavesdrop}
+\jump\feat{Connections}
 
-At 3rd level, you may hear all verbal communication in a 5m radius, even if whispered or behind a door, as if you had the {\it Eavesdrop} charm permanently active. 
+A journalist lives or dies by their connections, so from 3rd level, for every 4 days that you spend in a given location, you may choose to gain one `contact' associated with that location. The maximum number of contacts (across all locations) is equal to twice your journalist level (at any time you may choose to lose any number of contacts from any location). 
 
-At 8th and 15th level, this increases to 10 and 20m radius respectively.
+Whilst in a location, you may call upon your local contacts to gain a +2 bonus (per invoked contact, max +10) to all research or influence checks (or checks otherwise judged to be `journalism' by your GM), or to undertake some simple task which would not normally require a check (such as getting a book out of a library for you). 
 
-\jump
+For every contact invoked, roll a d4, if the result is greater than 1, you lose that contact. Even if the contact is not `burned', you may not call upon them for one more day (you may use other connections, however).
+
+
+\jump\feat{Eavesdrop}
+
+At 4th level, you may hear all verbal communication in a 5m radius, even if whispered or behind a door, as if you had the {\it Eavesdrop} charm permanently active. 
+
+At 8th and 15th level, this increases to 10 and 20m radius respectively. In addition, at 15th level, you become aware of all hidden or invisible creatures in this radius. 
+
+
+
+\jump\feat{Silver Tongued}
+
+From 5th level, when performing an interview, you may choose one of the following checks:
+\begin{itemize}
+	\item {\bf Convince: } 2d10 CHR (Persuasion)
+	\item {\bf Blackmail: } 2d10 INT (Intimidation)
+	\item {\bf Deceive:} 2d10 CHR (Deception)
+\end{itemize}
+
+You may also use your connections-bonus to aid you. 
+ 
+\jump\feat{Press Pass}
+
+From 7th level, gain a number of `tokens' equal to one third your Journalist level. Each token can be pressed into a door lock to disable it for 1d4 minutes, without setting any alarms off. After the requisite amount of time, if the door is not replaced, any alarms or traps associated with the door trigger. If the door is shut when the time elapses, the lock re-engages with no hint it was ever disabled. 
+
+You may restock your `tokens' once per week. 
+
+\jump\feat{Hurtful Words}
+
+At 9th level, your journalism has reached a level of prominence that your words can have a negative effect on your target. 
+
+Once per week, you may state that you have submitted a hurtful article about a person or a group of people. If you encounter a target of your vicious prose, you may remind them of the hurt you did to them, which has the effect of automatically casting the {\it Chaotic Whispers} spell on them as a major action with 2PP. This `spell' is maintained for as long as you continue talking. The number of times you may use this action depends on how many people were targeted by your article, with more specific targets granting you more uses:
+
+\begin{center}
+\begin{rndtable}{c c c }
+Size of targeted group	& 	Number of casts
+\\
+1-5 people	&	Half Journalist level
+\\
+5-10 people	&	Third Journalist level
+\\
+10-50 people	&	Quarter Journalist level
+\\
+50+ people	& 	Once
+\end{rndtable}
+\end{center}
+This counter is reset when you write a new article, targeting a new group. 
+
+
+
+\jump\feat{Contact Curation}
+
+From 11th level, when checking to see if a connection has been `burned', you roll a d4 and the contact is only burned if the result is greater than 2 (decreasing burn chance from 75\% to 50\%).
+
+From 18th level, the check must be equal to a 4 for the contact to be burned. 
+
+
+
+\jump\feat{Influence Opinion}
+
+?? Large scale psychic damage? Or maybe options? Think about it...
+
+\jump\feat{Topple Regime}
+
+From 20th level, you wield such influence with your words that you can bring down governments and corporations. 
+
+By burning 20 contacts, you may learn such a damning secret about a government or business leader that they and their entire circle must immediately resign. You may use your influence to install a regime which complies with a demand that you make...just be careful that this demand is nothing {\it too} outrageous, or you may very quickly find that another journalist topples your new regime, and takes you with it!
