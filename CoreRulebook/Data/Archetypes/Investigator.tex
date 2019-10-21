@@ -6,7 +6,7 @@
 \section{Investigator}
 \blindtext[1]
 
-%%archBegin\archetype{Investigator}{Detective}{Journalist}{0}{featureI=Investigator's Insight, featureII=Interview, featureIII=Interrogator's Demeanor I, alphaFeatureIII=Arrest, betaFeatureIII=Connections, featureIV=Always Alert, betaFeatureIV=Eavesdrop I, alphaFeatureV=Police Tactics I, betaFeatureV=Silver Tongued, featureVI=Interrogator's Demeanor II, alphaFeatureVII=Gut Instinct, betaFeatureVII=Press Pass, alphaFeatureVIII=Good cop/Bad cop, betaFeatureVIII=Eavesdrop II, alphaFeatureIX=Evaluate Perp, betaFeatureIX=Hurtful Words, featureX=Research Team, featureXI=Interrogator's Demeanor III, alphaFeatureXI=Police Tactics II, betaFeatureXI=Contact Curation I, featureXII=Undercover, betaFeatureXII=Influence Opinion, alphaFeatureXIII=Evaluate Perp II, featureXIV=Interrogator's Demeanor IV, alphaFeatureXIV=Bent Copper / Honest Bobby, betaFeatureXV=Eavesdrop III, featureXVI=Illusive Deduction, betaFeatureXVIII=Contact Curation II, alphaFeatureXX=Sherlockian Deception, betaFeatureXX=Topple Regime}%%archEnd
+%%archBegin\archetype{Investigator}{Detective}{Journalist}{0}{featureI=Investigator's Insight, featureII=Interview, featureIII=Interrogator's Demeanor I, alphaFeatureIII=Arrest, betaFeatureIII=Connections, featureIV=Always Alert, betaFeatureIV=Eavesdrop I\comma{} Hurtful Words, alphaFeatureV=Police Tactics I, featureVI=Interrogator's Demeanor II, betaFeatureVI=Influence Morale (d4), alphaFeatureVII=Gut Instinct, alphaFeatureVIII=Good cop/Bad cop, betaFeatureVIII=Silver Tongued, alphaFeatureIX=Evaluate Perp, betaFeatureIX=Influence Morale (d6), featureX=Research Team, betaFeatureX=Contact Curation I, featureXI=Interrogator's Demeanor III, alphaFeatureXI=Police Tactics II, featureXII=Undercover, alphaFeatureXII=Taser, betaFeatureXII=Influence Morale (d8), alphaFeatureXIII=Evaluate Perp II, featureXIV=Interrogator's Demeanor IV, alphaFeatureXV=Bent Copper / Honest Bobby, betaFeatureXV=Influence Morale (d10), featureXVI=Illusive Deduction, betaFeatureXVI=Manipulate Truth, alphaFeatureXVII=Restraining Force, betaFeatureXVIII=Influence Morale (d12), betaFeatureXIX=Contact Curation II, alphaFeatureXX=Sherlockian Deception, betaFeatureXX=Topple Regime}%%archEnd
 
 \end{strip}
 
@@ -77,13 +77,14 @@ Once per combat engagement, you may take another major action to send all such m
 \jump
 \feat{Police Tactics}
 
-At 5th level, and then again at 11th level, you may choose to gain one of the following bonuses:
+At 5th level, and then again at 11th and 19th level, you may choose to gain one of the following bonuses:
 
 \begin{itemize}
 	\item {\bf Disarming training:} gain a bonus to the casting check of the {\it Disarm} spell equal to one-third of your Detective level
 	\item {\bf Hand-to-hand Combat:} unarmed strikes do 1d4 ATH (Strength) Bludgeoning damage, and whenever contact is made, target must perform a SPR (Willpower) Resist check against a d10 POW (Intmidation) check or take the {\it Terrified} status. 
 	\item {\bf Combat De-escalation:} perform a CHR (Persuasion) check on an isolated target, DV equal to target SPR attribute. If check succeeds, target lays down their weapons and raises their hands above their head (such entities are considered viable targest for the {\it Arrest} ability.
 	\item {\bf Spatial Awareness:} when a pair of enemies attempt to flank you, you may perform a DV15 INT(Perception) check to automatically move up to 1m, such that only one target threatens you (if possible). This is in addition to your normal actions, but does not allow you to evade any attacks on you this turn from anyone other than the flanking opponent. 
+	\item {\bf First Aid:} gain a bonus to your Healing proficiency equal to one-quarter your Detective level. 
 \end{itemize}
 
 \jump
@@ -96,14 +97,26 @@ From 8th level, when performing an Interview, you may perform a combined d10 POW
 \jump\feat{Evaluate Perp}
 
 From 9th level, when encountering a new threat, your keen eye allows you to infer information about them. The GM will tell you if they are you superior, equal, or inferior in one of the following categories of your choice: ATH, CHR, INT or EVL. At 13th level, you may choose 2 categories. 
+
+\jump\feat{Taser}
+
+From 12th level, you gain access to a magical device similar in nature to a Taser. This device takes a minor action to use, and auto-casts the {\it Lightning Bolt} spell on a target, with a `casting check' equal to your Detective level (and hence does  2d4 + (Detective level - 5) electric damage). If the target fails the resist check, they become {\it Stunned} for 2 turns. 
+
+This device recharges at a rate of 1 usage per hour, and holds a maximum of 5 discharges. 
+
 \jump
 \feat{Bent Copper/ Honest Bobby}
 
-At 15th level, you may choose one of the following paths:
+At 15th level, having risen through the ranks, you must decude what kind of officer you are going to be:
 \begin{itemize}
 	\item {\it Corruption:} you gain a +5 bonus to Intimidation proficiency, at the expense of a +4 increase in your EVL attribute. In addition, once per day you may perform an indimidation check on NPCs (DV 10) to curry bribes of up to 5d20 gp.
 	\item {\it Idealism:} you suffer a 3-point penalty to Intimidation proficiency, but whenever the total value of a non-deception CHR check is less than your CHR attribute, you may use that value instead. 
 \end{itemize}
+
+\jump
+\feat{Restraining Force}
+
+From 16th level, when casting an explicitly non-lethal (or non-damage causing) spell from the Hexes school, you may add your Arcane Wisdom bonus to the casting check, ignoring the usual once-per-day rule. Normal usage of Arcane Wisdom is unaffected by this skill.  
 
 \jump
 \feat{Sherlockian Deception}
@@ -132,32 +145,14 @@ For every contact invoked, roll a d4, if the result is greater than 1, you lose 
 
 At 4th level, you may hear all verbal communication in a 5m radius, even if whispered or behind a door, as if you had the {\it Eavesdrop} charm permanently active. 
 
-At 8th and 15th level, this increases to 10 and 20m radius respectively. In addition, at 15th level, you become aware of all hidden or invisible creatures in this radius. 
+At 17th level, this increases to 10m radius respectively. In addition, at 15th level, you become aware of all hidden or invisible creatures in this radius. 
 
-
-
-\jump\feat{Silver Tongued}
-
-From 5th level, when performing an interview, you may choose one of the following checks:
-\begin{itemize}
-	\item {\bf Convince: } 2d10 CHR (Persuasion)
-	\item {\bf Blackmail: } 2d10 INT (Intimidation)
-	\item {\bf Deceive:} 2d10 CHR (Deception)
-\end{itemize}
-
-You may also use your connections-bonus to aid you. 
- 
-\jump\feat{Press Pass}
-
-From 7th level, gain a number of `tokens' equal to one third your Journalist level. Each token can be pressed into a door lock to disable it for 1d4 minutes, without setting any alarms off. After the requisite amount of time, if the door is not replaced, any alarms or traps associated with the door trigger. If the door is shut when the time elapses, the lock re-engages with no hint it was ever disabled. 
-
-You may restock your `tokens' once per week. 
 
 \jump\feat{Hurtful Words}
 
-At 9th level, your journalism has reached a level of prominence that your words can have a negative effect on your target. 
+At 4th level, your journalism has reached a level of prominence that your words can have a negative effect on your target. 
 
-Once per week, you may state that you have submitted a hurtful article about a person or a group of people. If you encounter a target of your vicious prose, you may remind them of the hurt you did to them, which has the effect of automatically casting the {\it Chaotic Whispers} spell on them as a major action with 2PP. This `spell' is maintained for as long as you continue talking. The number of times you may use this action depends on how many people were targeted by your article, with more specific targets granting you more uses:
+Once per week, you may state that you have submitted a hurtful article about a person or a group of people, and name a number of connections you used to do so (max = one half your Journalist level). If you encounter a target of your vicious prose, you may remind them of the hurt you did to them, which has the effect of automatically casting the {\it Chaotic Whispers} spell on them as a major action with PP equal to the number of connections dedicated. This `spell' is maintained for as long as you continue talking. The number of times you may use this action depends on how many people were targeted by your article, with more specific targets granting you more uses:
 
 \begin{center}
 \begin{rndtable}{c c c }
@@ -167,26 +162,58 @@ Size of targeted group	& 	Number of casts
 \\
 5-10 people	&	Third Journalist level
 \\
-10-50 people	&	Quarter Journalist level
+10-50 people	&	Quarter Journalist level 
 \\
 50+ people	& 	Once
 \end{rndtable}
 \end{center}
 This counter is reset when you write a new article, targeting a new group. 
 
+\jump\feat{Influence Morale}
+
+From 6th level, you gain the ability to influence sentient beings in real time, either to boost their confidence, or destroy their self-esteem. As a minor action, you may give a d4 dice to any sentient in hearing range. 
+
+At any point in the next 10 minutes, you may direct that being to add or subtract that dice roll from their next check. 
+
+The size of dice you can give increases incrementally at higher levels: die increases by 2 at 9th, 12th, 15th and 18th level.
+
+
+
+
+%~\jump\feat{Press Pass}
+
+%~From 7th level, gain a number of `tokens' equal to one third your Journalist level. Each token can be pressed into a simple door lock to disable it for 1d4 minutes, without triggering any associated warnings or alarms. After the requisite amount of time, if the door is not replaced, any alarms or traps associated with the door trigger. If the door is shut when the time elapses, the lock re-engages with no hint it was ever disabled. 
+
+%~You may restock your `tokens' once per week. 
+
+
+\jump\feat{Silver Tongued}
+
+From 8th level, when performing an interview, you may choose one of the following checks:
+\begin{itemize}
+	\item {\bf Convince: } 2d10 CHR (Persuasion)
+	\item {\bf Blackmail: } 2d10 INT (Intimidation)
+	\item {\bf Deceive:} 2d10 CHR (Deception)
+\end{itemize}
+
+You may also use your connections-bonus to aid you. 
+ 
 
 
 \jump\feat{Contact Curation}
 
-From 11th level, when checking to see if a connection has been `burned', you roll a d4 and the contact is only burned if the result is greater than 2 (decreasing burn chance from 75\% to 50\%).
+From 10th level, when checking to see if a connection has been `burned', you roll a d4 and the contact is only burned if the result is greater than 2 (decreasing burn chance from 75\% to 50\%).
 
-From 18th level, the check must be equal to a 4 for the contact to be burned. 
+From 19th level, the check must be equal to a 4 for the contact to be burned. 
 
+\jump\feat{Manipulate Truth}
 
+At 16th level, choose one of the following bonuses:
 
-\jump\feat{Influence Opinion}
-
-?? Large scale psychic damage? Or maybe options? Think about it...
+\begin{itemize}
+	\item {\bf Truth-teller}: as a minor action, you may break any illusion or otherwise mind-altering spells active on an ally within touching distance.
+	\item {\bf Lie-seller}: you may use your Arcane Wisdom on all Deception checks without the once-per-day rule. Other uses of the AW are unaffected.  
+\end{itemize}
 
 \jump\feat{Topple Regime}
 
