@@ -6,4 +6,4 @@ run assembleStatus.m
 run assembleWeapons.m
 run assembleArchetypes.m
 run assembleTools.m
-quit;
+%quit;

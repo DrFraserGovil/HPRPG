@@ -1,17 +1,6 @@
 skills= readtable('skills.xlsx');
 [n,~] = size(skills);
-%skills = sortrows(skills);
-for i = 1:n
-    j = skills.Prerequisite{i};
-    e = 6;
-    if length(j) < 6
-        e = length(j);
-    end
-    r = str2num(j(4:e));
-    if (size(r) > 0)
-        skills.LVL(i) = r;
-    end
-end
+
 
 
 %statuses = sortrows(statuses,5);
