@@ -2,9 +2,47 @@
 
 
 \chapter{Spells}
-
+\small
 Spells are how Wizards and Witches get by in the world, it is what makes them special. 
 
+
+
+\section{Magical Schools}
+
+The study of magic is a far-reaching field, which encompasses many different areas and skills -- some of which require vastly different skillsets to use. For this reason, a magical taxonomy was introduced by the Wizangemot in 1755, which divides the study of magic up into 7 `Schools', each of which contains a number of `Disciplines'. 
+
+\def\w{5}
+\def\x{1.2}
+\newcommand\col[2]{\multicolumn{1}{c}{\parbox[t]{#2 cm}{\raggedright #1}}}
+
+
+\newcommand\school[5]
+{
+\cline{1-3}
+	\cellcolor{\tablecolorhead}	& 	\col{#2}{\x}	& 	\col{#3}{\w} 	\\ \cline{2-3}
+   \cellcolor{\tablecolorhead}\multirow{-2}{*}{\bf #1}& \col{#4}{\x} & \col{#5}{\w} 
+}
+\footnotesize
+\begin{center}
+	\begin{rndtable}{c m{\x cm} p{\w cm}}
+	School	&	Discipline	&	Description
+	\\
+	\school{Jinxes}{Hexes}{Hexes are a field which focusses on magic that directly harms the targeted person or object.}{Curses}{Unlike hexes, curses do not directly harm the target but instead incapacitates them, inhibits their capabilities, or otherwise reduces the threat they pose.}
+   \\ 
+	\school{Transfiguration}{Alteration}{The alteration discipline studies the ability to change things from one form into another.}{Conjuration}{Conjuration magic is concerned with the ability to summon new objects and beings out of thin air.}
+	\\
+	\school{Charms}{Elemental}{Elemental magic studies the manipulation and invocation of very primal forces -- heat, light, energy and matter, and the classical elements.}{Kinesis}{Kinesis magic is a catchall term for the everyday magic that most wizards rely on. It mostly consists of moving an manipulating physical objects.}
+	\\
+	\school{Recuperation}{Healing}{Healing is, unsurprisingly, the study of magic used to heal the sick and wounded.}{Warding}{Warding magic is almost entirely defensive in nature, allowing the caster to protect themselves and others from harm.}
+	\\
+	\school{Divination}{Telepathy}{Telepathic magic is the study of the human mind, and that which extends the senses.}{Temporal}{One of the most mysterious disciplines, temporal magic allows one to see beyond concerns such as time and space, and observe (and perhaps manipulate) the universe at an extraplanar level}
+	\\
+	\school{Illusion}{Bewitchment}{This discipline focusses on the gentle persuasion of the mind and the manipulation of images to convince the target of something which is not true.}{Psionics}{A darker side of illusion magics, psionics is the art of imposing your will over that of your target -- an act which usually shatters the sanity of the target.}
+	\\
+	\school{Dark Arts}{Necromancy}{A taboo discipline that attempts to bend the very forces of life and death to the will of the caster}{Occultism}{Occultism is a rarely studied discipline that accesses energies originating from the Eldritch domain -- powerful, yet highly unpredictable.}
+	\end{rndtable}
+\end{center}
+\normalsize
 
 
 \section{Casting Spells}
@@ -43,7 +81,7 @@ There are two ways to cast a spell -- either by reading it from the pages of a b
 
 For each of the 7 schools of magic, there are 5 textbooks. Each of these 35 textbooks is associated with a spell-level and a school, and contains all the spells in that school for that level. For example, the book {\it Dark Forces: A Guide to Self Protection} is a level 4 Hexes \& Curses book, and so contains all level level 4 Hexes \& Curses, but {\bf not} the 3rd level spells, for example. 
 
-To cast a spell from a book, you must be holding the a book which contains the specified spell in one hand, and your wand in another. You must then perform the checks, and the spell will be cast. Casting like this {\it always} takes one major action (i.e. it is unaffected by {\it Fast Caster} feats etc. and cannot be used as a {\it quickcast}), Power Points may not be dedicated to the spell, and you are open to {\it Attacks of Opportunity} when doing this in combat. Swapping books takes a major action. 
+To cast a spell from a book, you must be holding the a book which contains the specified spell in one hand, and your wand in another. You must then perform the checks, and the spell will be cast. Casting like this takes twice as long as normal, often has a higher casting check and fortitude cost associated with it, and you are open to {\it Attacks of Opportunity} when doing this in combat. Swapping books takes a major action. 
 
 If, however, you become familiar with a spell, then it is no longer necessary to have the book in your possession -- you can cast from memory. Spells cast from memory are almost always superior, and may be used as quickcast actions etc. 
 
@@ -59,6 +97,29 @@ Casting spells is not as simple as waving your wands and saying the magic words 
 Each spell has an associated FP cost, which is deducted only after it is successfully cast. If the casting fails, then only half of the fortitude cost is deducted (rounded up).
  
 You cannot cast a spell if it would send you into negative FP -- you must wait for your head to clear before attempting that spell.  
+
+The fortitude cost of a given spell is determined by the spell type (Instant, Concentration,Ritual etc.) and the difficulty of the spell, and if the spell is cast from memory or not. A book-cast spell has a 50% higher FP cost than if the caster is familiar with the spell. 
+
+The table below gives the memory-cast FP cost first, with the book-cast cost in brackets.
+
+\begin{center}
+	\begin{rndtable}{c |c c | c c |c c| c c}
+		~ & \multicolumn{2}{c}{Instant} & \multicolumn{2}{c}{Concentration} & \multicolumn{2}{c}{Ward} & \multicolumn{2}{c}{Ritual}
+		\\
+		\cellcolor{\tablecolorhead} Beginner & 	3 &(5) 	& 	2 &(3)	& 	4 &(6) 	& 	 3&(5)
+		\\
+		\cellcolor{\tablecolorhead} Novice	& 	5 &(8)	&	3 &(4)	&	6&(9)	&	5 &(8)
+		\\
+		\cellcolor{\tablecolorhead} Adept	&	7 &(11)	&	5& (8)	&	8 &(12)	&	8 &(12)
+		\\
+		\cellcolor{\tablecolorhead} Expert	&	9 &(14)	&	7 &(11)	&	10 &(15)	&	10 &(15)
+		\\
+		\cellcolor{\tablecolorhead} Master	&	12 &(18)	&	8& (12)	&	12 &(18)	&	15 &(23)
+	\end{rndtable}
+\end{center}
+
+Some rare spells are noted as having a different FP cost than this stated value. If so, that value should be used instead. 
+
 
 \subsection{Power Points}
 
