@@ -18,7 +18,8 @@ function assembleSpells2(maxLevel)
     for i = 1:length(files)
         schoolArray = Spell.empty;
         disp(files{i})
-        spells= readtable(files{i});
+        q = strcat('Spells/',files{i});
+        spells= readtable(q);
 
         [n,~] = size(spells);
 
