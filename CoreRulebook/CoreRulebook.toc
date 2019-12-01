@@ -135,15 +135,16 @@
 \contentsline {part}{IV\hspace {1em}Magic}{80}{part.4}
 \contentsline {chapter}{\numberline {19}Spells}{81}{chapter.19}
 \contentsline {section}{\numberline {19.1}Magical Schools}{81}{section.19.1}
-\contentsline {section}{\numberline {19.2}Casting Spells}{81}{section.19.2}
-\contentsline {subsection}{\numberline {19.2.1}Spellbooks and Memory}{81}{subsection.19.2.1}
-\contentsline {subsection}{\numberline {19.2.2}Fortitude}{82}{subsection.19.2.2}
-\contentsline {subsection}{\numberline {19.2.3}Power Points}{82}{subsection.19.2.3}
-\contentsline {section}{\numberline {19.3}Spell Types}{82}{section.19.3}
-\contentsline {subsection}{\numberline {19.3.1}Instant}{82}{subsection.19.3.1}
-\contentsline {subsection}{\numberline {19.3.2}Concentration}{82}{subsection.19.3.2}
-\contentsline {subsection}{\numberline {19.3.3}Ward}{82}{subsection.19.3.3}
-\contentsline {subsection}{\numberline {19.3.4}Ritual}{83}{subsection.19.3.4}
+\contentsline {section}{\numberline {19.2}Spell Types}{81}{section.19.2}
+\contentsline {subsection}{\numberline {19.2.1}Instant}{81}{subsection.19.2.1}
+\contentsline {subsection}{\numberline {19.2.2}Concentration}{81}{subsection.19.2.2}
+\contentsline {subsection}{\numberline {19.2.3}Ward}{81}{subsection.19.2.3}
+\contentsline {subsection}{\numberline {19.2.4}Ritual}{82}{subsection.19.2.4}
+\contentsline {section}{\numberline {19.3}Casting Spells}{82}{section.19.3}
+\contentsline {subsection}{\numberline {19.3.1}Spellbooks and Memory}{82}{subsection.19.3.1}
+\contentsline {subsection}{\numberline {19.3.2}Casting Checks}{82}{subsection.19.3.2}
+\contentsline {subsection}{\numberline {19.3.3}Fortitude}{83}{subsection.19.3.3}
+\contentsline {subsection}{\numberline {19.3.4}Power Points}{83}{subsection.19.3.4}
 \contentsline {section}{\numberline {19.4}Spell Shapes}{83}{section.19.4}
 \contentsline {subsection}{\numberline {19.4.1}Circle}{83}{subsection.19.4.1}
 \contentsline {subsection}{\numberline {19.4.2}Cone}{83}{subsection.19.4.2}
