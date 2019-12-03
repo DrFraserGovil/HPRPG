@@ -3,8 +3,10 @@ classdef Spell
     properties
         Name
         School
+        Discipline
         Incantation
         Type
+        Symbol
         Level
         LevelName
         FP
@@ -23,8 +25,10 @@ classdef Spell
         function obj = Spell()
            obj.Name = "Null";
            obj.School = "Null";
+           obj.Discipline = "Null";
            obj.Incantation = "Null";
            obj.Type = "Nonetype";
+           obj.Symbol = "";
            obj.Level = 0;
            obj.LevelName = "None";
            obj.FP = 0;
@@ -42,6 +46,7 @@ classdef Spell
         function obj = ReadLine(obj,line,school)
             obj.Name = line.Name{1};
             obj.School = school;
+            obj.Discipline = line.Discipline{1};
             obj.Incantation = line.Incantation{1};
             obj.Type = line.Type{1};
             
@@ -51,10 +56,15 @@ classdef Spell
             obj.Level = n;
             obj.LevelName = name;
             
-            obj.FP = line.Fortitude;
-            obj.Check = line.Attribute{1};
-            obj.Proficiency = line.Proficiency{1};
-            obj.DV = line.Difficulty;
+            spellTypes = {"Instant","Concentration","Ritual","Ward","Music","Beast"};
+            symbs = {"\\instSymb","\\concSymb","\\ritSymb","\\wardSymb","\\musicSymb","\\beastSymb"};
+            for i = 1:length(spellTypes)
+                
+                if ~isempty(strfind(obj.Type,spellTypes{i}))
+                    obj.Symbol = symbs{i};
+                    
+                end
+            end
             obj.Effect = line.Effect{1};
             obj.Duration = line.Duration{1};
             obj.HigherLevel = line.HigherLevel{1};
@@ -68,12 +78,10 @@ classdef Spell
             t = "\\spell{";
             t = t+ "name = " + prepareText(sp.Name)+", ";
             t = t + "school = " + sp.School+", ";
+            t = t + "discipline = " + sp.Discipline+", ";
             t = t + "type = " + prepareText(sp.Type)+", ";           
             t = t + "level =" + sp.LevelName+", ";
-            t = t + "fp = " + num2str(sp.FP)+", ";
-            t = t + "attribute =" + sp.Check+", ";
-            t = t + "dv = " + num2str(sp.DV)+", ";
-            
+
             %% conditionals  
             if isempty(sp.Incantation)
                 t = t + "noIncant = 1, ";

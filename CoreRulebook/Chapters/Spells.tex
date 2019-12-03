@@ -249,13 +249,19 @@ A sphere's point of origin lies at the centre, and the spell effect expands equa
 \onecolumn
 \chapter{Spell List} \label{S:SpellList}
 
-This section contains a list of all the spells available in the game. First, the spells are presented broken down into the school and level to which they belong. The next section then contains a full description of the spell, including its casting check, casting difficulty, and spell effects.
-
-Spells marked with a (*) gain more effects, or increase in power, at higher levels. 
-
+This section contains a list of all the spells available in the game. First, the spells are presented broken down into the school and level to which they belong. The next section then contains a full description of the spell, including its casting check, casting difficulty, and spell effects. Spells marked with a (*) gain more effects, or increase in power, at higher levels. 
+\def\s{0.3}
+\def\w{2.6}
+\def\instSymb{\faMagic}
+\def\concSymb{\faEye}
+\def\wardSymb{\faShield}
+\def\musicSymb{$\twonotes$}
+\def\ritSymb{$\largepentagram$}
+\def\beastSymb{\faPaw}
 \define@key{spell}{name}{\def\name{#1}}
 \define@key{spell}{incant}{\def\incant{#1}}
 \define@key{spell}{school}{\def\school{#1}}
+\define@key{spell}{discipline}{\def\discipline{#1}}
 \define@key{spell}{type}{\def\type{#1}}
 \define@key{spell}{level}{\def\level{#1}}
 \define@key{spell}{fp}{\def\fp{#1}}
@@ -276,14 +282,14 @@ Spells marked with a (*) gain more effects, or increase in power, at higher leve
 \define@key{spell}{noResist}{\def\resistMode{#1}}
 \newcommand{\spell}[1]
 {
-	\setkeys{spell}{name=None,incant = -, school = None, type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0,noDur=0,duration=None,higher=None,noHigh=0,travel = None,noTravel = 0, resist = None, resistDV = none, noResist = 0}
+	\setkeys{spell}{name=None,incant = -, school = None, discipline=None,type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0,noDur=0,duration=None,higher=None,noHigh=0,travel = None,noTravel = 0, resist = None, resistDV = none, noResist = 0}
 	\setkeys{spell}{#1}
 	\vbox{
 	{\normalsize \color{rulered}\name }
 	\footnotesize
 	
 		
-	{\it \level{}-level \school{}} 
+	{\it \level{}-level \school{} (\discipline)} 
 	\vspace{1ex}
 	
 	\begin{tabular}{l  l }
@@ -302,14 +308,6 @@ Spells marked with a (*) gain more effects, or increase in power, at higher leve
 	\if\durMode0
 		{\bf Duration}  & \duration \\
 	\fi
-	
-	{\bf Fortitude:} & \fp \\
-	
-	{\bf Check:} &  \att
-	\if\profMode0 
-		({\it \prof})
-	\fi
-	,  DV  \dv \\
 	
 	\if\resistMode0
 		{\bf Resist: } & \resist,  DV \resistDV \\

@@ -1,6 +1,7 @@
 \documentclass[oneside, twocolumn,9pt,english]{extbook}
-\usepackage{fontspec}
+\usepackage[no-math]{fontspec}
 \usepackage{array}
+\usepackage{MnSymbol}
 \usepackage{blindtext}
 \usepackage{subfiles}
 \usepackage{longtable}
@@ -23,6 +24,9 @@
 \usepackage{keyval}
 \usepackage{pgfkeys}
 \def\apos{'}
+\usepackage{MnSymbol}
+\usepackage{fontawesome}
+\usepackage[notextcomp]{stix}
 \usepackage{makecell}
 \usepackage{environ}
 
@@ -55,7 +59,7 @@
 \newfontfamily{\HP}{[ParryHotter.TTF]}
 \newcommand\dndFont{texgyrebonum}
 \setmainfont[BoldFont = \dndFont-bold.otf,ItalicFont = \dndFont-italic.otf,BoldItalicFont = \dndFont-bolditalic.otf]{\dndFont-regular.otf}
-\newcommand{\minus}{-}
+\renewcommand{\minus}{-}
 \def\comma{,}
 \def\dash{-}
 

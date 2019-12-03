@@ -1,74 +1,146 @@
-files ={'hexes.xlsx','transfiguration.xlsx','charms.xlsx','recuperation.xlsx','illusion.xlsx','divination.xlsx','darkarts.xlsx'};
+function disciplineArray =  assembleSpells(maxLevel)
+    if nargin < 1
+        maxLevel =5;
+    end
+    order = [4,  6 ,1,5,3,2,7];
+    files ={'hexes.xlsx','transfiguration.xlsx','charms.xlsx','recuperation.xlsx','illusion.xlsx','divination.xlsx','darkarts.xlsx'};
 
-sectionHeads = {'Hexes \& Curses', 'Transfiguration','Charms','Recuperation','Illusion','Divination','Dark Arts'};
-filler ={'Combat-based magic, used to incapacitate or even inflict pain upon your enemies.','Alter the very fabric of reality with these spells, changing one thing, into another and even conjuring things from thin air.  ',...
-    'Manipulate objects with magic: cause things to levitate, fix things that are broken and control the elements.',...
-    'Set up wards and protective barriers, and heal those who are injured. Recuperative magic is used to stop further harm coming to individuals under your protection. ',...
-    'Impose your will on other people, and alter the way they perceive the world.',...
-    'Peer through the mystic veil and perceive things beyond human comprehension: past, present and future.',...
-    'Evil spells, used by evil people. Expect a heavy burden on your soul if you rely on the dark arts to accomplish your goals.'};
-[files,I] =sort(files);
-sectionHeads = sectionHeads(I);
-filler = filler(I);
+    sectionHeads = {'Malediction', 'Transfiguration','Charms','Recuperation','Illusion','Divination','Dark Arts'};
+    singularHeads = {'Malediction','Transfiguration','Charm','Recuperant','Illusion','Divination','Dark Art'};
+    [order,I] =sort(order);
+    files = files(I);
+    sectionHeads = sectionHeads(I);
+    singularHeads = singularHeads(I);
+    allSpells = Spell.empty;
+    schoolSpells = {};
+    b = 1;
+    cutoff = maxLevel;
+    disciplineArray = Spell.empty;
+    
+    %% Read in spells
+    for i = 1:length(files)
+        schoolArray = Spell.empty;
+        c1 = 0;
+        c2 = 0;
+        disp(files{i})
+        q = strcat('Spells/',files{i});
+        spells= readtable(q);
 
-
-fileName = '../Chapters/Spells.tex';
-readFile = fileread(fileName);
-
-insertPoint = strfind(readFile, '%%SpellBegin');
-
-endPoint = strfind(readFile, '%%SpellEnd');
-
-firstHalf = readFile(1:insertPoint+12);
-secondHalf = readFile(endPoint:end);
-text = '';
-
-for i = 1:length(files)
-    files{i}
-    statuses= readtable(files{i});
-    [n,~] = size(statuses);
-    statuses = sortrows(statuses);
-    for j = 1:n
-        statuses.Name{j};
-        m = statuses.Level{j};
-        e = 6;
-        if length(m) < 6
-            e = length(m);
+        [n,~] = size(spells);
+        disc1 = -1;
+        for j = 1:n
+            newSpell = Spell();
+            newSpell = newSpell.ReadLine(spells(j,:),singularHeads{i});
+            
+            if disc1 == -1
+                disc1 = newSpell.Discipline;
+            end
+            discID = 2;
+            if strcmp(newSpell.Discipline,disc1) == 0
+                discID = 1;
+                c1 = c1 +1;
+                c = c1;
+            else 
+                discID = 2;
+                c2 = c2 + 1;
+                c = c2;
+            end
+            L = newSpell.Level;
+            if L <=cutoff
+                allSpells(b) = newSpell;
+                disciplineArray(i,discID,c) = newSpell;
+                 
+                b= b+1;
+            end
         end
+
+    end
+    %% Assemble school-ordered lists
+
+
+    schoolList = '\\scriptsize';
+    for j = 1:length(files)
+         t = "\\vbox{\\subsection{" + sectionHeads{j} + "}\n";
+       
+        for k = 1:2  
+            t = t + "\n";
+            array = Spell.empty;
+
+            [~,~,r] = size(disciplineArray(j,k,:));
+            
+            for q = 1:r 
+                if disciplineArray(j,k,q).Level > 0 
+                    disciplineArray(j,k,q);
+                    array(end+1) = disciplineArray(j,k,q);
+                end
+            end
+             t = t + "\n\\vbox{\\subsubsection{" + array(1).Discipline + "}\n\n";
+            [~,I] = sort([array.Level]);
+            array = array(I);
+            N = length(array);
+            lvlArrays = Spell.empty;
+            
+            cs = [1,1,1,1,1];
+            for i = 1:N
+                L = array(i).Level;
+                lvlArrays(L,cs(L)) = array(i);
+                cs(L) = cs(L) + 1;
+            end
+            
+            col = ">{\\centering\\arraybackslash}m{\\w cm} >{\\centering\\arraybackslash}m{\\s cm}";
+            t = t + "\\begin{rndtable}{"+ col + col + col + col + col + "}\n";
+            t = t + "\\multicolumn{2}{c}{Level 1}   &  \\multicolumn{2}{c}{Level 2} & \\multicolumn{2}{c}{Level 3} & \\multicolumn{2}{c}{Level 4} & \\multicolumn{2}{c}{Level 5} \n\\\\\n";
+            [~,l] = size(lvlArrays);
+            for i = 1:l
+                for p = 1:5
+                    if p > 1
+                        t = t + "&";
+                    end
+                    sp = lvlArrays(p,i);
+                    if sp.Level > 0
+                        n = prepareText(sp.Name);
+                        if ~isempty(sp.HigherLevel)
+                            n = n + " (*)";
+                        end
+                        n = n + "& " + sp.Symbol;
+                        t = t + n;
+                    else
+                        t = t + "~&~";
+                    end
+                end
+                 t = t + "\n\\\\\n";
+            end
+             
+            t = t + "\\end{rndtable}}";
+            if k == 1
+                t = t + "}";
+            end
+            t = t + "\n\n";
+           
+        end
+         schoolList = schoolList + t + " "; % pageJump;
+    end
+    schoolList = schoolList + "~\\vfill~\\clearpage\\normalsize";
+
+    %% Assemble alphabetised lists
+    alphList = '\\begin{multicols}{3}';
+    [~,I] = sort({allSpells.Name});
+    allSpells = allSpells(I);
+
+    for j = 1:length(allSpells)
+        sp = allSpells(j);
+        t = sp.output();
         
-        r = str2num(m(1));
-        if (size(r) > 0)
-            statuses.LVL(j) = r;
-        end
+        alphList = strcat(alphList, t, "\n");
+
     end
-    
-    
-    statuses = sortrows(statuses,1);
-    statuses = sortrows(statuses,3);
-    t = '';
-    if i > 1
-       t = '\newpage'; 
+
+    fullText = schoolList + alphList + "\\end{multicols}";
+    fileName = '../Chapters/SpellList.tex';
+    if cutoff < 3
+        fileName =  '../Chapters/SpellListShort.tex';
     end
-    title = [t '\subsection*{', sectionHeads{i}, '} \addcontentsline{toc}{section}{Spell School: ',sectionHeads{i},' } ', filler{i} '\\ '];
-    preamble = '\footnotesize \begin{center} \tablealternate \begin{longtable}{|m{\t cm} m{\u cm} m{\v cm} m{\w cm} m{\x cm} m{\z cm}|}';
-    headers = '\hline \tablehead {\normalsize \bf Name } & {\normalsize \bf Class} & {\normalsize \bf Mastery}& {\normalsize \bf FP}  & {\normalsize \bf Check} & \bf {\normalsize Effect}  \\ \hline \hline ';
-    
-    text = [text title preamble headers];
-    
-    
-    
-    for (i = 1:n)
-        line = ['\bf \begin{center}' statuses.Name{i}, '\end{center} &  \parbox[t]{\u cm}{\begin{center}',  statuses.Class{i}, '\end{center}}',...
-            '  &   \parbox[t]{\v cm}{\begin{center}', statuses.Level{i}(3:end), '\end{center}}',...
-            '  &   \parbox[t]{\w cm}{\begin{center}', num2str(statuses.Fortitude(i)), '\end{center}}',...
-            ' &    \parbox[t]{\x cm}{\begin{center} ',  statuses.Check{i} '\par Target: ', num2str(statuses.Difficulty(i)),'\end{center}}',...
-            '&      \parbox[t]{\z cm}{\begin{flushleft}', statuses.Effect{i}, '\end{flushleft}} \\  '];
-        text = [text line];
-    end
-    ender = '\hline\end{longtable} \end{center} \normalsize \vspace{2ex}';
-    
-    text = [text ender];
+    FID = fopen(fileName,'w');
+    fprintf(FID, fullText);
+    fclose(FID);
 end
-fullText = [firstHalf, text, secondHalf];
-FID = fopen(fileName,'w');
-fwrite(FID, fullText);
