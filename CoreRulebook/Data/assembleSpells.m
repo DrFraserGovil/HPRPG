@@ -1,4 +1,4 @@
-function disciplineArray =  assembleSpells(maxLevel)
+function assembleSpells(maxLevel)
     if nargin < 1
         maxLevel =5;
     end
@@ -24,8 +24,7 @@ function disciplineArray =  assembleSpells(maxLevel)
         c2 = 0;
         disp(files{i})
         q = strcat('Spells/',files{i});
-        spells= readtable(q);
-
+        spells= readtable(q);     
         [n,~] = size(spells);
         disc1 = -1;
         for j = 1:n
@@ -74,6 +73,9 @@ function disciplineArray =  assembleSpells(maxLevel)
                     array(end+1) = disciplineArray(j,k,q);
                 end
             end
+            
+            [~,I]= sort({array.Name});
+            array =array(I);
              t = t + "\n\\vbox{\\subsubsection{" + array(1).Discipline + "}\n\n";
             [~,I] = sort([array.Level]);
             array = array(I);
