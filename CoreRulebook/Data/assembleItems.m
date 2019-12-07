@@ -22,7 +22,7 @@ text = prepareText(text);
 [n,~] = size(items);
 descriptionText = "";
 line = "";
-split = 35;
+split = 30;
 if 2*split < n
 	disp ("Split value too low. Not all values will display")
 end
@@ -33,13 +33,13 @@ for (i = 1:split)
 	weight = prepareText(items.Weight{i});
 	cost = prepareText(num2str(items.Cost(i)));
 	description = prepareText(items.Description{i});
-	line = strcat('\t  \\parbox[t]{\\q cm}{\\bf \\raggedright \\footnotesize',{' '}, tool, '}\t&\t  ', weight, '\t&\t', cost, ' gold ');
+	line = strcat('\t  \\parbox[t]{\\q cm}{\\bf \\raggedright \\footnotesize',{' '}, tool, '}\t&\t  ', weight, '\t&\t', cost, 'gp');
 	
 	if description~=""
 		entry = strcat('\n \n \\generic{',tool,'}{',description,'}');
 		descs{i} = entry;
 	else
-		descs{j} = "";
+		descs{i} = "";
 	end
 	j = split + i;
 	if j <= n
@@ -48,7 +48,7 @@ for (i = 1:split)
 		cost = prepareText(num2str(items.Cost(j)));
 		description = prepareText(items.Description{j});
 		
-		line = strcat(line,'\t&~&\t \\bf \\parbox[t]{\\q cm}{\\raggedright \\footnotesize',{' '}, tool, '}\t&\t  ', weight, '\t&\t', cost, ' gold \\\\ \n');
+		line = strcat(line,'\t&~&\t \\bf \\parbox[t]{\\q cm}{\\raggedright \\footnotesize',{' '}, tool, '}\t&\t  ', weight, '\t&\t', cost, 'gp \\\\ \n');
 
 		if description~=""
 			entry = strcat('\n \n \\generic{',tool,'}{',description,'}');
