@@ -5,9 +5,9 @@ fileName = '../Chapters/Adventuring.tex';
 readFile = fileread(fileName);
 
 
-insertPoint = strfind(readFile, '%%ArtefactBegin')
+insertPoint = strfind(readFile, '%%ArtefactBegin');
 
-endPoint = strfind(readFile, '%%ArtefactEnd')
+endPoint = strfind(readFile, '%%ArtefactEnd');
 
 firstHalf = prepareText(readFile(1:insertPoint+15));
 
