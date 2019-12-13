@@ -6,6 +6,49 @@
 This section contains a brief summary of the tables needed for spellcasting. This serves as a useful printout to have on hand, to avoid arduous page-flipping. 
 
 \begin{multicols}{2}
-\blindtext[5]
+\def\xS{2}
+\def\wS{2}
+\subsection{Casting Checks}
+
+\begin{center}
+	\begin{rndtable}{c m{\xS cm} p{\wS cm}}
+	\bf School	&	\bf Discipline	&	\bf Attribute
+	\\
+	\school{Charms}{Elemental}{\ElCheck}{Kinesis}{\KinCheck}
+	\\
+	\school{Divination}{Telepathy}{\TelCheck}{Temporal}{\TemCheck}
+	\\
+	\school{Illusion}{Bewitchment}{\BewCheck}{Psionics}{\PsiCheck}
+	\\
+	\school{Malediction}{Hexes}{\HexCheck}{Curses}{\CurCheck}
+   \\ 
+   \school{Recuperation}{Healing}{\HeaCheck}{Warding}{\WarCheck}
+	\\
+	\school{Transfiguration}{Alteration}{\AltCheck}{Conjuration}{\ConCheck}
+	\\
+	\school{Dark Arts}{Necromancy}{\NecCheck}{Occultism}{\OccCheck}
+	\end{rndtable}
+\end{center}
+
+\subsection{FP Costs}
+When a spell is successfully cast, use the level and type of spell to determine the FP cost to deduct from your FP reservoir. Failed spells cost half the amount of a successful spell and Resisting a spell costs 2FP.
+\small
+\begin{center}
+	\begin{rndtable}{p {1.2cm} |c m{\wFP cm} | c m{\wFP cm} |c m{\wFP cm}| c m{\wFP cm}}
+		~ & \multicolumn{2}{c}{\bf Instant} & \multicolumn{2}{c}{\bf Focus} & \multicolumn{2}{c}{\bf Ward} & \multicolumn{2}{c}{\bf Ritual}
+		\\
+		\cellcolor{\tablecolorhead} Beginner & 	\FPEntry{\FPBegI}  & 	\FPEntry{\FPBegC}	& 	\FPEntry{\FPBegW} 	& 	\FPEntry{\FPBegR}
+		\\
+		\cellcolor{\tablecolorhead} Novice	& 	\FPEntry{\FPNovI}  & 	\FPEntry{\FPNovC}	& 	\FPEntry{\FPNovW} 	& 	\FPEntry{\FPNovR}
+		\\
+		\cellcolor{\tablecolorhead} Adept	&	\FPEntry{\FPAdpI}  & 	\FPEntry{\FPAdpC}	& 	\FPEntry{\FPAdpW} 	& 	\FPEntry{\FPAdpR}
+		\\
+		\cellcolor{\tablecolorhead} Expert	&	\FPEntry{\FPExpI}  & 	\FPEntry{\FPExpC}	& 	\FPEntry{\FPExpW} 	& 	\FPEntry{\FPExpR}
+		\\
+		\cellcolor{\tablecolorhead} Master	&	\FPEntry{\FPMasI}  & 	\FPEntry{\FPMasC}	& 	\FPEntry{\FPMasW} 	& 	\FPEntry{\FPMasR}
+	\end{rndtable}
+\end{center}
+\normalsize
+FP Regenerates at a rate of 2FP per turn cycle in which no FP was deducted. 
 \end{multicols}
 \end{landscape}

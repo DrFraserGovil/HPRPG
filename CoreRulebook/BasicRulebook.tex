@@ -1,15 +1,15 @@
 \documentclass[oneside, twocolumn,9pt,english]{extbook}
-\usepackage{fontspec}
+\usepackage[no-math]{fontspec}
 \usepackage{array}
+\usepackage{MnSymbol}
 \usepackage{blindtext}
 \usepackage{subfiles}
 \usepackage{longtable}
 \usepackage{float}
-\usepackage{babel}
 \usepackage{cuted}
 \usepackage{csquotes}
 \usepackage{graphicx}
-\usepackage[left = 0.45in, right = 0.45 in, top = 0.45in, bottom = 0.45in]{geometry}
+\usepackage[left = 0.4in, right = 0.4 in, top = 0.45in, bottom = 0.42in]{geometry}
 \usepackage{titlesec}
 \usepackage{amsmath}
 \usepackage{lscape}
@@ -23,8 +23,14 @@
 \usepackage{tcolorbox}
 \usepackage{keyval}
 \usepackage{pgfkeys}
+\usepackage{lscape}
 \def\apos{'}
+\usepackage{MnSymbol}
+\usepackage{fontawesome}
+\usepackage[notextcomp]{stix}
+\usepackage{makecell}
 \usepackage{environ}
+
 \usepackage{array}
 \usepackage[hidelinks]{hyperref}
 
@@ -54,7 +60,7 @@
 \newfontfamily{\HP}{[ParryHotter.TTF]}
 \newcommand\dndFont{texgyrebonum}
 \setmainfont[BoldFont = \dndFont-bold.otf,ItalicFont = \dndFont-italic.otf,BoldItalicFont = \dndFont-bolditalic.otf]{\dndFont-regular.otf}
-\newcommand{\minus}{-}
+\renewcommand{\minus}{-}
 \def\comma{,}
 \def\dash{-}
 
@@ -116,10 +122,75 @@
   \end{tikzpicture}
 }
 
+
+
+
+\def\FPBegI{3}
+\def\FPNovI{5}
+\def\FPAdpI{7}
+\def\FPExpI{9}
+\def\FPMasI{12}
+\def\FPBegC{2}
+\def\FPNovC{3}
+\def\FPAdpC{5}
+\def\FPExpC{7}
+\def\FPMasC{8}
+\def\FPBegW{4}
+\def\FPNovW{6}
+\def\FPAdpW{8}
+\def\FPExpW{10}
+\def\FPMasW{12}
+\def\FPBegR{3}
+\def\FPNovR{5}
+\def\FPAdpR{8}
+\def\FPExpR{10}
+\def\FPMasR{15}
+\def\wFP{0.6}
+
+\newcommand\mult[1]
+{
+\the\numexpr(3*#1)/2\relax	
+}
+
+\newcommand\FPEntry[1]
+{
+#1&(\!\mult{#1}~)
+}
+
+
+\def\ElCheck{INT}
+\def\KinCheck{FIN}
+\def\TelCheck{EMP}
+\def\TemCheck{INT}
+\def\BewCheck{CHR}
+\def\PsiCheck{SPR}
+\def\HexCheck{SPR}
+\def\CurCheck{POW}
+\def\HeaCheck{EMP}
+\def\WarCheck{INT}
+\def\AltCheck{FIN}
+\def\ConCheck{POW}
+\def\NecCheck{EVL}
+\def\OccCheck{POW}
+\def\wS{4.8}
+\def\xS{1.4}
+\newcommand\col[2]{\multicolumn{1}{c}{\parbox[t]{#2 cm}{\raggedright #1}}}
+
+
+\newcommand\school[5]
+{
+\cline{1-3}
+	\cellcolor{\tablecolorhead}	& 	\col{#2}{\xS}	& 	\col{#3}{\wS} 	\\ \cline{2-3}
+   \cellcolor{\tablecolorhead}\multirow{-2}{*}{\bf #1}& \col{#4}{\xS} & \col{#5}{\wS} 
+}
+
+
+
 \newcommand*\cleartoleftpage{%
   \clearpage
   \ifodd\value{page}\hbox{}\clearpage\fi
 }
+
 
 
 
@@ -148,7 +219,7 @@
     {\HP \fontsize{30}{24} \selectfont  Harry Potter \\\&\\ The Role Playing Game}
     \normalsize
     \vfill
-    {\HP \fontsize{22}{0} \selectfont Version 3.0 \hfill Jack Fraser}
+    {\HP \fontsize{22}{0} \selectfont Version 4.0$\beta$ \hfill Jack Fraser}
 \end{titlepage}
 
 \setcounter{tocdepth}{0}  
@@ -187,4 +258,12 @@
 \cleartoleftpage
 \part{Magic}
 \subfile{Chapters/Spells}
+\cleartoleftpage
+\part{Appendices}
+\if\coreMode1	
+	\subfile{Chapters/Cosmology}
+\fi
+\cleartoleftpage
+\subfile{Chapters/CheatSheet}
+
 \end{document}

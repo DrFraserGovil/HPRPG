@@ -8,21 +8,11 @@
 
 The study of magic is a far-reaching field, which encompasses many different areas and skills -- some of which require vastly different skillsets to use. For this reason, a magical taxonomy was introduced by the Wizangemot in 1755, which divides the study of magic up into 7 `Schools', each of which contains a number of `Disciplines'. 
 
-\def\w{4.8}
-\def\x{1.4}
-\newcommand\col[2]{\multicolumn{1}{c}{\parbox[t]{#2 cm}{\raggedright #1}}}
 
-
-\newcommand\school[5]
-{
-\cline{1-3}
-	\cellcolor{\tablecolorhead}	& 	\col{#2}{\x}	& 	\col{#3}{\w} 	\\ \cline{2-3}
-   \cellcolor{\tablecolorhead}\multirow{-2}{*}{\bf #1}& \col{#4}{\x} & \col{#5}{\w} 
-}
 {
 \footnotesize
 \begin{center}
-	\begin{rndtable}{c m{\x cm} p{\w cm}}
+	\begin{rndtable}{c m{\xS cm} p{\wS cm}}
 	\bf School	&	\bf Discipline	&	\bf Description
 	\\
 	\school{Charms}{Elemental}{Elemental magic studies the manipulation and invocation of very primal forces -- heat, light, energy, matter, and the classical elements.}{Kinesis}{Kinesis is a discipline which relies on moving and manipulating physical objects, and often forms the basis of `everyday' magic.}
@@ -127,25 +117,25 @@ $$N = 10 - \left( \text{INT modifier + Arcane Proficiency} \right)$$
 A check has two ingedients: the check type, so that you may know which bonuses to apply, and the check-difficulty, so that you may know the target value. 
 
 The check-type is determined by the Discipline that the spell originates from, according to the following prescription:
-\def\x{2}
-\def\w{2}
+\def\xS{2}
+\def\wS{2}
 \begin{center}
-	\begin{rndtable}{c m{\x cm} p{\w cm}}
+	\begin{rndtable}{c m{\xS cm} p{\wS cm}}
 	\bf School	&	\bf Discipline	&	\bf Attribute
 	\\
-	\school{Charms}{Elemental}{INT}{Kinesis}{FIN}
+	\school{Charms}{Elemental}{\ElCheck}{Kinesis}{\KinCheck}
 	\\
-	\school{Divination}{Telepathy}{EMP}{Temporal}{INT}
+	\school{Divination}{Telepathy}{\TelCheck}{Temporal}{\TemCheck}
 	\\
-	\school{Illusion}{Bewitchment}{CHR}{Psionics}{SPR}
+	\school{Illusion}{Bewitchment}{\BewCheck}{Psionics}{\PsiCheck}
 	\\
-	\school{Malediction}{Hexes}{SPR}{Curses}{POW}
+	\school{Malediction}{Hexes}{\HexCheck}{Curses}{\CurCheck}
    \\ 
-   \school{Recuperation}{Healing}{EMP}{Warding}{INT}
+   \school{Recuperation}{Healing}{\HeaCheck}{Warding}{\WarCheck}
 	\\
-	\school{Transfiguration}{Alteration}{FIN}{Conjuration}{POW}
+	\school{Transfiguration}{Alteration}{\AltCheck}{Conjuration}{\ConCheck}
 	\\
-	\school{Dark Arts}{Necromancy}{EVL}{Occultism}{POW}
+	\school{Dark Arts}{Necromancy}{\NecCheck}{Occultism}{\OccCheck}
 	\end{rndtable}
 \end{center}
 
@@ -183,36 +173,7 @@ The fortitude cost of a given spell is determined by the spell type (Instant, Fo
 
 The table below gives the memory-cast FP cost first, with the book-cast cost in brackets.
 
-\def\FPBegI{3}
-\def\FPNovI{5}
-\def\FPAdpI{7}
-\def\FPExpI{9}
-\def\FPMasI{12}
-\def\FPBegC{2}
-\def\FPNovC{3}
-\def\FPAdpC{5}
-\def\FPExpC{7}
-\def\FPMasC{8}
-\def\FPBegW{4}
-\def\FPNovW{6}
-\def\FPAdpW{8}
-\def\FPExpW{10}
-\def\FPMasW{12}
-\def\FPBegR{3}
-\def\FPNovR{5}
-\def\FPAdpR{8}
-\def\FPExpR{10}
-\def\FPMasR{15}
-\def\wFP{0.6}
-\newcommand\mult[1]
-{
-\the\numexpr(3*#1)/2\relax	
-}
 
-\newcommand\FPEntry[1]
-{
-#1&(\!\mult{#1}~)
-}
 \small
 \begin{center}
 	\begin{rndtable}{p {1.2cm} |c m{\wFP cm} | c m{\wFP cm} |c m{\wFP cm}| c m{\wFP cm}}
