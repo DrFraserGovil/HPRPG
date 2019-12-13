@@ -196,5 +196,9 @@
 \contentsline {subsection}{\numberline {21.1.12}Valhalla: The Plane of Bravery}{108}{subsection.21.1.12}
 \contentsline {subsection}{\numberline {21.1.13}Vulcan: The Plane of Fire}{108}{subsection.21.1.13}
 \contentsline {section}{\numberline {21.2}Magic Cheat Sheet}{110}{section.21.2}
-\contentsline {subsection}{\numberline {21.2.1}Casting Checks}{110}{subsection.21.2.1}
-\contentsline {subsection}{\numberline {21.2.2}FP Costs}{110}{subsection.21.2.2}
+\contentsline {subsubsection}{How to Cast}{110}{subsubsection*.17}
+\contentsline {subsubsection}{Memory}{110}{subsubsection*.18}
+\contentsline {subsubsection}{Check Type}{110}{subsubsection*.19}
+\contentsline {subsubsection}{Check Difficulty}{110}{subsubsection*.20}
+\contentsline {subsubsection}{FP Costs}{110}{subsubsection*.21}
+\contentsline {subsubsection}{Resisting}{110}{subsubsection*.22}

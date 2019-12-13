@@ -99,5 +99,9 @@
 \contentsline {subsubsection}{Transfiguration}{56}{subsubsection*.9}
 \contentsline {part}{V\hspace {1em}Appendices}{60}{part.5}
 \contentsline {section}{\numberline {18.1}Magic Cheat Sheet}{62}{section.18.1}
-\contentsline {subsection}{\numberline {18.1.1}Casting Checks}{62}{subsection.18.1.1}
-\contentsline {subsection}{\numberline {18.1.2}FP Costs}{62}{subsection.18.1.2}
+\contentsline {subsubsection}{How to Cast}{62}{subsubsection*.10}
+\contentsline {subsubsection}{Memory}{62}{subsubsection*.11}
+\contentsline {subsubsection}{Check Type}{62}{subsubsection*.12}
+\contentsline {subsubsection}{Check Difficulty}{62}{subsubsection*.13}
+\contentsline {subsubsection}{FP Costs}{62}{subsubsection*.14}
+\contentsline {subsubsection}{Resisting}{62}{subsubsection*.15}
