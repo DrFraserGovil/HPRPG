@@ -48,19 +48,19 @@ Every spell is assigned to be a member of one of these disciplines, which determ
 \newpage
 \section{Spell Types} 
 
-In addition to falling into one of the seven Schools (a taxonomy based on the spell effect), every spell can also be categorised as a {\it type}, which is based on how the spell is cast. These categories are {\it instant}, {\it concentration}, {\it ritual} and {\it ward} spells. 
+In addition to falling into one of the seven Schools (a taxonomy based on the spell effect), every spell can also be categorised as a {\it type}, which is based on how the spell is cast. These categories are {\it instant}, {\it focus}, {\it ritual} and {\it ward} spells. 
 
 \subsection{Instant}
 
 An instant spell is cast as a single major action, and is `cast and forget': as soon as you complete the requisite casting check, the spell is `launched' (usually in the form of a magical bolt of light) towards the target. These bolts travel at speeds of 100m per cycle, corresponding to about 40mph. This means that, unless the target is at ane extreme range, the effect is applied between the major action phase and the beginning of the next turn.
 
-\subsection{Concentration}
+\subsection{Focus}
 
-A concentration spell is cast like an Instant spell, but may then be continued indefinitely, repeating the initial effects once per turn as long as you keep the spell active. No further checks are needed to continue the spell, but you must remain focussed and unless stated otherwise, the FP cost is deducted once per turn as well.
+A focus spell is cast like an Instant spell, but may then be continued indefinitely, repeating the initial effects once per turn as long as you keep the spell active. No further checks are needed to continue the spell, but you must remain focussed and unless stated otherwise, the FP cost is deducted once per turn as well.
 
 Because you must remain focussed, no further spells can be cast for the duration of this spell, and all subsequent movement checks must be `considered', and no other actions (such as evasion) may be taken.   
 
-If you take damage whilst casting a concentration spell, you must pass a d20 SPR(willpower) check (DV 10) in order to remain casting. In addition, all attacks on you are considered {\it Attacks of Opportunity} (see page \pageref{S:Sneak}). You may, however, end the spell effect at any time without it counting as an action. 
+If you take damage whilst casting a focus spell, you must pass a d20 SPR(willpower) check (DV 10) in order to remain casting. In addition, all attacks on you are considered {\it Attacks of Opportunity} (see page \pageref{S:Sneak}). You may, however, end the spell effect at any time without it counting as an action. 
 
 
 \subsection{Ward}
@@ -76,7 +76,7 @@ Equally, intereference only applies if the effects of the ward compound each oth
 
 A Ritual spell is a spell that requires a large amount of preparation -- be it meditation, drawing a summoning circle upon the ground, or performing a special dance. Each Ritual spell has a deisgnated time that the ritual takes to complete, to cast a ritual spell you must spend this length of time preparing for the spell, and after the requisite time has passed, {\it then} you perform the check, and the spell effect is activated. If you fail the check, or choose to stop the ritual, i.e. to take another action, you must restart the ritual spell from the beginning. 
 
-As with a concentration spell, focus is key to completing a ritual. If you are interrupted during the preparation phase, it is considered an {\it Attack of Opportunity} and you must pass a DV10 SPR(willpower) check in order to continue.
+As with a focus spell, concentration is key to completing a ritual. If you are interrupted during the preparation phase, it is considered an {\it Attack of Opportunity} and you must pass a DV10 SPR(willpower) check in order to continue.
 
 ~
 
@@ -155,7 +155,7 @@ The target roll of a check (the DV) is the minimum value of the casting check (C
 
 \begin{center}
 	\begin{rndtable}{c c c c c}
-		~	&	Instant	&	Concentration	&	Ward	&	Ritual
+		~	&	Instant	&	Focus	&	Ward	&	Ritual
 		\\
 		\cellcolor{\tablecolorhead} Beginner & 	3	&	2	&	4	&	3
 		\\
@@ -179,24 +179,54 @@ Each spell has an associated FP cost, which is deducted only after it is success
  
 You cannot cast a spell if it would send you into negative FP -- you must wait for your head to clear before attempting that spell.  
 
-The fortitude cost of a given spell is determined by the spell type (Instant, Concentration,Ritual etc.) and the difficulty of the spell, and if the spell is cast from memory or not. A book-cast spell has a 50\% higher FP cost than if the caster is familiar with the spell. 
+The fortitude cost of a given spell is determined by the spell type (Instant, Focus, Ritual etc.) and the difficulty of the spell, and if the spell is cast from memory or not. A book-cast spell has a 50\% higher FP cost than if the caster is familiar with the spell. 
 
 The table below gives the memory-cast FP cost first, with the book-cast cost in brackets.
 
+\def\FPBegI{3}
+\def\FPNovI{5}
+\def\FPAdpI{7}
+\def\FPExpI{9}
+\def\FPMasI{12}
+\def\FPBegC{2}
+\def\FPNovC{3}
+\def\FPAdpC{5}
+\def\FPExpC{7}
+\def\FPMasC{8}
+\def\FPBegW{4}
+\def\FPNovW{6}
+\def\FPAdpW{8}
+\def\FPExpW{10}
+\def\FPMasW{12}
+\def\FPBegR{3}
+\def\FPNovR{5}
+\def\FPAdpR{8}
+\def\FPExpR{10}
+\def\FPMasR{15}
+\def\wFP{0.6}
+\newcommand\mult[1]
+{
+\the\numexpr(3*#1)/2\relax	
+}
+
+\newcommand\FPEntry[1]
+{
+#1&(\!\mult{#1}~)
+}
 \small
 \begin{center}
-	\begin{rndtable}{c |c c | c c |c c| c c}
-		~ & \multicolumn{2}{c}{Instant} & \multicolumn{2}{c}{Concentration} & \multicolumn{2}{c}{Ward} & \multicolumn{2}{c}{Ritual}
+	\begin{rndtable}{p {1.2cm} |c m{\wFP cm} | c m{\wFP cm} |c m{\wFP cm}| c m{\wFP cm}}
+		~ & \multicolumn{2}{c}{\bf Instant} & \multicolumn{2}{c}{\bf Focus} & \multicolumn{2}{c}{\bf Ward} & \multicolumn{2}{c}{\bf Ritual}
 		\\
-		\cellcolor{\tablecolorhead} Beginner & 	3 &(5) 	& 	2 &(3)	& 	4 &(6) 	& 	 3&(5)
+		\cellcolor{\tablecolorhead} Beginner & 	\FPEntry{\FPBegI}  & 	\FPEntry{\FPBegC}	& 	\FPEntry{\FPBegW} 	& 	\FPEntry{\FPBegR}
 		\\
-		\cellcolor{\tablecolorhead} Novice	& 	5 &(8)	&	3 &(4)	&	6&(9)	&	5 &(8)
+		\cellcolor{\tablecolorhead} Novice	& 	\FPEntry{\FPNovI}  & 	\FPEntry{\FPNovC}	& 	\FPEntry{\FPNovW} 	& 	\FPEntry{\FPNovR}
 		\\
-		\cellcolor{\tablecolorhead} Adept	&	7 &(11)	&	5& (8)	&	8 &(12)	&	8 &(12)
+		\cellcolor{\tablecolorhead} Adept	&	\FPEntry{\FPAdpI}  & 	\FPEntry{\FPAdpC}	& 	\FPEntry{\FPAdpW} 	& 	\FPEntry{\FPAdpR}
 		\\
-		\cellcolor{\tablecolorhead} Expert	&	9 &(14)	&	7 &(11)	&	10 &(15)	&	10 &(15)
+		\cellcolor{\tablecolorhead} Expert	&	\FPEntry{\FPExpI}  & 	\FPEntry{\FPExpC}	& 	\FPEntry{\FPExpW} 	& 	\FPEntry{\FPExpR}
 		\\
-		\cellcolor{\tablecolorhead} Master	&	12 &(18)	&	8& (12)	&	12 &(18)	&	15 &(23)
+		\cellcolor{\tablecolorhead} Master	&	\FPEntry{\FPMasI}  & 	\FPEntry{\FPMasC}	& 	\FPEntry{\FPMasW} 	& 	\FPEntry{\FPMasR}
 	\end{rndtable}
 \end{center}
 \normalsize

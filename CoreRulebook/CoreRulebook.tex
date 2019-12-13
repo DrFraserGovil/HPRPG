@@ -23,6 +23,7 @@
 \usepackage{tcolorbox}
 \usepackage{keyval}
 \usepackage{pgfkeys}
+\usepackage{lscape}
 \def\apos{'}
 \usepackage{MnSymbol}
 \usepackage{fontawesome}
@@ -192,9 +193,12 @@
 \cleartoleftpage
 \part{Magic}
 \subfile{Chapters/Spells}
-\if\coreMode1
-	\cleartoleftpage
-	\part{Appendices}
+\cleartoleftpage
+\part{Appendices}
+\if\coreMode1	
 	\subfile{Chapters/Cosmology}
 \fi
+\cleartoleftpage
+\subfile{Chapters/CheatSheet}
+
 \end{document}
