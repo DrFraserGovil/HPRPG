@@ -1,7 +1,7 @@
 \onecolumn
 \begin{landscape}
 \small
-\section{Magic Cheat Sheet}
+\chapter{\vspace{-1ex}Magic Cheat Sheet}
 
 This section contains a brief summary of the tables needed for spellcasting. This serves as a useful printout to have on hand, to avoid arduous page-flipping. 
 
@@ -12,14 +12,30 @@ This section contains a brief summary of the tables needed for spellcasting. Thi
 \vbox{
 \subsubsection{How to Cast}
 
-To cast a spell, either in combat or in day-to-day life, you must declare the spell which you are about to cast. You must be holding your wand in your dominant hand, hand be able to speak the incantaiton aloud, unless you have a skill or character trait which negates these rules.
+To cast a spell, either in combat or in day-to-day life, you must declare the spell which you are about to cast. You must be holding your wand in your dominant hand, hand be able to speak the incantaiton aloud, unless you have a skill or character trait which negates these rules.	
 
 You must then perform a check by rolling the relevant dice, and then compare this value with the Difficulty Value (DV) of the spell, and then finally deduct the appropriate FP cost. 
 
 \subsubsection{Memory}
 
+Spells can be cast in one of two ways: either from memory, or from the pages of a spellbook.
 
+Spells cast from memory are considered `default', and most rules are written assuming that this is how they are being cast. 
+
+Of course, you must first learna spell, before you can memorise it. This is what spellbooks are for. You may cast a spell from a spellbook if you have the spellbook open in front of you. Casting in this fashion takes twice as long as normal, leaves you vulnerable to attack, as well as costing more FP to cast. 
+
+When you have book-cast a spell a certain number of times, it is considered `memorised', and you may cast it from memory in future. The formula to calculate the number of book-casts is:
+$$N = 10 - \left( \text{INT modifier + Arcane Proficiency} \right)$$ 
+ 
 }
+
+\subsubsection{Resisting}
+
+Many spell effects can be resisted by those who are exceptionally powerful. Resistance come in two forms: passive and active. 
+
+Automatic resistance is possessed by certain species that, for example, are not affected by a certain damage type (i.e. fire resistance). 
+
+Active resistance occurs when your character actively attempts to defy the effects of a spell. When attempting this, you perform a Resist checkusing the dice granted by your Withstand skill level. If it is greater than or equal to the specified DV, then the spell effect is mitigated, either in part, or totally. 
 
 \vbox{
 \subsubsection{Check Type}
@@ -62,8 +78,7 @@ For a cast to be successful, the result of the casting check must be equal to or
 		\\
 		\cellcolor{\tablecolorhead} Expert	& \DVExpI	&	\DVExpF	&	\DVExpW	&	\DVExpR
 		\\
-		\cellcolor{\tablecolorhead} Master	&	\DVMasI	&	\DVMasI	&	\DVMasW	&	\DVMasR
-		
+		\cellcolor{\tablecolorhead} Master	&	\DVMasI	&	\DVMasF	&	\DVMasW	&	\DVMasR
 	\end{rndtable}
 \end{center}
 }
@@ -91,7 +106,7 @@ Spells `cost' FP to cast. Failed spells cost half the amount of a successful spe
 \normalsize
 FP Regenerates at a rate of 2FP per turn cycle in which no FP was deducted. 
 
-\subsubsection{Resisting}
+
 
 \end{multicols}
 \end{landscape}
