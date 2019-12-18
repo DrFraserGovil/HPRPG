@@ -153,52 +153,38 @@
 \contentsline {subsection}{\numberline {19.4.5}Line}{83}{subsection.19.4.5}
 \contentsline {subsection}{\numberline {19.4.6}Sphere}{84}{subsection.19.4.6}
 \contentsline {chapter}{\numberline {20}Spell List}{86}{chapter.20}
-\contentsline {subsection}{\numberline {20.0.1}Charms}{86}{subsection.20.0.1}
-\contentsline {subsubsection}{Kinesis}{86}{subsubsection*.3}
-\contentsline {subsubsection}{Elemental}{86}{subsubsection*.4}
-\contentsline {subsection}{\numberline {20.0.2}Divination}{86}{subsection.20.0.2}
-\contentsline {subsubsection}{Temporal}{86}{subsubsection*.5}
-\contentsline {subsubsection}{Telepathy}{86}{subsubsection*.6}
-\contentsline {subsection}{\numberline {20.0.3}Illusion}{87}{subsection.20.0.3}
-\contentsline {subsubsection}{Psionics}{87}{subsubsection*.7}
-\contentsline {subsubsection}{Bewitchment}{87}{subsubsection*.8}
-\contentsline {subsection}{\numberline {20.0.4}Malediction}{87}{subsection.20.0.4}
-\contentsline {subsubsection}{Curse}{87}{subsubsection*.9}
-\contentsline {subsubsection}{Hex}{87}{subsubsection*.10}
-\contentsline {subsection}{\numberline {20.0.5}Recuperation}{87}{subsection.20.0.5}
-\contentsline {subsubsection}{Warding}{87}{subsubsection*.11}
-\contentsline {subsubsection}{Healing}{88}{subsubsection*.12}
-\contentsline {subsection}{\numberline {20.0.6}Transfiguration}{88}{subsection.20.0.6}
-\contentsline {subsubsection}{Conjuration}{88}{subsubsection*.13}
-\contentsline {subsubsection}{Alteration}{88}{subsubsection*.14}
-\contentsline {subsection}{\numberline {20.0.7}Dark Arts}{88}{subsection.20.0.7}
-\contentsline {subsubsection}{Occultism}{88}{subsubsection*.15}
-\contentsline {subsubsection}{Necromancy}{88}{subsubsection*.16}
-\contentsline {part}{V\hspace {1em}Appendices}{104}{part.5}
-\contentsline {chapter}{\numberline {21}Cosmology}{105}{chapter.21}
-\contentsline {subsection}{\numberline {21.0.1}The Mortal World}{105}{subsection.21.0.1}
-\contentsline {subsection}{\numberline {21.0.2}The Astral Realm}{105}{subsection.21.0.2}
-\contentsline {subsection}{\numberline {21.0.3}The Higher Planes}{105}{subsection.21.0.3}
-\contentsline {subsection}{\numberline {21.0.4}The Eldritch Domains}{105}{subsection.21.0.4}
-\contentsline {subsection}{\numberline {21.0.5}The Void}{106}{subsection.21.0.5}
-\contentsline {section}{\numberline {21.1}Higher Planes}{106}{section.21.1}
-\contentsline {subsection}{\numberline {21.1.1}Abyss: The Plane of Terror}{106}{subsection.21.1.1}
-\contentsline {subsection}{\numberline {21.1.2}Aeolus: The Plane of Storms and Winds}{106}{subsection.21.1.2}
-\contentsline {subsection}{\numberline {21.1.3}Eden: The Plane of Nature}{106}{subsection.21.1.3}
-\contentsline {subsection}{\numberline {21.1.4}Elysium: The Plane of Blessings}{106}{subsection.21.1.4}
-\contentsline {subsection}{\numberline {21.1.5}Hades: The Plane of Death}{106}{subsection.21.1.5}
-\contentsline {subsection}{\numberline {21.1.6}Hyperborea: The Plane of Ice}{107}{subsection.21.1.6}
-\contentsline {subsection}{\numberline {21.1.7}Machina: The Plane of Order}{107}{subsection.21.1.7}
-\contentsline {subsection}{\numberline {21.1.8}Nirvana: The Plane of Peace}{107}{subsection.21.1.8}
-\contentsline {subsection}{\numberline {21.1.9}Pand{\ae }monium: The Plane of Chaos}{107}{subsection.21.1.9}
-\contentsline {subsection}{\numberline {21.1.10}Scholomancia: The Plane of Knowledge}{107}{subsection.21.1.10}
-\contentsline {subsection}{\numberline {21.1.11}Tartarus: The Plane of Torture}{108}{subsection.21.1.11}
-\contentsline {subsection}{\numberline {21.1.12}Valhalla: The Plane of Bravery}{108}{subsection.21.1.12}
-\contentsline {subsection}{\numberline {21.1.13}Vulcan: The Plane of Fire}{108}{subsection.21.1.13}
-\contentsline {chapter}{\numberline {22}\vspace {-1ex}Magic Cheat Sheet}{110}{chapter.22}
-\contentsline {subsubsection}{How to Cast}{110}{subsubsection*.17}
-\contentsline {subsubsection}{Memory}{110}{subsubsection*.18}
-\contentsline {subsubsection}{Resisting}{110}{subsubsection*.19}
-\contentsline {subsubsection}{Check Type}{110}{subsubsection*.20}
-\contentsline {subsubsection}{Check Difficulty}{110}{subsubsection*.21}
-\contentsline {subsubsection}{FP Costs}{110}{subsubsection*.22}
+\contentsline {subsection}{\numberline {20.0.1}Charm}{86}{subsection.20.0.1}
+\contentsline {subsection}{\numberline {20.0.2}Dark Arts}{86}{subsection.20.0.2}
+\contentsline {subsection}{\numberline {20.0.3}Divination}{87}{subsection.20.0.3}
+\contentsline {subsection}{\numberline {20.0.4}Illusion}{87}{subsection.20.0.4}
+\contentsline {subsection}{\numberline {20.0.5}Malediction}{87}{subsection.20.0.5}
+\contentsline {subsection}{\numberline {20.0.6}Recuperation}{88}{subsection.20.0.6}
+\contentsline {subsection}{\numberline {20.0.7}Transfiguration}{88}{subsection.20.0.7}
+\contentsline {part}{V\hspace {1em}Appendices}{90}{part.5}
+\contentsline {chapter}{\numberline {21}Cosmology}{91}{chapter.21}
+\contentsline {subsection}{\numberline {21.0.1}The Mortal World}{91}{subsection.21.0.1}
+\contentsline {subsection}{\numberline {21.0.2}The Astral Realm}{91}{subsection.21.0.2}
+\contentsline {subsection}{\numberline {21.0.3}The Higher Planes}{91}{subsection.21.0.3}
+\contentsline {subsection}{\numberline {21.0.4}The Eldritch Domains}{91}{subsection.21.0.4}
+\contentsline {subsection}{\numberline {21.0.5}The Void}{92}{subsection.21.0.5}
+\contentsline {section}{\numberline {21.1}Higher Planes}{92}{section.21.1}
+\contentsline {subsection}{\numberline {21.1.1}Abyss: The Plane of Terror}{92}{subsection.21.1.1}
+\contentsline {subsection}{\numberline {21.1.2}Aeolus: The Plane of Storms and Winds}{92}{subsection.21.1.2}
+\contentsline {subsection}{\numberline {21.1.3}Eden: The Plane of Nature}{92}{subsection.21.1.3}
+\contentsline {subsection}{\numberline {21.1.4}Elysium: The Plane of Blessings}{92}{subsection.21.1.4}
+\contentsline {subsection}{\numberline {21.1.5}Hades: The Plane of Death}{92}{subsection.21.1.5}
+\contentsline {subsection}{\numberline {21.1.6}Hyperborea: The Plane of Ice}{93}{subsection.21.1.6}
+\contentsline {subsection}{\numberline {21.1.7}Machina: The Plane of Order}{93}{subsection.21.1.7}
+\contentsline {subsection}{\numberline {21.1.8}Nirvana: The Plane of Peace}{93}{subsection.21.1.8}
+\contentsline {subsection}{\numberline {21.1.9}Pand{\ae }monium: The Plane of Chaos}{93}{subsection.21.1.9}
+\contentsline {subsection}{\numberline {21.1.10}Scholomancia: The Plane of Knowledge}{93}{subsection.21.1.10}
+\contentsline {subsection}{\numberline {21.1.11}Tartarus: The Plane of Torture}{94}{subsection.21.1.11}
+\contentsline {subsection}{\numberline {21.1.12}Valhalla: The Plane of Bravery}{94}{subsection.21.1.12}
+\contentsline {subsection}{\numberline {21.1.13}Vulcan: The Plane of Fire}{94}{subsection.21.1.13}
+\contentsline {chapter}{\numberline {22}\vspace {-1ex}Magic Cheat Sheet}{96}{chapter.22}
+\contentsline {subsubsection}{How to Cast}{96}{subsubsection*.3}
+\contentsline {subsubsection}{Memory}{96}{subsubsection*.4}
+\contentsline {subsubsection}{Resisting}{96}{subsubsection*.5}
+\contentsline {subsubsection}{Check Type}{96}{subsubsection*.6}
+\contentsline {subsubsection}{Check Difficulty}{96}{subsubsection*.7}
+\contentsline {subsubsection}{FP Costs}{96}{subsubsection*.8}

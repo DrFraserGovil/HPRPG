@@ -1,7 +1,8 @@
-classdef Spell
+classdef Spell < handle
 
     properties
         Name
+
         School
         Discipline
         Incantation
@@ -9,10 +10,6 @@ classdef Spell
         Symbol
         Level
         LevelName
-        FP
-        Check
-        Proficiency
-        DV
         Effect
         Duration
         HigherLevel
@@ -22,6 +19,7 @@ classdef Spell
     end
     
     methods
+                
         function obj = Spell()
            obj.Name = "Null";
            obj.School = "Null";
@@ -31,10 +29,6 @@ classdef Spell
            obj.Symbol = "";
            obj.Level = 0;
            obj.LevelName = "None";
-           obj.FP = 0;
-           obj.Check = "None";
-           obj.Proficiency = "None";
-           obj.DV = 0;
            obj.Effect = "None";
            obj.Duration = 0;
            obj.HigherLevel = "None";
@@ -43,9 +37,11 @@ classdef Spell
            obj.ResistDV = "None";
         end
         
-        function obj = ReadLine(obj,line,school)
+       
+        function obj = ReadLine(obj,line)
+            
             obj.Name = line.Name{1};
-            obj.School = school;
+            obj.School = line.School{1};
             obj.Discipline = line.Discipline{1};
             obj.Incantation = line.Incantation{1};
             obj.Type = line.Type{1};
@@ -54,16 +50,9 @@ classdef Spell
             name = levelNames(n);
             obj.Level = n;
             obj.LevelName = name;
-            
-            spellTypes = {"Instant","Concentration","Ritual","Ward","Music","Beast"};
-            symbs = {"\\instSymb","\\concSymb","\\ritSymb","\\wardSymb","\\musicSymb","\\beastSymb"};
-            for i = 1:length(spellTypes)
-                
-                if ~isempty(strfind(obj.Type,spellTypes{i}))
-                    obj.Symbol = symbs{i};
-                    
-                end
-            end
+           
+            obj.getSymbol();
+           
             obj.Effect = line.Effect{1};
             obj.Duration = line.Duration{1};
             obj.HigherLevel = line.HigherLevel{1};
@@ -71,6 +60,16 @@ classdef Spell
             
             obj.Resist = line.Resist{1};
             obj.ResistDV = line.ResistDV{1};
+        end
+        
+        function getSymbol(obj)
+            spellTypes = ["Instant","Concentration","Ritual","Ward","Music","Beast"];
+            symbs = ["\\instSymb","\\concSymb","\\ritSymb","\\wardSymb","\\musicSymb","\\beastSymb"];
+            for i = 1:length(spellTypes)
+                if ~isempty(strfind(obj.Type,spellTypes(i)))
+                    obj.Symbol = symbs(i);     
+                end
+            end
         end
         
         function t = output(sp)
