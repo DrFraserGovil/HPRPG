@@ -11,7 +11,8 @@ classdef SpellSchool < handle
             obj.Name = name;
             obj.SortName = name;
             if strcmp(obj.Name, "Dark Arts") == 1
-                obj.SortName = "zz"+ name;
+                obj.SortName = convertStringsToChars(strcat('zz',name));
+                
             end
             obj.Discipline = SpellDiscipline.empty;
         end
