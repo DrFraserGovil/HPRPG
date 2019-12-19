@@ -63,7 +63,7 @@ classdef Spell < handle
         end
         
         function getSymbol(obj)
-            spellTypes = ["Instant","Concentration","Ritual","Ward","Music","Beast"];
+            spellTypes = ["Instant","Focus","Ritual","Ward","Music","Beast"];
             symbs = ["\\instSymb","\\concSymb","\\ritSymb","\\wardSymb","\\musicSymb","\\beastSymb"];
             for i = 1:length(spellTypes)
                 if ~isempty(strfind(obj.Type,spellTypes(i)))
@@ -87,13 +87,7 @@ classdef Spell < handle
                 t = t + "incant = " + prepareText(sp.Incantation)+", ";
             end
                   
-            if isempty(sp.Proficiency)
-                t = t + "noProf = 1, ";
-            else
-                 t = t + "proficiency = " + prepareText(sp.Proficiency)+", ";
-            end
-           
-            if strcmp(sp.Duration,"0")==1
+            if isempty(sp.Duration)
                 t = t + "noDur = 1, ";
             else
                 t = t + "duration = " + prepareText(sp.Duration) + ",";

@@ -1,50 +1,64 @@
-function schools = allSpellAssembler(maxLevel)
+function allSpellAssembler(maxLevel)
     if nargin < 1
         maxLevel = 5;
     end
     
     %% open file
+    addpath('../');
     opts = detectImportOptions('AllSpells.xlsx','NumHeaderLines',2);
     opts.VariableNamesRange = 'A1';
     f = readtable("AllSpells.xlsx",opts,'ReadVariableNames',true);
 
     %% read in the file line by line and sort into schools and disciplines
     schools = SpellSchool.empty;
+    allSpells = Spell.empty;
     for i = 1:height(f)
         newSpell = Spell();
         newSpell.ReadLine(f(i,:));
-
-        schoolFound= false;
-        for j = 1:length(schools)
-            if strcmp(schools(j).Name,newSpell.School) == 1            
-                schoolFound = true;
-                disc = schools(j).hasDiscipline(newSpell.Discipline);
-                if disc > 0    
-                    schools(j).Discipline(disc).Spells{newSpell.Level}(end+1) = newSpell;
-                else
-                    newDisc = SpellDiscipline(newSpell.Discipline);
-                    newDisc.Spells{newSpell.Level}(1) = newSpell;
-                    schools(j).Discipline(end+1) = newDisc;
+        allSpells(end+1) = newSpell;
+        
+        if newSpell.Level <= maxLevel
+            schoolFound= false;
+            for j = 1:length(schools)
+                if strcmp(schools(j).Name,newSpell.School) == 1            
+                    schoolFound = true;
+                    disc = schools(j).hasDiscipline(newSpell.Discipline);
+                    if disc > 0    
+                        schools(j).Discipline(disc).Spells{newSpell.Level}(end+1) = newSpell;
+                    else
+                        newDisc = SpellDiscipline(newSpell.Discipline);
+                        newDisc.Spells{newSpell.Level}(1) = newSpell;
+                        schools(j).Discipline(end+1) = newDisc;
+                    end
                 end
             end
-        end
 
-        if schoolFound == false
-           newSchool = SpellSchool(newSpell.School);
-           newDisc = SpellDiscipline(newSpell.Discipline);
-           newDisc.Spells{newSpell.Level}(1) = newSpell;
-           newSchool.Discipline(1) = newDisc;
-           schools(end+1) = newSchool;
+            if schoolFound == false
+               newSchool = SpellSchool(newSpell.School);
+               newDisc = SpellDiscipline(newSpell.Discipline);
+               newDisc.Spells{newSpell.Level}(1) = newSpell;
+               newSchool.Discipline(1) = newDisc;
+               schools(end+1) = newSchool;
+            end
         end
     end
     
-    %%sort alphabetically
+    %% sort alphabetically
     [~,I] =sort({schools.SortName});
     schools = schools(I);
     for i = 1:length(schools)
        [~,I]= sort({schools(i).Discipline.Name});
        schools(i).Discipline = schools(i).Discipline(I);
+       for j = 1:length(schools(i).Discipline)
+            for k = 1:5
+                [~,I] = sort({schools(i).Discipline(j).Spells{k}.Name});
+                schools(i).Discipline(j).Spells{k} = schools(i).Discipline(j).Spells{k}(I);
+            end
+       end
     end
+    [~,I] = sort({allSpells.Name});
+    allSpells = allSpells(I);
+    
     
     %% create text for discipline tables
     disciplineTableText =  '\\scriptsize';
@@ -89,12 +103,21 @@ function schools = allSpellAssembler(maxLevel)
         disciplineTableText = disciplineTableText + t + "\n\n";
     end
     
+    %% create text for description list
+   
+    listText = '\n \\clearpage \n\\begin{multicols}{3}\n';
     
-    fullText = disciplineTableText;% + alphList + "\\end{multicols}";
-    fileName = '../Chapters/SpellList.tex';
-%     if cutoff < 3
-%         fileName =  '../Chapters/SpellListShort.tex';
-%     end
+    for i = 1:length(allSpells)
+       listText = listText +  allSpells(i).output() + "\n";
+    end
+    listText = listText + "\\end{multicols}";
+    %% output to file
+    
+    fullText = disciplineTableText + listText;
+    fileName = '../../Chapters/SpellList.tex';
+    if maxLevel < 3
+        fileName =  '../Chapters/SpellListShort.tex';
+    end
     FID = fopen(fileName,'w');
     fprintf(FID, fullText);
     fclose(FID);
