@@ -73,8 +73,9 @@ function allSpellAssembler(maxLevel)
             col = ">{\\centering\\arraybackslash}m{\\w cm} >{\\centering\\arraybackslash}m{\\s cm}";
             t = t + "\\begin{rndtable}{"+ col + col + col + col + col + "}\n";
             t =t + "\\multicolumn{10}{c}{\\bf \\normalsize " + disc.Name + "} \n\\\\\n ";
+			array = ["Beginner", "Novice", "Adept", "Expert", "Master"];
             for q = 1:5
-                t = t + "\\multicolumn{2}{c}{\\cellcolor{\\tablecolorhead} \\bf Level~" + num2str(q) + "}";
+                t = t + "\\multicolumn{2}{c}{\\cellcolor{\\tablecolorhead} \\bf " + array(q)+ "}";
                 if q <5
                     t = t + "&";
                 end
