@@ -66,44 +66,34 @@ Every spell belongs to one of the Disciplines, which determines the character at
 \subsubsection{Check Difficulty}
 
 For a cast to be successful, the result of the casting check must be equal to or larger than the value given in this table:
+
+
 \begin{center}
-	\begin{rndtable}{c c c c c}
-		~	&	Instant	&	Focus	&	Ward	&	Ritual
+	\begin{rndtable}{c c c c c c}
+		~	&{\bf Beginner}	&	{\bf Novice}	&	{\bf Adept}	&	{\bf Expert}	&	{\bf Master}
 		\\
-		\cellcolor{\tablecolorhead} Beginner & 	\DVBegI	&	\DVBegF	&	\DVBegW	&	\DVBegR
-		\\
-		\cellcolor{\tablecolorhead} Novice	& 	\DVNovI	&	\DVNovF	&	\DVNovW	&	\DVNovR
-		\\
-		\cellcolor{\tablecolorhead} Adept	&	\DVAdpI	&	\DVAdpF	&	\DVAdpW	&	\DVAdpR	
-		\\
-		\cellcolor{\tablecolorhead} Expert	& \DVExpI	&	\DVExpF	&	\DVExpW	&	\DVExpR
-		\\
-		\cellcolor{\tablecolorhead} Master	&	\DVMasI	&	\DVMasF	&	\DVMasW	&	\DVMasR
+		\cellcolor{\tablecolorhead} \bf DV: &	\DVBegI	&	\DVNovI	&	\DVAdpI	&	\DVExpI	&	\DVMasI
 	\end{rndtable}
 \end{center}
+
 }
 
 \subsubsection{FP Costs}
 Spells `cost' FP to cast. Failed spells cost half the amount of a successful spell and Resisting a spell costs 2FP. The FP cost of a spell is numerically equal to the difficulty of a spell, prior to any skill modifications (i.e. a skill which reduces the difficulty of a certain spell does not reduce the FP of it, and vice versa), unless the spell is being book-cast, in which case use the bracketed values.  
 
 
-\small
+{\footnotesize
+\def\wFP{1}
 \begin{center}
-	\begin{rndtable}{p {1.2cm} |c m{\wFP cm} | c m{\wFP cm} |c m{\wFP cm}| c m{\wFP cm}}
-		~ & \multicolumn{2}{c}{\bf Instant} & \multicolumn{2}{c}{\bf Focus} & \multicolumn{2}{c}{\bf Ward} & \multicolumn{2}{c}{\bf Ritual}
+	\begin{rndtable}{p{1cm} |c |   c | c |c | c}
+		~	&{\bf Beginner}	&	{\bf Novice}	&	{\bf Adept}	&	{\bf Expert}	&	{\bf Master}
 		\\
-		\cellcolor{\tablecolorhead} Beginner & 	\FPEntry{\DVBegI}  & 	\FPEntry{\DVBegF}	& 	\FPEntry{\DVBegW} 	& 	\FPEntry{\DVBegR}
+		\cellcolor{\tablecolorhead} \bf Memory &	\FPEntry{\DVBegI}{1}	&	\FPEntry{\DVNovI}{1}	&	\FPEntry{\DVAdpI}{1}	&	\FPEntry{\DVExpI}{1}	&	\FPEntry{\DVMasI}{1}
 		\\
-		\cellcolor{\tablecolorhead} Novice	& 	\FPEntry{\DVNovI}  & 	\FPEntry{\DVNovF}	& 	\FPEntry{\DVNovW} 	& 	\FPEntry{\DVNovR}
-		\\
-		\cellcolor{\tablecolorhead} Adept	&	\FPEntry{\DVAdpI}  & 	\FPEntry{\DVAdpF}	& 	\FPEntry{\DVAdpW} 	& 	\FPEntry{\DVAdpR}
-		\\
-		\cellcolor{\tablecolorhead} Expert	&	\FPEntry{\DVExpI}  & 	\FPEntry{\DVExpF}	& 	\FPEntry{\DVExpW} 	& 	\FPEntry{\DVExpR}
-		\\
-		\cellcolor{\tablecolorhead} Master	&	\FPEntry{\DVMasI}  & 	\FPEntry{\DVMasF}	& 	\FPEntry{\DVMasW} 	& 	\FPEntry{\DVMasR}
+		\cellcolor{\tablecolorhead} \bf Book  &	\FPEntry{\DVBegI}{2}	&	\FPEntry{\DVNovI}{2}	&	\FPEntry{\DVAdpI}{2}	&	\FPEntry{\DVExpI}{2}	&	\FPEntry{\DVMasI}{2}
 	\end{rndtable}
 \end{center}
-\normalsize
+}
 FP Regenerates at a rate of 2FP per turn cycle in which no FP was deducted. 
 
 

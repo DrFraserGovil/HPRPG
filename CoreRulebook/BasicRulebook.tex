@@ -121,34 +121,20 @@
     \draw[rounded corners=1ex] (0,-\dp\tablebox) -- (\wd\tablebox,-\dp\tablebox) -- (\wd\tablebox,\ht\tablebox) -- (0,\ht\tablebox) -- cycle;
   \end{tikzpicture}
 }
+\newlist{spellitemize}{itemize}{2}
+\setlist[spellitemize,1]{label=\textbullet,leftmargin=2 ex}
+\setlist[spellitemize,2]{label=-,leftmargin=0em}
 
-
-
-
-\def\wFP{0.6}
-
-\newcommand\mult[1]
-{
-\the\numexpr(3*#1)/2\relax	
-}
-
-\newcommand\FPEntry[1]
-{
-#1&(\!\mult{#1}~)
-}
-
-
-
-\def\DVBegI{3}
+\def\DVBegI{4}
 \def\DVNovI{5}
 \def\DVAdpI{6}
-\def\DVExpI{8}
-\def\DVMasI{10}
-\def\DVBegF{2}
-\def\DVNovF{3}
-\def\DVAdpF{4}
+\def\DVExpI{7}
+\def\DVMasI{11}
+\def\DVBegF{3}
+\def\DVNovF{4}
+\def\DVAdpF{5}
 \def\DVExpF{6}
-\def\DVMasF{8}
+\def\DVMasF{9}
 \def\DVBegW{4}
 \def\DVNovW{6}
 \def\DVAdpW{8}
@@ -159,6 +145,8 @@
 \def\DVAdpR{8}
 \def\DVExpR{10}
 \def\DVMasR{12}
+
+\def\wFP{0.6}
 
 \def\ElCheck{INT}
 \def\KinCheck{FIN}
@@ -174,6 +162,21 @@
 \def\ConCheck{POW}
 \def\NecCheck{EVL}
 \def\OccCheck{POW}
+
+\newcommand\mult[2]
+{
+\the\numexpr((1+#2)*#1)/2\relax	
+}
+
+
+
+
+
+\newcommand\FPEntry[2]
+{
+\!\mult{#1}{#2}
+}
+
 \def\wS{4.8}
 \def\xS{1.4}
 \newcommand\col[2]{\multicolumn{1}{c}{\parbox[t]{#2 cm}{\raggedright #1}}}
@@ -195,7 +198,31 @@
 
 
 
-
+%%%%%% Spell description distribution
+\newcommand\PPDifference[2]
+{
+ {\the\numexpr(#1 -#2)\relax} 
+}
+\def\airB{As a Beginner level, this spell is capable of summoning light breezes, up to 15mph, without much precision.}
+\def\airN{As a Novice level, this spell is capable of summoning powerful blasts (100mph +) in a small area, or precision manipulation at a much lower speed.}
+\def\airA{When cast as an Adept spell, the caster may summon very powerful blasts of air over a larger area, or to summon large-scale winds to alter the weather slightly. }
+\def\airE{As an Expert spell, powerful vortices may be summoned, and the ability to slightly alter the temperature of the air is gained}
+\def\airM{A master level caster may use this spell to summon cataclsymic weather events, or use their incredible precision to mimic flight.}
+\def\earthB{As a beginner level spell, the spell is able to manipulate small stones and cause minor tremors.}
+\def\earthN{As a beginer level spell level, the caster may excavate and move small amounts of earth with their mind.}
+\def\earthA{When cast as an Adept spell, the maniplator may more tightly bind the manipulated earth together , allowing for potential weaponisation }
+\def\earthE{An Expert spellcaster may use this spell to sheathe themselves in rock armour, or manipulate earth on a grand scale}
+\def\earthM{When Mastered, this spell enables devastating Earthquakes to be generated, or towering wonders to be created.}
+\def\fireB{}
+\def\fireN{}
+\def\fireA{}
+\def\fireE{}
+\def\fireM{}
+\def\waterB{}
+\def\waterN{}
+\def\waterA{}
+\def\waterE{}
+\def\waterM{}
 
 
 
@@ -262,10 +289,11 @@
 \subfile{Chapters/Spells}
 \cleartoleftpage
 \part{Appendices}
+
 \if\coreMode1	
 	\subfile{Chapters/Cosmology}
 \fi
 \cleartoleftpage
 \subfile{Chapters/CheatSheet}
-
+\subfile{Chapters/changelog}
 \end{document}

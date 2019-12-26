@@ -151,54 +151,54 @@
 \contentsline {subsection}{\numberline {19.4.3}Cube}{83}{subsection.19.4.3}
 \contentsline {subsection}{\numberline {19.4.4}Cylinder}{83}{subsection.19.4.4}
 \contentsline {subsection}{\numberline {19.4.5}Line}{83}{subsection.19.4.5}
-\contentsline {subsection}{\numberline {19.4.6}Sphere}{84}{subsection.19.4.6}
-\contentsline {chapter}{\numberline {20}Spell List}{86}{chapter.20}
-\contentsline {subsection}{\numberline {20.0.1}Charms}{86}{subsection.20.0.1}
-\contentsline {subsection}{\numberline {20.0.2}Divination}{86}{subsection.20.0.2}
-\contentsline {subsection}{\numberline {20.0.3}Illusion}{87}{subsection.20.0.3}
-\contentsline {subsection}{\numberline {20.0.4}Maledictions}{87}{subsection.20.0.4}
-\contentsline {subsection}{\numberline {20.0.5}Recuperation}{87}{subsection.20.0.5}
-\contentsline {subsection}{\numberline {20.0.6}Transfiguration}{88}{subsection.20.0.6}
-\contentsline {subsection}{\numberline {20.0.7}Dark Arts}{88}{subsection.20.0.7}
-\contentsline {part}{V\hspace {1em}Appendices}{106}{part.5}
-\contentsline {chapter}{\numberline {21}Cosmology}{107}{chapter.21}
-\contentsline {subsection}{\numberline {21.0.1}The Mortal World}{107}{subsection.21.0.1}
-\contentsline {subsection}{\numberline {21.0.2}The Astral Realm}{107}{subsection.21.0.2}
-\contentsline {subsection}{\numberline {21.0.3}The Higher Planes}{107}{subsection.21.0.3}
-\contentsline {subsection}{\numberline {21.0.4}The Eldritch Domains}{107}{subsection.21.0.4}
-\contentsline {subsection}{\numberline {21.0.5}The Void}{108}{subsection.21.0.5}
-\contentsline {section}{\numberline {21.1}Higher Planes}{108}{section.21.1}
-\contentsline {subsection}{\numberline {21.1.1}Abyss: The Plane of Terror}{108}{subsection.21.1.1}
-\contentsline {subsection}{\numberline {21.1.2}Aeolus: The Plane of Storms and Winds}{108}{subsection.21.1.2}
-\contentsline {subsection}{\numberline {21.1.3}Eden: The Plane of Nature}{108}{subsection.21.1.3}
-\contentsline {subsection}{\numberline {21.1.4}Elysium: The Plane of Blessings}{108}{subsection.21.1.4}
-\contentsline {subsection}{\numberline {21.1.5}Hades: The Plane of Death}{108}{subsection.21.1.5}
-\contentsline {subsection}{\numberline {21.1.6}Hyperborea: The Plane of Ice}{109}{subsection.21.1.6}
-\contentsline {subsection}{\numberline {21.1.7}Machina: The Plane of Order}{109}{subsection.21.1.7}
-\contentsline {subsection}{\numberline {21.1.8}Nirvana: The Plane of Peace}{109}{subsection.21.1.8}
-\contentsline {subsection}{\numberline {21.1.9}Pand{\ae }monium: The Plane of Chaos}{109}{subsection.21.1.9}
-\contentsline {subsection}{\numberline {21.1.10}Scholomancia: The Plane of Knowledge}{109}{subsection.21.1.10}
-\contentsline {subsection}{\numberline {21.1.11}Tartarus: The Plane of Torture}{110}{subsection.21.1.11}
-\contentsline {subsection}{\numberline {21.1.12}Valhalla: The Plane of Bravery}{110}{subsection.21.1.12}
-\contentsline {subsection}{\numberline {21.1.13}Vulcan: The Plane of Fire}{110}{subsection.21.1.13}
-\contentsline {chapter}{\numberline {22}\vspace {-1ex}Magic Cheat Sheet}{112}{chapter.22}
-\contentsline {subsubsection}{How to Cast}{112}{subsubsection*.3}
-\contentsline {subsubsection}{Memory}{112}{subsubsection*.4}
-\contentsline {subsubsection}{Resisting}{112}{subsubsection*.5}
-\contentsline {subsubsection}{Check Type}{112}{subsubsection*.6}
-\contentsline {subsubsection}{Check Difficulty}{112}{subsubsection*.7}
-\contentsline {subsubsection}{FP Costs}{112}{subsubsection*.8}
-\contentsline {chapter}{\numberline {23}Changelog}{113}{chapter.23}
-\contentsline {section}{\numberline {23.1}Changes in V4.0$\beta $}{113}{section.23.1}
-\contentsline {subsection}{\numberline {23.1.1}Changes to the Spellcasting System}{113}{subsection.23.1.1}
-\contentsline {subsubsection}{Spell Damage Reworked}{113}{subsubsection*.9}
-\contentsline {subsubsection}{General effect balancing}{113}{subsubsection*.10}
-\contentsline {subsubsection}{Power Point Refocus}{113}{subsubsection*.11}
-\contentsline {subsubsection}{Disciplines Introduced}{113}{subsubsection*.12}
-\contentsline {subsubsection}{Some Renaming}{113}{subsubsection*.13}
-\contentsline {subsubsection}{Cheat Sheet}{113}{subsubsection*.14}
-\contentsline {subsubsection}{Manipulate Spells}{113}{subsubsection*.15}
-\contentsline {subsubsection}{Spells alterations}{113}{subsubsection*.16}
-\contentsline {subsection}{\numberline {23.1.2}Changes to Items}{114}{subsection.23.1.2}
-\contentsline {subsubsection}{Prices}{114}{subsubsection*.17}
-\contentsline {subsection}{\numberline {23.1.3}Meta-Changes}{114}{subsection.23.1.3}
+\contentsline {subsection}{\numberline {19.4.6}Sphere}{83}{subsection.19.4.6}
+\contentsline {chapter}{\numberline {20}Spell List}{84}{chapter.20}
+\contentsline {subsection}{\numberline {20.0.1}Charms}{84}{subsection.20.0.1}
+\contentsline {subsection}{\numberline {20.0.2}Divination}{84}{subsection.20.0.2}
+\contentsline {subsection}{\numberline {20.0.3}Illusion}{85}{subsection.20.0.3}
+\contentsline {subsection}{\numberline {20.0.4}Maledictions}{85}{subsection.20.0.4}
+\contentsline {subsection}{\numberline {20.0.5}Recuperation}{85}{subsection.20.0.5}
+\contentsline {subsection}{\numberline {20.0.6}Transfiguration}{86}{subsection.20.0.6}
+\contentsline {subsection}{\numberline {20.0.7}Dark Arts}{86}{subsection.20.0.7}
+\contentsline {part}{V\hspace {1em}Appendices}{104}{part.5}
+\contentsline {chapter}{\numberline {21}Cosmology}{105}{chapter.21}
+\contentsline {subsection}{\numberline {21.0.1}The Mortal World}{105}{subsection.21.0.1}
+\contentsline {subsection}{\numberline {21.0.2}The Astral Realm}{105}{subsection.21.0.2}
+\contentsline {subsection}{\numberline {21.0.3}The Higher Planes}{105}{subsection.21.0.3}
+\contentsline {subsection}{\numberline {21.0.4}The Eldritch Domains}{105}{subsection.21.0.4}
+\contentsline {subsection}{\numberline {21.0.5}The Void}{106}{subsection.21.0.5}
+\contentsline {section}{\numberline {21.1}Higher Planes}{106}{section.21.1}
+\contentsline {subsection}{\numberline {21.1.1}Abyss: The Plane of Terror}{106}{subsection.21.1.1}
+\contentsline {subsection}{\numberline {21.1.2}Aeolus: The Plane of Storms and Winds}{106}{subsection.21.1.2}
+\contentsline {subsection}{\numberline {21.1.3}Eden: The Plane of Nature}{106}{subsection.21.1.3}
+\contentsline {subsection}{\numberline {21.1.4}Elysium: The Plane of Blessings}{106}{subsection.21.1.4}
+\contentsline {subsection}{\numberline {21.1.5}Hades: The Plane of Death}{106}{subsection.21.1.5}
+\contentsline {subsection}{\numberline {21.1.6}Hyperborea: The Plane of Ice}{107}{subsection.21.1.6}
+\contentsline {subsection}{\numberline {21.1.7}Machina: The Plane of Order}{107}{subsection.21.1.7}
+\contentsline {subsection}{\numberline {21.1.8}Nirvana: The Plane of Peace}{107}{subsection.21.1.8}
+\contentsline {subsection}{\numberline {21.1.9}Pand{\ae }monium: The Plane of Chaos}{107}{subsection.21.1.9}
+\contentsline {subsection}{\numberline {21.1.10}Scholomancia: The Plane of Knowledge}{107}{subsection.21.1.10}
+\contentsline {subsection}{\numberline {21.1.11}Tartarus: The Plane of Torture}{108}{subsection.21.1.11}
+\contentsline {subsection}{\numberline {21.1.12}Valhalla: The Plane of Bravery}{108}{subsection.21.1.12}
+\contentsline {subsection}{\numberline {21.1.13}Vulcan: The Plane of Fire}{108}{subsection.21.1.13}
+\contentsline {chapter}{\numberline {22}\vspace {-1ex}Magic Cheat Sheet}{110}{chapter.22}
+\contentsline {subsubsection}{How to Cast}{110}{subsubsection*.3}
+\contentsline {subsubsection}{Memory}{110}{subsubsection*.4}
+\contentsline {subsubsection}{Resisting}{110}{subsubsection*.5}
+\contentsline {subsubsection}{Check Type}{110}{subsubsection*.6}
+\contentsline {subsubsection}{Check Difficulty}{110}{subsubsection*.7}
+\contentsline {subsubsection}{FP Costs}{110}{subsubsection*.8}
+\contentsline {chapter}{\numberline {23}Changelog}{111}{chapter.23}
+\contentsline {section}{\numberline {23.1}Changes in V4.0$\beta $}{111}{section.23.1}
+\contentsline {subsection}{\numberline {23.1.1}Changes to the Spellcasting System}{111}{subsection.23.1.1}
+\contentsline {subsubsection}{Spell Damage Reworked}{111}{subsubsection*.9}
+\contentsline {subsubsection}{General effect balancing}{111}{subsubsection*.10}
+\contentsline {subsubsection}{Power Point Refocus}{111}{subsubsection*.11}
+\contentsline {subsubsection}{Disciplines Introduced}{111}{subsubsection*.12}
+\contentsline {subsubsection}{Some Renaming}{111}{subsubsection*.13}
+\contentsline {subsubsection}{Cheat Sheet}{111}{subsubsection*.14}
+\contentsline {subsubsection}{Manipulate Spells}{111}{subsubsection*.15}
+\contentsline {subsubsection}{Spells alterations}{111}{subsubsection*.16}
+\contentsline {subsection}{\numberline {23.1.2}Changes to Items}{112}{subsection.23.1.2}
+\contentsline {subsubsection}{Prices}{112}{subsubsection*.17}
+\contentsline {subsection}{\numberline {23.1.3}Meta-Changes}{112}{subsection.23.1.3}

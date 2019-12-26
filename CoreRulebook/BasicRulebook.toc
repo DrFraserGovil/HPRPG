@@ -88,20 +88,34 @@
 \contentsline {subsection}{\numberline {17.4.3}Cube}{53}{subsection.17.4.3}
 \contentsline {subsection}{\numberline {17.4.4}Cylinder}{53}{subsection.17.4.4}
 \contentsline {subsection}{\numberline {17.4.5}Line}{53}{subsection.17.4.5}
-\contentsline {subsection}{\numberline {17.4.6}Sphere}{54}{subsection.17.4.6}
-\contentsline {chapter}{\numberline {18}Spell List}{56}{chapter.18}
-\contentsline {subsubsection}{Charms}{56}{subsubsection*.3}
-\contentsline {subsubsection}{Dark Arts}{56}{subsubsection*.4}
-\contentsline {subsubsection}{Divination}{56}{subsubsection*.5}
-\contentsline {subsubsection}{Hexes}{56}{subsubsection*.6}
-\contentsline {subsubsection}{Illusion}{56}{subsubsection*.7}
-\contentsline {subsubsection}{Recuperation}{56}{subsubsection*.8}
-\contentsline {subsubsection}{Transfiguration}{56}{subsubsection*.9}
-\contentsline {part}{V\hspace {1em}Appendices}{60}{part.5}
-\contentsline {chapter}{\numberline {19}\vspace {-1ex}Magic Cheat Sheet}{62}{chapter.19}
-\contentsline {subsubsection}{How to Cast}{62}{subsubsection*.10}
-\contentsline {subsubsection}{Memory}{62}{subsubsection*.11}
-\contentsline {subsubsection}{Resisting}{62}{subsubsection*.12}
-\contentsline {subsubsection}{Check Type}{62}{subsubsection*.13}
-\contentsline {subsubsection}{Check Difficulty}{62}{subsubsection*.14}
-\contentsline {subsubsection}{FP Costs}{62}{subsubsection*.15}
+\contentsline {subsection}{\numberline {17.4.6}Sphere}{53}{subsection.17.4.6}
+\contentsline {chapter}{\numberline {18}Spell List}{54}{chapter.18}
+\contentsline {subsubsection}{Charms}{54}{subsubsection*.3}
+\contentsline {subsubsection}{Dark Arts}{54}{subsubsection*.4}
+\contentsline {subsubsection}{Divination}{54}{subsubsection*.5}
+\contentsline {subsubsection}{Hexes}{54}{subsubsection*.6}
+\contentsline {subsubsection}{Illusion}{54}{subsubsection*.7}
+\contentsline {subsubsection}{Recuperation}{54}{subsubsection*.8}
+\contentsline {subsubsection}{Transfiguration}{54}{subsubsection*.9}
+\contentsline {part}{V\hspace {1em}Appendices}{58}{part.5}
+\contentsline {chapter}{\numberline {19}\vspace {-1ex}Magic Cheat Sheet}{60}{chapter.19}
+\contentsline {subsubsection}{How to Cast}{60}{subsubsection*.10}
+\contentsline {subsubsection}{Memory}{60}{subsubsection*.11}
+\contentsline {subsubsection}{Resisting}{60}{subsubsection*.12}
+\contentsline {subsubsection}{Check Type}{60}{subsubsection*.13}
+\contentsline {subsubsection}{Check Difficulty}{60}{subsubsection*.14}
+\contentsline {subsubsection}{FP Costs}{60}{subsubsection*.15}
+\contentsline {chapter}{\numberline {20}Changelog}{61}{chapter.20}
+\contentsline {section}{\numberline {20.1}Changes in V4.0$\beta $}{61}{section.20.1}
+\contentsline {subsection}{\numberline {20.1.1}Changes to the Spellcasting System}{61}{subsection.20.1.1}
+\contentsline {subsubsection}{Spell Damage Reworked}{61}{subsubsection*.16}
+\contentsline {subsubsection}{General effect balancing}{61}{subsubsection*.17}
+\contentsline {subsubsection}{Power Point Refocus}{61}{subsubsection*.18}
+\contentsline {subsubsection}{Disciplines Introduced}{61}{subsubsection*.19}
+\contentsline {subsubsection}{Some Renaming}{61}{subsubsection*.20}
+\contentsline {subsubsection}{Cheat Sheet}{61}{subsubsection*.21}
+\contentsline {subsubsection}{Manipulate Spells}{61}{subsubsection*.22}
+\contentsline {subsubsection}{Spells alterations}{61}{subsubsection*.23}
+\contentsline {subsection}{\numberline {20.1.2}Changes to Items}{62}{subsection.20.1.2}
+\contentsline {subsubsection}{Prices}{62}{subsubsection*.24}
+\contentsline {subsection}{\numberline {20.1.3}Meta-Changes}{62}{subsection.20.1.3}

@@ -163,18 +163,18 @@
 \def\NecCheck{EVL}
 \def\OccCheck{POW}
 
-\newcommand\mult[1]
+\newcommand\mult[2]
 {
-\the\numexpr(3*#1)/2\relax	
+\the\numexpr((1+#2)*#1)/2\relax	
 }
 
 
 
 
 
-\newcommand\FPEntry[1]
+\newcommand\FPEntry[2]
 {
-#1&(\!\mult{#1}~)
+\!\mult{#1}{#2}
 }
 
 \def\wS{4.8}
