@@ -1,8 +1,8 @@
-texFiles = dir('Archetypes/*.tex');
+texFiles = dir('*.tex')
 sList = {};
 lList = {};
 for i = 1:length(texFiles)
-    fileObj = texFiles(i);
+    fileObj = texFiles(i)
     tableFile = "Archetypes/" + fileObj.name(1:end-4) + ".xlsx";
     file = char(tableFile);
     
@@ -58,16 +58,15 @@ for i = 1:length(texFiles)
             com = ", ";
             
         end
-        if f.(2)(i) ~= floor(i/5)
-            t = "arcane"+num2roman(i)+"=" +num2str( f.(2)(i));
-            vars = vars+ com + t;
-            com = ", ";
-        end
+        t = "arcane"+num2roman(i)+"=" +num2str( f.(2)(i)+2);
+        vars = vars+ com + t
+        com = ", ";
+        
     end
     
     fullText = "\archetype{"+name+"}{"+branch1+"}{"+branch2+"}{"+num2str(mode)+"}{" + vars +"}";
     
-    fileName = "Archetypes/" + fileObj.name;
+    fileName =  fileObj.name;
     readFile = fileread(fileName);
     sTrigger = "%%archBegin";
     eTrigger = "%%archEnd";

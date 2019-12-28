@@ -1,10 +1,18 @@
-function allSpellAssembler(maxLevel)
-    if nargin < 1
-        maxLevel = 5;
+function allSpellAssembler(maxLevel,fileNameRoot)
+   
+    %if no target given, assume that called directly, else assume called by
+    %master
+   
+    if nargin < 2
+        disp('Insufficient inputs provided');
+        if nargin < 1
+            maxLevel = 5;
+        end
+        addpath('../Functions/');
+        fileNameRoot = '../../Chapters/';
     end
-    
     %% open file
-    addpath('../');
+    
     opts = detectImportOptions('AllSpells.xlsx','NumHeaderLines',2);
     opts.VariableNamesRange = 'A1';
     f = readtable("AllSpells.xlsx",opts,'ReadVariableNames',true);
@@ -115,9 +123,9 @@ function allSpellAssembler(maxLevel)
     %% output to file
     
     fullText = disciplineTableText + listText;
-    fileName = '../../Chapters/SpellList.tex';
+    fileName = strcat(fileNameRoot, 'SpellList.tex');
     if maxLevel < 3
-        fileName =  '../Chapters/SpellListShort.tex';
+        fileName =  strcat(fileNameRoot , '/SpellListShort.tex');
     end
     FID = fopen(fileName,'w');
     fprintf(FID, fullText);

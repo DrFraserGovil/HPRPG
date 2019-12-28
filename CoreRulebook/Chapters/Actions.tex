@@ -21,22 +21,20 @@ Generally speaking, the following list should serve as a guide as to what genera
    \item   SPR: ~~	Feats that require concentration, force of will, and awareness of your surroundings.
     \item  CHR:~~ 	Convincing and persuading others, haggling and distractions. 
     \item  INT: ~~	Research and knowledge actions. 
-    \item  EMP:~~	Calming others, requesting help, identifying when something is amiss. 
+    \item  PER:~~	Noticing things, either around you, or on an individual level
     \item  POW:~~ 	Often used to impress others, or intimidate them into helping you
     \item EVL: ~~	Intimidation, scaring. Often necessary to commit atrocities. 
 \end{itemize}
 
-On top of these general actions, each school of magic has an inclination towards one attribute or another as the required casting checkes -- Hexes \& Curses favour PWR and SPR, Transfiguration favours FIN and INT, Charms spells lean towards POW and FIN, Protective spells rely heavily on EMP checks, as does Divination, illusion obviously required CHR checks, and the Dark Arts requires extensive EVL checks. 
+On top of these general actions, casting magic spells requires abilities in each of these fields. Each spell `discipline' is assocoiated with an attribute. Therefore casting Hexes, for example, requires a SPR check, but casting an illusion requires you to be convincing, using a CHR check. 
 
-As always, the GM has the authority to override these general guidelines, if it is suitable to do so (there is a certain crossover between CHR and EMP checks, for example, which may require event-specific discretion). 
-
-For more detail on how to calculate a check, see page \pageref{S:Checks}.
+As always, the GM has the authority to override these general guidelines, if it is suitable to do so. For more detail on how to calculate a check, see page \pageref{S:Checks}.
 
 \subsection{Modifiers}
 Each character has an associated score in each of the 8 attributes, which enables them to more reliably pass checks in these fields, via the use of the associated modifiers.  When performing an ATH check, for example, you perform the requisite check (usually a d20), and then add on your ATH modifier, which is derived from your ATH score in the following way:
 $$ \text{attribute modifier} = \frac{\text{attribute level} - 10}{2} \text{ (rounded down)} $$
 
-The exception to this calculation is EVL. Since most people are (generally) much less evil than they are athletic, we use 5, rather than 10, in the denominator of the calculation. The table below gives an example:
+The exception to this calculation is EVL. Since most people are (generally) much less evil than they are athletic, we use 5, rather than 10, in the numerator of the calculation. The table below gives an example:
 
   
 \begin{center}
@@ -70,7 +68,7 @@ In addition to the 8 main attributes, checks can be further subdivided up into 2
 	\item ATH
 		\begin{itemize}[leftmargin = 0.2cm]
 			\item {\bf Health}
-				   {\footnotesize \it Used in checks to determine how healthy a character is, i.e. when resisting the effects of poisons and diseased}
+				   {\footnotesize \it Used in checks to determine how healthy a character is, i.e. when resisting the effects of poisons and diseases}
 			\item {\bf  Speed}
 				  {\footnotesize \it Used in movement and dodge checks}
 			\item {\bf Strength}
@@ -113,14 +111,12 @@ In addition to the 8 main attributes, checks can be further subdivided up into 2
 			\item {\bf Flora \& Fauna}
 			 {\footnotesize \it Identify living beingsof all shapes and sizes, and recall their properties}
 		\end{itemize}
-	\item EMP
+	\item PER
 		\begin{itemize}[leftmargin = 0.2cm]
-			\item {\bf Perception}
+			\item {\bf Surroundings}
 			 {\footnotesize \it Recognise threats around you, spot things others might not}
-			\item {\bf Understand Other}
-			 {\footnotesize \it Used in checks to understand what others want -- useful in dealing with humans and beasts alike}
-			\item {\bf Healing}
-			{\footnotesize \it Gain bonuses when helping another being get better}
+			\item {\bf Emotions}
+			 {\footnotesize \it Used to gain an understanding of what others are feeling}
 		\end{itemize}
 	\item POW
 		\begin{itemize}[leftmargin = 0.2cm]
@@ -283,40 +279,41 @@ There might also be cases where two spells are cast simultaneously where the ord
 In cases such as this it is useful to remember that it is the {\it casting} of the spell that is simultaneous: so the ordering in which the spell effects should take place can be inferred from the distance between the caster and the target. The issue above is resolved simply by looking at whoever is closest to the target. 
  
  \newpage
-\section{Movement}
-
-Moving is a very common action to take during combat, to avoid the enemy's attacks, or to maneouvre yourself to enable an attack on the enemy. Movement can be broken down into three types: minor movements, transport movements and considered movements. 
-
-\subsection{Minor Movements}
-
-A { minor movement} includes things such as turning to face an enemy, or taking a step out from behind cover. These actions do not constitute the entirety of a turn and you may still take a major action afterwards, \textbf{however, they are considered to happen at the very beginning of a turn cycle, and you cannot return to cover after emerging from it}. If you therefore emerge from cover to attack someone, and a character successfully guessed that this would happen and sent a spell in your direction, you will not be protected until you move back into cover in the next turn cycle. 
-
-
-A { considered movement} is one in which your character is attempting to do something else, whilst moving. It is considered a minor action -- or `half' a major action. The check is performed exactly as above, but you then simply divi the distance by two. You may use the other half to perform another minor action, such as an evasion, or to prepare a counterspell. A consideredmovement may not then be used to trigger the `sprint' effect. 
-
-\subsection{Transport Movement}
-
-{\bf Transport movements} are those designed to get you from point A to point B as quickly as possible. These actions do take up your entire turn: you can do nothing else except take a transport action. The distance that you can travel in a given trasnport action is calculated from:
-
+ 
+ \section{Major Actions}
+ 
+ Major actions take an entire turn to complete, and as such are considered the main way to engage in combat. 
+ 
+ \subsection{Attacking}
+ 
+ Casting a spell, swinging a sword, or loosing an arrow takes (usually) a full turn to complete, and so you may decide to use your entire turn to cast a spell. Some skills and archetype abilities allow you to perform multiple such actions as part of a single major action. 
+ 
+ \subsection{Movement}
+ 
+ When used as a major action, movement allows you to move up to a distance given by: 
 \small
 $$ \text{metres travelled} = \text{Base Speed } + \frac{\text{ATH modifier + Speed Proficiency }}{2}  $$  
 \normalsize
+(See below for more)
 
-This distance is rounded downwards  to the nearest half-metre, unless you are wearing ``heavy armour'' (i.e. anything more heavy than usual fabrics), in which case it is rounded downwards to the nearest integer. The direction that you are travelling in \textbf{must} be declared before performing this check. You may elect to not use all of the movement that you rolled for -- i.e. if you can move 1.5m in total, you may only use 1m, if you desire. 
+All other non-standard movement (i.e. climbing, crawling etc, swimming) must be performed as a full major action. 
 
+ \subsection{Using Items (sometimes)}
+ 
+Obviously, some `uses' of items include using swords, wands and ranged weapons, which have already been covered by `attacking'. 
 
+However, sometimes you might want to use an action to get something big done, outside of hitting somebody. Using a crowbar, changing your weapon, finding the right page of a book -- all of these take enough time  
 
-
-\newpage
 \section{Minor Actions}
 You may perform two minor actions in place of a single major action, all minor movement actions occur first, but otherwise you may choose the order in which the actions are completed. Some important minor actions are listed. 
 
-\subsection{Evasion}
+\subsection{Using Items (sometimes)}
+
+Generally speaking, using an item is considered a minor action. Consuming a potion, checking a rememberall, removing an item from your bag and so on would be considered `minor actions'. Anything that can be completed in around 1 second would fall into this category. 
+
+\subsection{{\it Evade} or {\it Brace} }
  
- Performing an evasive action allows you to dodge out of the way of a danegerous effect (be it a giant\apos{}s club, or a wayward spell). Perform an ATH(speed) Resist check. If the instigator of the effect is a being (and not, say, a falling branch), the DV of the dodge is set by them performing an EMP(perception) Resist check to anticipate your actions and adjust accordingly. If the anticipation check is greater than the evasion check, the evasion fails and the effect is applied. Otherwise, the effect misses entirely. 
- 
- 
- When declared as a minor action, you may dodge only one effect per cycle. You may, however, choose to dedicate an entire major action to evasion, in which case you may attempt to dodge up to three effects. 
+ You may also choose to ready yourself against incoming attacks, by bolstering either of your {\it Dodge} or {\it Block} stats by the value of a Resist check. This gives you a better chance of negating incoming effects.  
 
 \subsection{Counterspells}
 
@@ -337,39 +334,8 @@ A quickspell is a spell that is cast as a minor action.
 
 Spells require a clarity of focus, so casting whilst moving, or otherwise in a hurry is generally a bad idea, if you want it to actually work. However, if you are very comfortable with spell (or a very powerful spellcaster), then you may be able get away with it. 
 
-When casting a quickspell, the dice roll is capped at half of the maximum value. If you roll higher than the capped value, you gain no additional improvements. You are also limited in the amount of attribute/modifier bonuses you can add into the casting, depending on your casting level in the associated school:
+When performing a quickspell, you {\it must} take check-disadvantage on the accuracy check, unless you have a skill which explicitly mentions {\it Quickspells}. 
 
-\begin{center}
-\begin{rndtable}{|c  c c|}
-\hline
-\bf Casting Level 	&	\bf Roll Cap	&	\bf  Bonuses
-\\
-Beginner	&	3	& 0\%
-\\
-Novice	&	4	&	25\%
-\\
-Adept	&	5	&	33\%
-\\
-Expert	&	6	&	50\%
-\\
-Master	&	10	&	75\%
-\\\hline
-\end{rndtable}
-
-You must also take check-disadvantage on the anticipation check if the target attempts to evade. 
-
-\end{center}
-
-\clearpage
-\section{Classifying Actions}
-
-Other actions may also be broken down into a major and a minor distinction, with major actions taking up the entirety of a turn, and minor actions being able to be used in concert with other minor actions, or with a considered movement. 
-
-Examples of minor actions could be removing an item from your bag (within reason), drinking a potion, or crouching down. Major actions would be casting spells, equipping and using weapons and so on. There is, as usual, a slight grey area in what constitutes a minor action -- pulling an entire suit of armour out of your bag is clearly going to take longer than a minor action!
-
-Some actions (i.e. putting on said suit of armour) might take a number of turn cycles to complete. You may choose to abandon the action before it is completed, but you would then need to start again from scratch to finalise it. 
-
-Classifying these actions is up to the GM: and the GM{\apos}s word on the matter is final. 
 
 As a general guide, remember that there are 10 turn cycles per minute, so a major action takes around 6 seconds to complete. Anything that takes more than 3 seconds must therefore be considered a major action. 
 \subsection{Conditional Actions}
@@ -383,6 +349,34 @@ For example, it could be that you declare as your action \textit{if the troll at
 You are only allowed a single conditional clause in your declaration, and if that conditional does not come to pass, then your character does not do anything: there is no \verb|if-then-else| in this game!
 
 If a seemingly unbreakable condition-chain arises (i.e. player A says he will perform X if player B does Y, but player B says he will only perform Y if player A does X), it is up to the GM to resolve the conditionals -- in such cases the answer is usually \textit{nothing happens}, but there may be examples where the GM feels it is more appropriate that the action-chain is triggered. 
+
+
+\section{Movement}
+
+Moving is a very common action to take during combat, to avoid the enemy's attacks, or to maneouvre yourself to enable an attack on the enemy. Movement can be considered a major action, a minor action, or indeed, neither. To aid this distinction, movement is broken down into three types: minor movements, transport movements and considered movements. 
+
+
+
+
+\subsection{Minor Movements}
+
+A { minor movement} includes things such as turning to face an enemy, or taking a step out from behind cover. These actions do not constitute the entirety of a turn and you may still take a major action afterwards, \textbf{however, they are considered to happen at the very beginning of a turn cycle, and you cannot return to cover after emerging from it}. If you therefore emerge from cover to attack someone, and a character successfully guessed that this would happen and sent a spell in your direction, you will not be protected until you move back into cover in the next turn cycle. 
+
+
+\subsection{Transport Movement}
+
+{\bf Transport movements} are those designed to get you from point A to point B as quickly as possible. These actions do take up your entire turn: you can do nothing else except take a transport action. The distance that you can travel in a given trasnport action is calculated from:
+
+\small
+$$ \text{metres travelled} = \text{Base Speed } + \frac{\text{ATH modifier + Speed Proficiency }}{2}  $$  
+\normalsize
+
+This distance is rounded downwards  to the nearest half-metre, unless you are wearing ``heavy armour'' (i.e. anything more heavy than usual fabrics), in which case it is rounded downwards to the nearest integer. The direction that you are travelling in \textbf{must} be declared before performing this check. You may elect to not use all of the movement that you rolled for -- i.e. if you can move 1.5m in total, you may only use 1m, if you desire. 
+
+
+\subsection{Considered Movement}
+
+A { considered movement} is one in which your character is attempting to do something else, whilst moving. It is considered a minor action -- or `half' a major action. The check is performed exactly as above, but you then simply divi the distance by two. You may use the other half to perform another minor action, such as an evasion, or to prepare a counterspell. 
 
 
 

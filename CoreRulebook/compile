@@ -3,11 +3,11 @@ echo $1
 if [ $1 -eq  1 ] 
 then
 	cd Data;
-	matlab -nodisplay -nodesktop < "MasterAssembly.m"
+	matlab -nodisplay -nodesktop -r 'MasterAssembly(1)';
 	cd ..
 fi
 xelatex CoreRulebook.tex
-xelatex BasicRulebook.tex
-xdg-open CoreRulebook.pdf
-rm *.aux
+#xelatex BasicRulebook.tex
+evince CoreRulebook.pdf
 rm *.log
+
