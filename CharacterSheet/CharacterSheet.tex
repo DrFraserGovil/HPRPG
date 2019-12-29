@@ -30,6 +30,7 @@
 \vspace{-1cm}	
 \begin{tikzpicture}
 
+
 \def\h{1.8};
 \node at (0.5,\h) {~~\HP Name:};
 \node at (0.5, {\h-0.9}) {~~\HP Archetype:};
@@ -55,11 +56,14 @@
 %~ \node at (4.5,-13.2) {\HP Statuses \& Temportary Effects};
 %~ \draw[rounded corners] (0,-13.5) rectangle (9,-17);
 
+\draw (0,-17.1)-++(14,0);
+\draw (0,-13.9)-++(14,0);
+
 %% aiming reticule
-\def\ell{0.8}
+\def\ell{0.75}
 \def\r{1.1}
 \def\cx{1.2}
-\def\cy{-15.2}
+\def\cy{-15.5}
 \draw (\cx,\cy) circle (\r);
 \draw (\cx,\cy) circle ({\r*1.1});
 \draw (\cx,{\cy+\r+\ell*2/3})--(\cx,{\cy+\r-\ell/3});
@@ -85,17 +89,17 @@
 \draw[domain = \thetaS:\thetaE] plot ({\cx + \pdx + \r*sin(\x)},{\cy - \r*cos(\x)});
 \draw[domain = \thetaS:\thetaE] plot ({\cx - \pdx - \r*sin(\x)},{\cy - \r*cos(\x)});
 
-\draw[domain = \thetaA:\thetaB] plot ({\cx - \pdx - \r*sin(\thetaE) + \R*sin(\x)},{\cy - \r*cos(\thetaE) +1.5*\R*cos(\x)});
-\draw[domain = \thetaA:\thetaB] plot ({\cx + \pdx + \r*sin(\thetaE) - \R*sin(\x)},{\cy - \r*cos(\thetaE) +1.5*\R*cos(\x)});
+\draw[domain = \thetaA:\thetaB] plot ({\cx - \pdx - \r*sin(\thetaE) + \R*sin(\x)},{\cy - \r*cos(\thetaE) +1.6*\R*cos(\x)});
+\draw[domain = \thetaA:\thetaB] plot ({\cx + \pdx + \r*sin(\thetaE) - \R*sin(\x)},{\cy - \r*cos(\thetaE) +1.6*\R*cos(\x)});
 %\draw[domain = \thetaS:\thetaE] plot ({\cx - \pdx - \r*sin(\x)},{\cy - \r*cos(\x)});
 
 
 %%avoid
 \def\cx{7.2}
-\def\cy{-15}
-\def\D{2}
+\def\cy{-15.5}
+\def\D{1.6}
 \def\r{1}
-\def\R{1.2}
+\def\R{1.1}
 \draw (\cx,\cy) circle (\r);
 \draw[ultra thick, ->] (\cx,{\cy-\D})--(\cx,{\cy-\R}) arc (90:270:-\R) -- (\cx,{\cy + \D}); 
 

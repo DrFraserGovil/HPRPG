@@ -196,21 +196,24 @@
 \contentsline {subsubsection}{FP Costs}{110}{subsubsection*.8}
 \contentsline {chapter}{\numberline {24}Changelog}{111}{chapter.24}
 \contentsline {section}{\numberline {24.1}Changes in V4.0$\beta $}{111}{section.24.1}
-\contentsline {subsection}{\numberline {24.1.1}Changes to the Spellcasting System}{111}{subsection.24.1.1}
-\contentsline {subsubsection}{Spell Damage Reworked}{111}{subsubsection*.9}
-\contentsline {subsubsection}{General effect balancing}{111}{subsubsection*.10}
-\contentsline {subsubsection}{Power Point Refocus}{111}{subsubsection*.11}
-\contentsline {subsubsection}{Disciplines Introduced}{111}{subsubsection*.12}
-\contentsline {subsubsection}{Some Renaming}{111}{subsubsection*.13}
-\contentsline {subsubsection}{Cheat Sheet}{111}{subsubsection*.14}
-\contentsline {subsubsection}{Manipulate Spells}{111}{subsubsection*.15}
-\contentsline {subsubsection}{Spells alterations}{111}{subsubsection*.16}
-\contentsline {subsection}{\numberline {24.1.2}Changes to Items}{112}{subsection.24.1.2}
-\contentsline {subsubsection}{Prices}{112}{subsubsection*.17}
-\contentsline {subsection}{\numberline {24.1.3}Evasion/AC System Revamp}{112}{subsection.24.1.3}
-\contentsline {subsubsection}{Overhaul}{112}{subsubsection*.18}
-\contentsline {subsubsection}{Character Sheet}{112}{subsubsection*.19}
-\contentsline {subsection}{\numberline {24.1.4}Meta-Changes}{112}{subsection.24.1.4}
+\contentsline {subsection}{\numberline {24.1.1}Changes to Character Attributes}{111}{subsection.24.1.1}
+\contentsline {subsubsection}{EMP $\rightarrow $ PER}{111}{subsubsection*.9}
+\contentsline {subsubsection}{Dodge + Block}{111}{subsubsection*.10}
+\contentsline {subsection}{\numberline {24.1.2}Changes to the Spellcasting System}{111}{subsection.24.1.2}
+\contentsline {subsubsection}{Spell Damage Reworked}{111}{subsubsection*.11}
+\contentsline {subsubsection}{General effect balancing}{111}{subsubsection*.12}
+\contentsline {subsubsection}{Power Point Refocus}{111}{subsubsection*.13}
+\contentsline {subsubsection}{Disciplines Introduced}{111}{subsubsection*.14}
+\contentsline {subsubsection}{Some Renaming}{111}{subsubsection*.15}
+\contentsline {subsubsection}{Cheat Sheet}{111}{subsubsection*.16}
+\contentsline {subsubsection}{Manipulate Spells}{111}{subsubsection*.17}
+\contentsline {subsubsection}{Spells alterations}{111}{subsubsection*.18}
+\contentsline {subsection}{\numberline {24.1.3}Changes to Items}{112}{subsection.24.1.3}
+\contentsline {subsubsection}{Prices}{112}{subsubsection*.19}
+\contentsline {subsection}{\numberline {24.1.4}Evasion/AC System Revamp}{112}{subsection.24.1.4}
+\contentsline {subsubsection}{Overhaul}{112}{subsubsection*.20}
+\contentsline {subsubsection}{Character Sheet}{112}{subsubsection*.21}
+\contentsline {subsection}{\numberline {24.1.5}Meta-Changes}{112}{subsection.24.1.5}
 \contentsline {section}{\numberline {24.2}To-Do List}{112}{section.24.2}
 \contentsline {subsection}{\numberline {24.2.1}Rethink Perception}{112}{subsection.24.2.1}
 \contentsline {subsection}{\numberline {24.2.2}Rethink AC}{112}{subsection.24.2.2}
