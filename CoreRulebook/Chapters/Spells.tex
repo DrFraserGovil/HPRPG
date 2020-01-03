@@ -254,9 +254,11 @@ This section contains a list of all the spells available in the game. First, the
 \define@key{spell}{resistDV}{\def\resistDV{#1}}
 \define@key{spell}{noTravel}{\def\travelMode{#1}}
 \define@key{spell}{noResist}{\def\resistMode{#1}}
+\define@key{spell}{noBlock}{\def\blockMode{#1}}
+\define@key{spell}{negation}{\def\negation{#1}}
 \newcommand{\spell}[1]
 {
-	\setkeys{spell}{name=None,incant = -, school = None, discipline=None,type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0,noDur=0,duration=None,higher=None,noHigh=0,travel = None,noTravel = 0, resist = None, resistDV = none, noResist = 0}
+	\setkeys{spell}{name=None,incant = -, school = None, discipline=None,type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0,noDur=0,duration=None,higher=None,noHigh=0,travel = None,noTravel = 0, resist = None, resistDV = none, noResist = 0,noBlock=0,negation=None}
 	\setkeys{spell}{#1}
 	\vbox{
 	{\normalsize \color{rulered}\name }
@@ -285,6 +287,9 @@ This section contains a list of all the spells available in the game. First, the
 	
 	\if\resistMode0
 		{\bf Resist: } & \resist,  DV \resistDV \\
+	\fi
+	\if\blockMode0
+		{\bf Negation: }	&	\negation
 	\fi
 	%~{\bf DV:}~~~~~~~~~\quad~~~~\dv
 	

@@ -122,21 +122,9 @@ classdef Spell < handle
                 t = t + "resist = " + prepareText(sp.Resist) + ", resistDV = " + prepareText(sp.ResistDV) + ", ";
             end
             
-            if sp.Blockable == false && sp.Dodgeable == false
+            if sp.Blockable == false
                 t = t + "noBlock = 1, ";
             else
-                t = t +"negation = ";
-                if sp.Blockable == true
-                    t = t + "Blockable";
-                    if sp.Dodgeable == true
-                        t = t + "  and Dodgeable";
-                    end
-                else
-                    t = t + "Dodgeable";
-                end
-                t = t + ",";
-            end
-            
               
             %% end
             t = t + "effect =" + prepareText(sp.Effect) + "}";

@@ -288,6 +288,8 @@ In cases such as this it is useful to remember that it is the {\it casting} of t
  
  Casting a spell, swinging a sword, or loosing an arrow takes (usually) a full turn to complete, and so you may decide to use your entire turn to cast a spell. Some skills and archetype abilities allow you to perform multiple such actions as part of a single major action. 
  
+ Generally, to perform an attack, you first perform an accuracy check (see page \pageref{S:Accuracy}) against your targets {\it block} or {\it dodge} values, to determine if the attack hits. You must then perform the damage check, to determine the amount of damage your check does. A spell-attack has the additional step of requiringa `casting check', to determine if you can successfuly cast the spell. 
+ 
  \subsection{Movement}
  
  When used as a major action, movement allows you to move up to a distance given by: 
@@ -302,10 +304,25 @@ All other non-standard movement (i.e. climbing, crawling etc, swimming) must be 
  
 Obviously, some `uses' of items include using swords, wands and ranged weapons, which have already been covered by `attacking'. 
 
-However, sometimes you might want to use an action to get something big done, outside of hitting somebody. Using a crowbar, changing your weapon, finding the right page of a book -- all of these take enough time  
+However, sometimes you might want to use an action to get something big done, outside of hitting somebody. Using a crowbar to pry open a door, changing your weapon, finding the right page of a book -- all of these take enough time to be considered major actions. 
 
+Some uses might take multiple turns -- for instance, climbing into a full suit of armour takes more than 3 seconds to complete, and will therefore require multiple, consecutive major actions to complete. 
+
+\subsection{Trading Items}
+
+If two characters are standing within touching distance, they may trade items between them. 
+
+Giving items to other people takes the major actions of both the giver and the receiver. 
+
+\newpage
 \section{Minor Actions}
 You may perform two minor actions in place of a single major action, all minor movement actions occur first, but otherwise you may choose the order in which the actions are completed. Some important minor actions are listed. 
+
+\subsection{Communicate}
+
+Communicating vital information - such as the location of a hidden enemy or trap - to your comrades takes a minor action. Note that it is assumed that the enemy can hear you, unless you make an effort to not be understood. 
+
+In the example of alerting a comrade to a hidden foe, the hidden enemy will hear your warning and will know it has been discovered, it may adjust its actions accordingly. 
 
 \subsection{Using Items (sometimes)}
 
@@ -314,6 +331,8 @@ Generally speaking, using an item is considered a minor action. Consuming a poti
 \subsection{{\it Evade} or {\it Brace} }
  
  You may also choose to ready yourself against incoming attacks, by bolstering either of your {\it Dodge} or {\it Block} stats by the value of a Resist check. This gives you a better chance of negating incoming effects.  
+
+See page \pageref{S:Accuracy} for more details. 
 
 \subsection{Counterspells}
 
@@ -336,9 +355,9 @@ Spells require a clarity of focus, so casting whilst moving, or otherwise in a h
 
 When performing a quickspell, you {\it must} take check-disadvantage on the accuracy check, unless you have a skill which explicitly mentions {\it Quickspells}. 
 
+~
 
-As a general guide, remember that there are 10 turn cycles per minute, so a major action takes around 6 seconds to complete. Anything that takes more than 3 seconds must therefore be considered a major action. 
-\subsection{Conditional Actions}
+\section{Conditional Actions}
 
 The use of the simultaneous combat system raises some interesting opportunities with conditional actions, which are actions that depend on the actions that another character takes.
 
@@ -350,7 +369,7 @@ You are only allowed a single conditional clause in your declaration, and if tha
 
 If a seemingly unbreakable condition-chain arises (i.e. player A says he will perform X if player B does Y, but player B says he will only perform Y if player A does X), it is up to the GM to resolve the conditionals -- in such cases the answer is usually \textit{nothing happens}, but there may be examples where the GM feels it is more appropriate that the action-chain is triggered. 
 
-
+\newpage
 \section{Movement}
 
 Moving is a very common action to take during combat, to avoid the enemy's attacks, or to maneouvre yourself to enable an attack on the enemy. Movement can be considered a major action, a minor action, or indeed, neither. To aid this distinction, movement is broken down into three types: minor movements, transport movements and considered movements. 
@@ -378,13 +397,72 @@ This distance is rounded downwards  to the nearest half-metre, unless you are we
 
 A { considered movement} is one in which your character is attempting to do something else, whilst moving. It is considered a minor action -- or `half' a major action. The check is performed exactly as above, but you then simply divi the distance by two. You may use the other half to perform another minor action, such as an evasion, or to prepare a counterspell. 
 
+~
+
+~
+
+\chapter{Accuracy \& Instincts}\label{S:Accuracy}
+
+When an attack is launched on a being, it is necessary to determine if the target manages to successfully evade or block the attack, thereby negating it. Beings either block or dodge instinctively, without having to devote conscious thought to their reaction. These two actions are therefore termed {\it instincts}, and occur inbetween turn cycles. 
+
+\subsection{Accuracy}
+
+The attacker -- be they an archer, a swordsman, or a spellcaster -- quantifies their ability to successfully hit their target through an {\it accuracy check}, a standard d20 FIN (Precision) check, plus any additional relevant bonuses or penalties. 
+
+If the check is greater than or equal to the {\it instinct value} used by the target, then the attack lands true, and the associated effects are applied. If the accuracy check fails, then the attack misses, or is successfully blocked by the target. 
 
 
+\subsection{Instincts}
+
+
+The accuracy check is contested by either the block or dodge statistics, which are set by:
+
+\begin{align*} 
+\text{Block} &= 8 + \text{ATH (Strength) modifier} 
+\\
+\text{Dodge} &= 8 + \text{FIN (Speed) modifier} 
+\end{align*}
+
+By default, characters instinctively use whichever of these values is the highest. 
+
+If a character successfully dodges, the attack whizzes by their ear and misses completely. If they successfully block the attack, then they catch the spell or weapon on a piece of armour (or, with the appropriate skill, they can {\it parry} the attack). 
+
+Various items may improve either of these statistics. A pair of running shoes, for example, makes it easier to dodge out of the way, whilst a heavy shield makes defending yourself easier. Generally speaking, items will be a compromise: wearing heavy armour will bulk up your Block statistic, but will slow you down, reducing your Dodge value. 
+
+\subsection{{\it Brace} and {\it Evade} }
+
+Of course, not all defense happens instinctively -- you may make a conscious decision to brace yourself against an incoming attack, or prepare to dive out of the way. Such a decision is classified as a minor action. 
+
+You may choose to either {\it brace} or {\it evade} (i.e. you do not have to use the highest-value statistic). 
+
+Whichever you choose, you double your Expertise bonus (if applicable) and perform a Resist check, adding the value of that check into the chosen statistic for the given turn. 
+
+
+\subsection{Proficiencies}
+
+Whether you are swinging a blade, or cowering behind a shield: you must know how to use your equipment, in order to be able to apply your Expertise to it. 
+
+You may only add your Expertise bonus to an accuracy check, if you are proficient in the weapon you are using, or to an {\it Instinct} if you are proficient in the armour you are wearing. 
+
+\subsection{Unblockable and Unavoidable Effects}
+
+Some effects (usually those generated by certain spells) cannot be avoided or blocked: holding up a shield against an incoming cannonball isn't going to prevent much, and trying to dodge out of the way of a tsunami is rarely effective. 
+
+Spells denote in their description if they can be blocked or dodged. For the (rarer) instances of non-spell effects which fall into one of these categories, the DM decides if it is reasonable to dodge or block the effect. 
+
+If the `dominant' instinct (i.e. the one with the highest value) would be ineffective against a given effect, you may use the non-dominant one. However, if the character chose to, for example, use the evade action, they may not transfer the bonus to `dodge' if an evasion turns out to be ineffective. 
+
+Note that even `unblockable' effects are stopped by `impenetrable' fields. 
 \chapter{Stealth and Critical Strikes}
 
 Being noticed by the enemy is generally regarded as a bad thing. It therefore often pays to be sneaky, to stay hidden from the enemy. Stealth is governed by the FIN attribute, via the Stealth proficiency. 
 
-Every time you wish to take an action whilst remaining hidden, you will need to perform a FIN (stealth) check against the target, with the target performing an EMP(perception) check -- if the sneak check exceeds the perception check, then you remain hidden. If it fails, then the target becomes aware of you, and probably initiates combat. 
+Every character and beast has a baseline level of awareness, even when not actively searching for hidden creatures or traps. This is your {\it passive perception}. It is calculated using an `average' dice roll (for a d20, this is 10), so: 
+$$\text{Passive PER} = 10 + \text{bonuses}$$
+
+To remain hidden, your sneak-check must exceed 
+
+Every time you wish to take an action whilst remaining hidden, you will need to perform a FIN (stealth) check against the target, with the target performing a PE check -- if the sneak check exceeds the perception check, then you remain hidden. If it fails, then the target becomes aware of you, and probably initiates combat. 
 
 Equally, some creatures might try to sneak up on you -- but the GM can't very well ask you to perform a perception check, as you would immediately know that something was there! In order to keep the surprise, each checktype has a `passive' value, which is simply equal to the average. Hence, for a d20 check, the passive value is 10 + relevant bonuses. The GM will use this value in private to determine if beings remain hidden or not. 
 
