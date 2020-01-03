@@ -5,10 +5,14 @@
 \usepackage{multicol}
 \usepackage{graphicx}
 \usepackage{tcolorbox}
+
 \usepackage[left = 0.2in, right = 0.2 in, top = 0.2in, bottom = 0.2in]{geometry}
 \usepackage{titlesec}
 \usepackage{amsmath}
+\usepackage{calc}
+\usepackage{ifthen}
 \usepackage{tikz}
+\usetikzlibrary{positioning}
 \usepackage{array}
 \usepackage{lscape}
 \usepackage{multicol}
@@ -26,54 +30,82 @@
 
 \begin{landscape}
 
-\section{Character Sheet}
-\vspace{-1cm}	
 \begin{tikzpicture}
 
 
 \def\h{1.8};
-\node at (0.5,\h) {~~\HP Name:};
-\node at (0.5, {\h-0.9}) {~~\HP Archetype:};
+\node at (0.5,{\h+0.2}) {~~\bf \large Name:};
+\node at (0.5, {\h-0.7}) {~~\bf \large  Species:};
+\node at (0.5, {\h-1.6}) {~~\bf  \large Archetype:};
+
+\draw[rounded corners] (2.5,{\h-1.9})rectangle (9,{\h-0.9});
+\fill[white, rounded corners] (2,{\h - 1.1}) rectangle (9,{\h -0.1});
 \draw[rounded corners] (2,{\h - 1.1}) rectangle (9,{\h -0.1});
 \fill[white, rounded corners] (1.5,{\h - 0.3}) rectangle (9,{\h + 0.7});
 \draw[rounded corners] (1.5,{\h - 0.3}) rectangle (9,{\h + 0.7});
 
+\def\s{3.3}
 
-\draw[rounded corners] (10,1) rectangle (16,-1);
-\draw (12,1)--(12,-1);
-\draw (14,1)--(14,-1);
-\node at (11,0.7) {\small \HP Level};
-\node at (13,0.7) {\small \HP EXP};
-\node at (15,0.7) {\small \HP Arcane Wis };
+\node at (20,0.5) {\includegraphics[width = \s cm,height = \s cm]{../Images/heart}};
+ \node at (24,0.5) {\includegraphics[width = \s cm,height = \s cm]{../Images/brain}};
+
+
+%%% attributes block
+\def\cx{0.2}
+\def\w{3.2}
+\def\gap{0.67}
+\def\hB{2.1}
+\def \xgap{ (\w + 1)}
+\def\ry{0.5}
+\def\voff{-1.3}
+\draw[rounded corners, gray!30, fill = gray!10] ({\cx-\gap},{\voff+\gap}) rectangle ({\cx + \xgap + \w+\gap},{\voff-4*(\hB+\gap)});
+\foreach \c [count = \q from 0] in { {Athletics}, {Finesse}, {Spirit}, {Charisma}, {Intelligence},{Perception}, {Power}, {Evil} }
+{
+	\def\y{ {\voff-(\q - Mod(\q,2))*(\hB+\gap)/2} }
+	\def\x{  {\cx + Mod(\q,2)*\xgap} }
+	\draw[rounded corners,gray!70,fill=white] (\x,\y) rectangle ({\x +\w},{\y - \hB});
+	
+	\draw[domain = 0:360, variable = \t,samples = 100,gray!70,fill = white] plot ({\x + \w/2*(1+0.7*cos(\t))}, {\y-\hB+\ry*sin(\t)});
+	\node at ({\x+\w/2},{\y-0.2}) {\small \bf \c};
+}
+
+
+
+
+\draw[rounded corners] (10,2.5) rectangle (14,{\h-1.1});
+\draw[rounded corners] (9.95	,2.55) rectangle (18.05,\voff);
+\draw[rounded corners] (10,{\h-1.2}) rectangle (14,{\voff+0.05});
+\draw[rounded corners] (14.1,{\h-1.2}) rectangle (18,{\voff+0.05});
+\draw[rounded corners] (14.1,2.5) rectangle (18,{\h-1.1});
+\node at (12,2.2) {\bf \small  Level};
+\node at (16,2.2) {\bf \small  Progress};
+\node at (12,{\h-1.4}) {\small  \bf Expertise };
+\node at (16,{\h-1.4}) {\small \bf Movement};
 \def\w{4}
 \def\b{-1.6}
-\draw[rounded corners] (17,{\w +\b}) rectangle ({17 + \w},\b);
-\draw[rounded corners] ({18+\w},{\w + \b}) rectangle ({18 + \w + \w},\b);
-\node at ({17 + \w/2},{\w + \b - 0.3}) {\HP \small Max HP};
-\node at ({18 + 3*\w/2},{\w + \b - 0.3}) {\HP \small Max FP};
 
 
-%~ \node at (4.5,-13.2) {\HP Statuses \& Temportary Effects};
+
+%~ \node at (4.5,-13.2) {  Statuses \& Temportary Effects};
 %~ \draw[rounded corners] (0,-13.5) rectangle (9,-17);
 
-\draw (0,-17.1)-++(14,0);
-\draw (0,-13.9)-++(14,0);
-
+\def\ct{-17.5}
 %% aiming reticule
 \def\ell{0.75}
 \def\r{1.1}
 \def\cx{1.2}
-\def\cy{-15.5}
+\def\cy{-15}
 \draw (\cx,\cy) circle (\r);
 \draw (\cx,\cy) circle ({\r*1.1});
 \draw (\cx,{\cy+\r+\ell*2/3})--(\cx,{\cy+\r-\ell/3});
 \draw (\cx,{\cy-\r-\ell*2/3})--(\cx,{\cy-\r+\ell/3});
 \draw ({\cx+\r+\ell*2/3},\cy)--({\cx+\r-\ell/3},\cy);
 \draw ({\cx-\r-\ell*2/3},\cy)--({\cx-\r+\ell/3},\cy);
+\node at (\cx, \ct) {\bf Accuracy};
 
 %% shield
 \def\cx{4.5}
-\def\cy{-13.4}
+\def\cy{-13}
 \def\pdx{0.45}
 \def\pdy{}
 \def\r{0.9}
@@ -92,237 +124,72 @@
 \draw[domain = \thetaA:\thetaB] plot ({\cx - \pdx - \r*sin(\thetaE) + \R*sin(\x)},{\cy - \r*cos(\thetaE) +1.6*\R*cos(\x)});
 \draw[domain = \thetaA:\thetaB] plot ({\cx + \pdx + \r*sin(\thetaE) - \R*sin(\x)},{\cy - \r*cos(\thetaE) +1.6*\R*cos(\x)});
 %\draw[domain = \thetaS:\thetaE] plot ({\cx - \pdx - \r*sin(\x)},{\cy - \r*cos(\x)});
-
+\node at (\cx, \ct) {\bf Block};
 
 %%avoid
 \def\cx{7.2}
-\def\cy{-15.5}
+\def\cy{-15}
 \def\D{1.6}
 \def\r{1}
 \def\R{1.1}
 \draw (\cx,\cy) circle (\r);
 \draw[ultra thick, ->] (\cx,{\cy-\D})--(\cx,{\cy-\R}) arc (90:270:-\R) -- (\cx,{\cy + \D}); 
+\node at (\cx, \ct) {\bf Dodge};
 
 
 
-\node at (13.5,-12.9) {\HP Spellcasting Dice};
-\draw (10,-14.5) circle (0.6);
-\node at(10,-13.7) { \small Hexes};
-
-\draw (12.33,-14.5) circle (0.6);
-\node at(12.33,-13.7) { \small Charms};
-
-\draw (14.66,-14.5) circle (0.6);
-\node at(14.66,-13.7) { \small Transfiguration};
-
-\draw (17,-14.5) circle (0.6);
-\node at(17,-13.7) { \small Protective};
-
-\draw (10,-16.5) circle (0.6);
-\node at(10,-15.7) { \small Divination};
-
-\draw (12.33,-16.5) circle (0.6);
-\node at(12.33,-15.7) { \small Illusion};
-
-\draw (14.66,-16.5) circle (0.6);
-\node at(14.66,-15.7) { \small Dark Arts};
-
-\draw (17,-16.5) circle (0.6);
-\node at(17,-15.7) { \small Resist Magic};
-
-
-
-\node at (0.75,{\h-1.95} ) {\HP  Attributes};
-\node at (4.3,{\h-1.95} ) {\HP  Proficiencies};
-\node at (8,{\h-1.95} ) {\HP  Modifiers};
-
-
-\node at (0,-1.5) { \small ATH:};
-\node at (0,-2.95) { \small  FIN:};
-\node at (0,-4.4) { \small SPR:};
-\node at (0,-5.85) {\small  CHR:};
-\node at (0,-7.3) {\small INT:};
-\node at (0,-8.75) { \small EMP:};
-\node at (0,-10.3) { \small POW:};
-\node at (0,-11.65) { \small EVL:};
-\def\r{0.66}
-\def\q{8.1}
-\foreach\y in  {0,1,2,3,4,5,6,7}
+%%dice block
+\def\top{-13.1}
+\def\cx{13.6}
+\def\width{9.2}
+\def\hB{4.6}
+\def\r{0.6}
+\def\circleOff{3.9}
+\def\gapx{3}
+\def\gapy{2}
+\def\p{  \cx - (\width-\gapx)/2 }
+\def\f{ (\width-\gapx)/3  }
+\draw[rounded corners, gray!30,fill = gray!10] ({\cx-\width/2},\top) rectangle ({\cx+\width/2},{\top-\hB});
+\node at (\cx,{\top-0.3}) {\Large \bf   Check Dice};
+\foreach \c [count=\q from 0] in {{Charms},{Dark Arts},{Divination},{Illusion},{Malediction},{Recuperation},{Resist},{Transfiguration}}
 {
-	\draw (1.45,-1.5-\y*1.45) circle (\r);
-	%\draw[dashed] ({1.5-\r},-2.5-\y*1.3)-- ({1.5+\r},-2.5-\y*1.3);
-	\draw (\q,-1.5-\y*1.45) circle (\r);
+	\ifthenelse{\q>3}{\def\y{ {(\top-\circleOff)}}\def\x{ {(\p+ (\q-4)*\f)} } }{\def\y{ {(\top-\circleOff+\gapy)} }\def\x{ {(\p + \q*\f)} }}
+	\draw[gray!70,fill=white] (\x,\y) circle (\r);
+	\node at (\x,{\y+\r+0.2}) {\small \c};
 }
 
-\def\h{0.9}
-\def\w{0.9}
-\def\prevx{2.12}
-\def\x{2.8}
-\def\y{-1.5}
-\draw (\prevx,\y)--(\x,\y);
 
 
-%% ATH
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Health};
-
-\def\prevx{2.8+\w}
-\def\x{\prevx+0.7}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Strength};
-
-\def\prevx{2.8+2*\w+0.7}
-\def\x{\prevx+0.7}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Speed};
-
-\draw({\x + \w},\y)--(\q-\r,\y);
-%% FIN
-
-\def\y{-2.95}
-\def\prevx{2.12}
-\def\x{\prevx+0.7}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Dexterity};
-
-\def\prevx{2.8+\w}
-\def\x{\prevx+0.7}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Stealth};
-
-\def\prevx{2.8+2*\w+0.7}
-\def\x{\prevx+0.7}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Precision};
 
 
-\draw({\x + \w},\y)--(\q-\r,\y);
-%% SPR
-
-\def\y{-4.4}
-\def\prevx{2.12}
-\def\x{\prevx+1.3}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Endurance};
-
-\def\prevx{3.4+\w}
-\def\x{\prevx+1.05}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Willpower};
-
-\draw({\x + \w},\y)--(\q-\r,\y);
-%% CHR
-
-\def\prevx{2.12}
-\def\y{-5.85}
-\def\x{\prevx+0.7}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Deception};
-
-\def\prevx{2.8+\w}
-
-\def\x{\prevx+0.7}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Performance};
-
-\def\prevx{2.8+2*\w+0.7}
-\def\x{\prevx+0.7}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Persuasion};
-
-\draw({\x + \w},\y)--(\q-\r,\y);
-%% INT
-
- \def\y{-7.3}
-\def\prevx{2.12}
-\def\x{\prevx+0.3}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Research};
-
-\def\prevx{2.42+\w}
-\def\x{\prevx+0.3}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Arcane};
-
-\def\prevx{2.72+2*\w}
-\def\x{\prevx+0.3}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny History};
-
-\def\prevx{3.02+3*\w}
-\def\x{\prevx+0.3}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Flora/Fauna};
-
-\draw({\x + \w},\y)--(\q-\r,\y);
-%% EMP
-
-\def\y{-8.75}
-\def\prevx{2.12}
-\def\x{\prevx+0.7}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Perception};
-
-\def\prevx{2.8+\w}
-
-\def\x{\prevx+0.7}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Know Other};
-
-\def\prevx{2.8+2*\w+0.7}
-\def\x{\prevx+0.7}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Healing};
-
-\draw({\x + \w},\y)--(\q-\r,\y);
-%% POW
+\node at (13.5,-2.2) {\bf \Large  Skill \& Proficiency Bonuses};
+\draw[rounded corners] (9,-2.6) rectangle (18.2,-12.4);
+\def\topQ{-3.1}
+\def\gap{0.5}
+\def\x{9.1}
+\def\mid{12.1}
+\def\cx{10}
+\draw (\mid,-2.6)--(\mid,-12.4);
+%
+%\foreach \c [count = \q from 0] in {  {{Health},{ATH} },  {{Strength},{ATH} }  }
+%{{Health}, {Speed},{Strength},{Precision},{Stealth},{Dexterity},{Endurance},{Willpower},{Performance},{Deception},{Persuasion},{Research},{Arcane},{Flora \& Fauna},{History}, {Surroundings},{Emotions},{Intimidation},{Chaos}}
+\foreach \c [count = \q from 0] in { {Arcane}, {Chaos}, {Deception}, {Dexterity}, {Endurance}, {Emotions}, {Health}, {Intimidation}, {History},{Nature}, {Performance}, {Persuasion}, {Precision},{Research}, {Speed},{Stealth},{Strength}, {Surroundings} , {Willpower} }
+{
+	\def\y{\topQ - \q*\gap}
+	\draw (\x,\y) --(\cx,\y);
+	\node[anchor = south west] (A) at (\cx,{\y-0.15}) {\scriptsize \c}; 
+	\draw[gray!50] (\mid,\y)--(18.2,\y); 	
+} 
 
 
-%% EVL 
 
-\def\y{-11.6}
-\def\prevx{2.12}
-\def\x{\prevx+1.3}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Intimidation};
-
-\def\prevx{3.4+\w}
-\def\x{\prevx+1.05}
-\draw (\prevx,\y)--(\x,\y);
-\draw (\x,{\y-\h/2}) rectangle ({\x+\w},{\y+\h/2});
-\node at ({\x+\w/2},{\y + 0.15+\h/2}) {\tiny Chaos};
-
-\draw({\x + \w},\y)--(\q-\r,\y);
-
-
-\node at (13.5,-2.2) {\HP Skill Bonuses};
-\draw[rounded corners] (9,-2.6) rectangle (18,-12);
-
-\node at (22.5,-2.2) {\HP Inventory};
-\draw[rounded corners](19,-2.6) rectangle (26,-17);
-
-\node at (22.5,-10.7) {\HP Equipped};
-\draw[rounded corners] (19, -11) rectangle (26,-17);
-\node at (24.5,-14.7) {\HP AC};
-\draw[rounded corners] (23, -15) rectangle (26,-17);
+\node at (22.5,-2.2) { \bf \Large Inventory};
+\draw[rounded corners](19,-2.6) rectangle (26,{\top-\hB});
+\foreach \q in {0,1,2,...,29}
+{
+	\def\y{\topQ - \q*\gap}
+	\draw[gray!50] (19,\y)--(26,\y); 
+}
 
 \end{tikzpicture}
 
@@ -346,13 +213,12 @@ Don't forget to increase the prerequisite LVL by 2 every time a skill increases.
 \def\top{4.3}
 \def\bottom{4.3}
 %%SkillBegin
-\begin{longtable}{|m{\x cm}|m{\y cm}|m{\z cm}|}\hline  \bf Skill & \bf Prerequisite & \bf Level \\ \hline \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Ambidextrous}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}FIN $> 10$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Animagus}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Expert Thaumaturgy\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Apparate}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Adept Sorcerer\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Archer}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Battlemage}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Auto-gained at LVL 1\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\oneblack$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Brawler}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Auto-gained at LVL 1\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\oneblack$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Catastrophic Critical}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Clairvoyant}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Auto-gained at LVL 1\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\oneblack$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Cleave}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Strength $>2$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Defence Against the Dark Arts}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Defender}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Auto-gained at LVL 1\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\oneblack$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Eagle-Eyed}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Elegant Avoidance}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Emergency Care}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Familiar}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Flora \& Fauna > 2\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Fast Caster}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Adept Battlemage\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Flying Lessons}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Focussed Caster}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Golden Touch}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}CHR $>10$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Knife Handler}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}LVL 2\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Linguist}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Magician}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Auto-gained at LVL 1\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\oneblack$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Meditation}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Adept Defender\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Merciful}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Metamorphmagus}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Expert Thaumaturgy\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Mimicry}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}CHR > 13\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Mobile}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Momentum Dodge}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}ATH > 10\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Muggle Lover}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Musician}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Performance > 0\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Necromancer}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Auto-gained at LVL 1\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright On the Ball}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Overcome Resistance}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Beginner Battlemage\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Parry}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Novice Brawler\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Proficiency Boost}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Various\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Raw Power}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Shadow Walker}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Stealth $>3$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Signature Spell}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Novice in at least one school\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Silent Magic}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Sleight of Hand}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}FIN > 14\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Sorcerer}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Auto-gained at LVL 1\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\oneblack$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Species: Behind the Scenes}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}House-Elf Species Ability\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Species: Corrupted Blood}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Vampire and Werewolf Species Ability\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Species: Enormous Size}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Half-Giant Species Ability\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Species: Fury\apos{}s Visage}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Half-Veela Species Ability\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Species: Night\apos{}s Child}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Vampire Species Ability\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Species: Vampric Feeding}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Vampire Species Ability\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Species: Wolfblood}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Werewolf Species Ability\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Species: Wolfmoon}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Werewolf Species Ability\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Spellbinder}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Adept Thaumaturge\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Spellmaker}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Master in at least one school\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Stabiliser}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Surge}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Terrifying}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}POW $>14$ or EVL $>6$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Thaumaturgus}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Auto-gained at LVL 1\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\oneblack$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Tool-User}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Tough as Nails}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Undead Benefactor}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Novice Defender\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Wandless Magic}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Adept Silent Magic\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Warder}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weak Spot}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Precision $>2$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Withstand}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \end{longtable}%%SkillEnd
+\begin{longtable}{|m{\x cm}|m{\y cm}|m{\z cm}|}\hline  \bf Skill & \bf Prerequisite & \bf Level \\ \hline \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Magic: Battlemage}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Auto-gained at LVL 1\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\oneblack$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Magic: Clairvoyant}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Auto-gained at LVL 1\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\oneblack$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Magic: Defender}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Auto-gained at LVL 1\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\oneblack$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Magic: Magician}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Auto-gained at LVL 1\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\oneblack$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Magic: Necromancer}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Auto-gained at LVL 1\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\oneblack$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Magic: Sorcerer}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Auto-gained at LVL 1\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\oneblack$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Magic: Thaumaturgus}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Auto-gained at LVL 1\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\oneblack$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Magic: Withstand}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Auto-gained at LVL 1\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\oneblack$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Always Alert}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Ambidextrous}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}FIN $> 10$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Animagus}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Expert Thaumaturgy\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Basic Weapons Training}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Battlecry}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}CHR $>13$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Catastrophic Critical}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Cleave}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Strength $>2$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Defence Against the Dark Arts}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Eagle-Eyed}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Emergency Care}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Exotic Fighter}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Extended Range}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Familiar}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Flora \& Fauna > 2\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Fast Caster}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Adept Battlemage\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Fighting Dirty}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Flying Lessons}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Focussed Caster}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Golden Touch}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}CHR $>10$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Hulk Smash?}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Increased Accuracy}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}FIN $> 12$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Instinctive Retribution}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Ironclad}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}ATH $> 15$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Knife Handler}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Linguist}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Long Range Threat}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Meditation}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Merciful}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Metamorphmagus}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Expert Thaumaturgy\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Mimicry}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}CHR $> 13$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Mobile}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Moving Target}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}ATH $> 12$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Muggle Lover}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Musician}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Performance $> 0$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Overcome Resistance}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Beginner Battlemage\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Parry}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Novice Brawler\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Power Attack}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Strength $>1$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Quickloose}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Raw Power}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Sentinel}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}PER $>13$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Shadow Walker}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Stealth $>2$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Signature Spell}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Novice in at least one school\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Silent Magic}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Simple Ranged Training}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Spellmaker}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Expert in at least one school\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Stabiliser}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Surge}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Swordfighter}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Terrifying}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}POW $>14$ or EVL $>6$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Tool-User}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Tough as Nails}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Undead Benefactor}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Novice Defender\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Wandless Magic}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Beginner Silent Magic\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weak Spot}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Precision $>2$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Species: Behind the Scenes}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}House-Elf Species Ability\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Species: Corrupted Blood}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Vampire and Werewolf Species Ability\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Species: Enormous Size}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Half-Giant Species Ability\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Species: Fury\apos{}s Visage}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Half-Veela Species Ability\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Species: Night\apos{}s Child}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Vampire Species Ability\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Species: Vampric Feeding}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Vampire Species Ability\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Species: Wolfblood}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Werewolf Species Ability\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Species: Wolfmoon}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Werewolf Species Ability\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \end{longtable} %%SkillEnd
 \unskip
 \unpenalty
 \unpenalty}
 
 \unvbox\ltmcbox
-
 \end{multicols}
 
 \end{landscape}
@@ -364,67 +230,75 @@ Don't forget to increase the prerequisite LVL by 2 every time a skill increases.
 \def\h{6}
 \def\g{0.8}
 \def\q{ (\totalwidth - 3*\left)/4}
-\node at ({\totalwidth/2},\h+0.8) {\HP \huge Learned Spells};
+\node at ({\totalwidth/2},\h+0.8) { \HP \huge Learned Spells};
 
 \def\top{\h}
 \def\bottom{0}
+\def\gap{0.37}
+\def\N{15}
 \draw[rounded corners] (\left,\top) rectangle ({\totalwidth/2-\left/2},\bottom);
 \draw[rounded corners] ({\totalwidth/2+\left/2},\top) rectangle ({\totalwidth-\left},\bottom);
-\node at ({\left+\q},{\top+0.2}) {\HP Hexes \& Curses};
-\node at ({(\totalwidth+\left)/2+\q},{\top+0.2}) {\HP Charms};
+\node at ({\left+\q},{\top+0.2}) {  \bf Charms};
+\node at ({(\totalwidth+\left)/2+\q},{\top+0.2}) {  \bf Divination };
+\foreach \q in {1,2,...,\N}
+{
+	\def\y{\top - \q*\gap}
+	\draw[gray!50] (\left,\y)--(\totalwidth/2-\left/2,\y); 
+}
+\foreach \q in {1,2,...,\N}
+{
+	\def\y{\top - \q*\gap}
+	\draw[gray!50] (\totalwidth/2+\left/2,\y)--(\totalwidth-\left,\y); 
+}
 
 \def\top{-\g}
 \def\bottom{-\g -\h}
 \draw[rounded corners] (\left,\top) rectangle ({\totalwidth/2-\left/2},\bottom);
 \draw[rounded corners] ({\totalwidth/2+\left/2},\top) rectangle ({\totalwidth-\left},\bottom);
-\node at ({\left+\q},{\top+0.2}) {\HP Transfiguration};
-\node at ({(\totalwidth+\left)/2+\q},{\top+0.2}) {\HP Protective};
+\node at ({\left+\q},{\top+0.2}) {  Transfiguration};
+\node at ({(\totalwidth+\left)/2+\q},{\top+0.2}) {  Recuperation};
+\foreach \q in {1,2,...,\N}
+{
+	\def\y{\top - \q*\gap}
+	\draw[gray!50] (\left,\y)--(\totalwidth/2-\left/2,\y); 
+}
+\foreach \q in {1,2,...,\N}
+{
+	\def\y{\top - \q*\gap}
+	\draw[gray!50] (\totalwidth/2+\left/2,\y)--(\totalwidth-\left,\y); 
+}
+
 
 \def\top{-2*\g-\h}
 \def\bottom{-2*\g-2*\h}
 \draw[rounded corners] (\left,\top) rectangle ({\totalwidth/2-\left/2},\bottom);
 \draw[rounded corners] ({\totalwidth/2+\left/2},\top) rectangle ({\totalwidth-\left},\bottom);
-\node at ({\left+\q},{\top+0.2}) {\HP Illusion};
-\node at ({(\totalwidth+\left)/2+\q},{\top+0.2}) {\HP Divination};
-
+\node at ({\left+\q},{\top+0.2}) {  Illusion};
+\node at ({(\totalwidth+\left)/2+\q},{\top+0.2}) {  Divination};
+\foreach \q in {1,2,...,\N}
+{
+	\def\y{\top - \q*\gap}
+	\draw[gray!50] (\left,\y)--(\totalwidth/2-\left/2,\y); 
+}
+\foreach \q in {1,2,...,\N}
+{
+	\def\y{\top - \q*\gap}
+	\draw[gray!50] (\totalwidth/2+\left/2,\y)--(\totalwidth-\left,\y); 
+}
 \def\top{-3*\g-2*\h}
 \def\bottom{-3*\g - 2*\h - \h/1.3}
 \draw[rounded corners] (\left,\top) rectangle ({\totalwidth-\left},\bottom);
-\node at ({\totalwidth/2},{\top+0.2}) {\HP Dark Arts};
-
+\node at ({\totalwidth/2},{\top+0.2}) {  Dark Arts};
+\def\N{11}
+\foreach \q in {1,2,...,\N}
+{
+	\def\y{\top - \q*\gap}
+	\draw[gray!50] (\left,\y)--(\totalwidth - \left,\y); 
+}
 
 
 \end{tikzpicture}
 
 
-
-%~\newpage
-
-%~\begin{landscape}
-%~\begin{multicols}{3}
-%~\section{Ingredient List}
-%~\def\p{0.3}
-%~\def\q{2.1}
-%~\def\r{3.3}
-%~\def\s{0.5}
-%~\def\t{0.15}
-%~\newcommand{\fivecirc}{\circ\circ\circ\circ\circ}
-%~\newcommand{\oneblack}{\bullet \circ\circ\circ\circ}
-%~\definecolor{pale}{rgb}{0.7,0.7,0.7}
-%~\scriptsize
-%~\setbox\ltmcbox\vbox{
-%~\makeatletter\col@number\@ne
-%~\scriptsize
-%~\vspace{0.2 cm}
-%~%%IngBegin
-%~\begin{longtable}{|p{\p cm} | p{\q cm} | p{\r cm}| p{\s cm}|}\hline \bf ID & \bf Name & \bf Effects & \bf No. \\ \hline \hline 0& \bf \parbox[t]{\q cm}{\raggedright Abyssinian Shrivelfig}\vspace{\t cm}&~&~\\ \hline 1& \bf \parbox[t]{\q cm}{\raggedright Aconite}\vspace{\t cm}&~&~\\ \hline 2& \bf \parbox[t]{\q cm}{\raggedright Acromantula Venom}\vspace{\t cm}&~&~\\ \hline 3& \bf \parbox[t]{\q cm}{\raggedright Alihotsy Leaves}\vspace{\t cm}&~&~\\ \hline 4& \bf \parbox[t]{\q cm}{\raggedright Antimony}\vspace{\t cm}&~&~\\ \hline 5& \bf \parbox[t]{\q cm}{\raggedright Ash}\vspace{\t cm}&~&~\\ \hline 6& \bf \parbox[t]{\q cm}{\raggedright Ashwinder Eggs}\vspace{\t cm}&~&~\\ \hline 7& \bf \parbox[t]{\q cm}{\raggedright Asphodel}\vspace{\t cm}&~&~\\ \hline 8& \bf \parbox[t]{\q cm}{\raggedright Basilisk Venom}\vspace{\t cm}&~&~\\ \hline 9& \bf \parbox[t]{\q cm}{\raggedright Bezoar}\vspace{\t cm}&~&~\\ \hline 10& \bf \parbox[t]{\q cm}{\raggedright Bicorn Horn}\vspace{\t cm}&~&~\\ \hline 11& \bf \parbox[t]{\q cm}{\raggedright Billywig Sting}\vspace{\t cm}&~&~\\ \hline 12& \bf \parbox[t]{\q cm}{\raggedright Boomberry}\vspace{\t cm}&~&~\\ \hline 13& \bf \parbox[t]{\q cm}{\raggedright Boomslang Skin}\vspace{\t cm}&~&~\\ \hline 14& \bf \parbox[t]{\q cm}{\raggedright Bowtruckle Thorn}\vspace{\t cm}&~&~\\ \hline 15& \bf \parbox[t]{\q cm}{\raggedright Bubotuber Juice}\vspace{\t cm}&~&~\\ \hline 16& \bf \parbox[t]{\q cm}{\raggedright Bulbadox Powder}\vspace{\t cm}&~&~\\ \hline 17& \bf \parbox[t]{\q cm}{\raggedright Bundium Fluid}\vspace{\t cm}&~&~\\ \hline 18& \bf \parbox[t]{\q cm}{\raggedright Caterpillar}\vspace{\t cm}&~&~\\ \hline 19& \bf \parbox[t]{\q cm}{\raggedright Centaur Hoof}\vspace{\t cm}&~&~\\ \hline 20& \bf \parbox[t]{\q cm}{\raggedright Chizpurfle Carapace}\vspace{\t cm}&~&~\\ \hline 21& \bf \parbox[t]{\q cm}{\raggedright Chizpurfle Fang}\vspace{\t cm}&~&~\\ \hline 22& \bf \parbox[t]{\q cm}{\raggedright Copper}\vspace{\t cm}&~&~\\ \hline 23& \bf \parbox[t]{\q cm}{\raggedright Daisy}\vspace{\t cm}&~&~\\ \hline 24& \bf \parbox[t]{\q cm}{\raggedright Dementor Cloak}\vspace{\t cm}&~&~\\ \hline 25& \bf \parbox[t]{\q cm}{\raggedright Demiguise Hair}\vspace{\t cm}&~&~\\ \hline 26& \bf \parbox[t]{\q cm}{\raggedright Diricawl Feather}\vspace{\t cm}&~&~\\ \hline 27& \bf \parbox[t]{\q cm}{\raggedright Dittany}\vspace{\t cm}&~&~\\ \hline 28& \bf \parbox[t]{\q cm}{\raggedright Doxy Eggs}\vspace{\t cm}&~&~\\ \hline 29& \bf \parbox[t]{\q cm}{\raggedright Doxy Venom}\vspace{\t cm}&~&~\\ \hline 30& \bf \parbox[t]{\q cm}{\raggedright Dragon Blood}\vspace{\t cm}&~&~\\ \hline 31& \bf \parbox[t]{\q cm}{\raggedright Dragon Claw}\vspace{\t cm}&~&~\\ \hline 32& \bf \parbox[t]{\q cm}{\raggedright Dragon Fire Gland}\vspace{\t cm}&~&~\\ \hline 33& \bf \parbox[t]{\q cm}{\raggedright Dragon Liver}\vspace{\t cm}&~&~\\ \hline 34& \bf \parbox[t]{\q cm}{\raggedright Dugbog Bark}\vspace{\t cm}&~&~\\ \hline 35& \bf \parbox[t]{\q cm}{\raggedright Erumpet Horn}\vspace{\t cm}&~&~\\ \hline 36& \bf \parbox[t]{\q cm}{\raggedright Fairy Wings}\vspace{\t cm}&~&~\\ \hline 37& \bf \parbox[t]{\q cm}{\raggedright Fire Crab Shell}\vspace{\t cm}&~&~\\ \hline 38& \bf \parbox[t]{\q cm}{\raggedright Fire Seed}\vspace{\t cm}&~&~\\ \hline 39& \bf \parbox[t]{\q cm}{\raggedright Flobberworm Mucous}\vspace{\t cm}&~&~\\ \hline 40& \bf \parbox[t]{\q cm}{\raggedright Fluxweed}\vspace{\t cm}&~&~\\ \hline 41& \bf \parbox[t]{\q cm}{\raggedright Frost Salamander Blood}\vspace{\t cm}&~&~\\ \hline 42& \bf \parbox[t]{\q cm}{\raggedright Galanthus Nivalis}\vspace{\t cm}&~&~\\ \hline 43& \bf \parbox[t]{\q cm}{\raggedright Gillyweed}\vspace{\t cm}&~&~\\ \hline 44& \bf \parbox[t]{\q cm}{\raggedright Ginger Root}\vspace{\t cm}&~&~\\ \hline 45& \bf \parbox[t]{\q cm}{\raggedright Glumbumble Treacle}\vspace{\t cm}&~&~\\ \hline 46& \bf \parbox[t]{\q cm}{\raggedright Gold}\vspace{\t cm}&~&~\\ \hline 47& \bf \parbox[t]{\q cm}{\raggedright Graphorn Horn}\vspace{\t cm}&~&~\\ \hline 48& \bf \parbox[t]{\q cm}{\raggedright Griffin Claw}\vspace{\t cm}&~&~\\ \hline 49& \bf \parbox[t]{\q cm}{\raggedright Grindylow Claw}\vspace{\t cm}&~&~\\ \hline 50& \bf \parbox[t]{\q cm}{\raggedright Hellebore}\vspace{\t cm}&~&~\\ \hline 51& \bf \parbox[t]{\q cm}{\raggedright Hemlock Essence}\vspace{\t cm}&~&~\\ \hline 52& \bf \parbox[t]{\q cm}{\raggedright Hippocampus Hair}\vspace{\t cm}&~&~\\ \hline 53& \bf \parbox[t]{\q cm}{\raggedright Honeywater}\vspace{\t cm}&~&~\\ \hline 54& \bf \parbox[t]{\q cm}{\raggedright Horklump Juice}\vspace{\t cm}&~&~\\ \hline 55& \bf \parbox[t]{\q cm}{\raggedright Iron}\vspace{\t cm}&~&~\\ \hline 56& \bf \parbox[t]{\q cm}{\raggedright Jarvey Fang}\vspace{\t cm}&~&~\\ \hline 57& \bf \parbox[t]{\q cm}{\raggedright Jobberknoll Feather}\vspace{\t cm}&~&~\\ \hline 58& \bf \parbox[t]{\q cm}{\raggedright Kelpie Hair}\vspace{\t cm}&~&~\\ \hline 59& \bf \parbox[t]{\q cm}{\raggedright Kneazle Claw}\vspace{\t cm}&~&~\\ \hline 60& \bf \parbox[t]{\q cm}{\raggedright Lavender}\vspace{\t cm}&~&~\\ \hline 61& \bf \parbox[t]{\q cm}{\raggedright Leeches}\vspace{\t cm}&~&~\\ \hline 62& \bf \parbox[t]{\q cm}{\raggedright Lemon Juice}\vspace{\t cm}&~&~\\ \hline 63& \bf \parbox[t]{\q cm}{\raggedright Lethe River Water}\vspace{\t cm}&~&~\\ \hline 64& \bf \parbox[t]{\q cm}{\raggedright Lobalug Venom}\vspace{\t cm}&~&~\\ \hline 65& \bf \parbox[t]{\q cm}{\raggedright Lovage}\vspace{\t cm}&~&~\\ \hline 66& \bf \parbox[t]{\q cm}{\raggedright Mackled Malaclaw Tail}\vspace{\t cm}&~&~\\ \hline 67& \bf \parbox[t]{\q cm}{\raggedright Mallowsweet}\vspace{\t cm}&~&~\\ \hline 68& \bf \parbox[t]{\q cm}{\raggedright Mandrake Root}\vspace{\t cm}&~&~\\ \hline 69& \bf \parbox[t]{\q cm}{\raggedright Manticore Skin}\vspace{\t cm}&~&~\\ \hline 70& \bf \parbox[t]{\q cm}{\raggedright Mercury}\vspace{\t cm}&~&~\\ \hline 71& \bf \parbox[t]{\q cm}{\raggedright Mint}\vspace{\t cm}&~&~\\ \hline 72& \bf \parbox[t]{\q cm}{\raggedright Moke Skin}\vspace{\t cm}&~&~\\ \hline 73& \bf \parbox[t]{\q cm}{\raggedright Moly}\vspace{\t cm}&~&~\\ \hline 74& \bf \parbox[t]{\q cm}{\raggedright Mooncalf Tears}\vspace{\t cm}&~&~\\ \hline 75& \bf \parbox[t]{\q cm}{\raggedright Moondew}\vspace{\t cm}&~&~\\ \hline 76& \bf \parbox[t]{\q cm}{\raggedright Moonstone}\vspace{\t cm}&~&~\\ \hline 77& \bf \parbox[t]{\q cm}{\raggedright Murtlap Tentacles}\vspace{\t cm}&~&~\\ \hline 78& \bf \parbox[t]{\q cm}{\raggedright Nettles}\vspace{\t cm}&~&~\\ \hline 79& \bf \parbox[t]{\q cm}{\raggedright Newt Eye}\vspace{\t cm}&~&~\\ \hline 80& \bf \parbox[t]{\q cm}{\raggedright Niffler Fang}\vspace{\t cm}&~&~\\ \hline 81& \bf \parbox[t]{\q cm}{\raggedright Nightshade}\vspace{\t cm}&~&~\\ \hline 82& \bf \parbox[t]{\q cm}{\raggedright Nogtail Trotter}\vspace{\t cm}&~&~\\ \hline 83& \bf \parbox[t]{\q cm}{\raggedright Nundu Venom Sac}\vspace{\t cm}&~&~\\ \hline 84& \bf \parbox[t]{\q cm}{\raggedright Occamy Egg}\vspace{\t cm}&~&~\\ \hline 85& \bf \parbox[t]{\q cm}{\raggedright Octopus Powder}\vspace{\t cm}&~&~\\ \hline 86& \bf \parbox[t]{\q cm}{\raggedright Owl Feather}\vspace{\t cm}&~&~\\ \hline 87& \bf \parbox[t]{\q cm}{\raggedright Pearl Dust}\vspace{\t cm}&~&~\\ \hline 88& \bf \parbox[t]{\q cm}{\raggedright Peppermint}\vspace{\t cm}&~&~\\ \hline 89& \bf \parbox[t]{\q cm}{\raggedright Pheonix Feather}\vspace{\t cm}&~&~\\ \hline 90& \bf \parbox[t]{\q cm}{\raggedright Pogrebin Shell}\vspace{\t cm}&~&~\\ \hline 91& \bf \parbox[t]{\q cm}{\raggedright Pungent Onion}\vspace{\t cm}&~&~\\ \hline 92& \bf \parbox[t]{\q cm}{\raggedright Quintaped Leg}\vspace{\t cm}&~&~\\ \hline 93& \bf \parbox[t]{\q cm}{\raggedright Re{\apos}em Blood}\vspace{\t cm}&~&~\\ \hline 94& \bf \parbox[t]{\q cm}{\raggedright Rose Petals}\vspace{\t cm}&~&~\\ \hline 95& \bf \parbox[t]{\q cm}{\raggedright Runespoor Egg}\vspace{\t cm}&~&~\\ \hline 96& \bf \parbox[t]{\q cm}{\raggedright Salamander Blood}\vspace{\t cm}&~&~\\ \hline 97& \bf \parbox[t]{\q cm}{\raggedright Sea Serpent Spine}\vspace{\t cm}&~&~\\ \hline 98& \bf \parbox[t]{\q cm}{\raggedright Silver}\vspace{\t cm}&~&~\\ \hline 99& \bf \parbox[t]{\q cm}{\raggedright Sloth Brain}\vspace{\t cm}&~&~\\ \hline 100& \bf \parbox[t]{\q cm}{\raggedright Slug Slime}\vspace{\t cm}&~&~\\ \hline 101& \bf \parbox[t]{\q cm}{\raggedright Sphinx Saliva}\vspace{\t cm}&~&~\\ \hline 102& \bf \parbox[t]{\q cm}{\raggedright Stinksap}\vspace{\t cm}&~&~\\ \hline 103& \bf \parbox[t]{\q cm}{\raggedright Styx River Water}\vspace{\t cm}&~&~\\ \hline 104& \bf \parbox[t]{\q cm}{\raggedright Tea Leaf}\vspace{\t cm}&~&~\\ \hline 105& \bf \parbox[t]{\q cm}{\raggedright Tormentil Tincture}\vspace{\t cm}&~&~\\ \hline 106& \bf \parbox[t]{\q cm}{\raggedright Troll Snot}\vspace{\t cm}&~&~\\ \hline 107& \bf \parbox[t]{\q cm}{\raggedright Unicorn Blood}\vspace{\t cm}&~&~\\ \hline 108& \bf \parbox[t]{\q cm}{\raggedright Unicorn Hair}\vspace{\t cm}&~&~\\ \hline 109& \bf \parbox[t]{\q cm}{\raggedright Valerian}\vspace{\t cm}&~&~\\ \hline 110& \bf \parbox[t]{\q cm}{\raggedright Venemous Tentacula }\vspace{\t cm}&~&~\\ \hline 111& \bf \parbox[t]{\q cm}{\raggedright Wartcap Powder}\vspace{\t cm}&~&~\\ \hline 112& \bf \parbox[t]{\q cm}{\raggedright Wiggentree Bark}\vspace{\t cm}&~&~\\ \hline 113& \bf \parbox[t]{\q cm}{\raggedright Wormwood}\vspace{\t cm}&~&~\\ \hline\end{longtable}%%IngEnd
-%~\unskip
-%~\unpenalty
-%~\unpenalty}
-
-%~\unvbox\ltmcbox
-
-%~\end{multicols}
-%~\end{landscape}
 
 \end{document}

@@ -8,6 +8,6 @@ then
 fi
 xelatex CoreRulebook.tex
 #xelatex BasicRulebook.tex
-evince CoreRulebook.pdf
+evince CoreRulebook.pdf &
 rm *.log
 
