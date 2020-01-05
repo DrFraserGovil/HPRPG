@@ -5,14 +5,14 @@ function MasterAssembly(quitMode)
     
     addpath('Spells/');
     addpath('Functions/');
-    
+    addpath('Items/');
     disp('Assembling Spells');
     allSpellAssembler(5,'../Chapters/');
     
      disp('Assembling Skills');
      assembleSkills();
 % run assembleStatus.m
-% run assembleWeapons.m
+    assembleWeapons();
 % run assembleArchetypes.m
 % run assembleTools.m
 %quit;

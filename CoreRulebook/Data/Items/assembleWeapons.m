@@ -1,47 +1,78 @@
-professions = readtable('weapons.xlsx');
-professions = sortrows(professions);
-professions = sortrows(professions,2);
-professions = sortrows(professions,3);
+function assembleWeapons()
 
-fileName = '../Chapters/Items.tex';
-readFile = fileread(fileName);
+    weapon = readtable('weapons.xlsx');
+  
 
-
-insertPoint = strfind(readFile, '%%WeaponsBegin');
-
-endPoint = strfind(readFile, '%%WeaponsEnd');
-
-firstHalf = readFile(1:insertPoint+14);
-
-secondHalf = readFile(endPoint:end);
-
-
-preamble = ' \tablealternate\begin{tabular}{|c c c c c m {\l cm}|}';
-headers = '\hline \tablehead \normalsize \bf Weapon & \normalsize \bf Type & \normalsize \bf Brawler & \normalsize \bf Damage Check & \normalsize \bf Damage Type & \bf Notes\\ \hline \hline ';
-
-text = [preamble headers];
-
-n = size(professions);
-
-for (i = 1:n)
-    weapon = professions.Weapon{i};
-    type = professions.Type{i};
-    lvl = num2str(professions.BrawlerLevel(i));
-    type = professions.Damage{i};
-    notes = ['\parbox[t]{\l cm}{', professions.Notes{i}, '}'];
-    check = [professions.Dice{i},' ', professions.Check{i}, ' (', professions.Proficiency{i}, ') '];
+    n = size(weapon);
     
-    if isnan(professions.BrawlerLevel(i))
-        lvl = ' ';
+    %%process and sort categories
+    knownNames = ["Unarmed", "Simple","Bladed", "Brutish", "Reach", "Exotic",  "Simple Ranged","Ranged","Firearms" ];
+    foundNames = [];
+    foundLines = {};
+    for i = 1:n
+        type = weapon.Type{i};
+        
+        found = -1;
+        for j = 1:length(foundNames)
+           if strcmp(type,foundNames{j})
+               found=j;
+               foundLines{found}(end+1,:) = weapon(i,:);
+           end
+        end
+        if found == -1
+            foundNames{end+1} = type;
+
+            found = length(foundNames);
+            foundLines{end+1} = weapon(i,:);
+        end
     end
-    line = ['\bf ', weapon, ' &  ', professions.Type{i}, ' & ', lvl,...
-        ' & ', check, ' & ', type, '& ', notes, '\\  '];
-     
-    text = [text line];
+    I = [];
+    lost =[];
+    for j = 1:length(foundNames)
+       loc = -1;
+       for q = 1:length(knownNames)
+          if strcmp(knownNames{q},foundNames{j})
+              I(q) = j; 
+              loc = j;
+          end
+       end
+       if loc == - 1;
+           lost(end+1) = j;
+       end
+    end
+    I = [I lost];
+    foundNames= foundNames(I);
+    foundLines = foundLines(I);
+    %% write to table
+    preamble = '\begin{rndtable}{|l c c l |}';
+    headers = '\hline \tablehead \normalsize \bf Weapon & \normalsize \bf Modifier &  \normalsize \bf Damage & \normalsize \bf Properties \\ \hline';
+    text = prepareText(strcat(preamble,headers));
+    for j = 1:length(foundNames)
+        text = strcat(text, "{ \\it ", foundNames{j}," Weapons} & & & \\\\ \n");
+        
+        for (i = 1:height(foundLines{j}))
+            line = foundLines{j}(i,:);
+            notes = strcat('\\parbox[t]{\\l cm}{', line.Notes{1}, '}');
+            check = strcat(line.Dice{1},'~', line.Damage{1});
+
+
+            line = strcat("\\bf ~~~~~", line.Weapon{1}, "\t&\t", line.Check{1},"\t&\t",check, "\t&\t",notes,"\\\\ \n");
+            text = strcat(text, line);
+        end
+    end
+    ender = prepareText('\hline\end{rndtable} ');
+
+
+    fileName = '../Chapters/Items.tex';
+    readFile = fileread(fileName);
+    insertPoint = strfind(readFile, '%%WeaponsBegin');
+    endPoint = strfind(readFile, '%%WeaponsEnd');
+
+    firstHalf = prepareText(readFile(1:insertPoint+14));
+    secondHalf = prepareText(readFile(endPoint:end));
+
+    fullText = strcat(firstHalf, text, ender, secondHalf);
+
+    FID = fopen(fileName,'w');
+    fprintf(FID, fullText);
 end
-ender = '\hline\end{tabular} ';
-
-fullText = [firstHalf, text, ender, secondHalf];
-
-FID = fopen(fileName,'w');
-fwrite(FID, fullText);
