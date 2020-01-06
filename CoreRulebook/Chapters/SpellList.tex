@@ -1,3 +1,99 @@
+\onecolumn
+\chapter{Spell List} \label{S:SpellList}
+
+This section contains a list of all the spells available in the game. First, the spells are presented broken down into the school and level to which they belong. The next section then contains a full description of the spell, including its casting check, casting difficulty, and spell effects. Spells marked with a (*) gain more effects, or increase in power, at higher levels. 
+\def\s{0.3}
+\def\w{2.6}
+\def\instSymb{\faMagic}
+\def\concSymb{\faEye}
+\def\wardSymb{\faShield}
+\def\musicSymb{$\twonotes$}
+\def\ritSymb{$\largepentagram$}
+\def\beastSymb{\faPaw}
+\define@key{spell}{name}{\def\name{#1}}
+\define@key{spell}{incant}{\def\incant{#1}}
+\define@key{spell}{school}{\def\school{#1}}
+\define@key{spell}{discipline}{\def\discipline{#1}}
+\define@key{spell}{type}{\def\type{#1}}
+\define@key{spell}{level}{\def\level{#1}}
+\define@key{spell}{fp}{\def\fp{#1}}
+\define@key{spell}{attribute}{\def\att{#1}}
+\define@key{spell}{proficiency}{\def\prof{#1}}
+\define@key{spell}{dv}{\def\dv{#1}}
+\define@key{spell}{effect}{\def\effect{#1}}
+\define@key{spell}{duration}{\def\duration{#1}}
+\define@key{spell}{noIncant}{\def\incantMode{#1}}
+\define@key{spell}{noProf}{\def\profMode{#1}}
+\define@key{spell}{noDur}{\def\durMode{#1}}
+\define@key{spell}{higher}{\def\higher{#1}}
+\define@key{spell}{noHigh}{\def\highMode{#1}}
+\define@key{spell}{travel}{\def\travel{#1}}
+\define@key{spell}{resist}{\def\resist{#1}}
+\define@key{spell}{resistDV}{\def\resistDV{#1}}
+\define@key{spell}{noTravel}{\def\travelMode{#1}}
+\define@key{spell}{noResist}{\def\resistMode{#1}}
+\define@key{spell}{noBlock}{\def\blockMode{#1}}
+\define@key{spell}{negation}{\def\negation{#1}}
+\newcommand{\spell}[1]
+{
+	\setkeys{spell}{name=None,incant = \minus{}, school = None, discipline=None,type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0,noDur=0,duration=None,higher=None,noHigh=0,travel = None,noTravel = 0, resist = None, resistDV = none, noResist = 0,noBlock=0,negation=None}
+	\setkeys{spell}{#1}
+	\vbox{
+	{\normalsize \color{rulered}\name }
+	\footnotesize
+	
+		
+	{\it \level{}\minus{}level \school{} (\discipline)} 
+	\vspace{1ex}
+	
+	\begin{tabular}{l  l }
+		\if\incantMode0 
+			{\bf Incantation:} & {\it \incant} \\
+		\fi
+	
+	
+		
+		{\bf Spell Type:} & \type \\ 
+	
+		\if\travelMode0
+			{\bf Visual:} & \travel \\
+		\fi
+	
+	\if\durMode0
+		{\bf Duration}  & \duration \\
+	\fi
+	
+	\if\resistMode0
+		{\bf Resist: } & \resist,  DV \resistDV \\
+	\fi
+	\if\blockMode0
+		{\bf Negation: }	&	\negation
+	\fi
+	%~{\bf DV:}~~~~~~~~~\quad~~~~\dv
+	
+	\end{tabular}
+	\vspace{1ex}
+	
+	\effect
+	
+	\vspace{1 ex}
+	
+
+	\if\highMode0
+		{\bf Higher Level Casting: } 
+		
+		\higher
+	\fi
+	}
+	\vspace{3ex}
+	
+	\small
+}
+
+
+
+
+%%SpellBegin
 \scriptsize\vbox{
 \subsection{Charms}
 
@@ -323,7 +419,7 @@ Use Ancient Powers & \ritSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~
 \spell{name = Acidic Burst, school = Maledictions, discipline = Hex, type = Instant, level =Beginner, incant = ambustum, duration = 2 minutes,noHigh = 1, travel = Green gas,noResist =1, noBlock = 1, effect =Fills a cube of size 4m with an acidic cloud that does (2 + PPd6) acid damage per turn. In a confined space\comma{} the cloud lasts indefinitely.}
 \spell{name = Aid Charm, school = Recuperation, discipline = Healing, type = Instant, level =Beginner, incant = subsidium, duration = 1 hour,noHigh = 1, travel = Red\minus{}orange rays,noResist =1, noBlock = 1, effect =Raise the HP ceiling of a target by (3+PP) (max 10). If target has HP$>0$\comma{} also increase HP by this amount.}
 \spell{name = All\minus{}seeing Eye, school = Divination, discipline = Temporal, type = Instant, level =Novice, incant = orbis, noDur = 1, noHigh = 1, noTravel = 1, noResist =1, noBlock = 1, effect =You may create an invisible\comma{} magic eye in front of you\comma{} that hovers. You mentally see everything that the eye sees\comma{} and may use a major action to instruct the eye to move up to 10m in any direction (including vertical). Eye cannot pass through solid walls\comma{} but may squeeze through gaps as small as 4cm in diameter. Eye can detect astral projections.}
-\spell{name = Alter Aura, school = Transfiguration, discipline = Alteration, type = Instant, level =Novice, incant = madas, duration = 1 hour,noHigh = 1, noTravel = 1, noResist =1, noBlock = 1, effect =Change how the object is registers when viewed by magical means (I.e {\it Identify}) – make a mundane object appear magical\comma{} or make a wizard appear as a non\minus{}sapient creature. 
+\spell{name = Alter Aura, school = Transfiguration, discipline = Alteration, type = Instant, level =Novice, incant = madas, duration = 1 hour,noHigh = 1, noTravel = 1, noResist =1, noBlock = 1, effect =Change how the object is registers when viewed by magical means (I.e {\it Identify}) \minus make a mundane object appear magical\comma{} or make a wizard appear as a non\minus{}sapient creature. 
 
 Because this spell truly alters the object\apos{} astral nature\comma{} and so spells such as {\it True Sight} can be fooled by this effect\comma{} though they may be able to detect this spell in addition to the altered aura.}
 \spell{name = Alter Hair, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, incant = crinus muto, duration = 2 hours,noHigh = 1, noTravel = 1, noResist =1, noBlock = 1, effect =Alters the colour and style of the casters hair. Useful for disguises.}
@@ -485,7 +581,7 @@ Every turn concentration is maintained you may add another effect\comma{} or can
 An example of the uses for this spell could be:
 
 \begin{spellitemize}
-\item {\it Grand Manipulation}: reshape dirt\comma{} clay\comma{} sand\comma{} earth of any kind\comma{} or natural rock in an area (6+PP) in radius in any fashion you choose: raise or lower the area\apos{}s elevation\comma{} raise a wall or a pillar up to (2+PP)m in height\comma{} dig or fill in a trench up to (2+PP)m in height. You may mold detailed figures and details into your creations. When concentration is broken\comma{} the material is considered `loose’\comma{} and will crumble as normal physics dictates – i.e. pillars will crumble into smaller hillocks etc. 
+\item {\it Grand Manipulation}: reshape dirt\comma{} clay\comma{} sand\comma{} earth of any kind\comma{} or natural rock in an area (6+PP) in radius in any fashion you choose: raise or lower the area\apos{}s elevation\comma{} raise a wall or a pillar up to (2+PP)m in height\comma{} dig or fill in a trench up to (2+PP)m in height. You may mold detailed figures and details into your creations. When concentration is broken\comma{} the material is considered `loose\apos{}\comma{} and will crumble as normal physics dictates\comma{} i.e. pillars will crumble into smaller hillocks etc. 
 \item {\it Fissure}: tear the ground asunder beneath the feet of a target in range. If they fail a DV (12+PP) FIN Resist check\comma{} they fall (4+PP)m into the fissure\comma{} taking (2+PP)d4 damage. Closing a fissure on a being deals (3+PP)d12 damage and deprives them of air until they succeed a DV 10 ATH check to escape.
 \item {\it Clad Being}: wrap a target in an armour of solid rock\comma{} which moves with their movements as long as concentration is maintained on this effect. Gives an AC of (20 + $2\times$PP)\comma{} and unarmed attacks deal (2+PP)d8 bludgeoning damage. 
 \end{spellitemize}
@@ -526,7 +622,7 @@ Can only be cast if the caster has murdered an innocent in cold blood.}
 \spell{name = Create Trap, school = Charms, discipline = Kinesis, type = Ritual (3 turns), level =Beginner, incant = dolus, noDur = 1, noHigh = 1, noTravel = 1, noResist =1, noBlock = 1, effect =Combine a magical ward with one of your existing spells. After casting the trap spell\comma{} cast the effect\minus{}spell to imbue the trap with that effect. 
 If successful\comma{} creates a hidden magical trap of radius 50cm on any solid surface\comma{} with the effect of the original spell when triggered by an entity touching the trap. If you wish to keep a trap hidden from the GM\comma{} write down the location\comma{} spell and associated check values on a piece of paper\comma{} to be revealed when the trap is triggered.}
 \spell{name = Create Water, school = Charms, discipline = Elemental, type = Focus, level =Beginner, incant = aguamente, noDur = 1, higher = An adept\minus{}level caster may summon a more powerful torrent of water\comma{} equal to a number of litres of water per second. Such a torrent does 1d4 bludgeoning damage for every power point dedicated.,noTravel = 1, noResist =1, negation = Blockable  and Dodgeable,effect =A jet of water is emitted from the tip of your wand\comma{} in a fountain approximately 30cm in length\comma{} useful for extinguishing fires small\comma{} or cleaning surfaces\comma{} however conjured water cannot be drunk.}
-\spell{name = Create Zombie, school = Dark Arts, discipline = Necromancy, type = Ritual (5 minutes), level =Expert, incant = inferi exorior, noDur = 1, higher = When cast by a Master\minus{}level caster greater than 15th level\comma{} can be cast as an Instant spell.,noTravel = 1, noResist =1, noBlock = 1, effect =Breathes unlife into dead bodies\comma{} and turns them into ghastly puppets\comma{} performing your every whim: the inferi. Inferi act as golems\comma{} obeying every word of their creator. One inferi may be animated plus one \cvdv.}
+\spell{name = Create Zombie, school = Dark Arts, discipline = Necromancy, type = Ritual (5 minutes), level =Expert, incant = inferi exorior, noDur = 1, higher = When cast by a Master\minus{}level caster greater than 15th level\comma{} can be cast as an Instant spell.,noTravel = 1, noResist =1, noBlock = 1, effect =Breathes unlife into dead bodies\comma{} and turns them into ghastly puppets\comma{} performing your every whim: the inferi. Inferi act as golems\comma{} obeying every word of their creator. The number of inferi that may be animated is (1+2$\times$PP).}
 \spell{name = Crippling Fatigue, school = Dark Arts, discipline = Necromancy, type = Instant, level =Novice, incant = dulcis mortem, duration = Until healed,higher = When cast by an Expert\minus{}level caster\comma{} spell gives 4th level Fatigue.,noTravel = 1, resist = SPR (Endurance), resistDV = CC, negation = Blockable  and Dodgeable,effect =Target takes 2nd level Fatigued status (negated on Resist). Target is not alerted that this spell has been cast on them.}
 \spell{name = Crush Bones, school = Maledictions, discipline = Hex, type = Instant, level =Master, incant = obcillo ossium, noDur = 1, noHigh = 1, noTravel = 1, noResist =1, negation = Blockable  and Dodgeable,effect =A great force smashes into the opponent\comma{} breaking their bones. Does (8+$2\times$PP)d12 bludgeoning damage. Applies the Broken Bone status effect.}
 \spell{name = Crystal Gazing, school = Divination, discipline = Temporal, type = Ritual (4 turns), level =Novice, incant = Gazing, noDur = 1, noHigh = 1, noTravel = 1, noResist =1, noBlock = 1, effect =Gaze into your crystal ball\comma{} and ask a question of the cosmos. You will receive a yes or a no answer to any question you ask.}
@@ -537,7 +633,7 @@ If used on a living being\comma{} causes a deep cut\comma{} for 1d4 + 3 slashing
 \spell{name = Delayed Effect, school = Maledictions, discipline = Curse, type = Instant, level =Adept, incant = mora maledictus, duration = 1 hour,noHigh = 1, travel = Red bolt,noResist =1, noBlock = 1, effect =This spell may be cast as if it were a spell of any level greater than Beginner. After a target is hit by this spell\comma{} you must write down another curse that you are able to cast\comma{} of a lower level than the one chosen to cast this spell. At any point in the next hour\comma{} you may reveal the chosen curse\comma{} and the effects of that spell are then immediately applied to the target.}
 \spell{name = Delusion, school = Illusion, discipline = Psionics, type = Instant, level =Expert, incant = falasarium, duration = (2 + 2$\times$ PP) hours,noHigh = 1, noTravel = 1, resist = INT (perception), resistDV = 10, negation = Blockable,effect =If target fails a Resist check\comma{} the caster may make them believe one piece of information\comma{} which they will believe to be irrefutably true. The delusion must be vaguely rational\comma{} and may not incur excessive self\minus{}harm\comma{} as judged by the GM. Delusion lasts for (2 + 2 $\times$ PP) hours.}
 \spell{name = Detect Magic, school = Divination, discipline = Telepathy, type = Instant, level =Novice, incant = revelio, noDur = 1, noHigh = 1, noTravel = 1, noResist =1, noBlock = 1, effect =Reveals to the caster any active spells in the in 5m range if the casting check exceeds the hiding check. Will deactivate charms whose sole purpose is to remain hidden.}
-\spell{name = Detect Thoughts, school = Divination, discipline = Telepathy, type = Focus, level =Novice, incant = psychopractum, noDur = 1, higher = An Master\minus{}level caster may subtly alter the flow of a target\apos{}s thoughts\comma{} and cause them to think about whatever the caster desires.,noTravel = 1, resist = Perception (Passive), resistDV = CC, noBlock = 1, effect =You may observe the mind of a target individual. Unlike legilimency\comma{} thought\minus{}detection is not an exact science\comma{} and you will only get a vague shape of their current thoughts – perhaps a quick flash of colour\comma{} or a feeling of fear. On a successful (passive) Resist\comma{} target becomes aware of the process.}
+\spell{name = Detect Thoughts, school = Divination, discipline = Telepathy, type = Focus, level =Novice, incant = psychopractum, noDur = 1, higher = An Master\minus{}level caster may subtly alter the flow of a target\apos{}s thoughts\comma{} and cause them to think about whatever the caster desires.,noTravel = 1, resist = Perception (Passive), resistDV = CC, noBlock = 1, effect =You may observe the mind of a target individual. Unlike legilimency\comma{} thought\minus{}detection is not an exact science\comma{} and you will only get a vague shape of their current thoughts \minus perhaps a quick flash of colour\comma{} or a feeling of fear. On a successful (passive) Resist\comma{} target becomes aware of the process.}
 \spell{name = Dimensional Binding, school = Transfiguration, discipline = Conjuration, type = Ritual (5 turns), level =Master, incant = subjungus, duration = 1 day,noHigh = 1, noTravel = 1, resist = POW, resistDV = 15, noBlock = 1, effect =By inscribing a magic circle on the floor\comma{} you create a region where celestial beings from other planes can be trapped and bent to your will. For the next hour\comma{} if an Unlife\comma{} or other being originating from any plane other than the Mortal Realm\comma{} enters into the region\comma{} you may cast a pinch of salt into the circle to complete the ritual and attempt to impose your will over it. 
 
 On a failed resist\comma{} the being is bound to serve you for the duration of the spell. If the being was summoned or created by another spell\comma{} that spell is extended to match the duration of this spell. The being will obey your commands to the letter for the duration of the spell\comma{}and if they are hostile to you\comma{} they may do so in a deliberately obtuse fashion.}
@@ -562,7 +658,7 @@ Elemental damage increases by 1d6 for every power point dedicated. You may dismi
 \spell{name = Ethereal Tag, school = Divination, discipline = Telepathy, type = Instant, level =Expert, incant = signum, duration = (2 + 2$\times$ PP) minutes,noHigh = 1, travel = Yellow bolt,resist = FIN (Stealth), resistDV = CC, negation = Dodgeable,effect =If the target fails to Resist\comma{} place a mystical marker on the target which enables your allies to strike more accurately at them. Target\apos{}s stealth checks fail\comma{} and evasion checks get a \minus{}5 penalty for (2+PP) turns.}
 \spell{name = Extinguish Flame, school = Charms, discipline = Elemental, type = Instant, level =Novice, incant = sitim, noDur = 1, higher = An expert\minus{}level caster may cast this spell as an Expert\minus{}level spell (with the increased DV and FP associaed with that) to allow this spell to effect {\it Fiendfyre}.,noTravel = 1, noResist =1, noBlock = 1, effect =Extinguish an active fire\comma{} removing the danger and stopping any continuing damage effects. However\comma{} this spell does not preventan ongoing spell from producing more fire after it is removed\comma{} and nor does it affect the `Burned' status of a being.}
 \spell{name = Fabricate Object, school = Transfiguration, discipline = Alteration, type = Instant, level =Novice, incant = facere, noDur = 1, higher = A character above 6th level may add 1 free PP for every 3 character levels above 3rd.,noTravel = 1, noResist =1, noBlock = 1, effect =Construct an object from raw materials\comma{} assembling it at a molecular level. May manipulate 500g of raw material in this fashion\comma{} doubling the mass with every power point dedicated. Consruction is permanent\comma{} and cannot be undone.}
-\spell{name = False Friend, school = Illusion, discipline = Psionics, type = Instant, level =Adept, incant = amicus maxmius, duration = 1 minutes,noHigh = 1, travel = Green rays,resist = INT (perception), resistDV = , noBlock = 1, effect =Gain a (2 + 1 \cvdv) bonus on all CHR checks directed at the target for 10 minutes. At the end of the spell\comma{} or if they succeed in Resisting the target becomes aware that you have enchanted and deceived them\comma{} and will become hostile\comma{} or otherwise seek vengeance.}
+\spell{name = False Friend, school = Illusion, discipline = Psionics, type = Instant, level =Adept, incant = amicus maxmius, duration = 1 minutes,noHigh = 1, travel = Green rays,resist = INT (perception), resistDV = , noBlock = 1, effect =Gain a (3 + PP) bonus on all CHR checks directed at the target for the duration of the spell. At the end of the spell\comma{} or if they succeed in Resisting the target becomes aware that you have enchanted and deceived them\comma{} and will become hostile\comma{} or otherwise seek vengeance.}
 \spell{name = False Moon, school = Dark Arts, discipline = Occultism, type = Focus, level =Adept, incant = lupis lunis, duration = 1 hour,higher = When cast by a character greater than 15th level\comma{} the spell works after only 1 turn.,travel = Silver Glow,noResist =1, noBlock = 1, effect =If the spell is maintained on a targeted werewolf for 3 consecutive turns\comma{} they enter their wolf\minus{}form for 1 hour.}
 \spell{name = Fearsome Guardians, school = Transfiguration, discipline = Alteration, type = Instant, level =Master, incant = piertotom locomotum, duration = 1 day,noHigh = 1, noTravel = 1, noResist =1, noBlock = 1, effect =Transform nearby statues\comma{} trees and other inanimate objects into powerful guardians to fight by your side. Guardians are considered as Capable Stone Golems unless otherwise indicated.}
 \spell{name = Featherweight, school = Transfiguration, discipline = Alteration, type = Instant, level =Adept, incant = pluma gravitas, duration = 1 hour,noHigh = 1, noTravel = 1, noResist =1, noBlock = 1, effect =Make the target object as light as a feather\comma{} it does not encumber you.
@@ -579,7 +675,7 @@ Targets suffer a moderate burn.}
 \spell{name = Foresight, school = Divination, discipline = Temporal, type = Instant, level =Adept, incant = providentia, duration = 1 turn,higher = A master\minus{}level caster may provide 1+1d4 extra actions per turn.,noTravel = 1, noResist =1, noBlock = 1, effect =By predicting the flow of time\comma{} you can give the target the ability to make moves without thinking: give the target an extra major action next turn. Each target can only get this boost once per day.}
 \spell{name = Freeze, school = Charms, discipline = Elemental, type = Focus, level =Adept, incant = glacius, duration = Blue rays,noHigh = 1, travel = 0,resist = PER, resistDV = 10+PP, negation = Blockable,effect =A freezing blast erupts from the end of your wand\comma{} lowering the temperature in a cone extending up to (2+PP)m out of your wand by (40+10$\times$PP) degrees celsius\comma{} freezing the target and doing (3+PP)d6 cold damage. All targets in range take the Mild Frostbite status. Resist for haf damage.}
 \spell{name = Fresh Air, school = Charms, discipline = Elemental, type = Instant, level =Beginner, incant = klinneract, noDur = 1, noHigh = 1, noTravel = 1, noResist =1, noBlock = 1, effect =A gust of air refreshes the air in a sphere of radius (2 + PP) metres around the caster\comma{} removing any gaseous effects and smelling faintly of lavender.}
-\spell{name = Fury, school = Illusion, discipline = Psionics, type = Instant, level =Adept, incant = irafors, duration = 1 + 1 \cvdv turns,higher = When cast by a character greater than 12th level\comma{} the DV of the Resist check is equal to the caster level if that is greater than the casting check.,travel = Red bolt,resist = SPR (Endurance), resistDV = CC, negation = Blockable  and Dodgeable,effect =Target performs a Resist Magic check\comma{} if they fail\comma{} target flies into a mindless rage and begins attacking all those around them.}
+\spell{name = Fury, school = Illusion, discipline = Psionics, type = Instant, level =Adept, incant = irafors, duration = 2+PP turns,higher = When cast by a character greater than 12th level\comma{} the DV of the Resist check is equal to the caster level if that is greater than the casting check.,travel = Red bolt,resist = SPR (Endurance), resistDV = CC, negation = Blockable  and Dodgeable,effect =Target performs a Resist Magic check\comma{} if they fail\comma{} target flies into a mindless rage and begins attacking all those around them.}
 \spell{name = Fury\apos{}s Fire, school = Dark Arts, discipline = Occultism, type = Beast, level =Beginner, noIncant = 1, duration = 3,higher = When cast by a Veela greater than 10th level\comma{} use a d8 dice for the damage check.,travel = Red Fireball,noResist =1, negation = Blockable  and Dodgeable,effect ={\bf This spell can only be cast by a Veela when in their Fury\minus{}form. It cannot be learned by non\minus{}Veela.}
 
 A will\minus{}sapping fireball hurled by a Veela or their half\minus{}human brood. On contact ignites the target for (1+PP)d6 fire damage for the duration of the spell. The affected target must use one dice smaller for Resist checks than their usual dice for the next 5 turns.}
@@ -591,7 +687,7 @@ A will\minus{}sapping fireball hurled by a Veela or their half\minus{}human broo
 \spell{name = Halt, school = Charms, discipline = Kinesis, type = Instant, level =Beginner, incant = stabit, noDur = 1, noHigh = 1, travel = Pale blue bolt,noResist =1, noBlock = 1, effect =Stop 1 inanimate object in its tracks\comma{} if mid\minus{}air\comma{} it drops to the ground. If the target is particularly small or fast (i.e. an arrow in mid\minus{}flight) the caster must pass an accuracy check (DV 12) in order to hit the target.}
 \spell{name = Harden Object, school = Transfiguration, discipline = Alteration, type = Instant, level =Novice, incant = duro, duration = 2 days,noHigh = 1, travel = Grey bolt,noResist =1, noBlock = 1, effect =Freezes a non\minus{}living object into its current form\comma{} and can no longer bend or flex.}
 \spell{name = Haste, school = Charms, discipline = Kinesis, type = Instant, level =Adept, incant = silvam currere, duration = 5 minutes,noHigh = 1, noTravel = 1, noResist =1, noBlock = 1, effect =The target has their Speed proficiency increased by (1+PP) points for the duration of the spell. At the end of the effect\comma{} target must take 1 turn to rest and recover.}
-\spell{name = Heal Being, school = Recuperation, discipline = Healing, type = Instant, level =Novice, incant = episkey, noDur = 1, higher = When cast by an expert\minus{}level caster\comma{} heal for 2HP + 4 \cvdv.,travel = Yellow\minus{}white rays,noResist =1, noBlock = 1, effect =Heal minor status effects like burns\comma{} bruises\comma{} broken noses and so on. If no status effect present\comma{} heal for 2HP + 2 \cvdv. If target has a serious wound (i.e. a broken bone or serious burn)\comma{} cannot heal beyond 75\% health.}
+\spell{name = Heal Being, school = Recuperation, discipline = Healing, type = Instant, level =Novice, incant = episkey, noDur = 1, noHigh = 1, travel = Yellow\minus{}white rays,noResist =1, noBlock = 1, effect =Heal minor status effects like burns\comma{} bruises\comma{} broken noses and so on. If no status effect present\comma{} heal for (2+PP)d4 HP. If target has a serious wound (i.e. a broken bone or serious burn)\comma{} cannot heal beyond 75\% health.}
 \spell{name = Heat Object, school = Maledictions, discipline = Hex, type = Instant, level =Adept, incant = flagrante, duration = 3 turns,noHigh = 1, travel = Red rays,noResist =1, negation = Blockable,effect =Causes a target object to heat up to unimaginable temperatures\comma{} doing (3+$2\times$PP)d6 fire damage every time the target object is touched\comma{} and applies a severe Burn status effect.}
 \spell{name = Hoist Enemy, school = Maledictions, discipline = Curse, type = Focus, level =Novice, incant = levicorpus, noDur = 1, higher = When cast by an Expert spellcaster\comma{} the target may be moved around whilst airborn at a speed of 1m per turn.,travel = Invisible pulse,noResist =1, negation = Dodgeable,effect =Target is hoisted into the air. Whilst airborne\comma{} all checks by the target suffer a \minus{}2 penalty. 
 Caster can then throw target up to 2 metres in any direction\comma{} with the target taking 1d6 bludgeoning damage. If spell is interrupted before they are hurled\comma{} they instead take 2 bludgeoning damage as they fall to the floor.}
@@ -631,7 +727,7 @@ Lightning can initiate fires\comma{} provide electrical current or can be used d
 \spell{name = Magical Detonation, school = Maledictions, discipline = Hex, type = Instant, level =Expert, incant = expulso, noDur = 1, noHigh = 1, noTravel = 1, resist = POW, resistDV = 10, negation = Dodgeable,effect =Launches a magical bolt at the target which\comma{} if it makes contact\comma{} causes the object to violently tear itself apart\comma{} doing  $4\times$(1+(1+PP)d6) force damage. Resist for half damage.}
 \spell{name = Magical Shield, school = Recuperation, discipline = Warding, type = Focus, level =Beginner, incant = protego, noDur = 1, noHigh = 1, travel = Etheral Shield,noResist =1, noBlock = 1, effect =Erects an ethereal shield from your in front of you that absorbs incoming magical attacks.
 
-Casting this spell initiates a `Brace’ action and\comma{} in addition to the Resist check\comma{} adds (1d4 +PP) to your Block stat against magical attacks. 
+Casting this spell initiates a `Brace\apos{} action and\comma{} in addition to the Resist check\comma{} adds (1d4 +PP) to your Block stat against magical attacks. 
 
 This shield has a health of (10 +$5\times$PP). If a spell would cause the shield to drop to 0HP\comma{} the shield fails\comma{} and half the remaining damage is dealt to the caster.}
 \spell{name = Magical Stability Ward, school = Recuperation, discipline = Warding, type = Ward, level =Master, incant = victoria maximus, duration = 5 minutes,noHigh = 1, noTravel = 1, noResist =1, noBlock = 1, effect =Creates a region where magic is safer and more successful: all spell checks in the warded area get check double\minus{}advantage. Radius of ward is (4 + PP) metres.}
@@ -650,7 +746,7 @@ Restores HP equal to 8 + three times the total caster level.}
 If the target has a serious wound\comma{} i.e. a broken bone\comma{} cannot heal beyond 50\% health. Only works on living creatures.}
 \spell{name = Mirror Shield, school = Recuperation, discipline = Warding, type = Focus, level =Adept, incant = repente, noDur = 1, noHigh = 1, travel = Etheral Shield,noResist =1, noBlock = 1, effect =Erects an ethereal shield from your in front of you that absorbs incoming attacks of all kinds.
 
-Casting this spell initiates a `Brace’ action and\comma{} in addition to the Resist check\comma{} adds (1d4 +PP) to your Block stat against magical and physical attacks. 
+Casting this spell initiates a `Brace\apos{} action and\comma{} in addition to the Resist check\comma{} adds (1d4 +PP) to your Block stat against magical and physical attacks. 
 
 This shield has a health of (10 +$5\times$PP). If a spell would cause the shield to drop to 0HP\comma{} the shield fails\comma{} and half the remaining damage is dealt to the caster. 
 
@@ -715,7 +811,7 @@ Only one soul may be trapped at any given\comma{} and no power points may be ded
 \spell{name = Steelclaw, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, incant = ferscabere, duration = 1 day,noHigh = 1, noTravel = 1, noResist =1, noBlock = 1, effect =Transfigures an animal{\apos}s claws into large steel talons\comma{} increasing their physical damage by (3 + PPd6)}
 \spell{name = Stick, school = Charms, discipline = Kinesis, type = Instant, level =Novice, incant = obharesco, noDur = 1, noHigh = 1, travel = Purple flash,noResist =1, noBlock = 1, effect =Stick two objects together\comma{} as if you had fused them together at a molecular level. To break them apart requires either slicing the objects apart\comma{} or pulling them hard enough to break one (or both) of the objects.}
 \spell{name = Sting, school = Maledictions, discipline = Hex, type = Instant, level =Beginner, incant = ictus, noDur = 1, noHigh = 1, travel = Green dart,noResist =1, negation = Blockable  and Dodgeable,effect =Stings the target for (2+2$\times $PP)d2 poison damage.}
-\spell{name = Stoneskin, school = Transfiguration, discipline = Alteration, type = Instant, level =Novice, incant = lapis pellium, duration = 5 minutes,noHigh = 1, travel = Dark green rays,noResist =1, noBlock = 1, effect =Increase the target{\apos} Block statistic by 1 + PP by transfiguring their skin into solid stone. Spells such as `shatter’ end this effect immediately.}
+\spell{name = Stoneskin, school = Transfiguration, discipline = Alteration, type = Instant, level =Novice, incant = lapis pellium, duration = 5 minutes,noHigh = 1, travel = Dark green rays,noResist =1, noBlock = 1, effect =Increase the target{\apos} Block statistic by 1 + PP by transfiguring their skin into solid stone. Spells such as {\it shatter} end this effect immediately.}
 \spell{name = Stopping Shield, school = Recuperation, discipline = Warding, type = Focus, level =Novice, incant = stabit vallio, noDur = 1, noHigh = 1, travel = Invisible ripple,noResist =1, noBlock = 1, effect =Erects a 1m radius shield in front of the caster\comma{} which halts any physical object that touches it. Objects in flight drop to the ground\comma{} as if the {\it Halt} spell had been cast on them.}
 \spell{name = Strangle, school = Maledictions, discipline = Curse, type = Instant, level =Novice, incant = offoco, noDur = 1, higher = When cast by a character higher than 15th level\comma{} the Resist DV is equal to the character level.,travel = Grey bolt,resist = ATH (Health), resistDV = 10, noBlock = 1, effect =Target must Resist at the beginning of every turn until they succeed. Until then\comma{} they are deprived of oxygen\comma{} cannot speak\comma{} and after 6 turns\comma{} cannot take any other actions\comma{} and eventually succumb to hypoxia under the usual rules.}
 \spell{name = Stunning Blast, school = Maledictions, discipline = Curse, type = Instant, level =Novice, incant = stupefy, duration = 5 turns,noHigh = 1, travel = Scarlet bolt,resist = SPR, resistDV = 6+PP, negation = Blockable  and Dodgeable,effect =The target is Stunned for 5 turns. Stunned characters cannot move or speak\comma{} but may take a major action to perform a Resist check to end the spell.}
@@ -743,7 +839,7 @@ Each dagger that hits the target does 1d4 piercing damage\comma{} a successful R
 \spell{name = Torture, school = Dark Arts, discipline = Necromancy, type = Focus, level =Adept, incant = Crucio, noDur = 1, noHigh = 1, noTravel = 1, noResist =1, noBlock = 1, effect =Causes immense pain to the target\comma{} paralysing them whilst the spell is cast. 
 Does PPd4 psychic damage per turn\comma{} though this spell cannot be used to reduce beings below 10\% of their maximum health.}
 \spell{name = Trecherous Terrain, school = Transfiguration, discipline = Alteration, type = Instant, level =Novice, incant = transgresso, duration = 2 hours,noHigh = 1, noTravel = 1, noResist =1, noBlock = 1, effect =Transform the ground in a 5m radius around target into a deep bog\comma{} a bed of sharpened blades\comma{} or into a sticky mess\comma{} with the associated terrain costs.}
-\spell{name = Trip, school = Maledictions, discipline = Curse, type = Instant, level =Beginner, incant = lubricor, noDur = 1, noHigh = 1, noTravel = 1, resist = ATH, resistDV = CC, noBlock = 1, effect =If the target is moving this turn cycle and fails to Resist\comma{} they go sprawling onto the ground taking 1d4 bludgeoning damage\comma{} and take the `Prone Position’ status.}
+\spell{name = Trip, school = Maledictions, discipline = Curse, type = Instant, level =Beginner, incant = lubricor, noDur = 1, noHigh = 1, noTravel = 1, resist = ATH, resistDV = CC, noBlock = 1, effect =If the target is moving this turn cycle and fails to Resist\comma{} they go sprawling onto the ground taking 1d4 bludgeoning damage\comma{} and take the {\it Prone Position} status.}
 \spell{name = True Illusion, school = Illusion, discipline = Bewitchment, type = Ritual (10 minutes), level =Master, incant = stultuvisus, duration = 1 hours,noHigh = 1, noTravel = 1, resist = PER, resistDV = 18, noBlock = 1, effect =Create a perfect illusion of an environment (up to 20m in radius) or people (up to 3)\comma{} which can be interacted with and touched by the target. Illusions can only have the knowledge that the caster has.
 Illusion lasts for 10 hours. An observer may determine that the illusion is not real  by performing a Resist as a major action.}
 \spell{name = True Shapeshift, school = Transfiguration, discipline = Alteration, type = Instant, level =Master, incant = muto, noDur = 1, noHigh = 1, noTravel = 1, noResist =1, noBlock = 1, effect =You assume the form of any object you wish\comma{} provided it has approximately the same size as you. You are indistinguishable from this object until you choose to break the spell.}
@@ -761,3 +857,4 @@ Each power point doubles the mass of objects that can be vanished.  You can only
 \spell{name = Violent Phantasms, school = Illusion, discipline = Psionics, type = Instant, level =Novice, incant = umbra impetia, duration = (3 + PP) turns,noHigh = 1, travel = Purple bolt,resist = SPR (endurance), resistDV = CC, negation = Blockable  and Dodgeable,effect =This spell causes the target to believe that multiple phantasms are attacking them target\comma{} doing (1+PP)d6 psychic damage for every turn that the phantasms are active. Once the original spell hits the targets\comma{} phantasms exist only within the target{\apos}s mind\comma{} and so are not stopped by shields or wards (except antimagic wards).}
 \spell{name = Wither, school = Maledictions, discipline = Curse, type = Instant, level =Expert, incant = unis, duration = (4+PP) turns,noHigh = 1, travel = Black Bolt,noResist =1, negation = Blockable  and Dodgeable,effect =Target undergoes a severe physical degredation\comma{} reducing their ATH score by (4+PP) for the duration of the spell.}
 \end{multicols}
+%%SpellEnd

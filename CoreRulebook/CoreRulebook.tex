@@ -287,12 +287,25 @@
 
 \cleartoleftpage
 \part{Magic}
+
 \subfile{Chapters/Spells}
-\cleartoleftpage
-\part{Appendices}
+
+\part{Lists \& Tables}
+
+\small
+\setlength{\parskip}{0em}
+\if \coreMode1
+	\input{Chapters/SpellList}
+\fi
+\if \coreMode0
+	\input{Chapters/SpellListShort}
+\fi
 
 \subfile{Chapters/Archetypes_List}
 
+\input{Chapters/Skill_List}
+
+\part{Appendices}
 \if\coreMode1	
 	\subfile{Chapters/Cosmology}
 \fi

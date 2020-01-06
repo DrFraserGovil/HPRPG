@@ -1,0 +1,214 @@
+
+\define@key{skills}{name}{\def\name{#1}}
+\define@key{skills}{prerequisite}{\def\pre{#1}}
+\define@key{skills}{noPre}{\def\preMode{#1}}
+\define@key{skills}{description}{\def\text{#1}}
+\define@key{skills}{n}{\def\n{#1}}
+
+
+\newcommand\skill[1]
+{
+	\setkeys{skills}{name= None, prerequisite = None, noPre = 0, description = None, n=1}
+	\setkeys{skills}{#1}
+	
+	\vbox{
+	\vspace{\skillGap}
+	\subsubsection{\normalsize\name}
+	\vspace{\skillGap}
+	\if\preMode0
+		{\it Prerequisite: \pre}
+	\fi
+	
+	\text
+	
+	\if\n1
+		
+	\else
+		This skill may be taken \n{} times.
+	\fi
+	}
+}
+
+\onecolumn
+\chapter{Skill List}
+\def\w{2.6}
+\def\x{1}
+\def\y{11.5}
+\def\z{2}
+\footnotesize
+
+\begin{multicols}{3}
+%%SkillBegin
+\skill{name =Magic: Battlemage,prerequisite=Auto\minus{}gained at LVL 1,  description =Increase your casting ability in the Malediction school of magic. You are able to use Malediction spells which match your level in this skill\comma{} and use the dice indicated on page \pageref{T:Dice} to cast all spells of this school., n =5}
+
+\skill{name =Magic: Clairvoyant,prerequisite=Auto\minus{}gained at LVL 1,  description =Increase your casting ability in the Divination school of magic. You are able to use Divination spells which match your level in this skill\comma{} and use the dice indicated on page \pageref{T:Dice} to cast all spells of this school., n =5}
+
+\skill{name =Magic: Defender,prerequisite=Auto\minus{}gained at LVL 1,  description =Increase your casting ability in the Recuperation school of magic. You are able to use Recuperation spells which match your level in this skill\comma{} and use the dice indicated on page \pageref{T:Dice} to cast all spells of this school., n =5}
+
+\skill{name =Magic: Magician,prerequisite=Auto\minus{}gained at LVL 1,  description =Increase your casting ability in the Illusion school of magic. You are able to use Illusion spells which match your level in this skill\comma{} and use the dice indicated on page \pageref{T:Dice} to cast all spells of this school., n =5}
+
+\skill{name =Magic: Necromancer,prerequisite=Auto\minus{}gained at LVL 1,  description =Increase your casting ability in the Dark Arts school of magic. You are able to use Dark Arts spells which match your level in this skill\comma{} and use the dice indicated on page \pageref{T:Dice} to cast all spells of this school., n =5}
+
+\skill{name =Magic: Sorcerer,prerequisite=Auto\minus{}gained at LVL 1,  description =Increase your casting ability in the Charms school of magic. You are able to use Charms spells which match your level in this skill\comma{} and use the dice indicated on page \pageref{T:Dice} to cast all spells of this school., n =5}
+
+\skill{name =Magic: Thaumaturgus,prerequisite=Auto\minus{}gained at LVL 1,  description =Increase your casting ability in the Transfiguration school of magic. You are able to use Transfiguration spells which match your level in this skill\comma{} and use the dice indicated on page \pageref{T:Dice} to cast all spells of this school., n =5}
+
+\skill{name =Magic: Withstand,prerequisite=Auto\minus{}gained at LVL 1,  description =Increase your ability to defend against harm\comma{} and resist danger. You may use the dice indicated on page \pageref{T:Dice} to perform Resist checks., n =5}
+
+\skill{name =Always Alert,prerequisite=,  description =Gain check advantage on Perception checks made to detect the presence of enemies. You also gain advantage on Resist checks made to avoid or resist both magical and mundane traps., noPre = 1, n =1}
+
+\skill{name =Ambidextrous,prerequisite=,  description =Increase FIN attribute by 1. You do not suffer a penalty for using items in your non\minus{}dominant hand., noPre = 1, n =1}
+
+\skill{name =Animagus,prerequisite=Expert Thaumaturgy,  description =Transform into an non\minus{}magical animal at will. This animal must be chosen at the moment you acquire this skill\comma{} and cannot be changed afterwards. Transforming costs 5FP and constitutes a major action., n =1}
+
+\skill{name =Area Dodge,prerequisite=Speed Proficiency,  description =When performing a successful dodge check against an area\minus{}of\minus{}effect attack\comma{} if a full\minus{}turn movement would remove you from the affected area\comma{} you may perform a flying leap to escape the area\comma{} leaving you prone., n =1}
+
+\skill{name =Basic Weapons Training,prerequisite=,  description =You are considered proficient in the use of simple melee weapons such as daggers\comma{} quarterstaff and spears., noPre = 1, n =1}
+
+\skill{name =Battlecry,prerequisite=CHR $>13$,  description =You may take a major action to perform a battlecry\comma{} inspiring your allies. Choose 2d4 allies in hearing range\comma{} and restore FP equal to twice your character level., n =1}
+
+\skill{name =Catastrophic Critical,prerequisite=,  description =Upon a critical hit opportunity\comma{} roll a 1d4. Multiply the damage by the outcome of this dice roll. This overrides the usual critical procedure. When taking this skill multiple times\comma{} increase the die to a d6 and d8 respectively., noPre = 1, n =3}
+
+\skill{name =Cleave,prerequisite=,  description =Increase ATH attribute by 1. If a melee attack kills an opponent\comma{} you may perform a second attack using the same weapon on one adjacent opponent\comma{} dividing the damage done by 2 for every subsequent kill., noPre = 1, n =1}
+
+\skill{name =Confident Accuracy,prerequisite=,  description =After successfully casting a spell\comma{} you may add any remaining casting check over the difficulty to your subsequent accuracy check., noPre = 1, n =1}
+
+\skill{name =Defence Against the Dark Arts,prerequisite=,  description =Increase SPR by 1. Take check\minus{}advantage when performing a resist check against any Dark\minus{}Arts spells cast by a wizard with an EVL less than your character level, noPre = 1, n =1}
+
+\skill{name =Disciplined,prerequisite=,  description =Choose a spell discipline to become proficient in. You may add your Expertise bonus to casting checks for spells in this discipline., noPre = 1, n =2}
+
+\skill{name =Eagle\minus{}Eyed,prerequisite=,  description =Increases PER attribute by 1\comma{} and the effective range of your vision by 50\% in all conditions., noPre = 1, n =1}
+
+\skill{name =Elegant Avoidance,prerequisite=,  description =Increase FIN by 1. 
+
+You may use Precision proficiency\comma{} rather than Speed\comma{} when calculating your Dodge value., noPre = 1, n =1}
+
+\skill{name =Elemental Master,prerequisite=Adept Sorcerer,  description =When casting one of the {\it Control} spells\comma{} you may maintain a chosen effect without further FP cost. The relevant FP cost is only deducted when adding a new effect into the spell., n =1}
+
+\skill{name =Emergency Care,prerequisite=,  description =You may take a major action to perform a {\it stabilization} action on a target you can touch. Perform a 1d20 INT check (DV 10)\comma{} if successful\comma{} remove the {\it Critical Condition} status and apply the {\it Critical but Stable} condition, noPre = 1, n =1}
+
+\skill{name =Exotic Fighter,prerequisite=,  description =You are considered proficient in the use of unusual weapons\comma{} such as whips\comma{} scythes\comma{} tridents and so on., noPre = 1, n =1}
+
+\skill{name =Extended Range,prerequisite=,  description =For each level of this skill\comma{} increase the range of spells by an additional 2m., noPre = 1, n =3}
+
+\skill{name =Familiar,prerequisite=,  description =Choose an animal to accompany you\comma{} usually a cat\comma{} an owl\comma{} a toad or a rat. This animal shares a special bond with you\comma{} and will obey your commands (within reason). The spiritual bond confers the following ability to you:\\
+{\bf Cat:} +2 bonus on stealth checks\\
+{\bf Owl:} +1 to INT attribute\\
+{\bf Toad:} +2 to poison resist and identification checks \\
+{\bf Rat:} +1 to resist checks, noPre = 1, n =1}
+
+\skill{name =Fast Caster,prerequisite=Adept Battlemage,  description =May cast an additional spell as part of the standard spellcasting major action., n =1}
+
+\skill{name =Fighting Dirty,prerequisite=,  description =You are used to winning a fight by any means necessary. You are considered proficient in bare\minus{}handed fighting and in the use of improvised weapons. Barehanded strikes do 1d4 damage., noPre = 1, n =1}
+
+\skill{name =Flying Lessons,prerequisite=,  description =Gain the ability to fly a broomstick., noPre = 1, n =1}
+
+\skill{name =Focussed Caster,prerequisite=,  description =When interrupted (i.e. by taking damage) during a concentration spell\comma{} you may perform a d20 SPR(endurance) check (DV 10) to stay focussed., noPre = 1, n =1}
+
+\skill{name =Golden Touch,prerequisite=CHR $>10$,  description =Increase CHR attribute by 1. Sell items for 50\% more than stated price., n =1}
+
+\skill{name =Hulk Smash?,prerequisite=,  description =You are considered proficient in the use of brute\minus{}force weapons such as axes\comma{} hammers and maces., noPre = 1, n =1}
+
+\skill{name =Improved Instincts,prerequisite=,  description =You may double your Expertise bonus when performing the dodge or block instinct actions., noPre = 1, n =1}
+
+\skill{name =Increased Accuracy,prerequisite=FIN $> 12$,  description =When an accuracy check results in a value less than your FIN stat\comma{} plusyour Expertise bonus (if applicable)\comma{} you may instead use that value., n =1}
+
+\skill{name =Instinctive Retribution,prerequisite=,  description =When attacked\comma{} you may sacrifice your Instinct reaction (guaranteeing all attacks made against you this turn will hit) to retaliate against one attacker. Make an attack action against one agressor as if you had a free major action., noPre = 1, n =1}
+
+\skill{name =Ironclad,prerequisite=ATH $> 15$,  description =Gain proficiency with armour. When taken a second time\comma{} this skill reduces bludgeoning\comma{} slashing and piercing damage taken by an amount equal to your Expertise bonus., n =2}
+
+\skill{name =Knife Handler,prerequisite=,  description =You have sharpened your blades to a razor. Bladed weapons do an additional 1d4 damage for every level of this skill taken., noPre = 1, n =5}
+
+\skill{name =Linguist,prerequisite=,  description =For each level of this skill\comma{} you can pick a new language to learn. Each language must be declared when levelling up. To learn Parseltongue\comma{} you require EVL to be greater than 4., noPre = 1, n =5}
+
+\skill{name =Long Range Threat,prerequisite=,  description =You are considered proficient in the use of more complex ranged weapons: bows\comma{} crossbows\comma{} and firearms., noPre = 1, n =1}
+
+\skill{name =Meditation,prerequisite=,  description =For each level of this skill\comma{} increase the FP regeneration rate by 2FP per turn., noPre = 1, n =2}
+
+\skill{name =Merciful,prerequisite=,  description =You may attempt to turn a lethal blow into a knockout strike. When performing an attack that would otherwise kill the target\comma{} perform a DV 6 FIN (Precision) check. If it passes\comma{} the target is knocked unconscious\comma{} rather than killed., noPre = 1, n =1}
+
+\skill{name =Mimicry,prerequisite=CHR $> 13$,  description =You can mimic the voice of another sapient\comma{} or the call of an animal\comma{} provided you have heard them for at least 1 minute previously., n =1}
+
+\skill{name =Mobile,prerequisite=,  description =Your base speed increases by 1m, noPre = 1, n =1}
+
+\skill{name =Moving Target,prerequisite=ATH $> 12$,  description =Whenever you move\comma{} you may automatically trigger the `evade effect and add a Resist check and your Speed Proficiency to your Dodge value\comma{} without needing the movement to be `considered., n =1}
+
+\skill{name =Muggle Lover,prerequisite=,  description =You are considered proficient in all things muggle\minus{}relaed. Add your Expertise bonus to any persuasion\comma{} deception\comma{} perception or knowledge check relating to muggles., noPre = 1, n =1}
+
+\skill{name =Musician,prerequisite=,  description =Replace your wand with your music: perform all illusion \& protective magic with your instrument of choice\comma{} using a CHR (performance) check. Spells take 2 turns to cast in this fashion. 
+Using Silent Casting negates this effect., noPre = 1, n =5}
+
+\skill{name =Overcome Resistance,prerequisite=,  description =Choose a damage type. You may ignore any resistance below 100\% to this type. Every time you take this skill again\comma{} choose a different damage type., noPre = 1, n =5}
+
+\skill{name =Parry,prerequisite=Novice Brawler,  description =When you have a weapon equipped which you are proficient in\comma{} you may add your Expertise bonus to your base Block stat against physical attacks. Barehanded strikes which are successfully blocked do 1d4 damage to the attacker., n =1}
+
+\skill{name =Power Attack,prerequisite=,  description =You may choose to devote extra strength to an attack\comma{} at the expense of reduced accuracy\comma{} akin to spell Power Points. When performing a melee attack\comma{} choose a number between 0\comma{} and your ATH modifier\comma{} plus your strength proficiency. Deduct this from your accuracy check\comma{} but if the attack hits\comma{} add twice this value to the damage check., noPre = 1, n =1}
+
+\skill{name =Quickloose,prerequisite=,  description =You may use ranged physial weapons whilst performing a `considered movement\apos{}\comma{} using the usual Quickspell rules., noPre = 1, n =1}
+
+\skill{name =Rapid Swing,prerequisite=,  description =Rely on speed\comma{} rather than precision: you may use your ATH (Speed) modifier to perform an accuracy check when using a melee weapon., noPre = 1, n =1}
+
+\skill{name =Raw Power,prerequisite=,  description =Once per day\comma{} may use perform a POW check to cast a spell\comma{} rather than the specified check\comma{} at the cost of doubling the FP cost of the cast., noPre = 1, n =1}
+
+\skill{name =Sentinel,prerequisite=PER $>13$,  description =At the beginning of a combat encounter\comma{} you may designate 1d4 targets that you are always aware of. You are immune to oppotrunity attacks from these targets\comma{} until they peform a successful Hide action., n =1}
+
+\skill{name =Shadow Walker,prerequisite=,  description =You may add your Expertise bonus to your Dodge value whenever taking a `considered movment., noPre = 1, n =1}
+
+\skill{name =Signature Spell,prerequisite=Novice in at least one school,  description =For every level taken in this skill\comma{} designate a spell which is your `signature. These spells must be one level below your current level\comma{} but you may double your proficiency bonus when casting these spells., n =3}
+
+\skill{name =Silent Magic,prerequisite=,  description =Spells that normally require an incantation can be used silently.
+Silent magic checks suffer   \minus{}4 penalty\comma{} which is reduced by 2 for every subsequent level taken in this skill., noPre = 1, n =3}
+
+\skill{name =Simple Ranged Training,prerequisite=,  description =You are considered proficient in the use of simple ranged weapons: blowdarts\comma{} slings and improvised tools., noPre = 1, n =1}
+
+\skill{name =Spellmaker,prerequisite=Expert in at least one school,  description =Once per week\comma{} you may design your own spell (with GMs consent) by taking a full day to research it. The GM will decide the appropriate type and level.The spell must be in a school you are an Expert in\comma{} and you must successfully cast it within three attempts for the spellmaking to be successful. 
+
+If successful\comma{} the spellmaker memorises the spell. They may also transcribe the spell onto paper so others can book\minus{}cast it., n =1}
+
+\skill{name =Stabiliser,prerequisite=,  description =For each level of this skill\comma{} you may nominate one check type (i.e. Illusion spellcasting\comma{} lockpicking\comma{} persuasion etc.). When performing a check of the nominated type\comma{} if possible you may choose to `split the roll\apos{} and instead cast two die of half the nominated value\comma{} i.e. 2d10 instead of 1d20., noPre = 1, n =5}
+
+\skill{name =Superhero Landing,prerequisite=,  description =Increase ATH attribute by 1\comma{} and hone your instincts such that you always land on your feet when falling or thrown (and strike a cool pose when doing so)., noPre = 1, n =1}
+
+\skill{name =Surge,prerequisite=,  description =You may take one extra major action in your turn. This skill cannot be used again until you rest for 4+ hours., noPre = 1, n =1}
+
+\skill{name =Swordfighter,prerequisite=,  description =You are considered proficient in the use of larger bladed weapons: swords\comma{} rapiers and greatswords., noPre = 1, n =1}
+
+\skill{name =Tool\minus{}User,prerequisite=,  description =Choose a 3 new  tools to become proficient in., noPre = 1, n =1}
+
+\skill{name =Tough as Nails,prerequisite=,  description =When you gain this skill\comma{} your Max HP increases by an amount equal to twice your level. Thereafter\comma{} gain +2 to your max HP every time you level up., noPre = 1, n =1}
+
+\skill{name =Undead Benefactor,prerequisite=Novice Defender,  description =Increase INT attribute by 1. Healing spells now also work on the undead., n =1}
+
+\skill{name =Wandless Magic,prerequisite=Beginner Silent Magic,  description =May cast a spell without using a wand. All wandless magic is also silent. You may only cast spells one level below your current one as wandless., n =1}
+
+\skill{name =Wandwork,prerequisite=,  description =You are considered proficient in the use of a magical wand. You may add your proficiency bonus to accuracy checks when casting spells., noPre = 1, n =1}
+
+\skill{name =Weak Spot,prerequisite=,  description =When an opponent uses the `brace minor action\comma{} you gain check advantage on the accuracy check., noPre = 1, n =1}
+
+\skill{name =Species: Behind the Scenes,prerequisite=House\minus{}Elf Species Ability,  description =Stealth Proficiency gets +3 bonus. Your small statur means your base dodge value is increased to 7+FIN modifier, n =1}
+
+\skill{name =Species: Corrupted Blood,prerequisite=Vampire and Werewolf Species Ability,  description =You are susceptible to Celestial Damage. Wounds caused by silver or blessed weapons do double damage.
+
+Prolongued (greater than 1 second) contact with silver does 1d8 Celestial damage (for vampires\comma{} this also extends to garlic\comma{} holy water and crucifixes) per second (3d8 per round). Shorter contact causes the skin to smoke and causes incredible pain., n =1}
+
+\skill{name =Species: Enormous Size,prerequisite=Half\minus{}Giant Species Ability,  description =Strength\comma{} Health and Endurance proficiencies get +2 bonus. Stealth\comma{} Precision\comma{} Dexterity and Deception proficiencies get \minus{}1 penalty. You are considered proficient with all Strength\minus{}based weapons., n =1}
+
+\skill{name =Species: Fury\apos{}s Visage,prerequisite=Half\minus{}Veela Species Ability,  description =In human form\comma{} Persuasion proficiency gets +3 bonus. 
+
+Once per day\comma{} you may shed human form and take on the visage of the {\it Fury} for up to 1 hour\comma{} or until dismissed as a minor action. Replace all memorised spells with {\it Fury\apos{}s Fire}\comma{} gain a bonus to Resist checks equal to one third your character level and take the following stat modifiers:
+ATH: +3\comma{} SPR: +2\comma{} POW: +4\comma{} CHR: \minus{}5\comma{} EVL:+ 4, n =1}
+
+\skill{name =Species: Morph,prerequisite=Metamorphmagus Species Skill,  description =You may change your appearance at will. This acts as a free\minus{}cast concentration spell. Change two physical features for each turn concentration is maintained. You can only imitate human forms., n =1}
+
+\skill{name =Species: Night\apos{}s Child,prerequisite=Vampire Species Ability,  description =Gain a permanent nightvision bonus\comma{} but become susceptible to the sun. For every minute you spend exposed to sunlight\comma{} suffer a 1\minus{}point penalty to ATH\comma{} SPR and POW (min 0)\comma{} which is only restored by feeding on fresh blood. After reaching zero\comma{} you take 5d4 Celestial damage per minute., n =1}
+
+\skill{name =Species: Vampric Feeding,prerequisite=Vampire Species Ability,  description =When within 1m of a target\comma{} you may use a major action to feed on them\comma{} dealing 2d4 necrotic damage (+1d4 for every two character levels above 2nd) to a target\comma{} and restore yourself the same amount of HP., n =1}
+
+\skill{name =Species: Wolfblood,prerequisite=Werewolf Species Ability,  description =Gain a +3 bonus to Endurance proficiency\comma{} and +2 to Speed and Perception., n =1}
+
+\skill{name =Species: Wolfmoon,prerequisite=Werewolf Species Ability,  description =When the full Moon rises\comma{} you take the form of a mindless beast (controlled by the GM) for 12 hours\comma{} unless the Wolfsbane potion is taken., n =1}
+
+%%SkillEnd
+
+\end{multicols}
+\twocolumn

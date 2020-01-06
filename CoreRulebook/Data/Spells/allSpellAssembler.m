@@ -120,14 +120,22 @@ function allSpellAssembler(maxLevel,fileNameRoot)
        listText = listText +  allSpells(i).output() + "\n";
     end
     listText = listText + "\\end{multicols}";
-    %% output to file
     
-    fullText = disciplineTableText + listText;
+	%% output to file
+    
     fileName = strcat(fileNameRoot, 'SpellList.tex');
     if maxLevel < 3
         fileName =  strcat(fileNameRoot , '/SpellListShort.tex');
-    end
-    FID = fopen(fileName,'w');
+	end
+	readFile = fileread(fileName);
+	insertPoint = strfind(readFile, '%%SpellBegin');
+    endPoint = strfind(readFile, '%%SpellEnd');
+    firstHalf = prepareText(readFile(1:insertPoint+12),0);
+
+    secondHalf = prepareText(readFile(endPoint:end),0);
+	
+	fullText = firstHalf + disciplineTableText + listText + "\n" + secondHalf;
+	FID = fopen(fileName,'w');
     fprintf(FID, fullText);
     fclose(FID);
 end

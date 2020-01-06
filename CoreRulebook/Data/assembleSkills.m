@@ -46,7 +46,7 @@ skills = skills(I,:);
 
 
 
-    fileName = '../Chapters/Skills.tex';
+    fileName = '../Chapters/Skill_List.tex';
     readFile = fileread(fileName);
 
 

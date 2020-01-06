@@ -1,7 +1,7 @@
 \documentclass[../CoreRulebook.tex]{subfile}
 
 
-\chapter{Spells}
+\chapter{Types of Magic}
 
 
 \section{Magical Schools}
@@ -71,7 +71,7 @@ As with a focus spell, concentration is key to completing a ritual. If you are i
 ~
 
 
-\section{Casting Spells}
+\chapter{Casting Spells}
 
 
 All spells are cast by performing a `check' -- rolling a dice, and then adding on the associated skill modifiers and bonuses that apply for that spell, and comparing it to the Difficulty Value (DV) for the spell. If the Casting Check (CC) is greater than or equal to the DV and you have enough FP, then the spell is considered to be cast, and the effects are applied.  
@@ -189,7 +189,7 @@ Some spells specify that, when cast by a character of a certain level, they acqu
 
  ~
 
-\section{Spell Shapes}
+\chapter{Spell Shapes}
 
 Some spells produce bolts of energy which fly towards a target, whilst others project their energy into a given region, which are often classified via geometrical shapes: a {\it line}, a {\it cube}, a {\it sphere}, a {\it circle} a {\it cone} or a {\it cylinder}. These shapes may either originate around the caster, or from a point designated by the spell. 
 
@@ -218,106 +218,3 @@ A line extends in a straight path from the origin (a caster's wand) towards the 
 \subsection{Sphere}
 
 A sphere's point of origin lies at the centre, and the spell effect expands equally out in all directions from that point. Generally, the spell effect cannot penetrate into the ground or through solid objects (unless, for example, it is an explosion). The point of origin is affected by the spell. 
-
-\cleartoleftpage
-\onecolumn
-\chapter{Spell List} \label{S:SpellList}
-
-This section contains a list of all the spells available in the game. First, the spells are presented broken down into the school and level to which they belong. The next section then contains a full description of the spell, including its casting check, casting difficulty, and spell effects. Spells marked with a (*) gain more effects, or increase in power, at higher levels. 
-\def\s{0.3}
-\def\w{2.6}
-\def\instSymb{\faMagic}
-\def\concSymb{\faEye}
-\def\wardSymb{\faShield}
-\def\musicSymb{$\twonotes$}
-\def\ritSymb{$\largepentagram$}
-\def\beastSymb{\faPaw}
-\define@key{spell}{name}{\def\name{#1}}
-\define@key{spell}{incant}{\def\incant{#1}}
-\define@key{spell}{school}{\def\school{#1}}
-\define@key{spell}{discipline}{\def\discipline{#1}}
-\define@key{spell}{type}{\def\type{#1}}
-\define@key{spell}{level}{\def\level{#1}}
-\define@key{spell}{fp}{\def\fp{#1}}
-\define@key{spell}{attribute}{\def\att{#1}}
-\define@key{spell}{proficiency}{\def\prof{#1}}
-\define@key{spell}{dv}{\def\dv{#1}}
-\define@key{spell}{effect}{\def\effect{#1}}
-\define@key{spell}{duration}{\def\duration{#1}}
-\define@key{spell}{noIncant}{\def\incantMode{#1}}
-\define@key{spell}{noProf}{\def\profMode{#1}}
-\define@key{spell}{noDur}{\def\durMode{#1}}
-\define@key{spell}{higher}{\def\higher{#1}}
-\define@key{spell}{noHigh}{\def\highMode{#1}}
-\define@key{spell}{travel}{\def\travel{#1}}
-\define@key{spell}{resist}{\def\resist{#1}}
-\define@key{spell}{resistDV}{\def\resistDV{#1}}
-\define@key{spell}{noTravel}{\def\travelMode{#1}}
-\define@key{spell}{noResist}{\def\resistMode{#1}}
-\define@key{spell}{noBlock}{\def\blockMode{#1}}
-\define@key{spell}{negation}{\def\negation{#1}}
-\newcommand{\spell}[1]
-{
-	\setkeys{spell}{name=None,incant = -, school = None, discipline=None,type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0,noDur=0,duration=None,higher=None,noHigh=0,travel = None,noTravel = 0, resist = None, resistDV = none, noResist = 0,noBlock=0,negation=None}
-	\setkeys{spell}{#1}
-	\vbox{
-	{\normalsize \color{rulered}\name }
-	\footnotesize
-	
-		
-	{\it \level{}-level \school{} (\discipline)} 
-	\vspace{1ex}
-	
-	\begin{tabular}{l  l }
-		\if\incantMode0 
-			{\bf Incantation:} & {\it \incant} \\
-		\fi
-	
-	
-		
-		{\bf Spell Type:} & \type \\ 
-	
-		\if\travelMode0
-			{\bf Visual:} & \travel \\
-		\fi
-	
-	\if\durMode0
-		{\bf Duration}  & \duration \\
-	\fi
-	
-	\if\resistMode0
-		{\bf Resist: } & \resist,  DV \resistDV \\
-	\fi
-	\if\blockMode0
-		{\bf Negation: }	&	\negation
-	\fi
-	%~{\bf DV:}~~~~~~~~~\quad~~~~\dv
-	
-	\end{tabular}
-	\vspace{1ex}
-	
-	\effect
-	
-	\vspace{1 ex}
-	
-
-	\if\highMode0
-		{\bf Higher Level Casting: } 
-		
-		\higher
-	\fi
-	}
-	\vspace{3ex}
-	
-	\small
-}
-\newcommand{\cvdv}{for each point that the casting check exceeds the difficulty value}
-
-\small
-\setlength{\parskip}{0em}
-\if \coreMode1
-	\input{Chapters/SpellList}
-\fi
-\if \coreMode0
-	\input{Chapters/SpellListShort}
-\fi
