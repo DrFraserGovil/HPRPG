@@ -58,7 +58,7 @@
 \def \xgap{ (\w + 1)}
 \def\ry{0.5}
 \def\voff{-1.3}
-\draw[rounded corners, gray!30, fill = gray!10] ({\cx-\gap},{\voff+\gap}) rectangle ({\cx + \xgap + \w+\gap},{\voff-4*(\hB+\gap)});
+\draw[rounded corners, gray!70, fill = gray!20] ({\cx-\gap},{\voff+\gap}) rectangle ({\cx + \xgap + \w+\gap},{\voff-4*(\hB+\gap)});
 \foreach \c [count = \q from 0] in { {Athletics}, {Finesse}, {Spirit}, {Charisma}, {Intelligence},{Perception}, {Power}, {Evil} }
 {
 	\def\y{ {\voff-(\q - Mod(\q,2))*(\hB+\gap)/2} }
@@ -142,22 +142,29 @@
 \def\top{-13.1}
 \def\cx{13.6}
 \def\width{9.2}
-\def\hB{4.6}
-\def\r{0.6}
-\def\circleOff{3.9}
-\def\gapx{3}
-\def\gapy{2}
+\def\hB{4.8}
+\def\r{0.7}
+\def\circleOff{4}
+\def\gapx{2}
+\def\gapy{2.2}
 \def\p{  \cx - (\width-\gapx)/2 }
 \def\f{ (\width-\gapx)/3  }
-\draw[rounded corners, gray!30,fill = gray!10] ({\cx-\width/2},\top) rectangle ({\cx+\width/2},{\top-\hB});
-\node at (\cx,{\top-0.3}) {\Large \bf   Check Dice};
-\foreach \c [count=\q from 0] in {{Charms},{Dark Arts},{Divination},{Illusion},{Malediction},{Recuperation},{Resist},{Transfiguration}}
+\draw[rounded corners, gray!70,fill = gray!20] ({\cx-\width/2},\top) rectangle ({\cx+\width/2},{\top-\hB});
+\node at (\cx,{\top-0.3}) {\Large \bf   Spellcasting};
+\foreach \c [count=\q from 0] in {{Charms},{Divination},{Illusion},{Malediction},{Recuperation~},{~Transfiguration},{Dark Arts}}
 {
 	\ifthenelse{\q>3}{\def\y{ {(\top-\circleOff)}}\def\x{ {(\p+ (\q-4)*\f)} } }{\def\y{ {(\top-\circleOff+\gapy)} }\def\x{ {(\p + \q*\f)} }}
 	\draw[gray!70,fill=white] (\x,\y) circle (\r);
-	\node at (\x,{\y+\r+0.2}) {\small \c};
+	\node at (\x,{\y+\r+0.2}) {\footnotesize \c};
 }
-
+\def\Qx{\p + 3*\f}
+\def\Qy{\top-\circleOff}
+%\node at (0,0) {\Qx \Qy};
+\node at ({\Qx},{\Qy+\r+0.2}) {\small Resist DV};
+\def\R{1.3}
+\def\delta{0.04}
+\draw[gray!70,fill=white, rotate around={0: ({\Qx},{\Qy})}] ({\Qx-\R/2},{\Qy-\R/2}) rectangle ({\Qx+\R/2},{\Qy+\R/2});
+\draw[gray!70,fill=white, rotate around={0: ({\Qx},{\Qy})}] ({\Qx-\R/2+\delta},{\Qy-\R/2+\delta}) rectangle ({\Qx+\R/2-\delta},{\Qy+\R/2-\delta} );
 
 
 
@@ -169,15 +176,19 @@
 \def\x{9.1}
 \def\mid{12.1}
 \def\cx{10}
+\def\delta{0.25}
 \draw (\mid,-2.6)--(\mid,-12.4);
 %
 %\foreach \c [count = \q from 0] in {  {{Health},{ATH} },  {{Strength},{ATH} }  }
 %{{Health}, {Speed},{Strength},{Precision},{Stealth},{Dexterity},{Endurance},{Willpower},{Performance},{Deception},{Persuasion},{Research},{Arcane},{Flora \& Fauna},{History}, {Surroundings},{Emotions},{Intimidation},{Chaos}}
-\foreach \c [count = \q from 0] in { {Arcane}, {Chaos}, {Deception}, {Dexterity}, {Endurance}, {Emotions}, {Health}, {Intimidation}, {History},{Nature}, {Performance}, {Persuasion}, {Precision},{Research}, {Speed},{Stealth},{Strength}, {Surroundings} , {Willpower} }
+
+%
+
+\foreach \a/\b [count = \q from 0] in { {Arcane}/{INT}, {Chaos}/{EVL}, {Compassion}/{PER},{Deception}/{CHR}, {Dexterity}/{FIN}, {Endurance}/{SPR},  {Health}/{ATH}, {Intimidation}/{EVL}, {History}/{INT},{Nature}/{INT}, {Observation}/{PER\hspace{-0.7ex}} ,{Performance}/{CHR}, {Persuasion}/{CHR}, {Precision}/{FIN},{Research}/{INT}, {Speed}/{ATH},{Stealth}/{FIN},{Strength}/{ATH},  {Willpower}/{SPR}}
 {
 	\def\y{\topQ - \q*\gap}
-	\draw (\x,\y) --(\cx,\y);
-	\node[anchor = south west] (A) at (\cx,{\y-0.15}) {\scriptsize \c}; 
+	\draw (\x,\y) rectangle ({\x+\delta},{\y+\delta});
+	\node[anchor = south west] (A) at ({\x+\delta-0.05},{\y-0.18}) {\scriptsize \a~\textcolor{gray!60}{(\b{})} }; 
 	\draw[gray!50] (\mid,\y)--(18.2,\y); 	
 } 
 

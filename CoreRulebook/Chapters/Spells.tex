@@ -4,7 +4,7 @@
 \chapter{Types of Magic}
 
 
-\section{Magical Schools}
+\section{Magical Schools}\label{S:Schools}
 
 The study of magic is a far-reaching field, which encompasses many different areas and skills -- some of which require vastly different skillsets to use. For this reason, a magical taxonomy was introduced by the Wizangemot in 1755, which divides the study of magic up into 7 `Schools', each of which contains a number of `Disciplines'. 
 
@@ -108,8 +108,8 @@ To cast a spell from a book, you must be holding a book which contains the speci
 
 If, however, you become familiar with a spell, then it is no longer necessary to have the book in your possession -- you can cast from memory. Spells cast from memory are almost always superior, and may be used as quickcast actions etc. Memory-casting is considered the `normal' way to cast, and all spellcasting rules discussed are assumed to apply to memory-casting. 
 
-A spell is considered memorised when it has been cast successfully a number of times from a book in a `real life' scenario (i.e. you have to actually use the spell for its intended purpose, not just cast it wildly into thin air). The number of successful book-casts, $N$, is calculated from:
-$$N = 10 - \left( \text{INT modifier + Arcane Proficiency} \right)$$
+A spell is considered memorised when it has been cast successfully a number of times from a book in a `real life' scenario (i.e. you have to actually use the spell for its intended purpose, not just cast it wildly into thin air). People generally memorise a spell after casting it $N$ times, where:
+$$ N = 6 -\text{INT modifier}~~~\text{(min 1)}$$
 
 
 \subsection{Casting Checks}
@@ -180,12 +180,21 @@ The FP cost of a spell is numerically equal to the difficulty of a spell, prior 
 }
 \subsection{Power Points}
 
-Some spells have the option to dedicate {\it Power Points} (PP) to their casting when cast from memory. Adding Power Points to a spell amplifies that spells effects, it might make it do more damage, last longer or have a wider area of effect. 
+Some spells have the option to dedicate {\it Power Points} (PP) to their casting when cast from memory. Adding Power Points to a spell amplifies that spells effects, it might make it do more damage, last longer or have a wider area of effect. The effect of adding Power Points is described in the spell description. For example, a spell might state that it does (1+2$\times$PP)d4 damage. This means that, with zero PP added, the spell does d4 damage, with an additional 2d4 being added for every subsequent power point added. 
 
-You must declare the number of power points you are dedicating to a spell before performing the check. Each power point dedicated increases the DV of the casting by one, and the FP cost by two. The maximum number of PP that can be dedicated is equal to one third of your POW attribute. 
+You must declare the number of power points you are dedicating to a spell before performing the check. Each power point dedicated increases the DV and FP of the casting by one.
 
-Some spells specify that, when cast by a character of a certain level, they acquire `free' power points. These power points do not increase the DV or FP cost of the spell, and only apply when calculating the effect. You may still add your own PP to these spells following the normal rules. 
+You may only dedicate power points to a spell when casting from memory: you cannot do so when book casting. 
 
+\subsection{Resisting Spells}
+
+Even after a spell has successfully hit a target, it is possible for them to fight against the magic, reducing the effects and sometimes negating it entirely. 
+
+This is normaly done by performing a {\it Resist} check before the spell effect is applied, and comparing it to the spellcaster\apos{} Resist DV. If the Resist is greater than or equal to the Resist DV of the spellcaster, the spell effect is modified as the spell description states. 
+
+The Resist DV of a cast spell is given by:
+
+$$\text{RDV} = 10 + \text{Expertise bonus}  + \text{POW modifier} + \text{other bonuses}$$
 
  ~
 

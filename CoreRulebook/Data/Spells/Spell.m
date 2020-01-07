@@ -15,7 +15,7 @@ classdef Spell < handle
         HigherLevel
         Travel
         Resist
-        ResistDV
+
         Blockable
         Dodgeable
     end
@@ -36,7 +36,6 @@ classdef Spell < handle
            obj.HigherLevel = "None";
            obj.Travel = "None";
            obj.Resist = "None";
-           obj.ResistDV = "None";
            obj.Blockable = false;
            obj.Dodgeable = false;
         end
@@ -63,8 +62,7 @@ classdef Spell < handle
             obj.Travel = line.TravelType{1};
             
             obj.Resist = line.Resist{1};
-            obj.ResistDV = line.ResistDV{1};
-            
+
             if strcmp(line.Blockable{1},"Y")
                 obj.Blockable = true;
             end
@@ -119,7 +117,7 @@ classdef Spell < handle
             if isempty(sp.Resist)
                 t = t + "noResist =1, ";
             else
-                t = t + "resist = " + prepareText(sp.Resist) + ", resistDV = " + prepareText(sp.ResistDV) + ", ";
+                t = t + "resist = " + prepareText(sp.Resist) + ", ";
             end
             
             if sp.Blockable == false && sp.Dodgeable == false

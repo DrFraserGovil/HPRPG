@@ -330,9 +330,9 @@ Generally speaking, using an item is considered a minor action. Consuming a poti
 
 \subsection{{\it Evade} or {\it Brace} }
  
- You may also choose to ready yourself against incoming attacks, by bolstering either of your {\it Dodge} or {\it Block} stats by the value of a Resist check. This gives you a better chance of negating incoming effects.  
+ You may also choose to ready yourself against incoming attacks, by bolstering your ability to either {\it Dodge} or {\it Block}. This gives you a better chance of negating incoming effects.  
 
-See page \pageref{S:Accuracy} for more details. 
+See page \pageref{S:Accuracy} for more details on this mechanic. 
 
 \subsection{Counterspells}
 
@@ -403,19 +403,25 @@ A { considered movement} is one in which your character is attempting to do some
 
 \chapter{Accuracy \& Instincts}\label{S:Accuracy}
 
-When an attack is launched on a being, it is necessary to determine if the target manages to successfully evade or block the attack, thereby negating it. Beings either block or dodge instinctively, without having to devote conscious thought to their reaction. These two actions are therefore termed {\it instincts}, and occur inbetween turn cycles. 
+When an attack is launched on a being, it is necessary to determine if the attack lands home, or if the attack goes wide, the target dodges underneath the swinging blade, or catches the attack on their armour. 
 
 \subsection{Accuracy}
 
-The attacker -- be they an archer, a swordsman, or a spellcaster -- quantifies their ability to successfully hit their target through an {\it accuracy check}, a standard d20 FIN (Precision) check, plus any additional relevant bonuses or penalties. 
+The attacker -- be they an archer, a gunman, a swordsman, or a spellcaster -- quantifies their ability to successfully hit their target through an {\it accuracy check}, a standard d20 FIN (Precision) check, plus any additional relevant bonuses or penalties. 
 
 If the check is greater than or equal to the {\it instinct value} used by the target, then the attack lands true, and the associated effects are applied. If the accuracy check fails, then the attack misses, or is successfully blocked by the target. 
 
+If the target is not a living being (or is restriced from moving), then hitting the target is much easier, but not totally guaranteed. The `dodge' DV of a stationary object is normally equal to 5, though modifiers may be added for targets which are particularly small, or (for ranged attacks), particularly far away. 
+
+The additional penalty for hitting small/far away targets is:
+
+$$ P = \frac{\text{distance}}{10 \times \text{size}} ~~~~ \text{(rounded down)}$$
+
+Therefore, hitting a 1m target at a distance of up to 10m has a DV of 5, whilst the same target 30m away has a DV of 8, and hitting a 1cm target at a distance of of 1m has a DV of 15. 
 
 \subsection{Instincts} \label{S:AC}
 
-
-The accuracy check is contested by either the block or dodge statistics, which are set by:
+Beings either block or dodge instinctively, without having to devote conscious thought to their reaction. These two actions are therefore termed {\it instincts}, and occur inbetween turn cycles. Each action has a statistic associated with it, which is used to context the accuracy check of the attacker. The value of these statistics is:
 
 \begin{align*} 
 \text{Block} &= 8 + \text{ATH (Strength) modifier} 
@@ -423,7 +429,8 @@ The accuracy check is contested by either the block or dodge statistics, which a
 \text{Dodge} &= 8 + \text{FIN (Speed) modifier} 
 \end{align*}
 
-By default, characters instinctively use whichever of these values is the highest. 
+By default, characters instinctively use whichever of these values is the highest:
+$$ \text{IV} = \max \left( \text{Block}, \text{Dodge} \right)$$
 
 If a character successfully dodges, the attack whizzes by their ear and misses completely. If they successfully block the attack, then they catch the spell or weapon on a piece of armour (or, with the appropriate skill, they can {\it parry} the attack). 
 
@@ -435,24 +442,26 @@ Of course, not all defense happens instinctively -- you may make a conscious dec
 
 You may choose to either {\it brace} or {\it evade} (i.e. you do not have to use the highest-value statistic). 
 
-Whichever you choose, you double your Expertise bonus (if applicable) and perform a Resist check, adding the value of that check into the chosen statistic for the given turn. 
+Whichever you choose, you double your Expertise bonus (if applicable) on the chosen statistic and agressors take check-disadvantage on their accuracy checks against you this turn cycle. 
 
 
 \subsection{Proficiencies}
 
 Whether you are swinging a blade, or cowering behind a shield: you must know how to use your equipment, in order to be able to apply your Expertise to it. 
 
-You may only add your Expertise bonus to an accuracy check, if you are proficient in the weapon you are using, or to an {\it Instinct} if you are proficient in the armour you are wearing. 
+You may only add your Expertise bonus to an accuracy check, if you are proficient in the weapon you are using, or to an {\it Instinct} if you are proficient in the armour (or lack thereof) you are wearing. 
 
 \subsection{Unblockable and Unavoidable Effects}
 
 Some effects (usually those generated by certain spells) cannot be avoided or blocked: holding up a shield against an incoming cannonball isn't going to prevent much, and trying to dodge out of the way of a tsunami is rarely effective. 
 
-Spells denote in their description if they can be blocked or dodged. For the (rarer) instances of non-spell effects which fall into one of these categories, the DM decides if it is reasonable to dodge or block the effect. 
+Spells denote in their description if they can be blocked or dodged. For the (rarer) instances of non-spell effects which fall into one of these categories, the GM decides if it is reasonable to dodge or block the effect. 
 
-If the `dominant' instinct (i.e. the one with the highest value) would be ineffective against a given effect, you may use the non-dominant one. However, if the character chose to, for example, use the evade action, they may not transfer the bonus to `dodge' if an evasion turns out to be ineffective. 
+If the `dominant' instinct (i.e. the one with the highest value) would be ineffective against a given effect, you may use the non-dominant one. However, if the character chose to, for example, use the evade action, they may not transfer the bonus to `block' if an evasion turns out to be ineffective. 
 
-Note that even `unblockable' effects are stopped by `impenetrable' fields. 
+Note that even `unblockable' effects are stopped by `impenetrable' fields and spells which are `undodgeable' treat the target as stationary, and may still miss under those rules. 
+
+
 \chapter{Stealth and Critical Strikes}
 
 Being noticed by the enemy is generally regarded as a bad thing. It therefore often pays to be sneaky, to stay hidden from the enemy. Stealth is governed by the FIN attribute, via the Stealth proficiency. 
