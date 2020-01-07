@@ -40,12 +40,11 @@
 \contentsline {subsection}{\numberline {9.3.1}Communicate}{21}{subsection.9.3.1}
 \contentsline {subsection}{\numberline {9.3.2}Using Items (sometimes)}{21}{subsection.9.3.2}
 \contentsline {subsection}{\numberline {9.3.3}{\it Evade} or {\it Brace} }{21}{subsection.9.3.3}
-\contentsline {subsection}{\numberline {9.3.4}Counterspells}{21}{subsection.9.3.4}
-\contentsline {subsection}{\numberline {9.3.5}Quickspells}{21}{subsection.9.3.5}
+\contentsline {subsection}{\numberline {9.3.4}Quickspells}{21}{subsection.9.3.4}
 \contentsline {section}{\numberline {9.4}Conditional Actions}{21}{section.9.4}
-\contentsline {section}{\numberline {9.5}Movement}{22}{section.9.5}
-\contentsline {subsection}{\numberline {9.5.1}Minor Movements}{22}{subsection.9.5.1}
-\contentsline {subsection}{\numberline {9.5.2}Transport Movement}{22}{subsection.9.5.2}
+\contentsline {section}{\numberline {9.5}Movement}{21}{section.9.5}
+\contentsline {subsection}{\numberline {9.5.1}Minor Movements}{21}{subsection.9.5.1}
+\contentsline {subsection}{\numberline {9.5.2}Transport Movement}{21}{subsection.9.5.2}
 \contentsline {subsection}{\numberline {9.5.3}Considered Movement}{22}{subsection.9.5.3}
 \contentsline {chapter}{\numberline {10}Accuracy \& Instincts}{23}{chapter.10}
 \contentsline {subsection}{\numberline {10.0.1}Accuracy}{23}{subsection.10.0.1}
@@ -286,25 +285,20 @@
 \contentsline {subsection}{\numberline {29.1.1}Changes to Character Attributes}{111}{subsection.29.1.1}
 \contentsline {subsubsection}{EMP $\rightarrow $ PER}{111}{subsubsection*.86}
 \contentsline {subsubsection}{Dodge + Block}{111}{subsubsection*.87}
+\contentsline {subsubsection}{Character Sheet}{111}{subsubsection*.88}
 \contentsline {subsection}{\numberline {29.1.2}Changes to the Spellcasting System}{111}{subsection.29.1.2}
-\contentsline {subsubsection}{Spell Damage Reworked}{111}{subsubsection*.88}
-\contentsline {subsubsection}{General effect balancing}{111}{subsubsection*.89}
-\contentsline {subsubsection}{Power Point Refocus}{111}{subsubsection*.90}
-\contentsline {subsubsection}{Disciplines Introduced}{111}{subsubsection*.91}
-\contentsline {subsubsection}{Some Renaming}{111}{subsubsection*.92}
-\contentsline {subsubsection}{Cheat Sheet}{111}{subsubsection*.93}
-\contentsline {subsubsection}{Manipulate Spells}{111}{subsubsection*.94}
-\contentsline {subsubsection}{Spells alterations}{111}{subsubsection*.95}
+\contentsline {subsubsection}{Spell Damage Reworked}{111}{subsubsection*.89}
+\contentsline {subsubsection}{General effect balancing}{111}{subsubsection*.90}
+\contentsline {subsubsection}{Power Point Refocus}{111}{subsubsection*.91}
+\contentsline {subsubsection}{Disciplines Introduced}{111}{subsubsection*.92}
+\contentsline {subsubsection}{Some Renaming}{111}{subsubsection*.93}
+\contentsline {subsubsection}{Cheat Sheet}{111}{subsubsection*.94}
+\contentsline {subsubsection}{Manipulate Spells}{111}{subsubsection*.95}
+\contentsline {subsubsection}{Spells alterations}{111}{subsubsection*.96}
 \contentsline {subsection}{\numberline {29.1.3}Skill \& Proficiency Changes}{111}{subsection.29.1.3}
-\contentsline {subsubsection}{Skills}{111}{subsubsection*.96}
-\contentsline {subsection}{\numberline {29.1.4}Expertise}{111}{subsection.29.1.4}
-\contentsline {subsubsection}{Proficiencies}{112}{subsubsection*.97}
+\contentsline {subsubsection}{Skills}{111}{subsubsection*.97}
+\contentsline {subsection}{\numberline {29.1.4}Expertise}{112}{subsection.29.1.4}
+\contentsline {subsubsection}{Proficiencies}{112}{subsubsection*.98}
 \contentsline {subsection}{\numberline {29.1.5}Changes to Items}{112}{subsection.29.1.5}
-\contentsline {subsubsection}{Prices}{112}{subsubsection*.98}
-\contentsline {subsection}{\numberline {29.1.6}Evasion/AC System Revamp}{112}{subsection.29.1.6}
-\contentsline {subsubsection}{Overhaul}{112}{subsubsection*.99}
-\contentsline {subsubsection}{Character Sheet}{112}{subsubsection*.100}
-\contentsline {subsection}{\numberline {29.1.7}Meta-Changes}{112}{subsection.29.1.7}
-\contentsline {section}{\numberline {29.2}To-Do List}{112}{section.29.2}
-\contentsline {subsection}{\numberline {29.2.1}Rethink Perception}{112}{subsection.29.2.1}
-\contentsline {subsection}{\numberline {29.2.2}Rethink AC}{112}{subsection.29.2.2}
+\contentsline {subsubsection}{Prices}{112}{subsubsection*.99}
+\contentsline {subsection}{\numberline {29.1.6}Meta-Changes}{112}{subsection.29.1.6}
