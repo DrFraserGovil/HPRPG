@@ -56,32 +56,31 @@
 \contentsline {section}{\numberline {11.1}Sneak Attacks \& Attacks of Opportunity}{24}{section.11.1}
 \contentsline {chapter}{\numberline {12}Taking Damage}{25}{chapter.12}
 \contentsline {subsection}{\numberline {12.0.1}Damage Types}{25}{subsection.12.0.1}
-\contentsline {subsection}{\numberline {12.0.2}Falling}{25}{subsection.12.0.2}
-\contentsline {subsection}{\numberline {12.0.3}Air}{25}{subsection.12.0.3}
-\contentsline {subsection}{\numberline {12.0.4}Resisting}{25}{subsection.12.0.4}
-\contentsline {section}{\numberline {12.1}Statuses}{27}{section.12.1}
-\contentsline {chapter}{\numberline {13}Environment \& Vision}{29}{chapter.13}
-\contentsline {subsection}{\numberline {13.0.1}Terrain}{29}{subsection.13.0.1}
-\contentsline {subsection}{\numberline {13.0.2}Vision}{29}{subsection.13.0.2}
-\contentsline {subsection}{\numberline {13.0.3}Living Environment}{30}{subsection.13.0.3}
-\contentsline {part}{III\hspace {1em}Items}{31}{part.3}
-\contentsline {chapter}{\numberline {14}Equipped Items}{32}{chapter.14}
-\contentsline {section}{\numberline {14.1}Storing Items}{32}{section.14.1}
-\contentsline {chapter}{\numberline {15}Weapons \& Wands}{33}{chapter.15}
-\contentsline {section}{\numberline {15.1}Wands}{33}{section.15.1}
-\contentsline {section}{\numberline {15.2}Weapon List}{35}{section.15.2}
-\contentsline {chapter}{\numberline {16}Armour}{36}{chapter.16}
-\contentsline {chapter}{\numberline {17}Adventuring Gear}{37}{chapter.17}
-\contentsline {section}{\numberline {17.1}Artefacts}{38}{section.17.1}
-\contentsline {section}{\numberline {17.2}Packs}{39}{section.17.2}
-\contentsline {chapter}{\numberline {18}Books}{40}{chapter.18}
-\contentsline {subsection}{\numberline {18.0.1}Normal Books}{40}{subsection.18.0.1}
-\contentsline {subsection}{\numberline {18.0.2}Spell Books}{40}{subsection.18.0.2}
-\contentsline {chapter}{\numberline {19}Tools}{41}{chapter.19}
-\contentsline {chapter}{\numberline {20}Artificing}{42}{chapter.20}
-\contentsline {section}{\numberline {20.1}Enchanting}{42}{section.20.1}
-\contentsline {subsection}{\numberline {20.1.1}Enchanting Mishaps}{42}{subsection.20.1.1}
-\contentsline {section}{\numberline {20.2}Potion Making}{42}{section.20.2}
+\contentsline {subsection}{\numberline {12.0.2}Resisting}{25}{subsection.12.0.2}
+\contentsline {section}{\numberline {12.1}Statuses}{26}{section.12.1}
+\contentsline {chapter}{\numberline {13}Environment \& Vision}{28}{chapter.13}
+\contentsline {subsection}{\numberline {13.0.1}Terrain}{28}{subsection.13.0.1}
+\contentsline {subsection}{\numberline {13.0.2}Vision}{28}{subsection.13.0.2}
+\contentsline {subsection}{\numberline {13.0.3}Falling}{28}{subsection.13.0.3}
+\contentsline {subsection}{\numberline {13.0.4}Air}{29}{subsection.13.0.4}
+\contentsline {part}{III\hspace {1em}Items}{30}{part.3}
+\contentsline {chapter}{\numberline {14}Equipped Items}{31}{chapter.14}
+\contentsline {section}{\numberline {14.1}Storing Items}{31}{section.14.1}
+\contentsline {chapter}{\numberline {15}Weapons \& Wands}{32}{chapter.15}
+\contentsline {section}{\numberline {15.1}Wands}{32}{section.15.1}
+\contentsline {section}{\numberline {15.2}Weapon List}{34}{section.15.2}
+\contentsline {chapter}{\numberline {16}Armour}{35}{chapter.16}
+\contentsline {chapter}{\numberline {17}Adventuring Gear}{36}{chapter.17}
+\contentsline {section}{\numberline {17.1}Artefacts}{37}{section.17.1}
+\contentsline {section}{\numberline {17.2}Packs}{38}{section.17.2}
+\contentsline {chapter}{\numberline {18}Books}{39}{chapter.18}
+\contentsline {subsection}{\numberline {18.0.1}Normal Books}{39}{subsection.18.0.1}
+\contentsline {subsection}{\numberline {18.0.2}Spell Books}{39}{subsection.18.0.2}
+\contentsline {chapter}{\numberline {19}Tools}{40}{chapter.19}
+\contentsline {chapter}{\numberline {20}Artificing}{41}{chapter.20}
+\contentsline {section}{\numberline {20.1}Enchanting}{41}{section.20.1}
+\contentsline {subsection}{\numberline {20.1.1}Enchanting Mishaps}{41}{subsection.20.1.1}
+\contentsline {section}{\numberline {20.2}Potion Making}{41}{section.20.2}
 \contentsline {part}{IV\hspace {1em}Magic}{44}{part.4}
 \contentsline {chapter}{\numberline {21}Types of Magic}{45}{chapter.21}
 \contentsline {section}{\numberline {21.1}Magical Schools}{45}{section.21.1}
@@ -286,19 +285,22 @@
 \contentsline {subsubsection}{EMP $\rightarrow $ PER}{111}{subsubsection*.86}
 \contentsline {subsubsection}{Dodge + Block}{111}{subsubsection*.87}
 \contentsline {subsubsection}{Character Sheet}{111}{subsubsection*.88}
+\contentsline {subsubsection}{Resist Dice Removal}{111}{subsubsection*.89}
 \contentsline {subsection}{\numberline {29.1.2}Changes to the Spellcasting System}{111}{subsection.29.1.2}
-\contentsline {subsubsection}{Spell Damage Reworked}{111}{subsubsection*.89}
-\contentsline {subsubsection}{General effect balancing}{111}{subsubsection*.90}
-\contentsline {subsubsection}{Power Point Refocus}{111}{subsubsection*.91}
-\contentsline {subsubsection}{Disciplines Introduced}{111}{subsubsection*.92}
-\contentsline {subsubsection}{Some Renaming}{111}{subsubsection*.93}
-\contentsline {subsubsection}{Cheat Sheet}{111}{subsubsection*.94}
-\contentsline {subsubsection}{Manipulate Spells}{111}{subsubsection*.95}
-\contentsline {subsubsection}{Spells alterations}{111}{subsubsection*.96}
+\contentsline {subsubsection}{Spell Damage Reworked}{111}{subsubsection*.90}
+\contentsline {subsubsection}{General effect balancing}{111}{subsubsection*.91}
+\contentsline {subsubsection}{Power Point Refocus}{111}{subsubsection*.92}
+\contentsline {subsubsection}{Disciplines Introduced}{111}{subsubsection*.93}
+\contentsline {subsubsection}{Some Renaming}{111}{subsubsection*.94}
+\contentsline {subsubsection}{Cheat Sheet}{111}{subsubsection*.95}
+\contentsline {subsubsection}{Manipulate Spells}{111}{subsubsection*.96}
+\contentsline {subsubsection}{Spells alterations}{111}{subsubsection*.97}
 \contentsline {subsection}{\numberline {29.1.3}Skill \& Proficiency Changes}{111}{subsection.29.1.3}
-\contentsline {subsubsection}{Skills}{111}{subsubsection*.97}
+\contentsline {subsubsection}{Skills}{112}{subsubsection*.98}
 \contentsline {subsection}{\numberline {29.1.4}Expertise}{112}{subsection.29.1.4}
-\contentsline {subsubsection}{Proficiencies}{112}{subsubsection*.98}
+\contentsline {subsubsection}{Proficiencies}{112}{subsubsection*.99}
 \contentsline {subsection}{\numberline {29.1.5}Changes to Items}{112}{subsection.29.1.5}
-\contentsline {subsubsection}{Prices}{112}{subsubsection*.99}
+\contentsline {subsubsection}{Prices}{112}{subsubsection*.100}
+\contentsline {subsubsection}{Weapons}{112}{subsubsection*.101}
 \contentsline {subsection}{\numberline {29.1.6}Meta-Changes}{112}{subsection.29.1.6}
+\contentsline {section}{\numberline {29.2}To Do List}{112}{section.29.2}
