@@ -45,7 +45,7 @@
 \contentsline {section}{\numberline {9.5}Movement}{21}{section.9.5}
 \contentsline {subsection}{\numberline {9.5.1}Minor Movements}{21}{subsection.9.5.1}
 \contentsline {subsection}{\numberline {9.5.2}Transport Movement}{21}{subsection.9.5.2}
-\contentsline {subsection}{\numberline {9.5.3}Considered Movement}{22}{subsection.9.5.3}
+\contentsline {subsection}{\numberline {9.5.3}Considered Movement}{21}{subsection.9.5.3}
 \contentsline {chapter}{\numberline {10}Accuracy \& Instincts}{23}{chapter.10}
 \contentsline {subsection}{\numberline {10.0.1}Accuracy}{23}{subsection.10.0.1}
 \contentsline {subsection}{\numberline {10.0.2}Instincts}{23}{subsection.10.0.2}
@@ -58,11 +58,15 @@
 \contentsline {subsection}{\numberline {12.0.1}Damage Types}{25}{subsection.12.0.1}
 \contentsline {subsection}{\numberline {12.0.2}Resisting}{25}{subsection.12.0.2}
 \contentsline {section}{\numberline {12.1}Statuses}{26}{section.12.1}
-\contentsline {chapter}{\numberline {13}Environment \& Vision}{28}{chapter.13}
-\contentsline {subsection}{\numberline {13.0.1}Terrain}{28}{subsection.13.0.1}
-\contentsline {subsection}{\numberline {13.0.2}Vision}{28}{subsection.13.0.2}
-\contentsline {subsection}{\numberline {13.0.3}Falling}{28}{subsection.13.0.3}
-\contentsline {subsection}{\numberline {13.0.4}Air}{29}{subsection.13.0.4}
+\contentsline {chapter}{\numberline {13}Environment}{28}{chapter.13}
+\contentsline {section}{\numberline {13.1}Terrain}{28}{section.13.1}
+\contentsline {section}{\numberline {13.2}Vision}{28}{section.13.2}
+\contentsline {section}{\numberline {13.3}Falling}{28}{section.13.3}
+\contentsline {section}{\numberline {13.4}Survival}{29}{section.13.4}
+\contentsline {subsection}{\numberline {13.4.1}Food}{29}{subsection.13.4.1}
+\contentsline {subsection}{\numberline {13.4.2}Water}{29}{subsection.13.4.2}
+\contentsline {subsection}{\numberline {13.4.3}Air}{29}{subsection.13.4.3}
+\contentsline {subsection}{\numberline {13.4.4}Shelter \& Temperature}{29}{subsection.13.4.4}
 \contentsline {part}{III\hspace {1em}Items}{30}{part.3}
 \contentsline {chapter}{\numberline {14}Equipped Items}{31}{chapter.14}
 \contentsline {section}{\numberline {14.1}Storing Items}{31}{section.14.1}

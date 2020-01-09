@@ -85,7 +85,7 @@
 \newcommand{\dndlineFade}[1]{%
   \noindent
   \begin{tikzpicture}[]
-    \fill [left color = #1, shading=axis, shading angle = 90] (0, 0)--({\textwidth*0.5}, 0)--({\textwidth*0.5}, 0.01)--(0, 0.01);
+    \fill [left color = #1, shading=axis, shading angle = 90] (0, 0)--({\textwidth*0.5}, 0)--({\textwidth*0.5}, 0)--(0, 0.03);
   \end{tikzpicture}%
   \par%
 }
@@ -99,8 +99,8 @@
 
 \titleformat{\chapter} {\vspace{-14ex}\normalfont\bfseries\centering\color{titlered}\HP\Huge}{}{0pt}{\dndline\thechapter: }[\vspace{-1.6ex}\dndline\vspace{-3ex}]
 \titleformat{name=\chapter,numberless}{\vspace{-14ex}\normalfont\bfseries\centering\color{titlered}\HP\Huge}{}{0pt}{\dndline }[\vspace{-1.6ex}\dndline\vspace{-3ex}]
-\titleformat{\section}{\vspace{-4ex}\normalfont\huge\color{titlered}\it\centering}{}{0em}{}[{\vspace{-1.45ex}\dndlineFade{rulered}}]
-\titleformat{name=\subsection}{\LARGE \bf}{}{0pt}{}[{\vspace{-1.7ex}\dndlineFade{black}}]
+\titleformat{\section}{\vspace{-2ex}\normalfont\huge\color{titlered}\it}{}{0em}{}[{\vspace{-2.85ex}\dndlineFade{rulered}}]
+\titleformat{name=\subsection}{\LARGE \bf}{}{0pt}{}[{\vspace{-2.5ex}\dndlineFade{black}}]
 \titleformat{name=\subsubsection}{\large \bf}{}{0pt}{}[{\vspace{-1.7ex}\dndlineThird{black}}]
 
 \newsavebox{\tablebox}
