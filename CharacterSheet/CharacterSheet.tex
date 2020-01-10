@@ -178,7 +178,7 @@
 \def\x{9.1}
 \def\mid{12.1}
 \def\cx{10}
-\def\delta{0.25}
+\def\delta{0.15}
 \draw (\mid,-2.6)--(\mid,-12.4);
 %
 %\foreach \c [count = \q from 0] in {  {{Health},{ATH} },  {{Strength},{ATH} }  }
@@ -190,7 +190,7 @@
 {
 	\def\y{\topQ - \q*\gap}
 	\draw (\x,\y) rectangle ({\x+\delta},{\y+\delta});
-	\node[anchor = south west] (A) at ({\x+\delta-0.05},{\y-0.18}) {\scriptsize \a~\textcolor{gray!60}{(\b{})} }; 
+	\node[anchor = south west] (A) at ({\x+\delta-0.05},{\y-0.22}) {\scriptsize \a~\textcolor{gray!60}{(\b{})} }; 
 	\draw[gray!50] (\mid,\y)--(18.2,\y); 	
 } 
 
