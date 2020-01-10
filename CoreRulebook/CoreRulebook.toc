@@ -1,4 +1,4 @@
-\contentsline {part}{Introduction}{3}{chapter*.2}
+\contentsline {part}{Introduction}{3}{chapter*.1}
 \contentsline {section}{\numberline {0.1}Computing Checks}{4}{section.0.1}
 \contentsline {section}{\numberline {0.2}Using these Rules}{4}{section.0.2}
 \contentsline {part}{I\hspace {1em}Characters}{6}{part.1}
@@ -8,176 +8,188 @@
 \contentsline {section}{\numberline {3.1}Students}{10}{section.3.1}
 \contentsline {section}{\numberline {3.2}Multiclassing}{11}{section.3.2}
 \contentsline {chapter}{\numberline {4}Main Attributes}{12}{chapter.4}
-\contentsline {section}{\numberline {4.1}Health \& Fortitude}{12}{section.4.1}
+\contentsline {section}{\numberline {4.1}Health \& Fortitude}{13}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Temporary Points}{13}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Natural Healing}{13}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Other Statistics}{13}{section.4.2}
 \contentsline {chapter}{\numberline {5}Character Progression}{14}{chapter.5}
-\contentsline {section}{\numberline {5.1}Character Progression}{14}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Experience}{14}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Levelling Up}{14}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Other Changes}{14}{subsection.5.1.3}
-\contentsline {chapter}{\numberline {6}Skills}{15}{chapter.6}
-\contentsline {subsection}{\numberline {6.0.1}Dice-Check Skills}{15}{subsection.6.0.1}
-\contentsline {subsection}{\numberline {6.0.2}Prerequisites}{15}{subsection.6.0.2}
+\contentsline {section}{\numberline {5.1}Experience}{14}{section.5.1}
+\contentsline {section}{\numberline {5.2}Levelling Up}{14}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Other Changes}{14}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Skills}{15}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Dice-Check Skills}{15}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Prerequisites}{15}{subsection.5.3.2}
 \contentsline {part}{II\hspace {1em}Actions and their Consequences}{16}{part.2}
-\contentsline {chapter}{\numberline {7}Performing Checks}{17}{chapter.7}
-\contentsline {subsection}{\numberline {7.0.1}Modifiers}{17}{subsection.7.0.1}
-\contentsline {subsection}{\numberline {7.0.2}Proficiencies}{17}{subsection.7.0.2}
-\contentsline {subsection}{\numberline {7.0.3}Check Advantage}{18}{subsection.7.0.3}
-\contentsline {subsection}{\numberline {7.0.4}Success \& Failure}{18}{subsection.7.0.4}
-\contentsline {chapter}{\numberline {8}Non-Combat Actions}{19}{chapter.8}
-\contentsline {subsection}{\numberline {8.0.1}Resting}{19}{subsection.8.0.1}
-\contentsline {subsection}{\numberline {8.0.2}Long-distance Movements}{19}{subsection.8.0.2}
-\contentsline {chapter}{\numberline {9}Combat Actions}{20}{chapter.9}
-\contentsline {section}{\numberline {9.1}The Combat Cycle}{20}{section.9.1}
-\contentsline {section}{\numberline {9.2}Major Actions}{20}{section.9.2}
-\contentsline {subsection}{\numberline {9.2.1}Attacking}{20}{subsection.9.2.1}
-\contentsline {subsection}{\numberline {9.2.2}Movement}{20}{subsection.9.2.2}
-\contentsline {subsection}{\numberline {9.2.3}Using Items (sometimes)}{20}{subsection.9.2.3}
-\contentsline {subsection}{\numberline {9.2.4}Trading Items}{20}{subsection.9.2.4}
-\contentsline {section}{\numberline {9.3}Minor Actions}{21}{section.9.3}
-\contentsline {subsection}{\numberline {9.3.1}Communicate}{21}{subsection.9.3.1}
-\contentsline {subsection}{\numberline {9.3.2}Using Items (sometimes)}{21}{subsection.9.3.2}
-\contentsline {subsection}{\numberline {9.3.3}{\it Evade} or {\it Brace} }{21}{subsection.9.3.3}
-\contentsline {subsection}{\numberline {9.3.4}Quickspells}{21}{subsection.9.3.4}
-\contentsline {section}{\numberline {9.4}Conditional Actions}{21}{section.9.4}
-\contentsline {section}{\numberline {9.5}Movement}{21}{section.9.5}
-\contentsline {subsection}{\numberline {9.5.1}Minor Movements}{21}{subsection.9.5.1}
-\contentsline {subsection}{\numberline {9.5.2}Transport Movement}{21}{subsection.9.5.2}
-\contentsline {subsection}{\numberline {9.5.3}Considered Movement}{21}{subsection.9.5.3}
-\contentsline {chapter}{\numberline {10}Accuracy \& Instincts}{23}{chapter.10}
-\contentsline {subsection}{\numberline {10.0.1}Accuracy}{23}{subsection.10.0.1}
-\contentsline {subsection}{\numberline {10.0.2}Instincts}{23}{subsection.10.0.2}
-\contentsline {subsection}{\numberline {10.0.3}{\it Brace} and {\it Evade} }{23}{subsection.10.0.3}
-\contentsline {subsection}{\numberline {10.0.4}Proficiencies}{23}{subsection.10.0.4}
-\contentsline {subsection}{\numberline {10.0.5}Unblockable and Unavoidable Effects}{23}{subsection.10.0.5}
-\contentsline {chapter}{\numberline {11}Stealth and Critical Strikes}{24}{chapter.11}
-\contentsline {section}{\numberline {11.1}Sneak Attacks \& Attacks of Opportunity}{24}{section.11.1}
-\contentsline {chapter}{\numberline {12}Taking Damage}{25}{chapter.12}
-\contentsline {subsection}{\numberline {12.0.1}Damage Types}{25}{subsection.12.0.1}
-\contentsline {subsection}{\numberline {12.0.2}Resisting}{25}{subsection.12.0.2}
-\contentsline {section}{\numberline {12.1}Statuses}{26}{section.12.1}
-\contentsline {chapter}{\numberline {13}Environment}{28}{chapter.13}
-\contentsline {section}{\numberline {13.1}Terrain}{28}{section.13.1}
-\contentsline {section}{\numberline {13.2}Vision}{28}{section.13.2}
-\contentsline {section}{\numberline {13.3}Falling}{28}{section.13.3}
-\contentsline {section}{\numberline {13.4}Survival}{29}{section.13.4}
-\contentsline {subsection}{\numberline {13.4.1}Food}{29}{subsection.13.4.1}
-\contentsline {subsection}{\numberline {13.4.2}Water}{29}{subsection.13.4.2}
-\contentsline {subsection}{\numberline {13.4.3}Air}{29}{subsection.13.4.3}
-\contentsline {subsection}{\numberline {13.4.4}Shelter \& Temperature}{29}{subsection.13.4.4}
+\contentsline {chapter}{\numberline {6}Performing Checks}{17}{chapter.6}
+\contentsline {section}{\numberline {6.1}Success \& Failure}{17}{section.6.1}
+\contentsline {section}{\numberline {6.2}Dice}{18}{section.6.2}
+\contentsline {section}{\numberline {6.3}Modifiers}{18}{section.6.3}
+\contentsline {section}{\numberline {6.4}Expertise \& Proficiencies}{18}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Expertise Bonus}{18}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Attribute Proficiencies}{18}{subsection.6.4.2}
+\contentsline {subsubsection}{Unusual Uses}{19}{subsubsection*.2}
+\contentsline {subsection}{\numberline {6.4.3}Other Proficiencies}{19}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Multiple Proficiencies}{19}{subsection.6.4.4}
+\contentsline {section}{\numberline {6.5}Check Advantage}{19}{section.6.5}
+\contentsline {section}{\numberline {6.6}Working Together}{19}{section.6.6}
+\contentsline {section}{\numberline {6.7}Multiple Attempts}{19}{section.6.7}
+\contentsline {chapter}{\numberline {7}Everyday Actions}{20}{chapter.7}
+\contentsline {section}{\numberline {7.1}Roleplaying}{20}{section.7.1}
+\contentsline {section}{\numberline {7.2}Movement}{20}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Vehicles \& Mounts}{20}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Resting}{20}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}Social Actions}{20}{section.7.3}
+\contentsline {section}{\numberline {7.4}Downtime}{20}{section.7.4}
+\contentsline {chapter}{\numberline {8}Combat}{21}{chapter.8}
+\contentsline {section}{\numberline {8.1}The Combat Cycle}{21}{section.8.1}
+\contentsline {section}{\numberline {8.2}Major Actions}{21}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Attacking}{21}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Movement}{21}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.3}Using Items (sometimes)}{21}{subsection.8.2.3}
+\contentsline {subsection}{\numberline {8.2.4}Trading Items}{21}{subsection.8.2.4}
+\contentsline {section}{\numberline {8.3}Minor Actions}{22}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Communicate}{22}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Using Items (sometimes)}{22}{subsection.8.3.2}
+\contentsline {subsection}{\numberline {8.3.3}{\it Evade} or {\it Brace} }{22}{subsection.8.3.3}
+\contentsline {subsection}{\numberline {8.3.4}Quickspells}{22}{subsection.8.3.4}
+\contentsline {section}{\numberline {8.4}Conditional Actions}{22}{section.8.4}
+\contentsline {section}{\numberline {8.5}Movement}{22}{section.8.5}
+\contentsline {subsection}{\numberline {8.5.1}Minor Movements}{22}{subsection.8.5.1}
+\contentsline {subsection}{\numberline {8.5.2}Transport Movement}{22}{subsection.8.5.2}
+\contentsline {subsection}{\numberline {8.5.3}Considered Movement}{22}{subsection.8.5.3}
+\contentsline {section}{\numberline {8.6}Accuracy \& Instincts}{23}{section.8.6}
+\contentsline {subsection}{\numberline {8.6.1}Accuracy}{23}{subsection.8.6.1}
+\contentsline {subsection}{\numberline {8.6.2}Instincts}{23}{subsection.8.6.2}
+\contentsline {subsection}{\numberline {8.6.3}{\it Brace} and {\it Evade} }{23}{subsection.8.6.3}
+\contentsline {subsection}{\numberline {8.6.4}Proficiencies}{23}{subsection.8.6.4}
+\contentsline {subsection}{\numberline {8.6.5}Unblockable and Unavoidable Effects}{23}{subsection.8.6.5}
+\contentsline {section}{\numberline {8.7}Stealth and Critical Strikes}{23}{section.8.7}
+\contentsline {subsection}{\numberline {8.7.1}Critical Strikes}{24}{subsection.8.7.1}
+\contentsline {section}{\numberline {8.8}Taking Damage}{24}{section.8.8}
+\contentsline {subsection}{\numberline {8.8.1}Damage Types}{24}{subsection.8.8.1}
+\contentsline {subsection}{\numberline {8.8.2}Resisting}{25}{subsection.8.8.2}
+\contentsline {section}{\numberline {8.9}Statuses}{26}{section.8.9}
+\contentsline {chapter}{\numberline {9}Environment}{28}{chapter.9}
+\contentsline {section}{\numberline {9.1}Terrain}{28}{section.9.1}
+\contentsline {section}{\numberline {9.2}Vision}{28}{section.9.2}
+\contentsline {section}{\numberline {9.3}Falling}{28}{section.9.3}
+\contentsline {section}{\numberline {9.4}Survival}{29}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}Food}{29}{subsection.9.4.1}
+\contentsline {subsection}{\numberline {9.4.2}Water}{29}{subsection.9.4.2}
+\contentsline {subsection}{\numberline {9.4.3}Air}{29}{subsection.9.4.3}
+\contentsline {subsection}{\numberline {9.4.4}Shelter \& Temperature}{29}{subsection.9.4.4}
 \contentsline {part}{III\hspace {1em}Items}{30}{part.3}
-\contentsline {chapter}{\numberline {14}Equipped Items}{31}{chapter.14}
-\contentsline {section}{\numberline {14.1}Storing Items}{31}{section.14.1}
-\contentsline {chapter}{\numberline {15}Weapons \& Wands}{32}{chapter.15}
-\contentsline {section}{\numberline {15.1}Wands}{32}{section.15.1}
-\contentsline {section}{\numberline {15.2}Weapon List}{34}{section.15.2}
-\contentsline {chapter}{\numberline {16}Armour}{35}{chapter.16}
-\contentsline {chapter}{\numberline {17}Adventuring Gear}{36}{chapter.17}
-\contentsline {section}{\numberline {17.1}Artefacts}{37}{section.17.1}
-\contentsline {section}{\numberline {17.2}Packs}{38}{section.17.2}
-\contentsline {chapter}{\numberline {18}Books}{39}{chapter.18}
-\contentsline {subsection}{\numberline {18.0.1}Normal Books}{39}{subsection.18.0.1}
-\contentsline {subsection}{\numberline {18.0.2}Spell Books}{39}{subsection.18.0.2}
-\contentsline {chapter}{\numberline {19}Tools}{40}{chapter.19}
-\contentsline {chapter}{\numberline {20}Artificing}{41}{chapter.20}
-\contentsline {section}{\numberline {20.1}Enchanting}{41}{section.20.1}
-\contentsline {subsection}{\numberline {20.1.1}Enchanting Mishaps}{41}{subsection.20.1.1}
-\contentsline {section}{\numberline {20.2}Potion Making}{41}{section.20.2}
+\contentsline {chapter}{\numberline {10}Currency \& the Economy}{31}{chapter.10}
+\contentsline {chapter}{\numberline {11}Equipped Items}{32}{chapter.11}
+\contentsline {section}{\numberline {11.1}Storing Items}{32}{section.11.1}
+\contentsline {chapter}{\numberline {12}Weapons \& Wands}{33}{chapter.12}
+\contentsline {section}{\numberline {12.1}Wands}{33}{section.12.1}
+\contentsline {section}{\numberline {12.2}Weapon List}{35}{section.12.2}
+\contentsline {chapter}{\numberline {13}Armour}{36}{chapter.13}
+\contentsline {chapter}{\numberline {14}Adventuring Gear}{37}{chapter.14}
+\contentsline {section}{\numberline {14.1}Artefacts}{38}{section.14.1}
+\contentsline {section}{\numberline {14.2}Packs}{39}{section.14.2}
+\contentsline {chapter}{\numberline {15}Books}{40}{chapter.15}
+\contentsline {subsection}{\numberline {15.0.1}Normal Books}{40}{subsection.15.0.1}
+\contentsline {subsection}{\numberline {15.0.2}Spell Books}{40}{subsection.15.0.2}
+\contentsline {chapter}{\numberline {16}Tools}{41}{chapter.16}
+\contentsline {chapter}{\numberline {17}Artificing}{42}{chapter.17}
+\contentsline {section}{\numberline {17.1}Enchanting}{42}{section.17.1}
+\contentsline {subsection}{\numberline {17.1.1}Enchanting Mishaps}{42}{subsection.17.1.1}
+\contentsline {section}{\numberline {17.2}Potion Making}{42}{section.17.2}
 \contentsline {part}{IV\hspace {1em}Magic}{44}{part.4}
-\contentsline {chapter}{\numberline {21}Types of Magic}{45}{chapter.21}
-\contentsline {section}{\numberline {21.1}Magical Schools}{45}{section.21.1}
-\contentsline {section}{\numberline {21.2}Spell Types}{45}{section.21.2}
-\contentsline {subsection}{\numberline {21.2.1}Instant}{45}{subsection.21.2.1}
-\contentsline {subsection}{\numberline {21.2.2}Focus}{45}{subsection.21.2.2}
-\contentsline {subsection}{\numberline {21.2.3}Ward}{45}{subsection.21.2.3}
-\contentsline {subsection}{\numberline {21.2.4}Ritual}{46}{subsection.21.2.4}
-\contentsline {chapter}{\numberline {22}Casting Spells}{47}{chapter.22}
-\contentsline {subsection}{\numberline {22.0.1}Spellbooks and Memory}{47}{subsection.22.0.1}
-\contentsline {subsection}{\numberline {22.0.2}Casting Checks}{47}{subsection.22.0.2}
-\contentsline {subsection}{\numberline {22.0.3}Fortitude}{47}{subsection.22.0.3}
-\contentsline {subsection}{\numberline {22.0.4}Power Points}{48}{subsection.22.0.4}
-\contentsline {subsection}{\numberline {22.0.5}Resisting Spells}{48}{subsection.22.0.5}
-\contentsline {chapter}{\numberline {23}Spell Shapes}{49}{chapter.23}
-\contentsline {subsection}{\numberline {23.0.1}Circle}{49}{subsection.23.0.1}
-\contentsline {subsection}{\numberline {23.0.2}Cone}{49}{subsection.23.0.2}
-\contentsline {subsection}{\numberline {23.0.3}Cube}{49}{subsection.23.0.3}
-\contentsline {subsection}{\numberline {23.0.4}Cylinder}{49}{subsection.23.0.4}
-\contentsline {subsection}{\numberline {23.0.5}Line}{49}{subsection.23.0.5}
-\contentsline {subsection}{\numberline {23.0.6}Sphere}{49}{subsection.23.0.6}
+\contentsline {chapter}{\numberline {18}Types of Magic}{45}{chapter.18}
+\contentsline {section}{\numberline {18.1}Magical Schools}{45}{section.18.1}
+\contentsline {section}{\numberline {18.2}Spell Types}{45}{section.18.2}
+\contentsline {subsection}{\numberline {18.2.1}Instant}{45}{subsection.18.2.1}
+\contentsline {subsection}{\numberline {18.2.2}Focus}{45}{subsection.18.2.2}
+\contentsline {subsection}{\numberline {18.2.3}Ward}{45}{subsection.18.2.3}
+\contentsline {subsection}{\numberline {18.2.4}Ritual}{46}{subsection.18.2.4}
+\contentsline {chapter}{\numberline {19}Casting Spells}{47}{chapter.19}
+\contentsline {subsection}{\numberline {19.0.1}Spellbooks and Memory}{47}{subsection.19.0.1}
+\contentsline {subsection}{\numberline {19.0.2}Casting Checks}{47}{subsection.19.0.2}
+\contentsline {subsection}{\numberline {19.0.3}Fortitude}{47}{subsection.19.0.3}
+\contentsline {subsection}{\numberline {19.0.4}Power Points}{48}{subsection.19.0.4}
+\contentsline {subsection}{\numberline {19.0.5}Resisting Spells}{48}{subsection.19.0.5}
+\contentsline {chapter}{\numberline {20}Spell Shapes}{49}{chapter.20}
+\contentsline {subsection}{\numberline {20.0.1}Circle}{49}{subsection.20.0.1}
+\contentsline {subsection}{\numberline {20.0.2}Cone}{49}{subsection.20.0.2}
+\contentsline {subsection}{\numberline {20.0.3}Cube}{49}{subsection.20.0.3}
+\contentsline {subsection}{\numberline {20.0.4}Cylinder}{49}{subsection.20.0.4}
+\contentsline {subsection}{\numberline {20.0.5}Line}{49}{subsection.20.0.5}
+\contentsline {subsection}{\numberline {20.0.6}Sphere}{49}{subsection.20.0.6}
 \contentsline {part}{V\hspace {1em}Lists \& Tables}{50}{part.5}
-\contentsline {chapter}{\numberline {24}Spell List}{51}{chapter.24}
-\contentsline {subsection}{\numberline {24.0.1}Charms}{51}{subsection.24.0.1}
-\contentsline {subsection}{\numberline {24.0.2}Divination}{51}{subsection.24.0.2}
-\contentsline {subsection}{\numberline {24.0.3}Illusion}{52}{subsection.24.0.3}
-\contentsline {subsection}{\numberline {24.0.4}Maledictions}{52}{subsection.24.0.4}
-\contentsline {subsection}{\numberline {24.0.5}Recuperation}{52}{subsection.24.0.5}
-\contentsline {subsection}{\numberline {24.0.6}Transfiguration}{53}{subsection.24.0.6}
-\contentsline {subsection}{\numberline {24.0.7}Dark Arts}{53}{subsection.24.0.7}
-\contentsline {chapter}{\numberline {25}Archetype List}{70}{chapter.25}
-\contentsline {section}{\numberline {25.1}Gryffindor Student}{71}{section.25.1}
-\contentsline {section}{\numberline {25.2}Sports}{72}{section.25.2}
-\contentsline {section}{\numberline {25.3}Hufflepuff Student}{73}{section.25.3}
-\contentsline {section}{\numberline {25.4}Ravenclaw Student}{74}{section.25.4}
-\contentsline {section}{\numberline {25.5}Prodigy Fields}{75}{section.25.5}
-\contentsline {section}{\numberline {25.6}Slytherin Student}{76}{section.25.6}
-\contentsline {section}{\numberline {25.7}Artificer}{77}{section.25.7}
-\contentsline {subsection}{\numberline {25.7.1}Starting Equipment}{77}{subsection.25.7.1}
-\contentsline {subsection}{\numberline {25.7.2}Starting Spells}{77}{subsection.25.7.2}
-\contentsline {subsection}{\numberline {25.7.3}Archetype Features}{77}{subsection.25.7.3}
-\contentsline {subsection}{\numberline {25.7.4}Spellbinder Features}{77}{subsection.25.7.4}
-\contentsline {subsection}{\numberline {25.7.5}Alchemist Features}{78}{subsection.25.7.5}
-\contentsline {section}{\numberline {25.8}Auror}{79}{section.25.8}
-\contentsline {subsection}{\numberline {25.8.1}Starting Equipment}{79}{subsection.25.8.1}
-\contentsline {subsection}{\numberline {25.8.2}Starting Spells}{79}{subsection.25.8.2}
-\contentsline {subsection}{\numberline {25.8.3}Archetype Features}{79}{subsection.25.8.3}
-\contentsline {subsection}{\numberline {25.8.4}Enforcer Features}{79}{subsection.25.8.4}
-\contentsline {subsection}{\numberline {25.8.5}Warder Features}{80}{subsection.25.8.5}
-\contentsline {section}{\numberline {25.9}Brute}{81}{section.25.9}
-\contentsline {subsection}{\numberline {25.9.1}Starting Equipment}{81}{subsection.25.9.1}
-\contentsline {subsection}{\numberline {25.9.2}Starting Spells}{81}{subsection.25.9.2}
-\contentsline {subsection}{\numberline {25.9.3}Archetype Features}{81}{subsection.25.9.3}
-\contentsline {subsection}{\numberline {25.9.4}Beserker Features}{82}{subsection.25.9.4}
-\contentsline {subsection}{\numberline {25.9.5}Gentle Giant Features}{82}{subsection.25.9.5}
-\contentsline {section}{\numberline {25.10}Empath}{83}{section.25.10}
-\contentsline {subsection}{\numberline {25.10.1}Starting Equipment}{83}{subsection.25.10.1}
-\contentsline {subsection}{\numberline {25.10.2}Starting Spells}{83}{subsection.25.10.2}
-\contentsline {subsection}{\numberline {25.10.3}Archetype Features}{83}{subsection.25.10.3}
-\contentsline {subsection}{\numberline {25.10.4}Seer Features}{83}{subsection.25.10.4}
-\contentsline {subsection}{\numberline {25.10.5}Healer Features}{84}{subsection.25.10.5}
-\contentsline {section}{\numberline {25.11}Fighter}{85}{section.25.11}
-\contentsline {section}{\numberline {25.12}Investigator}{87}{section.25.12}
-\contentsline {subsection}{\numberline {25.12.1}Starting Equipment}{87}{subsection.25.12.1}
-\contentsline {subsection}{\numberline {25.12.2}Starting Spells}{87}{subsection.25.12.2}
-\contentsline {subsection}{\numberline {25.12.3}Archetype Features}{87}{subsection.25.12.3}
-\contentsline {subsection}{\numberline {25.12.4}Detective}{88}{subsection.25.12.4}
-\contentsline {subsection}{\numberline {25.12.5}Journalist}{88}{subsection.25.12.5}
-\contentsline {section}{\numberline {25.13}Natuarlist}{90}{section.25.13}
-\contentsline {section}{\numberline {25.14}Oathkeeper}{92}{section.25.14}
-\contentsline {subsection}{\numberline {25.14.1}Starting Equipment}{92}{subsection.25.14.1}
-\contentsline {subsection}{\numberline {25.14.2}Starting Spells}{92}{subsection.25.14.2}
-\contentsline {subsection}{\numberline {25.14.3}Archetype Features}{92}{subsection.25.14.3}
-\contentsline {subsection}{\numberline {25.14.4}Advocate Features}{92}{subsection.25.14.4}
-\contentsline {subsection}{\numberline {25.14.5}Disciple Features}{92}{subsection.25.14.5}
-\contentsline {section}{\numberline {25.15}Oaths}{93}{section.25.15}
-\contentsline {subsection}{\numberline {25.15.1}Oath of Law}{93}{subsection.25.15.1}
-\contentsline {subsection}{\numberline {25.15.2}Oath of Righteousness}{93}{subsection.25.15.2}
-\contentsline {subsection}{\numberline {25.15.3}Oath of Vengeance}{93}{subsection.25.15.3}
-\contentsline {section}{\numberline {25.16}Patrons}{94}{section.25.16}
-\contentsline {subsection}{\numberline {25.16.1}Benevolent Deity}{94}{subsection.25.16.1}
-\contentsline {subsection}{\numberline {25.16.2}Dark Power}{94}{subsection.25.16.2}
-\contentsline {subsection}{\numberline {25.16.3}Free Spirit}{94}{subsection.25.16.3}
-\contentsline {subsection}{\numberline {25.16.4}Incomprehensible Intelligence}{95}{subsection.25.16.4}
-\contentsline {section}{\numberline {25.17}Performer}{96}{section.25.17}
-\contentsline {section}{\numberline {25.18}Ranger}{98}{section.25.18}
-\contentsline {section}{\numberline {25.19}Sage}{100}{section.25.19}
-\contentsline {subsection}{\numberline {25.19.1}Starting Equipment}{100}{subsection.25.19.1}
-\contentsline {subsection}{\numberline {25.19.2}Starting Spells}{100}{subsection.25.19.2}
-\contentsline {subsection}{\numberline {25.19.3}Archetype Features}{100}{subsection.25.19.3}
-\contentsline {subsection}{\numberline {25.19.4}Teacher Features}{100}{subsection.25.19.4}
-\contentsline {subsection}{\numberline {25.19.5}Scholar Features}{101}{subsection.25.19.5}
-\contentsline {chapter}{\numberline {26}Skill List}{102}{chapter.26}
+\contentsline {chapter}{\numberline {21}Spell List}{51}{chapter.21}
+\contentsline {subsection}{\numberline {21.0.1}Charms}{51}{subsection.21.0.1}
+\contentsline {subsection}{\numberline {21.0.2}Divination}{51}{subsection.21.0.2}
+\contentsline {subsection}{\numberline {21.0.3}Illusion}{52}{subsection.21.0.3}
+\contentsline {subsection}{\numberline {21.0.4}Maledictions}{52}{subsection.21.0.4}
+\contentsline {subsection}{\numberline {21.0.5}Recuperation}{52}{subsection.21.0.5}
+\contentsline {subsection}{\numberline {21.0.6}Transfiguration}{53}{subsection.21.0.6}
+\contentsline {subsection}{\numberline {21.0.7}Dark Arts}{53}{subsection.21.0.7}
+\contentsline {chapter}{\numberline {22}Archetype List}{70}{chapter.22}
+\contentsline {section}{\numberline {22.1}Gryffindor Student}{71}{section.22.1}
+\contentsline {section}{\numberline {22.2}Sports}{72}{section.22.2}
+\contentsline {section}{\numberline {22.3}Hufflepuff Student}{73}{section.22.3}
+\contentsline {section}{\numberline {22.4}Ravenclaw Student}{74}{section.22.4}
+\contentsline {section}{\numberline {22.5}Prodigy Fields}{75}{section.22.5}
+\contentsline {section}{\numberline {22.6}Slytherin Student}{76}{section.22.6}
+\contentsline {section}{\numberline {22.7}Artificer}{77}{section.22.7}
+\contentsline {subsection}{\numberline {22.7.1}Starting Equipment}{77}{subsection.22.7.1}
+\contentsline {subsection}{\numberline {22.7.2}Starting Spells}{77}{subsection.22.7.2}
+\contentsline {subsection}{\numberline {22.7.3}Archetype Features}{77}{subsection.22.7.3}
+\contentsline {subsection}{\numberline {22.7.4}Spellbinder Features}{77}{subsection.22.7.4}
+\contentsline {subsection}{\numberline {22.7.5}Alchemist Features}{78}{subsection.22.7.5}
+\contentsline {section}{\numberline {22.8}Auror}{79}{section.22.8}
+\contentsline {subsection}{\numberline {22.8.1}Starting Equipment}{79}{subsection.22.8.1}
+\contentsline {subsection}{\numberline {22.8.2}Starting Spells}{79}{subsection.22.8.2}
+\contentsline {subsection}{\numberline {22.8.3}Archetype Features}{79}{subsection.22.8.3}
+\contentsline {subsection}{\numberline {22.8.4}Enforcer Features}{79}{subsection.22.8.4}
+\contentsline {subsection}{\numberline {22.8.5}Warder Features}{80}{subsection.22.8.5}
+\contentsline {section}{\numberline {22.9}Brute}{81}{section.22.9}
+\contentsline {subsection}{\numberline {22.9.1}Starting Equipment}{81}{subsection.22.9.1}
+\contentsline {subsection}{\numberline {22.9.2}Starting Spells}{81}{subsection.22.9.2}
+\contentsline {subsection}{\numberline {22.9.3}Archetype Features}{81}{subsection.22.9.3}
+\contentsline {subsection}{\numberline {22.9.4}Beserker Features}{82}{subsection.22.9.4}
+\contentsline {subsection}{\numberline {22.9.5}Gentle Giant Features}{82}{subsection.22.9.5}
+\contentsline {section}{\numberline {22.10}Empath}{83}{section.22.10}
+\contentsline {subsection}{\numberline {22.10.1}Starting Equipment}{83}{subsection.22.10.1}
+\contentsline {subsection}{\numberline {22.10.2}Starting Spells}{83}{subsection.22.10.2}
+\contentsline {subsection}{\numberline {22.10.3}Archetype Features}{83}{subsection.22.10.3}
+\contentsline {subsection}{\numberline {22.10.4}Seer Features}{83}{subsection.22.10.4}
+\contentsline {subsection}{\numberline {22.10.5}Healer Features}{84}{subsection.22.10.5}
+\contentsline {section}{\numberline {22.11}Fighter}{85}{section.22.11}
+\contentsline {section}{\numberline {22.12}Investigator}{87}{section.22.12}
+\contentsline {subsection}{\numberline {22.12.1}Starting Equipment}{87}{subsection.22.12.1}
+\contentsline {subsection}{\numberline {22.12.2}Starting Spells}{87}{subsection.22.12.2}
+\contentsline {subsection}{\numberline {22.12.3}Archetype Features}{87}{subsection.22.12.3}
+\contentsline {subsection}{\numberline {22.12.4}Detective}{88}{subsection.22.12.4}
+\contentsline {subsection}{\numberline {22.12.5}Journalist}{88}{subsection.22.12.5}
+\contentsline {section}{\numberline {22.13}Natuarlist}{90}{section.22.13}
+\contentsline {section}{\numberline {22.14}Oathkeeper}{92}{section.22.14}
+\contentsline {subsection}{\numberline {22.14.1}Starting Equipment}{92}{subsection.22.14.1}
+\contentsline {subsection}{\numberline {22.14.2}Starting Spells}{92}{subsection.22.14.2}
+\contentsline {subsection}{\numberline {22.14.3}Archetype Features}{92}{subsection.22.14.3}
+\contentsline {subsection}{\numberline {22.14.4}Advocate Features}{92}{subsection.22.14.4}
+\contentsline {subsection}{\numberline {22.14.5}Disciple Features}{92}{subsection.22.14.5}
+\contentsline {section}{\numberline {22.15}Oaths}{93}{section.22.15}
+\contentsline {subsection}{\numberline {22.15.1}Oath of Law}{93}{subsection.22.15.1}
+\contentsline {subsection}{\numberline {22.15.2}Oath of Righteousness}{93}{subsection.22.15.2}
+\contentsline {subsection}{\numberline {22.15.3}Oath of Vengeance}{93}{subsection.22.15.3}
+\contentsline {section}{\numberline {22.16}Patrons}{94}{section.22.16}
+\contentsline {subsection}{\numberline {22.16.1}Benevolent Deity}{94}{subsection.22.16.1}
+\contentsline {subsection}{\numberline {22.16.2}Dark Power}{94}{subsection.22.16.2}
+\contentsline {subsection}{\numberline {22.16.3}Free Spirit}{94}{subsection.22.16.3}
+\contentsline {subsection}{\numberline {22.16.4}Incomprehensible Intelligence}{95}{subsection.22.16.4}
+\contentsline {section}{\numberline {22.17}Performer}{96}{section.22.17}
+\contentsline {section}{\numberline {22.18}Ranger}{98}{section.22.18}
+\contentsline {section}{\numberline {22.19}Sage}{100}{section.22.19}
+\contentsline {subsection}{\numberline {22.19.1}Starting Equipment}{100}{subsection.22.19.1}
+\contentsline {subsection}{\numberline {22.19.2}Starting Spells}{100}{subsection.22.19.2}
+\contentsline {subsection}{\numberline {22.19.3}Archetype Features}{100}{subsection.22.19.3}
+\contentsline {subsection}{\numberline {22.19.4}Teacher Features}{100}{subsection.22.19.4}
+\contentsline {subsection}{\numberline {22.19.5}Scholar Features}{101}{subsection.22.19.5}
+\contentsline {chapter}{\numberline {23}Skill List}{102}{chapter.23}
 \contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Magic: Battlemage}{102}{subsubsection*.3}
 \contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Magic: Clairvoyant}{102}{subsubsection*.4}
 \contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Magic: Defender}{102}{subsubsection*.5}
@@ -255,56 +267,59 @@
 \contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Species: Vampric Feeding}{104}{subsubsection*.77}
 \contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Species: Wolfblood}{104}{subsubsection*.78}
 \contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Species: Wolfmoon}{104}{subsubsection*.79}
-\contentsline {part}{VI\hspace {1em}Appendices}{105}{part.6}
-\contentsline {chapter}{\numberline {27}Cosmology}{106}{chapter.27}
-\contentsline {subsection}{\numberline {27.0.1}The Mortal World}{106}{subsection.27.0.1}
-\contentsline {subsection}{\numberline {27.0.2}The Astral Realm}{106}{subsection.27.0.2}
-\contentsline {subsection}{\numberline {27.0.3}The Higher Planes}{106}{subsection.27.0.3}
-\contentsline {subsection}{\numberline {27.0.4}The Eldritch Domains}{106}{subsection.27.0.4}
-\contentsline {subsection}{\numberline {27.0.5}The Void}{106}{subsection.27.0.5}
-\contentsline {section}{\numberline {27.1}Higher Planes}{106}{section.27.1}
-\contentsline {subsection}{\numberline {27.1.1}Abyss: The Plane of Terror}{106}{subsection.27.1.1}
-\contentsline {subsection}{\numberline {27.1.2}Aeolus: The Plane of Storms and Winds}{106}{subsection.27.1.2}
-\contentsline {subsection}{\numberline {27.1.3}Eden: The Plane of Nature}{106}{subsection.27.1.3}
-\contentsline {subsection}{\numberline {27.1.4}Elysium: The Plane of Blessings}{107}{subsection.27.1.4}
-\contentsline {subsection}{\numberline {27.1.5}Hades: The Plane of Death}{107}{subsection.27.1.5}
-\contentsline {subsection}{\numberline {27.1.6}Hyperborea: The Plane of Ice}{107}{subsection.27.1.6}
-\contentsline {subsection}{\numberline {27.1.7}Machina: The Plane of Order}{107}{subsection.27.1.7}
-\contentsline {subsection}{\numberline {27.1.8}Nirvana: The Plane of Peace}{107}{subsection.27.1.8}
-\contentsline {subsection}{\numberline {27.1.9}Pand{\ae }monium: The Plane of Chaos}{107}{subsection.27.1.9}
-\contentsline {subsection}{\numberline {27.1.10}Scholomancia: The Plane of Knowledge}{107}{subsection.27.1.10}
-\contentsline {subsection}{\numberline {27.1.11}Tartarus: The Plane of Torture}{107}{subsection.27.1.11}
-\contentsline {subsection}{\numberline {27.1.12}Valhalla: The Plane of Bravery}{107}{subsection.27.1.12}
-\contentsline {subsection}{\numberline {27.1.13}Vulcan: The Plane of Fire}{108}{subsection.27.1.13}
-\contentsline {chapter}{\numberline {28}\vspace {-1ex}Magic Cheat Sheet}{110}{chapter.28}
-\contentsline {subsubsection}{How to Cast}{110}{subsubsection*.80}
-\contentsline {subsubsection}{Memory}{110}{subsubsection*.81}
-\contentsline {subsubsection}{Accuracy \& Resisting}{110}{subsubsection*.82}
-\contentsline {subsubsection}{Check Type}{110}{subsubsection*.83}
-\contentsline {subsubsection}{Check Difficulty}{110}{subsubsection*.84}
-\contentsline {subsubsection}{FP Costs}{110}{subsubsection*.85}
-\contentsline {chapter}{\numberline {29}Changelog}{111}{chapter.29}
-\contentsline {section}{\numberline {29.1}Changes in V4.0$\beta $}{111}{section.29.1}
-\contentsline {subsection}{\numberline {29.1.1}Changes to Character Attributes}{111}{subsection.29.1.1}
-\contentsline {subsubsection}{EMP $\rightarrow $ PER}{111}{subsubsection*.86}
-\contentsline {subsubsection}{Dodge + Block}{111}{subsubsection*.87}
-\contentsline {subsubsection}{Character Sheet}{111}{subsubsection*.88}
-\contentsline {subsubsection}{Resist Dice Removal}{111}{subsubsection*.89}
-\contentsline {subsection}{\numberline {29.1.2}Changes to the Spellcasting System}{111}{subsection.29.1.2}
-\contentsline {subsubsection}{Spell Damage Reworked}{111}{subsubsection*.90}
-\contentsline {subsubsection}{General effect balancing}{111}{subsubsection*.91}
-\contentsline {subsubsection}{Power Point Refocus}{111}{subsubsection*.92}
-\contentsline {subsubsection}{Disciplines Introduced}{111}{subsubsection*.93}
-\contentsline {subsubsection}{Some Renaming}{111}{subsubsection*.94}
-\contentsline {subsubsection}{Cheat Sheet}{111}{subsubsection*.95}
-\contentsline {subsubsection}{Manipulate Spells}{111}{subsubsection*.96}
-\contentsline {subsubsection}{Spells alterations}{111}{subsubsection*.97}
-\contentsline {subsection}{\numberline {29.1.3}Skill \& Proficiency Changes}{111}{subsection.29.1.3}
-\contentsline {subsubsection}{Skills}{112}{subsubsection*.98}
-\contentsline {subsection}{\numberline {29.1.4}Expertise}{112}{subsection.29.1.4}
-\contentsline {subsubsection}{Proficiencies}{112}{subsubsection*.99}
-\contentsline {subsection}{\numberline {29.1.5}Changes to Items}{112}{subsection.29.1.5}
-\contentsline {subsubsection}{Prices}{112}{subsubsection*.100}
-\contentsline {subsubsection}{Weapons}{112}{subsubsection*.101}
-\contentsline {subsection}{\numberline {29.1.6}Meta-Changes}{112}{subsection.29.1.6}
-\contentsline {section}{\numberline {29.2}To Do List}{112}{section.29.2}
+\contentsline {chapter}{\numberline {24}Multiple Attempts}{105}{chapter.24}
+\contentsline {part}{VI\hspace {1em}Appendices}{106}{part.6}
+\contentsline {chapter}{\numberline {25}Cosmology}{107}{chapter.25}
+\contentsline {subsection}{\numberline {25.0.1}The Mortal World}{107}{subsection.25.0.1}
+\contentsline {subsection}{\numberline {25.0.2}The Astral Realm}{107}{subsection.25.0.2}
+\contentsline {subsection}{\numberline {25.0.3}The Higher Planes}{107}{subsection.25.0.3}
+\contentsline {subsection}{\numberline {25.0.4}The Eldritch Domains}{107}{subsection.25.0.4}
+\contentsline {subsection}{\numberline {25.0.5}The Void}{107}{subsection.25.0.5}
+\contentsline {section}{\numberline {25.1}Higher Planes}{108}{section.25.1}
+\contentsline {subsection}{\numberline {25.1.1}Abyss: The Plane of Terror}{108}{subsection.25.1.1}
+\contentsline {subsection}{\numberline {25.1.2}Aeolus: The Plane of Storms and Winds}{108}{subsection.25.1.2}
+\contentsline {subsection}{\numberline {25.1.3}Eden: The Plane of Nature}{108}{subsection.25.1.3}
+\contentsline {subsection}{\numberline {25.1.4}Elysium: The Plane of Blessings}{108}{subsection.25.1.4}
+\contentsline {subsection}{\numberline {25.1.5}Hades: The Plane of Death}{108}{subsection.25.1.5}
+\contentsline {subsection}{\numberline {25.1.6}Hyperborea: The Plane of Ice}{108}{subsection.25.1.6}
+\contentsline {subsection}{\numberline {25.1.7}Machina: The Plane of Order}{109}{subsection.25.1.7}
+\contentsline {subsection}{\numberline {25.1.8}Nirvana: The Plane of Peace}{109}{subsection.25.1.8}
+\contentsline {subsection}{\numberline {25.1.9}Pand{\ae }monium: The Plane of Chaos}{109}{subsection.25.1.9}
+\contentsline {subsection}{\numberline {25.1.10}Scholomancia: The Plane of Knowledge}{109}{subsection.25.1.10}
+\contentsline {subsection}{\numberline {25.1.11}Tartarus: The Plane of Torture}{109}{subsection.25.1.11}
+\contentsline {subsection}{\numberline {25.1.12}Valhalla: The Plane of Bravery}{109}{subsection.25.1.12}
+\contentsline {subsection}{\numberline {25.1.13}Vulcan: The Plane of Fire}{110}{subsection.25.1.13}
+\contentsline {chapter}{\numberline {26}\vspace {-1ex}Magic Cheat Sheet}{112}{chapter.26}
+\contentsline {subsubsection}{How to Cast}{112}{subsubsection*.80}
+\contentsline {subsubsection}{Memory}{112}{subsubsection*.81}
+\contentsline {subsubsection}{Accuracy \& Resisting}{112}{subsubsection*.82}
+\contentsline {subsubsection}{Check Type}{112}{subsubsection*.83}
+\contentsline {subsubsection}{Check Difficulty}{112}{subsubsection*.84}
+\contentsline {subsubsection}{FP Costs}{112}{subsubsection*.85}
+\contentsline {chapter}{\numberline {27}Changelog}{113}{chapter.27}
+\contentsline {section}{\numberline {27.1}Changes in V4.0$\beta $}{113}{section.27.1}
+\contentsline {subsection}{\numberline {27.1.1}Changes to Character Attributes}{113}{subsection.27.1.1}
+\contentsline {subsubsection}{EMP $\rightarrow $ PER}{113}{subsubsection*.86}
+\contentsline {subsubsection}{Dodge + Block}{113}{subsubsection*.87}
+\contentsline {subsubsection}{Character Sheet}{113}{subsubsection*.88}
+\contentsline {subsubsection}{Resist Dice Removal}{113}{subsubsection*.89}
+\contentsline {subsection}{\numberline {27.1.2}Action Changes}{113}{subsection.27.1.2}
+\contentsline {subsubsection}{New Action Mechanics}{113}{subsubsection*.90}
+\contentsline {subsection}{\numberline {27.1.3}Skill \& Proficiency Changes}{113}{subsection.27.1.3}
+\contentsline {subsubsection}{Skills}{113}{subsubsection*.91}
+\contentsline {subsection}{\numberline {27.1.4}Expertise}{113}{subsection.27.1.4}
+\contentsline {subsubsection}{Proficiencies}{113}{subsubsection*.92}
+\contentsline {subsection}{\numberline {27.1.5}Changes to the Spellcasting System}{113}{subsection.27.1.5}
+\contentsline {subsubsection}{Spell Damage Reworked}{113}{subsubsection*.93}
+\contentsline {subsubsection}{General effect balancing}{113}{subsubsection*.94}
+\contentsline {subsubsection}{Power Point Refocus}{113}{subsubsection*.95}
+\contentsline {subsubsection}{Disciplines Introduced}{114}{subsubsection*.96}
+\contentsline {subsubsection}{Some Renaming}{114}{subsubsection*.97}
+\contentsline {subsubsection}{Cheat Sheet}{114}{subsubsection*.98}
+\contentsline {subsubsection}{Manipulate Spells}{114}{subsubsection*.99}
+\contentsline {subsubsection}{Spells alterations}{114}{subsubsection*.100}
+\contentsline {subsection}{\numberline {27.1.6}Changes to Items}{114}{subsection.27.1.6}
+\contentsline {subsubsection}{Prices}{114}{subsubsection*.101}
+\contentsline {subsubsection}{Weapons}{114}{subsubsection*.102}
+\contentsline {subsection}{\numberline {27.1.7}Meta-Changes}{114}{subsection.27.1.7}
+\contentsline {section}{\numberline {27.2}To Do List}{114}{section.27.2}

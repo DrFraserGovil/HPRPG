@@ -22,6 +22,8 @@
 \usepackage{multirow}
 \usepackage{float}
 \usepackage{tcolorbox}
+ \usepackage{tocloft}
+ \renewcommand{\cftsecnumwidth}{30pt}
 \usepackage{keyval}
 \usepackage{pgfkeys}
 \usepackage{lscape}
@@ -252,7 +254,7 @@
     {\HP \fontsize{22}{0} \selectfont Version 4.0$\beta$ \hfill Jack Fraser}
 \end{titlepage}
 
-\setcounter{tocdepth}{0}  
+\setcounter{tocdepth}{1}  
 \begin{spacing}{0.8}
 \footnotesize
 \tableofcontents
@@ -304,7 +306,7 @@
 \subfile{Chapters/Archetypes_List}
 
 \input{Chapters/Skill_List}
-
+\input{Chapters/RepeatAttempt}
 \part{Appendices}
 \if\coreMode1	
 	\subfile{Chapters/Cosmology}
