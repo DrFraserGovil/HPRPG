@@ -1,18 +1,19 @@
 \documentclass[oneside, twocolumn,9pt,english]{extbook}
+\usepackage{keyval}
+
+
 \usepackage[no-math]{fontspec}
 \usepackage{array}
-\usepackage{MnSymbol}
 \usepackage{blindtext}
+\usepackage{MnSymbol}
 \usepackage{subfiles}
 \usepackage{longtable}
-
-\usepackage{float}
+\usepackage{amsmath}
 \usepackage{cuted}
 \usepackage{csquotes}
 \usepackage{graphicx}
 \usepackage[left = 0.4in, right = 0.4 in, top = 0.45in, bottom = 0.42in]{geometry}
 \usepackage{titlesec}
-\usepackage{amsmath}
 \usepackage{lscape}
 \usepackage{enumitem}
 \usepackage{setspace}
@@ -22,17 +23,18 @@
 \usepackage{multirow}
 \usepackage{float}
 \usepackage{tcolorbox}
+\usepackage[sans]{dsfont}
+\usepackage{eufrak}
+\usepackage{rsfso}
  \usepackage{tocloft}
  \renewcommand{\cftsecnumwidth}{30pt}
-\usepackage{keyval}
-\usepackage{pgfkeys}
+
 \usepackage{lscape}
 \def\apos{'}
-\usepackage{MnSymbol}
 \usepackage{fontawesome}
 \usepackage[notextcomp]{stix}
 \usepackage{makecell}
-\usepackage{environ}
+
 
 \usepackage{array}
 \usepackage[hidelinks]{hyperref}
@@ -47,7 +49,9 @@
 \setlength{\parindent}{0pt}
 \setlength{\columnsep}{0.7cm}
 
-
+\def\galleon{$\mathfrak{G}$}
+\def\sickle{$\wreath$}
+\def\knut{$\btimes$}
 \definecolor{titlered}{HTML}{58180D} 
 \definecolor{rulered}{HTML}{9C2B1B} 
 \definecolor{papyrus}{HTML}{FDF1DC} 
@@ -103,7 +107,7 @@
 \titleformat{name=\chapter,numberless}{\vspace{-14ex}\normalfont\bfseries\centering\color{titlered}\HP\Huge}{}{0pt}{\dndline }[\vspace{-1.6ex}\dndline\vspace{-3ex}]
 \titleformat{\section}{\vspace{-2ex}\normalfont\huge\color{titlered} }{}{0em}{}[{\vspace{-0.55 cm}\dndlineFade{rulered}}]
 \titleformat{name=\subsection}{\LARGE \bf}{}{0pt}{}[{\vspace{-0.43 cm}\dndlineFade{black}}]
-\titleformat{name=\subsubsection}{\large \bf}{}{0pt}{}[{\vspace{-1.7ex}\dndlineThird{black}}]
+\titleformat{name=\subsubsection}{\large }{}{0pt}{}[{\vspace{-0.5 cm}\dndlineThird{black}}]
 
 \newsavebox{\tablebox}
 

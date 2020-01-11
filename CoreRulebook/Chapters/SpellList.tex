@@ -10,6 +10,7 @@ This section contains a list of all the spells available in the game. First, the
 \def\musicSymb{$\twonotes$}
 \def\ritSymb{$\largepentagram$}
 \def\beastSymb{\faPaw}
+\makeatletter
 \define@key{spell}{name}{\def\name{#1}}
 \define@key{spell}{incant}{\def\incant{#1}}
 \define@key{spell}{school}{\def\school{#1}}
@@ -34,6 +35,7 @@ This section contains a list of all the spells available in the game. First, the
 \define@key{spell}{noResist}{\def\resistMode{#1}}
 \define@key{spell}{noBlock}{\def\blockMode{#1}}
 \define@key{spell}{negation}{\def\negation{#1}}
+\makeatother
 \newcommand{\spell}[1]
 {
 	\setkeys{spell}{name=None,incant = \minus{}, school = None, discipline=None,type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0,noDur=0,duration=None,higher=None,noHigh=0,travel = None,noTravel = 0, resist = None, resistDV = none, noResist = 0,noBlock=0,negation=None}

@@ -2,10 +2,11 @@
 
 \newcommand{\feat}[1]{\textbf{\textit{#1:}}}
 \newcommand{\jump}{\par \vspace{0.8ex}}
-
+\makeatletter
 %%keyBegin
-\define@key{archetype}{arcaneI}{\def\arcaneI{#1}}
+
 \define@key{archetype}{alphaFeatureI}{\def\alphaI{#1}}
+\define@key{archetype}{arcaneI}{\def\arcaneI{#1}}
 \define@key{archetype}{betaFeatureI}{\def\betaI{#1}}
 \define@key{archetype}{featureI}{\def\featureI{#1}}
 \define@key{archetype}{arcaneII}{\def\arcaneII{#1}}
@@ -85,7 +86,7 @@
 \define@key{archetype}{betaFeatureXX}{\def\betaXX{#1}}
 \define@key{archetype}{featureXX}{\def\featureXX{#1}}
 %%keyEnd    
-
+\makeatother
 
 
 \newcommand{\tableShort}[1]
