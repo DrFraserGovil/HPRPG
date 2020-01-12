@@ -4,11 +4,25 @@
 \section{The Combat Cycle}
 Unlike most RPGs, which tend to use a turn-based system for combat, this game uses a simultaneous combat system. The reason for this is that whilst the turn-based combat fits in with how we play games (I have my turn, you have yours, etc.), it is not entirely realistic: in a fight, you don't wait patiently for everyone else to complete attacking you before finally returning fire: everybody is completing actions at once. 
 
-After combat is initiated, a series of turn cycles occur. Each turn cycle allows every character in combat one major action, such as: a movement, casting a spell, or using an item. Before the turn is activated, there is a period of time (to be decided by your GM), during which you must decide on what you will do. Players may talk to each other during this time, but do be aware that discussing your tactics in front of the GM may give the game away, you wouldn't start shouting your plan out whilst fighting the enemy now, would you? 
+After combat is initiated, a series of turn cycles occur. Each turn cycle allows every character in combat one major action, such as: a movement, casting a spell, or using an item. 
+
+At the start of each turn cycle there is a period of time (to be decided by your GM), during which you must decide on what you will do. Players may talk to each other during this time, but do be aware that discussing your tactics in front of the GM may give the game away, you wouldn't start shouting your plan out whilst fighting the enemy now, would you? 
 
 After this time is up, each player writes down their action on a scrap of paper (to prevent last minute changes of heart), and then all players (including the GM) reveal their action simultaneously. 
 
-Since all actions are considered to be simultaneous, the order in which the actions are resolved does not usually matter, recall that spells have a finite travel time, so it is entirely feasible for two players to stun each other simultaneously and it does not matter {\apos}who cast first{\apos}.
+The GM then resolves the effects of all these actions - directing characters to perform accuracy and damage checks where appropriate - and then narrating the outcome, and the response (if any) of the remaining aggressors. 
+
+The combat cycle then begins anew until the conflict is resolved. 
+
+\subsection{Time}
+
+Each combat cycle is assumed to have a duration of around 3 seconds. 
+
+Attempting to perform actions that last significantly longer than this requires spreading the action across multiple turns -- though may choose to abort such an action if you feel your talents are better placed elsewhere. 
+
+\subsection{Resolving Conflicts}
+
+Since all actions are considered to be simultaneous, the order in which the actions are resolved does not usually matter. Recall that spells, arrows, and sword swings have a finite travel time, so it is entirely feasible for two players to attack each other simultaneously and it does not matter who initiated first.
 
 It might, of course, still be possible for actions to come into conflict with each other: if two characters attempt to occupy the same space, for example. It is up to the GM's discretion how to deal with edge cases like this - for the example given, it is recommended that this be treated as a `body slam', and both characters should recoil and take some damage. 
 
@@ -16,138 +30,247 @@ There might also be cases where two spells are cast simultaneously where the ord
 
 In cases such as this it is useful to remember that it is the {\it casting} of the spell that is simultaneous: so the ordering in which the spell effects should take place can be inferred from the distance between the caster and the target. The issue above is resolved simply by looking at whoever is closest to the target. 
  
- \newpage
+
+ \section{Taking Actions}
  
- \section{Major Actions}
+ During each combat cycle, each character may take {\bf one} major action, or {\bf two} minor actions. In addition, your character has a number of {\it instincts} which they execute to avoid damage and brace against incoming attacks. 
  
- Major actions take an entire turn to complete, and as such are considered the main way to engage in combat. 
+ The list below gives some common mechanics for both major and minor actions. As usual, however, characters are free to be as inventive as they like. It is up to the GM to determine if an action is major or minor in nature, and how to resolve it. 
  
- \subsection{Attacking}
+ \subsection{Major Actions}
  
- Casting a spell, swinging a sword, or loosing an arrow takes (usually) a full turn to complete, and so you may decide to use your entire turn to cast a spell. Some skills and archetype abilities allow you to perform multiple such actions as part of a single major action. 
+ Major actions take an entire turn to complete, and as such are considered the main way to engage in combat. Some skills and archetype abilities allow you to perform multiple iterations of a single major action per turn, or may grant you multiple major actions to take. 
  
- Generally, to perform an attack, you first perform an accuracy check (see page \pageref{S:Accuracy}) against your targets {\it block} or {\it dodge} values, to determine if the attack hits. You must then perform the damage check, to determine the amount of damage your check does. A spell-attack has the additional step of requiringa `casting check', to determine if you can successfuly cast the spell. 
+ \subsubsection{Attacking}
  
- \subsection{Movement}
+ Casting a spell, swinging a sword, or loosing an arrow takes (usually) a full turn to complete, and so you may decide to use your entire turn to cast a spell. 
  
- When used as a major action, movement allows you to move up to a distance given by: 
+The rules for performing attacks are elaborated on page \pageref{S:Attacks}
+ \subsubsection{Movement}
+ 
+ When used as a major action, movement allows you to move on foot up to a distance given by your {\it running speed} statistic, which is calculated from your base speed (derived from your race) and your athletics attribute:
+ 
 \small
-$$ \text{metres travelled} = \text{Base Speed } + \frac{\text{ATH modifier + Speed Proficiency }}{2}  $$  
+$$ \text{running speed} = \text{Base Speed } + \text{Athletics modifier} $$  
 \normalsize
-(See below for more)
 
-All other non-standard movement (i.e. climbing, crawling etc, swimming) must be performed as a full major action. 
+The rules concerning special movement, as discussed on page \pageref{S:SpecialMovement}, also apply in combat. 
 
- \subsection{Using Items (sometimes)}
+If you possess the {\it Speed} proficiency and you made a full-turn movement last cycle, you may convert your movement into a {\it sprint}, and add your expertise bonus to your speed. You may then maintain this until you need to stop or change direction. 
+
+Whilst moving, you need to be careful that you do not collide with other beings - either your allies or your enemies. You cannot enter space that is currently being occupied by another solid being (ghosts, however, are fair game). 
+
+ \subsubsection{Using Items (sometimes)}
  
-Obviously, some `uses' of items include using swords, wands and ranged weapons, which have already been covered by `attacking'. 
+Some `uses' of items include using swords, wands and ranged weapons, which have already been covered by `attacking'. 
 
 However, sometimes you might want to use an action to get something big done, outside of hitting somebody. Using a crowbar to pry open a door, changing your weapon, finding the right page of a book -- all of these take enough time to be considered major actions. 
 
-Some uses might take multiple turns -- for instance, climbing into a full suit of armour takes more than 3 seconds to complete, and will therefore require multiple, consecutive major actions to complete. 
+Some uses might take multiple turns -- for instance, climbing into a full suit of armour takes more than 3 seconds to complete, and will therefore require multiple, consecutive major actions. 
 
-\subsection{Trading Items}
+In contrast, some actions (see below) are small enough to be considered minor actions. The GM has veto on which actions are major or minor. 
+
+\subsubsection{Trading Items}
 
 If two characters are standing within touching distance, they may trade items between them. 
 
-Giving items to other people takes the major actions of both the giver and the receiver. 
+Alternatively, you may attempt to throw an item to your ally, treating the item as an `improvised weapon'. If the throwing check is successful, the catcher performs a DV 10 ATH check to catch the item, and adds it to their inventory. 
 
-\newpage
-\section{Minor Actions}
-You may perform two minor actions in place of a single major action, all minor movement actions occur first, but otherwise you may choose the order in which the actions are completed. Some important minor actions are listed. 
+Whichever method is chosen, giving items to other people takes the major actions of both the giver and the receiver. 
 
-\subsection{Communicate}
+
+\subsection{Minor Actions}
+You may perform two minor actions in place of a single major action. Generally, these two actions happen simultaneously: if you drink a potion and make a minor movement, then you are drinking the potion whilst moving. This places a good guide on what can be considered a minor action: is it possible to do this at the same time as I'm walking/talking/dodging? 
+
+\subsubsection{Minor Movements}
+
+Actions such as taking a single step, or peeking out from behind cover, do not take any time, and can be performed in the same turn as a major action. 
+
+However, there is a middle ground between the sprint of a full-turn movement, and the zero-time of a single step. This is called a {\it minor movement}. 
+
+During a minor movement, one moves only {\bf half as far} as during a full-turn movement, but since you are not focussed solely on moving as far as possible, you can perform other minor actions. 
+
+\subsubsection{Quick Attack}
+
+Just as there is a difference between a full-on sprint (a major action) and a quick jog (a minor action), so to is there a difference between a zeroed in shot on your enemy (a major action), and releasing a spray of covering fire to keep your enemies on their toes (a minor action). 
+
+A quick attack takes only a minor action to complete. The penalty for this, however, is that you must take check-disadvantage on the associated accuracy checks, and you may not use mechanics such as Power Points or Power Attacks which increase the damage of the attack. 
+
+
+\subsubsection{Communication}
 
 Communicating vital information - such as the location of a hidden enemy or trap - to your comrades takes a minor action. Note that it is assumed that the enemy can hear you, unless you make an effort to not be understood. 
 
-In the example of alerting a comrade to a hidden foe, the hidden enemy will hear your warning and will know it has been discovered, it may adjust its actions accordingly. 
+\subsubsection{Using Items (sometimes)}
 
-\subsection{Using Items (sometimes)}
+Item use has already been discussed as a major action, but there are conceivably such actions that would fall into the minor action category. Consuming a potion, checking a rememberall, removing an item from your bag and so on would be considered `minor actions'. 
 
-Generally speaking, using an item is considered a minor action. Consuming a potion, checking a rememberall, removing an item from your bag and so on would be considered `minor actions'. Anything that can be completed in around 1 second would fall into this category. 
+Any item use that can be completed in around 1 second, or which can be easily `multitasked', is considered a minor action. 
 
-\subsection{{\it Evade} or {\it Brace} }
+\subsubsection{Bolstering Defenses}
  
  You may also choose to ready yourself against incoming attacks, by bolstering your ability to either {\it Dodge} or {\it Block}. This gives you a better chance of negating incoming effects.  
 
 See page \pageref{S:Accuracy} for more details on this mechanic. 
 
 
-\subsection{Quickspells}
 
-A quickspell is a spell that is cast as a minor action. 
-
-Spells require a clarity of focus, so casting whilst moving, or otherwise in a hurry is generally a bad idea, if you want it to actually work. However, if you are very comfortable with spell (or a very powerful spellcaster), then you may be able get away with it. 
-
-When performing a quickspell, you {\it must} take check-disadvantage on the accuracy check, unless you have a skill which explicitly mentions {\it Quickspells}. 
-
-~
-
-\section{Conditional Actions}
+\subsection{Conditional Actions}
 
 The use of the simultaneous combat system raises some interesting opportunities with conditional actions, which are actions that depend on the actions that another character takes.
 
-The actual action, as well as the condition, needs to be declared during the normal turn cycle -- but the action itself is not triggered until all other actions had been triggered. 
+The actual action, as well as the trigger condition, needs to be declared during the normal turn cycle -- but the action itself is not triggered until all other actions had been triggered. 
 
-For example, it could be that you declare as your action \textit{if the troll attacks player A, then I cast a healing spell on player A}. You could also attempt to prevent the damage from being taken in the first place, by declaring \textit{if the troll attacks player A, then I cast the knockback charm on the troll}. The GM may ask for a check to determine if you are close enough and have fast enough reactions for your spell to interrupt the action, but if you pass this, then you may be able to save your friend. Please see below for more counterspell options.
+For example, it could be that you declare as your action \textit{if the troll attacks player A, then I cast a healing spell on player A}. You could also attempt to prevent the damage from being taken in the first place, by declaring \textit{if the troll attacks player A, then I cast the knockback charm on the troll}. The GM may ask for a check to determine if you are close enough and have fast enough reactions for your spell to interrupt the action, but if you pass this, then you may be able to save your friend.
 
 You are only allowed a single conditional clause in your declaration, and if that conditional does not come to pass, then your character does not do anything: there is no \verb|if-then-else| in this game!
 
 If a seemingly unbreakable condition-chain arises (i.e. player A says he will perform X if player B does Y, but player B says he will only perform Y if player A does X), it is up to the GM to resolve the conditionals -- in such cases the answer is usually \textit{nothing happens}, but there may be examples where the GM feels it is more appropriate that the action-chain is triggered. 
 
 
-\section{Movement}
+\section{Making Attacks}\label{S:Attacks}
 
-Moving is a very common action to take during combat, to avoid the enemy's attacks, or to maneouvre yourself to enable an attack on the enemy. Movement can be considered a major action, a minor action, or indeed, neither. To aid this distinction, movement is broken down into three types: minor movements, transport movements and considered movements. 
+When making an attack, either with spells, arrows, or with a blade, there are 4 key steps:
+\begin{itemize}
+	\item Select a target 
+	\item Perform an accuracy check 
+	\item See if the target defends themselves
+	\item Calculate the damage inflicted
+\end{itemize}
 
+There are also some special rules regarding melee and ranged attacks.
+\subsection{Target Acquisition}
 
+You may only attack targets that are within the range of the attack you are making. For melee weapons, this is usually 1 metre, though some long weapons such as lances have additional reach. For ranged weapons, the maximum range is specified in the weapon description. Spells also have ranges associated with them, which is discussed more on page \pageref{S:Range}. 
 
-
-\subsection{Minor Movements}
-
-A { minor movement} includes things such as turning to face an enemy, or taking a step out from behind cover. These actions do not constitute the entirety of a turn and you may still take a major action afterwards, \textbf{however, they are considered to happen at the very beginning of a turn cycle, and you cannot return to cover after emerging from it}. If you therefore emerge from cover to attack someone, and a character successfully guessed that this would happen and sent a spell in your direction, you will not be protected until you move back into cover in the next turn cycle. 
-
-
-\subsection{Transport Movement}
-
-{\bf Transport movements} are those designed to get you from point A to point B as quickly as possible. These actions do take up your entire turn: you can do nothing else except take a transport action. The distance that you can travel in a given trasnport action is calculated from:
-
-\small
-$$ \text{metres travelled} = \text{Base Speed } + \frac{\text{ATH modifier + Speed Proficiency }}{2}  $$  
-\normalsize
-
-This distance is rounded downwards  to the nearest half-metre, unless you are wearing ``heavy armour'' (i.e. anything more heavy than usual fabrics), in which case it is rounded downwards to the nearest integer. The direction that you are travelling in \textbf{must} be declared before performing this check. You may elect to not use all of the movement that you rolled for -- i.e. if you can move 1.5m in total, you may only use 1m, if you desire. 
+In addition, to determining if the target is in range, you must determine if it is a valid target - you cannot shoot arrows around walls, after all. You must be able to see a target in order to attack it (see below for blindfighting rules), and you may need to consider the fact that a target has cover. 
 
 
-\subsection{Considered Movement}
+\subsection{Melee Attacks}
 
-A { considered movement} is one in which your character is attempting to do something else, whilst moving. It is considered a minor action -- or `half' a major action. The check is performed exactly as above, but you then simply divi the distance by two. You may use the other half to perform another minor action, such as an evasion, or to prepare a counterspell. 
+A melee attack encompasses all close-range fighting, including fist-fighting, sword-swinging and whip-wrangling.
 
-~
+Typically, a melee attack can only be made against a target if they are within 1 metre of the attacker, with a clear line-of-reach between the two. Some weapons, as well as larger creatures, are able to perform melee attacks at a larger range.  
 
-~
+\subsubsection{Grappling}
 
-\section{Accuracy \& Instincts}\label{S:Accuracy}
+If you wish to grab your opponent- either to immobilise them, or to pick them up and throw them off a cliff - you may attempt to initiate a grapple in place of a regular attack. 
 
-When an attack is launched on a being, it is necessary to determine if the attack lands home, or if the attack goes wide, the target dodges underneath the swinging blade, or catches the attack on their armour. 
+To perform a grapple you need two free hands and perform an Athletics (Strength) check, which is contested by the target performing either an Athletics (Strength) or Finesse (Speed) check. If the grappling succeeds, the target acquires the trapped status. 
 
-\subsection{Accuracy}
+If the grappler is strong enough, then they move whilst carrying the target subject to the following constraint:
 
-The attacker -- be they an archer, a gunman, a swordsman, or a spellcaster -- quantifies their ability to successfully hit their target through an {\it accuracy check}, a standard d20 FIN (Precision) check, plus any additional relevant bonuses or penalties. 
+\begin{center}
+\begin{rndtable}{c c}
+\bf Weight	&	\bf Speed
+\\
+Heavier than $ 5 \times$ ATH(strength) value	&	Speed = 0
+\\
+Heavier than ATH (strength) value	&	Speed halved
+\\
+Lighter than ATH (strength) value & Unencumbered
+\end{rndtable}
+\end{center}
 
-If the check is greater than or equal to the {\it instinct value} used by the target, then the attack lands true, and the associated effects are applied. If the accuracy check fails, then the attack misses, or is successfully blocked by the target. 
+A grappled target may attempt to use their action to escape. Repeat the contest. 
 
-If the target is not a living being (or is restriced from moving), then hitting the target is much easier, but not totally guaranteed. The `dodge' DV of a stationary object is normally equal to 5, though modifiers may be added for targets which are particularly small, or (for ranged attacks), particularly far away. 
+\subsubsection{Shoving}
 
-The additional penalty for hitting small/far away targets is:
+{\it Shoving} is considered a special form of grappling - rather than restraining the target, you may choose to push them to the ground (taking the {\it prone position} status), or push them back 1 metre. 
+
+\subsubsection{Two-Weapon Fighting}
+
+It is possible to have multiple one-handed weapons equipped at once -- for example, a dagger in each hand. 
+
+If you are proficient with at least one of these weapons, you may perform a double-strike when making an attack as part of a major action. Perform the damage check with both weapons and sum them together. 
+
+However, unless you are proficient with two-weapon fighting, you may not add your expertise bonus to either weapon check. 
+
+\subsection{Ranged Attacks}
+
+A ranged attack occurs over a longer distance by firing a projectile or magical effect up to the scale of hundreds of metres in some cases. 
+
+\subsubsection{Ranged Weapons}
+
+The description of every ranged weapon gives a maximum range at which the weapon may be fired. Some weapons have multiple ranges depending on the way in which they are used. 
+
+Slings, for example, have a much longer reach when using aerodynamic bullets, as compare to just using rocks. Equally, hip firing a rifle has a much less accurate range than when lying in a sniper nest. 
+
+Generally speaking, you cannot fire a projectile further than this range, as it represents the maximum distance that the projectile can reach. Some weapons (particularly the {\it firearms} class), however, the stated range is merely the range at which you can fire accurately. These weapons {\it can} be fired up to twice their stated range, but take check disadvantage on all accuracy checks beyond this point. 
+
+In addition, you will need to ensure that you have enough ammunition to properly use your ranged weapon.
+\subsubsection{Spells}
+
+Many spells state that they have an effective range, which is discussed more on page \pageref{S:Range}. You cannot exceed this range, without skills which explicitly extend your spellcasting range. 
+
+\subsubsection{Close-Combat Firing}
+
+Ranged weapons and spells are significantly less effective when used on targets which are in close-quarters: aiming requires a clarity of thought that a monster trying to bite your face off denies. 
+
+When attempting to use a ranged attack on a non-incapacitated target within melee range, take check disadvantage on the accuracy check.
+
+\section{Accuracy}
+
+The attacker quantifies their ability to successfully hit their target through an {\it accuracy check}. 
+
+\subsubsection{The Accuracy Check}
+
+An accuracy check is performed using the usual d20 die. However, the associated attribute depends on the type of attack being performed. Generally speaking the following prescription is used:
+
+\begin{center}
+\begin{rndtable}{c c}
+\bf Attack Type	&	\bf Accuracy Attribute
+\\
+Spells	&	Finesse
+\\
+Melee Weapons	& Athletics
+\\
+Ranged Weapons	&	Finesse
+\end{rndtable}
+\end{center}
+
+Some weapons diverge from this prescription, for example, a rapier is a melee weapon, but it requires great finesse to use expertly. See the item descriptions on page \pageref{S:WeaponList} for the check for each individual weapon. 
+
+\subsubsection{Proficiency}
+
+In addition, if you are considered proficient with the weapon (or wand) you are using to attack, you may add your proficiency bonus to the accuracy check. 
+
+\subsubsection{Hitting the Target}
+
+When attacking a living being, the DV of the accuracy check is determined by the {\it instinct value} used by the target. If you meet this target, then the attack lands true. If the accuracy check fails, then the attack misses, or is successfully blocked by the target. 
+
+\subsubsection{Hitting Stationary Targets}
+
+If the target is not a living being (or is restricted from moving), then hitting the target is much easier, but not totally guaranteed. The `dodge' DV of a stationary object is normally equal to 5. 
+
+Some spells are classified as neither blockable nor avoidable -- but are still clearly attacks which target an enemy. For these spells, you treat the target as a stationary object. The same is true of `area effect' spells which target a region rather than a being. 
+
+\subsubsection{Additional Difficulty}
+
+Targeting objects which are particularly small, or (for ranged attacks) far away is more difficult.  The additional penalty for hitting such away targets is, with everything measured in metres:
 
 $$ P = \frac{\text{distance}}{10 \times \text{size}} ~~~~ \text{(rounded down)}$$
 
 Therefore, hitting a 1m target at a distance of up to 10m has a DV of 5, whilst the same target 30m away has a DV of 8, and hitting a 1cm target at a distance of of 1m has a DV of 15. 
 
+\subsubsection{Blindfight}\label{S:Unseen}
+
+If you cannot see your enemy, then you cannot select them as a target. You may, however, choose to simply start swinging your sword, or firing spells off in a random direction. You must tell the GM which direction you are attacking in, and then perform an accuracy check with a -5 penalty. 
+
+If the target is not in the region  you are attacking, you automatically miss (though the GM will still ask for the accuracy roll, to avoid giving away where they actually are!). 
+
+After you successfully hit an unseen attacker, you avoid the -5 penalty until your next attack misses, at which point you must retake the penalty until you find them again, or you can spot them visually. 
+
+
+\section{Defence}\label{S:Accuracy}
+
+A good fighter knows that all-out attack is rarely the path to victory: defending onself against incoming attacks is just as important. 
+
 \subsection{Instincts} \label{S:AC}
 
-Beings either block or dodge instinctively, without having to devote conscious thought to their reaction. These two actions are therefore termed {\it instincts}, and occur inbetween turn cycles. Each action has a statistic associated with it, which is used to context the accuracy check of the attacker. The value of these statistics is:
+Most beings either block or dodge, without having to devote conscious thought to their reaction. These two actions are therefore termed {\it instincts}. It is these reactions which set the difficulty of an attacker's accuracy check. A higher {\it dodge} or {\it block} statistic makes it harder for an attack to actually hit you. 
+
+The values associated with each statistic are:
 
 \begin{align*} 
 \text{Block} &= 8 + \text{ATH (Strength) modifier} 
@@ -158,28 +281,42 @@ Beings either block or dodge instinctively, without having to devote conscious t
 By default, characters instinctively use whichever of these values is the highest:
 $$ \text{IV} = \max \left( \text{Block}, \text{Dodge} \right)$$
 
-If a character successfully dodges, the attack whizzes by their ear and misses completely. If they successfully block the attack, then they catch the spell or weapon on a piece of armour (or, with the appropriate skill, they can {\it parry} the attack). 
+If a character successfully dodges, the attack whizzes by their ear and misses completely. If they successfully block the attack, then they catch the spell or weapon on a piece of armour (or, with the appropriate skill, they can {\it parry} the attack with a weapon). 
 
-Various items may improve either of these statistics. A pair of running shoes, for example, makes it easier to dodge out of the way, whilst a heavy shield makes defending yourself easier. Generally speaking, items will be a compromise: wearing heavy armour will bulk up your Block statistic, but will slow you down, reducing your Dodge value. 
+\subsubsection{Clothing \& Armour}
 
-\subsection{{\it Brace} and {\it Evade} }
+Various items may improve either of these statistics. A pair of running shoes, for example, makes it easier to dodge out of the way, whilst a heavy shield makes defending yourself easier. 
 
-Of course, not all defense happens instinctively -- you may make a conscious decision to brace yourself against an incoming attack, or prepare to dive out of the way. Such a decision is classified as a minor action. 
+Generally speaking, items will be a compromise: wearing heavy armour will bulk up your Block statistic, but will slow you down, reducing your Dodge value. 
 
-You may choose to either {\it brace} or {\it evade} (i.e. you do not have to use the highest-value statistic). 
+Armour is discussed more in the Items chapter, on page \pageref{S:Armour}.
 
-Whichever you choose, you double your Expertise bonus (if applicable) on the chosen statistic and agressors take check-disadvantage on their accuracy checks against you this turn cycle. 
+\subsubsection{Bolstering Defences }
+
+Of course, not all defence happens instinctively -- you may make a conscious decision to brace yourself against an incoming attack, or prepare to dive out of the way. Such a decision is classified as a minor action. 
+
+Though by default you automatically use whichever value is highest, when making a conscious decision, you may choose to bolster either statistic by {\it bracing} or {\it evading}. 
+
+Whichever action is chosen, the effect of bolstering your defenses is:
+\begin{itemize}
+\item Double your Expertise bonus (if applicable) on the chosen statistic 
+\item Aggressors take check-disadvantage on their accuracy checks against you this turn cycle. 
+\end{itemize}
 
 
-\subsection{Proficiencies}
+\subsection{Cover}
 
-Whether you are swinging a blade, or cowering behind a shield: you must know how to use your equipment, in order to be able to apply your Expertise to it. 
+Standing out in the open is a sure-fire way to get hurt quickly. Hiding behind something, be it a tree, a low wall, or even just your ally will make you safer and harder to hit. 
 
-You may only add your Expertise bonus to an accuracy check, if you are proficient in the weapon you are using, or to an {\it Instinct} if you are proficient in the armour (or lack thereof) you are wearing. 
+A target which is concealed in this fashion is said to be {\it under cover}. It is up to the GM to determine to what extent a target is hidden from view. This can usually be achieved through the `additional difficulty' mechanics discussed in the {\it Accuracy} section above. 
 
-\subsection{Unblockable and Unavoidable Effects}
+If a 2m tall target is 15m away, the penalty to hit is zero. However, if they were covered such that only their head ($\sim 30$cm) could be seen, you can estimate that the penalty to hit them would be -5.
 
-Some effects (usually those generated by certain spells) cannot be avoided or blocked: holding up a shield against an incoming cannonball isn't going to prevent much, and trying to dodge out of the way of a tsunami is rarely effective. 
+Alternatively, you may use the simpler rules that `half cover' (i.e. half of the target is concealed) gives a -2 penalty to the accuracy check, and `three-quarter cover' gives -5, in addition to any other distance penalties. 
+
+\subsection{Undefendable Effects}
+
+Some effects cannot be avoided or blocked: holding up a shield against an incoming cannonball isn't going to prevent much, and trying to dodge out of the way of a tsunami is rarely effective. 
 
 Spells denote in their description if they can be blocked or dodged. For the (rarer) instances of non-spell effects which fall into one of these categories, the GM decides if it is reasonable to dodge or block the effect. 
 
@@ -188,47 +325,119 @@ If the `dominant' instinct (i.e. the one with the highest value) would be ineffe
 Note that even `unblockable' effects are stopped by `impenetrable' fields and spells which are `undodgeable' treat the target as stationary, and may still miss under those rules. 
 
 
-\section{Stealth and Critical Strikes} \label{S:Stealth}
+
+\section{Doing Damage} \label{S:Damage}
+
+If an attack lands home, and the target fails to defend themselves, then you must calculate how much damage is done.
+
+\subsection{Calculating Damage}
+
+Most attacks specify the amount of damage they do, either in the weapon description on page \pageref{S:WeaponList}, or in the spell effect list found on page \pageref{S:SpellList}. This is usually in the form of a dice roll, i.e. 2d6.
+
+However, in addition to the dice, you also add a modifier on to the damage check. {\bf You never add your Expertise bonus in to a damage check}, however. 
+
+\subsubsection{Spells}
+
+In most cases, a spell does more or less damage depending on the {\it power} of the caster, though there are exceptions. Unless otherwise specified, you add your Power modifier to the damage check when casting spells. 
+
+\subsubsection{Weapons}
+
+When using a weapon, you add the same ability modifier (minus the Expertise bonus) you used in the accuracy check. 
+
+\subsection{Group Attacks}
+
+If a spell or other effect that attacks multiple targets at the same time, perform the damage check once, and apply the damage to all targets that were hit. 
+
+This does not apply to a single effect which causes multiple copies of the same effect to attack multiple individuals. For instance, the {\it Cascading Missiles} may attack a number of individuals with magical darts, but as each dart is a different copy, the attack roll is unique. This contrasts with a {\it Fireball}, which is a single effect that effects a large area. 
+
+\subsection{Damage Types}
+
+
+
+Many effects specify what kind of damage they do (for instance, a sword does 1d8 slashing damage). This helps the players and the GM work out how the damage is done, and also how it is affected by any weaknesses and resistances possessed by the target. 
+
+Some damage types do damage in unusual ways - draining Fortitude instead of Health, for example. 
+
+\newcommand\damage[2]
+{
+\textbf{ \textit{#1}}: #2
+}
+
+\damage{Acid}{A corrosive spray of acid attacks the HP of a target, and weakens their armour.}
+
+\damage{Bludgeoning}{The blunt-force of a hammer, or the force of falling on the ground deals bone-breaking bludgeoning HP damage.}
+
+\damage{Celestial}{Celestial damage is dealt by pure-otherworldly energy, and damages the HP of Unliving and celestials, but does no harm to living beings.}
+
+\damage{Cold}{Freezing temperatures seep at both your willpower and your health. Damages both the HP of a target, and half as much damage again to FP. } 
+
+\damage{Concussive}{A concussive blast from an explosion or a shockwave causes deafening concussive HP damage.}
+
+\damage{Electric}{Bolts of lightning, or simply touching a high-voltage wire, can lead to electrical HP damage. Electrical damage conducts through water and metal, harming all thosein contact.}
+
+\damage{Fatigue}{A magical will-sapping force damages only your FP.}
+
+\damage{Fire}{Fire damage burns the flesh to reduce the HP of a target, and can often lead to long-lasting burns.}
+
+\damage{Force}{A pure magical energy that directly damages HP.}
+
+\damage{Necrotic}{The evil energies of the undead withers your soul as it damages your body -- reducing HP and FP by equal amounts.}
+
+\damage{Piercing}{Daggers, spears and teeth can puncture even the thickest armour to damage HP.}
+
+\damage{Poison}{Venemous stings and poisoned weapons damage HP, and may lead to some other unpleasant side effects}
+
+\damage{Psychic}{Damage that originates not from the body, but from the mind, but still damages your HP. You often cannot block psychic damage, you must instead rely on Resisting it.}
+
+\damage{Slashing}{Swinging blades and flashing claws damage the HP of unprotected targets.} 
+
+
+\subsection{Critical Strikes}\label{S:Sneak}
+
+If you manage to launch an attack whilst remaining hidden, or if you roll a `natural 20' on your accuracy check, then you may trigger a {\it critical strike} on a target. 
+
+When a critical strike happens, you double the number of dice used in the damage roll. For instance, a critical strike with a shortsword normally does 1d6 damage + modifiers. On a crticial strike, however, you would do 2d6 + modifiers. 
+
+
+\section{Resisting}
+
+Not all effects of actions are cut and dried -- some effects can be {\bf Resisted}. 
+
+Many spells, for example, can be resisted by the target. This occurs if they have a strong enough willpower to overpower the caster; spells such as {\it confundus}, and {\it stupefy}, as well as most illusion spells. Alternatively, somebody might try to restrain you, and your character can perform a physical Resist to break free, if they are strong enough. 
+
+Resist actions, like normal checks, are assigned an attribute (and possibly Proficiencies) that may boost the Resist check. Unless otherwise specified, the Resist check is performed using the standard d20 dice. 
+
+This Resist check is then compared with the assigned or contested DV. If the Resist check is greater than the CV, then the action is either denied, or has a lesser effect. 
+
+Successfully Resisting costs 2 FP. If you have fewer than 2 FP, then you cannot Resist.
+
+You can perform multiple Resists over the course of a Turn Cycle, if multiple combatants attack you with spells that require one, for example. The only limit is when your FP runs out. However, each subsequent resist gets harder and harder: you suffer a 1 point penalty to your check for each Resist you have already performed this cycle. This counter resets at the end of the cycle.
+
+\section{Stealth} \label{S:Stealth}
 
 Being noticed by the enemy is generally regarded as a bad thing. It therefore often pays to be sneaky, to stay hidden from the enemy. Stealth is governed by the FIN attribute, via the Stealth proficiency. 
+
+\subsection{Hiding}
+
+If you are not currently being observed by a being, you may take a major action to {\it Hide}, by performing a d20 Finesse (Stealth) check. This stealth value will then be contested by any hostile beings around you. 
+
+Whilst you are hidden you are considered an `unseen' foe, with the bonuses that come with that (see \pageref{S:Unseen}), and you are not a valid target for an attack. However, you may still take damage from area of effects that include you in their area. 
+
+The GM may ask you to re-perform the sneak check if there is a material change in circumstance. For instance, if you performed the check in a dingy room, and suddenly the lights are turned up, then you may need to re-perform the check, in line with your character altering their strategy for the new environment. Equally, if you take damage whilst hidden, you must perform a DV 15 Spirit (Endurance) check to grit your teeth through the pain. 
+
+You remain hidden until you to do something to give away your position: shouting to your allies, or jumping from the shadows, sword in hand. 
+
+If an individual enemy does manage to spot you, but their allies fail to, they can use a {\it communication} action to alert everyone else to your presence. 
+
+
+\subsection{Being Discovered}
 
 Every character and beast has a baseline level of awareness, even when not actively searching for hidden creatures or traps. This is your {\it passive perception}. It is calculated using an `average' dice roll (for a d20, this is 10), so: 
 $$\text{Passive PER} = 10 + \text{bonuses}$$
 
-To remain hidden, your sneak-check must exceed 
+Alternatively, the beings might decide to take a major action to survey their surroundings, in which case they may perform an active Perception check, which may increase their perception value for this turn. 
 
-Every time you wish to take an action whilst remaining hidden, you will need to perform a FIN (stealth) check against the target, with the target performing a PE check -- if the sneak check exceeds the perception check, then you remain hidden. If it fails, then the target becomes aware of you, and probably initiates combat. 
+If a being's perception value exceeds your sneak value (and it is reasonable for them to be able to percieve you), then they have spotted you, and you are no longer hidden from that creature.  
 
-Equally, some creatures might try to sneak up on you -- but the GM can't very well ask you to perform a perception check, as you would immediately know that something was there! In order to keep the surprise, each checktype has a `passive' value, which is simply equal to the average. Hence, for a d20 check, the passive value is 10 + relevant bonuses. The GM will use this value in private to determine if beings remain hidden or not. 
 
-The same is true for illusion spells which are cast on you without your knowledge -- a passive SPR (endurance) check is used, with the same rules as before. The GM does not need to tell you about this spell, unless you actively perform a perception check to notice something wrong with the world. 
 
-If you willingly choose to perform a perception check, this gets a +2 bonus. In combat, this would count as your major action. 
-
-If you initiate combat whilst undetected (or have it initiated against you by an unseen opponent), then the attacked party must continue to attempt to percieve the enemy, until they can attack them in the usual way. You may attempt to wildly attack the enemy -- throwing a fireball {\it near} them is probably going to hurt, even if you don't know exactly where they are, but this might be a waste of resources. 
-
-\subsection{Critical Strikes}\label{S:Sneak}
-
-If you perform an attack on someone who is not aware that you are attacking them, or if you perform an attack on someone who has their mind elsewhere, then you have an opportunity to do large amounts of damage to the unwary target. 
-
-A sneak attack is triggered when a character attacks another when they are not expecting it -- be it attacking someone who is not even aware that you pose a danger to them, or if you have snuck up behind an enemy whilst they are attacking someone else -- if they don't see an attack coming, you get an opportunity to surprise them!
-
-An attack of opportunity is triggered when somebody is aware that they are in combat, but is doing something that opens them up to attack. For example, if someone was in close-quarters range and they attempt to cast a spell on you, you can quickly stab them with a knife, and there is nothing they could do about it. Equally, if they attempt to cast a spell on someone else, then their attention is not on you. If you had already commited to an attack on them, then it has a chance to be much more effective.
-
-Whichever method is triggered, the effect is the same: you roll any (even-numbered) dice. If the result is an even number, then you multiply the damage by 2. If it is odd, then you just do the normal amount of damage\footnote{This assumes that the {\it catastrophic critical} is not in use -- if it is, use the rules detailed in that skill}. 
-
-Critical attacks (i.e. triggered by a nat20, or otherwise through a skill) are mechanically identical to an Attack of opportunity. 
-
-If you perform a critical {\it during} a Critical attack, then you do get to use two multipliers, but they are {\it added}. For example, a critical-opportunity attack would roll two dice, and use the following table to determine the dice:
-
-\begin{center}
-\begin{rndtable}{|c c c|}
-\hline
-~ & odd & even
-\\ \hline 
-\cellcolor{\tablecolorhead }odd & 2 & 3
-\\ \hline
-\cellcolor{\tablecolorhead}even & 3  & 4
-\\ \hline
-\end{rndtable}
-\end{center}

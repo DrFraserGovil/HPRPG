@@ -149,7 +149,7 @@ Weapons may also be modified by being enchanted (see below)\comma{} or having a 
 
 
 \onecolumn
-\section{Weapon List}
+\section{Weapon List}\label{S:WeaponList}
 \small
 \def\l{8}
 \begin{center}
@@ -196,19 +196,81 @@ Weapons may also be modified by being enchanted (see below)\comma{} or having a 
 \normalsize
 \twocolumn
 
-\chapter{Armour}
+\chapter{Clothing \& Armour} \label{S:Armour}
 
-\subsection*{Destroying Armour}
+The clothing and protective gear you wear can have a dramatic impact on your ability to defend yourself, or run away from problems. 
 
-Of course\comma{} armour cannot protect you indefinitely \minus{}\minus{} it will break down at some point. Acid and Piercing damage are the usual way of reducing the armour of an individual. 
+\section{Wearing Armour}
 
-If the piercing damage in a {\it single hit} exceed the AC of a given piece of armour\comma{} that armour is said to be damaged\comma{} and its AC is set to zero until it is repared. You cannot damage more than one piece of armour in a given attack. On the other hand\comma{} acid damage is cumulative \minus{}\minus{} the acid burns away the armour making it steadily worse and worse\comma{} until it burns through the armour to your skin.  Each point of acid damage reduces the AC by 1\comma{} until it is equal to zero. 
+\subsection{Outfits}
 
-Of course \minus{}\minus{} it is not just sapients that have `armour'\comma{} large creatures such as dragons have exceedingly strong scales that act as armour. The exact same rules apply to animal AC as to human AC\comma{} with the exception that each 1m$^2$ section of the beaing is considered an individual `piece' of armour. Breaking the armour on the tail\comma{} and then attacking the chest will obviously not work!
+Wearing thicker armour protects you, by increasing your {\it Block} statistic by a specified amount. Most sets of clothing are considered to come in a `full set', and thus cover the entire torso, arms, legs, feet - and possibly comes with some headwear. 
 
-\subsection*{Restoring Armour}
+For the sake of simplicity, you are generally discouraged from `mix and matching' various types of armour. You are allowed to switch out various pieces of armour for magical equivalents, or simply for a cooler aesthetic. However, your Block value is determined by whatever type of protection you are wearing {\it most} of - and if in doubt, the lower value will be used. 
 
-Armour may be restored to working order by spending 3 hours reparing it (with a repair kit)\comma{} or by using a suitable magic spell.
+If Gunter the half-giant wishes to wear a full suit of knight's armour, but swap the gloves out for her cotton {\it Gloves of Pugilism}, she can do so without altering the total Block value. However, if she also swapped out the helmet for a jaunty hat, and the footwear for some running shoes, the GM may step in and decree a penalty to her Block statistic. 
+
+\def\w{3.6}
+\def\x{1.7}
+\newcommand\armour[4]
+{
+\\
+	\parbox[t]{\x cm}{\raggedright\textbf{\textit{#1}}} & \parbox[t]{\w cm}{\raggedright #2} &  \parbox[t]{\x cm}{\raggedright #3}	&	#4
+	
+}
+
+\subsection{Types of Armour}
+
+Armour comes in 4 categories: 
+
+\subsubsection{Clothing}
+
+Everyday clothes offer no additional protection against the attacks of malevolent forces. It is, however, comfy and easy to wear. 
+
+You require no proficiencies in order to wear clothing. 
+
+\small
+\begin{center}
+\begin{rndtable}{p{\x cm} p{\w cm} p{\x cm} c}
+\bf Type   &	\bf Description	&	\bf Effect	& \bf Cost
+\armour{Sports clothes}{Specially designed clothing for taking part in physical activity.}{+2 to Dodge}{2\galleon}
+\armour{Casual outfit}{Jeans and a t-shirt. Cheap, comfy and practical}{No effect}{10\sickle}
+\armour{Wizards Robes}{Once the everyday clothes of all wizardkind, now usually seen as the typical school uniform of a Hogwarts student.}{+1 to spellcasting checks}{1\galleon}
+\armour{Formal Wear}{Extra suave look for the discerning witch or wizard. Ball gowns and tuxedoes are impractical, but you look amazing!}{-2 to Dodge, +2 to Charisma}{10\galleon}
+\end{rndtable}
+\end{center}
+\normalsize
+\subsubsection{Light Armour}
+
+Light armour is the crossing point between what we typically think of as armour (knights clanking around in metal), and everyday clothes. Light and flexible, it grants only limited protection. 
+
+You require no proficiencies in order to wear light armour. 
+
+\small
+\begin{center}
+\begin{rndtable}{p{\x cm} p{\w cm} p{\x cm} c}
+\bf Type   &	\bf Description	&	\bf Effect	& \bf Cost
+\armour{Padded}{Formed from multiple layes of soft fabric and padding}{+2 to Block, -1 to Dodge}{2\galleon}
+\armour{Warded Cloth}{A recent magical invention, this material hardens on impact, providing extra protection}{+1 to Block}{5\galleon}
+\end{rndtable}
+\end{center}
+\normalsize
+
+\subsubsection{Medium Armour}
+
+\subsubsection{Heavy Armour}
+
+\section*{Destroying Armour}
+
+% Of course\comma{} armour cannot protect you indefinitely \minus{}\minus{} it will break down at some point. Acid and Piercing damage are the usual way of reducing the armour of an individual. 
+
+% If the piercing damage in a {\it single hit} exceed the AC of a given piece of armour\comma{} that armour is said to be damaged\comma{} and its AC is set to zero until it is repaired. You cannot damage more than one piece of armour in a given attack. On the other hand\comma{} acid damage is cumulative \minus{}\minus{} the acid burns away the armour making it steadily worse and worse\comma{} until it burns through the armour to your skin.  Each point of acid damage reduces the AC by 1\comma{} until it is equal to zero. 
+
+% Of course \minus{}\minus{} it is not just sapients that have `armour'\comma{} large creatures such as dragons have exceedingly strong scales that act as armour. The exact same rules apply to animal AC as to human AC\comma{} with the exception that each 1m$^2$ section of the being is considered an individual `piece' of armour. Breaking the armour on the tail\comma{} and then attacking the chest will obviously not work!
+
+\section*{Restoring Armour}
+
+Armour may be restored to working order by spending 3 hours repairing it (with a repair kit)\comma{} or by using a suitable magic spell.
 
 You cannot repair your own armour whilst it is being worn: you must take it off\comma{} then repair it\comma{} and then place it back on. This means that battlefield repairs take3 turns\comma{} unless you have an ally who can repair the armour for you in a single turn.  
 

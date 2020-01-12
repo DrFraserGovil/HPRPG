@@ -11,7 +11,7 @@ function MasterAssembly(quitMode)
     
      disp('Assembling Skills');
      assembleSkills();
-% run assembleStatus.m
+    assembleStatus()
     assembleWeapons();
 % run assembleArchetypes.m
 % run assembleTools.m

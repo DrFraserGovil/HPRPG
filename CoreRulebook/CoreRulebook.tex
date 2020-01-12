@@ -28,7 +28,7 @@
 \usepackage{rsfso}
  \usepackage{tocloft}
  \renewcommand{\cftsecnumwidth}{30pt}
-
+\usepackage{soul}
 \usepackage{lscape}
 \def\apos{'}
 \usepackage{fontawesome}
@@ -105,9 +105,9 @@
 
 \titleformat{\chapter} {\vspace{-14ex}\normalfont\bfseries\centering\color{titlered}\HP\Huge}{}{0pt}{\dndline\thechapter: }[\vspace{-1.6ex}\dndline\vspace{-3ex}]
 \titleformat{name=\chapter,numberless}{\vspace{-14ex}\normalfont\bfseries\centering\color{titlered}\HP\Huge}{}{0pt}{\dndline }[\vspace{-1.6ex}\dndline\vspace{-3ex}]
-\titleformat{\section}{\vspace{-2ex}\normalfont\huge\color{titlered} }{}{0em}{}[{\vspace{-0.55 cm}\dndlineFade{rulered}}]
+\titleformat{\section}{\normalfont\huge\color{titlered} }{}{0em}{}[{\vspace{-0.55 cm}\dndlineFade{rulered}}]
 \titleformat{name=\subsection}{\LARGE \bf}{}{0pt}{}[{\vspace{-0.43 cm}\dndlineFade{black}}]
-\titleformat{name=\subsubsection}{\large }{}{0pt}{}[{\vspace{-0.5 cm}\dndlineThird{black}}]
+\titleformat{name=\subsubsection}{\large }{}{0pt}{}[{\vspace{-0.35 cm}\dndlineThird{black}}]
 
 \newsavebox{\tablebox}
 
@@ -310,6 +310,7 @@
 \subfile{Chapters/Archetypes_List}
 
 \input{Chapters/Skill_List}
+\input{Chapters/StatusList}
 \input{Chapters/RepeatAttempt}
 \part{Appendices}
 \if\coreMode1	

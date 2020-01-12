@@ -6,31 +6,22 @@ function assembleStatus()
     text = "";
 
     n = size(statuses);
-    W= width(statuses);
+
     for (i = 1:n)
-        
-        r = statuses{i,3}{1};
-        line = "\status{" + statuses.Name{i} + "}{";
-        if W < 3 || isempty(r)
+         line = "\status{" + statuses.Name{i} + "}{";
+        if isempty(statuses{i,3})
            line = line + statuses{i,2};
         else
-            line = line + "\begin{itemize} \renewcommand\labelitemi{-}";
+            line = line + "\begin{it
             j =2;
-             r = statuses{i,j}{1};
-            while j <= W && ~isempty(r) 
-               
-                line = line + "\item " + r;
+            W= width(statuses);
+            while j <= W && ~isempty(statuses{i,j}) 
+                line = line + statuses{i,j};
                 j = j +1;
-                
-                r = "";
-                if j <= W
-                    r = statuses{i,j}{1};
-                end
             end
-            line = line + "\end{itemize}";
         end
         line = line + "}";
-        text = text + prepareText(line) + "\n\n";
+        text = text + prepareText(line) + "\n";
     end
 
     fileName = '../Chapters/StatusList.tex';
