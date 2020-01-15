@@ -210,26 +210,53 @@
 {
  {\the\numexpr(#1 -#2)\relax} 
 }
-\def\airB{As a Beginner level, this spell is capable of summoning light breezes, up to 15mph, without much precision.}
-\def\airN{As a Novice level, this spell is capable of summoning powerful blasts (100mph +) in a small area, or precision manipulation at a much lower speed.}
-\def\airA{When cast as an Adept spell, the caster may summon very powerful blasts of air over a larger area, or to summon large-scale winds to alter the weather slightly. }
-\def\airE{As an Expert spell, powerful vortices may be summoned, and the ability to slightly alter the temperature of the air is gained}
-\def\airM{A master level caster may use this spell to summon cataclsymic weather events, or use their incredible precision to mimic flight.}
-\def\earthB{As a beginner level spell, the spell is able to manipulate small stones and cause minor tremors.}
-\def\earthN{As a beginer level spell level, the caster may excavate and move small amounts of earth with their mind.}
-\def\earthA{When cast as an Adept spell, the maniplator may more tightly bind the manipulated earth together , allowing for potential weaponisation }
-\def\earthE{An Expert spellcaster may use this spell to sheathe themselves in rock armour, or manipulate earth on a grand scale}
-\def\earthM{When Mastered, this spell enables devastating Earthquakes to be generated, or towering wonders to be created.}
-\def\fireB{}
-\def\fireN{}
-\def\fireA{}
-\def\fireE{}
-\def\fireM{}
-\def\waterB{}
-\def\waterN{}
-\def\waterA{}
-\def\waterE{}
-\def\waterM{}
+
+
+
+
+\makeatletter
+\define@key{potion}{name}{\def\name{#1}}
+\define@key{potion}{description}{\def\visible{#1}}
+\define@key{potion}{cost}{\def\cost{#1}}
+\define@key{potion}{effect}{\def\effect{#1}}
+\define@key{potion}{difficulty}{\def\difficulty{#1}}
+\define@key{potion}{time}{\def\time{#1}}
+\define@key{potion}{othereffect}{\def\side{#1}}
+\define@key{potion}{doses}{\def\dose{#1}}
+\define@key{potion}{essential}{\def\essential{#1}}
+\makeatother
+\def\q{4}
+\newcommand{\potion}[1]
+{
+	\setkeys{potion}{name=None}
+	\setkeys{potion}{#1}
+	\vbox{
+	{\normalsize \color{rulered}\name }
+	\footnotesize
+	
+	{\it \visible}
+	
+	\vspace{1ex}
+	\begin{tabular}{l p{\q cm}}
+Cost	&	\cost
+		\\
+		Effect:	&	\parbox[t]{\q cm}{\raggedright \effect}
+		\vspace{1ex}
+		\\
+		
+		Ingredients:	&	\parbox[t]{\q cm}{\raggedright \essential}
+		
+		\vspace{1ex}
+		\\
+		Brewing Time	&	\time{} (\dose{})
+		\\
+		Difficulty	&	\difficulty
+	\end{tabular}
+
+	}
+	\vspace{3 ex}
+}
+
 
 
 
@@ -306,7 +333,7 @@
 \if \coreMode0
 	\input{Chapters/SpellListShort}
 \fi
-
+\input{Chapters/PotionList}
 \subfile{Chapters/Archetypes_List}
 
 \input{Chapters/Skill_List}
