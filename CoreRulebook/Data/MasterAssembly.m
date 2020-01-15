@@ -6,13 +6,17 @@ function MasterAssembly(quitMode)
     addpath('Spells/');
     addpath('Functions/');
     addpath('Items/');
-    disp('Assembling Spells');
+    addpath('Potions/');
+	disp('Assembling Spells');
     allSpellAssembler(5,'../Chapters/');
     
      disp('Assembling Skills');
      assembleSkills();
     assembleStatus()
     assembleWeapons();
+	
+	assemblePotions();
+	
 % run assembleArchetypes.m
 % run assembleTools.m
 %quit;
