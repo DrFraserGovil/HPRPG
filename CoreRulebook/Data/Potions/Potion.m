@@ -4,6 +4,7 @@ classdef Potion < handle
 	
 	properties
 		Name
+        Summary
 		Description
 		Effect
 		Dose
@@ -26,6 +27,7 @@ classdef Potion < handle
 			obj.OptionalCost = [];
 			if nargin < 1
 				obj.Name = "Default";
+                obj.Summary = "None";
 				obj.Description = "None";
 				obj.Effect = "None";
 				obj.SideEffect = "None";
@@ -38,6 +40,7 @@ classdef Potion < handle
 			else
 				obj.Name = inputLine.PotionName{1};
 				obj.Description = inputLine.Description{1};
+                obj.Summary = inputLine.Summary{1};
 				obj.processCost(inputLine.Cost(1));
 				obj.Effect = strcat(inputLine.Effect{1}, " ",num2str(inputLine.Magnitude(1))," ",inputLine.Unit{1});
 				obj.Difficulty = inputLine.Difficulty(1);
@@ -131,7 +134,7 @@ classdef Potion < handle
 		
 		
 		function processIngredients(obj,inputLine,pouch)
-			ingredientID = 11;
+			ingredientID = 12;
 
 			for i = [0:3]+ingredientID
 				name = inputLine{1,i}{1};
@@ -150,7 +153,7 @@ classdef Potion < handle
 				end
 			end
 			
-			optionID = 15;
+			optionID = 16;
 			for i = [0:3:10]+optionID
 				name = inputLine{1,i}{1};
 				if ~isempty(name)

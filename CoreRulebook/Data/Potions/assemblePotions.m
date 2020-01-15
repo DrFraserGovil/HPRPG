@@ -44,6 +44,22 @@ function assemblePotions()
 	%rulebook output
 	fileName = strcat(fileNameRoot, '../../GameMasterGuide/Chapters/Potions.tex');
 	writeToFile(fileName,potions);
+    
+    gnnText = "";
+    for i = 1:length(potions)
+        name = potions(i).Name;
+        if strfind(name,"\apos{}")
+           start = strfind(name,"\apos{}")-1;
+           endish = start + 8;
+           firstHalf = name(1:start);
+           secondHalf = name(endish:length(name));
+           name = strcat(firstHalf,"'",secondHalf);
+        end
+        gnnText = gnnText + name + ": " + potions(i).Summary + "\n";
+    end
+    FID = fopen("gnnData.txt",'w');
+    fprintf(FID, gnnText);
+    fclose(FID);
 end
 
 function writeToFile(fileName,potions)
