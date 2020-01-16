@@ -58,30 +58,50 @@ classdef Potion < handle
 		function text= print(obj)
 			
 			text = "\\potion{";
-			text = text +  "name = " + prepareText(obj.Name) + ", ";
-			text = text + "description = " + prepareText(obj.Description) + ", ";
-			text = text + "cost = " +obj.Cost + ", ";
-			text = text + "effect = " + prepareText(obj.Effect) + ", ";
-			text = text + "difficulty = " + num2str(obj.Difficulty) + ", ";
-			text = text + "time = " + obj.BrewTime + ", ";
-			text = text + "doses = " + num2str(obj.Dose) + "~dose";
+			text = text +  "name =" + prepareText(obj.Name) + ", ";
+			text = text + "description =" + prepareText(obj.Description) + ", ";
+			text = text + "cost =" +obj.Cost + ", ";
+			text = text + "effect =" + prepareText(obj.Effect) + ", ";
+			text = text + "difficulty =" + num2str(obj.Difficulty) + ", ";
+			text = text + "time =" + obj.BrewTime + ", ";
+			text = text + "doses =" + num2str(obj.Dose) + "~dose";
 			if obj.Dose > 1
 				text = text + "s";
 			end
 			text = text + ", ";
 			
-			text = text + "essential = ";
+			text = text + "essential =";
 			n = length(obj.EssentialIngredients);
+            [~,I] = sort([obj.EssentialIngredients.Name]);
+            obj.EssentialIngredients = obj.EssentialIngredients(I);
 			for j = 1:n
 				text = text + prepareText(obj.EssentialIngredients(j).Name);
 				if j < n
 					text = text + "\\comma{} ";
-				else
-					text = text + ",";
 				end
 			end
+			text = text + ", ";
 			
-			text = text + "othereffect  = " + prepareText(obj.SideEffect) + "}";
+            
+            optionalText = "optional = ";
+            n = length(obj.OptionalIngredients);
+            [~,I] = sort([obj.OptionalIngredients.Name]);
+            
+            
+            
+            obj.OptionalIngredients = obj.OptionalIngredients(I);
+            obj.OptionalBonus = obj.OptionalBonus(I);
+            obj.OptionalCost = obj.OptionalCost(I);
+            for j = 1:n
+                t = prepareText(obj.OptionalIngredients(j).Name);
+                b = "+" + num2str(obj.OptionalBonus(j)) + "\\%%";
+                c = num2str(obj.OptionalCost(j));
+                optionalText = optionalText + t + " & " + b + " & " + c;
+                optionalText = optionalText + "\\\\ ";
+            end
+            text = text + optionalText +  ",";
+            
+            text = text + "othereffect  =" + prepareText(obj.SideEffect) + "}";
 		end
 		
 		function processTime(obj,time)
@@ -123,11 +143,7 @@ classdef Potion < handle
 			obj.Cost = "";
 			if galleons > 1
 				obj.Cost = obj.Cost + num2str(galleons) + "\\galleon ";
-				if sickles > 1
-					obj.Cost = obj.Cost + "~and~";
-				end
-			end
-			if sickles > 1
+            else
 				obj.Cost = obj.Cost + num2str(sickles) + "\\sickle";
 			end
 		end
@@ -167,8 +183,8 @@ classdef Potion < handle
 						ing.OptionalPotions(end+1) = obj.Name;
 					end
 					obj.OptionalIngredients(end+1) = ing;
-					obj.OptionalCost = inputLine{1,i+2};
-					obj.OptionalBonus = inputLine{1,i+1};
+					obj.OptionalCost(end+1) = inputLine{1,i+2};
+					obj.OptionalBonus(end+1) = inputLine{1,i+1};
 				end
 			end
 		end

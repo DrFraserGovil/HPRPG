@@ -1,33 +1,12 @@
-\documentclass[oneside]{book}
-\usepackage{fontspec}
-\usepackage{array}
-\usepackage{subfiles}
+\documentclass[oneside, twocolumn, 9pt, english]{extbook}
 
-\usepackage{tikz}
-\usepackage{longtable}
-\usepackage{multicol}
-\usepackage{graphicx}
-\usepackage{tcolorbox}
-\usepackage[left = 0.42in, right = 0.67 in, top = 0.39in, bottom = 0.26in]{geometry}
-\usepackage{titlesec}
-\usepackage{amsmath}
-\usepackage{array}
-\def\apos{'}
-\setlength{\parskip}{4pt}
-\setlength{\parindent}{0pt}
-
-\newfontfamily{\HP}{[ParryHotter.TTF]}
-\renewcommand{\arraystretch}{0.15}
-\setlength{\tabcolsep}{4pt}
-\titleformat{\chapter} {\vspace{-10ex}\normalfont\bfseries\HP\Huge}{}{0pt}{}[\vspace{-2ex}]
-
-\titleformat{\section}{\vspace{-3ex}\normalfont\Large\it\centering}{}{0em}{\titlerule[0.3pt] \\}[{\titlerule[0.3pt]}]
+\usepackage{../HPpack}
 
 
 \begin{document}
 
 \begin{titlepage}
-    %\newgeometry{left=2.12cm, right = 1.74cm, bottom=1cm}
+
     \centering
     \vfill
     {\bfseries
@@ -42,14 +21,19 @@
     {\HP \fontsize{22}{0} \selectfont Version 3.0 \hfill Jack Fraser}
 \end{titlepage}
 
+
+\setcounter{tocdepth}{1}  
+\begin{spacing}{0.8}
 \footnotesize
 \tableofcontents
 \normalsize
-
+\end{spacing}
 
 \subfile{Chapters/actions}
 
-\subfile{Chapters/Potions}
+\scriptsize
+
+\input{Chapters/Potions}
 
 \subfile{Chapters/Enchanting}
 

@@ -8,7 +8,7 @@ function assemblePotions()
 	
 	potions = Potion.empty;
 	
-	pouch = IngredientPouch()
+	pouch = IngredientPouch();
 	for i = 1:N
 		p = Potion(f(i,:),pouch);
 		
@@ -18,15 +18,13 @@ function assemblePotions()
 		end
 	end
 	
-% 	for i = 1:length(pouch.Ingredients)
-% 		ing = pouch.Ingredients(i);
-% 		disp(ing.Name)
-% 		q = "\t";
-% 		for j = 1:length(ing.CriticalPotions)
-% 			q = q + ing.CriticalPotions(j) + "\t";
-% 		end
-% 		disp(sprintf(q));
-% 	end
+	for i = 1:length(pouch.Ingredients)
+		ing = pouch.Ingredients(i);
+		
+        if isempty(ing.CriticalPotions) && isempty(ing.OptionalPotions)
+           disp(ing.Name + " has no uses") 
+        end
+	end
 	
 	%% output to files
     fileNameRoot = "../../Chapters/";
@@ -55,7 +53,8 @@ function assemblePotions()
            secondHalf = name(endish:length(name));
            name = strcat(firstHalf,"'",secondHalf);
         end
-        gnnText = gnnText + name + ": " + potions(i).Summary + "\n";
+       eff = potions(i).Name;
+        gnnText = gnnText + name + ": " + prepareText(eff,0) + "\n";
     end
     FID = fopen("gnnData.txt",'w');
     fprintf(FID, gnnText);
