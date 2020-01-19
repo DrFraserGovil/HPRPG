@@ -16,7 +16,7 @@ function MasterAssembly(quitMode)
     assembleWeapons();
 	
 	assemblePotions();
-	
+	assembleTools();
 % run assembleArchetypes.m
 % run assembleTools.m
 %quit;

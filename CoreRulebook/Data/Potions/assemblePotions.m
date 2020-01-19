@@ -27,7 +27,7 @@ function assemblePotions()
 	end
 	
 	%% output to files
-    fileNameRoot = "../../Chapters/";
+    fileNameRoot = "../Chapters/";
     
 	%basic output
 	fileName = strcat(fileNameRoot, 'Artificing.tex');
