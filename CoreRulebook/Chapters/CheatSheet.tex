@@ -33,7 +33,11 @@ $$N = 10 - \left( \text{INT modifier + Arcane Proficiency} \right)$$
 
 After a spell has been cast, or an attack has been launched, you need to check that it hits its target. Living beings may instinctively either {\it Dodge} or {\it Block} an incoming attack, using whichever of their respective stats is highest:
 \footnotesize
-$$ \text{Do} = 8 + \text{FIN modifier + bonus}~~~~~~~~~\text{Bl} = 8 + \text{ATH modifier + bonus}$$ 
+\begin{align*}
+ \text{Dodge} & = 10 + \text{Finesse modifier+ bonus}
+ \\
+ \text{Block*} &= 10 + \text{Athletics modifier+ bonus}
+\end{align*}
 \small
 These attributes set the DV of an {\it accuracy check} which an attacker must perform using a d20 check, plus any relevant bonuses. In combat, you may also choose to {\it Evade} or {\it Brace} as a minor action. This allows you to increase the value of Dodge or Block respectively by the value of a standard Resist check. 
 
@@ -75,7 +79,7 @@ For a cast to be successful, the result of the casting check must be equal to or
 	\begin{rndtable}{c c c c c c}
 		~	&{\bf Beginner}	&	{\bf Novice}	&	{\bf Adept}	&	{\bf Expert}	&	{\bf Master}
 		\\
-		\cellcolor{\tablecolorhead} \bf DV: &	\DVBegI	&	\DVNovI	&	\DVAdpI	&	\DVExpI	&	\DVMasI
+		\cellcolor{\tablecolorhead} \bf DV: &	\DVBeg	&	\DVNov	&	\DVAdp	&	\DVExp	&	\DVMas
 	\end{rndtable}
 \end{center}
 
@@ -91,9 +95,9 @@ Spells `cost' FP to cast. Failed spells cost half the amount of a successful spe
 	\begin{rndtable}{p{1cm} |c |   c | c |c | c}
 		~	&{\bf Beginner}	&	{\bf Novice}	&	{\bf Adept}	&	{\bf Expert}	&	{\bf Master}
 		\\
-		\cellcolor{\tablecolorhead} \bf Memory &	\FPEntry{\DVBegI}{1}	&	\FPEntry{\DVNovI}{1}	&	\FPEntry{\DVAdpI}{1}	&	\FPEntry{\DVExpI}{1}	&	\FPEntry{\DVMasI}{1}
+		\cellcolor{\tablecolorhead} \bf Memory &	\FPEntry{\DVBeg}{1}	&	\FPEntry{\DVNov}{1}	&	\FPEntry{\DVAdp}{1}	&	\FPEntry{\DVExp}{1}	&	\FPEntry{\DVMas}{1}
 		\\
-		\cellcolor{\tablecolorhead} \bf Book  &	\FPEntry{\DVBegI}{2}	&	\FPEntry{\DVNovI}{2}	&	\FPEntry{\DVAdpI}{2}	&	\FPEntry{\DVExpI}{2}	&	\FPEntry{\DVMasI}{2}
+		\cellcolor{\tablecolorhead} \bf Book  &	\FPEntry{\DVBeg}{2}	&	\FPEntry{\DVNov}{2}	&	\FPEntry{\DVAdp}{2}	&	\FPEntry{\DVExp}{2}	&	\FPEntry{\DVMas}{2}
 	\end{rndtable}
 \end{center}
 }

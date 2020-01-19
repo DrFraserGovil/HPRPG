@@ -16,7 +16,7 @@ classdef IngredientPouch < handle
 			N = height(ings);
 			for i = 1:N
 				ing = Ingredient(ings(i,:));
-				if ~isempty(ing)
+				if ~isempty(ing) && ~isempty(ing.Name)
 					obj.Ingredients(end+1) = ing;
 				end
 			end

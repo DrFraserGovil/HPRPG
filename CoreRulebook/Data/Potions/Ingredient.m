@@ -19,15 +19,88 @@ classdef Ingredient < handle
 			else
 				if ~isempty(tableLine.Name{1})
 					obj.Name = convertCharsToStrings(tableLine.Name{1});
-					obj.Cost = tableLine.Cost(1);
+					obj.processCost(tableLine.Cost(1));
+
 					obj.Description = tableLine.Description{1};
 				end
 			end
 			obj.CriticalPotions = string.empty;
 			obj.OptionalPotions = string.empty;
-		end
+        end
 		
-	
+        function text = print(obj)
+           text = "\\ingredient{";
+			text = text +  "name =" + prepareText(obj.Name) + ", ";
+			text = text + "description =" + prepareText(obj.Description) + ", ";
+            text = text + "cost =" +obj.Cost + ", ";
+           
+            
+            nC = length(obj.CriticalPotions);
+            
+            if nC > 0
+                 text = text + "essential =";
+                for i = 1:nC
+                    text = text + prepareText(obj.CriticalPotions(i));
+                    if i <nC
+                        if i == nC - 1
+                            text = text + " and ";
+                        else
+                            text = text  + "\\comma{} ";
+                        end
+                    end
+                end
+                text = text + ",";
+            else
+                text = text + " noEssential = 1";
+            end
+            
+            nO = length(obj.OptionalPotions);
+            
+            if nO > 0
+                text = text + "optional =";
+                for i = 1:nO
+                    text = text + prepareText(obj.OptionalPotions(i));
+                    if i <nO
+                        if i == nO - 1
+                            text = text + " and ";
+                        else
+                            text = text  + "\\comma{} ";
+                        end
+                    end
+                end
+                
+            else
+                text = text + "noOptional = 1";
+            end
+            
+            text = text + "}";
+        end
+        
+     
+        function processCost(obj,cost)
+           sickles = floor(cost);
+           knuts = (cost - sickles)*29;
+           knuts = round(knuts/5)*5;
+           
+           galleons = floor(sickles/17);
+           sickles = sickles - 17*galleons;
+           
+           c = "";
+           if galleons > 0
+               c = c + num2str(galleons) + "\\galleon{} ";
+               sickles = round(sickles/5)*5;
+               knuts =0;
+           end
+           if sickles > 0 
+              c = c + num2str(sickles) + "\\sickle{} ";
+           end
+           if knuts > 0
+               c = c+num2str(knuts) + "\\knut{} ";
+           end
+
+           obj.Cost = c;
+
+        end
 	end
 end
 

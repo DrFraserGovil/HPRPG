@@ -27,21 +27,29 @@ function assemblePotions()
 	end
 	
 	%% output to files
-    fileNameRoot = "../Chapters/";
+    fileNameRoot = "../../Chapters/";
+    potionSTrigger = "%%PotionBegin";
+    potionETrigger = "%%PotionEnd";
     
 	%basic output
 	fileName = strcat(fileNameRoot, 'Artificing.tex');
 	I = [potions.SimpleInclude] == 1;
 	subset = potions(I);
-	writeToFile(fileName,subset);
+	writeToFile(fileName,subset,potionSTrigger,potionETrigger);
 	
 	%longer output
 	fileName = strcat(fileNameRoot, 'PotionList.tex');
-	writeToFile(fileName,potions);
+	writeToFile(fileName,potions,potionSTrigger,potionETrigger);
 	
 	%rulebook output
 	fileName = strcat(fileNameRoot, '../../GameMasterGuide/Chapters/Potions.tex');
-	writeToFile(fileName,potions);
+	writeToFile(fileName,potions,potionSTrigger,potionETrigger);
+    
+    %%ingredient output
+    ingSTrigger = "%%IngredientBegin";
+    ingETrigger = "%%IngredientEnd";
+    q = [pouch.Ingredients];
+    writeToFile(fileName,q,ingSTrigger,ingETrigger);
     
     gnnText = "";
     for i = 1:length(potions)
@@ -61,12 +69,13 @@ function assemblePotions()
     fclose(FID);
 end
 
-function writeToFile(fileName,potions)
-	[~,I] = sort({potions.Name});
-	potions = potions(I);
+function writeToFile(fileName,list,startTrigger,endTrigger)
+s = cellstr({list.Name});
+	[~,I] = sort(char(s));
+	list = list(I);
 	potionText = "\n";
-	for i = 1:length(potions)
-		p = potions(i);
+	for i = 1:length(list)
+		p = list(i);
 		potionText = potionText + p.print() + "\n";
 	end
 	
@@ -74,15 +83,16 @@ function writeToFile(fileName,potions)
 	%% output to file
 
 	readFile = fileread(fileName);
-	insertPoint = strfind(readFile, '%%PotionBegin');
-    endPoint = strfind(readFile, '%%PotionEnd');
-    firstHalf = prepareText(readFile(1:insertPoint+13),0);
+    
+	insertPoint = strfind(readFile, startTrigger);
+    endPoint = strfind(readFile, endTrigger);
+    firstHalf = prepareText(readFile(1:insertPoint+length(char(startTrigger))),0);
 
     secondHalf = prepareText(readFile(endPoint:end),0);
 	
-	fullText = firstHalf + potionText + "\n" + secondHalf;
+	fullText = firstHalf + potionText + "\n\n" + secondHalf;
 	FID = fopen(fileName,'w');
     fprintf(FID, fullText);
     fclose(FID);
-	
+	sprintf(fullText);
 end

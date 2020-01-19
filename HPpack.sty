@@ -1,6 +1,7 @@
 \ProvidesPackage{HPpack}[2020]
 
 %%So many includes!
+\usepackage[dvipsnames,table]{xcolor} 
 \usepackage{keyval}
 \usepackage[no-math]{fontspec}
 \usepackage{array}
@@ -18,7 +19,7 @@
 \usepackage{enumitem}
 \usepackage{setspace}
 \usepackage{multicol}
-\usepackage[table]{xcolor}  
+ 
 \usepackage{tikz}
 \usepackage{multirow}
 \usepackage{float}
@@ -138,6 +139,9 @@
 }
 
 
+%%AC stuff
+\def\baseDodge{8}
+\def\baseBlock{8}
 
 
 %% Spell stuff
@@ -153,26 +157,12 @@
 }
 
 
-\def\DVBegI{4}
-\def\DVNovI{5}
-\def\DVAdpI{6}
-\def\DVExpI{7}
-\def\DVMasI{11}
-\def\DVBegF{3}
-\def\DVNovF{4}
-\def\DVAdpF{5}
-\def\DVExpF{6}
-\def\DVMasF{9}
-\def\DVBegW{4}
-\def\DVNovW{6}
-\def\DVAdpW{8}
-\def\DVExpW{10}
-\def\DVMasW{12}
-\def\DVBegR{3}
-\def\DVNovR{5}
-\def\DVAdpR{8}
-\def\DVExpR{10}
-\def\DVMasR{12}
+\def\DVBeg{5}
+\def\DVNov{10}
+\def\DVAdp{15}
+\def\DVExp{20}
+\def\DVMas{25}
+
 
 \def\wFP{0.6}
 
@@ -184,7 +174,7 @@
 \def\PsiCheck{SPR}
 \def\HexCheck{SPR}
 \def\CurCheck{POW}
-\def\HeaCheck{EMP}
+\def\HeaCheck{INT}
 \def\WarCheck{INT}
 \def\AltCheck{FIN}
 \def\ConCheck{POW}

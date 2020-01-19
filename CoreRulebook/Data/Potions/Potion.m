@@ -56,7 +56,6 @@ classdef Potion < handle
 		end
 		
 		function text= print(obj)
-			
 			text = "\\potion{";
 			text = text +  "name =" + prepareText(obj.Name) + ", ";
 			text = text + "description =" + prepareText(obj.Description) + ", ";

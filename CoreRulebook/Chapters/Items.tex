@@ -210,12 +210,14 @@ For the sake of simplicity\comma{} you are generally discouraged from `mix and m
 
 If Gunter the half\minus{}giant wishes to wear a full suit of knight's armour\comma{} but swap the gloves out for her cotton {\it Gloves of Pugilism}\comma{} she can do so without altering the total Block value. However\comma{} if she also swapped out the helmet for a jaunty hat\comma{} and the footwear for some running shoes\comma{} the GM may step in and decree a penalty to her Block statistic. 
 
-\def\w{3.6}
-\def\x{1.7}
+\def\y{1.4}
+\def\w{3.2}
+\def\x{2.6}
+\def\u{0.8}
 \newcommand\armour[4]
 {
 \\
-	\parbox[t]{\x cm}{\raggedright\textbf{\textit{#1}}} & \parbox[t]{\w cm}{\raggedright #2} &  \parbox[t]{\x cm}{\raggedright #3}	&	#4
+	\parbox[t]{\y cm}{\raggedright\textbf{\textit{#1}}} & \parbox[t]{\w cm}{#2} &  \parbox[t]{\x cm}{\raggedright #3}	&	\parbox[t]{\u cm}{\centering #4}
 	
 }
 
@@ -231,12 +233,14 @@ You require no proficiencies in order to wear clothing.
 
 \small
 \begin{center}
-\begin{rndtable}{p{\x cm} p{\w cm} p{\x cm} c}
+\begin{rndtable}{p{\y cm} p{\w cm} p{\x cm} p{\u cm}}
 \bf Type   &	\bf Description	&	\bf Effect	& \bf Cost
-\armour{Sports clothes}{Specially designed clothing for taking part in physical activity.}{+2 to Dodge}{2\galleon}
+
 \armour{Casual outfit}{Jeans and a t\minus{}shirt. Cheap\comma{} comfy and practical}{No effect}{10\sickle}
+\armour{Formal Wear}{Extra suave look for the discerning witch or wizard. Ball gowns and tuxedoes are impractical\comma{} but you look amazing!}{\minus{}2 Dodge\comma{} \\ +2 Charisma}{10\galleon}
+\armour{Sports clothes}{Specially designed clothing for taking part in physical activity.}{+2 Dodge}{2\galleon}
 \armour{Wizards Robes}{Once the everyday clothes of all wizardkind\comma{} now usually seen as the typical school uniform of a Hogwarts student.}{+1 to spellcasting checks}{1\galleon}
-\armour{Formal Wear}{Extra suave look for the discerning witch or wizard. Ball gowns and tuxedoes are impractical\comma{} but you look amazing!}{\minus{}2 to Dodge\comma{} +2 to Charisma}{10\galleon}
+
 \end{rndtable}
 \end{center}
 \normalsize
@@ -248,17 +252,41 @@ You require no proficiencies in order to wear light armour.
 
 \small
 \begin{center}
-\begin{rndtable}{p{\x cm} p{\w cm} p{\x cm} c}
+\begin{rndtable}{p{\y cm} p{\w cm} p{\x cm} p{\u cm}}
 \bf Type   &	\bf Description	&	\bf Effect	& \bf Cost
-\armour{Padded}{Formed from multiple layes of soft fabric and padding}{+2 to Block\comma{} \minus{}1 to Dodge}{2\galleon}
-\armour{Warded Cloth}{A recent magical invention\comma{} this material hardens on impact\comma{} providing extra protection}{+1 to Block}{5\galleon}
+\armour{Padded}{Formed from multiple layers of soft fabric and padding}{+2 Block\comma{} \\\minus{}1 Dodge\comma{} \\ Conspicuous}{2\galleon}
+\armour{Leather Jacket}{A simple leather jacket offers a surprising amount of protection. Plus it looks cool.}{+1 Block}{10\sickle{}}
+\armour{Warded Cloth}{A recent magical invention\comma{} this expensive material hardens on impact\comma{} providing extra protection\comma{} whilst not impeding your movement.}{+2 Block}{15\galleon}
 \end{rndtable}
 \end{center}
 \normalsize
 
 \subsubsection{Medium Armour}
 
+\small
+\begin{center}
+\begin{rndtable}{p{\y cm} p{\w cm} p{\x cm} p{\u cm}}
+\bf Type   &	\bf Description	&	\bf Effect	& \bf Cost
+\armour{Hardened Furs}{A primitive\minus{}appearing armour often worn by giants and other isolated peoples. Layers of hardened leather and treated hides protects against the cold\comma{} as well as from weapons.}{+2 Block\comma{}\\ \minus{}1 Dodge \\ Resistance to Cold damage}{1\galleon}
+\armour{Tactical Armour}{The armour of the Auror class\comma{} thought to strike the correct balance between hardened and fortified plates inserted between layers of flexible fabric.}{+4 Block \\ \minus{}2 Dodge\comma{} \\ Conspicuous}{45\galleon}
+\end{rndtable}
+\end{center}
+\normalsize
+
 \subsubsection{Heavy Armour}
+
+
+\small
+\begin{center}
+\begin{rndtable}{p{\y cm} p{\w cm} p{\x cm} p{\u cm}}
+\bf Type   &	\bf Description	&	\bf Effect	& \bf Cost
+\armour{Bomb Suit}{Specially designed suit that one must climb inside. Used by professionals who frequently find themselves at risk of incineration or detonation}{+4 Block\comma{}\\ \minus{}6 Dodge \\ Resistance to Fire \& Concussive damage\comma{} \\Conspicuous.}{80\galleon}
+\armour{Runic Plate}{Enchanted plates of metal fit together to provide full protection over your body\comma{} reminiscent of medieval plate armour.}{+7 Block\comma{}\\ \minus{}5 Dodge\comma{} \\ Conspicuous\comma{} \\ Resistance to Piercing \& Slashing damage.}{200\galleon}
+\armour{Special Response Set}{The bigger\comma{} badder brother of the Tactical armour. Used only when overwhelming firepower needs to be withstood\comma{} as it is much more cumbersome}{+5 Block\comma{} \\ \minus{}4 Dodge \\ Conspicuous}{120\galleon{}}
+\end{rndtable}
+\end{center}
+\normalsize
+
 
 \section*{Destroying Armour}
 
