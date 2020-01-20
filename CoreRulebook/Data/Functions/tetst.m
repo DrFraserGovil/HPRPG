@@ -1,12 +1,14 @@
-xs = [6,10,6, 8,20];
-ns = [1, 1,2,2, 1];
+xs = [6,8,10,12,20];
+ns = [1, 1,1,1, 1];
 
-profs = [2,3,4,5,6];
-stats=[1,2,3,4,5];
+advs = [0,0,0,0,0];
+
+profs = 0*[1,3,4,5,6];
+stats=0*[1,2,3,4,5];
 
 bons = profs+stats;
 
-dvs = [5,10,15,20,25];
+dvs = [5,8,12,15,20];
 mat=zeros(5,5);
 for i = 1:length(xs)
     n = ns(i);
@@ -18,7 +20,15 @@ for i = 1:length(xs)
     array = ones(1,N)*bons(i);
     
     for j = 1:n
-        array = array + randi([1,x],1,N);
+        R = randi([1,x],1,N);
+		
+		for k = 1:advs(i)
+			R2 = randi([1,x],1,N);
+			
+			bigger = (R2 > R);
+			R = R + bigger.*(R2 - R);
+		end
+		array = array + R;
     end
    
 
