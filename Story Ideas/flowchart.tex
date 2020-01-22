@@ -1,0 +1,154 @@
+\documentclass[10pt,landscape]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage[left = 0.2in, right = 0.2in, top = 0.2in, bottom = 0.2in]{geometry}
+
+\begin{document}
+	
+	\def\farLeft{0}
+	\def\farRight{25}
+	\def\top{20}
+	\def\bottom{0}
+	
+	\begin{tikzpicture}
+		\draw (\farLeft, \top) rectangle (\farRight,\bottom);
+		
+		
+		\def\threadOneX{ {\farLeft + 3}};
+		\def\threadTwoX{ {\farLeft + 9}};
+		\def\threadThreeX{ {\farLeft + 15.5}};
+		\def\threadFourX{ {\farLeft + 21}};
+		
+		\def\titleY{ {\top-1}};
+
+		\foreach \a/\b in { {Merlin's Grave}/\threadOneX, {Seize the Means of Magic}/\threadTwoX, {Nonhuman Rights \& The Ministry}/\threadThreeX, {Hogwarts}/\threadFourX}
+		{
+			\node at (\b,\titleY) {\bf  \a};
+		} 
+		
+		\def\Y{ {\top-2}};
+
+		\foreach \a/\b in { {Avalon is uncovered by muggle construction workers. }/\threadOneX, {A group of muggle scientists begins to study magic}/\threadTwoX, {Ministry classifies new Goblin Rights group as terrorists}/\threadThreeX, {}/\threadFourX}
+		{
+			\node at ({\b},\Y) {\parbox[t]{5.2cm}{\raggedright \a}};
+		} 
+		\def\Y{ {\top-3.5}};
+
+		\foreach \a/\b in { {All muggles killed as wizarding zealots take control of Avalon}/\threadOneX, {A single Soul Jar is taken to the scientists for study}/\threadTwoX, {GRB found a new, independent nation on an artificial island in the North Sea, and promise asylum to any magical species there.}/\threadThreeX, {Hogwarts complies with ministry order than declared `Free Elves' are not eligible for work permits. }/\threadFourX}
+		{
+			\node at ({\b},\Y) {\parbox[t]{5.2cm}{\raggedright \a}};
+		} 
+		\def\Y{ {\top-5.5}};
+
+		\foreach \a/\b in { {Zealots begin attempting to penetrate the clwyf yn byd}/\threadOneX, {Scientists work out how to artificially use magic using Soul Jar, but need more.}/\threadTwoX, {MoM captures Goblin leader \& tortures her to reveal location of city}/\threadThreeX, {}/\threadFourX}
+		{
+			\node at ({\b},\Y) {\parbox[t]{5.2cm}{\raggedright \a}};
+		} 
+		
+		\def\Y{ {\top-7.5}};
+		\foreach \a/\b in { {Zealots use magic to delude the scientists and place them into their employ, and agree to provide 100 Soul Jars}/\threadOneX, {Under influence of the zealots, the scientists essentially become radicalised and design mechano-arcane combat units}/\threadTwoX, {}/\threadThreeX, {PCs arrive at Hogwarts \& begin lessons}/\threadFourX}
+		{
+			\node at ({\b},\Y) {\parbox[t]{5.2cm}{\raggedright \a}};
+		} 
+		
+		\def\Y{ {\top-10.5}};
+		\draw[dashed, red] (-\farLeft,{\Y+1.5})--(\farRight,{\Y+1.5});
+		\foreach \a/\b in { {Zealots use magic to delude the scientists and place them into their employ, and agree to provide Soul Jars}/\threadOneX, {Under influence of the zealots, the scientists essentially become radicalised and design mechano-arcane combat units}/\threadTwoX, {}/\threadThreeX, {PCs arrive at Hogwarts \& begin lessons}/\threadFourX}
+		{
+			\node at ({\b},\Y) {\parbox[t]{5.2cm}{\raggedright \a}};
+		} 
+		\def\Y{ {\top-12.5}};
+		
+		\foreach \a/\b in { {}/\threadOneX, {25 Magic-suits complete, the radicalised humans prepare a global attack}/\threadTwoX, {GRB transport an Ancient Golem beneath the barriers at Hogwarts in an attempt to gain leverage}/\threadThreeX, {Hogwart's hunt event}/\threadFourX}
+		{
+			\node at ({\b},\Y) {\parbox[t]{5.2cm}{\raggedright \a}};
+		} 
+		\def\Y{ {\top-14.5}};
+		
+		\foreach \a/\b in { {}/\threadOneX, {Global terrorist attack on ministries}/\threadTwoX, {Sensing an opportune moment, use the GRB base to teleport the entire school to the GRB city as hostages}/\threadThreeX, {PCs discover the Ancient Golem}/\threadFourX}
+		{
+			\node at ({\b},\Y) {\parbox[t]{5.2cm}{\raggedright \a}};
+		} 
+	
+	
+		\def\Y{ {\top-16.5}};
+		
+		\foreach \a/\b in { {Accidentally release a demon from the clwyf}/\threadOneX, {Smaller scale attacks continue}/\threadTwoX, {Hogwarts teachers agree to support GRB, but minstyr invades \& slaughters everyone. They wipe Hogwart's memories, and transport them back.}/\threadThreeX, {PCs sent by ministry to subjugate some non-humans who are rebelling post-hogwarts}/\threadFourX}
+		{
+			\node at ({\b},\Y) {\parbox[t]{5.2cm}{\raggedright \a}};
+		} 
+		
+		\def\Y{ {\top-18.5}};
+		
+		\foreach \a/\b in { {}/\threadOneX, {}/\threadTwoX, {}/\threadThreeX, {What the hell happened?! Everyone seems happy + fine, but shit is not alright!}/\threadFourX}
+		{
+			\node at ({\b},\Y) {\parbox[t]{5.2cm}{\raggedright \a}};
+		} 
+	\end{tikzpicture}
+	
+	\twocolumn
+	
+	\section*{Timeline}
+
+	\renewcommand\time[2]
+	{
+		\item {\bf #1}: {\it #2}
+	}
+
+		\begin{itemize}
+		\renewcommand\labelitemi{-}
+		
+		\time{c.720-750 AD}{Reign of King Arthur, assisted by Merlin the Great}
+		\time{c.750}{Arthur slain in battle by Mordred, Merlin retreats from public life}
+		\time{c.760}{Through unknown means, and at an undisclosed location, Merlin creates the \textbf{clwyf yn byd}, triggering the Cataclysm}
+		\time{c.760-810}{The Cataclysm grips the world, millions perish.}
+		\time{810}{Merlin leads the 100,000-strong Last Unified Army back to the clwyf yn byd and manages to seal the breach, ending the Cataclysm. Merlin was the sole survivor.}
+		\time{810-812}{The Wizard's council is established, to enable magical co-operation, the taming of Wild Magic, and the prevention of further such events. }
+		\time{812}{{The Great Forgetting}: the first established use of the `obliviate' charm, used on a global scale to ensure the secret of the Cataclysm and magic in general remained hidden. This laid the foundation for the eventual International Statute of Secrecy}	 
+		\time{905}{Hogwart's School of Witchcraft \& Wizardry is founded. Merlin declined the offer to be a founding member, and was made an honourary Slytherin instead.}
+		\time{1020}{The Founder's falling out: Salazar Slytherin left Hogwarts, and sealed off the Chamber of secrets.}
+		\time{1054}{A Planetary Alignment coincided with a new star appearing in the sky. Merlin forced to return to the site of the clwyf yn byd, and never returned.}
+		\time{812-c.1400}{The `Dark Ages'. The after effects of the Great Forgetting led to a decline in the Muggle world, which led to a period of instability and war.}
+		\time{1487}{Publication of \textbf{Malleus Maleficarum}. John Dee rediscovers the secrets of the Soul Jars.}
+		\time{c.1490s-c.1700}{Witch Trials and the destruction of most of Wizarding life via the machinations of John Dee.}
+		\time{1689}{The establishment of the International Confederation of Wizards}
+		\time{1692}{The ICW enacts the International Statute of Secrecy, completely withdrawing wizardkind from the muggle world}
+		\time{1692-1707}{The wizarding world struggles to abide by the Statute of Secrecy, and breaches remain common. The Wizard's Council refuses to take action against lawbreakers.}
+		\time{1707}{The Wizard's Council is dissolved and replaced with the Ministry of Magic, who fiercly enforce the Statute}
+		\time{1712}{The MoM declares its jurisdiction over all magical species, but refuses the Centaur's request for representation.}
+		\time{1718}{Azkaban is constructed, and made unplottable}
+		\time{1725}{The giant king  L\`aidir An Duilich declares the An Duilich tribe to be an independent nation.}
+		\time{1725-1728}{The Giant Rebellion (Gigantish: bàs dòchas) results in the complete destruction of the An Duilich, and the subjugation of the remaining giant clans.}
+		\time{1740}{Due to a change of borders after a muggle war, the goblin city-states of Tg'rsta'gN't and Kg'jn fell outside the jurisdiction of the British MoM. Refusing the order to evacuate to the British mainland, they unified into the Goblin Dominion and again declared independence.}
+		\time{1741}{After a period of cold war, the MoM enforced the Goblin Repatriation order. They tried to destroy the goblin cities but found them too strong - as a compromise, they were made unplottable so no Goblin could ever return}
+		\time{1749}{The most serious breach of the ISS until Grindlewald - a vampire was installed as Sultan Mehmed III of the Ottoman empire, performed a rite which blocked out the sun, and then proceeded to feast on the helpless population with impunity. Was eventually defeated by an international delegation.} 
+		\time{1752}{Moonlit Rebellion: Vargot the Goblin attempted to found a new multi-species city state (F'jA'n) in the Irish Sea. Was aided by a surprise alliance with an army of werewolves. Brutally put down by the Auror Haephestos Jones, although Vargot escaped. Haephestos proceeded to enact brutal reprisals on the Goblin and Werewolf populations, making Azkaban the primary penitentiary for Wizardkind}
+		\time{1762}{Vargot attempted the first ever large-scale assault on Azkaban, but was killed in the attempt}
+		\time{1769}{After almost 100 years of struggle, the MoM declared that all Sentient Magical beings within the British Isles were finally under Ministry jurisdiction}
+		\time{1769-1880}{Several minor non-human uprisings were defeated without gaining traction, and peace and harmony were restored. }
+		\time{1853}{The British MoM is believed to have illegally intervened in the Crimean War, tipping the balance agains the Russian Empire}
+		\time{1865}{Fearing a unification of the squabbling Goblin clans was nearing, the Ministry enacted a plan to destabilise their society, hidden as a generous gift. The Wizarding bank Gringotts was given over entirely to the Goblins. Every 25 years the governship would be transferred to the tribe who had seen the largest increase in their monetary value of the previous 25 years. This led to an inevitable cycle of economic wars and inter-tribal conflict as they warred for the position and attempted to prevent their deathly rivals from taking the position. The Wizarding world, however, saw an unprecedented level of wealth growth, harvested from the goblin's work.}
+		\time{1881}{Birth of Albus Percival Wulfric Brian Dumbledore}
+		\time{1883}{An unknown Indonesian wizard attempted to perform a {\it Planemeld} within his laboratory and lost control. The resulting release of energy triggered the formally dormant volcano he was working in, and triggered the Krakatoa explosion}
+		\time{1914}{The MoM forbids wizarding involvement in WWI. Many disobey this order.}
+		\time{1925}{Grindelwald publishes his manifesto, and begins his rise to power}
+		\time{1926}{Tom Marvolo Riddle ,later known as the Dark Lord Voldemort, is born.}
+		\time{1945}{Grindelwald is defeated by Dumbledore in ``the greatest duel of all time'', and is imprisoned in Nurmengrad}
+		\time{1968}{Squib Rights Marches \& Pure-Blood retaliations occur. }
+		\time{1970-1981}{Voldemort begins reign of terror and begins the `First Wizarding War', in which he and his followers attempt to destroy the ministry for their tolerance of non-wizarding kind.}
+		\time{1980}{Harry Potter is born}
+		\time{1981}{Voldemort attempts to kill Harry Potter, but is defeated by `the Boy Who Lived'}
+		\time{1995}{Lord Voldemort returns to a corporeal existence, gathers his followers and embarks on the `Second Wizarding War'. The Order of the Pheonix is re-founded.}
+		\time{1997}{Albus Dumbledore is killed by Severus Snape.}
+		\time{1997-1998}{Lord Voldemort ascends to power: the Ministry falls and is replaced by a puppet government. Hogwarts is placed under his control and the members of the Order of the Pheonix are hunted as criminals}
+		\time{1998}{The Battle of Hogwarts. After destroying (most of) Voldemort's Horcruxes, Harry Potter and the other members of the Order regain control of Hogwarts and prepare for an invasion. At the end of the battle, Lord Voldemort is defeated in battle by Harry Potter and killed by his own curse.}
+		\time{1999-2012}{Kinglsey Shacklebolt becomes Minister for Magic, and begins a series of reforms to restore wizarding life}
+		\time{2012-2019}{Hermione Granger becomes Minister for Magic in a period of intense economic decline and fears about the future}
+		\time{2019}{Hermione Granger is succeeded by Mortimus Poffley, who promises to restore the wizarding world to its former glory.}
+		\end{itemize}
+	
+	
+\end{document}
+
