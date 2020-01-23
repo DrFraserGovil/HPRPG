@@ -255,11 +255,11 @@ Therefore, hitting a 1m target at a distance of up to 10m has a DV of 5, whilst 
 
 \subsubsection{Blindfight}\label{S:Unseen}
 
-If you cannot see your enemy, then you cannot select them as a target. You may, however, choose to simply start swinging your sword, or firing spells off in a random direction. You must tell the GM which direction you are attacking in, and then perform an accuracy check with a -5 penalty. 
+If you cannot see your enemy, then you cannot select them as a target. You may, however, choose to simply start swinging your sword, or firing spells off in a random direction. You must tell the GM which direction you are attacking in, and then perform an accuracy check with check disadvantage.
 
 If the target is not in the region  you are attacking, you automatically miss (though the GM will still ask for the accuracy roll, to avoid giving away where they actually are!). 
 
-After you successfully hit an unseen attacker, you avoid the -5 penalty until your next attack misses, at which point you must retake the penalty until you find them again, or you can spot them visually. 
+After you successfully hit an unseen attacker, you avoid the disadvantage penalty until your next attack misses or the target moves. You must then retake the penalty until you next land a successful hit, or you detect them through other means. 
 
 
 \section{Defence}\label{S:Accuracy}
@@ -346,9 +346,9 @@ When using a weapon, you add the same ability modifier (minus the Expertise bonu
 
 \subsection{Group Attacks}
 
-If a spell or other effect that attacks multiple targets at the same time, perform the damage check once, and apply the damage to all targets that were hit. 
+If a spell or other effect affects multiple targets at the same time, perform the damage check once, and apply the damage to all targets that were hit. 
 
-This does not apply to a single effect which causes multiple copies of the same effect to attack multiple individuals. For instance, the {\it Cascading Missiles} may attack a number of individuals with magical darts, but as each dart is a different copy, the attack roll is unique. This contrasts with a {\it Fireball}, which is a single effect that effects a large area. 
+This only applies to effects with a single instance which causes the damage, not those with multiple separate instances. For example, the {\it Cascading Missiles} may attack a number of individuals with magical darts, but as each dart is a different copy, the attack roll is unique. This contrasts with a {\it Fireball}, which is a single effect that effects a large area. 
 
 \subsection{Damage Types}
 
@@ -385,7 +385,7 @@ Some damage types do damage in unusual ways - draining Fortitude instead of Heal
 
 \damage{Piercing}{Daggers, spears and teeth can puncture even the thickest armour to damage HP.}
 
-\damage{Poison}{Venemous stings and poisoned weapons damage HP, and may lead to some other unpleasant side effects}
+\damage{Poison}{Venomous stings and poisoned weapons damage HP, and may lead to some other unpleasant side effects}
 
 \damage{Psychic}{Damage that originates not from the body, but from the mind, but still damages your HP. You often cannot block psychic damage, you must instead rely on Resisting it.}
 
@@ -394,10 +394,23 @@ Some damage types do damage in unusual ways - draining Fortitude instead of Heal
 
 \subsection{Critical Strikes}\label{S:Sneak}
 
-If you manage to launch an attack whilst remaining hidden, or if you roll a `natural 20' on your accuracy check, then you may trigger a {\it critical strike} on a target. 
+A {\it Critical Strike} is an attack which is especially devastating. 
 
-When a critical strike happens, you double the number of dice used in the damage roll. For instance, a critical strike with a shortsword normally does 1d6 damage + modifiers. On a crticial strike, however, you would do 2d6 + modifiers. 
+A critical strike can be triggered in a number of ways. Common triggers are: attacking a target you are Hidden from, rolling a `natural 20' on an accuracy check, attacking an entity with the {\it Distracted} status effect. 
 
+When a critical strike happens, you double the number of dice used in the damage roll. For instance, a critical strike with a shortsword normally does 1d6 damage + modifiers. On a critical strike, however, you would do 2d6 + modifiers. 
+
+Alternatively, the attacker may choose to forgo doing damage to the target and damage their armour, using the rules discussed on page \pageref{S:DestroyArmour}.
+
+\section{Immunities \& Weaknesses}
+
+Some beings are more or less effected by certain damage types. This is quantified through one of three descriptors: {\it Immune}, {\it Resistant} and {\it Susceptible}. 
+
+A being which is {\it Immune} to a particular damage type takes no damage when it is inflicted upon them. Most dragons, for instance, are totally immune to Fire damage and the fearsome Basilisk is immune to all forms of Poison damage. Some beings may also be stated to be immune to given status effects (the Basilisk would be immune to the {\it Poisoned} status effect). This means that effect cannot be applied to them. 
+
+A being which is {\it Resistant} is not quite immune, but requires significantly more {\it oomph} to get the same effect. When taking damage of the specified type, the {\it damage check} is performed with disadvantage. 
+
+{\it Susceptible} is the inverse of {\it Resistant}: a being which is susceptible can easily be damaged by a certain damage type. The wood-based dugbog and bowtruckle would be particularly susceptible to taking fire damage, for instance. Damage checks associated with this type are performed with check-advantage. 
 
 \section{Resisting}
 
@@ -423,7 +436,7 @@ If you are not currently being observed by a being, you may take a major action 
 
 Whilst you are hidden you are considered an `unseen' foe, with the bonuses that come with that (see \pageref{S:Unseen}), and you are not a valid target for an attack. However, you may still take damage from area of effects that include you in their area. 
 
-The GM may ask you to re-perform the sneak check if there is a material change in circumstance. For instance, if you performed the check in a dingy room, and suddenly the lights are turned up, then you may need to re-perform the check, in line with your character altering their strategy for the new environment. Equally, if you take damage whilst hidden, you must perform a DV 15 Spirit (Endurance) check to grit your teeth through the pain. 
+The GM may ask you to re-perform the sneak check if there is a material change in circumstance. For instance, if you performed the check in a dingy room, and suddenly the lights are turned up, then you may need to re-perform the check, in line with your character altering their strategy for the new environment. Equally, if you take damage whilst hidden, you must perform a DV 15 Spirit (Endurance) check to grit your teeth and avoid shouting out and revealing yourself. 
 
 You remain hidden until you to do something to give away your position: shouting to your allies, or jumping from the shadows, sword in hand. 
 
