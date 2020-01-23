@@ -153,7 +153,9 @@ The only way to access the 7th and final category of wand is to have an EVL grea
 \small
 \def\l{8}
 \begin{center}
-%%WeaponsBegin\begin{rndtable}{|l c c l |}\hline \tablehead \normalsize \bf Weapon & \normalsize \bf Modifier &  \normalsize \bf Damage & \normalsize \bf Properties \\ \hline{ \it Unarmed Weapons} & & & \\ 
+%%WeaponsBegin
+
+\begin{rndtable}{|l c c l |}\hline \tablehead \normalsize \bf Weapon & \normalsize \bf Modifier &  \normalsize \bf Damage & \normalsize \bf Properties \\ \hline{ \it Unarmed Weapons} & & & \\ 
 \bf ~~~~~Unarmed Strike	&	Athletics	&	1~Bludgeoning	&	\parbox[t]{\l cm}{}\\ 
 \bf ~~~~~Improvised Weapons	&	?	&	1d4~	&	\parbox[t]{\l cm}{(GM fiat takes precedence: use similarity to existing weapons)}\\ 
 { \it Simple Weapons} & & & \\ 
@@ -191,7 +193,9 @@ The only way to access the 7th and final category of wand is to have an EVL grea
 \bf ~~~~~Pistol	&	Finesse	&	2d12~Piercing	&	\parbox[t]{\l cm}{Max range: 30m (accurate)}\\ 
 \bf ~~~~~Rifle	&	Finesse	&	5d6~Piercing	&	\parbox[t]{\l cm}{Max range: 40m (standing), 100m (standing, 2 turn aim), 500m (prone, 3 turn aim)}\\ 
 \bf ~~~~~Shotgun	&	Finesse	&	10d4~Piercing	&	\parbox[t]{\l cm}{Max range: 10m (full damage), 1d4 removed for every subsequent metre.}\\ 
-\hline\end{rndtable} %%WeaponsEnd
+\hline\end{rndtable} 
+
+%%WeaponsEnd
 \end{center}
 \normalsize
 \twocolumn
@@ -210,17 +214,16 @@ For the sake of simplicity\comma{} you are generally discouraged from `mix and m
 
 If Gunter the half\minus{}giant wishes to wear a full suit of knight's armour\comma{} but swap the gloves out for her cotton {\it Gloves of Pugilism}\comma{} she can do so without altering the total Block value. However\comma{} if she also swapped out the helmet for a jaunty hat\comma{} and the footwear for some running shoes\comma{} the GM may step in and decree a penalty to her Block statistic. 
 
-\def\y{1.4}
-\def\w{3.2}
+\def\y{1.3}
+\def\w{3.3}
 \def\x{2.6}
 \def\u{0.8}
 \newcommand\armour[4]
 {
 \\
-	\parbox[t]{\y cm}{\raggedright\textbf{\textit{#1}}} & \parbox[t]{\w cm}{#2} &  \parbox[t]{\x cm}{\raggedright #3}	&	\parbox[t]{\u cm}{\centering #4}
+	\parbox[t]{\y cm}{\raggedright\textbf{\footnotesize\textit{#1}}} & \parbox[t]{\w cm}{\footnotesize#2} &  \parbox[t]{\x cm}{\footnotesize\raggedright #3}	&	\parbox[t]{\u cm}{\centering #4}
 	
 }
-
 \subsection{Types of Armour}
 
 Armour comes in 4 categories: 
@@ -256,7 +259,7 @@ You require no proficiencies in order to wear light armour.
 \bf Type   &	\bf Description	&	\bf Effect	& \bf Cost
 \armour{Padded}{Formed from multiple layers of soft fabric and padding}{+2 Block\comma{} \\\minus{}1 Dodge\comma{} \\ Conspicuous}{2\galleon}
 \armour{Leather Jacket}{A simple leather jacket offers a surprising amount of protection. Plus it looks cool.}{+1 Block}{10\sickle{}}
-\armour{Warded Cloth}{A recent magical invention\comma{} this expensive material hardens on impact\comma{} providing extra protection\comma{} whilst not impeding your movement.}{+2 Block}{15\galleon}
+\armour{Warded Cloth}{A recent magical invention\comma{} this expensive material hardens on impact\comma{} providing extra protection\comma{} whilst not impeding your movement.}{+2 Block}{25\galleon}
 \end{rndtable}
 \end{center}
 \normalsize
@@ -267,8 +270,10 @@ You require no proficiencies in order to wear light armour.
 \begin{center}
 \begin{rndtable}{p{\y cm} p{\w cm} p{\x cm} p{\u cm}}
 \bf Type   &	\bf Description	&	\bf Effect	& \bf Cost
+\armour{Bulletproof Vest}{A muggle invention, this weaved kevlar material offers a good amount of protection.}{+3 Block,\\ -1 Dodge,\\ Resistance to Ranged Weapon attacks}{1\galleon}
 \armour{Hardened Furs}{A primitive\minus{}appearing armour often worn by giants and other isolated peoples. Layers of hardened leather and treated hides protects against the cold\comma{} as well as from weapons.}{+2 Block\comma{}\\ \minus{}1 Dodge \\ Resistance to Cold damage}{1\galleon}
 \armour{Tactical Armour}{The armour of the Auror class\comma{} thought to strike the correct balance between hardened and fortified plates inserted between layers of flexible fabric.}{+4 Block \\ \minus{}2 Dodge\comma{} \\ Conspicuous}{45\galleon}
+\armour{Warrior Robe}{Magical armies are rare, but Battlemages often wore specially warded robes which offered improved protection, though hampered movement.}{+3 Block,\\-1 Dodge}{5\galleon}
 \end{rndtable}
 \end{center}
 \normalsize
@@ -280,12 +285,14 @@ You require no proficiencies in order to wear light armour.
 \begin{center}
 \begin{rndtable}{p{\y cm} p{\w cm} p{\x cm} p{\u cm}}
 \bf Type   &	\bf Description	&	\bf Effect	& \bf Cost
-\armour{Bomb Suit}{Specially designed suit that one must climb inside. Used by professionals who frequently find themselves at risk of incineration or detonation}{+4 Block\comma{}\\ \minus{}6 Dodge \\ Resistance to Fire \& Concussive damage\comma{} \\Conspicuous.}{80\galleon}
-\armour{Runic Plate}{Enchanted plates of metal fit together to provide full protection over your body\comma{} reminiscent of medieval plate armour.}{+7 Block\comma{}\\ \minus{}5 Dodge\comma{} \\ Conspicuous\comma{} \\ Resistance to Piercing \& Slashing damage.}{200\galleon}
+\armour{Bomb Suit}{Specially designed suit that one must climb inside. Used by professionals who frequently find themselves at risk of incineration or detonation}{+5 Block\comma{}\\ \minus{}6 Dodge \\ Resistance to Fire \& Concussive damage\comma{} \\Conspicuous.}{80\galleon}
+\armour{Runic Mail}{Enchanted scales of metal fit together to provide full physical and magical protection over your body\comma{}.}{+7 Block\comma{}\\ \minus{}5 Dodge\comma{} }{200\galleon}
+\armour{Steel Plate}{It is said that modern problems require modern solutions. Steel plate is proof that, maybe, this isn't always the case}{+4 Block, \\ -5 Dodge, \\Conspicuous\comma{} \\ Resistance to Piercing \& Slashing damage.}{4\galleon}
 \armour{Special Response Set}{The bigger\comma{} badder brother of the Tactical armour. Used only when overwhelming firepower needs to be withstood\comma{} as it is much more cumbersome}{+5 Block\comma{} \\ \minus{}4 Dodge \\ Conspicuous}{120\galleon{}}
 \end{rndtable}
 \end{center}
 \normalsize
+
 
 
 \section*{Destroying Armour}
