@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">HPRPG</string>
+    <string name="title_character">Character</string>
+    <string name="title_spells">Spells</string>
+    <string name="title_skills">Skills</string>
+    <string name="home_newChar">New Character</string>
+    <string name="home_loadChar">Load Character</string>
+    <string name="home_listView">View Lists</string>
+    <string name="creation_choice1">Generate a new character</string>
+    <string name="creation_choice2">Import existing character</string>
+    <string name="creation_explain">
+        Generating a new character will take you step-by-step through the generation process, including randomly generating the attributes.
+        \n\n
+        Import a character if you already have a character sheet, or want to generate these values manually.
+    </string>
+    <string name="import_namePrompt">Character Name:</string>
+    <string name="charName"></string>
+
+    <string name="title_activity_generate_character">New  Character</string>
+    <string name="title_activity_import_character">Import Character</string>
+
+
+    <string-array name = "species">
+        <item>Human: Pureblood</item>
+        <item>Human: Halfblood</item>
+        <item>Human: Muggleborn</item>
+        <item>Human: Muggle</item>
+        <item>Half-Giant</item>
+        <item>Half-Veela</item>
+        <item>Goblin</item>
+        <item>Half-Goblin</item>
+        <item>Giant</item>
+    </string-array>
+    <string name = "species_prompt">Select Species</string>
+</resources>

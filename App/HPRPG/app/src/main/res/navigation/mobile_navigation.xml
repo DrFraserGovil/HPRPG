@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_character">
+
+    <fragment
+        android:id="@+id/navigation_character"
+        android:name="com.example.hprpg.ui.character.CharacterFragment"
+        android:label="@string/title_character"
+        tools:layout="@layout/fragment_character" />
+
+    <fragment
+        android:id="@+id/navigation_spells"
+        android:name="com.example.hprpg.ui.Spells.SpellFragment"
+        android:label="@string/title_spells"
+        tools:layout="@layout/fragment_spells" />
+
+    <fragment
+        android:id="@+id/navigation_skills"
+        android:name="com.example.hprpg.ui.skills.SkillFragment"
+        android:label="@string/title_skills"
+        tools:layout="@layout/fragment_skills" />
+</navigation>
