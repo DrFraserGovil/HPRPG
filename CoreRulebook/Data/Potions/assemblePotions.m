@@ -27,7 +27,7 @@ function assemblePotions()
 	end
 	
 	%% output to files
-    fileNameRoot = "../../Chapters/";
+    fileNameRoot = "../Chapters/";
     potionSTrigger = "%%PotionBegin";
     potionETrigger = "%%PotionEnd";
     
@@ -35,6 +35,7 @@ function assemblePotions()
 	fileName = strcat(fileNameRoot, 'Artificing.tex');
 	I = [potions.SimpleInclude] == 1;
 	subset = potions(I);
+    length(subset)
 	writeToFile(fileName,subset,potionSTrigger,potionETrigger);
 	
 	%longer output
@@ -51,29 +52,18 @@ function assemblePotions()
     q = [pouch.Ingredients];
     writeToFile(fileName,q,ingSTrigger,ingETrigger);
     
-    gnnText = "";
-    for i = 1:length(potions)
-        name = potions(i).Name;
-        if strfind(name,"\apos{}")
-           start = strfind(name,"\apos{}")-1;
-           endish = start + 8;
-           firstHalf = name(1:start);
-           secondHalf = name(endish:length(name));
-           name = strcat(firstHalf,"'",secondHalf);
-        end
-       eff = potions(i).Name;
-        gnnText = gnnText + name + ": " + prepareText(eff,0) + "\n";
-    end
-    FID = fopen("gnnData.txt",'w');
-    fprintf(FID, gnnText);
-    fclose(FID);
+   
 end
 
 function writeToFile(fileName,list,startTrigger,endTrigger)
+
 s = cellstr({list.Name});
-	[~,I] = sort(char(s));
+
+	[~,I] = sort(s);
+
 	list = list(I);
 	potionText = "\n";
+    disp("Writing " + num2str(length(list)) + " potions to file")
 	for i = 1:length(list)
 		p = list(i);
 		potionText = potionText + p.print() + "\n";

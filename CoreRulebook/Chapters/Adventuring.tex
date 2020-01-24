@@ -29,40 +29,60 @@ Adventuring gear is the set of (usually non\minus{}magical) items that you would
 }
 
 
+\def\q{1.6}
+\newcommand\itemEntry[3]
+{
+	 \parbox[t]{\q cm}{\bf \raggedright \footnotesize #1}	&	#2	&#3
+}
+
+\newcommand\doubleRow[2]
+{
+	\itemEntry#1 & ~ & \itemEntry#2 \\
+}
+\newcommand\singleRow[1]
+{
+	\itemEntry#1 \\
+}
+
+\def\cw{0.6}
 \def\t{0.01}
-\def\q{1.55}
+
 \footnotesize
-%%ItemsBegin
- \begin{center}\begin{rndtable}{|p{\q cm} l l p{\t cm} p{\q cm} l l|}\hline \tablehead \bf Name & \bf Weight & \bf Cost & ~ &\bf Name & \bf Weight & \bf Cost\\ \hline 	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Acid}	&	Light	&	10gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Ink}	&	Light	&	2gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Ammunition (10 Arrows)}	&	Light	&	15gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Ink pen}	&	Light	&	2gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Ammunition (10 Bolts)}	&	Light	&	15gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Jewellery (cheap)}	&	Light	&	40gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Ammunition (20 Blowgun Needles)}	&	Light	&	10gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Jewellery (fine)}	&	Light	&	150gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Ammunition (20 Rifle bullets)}	&	Light	&	30gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Jewellery (luxurious)}	&	Light	&	1000gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Ammunition (20 Slingshot Bullets)}	&	Light	&	4gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Ladder (2m)}	&	Heavy	&	60gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Backpack (25L)}	&	Light	&	25gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Lamp}	&	Light	&	5gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Backpack (65L)}	&	Medium	&	60gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Magnifying Glass}	&	Light	&	7gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Ball bearings}	&	Light	&	5gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Manacles (Iron)}	&	Medium	&	25gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Bedroll}	&	Light	&	15gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Mirror (handheld)}	&	Light	&	7gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Caltrops}	&	Medium	&	20gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Oil (flask of)}	&	Light	&	4gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Candle}	&	Light	&	1gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Paper (20 sheets A4)}	&	Light	&	2gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Case (map or scroll)}	&	Light	&	10gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Parchment (5 sheets A3)}	&	Light	&	10gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Chain (5m)}	&	Heavy	&	35gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Perfume (vial)}	&	Light	&	30gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Chalk}	&	Light	&	2gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Pole (10 ft)}	&	Light	&	10gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Chest}	&	Heavy	&	40gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Potion: Antidote}	&	Light	&	50gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Clothes (adventuring)}	&	Light	&	60gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Potion: Pepper\minus{}Up}	&	Light	&	30gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Clothes (common)}	&	Light	&	30gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Potion: Poison}	&	Light	&	100gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Clothes (fine)}	&	Light	&	80gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Potion: Wiggenweld}	&	Light	&	30gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Crowbar}	&	Medium	&	10gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Rations (1 day)}	&	Light	&	8gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Drinking Flask}	&	Light	&	10gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Rope (20m)}	&	Light	&	20gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Fishing Rod}	&	Light	&	40gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Sack}	&	Light	&	51gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Floo Powder (5 uses)}	&	Light	&	60gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Shovel}	&	Light	&	52gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Food (1 warm meal)}	&	Light	&	10gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Soap}	&	Light	&	53gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Glass Vial}	&	Light	&	8gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Tea Set}	&	Light	&	19gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Hammer}	&	Medium	&	15gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Tent (two\minus{}person)}	&	Light	&	55gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Holy Water}	&	Light	&	100gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Tinderbox}	&	Light	&	56gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Hourglass}	&	Light	&	5gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Torch}	&	Light	&	57gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Hunting Trap}	&	Light	&	50gp	&~&	 \bf \parbox[t]{\q cm}{\raggedright \footnotesize Whetstone}	&	Light	&	59gp \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Ingredient Pouch}	&	Light	&	35gp&~&~&~&~ \\ 
+
+ \begin{center}\begin{rndtable}{|p{\q cm} l p{\cw cm} p{\t cm} p{\q cm} p{\cw cm} l|}\hline \tablehead 
+ \bf Name & \bf Weight & \bf Cost & ~ &\bf Name & \bf Weight & \bf Cost\\ 
+  \hline
+ %%ItemsBegin
+\doubleRow{{ Acid}{Light}{\sickle{4}~}}{{ Jewellery (luxurious)}{Light}{\galleon{20}~}} 
+\doubleRow{{ Arrows (10)}{Light}{\sickle{4}~}}{{ Ladder (2m)}{Heavy}{\sickle{15}~}} 
+\doubleRow{{ Backpack (25L)}{Light}{\sickle{8}~\knut{15}}}{{ Lamp}{Light}{\sickle{2}~}} 
+\doubleRow{{ Backpack (65L)}{Medium}{\galleon{1}~\sickle{5}~}}{{ Magnifying Glass}{Light}{\sickle{2}~}} 
+\doubleRow{{ Ball bearings}{Light}{\sickle{1}~\knut{20}}}{{ Manacles (Iron)}{Medium}{\sickle{10}~}} 
+\doubleRow{{ Bedroll}{Light}{\sickle{5}~}}{{ Mirror (handheld)}{Light}{\sickle{2}~}} 
+\doubleRow{{ Blowgun Needles (20)}{Light}{\sickle{2}~}}{{ Oil (flask of)}{Light}{\sickle{1}~}} 
+\doubleRow{{ Caltrops}{Medium}{\sickle{6}~\knut{25}}}{{ Paper (20 sheets A4)}{Light}{\knut{10}}} 
+\doubleRow{{ Candle}{Light}{\knut{9}}}{{ Parchment (5 sheets A3)}{Light}{\sickle{2}~}} 
+\doubleRow{{ Case (map or scroll)}{Light}{\sickle{3}~\knut{10}}}{{ Perfume (vial)}{Light}{\sickle{10}~}} 
+\doubleRow{{ Chain (5m)}{Heavy}{\sickle{12}~}}{{ Pole (3 m)}{Light}{\sickle{8}~\knut{15}}} 
+\doubleRow{{ Chalk}{Light}{\knut{19}}}{{ Potion: Antidote}{Light}{\galleon{1}~}} 
+\doubleRow{{ Chest}{Heavy}{\galleon{1}~}}{{ Potion: Pepper\minus{}Up}{Light}{\sickle{10}~\knut{5}}} 
+\doubleRow{{ Crossbow Bolts (10)}{Light}{\sickle{4}~}}{{ Potion: Poison}{Light}{\galleon{2}~}} 
+\doubleRow{{ Crowbar}{Medium}{\sickle{3}~\knut{10}}}{{ Potion: Wiggenweld}{Light}{\sickle{10}~\knut{5}}} 
+\doubleRow{{ Drinking Flask}{Light}{\sickle{3}~\knut{10}}}{{ Rations (1 day)}{Light}{\sickle{2}~\knut{20}}} 
+\doubleRow{{ Firearm Bullets (20)}{Light}{\sickle{10}~}}{{ Rope (20m)}{Light}{\sickle{4}~\knut{20}}} 
+\doubleRow{{ Fishing Rod}{Light}{\sickle{13}~\knut{15}}}{{ Sack}{Light}{\knut{19}}} 
+\doubleRow{{ Floo Powder Pouch}{Light}{\galleon{1}~}}{{ Shovel}{Light}{\sickle{4}~}} 
+\doubleRow{{ Food (1 warm meal)}{Light}{\sickle{3}~\knut{10}}}{{ Slingshot Bullets (10)}{Light}{\sickle{1}~}} 
+\doubleRow{{ Glass Vial}{Light}{\sickle{2}~\knut{20}}}{{ Soap}{Light}{\knut{19}}} 
+\doubleRow{{ Hammer}{Medium}{\sickle{5}~}}{{ Tea Set}{Light}{\sickle{1}~\knut{20}}} 
+\doubleRow{{ Holy Water}{Light}{\galleon{2}~}}{{ Tent (two\minus{}person)}{Light}{\galleon{1}~\sickle{5}~}} 
+\doubleRow{{ Hourglass}{Light}{\sickle{1}~\knut{20}}}{{ Tinderbox}{Light}{\sickle{1}~}} 
+\doubleRow{{ Hunting Trap}{Light}{\galleon{1}~}}{{ Torch}{Light}{\knut{19}}} 
+\doubleRow{{ Ingredient Pouch}{Light}{\sickle{5}~}}{{ Whetstone}{Light}{\sickle{1}~\knut{20}}} 
+\doubleRow{{ Ink}{Light}{\knut{19}}}{{ ~}{~}{~}} 
+\doubleRow{{ Ink pen}{Light}{\knut{19}}}{{ ~}{~}{~}} 
+\doubleRow{{ Jewellery (cheap)}{Light}{\sickle{10}~}}{{ ~}{~}{~}} 
+\doubleRow{{ Jewellery (fine)}{Light}{\galleon{3}~}}{{ ~}{~}{~}} 
 \hline
 \end{rndtable}
 \end{center} 
@@ -84,11 +104,13 @@ Adventuring gear is the set of (usually non\minus{}magical) items that you would
  
  \generic{Chain (5m)}{A set of large metal links. Can be broken by a DV18 ATH (Strength) check\comma{} or by taking more than 10 physical damage.}
  
+ \generic{Chest}{A large wooden structure\comma{} bound with iron bars. Useful for storage\comma{} with an interior volume of 150L.}
+ 
  \generic{Crowbar}{Gives advantage on Strength checks when leverage can be applied.}
  
  \generic{Drinking Flask}{Contains enough water for one person for one day}
  
- \generic{Floo Powder (5 uses)}{Can be used to navigate from one fireplace on the Floo network to another.}
+ \generic{Floo Powder Pouch}{Can be used to navigate from one fireplace on the Floo network to another. Each pouch contains enough powder for 5 journeys.}
  
  \generic{Holy Water}{May be splashed on a melee opponent\comma{} or used as an improvised Ranged weapon\comma{} following the normal rules. In either case\comma{} do 3d4 Celestial damage.}
  
@@ -126,30 +148,32 @@ Adventuring gear is the set of (usually non\minus{}magical) items that you would
 
 Artefacts are items which are more magical in nature\comma{} and generally cannot be synthesised directly\comma{} though they may be recreated through enchanting. Some artefacts are incredibly rare and powerful\comma{} and can be hard to track down. The list below contains only some artefacts which are commonly found in the wizarding world\comma{} and should by no means be thought of as extensive. 
 \def\q{4}
-%%ArtefactBegin \begin{center}\begin{rndtable}{|p{\q cm} l l |}\hline \tablehead \bf Name & \bf Weight & \bf Cost \\ \hline 	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Bludger}	&	Heavy	&	250 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Broomstick (cheap)}	&	Medium	&	2000 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Broomstick (fine)}	&	Medium	&	25000 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Crystal Ball}	&	Light	&	150 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Darkandles}	&	Light	&	50 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Deluminator}	&	Light	&	3000 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Extending Stachel}	&	Light	&	5000 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Gobstone (Set of 30)}	&	Light	&	15 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Golden Snitch}	&	Light	&	500 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Howler}	&	Light	&	15 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Invisibility Cloak}	&	Medium	&	12000 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Mokeskin Pouch}	&	Light	&	250 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Obsidian Manacles}	&	Medium	&	7500 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Omnioculars}	&	Light	&	40 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Pensieve}	&	Heavy	&	20000 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Portkey}	&	(Varies)	&	800 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Quick\minus{}Quotes Quill}	&	Light	&	75 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Rememberall}	&	Light	&	50 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Self\minus{}Erecting Tent}	&	Heavy	&	12000 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Sneakoscope}	&	Light	&	250 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Spellotape}	&	Light	&	12 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Talking Portrait}	&	Heavy	&	750 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Time\minus{}Turner}	&	Light	&	5000000 gold \\ 
-	  \parbox[t]{\q cm}{\bf \raggedright \footnotesize Wand}	&	Light	&	300 gold \\ 
+ \begin{center}\begin{rndtable}{|p{\q cm} l l |}\hline \tablehead \bf Name & \bf Weight & \bf Cost \\ \hline 	  
+ 
+ %%ArtefactBegin\singleRow{{Bludger}{Heavy}{\galleon{5}~}}
+\singleRow{{Broomstick (cheap)}{Medium}{\galleon{40}~}}
+\singleRow{{Broomstick (fine)}{Medium}{\galleon{500}~}}
+\singleRow{{Crystal Ball}{Light}{\galleon{1}~}}
+\singleRow{{Darkandles}{Light}{\sickle{4}~}}
+\singleRow{{Deluminator}{Light}{\galleon{60}~}}
+\singleRow{{Extending Stachel}{Light}{\galleon{100}~}}
+\singleRow{{Gobstone (Set of 30)}{Light}{\sickle{5}~}}
+\singleRow{{Golden Snitch}{Light}{\galleon{10}~}}
+\singleRow{{Howler}{Light}{\sickle{1}~}}
+\singleRow{{Invisibility Cloak}{Medium}{\galleon{240}~}}
+\singleRow{{Mokeskin Pouch}{Light}{\galleon{1}~}}
+\singleRow{{Obsidian Manacles}{Medium}{\galleon{150}~}}
+\singleRow{{Omnioculars}{Light}{\sickle{15}~}}
+\singleRow{{Pensieve}{Heavy}{\galleon{400}~}}
+\singleRow{{Portkey}{(Varies)}{\galleon{16}~}}
+\singleRow{{Quick\minus{}Quotes Quill}{Light}{\galleon{1}~\sickle{10}~}}
+\singleRow{{Rememberall}{Light}{\galleon{1}~}}
+\singleRow{{Self\minus{}Erecting Tent}{Heavy}{\galleon{24}~}}
+\singleRow{{Sneakoscope}{Light}{\galleon{1}~}}
+\singleRow{{Spellotape}{Light}{\sickle{4}~}}
+\singleRow{{Talking Portrait}{Heavy}{\galleon{15}~}}
+\singleRow{{Time\minus{}Turner}{Light}{\galleon{100000}~}}
+\singleRow{{Wand}{Light}{\galleon{6}~}}
 \hline
 \end{rndtable}
 \end{center} 

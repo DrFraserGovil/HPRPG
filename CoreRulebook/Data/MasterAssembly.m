@@ -12,14 +12,20 @@ function MasterAssembly(quitMode)
     
      disp('Assembling Skills');
      assembleSkills();
+      disp('Assembling Statuses');
     assembleStatus()
+     disp('Assembling Weapons');
     assembleWeapons();
 	
+     
+     disp('Assembling Tools');
+    assembleTools();
+
+
+    disp('Assembling Potions');
 	assemblePotions();
-	assembleTools();
-% run assembleArchetypes.m
-% run assembleTools.m
-%quit;
+    
+
     path(pathdef)
     
     disp('Data Transfer complete. Beginning xelatex compilation now');

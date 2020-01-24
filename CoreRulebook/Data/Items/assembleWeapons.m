@@ -44,11 +44,11 @@ function assembleWeapons()
     foundNames= foundNames(I);
     foundLines = foundLines(I);
     %% write to table
-    preamble = '\begin{rndtable}{|l c c l |}';
-    headers = '\hline \tablehead \normalsize \bf Weapon & \normalsize \bf Modifier &  \normalsize \bf Damage & \normalsize \bf Properties \\ \hline';
+    preamble = '\begin{rndtable}{|l l c c l |}';
+    headers = '\hline \tablehead \normalsize \bf Weapon & \normalsize \bf Cost & \normalsize \bf Modifier &  \normalsize \bf Damage & \normalsize \bf Properties \\ \hline';
     text = prepareText(strcat(preamble,headers));
     for j = 1:length(foundNames)
-        text = strcat(text, "{ \\it ", foundNames{j}," Weapons} & & & \\\\ \n");
+        text = strcat(text, "{ \\it ", foundNames{j}," Weapons} & & & & \\\\ \n");
         
         for (i = 1:height(foundLines{j}))
             line = foundLines{j}(i,:);
@@ -56,7 +56,7 @@ function assembleWeapons()
             check = strcat(line.Dice{1},'~', line.Damage{1});
 
 
-            line = strcat("\\bf ~~~~~", line.Weapon{1}, "\t&\t", line.Check{1},"\t&\t",check, "\t&\t",notes,"\\\\ \n");
+            line = strcat("\\bf ~~~~~", line.Weapon{1}, "\t&\t", prepareText(line.Cost{1}),"\t&\t",line.Check{1},"\t&\t",check, "\t&\t",notes,"\\\\ \n");
             text = strcat(text, line);
         end
     end

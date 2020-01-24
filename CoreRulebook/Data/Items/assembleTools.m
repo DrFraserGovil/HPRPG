@@ -23,15 +23,17 @@ function assembleTools()
     n = size(tools);
     descriptionText = "";
     for (i = 1:n)
-        tool = prepareText(tools.Name{i});
-        weight = prepareText(tools.Weight{i});
-        cost = prepareText(num2str(tools.Cost(i)));
-        description = prepareText(tools.Description{i});
-        line = strcat('\t\\bf ',{' '}, tool, '\t&\t ', weight, '\t&\t', cost, ' gold  \n \\\\ \n'); 
-        text = strcat(text,line);
+        if ~isempty(tools.Name{i})
+            tool = prepareText(tools.Name{i});
+            weight = prepareText(tools.Weight{i});
+            cost = prepareText(tools.Cost(i));
+            description = prepareText(tools.Description{i});
+            line = strcat('\t\\bf ',{' '}, tool, '\t&\t ', weight, '\t&\t', cost, '\n \\\\ \n'); 
+            text = strcat(text,line);
 
-        entry = strcat('\n \n \\tool{',tool,'}{',description,'}');
-        descriptionText = descriptionText + entry;
+            entry = strcat('\n \n \\tool{',tool,'}{',description,'}');
+            descriptionText = descriptionText + entry;
+        end
     end
     ender = '\\hline\n\\end{rndtable}\n\\end{center} \n';
 

@@ -45,9 +45,11 @@
 
 %%Character Substitutions
 \def\apos{'}
-\def\galleon{$\mathfrak{G}$}
-\def\sickle{$\wreath$}
-\def\knut{$\btimes$}
+
+
+\newcommand\galleon[1]{$\mathfrak{G}$#1}
+\newcommand\sickle[1]{{\large $\wreath$}#1}
+\newcommand\knut[1]{$\btimes$#1}
 \renewcommand{\minus}{-}
 \def\comma{,}
 \def\dash{-}
@@ -143,6 +145,8 @@
 \def\baseDodge{8}
 \def\baseBlock{8}
 
+%stupid broken matlab thing
+\def\negTwo{-2}
 
 %% Spell stuff
 
