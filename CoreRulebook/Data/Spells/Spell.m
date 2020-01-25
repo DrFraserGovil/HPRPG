@@ -49,7 +49,7 @@ classdef Spell < handle
             obj.Incantation = line.Incantation{1};
             obj.Type = line.Type{1};
             n = line.Level;
-            levelNames = ["Beginner", "Novice", "Adept", "Expert", "Master"];
+            levelNames = ["Beginner", "Novice","Adept", "Expert", "Master", "Ascendant"];
             name = levelNames(n);
             obj.Level = n;
             obj.LevelName = name;

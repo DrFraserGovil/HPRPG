@@ -6,7 +6,7 @@ function allSpellAssembler(maxLevel,fileNameRoot)
     if nargin < 2
         disp('Insufficient inputs provided');
         if nargin < 1
-            maxLevel = 5;
+            maxLevel = 6;
         end
         addpath('../Functions/');
         fileNameRoot = '../../Chapters/';
@@ -58,7 +58,7 @@ function allSpellAssembler(maxLevel,fileNameRoot)
        [~,I]= sort({schools(i).Discipline.Name});
        schools(i).Discipline = schools(i).Discipline(I);
        for j = 1:length(schools(i).Discipline)
-            for k = 1:5
+            for k = 1:6
                 [~,I] = sort({schools(i).Discipline(j).Spells{k}.Name});
                 schools(i).Discipline(j).Spells{k} = schools(i).Discipline(j).Spells{k}(I);
             end
@@ -79,19 +79,19 @@ function allSpellAssembler(maxLevel,fileNameRoot)
             t = t + "\n\\vbox{\n"; 
             
             col = ">{\\centering\\arraybackslash}m{\\w cm} >{\\centering\\arraybackslash}m{\\s cm}";
-            t = t + "\\begin{rndtable}{"+ col + col + col + col + col + "}\n";
-            t =t + "\\multicolumn{10}{c}{\\bf \\normalsize " + disc.Name + "} \n\\\\\n ";
-			array = ["Beginner", "Novice", "Adept", "Expert", "Master"];
-            for q = 1:5
+            t = t + "\\begin{rndtable}{"+ col + col + col + col + col + col + "}\n";
+            t =t + "\\multicolumn{12}{c}{\\bf \\normalsize " + disc.Name + "} \n\\\\\n ";
+			array = ["Beginner", "Novice", "Adept", "Expert", "Master", "Ascendant"];
+            for q = 1:6
                 t = t + "\\multicolumn{2}{c}{\\cellcolor{\\tablecolorhead} \\bf " + array(q)+ "}";
-                if q <5
+                if q <6
                     t = t + "&";
                 end
             end
             
             for row = 1:disc.maxSpellNumber()
                 t = t + "\n \\\\ \n";
-                for column = 1:5
+                for column = 1:6
                     
                     if row <= length(disc.Spells{column})
                         sp = disc.Spells{column}(row);
@@ -100,7 +100,7 @@ function allSpellAssembler(maxLevel,fileNameRoot)
                         t = t + "~\t & ~\t";
                     end
                     
-                    if column < 5
+                    if column < 6
                         t = t + " & ";
                     end
                 end        
