@@ -5,8 +5,8 @@
 \usepackage{multicol}
 \usepackage{graphicx}
 \usepackage{tcolorbox}
-
-\usepackage[left = 0.2in, right = 0.2 in, top = 0.2in, bottom = 0.2in]{geometry}
+\usepackage{allrunes}
+\usepackage[left = 0in, right = 0in, top = 0in, bottom = 0in]{geometry}
 \usepackage{titlesec}
 \usepackage{amsmath}
 \usepackage{calc}
@@ -53,15 +53,15 @@
 \node at (24.5,2.4) {\bf Fortitude Points};
 
 %%% attributes block
-\def\cx{0.2}
-\def\w{3.2}
+\def\cx{0}
+\def\w{2.5}
 \def\gap{0.67}
-\def\hB{2.1}
-\def \xgap{ (\w + 1)}
+\def\hB{1.9}
+\def \xgap{ (\w + 0.8)}
 \def\ry{0.5}
-\def\voff{-1.3}
+\def\voff{-1.2}
 \draw[rounded corners, gray!70, fill = gray!20] ({\cx-\gap},{\voff+\gap}) rectangle ({\cx + \xgap + \w+\gap},{\voff-4*(\hB+\gap)});
-\foreach \c [count = \q from 0] in { {Athletics}, {Finesse}, {Spirit}, {Charisma}, {Intelligence},{Perception}, {Power}, {Evil} }
+\foreach \c [count = \q from 0] in { {Fitness}, {Finesse}, {Spirit}, {Charisma}, {Intelligence},{Perception}, {Power}, {Evil} }
 {
 	\def\y{ {\voff-(\q - Mod(\q,2))*(\hB+\gap)/2} }
 	\def\x{  {\cx + Mod(\q,2)*\xgap} }
@@ -91,23 +91,20 @@
 %~ \node at (4.5,-13.2) {  Statuses \& Temportary Effects};
 %~ \draw[rounded corners] (0,-13.5) rectangle (9,-17);
 
-\def\ct{-17.5}
-%% aiming reticule
-\def\ell{0.75}
-\def\r{1.1}
-\def\cx{1.2}
-\def\cy{-15}
-\draw (\cx,\cy) circle (\r);
-\draw (\cx,\cy) circle ({\r*1.1});
-\draw (\cx,{\cy+\r+\ell*2/3})--(\cx,{\cy+\r-\ell/3});
-\draw (\cx,{\cy-\r-\ell*2/3})--(\cx,{\cy-\r+\ell/3});
-\draw ({\cx+\r+\ell*2/3},\cy)--({\cx+\r-\ell/3},\cy);
-\draw ({\cx-\r-\ell*2/3},\cy)--({\cx-\r+\ell/3},\cy);
-\node at (\cx, \ct) {\bf Accuracy};
+
+\def\cT{-14.7}
+\def\ct{-18.5}
+
+%%%%% COLUMN ONE
+\def\cx{1}
+
+%%potion
+\node at ({\cx+0.05},{\cT + 1.5}) {\includegraphics[scale = 0.27]{../Images/potion}};
+\node at (\cx, \cT) {\bf Potioneering};
 
 %% shield
-\def\cx{4.5}
-\def\cy{-13}
+
+\def\cy{-15}
 \def\pdx{0.45}
 \def\pdy{}
 \def\r{0.9}
@@ -119,21 +116,52 @@
 \def\thetaE{50}
 \def\thetaA{90}
 \def\thetaB{150}
+\draw[domain = \thetaS:\thetaE,thick] plot ({\cx + \pdx + \r*sin(\x)},{\cy - \r*cos(\x)});
+\draw[domain = \thetaS:\thetaE,thick] plot ({\cx - \pdx - \r*sin(\x)},{\cy - \r*cos(\x)});
 
-\draw[domain = \thetaS:\thetaE] plot ({\cx + \pdx + \r*sin(\x)},{\cy - \r*cos(\x)});
-\draw[domain = \thetaS:\thetaE] plot ({\cx - \pdx - \r*sin(\x)},{\cy - \r*cos(\x)});
-
-\draw[domain = \thetaA:\thetaB] plot ({\cx - \pdx - \r*sin(\thetaE) + \R*sin(\x)},{\cy - \r*cos(\thetaE) +1.6*\R*cos(\x)});
-\draw[domain = \thetaA:\thetaB] plot ({\cx + \pdx + \r*sin(\thetaE) - \R*sin(\x)},{\cy - \r*cos(\thetaE) +1.6*\R*cos(\x)});
+\draw[domain = \thetaA:\thetaB,thick] plot ({\cx - \pdx - \r*sin(\thetaE) + \R*sin(\x)},{\cy - \r*cos(\thetaE) +1.3*\R*cos(\x)});
+\draw[domain = \thetaA:\thetaB,thick] plot ({\cx + \pdx + \r*sin(\thetaE) - \R*sin(\x)},{\cy - \r*cos(\thetaE) +1.3*\R*cos(\x)});
 %\draw[domain = \thetaS:\thetaE] plot ({\cx - \pdx - \r*sin(\x)},{\cy - \r*cos(\x)});
 \node at (\cx, \ct) {\bf Block};
 
+
+
+
+%%%%COLUMN TWO 
+\def\cx{4.8}
+%% enchantment
+\def\cy{-13}
+\def\r{0.15}
+\draw[domain = 0:360, variable = \t, samples = 100,thick] plot ({\cx + 1.4*sin(\t)*sin(\t/2)}, {\cy - cos(\t)});
+%\draw (\cx,{\cy-1-\r}) circle (\r);
+%\node at (\cx,{\cy - 1- \r-0.05}) {\textarc{j}};
+\foreach \a/\b [count=\q from 0] in {0/{j},  50/{\Ing}, 80/{\RR}   }
+{
+	\def\x{ {\cx + 1.4*sin(\a)*sin(\a/2)} };
+	\def\xE{ {\cx + 1.4*sin(\a)*sin(\a/2)} };
+	\def\xS{ {\cx + 1.4*sin(360 - \a)*sin((360-\a)/2)} };
+	\def\yS{ \cy - cos(\a)   };
+	\def\yE{ \cy - cos(\a)  - 0.1};
+	\if\q0
+		\def\yE{\yS}
+	\fi
+	\draw (\xE,{\yS})--(\xE,{\yE});
+	\draw (\xE,{\yE - \r}) circle (\r);
+	\node at (\xE,{\yE - \r-0.03}) {\scriptsize\textarc{\b}};
+	
+	\draw (\xS,{\yS})--(\xS,{\yE});
+	\draw (\xS,{\yE - \r}) circle (\r);
+	\node at (\xS,{\yE - \r-0.03}) {\scriptsize\textarc{\b}};
+}
+\node at (\cx, \cT) {\bf Enchantment};
+
+
 %%avoid
-\def\cx{7.2}
-\def\cy{-15}
-\def\D{1.6}
-\def\r{1}
-\def\R{1.1}
+
+\def\cy{-16.9}
+\def\D{1.4}
+\def\r{0.9}
+\def\R{1}
 \draw (\cx,\cy) circle (\r);
 \draw[ultra thick, ->] (\cx,{\cy-\D})--(\cx,{\cy-\R}) arc (90:270:-\R) -- (\cx,{\cy + \D}); 
 \node at (\cx, \ct) {\bf Dodge};
@@ -186,7 +214,7 @@
 
 %
 
-\foreach \a/\b [count = \q from 0] in {  {Acrobatics}/{ATH},{Arcane}/{INT}, {Chaos}/{EVL}, {Compassion}/{PER},{Deception}/{CHR}, {Dexterity}/{FIN}, {Endurance}/{SPR},  {Intimidation}/{EVL}, {History}/{INT},{Nature}/{INT}, {Observation}/{PER\hspace{-0.7ex}} ,{Performance}/{CHR}, {Persuasion}/{CHR}, {Precision}/{FIN},{Research}/{INT}, {Speed}/{ATH},{Stealth}/{FIN},{Strength}/{ATH},  {Willpower}/{SPR}}
+\foreach \a/\b [count = \q from 0] in { {Acrobatics}/{FNS}, {Arcane}/{INT}, {Chicanery}/{FNS}, {Conviction}/{SPR}, {Deception}/{CHR}, {Empathy}/{PRC}, {Flora \& Fauna}/{INT}, {History}/{INT}, {Intimidation}/{POW}, {Investigation}/{PRC}, {Observation}/{PRC}, {Performance}/{CHR}, {Persuasion}/{CHR}, {Research}/{INT}, {Speed}/{FIT}, {Stealth}/{FNS}, {Strength}/{FIT}, {Vitality}/{FIT}, {Willpower}/{SPR}}
 {
 	\def\y{\topQ - \q*\gap}
 	\draw (\x,\y) rectangle ({\x+\delta},{\y+\delta});
