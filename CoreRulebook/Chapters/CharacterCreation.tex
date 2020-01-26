@@ -155,54 +155,32 @@ It is generally impossible to switch species once a character has been created, 
 	 
 	 
 \fi
-\subfile{Chapters/Archetypes}
+
 \chapter{Main Attributes}\label{C:Attributes}
 
 Attributes are the defining characteristics of your character. They enumerate how strong willed, how athletic and how popular your character is. These characteristics in turn define how good your character is at certain skills -- a character with a large willpower, for instance, will be good at combat magic, whilst a character with a low athleticism would find themselves unable to run away from threats!
 
 \begin{itemize}
-\item Athleticism (ATH):  Your character{\apos}s ability to exert themselves physically; to run, jump and deal physical attacks. Athletic characters are often harder to kill, and able to recover more quickly from wounds. 
+	\item Fitness (FIT): The measure of the physical capabilities of a character, as well as their general health. 
 
-\item     Finesse (FIN): Your character{\apos}s ability to execute actions with delicacy and precision. Picking pockets, hiding and ranged attacks require finesse to execute properly. 
+	\item     Finesse (FNS): A being's ability to execute actions with delicacy and precision. Picking pockets, hiding and ranged attacks require finesse to execute properly. 
 
-  \item Spirit (SPR): Your character{\apos}s ability to face down external threats without flinching, to be sure of themselves, and to resist when the odds are against them. A character with a large spirit can often resist the effects of mind-altering spells, and can summon the strength to carry on when all others would have submitted. Typically considered the defining characteristic of Gryffindor House. 
+	\item Spirit (SPR): The internal strength, bravery and conviction of a being. Typically considered the defining characteristic of Gryffindor House. 
    
-   \item Charisma (CHR): The ability of a leader, and those who influence others. Charisma helps your character convince others of what you say, and make them like and trust you. Charisma also helps cast magic that alters their perception of reality. A trait typically associated with Slytherin House.
+   \item Charisma (CHR): The ability of a leader, and those who influence others. A trait typically associated with Slytherin House.
    
-   \item Intelligence (INT): Intelligence is the measure of your analytical and memory-based problem solving skills. Though not always a substitute for raw magical power, an intelligent character learns information quickly, can recall it in an instant, and can often be helpful in identifying threats. Typically considered the defining trait of Ravenclaw House.
+   \item Intelligence (INT): A measure of analytical ability, memory and ability to assimilate new information. Typically considered the defining trait of Ravenclaw House.
    
-    \item Perception (PER): Perception is your awareness of the world around you -- be it spotting a hidden tripwire, or the perception of other's emotions. Often going hand in hand with a kind and compasisonate soul, perception is considered the defining trait of Hufflepuff House. 
+    \item Perception (PRC): Awareness of the world outside a being's own head -- spotting a hidden tripwire, or the detection of other's emotions. Often going hand in hand with a kind and compassionate soul, perception is considered the defining trait of Hufflepuff House. 
    
-   \item Power (POW): Sometimes you don{\apos}t want to levitate a single brick our of a wall: you want the wall to explode. When finesse and trickery fail, throwing huge amounts of magical power at a problem can sometimes be beneficial. Some of the most spectacular magics require a large power,  but when a powerful spell goes wrong, the effects can be devastating and unforeseeable. 
+   \item Power (POW): The amount of raw magical power a being can wield. Not always a substitute for slyness and inventiveness, however. 
 
-   \item  Evil (EVL): Evil characters commit atrocities in the name of furthering their own goals. They will go to any lengths to get what they desire, including killing, maiming and torturing. Evil magics may grant you enormous powers, but are you willing to pay the price?
+   \item  Evil (EVL): A measure of a being's depravity, its lack of care for human life. A being with a high Evil stat is one to be feared. 
    
  \end{itemize}
- 
- \subsection*{Proficiencies}
- 
- Most Attributes are subdivided further into several {\it proficiencies}. These provide bonuses when the check is of a certain type, as discussed in more detail in section \ref{S:Profs}.
- \begin{itemize}[leftmargin = 0.2cm]
-{\raggedright  
-	\item ATH: Acrobatics, Speed, Strength
+	
+In addition to these 8 high-level attributes, there exist a number of specialised domains within most of them. These are known as {\it Proficiencies}. These, along with a more in-depth discussion of the actions associated with each of the attributes, are discussed in more detail on page \pageref{S:Proficiencies}.
 
-	\item FIN: Dexterity, Stealth, Precision
-
-	\item SPR: Endurance, Willpower
-
-	\item CHR: Deception, Performance, Persuasion
-
-	\item INT:  Research, Arcane Knowledge, History, Flora \& Fauna
-
-	\item PER: Compassion, Observation
-
-	\item POW: (None)
-
-	\item EVL: Chaos, Intimidation
-		}
-\end{itemize}
-
-Being considered `proficient' in an area means you are especially good at it. The mechanism of this in-game is discussed in the Actions section.
 
  \subsection*{Determining Abilities}
  
@@ -210,8 +188,7 @@ Perhaps the most important part of Character Creation is determining the attribu
  
 Generally speaking, you will want to allocate the largest of these values to the attributes which your character will rely on the most -- so a powerful magical warrior will get the largest values allotted to SPR and POW, whilst a seer would get larger values dedicated to PER. 
  
-~
-\newpage
+
  \section{Health \& Fortitude}
  
  Having determined your character's baseline attributes, we may now begin to see how this affects values relevant to gameplay -- namely, the Health and Fortitue of your character.
@@ -274,10 +251,6 @@ These statistic include:
 	
 	In addition to the proficiencies mention above, you also may want to keep track of the weapons and tools you are considered proficient in. 
 	
-	\item {\bf Accuracy}
-	
-	The modifier you use to determine if an attack lands home. Typically your FIN modifier plus your Expertise bonus, though may have multiple such values for different weapons. 
-	
 	\item {\bf Block}
 	
 	One of two {\it Instincts} used to context accuracy checks. Value set to 10 + Athletics modifier.
@@ -286,16 +259,16 @@ These statistic include:
 	
 	The other {\it Instinct}. Value is 10 + Finesse modifier.
 	
-	\item {\bf Spellcasting Dice}
+	\item {\bf Spellcasting Bonuses}
 	
-	A series of 7 values which determines the dice size you use to cast spells in each of the 7 schools of magic
+	Wizards have different abilities in each of the schools of magic, and their associated Disciplines. You need to keep track of your abilities in this field. 
 	
 	\item {\bf Spell Power}
 	
-	Determines the DV of resist checks for spells that you cast. Value is 6 + Expertise bonus + POW modifier. 
+	Determines the DV of resist checks for spells that you cast. Value is 8 + Expertise bonus + POW modifier. 
 \end{itemize}
 
 The useage of these statistics, and the role they play in the game, is discussed in more detail in the relevant sections below. 
 
 
-
+\subfile{Chapters/Archetypes}
