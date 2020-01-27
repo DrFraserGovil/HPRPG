@@ -67,20 +67,20 @@ Some Archetypes, however, grant extra expertise bonus, and as such, deviate from
 
 \subsection{Proficiencies}
 
-There are many areas in which one can be considered {\it proficient} - including the use of wands, weapons, tools and armour. In addition to this, seven of the eight Character Attribute's can be broken down into several specialised subdomains: {\bf proficiencies}. Being proficient in a domain means that, when a requested action falls into that subdomain, you may add your proficiency bonus to the resulting check. 
+There are many areas in which one can be considered {\it proficient} - including the use of wands, weapons, tools and armour. In addition to this, seven of the eight Character Attributes can be broken down into several specialised subdomains: {\bf proficiencies}. Being proficient in a domain means that, when a requested action falls into that field, you may add your proficiency bonus to the resulting check. 
 
 The profiencies are:
 
 \newcommand\prof[2]
 {
-	-{\bf #1}:	&	#2 \\	
+-{\bf #1}:	&	\parbox[t]{ 6 cm}{\raggedright #2} \\	
 }
 \begin{tabular}{l l}
 \prof{Fitness}{Speed, Strength, Vitality}
 \prof{Finesse}{Acrobatics, Chicanery, Stealth}
 \prof{Spirit}{Conviction, Willpower}
 \prof{Charisma}{Deception, Performance, Persuasion}
-\prof{Intelligence}{Arcane, History, Nature, Research}
+\prof{Intelligence}{Arcane, History, Logic,  Nature, Research, Un-nature}
 \prof{Perception}{Empathy, Investigation, Observation}
 \prof{Power}{Intimidation}
 \end{tabular}
@@ -158,7 +158,7 @@ If you have the status effect {\it Check Advantage}, or are otherwise granted th
 
 Conversely, a {\it Check Disadvantage} requires you to perform a check twice and take the lower of the two values. 
 
-Check-Advantage and Check-Disadvantage compound each other, to a limited extent. If a character already possesses check-advantage, and gets a second separate buff which gives them check-advantage, then they are in a state of `super-advantage', in which case you roll three dice, and take the highest. Equally, two disadvantages compound into super-disadvantage. 
+Check-Advantage and Check-Disadvantage compound each other, to a limited extent. If a character already possesses check-advantage, and gets a second separate effect which also gives them check-advantage, then they are in a state of `super-advantage', in which case you roll three dice, and take the highest. Equally, two disadvantages compound into super-disadvantage. 
 
 A disadvantage layered on an advantage cancel each other out, and a disadvantage on a super-disadvantage reduces it to normal. 
 
@@ -187,9 +187,11 @@ Use the following table for reference:
 \end{center}
 
 
+For (dis)advantages to compound, they must arise from totally different sources - drinking two potions which both provide Advantage will not give super advantage, but being invisible {\it and} drinking a potion would. 
+
 \section{Working Together}
 
-Occasionally two or more characters might decide that, together, they have a better chance of succeeding in a given task, and can work together. A character may only help if they could perform the action themselves (so you could only help pick a lock if you also had proficiency in lockpicking tools), or if you can provide a reasonable justification for how you are helping the action succeed (an engineer attempting to fix an engine could use somebody to hand them tools, for example). 
+Occasionally two or more characters might decide that, together, they have a better chance of succeeding in a given task, and can work together. A character may only help if they could perform the action themselves (so you could only help pick a lock if you also had proficiency in lockpicking tools), or if you can provide a reasonable justification for how you are helping the action succeed (an untrained individual could help an engineer fix an engine by passing them tools, and holding a flashlight, for example). 
 
 When working together like this, the character with the highest relevant modifier performs the check with check-advantage. 
 
@@ -200,9 +202,9 @@ Sometimes, you might need to complete a task where the entire group needs to suc
 
 Sometimes, after an action fails, a character may want to try again immediately. This is generally to be discouraged - it makes the game less fun if everyone is just waiting for Mike to (finally) roll a 20. 
 
-A general rule is that you can't repeat an action until there is a material change in circumstance that might alter the outcome. This doesn't usually apply in combat as, you are sacrificing your other combat actions each turn cycle to try anew. 
+A general rule is that you can't repeat an action until there is a material change in circumstance that might alter the outcome. This doesn't usually apply in combat as you are sacrificing your other combat actions each turn cycle to try anew. 
 
-Of course, the GM may make allowances for multiple attempts. This will most commonly occur if you have some finite resource that you are burning through. If you only have 3 fragile lockpicks, there's no particular harm in giving you 3 attempts at opening the door. 
+Outside of combat, however, the GM may make allowances for multiple attempts. This will most commonly occur if you have some finite resource that you are burning through. If you only have 3 fragile lockpicks, there's no particular harm in giving you 3 attempts at opening the door. 
 
 If, however, a character is attempting to `spam' a check -- i.e. just keep rolling the dice until they succeed, and it makes enough narrative sense that the GM doesn't overrule it, then they instead ask you to roll a d100 on the table found on page \pageref{S:Multi}, which will determine the number of failed attempts. 
 
@@ -255,7 +257,7 @@ The {\it Acrobatics}, {\it Chicanery} and {\it Stealth} proficiencies measure a 
 
 \proficiency{Acrobatics}{A Finesse (Acrobatics) check is used whenever a being's balance is called into question, such as maintaining balance on a rocking boat or slipping on an icy floor, as well as for more extravagant feats such as rolling, flipping, diving and somersaulting. }
 
-\proficiency{Chicanery}{Chicanery is the tricker's and the thief's domain: a Finesse (Chicanery) check will be called for whenever you try to use duplicity, distraction or slight of hand to achieve your goal. }
+\proficiency{Chicanery}{Chicanery is the trickster's and the thief's domain: a Finesse (Chicanery) check will be called for whenever you try to use duplicity, trickery, distraction or slight of hand to achieve your goal. }
 
 \proficiency{Stealth}{A stealth check is used whenever you wish to remain hidden, and is the primary check used for the Stealth mechanic discussed on page \pageref{S:Stealth}. In addition, you may be asked for a Finesse (Stealth) check to hide an object away from prying eyes.}
 
@@ -275,7 +277,7 @@ Spirit checks are used to maintain order in your own mind, or to project that in
 
 The {\it Conviction} and {\it Willpower} proficiencies measure your ability at certain types of Spirit checks. 
 
-\proficiency{Conviction}{A Spirit (Conviction) check is used whenever something attempts to influence a deeply held belief - whether someone is trying to tell you that a deeply held belief is false, to persuade you that your idea is bad, or to magically influence your thoughts. Conviction measures how strongly you hold to your fundamental principles. }
+\proficiency{Conviction}{A Spirit (Conviction) check is used whenever something attempts to sway a tenet of your character - whether someone is trying to tell you that a deeply held belief is false, to persuade you that your idea is bad, or to magically influence your thoughts. Conviction measures how strongly you hold to your fundamental principles. }
 
 \proficiency{Willpower}{A Spirit (Willpower) check is used whenever a being needs to have control over their own mind:
 \begin{itemize}
@@ -289,13 +291,86 @@ The {\it Conviction} and {\it Willpower} proficiencies measure your ability at c
 
 \subsubsection{Spells}
 
-Spells which rely on projecting your force of will, and an iron control of your mind use the Spirit modifier for their casting and accuracy checks. Such spells include those in the Psionics and the Hexes discipline.  
+Spells which rely on projecting your force of will, and an iron control of your mind use the Spirit modifier for their casting and accuracy checks. Such spells include those in the {\it Psionics}, {\it Conjuration} and the {\it Hexes} discipline.  
+
+\subsubsection{Passive Endurance}
+
+Your {\it Passive Endurance} is a base level of endurance that every being has when they are not even aware they are actively resisting anything. 
+
+If an effect is inflicted on you when you are not specifically expecting it, or searching for it, then the {\it passive} score is used. This can also be used by the GM to keep the fact that an enemy is influencing your mind, for example. The passive Endurance score is calculated from the `average' dice roll, plus the usual bonuses for a Spirit (Willpower) check. 
+
+Therefore it is calculated from a score of 10, plus the usual bonuses. If a being has advantage or disadvantage, 
+
 
 \subsection{Charisma}
 
-\subsection{Intelligence} 
+Charisma is the social attribute - it measures a being's ability to interact with others with confidence, eloquence and panache. A high-charisma being is percieved by others as charming and friendly. 
+
+A charisma check will be called for on almost all social interactions beyond basic introductions, services and general `how-do-you-do's. For a forthcoming individual, you may only have to ask the right questions to get the information or services you desire with no check needed, but for the more recalcitrant, you must succeed on a Charisma check to get what you want. 
+
+The Charisma domain is divided into three proficiencies: {\it Deception}, {\it Performance}, and {\it Persuasion}. 
+
+\proficiency{Deception}{A Charisma (Deception) check will, as the name suggests, be called for whenever you attempt to tell a convincing lie, or otherwise mislead an individual. Manipulate both your voice and your body language to give a false sense of honesty and truth to waylay the authorities, cheat an opponent out of some money, or bluff your way past a guard.}
+
+\proficiency{Performance}{A Charisma (Performance) check is used whenever a being puts on an act to delight and impress an audience with their skills or stage presence. Perfomance is a form of {\it Deception}, with the difference usually being that the purpose is to inspire, delight or entertain, rather than mislead. } 
+
+\proficiency{Persuasion}{A Charisma (Persuasion) check measures the ability of a being to sway others with convincing arguments, charm, and social know-how. Generally used in good faith to convince a neutral party to take a side, to persuade a guard to let you past, or to negotiate a better price for an item.}
+
+\subsubsection{Spells}
+
+Spells which belong to the {\it Bewitchment} discipline rely heavily on subtly altering and influencing a being's perception of reality. These spells use the Charisma modifier for their casting and accuracy checks. 
+
+\subsection{Intelligence}
+
+Intelligence is a being's innate mental capacity, their memory, their ability to reason and logically deduct as well as encompassing their prior education and learning.   
+
+An intelligence check will be called for whenever a character attempts to assimilate new information, or recall information they have previously used. It may also be used to solve riddles, use logic to deduce where an item might be hidden, and so on. 
+
+As intelligence is a wide and somewhat nebulous field, there are a number of proficiencies under this umbrella, particularly: {\it Arcane Knowledge}, {\it History}, {\it Logic}, {\it Nature}, {\it Research}, {\it Un-nature} 
+
+\proficiency{Arcane Knowledge}{An Intelligence (Arcane Knowledge) check - often shortened to simply `Arcane' - is a measure of a being's understanding of the nature and use of magic. Used to recall or infer knowledge about spells, magical items, mystic runes and other intrinsically magical objects.}
+
+\proficiency{History}{An Intelligence (History) check measures your ability to recall information about historical events, places and people}
+
+\proficiency{Logic}{An Intelligence (Logic) check is used to connect the dots between disparate and incomplete information, to gain an understanding of the larger picture. When faced with riddles, mysteries and utterly unknowable forces, a high logic can be used to discern the fundamentals of the problem at hand.}
+
+\proficiency{Nature}{Intelligence (Nature) checks are used to remember information about naturally occuring plants and beasts (both magical and mundane), the terrain or the weather. }
+
+\proficiency{Research}{Attempting to learn new information about a known target subject falls under the domain of an Intelligence (Research) check. When faced with a library full of books and information to assimilate, Research is your friend. {\it Research} differs from {\it Investigation} in that whilst {\it Investigation} helps you find a book, only {\it Research} can help you glean knowledge from it.  }   
+
+\proficiency{Un-nature}{The partner to the {\it Nature} proficiency, an Intelligence (Unnature) check is used to recall information and lore about unnatural, otherwordly, un-living or otherwise artifical items, creatures and constructs.}
+
+
+\subsubsection{Spells}
+
+Some spells rely on nothing more than a razor sharp mind and a deep understanding of the task at hand, and hence use the Intelligence modifier for their casting and accuracy checks. Such spells include those from the {\it Temporal}, the {\it Warding} and the {\it Occultism} disciplines.
+
 
 \subsection{Perception}
+
+The Perception attribute is your awareness and openness to the world around you - both in a material sense, and on an emotional level. 
+
+A Perception check will be used any time you wish to take in information around you - be it to spot hidden enemies, traps or paths, search through a vault of treasures, or discern the true intentions of a being. 
+
+To that end, the Perception attribute is split into three proficiencies: {\it Empathy}, {\it Investigation}, and {\it Observation}. 
+
+\proficiency{Empathy}{A Perception (Empathy) check is used whenever a being needs to put themselves in another's shoes - to understand their current state of mind, understand motive and intent, and possibly glean any hint that they are lying or omitting the truth. A high Empathy check might mean that you understand an individual better than they understand themselves.}
+
+\proficiency{Investigation}{A Perception (Investigation) check is used for in-depth scrutiny of an object, container or region. Unlike an {\it Observation} check, an Investigation is always used consciously. A high Investigation check would allow you to:
+\begin{itemize}
+\itdef
+\item Spot a tiny inscription on the inside of a ring
+\item Rifle through a chest full of nicknacks, to find a priceless object
+\item Find a given book in a packed and disorganised library
+\item Notice a hidden chamber hidden inside a wall, or spot the secret mechanism to trigger the door
+\item Search the body of a slain enemy (or hapless victim) for useful items or clues
+\end{itemize}
+}
+
+\proficiency{Observation}{A Perception (Observation) check occurs will be called for whenever you survey your surroundings, either with sight, sound or smell. }
+
+\subsubsection{Passive Perception}
+
 
 \subsection{Power}
 

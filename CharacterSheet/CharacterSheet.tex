@@ -202,7 +202,7 @@
 \node at (13.5,-2.2) {\bf \Large  Skill \& Proficiency Bonuses};
 \draw[rounded corners] (9,-2.6) rectangle (18.2,-12.4);
 \def\topQ{-3.1}
-\def\gap{0.5}
+\def\gap{0.45}
 \def\x{9.1}
 \def\mid{12.1}
 \def\cx{10}
@@ -214,7 +214,7 @@
 
 %
 
-\foreach \a/\b [count = \q from 0] in { {Acrobatics}/{FNS}, {Arcane}/{INT}, {Chicanery}/{FNS}, {Conviction}/{SPR}, {Deception}/{CHR}, {Empathy}/{PRC}, {Flora \& Fauna}/{INT}, {History}/{INT}, {Intimidation}/{POW}, {Investigation}/{PRC}, {Observation}/{PRC}, {Performance}/{CHR}, {Persuasion}/{CHR}, {Research}/{INT}, {Speed}/{FIT}, {Stealth}/{FNS}, {Strength}/{FIT}, {Vitality}/{FIT}, {Willpower}/{SPR}}
+\foreach \a/\b [count = \q from 0] in { {Acrobatics}/{FNS}, {Arcane}/{INT}, {Chicanery}/{FNS}, {Conviction}/{SPR}, {Deception}/{CHR}, {Empathy}/{PRC}, {History}/{INT}, {Intimidation}/{POW}, {Investigation}/{PRC}, {Logic}/{INT}, {Nature}/{INT}, {Observation}/{PRC}, {Performance}/{CHR}, {Persuasion}/{CHR}, {Research}/{INT}, {Speed}/{FIT}, {Stealth}/{FNS}, {Strength}/{FIT}, {Un-nature}/{INT}, {Vitality}/{FIT}, {Willpower}/{SPR}}
 {
 	\def\y{\topQ - \q*\gap}
 	\draw (\x,\y) rectangle ({\x+\delta},{\y+\delta});
