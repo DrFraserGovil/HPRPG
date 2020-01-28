@@ -43,20 +43,19 @@ In cases such as this it is useful to remember that it is the {\it casting} of t
  
  \subsubsection{Attacking}
  
- Casting a spell, swinging a sword, or loosing an arrow takes (usually) a full turn to complete, and so you may decide to use your entire turn to cast a spell. 
+ Casting a spell, swinging a sword, or loosing an arrow takes (usually) a full turn to complete, and so you may decide to use your entire turn to make an attack.
  
 The rules for performing attacks are elaborated on page \pageref{S:Attacks}
  \subsubsection{Movement}
  
- When used as a major action, movement allows you to move on foot up to a distance given by your {\it running speed} statistic, which is calculated from your base speed (derived from your race) and your athletics attribute:
- 
+ When used as a major action, movement allows you to move on foot up to a distance given by your {\it running speed} statistic, which is calculated from your base speed (derived from your race) and your fitness attribute:
 \small
-$$ \text{running speed} = \text{Base Speed } + \text{Athletics modifier} $$  
+$$ \text{running speed} = \big(\text{Base Speed } + \text{Fitness modifier}\big) \text{ per round} $$  
 \normalsize
 
-The rules concerning special movement, as discussed on page \pageref{S:SpecialMovement}, also apply in combat. 
+The rules discussed on page \pageref{S:SpecialMovement} concerning special movement, such as climbing, swimming or crawling, also apply in combat. 
 
-If you possess the {\it Speed} proficiency and you made a full-turn movement last cycle, you may convert your movement into a {\it sprint}, and add your expertise bonus to your speed. You may then maintain this until you need to stop or change direction. 
+{\bf Sprinting:} If you possess the {\it Speed} proficiency and you made a full-turn movement last cycle, you may convert your movement into a {\it sprint}, and add your expertise bonus to your speed. You may then maintain this until you need to stop or change direction. 
 
 Whilst moving, you need to be careful that you do not collide with other beings - either your allies or your enemies. You cannot enter space that is currently being occupied by another solid being (ghosts, however, are fair game). 
 
@@ -94,7 +93,7 @@ During a minor movement, one moves only {\bf half as far} as during a full-turn 
 
 Just as there is a difference between a full-on sprint (a major action) and a quick jog (a minor action), so to is there a difference between a zeroed in shot on your enemy (a major action), and releasing a spray of covering fire to keep your enemies on their toes (a minor action). 
 
-A quick attack takes only a minor action to complete. The penalty for this, however, is that you must take check-disadvantage on the associated accuracy checks, and you may not use mechanics such as Power Points or Power Attacks which increase the damage of the attack. 
+A quick attack takes only a minor action to complete. The penalty for this, however, is that you must take check-disadvantage on the associated accuracy checks (or for spells which only require a Resist check, they get advantage on the Resist check). 
 
 
 \subsubsection{Communication}
@@ -221,9 +220,9 @@ An accuracy check is performed using the usual d20 die. However, the associated 
 \begin{rndtable}{c c}
 \bf Attack Type	&	\bf Accuracy Attribute
 \\
-Spells	&	Finesse
+Spells	&	Discipline-Dependent
 \\
-Melee Weapons	& Athletics
+Melee Weapons	& Fitness
 \\
 Ranged Weapons	&	Finesse
 \end{rndtable}
@@ -297,13 +296,21 @@ Of course, not all defence happens instinctively -- you may make a conscious dec
 
 Though by default you automatically use whichever value is highest, when making a conscious decision, you may choose to bolster either statistic by {\it bracing} or {\it evading}. 
 
-Whichever action is chosen, the effect of bolstering your defenses is:
-\begin{itemize}
-\item Double your Expertise bonus (if applicable) on the chosen statistic 
-\item Aggressors take check-disadvantage on their accuracy checks against you this turn cycle. 
-\end{itemize}
+Whichever action is chosen, enemies take check-disadvantage on accuracy rolls against you for this turn cycle. In addition, you gain check-advantage on certain Resist checks this round, depending on which action you took. 
 
-
+\def\w{3.6}
+\def\c{7}
+\small
+\begin{center}
+\begin{rndtable}{p{1.2 cm} c | c}
+~	&	\bf Brace	&	\bf Evade
+\\
+\cellcolor{\tablecolorhead}\bf Resist:	&	\parbox[t]{\w cm}{\raggedright Advantage on Fitness, Spirit \& Power Resist checks}	&	\parbox[t]{\w cm}{\raggedright  Advantage on Finesse, Intelligence \& Perception Resist checks}
+\\
+\cellcolor{\tablecolorhead}\bf Accuracy:	&	\multicolumn{2}{c}{\parbox[t]{\c cm}{\centering Agressors take disadvantage on accuracy checks made against you this turn}}
+\end{rndtable}
+\end{center}
+\normalsize
 \subsection{Cover}
 
 Standing out in the open is a sure-fire way to get hurt quickly. Hiding behind something, be it a tree, a low wall, or even just your ally will make you safer and harder to hit. 
@@ -320,9 +327,9 @@ Some effects cannot be avoided or blocked: holding up a shield against an incomi
 
 Spells denote in their description if they can be blocked or dodged. For the (rarer) instances of non-spell effects which fall into one of these categories, the GM decides if it is reasonable to dodge or block the effect. 
 
-If the `dominant' instinct (i.e. the one with the highest value) would be ineffective against a given effect, you may use the non-dominant one. However, if the character chose to, for example, use the evade action, they may not transfer the bonus to `block' if an evasion turns out to be ineffective. 
+If the `dominant' instinct (i.e. the one with the highest value) would be ineffective against a given effect, you may use the non-dominant one. However, this negates the effect of the {\it Evade} and {\it Brace} actions for the remainder of the turn cycle. 
 
-Note that even `unblockable' effects are stopped by `impenetrable' fields and spells which are `undodgeable' treat the target as stationary, and may still miss under those rules. 
+Note that even `unblockable' effects are stopped by `impenetrable' fields. 
 
 
 
