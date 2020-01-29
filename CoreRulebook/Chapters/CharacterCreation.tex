@@ -55,7 +55,7 @@ It is generally impossible to switch species once a character has been created, 
  % \begin{center}
  \begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline
- ATH & FIN & SPR & CHR & INT & PER & POW & EVL
+ \attPhysShort{} & \attFinShort{} & \attSprShort{} & \attChrShort{} & \attIntShort{} & \attPerShort{} & \attPowShort{} & \attEvlShort{}
  \\
  \hline
  #1 & #2 & #3 & #4 & #5 & #6 & #7 & #8 
@@ -158,26 +158,32 @@ It is generally impossible to switch species once a character has been created, 
 
 \chapter{Main Attributes}\label{C:Attributes}
 
-Attributes are the defining characteristics of your character. They enumerate how strong willed, how athletic and how popular your character is. These characteristics in turn define how good your character is at certain skills -- a character with a large willpower, for instance, will be good at combat magic, whilst a character with a low athleticism would find themselves unable to run away from threats!
+Attributes are the defining characteristics of your character. They enumerate how strong willed, how athletic and how popular your character is. These characteristics in turn define how good your character is at certain skills -- a character with a large willpower, for instance, will be good at combat magic, whilst a character with a low \attPhys{} would find themselves unable to run away from threats!
 
-\begin{itemize}
-	\item Fitness (FIT): The measure of the physical capabilities of a character, as well as their general health. 
+\newcommand\attLine[3]
+{
+	#1	(#2):	& \parbox[t]{6 cm}{#3} \\~\\
+}
 
-	\item     Finesse (FNS): A being's ability to execute actions with delicacy and precision. Picking pockets, hiding and ranged attacks require finesse to execute properly. 
+\begin{tabular}{r l}
 
-	\item Spirit (SPR): The internal strength, bravery and conviction of a being. Typically considered the defining characteristic of Gryffindor House. 
-   
-   \item Charisma (CHR): The ability of a leader, and those who influence others. A trait typically associated with Slytherin House.
-   
-   \item Intelligence (INT): A measure of analytical ability, memory and ability to assimilate new information. Typically considered the defining trait of Ravenclaw House.
-   
-    \item Perception (PRC): Awareness of the world outside a being's own head -- spotting a hidden tripwire, or the detection of other's emotions. Often going hand in hand with a kind and compassionate soul, perception is considered the defining trait of Hufflepuff House. 
-   
-   \item Power (POW): The amount of raw magical power a being can wield. Not always a substitute for slyness and inventiveness, however. 
+	\attLine{\attPhys{}}{\attPhysShort{}}{ The measure of the physical capabilities of a character, as well as their general health. }
 
-   \item  Evil (EVL): A measure of a being's depravity, its lack of care for human life. A being with a high Evil stat is one to be feared. 
+	\attLine{ \attFin{}}{\attFinShort{}}{A being's ability to execute actions with delicacy and precision. Picking pockets, hiding and ranged attacks require finesse to execute properly. }
+
+	\attLine{\attSpr{}} {\attSprShort{}} {The internal strength, bravery and conviction of a being. Typically considered the defining characteristic of Gryffindor House. }
    
- \end{itemize}
+   \attLine{\attChr{}} {\attChrShort{}} {The ability of a leader, and those who influence others. A trait typically associated with Slytherin House.}
+   
+   \attLine{\attInt{} }{\attIntShort{}}{ A measure of analytical ability, memory and ability to assimilate new information. Typically considered the defining trait of Ravenclaw House.}
+   
+    \attLine{\attPer{}}{\attPerShort{}}{ Awareness of the world outside a being's own head -- spotting a hidden tripwire, or the detection of other's emotions. Often going hand in hand with a kind and compassionate soul, perception is considered the defining trait of Hufflepuff House. }
+   
+   \attLine{\attPow{}} {\attPowShort{}}{ The amount of raw magical power a being can wield. Not always a substitute for slyness and inventiveness, however. }
+
+   \attLine{ \attEvl{}} {\attEvlShort{}}{ A measure of a being's depravity, its lack of care for human life. A being with a high Evil stat is one to be feared. }
+   
+\end{tabular}
 	
 In addition to these 8 high-level attributes, there exist a number of specialised domains within most of them. These are known as {\it Proficiencies}. These, along with a more in-depth discussion of the actions associated with each of the attributes, are discussed in more detail on page \pageref{S:Proficiencies}.
 
@@ -195,39 +201,30 @@ Generally speaking, you will want to allocate the largest of these values to the
  
  \subsection*{Health}
  
-Health is the physical status of your character: attacking a character lowers their health, and when the health points (HP) of a character reach zero, that character is killed. A character{\apos}s initial maximum health is calculated from:
-$$\text{max HP} = \text{ATH attribute} + \text{Proficiency Bonus}$$
-If you have the {\it Health} proficiency, you may add three times your Expertise bonus to your base health. 
+Health is the physical status of your character: attacking a character lowers their health, and when the health points (HP) of a character reach zero, that character tacquires the {\it Critical Condition} status. If this is not rectified quickly, the character will quickly perish. 
 
-Upon levelling up, each Archetype specifies how the max HP of your character increases, this usually takes the form of a dice roll. 
+There are three statistics associated with your Health: your {\it Current Health}, your {\it Maximum Health} and {\it Temporary Health}. 
 
+The current health is enumerated through your Health Points (also known as Hit Points), this is a number between 0 and (usually) your Maximum Health statistic, which is the maximum amount of health and vitality that a being intrinsically possesses. You lose HP when you take damage, and regain it when you heal, either naturally or through magical or mundane medicine. 
 
-{If your character is reduced to 0HP, then they acquire the Critical Condition status: they are completely immobilised, and will lose 1HP per turn. When you reach -10HP, you are dead, and nothing can bring you back. }
+You may also occasionally encounter effects which give temporary boosts to your maximum health, which is sorted into {\it Temporary Health}. Your HP may only ever exceed your Maximum Health when you are under the effect of such an effect.
+Your HP is therefore always limited to be between 0 and the sum of your maximum health and your temporary health. 
 
+If an effect which provides you with temporary health wears off whilst your HP exceeds your maximum health, you must reduce your HP to satisfy the current HP ceiling. 
+
+Your maximum hit points are determined by your character archetype - each archetype gives a starting max HP, and then an amount by which to increase it each level. In addition, if you possess the {\it Vitality} proficiency, your health increases more rapidly.
 
 \subsection*{Fortitude}
 
-Fortitude is a character{\apos}s ability to concentrate, which is necessary to cast spells and some other non-magic feats. Performing magic takes effort, and a character{\apos}s fortitude points (FP) will be slowly eroded by engaging in such mental effort.  
+Fortitude is a character{\apos}s ability to concentrate, which is necessary to cast spells and other feats or great mental prowess. Such actions take effort, and a character{\apos}s fortitude points (FP) will be slowly eroded by engaging in such mental effort.  
 
-A character{\apos}s initial maximum mental fortitude is calculated from:
-$$\text{max FP} =  \text{SPR}  \text{Proficiency Bonuses}$$
-If you have the {\it Willpower} proficiency, you may add three times your Expertise bonus to your base FP. 
+When your FP reaches zero, your mind is exhausted, and so you will no longer be able to engage in such complex actions. Some effects which previously effected only your Fortitude will begin to effect your health
 
-As with HP, each archetype specifies how much to increase your FP for each level taken in that archetype. 
+As with health, you have three statistics associated with 
 
 
 
-Fortitude is used to cast spells, all spells have an associated fortitude cost determined by the difficulty of the spell -- as well as resist magic, and other actions which require intense concentration. You must subtract the relevant amount from your FP when performing such an action (plus or minus the appropriate amount for bonuses, power-boosted spells etc.). When your FP reaches zero, your mind is exhausted, and so you will no longer be able to engage in such complex actions. Unlike HP, FP regenerates during combat; at a rate of 2FP per combat cycle where you do not cast a spell. Outside of combat, the regeneration rate is 8FP per hour, increasing to 20 per hour whilst asleep. 
 
-
-
-\subsection{Temporary Points}
-
-When your HP or FP limit is raised (say, by the {\it vita maxima} spell), the current value is raised by the same amount. In contrast, when the ceiling is lowered, you only lose HP/FP if the ceiling is lowered below your current levels. 
-
-It is never possible to have more than your maximum HP or FP unless an effect specifically states that it alters your max HP/FP.  
- 
- 
 
 \subsection{Natural Healing}
 
