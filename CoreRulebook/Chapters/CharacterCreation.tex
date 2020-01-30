@@ -210,9 +210,9 @@ The current health is enumerated through your Health Points (also known as Hit P
 You may also occasionally encounter effects which give temporary boosts to your maximum health, which is sorted into {\it Temporary Health}. Your HP may only ever exceed your Maximum Health when you are under the effect of such an effect.
 Your HP is therefore always limited to be between 0 and the sum of your maximum health and your temporary health. 
 
-If an effect which provides you with temporary health wears off whilst your HP exceeds your maximum health, you must reduce your HP to satisfy the current HP ceiling. 
+If an effect which provides you with temporary health wears off whilst your HP exceeds your maximum health, you must reduce your HP to satisfy the current HP ceiling. However, with most effects, if your HP is below the ceiling, then you do not alter your HP when your ceiling falls. 
 
-Your maximum hit points are determined by your character archetype - each archetype gives a starting max HP, and then an amount by which to increase it each level. In addition, if you possess the {\it Vitality} proficiency, your health increases more rapidly.
+Your maximum health points are determined by your character archetype - each archetype gives a starting max HP, and then an amount by which to increase it each level. In addition, if you possess the {\it Vitality} proficiency, your health increases more rapidly by giving you check-advantage on HP-increasing rolls.
 
 \subsection*{Fortitude}
 
@@ -220,7 +220,9 @@ Fortitude is a character{\apos}s ability to concentrate, which is necessary to c
 
 When your FP reaches zero, your mind is exhausted, and so you will no longer be able to engage in such complex actions. Some effects which previously effected only your Fortitude will begin to effect your health
 
-As with health, you have three statistics associated with 
+As with health, you have three statistics associated with fortitude: {\it Current Fortitude}, {\it Maximum Fortitude}, {\it Temporary Fortitude}. These follow the same rules as their Health counterparts. 
+
+The Maximum Fortitude is, as with HP, grown in conjunction with your Archetype. If you possess the {\it Logic} proficiency, your mind can be trained me easily, giving you check-advantage on FP-increasing rolls.
 
 
 
@@ -250,11 +252,11 @@ These statistic include:
 	
 	\item {\bf Block}
 	
-	One of two {\it Instincts} used to context accuracy checks. Value set to 10 + Athletics modifier.
+	One of two {\it Instincts} used to set the DV of accuracy checks. Value set to 10 + \attPhys{} modifier.
 	
 	\item {\bf Dodge}
 	
-	The other {\it Instinct}. Value is 10 + Finesse modifier.
+	The other {\it Instinct}. Value is 10 + \attFin{} modifier.
 	
 	\item {\bf Spellcasting Bonuses}
 	

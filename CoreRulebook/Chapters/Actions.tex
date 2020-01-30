@@ -7,7 +7,7 @@ In general, when you want to perform an action, simply tell the GM what you wish
 
 If it is a simple action – for example, “I walk to the shop”, then the action is completed with no further involvement. More complex actions may require a ‘check’ to be performed, to determine their success: inform the GM of what you want to do, and the GM will tell you what check to perform. 
 
-Usually, every action you wish to perform falls into the domain of one of your 8 character attributes (where there is ambiguity, the GM's word is final). The a check to jump over a ravine, for example, would be an Fitness check, whilst a check to remember the ingredients of a potion would be an Intelligence check. Having a higher attribute score in the relevant field will make your check more likely to succeed, via the {\it Modifier} associated with that attribute.  
+Usually, every action you wish to perform falls into the domain of one of your 8 character attributes (where there is ambiguity, the GM's word is final). The a check to jump over a ravine, for example, would be an \attPhys{} check, whilst a check to remember the ingredients of a potion would be an \attInt{} check. Having a higher attribute score in the relevant field will make your check more likely to succeed, via the {\it Modifier} associated with that attribute.  
 
 As always, the GM has the authority to override these general guidelines, if it is suitable to do so. For more detail on how to calculate a check, see page \pageref{S:Checks}.
 
@@ -25,14 +25,14 @@ If the value of a dice is roll indeterminate, or the dice falls off the table, i
 
 If the GM has assigned the check to one of the Attributes, you then modify the dice roll value by the various bonuses that your character has. 
 
-The primary way to do this is through using the {\it attribute modifiers}. These are 8 values associated with each of your 8 attribute scores. When asked to perform a check associated with, for example, the Finesse attribute, you add your Finesse modifier on to the d20 check. 
+The primary way to do this is through using the {\it attribute modifiers}. These are 8 values associated with each of your 8 attribute scores. When asked to perform a check associated with, for example, the \attFin{} attribute, you add your \attFin{} modifier on to the d20 check. 
 
 The modifier is calculated using the following formula:
 $$ \text{attribute modifier} = \frac{\text{attribute value} - 10}{2} \text{ (rounded down)} $$
 
 Given that an attribute value of 10 is considered `average', the attribute modifier is a way of quantifying ``how much better than average are you at this specific skill?"
 
-For example, a Level 5 Auror wants to try and convince a ne'er-do-well to reveal the location of their boss. The GM directs her to perform a Charisma check to convince the target. The auror has a charisma value of 15, which corresponds to a +2 bonus. After rolling a 12, the total value for the check is 14, which the GM reveals was insufficient to persuade the target. 
+For example, a Level 5 Auror wants to try and convince a ne'er-do-well to reveal the location of their boss. The GM directs her to perform a \attChr{} check to convince the target. The auror has a \attChr{} value of 15, which corresponds to a +2 bonus. After rolling a 12, the total value for the check is 14, which the GM reveals was insufficient to persuade the target. 
 
 
 \begin{center}
@@ -76,24 +76,24 @@ The profiencies are:
 -{\bf #1}:	&	\parbox[t]{ 6 cm}{\raggedright #2} \\	
 }
 \begin{tabular}{l l}
-\prof{Fitness}{Speed, Strength, Vitality}
-\prof{Finesse}{Acrobatics, Chicanery, Stealth}
-\prof{Spirit}{Conviction, Willpower}
-\prof{Charisma}{Deception, Performance, Persuasion}
-\prof{Intelligence}{Arcane, History, Logic,  Nature, Research, Un-nature}
-\prof{Perception}{Empathy, Investigation, Observation}
-\prof{Power}{Intimidation}
+\prof{\attPhys{}}{Speed, Strength, Vitality}
+\prof{\attFin{}}{Acrobatics, Chicanery, Stealth}
+\prof{\attSpr{}}{Conviction, Will\attPow{}}
+\prof{\attChr{}}{Deception, Performance, Persuasion}
+\prof{\attInt{}}{Arcane, History, Logic,  Nature, Research, Un-nature}
+\prof{\attPer{}}{Empathy, Investigation, Observation}
+\prof{\attPow{}}{Intimidation}
 \end{tabular}
 
-Your GM may therefore ask for a {\it Stealth} check, which is to be interpreted as a Finesse check with the Expertise bonus added if you posses the Stealth proficiency. If you are not proficient in Stealth, you simply perform a base Finesse check. 
+Your GM may therefore ask for a {\it Stealth} check, which is to be interpreted as a \attFin{} check with the Expertise bonus added if you posses the Stealth proficiency. If you are not proficient in Stealth, you simply perform a base \attFin{} check. 
 
 The character sheet provides slots to record your total modifier for each of the listed proficiencies, for ease of use. 
 
 \subsubsection{Unusual Uses}
 
-Generally speaking, the proficiencies are associated with their parent attribute - so Speed will usually be added on to a Fitness check. If you are not told otherwise, you should always assume this is the case. 
+Generally speaking, the proficiencies are associated with their parent attribute - so Speed will usually be added on to a \attPhys{} check. If you are not told otherwise, you should always assume this is the case. 
 
-However, in certain circumstances it makes sense to cross the borders. For example, if you are attempting to intimidate someone, this is usually associated with the {\it Power} attribute, but if you are threatening them with physical violence, you might be asked for a ``Fitness (Intimidation)'' check. You might also be asked for a ``Charisma (Intimidation)'' check if you are are bluffing and pretending to be more powerful than you are. 
+However, in certain circumstances it makes sense to cross the borders. For example, if you are attempting to intimidate someone, this is usually associated with the {\it \attPow{}} attribute, but if you are threatening them with physical violence, you might be asked for a ``\attPhys{} (Intimidation)'' check. You might also be asked for a ``\attChr{} (Intimidation)'' check if you are are bluffing and pretending to be more powerful than you are. 
 
 In this case, you use the modifier of the new parent, and add the proficiency bonus if applicable. 
 
@@ -221,18 +221,18 @@ Almost every task a character attempts falls into one of the 8 abilities. In thi
 	\textbf{\textit{#1}}: {\raggedright #2} 
 }
 
-\subsection{Fitness}
+\subsection{\attPhys{}}
 
-Fitness measures your ability to exert yourself physically. 
+\attPhys{} measures your ability to exert yourself physically. 
 
 
-A fitness check will be required almost every time a being attempts to do something more strenuous that break into a light jog, or lift a heavy backpack. It is used to run, jump, swim and climb, as well as wielding heavy weapons and beating down doors. 
+A \attPhys{} check will be required almost every time a being attempts to do something more strenuous that break into a light jog, or lift a heavy backpack. It is used to run, jump, swim and climb, as well as wielding heavy weapons and beating down doors. 
 
-{\it Speed}, {\it Strength} and {\it Vitality} checks generally fall under the Fitness umbrella:
+{\it Speed}, {\it Strength} and {\it Vitality} checks generally fall under the \attPhys{} umbrella:
 
-\proficiency{Speed}{A Fitness (Speed) check is used in situations where you need to act and move quickly, or to exert an explosive burst of speed, such as fleeing from a ravenous beast or running down an escaping prisoner. }
+\proficiency{Speed}{A \attPhys{} (Speed) check is used in situations where you need to act and move quickly, or to exert an explosive burst of speed, such as fleeing from a ravenous beast or running down an escaping prisoner. }
 
-\proficiency{Strength}{A Fitness (Strength) check is needed whenever you utilise the raw power of your muscles. For example: 
+\proficiency{Strength}{A \attPhys{} (Strength) check is needed whenever you utilise the raw power of your muscles. For example: 
 \begin{itemize}
 \itdef
 \item Attempting to break down a locked or jammed door
@@ -242,44 +242,44 @@ A fitness check will be required almost every time a being attempts to do someth
 \end{itemize}
 }
 
-\proficiency{Vitality}{Your Fitness (Vitality) check measures the physical well-being and fortitude of a character. A higher value means you can stave off the effects of starvation, exhaustion and resist the effects of diseases and poisons. Vitality is mostly a passive ability, and hence will most commonly be used in the form of Resist checks to evade the harmful effects of the environment of malicious acts. }
+\proficiency{Vitality}{Your \attPhys{} (Vitality) check measures the physical well-being and fortitude of a character. A higher value means you can stave off the effects of starvation, exhaustion and resist the effects of diseases and poisons. Vitality is mostly a passive ability, and hence will most commonly be used in the form of Resist checks to evade the harmful effects of the environment of malicious acts. }
 
 \subsubsection{Melee Weapons}
 
-In addition, Fitness is used as the primary attribute for most melee weapons and hand-to-hand combat. The Fitness modifier is therefore added to the Accuracy and Damage rolls for weapons such as clubs, swords and battleaxes.
+In addition, \attPhys{} is used as the primary attribute for most melee weapons and hand-to-hand combat. The \attPhys{} modifier is therefore added to the Accuracy and Damage rolls for weapons such as clubs, swords and battleaxes.
 \raggedbottom
 
-\subsection{Finesse}
+\subsection{\attFin{}}
 
-Finesse is the measure of a beings ability to perform acts with precision and care, and to maintain balance and poise. It also measures your ability to work with your hands - to craft intricate items, tie secure knots or steer an out of control vehicle. 
+\attFin{} is the measure of a beings ability to perform acts with precision and care, and to maintain balance and poise. It also measures your ability to work with your hands - to craft intricate items, tie secure knots or steer an out of control vehicle. 
 
-The {\it Acrobatics}, {\it Chicanery} and {\it Stealth} proficiencies measure a being's aptitude in certain types of Finesse checks. 
+The {\it Acrobatics}, {\it Chicanery} and {\it Stealth} proficiencies measure a being's aptitude in certain types of \attFin{} checks. 
 
-\proficiency{Acrobatics}{A Finesse (Acrobatics) check is used whenever a being's balance is called into question, such as maintaining balance on a rocking boat or slipping on an icy floor, as well as for more extravagant feats such as rolling, flipping, diving and somersaulting. }
+\proficiency{Acrobatics}{A \attFin{} (Acrobatics) check is used whenever a being's balance is called into question, such as maintaining balance on a rocking boat or slipping on an icy floor, as well as for more extravagant feats such as rolling, flipping, diving and somersaulting. }
 
-\proficiency{Chicanery}{Chicanery is the trickster's and the thief's domain: a Finesse (Chicanery) check will be called for whenever you try to use duplicity, trickery, distraction or slight of hand to achieve your goal. }
+\proficiency{Chicanery}{Chicanery is the trickster's and the thief's domain: a \attFin{} (Chicanery) check will be called for whenever you try to use duplicity, trickery, distraction or slight of hand to achieve your goal. }
 
-\proficiency{Stealth}{A stealth check is used whenever you wish to remain hidden, and is the primary check used for the Stealth mechanic discussed on page \pageref{S:Stealth}. In addition, you may be asked for a Finesse (Stealth) check to hide an object away from prying eyes.}
+\proficiency{Stealth}{A stealth check is used whenever you wish to remain hidden, and is the primary check used for the Stealth mechanic discussed on page \pageref{S:Stealth}. In addition, you may be asked for a \attFin{} (Stealth) check to hide an object away from prying eyes.}
 
 \subsubsection{Ranged Weapons}
 
-Most ranged weapons use the Finesse modifier to reflect the accuracy of the wielder. Some melee weapons which are classed as `elegant', such as rapiers, also use Finesse for their accuracy check.  In both cases, the Finesse modifier is added to the associated accuracy and damage checks.
+Most ranged weapons use the \attFin{} modifier to reflect the accuracy of the wielder. Some melee weapons which are classed as `elegant', such as rapiers, also use \attFin{} for their accuracy check.  In both cases, the \attFin{} modifier is added to the associated accuracy and damage checks.
 
 \subsubsection{Spells}
 
-Some spells rely on careful manipulation and high levels of precision and control: these spells belong to the {\it Kinesis} and {\it Alteration} disciplines. Spells belonging to this school use the Finesse modifier to perform Casting and Accuracy checks. 
+Some spells rely on careful manipulation and high levels of precision and control: these spells belong to the {\it Kinesis} and {\it Alteration} disciplines. Spells belonging to this school use the \attFin{} modifier to perform Casting and Accuracy checks. 
 
-\subsection{Spirit}
+\subsection{\attSpr{}}
 
-The Spirit of a character is a measure of their internal strength. 
+The \attSpr{} of a character is a measure of their internal strength. 
 
-Spirit checks are used to maintain order in your own mind, or to project that inner strength outward to dominate others. 
+\attSpr{} checks are used to maintain order in your own mind, or to project that inner strength outward to dominate others. 
 
-The {\it Conviction} and {\it Willpower} proficiencies measure your ability at certain types of Spirit checks. 
+The {\it Conviction} and {\it Willpower} proficiencies measure your ability at certain types of \attSpr{} checks. 
 
-\proficiency{Conviction}{A Spirit (Conviction) check is used whenever something attempts to sway a tenet of your character - whether someone is trying to tell you that a deeply held belief is false, to persuade you that your idea is bad, or to magically influence your thoughts. Conviction measures how strongly you hold to your fundamental principles. }
+\proficiency{Conviction}{A \attSpr{} (Conviction) check is used whenever something attempts to sway a tenet of your character - whether someone is trying to tell you that a deeply held belief is false, to persuade you that your idea is bad, or to magically influence your thoughts. Conviction measures how strongly you hold to your fundamental principles. }
 
-\proficiency{Willpower}{A Spirit (Willpower) check is used whenever a being needs to have control over their own mind:
+\proficiency{Willpower}{A \attSpr{} (Willpower) check is used whenever a being needs to have control over their own mind:
 \begin{itemize}
 \itdef
 \item Enforce defences around their mind to repel intruders
@@ -291,72 +291,72 @@ The {\it Conviction} and {\it Willpower} proficiencies measure your ability at c
 
 \subsubsection{Spells}
 
-Spells which rely on projecting your force of will, and an iron control of your mind use the Spirit modifier for their casting and accuracy checks. Such spells include those in the {\it Psionics}, {\it Conjuration} and the {\it Hexes} discipline.  
+Spells which rely on projecting your force of will, and an iron control of your mind use the \attSpr{} modifier for their casting and accuracy checks. Such spells include those in the {\it Psionics}, {\it Conjuration} and the {\it Hexes} discipline.  
 
 \subsubsection{Passive Endurance}
 
 Your {\it Passive Endurance} is a base level of endurance that every being has when they are not even aware they are actively resisting anything. 
 
-If an effect is inflicted on you when you are not specifically expecting it, or searching for it, then the {\it passive} score is used. This can also be used by the GM to keep the fact that an enemy is influencing your mind, for example. The passive Endurance score is calculated from the `average' dice roll, plus the usual bonuses for a Spirit (Willpower) check. 
+If an effect is inflicted on you when you are not specifically expecting it, or searching for it, then the {\it passive} score is used. This can also be used by the GM to keep the fact that an enemy is influencing your mind, for example. The passive Endurance score is calculated from the `average' dice roll, plus the usual bonuses for a \attSpr{} (Willpower) check. 
 
 Therefore it is calculated from a score of 10, plus the usual bonuses. If a being has advantage or disadvantage, you add or subtract 4 from the score. If you have super-advantage or disadvantage, you add or subtract a further 2. 
 
 
-\subsection{Charisma}
+\subsection{\attChr{}}
 
-Charisma is the social attribute - it measures a being's ability to interact with others with confidence, eloquence and panache. A high-charisma being is percieved by others as charming and friendly. 
+\attChr{} is the social attribute - it measures a being's ability to interact with others with confidence, eloquence and panache. A high-\attChr{} being is percieved by others as charming and friendly. 
 
-A charisma check will be called for on almost all social interactions beyond basic introductions, services and general `how-do-you-do's. For a forthcoming individual, you may only have to ask the right questions to get the information or services you desire with no check needed, but for the more recalcitrant, you must succeed on a Charisma check to get what you want. 
+A \attChr{} check will be called for on almost all social interactions beyond basic introductions, services and general `how-do-you-do's. For a forthcoming individual, you may only have to ask the right questions to get the information or services you desire with no check needed, but for the more recalcitrant, you must succeed on a \attChr{} check to get what you want. 
 
-The Charisma domain is divided into three proficiencies: {\it Deception}, {\it Performance}, and {\it Persuasion}. 
+The \attChr{} domain is divided into three proficiencies: {\it Deception}, {\it Performance}, and {\it Persuasion}. 
 
-\proficiency{Deception}{A Charisma (Deception) check will, as the name suggests, be called for whenever you attempt to tell a convincing lie, or otherwise mislead an individual. Manipulate both your voice and your body language to give a false sense of honesty and truth to waylay the authorities, cheat an opponent out of some money, or bluff your way past a guard.}
+\proficiency{Deception}{A \attChr{} (Deception) check will, as the name suggests, be called for whenever you attempt to tell a convincing lie, or otherwise mislead an individual. Manipulate both your voice and your body language to give a false sense of honesty and truth to waylay the authorities, cheat an opponent out of some money, or bluff your way past a guard.}
 
-\proficiency{Performance}{A Charisma (Performance) check is used whenever a being puts on an act to delight and impress an audience with their skills or stage presence. Perfomance is a form of {\it Deception}, with the difference usually being that the purpose is to inspire, delight or entertain, rather than mislead. } 
+\proficiency{Performance}{A \attChr{} (Performance) check is used whenever a being puts on an act to delight and impress an audience with their skills or stage presence. Perfomance is a form of {\it Deception}, with the difference usually being that the purpose is to inspire, delight or entertain, rather than mislead. } 
 
-\proficiency{Persuasion}{A Charisma (Persuasion) check measures the ability of a being to sway others with convincing arguments, charm, and social know-how. Generally used in good faith to convince a neutral party to take a side, to persuade a guard to let you past, or to negotiate a better price for an item.}
-
-\subsubsection{Spells}
-
-Spells which belong to the {\it Bewitchment} discipline rely heavily on subtly altering and influencing a being's perception of reality. These spells use the Charisma modifier for their casting and accuracy checks. 
-
-\subsection{Intelligence}
-
-Intelligence is a being's innate mental capacity, their memory, their ability to reason and logically deduct as well as encompassing their prior education and learning.   
-
-An intelligence check will be called for whenever a character attempts to assimilate new information, or recall information they have previously used. It may also be used to solve riddles, use logic to deduce where an item might be hidden, and so on. 
-
-As intelligence is a wide and somewhat nebulous field, there are a number of proficiencies under this umbrella, particularly: {\it Arcane Knowledge}, {\it History}, {\it Logic}, {\it Nature}, {\it Research}, {\it Un-nature} 
-
-\proficiency{Arcane Knowledge}{An Intelligence (Arcane Knowledge) check - often shortened to simply `Arcane' - is a measure of a being's understanding of the nature and use of magic. Used to recall or infer knowledge about spells, magical items, mystic runes and other intrinsically magical objects.}
-
-\proficiency{History}{An Intelligence (History) check measures your ability to recall information about historical events, places and people}
-
-\proficiency{Logic}{An Intelligence (Logic) check is used to connect the dots between disparate and incomplete information, to gain an understanding of the larger picture. When faced with riddles, mysteries and utterly unknowable forces, a high logic can be used to discern the fundamentals of the problem at hand.}
-
-\proficiency{Nature}{Intelligence (Nature) checks are used to remember information about naturally occuring plants and beasts (both magical and mundane), the terrain or the weather. }
-
-\proficiency{Research}{Attempting to learn new information about a known target subject falls under the domain of an Intelligence (Research) check. When faced with a library full of books and information to assimilate, Research is your friend. {\it Research} differs from {\it Investigation} in that whilst {\it Investigation} helps you find a book, only {\it Research} can help you glean knowledge from it.  }   
-
-\proficiency{Un-nature}{The partner to the {\it Nature} proficiency, an Intelligence (Unnature) check is used to recall information and lore about unnatural, otherwordly, un-living or otherwise artifical items, creatures and constructs.}
-
+\proficiency{Persuasion}{A \attChr{} (Persuasion) check measures the ability of a being to sway others with convincing arguments, charm, and social know-how. Generally used in good faith to convince a neutral party to take a side, to persuade a guard to let you past, or to negotiate a better price for an item.}
 
 \subsubsection{Spells}
 
-Some spells rely on nothing more than a razor sharp mind and a deep understanding of the task at hand, and hence use the Intelligence modifier for their casting and accuracy checks. Such spells include those from the {\it Temporal}, the {\it Warding} and the {\it Occultism} disciplines.
+Spells which belong to the {\it Bewitchment} discipline rely heavily on subtly altering and influencing a being's \attPer{} of reality. These spells use the \attChr{} modifier for their casting and accuracy checks. 
+
+\subsection{\attInt{}}
+
+\attInt{} is a being's innate mental capacity, their memory, their ability to reason and logically deduct as well as encompassing their prior education and learning.   
+
+An \attInt{} check will be called for whenever a character attempts to assimilate new information, or recall information they have previously used. It may also be used to solve riddles, use logic to deduce where an item might be hidden, and so on. 
+
+As \attInt{} is a wide and somewhat nebulous field, there are a number of proficiencies under this umbrella, particularly: {\it Arcane Knowledge}, {\it History}, {\it Logic}, {\it Nature}, {\it Research}, {\it Un-nature} 
+
+\proficiency{Arcane Knowledge}{An \attInt{} (Arcane Knowledge) check - often shortened to simply `Arcane' - is a measure of a being's understanding of the nature and use of magic. Used to recall or infer knowledge about spells, magical items, mystic runes and other intrinsically magical objects.}
+
+\proficiency{History}{An \attInt{} (History) check measures your ability to recall information about historical events, places and people}
+
+\proficiency{Logic}{An \attInt{} (Logic) check is used to connect the dots between disparate and incomplete information, to gain an understanding of the larger picture. When faced with riddles, mysteries and utterly unknowable forces, a high logic can be used to discern the fundamentals of the problem at hand.}
+
+\proficiency{Nature}{\attInt{} (Nature) checks are used to remember information about naturally occuring plants and beasts (both magical and mundane), the terrain or the weather. }
+
+\proficiency{Research}{Attempting to learn new information about a known target subject falls under the domain of an \attInt{} (Research) check. When faced with a library full of books and information to assimilate, Research is your friend. {\it Research} differs from {\it Investigation} in that whilst {\it Investigation} helps you find a book, only {\it Research} can help you glean knowledge from it.  }   
+
+\proficiency{Un-nature}{The partner to the {\it Nature} proficiency, an \attInt{} (Unnature) check is used to recall information and lore about unnatural, otherwordly, un-living or otherwise artifical items, creatures and constructs.}
 
 
-\subsection{Perception}
+\subsubsection{Spells}
 
-The Perception attribute is your awareness and openness to the world around you - both in a material sense, and on an emotional level. 
+Some spells rely on nothing more than a razor sharp mind and a deep understanding of the task at hand, and hence use the \attInt{} modifier for their casting and accuracy checks. Such spells include those from the {\it Temporal}, the {\it Warding} and the {\it Occultism} disciplines.
 
-A Perception check will be used any time you wish to take in information around you, be it to spot hidden enemies, traps or paths, search through a vault of treasures, or discern the true intentions of a being. 
 
-To that end, the Perception attribute is split into three proficiencies: {\it Empathy}, {\it Investigation}, and {\it Observation}. 
+\subsection{\attPer{}}
 
-\proficiency{Empathy}{A Perception (Empathy) check is used whenever a being needs to put themselves in another's shoes - to understand their current state of mind, understand motive and intent, and possibly glean any hint that they are lying or omitting the truth. A high Empathy check might mean that you understand an individual better than they understand themselves.}
+The \attPer{} attribute is your awareness and openness to the world around you - both in a material sense, and on an emotional level. 
 
-\proficiency{Investigation}{A Perception (Investigation) check is used for in-depth scrutiny of an object, container or region. Unlike an {\it Observation} check, an Investigation is always used consciously. A high Investigation check would allow you to:
+A \attPer{} check will be used any time you wish to take in information around you, be it to spot hidden enemies, traps or paths, search through a vault of treasures, or discern the true intentions of a being. 
+
+To that end, the \attPer{} attribute is split into three proficiencies: {\it Empathy}, {\it Investigation}, and {\it Observation}. 
+
+\proficiency{Empathy}{A \attPer{} (Empathy) check is used whenever a being needs to put themselves in another's shoes - to understand their current state of mind, understand motive and intent, and possibly glean any hint that they are lying or omitting the truth. A high Empathy check might mean that you understand an individual better than they understand themselves.}
+
+\proficiency{Investigation}{A \attPer{} (Investigation) check is used for in-depth scrutiny of an object, container or region. Unlike an {\it Observation} check, an Investigation is always used consciously. A high Investigation check would allow you to:
 \begin{itemize}
 \itdef
 \item Spot a tiny inscription on the inside of a ring
@@ -367,53 +367,53 @@ To that end, the Perception attribute is split into three proficiencies: {\it Em
 \end{itemize}
 }
 
-\proficiency{Observation}{A Perception (Observation) check will be called for whenever you survey your surroundings, either with sight, sound or smell - to spot an ambush waiting for you to pass, or to notice a whispered conversation. Your Observation skill denotes both your spatial awareness, and your awareness of actions occurring within that space.  }
+\proficiency{Observation}{A \attPer{} (Observation) check will be called for whenever you survey your surroundings, either with sight, sound or smell - to spot an ambush waiting for you to pass, or to notice a whispered conversation. Your Observation skill denotes both your spatial awareness, and your awareness of actions occurring within that space.  }
 
-\subsubsection{Passive Perception}
+\subsubsection{Passive \attPer{}}\label{S:PassivePerception}
 
-As with the Spirit attribute, Perception checks will often occur without conscious effort from the part of the individual - sneaking past bored guards is different from sneaking past guards who are actively searching from you! Your own passive perception may be used by the GM to decide whether to alert you or not to a hidden creature stalking you. In such cases you use the {\it Passive Perception} score, which is calculated from the average dice roll the being would be expected to make.
+As with the \attSpr{} attribute, \attPer{} checks will often occur without conscious effort from the part of the individual - sneaking past bored guards is different from sneaking past guards who are actively searching from you! Your own passive \attPer{} may be used by the GM to decide whether to alert you or not to a hidden creature stalking you. In such cases you use the {\it Passive \attPer{}} score, which is calculated from the average dice roll the being would be expected to make.
 
-Therefore it is calculated from a score of 10, plus the usual Perception (Observation) bonuses. If a being has advantage or disadvantage, you add or subtract 4 from the score. If you have super-advantage or disadvantage, you add or subtract a further 2. 
-
-\subsubsection{Spells}
-
-Some spells require a deep attunement to the world around you, and the ability to notice and react to very fine details. Such spells use the Perception modifier in for both the Spellcasting and Accuracy check. This spells generally fall into the {\it Telepathy} and {\it Healing} disciplines. 
-
-
-
-\subsection{Power}
-
-The power attribute is a measure of the power that a being has at their disposal - usually in the form of magical power, though it may also be used as a proxy for political power, or the simply the aura of power that one projects. 
-
-A Power check will rarely be called for outside of the context of a spellcasting context, or when resisting the effects of a spell, however you may be called on to perform a power check when performing an extraordinary feat of magic that goes beyond the normal remit of a spell's abilities. 
-
-A powerful being may be able to use their formidable aura through the {\it Intimidation} proficiency.
-
-\proficiency{Intimidation}{A Power (Intimidation) check will be called for whenever you attempt to leverage your superior abilities to threaten an individual into doing what you wish. }
+Therefore it is calculated from a score of 10, plus the usual \attPer{} (Observation) bonuses. If a being has advantage or disadvantage, you add or subtract 4 from the score. If you have super-advantage or disadvantage, you add or subtract a further 2. 
 
 \subsubsection{Spells}
 
-Spells which simply require raw magical power use the Power attribute in both spellcasting and Accuracy checks. Spells which fall into this category belong to the {\it Curses} and {\it Elemental} disciplines. 
-
-In addition, raw magical power may be leveraged into making spells more potent. 
-
-Whenever a spell causes damage, add your Power modifier to any Damage check which is performed, unless the spell specifies otherwise. Spells which require a Resist check to be performed (both damage causing and otherwise), the DV of the Resist is set by your {\it Subjugate} value, which is calculated from:
-$$ \text{Subjugate} = 8 + \text{Expertise bonus + Power modifier} $$
+Some spells require a deep attunement to the world around you, and the ability to notice and react to very fine details. Such spells use the \attPer{} modifier in for both the Spellcasting and Accuracy check. This spells generally fall into the {\it Telepathy} and {\it Healing} disciplines. 
 
 
-\subsection{Evil}
 
-The Evil attribute is a measure of the darkness and corruption which lies in the heart of an individual. 
+\subsection{\attPow{}}
 
-In a perhaps na{\"i}ve view of the world, this game system presumes people are, by default, inherently good. Comitting evil acts therefore requires conquering your inner, better nature. Slitting the throat of a incapcitated prisoner might be physically easy to do, but to actually go through with such a foul deed you must overcome this inner good - which requires passing an Evil check. 
+The \attPow{} attribute is a measure of the \attPow{} that a being has at their disposal - usually in the form of magical \attPow{}, though it may also be used as a proxy for political \attPow{}, or the simply the aura of \attPow{} that one projects. 
 
-Each time you commit such a deed, you will likely find your Evil rising in tandem with the blackening of your soul. 
+A \attPow{} check will rarely be called for outside of the context of a spellcasting context, or when resisting the effects of a spell, however you may be called on to perform a \attPow{} check when performing an extraordinary feat of magic that goes beyond the normal remit of a spell's abilities. 
 
-Evil has no proficiencies associated with it. 
+A \attPow{}ful being may be able to use their formidable aura through the {\it Intimidation} proficiency.
+
+\proficiency{Intimidation}{A \attPow{} (Intimidation) check will be called for whenever you attempt to leverage your superior abilities to threaten an individual into doing what you wish. }
 
 \subsubsection{Spells}
 
-The most evil spells in existence can only be cast by those with a corrupted and wicked soul - the unforgivable curses, the animation of the dead as gruesome puppets and so on - and hence use the Evil attribute for casting and accuracy checks. This spells form the discipline known as {\it Necromancy}. 
+Spells which simply require raw magical \attPow{} use the \attPow{} attribute in both spellcasting and Accuracy checks. Spells which fall into this category belong to the {\it Curses} and {\it Elemental} disciplines. 
+
+In addition, raw magical \attPow{} may be leveraged into making spells more potent. 
+
+Whenever a spell causes damage, add your \attPow{} modifier to any Damage check which is performed, unless the spell specifies otherwise. Spells which require a Resist check to be performed (both damage causing and otherwise), the DV of the Resist is set by your {\it Subjugate} value, which is calculated from:
+$$ \text{Subjugate} = 8 + \text{Expertise bonus + \attPow{} modifier} $$
+
+
+\subsection{\attEvl{}}
+
+The \attEvl{} attribute is a measure of the darkness and corruption which lies in the heart of an individual. 
+
+In a perhaps na{\"i}ve view of the world, this game system presumes people are, by default, inherently good. Comitting \attEvl{} acts therefore requires conquering your inner, better nature. Slitting the throat of a incapcitated prisoner might be physically easy to do, but to actually go through with such a foul deed you must overcome this inner good - which requires passing an \attEvl{} check. 
+
+Each time you commit such a deed, you will likely find your \attEvl{} rising in tandem with the blackening of your soul. 
+
+\attEvl{} has no proficiencies associated with it. 
+
+\subsubsection{Spells}
+
+The most evil spells in existence can only be cast by those with a corrupted and wicked soul - the unforgivable curses, the animation of the dead as gruesome puppets and so on - and hence use the \attEvl{} attribute for casting and accuracy checks. This spells form the discipline known as {\it Necromancy}. 
 
 
 

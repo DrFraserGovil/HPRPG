@@ -50,7 +50,7 @@ The rules for performing attacks are elaborated on page \pageref{S:Attacks}
  
  When used as a major action, movement allows you to move on foot up to a distance given by your {\it running speed} statistic, which is calculated from your base speed (derived from your race) and your fitness attribute:
 \small
-$$ \text{running speed} = \big(\text{Base Speed } + \text{Fitness modifier}\big) \text{ per round} $$  
+$$ \text{running speed} = \big(\text{Base Speed } + \text{\attPhys{} modifier}\big) \text{ per round} $$  
 \normalsize
 
 The rules discussed on page \pageref{S:SpecialMovement} concerning special movement, such as climbing, swimming or crawling, also apply in combat. 
@@ -73,7 +73,7 @@ In contrast, some actions (see below) are small enough to be considered minor ac
 
 If two characters are standing within touching distance, they may trade items between them. 
 
-Alternatively, you may attempt to throw an item to your ally, treating the item as an `improvised weapon'. If the throwing check is successful, the catcher performs a DV 10 ATH check to catch the item, and adds it to their inventory. 
+Alternatively, you may attempt to throw an item to your ally, treating the item as an `improvised weapon'. If the throwing check is successful, the catcher adds the item to their inventory. 
 
 Whichever method is chosen, giving items to other people takes the major actions of both the giver and the receiver. 
 
@@ -155,7 +155,7 @@ Typically, a melee attack can only be made against a target if they are within 1
 
 If you wish to grab your opponent- either to immobilise them, or to pick them up and throw them off a cliff - you may attempt to initiate a grapple in place of a regular attack. 
 
-To perform a grapple you need two free hands and perform an Athletics (Strength) check, which is contested by the target performing either an Athletics (Strength) or Finesse (Speed) check. If the grappling succeeds, the target acquires the trapped status. 
+To perform a grapple you need two free hands and perform an Strength check, which is contested by the target performing either an Strength or an Acrobatics check. If the grappling succeeds, the target acquires the trapped status. 
 
 If the grappler is strong enough, then they move whilst carrying the target subject to the following constraint:
 
@@ -163,13 +163,15 @@ If the grappler is strong enough, then they move whilst carrying the target subj
 \begin{rndtable}{c c}
 \bf Weight	&	\bf Speed
 \\
-Heavier than $ 5 \times$ ATH(strength) value	&	Speed = 0
+Lighter than Strength value & Unencumbered
 \\
-Heavier than ATH (strength) value	&	Speed halved
+Heavier than $2 \times$ Strength value	&	Speed halved
 \\
-Lighter than ATH (strength) value & Unencumbered
+Heavier than $ 5 \times$ Strength value	&	Speed = 0
 \end{rndtable}
 \end{center}
+
+Here the `strenght value' is the raw \attPhys{} value, plus the Expertise Bonus if the Strength proficiency is possessed. 
 
 A grappled target may attempt to use their action to escape. Repeat the contest. 
 
@@ -238,12 +240,6 @@ In addition, if you are considered proficient with the weapon (or wand) you are 
 
 When attacking a living being, the DV of the accuracy check is determined by the {\it instinct value} used by the target. If you meet this target, then the attack lands true. If the accuracy check fails, then the attack misses, or is successfully blocked by the target. 
 
-\subsubsection{Hitting Stationary Targets}
-
-If the target is not a living being (or is restricted from moving), then hitting the target is much easier, but not totally guaranteed. The `dodge' DV of a stationary object is normally equal to 5. 
-
-Some spells are classified as neither blockable nor avoidable -- but are still clearly attacks which target an enemy. For these spells, you treat the target as a stationary object. The same is true of `area effect' spells which target a region rather than a being. 
-
 \subsubsection{Additional Difficulty}
 
 Targeting objects which are particularly small, or (for ranged attacks) far away is more difficult.  The additional penalty for hitting such away targets is, with everything measured in metres:
@@ -272,9 +268,9 @@ Most beings either block or dodge, without having to devote conscious thought to
 The values associated with each statistic are:
 
 \begin{align*} 
-\text{Block} &= 10 + \text{Athletics modifier} 
+\text{Block} &= 10 + \text{\attPhys{} modifier} 
 \\
-\text{Dodge} &= 10 + \text{Finesse modifier} 
+\text{Dodge} &= 10 + \text{\attFin{} modifier} 
 \end{align*}
 
 By default, characters instinctively use whichever of these values is the highest:
@@ -305,9 +301,9 @@ Whichever action is chosen, enemies take check-disadvantage on accuracy rolls ag
 \begin{rndtable}{p{1.2 cm} c | c}
 ~	&	\bf Brace	&	\bf Evade
 \\
-\cellcolor{\tablecolorhead}\bf Resist:	&	\parbox[t]{\w cm}{\raggedright Advantage on Fitness, Spirit \& Power Resist checks}	&	\parbox[t]{\w cm}{\raggedright  Advantage on Finesse, Intelligence \& Perception Resist checks}
+\cellcolor{\tablecolorhead}\bf Resist:	&	\parbox[t]{\w cm}{\raggedright Advantage on \attPhysShort{}, \attSprShort{} \& \attPowShort{} Resist checks.}	&	\parbox[t]{\w cm}{\raggedright  Advantage on \attFinShort{}, \attIntShort{} \& \attPerShort{} Resist checks}
 \\
-\cellcolor{\tablecolorhead}\bf Accuracy:	&	\multicolumn{2}{c}{\parbox[t]{\c cm}{\centering Agressors take disadvantage on accuracy checks made against you this turn}}
+\cellcolor{\tablecolorhead}\bf Accuracy:	&	\multicolumn{2}{c}{\parbox[t]{\c cm}{\cellcolor{\tablecolorlight}\centering Agressors take disadvantage on accuracy checks made against you this turn}} 
 \end{rndtable}
 \end{center}
 \normalsize
@@ -327,10 +323,9 @@ Some effects cannot be avoided or blocked: holding up a shield against an incomi
 
 Spells denote in their description if they can be blocked or dodged. For the (rarer) instances of non-spell effects which fall into one of these categories, the GM decides if it is reasonable to dodge or block the effect. 
 
-If the `dominant' instinct (i.e. the one with the highest value) would be ineffective against a given effect, you may use the non-dominant one. However, this negates the effect of the {\it Evade} and {\it Brace} actions for the remainder of the turn cycle. 
+If the `dominant' instinct (i.e. the one with the highest value) would be ineffective against a given effect, you may use the non-dominant one. However changing your active instinct negates the effect of both the {\it Evade} and {\it Brace} actions for this turn cycle. Therefore, if a being is attacked by multiple effects in one cycle, it may be beneficial to allow one effect to land home, to keep the bonuses against the remainder of the effects. 
 
 Note that even `unblockable' effects are stopped by `impenetrable' fields. 
-
 
 
 \section{Doing Damage} \label{S:Damage}
@@ -380,7 +375,7 @@ Some damage types do damage in unusual ways - draining Fortitude instead of Heal
 
 \damage{Concussive}{A concussive blast from an explosion or a shockwave causes deafening concussive HP damage.}
 
-\damage{Electric}{Bolts of lightning, or simply touching a high-voltage wire, can lead to electrical HP damage. Electrical damage conducts through water and metal, harming all thosein contact.}
+\damage{Electric}{Bolts of lightning, or simply touching a high-voltage wire, can lead to electrical HP damage. Electrical damage conducts through water and metal, harming all those in contact.}
 
 \damage{Fatigue}{A magical will-sapping force damages only your FP.}
 
@@ -394,7 +389,7 @@ Some damage types do damage in unusual ways - draining Fortitude instead of Heal
 
 \damage{Poison}{Venomous stings and poisoned weapons damage HP, and may lead to some other unpleasant side effects}
 
-\damage{Psychic}{Damage that originates not from the body, but from the mind, but still damages your HP. You often cannot block psychic damage, you must instead rely on Resisting it.}
+\damage{Psychic}{Damage that originates not from the body, but from the mind, to damage your HP. You often cannot block psychic damage, you must instead rely on Resisting it.}
 
 \damage{Slashing}{Swinging blades and flashing claws damage the HP of unprotected targets.} 
 
@@ -452,9 +447,7 @@ If an individual enemy does manage to spot you, but their allies fail to, they c
 
 \subsection{Being Discovered}
 
-Every character and beast has a baseline level of awareness, even when not actively searching for hidden creatures or traps. This is your {\it passive perception}. It is calculated using an `average' dice roll (for a d20, this is 10), so: 
-$$\text{Passive PER} = 10 + \text{bonuses}$$
-
+Every character and beast has a baseline level of awareness, even when not actively searching for hidden creatures or traps. This is your {\it passive perception}, discussed on page \pageref{S:PassivePerception}.
 Alternatively, the beings might decide to take a major action to survey their surroundings, in which case they may perform an active Perception check, which may increase their perception value for this turn. 
 
 If a being's perception value exceeds your sneak value (and it is reasonable for them to be able to percieve you), then they have spotted you, and you are no longer hidden from that creature.  

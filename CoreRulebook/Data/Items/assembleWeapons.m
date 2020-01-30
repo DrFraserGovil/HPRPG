@@ -56,7 +56,7 @@ function assembleWeapons()
             check = strcat(line.Dice{1},'~', line.Damage{1});
 
 
-            line = strcat("\\bf ~~~~~", line.Weapon{1}, "\t&\t", prepareText(line.Cost{1}),"\t&\t",line.Check{1},"\t&\t",check, "\t&\t",notes,"\\\\ \n");
+            line = strcat("\\bf ~~~~~", line.Weapon{1}, "\t&\t", prepareText(line.Cost{1}),"\t&\t",prepareText(line.Check{1}),"\t&\t",check, "\t&\t",notes,"\\\\ \n");
             text = strcat(text, line);
         end
     end
