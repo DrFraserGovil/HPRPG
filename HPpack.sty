@@ -19,7 +19,11 @@
 \usepackage{enumitem}
 \usepackage{setspace}
 \usepackage{multicol}
- 
+\let\origbar\bar
+\let\origdot\dot
+\usepackage{allrunes}
+\let\bar\origbar
+\let\dot\origdot 
 \usepackage{tikz}
 \usepackage{multirow}
 \usepackage{float}
@@ -48,7 +52,7 @@
 
 
 \newcommand\galleon[1]{$\mathfrak{G}$#1}
-\newcommand\sickle[1]{{\large $\wreath$}#1}
+\newcommand\sickle[1]{{\textara{f}#1}}
 \newcommand\knut[1]{$\btimes$#1}
 \renewcommand{\minus}{-}
 \def\comma{,}

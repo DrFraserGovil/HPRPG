@@ -18,6 +18,57 @@
 	#6
 }
 
+Magic is an all-encompassing supernatural force within the universe, with the ability to alter reality at a most basic level. Incredibly powerful and difficult to control, magic is - at its heart - formless, chaotic and without boundaries. 
+
+However, over the centuries, some humans have been born with the ability to touch this immense reservoir of power: witches and wizards. These magic-users have attempted to tame and define magic, and to shepherd into easily understood forms. 
+
+The greatest discovery in wizarding history - comparable to the discovery of fire, or the wheel in the muggle world - was the discovery of the magical spell, followed by the discovery of the magical wand. 
+
+Prior to this discovery, witches and wizards had attempted to harness the infinite force of magic through sheer mental effort. Of course, this meant that a single stray thought at an inopportune moment could lead to blowing up a city, rather than lighting a candle. 
+
+Magical spells however, combine a ritualistic element (usually in the form of an incantation and a physical movement) to condition and focus the mind into the correct shape. The discovery of wands to focus and channel magical energies helped popularise this new way of casting magic - and it is now the utterly dominant way for magical folk to use their skills.  
+
+\section{Spell \& Caster Levels}
+
+Not all spells are created equal - some spells can only be cast by those who are exceptionally skilled in the arcane arts. There are 6 `levels' of spells, which denote how powerful they are:
+\begin{center}
+\begin{rndtable}{c c p {5.2 cm}}
+	\bf Spell Level	&	\bf Name	&	\bf Description
+	\\
+	1	&	Beginner	&	Basic spells that everyone can cast
+	\\
+	2	&	Novice		&	More powerful, yet still basic magic
+	\\
+	3	&	Adept		&	The most powerful magic that a `normal' person uses in their day-to-day life.
+	\\
+	4	&	Expert		&	Spells which go beyond those learned in a normal education
+	\\
+	5	&	Master		&	Powerful spells cast by those at the top of their field
+	\\
+	6	&	Ascendant	&	Nearing god-like abilities
+\end{rndtable}
+\end{center}
+
+Every witch or wizard has an associated `magic level' as well, which denotes the power of spells that they can cast. A {\it Novice} wizard is able to cast Beginner and Novice-level spells, but no higher. The types of spell a character has access to is determined by the total character level:
+
+\begin{center}
+\begin{rndtable}{c c}
+	\bf Character Level	&	\bf Spell Level
+	\\
+	1-3		&	Beginner
+	\\
+	4-7		&	Novice
+	\\
+	8-10		&	Adept
+	\\
+	11-13	&	Expert
+	\\
+	14-17	&	Master
+	\\
+	18 + 	&	Ascendant	
+\end{rndtable}
+\end{center}
+
 \section{Magical Schools}\label{S:Schools}
 
 The study of magic is a far-reaching field, which encompasses many different areas and skills -- some of which require vastly different skillsets to use. For this reason, a magical taxonomy was introduced by the Wizangemot in 1755, which divides the study of magic up into 7 `Schools', each of which contains a number of `Disciplines'. 
@@ -40,9 +91,6 @@ The study of magic is a far-reaching field, which encompasses many different are
 
 \normalsize
 
-Every spell is assigned to be a member of one of these disciplines, which determines the skills that are necessary to cast it. 
-
-\newpage
 \section{Spell Types} 
 
 In addition to falling into one of the seven Schools (a taxonomy based on the spell effect), every spell can also be categorised as a {\it type}, which is based on how the spell is cast. 
@@ -83,6 +131,18 @@ A Ritual spell is a spell that requires a large amount of preparation -- be it m
 As with a focus spell, concentration is key to completing a ritual, and whilst performing a ritual, you are considered {\it Distracted}. 
 
 Ritual spells are denoted by the symbol \ritSymb.
+
+
+\subsection{Other Spell Types}
+
+\subsubsection{Runic}
+
+
+
+\subsubsection{Beast}
+
+Beast spells are denoted by the symbol \beastSymb.
+
 
 \section{Spell Shapes}
 
@@ -157,9 +217,12 @@ When you are comforable enough with the spell to memory-cast it, the casting che
 A memory cast spell therefore skips the casting check stage, and jumps straight to the accuracy check (if applicable), and then applies the specified spell effect. 
 
 
+
+
+
 \section{Casting Checks}
 
-When casting an unfamiliar spell there is a non-trivial chance for a spellcaster to flub some important aspect of the spellcasting - which causes the spell to fail to materialise. 
+When casting an unfamiliar spell (or casting a familiar spell at a higher level) there is a non-trivial chance for a spellcaster to flub some important aspect of the spellcasting - which causes the spell to fail to materialise. 
 
 This is quantified through the {\it Casting Check}. A casting check is a normal ability check, performed with a d20 dice. The relevant ability modifier is determined by the kind of spell you are attempting to cast. Spells from different disciplines require different mental abilities in order to manifest, as shown in the table below: 
 
@@ -189,25 +252,27 @@ In addition, as well as an affinity based on their attribute scores, some beings
 
 
 The difficulty of a spell is determined by the caster's own level, and the difficulty of the spell they are trying to cast. Use the table below to determine the casting DV:
-\def\cc{\cellcolor{\tablecolorhead}}
+\def\cc{\cellcolor{\tablecolorhead}\bf}
+
+\begin{center}
 \begin{rndtable}{c c c c c c c c}
 ~	& ~ &	\multicolumn{6}{c}{\bf Spell Level}
 \\
-\cc	&	\cc	&	1 &2&3&4&5&6	
+\cc	&	\cc	&	\cc 1 &\cc 2&\cc 3&\cc 4&\cc 5&\cc 6	
 \\
-\cc~	&	\cc1	&	15
+\cc~	&	\cc1	&	15~&~&~&~&~&
 \\
-\cc&\cc	2	&	10	&	15
+\cc&\cc	2	&	10	&	15~&~&~&~&
 \\
-\cc&	\cc3	&	5	&	10	&	20
+\cc&	\cc3	&	5	&	10	&	20~&~&~&~
 \\
-\cc&	\cc4	&	5	&	10	&	15	&	20
+\cc&	\cc4	&	5	&	10	&	15	&	20~&~&~
 \\
-\cc&	\cc5	&	5	&	10	&	15	&	20	&	25
+\cc&	\cc5	&	5	&	10	&	15	&	20	&	25 & 
 \\
 \multirow{-6}{*}{\rotatebox[origin=c]{90}{\cc \bf Caster Level}}&	\cc 6 &	5	&	10	&	15	&20	&25	&30
 \end{rndtable}
-
+\end{center}
 \subsection{Spell Accuracy}
 
 Spells require an accuracy check in one of two circumstances:
@@ -224,32 +289,40 @@ Perform an accuracy check using the normal d20 dice. The modifier used is the sa
 
 Casting spells is not as simple as waving your wands and saying the magic words -- it takes great mental clarity to cast, and you can become exhausted from casting difficult spells. This mental burden is enumerated through the Fortitude Points attribute. 
 
-Each spell has an associated FP cost, which is deducted only after it is successfully cast. If the casting fails, then only half of the fortitude cost is deducted (rounded up).
- 
 You cannot cast a spell if it would send you into negative FP -- you must wait for your head to clear before attempting that spell.  
 
-The fortitude cost of a given spell is determined by the spell type (Instant, Focus, Ritual etc.) and the difficulty of the spell, and if the spell is cast from memory or not. A book-cast spell has a 50\% higher FP cost than if the caster is familiar with the spell. 
+The FP cost of casting a spell is determined by the difficulty of the spell - i.e. the spell level -- as shown in the table below:
 
-The FP cost of a spell is numerically equal to the difficulty of a spell, prior to any skill modifications (i.e. a skill which reduces the difficulty of a certain spell does not reduce the FP of it, and vice versa), unless the spell is being book-cast, in which case use the bracketed values.  
-
-
-
-{\footnotesize
+{
+\small
 \def\wFP{1}
 \begin{center}
-	\begin{rndtable}{p{1cm} |c |   c | c |c | c}
-		~	&{\bf Beginner}	&	{\bf Novice}	&	{\bf Adept}	&	{\bf Expert}	&	{\bf Master}
+	\begin{rndtable}{c c    c  c c  c}
+		{\bf Beginner}	&	{\bf Novice}	&	{\bf Adept}	&	{\bf Expert}	&	{\bf Master}	& {\bf Ascendant}
 		\\
-		\cellcolor{\tablecolorhead} \bf Memory &	\FPEntry{\DVBeg}{1}	&	\FPEntry{\DVNov}{1}	&	\FPEntry{\DVAdp}{1}	&	\FPEntry{\DVExp}{1}	&	\FPEntry{\DVMas}{1}
-		\\
-		\cellcolor{\tablecolorhead} \bf Book  &	\FPEntry{\DVBeg}{2}	&	\FPEntry{\DVNov}{2}	&	\FPEntry{\DVAdp}{2}	&	\FPEntry{\DVExp}{2}	&	\FPEntry{\DVMas}{2}
+	2	&	4	&	8	&	16	&	32	&	64
 	\end{rndtable}
 \end{center}
 }
 \subsection{Casting at Higher Level}
 
+When memory-casting, some spells can be cast at varying levels of power - injecting more magical energy into the spell effect, and thereby increasing the effectiveness of these spells. 
 
-\subsection{Resisting Spells}
+If the spell description states that such additional effects are available, then you may choose to cast it as a higher level spell. You cannot cast it as a higher level spell than your current casting level, but you may choose any level between the spell's base level and your spellcasting level. 
+
+Despite the fact that you are memory-casting the chosen spell, because you are casting the spell in an unfamiliar way, you do need to perform a casting check when casting a spell at a higher level. The DV and FP of the spell are equal to that of a normal spell of the chosen level. 
+
+You may `memorise' the higher level spell in the same fashion as you may memorise a book-cast spell - by successfully casting it. At this point, you may forgo the casting check when casting the spell at any level below the one you have just re-memorised. 
+
+{\bf Example:} Sarah is an 8th level witch, trying to levitate a boulder around 80kg in weight. Sarah has memorised the Beginner {\it Levitate} spell, which states it can lift only 1kg of matter. 
+
+However, this mass is multiplied by 10 for every additional spell level. Since Sarah has access to Adept-level spells, she chooses to try to cast {\it Levitate} as an Adept spell, which allows her to lift up to 100kg. 
+
+She successfully passes her DV 20 casting check, and the boulder is lifted. She still needs to pass the casting check to continue lifting boulders - but after 5 or 6, she has `memorised' the adept version of the spell, and does not need to pass the check any more. In the future, she may cast {\it Levitate} as either a Beginner, Novice or Adept level spell, without needing the check - she learned the Novice level for `free', by learning the more powerful Adept version.  
+
+
+
+\section{Resisting Spells}
 
 Even after a spell has successfully hit a target, it is possible for them to fight against the magic, reducing the effects and sometimes negating it entirely. 
 
@@ -257,7 +330,7 @@ This is normaly done by performing a {\it Resist} check before the spell effect 
 
 The Resist DV of a cast spell is enumerated through the {\it Subjugation} statistic:
 
-$$\text{Subjugate} = 8 + \text{Expertise bonus}  + \text{POW modifier} + \text{other bonuses}$$
+$$\text{Subjugate} = 8 + \text{Expertise bonus}  + \text{POW modifier}$$
 
 
 
