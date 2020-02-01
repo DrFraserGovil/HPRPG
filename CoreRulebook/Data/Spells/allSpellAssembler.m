@@ -126,7 +126,8 @@ function allSpellAssembler(maxLevel,fileNameRoot)
     fileName = strcat(fileNameRoot, 'SpellList.tex');
     if maxLevel < 3
         fileName =  strcat(fileNameRoot , '/SpellListShort.tex');
-	end
+    end
+    
 	readFile = fileread(fileName);
 	insertPoint = strfind(readFile, '%%SpellBegin');
     endPoint = strfind(readFile, '%%SpellEnd');
@@ -139,10 +140,10 @@ function allSpellAssembler(maxLevel,fileNameRoot)
     fprintf(FID, fullText);
     fclose(FID);
     
-    spellBook(schools)
+    spellBook(schools,fileNameRoot)
 end
 
-function spellBook(schools)
+function spellBook(schools,fileNameRoot)
 
     f = readtable("bookNames.xlsx");
 
@@ -150,12 +151,42 @@ function spellBook(schools)
     for i = 1:length(schools)
        for j = 1:length(schools(i).Discipline)
           disc = schools(i).Discipline(j);
-          tit = ["Beginner", "Ade
-          for q = 1:6
-             sub =  
-          end
+          tit = ["Beginner", "Novice", "Adept", "Expert","Master","Ascendant"];
           
+          q = string(transpose(f{:,1}));
+          rowID = q== disc.Name;
+ 
+          for q = 1:6
+
+             bName = prepareText(f{rowID,1+q}{1});
+             sub =  tit(q) + "-level " + disc.Name;
+             
+             text = text + "\n \\spellBook{"+bName+"}{"+sub+"}{\n";
+             
+             for k = 1:length(disc.Spells{q})
+                 text = text + disc.Spells{q}(k).output() + "\n";
+             end
+             
+             text = text + "}";
+             
+          end
+     
        end
     end
-    fprintf(text)
+    
+
+     fileName = strcat(fileNameRoot, '../../GameMasterGuide/SpellBooks.tex');
+
+    readFile = fileread(fileName);
+    insertPoint = strfind(readFile, '%%SpellbookBegin');
+    endPoint = strfind(readFile, '%%SpellbookEnd');
+    firstHalf = prepareText(readFile(1:insertPoint+16),0,0);
+
+    secondHalf = prepareText(readFile(endPoint:end),0,0);
+
+    fullText = firstHalf + text + "\n" + secondHalf;
+    FID = fopen(fileName,'w');
+    fprintf(FID, fullText);
+    fclose(FID);
+    
 end

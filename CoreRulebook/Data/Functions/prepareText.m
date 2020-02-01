@@ -1,6 +1,9 @@
-function newText = prepareText(text,commaMode)
+function newText = prepareText(text,commaMode,dashMode)
     if nargin < 2
         commaMode= 1;
+    end
+    if nargin < 3
+        dashMode = 1;
     end
     newText = "";
     text = char(text);
@@ -9,8 +12,10 @@ function newText = prepareText(text,commaMode)
         if strcmp(character, "\")==1
             character = "\\";
         end
-        if strcmp(character,"-")==1
-            character = "\\minus{}";
+        if dashMode
+            if strcmp(character,"-")==1
+                character = "\\minus{}";
+            end
         end
         if commaMode
             if strcmp(character,",")==1
