@@ -138,4 +138,24 @@ function allSpellAssembler(maxLevel,fileNameRoot)
 	FID = fopen(fileName,'w');
     fprintf(FID, fullText);
     fclose(FID);
+    
+    spellBook(schools)
+end
+
+function spellBook(schools)
+
+    f = readtable("bookNames.xlsx");
+
+    text = "";
+    for i = 1:length(schools)
+       for j = 1:length(schools(i).Discipline)
+          disc = schools(i).Discipline(j);
+          tit = ["Beginner", "Ade
+          for q = 1:6
+             sub =  
+          end
+          
+       end
+    end
+    fprintf(text)
 end

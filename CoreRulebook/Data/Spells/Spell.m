@@ -13,7 +13,6 @@ classdef Spell < handle
         Effect
         Duration
         HigherLevel
-        Travel
         Resist
 
         Blockable
@@ -34,7 +33,6 @@ classdef Spell < handle
            obj.Effect = "None";
            obj.Duration = 0;
            obj.HigherLevel = "None";
-           obj.Travel = "None";
            obj.Resist = "None";
            obj.Blockable = false;
            obj.Dodgeable = false;
@@ -59,7 +57,6 @@ classdef Spell < handle
             obj.Effect = line.Effect{1};
             obj.Duration = line.Duration{1};
             obj.HigherLevel = line.HigherLevel{1};
-            obj.Travel = line.TravelType{1};
             
             obj.Resist = line.Resist{1};
 
@@ -108,11 +105,6 @@ classdef Spell < handle
                 t = t + "higher = " + prepareText(sp.HigherLevel) + ",";
             end
             
-            if isempty(sp.Travel)
-                t = t + "noTravel = 1, ";
-            else
-                t = t + "travel = " + prepareText(sp.Travel) +",";
-            end
             
             if isempty(sp.Resist)
                 t = t + "noResist =1, ";
