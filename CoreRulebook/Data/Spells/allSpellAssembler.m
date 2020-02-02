@@ -1,4 +1,4 @@
-function allSpellAssembler(maxLevel,fileNameRoot)
+function schools = allSpellAssembler(maxLevel,fileNameRoot)
    
     %if no target given, assume that called directly, else assume called by
     %master
@@ -164,6 +164,7 @@ function spellBook(schools,fileNameRoot)
              text = text + "\n \\spellBook{"+bName+"}{"+sub+"}{\n";
              
              for k = 1:length(disc.Spells{q})
+				 
                  text = text + disc.Spells{q}(k).output() + "\n";
              end
              

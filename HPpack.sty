@@ -58,12 +58,23 @@
 \def\comma{,}
 \def\dash{-}
 
+
+\newcommand\forEvery{for every additional casting-level dedicated to this spell}
+
+\newcommand\additional[2]
+{
+Gain an additional #1 #2 damage \forEvery{}.
+}
+
 %% Custom commands
 \newcommand*\cleartoleftpage{%
   \clearpage
   \ifodd\value{page}\hbox{}\clearpage\fi
 }
-
+\newcommand*\cleartorightpage{%
+  \clearpage
+  \ifodd\value{page}\else\hbox{}\clearpage\fi
+}
 
 %% Colours
 

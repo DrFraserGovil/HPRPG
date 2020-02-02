@@ -32,8 +32,7 @@ for i = 1:h
 end
 
 for i = 1:6
-figure()
-
+subplot(3,2,i);
 produceImage(damage,i,fTitles,N);
 title(strcat("Level ", num2str(i)));
 colorbar
