@@ -7,7 +7,7 @@ damageDetected = (f.Ascendant > 0);
 f(~damageDetected,:) = [];
 fTitles = string(transpose(f{:,1}));
 dMax = 200;
-N = 10000;
+N = 30000;
 h = height(f);
 nLevels = 6;
 damage = zeros(h,nLevels,dMax);
@@ -32,7 +32,7 @@ for i = 1:h
 end
 
 for i = 1:6
-subplot(3,2,i);
+figure()
 produceImage(damage,i,fTitles,N);
 title(strcat("Level ", num2str(i)));
 colorbar
