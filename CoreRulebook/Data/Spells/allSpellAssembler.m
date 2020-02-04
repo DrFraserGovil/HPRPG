@@ -1,4 +1,4 @@
-function schools = allSpellAssembler(maxLevel,fileNameRoot)
+function allSpellAssembler(maxLevel,fileNameRoot)
    
     %if no target given, assume that called directly, else assume called by
     %master

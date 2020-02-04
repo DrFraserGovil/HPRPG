@@ -6,36 +6,85 @@
 \label{S:Enchanting}
 Enchanting is the process whereby magical items are made – imbuing them with extraordinary abilities. 
 
-To enchant an item, you must first work out what effect you want to imbue it with – for example, you might want to imbue a sword with a fire spell to turn it into a flaming sword. You must them identify if you have a spell which performs this effect (in this case, {\it incendio} would work). 
+Unlike `normal' magic, which has gone through the millenia long process of taming, binding and chaining to individual spells, the artificing is still relatively close to its roots as a primordial magic. It is thought that this is probably due to the heavy influence of goblin work in the artificing arts. 
 
-If you are able to cast this spell, and you have an unenchanted version of the item (i.e. a sword), then you may proceed with the enchanting. You must first cast the ‘effect spell’, and then, after that has been successfully cast, you must then perform the Enchanting Ritual spell, to transfer that spell into the item. This ritual takes 3 hours to complete, during which time, no other magic may be performed.  The ‘effect spell’ and the enchanting ritual need not be carried out by the same person, though the effects of the enchanting will be better if they are performed by the same person. 
+Enchanting an item is achieved through a laborious process of arcane inscription, in which magical runes are drawn over the object to be enchanted using special {\it Runic Tools}. These runes form a complicated web of magic known as the {\it nexus} of the object. If the nexus of an enchanted object is destroyed (an act which normally, though not always, destroys the enchanted object) the enchantment is released. 
 
-The enchanting ritual requires approximately 6 hours to complete, and the item needs to be immersed in a vat of liquid precious metal (silver or gold will suffice, these metals are consumed in the process), and then finally the 1d20 FIN (arcane) casting check must be performed, though POW points may be dedicated towards it in the same fashion as a ‘power dependent spell’. 
+Upon completion of the inscription process, a small sealing charm is placed over the object to charge the nexus, at which point it is revealed if the enchantment holds. 
 
+The effect of the enchantment is determined by two things: the runes inscribed on the surface, but also the willpower of the inscriber, which helps shape the otherwise somewhat vague runes. 
 
-The GM will tell you if the enchanting was a success, and how powerful the enchanted item is. The GM will also determine any limits the item has – i.e. the number of uses that you may get out of it before it needs recharging, for example. 
+There are thousands of individual runes throughout the known world, complex conjugations and combinations, to help guide the mind of the enchanter. All of the runes, however, can be broken down into three categories. For a successful echantment, you need at least one rune from each category to be imbued into the nexus. 
 
-\subsection{Enchanting Mishaps}
+The three categories are the {\bf Duration Runes}, the {\it Action Runes} and the {\it Subject Runes}.
 
-If your enchanting fails, you may suffer an Enchanting Mishap, which requires you roll on the following table:
+\def\durText{The Duration runes specify how long the effect of the enchanted item lasts after it is activated: does it last for only a few seconds at a time, does it release the effect incredibly quickly then halt, or is the effect permanently active? }
+
+\def\accText{The Action runes specifies the kind of action that the enchantment performs \minus{} does it create something new? Alter what is already present?  Does it give the user new abilities, or does it protect them from harm?}
+
+\def\subText{The Subject runes control what the {\it Action} acts upon. Does the `creation' rune form a blast of fire, a jet of water, or a warm glow of light? }
+
+\newcommand\rune[3]
+{
+\textarm{#2}	&#1	&		\small #3
+\\
+}
+
+\newcommand\runeList[3]
+{
+\subsection{#1}
+
+#2
 
 \begin{center}
-\begin{rndtable}{c p{6 cm}}
-\bf Roll 	&	\bf Mishap
+\begin{rndtable}{c l p {6 cm} }
+\bf Rune	&	\bf Name	&	\bf Description
 \\
-1		&	Nothing happens.
-\\
-2		&	The item crumbles into dust
-\\
-3		&	The item becomes `Cursed'. GM rolls for curse effect.
-\\
-4		&	The item is enchanted with the exact opposite effect to the target.
-\\
-5		&	The item explodes. If target enchantment was damage causing, apply that damage for 2d10, else damage is `Force'. 	
-\\
-6		&	Another random magical item in your inventory is drained of all charges (but not disenchanted). 
+#3
 \end{rndtable}
 \end{center}
+}
+
+%%RuneBegin
+
+\runeList{Duration}{\durText{}}{
+\rune{displos}{H}{Used for effects that act instantaneously\comma{} releasing all their effect an energy in a split second.}
+\rune{velox}{C}{Used for effects which last for a handful of seconds –  burning a target when struck with a weapon\comma{} or activating a temporary shield.}
+\rune{lentus}{X}{Used for effects that last on the duration of minutes to hours. The effects tend to be much more gentle that with {\it velox} or {\it displos}\comma{} as the magic gently seeps out over time.}
+\rune{aeternum}{\X}{Used for effects which last for extended periods of time\comma{} or are constantly active. As with {\it lentus}\comma{} the effects are diluted by the need to conserve energy.}
+} 
+\runeList{Action}{\accText{}}{
+\rune{cingo}{p}{Contain}
+\rune{clypus}{\D}{Protect}
+\rune{discite}{\belgthor}{Learn}
+\rune{genero}{m}{Create}
+\rune{imperum}{\Pdots}{Control}
+\rune{muto}{\tring}{Transform}
+\rune{perdero}{y}{Destroy}
+\rune{porto}{\T}{Transmit}
+\rune{sarco}{o}{Repair}
+} 
+\runeList{Subject}{\subText{}}{
+\rune{animus}{\y}{Astral}
+\rune{aqua}{\dh}{Water}
+\rune{arbor}{Y}{Nature}
+\rune{belua}{\tvimadur}{Beasts}
+\rune{caelus}{\x}{Air}
+\rune{hominus}{x}{Bodies}
+\rune{ignis}{F}{Fire}
+\rune{locus}{\e}{Space}
+\rune{lux}{w}{Light}
+\rune{mistys}{\thth}{Arcane}
+\rune{morbus}{\rdot}{Toxins}
+\rune{pondus}{\Y}{Matter}
+\rune{sensus}{s}{Mind}
+\rune{tempus}{E}{Time}
+\rune{terra}{\arlaug}{Earth}
+} 
+
+%%RuneEnd
+
+
 
 \section{Potion Making}
 
