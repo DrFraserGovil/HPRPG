@@ -1,44 +1,40 @@
     \documentclass[CoreRulebook.tex]{subfile}
-    \twocolumn
-    \chapter{Archetype List}
-    
-    The following pages contain a list of the abilities gained through each archetype. 
-    
+  
+	\addcontentsline{toc}{chapter}{Archetype List}
      \include{Chapters/Archetypes_Definitions}
-     \small
-     
+    \normalsize
 %\def\prefix{../Data/Archetypes}
 \def\prefix{Data/Archetypes}
-% \subfile{\prefix/Gryffindor}
-% \clearpage
-% \subfile{\prefix/Hufflepuff}
-% \clearpage
-% \subfile{\prefix/Ravenclaw}
-% \clearpage
-% \subfile{\prefix/Slytherin}
-% \clearpage
-% \if \coreMode1
-	% \subfile{\prefix/Artificier}
+\input{\prefix/Gryffindor}
+\clearpage
+\input{\prefix/Hufflepuff}
+\clearpage
+\input{\prefix/Ravenclaw}
+\clearpage
+\input{\prefix/Slytherin}
+ \clearpage
+ \if \coreMode1
+	\input{\prefix/Artificer}
 	% \clearpage
-	% \subfile{\prefix/Auror}
+	% \input{\prefix/Auror}
 	% \clearpage
-	% \subfile{\prefix/Brute}
+	% \input{\prefix/Brute}
 	% \clearpage
-	% \subfile{\prefix/Empath}
+	% \input{\prefix/Empath}
 	% \clearpage
-	% \subfile{\prefix/Fighter}
+	% \input{\prefix/Fighter}
 	% \clearpage
-	% \subfile{\prefix/Investigator}
+	% \input{\prefix/Investigator}
 	% \clearpage
-	% \subfile{\prefix/Naturalist}
+	% \input{\prefix/Naturalist}
 	% \clearpage
-	% \subfile{\prefix/Oathkeeper}
+	% \input{\prefix/Oathkeeper}
 	% \clearpage
-	% \subfile{\prefix/Performer}
+	% \input{\prefix/Performer}
 	% \clearpage
-	% \subfile{\prefix/Ranger}
+	% \input{\prefix/Ranger}
 	% \clearpage
-	% \subfile{\prefix/Sage}
-% \fi
+	% \input{\prefix/Sage}
+ \fi
 	\normalsize
 	

@@ -1,9 +1,8 @@
-\documentclass[CoreRulebook.tex]{subfile}
-\newpage
-\begin{strip}
-\setlength{\parskip}{4pt}
-\section{Slytherin Student}
-As a house, Slytherin has a bad repuation -- even the words of the Sorting Hat have a menacing air:
+
+
+\chapter*{Slytherin Student}
+\addcontentsline{toc}{section}{Slytherin Student}
+As a house, Slytherin has a bad repuation \minus{}\minus{} even the words of the Sorting Hat have a menacing air:
 \begin{displayquote}
 \it Or perhaps in Slytherin,
 \\
@@ -14,60 +13,24 @@ Those cunning folk use any means,
 To achieve their ends.
 \end{displayquote}
 This repuation is, for the most part, undeserved. Slytherin is not a house of evil students; rather it is the house of people with ambition, charm and with lofty goals. Driven by their desire to make something of their lives, the Slytherins can indeed be deceptive, but they can also be charming and persuasive. Never underestimate a Slytherin student, for they will surely never underestimate you. 
+%%archBegin
+\archetype{name=Slytherin Student, hp=8, fp=8, armour=None, tool=Choose one from: Repair Kit\comma{} Forgery Tools\comma{} Navigator\apos{}s tools, disc=Choose any two disciplines from the Illusion or Charms schools., weapon=Simple Weapons, prof=Choose any two from Chicanery\comma{} Deception\comma{} Persuasion\comma{} Intimidation., equip=Wand\comma{} a Student\apos{}s pack and the tools selected above., memorised=Any two from the basic spells table., expertI = 2, maxspellI = Beginner, bonusI = Token of Leadership, expertII = 2, maxspellII = Beginner, bonusII = Charm Offensive, expertIII = 2, maxspellIII = Beginner, bonusIII = Career Ambitions\comma{} Sly Action, expertIV = NaN, maxspellIV = , bonusIV = , expertV = NaN, maxspellV = , bonusV = , expertVI = NaN, maxspellVI = , bonusVI = , expertVII = NaN, maxspellVII = , bonusVII = , expertVIII = NaN, maxspellVIII = , bonusVIII = , expertIX = NaN, maxspellIX = , bonusIX = , expertX = NaN, maxspellX = , bonusX = , shortmode = 1}
+%%archEnd
 
-Aside from the occaisional bad egg, the Slytherin students fall into two camps: the {\bf student politcians} and the {\bf schemers}. The student politicians are those students who are heavily involved in every student initiative they can find - whether they do this for the sake of power, or out of a genuine desire to improve the lives of students is neither here nor there. The schemers, on the other hand, are students who always seem to have some kind of plan, a side-hustle or otherwise elaborate scheme to improve their lot in life. 
-%%archBegin\archetype{Slytherin Student}{Student Politician}{Schemer}{1}{featureI=Heart of Ambition, arcaneI=2, featureII=Bonus Skill, arcaneII=2, featureIII=Heart of Ambition II, alphaFeatureIII=Alliance, betaFeatureIII=Side Hustle, arcaneIII=2, alphaFeatureIV=Charm Offensive, betaFeatureIV=Researched Enemy, arcaneIV=2, featureV=Bonus Skill, alphaFeatureV=Inevitable Betrayal, betaFeatureV=Life Plan, arcaneV=3}%%archEnd
-
-\end{strip}
-
-
-\subsection*{Archetype Features}
-
-\textbf{\textit{Heart of Ambition:}} 
-
-Starting at level 1, the Heart of Ambition gives your character a +1 boost to the Persuasion and Deception proficiencies. This increases to +2 at level 4. 
-\par
-~
-\par
-\textbf{\textit{Bonus Skill:}} 
-
-At levels 2 and 5, you may choose an additional Skill when levelling up. 
+\newpage
+\section{Acquired Feats}
 
 
+\feat{Token of Leadership}{Acquired at 1st level, the Token of Leadership symbolises everything that Slytherin House stands for: cunning and persuasive words, eloquent speeches and the ability to inspire and deceive with a simple phrase. \\~\\
+You may use this Token once per day to give yourself check\minus{}advantage on all Charisma checks for the next hour.}
 
+\feat{Charm Offensive}{Learned at 2nd level, the Charm Offensive is, perhaps, the oldest trick in the book. \\~\\Target a being within hearing range, and use your prodigious charm to lower their guard. The next strike made on the target by you or an ally takes check\minus{}advantage on the accuracy check, {\bf or} they take disadvantage on the next Resist check they have to perform. \\~\\ This ability can only be used once per short rest. }
 
-\subsection*{Student Politician Features}
+\feat{Career Ambition}{When you reach 3rd level, you may nominate a career you wish to enter into: or the Archetype that you will multiclass into next level. 
 
-\textbf{\textit{Alliance:}}
+If you find a being which is already a member of that Archetype and convince them to become your mentor, you can accelerate your progress to achieving your goal. Gain 50\% more experience points on every day during which you meet your `mentor'. 
 
-From 3rd level you may attempt to persuade any sapient creature to not only stop fighting you, but to defect and join your side. Targets must pass a SPR (willpower) Resist check against your 1d20 CHR (persuasion) check. If they fail, they will disengage from combat, and join your side as an ally. This action takes 3 turns to complete, during which time the target must be within hearing range. 
-\par
-~
-\par
-\textbf{\textit{Charm Offensive:}} 
+If you fail to multiclass into the nominated role the next time you level up, you find all your experience was in vain, and you lose all experience, aborting the level\minus{}up procedure. 
+}
 
-From 4th level, you may use your charm and charisma to lower the mental defences of all non-allies within hearing range. Targets must pass a SPR (willpower) Reisst check against your 1d20 CHR (decpetion) check. Failure results in a 100\% weakness to psychic damage for 20 rounds. 
-\par
-~
-\par
-\textbf{\textit{Inevitable Betrayal:}} 
-
-From 5th level, you may choose to betray any individual under the influence of the {\it Alliance} effect, or any genuine ally. Doing so gives you check double-advantage on all actions against them for 4 turns, and the first attack triggers a critical strike on them. 
-
-\subsection*{Schemer Features}
-
-\textbf{\textit{Side Hustle:}}
-
-From 3rd level, you may set up a small business to make you a small amount of money every day. The amount of money generated every day is 5 times your Slytherin level.
-\par
-~
-\par
-\textbf{\textit{Researched Enemy:}}
-
-From 4th level, you may research into any named species or NPC. That species or character then gets check disadvantage on any actions against you. The number of researched enemies you can have at any time is 3 less than your current Slytherin level. It takes 1 week to research a new enemy. 
-\par
-~
-\par
-\textbf{\textit{Life Plan:}}
-
-From 5th level, when you multiclass, you may automatically start at LVL 3 in your new Archetype. If you multiclass a second time, start at LVL 2, further multiclassing starts at the usual LVL 1.
+\feat{Sly Action}{On a turn in which no beings attacked otherwise interacted with you, you may take an additional minor action to consume an item, move, or attempt to hide. }

@@ -1,10 +1,9 @@
-\documentclass[CoreRulebook.tex]{subfile}
 
-\begin{strip}
-\setlength{\parskip}{4pt}
-\section{Ravenclaw Student}
 
-Their hearts full of a desire for learning, but their eyes blinking against the harsh light of day, Ravenclaw students often make unwilling adventurers -- preferring instead the comfort of a cosy library. Some secrets, however, cannot be found between the pages of a book -- and an expedition must be mounted, for as the Sorting Hat tells us:
+\chapter*{Ravenclaw Student}
+\addcontentsline{toc}{section}{Ravenclaw Student}
+
+Their hearts full of a desire for learning, but their eyes blinking against the harsh light of day, Ravenclaw students often make unwilling adventurers \minus{}\minus{} preferring instead the comfort of a cosy library. 
 \begin{displayquote}
 \it Or yet in wise old Ravenclaw,
 \\
@@ -16,113 +15,33 @@ Will always find their kind.
 \end{displayquote}
 Ravenclaw is the house that prizes knowledge and an inquisitive mind above all other traits. Often members of this house are the most advanced spellcasters in their year, but their lack of practical experience and physical ineptitude means they're not always the best in every situation. 
 
-Students in Ravenclaw are typically one of two breeds: the {\bf nerds} and the {\bf prodigies}. The nerds are those who love learning for learning's own sake, they latch onto a topic and devour all information related to that subject. The prodigies, on the other hand, are truly gifted individuals who have a natural talent in a specific field. 
-%%archBegin\archetype{Ravenclaw Student}{Nerd}{Prodigy}{1}{featureI=Heart of Wisdom, arcaneI=2, featureII=Arcane Knowledge Increase, arcaneII=3, alphaFeatureIII=Extraordinary Memory, betaFeatureIII=Prodigy Choice\comma{} Prodigy Feature, arcaneIII=3, featureIV=Heart of Wisdom II, alphaFeatureIV=Passion project, betaFeatureIV=Prodigy Feature, arcaneIV=3, featureV=Arcane Knowledge Increase, arcaneV=5}%%archEnd
-\end{strip}
 
+%%archBegin
+\archetype{name=Ravenclaw Student, hp=6, fp=10, armour=None, tool=Choose one from: Cooking utensils\comma{} First Aid Kit\comma{} Herbology Tools., disc=Choose any two disciplines from the Recuperation or Divination schools., weapon=None, prof=Choose any three from Arcane\comma{} History\comma{} Logic\comma{} Nature\comma{} Research and Unnature, equip=Wand\comma{} a Student\apos{}s pack and the tools selected above., memorised=Any three spells from the basic spells table., expertI = 2, maxspellI = Beginner, bonusI = Token of Wisdom, expertII = 2, maxspellII = Beginner, bonusII = Passion Project, expertIII = 2, maxspellIII = Novice, bonusIII = True Expertise\comma{} Advanced Spellcasting, expertIV = NaN, maxspellIV = , bonusIV = , expertV = NaN, maxspellV = , bonusV = , expertVI = NaN, maxspellVI = , bonusVI = , expertVII = NaN, maxspellVII = , bonusVII = , expertVIII = NaN, maxspellVIII = , bonusVIII = , expertIX = NaN, maxspellIX = , bonusIX = , expertX = NaN, maxspellX = , bonusX = , shortmode = 1}
+%%archEnd
 
-\subsection*{Archetype Features}
-
-\textbf{\textit{Heart of Wisdom:}}
-
-Starting at first level, you may choose 2 of the four intelligence proficiencies to take a + 1 bonus in. Repeat this process again at 4th level (you may choose differently). 
-\par
-~
-\par
-\textbf{\textit{Arcane Knowledge Increase}}
-
-At second level, and again at 5th level, gain a bonus point to your Arcane Wisdom. 
-
-\subsection*{Nerd Features}
-
-\textbf{\textit{Extraordinary Memory:}}
-
-From 3rd level, you may commit a book (see Items for a booklist) to memory. Memory and Knowledge checks in that field get a bonus equal to your Ravenclaw level. You may only have this bonus in one field at a time. 
-\par
-~
-\par
-\textbf{\textit{Passion project:}}
-
-Starting at 4th level, you may choose one specific spell or skill (such as potionmaking) as your ``project'. Checks to your project may then be performed with a die one level larger than your present one. If you use a d20, gain a +4 bonus instead. Changing your passion project takes 2 weeks of solid work. If you do not use the skill at least once a week, you become out of practice, and must start again. 
 
 
 \newpage
-\subsection*{Prodigy Features}
-
-\textbf{\textit{Prodigy Choice:}}
-
-A prodigy has an exceptional gift in a particular area, well beyond their years. At 3rd level, you get to choose which field you truly excel in. You may choose one prodigy area: Chess, Music or Art. Your field of expertise gives you features at 3rd and 4th level. Information about the prodigy fields are listed below. 
-
-\newpage
-\section{Prodigy Fields}
-
-A prodigy is typically an individual who excels in one of the three following areas: Chess, Music or Art. 
-
-\subsection*{Art}
-
-An art prodigy is not just someone who is good at art -- they are those truly gifted people whose artwork transcends usual standards of beauty. Add in some magic, and the possibilities are near-endless. 
-\\
-~
-\\
-\textbf{\textit{Visual Clarity:}}
-
-From 3rd level, you see things much more clearly than the average human. Perception proficiency gets +1 bonus. 
-
-Starting at 5th level, you are also able to observe any weak spots in the armour of an enemy. 
-\\
-~
-\\
-\textbf{\textit{Basic Runes:}}
-
-From 4th level, you are able to recreate the basic magical runes. By painting the runes on a surface and infusing them with magical energy, you may turn your artwork into magical  masterpeices. Painting a rune takes 1 minute (5 combat rounds), though not necessarily consecutively. You may paint the rune using any material as long as it is reasonable that it adheres ot the surface. Runes are activated immediately after you complete them. 
-
- You may paint one of the following runes:
- 
- \begin{itemize}
- 	\item \textbf{\textit{Rune of Illusion:}} project a basic illusion onto the surface around the rune. The artist may shape the illusion to an extent, but detail is limited to basic textures and colours. Maximum area is 3m$^2$. Rune deactivates on contact with the illusion. 
- 	
- 	\item \textbf{\textit{Rune of Trapping:}} the next being to touch the rune must pass a SPR(willpower) Resist check (DV 14) or be paralysed for 1 turn.
- 	 
- 	 \item \textbf{\textit{Rune of Protection:}} when activated, casts {\it Lesser Ward} spell in a 2m radius. 
- \end{itemize}
-
-Basic runes have a 25\% chance of triggering when attempts are made to remove them. 
-\subsection*{Chess}
-Chess was first invented by muggles, but wholeheartedly adopted by wizarkind (albeit with a few alterations). It is said that chess is a microcosm of what it is to be a ruler -- the skills needed (patience, strategy, and a willingness to sacrifice) are said to be the most important when a leader of men. If this is to be believed, a Chess prodigy is therefore able to leverage their skills into the real world. 
-
-\textbf{\textit{Tactical Inference:}}
-
-Starting from 3rd level, you may use your major action to ascertain the plans of your enemy by performing a 1d8 INT (history) check + 1 per Ravenclaw level, with the DV set by the target performing an INT(deception) Resist check. 
+\section{Acquired Feats}
 
 
-Knowing their plans gives you check advantage for all actions against them, and them check disadvantage for all actions against you for 5 combat rounds. 
-\\
-~
-\\
-\textbf{\textit{Patient Strike:}}
 
-From 4th level onwards, for every 5 combat rounds that you do not take damage in, get a +1 bonus to all subsequent attacking checks (max 3). This counter resets when you take damage.  
+\feat{Token of Knowledge}{Acquired at 1st level, the Token of Knowledge symbolises everything that Ravenclaw House stands for: knowledge, wisdom, learning and a razor sharp mind. \\~\\
+You may use this Token once per day to give yourself check\minus{}advantage on all Intelligence checks for the next hour.}
 
-\newpage
-\subsection*{Music}
+\feat{Passion Project}{From 2nd level, you may choose a passion project to focus on. \\~\\ A passion project is a specific area in which a witch or wizard has devoted their time and energy, becoming far better at it than would otherwise be expected. Choose an individual spell or tool to obsess over. Any time you are asked to make a check associated with your obsession, you may take check\minus{}advantage. \\~\\ You can change your passion project, but doing so requires an upheaval of your psyche:  one of dedicated work in which you do not use the old passion project, before the change holds. }
 
-Music, though known and practiced by muggles throughout history, is deeply connected to the primal magic that flows through the veins of the universe. A wizarding music prodigy isn't just someone who can play music unerringly well, they can manipulate the very fabric of reality as they play. Characters that take the Music Prodigy should first choose an instrument to play. 
-\\
-~
-\\
-\textbf{\textit{Perfect Pitch:}}
+\feat{True Expertise}{There are varying levels of brilliance. Some people are very good at a lot of things, whilst others are truly outstanding at a small number of things.  \\~\\When you reach level 3, you find out which of those people you are. Choose from the following list:
 
-From 3rd level, recieve a +2 bonus to Perception proficiency. 
-\\
-~
-\\
-
-\textbf{\textit{Virtuoso Performance:}}
-
-Starting from 4th level, if you are able to play music for at least 1 minute (5 combat rounds) without taking damage or being otherwise interrupted, all targets within hearing range (and which can hear) take one of the following effects:
 \begin{itemize}
-	\item Take 1d4 psychic damage
-	\item Become confused for 1 round
-	\item Take check disadvantage for 1 round
-\end{itemize} 
-For each subsequent round that you are able to maintain the performance without being interrupted, this effect repeats. 
+	\item {\bf Deep and Narrow}: Choose 2 spell, tool or skill proficiencies. You double your expertise bonus on any checks relating to these topics. 
+	\item {\bf Shallow but Broad}: Choose 3 new spell disciplines, tools or skills to become proficient in.  
+\end{itemize}
+}
+
+\feat{Advanced Spellcasting}{By level 3, you discover that your knowledge of spellwork has advanced faster than is normally expected of a student. 
+\\~\\
+ You gain access to Novice level spells one level early, to reflect your rapid progress.  
+
+ }

@@ -40,9 +40,9 @@
 \begin{multicols}{3}
 %%SkillBegin\skill{name =Always Alert,prerequisite=,  description =Gain check advantage on Perception checks made to detect the presence of enemies. You also gain advantage on Resist checks made to avoid or resist both magical and mundane traps., noPre = 1, n =1}
 
-\skill{name =Ambidextrous,prerequisite=,  description =Increase \attFin{} attribute by 1. You are considered proficient in two\minus{}weapon fighting., noPre = 1, n =1}
+\skill{name =Ambidextrous,prerequisite=,  description =Increase \attFin{} attribute by 1. You are considered proficient in two\minus{}weapon fighting\comma{} and may use your off\minus{}hand as effectively as your dominant one., noPre = 1, n =1}
 
-\skill{name =Animagus,prerequisite=Expert Thaumaturgy,  description =Transform into an non\minus{}magical animal at will. This animal must be chosen at the moment you acquire this skill\comma{} and cannot be changed afterwards. Transforming costs 5FP and constitutes a major action., n =1}
+\skill{name =Animagus,prerequisite=Expert Thaumaturgy,  description =Transform into an non\minus{}magical animal at will. This animal must be chosen at the moment you acquire this skill\comma{} and cannot be changed afterwards. Transforming costs 25FP and constitutes a major action., n =1}
 
 \skill{name =Area Dodge,prerequisite=,  description =When targeted by an area\minus{}of\minus{}effect attack\comma{} if a full\minus{}turn movement would remove you from the affected area\comma{} you may sacrifice all other instincts this cycle to perform a flying leap to escape the area\comma{} leaving you {\it Prone}., noPre = 1, n =1}
 
@@ -58,8 +58,6 @@
 
 \skill{name =Eagle\minus{}Eyed,prerequisite=,  description =Increases \attPerShort{} attribute by 1\comma{} and the effective range of your vision by 50\% in all conditions., noPre = 1, n =1}
 
-\skill{name =Emergency Care,prerequisite=,  description =You may take a major action to perform a {\it stabilization} action on a target you can touch. Perform a DV 10 INT check\comma{} if successful\comma{} remove the {\it Critical Condition} status and apply the {\it Critical but Stable} condition, noPre = 1, n =1}
-
 \skill{name =Extended Range,prerequisite=,  description =For each level of this skill\comma{} increase the range of spells by an additional 10m., noPre = 1, n =3}
 
 \skill{name =Familiar,prerequisite=,  description =Choose an animal to accompany you\comma{} usually a cat\comma{} an owl\comma{} a toad or a rat. This animal shares a special bond with you\comma{} and will obey your commands (within reason). The spiritual bond confers the following ability to you:\\
@@ -67,10 +65,6 @@
 {\bf Owl:} +1 to INT attribute\\
 {\bf Toad:} +2 to poison resist and identification checks \\
 {\bf Rat:} +1 to resist checks, noPre = 1, n =1}
-
-\skill{name =Fast Caster,prerequisite=Adept Battlemage,  description =May cast an additional spell as part of the standard spellcasting major action., n =1}
-
-\skill{name =Flying Lessons,prerequisite=,  description =Gain the ability to fly a broomstick., noPre = 1, n =1}
 
 \skill{name =Focussed Caster,prerequisite=,  description =Increase SPR attribute by 1. When interrupted (i.e. by taking damage) during a concentration spell\comma{} you get check advantage on the check to remain concentrating., noPre = 1, n =1}
 
@@ -86,11 +80,11 @@
 
 \skill{name =Linguist,prerequisite=,  description =For each level of this skill\comma{} you can pick a new language to learn. Each language must be declared when levelling up. To learn Parseltongue\comma{} you require EVL to be greater than 4., noPre = 1, n =5}
 
-\skill{name =Meditation,prerequisite=,  description =For each level of this skill\comma{} increase the FP regeneration rate by 2FP per turn., noPre = 1, n =2}
-
 \skill{name =Merciful,prerequisite=,  description =You may attempt to turn a lethal blow into a knockout strike. When performing an attack that would otherwise kill the target\comma{} perform a DV 8 \attFin{} check. If it passes\comma{} the target is knocked unconscious\comma{} rather than killed., noPre = 1, n =1}
 
-\skill{name =Mimicry,prerequisite=CHR $> 13$,  description =You can mimic the voice of another sapient\comma{} or the call of an animal\comma{} provided you have heard them for at least 1 minute previously., n =1}
+\skill{name =Mimicry,prerequisite=CHR $> 13$,  description =Increase your \attChr{} attribute by 1. 
+
+You can mimic the voice of another sapient\comma{} or the call of an animal\comma{} provided you have heard them for at least 1 minute previously., n =1}
 
 \skill{name =Mobile,prerequisite=,  description =Your base speed increases by 1m, noPre = 1, n =2}
 
@@ -106,29 +100,41 @@ Every time a melee attack is made against you\comma{} perform an accuracy check 
 
 \skill{name =Power Attack,prerequisite=,  description =You may choose to devote extra strength to an attack\comma{} at the expense of reduced accuracy. When performing a melee attack\comma{} choose a number between 0\comma{} and your \attPhysShort{} modifier\comma{} plus your Strength proficiency. Deduct this from your accuracy check\comma{} but if the attack hits\comma{} add twice this value to the damage check., noPre = 1, n =1}
 
+\skill{name =Reload Expert,prerequisite=,  description =Increase your \attFin{} attribute by 1. 
+
+Your nimble fingers mean that reloading crossbows and firearms weapons takes only a minor action, noPre = 1, n =1}
+
+\skill{name =Runecaster,prerequisite=,  description =Once per day\comma{} you may utilise your knowledge of the ancient {\it Enchanting Runes} to form a magic spell from the endless chaos of primordial magic. 
+
+As with the usual enchanting process\comma{} you must trace the runes out in the air over the course of a major action\comma{} describing what effect you would like this runechain to have. The GM then decides the spellschool and the difficulty of the described spell\comma{} based on the magnitude of the effect you are trying to create. You must then perform a casting check to realise the runecast. 
+
+Runecasting is almost always weaker than a spell cast using the normal methods\comma{} though it provides much greater flexibility. You cannot runecast to exactly replicate the effects of an existing spell. 
+
+After successfully performing a Runecast\comma{} you may spend 6 hours translating the runechain into a conventional incantation\minus{}based spell\comma{} with the discipline and DV set by the GM. You may then memory\minus{}cast this spell\comma{} and others may book\minus{}cast it\comma{} as they would any other spell., noPre = 1, n =1}
+
 \skill{name =Sentinel,prerequisite=\attPerShort{} $>15$,  description =At the beginning of a combat encounter\comma{} you may designate 1d4 targets that you are always aware of. You are immune to Critical Strikes from these targets\comma{} until they perform a successful Hide action., n =1}
 
 \skill{name =Silent Magic,prerequisite=,  description =Spells that normally require an incantation can be used silently. You may only silently cast spells which you have already memorised\comma{} but you must perform a casting check for all spells cast silently., noPre = 1, n =3}
 
-\skill{name =Spellmaker,prerequisite=,  description =Once per week\comma{} you may design your own spell (with GMs consent) by taking a full day to research it. The GM will decide the appropriate type and level.The spell must be in a discipline your are proficient in\comma{} and you must successfully cast it within three attempts for the spellmaking to be successful. 
+\skill{name =Sprint Start,prerequisite=Speed Proficiency,  description =Increase \attPhys{} attribute by 1. 
 
-If successful\comma{} the spellmaker memorises the spell. They may also transcribe the spell onto paper so others can book\minus{}cast it., noPre = 1, n =1}
+You may also add your expertise bonus to your speed statistic from the moment you begin moving\comma{} without needing the one\minus{}turn `warm\minus{}up\apos{} normally required., n =1}
 
-\skill{name =Spellsinger,prerequisite=,  description =Replace your wand with your music: perform all illusion \& recuperation magic with your instrument of choice\comma{} using a CHR (performance) check. Spells take twice as long to cast in this fashion\comma{} and you may not use a quick attack. 
-
-Cannot be used in conjunction with the Silent Magic skill, noPre = 1, n =1}
-
-\skill{name =Sprint Start,prerequisite=Speed Proficiency,  description =You may add your expertise bonus to your speed statistic from the moment you begin moving\comma{} without needing the one\minus{}turn `warm\minus{}up\apos{} normally required., n =1}
-
-\skill{name =Stabiliser,prerequisite=,  description =For each level of this skill\comma{} you may nominate one check type (i.e. Illusion spellcasting\comma{} lockpicking\comma{} persuasion etc.). When performing a check of the nominated type\comma{} if possible you may choose to `split the roll\apos{} and instead cast two die of half the nominated value\comma{} i.e. 2d10 instead of 1d20., noPre = 1, n =5}
+\skill{name =Stabiliser,prerequisite=,  description =For each level of this skill\comma{} you may nominate one check type (i.e. Illusion spellcasting\comma{} lockpicking\comma{} persuasion etc.). When performing a check of the nominated type\comma{} if possible you may choose to `split the roll\apos{} and instead cast two die of half the nominated value\comma{} i.e. 2d10 instead of 1d20., noPre = 1, n =3}
 
 \skill{name =Superhero Landing,prerequisite=,  description =Increase \attPhysShort{} attribute by 1\comma{} and hone your instincts such that you always land on your feet when falling or thrown (and strike a cool pose when doing so). Negate the {\it Prone Position} status\comma{} unless you choose otherwise., noPre = 1, n =1}
 
-\skill{name =Surge,prerequisite=,  description =You may take one extra major action in your turn. This skill cannot be used again until you rest for 4+ hours., noPre = 1, n =1}
+\skill{name =Supportive Ally,prerequisite=,  description =If an ally within 5m rolls a 1 on an accuracy check\comma{} you may sacrifice a minor action you were going to perform this turn in order to allow them to re\minus{}roll the offending dice. 
+
+If you were performing a full\minus{}turn movement or attack\comma{} this is then converted into a minor movement or a quick attack. 
+
+This skill can only be used once per long rest., noPre = 1, n =1}
+
+\skill{name =Surge,prerequisite=,  description =You may take one extra major action in your turn. This skill cannot be used again until you complete a long rest., noPre = 1, n =1}
 
 \skill{name =Tool\minus{}User,prerequisite=,  description =Choose a 3 new  tools to become proficient in., noPre = 1, n =1}
 
-\skill{name =Undead Benefactor,prerequisite=,  description =Increase INT attribute by 1. Healing spells now also work on the undead., noPre = 1, n =1}
+\skill{name =Undead Benefactor,prerequisite=,  description =Increase INT attribute by 1. Healing spells now also work on the undead and Unliving., noPre = 1, n =1}
 
 \skill{name =Wandless Magic,prerequisite=Silent Magic,  description =May cast a spell without using a wand. All wandless magic is also {\it Silent}\comma{} and so requires a casting check\comma{} which you perform with disadvantage. You cannot cast spells at a higher level when using wandless magic., n =1}
 

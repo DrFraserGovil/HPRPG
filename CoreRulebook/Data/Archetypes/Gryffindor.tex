@@ -1,9 +1,7 @@
-\documentclass[CoreRulebook.tex]{subfile}
-\newpage
-\begin{strip}
-\setlength{\parskip}{4pt}
-\newpage
-\section{Gryffindor Student}
+
+
+\chapter*{Gryffindor Student}
+\addcontentsline{toc}{section}{Gryffindor Student}
 The Sorting Hat tells us that:
 \begin{displayquote}
 \it You might belong in Gryffindor,
@@ -14,115 +12,20 @@ Their daring, nerve, and chivalry
 \\
 Set Gryffindors apart
 \end{displayquote}
-Gryffindor is the House that prizes bravery above all other attributes. The ability to stare terror and adversity in the face without blinking or shirking your responsibilities is a must-have if you are to belong to this House. A Gryffindor student is strong and chivalrous, but they can also be headstrong and arrogant. Never afraid to make a joke, or question authority, Gryffindor students are often difficult to control in the classroom.
-
-Gryffindor students typically settle into one of two routes: the {\bf Sportsman} and the {\bf Rebel}. The sporty students are physically very capable, and get increased attributes associated with their chosen sport, as well as general improvements to their health. The more rebellious students, on the other hand, have a knack for causing trouble -- and more importantly, getting away with it. 
-
-
-%%archBegin\archetype{Gryffindor Student}{Sportsman}{Rebel}{1}{featureI=Heart of Bravery, arcaneI=2, featureII=Fear Resist, arcaneII=2, alphaFeatureIII=Sports Team, betaFeatureIII=Provocative Words, arcaneIII=2, featureIV=Heart of Bravery II, betaFeatureIV=Wild Spirit, arcaneIV=2, alphaFeatureV=Healthy Living, betaFeatureV=Disobedient Tactics, arcaneV=3}%%archEnd
-
-\end{strip}
-
-\subsection*{Archetype Features}
-
-\textbf{\textit{Heart of Bravery:}} 
-
-Starting at level 1, the Heart of Bravery gives your character a +1 boost to the Willpower and Endurance proficiencies. This bonus increases to +2 at level 4. 
-\par
-~
-\par
-
-\textbf{\textit{Fear Resist:}}
-
-Starting at level 2, gain check-advantage when performing Fear and Intimidation resists.
-
-
-
-
-\subsection*{Sportsman Features}
-
-\textbf{\textit{Sports Team:}}
-
-Starting at Level 3, you may join one of the sports teams available at Hogwarts. The three main sports teams are Quidditch, Rugby and Fencing. 
-
-Your choice of sport gives you benefits at 3rd and 4th level, and are detailed at the end of this section.
-\par
-~
-\par
-\textbf{\textit{Healthy Living:}}
-
-Starting at Level 5, your healthy and active lifestyle gives you a +2 bonus to the Health proficiency. 
-
-In addition, once per week, you may resist a minor sickness, poisoning or physical injury up to 5 points. 
-
-\subsection*{Rebel Features}
-
-\textbf{\textit{Provocative Words:}}
-
-At 3rd level, you gain the ability to provoke sapient beings into attacking you. Target must perform a SPR (Willpower) resist check (DV 12 +1 for each Gryffindor level, max 18). If it fails, target must enter into combat as the aggressor. If already in combat, target must focus exclusively on you for 2 turns. 
-\par
-~
-\par
-\textbf{\textit{Wild Spirit:}}
-
-At 4th level, you may utilise your passion for freedom and rebellion, gaining a +2 bonus to the Chaos proficiency. 
-\par
-~
-\par
-\textbf{\textit{Disobedient Tactics:}}
-
-At 5th level, choose from one of the following bonuses:
-
-\begin{itemize}
-	\item \textbf{\textit{Innocent Face}}: get +2 to persuasion checks when denying your actions
-	\item \textbf{\textit{Distracting Tricks}}: once per day, create a small magical disturbance to distract a target. Distracted targets are subject to an Attack of Opportunity next turn. 
-	\item \textbf{\textit{Distrust of Authority}}: all resist checks against authority figures get +2 bonus. 
-\end{itemize}
-\newpage
-\section{Sports}
-
-There are 3 sports commonly played at Hogwarts, Quidditch, Rugby and Fencing. 
-
-\subsection*{Fencing}
-
-Fencing is an ancient martial sport, seen by wizardkind as a much safer alternative to wizarding duels. Fencing is a precision sport, requiring great dexterity and speed to master. Practitioners of this sport may find the skills they learn transferable to a combat situation. 
-
-\textbf{\textit{Honed Reflexes:}}
-
-Starting at 3rd level, you recieve a +1 bonus to dexterity proficiency. At 5th level, this becomes a +2 bonus. Also at 3rd level you get check-advantage in evasion checks during close-quarters fighting. 
-\par
-~
-\par
-\textbf{\textit{Sabre:}}
-
-Starting at 4th level, the team invest in high-quality equipment that you may keep. Recieve a 1d8+1 non-magical rapier. If you lose it, you may have a new one delivered to you after 2 days. 
-
-
-\subsection*{Rugby}
-
-Rugby is one of the few muggle sports to remain popular in the wizarding world (mostly thanks to a famous squib player on the Scottish team). Rugby is a brutal contact sport, which prizes strength and the ability to safely neutralise opponents. 
-
-\textbf{\textit{Explosive Power}}
-
-Starting at 3rd level, you recieve a +1 bonus to strength proficiency. At 5th level, this becomes a +2 bonus. 
-\par
-~
-\par
-\textbf{\textit{Combat Tackle}}
-
-Starting at 4th level, you may perform a `tackle' action whilst moving. This action requires that you have been running for at least 2m.  Does $\left(\text{distance + ATH(str) modifier} \right)$ bludgeoning damage (max 6) and pushes the target back a further 1 metre. This action counts as part of you movement this turn. 
+Gryffindor is the House that prizes bravery above all other attributes. The ability to stare terror and adversity in the face without blinking or shirking your responsibilities is a must\minus{}have if you are to belong to this House. A Gryffindor student is strong and chivalrous, but they can also be headstrong and arrogant. Never afraid to make a joke, or question authority, Gryffindor students are often difficult to control in the classroom.
+%%archBegin
+\archetype{name=Gryffindor Student, hp=10, fp=6, armour=None, tool=Choose one from: Climbing Kit\comma{} Broomstick and Gaming Set, disc=Choose any two disciplines from the Maledictions or Illusion schools., weapon=Simple Weapons, prof=Choose any two from Strength\comma{} Speed\comma{} Vitality\comma{} Chicanery\comma{} Conviction \& Willpower., equip=Wand\comma{} a Student\apos{}s pack and the tools selected above., memorised=Any two from the basic spells table., expertI = 2, maxspellI = Beginner, bonusI = Token of Courage, expertII = 2, maxspellII = Beginner, bonusII = Unbreakable Spirit\comma{} Provocative Words, expertIII = 2, maxspellIII = Beginner, bonusIII = Unnerving Bravery, expertIV = NaN, maxspellIV = , bonusIV = , expertV = NaN, maxspellV = , bonusV = , expertVI = NaN, maxspellVI = , bonusVI = , expertVII = NaN, maxspellVII = , bonusVII = , expertVIII = NaN, maxspellVIII = , bonusVIII = , expertIX = NaN, maxspellIX = , bonusIX = , expertX = NaN, maxspellX = , bonusX = , shortmode = 1}
+%%archEnd
 
 \newpage
-\subsection*{Quidditch}
+\section{Acquired Feats}
 
-Quidditch is the single most popular magical sport. Played atop a broomstick, the ability to percieve and react to your surroundings in 3 dimensions is the key to Quidditch. 
 
-\textbf{\textit{Flying Lessons}}
+\feat{Token of Courage}{The Token of Courage symbolises everything that Gryffindor House stands for: bravery, honour and conviction in yourself and your fundamental beliefs. \\~\\
+You may use this Token once per day to give yourself check\minus{}advantage on all Spirit checks for the next hour.}
 
-From 3rd level onwards, you have proficiency in broomstick flying.  All flight related checks get +1. This increases to +2 at 5th level. 
-\par
-~
-\par
-\textbf{\textit{Spatial Awareness}}
+\feat{Unbreakable Spirit}{At second level, your will becomes iron. Whenever you take a strike which would normally leave you bleeding out, you may perform a DV 10 Willpower Resist check. \\~\\ If this check succeeds succeeds, you power through the pain and rise up with a burst of renewed strength, restoring 2d4 + character level Health Points. This ability can be used only once per long rest.}
 
-From 4th level onwards, your perception proficiency gets a +1 bonus, and your eyesight and effective spellcasting radius get a 50\% bonus in all conditions. 
+\feat{Provocative Words}{At 2nd level, you gain the ability to provoke sapient beings into attacking you. \\~\\Select a target living being within hearing range, and force them to perform a Willpower Resist check, using your normal subjugation value. If it fails, the target must enter into combat as the aggressor. If you are already in combat with the target, they must focus exclusively on you for 1d4 turn cycles.}
+
+\feat{Unnerving Bravery}{Your ability to stare down evil and terror is, in itself, worrying to those who are trying to bring terror into your heart. \\~\\ From 3rd level, whenever a being fails an intimidation check on you, your reaction is intimidating enough to trigger an automatic Intimidation check back on the initiating party. This effect is nullified if both parties have {\it Unnerving Bravery} or an equivalent ability. }

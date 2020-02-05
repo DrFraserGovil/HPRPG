@@ -1,174 +1,146 @@
+\newcommand{\feat}[2]{
+\subsection{\it #1}
 
+#2
 
-\newcommand{\feat}[1]{\textbf{\textit{#1:}}}
+}
 \newcommand{\jump}{\par \vspace{0.8ex}}
 \makeatletter
 %%keyBegin
 
-\define@key{archetype}{alphaFeatureI}{\def\alphaI{#1}}
-\define@key{archetype}{arcaneI}{\def\arcaneI{#1}}
-\define@key{archetype}{betaFeatureI}{\def\betaI{#1}}
-\define@key{archetype}{featureI}{\def\featureI{#1}}
-\define@key{archetype}{arcaneII}{\def\arcaneII{#1}}
-\define@key{archetype}{alphaFeatureII}{\def\alphaII{#1}}
-\define@key{archetype}{betaFeatureII}{\def\betaII{#1}}
-\define@key{archetype}{featureII}{\def\featureII{#1}}
-\define@key{archetype}{arcaneIII}{\def\arcaneIII{#1}}
-\define@key{archetype}{alphaFeatureIII}{\def\alphaIII{#1}}
-\define@key{archetype}{betaFeatureIII}{\def\betaIII{#1}}
-\define@key{archetype}{featureIII}{\def\featureIII{#1}}
-\define@key{archetype}{arcaneIV}{\def\arcaneIV{#1}}
-\define@key{archetype}{alphaFeatureIV}{\def\alphaIV{#1}}
-\define@key{archetype}{betaFeatureIV}{\def\betaIV{#1}}
-\define@key{archetype}{featureIV}{\def\featureIV{#1}}
-\define@key{archetype}{arcaneV}{\def\arcaneV{#1}}
-\define@key{archetype}{alphaFeatureV}{\def\alphaV{#1}}
-\define@key{archetype}{betaFeatureV}{\def\betaV{#1}}
-\define@key{archetype}{featureV}{\def\featureV{#1}}
-\define@key{archetype}{arcaneVI}{\def\arcaneVI{#1}}
-\define@key{archetype}{alphaFeatureVI}{\def\alphaVI{#1}}
-\define@key{archetype}{betaFeatureVI}{\def\betaVI{#1}}
-\define@key{archetype}{featureVI}{\def\featureVI{#1}}
-\define@key{archetype}{arcaneVII}{\def\arcaneVII{#1}}
-\define@key{archetype}{alphaFeatureVII}{\def\alphaVII{#1}}
-\define@key{archetype}{betaFeatureVII}{\def\betaVII{#1}}
-\define@key{archetype}{featureVII}{\def\featureVII{#1}}
-\define@key{archetype}{arcaneVIII}{\def\arcaneVIII{#1}}
-\define@key{archetype}{alphaFeatureVIII}{\def\alphaVIII{#1}}
-\define@key{archetype}{betaFeatureVIII}{\def\betaVIII{#1}}
-\define@key{archetype}{featureVIII}{\def\featureVIII{#1}}
-\define@key{archetype}{arcaneIX}{\def\arcaneIX{#1}}
-\define@key{archetype}{alphaFeatureIX}{\def\alphaIX{#1}}
-\define@key{archetype}{betaFeatureIX}{\def\betaIX{#1}}
-\define@key{archetype}{featureIX}{\def\featureIX{#1}}
-\define@key{archetype}{arcaneX}{\def\arcaneX{#1}}
-\define@key{archetype}{alphaFeatureX}{\def\alphaX{#1}}
-\define@key{archetype}{betaFeatureX}{\def\betaX{#1}}
-\define@key{archetype}{featureX}{\def\featureX{#1}}
-\define@key{archetype}{arcaneXI}{\def\arcaneXI{#1}}
-\define@key{archetype}{alphaFeatureXI}{\def\alphaXI{#1}}
-\define@key{archetype}{betaFeatureXI}{\def\betaXI{#1}}
-\define@key{archetype}{featureXI}{\def\featureXI{#1}}
-\define@key{archetype}{arcaneXII}{\def\arcaneXII{#1}}
-\define@key{archetype}{alphaFeatureXII}{\def\alphaXII{#1}}
-\define@key{archetype}{betaFeatureXII}{\def\betaXII{#1}}
-\define@key{archetype}{featureXII}{\def\featureXII{#1}}
-\define@key{archetype}{arcaneXIII}{\def\arcaneXIII{#1}}
-\define@key{archetype}{alphaFeatureXIII}{\def\alphaXIII{#1}}
-\define@key{archetype}{betaFeatureXIII}{\def\betaXIII{#1}}
-\define@key{archetype}{featureXIII}{\def\featureXIII{#1}}
-\define@key{archetype}{arcaneXIV}{\def\arcaneXIV{#1}}
-\define@key{archetype}{alphaFeatureXIV}{\def\alphaXIV{#1}}
-\define@key{archetype}{betaFeatureXIV}{\def\betaXIV{#1}}
-\define@key{archetype}{featureXIV}{\def\featureXIV{#1}}
-\define@key{archetype}{arcaneXV}{\def\arcaneXV{#1}}
-\define@key{archetype}{alphaFeatureXV}{\def\alphaXV{#1}}
-\define@key{archetype}{betaFeatureXV}{\def\betaXV{#1}}
-\define@key{archetype}{featureXV}{\def\featureXV{#1}}
-\define@key{archetype}{arcaneXVI}{\def\arcaneXVI{#1}}
-\define@key{archetype}{alphaFeatureXVI}{\def\alphaXVI{#1}}
-\define@key{archetype}{betaFeatureXVI}{\def\betaXVI{#1}}
-\define@key{archetype}{featureXVI}{\def\featureXVI{#1}}
-\define@key{archetype}{arcaneXVII}{\def\arcaneXVII{#1}}
-\define@key{archetype}{alphaFeatureXVII}{\def\alphaXVII{#1}}
-\define@key{archetype}{betaFeatureXVII}{\def\betaXVII{#1}}
-\define@key{archetype}{featureXVII}{\def\featureXVII{#1}}
-\define@key{archetype}{arcaneXVIII}{\def\arcaneXVIII{#1}}
-\define@key{archetype}{alphaFeatureXVIII}{\def\alphaXVIII{#1}}
-\define@key{archetype}{betaFeatureXVIII}{\def\betaXVIII{#1}}
-\define@key{archetype}{featureXVIII}{\def\featureXVIII{#1}}
-\define@key{archetype}{arcaneXIX}{\def\arcaneXIX{#1}}
-\define@key{archetype}{alphaFeatureXIX}{\def\alphaXIX{#1}}
-\define@key{archetype}{betaFeatureXIX}{\def\betaXIX{#1}}
-\define@key{archetype}{featureXIX}{\def\featureXIX{#1}}
-\define@key{archetype}{arcaneXX}{\def\arcaneXX{#1}}
-\define@key{archetype}{alphaFeatureXX}{\def\alphaXX{#1}}
-\define@key{archetype}{betaFeatureXX}{\def\betaXX{#1}}
-\define@key{archetype}{featureXX}{\def\featureXX{#1}}
+\define@key{archetype}{expertI}{\def\expertI{#1}}
+\define@key{archetype}{maxspellI}{\def\maxspellI{#1}}
+\define@key{archetype}{bonusI}{\def\bonusI{#1}}
+\define@key{archetype}{expertII}{\def\expertII{#1}}
+\define@key{archetype}{maxspellII}{\def\maxspellII{#1}}
+\define@key{archetype}{bonusII}{\def\bonusII{#1}}
+\define@key{archetype}{expertIII}{\def\expertIII{#1}}
+\define@key{archetype}{maxspellIII}{\def\maxspellIII{#1}}
+\define@key{archetype}{bonusIII}{\def\bonusIII{#1}}
+\define@key{archetype}{expertIV}{\def\expertIV{#1}}
+\define@key{archetype}{maxspellIV}{\def\maxspellIV{#1}}
+\define@key{archetype}{bonusIV}{\def\bonusIV{#1}}
+\define@key{archetype}{expertV}{\def\expertV{#1}}
+\define@key{archetype}{maxspellV}{\def\maxspellV{#1}}
+\define@key{archetype}{bonusV}{\def\bonusV{#1}}
+\define@key{archetype}{expertVI}{\def\expertVI{#1}}
+\define@key{archetype}{maxspellVI}{\def\maxspellVI{#1}}
+\define@key{archetype}{bonusVI}{\def\bonusVI{#1}}
+\define@key{archetype}{expertVII}{\def\expertVII{#1}}
+\define@key{archetype}{maxspellVII}{\def\maxspellVII{#1}}
+\define@key{archetype}{bonusVII}{\def\bonusVII{#1}}
+\define@key{archetype}{expertVIII}{\def\expertVIII{#1}}
+\define@key{archetype}{maxspellVIII}{\def\maxspellVIII{#1}}
+\define@key{archetype}{bonusVIII}{\def\bonusVIII{#1}}
+\define@key{archetype}{expertIX}{\def\expertIX{#1}}
+\define@key{archetype}{maxspellIX}{\def\maxspellIX{#1}}
+\define@key{archetype}{bonusIX}{\def\bonusIX{#1}}
+\define@key{archetype}{expertX}{\def\expertX{#1}}
+\define@key{archetype}{maxspellX}{\def\maxspellX{#1}}
+\define@key{archetype}{bonusX}{\def\bonusX{#1}}
+\define@key{archetype}{expertXI}{\def\expertXI{#1}}
+\define@key{archetype}{maxspellXI}{\def\maxspellXI{#1}}
+\define@key{archetype}{bonusXI}{\def\bonusXI{#1}}
+\define@key{archetype}{expertXII}{\def\expertXII{#1}}
+\define@key{archetype}{maxspellXII}{\def\maxspellXII{#1}}
+\define@key{archetype}{bonusXII}{\def\bonusXII{#1}}
+\define@key{archetype}{expertXIII}{\def\expertXIII{#1}}
+\define@key{archetype}{maxspellXIII}{\def\maxspellXIII{#1}}
+\define@key{archetype}{bonusXIII}{\def\bonusXIII{#1}}
+\define@key{archetype}{expertXIV}{\def\expertXIV{#1}}
+\define@key{archetype}{maxspellXIV}{\def\maxspellXIV{#1}}
+\define@key{archetype}{bonusXIV}{\def\bonusXIV{#1}}
+\define@key{archetype}{expertXV}{\def\expertXV{#1}}
+\define@key{archetype}{maxspellXV}{\def\maxspellXV{#1}}
+\define@key{archetype}{bonusXV}{\def\bonusXV{#1}}
+\define@key{archetype}{expertXVI}{\def\expertXVI{#1}}
+\define@key{archetype}{maxspellXVI}{\def\maxspellXVI{#1}}
+\define@key{archetype}{bonusXVI}{\def\bonusXVI{#1}}
+\define@key{archetype}{expertXVII}{\def\expertXVII{#1}}
+\define@key{archetype}{maxspellXVII}{\def\maxspellXVII{#1}}
+\define@key{archetype}{bonusXVII}{\def\bonusXVII{#1}}
+\define@key{archetype}{expertXVIII}{\def\expertXVIII{#1}}
+\define@key{archetype}{maxspellXVIII}{\def\maxspellXVIII{#1}}
+\define@key{archetype}{bonusXVIII}{\def\bonusXVIII{#1}}
+\define@key{archetype}{expertXIX}{\def\expertXIX{#1}}
+\define@key{archetype}{maxspellXIX}{\def\maxspellXIX{#1}}
+\define@key{archetype}{bonusXIX}{\def\bonusXIX{#1}}
+\define@key{archetype}{expertXX}{\def\expertXX{#1}}
+\define@key{archetype}{maxspellXX}{\def\maxspellXX{#1}}
+\define@key{archetype}{bonusXX}{\def\bonusXX{#1}}
+\define@key{archetype}{hp}{\def\hp{#1}}
+\define@key{archetype}{fp}{\def\fp{#1}}
+\define@key{archetype}{armour}{\def\armour{#1}}
+\define@key{archetype}{tool}{\def\tool{#1}}
+\define@key{archetype}{disc}{\def\disc{#1}}
+\define@key{archetype}{weapon}{\def\weapon{#1}}
+\define@key{archetype}{prof}{\def\prof{#1}}
+\define@key{archetype}{equip}{\def\equip{#1}}
+\define@key{archetype}{memorised}{\def\memorised{#1}}
+\define@key{archetype}{shortmode}{\def\mode{#1}}
+\define@key{archetype}{name}{\def\name{#1}}
 %%keyEnd    
 \makeatother
 
+\def\L{4}
+\newcommand\tableRow[4]
+{
+	#1	&	+#2	&	#3	&	\parbox[t]{\L cm}{#4} \\
+}
 
 \newcommand{\tableShort}[1]
 {
-
-	%%smallTableBegin
-	1  &  + \arcaneI & \parbox[t]{\w cm}{\raggedright\featureI} & \parbox[t]{\w cm}{\raggedright\alphaI}  &  \parbox[t]{\w cm}{\raggedright\betaI}
- 	\\
-	2  &  + \arcaneII & \parbox[t]{\w cm}{\raggedright\featureII} & \parbox[t]{\w cm}{\raggedright\alphaII}  &  \parbox[t]{\w cm}{\raggedright\betaII}
- 	\\
-	3  &  + \arcaneIII & \parbox[t]{\w cm}{\raggedright\featureIII} & \parbox[t]{\w cm}{\raggedright\alphaIII}  &  \parbox[t]{\w cm}{\raggedright\betaIII}
- 	\\
-	4  &  + \arcaneIV & \parbox[t]{\w cm}{\raggedright\featureIV} & \parbox[t]{\w cm}{\raggedright\alphaIV}  &  \parbox[t]{\w cm}{\raggedright\betaIV}
- \\
-	5  &  + \arcaneV & \parbox[t]{\w cm}{\raggedright\featureV} & \parbox[t]{\w cm}{\raggedright\alphaV}  &  \parbox[t]{\w cm}{\raggedright\betaV}
- \\
-
-	%%smallTableEnd
+	\tableRow{1}{\expertI}{\maxspellI}{\bonusI}
+	\tableRow{2}{\expertII}{\maxspellII}{\bonusII}
+	\tableRow{3}{\expertIII}{\maxspellIII}{\bonusIII}
 }   
-      
+  
       
       
 \newcommand{\tableLong}
 {      
-      %%tableBegin
-	1  &  + \arcaneI & \parbox[t]{\w cm}{\raggedright\featureI} & \parbox[t]{\w cm}{\raggedright\alphaI}  &  \parbox[t]{\w cm}{\raggedright\betaI}
-	 \\
-	2  &  + \arcaneII & \parbox[t]{\w cm}{\raggedright\featureII} & \parbox[t]{\w cm}{\raggedright\alphaII}  &  \parbox[t]{\w cm}{\raggedright\betaII}
-	 \\
-	3  &  + \arcaneIII & \parbox[t]{\w cm}{\raggedright\featureIII} & \parbox[t]{\w cm}{\raggedright\alphaIII}  &  \parbox[t]{\w cm}{\raggedright\betaIII}
-	 \\
-	4  &  + \arcaneIV & \parbox[t]{\w cm}{\raggedright\featureIV} & \parbox[t]{\w cm}{\raggedright\alphaIV}  &  \parbox[t]{\w cm}{\raggedright\betaIV}
-	 \\
-	5  &  + \arcaneV & \parbox[t]{\w cm}{\raggedright\featureV} & \parbox[t]{\w cm}{\raggedright\alphaV}  &  \parbox[t]{\w cm}{\raggedright\betaV}
-	 \\
-	6  &  + \arcaneVI & \parbox[t]{\w cm}{\raggedright\featureVI} & \parbox[t]{\w cm}{\raggedright\alphaVI}  &  \parbox[t]{\w cm}{\raggedright\betaVI}
-	 \\
-	7  &  + \arcaneVII & \parbox[t]{\w cm}{\raggedright\featureVII} & \parbox[t]{\w cm}{\raggedright\alphaVII}  &  \parbox[t]{\w cm}{\raggedright\betaVII}
-	 \\
-	8  &  + \arcaneVIII & \parbox[t]{\w cm}{\raggedright\featureVIII} & \parbox[t]{\w cm}{\raggedright\alphaVIII}  &  \parbox[t]{\w cm}{\raggedright\betaVIII}
-	 \\
-	9  &  + \arcaneIX & \parbox[t]{\w cm}{\raggedright\featureIX} & \parbox[t]{\w cm}{\raggedright\alphaIX}  &  \parbox[t]{\w cm}{\raggedright\betaIX}
-	 \\
-	10  &  + \arcaneX & \parbox[t]{\w cm}{\raggedright\featureX} & \parbox[t]{\w cm}{\raggedright\alphaX}  &  \parbox[t]{\w cm}{\raggedright\betaX}
-	 \\
-	11  &  + \arcaneXI & \parbox[t]{\w cm}{\raggedright\featureXI} & \parbox[t]{\w cm}{\raggedright\alphaXI}  &  \parbox[t]{\w cm}{\raggedright\betaXI}
-	 \\
-	12  &  + \arcaneXII & \parbox[t]{\w cm}{\raggedright\featureXII} & \parbox[t]{\w cm}{\raggedright\alphaXII}  &  \parbox[t]{\w cm}{\raggedright\betaXII}
-	 \\
-	13  &  + \arcaneXIII & \parbox[t]{\w cm}{\raggedright\featureXIII} & \parbox[t]{\w cm}{\raggedright\alphaXIII}  &  \parbox[t]{\w cm}{\raggedright\betaXIII}
-	 \\
-	14  &  + \arcaneXIV & \parbox[t]{\w cm}{\raggedright\featureXIV} & \parbox[t]{\w cm}{\raggedright\alphaXIV}  &  \parbox[t]{\w cm}{\raggedright\betaXIV}
-	 \\
-	15  &  + \arcaneXV & \parbox[t]{\w cm}{\raggedright\featureXV} & \parbox[t]{\w cm}{\raggedright\alphaXV}  &  \parbox[t]{\w cm}{\raggedright\betaXV}
-	 \\
-	16  &  + \arcaneXVI & \parbox[t]{\w cm}{\raggedright\featureXVI} & \parbox[t]{\w cm}{\raggedright\alphaXVI}  &  \parbox[t]{\w cm}{\raggedright\betaXVI}
-	 \\
-	17  &  + \arcaneXVII & \parbox[t]{\w cm}{\raggedright\featureXVII} & \parbox[t]{\w cm}{\raggedright\alphaXVII}  &  \parbox[t]{\w cm}{\raggedright\betaXVII}
-	 \\
-	18  &  + \arcaneXVIII & \parbox[t]{\w cm}{\raggedright\featureXVIII} & \parbox[t]{\w cm}{\raggedright\alphaXVIII}  &  \parbox[t]{\w cm}{\raggedright\betaXVIII}
-	 \\
-	19  &  + \arcaneXIX & \parbox[t]{\w cm}{\raggedright\featureXIX} & \parbox[t]{\w cm}{\raggedright\alphaXIX}  &  \parbox[t]{\w cm}{\raggedright\betaXIX}
-	 \\
-	20  &  + \arcaneXX & \parbox[t]{\w cm}{\raggedright\featureXX} & \parbox[t]{\w cm}{\raggedright\alphaXX}  &  \parbox[t]{\w cm}{\raggedright\betaXX}
-	 \\
-	%%tableEnd	
+	\tableRow{1}{\expertI}{\maxspellI}{\bonusI}
+	\tableRow{2}{\expertII}{\maxspellII}{\bonusII}
+	\tableRow{3}{\expertIII}{\maxspellIII}{\bonusIII}
+	\tableRow{4}{\expertIV}{\maxspellIV}{\bonusIV}
+	\tableRow{5}{\expertV}{\maxspellV}{\bonusV}
+	\tableRow{6}{\expertVI}{\maxspellVI}{\bonusVI}
+	\tableRow{7}{\expertVII}{\maxspellVII}{\bonusVII}
+	\tableRow{8}{\expertVIII}{\maxspellVIII}{\bonusVIII}
+	\tableRow{9}{\expertIX}{\maxspellIX}{\bonusIX}
+	\tableRow{10}{\expertX}{\maxspellX}{\bonusX}
+	\tableRow{11}{\expertXI}{\maxspellXI}{\bonusXI}
+	\tableRow{12}{\expertXII}{\maxspellXII}{\bonusXII}
+	\tableRow{13}{\expertXIII}{\maxspellXIII}{\bonusXIII}
+	\tableRow{14}{\expertXIV}{\maxspellXIV}{\bonusXIV}
+	\tableRow{15}{\expertXV}{\maxspellXV}{\bonusXV}
+	\tableRow{16}{\expertXVI}{\maxspellXVI}{\bonusXVI}
+	\tableRow{17}{\expertXVII}{\maxspellXVII}{\bonusXVII}
+	\tableRow{18}{\expertXVIII}{\maxspellXVIII}{\bonusXVIII}
+	\tableRow{19}{\expertXIX}{\maxspellXIX}{\bonusXIX}
+	\tableRow{20}{\expertXX}{\maxspellXX}{\bonusXX}
 }
           
-\newcommand{\archetype}[5]
+          
+\newcommand\redsub[1]
 {
-     \def\mode{#4}
+\subsection{\textcolor{rulered}{ #1}}
+}
+		
+\newcommand{\archetype}[1]
+{
+    
     
      \begingroup
      
      %%defaultBegin
 
-	\setkeys{archetype}{ arcaneI=0, alphaFeatureI= -- , betaFeatureI= --, featureI= --, arcaneII=0, alphaFeatureII= -- , betaFeatureII= --, featureII= --, arcaneIII=0, alphaFeatureIII= -- , betaFeatureIII= --, featureIII= --, arcaneIV=0, alphaFeatureIV= -- , betaFeatureIV= --, featureIV= --, arcaneV=1, alphaFeatureV= -- , betaFeatureV= --, featureV= --, arcaneVI=1, alphaFeatureVI= -- , betaFeatureVI= --, featureVI= --, arcaneVII=1, alphaFeatureVII= -- , betaFeatureVII= --, featureVII= --, arcaneVIII=1, alphaFeatureVIII= -- , betaFeatureVIII= --, featureVIII= --, arcaneIX=1, alphaFeatureIX= -- , betaFeatureIX= --, featureIX= --, arcaneX=2, alphaFeatureX= -- , betaFeatureX= --, featureX= --, arcaneXI=2, alphaFeatureXI= -- , betaFeatureXI= --, featureXI= --, arcaneXII=2, alphaFeatureXII= -- , betaFeatureXII= --, featureXII= --, arcaneXIII=2, alphaFeatureXIII= -- , betaFeatureXIII= --, featureXIII= --, arcaneXIV=2, alphaFeatureXIV= -- , betaFeatureXIV= --, featureXIV= --, arcaneXV=3, alphaFeatureXV= -- , betaFeatureXV= --, featureXV= --, arcaneXVI=3, alphaFeatureXVI= -- , betaFeatureXVI= --, featureXVI= --, arcaneXVII=3, alphaFeatureXVII= -- , betaFeatureXVII= --, featureXVII= --, arcaneXVIII=3, alphaFeatureXVIII= -- , betaFeatureXVIII= --, featureXVIII= --, arcaneXIX=3, alphaFeatureXIX= -- , betaFeatureXIX= --, featureXIX= --, arcaneXX=4, alphaFeatureXX= -- , betaFeatureXX= --, featureXX= --}
+	\setkeys{archetype}{ expertI=0, maxspellI=undefined, bonusI= ~, expertII=0, maxspellII=undefined, bonusII= ~, expertIII=0, maxspellIII=undefined, bonusIII= ~, expertIV=0, maxspellIV=undefined, bonusIV= ~, expertV=0, maxspellV=undefined, bonusV= ~, expertVI=0, maxspellVI=undefined, bonusVI= ~, expertVII=0, maxspellVII=undefined, bonusVII= ~, expertVIII=0, maxspellVIII=undefined, bonusVIII= ~, expertIX=0, maxspellIX=undefined, bonusIX= ~, expertX=0, maxspellX=undefined, bonusX= ~, expertXI=0, maxspellXI=undefined, bonusXI= ~, expertXII=0, maxspellXII=undefined, bonusXII= ~, expertXIII=0, maxspellXIII=undefined, bonusXIII= ~, expertXIV=0, maxspellXIV=undefined, bonusXIV= ~, expertXV=0, maxspellXV=undefined, bonusXV= ~, expertXVI=0, maxspellXVI=undefined, bonusXVI= ~, expertXVII=0, maxspellXVII=undefined, bonusXVII= ~, expertXVIII=0, maxspellXVIII=undefined, bonusXVIII= ~, expertXIX=0, maxspellXIX=undefined, bonusXIX= ~, expertXX=0, maxspellXX=undefined, bonusXX= ~, hp=None, fp=None, armour=None, tool=None, disc=None, weapon=None, prof=None, equip=None, memorised=None,name=None,shortmode=0}
 
 
 	%%defaultEnd
 	\def\w{4.1}
-	\setkeys{archetype}{#5}
+	\setkeys{archetype}{#1}
  
      
 	\begin{tcolorbox}[  before skip=7pt plus 2pt,
@@ -185,7 +157,7 @@
 			     	colframe=titlered, title=\vspace{-4ex}
      				]
      		
-	     		{\large \begin{center} \bf #1\end{center}}
+	     		{\large \begin{center} \bf \name \end{center}}
 	     		\vspace{-1.3ex}
 	     		
 	     		\dndlineLong
@@ -195,7 +167,7 @@
 	     			\archetypealternate
 	     		        \begin{tabular}{c c c c  c }
 
-				\bf Archetype Level 	&	\bf Arcane Wisdom	& \bf Archetype Features & \bf #2 Features	&	\bf #3 Features
+				\bf Level 	&	\bf Expertise	& \bf Spells & \bf Features
 				\\ 
 		     		\if\mode0
 		     			\tableLong
@@ -207,7 +179,59 @@
 	     		\end{center}
 	     		\normalsize
 	     		\dndlineLong
-     
+				
+				
      	\end{tcolorbox}
-     	\endgroup
+     	
+     	
+     	\section*{Class Statistics}
+		
+		As a \name, you gain the following fundamental features:
+		
+		\subsection{Health \& Fortitude}
+		\def\w{6}
+		\begin{tabular}{ r p{\w cm}}
+			\bf Initial HP:	&	\hp{} + \attPhys{} Modifier
+			\\
+			\bf Gained HP:	&	1d\hp{} per \name{} level
+			\\
+			~
+			\\
+			\bf Initial FP:	&	\fp{} + \attInt{} Modifier
+			\\
+			\bf Gained FP:	&	1d\fp{} per \name{} level
+		\end{tabular}
+
+		
+		\subsection{Proficiencies}
+		\def\w{6}
+		\begin{tabular}{ r p{\w cm}}
+			\bf Spell Disciplines:	&	\disc
+			\\
+			~
+			\\
+			\bf Skill Proficiencies	&	\prof
+			\\
+			~
+			\\
+			\bf Weapons:	&	\weapon
+			\\
+			~
+			\\
+			\bf Tools:	&	\tool
+		\end{tabular}
+		
+		\subsection{Starting Loadout}
+		\def\w{6}
+		\begin{tabular}{ r p{\w cm}}
+		\renewcommand{\arraystretch}{1.5}
+			\bf Equipment:	&	\equip
+			\\
+			~
+			\\
+			\bf Memorised Spells:	&	\memorised
+			
+		\end{tabular}
+		
+		\endgroup
 }
