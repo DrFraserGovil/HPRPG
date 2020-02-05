@@ -5,5 +5,106 @@
 An intro bit of text 
 
 %%archBegin
-\archetype{name=Artificer, hp=8, fp=8, armour=Medium Armour, tool=Runic Tools and one of Jeweller\apos{}s tools\comma{} Repair Kit and Smithing Tools, disc=Choose two from Elemental\comma{} Alteration\comma{} Conjuration \& Warding\comma{} and one further dicsipline of your choice., weapon=Simple Weapons, prof=Choose any two from Arcane\comma{} History\comma{} Logic\comma{} Willpower and Investigation., equip=Wand\comma{} a Scholar\apos{}s pack containing the tools selected above., memorised=Any four from the basic spells table., expertI = 2, maxspellI = Beginner, bonusI = a, expertII = 2, maxspellII = Beginner, bonusII = b, expertIII = 2, maxspellIII = Beginner, bonusIII = c, expertIV = 3, maxspellIV = Novice, bonusIV = d, expertV = 3, maxspellV = Novice, bonusV = e, expertVI = 3, maxspellVI = Novice, bonusVI = d, expertVII = 3, maxspellVII = Novice, bonusVII = e, expertVIII = 4, maxspellVIII = Adept, bonusVIII = d, expertIX = 4, maxspellIX = Adept, bonusIX = e, expertX = 4, maxspellX = Adept, bonusX = d, expertXI = 4, maxspellXI = Expert, bonusXI = e, expertXII = 5, maxspellXII = Expert, bonusXII = d, expertXIII = 5, maxspellXIII = Expert, bonusXIII = e, expertXIV = 5, maxspellXIV = Master, bonusXIV = d, expertXV = 5, maxspellXV = Master, bonusXV = e, expertXVI = 6, maxspellXVI = Master, bonusXVI = d, expertXVII = 6, maxspellXVII = Master, bonusXVII = e, expertXVIII = 6, maxspellXVIII = Ascendant, bonusXVIII = d, expertXIX = 6, maxspellXIX = Ascendant, bonusXIX = e, expertXX = 7, maxspellXX = Ascendant, bonusXX = d, shortmode = 0}
+\archetype{name=Artificer, hp=8, fp=8, armour=Medium Armour, tool=Runic Tools and one of Jeweller\apos{}s tools\comma{} Repair Kit and Smithing Tools, disc=Choose two from Elemental\comma{} Alteration\comma{} Conjuration \& Warding\comma{} and one further dicsipline of your choice., weapon=Simple Weapons, prof=Choose any two from Arcane\comma{} History\comma{} Logic\comma{} Willpower and Investigation., equip=Wand\comma{} a Scholar\apos{}s pack containing the tools selected above., memorised=Any four from the basic spells table., expertI = 2, maxspellI = Beginner, bonusI = Artificer\apos{}s Augmentations, expertII = 2, maxspellII = Beginner, bonusII = Rune Experimentation, expertIII = 2, maxspellIII = Beginner, bonusIII = Renew Bindings\comma{} Expert Enchanter, expertIV = 3, maxspellIV = Novice, expertV = 3, maxspellV = Novice, bonusV = Appraising Eyes, expertVI = 3, maxspellVI = Novice, expertVII = 3, maxspellVII = Novice, bonusVII = Enchantment Affinity, expertVIII = 4, maxspellVIII = Adept, bonusVIII = Tweak Enchantment, expertIX = 4, maxspellIX = Adept, expertX = 4, maxspellX = Adept, bonusX = Imbue Sentience, expertXI = 4, maxspellXI = Expert, expertXII = 5, maxspellXII = Expert, bonusXII = Runecasting, expertXIII = 5, maxspellXIII = Expert, expertXIV = 5, maxspellXIV = Master, bonusXIV = Networked Sentience, expertXV = 5, maxspellXV = Master, expertXVI = 6, maxspellXVI = Master, bonusXVI = Empowered Sentience, expertXVII = 6, maxspellXVII = Master, expertXVIII = 6, maxspellXVIII = Ascendant, bonusXVIII = Enchantment Affinity II, expertXIX = 6, maxspellXIX = Ascendant, expertXX = 7, maxspellXX = Ascendant, bonusXX = Shared Soul, anMode = 1,shortmode = 0}
 %%archEnd
+
+
+
+\newpage
+\section{Acquired Feats}
+
+\def\sign{{\it signum}}
+\def\signs{{\it signii}}
+\feat{Artificer's Augmentations}{From first level, you learn how to use {\it Augmentations}. 
+
+
+An {Augmentation} is a temporary, rather weak enchantment that can be placed on an item by pressing a wax \sign{} into it. Each \sign{} has a runechain already inscribed upon it, and as the artificer begins the augmentation process they describe how those runes should be interpreted, as they would in the normal enchanting process. 
+
+If the artificer doesn't exceed the capabilities of the \sign{}, then the item is temporarily imbued with the described effect. An augmentation typically lasts for one hour, with minor degredation to the effect quality as it wears off. 
+
+Each \sign{} takes 12 hours to recharge, during which time it cannot be used again. You may use multiple \signs{} inscribed with the same runechain to produce different effects, provided they would fall under the same `umbrella', as described on page \pageref{S:Enchanting}. You cannot place a \sign{} on item which already possesses an augmentation, but you can augment traditionally enchanted items. 
+
+
+The number of \signs{} that you may have at any one time is equal to your Artificer level. You may take 6 hours to produce a new set of \signs{}, with your chosen runes inscribed upon them. When you do so, your old set crumbles into dust.
+
+The effects produced by augmentations will always be less potent than those which you are able to produce through the traditional enchantment ritual. As an example, whilst a Beginner\minus{}level enchanter could use the runechain \rune{\velox\genero\ignis} to produce a Sword of Fire capable of inflicting an additional 1d6 Fire damage, a sword augmented with this runechain would be limited to 1d4 fire damage. As your spellcasting (and hence enchanting) abilities increase, so to do your augments. 
+ } 
+
+
+\feat{Rune Experimentation}{At second level, you learn to dedicate a number of hours to simple brute\minus{}force experimentation, guided by your enchanter's intuition. Upon doing so, you may learn a new rune that you do not yet know. After an hour of work, perform a DV 18 enchanting check. You may repeat this check once an hour until you succeed, for up to 6 hours in a row.
+
+If you succeed, you choose a new rune to memorise from those you have not yet learned. Generally, you may only choose to learn a Legendary Rune if you already know all of the Mystical runes of the same category.  
+
+This ability may only be used again after a Long Rest.
+}
+
+\feat{Expert Enchanter}{From 3rd level, you may double your expertise bonus on enchanting checks, and enchanting rituals take half as long as normal.
+
+In addition, whenever you fail an enchanting check, you get the chance to `rescue' the enchanting with a second check.
+ }
+
+\feat{Renew Bindings}{AT 3rd level, you learn how to re\minus{}energise an existing nexus, effectively `recharging' a the enchantment in an item. The ritual takes approximately 1 hour, and costs 10FP to perform. 
+
+You may `recharge' a number of items in a single ritual equal to half your enchanter level. 
+}
+
+\feat{Appriasing Eyes}{At 5th level, your eyes have become accustomed to the magical aura of enchanted items. You can tell at a glance if an item is enchanted, and may take a major action to perform an investigation check. On a success, you may discern the runechain (but not the exact effect) present on an item.}
+
+\feat{Enchantment Affinity}{At 7th level, you allow the runes to shape your understanding of the item as you undergo the enchanting process, and allow the runes to guide you a you use the item. As a result, you are considered proficient in any weapon or armour that you have enchanted personally.
+
+At 18th level, this understanding extends even to items that others have enchanted: you are considered proficient in all enchanted weapons and armour. 
+}
+
+\feat{Tweak Enchantment}{Upon reaching 8th level, you gain the ability to place small runes at specific points along the magical nexus of an existing magical item, subtly altering the effects. 
+
+Tweaks can be simple aesthetic changes (i.e. change the fire flickering along the blade from red to blue), provide exceptions (i.e. sleep effects do not work on blonde individuals) and other such minor effects. Attempting to alter the effects too much from their intended purpose can fragment the magical nexus, destroying the item, and probably taking out a few nearby buildings. 
+
+This action takes 10 minutes to complete, and cannot be used again until completing a Short Rest.}
+
+\feat{Imbue Sentience}{The creation of a true Mind, a being possessing consciousness and original thought is a closely guarded secret amongst the Artificer's guilds. By 10th level, you have learned these secrets for yourself. 
+
+The runechains for such a feat are horrifically long and complicated, necessitating a DV20 enchanting check to produce and 24 hour of work. At the end, however, you produce an artificial sentient being. 
+
+If you had previously created such an artefact, that consciousness transfers into the new item, with the old housing crumbling into dust. 
+
+The consciousness within the item can percieve the outside world with perfect darkvision, and can hear as well as any human, and has a perfect memory. It also has a limited amount of control over its physical form - often manifesting a face with which to talk by selectively crumpling the fabric it resides inside, or appearing in the imperfections of a gemstone, for example. 
+
+When manifesting a face, the sentience can communicate verbally, and it may always communicate telepathically with a being in contact with the item it resides within. The sentience is created with a friendly disposition towards it creator, and as such may dispense advice and knowledge, or warn them of unseen threats. 
+
+ }
+
+\feat{Runecaster}{At 12th level, you begin to realise that enchanting (and the use of runes) is no different than normal spellcasting, and you learn to utilise your knowledge of the Enchanting Runes to form a magic spell from the endless chaos of primordial magic. 
+
+As with the usual enchanting process, you must trace the runes out in the air over the course of a major action, describing what effect you would like this runechain to have. The GM then decides the spellschool and the difficulty of the described spell, based on the magnitude of the effect you are trying to create. You must then perform a casting check to realise the runecast. 
+
+Runecasting is almost always weaker than a spell cast using the normal methods, though it provides much greater flexibility. You cannot runecast to exactly replicate the effects of an existing spell. 
+
+%After successfully performing a Runecast, you may spend 6 hours translating the runechain into a conventional incantation\minus{}based spell, with the discipline and DV set by the GM. You may then memory\minus{}cast this spell, and others may book\minus{}cast it, as they would any other spell.  
+}
+
+\feat{Networked Augmentations}{At 14th level, you learn how to modify your Augmentations to form a psychic network, along which both messages and Sentiences can travel. 
+
+Any being touching an item currently bearing an active augment (anywhere in the multiverse) may communicate with you, or with any other being touching such an item, and you may communicate with them. 
+
+If you bear an item containing a Sentience, it may also traverse this psychic network to temporarily inhabit augmented items. It will act as if it is in its `home' object, and will always return before the Augmentation wears off. Moving along the network takes a minor action. 
+}
+
+\feat{Empowered Sentience}{At 16th level, you learn how to modify your sentience-inducing runes to allow the channeling of magical power. You may teach the Sentience up to 3 Beginner or Novice-level spells which you have memorised. 
+
+The Sentience is then able to cast these spells at will as major actions, from whichever item it is currently inhabiting. The Sentience has a +4 to accuracy checks, and has a subjugation value of 13.
+
+Every time you re-create the sentience from scratch, it forgets the spells it learned in its previous incarnation.
+}
+
+\feat{Shared Soul}{At 20th level, you have learned one of the most dangerous secrets of all: how to cheat death.
+
+When you create a sentience, enough of your personality and soul mingles with that of your creation for it to be viable to use the sentience to rebuild your personality after your death. 
+
+Normally the {\it Spark of Life} spell requires a being to have been dead for less than 24 hours, and with a relatively intact body, in order for it to be viable for the soul to be clinging on. 
+
+However, if you die whilst connected to your Sentience through the psychic network, your soul may reside in the network for a year and a day, before it moves on to the other side. As long as the enchanted item remains intact, your body can be repaired and your soul returned to it within this timeframe. 
+
+After using this skill, your soul can become fragile. You may only use this skill to cheat death once.
+
+Unlike Horcruxes, no dark or unspeakable magic is involved, and your soul remains intact throughout. You cannot permanently cheat death - only delay it slightly.  
+ }

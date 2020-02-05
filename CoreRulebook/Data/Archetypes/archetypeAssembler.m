@@ -31,12 +31,22 @@ function archetypeAssembler(fileNameRoot)
         while j <= h && ~isempty(f{j,1}(1))
             num = num2roman(j);
             
+            feat = "";
+            
             exp = "expert" + num + " = " + num2str(f{j,2}) + ", ";
             spell = "maxspell" + num + " = " + prepareText(f{j,3}{1}) + ", ";
-            feat = "bonus" + num + " = " + prepareText(f{j,4}{1}) + ", ";
             
+            if ~isempty(f{j,4}{1})
+                feat = "bonus" + num + " = " + prepareText(f{j,4}{1}) + ", ";
+            end        
             text = text + exp + spell + feat;
             j = j + 1;
+        end
+        
+        charname= char(f{1,6});
+        fLet = charname(1);
+        if any(fLet == ["A","E","I","O","U"])
+           text = text + "anMode = 1,";  
         end
         
         l = "shortmode = 0";

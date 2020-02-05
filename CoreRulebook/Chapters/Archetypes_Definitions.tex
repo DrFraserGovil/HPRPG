@@ -1,8 +1,9 @@
 \newcommand{\feat}[2]{
 \subsection{\it #1}
 
+{\setlength\parskip{5 pt}
 #2
-
+}
 }
 \newcommand{\jump}{\par \vspace{0.8ex}}
 \makeatletter
@@ -79,6 +80,7 @@
 \define@key{archetype}{memorised}{\def\memorised{#1}}
 \define@key{archetype}{shortmode}{\def\mode{#1}}
 \define@key{archetype}{name}{\def\name{#1}}
+\define@key{archetype}{anMode}{\def\anMode{#1}}
 %%keyEnd    
 \makeatother
 
@@ -135,7 +137,7 @@
      
      %%defaultBegin
 
-	\setkeys{archetype}{ expertI=0, maxspellI=undefined, bonusI= ~, expertII=0, maxspellII=undefined, bonusII= ~, expertIII=0, maxspellIII=undefined, bonusIII= ~, expertIV=0, maxspellIV=undefined, bonusIV= ~, expertV=0, maxspellV=undefined, bonusV= ~, expertVI=0, maxspellVI=undefined, bonusVI= ~, expertVII=0, maxspellVII=undefined, bonusVII= ~, expertVIII=0, maxspellVIII=undefined, bonusVIII= ~, expertIX=0, maxspellIX=undefined, bonusIX= ~, expertX=0, maxspellX=undefined, bonusX= ~, expertXI=0, maxspellXI=undefined, bonusXI= ~, expertXII=0, maxspellXII=undefined, bonusXII= ~, expertXIII=0, maxspellXIII=undefined, bonusXIII= ~, expertXIV=0, maxspellXIV=undefined, bonusXIV= ~, expertXV=0, maxspellXV=undefined, bonusXV= ~, expertXVI=0, maxspellXVI=undefined, bonusXVI= ~, expertXVII=0, maxspellXVII=undefined, bonusXVII= ~, expertXVIII=0, maxspellXVIII=undefined, bonusXVIII= ~, expertXIX=0, maxspellXIX=undefined, bonusXIX= ~, expertXX=0, maxspellXX=undefined, bonusXX= ~, hp=None, fp=None, armour=None, tool=None, disc=None, weapon=None, prof=None, equip=None, memorised=None,name=None,shortmode=0}
+	\setkeys{archetype}{ expertI=0, maxspellI=undefined, bonusI= ---, expertII=0, maxspellII=undefined, bonusII= ---, expertIII=0, maxspellIII=undefined, bonusIII= ---, expertIV=0, maxspellIV=undefined, bonusIV= ---, expertV=0, maxspellV=undefined, bonusV= ---, expertVI=0, maxspellVI=undefined, bonusVI= ---, expertVII=0, maxspellVII=undefined, bonusVII= ---, expertVIII=0, maxspellVIII=undefined, bonusVIII= ---, expertIX=0, maxspellIX=undefined, bonusIX= ---, expertX=0, maxspellX=undefined, bonusX= ---, expertXI=0, maxspellXI=undefined, bonusXI= ---, expertXII=0, maxspellXII=undefined, bonusXII= ---, expertXIII=0, maxspellXIII=undefined, bonusXIII= ---, expertXIV=0, maxspellXIV=undefined, bonusXIV= ---, expertXV=0, maxspellXV=undefined, bonusXV= ---, expertXVI=0, maxspellXVI=undefined, bonusXVI= ---, expertXVII=0, maxspellXVII=undefined, bonusXVII= ---, expertXVIII=0, maxspellXVIII=undefined, bonusXVIII= ---, expertXIX=0, maxspellXIX=undefined, bonusXIX= ---, expertXX=0, maxspellXX=undefined, bonusXX= ---, hp=None, fp=None, armour=None, tool=None, disc=None, weapon=None, prof=None, equip=None, memorised=None,name=None,shortmode=0,anMode=0}
 
 
 	%%defaultEnd
@@ -186,7 +188,7 @@
      	
      	\section*{Class Statistics}
 		
-		As a \name, you gain the following fundamental features:
+		As a\if\anMode1{n}\fi~\name{}, you gain the following fundamental features:
 		
 		\subsection{Health \& Fortitude}
 		\def\w{6}
