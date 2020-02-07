@@ -89,48 +89,191 @@
 \define@key{archetype}{shortmode}{\def\mode{#1}}
 \define@key{archetype}{name}{\def\name{#1}}
 \define@key{archetype}{anMode}{\def\anMode{#1}}
+\define@key{archetype}{listI_I}{\def\listI_I{#1}}
+     \define@key{archetype}{listI_I}{\def\listInI{#1}}
+     \define@key{archetype}{listII_I}{\def\listIInI{#1}}
+     \define@key{archetype}{listI_II}{\def\listInII{#1}}
+     \define@key{archetype}{listII_II}{\def\listIInII{#1}}
+     \define@key{archetype}{listI_III}{\def\listInIII{#1}}
+     \define@key{archetype}{listII_III}{\def\listIInIII{#1}}
+     \define@key{archetype}{listI_IV}{\def\listInIV{#1}}
+     \define@key{archetype}{listII_IV}{\def\listIInIV{#1}}
+     \define@key{archetype}{listI_V}{\def\listInV{#1}}
+     \define@key{archetype}{listII_V}{\def\listIInV{#1}}
+     \define@key{archetype}{listI_VI}{\def\listInVI{#1}}
+     \define@key{archetype}{listII_VI}{\def\listIInVI{#1}}
+     \define@key{archetype}{listI_VII}{\def\listInVII{#1}}
+     \define@key{archetype}{listII_VII}{\def\listIInVII{#1}}
+     \define@key{archetype}{listI_VIII}{\def\listInVIII{#1}}
+     \define@key{archetype}{listII_VIII}{\def\listIInVIII{#1}}
+     \define@key{archetype}{listI_IX}{\def\listInIX{#1}}
+     \define@key{archetype}{listII_IX}{\def\listIInIX{#1}}
+     \define@key{archetype}{listI_X}{\def\listInX{#1}}
+     \define@key{archetype}{listII_X}{\def\listIInX{#1}}
+     \define@key{archetype}{listI_XI}{\def\listInXI{#1}}
+     \define@key{archetype}{listII_XI}{\def\listIInXI{#1}}
+     \define@key{archetype}{listI_XII}{\def\listInXII{#1}}
+     \define@key{archetype}{listII_XII}{\def\listIInXII{#1}}
+     \define@key{archetype}{listI_XIII}{\def\listInXIII{#1}}
+     \define@key{archetype}{listII_XIII}{\def\listIInXIII{#1}}
+     \define@key{archetype}{listI_XIV}{\def\listInXIV{#1}}
+     \define@key{archetype}{listII_XIV}{\def\listIInXIV{#1}}
+     \define@key{archetype}{listI_XV}{\def\listInXV{#1}}
+     \define@key{archetype}{listII_XV}{\def\listIInXV{#1}}
+     \define@key{archetype}{listI_XVI}{\def\listInXVI{#1}}
+     \define@key{archetype}{listII_XVI}{\def\listIInXVI{#1}}
+     \define@key{archetype}{listI_XVII}{\def\listInXVII{#1}}
+     \define@key{archetype}{listII_XVII}{\def\listIInXVII{#1}}
+     \define@key{archetype}{listI_XVIII}{\def\listInXVIII{#1}}
+     \define@key{archetype}{listII_XVIII}{\def\listIInXVIII{#1}}
+     \define@key{archetype}{listI_XIX}{\def\listInXIX{#1}}
+     \define@key{archetype}{listII_XIX}{\def\listIInXIX{#1}}
+     \define@key{archetype}{listI_XX}{\def\listInXX{#1}}
+     \define@key{archetype}{listII_XX}{\def\listIInXX{#1}}
+	 \define@key{archetype}{singleListMode}{\def\singleListMode{#1}}
+	 \define@key{archetype}{doubleListMode}{\def\doubleListMode{#1}}
+	 \define@key{archetype}{listIName}{\def\listIName{#1}}
+	 \define@key{archetype}{listIIName}{\def\listIIName{#1}}
 %%keyEnd    
 \makeatother
 
 \def\L{4}
+\def\LI{3.3}
+\def\LII{8}
 \newcommand\tableRow[4]
 {
-	#1	&	+#2	&	#3	&	\parbox[t]{\L cm}{#4} \\
+	#1	&	+#2	&	#3	&	\parbox[t]{\L cm}{\raggedright #4} 	\\
+}
+\newcommand\singleExtraRow[5]
+{
+	#1	&	+#2	&	#3	&  #5 &	\parbox[t]{\LI cm}{\raggedright #4} 	\\
+}
+\newcommand\doubleExtraRow[6]
+{
+	#1	&	+#2	&	#3	&  #5 &	#6	& \parbox[t]{\LII cm}{ \raggedright#4} \\
 }
 
 \newcommand{\tableShort}[1]
 {
+\archetypealternate
+	     		      
+	\begin{tabular}{c c c c }
+
+	\bf Level 	&	\bf Expertise	& \bf Spells &	\bf Features
+	\\ 
+
 	\tableRow{1}{\expertI}{\maxspellI}{\bonusI}
-	\tableRow{2}{\expertII}{\maxspellII}{\bonusII}
-	\tableRow{3}{\expertIII}{\maxspellIII}{\bonusIII}
+     \tableRow{2}{\expertII}{\maxspellII}{\bonusII}
+     \tableRow{3}{\expertIII}{\maxspellIII}{\bonusIII}
+	 
+	 \end{tabular}
 }   
   
       
       
 \newcommand{\tableLong}
 {      
-	\tableRow{1}{\expertI}{\maxspellI}{\bonusI}
-	\tableRow{2}{\expertII}{\maxspellII}{\bonusII}
-	\tableRow{3}{\expertIII}{\maxspellIII}{\bonusIII}
-	\tableRow{4}{\expertIV}{\maxspellIV}{\bonusIV}
-	\tableRow{5}{\expertV}{\maxspellV}{\bonusV}
-	\tableRow{6}{\expertVI}{\maxspellVI}{\bonusVI}
-	\tableRow{7}{\expertVII}{\maxspellVII}{\bonusVII}
-	\tableRow{8}{\expertVIII}{\maxspellVIII}{\bonusVIII}
-	\tableRow{9}{\expertIX}{\maxspellIX}{\bonusIX}
-	\tableRow{10}{\expertX}{\maxspellX}{\bonusX}
-	\tableRow{11}{\expertXI}{\maxspellXI}{\bonusXI}
-	\tableRow{12}{\expertXII}{\maxspellXII}{\bonusXII}
-	\tableRow{13}{\expertXIII}{\maxspellXIII}{\bonusXIII}
-	\tableRow{14}{\expertXIV}{\maxspellXIV}{\bonusXIV}
-	\tableRow{15}{\expertXV}{\maxspellXV}{\bonusXV}
-	\tableRow{16}{\expertXVI}{\maxspellXVI}{\bonusXVI}
-	\tableRow{17}{\expertXVII}{\maxspellXVII}{\bonusXVII}
-	\tableRow{18}{\expertXVIII}{\maxspellXVIII}{\bonusXVIII}
-	\tableRow{19}{\expertXIX}{\maxspellXIX}{\bonusXIX}
-	\tableRow{20}{\expertXX}{\maxspellXX}{\bonusXX}
+\archetypealternate
+	     		      
+	\begin{tabular}{c c c c }
+
+	\bf Level 	&	\bf Expertise	& \bf Spells &	\bf Features
+	\\ 
+	
+\tableRow{1}{\expertI}{\maxspellI}{\bonusI}
+     \tableRow{2}{\expertII}{\maxspellII}{\bonusII}
+     \tableRow{3}{\expertIII}{\maxspellIII}{\bonusIII}
+     \tableRow{4}{\expertIV}{\maxspellIV}{\bonusIV}
+     \tableRow{5}{\expertV}{\maxspellV}{\bonusV}
+     \tableRow{6}{\expertVI}{\maxspellVI}{\bonusVI}
+     \tableRow{7}{\expertVII}{\maxspellVII}{\bonusVII}
+     \tableRow{8}{\expertVIII}{\maxspellVIII}{\bonusVIII}
+     \tableRow{9}{\expertIX}{\maxspellIX}{\bonusIX}
+     \tableRow{10}{\expertX}{\maxspellX}{\bonusX}
+     \tableRow{11}{\expertXI}{\maxspellXI}{\bonusXI}
+     \tableRow{12}{\expertXII}{\maxspellXII}{\bonusXII}
+     \tableRow{13}{\expertXIII}{\maxspellXIII}{\bonusXIII}
+     \tableRow{14}{\expertXIV}{\maxspellXIV}{\bonusXIV}
+     \tableRow{15}{\expertXV}{\maxspellXV}{\bonusXV}
+     \tableRow{16}{\expertXVI}{\maxspellXVI}{\bonusXVI}
+     \tableRow{17}{\expertXVII}{\maxspellXVII}{\bonusXVII}
+     \tableRow{18}{\expertXVIII}{\maxspellXVIII}{\bonusXVIII}
+     \tableRow{19}{\expertXIX}{\maxspellXIX}{\bonusXIX}
+     \tableRow{20}{\expertXX}{\maxspellXX}{\bonusXX}
+	 
+	 \end{tabular}
 }
-          
+  
+\newcommand{\extraTable}
+{      
+\archetypealternate
+	     		      
+	\begin{tabular}{@{} c c >{\centering}m{1 cm} >{\centering}m{0.8 cm}  c @{}}
+
+	\bf Level 	&	\bf Expertise	& \bf Spells &\textbf{\listIName}&	\bf Features
+	\\ 
+
+	 \singleExtraRow{1}{\expertI}{\maxspellI}{\bonusI}{\listInI}
+     \singleExtraRow{2}{\expertII}{\maxspellII}{\bonusII}{\listInII}
+     \singleExtraRow{3}{\expertIII}{\maxspellIII}{\bonusIII}{\listInIII}
+     \singleExtraRow{4}{\expertIV}{\maxspellIV}{\bonusIV}{\listInIV}
+     \singleExtraRow{5}{\expertV}{\maxspellV}{\bonusV}{\listInV}
+     \singleExtraRow{6}{\expertVI}{\maxspellVI}{\bonusVI}{\listInVI}
+     \singleExtraRow{7}{\expertVII}{\maxspellVII}{\bonusVII}{\listInVII}
+     \singleExtraRow{8}{\expertVIII}{\maxspellVIII}{\bonusVIII}{\listInVIII}
+     \singleExtraRow{9}{\expertIX}{\maxspellIX}{\bonusIX}{\listInIX}
+     \singleExtraRow{10}{\expertX}{\maxspellX}{\bonusX}{\listInX}
+     \singleExtraRow{11}{\expertXI}{\maxspellXI}{\bonusXI}{\listInXI}
+     \singleExtraRow{12}{\expertXII}{\maxspellXII}{\bonusXII}{\listInXII}
+     \singleExtraRow{13}{\expertXIII}{\maxspellXIII}{\bonusXIII}{\listInXIII}
+     \singleExtraRow{14}{\expertXIV}{\maxspellXIV}{\bonusXIV}{\listInXIV}
+     \singleExtraRow{15}{\expertXV}{\maxspellXV}{\bonusXV}{\listInXV}
+     \singleExtraRow{16}{\expertXVI}{\maxspellXVI}{\bonusXVI}{\listInXVI}
+     \singleExtraRow{17}{\expertXVII}{\maxspellXVII}{\bonusXVII}{\listInXVII}
+     \singleExtraRow{18}{\expertXVIII}{\maxspellXVIII}{\bonusXVIII}{\listInXVIII}
+     \singleExtraRow{19}{\expertXIX}{\maxspellXIX}{\bonusXIX}{\listInXIX}
+     \singleExtraRow{20}{\expertXX}{\maxspellXX}{\bonusXX}{\listInXX}
+	 
+	 \end{tabular}
+}
+
+\newcommand\doubleTable
+{
+
+	
+	
+	\begin{center}
+	\archetypealternate
+	\begin{tabular}{c c c c  c c}
+
+				\bf Level 	&	\bf Expertise	& \bf Spells & \bf \listIName &	\bf \listIIName & \bf Features
+				\\ 
+	\doubleExtraRow{1}{\expertI}{\maxspellI}{\bonusI}{\listInI}{\listIInI}
+     \doubleExtraRow{2}{\expertII}{\maxspellII}{\bonusII}{\listInII}{\listIInII}
+     \doubleExtraRow{3}{\expertIII}{\maxspellIII}{\bonusIII}{\listInIII}{\listIInIII}
+     \doubleExtraRow{4}{\expertIV}{\maxspellIV}{\bonusIV}{\listInIV}{\listIInIV}
+     \doubleExtraRow{5}{\expertV}{\maxspellV}{\bonusV}{\listInV}{\listIInV}
+     \doubleExtraRow{6}{\expertVI}{\maxspellVI}{\bonusVI}{\listInVI}{\listIInVI}
+     \doubleExtraRow{7}{\expertVII}{\maxspellVII}{\bonusVII}{\listInVII}{\listIInVII}
+     \doubleExtraRow{8}{\expertVIII}{\maxspellVIII}{\bonusVIII}{\listInVIII}{\listIInVIII}
+     \doubleExtraRow{9}{\expertIX}{\maxspellIX}{\bonusIX}{\listInIX}{\listIInIX}
+     \doubleExtraRow{10}{\expertX}{\maxspellX}{\bonusX}{\listInX}{\listIInX}
+     \doubleExtraRow{11}{\expertXI}{\maxspellXI}{\bonusXI}{\listInXI}{\listIInXI}
+     \doubleExtraRow{12}{\expertXII}{\maxspellXII}{\bonusXII}{\listInXII}{\listIInXII}
+     \doubleExtraRow{13}{\expertXIII}{\maxspellXIII}{\bonusXIII}{\listInXIII}{\listIInXIII}
+     \doubleExtraRow{14}{\expertXIV}{\maxspellXIV}{\bonusXIV}{\listInXIV}{\listIInXIV}
+     \doubleExtraRow{15}{\expertXV}{\maxspellXV}{\bonusXV}{\listInXV}{\listIInXV}
+     \doubleExtraRow{16}{\expertXVI}{\maxspellXVI}{\bonusXVI}{\listInXVI}{\listIInXVI}
+     \doubleExtraRow{17}{\expertXVII}{\maxspellXVII}{\bonusXVII}{\listInXVII}{\listIInXVII}
+     \doubleExtraRow{18}{\expertXVIII}{\maxspellXVIII}{\bonusXVIII}{\listInXVIII}{\listIInXVIII}
+     \doubleExtraRow{19}{\expertXIX}{\maxspellXIX}{\bonusXIX}{\listInXIX}{\listIInXIX}
+     \doubleExtraRow{20}{\expertXX}{\maxspellXX}{\bonusXX}{\listInXX}{\listIInXX}
+	 \end{tabular}
+	 \end{center}
+	 
+	 
+}
+
           
 \newcommand\redsub[1]
 {
@@ -141,24 +284,30 @@
 {
     
     
+	
      \begingroup
      
      %%defaultBegin
 
-	\setkeys{archetype}{ expertI=0, maxspellI=undefined, bonusI= ---, expertII=0, maxspellII=undefined, bonusII= ---, expertIII=0, maxspellIII=undefined, bonusIII= ---, expertIV=0, maxspellIV=undefined, bonusIV= ---, expertV=0, maxspellV=undefined, bonusV= ---, expertVI=0, maxspellVI=undefined, bonusVI= ---, expertVII=0, maxspellVII=undefined, bonusVII= ---, expertVIII=0, maxspellVIII=undefined, bonusVIII= ---, expertIX=0, maxspellIX=undefined, bonusIX= ---, expertX=0, maxspellX=undefined, bonusX= ---, expertXI=0, maxspellXI=undefined, bonusXI= ---, expertXII=0, maxspellXII=undefined, bonusXII= ---, expertXIII=0, maxspellXIII=undefined, bonusXIII= ---, expertXIV=0, maxspellXIV=undefined, bonusXIV= ---, expertXV=0, maxspellXV=undefined, bonusXV= ---, expertXVI=0, maxspellXVI=undefined, bonusXVI= ---, expertXVII=0, maxspellXVII=undefined, bonusXVII= ---, expertXVIII=0, maxspellXVIII=undefined, bonusXVIII= ---, expertXIX=0, maxspellXIX=undefined, bonusXIX= ---, expertXX=0, maxspellXX=undefined, bonusXX= ---, hp=None, fp=None, armour=None, tool=None, disc=None, weapon=None, prof=None, equip=None, memorised=None,name=None,shortmode=0,anMode=0}
+	\setkeys{archetype}{ expertI=0, maxspellI=undefined, bonusI= ---, expertII=0, maxspellII=undefined, bonusII= ---, expertIII=0, maxspellIII=undefined, bonusIII= ---, expertIV=0, maxspellIV=undefined, bonusIV= ---, expertV=0, maxspellV=undefined, bonusV= ---, expertVI=0, maxspellVI=undefined, bonusVI= ---, expertVII=0, maxspellVII=undefined, bonusVII= ---, expertVIII=0, maxspellVIII=undefined, bonusVIII= ---, expertIX=0, maxspellIX=undefined, bonusIX= ---, expertX=0, maxspellX=undefined, bonusX= ---, expertXI=0, maxspellXI=undefined, bonusXI= ---, expertXII=0, maxspellXII=undefined, bonusXII= ---, expertXIII=0, maxspellXIII=undefined, bonusXIII= ---, expertXIV=0, maxspellXIV=undefined, bonusXIV= ---, expertXV=0, maxspellXV=undefined, bonusXV= ---, expertXVI=0, maxspellXVI=undefined, bonusXVI= ---, expertXVII=0, maxspellXVII=undefined, bonusXVII= ---, expertXVIII=0, maxspellXVIII=undefined, bonusXVIII= ---, expertXIX=0, maxspellXIX=undefined, bonusXIX= ---, expertXX=0, maxspellXX=undefined, bonusXX= ---, hp=None, fp=None, armour=None, tool=None, disc=None, weapon=None, prof=None, equip=None, memorised=None,name=None,shortmode=0,anMode=0,singleListMode = 0, doubleListMode = 0,listI_I= 0, listII_I= 0 , listI_II= 0, listII_II= 0 , listI_III= 0, listII_III= 0 , listI_IV= 0, listII_IV= 0 , listI_V= 0, listII_V= 0 , listI_VI= 0, listII_VI= 0 , listI_VII= 0, listII_VII= 0 , listI_VIII= 0, listII_VIII= 0 , listI_IX= 0, listII_IX= 0 , listI_X= 0, listII_X= 0 , listI_XI= 0, listII_XI= 0 , listI_XII= 0, listII_XII= 0 , listI_XIII= 0, listII_XIII= 0 , listI_XIV= 0, listII_XIV= 0 , listI_XV= 0, listII_XV= 0 , listI_XVI= 0, listII_XVI= 0 , listI_XVII= 0, listII_XVII= 0 , listI_XVIII= 0, listII_XVIII= 0 , listI_XIX= 0, listII_XIX= 0 , listI_XX= 0, listII_XX= 0 , listIName = None, listIIName = None}
 
 
 	%%defaultEnd
 	\def\w{4.1}
+	\small
+	     			
 	\setkeys{archetype}{#1}
- 
-     
+	\if\doubleListMode1
+	\normalsize
+	\begin{strip}
+	\fi
+
 	\begin{tcolorbox}[  before skip=7pt plus 2pt,
 			     	  boxrule=0pt,
 			     	  boxsep=0pt,
 			     	  toptitle=4pt,
-			     	  left=0pt,
-			     	  right=0pt,
+			     	  left=4pt,
+			     	  right=4pt,
 			     	  bottom=5pt,
 			     	  arc=0.5mm,
 			     	  oversize=0pt,
@@ -172,28 +321,37 @@
 	     		
 	     		\dndlineLong
 	     	
-	     		\begin{center}
-	     			\small
-	     			\archetypealternate
-	     		        \begin{tabular}{c c c c  c }
-
-				\bf Level 	&	\bf Expertise	& \bf Spells & \bf Features
-				\\ 
+	     		%\begin{center}
+	     			
+				
 		     		\if\mode0
-		     			\tableLong
-				\fi
-				\if\mode1
-					\tableShort
-				\fi
-			   	\end{tabular}
-	     		\end{center}
+						\if\singleListMode0
+							\tableLong
+						\fi
+						\if\singleListMode1
+							\if\doubleListMode0
+								\extraTable
+							\fi
+							\if \doubleListMode1
+								\doubleTable
+							\fi
+						\fi
+					\fi
+					\if\mode1
+						\tableShort
+					\fi
+		
+	     		
 	     		\normalsize
 	     		\dndlineLong
 				
 				
      	\end{tcolorbox}
-     	
-     	
+		
+		\if\doubleListMode1
+		\end{strip}
+		\fi
+		
      	\section*{Class Statistics}
 		
 		As a\if\anMode1{n}\fi~\name{}, you gain the following fundamental features:
@@ -243,5 +401,9 @@
 			
 		\end{tabular}
 		
+		
+		
 		\endgroup
+		
+		
 }

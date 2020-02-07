@@ -32,12 +32,11 @@ function archetypeAssembler(fileNameRoot)
         if ~isempty(f.BasicInfo{11})
             text = text + "listIName =" + prepareText(f.BasicInfo{11}) + ", ";
             list1Mode = true;
-            if ~isempty(f.BasicInfor{12}{1})
+            text = text + "singleListMode = 1, ";
+            if ~isempty(f.BasicInfo{12})
                 text = text + "listIIName = " + prepareText(f.BasicInfo{12}) + ", ";
-                text = text + "doubleListMode = 1";
+                text = text + "doubleListMode = 1, ";
                 list2Mode = true;
-            else
-                text = text + "singleListMode = 1";
             end
         end
         
@@ -89,9 +88,11 @@ function archetypeAssembler(fileNameRoot)
         secondHalf = prepareText(readFile(endPoint:end),0);
 
         fullText = firstHalf + text  + "\n"+ secondHalf;
+
         FID = fopen(targetName,'w');
         fprintf(FID, fullText);
         fclose(FID);
-        
+
+        %sprintf(fullText)
     end
 end
