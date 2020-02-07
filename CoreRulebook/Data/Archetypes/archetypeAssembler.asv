@@ -23,19 +23,17 @@ function archetypeAssembler(fileNameRoot)
         
         statNames = ["name","hp","fp","armour","tool","disc","weapon","prof","equip","memorised"];
         for i = 1:length(statNames)
-            l =  statNames(i) + "=" + f.BasicInfo{i};
+            l =  statNames(i) + "=" + f.BasicInfo{i}{1};
             text = text + prepareText(l) + ", ";
         end
         
-        list1Mode = false;
-        list2Mode = false;
-        if ~isempty(f.BasicInfo{11})
-            text = text + "listIName =" + prepareText(f.BasicInfo{11}) + ", ";
-            list1Mode = true;
+        singleListMode
+        if ~isempty(f.BasicInfo{11}{1})
+            text = text + "listIName =" + prepareText(f.BasicInfo{11}{1}) + ", ";
+            
             if ~isempty(f.BasicInfor{12}{1})
-                text = text + "listIIName = " + prepareText(f.BasicInfo{12}) + ", ";
+                text = text + "listIIName = " + prepareText(f.BasicInfo{12}{1}) + ", ";
                 text = text + "doubleListMode = 1";
-                list2Mode = true;
             else
                 text = text + "singleListMode = 1";
             end
@@ -53,17 +51,7 @@ function archetypeAssembler(fileNameRoot)
             if ~isempty(f{j,4}{1})
                 feat = "bonus" + num + " = " + prepareText(f{j,4}{1}) + ", ";
             end        
-            
-            list1 = "";
-            list2 = "";
-            if list1Mode
-                list1 = "listI_" + num + "= " + f{j,5}+ ", ";
-            end
-            if list2Mode
-                list2 = "listII_" + num + "= " + f{j,6} + ", ";
-            end
-            
-            text = text + exp + spell + feat + list1 + list2;
+            text = text + exp + spell + feat;
             j = j + 1;
         end
         
