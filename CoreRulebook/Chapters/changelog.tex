@@ -6,53 +6,82 @@
 
 \subsection{Changes to Artificing}
 
-An entirely new artificing system was introduced!
+An entirely new artificing system was introduced, both for enchanting and potion making. 
 
-The rune-based enchanting system and the ingredient-plus-flair alchemy system have been implemented, and I'm rather proud of them. 
+Artificing is now made up of a rune-based enchanting system riffed from Ars Magica, and an ingredient-plus-flair alchemy system. 
+
+\subsection{Spellcasting Changes}
+
+\begin{itemize}
+	\item A drastic overhaul to the spellcasting system. 
+	\item Dice no longer increase in size: spellcasting is a d20 skill, with the DV changing
+	\item The associated `magic skills' have been removed. 
+	\item Power Points have been removed, and a 5e style `upcasting' system implemented to replace it. 
+	\item Spell Schools split into 2 disciplines each with the spellcasting skill set by the discipline
+	\item FP costs fixed on a per-level basis
+	\item Spell Resist DVs set by a `subjugation' value which increases with Power. 
+	\item Focus spell mechanic changed
+	\item Casting checks now only need to be performed for non-memorised spells. 
+	\item Some spells have an accuracy check associated with them. 
+\end{itemize}
 
 \subsection{Changes to Character Attributes}
+\begin{itemize}
+	\item Empathy renamed to Perception (better gameplay mechanic)
+	\item Athletics renamed to Fitness (to encompass the general physical health aspect)
+	\item Finesse changed to Precision (simply because FIT and FIN were too similar!)
+	\item The Attribute proficiencies have been shifted around and a few new ones renamed. 
+\end{itemize}
 
-\subsubsection{EMP $\rightarrow$ PER}
+\subsubsection{Dodge, Block and Accuracy}
 
-The Empathy attribute seemed a bit...weird. Shifting it to Perception means a better balanced game + makes it an actually useful skill!
+\begin{itemize}
+	\item A new accuracy system has been implemented
+	\item Single (bad) AC-style system was changed into the {\it Instinct} system.
+	\item {\it Dodge} is your ability to dodge out of the way, bolstered by the {\it Evade} action.
+	\item {\it Block} is your ability to deflect or absorb an attack, bolstered by the {\it Brace} action. 
+	\item The bolstering actions also improve your Resist scores, so Resist-spells cannot totally overpower a being. 
+\end{itemize}
 
-\subsubsection{Dodge + Block}
 
-The single AC value was shifted into two complimentary systems: the {\it dodge} and {\it block} stats, which were integrated with the new {\it instinct} system and the associated minor actions. 
-
-\subsubsection{Character Sheet}
-
-The character sheet was altered to include room for an accuracy, a dodge and a block attribute. There has also been a general restructuring of the character sheet in order to make it more user-friendly. 
-
-\subsubsection{Resist Dice Removal}
-
-Previously `Resist' checks used a dice that increased in size, using the same system as the spellcasting dice. This was deemed needlessly complex, and didn't fit quite as well after `Resisting' was made a generic ability (akin to 5e Saving Throws), rather than a magic-specific ability. Resisting now uses a default d20 check, and spell resist DVs have been aggregated into a single statistic (see below) to make it easier to use. 
-
-\subsection{Action Changes}
-
-Some aspects of the action system have been reworked. Much of this is aesthetic rather than substantial -- the formatting and structure of the ``Actions \& Their Consequences" section has been altered to make the distinctions clearer, however, some materially new information has been added. 
-
-\subsubsection{New Action Mechanics}
+\subsection{New Action Mechanics}
 
 \begin{itemize}
 	\item The {\it Evade} and {\it Brace} minor actions were introduced in line with the AC overhaul
-	\item Group checks were introduced (ripped almost directly from 5e)
-	\item A multiple-attempt table was added on page \pageref{S:Multi} to allow you to quickly attempt actions many, many times over, if so desired. 
+	\item Rules for Group checks and assistance were introduced. 
+	\item A multiple-attempt table was added on page \pageref{S:Multi} to rapid iteration of attempts. 
 	\item The `non-combat' section has been revamped and called `everyday actions', including rules for swimming, climbing, social actions and downtime
 	\item Added cover and blindfighting rules 
 \end{itemize}
 
-\subsection{Skill \& Proficiency Changes}
+\subsection{Archetypes}
 
-As a result of some of the wider structural changes implemented in this version, the skills \& proficiencies have seen a drastic overhaul in many areas. 
+The changes enumerated elsewhere in this section required a total overhaul of the Archetype system.
 
-
-\subsubsection{Skills}
 \begin{itemize}
-	\item Several weapon-proficiency and armour-proficiency skills have been introduced. 
-	\item The 8 dice-determining skills have been renamed to block them all together
-	\item Metamorphmagus has been changed from a learnable skill to a new species, to better reflect in-universe lore. 
+	\item The alpha/beta branch system has been removed as overwrought and unfun
+	\item The Student House Archetypes have been reduced to 3 levels each 
+	\item The classes have been altered to the following list:
+	\begin{itemize}
+		\item 4 House Archetypes (unchanged)
+		\item Acolyte
+		\item Artificer
+		\item Berserker
+		\item Druid
+		\item Healer
+		\item Outlaw
+		\item Recluse
+		\item Scholar
+		\item Spellsinger
+		\item Warrior
+	\end{itemize}
+	\item Of these, the following have been completed:
+	\begin{itemize}
+		\item 4 House Archetypes
+		\item Artificer
+	\end{itemize}
 \end{itemize}
+
 \subsection{Expertise}
 
 Previously called `Arcane Wisdom', the Expertise mechanics has been brought in as a similar device to the DnD 5e `proficiency bonus'. Previously, I was trying to do something different for the sake of being different. But why fix what isn't broken?
@@ -60,126 +89,38 @@ Previously called `Arcane Wisdom', the Expertise mechanics has been brought in a
 \subsubsection{Proficiencies}
 \begin{itemize}
 	\item Previously, proficiencies were treated as additional bonuses, each with their own numerical score. In line with the Expertise mechanic being brought in, they are instead replaced with checkboxes: you add your proficiency bonus to related checks, rather than having individual values associated with each. 
-	\item I debated renaming `proficiencies' to remove confusion with the DnD mechanic of the same name, but decided against it. 
-	\item The old EMP proficiencies were removed and replaced with {\it Observation} and {\it Compassion} to reflect the new PER system. 
 \end{itemize}
-\subsection{Changes to the Spellcasting System}
 
-\subsubsection{Spell Damage Reworked}
 
-``cvdv" spells (i.e. those who did more damage when a casting check exceeded the DV by a higher amount) have been replaced by equivalent spells with standard ndx damage checks. This stabilises spell effects + balances the system better than before. 
-
-\subsubsection{General effect balancing}
-
-Spell effects were quantified across levels, and were balanced to ensure that lower level spells remain relevant at higher levels, but do not outclass their higher level compatriots. 
-
-\subsubsection{Power Point Refocus}
-
-Previous iterations relied on drastic changes to spell effects at higher levels (i.e. switching out damage-causing dice at higher levels). This not only required strict adherence to the spelllist page, it also led to unbalanced spells and a discontinuous power slope (cheap spells suddenly gained significant power without commensurate increases in DV/FP). 
-
-This flaw was fixed by altering these spells to use the Power Point system introduced in V1 but poorly utilised. This integrates with the effect balancing: it allows spells to gradually gain power whilst also increasing the costs of that spell. 
-
-\subsubsection{Disciplines Introduced}
-
-The introduction of the 14 Spell Disciplines and the associated fixed check-type for each of them removes the need for each spell to have a DV/checktype listed. It therefore streamlines gameplay by removing the need for constant pageflipping, and simplifies the magic system. It also synergises well with the bimodal nature many of the Schools already possessed (i.e. `Hexes \& Curses', `Healing \& Warding') in previous editions. 
-
-\subsubsection{Some Renaming}
-
-Some small things changed names.
-
-`Hexes and Curses' spell school became `Malediction'. 
-
-`Concentration' spell types became `Focus' (this was purely for aesthetic / space saving reasons!)
-
-\subsubsection{Cheat Sheet}
-
-The `cheat sheet' has been added, allowing for a simple printout to serve as a reference for nearly all spellcasting. 
-
-\subsubsection{Manipulate Spells}
-
-It was felt that the `manipulate' spells were badly done, and were either overpowered (when considered a Novice or Adept spell), or held back simple manipulation abilities until too late in the game (when considered an Expert or Master spell). Therefore 20 new spells: 5 for each of the 4 classical elements were added in a successive manner. This hopefully provides a more integrated and flexible experience for the budding benders out there. 
-
-\subsubsection{Spells alterations}
-
-The following spells have been added:
+\subsection{Spell Changes}
 
 \begin{itemize}
-	\item Control Air/Earth/Fire/Water 1/2/3/4/5 (20 Elemental spells)
-	
-	See above for the justification for these additions
-	
-	
-	\item Disrupt Connection (Adept Telepathy)
-	\item Invert Connection (Master Telepathy)
-	\item Timeslip (Expert Temporal)
-	\item Drain Fortitude (Adept Psionics)
-	\item Howl (Beginner Curse, Beast)
-	\item Delayed Effect (Adept Curse)
-	\item Break Concentration (Expert Curse)
-	\item Feign Death (Adept Healing)
-	\item Shimmering Confetti (Beginner Conjuration)
-	\item Bind Being (Expert Conjuration)
-	\item  Blood Moon (Adept Necromancy)
-	\item Use Ancient Knowledge (Beginner Occultism)
-	\item Shadowsight (Novice Occultism)
-	\item Unfathomable Visage (Novice Occultism)
-	\item Coven's Protection (Expert Occultism)
-	\item Summoning Circle (Expert Occultism)
-	\item Spare Change Charm (Novice Alteration)
+	\item Spell damage reworked and balanced slightly (`cvdv' spells, which increased as your casting check increased, have been removed)
+	\item Some spells have shifted schools as the discipline system made it more obvious where they lay. 
+	\item Some renaming: `Hexes and Curses' became `Malediction'. 
+	\item A large number of new spells, at all levels, have been added. 
+	\item Almost all spells have had their effects `tweaked' slightly in order to balance them. 
 \end{itemize}
 
-The following spells have been removed:
-\begin{itemize}
-	\item Mantle Element (Master Elemental)
-	
-	This spell became redundant with the improved Control spells
-	
-	\item Manipulate Earth/Air/Fire/Water
-	
-	(As above)
-	
-	\item Summon Weak/Capable Avatar
-	
-	Too skyrim-y! This is part of the removal of the three-tiered system implemented for many creatures in V1.0
-\end{itemize}
 
-The following spells have been changed:
-\begin{itemize}
-	\item Flame Dart was renamed Ignite Being. 
-\end{itemize}
-(Almost all damage-causing spells had their effects altered as part of previously mentioned rebalancing, and are not listed here)
+\subsection{Cheat Sheet}
+
+A `cheat sheet' has been added, allowing for a simple printout to serve as a reference for nearly all spellcasting. 
 
 
 
+\subsection{Item Changes}
 
-
-
-\subsection{Changes to Items}
-
-
-\subsubsection{Currency}
-
-
-
-\subsubsection{Prices}
-
-More realistic prices were added to the basic items and artefacts lists. 
-
-
-\subsubsection{Weapons}
-
-Weapons were overhauled, in line with the new proficiency mechanics
-
-\subsubsection{Armour}
-
-A new armour system was implemented. 
-
-\subsection{Miscellany}
 
 \begin{itemize}
-	\item The statuses were revamped, reformatted, and generally improved. 
-	\item The `immune', `resistant' and `susceptible' effects were elaborated on for the first time.
+	\item The actual Harry Potter currency system has been implemented - \knut{29}to \sickle{1}, \sickle{17} to \galleon{1}. I fixed the value of \galleon{1} at £50. 
+	\item Most items had their prices adjusted + fitted into this new scheme. A few outliers are still using the old system.
+	\item Weapons were overhauled
+	\item A new + better armour system has been put in place. 
+	
 \end{itemize}
+
+
 
 \subsection{Meta-Changes}
 
@@ -190,11 +131,6 @@ A meta-change: this changelog was included!
 \section{To Do List}
 
 \begin{itemize}
-	\item \st{Add an `attack' section that deals better with melee and ranged weapon attacks}
-	\item  \st{Relook at armour section + see how to rework it better. }
-	\item \st{Rework Stealth}
-	\item \st{Statuses are garbage}
-	\item \st{Get rid of living environment}
 	\item Add spell-range
 	\item Add additional spell types
 	\item Completely rework Archetypes
