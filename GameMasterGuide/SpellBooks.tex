@@ -36,11 +36,12 @@
 \define@key{spell}{negation}{\def\negation{#1}}
 
 \makeatother
+
 \newcommand{\spell}[1]
 {
 	\setkeys{spell}{name=None,incant = \minus{}, school = None, discipline=None,type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0,noDur=0,duration=None,higher=None,noHigh=0, resist = None, resistDV = none, noResist = 0,noBlock=0,negation=None}
 	\setkeys{spell}{#1}
-	{
+	\vbox{
 	{\normalsize \color{rulered}\name }
 	\footnotesize
 	
@@ -48,15 +49,17 @@
 	{\it \level{}\minus{}level \school{} (\discipline)} 
 	\vspace{1ex}
 	
-	\begin{tabular}{l  l }
-		\if\incantMode0 
-			{\bf Incantation:} & {\it \incant} \\
-		\fi
+	\begin{tabular}{@{} l  l @{}}
+		
 	
 	
 		
 		{\bf Spell Type:} & \type \\ 
 	
+	
+	\if\incantMode0 
+			{\bf Incantation:} & {\it \incant} \\
+		\fi
 	
 	\if\durMode0
 		{\bf Duration}  & \duration \\
@@ -71,6 +74,7 @@
 	%~{\bf DV:}~~~~~~~~~\quad~~~~\dv
 	
 	\end{tabular}
+	}{
 	\vspace{1ex}
 	
 	\effect
@@ -79,8 +83,7 @@
 	
 
 	\if\highMode0
-		{\bf Higher Level Casting: } 
-		
+
 		\higher
 	\fi
 	}
@@ -88,6 +91,7 @@
 	
 	\small
 }
+
 
 
 
@@ -105,7 +109,7 @@
 %%SpellbookBegin
 
  \spellBook{Lighting the Spark: An Introduction to Elemental Magic}{Beginner-level Elemental}{
-\spell{name = Contact Shock, school = Charms, discipline = Elemental, type = Instant, level =Beginner, incant = electrum, noDur = 1, higher = Gain an additional 1d6 electrical damage for each additional spell\minus{}level.,noResist =1, noBlock = 1, effect =Charge the tip of your wand with electrical energy. This energy is discharged when your wand\minus{}tip next touches a surface. Does 2 electrical damage on contact\comma{} and also fries any electrical equipment it comes into contact with.}
+\spell{name = Contact Shock, school = Charms, discipline = Elemental, type = Instant, level =Beginner, incant = electrum, noDur = 1, higher = \additional{1d6}{Electric},noResist =1, noBlock = 1, effect =Charge the tip of your wand with electrical energy. This energy is discharged when your wand\minus{}tip next touches a surface. Does 2 electrical damage on contact\comma{} and also fries any electrical equipment it comes into contact with.}
 \spell{name = Create Fire, school = Charms, discipline = Elemental, type = Focus, level =Beginner, incant = incendio, noDur = 1, higher = Casting this spell at a higher level summons a larger and hotter gout of flame.
 
 For every additional casting\minus{}level\comma{} the gout reaches an extra 15cm from your wandtip\comma{} and does 1d6 additional heat damage. The extra heat also allows you to ignite tougher materials\comma{} such as damp wood.,noResist =1, negation = Blockable  and Dodgeable,effect =A small jet of fire is emitted from the tip of your wand\comma{} akin to a large lighter. 
@@ -173,6 +177,21 @@ Beings caught in the vortex take 2d8 bludgeoning damage per cycle and are sucked
 When the spell ends\comma{} the tornado disspates and all trapped beings are dropped to the floor.}
 }
  \spellBook{The Avatar of the Elements}{Ascendant-level Elemental}{
+\spell{name = Channel Cataclysm, school = Charms, discipline = Elemental, type = Instant, level =Ascendant, incant = moqai, noDur = 1, noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =Raise your wand into the air\comma{} and summon the raw energy of the universe. A bolt of energy descends from the heavens\comma{} into your wand and is directed from your other\comma{} outstretched hand as an energetic blast\comma{} focussed on a single individual.
+
+If the bolt strikes the target\comma{} they take 15d10 force\comma{} electric or celestial damage.}
+\spell{name = Earthquake, school = Charms, discipline = Elemental, type = Instant, level =Ascendant, incant = krakato, noDur = 1, noHigh = 1, resist = Acrobatics, noBlock = 1, effect =Summon a powerful seismic disturbance in a radius of 50m around a region that you can see. 
+
+The powerful rocking of the earth knocks all beings into the {\it Prone Position} unless they Resist\comma{} and all beings performing a Focus action must perform the usual Resist check to maintain concentration.
+
+The earthquake also spawns 2d4 {\it Fissures} at locations chosen by the caster (see the relevant spell). 
+
+For every building or structure in the region\comma{} roll a d4. If the result is a one\comma{} the building collapses and is destroyed. Beings in a destroyed building take 10d10 bludgeoning damage.}
+\spell{name = Tempest, school = Charms, discipline = Elemental, type = Ritual (2 hours), level =Ascendant, incant = thyella, noDur = 1, noHigh = 1, resist = Vitality, noBlock = 1, effect =Spend 2 hours adorning yourself with special paints and oils\comma{} attuning yourself to the wrathful spirits of the Air Domain. At any point in the next day\comma{} raise your wand to the heavens and shout the incantation\comma{} summoning the most powerful storms in existence. 
+
+Thick black clouds appear\comma{} blotting out the sun and torrential rain and powerful winds are summoned\comma{} providing severe obscuration to vision. All ranged accuracy and spellcasting checks take disadvantage. 
+
+The caster may also take a minor action to summon bolts of lightning to strike 2d4 targets in sight\comma{} dealing 8d10 electric damage (halved on a resist)\comma{} or to spawn a {\it Tornado} (see relevant spell) which stays fixed at a specified location for 5 turns.}
 }
  \spellBook{The Standard Book of Spells}{Beginner-level Kinesis}{
 \spell{name = Clean Surface, school = Charms, discipline = Kinesis, type = Focus, level =Beginner, incant = pullundo, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Wave your wand over a surface to erase magical and mundane markings from it. Cleans 1 square metre per turn that the spell is maintained. 
@@ -186,10 +205,6 @@ Any being within this cone finds their clothes have been cleaned and dried\comma
 \spell{name = Mark Surface, school = Charms, discipline = Kinesis, type = Focus, level =Beginner, incant = stylum, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Use your wand as anything from a thin marker to a thick paintbrush. The tip of the {\it brush} can be up to 0.5m away from the tip of your wand\comma{} but follows the motion of your wand exactly. The {\it paint} is a magical adhesive that sticks to any surface\comma{} and may be of any colour you choose.}
 }
  \spellBook{Achievements in Charming}{Novice-level Kinesis}{
-\spell{name = Create Trap, school = Charms, discipline = Kinesis, type = Ward, level =Novice, incant = dolus, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Combine a magical ward with one of your existing spells. After casting the trap spell\comma{} cast the effect\minus{}spell to imbue the trap with that effect. 
-If successful\comma{} creates a hidden magical trap of radius 50cm on any solid surface.
-
-When an entity touches the warded region\comma{} the trap explodes\comma{} releasing the magical effect of the second spell you cast.}
 \spell{name = Cut Object, school = Charms, discipline = Kinesis, type = Instant, level =Novice, incant = diffindo, noDur = 1, noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =Cut into an object\comma{} as if you had wielded a sharp knife with a blade of up to 10cm in length.
 If used on a living being\comma{} it is as if you wielded an exceptionally sharp knife\comma{} dealing 2d4 slashing damage.}
 \spell{name = Levitation, school = Charms, discipline = Kinesis, type = Focus, level =Novice, incant = wingardium leviosa, noDur = 1, higher = The maximum mass this spell is capable of lifting multiplies by ten for every additional spell level used to cast it.,noResist =1, noBlock = 1, effect =Cause an object of 1kg or less to levitate whilst concentration is maintained. You may move the object in full 3D space at a speed of 1 metre per second.}
@@ -233,6 +248,14 @@ Living entities caught in the radius take 10d6 concussive damage\comma{} halved 
 \spell{name = Teleport, school = Charms, discipline = Kinesis, type = Instant, level =Master, incant = cruratele, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =You may send a non\minus{}living object to anywhere that you have previously visited. Spell failure still teleports the object\comma{} but to an unknown location.}
 }
  \spellBook{The Matter of Mass}{Ascendant-level Kinesis}{
+\spell{name = Mass Kinesis, school = Charms, discipline = Kinesis, type = Focus, level =Ascendant, incant = ballatutti, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Control huge numbers of objects as they levitate and move around: write a thousand books with a thousand quills\comma{} conduct a swordfight with multiple blades at once. 
+
+This spell can only replicate the effects of an item if you would normally be able to use them without magic\comma{} but otherwise you can move the objects around in 3D space at your own discretion. 
+
+You may only perform up to 5 unique actions with the objects\comma{} but you may duplicate those exact actions an arbitrary number of times in a 30m radius. For example\comma{} you could only copy out 5 books at a time\comma{} as each book requires a unique action\comma{} but you can copy the same book out as many times as you like\comma{} as the action is identical.}
+\spell{name = Sphere of Immobility, school = Charms, discipline = Kinesis, type = Instant, level =Ascendant, incant = stabit maxima, duration = 1 minute,noHigh = 1, noResist =1, noBlock = 1, effect =Enforce a {\it Halt} charm so strong that nothing in a sphere 10m in radius\comma{} centred on the caster (at the moment of casting) can move. Time moves normally\comma{} and sentient beings are aware of what is happening\comma{} but no being or object other than the caster can move in this region until the spell ends\comma{} at which point the previous movement resumes.   
+
+Beings outside the region can observe the interior\comma{} but attempting to enter the region causes 15d6 force damage\comma{} as the being also becomes partially trapped.}
 }
  \spellBook{Reading People\comma{} Reading Minds}{Beginner-level Telepathy}{
 \spell{name = Animal Eyes, school = Divination, discipline = Telepathy, type = Focus, level =Beginner, incant = oculi bestia, noDur = 1, noHigh = 1, resist = Willpower, noBlock = 1, effect =You may enter into the mind of a beast\comma{} if it fails to Resist (a friendly beast does not resist this spell). For the duration of the spell you may see\comma{} hear and otherwise sense exactly what the animal does.}
@@ -284,6 +307,11 @@ This link is then given to you \minus{}\minus{} giving you access to the telepat
 \spell{name = Network of the Minds, school = Divination, discipline = Telepathy, type = Ritual (10 minutes), level =Master, incant = reticulum, duration = 1 day,higher = When cast for 7 days in a row\comma{} the spell has a duration of 6 months.,noResist =1, noBlock = 1, effect =Establish a telepathic link between you and up to 6 other individuals. All beings in the link are able to communicate with any other members of the link\comma{} regardless of distance\comma{} the lack of a shared language and status effects such as {\it Paralyzed}.}
 }
  \spellBook{The True Power of the Soul}{Ascendant-level Telepathy}{
+\spell{name = True Sight, school = Divination, discipline = Telepathy, type = Ritual (5 minutes), level =Ascendant, incant = vidergo sumus, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =You prepare for this spell by daubing a third eye onto your forhead. On completion of the sell\comma{} this eye glows for a second\comma{} before vanishing. 
+
+For the duration of the spell\comma{} you see things as they truly are. You see hidden traps\comma{} secret doors\comma{} and even into the Astral plane. You can see through illusion spells\comma{} and attempts to deceive or trick you are in vain. All Perception checks automatically succeed\comma{} and you are immune to being surprised. 
+
+You can also see into the minds of your enemies\comma{} giving you an extra few moments to anticipate their actions. You gain check advantage on all accuracy checks\comma{} and they take disadvantage on all accuracy checks against you.}
 }
  \spellBook{The Dream Oracle}{Beginner-level Temporal}{
 \spell{name = Distressing Omen, school = Divination, discipline = Temporal, type = Instant, level =Beginner, incant = mitus, noDur = 1, higher = \additional{1d8}{psychic},resist = Logic, noBlock = 1, effect =Speak aloud an omen\comma{} layering into your voice the power of the future\comma{} to warp the mind of your opponent. Target must succeed on a Resist check or take 1d8 psychic damage.}
@@ -344,6 +372,15 @@ The caster may choose if they are affected by the planemeld at first\comma{} but
 Within the Astral Realm\comma{} the site of a Planemeld manifests itself as a portal to the relevant Plane of Existence. This portal exists for a year and a day after the invocation of a planemeld.}
 }
  \spellBook{Stepping Through the Ages}{Ascendant-level Temporal}{
+\spell{name = Astral Projection, school = Divination, discipline = Temporal, type = Ritual (2 minutes), level =Ascendant, incant = ambilofors, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Leave your physical form behind\comma{} and project your spirit into the Astral Realm. You mortal body falls unconscious as your spirit leaves it. 
+
+Your astral self is undetectable to most living beings\comma{} but appears almost identical to your physical form\comma{} including astral copies of all your equipment. Your astral form has 8d6 HP\comma{} but can only interact with other entities on the Astral Realm and effects which explicitly state they effect the astral realm. 
+
+If your astral self is killed\comma{} your physical body{\apos}s HP is reduced to zero\comma{} and your enter into the {\it Critical But Stable} status. Equally\comma{} if your mortal body is reduced to 0HP\comma{} the effects of this spell are ended and your spirit immediately returns to your body. 
+
+Whilst in the astral realm you may perceive all events occuring in the Mortal plane\comma{} and you may move through regions that are inaccessible in the mortal plane. 
+
+If you attempt to leave the astral plane\comma{} either willingly by ending this spell effect\comma{} or by an effect that states that it removes you from the realm (such as a portal)\comma{} your body is teleported to the location corresponding to your spirit\apos{} new location.}
 }
  \spellBook{Easy Spells to Fool Muggles}{Beginner-level Bewitchment}{
 \spell{name = Aura of Kindness, school = Illusion, discipline = Bewitchment, type = Instant, level =Beginner, incant = amicus, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =This spell creates an aura of kindness and warmth around you. If the target is not overtly hostile\comma{} this causes then to like you: charisma checks by the caster on the individual get a +1 bonus for the duration of the spell.}
@@ -381,6 +418,7 @@ Illusions can only have the knowledge that the caster has\comma{} but they opera
 Illusion lasts for 10 hours. An observer may determine that the illusion is not real  by performing a Resist as a major action.}
 }
  \spellBook{Light and Perception: The Magician\apos{}s Mastery}{Ascendant-level Bewitchment}{
+\spell{name = Mass Suggestion, school = Illusion, discipline = Bewitchment, type = Instant, level =Ascendant, incant = faciite maxima, duration = 12 hours,noHigh = 1, resist = Willpower, noBlock = 1, effect =Apply the {\it Suggestion} spell to 4d6 targets of your choice. The suggestion is the same to all targets.}
 }
  \spellBook{Cool Cantrips to Make You Crazy}{Beginner-level Psionics}{
 \spell{name = Chaotic Whispers, school = Illusion, discipline = Psionics, type = Focus, level =Beginner, incant = rastarum, noDur = 1, higher = The whispers gain in power when this spell is cast at a higher level: doing 1d8 additional damage for each additional casting level.,resist = Logic, noBlock = 1, effect =The target hears a voice in their ear whispering maddening words that slowly drive them insane. Target may take a minor action to perform a Resist check at the start of their turn\comma{} when one succeeds\comma{} the spell is broken. 
@@ -425,6 +463,7 @@ The actual reliving of the memory occurs in an instant\comma{} and is over almos
 You may even cause them to forget skills and spells that they currently know: remove one memorised spell or Skill from their character sheet.}
 }
  \spellBook{The Apotheosis of the Psionics}{Ascendant-level Psionics}{
+\spell{name = Mass Delusion, school = Illusion, discipline = Psionics, type = Instant, level =Ascendant, incant = falasarium maxima, duration = 12 hours,noHigh = 1, resist = Conviction, negation = Blockable,effect =Apply the {\it Delusion} spell to 4d6 targets of your choice. The delusion is the same to all targets.}
 }
  \spellBook{A Compendium of Common Curses}{Beginner-level Curse}{
 \spell{name = Confound, school = Maledictions, discipline = Curse, type = Instant, level =Beginner, incant = lombus, duration = 10 seconds,noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =The target suffers a 1\minus{}point penalty to all checks for the duration of the spell.}
@@ -467,6 +506,11 @@ For larger creatures who\apos{}s `armour' is their natural scales or tough hide\
 This effect is halved on a successful Resist.}
 }
  \spellBook{Damn\comma{} or Be Damned}{Ascendant-level Curse}{
+\spell{name = Taboo, school = Maledictions, discipline = Curse, type = Ritual (1 week), level =Ascendant, noIncant = 1, duration = 1 year,noHigh = 1, noResist =1, noBlock = 1, effect =A particularly powerful an unusual curse \minus{} the Taboo curse is placed on an individual word\comma{} rather than on a person. 
+
+When casting the Taboo curse\comma{} the caster designates up to 7 {\it enforcers}\comma{} and a single word. If that word is spoken aloud\comma{} anywhere in the world\comma{} the enforcers may take a major action to teleport directly to that location\comma{} ignoring any wards or shields protecting it. 
+
+Care must be taken\comma{} however\comma{} that the chosen word is not too common \minus{} as the enforcers have no way of sifting through which words are relevant or not.}
 }
  \spellBook{Basic Hexes for the Busy \& Vexed}{Beginner-level Hex}{
 \spell{name = Knockback, school = Maledictions, discipline = Hex, type = Instant, level =Beginner, incant = flipendo, noDur = 1, higher = Each additional casting level dedicated to this spell increases the power of the energy\minus{}wave: do an additional 1d8 force damage and push the target back an extra 2 metres.,resist = Strength, negation = Blockable  and Dodgeable,effect =A wave of energy strikes into the target\comma{} causing 1d8 force damage\comma{} and if the target fails to Resist\comma{} pushing the target backwards up to 1 metre.}
@@ -517,6 +561,7 @@ If the target succeeds in a resist\comma{} the damage is halved and the status e
 \spell{name = Meteor Strike, school = Maledictions, discipline = Hex, type = Instant, level =Master, incant = bothynus, noDur = 1, higher = The meteor deals an additional 2d6 fire damage and 2d6 concussive damage \forEvery{}.,resist = Acrobatics, noBlock = 1, effect =A giant orb of fire and rock slams down into the ground at a targeted point\comma{} releasing a shockwave over a region 5m in radius. All beings in the region take 5d6 fire damage and 5d6 concussive damage.}
 }
  \spellBook{Majestic Hexes for the Experienced Duelist}{Ascendant-level Hex}{
+\spell{name = Disintegrate, school = Maledictions, discipline = Hex, type = Instant, level =Ascendant, incant = reducto, noDur = 1, noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =If the spell makes contact with matter\comma{} causes it to instantly disintegrate. Living beings take 15d10 worth of force damage.}
 }
  \spellBook{Cures\comma{} Cantrips and Coughs}{Beginner-level Healing}{
 \spell{name = Boost Health, school = Recuperation, discipline = Healing, type = Instant, level =Beginner, incant = levo, duration = 12 hours,higher = Gain an additional 1d6 temporary health points for every additional spell\minus{}level used to cast this spell.,noResist =1, noBlock = 1, effect =Emit a calming\comma{} healing warmth from the end of your wand to bolster the strength of your allies. Target up to 2d4 beings in range\comma{} and provide them with 5 temporary health points.}
@@ -547,15 +592,21 @@ This spell can only remove spells caused by a curse of an equal level as this sp
 \spell{name = Feign Death, school = Recuperation, discipline = Healing, type = Ritual (30 minutes), level =Expert, incant = fautis, duration = 3 hours,noHigh = 1, noResist =1, noBlock = 1, effect =When cast upon a willing living being\comma{} they are placed into a state of suspended animation which perfectly replicates the outward appearance of death. 
 
 The target is {\it Unconscious} for the duration\comma{} awakening only when the spell duration finishes\comma{} or the original castr expends a major action to reawaken them.}
+\spell{name = Final Cure, school = Recuperation, discipline = Healing, type = Instant, level =Expert, incant = requiescat in pace, noDur = 1, higher = \additional{2d8}{celestial},resist = Evil, noBlock = 1, effect =A heavenly glow descends upon an area 3m in radius around the caster. Any Ghost\comma{} Inferi\comma{} or other Unliving that once used to be a living creature caught in this radius takes 5d8 celestial damage\comma{} as the sound of an angelic choir sings out. Damage is halved on a successful Resist.}
 \spell{name = Major Healing, school = Recuperation, discipline = Healing, type = Instant, level =Expert, incant = sana, noDur = 1, higher = Heal an additional 2d12 HP \forEvery{},noResist =1, noBlock = 1, effect =Heals the target of all burns\comma{} frostbite\comma{} poisons and diseases\comma{} and other status effects\comma{} regardless of severity.
 
 In addition\comma{} restores 8d12 HP}
 }
  \spellBook{Journals of St. Mungo\comma{} the Master Healer}{Master-level Healing}{
-\spell{name = Final Cure, school = Recuperation, discipline = Healing, type = Instant, level =Master, incant = requiescat in pace, noDur = 1, noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =If this spell strikes a Ghost\comma{} Inferi\comma{} or other Unliving that once used to be a living creature\comma{} deal 10d10 celestial damage\comma{} as the sound of an angelic choir sings out.}
 \spell{name = Regenerate, school = Recuperation, discipline = Healing, type = Instant, level =Master, incant = regus, duration = 5 minutes,noHigh = 1, noResist =1, noBlock = 1, effect =This spells vastly increases the natural healing rate of a being \minus{} they heal at a rate of 40HP per minute (2HP per combat cycle)\comma{} broken bones mend themselves and even severed limbs regrow over the course of the spell.}
 }
  \spellBook{Ressurection\comma{} a Fools Goal?}{Ascendant-level Healing}{
+\spell{name = Mass Healing, school = Recuperation, discipline = Healing, type = Instant, level =Ascendant, incant = enervate maxima, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Roll 10d10\comma{} and multiply this result by 10 (alternatively\comma{} use the average result of 500). 
+
+You may restore this amount of HP to all living beings within range\comma{} distributed as you wish. If a creature receives at least 1HP and is above 0HP\comma{} all negative status effects are removed.}
+\spell{name = Spark of Life, school = Recuperation, discipline = Healing, type = Ritual (12 hours), level =Ascendant, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =You spend hours pouring over the corpse of a being which has been dead no more than 24 hours at the beginning of the ritual. The body of the corpse must be (mostly) intact\comma{} such that they won't immediately perish again. 
+
+By summoning great power and energies\comma{} you nuture the tiniest\comma{} vanishing flicker of life which remains within this being\comma{} and restore them back to life. The being comes back with 0HP and the {\it Critical but Stable} condition.}
 }
  \spellBook{Self\minus{}Defensive Spellwork}{Beginner-level Warding}{
 \spell{name = Caterwauling Alarm, school = Recuperation, discipline = Warding, type = Ward, level =Beginner, incant = caterwaul, duration = 2 weeks,noHigh = 1, noResist =1, noBlock = 1, effect =Casts a ward on an area which detects when a living being larger than a rat touches or enters a designated region up to 10m in radius. You may choose the form of the alarm on casting \minus{} either mental or audible. 
@@ -575,6 +626,10 @@ The next attack you make with a physical weapon deals an additional 1d8 damage o
 }
  \spellBook{How Not to be Killed: A Guide for the Discerning Wizard}{Novice-level Warding}{
 \spell{name = Beartrap, school = Recuperation, discipline = Warding, type = Ward, level =Novice, incant = ursa dentes, duration = 5 days,higher = The ward gains an additional 1d8 piercing damage for every additional spell\minus{}level dedicated to casting it.,resist = Acrobatics, noBlock = 1, effect =Ward a region of a flat surface (Such as the walls or the floor) which creates an invisible trap of 2m in radius. When a being crosses over the threshold\comma{} the ward slams shut\comma{} doing 3d8 worth of piercing damage and applying the Trapped status effect. A successful resist takes half damage and nullifies the Trapping effect.}
+\spell{name = Create Trap, school = Recuperation, discipline = Warding, type = Ward, level =Novice, incant = dolus, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Combine a magical ward with one of your existing spells. After casting the trap spell\comma{} cast the effect\minus{}spell to imbue the trap with that effect. 
+If successful\comma{} creates a hidden magical trap of radius 50cm on any solid surface.
+
+When an entity touches the warded region\comma{} the trap explodes\comma{} releasing the magical effect of the second spell you cast.}
 \spell{name = Halting Field, school = Recuperation, discipline = Warding, type = Ward, level =Novice, incant = stabit vallio, duration = 1 day,noHigh = 1, resist = Speed, noBlock = 1, effect =Erects a circular field 1m in radius anywhere within 2m of the caster. 
 
 This field halts any physical object that touches or passes through it. Objects in flight drop to the ground\comma{} as if the {\it Halt} spell had been cast on them. Beings attempting which touch the field must Resist or have their speed halved this turn cycle.}
@@ -610,6 +665,13 @@ Your patronus may also take a turn as if were a real being (albeit an Astral bei
  \spellBook{The Shield in the Dark}{Master-level Warding}{
 }
  \spellBook{Defending Against  the Undefendable}{Ascendant-level Warding}{
+\spell{name = Fidelius Ward, school = Recuperation, discipline = Warding, type = Ritual (2 weeks), level =Ascendant, incant = onsigno scientia, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Select a target object\comma{} being or region of radius 10m in radius\comma{} and a second being\comma{} the {\it Keeper}\comma{} which cannot be the caster. 
+
+The target can then only be detected or interacted with by the Keeper. The Fidelius ward ensures that even if another being were touching the subject of the spell\comma{} their brain is simply unable to comprehend what it is they are looking at\comma{} and will not recognise it. The same is true of instructions and maps which lead to the hidden object which were written before the object was hidden: they appear as meaningless squiggles\comma{} and memories regarding the subject become ethereal and dreamlike \minus{} with important details becoming just out of reach. 
+
+However\comma{} if the Keeper willingly divulges information (either written\comma{} or verbal) to another being\comma{} then that person also becomes a Keeper. If a Keeper dies\comma{} and no other Keeper remains alive\comma{} they return as a Ghost and cannot pass on until they create a new Keeper. 
+
+This charm is broken if any Keeper touches the subject of the Ward (or for a region\comma{} enters it).}
 }
  \spellBook{A Beginner\apos{}s Guide to Transfiguration}{Beginner-level Alteration}{
 \spell{name = Change Colour, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, incant = pigmentus, duration = 2 days,noHigh = 1, noResist =1, noBlock = 1, effect =Causes the colour of an object to change to that specified by the caster.}
@@ -726,6 +788,11 @@ Beware: the slip of paper is burned to ash after 1 week. If it is not replaced w
 On a failed resist\comma{} the being is bound to serve you for the duration of the spell. If the being was summoned or created by another spell\comma{} that spell is extended to match the duration of this spell. The being will obey your commands to the letter for the duration of the spell\comma{}and if they are hostile to you\comma{} they may do so in a deliberately obtuse fashion.}
 }
  \spellBook{The Outer Planes}{Ascendant-level Conjuration}{
+\spell{name = Extraplanar Avatar, school = Transfiguration, discipline = Conjuration, type = Ritual (1 hour), level =Ascendant, incant = elementos temporio, duration = 1 day,noHigh = 1, noResist =1, noBlock = 1, effect =Summon an Elemental Avatar (choose from Fire\comma{} Water\comma{} Air\comma{} Earth\comma{} Light and Darkness) by drawing a mote of power from across the multiverse\comma{} and bind it to your will. 
+
+This Avatar is friendly to both you and your allies\comma{} and will obey your orders to the best of its abilities. You may give an order through the psycic link that connects you without it counting as a minor action. 
+
+The avatar returns to its native plane in the multiverse either when the spell expires\comma{} or when it drops to 0HP.}
 }
  \spellBook{Necromancy: A Misunderstood Skill}{Beginner-level Necromancy}{
 \spell{name = Instil Terror, school = Dark Arts, discipline = Necromancy, type = Instant, level =Beginner, incant = timeant, duration = 4 minutes,noHigh = 1, resist = Willpower, noBlock = 1, effect =On a failed Resist\comma{} the target becomes {\it Terrified} of the caster.}
@@ -738,6 +805,9 @@ On a failed resist\comma{} the being is bound to serve you for the duration of t
 
 This spell cannot be used to increase the exhaustion level above 4th.}
 \spell{name = Dark Healing, school = Dark Arts, discipline = Necromancy, type = Instant, level =Novice, incant = tenebrosa sudarium, noDur = 1, higher = Increase the draining effect by 1d8 \forEvery.,resist = Willpower, noBlock = 1, effect =Channel vampric energy through your wand\comma{} to drain the life from a helpless individual. Drain 2d8 HP from an {\it Incapacitated} target (halved on a successful Resist)\comma{} and restore half of this value to your own HP.}
+\spell{name = Hellish Light, school = Dark Arts, discipline = Necromancy, type = Instant, level =Novice, incant = lumos infernalis, duration = 1 hour,noHigh = 1, resist = Logic, noBlock = 1, effect =By drawing on unearthly powers\comma{} you summon an eerie greenish\minus{}yellow light to illuminate an area 10m in radius around the point of casting. This light is bright\comma{} but appears to emanate from both everywhere\comma{} and nowhere – and casts no shadows. 
+
+All beings besides the caster must succeed on a Logic Resist check the first time they enter the illuminated region\comma{} or become {\it Distracted} next turn cycle.}
 \spell{name = Necrosis, school = Dark Arts, discipline = Necromancy, type = Instant, level =Novice, incant = carnes mortis, noDur = 1, higher = \additional{1d10}{necrotic},noResist =1, negation = Blockable,effect =A bolt of sickly green energy crackles into your opponent\comma{} seeking to destroy their life force and spreading evil and decay. Do 2d10 necrotic damage.}
 }
  \spellBook{Defying Nature}{Adept-level Necromancy}{
@@ -782,6 +852,11 @@ Only one soul may be trapped at any given time.}
 When encountering shields and other protective barriers\comma{} deals 10d10 damage to them.}
 }
  \spellBook{Secrets of the Darkest Art}{Ascendant-level Necromancy}{
+\spell{name = Create Horcrux, school = Dark Arts, discipline = Necromancy, type = Ritual (1 day), level =Ascendant, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =After performing a profane ritual (the secrets of which are too disgusting to write down here)\comma{} the caster places a portion of their soul into another object. Write down the horcrux on a piece of paper and keep it hidden. 
+
+Whilst a horcrux exists\comma{} the character cannot be killed. Whenever their health is reduced to zero\comma{} their soul is ejected into the Astral Realm\comma{} where it remains until they find a new body to willingly accept them\comma{} at which point they possess this individual\comma{} destroy their identity and warp the body until they have reassumed their mortal form.  
+
+For every horcrux created\comma{} the caster takes a 4\minus{}point penalty to Power attribute. A horcrux can only be destroyed through extremely potent spells or poisons.}
 }
  \spellBook{An A\minus{}Z of Spooky Spells}{Beginner-level Occultism}{
 \spell{name = Blood Pact, school = Dark Arts, discipline = Occultism, type = Ritual (1 hour), level =Beginner, noIncant = 1, duration = 1 day,noHigh = 1, noResist =1, noBlock = 1, effect =Perform a ritual in which all members of a group mix their blood in the centre of  a pentagram\comma{} binding them together. For the duration of the spell\comma{} whenever all members of this group work together to complete a task\comma{} gain a bonus to the group check equal to the number of people in the pact.}
@@ -822,6 +897,11 @@ You must know the target\apos{}s name to summon them\comma{} though they may ref
 If psychic damage is inflicted on any member of the Coven in the same turn\minus{}cycle that HP or FP are being transferred\comma{} that damage is done to all members of the Coven. If this damage is also a Critical Strike\comma{} then the ritual is distrupted and the spell is ended.}
 }
  \spellBook{Eldritch Domains}{Ascendant-level Occultism}{
+\spell{name = Universal Tear, school = Dark Arts, discipline = Occultism, type = Ritual (1 week), level =Ascendant, incant = ostium, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Punch a hole in the fabric of reality\comma{} and establish a portal to one of the Higher Planes. 
+
+This portal takes the form of a shimmering door\comma{} approximately 2 metres in height\comma{} and 1 metre in width. Stepping through the door instantaneously takes you to the chosen Plane.
+
+Portals are permanent rips in the fabric of the multiverse\comma{} and there is no known method to repair them.}
 }
 %%SpellbookEnd
 \cleartorightpage
