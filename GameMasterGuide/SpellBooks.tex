@@ -341,8 +341,8 @@ The Eye can see into the Astral Realm and the Mortal Plain simultaneously.}
 \spell{name = Foresight, school = Divination, discipline = Temporal, type = Instant, level =Adept, incant = providentia, duration = 1 turn,noHigh = 1, noResist =1, noBlock = 1, effect =By predicting the flow of time\comma{} you can give the target the ability to make moves without thinking: give the target an extra major action next turn. Each target can only get this boost once per day.}
 \spell{name = Glimpse Future, school = Divination, discipline = Temporal, type = Instant, level =Adept, incant = posterus, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Get a fleeting glimpse into the future. Choose one of the following:
 \begin{spellitemize}
-\item 4+PP bonus to dodge next turn
-\item 4 + PP bonus to accuracy next turn
+\item + 4 bonus to block {\bf or} dodge next turn
+\item +4  bonus to accuracy checks made next turn
 \end{spellitemize}}
 \spell{name = Locate Being, school = Divination, discipline = Temporal, type = Instant, level =Adept, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =After casting this spell\comma{} you must shout a description or the name of a living being you are searching for. If you are within 1km of the being\comma{} you gain a snapshot of the object you are searching for\comma{} and the direction in which it is moving. 
 
@@ -501,7 +501,7 @@ At the end of each turn cycle\comma{} they perform a Resist check to remove this
 For larger creatures who\apos{}s `armour' is their natural scales or tough hide\comma{} this spell effects an area one square metre in area at a time.}
 }
  \spellBook{The Bumper Book of Crooked Curses}{Master-level Curse}{
-\spell{name = Wither, school = Maledictions, discipline = Curse, type = Instant, level =Master, incant = unis, duration = (4+PP) turns,higher = The \attPhys{} penalty is increased by 2 \forEvery{}.,resist = Vitality, noBlock = 1, effect =Necrotic energy seeps up from the ground\comma{} into the target\comma{} causing them to undergo a severe physical degradation\comma{} reducing their \attPhys{} score by 4 for the duration of the spell. 
+\spell{name = Wither, school = Maledictions, discipline = Curse, type = Instant, level =Master, incant = unis, duration = 1 minute,higher = The \attPhys{} penalty is increased by 2 \forEvery{}.,resist = Vitality, noBlock = 1, effect =Necrotic energy seeps up from the ground\comma{} into the target\comma{} causing them to undergo a severe physical degradation\comma{} reducing their \attPhys{} score by 4 for the duration of the spell. 
 
 This effect is halved on a successful Resist.}
 }
@@ -897,6 +897,11 @@ You must know the target\apos{}s name to summon them\comma{} though they may ref
 If psychic damage is inflicted on any member of the Coven in the same turn\minus{}cycle that HP or FP are being transferred\comma{} that damage is done to all members of the Coven. If this damage is also a Critical Strike\comma{} then the ritual is distrupted and the spell is ended.}
 }
  \spellBook{Eldritch Domains}{Ascendant-level Occultism}{
+\spell{name = Sacrifice\apos{}s Shield, school = Dark Arts, discipline = Occultism, type = Ward, level =Ascendant, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =You allow the next strike made against you to kill you\comma{} and banish your soul to the Eldritch domains. In return\comma{} your sacrifice and love fuels a charm so powerful it cannot be resisted or overcome by force alone. 
+
+You may nominate an individual sapient being. That individual cannot be harmed by the being which killed you. Any attempt by your killer to harm your nominated individual simply reflects the charm back upon you. 
+
+This spell does not need a casting check to cast.}
 \spell{name = Universal Tear, school = Dark Arts, discipline = Occultism, type = Ritual (1 week), level =Ascendant, incant = ostium, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Punch a hole in the fabric of reality\comma{} and establish a portal to one of the Higher Planes. 
 
 This portal takes the form of a shimmering door\comma{} approximately 2 metres in height\comma{} and 1 metre in width. Stepping through the door instantaneously takes you to the chosen Plane.

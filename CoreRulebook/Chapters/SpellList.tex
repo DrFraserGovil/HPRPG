@@ -381,9 +381,9 @@ Vicious Slash & \instSymb & Dark Healing & \instSymb & Plague of Insects & \inst
 \\
  \multicolumn{2}{c}{\cellcolor{\tablecolorhead} \bf Beginner}&\multicolumn{2}{c}{\cellcolor{\tablecolorhead} \bf Novice}&\multicolumn{2}{c}{\cellcolor{\tablecolorhead} \bf Adept}&\multicolumn{2}{c}{\cellcolor{\tablecolorhead} \bf Expert}&\multicolumn{2}{c}{\cellcolor{\tablecolorhead} \bf Master}&\multicolumn{2}{c}{\cellcolor{\tablecolorhead} \bf Ascendant}
  \\ 
-Blood Pact & \ritSymb & Abyssal Fluid & \concSymb & Shadow Demon & \instSymb & Commune with the Dead & \ritSymb & Coven\apos{}s Protection & \ritSymb & Universal Tear & \ritSymb
+Blood Pact & \ritSymb & Abyssal Fluid & \concSymb & Shadow Demon & \instSymb & Commune with the Dead & \ritSymb & Coven\apos{}s Protection & \ritSymb & Sacrifice\apos{}s Shield & \wardSymb
  \\ 
-Draw Power & \ritSymb & Eldritch Knowledge & \ritSymb & Solidify Ghost & \ritSymb & Summoning Circle & \wardSymb & ~	 & ~	 & ~	 & ~	
+Draw Power & \ritSymb & Eldritch Knowledge & \ritSymb & Solidify Ghost & \ritSymb & Summoning Circle & \wardSymb & ~	 & ~	 & Universal Tear & \ritSymb
  \\ 
 Shroud of Darkness & \instSymb & Shadowsight & \concSymb & Voidsphere & \concSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
  \\ 
@@ -693,8 +693,8 @@ This spell does not work on enemy shields\comma{} curses or spells which are sti
 The glamour disintegrates upon physical or magical contact\comma{} and can be seen to be fake if observer succeeds on a Resist check.}
 \spell{name = Glimpse Future, school = Divination, discipline = Temporal, type = Instant, level =Adept, incant = posterus, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Get a fleeting glimpse into the future. Choose one of the following:
 \begin{spellitemize}
-\item 4+PP bonus to dodge next turn
-\item 4 + PP bonus to accuracy next turn
+\item + 4 bonus to block {\bf or} dodge next turn
+\item +4  bonus to accuracy checks made next turn
 \end{spellitemize}}
 \spell{name = Gust, school = Charms, discipline = Elemental, type = Focus, level =Beginner, incant = vente, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Energise the winds\comma{} and manipulate the air within a radius of 5m around you. This breeze is strong  enough to subtly alter the path of projectiles passing through the region (all ranged weapon attacks take a 1 point penalty to accuracy)\comma{} or to cause a commotion by slamming doors and howling through open windows.}
 \spell{name = Halt, school = Charms, discipline = Kinesis, type = Instant, level =Beginner, incant = stabit, noDur = 1, noHigh = 1, resist = Speed, noBlock = 1, effect =Stop an object or being in their tracks. An inanimate object clatters to the floor and lies still\comma{} whilst a living being must succeed on a Resist check\comma{} or move only half their movement speed this turn cycle.}
@@ -853,6 +853,11 @@ Can only fix an object if it is reasonable that you could have repaired it with 
 
 You can use this to repair a magical object which is physically broken but has its magical nexus intact\comma{} but it cannot restore magic to an object that has lost its nexus.}
 \spell{name = Runic Shield, school = Recuperation, discipline = Warding, type = Ward, level =Novice, incant = scutum, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =Choose a Damage Type. Target is Resistant to that damage type for the duration of the spell. Each individual may only have one Runic Shield active at a time.}
+\spell{name = Sacrifice\apos{}s Shield, school = Dark Arts, discipline = Occultism, type = Ward, level =Ascendant, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =You allow the next strike made against you to kill you\comma{} and banish your soul to the Eldritch domains. In return\comma{} your sacrifice and love fuels a charm so powerful it cannot be resisted or overcome by force alone. 
+
+You may nominate an individual sapient being. That individual cannot be harmed by the being which killed you. Any attempt by your killer to harm your nominated individual simply reflects the charm back upon you. 
+
+This spell does not need a casting check to cast.}
 \spell{name = Scry, school = Divination, discipline = Telepathy, type = Concentration, level =Expert, incant = videro, noDur = 1, noHigh = 1, resist = Observation, noBlock = 1, effect =Name a person\comma{} or describe a place. An astral `camera' appears above the location\comma{} and transmits the image that it sees to a nearby pool of water\comma{} or a mirror. The sound that a person would hear at that location is also transmitted. 
 
 The camera moves with the target\comma{} staying at least 4m away from them. The caster may move the sensor to a different angle as a major action. 
@@ -1017,7 +1022,7 @@ This effect is negated on a successful Resist\comma{} which occurs whenever you 
 \spell{name = Wind Tunnel, school = Charms, discipline = Elemental, type = Focus, level =Adept, incant = vente polus, noDur = 1, noHigh = 1, resist = Strength, noBlock = 1, effect =Summon a powerful blast of wind from your wand\comma{} in a line 20m long and 2m wide. Every being which is in this region at the beginning of each cycle\comma{} or enters it during the course of the cycle\comma{} must Resist\comma{} or be blown to the end of the line. Those that succeed have their movement speed halved when moving towards you. 
 
 Any unsecured objects or are also flung to the end of the line\comma{} and any open flames are extinguished.}
-\spell{name = Wither, school = Maledictions, discipline = Curse, type = Instant, level =Master, incant = unis, duration = (4+PP) turns,higher = The \attPhys{} penalty is increased by 2 \forEvery{}.,resist = Vitality, noBlock = 1, effect =Necrotic energy seeps up from the ground\comma{} into the target\comma{} causing them to undergo a severe physical degradation\comma{} reducing their \attPhys{} score by 4 for the duration of the spell. 
+\spell{name = Wither, school = Maledictions, discipline = Curse, type = Instant, level =Master, incant = unis, duration = 1 minute,higher = The \attPhys{} penalty is increased by 2 \forEvery{}.,resist = Vitality, noBlock = 1, effect =Necrotic energy seeps up from the ground\comma{} into the target\comma{} causing them to undergo a severe physical degradation\comma{} reducing their \attPhys{} score by 4 for the duration of the spell. 
 
 This effect is halved on a successful Resist.}
 \spell{name = Word of Death, school = Dark Arts, discipline = Necromancy, type = Instant, level =Master, incant = avada kedavra, noDur = 1, noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =If the spell makes contact with the target\comma{} kills them instantly. 
