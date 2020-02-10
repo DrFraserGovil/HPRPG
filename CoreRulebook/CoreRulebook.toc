@@ -273,192 +273,224 @@
 \contentsline {subsection}{\numberline {20.0.26}\it Charm Offensive}{87}{subsection.20.0.26}
 \contentsline {subsection}{\numberline {20.0.27}\it Career Ambition}{87}{subsection.20.0.27}
 \contentsline {subsection}{\numberline {20.0.28}\it Sly Action}{87}{subsection.20.0.28}
-\contentsline {section}{Artificer}{88}{chapter*.70}
+\contentsline {section}{Acolyte}{88}{chapter*.70}
 \contentsline {subsection}{\numberline {20.0.29}Health \& Fortitude}{88}{subsection.20.0.29}
 \contentsline {subsection}{\numberline {20.0.30}Proficiencies}{88}{subsection.20.0.30}
 \contentsline {subsection}{\numberline {20.0.31}Starting Loadout}{88}{subsection.20.0.31}
-\contentsline {subsection}{\numberline {20.0.32}\it Artificer's Augmentations}{88}{subsection.20.0.32}
-\contentsline {subsection}{\numberline {20.0.33}\it Rune Experimentation}{88}{subsection.20.0.33}
-\contentsline {subsection}{\numberline {20.0.34}\it Expert Enchanter}{88}{subsection.20.0.34}
-\contentsline {subsection}{\numberline {20.0.35}\it Renew Bindings}{89}{subsection.20.0.35}
-\contentsline {subsection}{\numberline {20.0.36}\it Appraising Eyes}{89}{subsection.20.0.36}
-\contentsline {subsection}{\numberline {20.0.37}\it Enchantment Affinity}{89}{subsection.20.0.37}
-\contentsline {subsection}{\numberline {20.0.38}\it Tweak Enchantment}{89}{subsection.20.0.38}
-\contentsline {subsection}{\numberline {20.0.39}\it Imbue Sentience}{89}{subsection.20.0.39}
-\contentsline {subsection}{\numberline {20.0.40}\it Runecaster}{89}{subsection.20.0.40}
-\contentsline {subsection}{\numberline {20.0.41}\it Networked Augmentations}{89}{subsection.20.0.41}
-\contentsline {subsection}{\numberline {20.0.42}\it Empowered Sentience}{89}{subsection.20.0.42}
-\contentsline {subsection}{\numberline {20.0.43}\it Shared Soul}{89}{subsection.20.0.43}
-\contentsline {section}{Outlaw}{91}{chapter*.71}
-\contentsline {subsection}{\numberline {20.0.44}Health \& Fortitude}{91}{subsection.20.0.44}
-\contentsline {subsection}{\numberline {20.0.45}Proficiencies}{91}{subsection.20.0.45}
-\contentsline {subsection}{\numberline {20.0.46}Starting Loadout}{91}{subsection.20.0.46}
-\contentsline {subsection}{\numberline {20.0.47}\it Element of Surprise}{91}{subsection.20.0.47}
-\contentsline {subsection}{\numberline {20.0.48}\it Rudimentary Recovery}{92}{subsection.20.0.48}
-\contentsline {subsection}{\numberline {20.0.49}\it Sly Action}{92}{subsection.20.0.49}
-\contentsline {subsection}{\numberline {20.0.50}\it Career Choice}{92}{subsection.20.0.50}
-\contentsline {subsection}{\numberline {20.0.51}\it Artisan of the Unlawful}{92}{subsection.20.0.51}
-\contentsline {subsection}{\numberline {20.0.52}\it Slippery}{92}{subsection.20.0.52}
-\contentsline {subsection}{\numberline {20.0.53}\it Danger Sense}{92}{subsection.20.0.53}
-\contentsline {subsection}{\numberline {20.0.54}\it Incredible Luck}{92}{subsection.20.0.54}
-\contentsline {subsubsection}{\bf Additional Surprises}{92}{subsubsection*.72}
-\contentsline {subsubsection}{\bf Pickpocket}{92}{subsubsection*.73}
-\contentsline {subsubsection}{\bf Additional Surprises}{92}{subsubsection*.74}
-\contentsline {subsubsection}{\bf Thief of the Mind}{92}{subsubsection*.75}
-\contentsline {section}{Warrior}{94}{chapter*.76}
-\contentsline {subsection}{\numberline {20.0.55}Health \& Fortitude}{94}{subsection.20.0.55}
-\contentsline {subsection}{\numberline {20.0.56}Proficiencies}{94}{subsection.20.0.56}
-\contentsline {subsection}{\numberline {20.0.57}Starting Loadout}{94}{subsection.20.0.57}
-\contentsline {subsection}{\numberline {20.0.58}\it Fighting Paradigm}{94}{subsection.20.0.58}
-\contentsline {subsection}{\numberline {20.0.59}\it Through Gritted Teeth}{94}{subsection.20.0.59}
-\contentsline {subsection}{\numberline {20.0.60}\it Combat Strategem}{94}{subsection.20.0.60}
-\contentsline {subsection}{\numberline {20.0.61}\it Stratagem Improvement}{94}{subsection.20.0.61}
-\contentsline {subsection}{\numberline {20.0.62}\it Firm Grip}{95}{subsection.20.0.62}
-\contentsline {subsection}{\numberline {20.0.63}\bf The Way of the Blade}{95}{subsection.20.0.63}
-\contentsline {subsubsection}{\bf Extra Attack}{95}{subsubsection*.77}
-\contentsline {subsubsection}{\bf Blade Stratagems}{95}{subsubsection*.78}
-\contentsline {subsubsection}{\bf Weapon Excellence}{95}{subsubsection*.79}
-\contentsline {subsubsection}{\bf Battle Mastery}{95}{subsubsection*.80}
-\contentsline {subsubsection}{\bf Rapid Strike}{95}{subsubsection*.81}
-\contentsline {subsection}{\numberline {20.0.64}\it Critical Striker}{95}{subsection.20.0.64}
-\contentsline {subsubsection}{\bf Blademaster}{95}{subsubsection*.82}
-\contentsline {subsection}{\numberline {20.0.65}\bf The Way of the Wand}{96}{subsection.20.0.65}
-\contentsline {subsubsection}{\bf Powerful Spells}{96}{subsubsection*.83}
-\contentsline {subsubsection}{\bf Wand Stratagems}{96}{subsubsection*.84}
-\contentsline {subsubsection}{\bf Combat Magic}{96}{subsubsection*.85}
-\contentsline {subsubsection}{\bf Combat Focus}{96}{subsubsection*.86}
-\contentsline {subsubsection}{\bf Hexing on the Move}{96}{subsubsection*.87}
-\contentsline {subsubsection}{\bf Duelling Ascendancy}{96}{subsubsection*.88}
-\contentsline {subsubsection}{\bf Duelist's Signature}{96}{subsubsection*.89}
-\contentsline {subsection}{\numberline {20.0.66}\bf The Way of the Shield}{96}{subsection.20.0.66}
-\contentsline {subsubsection}{\bf Protective Instinct}{96}{subsubsection*.90}
-\contentsline {subsubsection}{\bf Shield Stratagems}{96}{subsubsection*.91}
-\contentsline {subsubsection}{\bf Shield Expert}{96}{subsubsection*.92}
-\contentsline {subsubsection}{\bf Combat Focus}{96}{subsubsection*.93}
-\contentsline {subsubsection}{\bf Patient Strike}{96}{subsubsection*.94}
-\contentsline {subsubsection}{\bf Warding Ascendancy}{97}{subsubsection*.95}
-\contentsline {subsubsection}{\bf Shield of the Gods}{97}{subsubsection*.96}
-\contentsline {chapter}{\numberline {21}Skill List}{98}{chapter.21}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Always Alert}{98}{subsubsection*.97}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Ambidextrous}{98}{subsubsection*.98}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Animagus}{98}{subsubsection*.99}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Area Dodge}{98}{subsubsection*.100}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Battlecry}{98}{subsubsection*.101}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Catastrophic Critical}{98}{subsubsection*.102}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Cleave}{98}{subsubsection*.103}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Defence Against the Dark Arts}{98}{subsubsection*.104}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Disciplined}{98}{subsubsection*.105}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Eagle-{}Eyed}{98}{subsubsection*.106}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Extended Range}{98}{subsubsection*.107}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Familiar}{98}{subsubsection*.108}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Focussed Caster}{98}{subsubsection*.109}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Golden Touch}{98}{subsubsection*.110}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Improved Instincts}{98}{subsubsection*.111}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Instinctive Retribution}{98}{subsubsection*.112}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Ironclad}{98}{subsubsection*.113}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Knife Handler}{98}{subsubsection*.114}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Linguist}{98}{subsubsection*.115}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Merciful}{98}{subsubsection*.116}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Mimicry}{98}{subsubsection*.117}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Mobile}{98}{subsubsection*.118}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Moving Target}{98}{subsubsection*.119}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Muggle Lover}{98}{subsubsection*.120}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Overcome Resistance}{98}{subsubsection*.121}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Parry}{98}{subsubsection*.122}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Power Attack}{98}{subsubsection*.123}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Reload Expert}{98}{subsubsection*.124}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Runecaster}{98}{subsubsection*.125}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Sentinel}{98}{subsubsection*.126}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Silent Magic}{98}{subsubsection*.127}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Sprint Start}{99}{subsubsection*.128}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Stabiliser}{99}{subsubsection*.129}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Superhero Landing}{99}{subsubsection*.130}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Supportive Ally}{99}{subsubsection*.131}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Surge}{99}{subsubsection*.132}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Tool-{}User}{99}{subsubsection*.133}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Undead Benefactor}{99}{subsubsection*.134}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Wandless Magic}{99}{subsubsection*.135}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Wandwork}{99}{subsubsection*.136}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weak Spot}{99}{subsubsection*.137}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weapons: Basic Training}{99}{subsubsection*.138}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weapons: Exotic Fighter}{99}{subsubsection*.139}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weapons: Fighting Dirty}{99}{subsubsection*.140}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weapons: Hulk Smash?}{99}{subsubsection*.141}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weapons: Long Range Threat}{99}{subsubsection*.142}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weapons: Sharpshooter}{99}{subsubsection*.143}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weapons: Simple Ranged Training}{99}{subsubsection*.144}
-\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weapons: Swordfighter}{99}{subsubsection*.145}
-\contentsline {chapter}{\numberline {22}Statuses List}{100}{chapter.22}
-\contentsline {subsubsection}{\it Asleep}{100}{subsubsection*.146}
-\contentsline {subsubsection}{\it Blinded}{100}{subsubsection*.147}
-\contentsline {subsubsection}{\it Broken Bone}{100}{subsubsection*.148}
-\contentsline {subsubsection}{\it Broken Wand}{100}{subsubsection*.149}
-\contentsline {subsubsection}{\it Burned: Mild}{100}{subsubsection*.150}
-\contentsline {subsubsection}{\it Burned: Severe}{100}{subsubsection*.151}
-\contentsline {subsubsection}{\it Calm Mind}{100}{subsubsection*.152}
-\contentsline {subsubsection}{\it Charmed}{100}{subsubsection*.153}
-\contentsline {subsubsection}{\it Confused}{100}{subsubsection*.154}
-\contentsline {subsubsection}{\it Critical (But Stable)}{100}{subsubsection*.155}
-\contentsline {subsubsection}{\it Critical Condition}{100}{subsubsection*.156}
-\contentsline {subsubsection}{\it Deaf}{100}{subsubsection*.157}
-\contentsline {subsubsection}{\it Distracted}{100}{subsubsection*.158}
-\contentsline {subsubsection}{\it Encumbered}{100}{subsubsection*.159}
-\contentsline {subsubsection}{\it Exhaustion}{100}{subsubsection*.160}
-\contentsline {subsubsection}{\it Frostbite: Mild}{100}{subsubsection*.161}
-\contentsline {subsubsection}{\it Frostbite: Severe}{100}{subsubsection*.162}
-\contentsline {subsubsection}{\it Hypoxia}{101}{subsubsection*.163}
-\contentsline {subsubsection}{\it Incapacitated}{101}{subsubsection*.164}
-\contentsline {subsubsection}{\it Invisible}{101}{subsubsection*.165}
-\contentsline {subsubsection}{\it Paralyzed}{101}{subsubsection*.166}
-\contentsline {subsubsection}{\it Poisoned: Mild}{101}{subsubsection*.167}
-\contentsline {subsubsection}{\it Poisoned: Severe}{101}{subsubsection*.168}
-\contentsline {subsubsection}{\it Prone Position}{101}{subsubsection*.169}
-\contentsline {subsubsection}{\it Serious Injury}{101}{subsubsection*.170}
-\contentsline {subsubsection}{\it Silenced}{101}{subsubsection*.171}
-\contentsline {subsubsection}{\it Terrified}{101}{subsubsection*.172}
-\contentsline {subsubsection}{\it Trapped}{101}{subsubsection*.173}
-\contentsline {subsubsection}{\it Unconscious}{101}{subsubsection*.174}
-\contentsline {chapter}{\numberline {23}Multiple Attempts}{102}{chapter.23}
-\contentsline {part}{VI\hspace {1em}Appendices}{103}{part.6}
-\contentsline {chapter}{\numberline {24}Cosmology}{104}{chapter.24}
-\contentsline {subsection}{\numberline {24.0.1}The Mortal World}{104}{subsection.24.0.1}
-\contentsline {subsection}{\numberline {24.0.2}The Astral Realm}{104}{subsection.24.0.2}
-\contentsline {subsection}{\numberline {24.0.3}The Higher Planes}{104}{subsection.24.0.3}
-\contentsline {subsection}{\numberline {24.0.4}The Eldritch Domains}{104}{subsection.24.0.4}
-\contentsline {subsection}{\numberline {24.0.5}The Void}{104}{subsection.24.0.5}
-\contentsline {section}{\numberline {24.1}Higher Planes}{105}{section.24.1}
-\contentsline {subsection}{\numberline {24.1.1}Abyss: The Plane of Terror}{105}{subsection.24.1.1}
-\contentsline {subsection}{\numberline {24.1.2}Aeolus: The Plane of Storms and Winds}{105}{subsection.24.1.2}
-\contentsline {subsection}{\numberline {24.1.3}Eden: The Plane of Nature}{105}{subsection.24.1.3}
-\contentsline {subsection}{\numberline {24.1.4}Elysium: The Plane of Blessings}{105}{subsection.24.1.4}
-\contentsline {subsection}{\numberline {24.1.5}Hades: The Plane of Death}{105}{subsection.24.1.5}
-\contentsline {subsection}{\numberline {24.1.6}Hyperborea: The Plane of Ice}{105}{subsection.24.1.6}
-\contentsline {subsection}{\numberline {24.1.7}Machina: The Plane of Order}{106}{subsection.24.1.7}
-\contentsline {subsection}{\numberline {24.1.8}Nirvana: The Plane of Peace}{106}{subsection.24.1.8}
-\contentsline {subsection}{\numberline {24.1.9}Pand{\ae }monium: The Plane of Chaos}{106}{subsection.24.1.9}
-\contentsline {subsection}{\numberline {24.1.10}Scholomancia: The Plane of Knowledge}{106}{subsection.24.1.10}
-\contentsline {subsection}{\numberline {24.1.11}Tartarus: The Plane of Torture}{106}{subsection.24.1.11}
-\contentsline {subsection}{\numberline {24.1.12}Valhalla: The Plane of Bravery}{106}{subsection.24.1.12}
-\contentsline {subsection}{\numberline {24.1.13}Vulcan: The Plane of Fire}{107}{subsection.24.1.13}
-\contentsline {chapter}{\numberline {25}\vspace {-1ex}Magic Cheat Sheet}{108}{chapter.25}
-\contentsline {subsubsection}{How to Cast}{108}{subsubsection*.175}
-\contentsline {subsubsection}{Memory}{108}{subsubsection*.176}
-\contentsline {subsubsection}{Accuracy \& Resisting}{108}{subsubsection*.177}
-\contentsline {subsubsection}{Check Type}{108}{subsubsection*.178}
-\contentsline {subsubsection}{Check Difficulty}{108}{subsubsection*.179}
-\contentsline {subsubsection}{FP Costs}{108}{subsubsection*.180}
-\contentsline {chapter}{\numberline {26}Changelog}{109}{chapter.26}
-\contentsline {section}{\numberline {26.1}Changes in V4.0$\beta $}{109}{section.26.1}
-\contentsline {subsection}{\numberline {26.1.1}Changes to Artificing}{109}{subsection.26.1.1}
-\contentsline {subsection}{\numberline {26.1.2}Spellcasting Changes}{109}{subsection.26.1.2}
-\contentsline {subsection}{\numberline {26.1.3}Changes to Character Attributes}{109}{subsection.26.1.3}
-\contentsline {subsubsection}{Dodge, Block and Accuracy}{109}{subsubsection*.181}
-\contentsline {subsection}{\numberline {26.1.4}New Action Mechanics}{109}{subsection.26.1.4}
-\contentsline {subsection}{\numberline {26.1.5}Archetypes}{109}{subsection.26.1.5}
-\contentsline {subsection}{\numberline {26.1.6}Expertise}{109}{subsection.26.1.6}
-\contentsline {subsubsection}{Proficiencies}{109}{subsubsection*.182}
-\contentsline {subsection}{\numberline {26.1.7}Spell Changes}{110}{subsection.26.1.7}
-\contentsline {subsection}{\numberline {26.1.8}Cheat Sheet}{110}{subsection.26.1.8}
-\contentsline {subsection}{\numberline {26.1.9}Item Changes}{110}{subsection.26.1.9}
-\contentsline {subsection}{\numberline {26.1.10}Meta-Changes}{110}{subsection.26.1.10}
-\contentsline {section}{\numberline {26.2}To Do List}{110}{section.26.2}
+\contentsline {section}{Artificer}{89}{chapter*.71}
+\contentsline {subsection}{\numberline {20.0.32}Health \& Fortitude}{89}{subsection.20.0.32}
+\contentsline {subsection}{\numberline {20.0.33}Proficiencies}{89}{subsection.20.0.33}
+\contentsline {subsection}{\numberline {20.0.34}Starting Loadout}{89}{subsection.20.0.34}
+\contentsline {subsection}{\numberline {20.0.35}\it Artificer's Augmentations}{89}{subsection.20.0.35}
+\contentsline {subsection}{\numberline {20.0.36}\it Rune Experimentation}{89}{subsection.20.0.36}
+\contentsline {subsection}{\numberline {20.0.37}\it Expert Enchanter}{89}{subsection.20.0.37}
+\contentsline {subsection}{\numberline {20.0.38}\it Renew Bindings}{90}{subsection.20.0.38}
+\contentsline {subsection}{\numberline {20.0.39}\it Appraising Eyes}{90}{subsection.20.0.39}
+\contentsline {subsection}{\numberline {20.0.40}\it Enchantment Affinity}{90}{subsection.20.0.40}
+\contentsline {subsection}{\numberline {20.0.41}\it Tweak Enchantment}{90}{subsection.20.0.41}
+\contentsline {subsection}{\numberline {20.0.42}\it Imbue Sentience}{90}{subsection.20.0.42}
+\contentsline {subsection}{\numberline {20.0.43}\it Runecaster}{90}{subsection.20.0.43}
+\contentsline {subsection}{\numberline {20.0.44}\it Networked Augmentations}{90}{subsection.20.0.44}
+\contentsline {subsection}{\numberline {20.0.45}\it Empowered Sentience}{90}{subsection.20.0.45}
+\contentsline {subsection}{\numberline {20.0.46}\it Shared Soul}{90}{subsection.20.0.46}
+\contentsline {section}{Auror}{92}{chapter*.72}
+\contentsline {subsection}{\numberline {20.0.47}Health \& Fortitude}{92}{subsection.20.0.47}
+\contentsline {subsection}{\numberline {20.0.48}Proficiencies}{92}{subsection.20.0.48}
+\contentsline {subsection}{\numberline {20.0.49}Starting Loadout}{92}{subsection.20.0.49}
+\contentsline {section}{Berserker}{93}{chapter*.73}
+\contentsline {subsection}{\numberline {20.0.50}Health \& Fortitude}{93}{subsection.20.0.50}
+\contentsline {subsection}{\numberline {20.0.51}Proficiencies}{93}{subsection.20.0.51}
+\contentsline {subsection}{\numberline {20.0.52}Starting Loadout}{93}{subsection.20.0.52}
+\contentsline {section}{Druid}{94}{chapter*.74}
+\contentsline {subsection}{\numberline {20.0.53}Health \& Fortitude}{94}{subsection.20.0.53}
+\contentsline {subsection}{\numberline {20.0.54}Proficiencies}{94}{subsection.20.0.54}
+\contentsline {subsection}{\numberline {20.0.55}Starting Loadout}{94}{subsection.20.0.55}
+\contentsline {section}{Healer}{95}{chapter*.75}
+\contentsline {subsection}{\numberline {20.0.56}Health \& Fortitude}{95}{subsection.20.0.56}
+\contentsline {subsection}{\numberline {20.0.57}Proficiencies}{95}{subsection.20.0.57}
+\contentsline {subsection}{\numberline {20.0.58}Starting Loadout}{95}{subsection.20.0.58}
+\contentsline {section}{Outlaw}{96}{chapter*.76}
+\contentsline {subsection}{\numberline {20.0.59}Health \& Fortitude}{96}{subsection.20.0.59}
+\contentsline {subsection}{\numberline {20.0.60}Proficiencies}{96}{subsection.20.0.60}
+\contentsline {subsection}{\numberline {20.0.61}Starting Loadout}{96}{subsection.20.0.61}
+\contentsline {subsection}{\numberline {20.0.62}\it Element of Surprise}{96}{subsection.20.0.62}
+\contentsline {subsection}{\numberline {20.0.63}\it Rudimentary Recovery}{97}{subsection.20.0.63}
+\contentsline {subsection}{\numberline {20.0.64}\it Sly Action}{97}{subsection.20.0.64}
+\contentsline {subsection}{\numberline {20.0.65}\it Career Choice}{97}{subsection.20.0.65}
+\contentsline {subsection}{\numberline {20.0.66}\it Artisan of the Unlawful}{97}{subsection.20.0.66}
+\contentsline {subsection}{\numberline {20.0.67}\it Slippery}{97}{subsection.20.0.67}
+\contentsline {subsection}{\numberline {20.0.68}\it Danger Sense}{97}{subsection.20.0.68}
+\contentsline {subsection}{\numberline {20.0.69}\it Incredible Luck}{97}{subsection.20.0.69}
+\contentsline {subsubsection}{\bf Additional Surprises}{97}{subsubsection*.77}
+\contentsline {subsubsection}{\bf Pickpocket}{97}{subsubsection*.78}
+\contentsline {subsubsection}{\bf Additional Surprises}{97}{subsubsection*.79}
+\contentsline {subsubsection}{\bf Thief of the Mind}{97}{subsubsection*.80}
+\contentsline {section}{Scholar}{99}{chapter*.81}
+\contentsline {subsection}{\numberline {20.0.70}Health \& Fortitude}{99}{subsection.20.0.70}
+\contentsline {subsection}{\numberline {20.0.71}Proficiencies}{99}{subsection.20.0.71}
+\contentsline {subsection}{\numberline {20.0.72}Starting Loadout}{99}{subsection.20.0.72}
+\contentsline {section}{Spellsinger}{100}{chapter*.82}
+\contentsline {subsection}{\numberline {20.0.73}Health \& Fortitude}{100}{subsection.20.0.73}
+\contentsline {subsection}{\numberline {20.0.74}Proficiencies}{100}{subsection.20.0.74}
+\contentsline {subsection}{\numberline {20.0.75}Starting Loadout}{100}{subsection.20.0.75}
+\contentsline {section}{Warrior}{101}{chapter*.83}
+\contentsline {subsection}{\numberline {20.0.76}Health \& Fortitude}{101}{subsection.20.0.76}
+\contentsline {subsection}{\numberline {20.0.77}Proficiencies}{101}{subsection.20.0.77}
+\contentsline {subsection}{\numberline {20.0.78}Starting Loadout}{101}{subsection.20.0.78}
+\contentsline {subsection}{\numberline {20.0.79}\it Fighting Paradigm}{101}{subsection.20.0.79}
+\contentsline {subsection}{\numberline {20.0.80}\it Through Gritted Teeth}{101}{subsection.20.0.80}
+\contentsline {subsection}{\numberline {20.0.81}\it Combat Strategem}{101}{subsection.20.0.81}
+\contentsline {subsection}{\numberline {20.0.82}\it Stratagem Improvement}{101}{subsection.20.0.82}
+\contentsline {subsection}{\numberline {20.0.83}\it Firm Grip}{102}{subsection.20.0.83}
+\contentsline {subsection}{\numberline {20.0.84}\bf The Way of the Blade}{102}{subsection.20.0.84}
+\contentsline {subsubsection}{\bf Extra Attack}{102}{subsubsection*.84}
+\contentsline {subsubsection}{\bf Blade Stratagems}{102}{subsubsection*.85}
+\contentsline {subsubsection}{\bf Weapon Excellence}{102}{subsubsection*.86}
+\contentsline {subsubsection}{\bf Battle Mastery}{102}{subsubsection*.87}
+\contentsline {subsubsection}{\bf Rapid Strike}{102}{subsubsection*.88}
+\contentsline {subsection}{\numberline {20.0.85}\it Critical Striker}{102}{subsection.20.0.85}
+\contentsline {subsubsection}{\bf Blademaster}{102}{subsubsection*.89}
+\contentsline {subsection}{\numberline {20.0.86}\bf The Way of the Wand}{103}{subsection.20.0.86}
+\contentsline {subsubsection}{\bf Powerful Spells}{103}{subsubsection*.90}
+\contentsline {subsubsection}{\bf Wand Stratagems}{103}{subsubsection*.91}
+\contentsline {subsubsection}{\bf Combat Magic}{103}{subsubsection*.92}
+\contentsline {subsubsection}{\bf Combat Focus}{103}{subsubsection*.93}
+\contentsline {subsubsection}{\bf Hexing on the Move}{103}{subsubsection*.94}
+\contentsline {subsubsection}{\bf Duelling Ascendancy}{103}{subsubsection*.95}
+\contentsline {subsubsection}{\bf Duelist's Signature}{103}{subsubsection*.96}
+\contentsline {subsection}{\numberline {20.0.87}\bf The Way of the Shield}{103}{subsection.20.0.87}
+\contentsline {subsubsection}{\bf Protective Instinct}{103}{subsubsection*.97}
+\contentsline {subsubsection}{\bf Shield Stratagems}{103}{subsubsection*.98}
+\contentsline {subsubsection}{\bf Shield Expert}{103}{subsubsection*.99}
+\contentsline {subsubsection}{\bf Combat Focus}{103}{subsubsection*.100}
+\contentsline {subsubsection}{\bf Patient Strike}{103}{subsubsection*.101}
+\contentsline {subsubsection}{\bf Warding Ascendancy}{104}{subsubsection*.102}
+\contentsline {subsubsection}{\bf Shield of the Gods}{104}{subsubsection*.103}
+\contentsline {section}{Zealot}{105}{chapter*.104}
+\contentsline {subsection}{\numberline {20.0.88}Health \& Fortitude}{105}{subsection.20.0.88}
+\contentsline {subsection}{\numberline {20.0.89}Proficiencies}{105}{subsection.20.0.89}
+\contentsline {subsection}{\numberline {20.0.90}Starting Loadout}{105}{subsection.20.0.90}
+\contentsline {chapter}{\numberline {21}Skill List}{106}{chapter.21}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Always Alert}{106}{subsubsection*.105}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Ambidextrous}{106}{subsubsection*.106}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Animagus}{106}{subsubsection*.107}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Area Dodge}{106}{subsubsection*.108}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Battlecry}{106}{subsubsection*.109}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Catastrophic Critical}{106}{subsubsection*.110}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Cleave}{106}{subsubsection*.111}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Defence Against the Dark Arts}{106}{subsubsection*.112}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Disciplined}{106}{subsubsection*.113}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Eagle-{}Eyed}{106}{subsubsection*.114}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Extended Range}{106}{subsubsection*.115}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Familiar}{106}{subsubsection*.116}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Focussed Caster}{106}{subsubsection*.117}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Golden Touch}{106}{subsubsection*.118}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Improved Instincts}{106}{subsubsection*.119}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Instinctive Retribution}{106}{subsubsection*.120}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Ironclad}{106}{subsubsection*.121}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Knife Handler}{106}{subsubsection*.122}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Linguist}{106}{subsubsection*.123}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Merciful}{106}{subsubsection*.124}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Mimicry}{106}{subsubsection*.125}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Mobile}{106}{subsubsection*.126}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Moving Target}{106}{subsubsection*.127}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Muggle Lover}{106}{subsubsection*.128}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Overcome Resistance}{106}{subsubsection*.129}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Parry}{106}{subsubsection*.130}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Power Attack}{106}{subsubsection*.131}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Reload Expert}{106}{subsubsection*.132}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Runecaster}{106}{subsubsection*.133}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Sentinel}{106}{subsubsection*.134}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Silent Magic}{106}{subsubsection*.135}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Sprint Start}{107}{subsubsection*.136}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Stabiliser}{107}{subsubsection*.137}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Superhero Landing}{107}{subsubsection*.138}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Supportive Ally}{107}{subsubsection*.139}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Surge}{107}{subsubsection*.140}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Tool-{}User}{107}{subsubsection*.141}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Undead Benefactor}{107}{subsubsection*.142}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Wandless Magic}{107}{subsubsection*.143}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Wandwork}{107}{subsubsection*.144}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weak Spot}{107}{subsubsection*.145}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weapons: Basic Training}{107}{subsubsection*.146}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weapons: Exotic Fighter}{107}{subsubsection*.147}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weapons: Fighting Dirty}{107}{subsubsection*.148}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weapons: Hulk Smash?}{107}{subsubsection*.149}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weapons: Long Range Threat}{107}{subsubsection*.150}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weapons: Sharpshooter}{107}{subsubsection*.151}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weapons: Simple Ranged Training}{107}{subsubsection*.152}
+\contentsline {subsubsection}{\relax \fontsize {9}{10.95}\selectfont \abovedisplayskip 8\p@ plus4\p@ minus4\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 5\p@ plus3\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 6\p@ plus2\p@ minus3\p@ \itemsep \parsep Weapons: Swordfighter}{107}{subsubsection*.153}
+\contentsline {chapter}{\numberline {22}Statuses List}{108}{chapter.22}
+\contentsline {subsubsection}{\it Asleep}{108}{subsubsection*.154}
+\contentsline {subsubsection}{\it Blinded}{108}{subsubsection*.155}
+\contentsline {subsubsection}{\it Broken Bone}{108}{subsubsection*.156}
+\contentsline {subsubsection}{\it Broken Wand}{108}{subsubsection*.157}
+\contentsline {subsubsection}{\it Burned: Mild}{108}{subsubsection*.158}
+\contentsline {subsubsection}{\it Burned: Severe}{108}{subsubsection*.159}
+\contentsline {subsubsection}{\it Calm Mind}{108}{subsubsection*.160}
+\contentsline {subsubsection}{\it Charmed}{108}{subsubsection*.161}
+\contentsline {subsubsection}{\it Confused}{108}{subsubsection*.162}
+\contentsline {subsubsection}{\it Critical (But Stable)}{108}{subsubsection*.163}
+\contentsline {subsubsection}{\it Critical Condition}{108}{subsubsection*.164}
+\contentsline {subsubsection}{\it Deaf}{108}{subsubsection*.165}
+\contentsline {subsubsection}{\it Distracted}{108}{subsubsection*.166}
+\contentsline {subsubsection}{\it Encumbered}{108}{subsubsection*.167}
+\contentsline {subsubsection}{\it Exhaustion}{108}{subsubsection*.168}
+\contentsline {subsubsection}{\it Frostbite: Mild}{108}{subsubsection*.169}
+\contentsline {subsubsection}{\it Frostbite: Severe}{108}{subsubsection*.170}
+\contentsline {subsubsection}{\it Hypoxia}{109}{subsubsection*.171}
+\contentsline {subsubsection}{\it Incapacitated}{109}{subsubsection*.172}
+\contentsline {subsubsection}{\it Invisible}{109}{subsubsection*.173}
+\contentsline {subsubsection}{\it Paralyzed}{109}{subsubsection*.174}
+\contentsline {subsubsection}{\it Poisoned: Mild}{109}{subsubsection*.175}
+\contentsline {subsubsection}{\it Poisoned: Severe}{109}{subsubsection*.176}
+\contentsline {subsubsection}{\it Prone Position}{109}{subsubsection*.177}
+\contentsline {subsubsection}{\it Serious Injury}{109}{subsubsection*.178}
+\contentsline {subsubsection}{\it Silenced}{109}{subsubsection*.179}
+\contentsline {subsubsection}{\it Terrified}{109}{subsubsection*.180}
+\contentsline {subsubsection}{\it Trapped}{109}{subsubsection*.181}
+\contentsline {subsubsection}{\it Unconscious}{109}{subsubsection*.182}
+\contentsline {chapter}{\numberline {23}Multiple Attempts}{110}{chapter.23}
+\contentsline {part}{VI\hspace {1em}Appendices}{111}{part.6}
+\contentsline {chapter}{\numberline {24}Cosmology}{112}{chapter.24}
+\contentsline {subsection}{\numberline {24.0.1}The Mortal World}{112}{subsection.24.0.1}
+\contentsline {subsection}{\numberline {24.0.2}The Astral Realm}{112}{subsection.24.0.2}
+\contentsline {subsection}{\numberline {24.0.3}The Higher Planes}{112}{subsection.24.0.3}
+\contentsline {subsection}{\numberline {24.0.4}The Eldritch Domains}{112}{subsection.24.0.4}
+\contentsline {subsection}{\numberline {24.0.5}The Void}{112}{subsection.24.0.5}
+\contentsline {section}{\numberline {24.1}Higher Planes}{113}{section.24.1}
+\contentsline {subsection}{\numberline {24.1.1}Abyss: The Plane of Terror}{113}{subsection.24.1.1}
+\contentsline {subsection}{\numberline {24.1.2}Aeolus: The Plane of Storms and Winds}{113}{subsection.24.1.2}
+\contentsline {subsection}{\numberline {24.1.3}Eden: The Plane of Nature}{113}{subsection.24.1.3}
+\contentsline {subsection}{\numberline {24.1.4}Elysium: The Plane of Blessings}{113}{subsection.24.1.4}
+\contentsline {subsection}{\numberline {24.1.5}Hades: The Plane of Death}{113}{subsection.24.1.5}
+\contentsline {subsection}{\numberline {24.1.6}Hyperborea: The Plane of Ice}{113}{subsection.24.1.6}
+\contentsline {subsection}{\numberline {24.1.7}Machina: The Plane of Order}{114}{subsection.24.1.7}
+\contentsline {subsection}{\numberline {24.1.8}Nirvana: The Plane of Peace}{114}{subsection.24.1.8}
+\contentsline {subsection}{\numberline {24.1.9}Pand{\ae }monium: The Plane of Chaos}{114}{subsection.24.1.9}
+\contentsline {subsection}{\numberline {24.1.10}Scholomancia: The Plane of Knowledge}{114}{subsection.24.1.10}
+\contentsline {subsection}{\numberline {24.1.11}Tartarus: The Plane of Torture}{114}{subsection.24.1.11}
+\contentsline {subsection}{\numberline {24.1.12}Valhalla: The Plane of Bravery}{114}{subsection.24.1.12}
+\contentsline {subsection}{\numberline {24.1.13}Vulcan: The Plane of Fire}{115}{subsection.24.1.13}
+\contentsline {chapter}{\numberline {25}\vspace {-1ex}Magic Cheat Sheet}{116}{chapter.25}
+\contentsline {subsubsection}{How to Cast}{116}{subsubsection*.183}
+\contentsline {subsubsection}{Memory}{116}{subsubsection*.184}
+\contentsline {subsubsection}{Accuracy \& Resisting}{116}{subsubsection*.185}
+\contentsline {subsubsection}{Check Type}{116}{subsubsection*.186}
+\contentsline {subsubsection}{Check Difficulty}{116}{subsubsection*.187}
+\contentsline {subsubsection}{FP Costs}{116}{subsubsection*.188}
+\contentsline {chapter}{\numberline {26}Changelog}{117}{chapter.26}
+\contentsline {section}{\numberline {26.1}Changes in V4.0$\beta $}{117}{section.26.1}
+\contentsline {subsection}{\numberline {26.1.1}Changes to Artificing}{117}{subsection.26.1.1}
+\contentsline {subsection}{\numberline {26.1.2}Spellcasting Changes}{117}{subsection.26.1.2}
+\contentsline {subsection}{\numberline {26.1.3}Changes to Character Attributes}{117}{subsection.26.1.3}
+\contentsline {subsubsection}{Dodge, Block and Accuracy}{117}{subsubsection*.189}
+\contentsline {subsection}{\numberline {26.1.4}New Action Mechanics}{117}{subsection.26.1.4}
+\contentsline {subsection}{\numberline {26.1.5}Archetypes}{117}{subsection.26.1.5}
+\contentsline {subsection}{\numberline {26.1.6}Expertise}{117}{subsection.26.1.6}
+\contentsline {subsubsection}{Proficiencies}{117}{subsubsection*.190}
+\contentsline {subsection}{\numberline {26.1.7}Spell Changes}{118}{subsection.26.1.7}
+\contentsline {subsection}{\numberline {26.1.8}Cheat Sheet}{118}{subsection.26.1.8}
+\contentsline {subsection}{\numberline {26.1.9}Item Changes}{118}{subsection.26.1.9}
+\contentsline {subsection}{\numberline {26.1.10}Meta-Changes}{118}{subsection.26.1.10}
+\contentsline {section}{\numberline {26.2}To Do List}{118}{section.26.2}
