@@ -114,7 +114,7 @@ function allSpellAssembler(maxLevel,fileNameRoot)
     
     %% create text for description list
    
-    listText = '\n \\clearpage \n\\begin{multicols}{3}\n';
+    listText = '\n \\normalsize \\clearpage \n\\begin{multicols}{3}\n';
     
     for i = 1:length(allSpells)
        listText = listText +  allSpells(i).output() + "\n";

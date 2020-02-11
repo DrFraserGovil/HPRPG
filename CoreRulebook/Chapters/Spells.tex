@@ -103,9 +103,9 @@ Instant spells are denoted by the symbol \instSymb.
 
 \subsection{Focus}
 
-A focus spell is cast like an Instant spell, but may then be continued indefinitely, repeating the initial effects once per turn as long as you keep the spell active. No further checks are needed to continue the spell, but you must remain focussed and unless stated otherwise, the FP cost is deducted once per turn as well.
+A focus spell is cast like an Instant spell, but may then be continued indefinitely, repeating the initial effects once per turn as long as you keep the spell active. No further checks are needed to continue the spell, but you must keep your mind focussed on the task at hand. Unless stated otherwise, Focus spells {\bf do not} cost additional FP after the first round in which they are cost. 
 
-Because you must remain focussed, no further spells can be cast for the duration of this spell, and all subsequent movement checks are `minor', and no other actions (such as evasion) may be taken.   
+Because you must remain focussed, no further spells can be cast for the duration of this spell. In combat, maintaining a Focus spell takes your entire major action.    
 
 Whilst maintaining a {\it Focus} spell you are considered {\it Distracted} and take the associated status effect. This renders you vulnerable to Critical Strikes, and upon taking damage you must pass a Willpower Resist check to maintain your concentration. 
 
@@ -114,13 +114,9 @@ You may end the spell effect at any time without it counting as an action.
 Focus spells are denoted by the symbol \concSymb.
 
 \subsection{Ward}
-A ward is (usually) a Recuperation spell that affects a large area. A ward may be centred on a fixed point or object, or may be centred on a moving location or even a sentient being. 
+A ward is a spell that affects a large area, and typically lasts for a long time after being cast. Most wards are centred on a single `focal point', which is selected at the time of casting. Some wards limit the kind of target that a valid focal point can be attached to. 
 
-Wards, however, have an unfortunate habit of interfering with each other when used in unison. If two wards have a significant overlapping region of effect and the caster does not have the {\it Multiward} skill or an equivalent feat, there is a significant chance (determined by the GM) that both wards will collapse. 
-
-The interference only applies if the wards are similar in magnitude and intent. For example, Hogwarts castle is a heavily warded region, but a small ward could be placed in a room without problem. Interference would only become a problem when a new castle-wide ward was attempted. 
-
-Equally, interference only applies if the effects of the ward compound each other -- if they lie in opposition, then the usual spell mechanics are applied. For example, a character with a personal shield ward touches a beartrap ward -- neither ward collapses, but the beartrap ward is triggered, and the shield will attempt to protect the character. 
+Unless stated otherwise, a ward spell is assumed to move as the object the focal point is attached to moves - a warded individual, therefore, does not need to stay still to remain protected. 
 
 Ward spells are denoted by the symbol \wardSymb.
 
@@ -203,7 +199,7 @@ Congratulations - you just cast your first spell!
 \subsection{Memorising Spells}
 
 After you have book-cast a spell a couple of times - you will begin to get the hang of it. Eventually, you will have comitted the spell to memory. This occurs after you have book-cast a spell a number of times equal to:
-$$ N = 8 - \text{\attInt{} Modifier} ~~~\text{(min 2)} $$
+$$ N = 5 - \text{\attInt{} Modifier} ~~~\text{(min 1)} $$
 These book-casts have to be in an appropriate use of the spell - you can't sit and hex a tree 5 times in a row, and expect to learn the spell. You must successfully use the spell for its intended purpose for it to be a valid learning experience. 
 
 Alternatively, you may spend your downtime studying the {\it theory} of the spell, over the practice. Studying a spellbook, or working with a proficient teacher for 1 hours is equivalent to casting the spell once in a real-life scenario. However, knowing something is theory is not always quite enough: you can never {\it completely} learn a spell this way. After completing your research, you must book-cast the spell at least once more, before it is truly memorised. 
@@ -336,4 +332,29 @@ $$\text{Subjugate} = 8 + \text{Expertise bonus}  + \text{POW modifier}$$
 
 \section{Spell Range} \label{S:Range}
 
+Some spells have effects which can apply over immense distances, whilst others infuse only the caster with magical energies, and some are only effective up to a certain distance. 
+
+The maximum distance a spell can effect a person is known as the {\it range} of the spell. There are 4 classes of ranges for spells: {\it Self}, {\it Wandtip}, {\it Close} and {\it Sight}.
+
+\subsection{Self}
+
+Spells which have a range of `self' effect only the caster, or in this case of ritual spells involving multiple people, those involved with casting the spell.   
+
+Some spells which fall into this category also extend to cover a given radius - in which case the `self' indicates that the focal point of the spell is the caster. 
+
+\subsection{Wandtip}
+
+A `Wandtip' spell has an extremely limited range. You have to hold your wand directly over the region or being you wish to target, or (in some cases) make physical contact between your wand and the target. 
+
+\subsection{Close}
+
+Most spells are considerd `close range' spells. This means that you can project the magic out of your wand a certain distance - but over extreme ranges, the magic becomes diluted and fizzles out. 
+
+For most individuals, `close range' means the spell can be cast at a target up to 25m away. 
+
+Some individuals have trained themselves to be particularly good at targeting spells at beings a long distance away, and have picked up the {\it Extended Range} skill, which allows them to cast spells further than they normally would. 
+
+\subsection{Sight}
+
+Sight spells are those which have practically no limitation on their range - the only limitation is your ability to detect and select a target.  
 

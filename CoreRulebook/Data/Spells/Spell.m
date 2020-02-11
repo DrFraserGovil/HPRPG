@@ -9,6 +9,7 @@ classdef Spell < handle
         Type
         Symbol
         Level
+		Range
         LevelName
         Effect
         Duration
@@ -28,6 +29,7 @@ classdef Spell < handle
            obj.Incantation = "Null";
            obj.Type = "Nonetype";
            obj.Symbol = "";
+		   obj.Range = "Self";
            obj.Level = 0;
            obj.LevelName = "None";
            obj.Effect = "None";
@@ -47,6 +49,7 @@ classdef Spell < handle
             obj.Incantation = line.Incantation{1};
             obj.Type = line.Type{1};
             n = line.Level;
+			obj.Range = line.Range{1};
             levelNames = ["Beginner", "Novice","Adept", "Expert", "Master", "Ascendant"];
             name = levelNames(n);
             obj.Level = n;
@@ -85,7 +88,7 @@ classdef Spell < handle
             t = t + "discipline = " + sp.Discipline+", ";
             t = t + "type = " + prepareText(sp.Type)+", ";           
             t = t + "level =" + sp.LevelName+", ";
-
+			t = t + "range =" + sp.Range + ", ";
             %% conditionals  
             if isempty(sp.Incantation)
                 t = t + "noIncant = 1, ";
