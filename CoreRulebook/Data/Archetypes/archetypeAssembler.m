@@ -12,7 +12,7 @@ function archetypeAssembler(fileNameRoot)
     
     texFiles = dir(originRoot + "*.tex");
     for i = 1:length(texFiles)
-        targetName = texFiles(i).name;
+        targetName = texFiles(i).name
         originName = targetName(1:end-4) + ".xlsx";
         
         f = readtable(originName);
@@ -87,7 +87,7 @@ function archetypeAssembler(fileNameRoot)
 
         secondHalf = prepareText(readFile(endPoint:end),0);
 
-        fullText = firstHalf + text  + "\n"+ secondHalf;
+        fullText = firstHalf + text  + "\n"+ secondHalf
 
         FID = fopen(targetName,'w');
         fprintf(FID, fullText);
