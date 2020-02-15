@@ -28,9 +28,11 @@ function scholarAssembler(fileNameRoot)
                  line = line + "0}{}{";
             end
             
-            line = line + f{i,4}{1};
-            
-            
+            line = line + f{i,3}{1} + "}{";
+      
+            if f{i,4}{1}=="Y"
+                line = line + "You can make this discovery multiple times, making a different choice each time";
+            end
 
             line = line + "}";
             text = text + prepareText(line) + "\n";

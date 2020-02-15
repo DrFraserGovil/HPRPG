@@ -3,24 +3,43 @@
 \addcontentsline{toc}{section}{Scholar}
 An intro bit of text 
 
-%%archBegin
-\archetype{name=Scholar, hp=6, fp=12, armour=None, tool=Choose one from: Alchemy Gear\comma{} First Aid Kit\comma{} Gaming Set\comma{} Herbology Tools\comma{} Musical Instrument or  Runic Tools, disc=Choose any four spell disciplines, weapon=None, prof=All Intelligence proficiencies\comma{} plus choose one from Conviction\comma{} Willpower\comma{} Investigation or Observation., equip=A Wand\comma{} a Scholar\apos{}s Pack and a set of the chosen tools., memorised=Choose 4 spells from the Basic Spells table., listIName =Discoveries, singleListMode = 1, expertI = 2, maxspellI = Beginner, bonusI = Higher Education\comma{} Analyse Target, listI_I= \minus{}, expertII = 2, maxspellII = Beginner, bonusII = Rapid Assimilation, listI_II= \minus{}, expertIII = 2, maxspellIII = Beginner, bonusIII = The Pursuit of Knowledge, listI_III= 1, expertIV = 3, maxspellIV = Beginner, listI_IV= 2, expertV = 3, maxspellV = Novice, bonusV = Educating the Masses, listI_V= 2, expertVI = 3, maxspellVI = Novice, listI_VI= 3, expertVII = 3, maxspellVII = Novice, listI_VII= 3, expertVIII = 4, maxspellVIII = Novice, listI_VIII= 4, expertIX = 4, maxspellIX = Novice, listI_IX= 4, expertX = 4, maxspellX = Adept, listI_X= 5, expertXI = 4, maxspellXI = Adept, listI_XI= 5, expertXII = 5, maxspellXII = Adept, listI_XII= 6, expertXIII = 5, maxspellXIII = Adept, listI_XIII= 6, expertXIV = 5, maxspellXIV = Adept, listI_XIV= 7, expertXV = 5, maxspellXV = Master, listI_XV= 7, expertXVI = 6, maxspellXVI = Master, listI_XVI= 8, expertXVII = 6, maxspellXVII = Master, listI_XVII= 8, expertXVIII = 6, maxspellXVIII = Master, listI_XVIII= 9, expertXIX = 6, maxspellXIX = Master, listI_XIX= 9, expertXX = 7, maxspellXX = Ascendant, listI_XX= 10, shortmode = 0}
+%%archBegin\archetype{name=Scholar, hp=6, fp=12, armour=None, tool=Choose one from: Alchemy Gear\comma{} First Aid Kit\comma{} Gaming Set\comma{} Herbology Tools\comma{} Musical Instrument or  Runic Tools, disc=Temporal\comma{} plus a choice of any three remaining spell disciplines, weapon=None, prof=All Intelligence proficiencies\comma{} plus choose one from Conviction\comma{} Willpower\comma{} Investigation or Observation., equip=A Wand\comma{} a Scholar\apos{}s Pack and a set of the chosen tools., memorised=Choose 4 spells from the Basic Spells table., listIName =Discoveries, singleListMode = 1, expertI = 2, maxspellI = Beginner, bonusI = Higher Education\comma{} Logical Analysis, listI_I= -, expertII = 2, maxspellII = Beginner, bonusII = Rapid Assimilation, listI_II= -, expertIII = 2, maxspellIII = Beginner, bonusIII = The Pursuit of Knowledge, listI_III= 1, expertIV = 3, maxspellIV = Beginner, listI_IV= 2, expertV = 3, maxspellV = Novice, bonusV = Educating the Masses, listI_V= 2, expertVI = 3, maxspellVI = Novice, listI_VI= 3, expertVII = 3, maxspellVII = Novice, bonusVII = Logical Analysis II, listI_VII= 3, expertVIII = 4, maxspellVIII = Novice, bonusVIII = Hyperspecialisation, listI_VIII= 4, expertIX = 4, maxspellIX = Novice, listI_IX= 4, expertX = 4, maxspellX = Adept, listI_X= 5, expertXI = 4, maxspellXI = Adept, listI_XI= 5, expertXII = 5, maxspellXII = Adept, listI_XII= 6, expertXIII = 5, maxspellXIII = Adept, listI_XIII= 6, expertXIV = 5, maxspellXIV = Adept, listI_XIV= 7, expertXV = 5, maxspellXV = Master, listI_XV= 7, expertXVI = 6, maxspellXVI = Master, listI_XVI= 8, expertXVII = 6, maxspellXVII = Ascendant, bonusXVII = Scholarly Ascendancy, listI_XVII= 8, expertXVIII = 6, maxspellXVIII = Ascendant, listI_XVIII= 9, expertXIX = 6, maxspellXIX = Ascendant, listI_XIX= 9, expertXX = 7, maxspellXX = Ascendant, listI_XX= 10, shortmode = 0}
 %%archEnd
 
 
 \section*{Acquired Feats}
 
+\feat{Higher Education}
+{
+From first level, a scholar starts with a very high level of education \minus{} they have proficiency in all areas associated with `Intelligence', and possess an affinity for Temporal magic. 
+}
+
+\feat{Intellectual Analysis}
+{
+At 1st level, your years of education allow you to cast a critical eye over an opponent, and learn what to expect from them. 
+
+As a major action, you may {\it Survey} a being within 10m of you which you can see. By observing it over a number of seconds, you can deduce its behaviour, and anticipate where it will be and what it will do. This effect fails if the creature has an intelligence greater than you. 
+
+For the next minute (or until you survey another being), this being takes a penalty to its accuracy rolls equal to your Intelligence modifier, and you may perform any Resist checks imposed on you by this being using a Logic check, rather than the indicated one. 
+
+
+At 7th level, your ability to predict the behaviour of targets increases even further, allowing you to land attacks with unerring accuracy. When performing an accuracy check against the subject of your Analysis, you may use your Intelligence (Logic) modifier, rather than the stated modifier. This only works if the attack effects only the surveyed being. 
+}
+
+
 
 \section*{Discoveries}
 
-\newcommand\discovery[4]{
-\subsubsection{#1}
+\newcommand\discovery[5]{
+\subsubsection{\textit{ \textbf{#1}}}
 {\setlength\parskip{5 pt}
 \if#21
 	{\it Prerequisite: #3}
 \fi
 
 #4
+
+#5
 }
 }
 
@@ -38,42 +57,47 @@ Roll a d6 to decide what the map points to:
 6 &  Another map (roll again)
 \end{rndtable}
 \end{center}
-Every week\comma{} if possible\comma{} you may return to your trove and find a new map\comma{} rolling the d6 again.}
-\discovery{Beast Behaviour}{1}{\minus{}}{\minus{}}
-\discovery{Crafted Hexes}{0}{}{You learn how to refine and hone your hexes and other damage\minus{}causing spells. Whenever you perform a damage check due to a magical spell\comma{} you may add your intelligence modifier.}
+Every week\comma{} if possible\comma{} you may return to your trove and find a new map\comma{} rolling the d6 again.}{}
+\discovery{Crafted Hexes}{1}{3rd level scholar}{You learn how to refine and hone your hexes and other damage\minus{}causing spells. Whenever you perform a damage check due to a magical spell\comma{} you may add your intelligence modifier.}{}
 \discovery{Frame of Mind}{1}{5th level scholar}{Through trial and error\comma{} you make the discovery that a certain way of thinking can make casting some spells much easier. 
 
-Choose 2 spells which you have memorised. You cast these spells for half the normal FP cost. Beginner\minus{}level spells selected can be cast for 0FP.}
-\discovery{Hypnotic Words}{0}{}{You discover that certain words\comma{} phrases and patterns of speech can hijack the brain\comma{} altering how it processes information. 
+Choose 2 spells which you have memorised. You cast these spells for half the normal FP cost. Beginner\minus{}level spells selected can be cast for 0FP.}{You can make this discovery multiple times\comma{} making a different choice each time}
+\discovery{Hypnotic Words}{1}{14th level scholar}{You discover that certain words\comma{} phrases and patterns of speech can hijack the brain\comma{} altering how it processes information. 
 
-You take check advantage on all Persuasion and Deception checks.}
+You take check advantage on all Persuasion and Deception checks.}{}
 \discovery{Innovative Ingredient}{0}{}{You chance upon a new part of a magical plant or creature which has previously undiscovered uses in potion making. 
 
-Name a part of a magical creature or plant\comma{} which is not currently used in potion making. You may then decide upon 3 potions. This new ingredient is then considered an {\it optional ingredient} in those 3 potions\comma{} with the effect of increasing the active effect by 100\%.}
+Name a part of a magical creature or plant\comma{} which is not currently used in potion making. You may then decide upon 3 potions. This new ingredient is then considered an {\it optional ingredient} in those 3 potions\comma{} with the effect of increasing the active effect by 100\%.}{You can make this discovery multiple times\comma{} making a different choice each time}
 \discovery{Medicinal Herb}{0}{}{You have discovered that a common plant has undiscovered healing properties. You may carry up to 5 doses of this herb at any one time\comma{} and can restock it by spending 1 hour in a region where common plants grow. 
 
-By expending one of your doses\comma{} you may restore 2+1d4 hit points per Scholar level to a being of your choice\comma{} {\bf or} heal them of minor status effects such as burns\comma{} frostbite or poisoning.}
+By expending one of your doses\comma{} you may restore 2+1d4 hit points per Scholar level to a being of your choice\comma{} {\bf or} heal them of minor status effects such as burns\comma{} frostbite or poisoning.}{}
 \discovery{Mental Exercises}{0}{}{You develop a series of mental routines which strengthen the mind and build up its resistance to intrusive interference. 
 
-You become resistant to Psychic damage\comma{} and take advantage on Resist checks against spells from the {\it Psionics discipline}.}
+You become {\it Resistant} to Psychic damage\comma{} and take advantage on Resist checks against spells from the {\it Psionics} discipline.}{}
 \discovery{New Spell}{1}{10th level scholar}{Through years of research into the arcane\comma{} you harness the chaotic forces of magic into a new spell. 
 
 Upon making this discovery\comma{} describe the effects you wish the spell to have\comma{} the GM will assign it a Level\comma{} a Type and a Discipline. You may only create the spell if it falls into a discipline you are proficient in. 
 
-You instantly memorise this spell and (if you are of the appropriate level)\comma{} may cast it. You may also transcribe the spell onto paper\comma{} where others can book\minus{}cast it as normal.}
+You instantly memorise this spell and (if you are of the appropriate level)\comma{} may cast it. You may also transcribe the spell onto paper\comma{} where others can book\minus{}cast it as normal.}{You can make this discovery multiple times\comma{} making a different choice each time}
 \discovery{Novel Weapon Technique}{1}{Proficiency in at least 1 weapon}{You develop a new and interesting technique for using a certain weapon. 
 
-Choose a single weapon (i.e. a shortsword) which you are proficient in. When wielding this weapon\comma{} you deal an additional 1d6 damage on every strike.}
+Choose a single weapon (i.e. a shortsword) which you are proficient in. When wielding this weapon\comma{} you deal an additional 1d6 damage on every strike.}{You can make this discovery multiple times\comma{} making a different choice each time}
 \discovery{Original Treatment}{0}{}{You develop a new way of healing patients\comma{} and treating wounds and maladies. 
 
-Whenever you perform an action which results in a being (including yourself) recovering HP\comma{} you restore additional HP equal to your Expertise Bonus.}
+Whenever you perform an action which results in a being (including yourself) recovering HP\comma{} you restore additional HP equal to your Expertise Bonus.}{}
+\discovery{Patterns of Behaviour}{0}{}{You discover patterns of behaviour which all beings have in common. 
+
+Whenever a target of your {\it Logical Analysis} is reduced to 0HP\comma{} you can automatically transfer this feature to another valid target.}{}
 \discovery{Remarkable Alloy}{1}{7th level scholar}{You discover a new material\comma{} which is both as light as fabric\comma{} but as durable as iron. You may teach others how to create this material by spending 1 day with them. 
 
-Any armour infused with this material provides an extra +2 to Block\comma{} with no additional penalties to Dodge.}
-\discovery{Theoretical Knowledge}{1}{5th level scholar}{When using your {\it Educating the Masses} feature\comma{} you may teach others\comma{} even when you are not proficient in the skill you are teaching. When doing so\comma{} others may add only half their proficiency modifier.}
-\discovery{Universal Language}{0}{}{You learn how to boil communication down to its most fundamental facets. You can communicate basic ideas and concepts with any being with an Intelligence greater than 5\comma{} using only basic expressions\comma{} gestures and sounds.}
+Any armour infused with this material provides an extra +2 to Block\comma{} with no additional penalties to Dodge.}{}
+\discovery{Theoretical Knowledge}{1}{5th level scholar}{When using your {\it Educating the Masses} feature\comma{} you may teach others\comma{} even when you are not proficient in the skill you are teaching. When doing so\comma{} others may add only half their proficiency modifier.}{}
+\discovery{Universal Language}{0}{}{You learn how to boil communication down to its most fundamental facets. You can communicate basic ideas and concepts with any being with an Intelligence greater than 5\comma{} using only basic expressions\comma{} gestures and sounds.}{}
 \discovery{Workout Routine}{1}{10th level scholar}{You develop the perfect physical routine to hone your body and develop your health\comma{} with the minimal amount of effort. 
 
-After you make this discovery\comma{} whenever you level up you gain 1d8 health points\comma{} rather than the usual 1d6.}
+After you make this discovery\comma{} whenever you level up you gain 1d8 health points\comma{} rather than the usual 1d6.}{}
+\discovery{Zoological Connections}{0}{}{You discover how the internal processes of a being manifest themselves in their external behaviour\comma{} allowing for incredible deductions to be made\comma{} merely from observing a target. 
+
+When you use the {\it Logical Analysis} feature on a target\comma{} you learn one of its {\it Immunities}\comma{} {\it Resistances} or {\it Vulnerabilities} (if any). You may perform the Analysis multiple times on an individual being\comma{} to learn more and more information.}{}
 
 %%DiscoEnd
