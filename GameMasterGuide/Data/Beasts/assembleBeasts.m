@@ -36,12 +36,17 @@ function assembleBeasts(fileNameRoot)
         entry = "\\species{" + List(j).Name + "}{";
         entry = entry + prepareText(List(j).Description) + "}{\n";
         
+        [~,I] = sort([List(j).Beasts.Order]);
+         List(j).Beasts = List(j).Beasts(I);
+        
+  
         for k = 1:length(List(j).Beasts)
-            entry = entry + List(j).Beasts(k).print() + "\n";
+            List(j).Beasts(k).ImagePos = (mod(k,2));
+            entry = entry + List(j).Beasts(k).print() + "\n\n\n";
+            List(j).Beasts(k).Name
         end
         entry = entry + "}";
-        
-        text = text + entry + "\n\n";
+        text = text + entry + "\n\n\n\n\n";
     end
     
     

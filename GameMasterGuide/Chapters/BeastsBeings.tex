@@ -2,7 +2,7 @@
 %\documentclass{article}
 \definecolor{backcol}{rgb}{0.2,0.2,0.2}
 \definecolor{linecol}{rgb}{0.3,0.3,0.3}
-
+\twocolumn
 
 \chapter{Beasts, Beings and Other Bad Business}
 \normalsize
@@ -13,7 +13,7 @@ Beasts are living beings without intelligence or self awareness, or with such a 
 Sapients are those creatures with intelligence, language and society. Mostly humanoids (though with a few exceptions), sapients can often wield magic with intent, unlike the mindless usage of the beasts. All player characters must be sapients. For political reasons, the word {\it Beings} is often used, though Sapients such as Centaurs and the Merpeople object to sharing this category with, for example, the hags, and hence are often classified as {\it beasts}, despite their evidently sapient nature. 
 
 The Un\minus{}Life are those beings which cannot truly be called alive, and are often either inert matter brought to some mimicry of life by a spellcaster, or raw manifestations of pure magic. Often thought of as abominations due to creatures such as Dementors and Inferi, the Un\minus{}Life are often incredibly alien and hard to understand. 
-\begin{multicols}{2}
+
 \section{Beasts}
 
 \definecolor{statblockbg}{HTML}{FDF1DC} 
@@ -55,6 +55,9 @@ The Un\minus{}Life are those beings which cannot truly be called alive, and are 
 \define@key{beast}{size}{\def\size{#1}}
 \define@key{beast}{abilityBlock}{\def\aBlock{#1}}
 \define@key{beast}{description}{\def\description{#1}}
+\define@key{beast}{image}{\def\image{#1}}
+\define@key{beast}{hasImage}{\def\imageMode{#1}}
+\define@key{beast}{imPosition}{\def\imagePos{#1}}
 %%keyEnd    
 \makeatother
 
@@ -63,7 +66,7 @@ The Un\minus{}Life are those beings which cannot truly be called alive, and are 
 {
 	
 	\definecolor{rulered}{HTML}{9C2B1B} 
-		{ \huge \color{titlered}{\MakeUppercase{\name{}} }}
+		{ \Large \color{titlered}{\MakeUppercase{\name{}} }}
 		
 		{\it \summary{} (\mind{}~\category{}) }
 
@@ -73,7 +76,7 @@ The Un\minus{}Life are those beings which cannot truly be called alive, and are 
 {
 	\dndlineLong
 	{
-	\small
+	\footnotesize
 	\begin{center}
 		\begin{tabular}{@{} c c c c c c c c @{}}
 			\bf \color{titlered}{\attPhysShort{}}	&	\bf \color{titlered}{\attFinShort{}}	&	\bf \color{titlered}{\attSprShort{}}	&	\bf \color{titlered}{\attChrShort{}}	&	\bf \color{titlered}{\attIntShort{}}	&	\bf \color{titlered}{\attPerShort{}}	&	\bf \color{titlered}{\attPowShort{}}	&	\bf \color{titlered}{\attEvlShort{}}
@@ -97,9 +100,11 @@ The Un\minus{}Life are those beings which cannot truly be called alive, and are 
 			\if\immuneMode1
 				\textbf{\textit{Immunity: }} \immune
 			\fi 
+			
 			\if\resistanceMode1
 				\textbf{\textit{Resistance:}} \resistance
 			\fi
+			
 			\if\susceptibleMode1
 				\textbf{\textit{Susceptible:}}	\susceptible
 			\fi
@@ -114,23 +119,51 @@ The Un\minus{}Life are those beings which cannot truly be called alive, and are 
 {
 \textbf{\textit{#1}}: #2
 }
-\newcommand\attack[2]
+\newcommand\melee[3]
 {
-\textbf{\textit{#1}}: #2
+\textbf{\textit{#1}}: ({\it melee attack, #2 to hit}) #3
 }
+\newcommand\ranged[4]
+{
+\textbf{\textit{#1}}: ({\it ranged attack, #2 to hit, range: #3}) #4
+}
+\newcommand\bImage
+{
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width = 0.45\textwidth,height = 0.4\textwidth, keepaspectratio]{../Images/\image}
+		\end{center}
+	\end{figure}
+
+}
+\newcommand\abilityBegin
+{
+	\dndlineLong
+}
+
 
 \newcommand{\beast}[1]
 {
 	\begingroup
-	\setkeys{beast}{name = none, species = None, mind = none, category = none, summary = none, hp = 0, fp = 0, speed = 0m, fit =0, prs = 0, spr = 0, chr = 0, int = 0, pcp = 0, pow = 0, evl = 0, block = 0, dodge = 0, hasImmune = 0, immune = none, hasResistance = 0, resistance = none, hasSusceptible = 0, susceptible = none, hasAbilities =0, abilities = None, hasActions = 0, actions = None, habitat = Nowhere, sizeName = Height, size = 0, description = No description,hasFP = 0,abilityBlock=0,skills=none,hasSkills=0}
+	\setkeys{beast}{name = none, species = None, mind = none, category = none, summary = none, hp = 0, fp = 0, speed = 0m, fit =0, prs = 0, spr = 0, chr = 0, int = 0, pcp = 0, pow = 0, evl = 0, block = 0, dodge = 0, hasImmune = 0, immune = none, hasResistance = 0, resistance = none, hasSusceptible = 0, susceptible = none, hasAbilities =0, abilities = None, hasActions = 0, actions = None, habitat = Nowhere, sizeName = Height, size = 0, description = No description,hasFP = 0,abilityBlock=0,skills=none,hasSkills=0,image = None,hasImage = 0,imPosition=0}
 	
 	\setkeys{beast}{#1}
 	\definecolor{backcol}{HTML}{58180D}
 	\definecolor{linecol}{HTML}{9C2B1B}
 	\small 
-	\subsection{\large \uppercase{\name}}
-
+	
+	\if\imageMode1
+		\if\imagePos0
+			\bImage{}
+		\fi
+	\fi	
+	
+	\vbox{
+	\subsection*{\bf \name}
+	\addcontentsline{toc}{subsection}{\name}
 	\description
+
+
 
 	\begin{tcolorbox}[  before skip=7pt plus 2pt,
 						boxrule=0pt,
@@ -153,10 +186,10 @@ The Un\minus{}Life are those beings which cannot truly be called alive, and are 
 		\begin{tabular}{@{} r l r l @{}}
 			
 			\if\fpMode1
-				\bf Health: 	&	\hp	&	 \bf Fortitude:	&	\fp \\
+				\bf Health: 	&	 \hp{}~Points	&	 \bf Fortitude:	&	\fp{}~Points \\
 			\fi
 			\if \fpMode0
-				\bf Health: 	&	\hp	&	~&  ~  \\
+				\bf Health: 	&	\hp{}	Points &	~&  ~  \\
 			\fi
 			\bf Block:	&	\block & 	\bf Dodge:	&	\dodge \\	
 			\bf Speed : 	&	\parbox[t]{2.5 cm}{\raggedright \small \it \speed}	&	\bf \sizeName	&	\size
@@ -182,281 +215,716 @@ The Un\minus{}Life are those beings which cannot truly be called alive, and are 
 		
 		
 	\end{tcolorbox}
+	}
+
+	
+	\if\imageMode1
+		\if\imagePos1
+			\bImage{}
+		\fi
+	\fi	
 	
 	\endgroup
 }
 
 \newcommand\species[3]
 {
-	\section{#1}
-	
+	\newpage
+	\section*{\Huge #1}
+	\addcontentsline{toc}{section}{#1}
 	#2
+
 	
 	#3
+
+
+	
 
 }
 
 %%BeastBegin\species{Acromantula}{The acromantula are an incredibly rare \minus{} and incredibly dangerous \minus{} species of gigantic\comma{} intelligent spiders. Found mainly in dense forests\comma{} where they weave their web\minus{}covered nests\comma{} they only occaisionally go out to hunt\comma{} preferring instead to let their prey come to them. 
 
-Hatching from eggs the size of rugby balls\comma{} the oldest specimens have legspans in excess of 10 metres and weigh more than 1 tonne. Their equally enormous fangs contain a potent venom\comma{} which causes almost instant paralysis. 
+Hatching from eggs the size of rugby balls\comma{} the oldest specimens have legspans in excess of 10 metres. Their equally enormous fangs contain a potent venom.
 
 The speed\comma{} strength and venom\comma{} however\comma{} is not hwat makes the Acromantula a truly awful foe. Rather\comma{} their greatest weapon is their formiddable intellect\comma{} which allows them to outthink even the greatest wizards.}{
-\beast{name = Acromantula, species = Acromantula, mind = Sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Hatchling, species = Acromantula, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Patriarch Spider, species = Acromantula, mind = Sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+\beast{name = Acromantula Hatchling, species = Acromantula, mind = Non\minus{}sapient, category = Monstrosity, summary = Newborn Giant Spider, speed = 10 metres, habitat = Rainforests of Borneo\comma{} spread worldwide, sizeName = Legspan, size = 1 metre, fit = 8 (-1),prs = 13 (+1),spr = 6 (-2),chr = 4 (-3),int = 12 (+1),pcp = 8 (-1),pow = 8 (-1),evl = 7 (-2),hp=15, block=10, dodge=12, abilityBlock=1, hasResistance = 1, resistance = Poison damage, hasAbilities = 1, abilities = \ability{Languages}{Can speak in the spider tongue}
+
+\abilityBegin{}
+
+\ability{Spider Climb}{An acromantula may climb across all surfaces\comma{} including ceilings as part of their normal movement}
+
+\ability{Web Walker}{An acromantula takes no movement penalty when walked on webbed surfaces}, hasActions = 1, actions = \melee{Bite}{+3}{Deals 1+1d8 piercing damage. Target must suceed a DV10 Vitality check\comma{} or take an additional 2d6 poison damage}, hasSkills = 1, skills = Stealth (+4)\comma{} Nightvision, imPosition = 1,description = A newborn acromantula has a shiny\comma{} hairless and pale\minus{}grey carapace\comma{} covering their body which is only 1 metre across\comma{} and has a diminished intelligence compared to their full grown counterparts.}
+
+
+\beast{name = Acromantula, species = Acromantula, mind = Sapient, category = Monstrosity, summary = Adult Giant Spider, speed = 15 metres, habitat = Rainforests of Borneo\comma{} spread worldwide, sizeName = Legspan, size = 4 metres, fit = 14 (+2),prs = 15 (+2),spr = 10 (0),chr = 6 (-2),int = 18 (+4),pcp = 14 (+2),pow = 12 (+1),evl = 10 (0),hp=45, block=17, dodge=15, abilityBlock=1, hasResistance = 1, resistance = Poison damage, hasSusceptible = 1, susceptible = Fire damage, hasAbilities = 1, abilities = \ability{Languages}{Can speak in the spider tongue\comma{} and understand human languages.}
+
+\abilityBegin{}
+
+\ability{Spider Climb}{An acromantula may climb across all surfaces\comma{} including ceilings as part of their normal movement}
+
+\ability{Vibration Sense}{When in contact with a webbed surface\comma{} the acromantula knows the location of every other being also in contact with the web.}
+
+\ability{Web Walker}{An acromantula takes no movement penalty when walked on webbed surfaces}, hasActions = 1, actions = \melee{Bite}{+7}{Deals 6+3d8 piercing damage. Target must suceed a DV15 Vitality check\comma{} or take an additional 5d6 poison damage and take the {\it Poisoned: Mild} status effect. }
+
+\ranged{Web}{+4}{10 metres}{A target individual is covered in sticky webbing. The target is {\it Incapacitated} until they succeed on a DV 14 Strength Resist\comma{} or the webbing absorbs 5 points of physical damage.}, hasSkills = 1, skills = Stealth (+6)\comma{} Strength (+5)\comma{} Observation (+5)\comma{} Nightvision, hasImage = 1, image = Acromantula, imPosition = 0,description = A fully grown Acromantula is something to be greatly feared. They can run incredibly quickly and they utilise a ranged web attack to ensnare their pray\comma{} capturing it for later devourment….}
+
+
+\beast{name = Acromantula Patriarch, species = Acromantula, mind = Sapient, category = Monstrosity, summary = Ruler of the Spider Clan, speed = 5 metres, habitat = Rainforests of Borneo\comma{} spread worldwide, sizeName = Legspan, size = 8 metres, fit = 7 (-2),prs = 14 (+2),spr = 15 (+2),chr = 8 (-1),int = 22 (+6),pcp = 18 (+4),pow = 16 (+3),evl = 15 (+2),hp=100, block=15, dodge=5, abilityBlock=1, hasResistance = 1, resistance = Poison damage, hasSusceptible = 1, susceptible = Fire damage, hasAbilities = 1, abilities = \ability{Languages}{Can speak fluently in both Spider and human languages.}
+
+\abilityBegin{}
+
+\ability{Command Loyalty}{All nearby Acromantula of a lower rank and lesser spiders will follow the orders of the Patriarch without question.}
+
+\ability{Spider Climb}{An acromantula may climb across all surfaces\comma{} including ceilings as part of their normal movement}
+
+\ability{Vibration Sense}{When in contact with a webbed surface\comma{} the acromantula knows the location of every other being also in contact with the web.}
+
+\ability{Web Walker}{An acromantula takes no movement penalty when walked on webbed surfaces}, hasActions = 1, actions = \melee{Bite}{+4}{Deals 6d10 piercing damage. Target must suceed a DV18 Vitality check\comma{} or take an additional 15d6 poison damage and take the {\it Poisoned: Severe} status effect. }
+
+\ranged{Web}{+6}{30 metres}{A target individual is covered in sticky webbing. The target is {\it Incapacitated} until they succeed on a DV 18 Strength Resist\comma{} or the webbing absorbs 15 points of physical damage.}
+
+\ability{Webbed Domain}{A patriarch may use a major action to launch a globule of sticky material up to 10 metres away from them\comma{} which covers an area of 5m in radius. This area is considered {\it Webbed}. Movement on a webbed area is halved.}, hasSkills = 1, skills = Strength (+3)\comma{} Observation (+9), hasImage = 1, image = aragog, imPosition = 1,description = The eldest of the spider monstrosities is known as the {\it Patriarch}. Though they have reached truly gargantuan sizes\comma{} their bodies have become decrepit with age. Their minds\comma{} however\comma{} are razor sharp and they have mastered human speech.}
+
+
 }
 
-\species{Apparitions}{Apparations are ghostly creatures \minus{} spirits which inhabit the mortal realm.}{
-\beast{name = Boggart, species = Apparitions, mind = Alien, category = Eldritch, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Ghost, species = Apparitions, mind = Alien, category = Spirit, summary = Remnant of deceased human, speed = 10 metres (flying), habitat = The place of their death, sizeName = Height, size = 2 metres, fit = 0 (-5),prs = 0 (-5),spr = 14 (+2),chr = 14 (+2),int = 12 (+1),pcp = 12 (+1),pow = 0 (-5),evl = 0 (-5),hp=1, block=0, dodge=10, abilityBlock=1, hasImmune = 1, immune = All damage types, hasAbilities = 1, abilities = \ability{Incorporeal}{The ghost does not interact with the material world. It may move through physical objects at will\comma{} and float in all 3 dimensions. When inside an object\comma{} the ghost cannot see or hear. }, hasActions = 1, actions = \attack{Haunting}{The ghost releases an unearthly howl\comma{} forcing all beings to pass a DV 15 Willpower Resist\comma{} or become {\it Terrified} of it. }, hasSkills = 1, skills = Stealth (+8), description = A ghost is the imprint of the soul of a once\minus{}living wizard or witch\comma{} left to wander the material realm after their physical form has died. A ghost resembles their former selves at the moment of their death\comma{} though in a translucent\comma{} silver\minus{}grey form. 
+
+
+
+\species{Apparitions}{Apparations are ghostly creatures \minus{} spirits and ghosts which defy the laws of life and death\comma{} and yet continue to roam the mortal realms. 
+
+Though their incorporeal form renders most apparitions incapable of rendering physical harm\comma{} they can nevertheless be a terrifying sight.}{
+\beast{name = Ghost, species = Apparitions, mind = Alien, category = Spirit, summary = Remnant of deceased human, speed = 10 metres (flying), habitat = The place of their death, sizeName = Height, size = 2 metres, fit = 0 (-5),prs = 0 (-5),spr = 14 (+2),chr = 14 (+2),int = 12 (+1),pcp = 12 (+1),pow = 0 (-5),evl = 0 (-5),hp=1, block=0, dodge=10, abilityBlock=1, hasImmune = 1, immune = All damage types \& status effects, hasAbilities = 1, abilities = \abilityBegin{}
+
+\ability{Incorporeal}{The ghost does not interact with the material world. It may move through physical objects at will\comma{} and float in all 3 dimensions. When inside an object\comma{} the ghost cannot see or hear. }, hasActions = 1, actions = \ability{Haunting}{The ghost releases an unearthly howl\comma{} forcing all beings to pass a DV 15 Willpower Resist\comma{} or become {\it Terrified} of it. }, hasSkills = 1, skills = Stealth (+8), hasImage = 1, image = ghost, imPosition = 1,description = A ghost is the imprint of the soul of a once\minus{}living wizard or witch\comma{} left to wander the material realm after their physical form has died. A ghost resembles their former selves at the moment of their death\comma{} though in a translucent\comma{} silver\minus{}grey form. 
 
 No\minus{}one knows what causes a ghost to remain behind\comma{} though it is posited that these fleshless spirits were mortally afraid of death or have some extraordinarily strong connection to the locations they haunt.}
-\beast{name = Poltergeist, species = Apparitions, mind = Alien, category = Spirit, summary = (Mostly) Harmless Trickster, speed = 15 metres (flying), habitat = Wherever humans are found, sizeName = Height, size = 1 metre, fit = 8 (-1),prs = 16 (+3),spr = 15 (+2),chr = 12 (+1),int = 8 (-1),pcp = 8 (-1),pow = 7 (-2),evl = 3 (-4),hp=20, block=9, dodge=13, abilityBlock=1, hasFP = 1, fp = 10, hasResistance = 1, resistance = Piercing\comma{} Bludgeoning \& Slashing damage, hasAbilities = 1, abilities = \ability{Floating}{A poltergeist floats through the air at will\comma{} and is able to move freely in all 3 dimensions}
+
+
+\beast{name = Poltergeist, species = Apparitions, mind = Alien, category = Spirit, summary = (Mostly) Harmless Trickster, speed = 15 metres (flying), habitat = Wherever humans are found, sizeName = Height, size = 1 metre, fit = 8 (-1),prs = 16 (+3),spr = 15 (+2),chr = 12 (+1),int = 8 (-1),pcp = 8 (-1),pow = 7 (-2),evl = 3 (-4),hp=20, block=9, dodge=13, abilityBlock=1, hasFP = 1, fp = 10, hasResistance = 1, resistance = Piercing\comma{} Bludgeoning \& Slashing damage, hasAbilities = 1, abilities = \abilityBegin{}
+
+\ability{Floating}{A poltergeist floats through the air at will\comma{} and is able to move freely in all 3 dimensions}
 
 \ability{Amortal}{A poltergeist can never truly be killed. When its HP is reduced to zero\comma{} it returns to the Astral Plane\comma{} and after a number of days\comma{} it returns to the Material Realm}, hasActions = 1, actions = \ability{Discorporate}{A poltergeist can use a minor action to become incorporeal\comma{} at which point they are immune to all damage except Celestial and can move freely through solid objects. They can return to solid form as a second minor action}
 
-\ability{Innate Spellcasting}{A poltergeist can use a major action to cast the following spells without a wand: {\it Levitation}\comma{} {\it Mage Hands}\comma{} {\it Mark Surface}\comma{} {\it Throw Voice}\comma{} {\it Piercing Wail} and {\it Trip}.}, hasSkills = 1, skills = Chicanery (+5)\comma{} Acrobatics (+5)\comma{} Improvised Range Weapons, description = A poltergeist is an amortal\comma{} indestructable spirit of chaos and mischief. They appear as a short\comma{} childlike figure dressed in a motley jester\apos{}s garb\comma{} with glowing orange eyes\comma{} which twinkle with mischief. 
+\ability{Innate Spellcasting}{A poltergeist can use a major action to cast the following spells without a wand: {\it Levitation}\comma{} {\it Mage Hands}\comma{} {\it Mark Surface}\comma{} {\it Throw Voice}\comma{} {\it Piercing Wail} and {\it Trip}.}, hasSkills = 1, skills = Chicanery (+5)\comma{} Acrobatics (+5)\comma{} Improvised Range Weapons, hasImage = 1, image = peeves, imPosition = 0,description = A poltergeist is an amortal\comma{} indestructable spirit of chaos and mischief. They appear as a short\comma{} childlike figure dressed in a motley jester\apos{}s garb\comma{} with glowing orange eyes\comma{} which twinkle with mischief. 
 
 Brought into existence by a critical mass of humans\comma{} trickery and mischief\comma{} poltergeists haunt the specific place which they are tied to. 
 
 Unusually out of apparitions and other spiritual creatures\comma{} poltergeists are able to take on physical form and cast primitive forms of magic \minus{} which they use to wreak chaos and play pranks on unsuspecting humans.}
+
+
+\beast{name = Boggart, species = Apparitions, mind = Alien, category = Eldritch, summary = Aspect of Fear, speed = Depends on form, habitat = Wherever humans are found, sizeName = Height, size = Depends on form, fit = 0 (-5),prs = 10 (0),spr = 10 (0),chr = 13 (+1),int = 8 (-1),pcp = 17 (+3),pow = 0 (-5),evl = 6 (-2),hp=10, block=5, dodge=10, abilityBlock=1, hasImmune = 1, immune = All damage types \& status effects, hasSusceptible = 1, susceptible = Laughter, hasAbilities = 1, abilities = \abilityBegin{}
+
+\ability{Amortal}{A boggart can never truly be killed. When its HP is reduced to zero\comma{} it returns to the Astral Plane\comma{} and after a number of days\comma{} it returns to the Material Realm}
+
+\ability{Killing Joke}{A boggart is mortally afraid of laughter. The sound of genuine laughter causes the boggart to take 2d6 damage. }, hasActions = 1, actions = \ability{Discern Fears}{A boggart can use a minor action to peer into the soul of an individual\comma{} and learn their greatest fear. Contest a Empathy check against the victim\apos{}s Willpower Resist \minus{} on a success\comma{} the boggart learns the victim\apos{}s greatest fear. }
+
+\ability{Shapeshift}{A boggart may use a major action to transform into any shape\comma{} to represent something the target is scared of. Any being for which this is their greatest fear must pass a DV 20 Willpower Resist check or become {\it Terrified}. }, hasSkills = 1, skills = Empathy (+7), imPosition = 1,description = A manifestation of fear and primal terror\comma{} the shapeshifting boggart peers into the minds of humans\comma{} and takes the form of their worst nightmare. 
+
+A boggart can never harm you\comma{} though they can be difficult to contain. The accepted trick is to transfigure them to look stupid\comma{} prompting a fit of laughter – which is fatal to a boggart.}
+
+
 }
+
+
+
 
 \species{Arachnid}{The arachnids are a family of giant spider. Mostly formed from mundane species that were experimented upon by witches and wizards throughout history\comma{} many have since escaped into the wild\comma{} to wreak havoc on muggles and wizardkind alike.}{
-\beast{name = Great Widow, species = Arachnid, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+\beast{name = Great Widow, species = Arachnid, mind = Non\minus{}sapient, category = Beast, summary = Poisonous spider, speed = 8 metres, habitat = Urban areas, sizeName = Legspan, size = 40 centimetres, fit = 7 (-2),prs = 16 (+3),spr = 4 (-3),chr = 3 (-4),int = 4 (-3),pcp = 12 (+1),pow = 4 (-3),evl = 2 (-4),hp=25, block=7, dodge=14, abilityBlock=1, hasResistance = 1, resistance = Poison damage, hasAbilities = 1, abilities = \ability{Languages}{Can understand the spider tongue}
+
+\abilityBegin{}
+
+\ability{Spider Climb}{An Great Widow may climb across all surfaces\comma{} including ceilings as part of their normal movement}
+
+
+\ability{Vibration Sense}{When in contact with a webbed surface\comma{} the acromantula knows the location of every other being also in contact with the web.}
+
+\ability{Web Walker}{An Great Widow takes no movement penalty when walked on webbed surfaces}, hasActions = 1, actions = \melee{Bite}{+3}{Deals 3d6 poison damage. On a failed DV 10 Vitality check\comma{} the victim takes the {\it Poisoned: Mild} ststus}
+
+\ranged{Spit}{+4}{5 metres}{A globule of acid burns into you\comma{} dealing 2d8 acid damage}, hasSkills = 1, skills = Stealth (+5), hasImage = 1, image = blackWidow, imPosition = 1,description = Magical experimentation on a {\it Black Widow} produced this grossly oversized specimen\comma{} and gave it the ability to spit acid.}
+
+
 }
 
-\species{Bowtruckle}{}{
-\beast{name = Bowtruckle Flower, species = Bowtruckle, mind = Sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Bowtruckle Splinter, species = Bowtruckle, mind = Sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=1, hasSusceptible = 1, susceptible = Fire, description = }
-\beast{name = Bowtruckle Thorn, species = Bowtruckle, mind = Sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Bowtruckle}{Bowtruckles are a species of hand\minus{}sized\comma{} insect\minus{}eating humanoids which reside inside trees. Their wood\minus{}like skin and long\comma{} twig\minus{}shaped fingers make for excellent camouflage\comma{} such that they are icnredibly difficult to spot unless you happen to catch one on the move. 
+
+Normally peacable and shy creatures\comma{} they become territorial and violent when their home tree is threatened. Their long fingers (excellent for picking locks\comma{} or digging insects out of wood) also turn out to be excellent for gouging at the eyes of their enemies.}{
+\beast{name = Bowtruckle Splinter, species = Bowtruckle, mind = Sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=1, hasSusceptible = 1, susceptible = Fire, imPosition = 1,description = }
+
+
+\beast{name = Bowtruckle Flower, species = Bowtruckle, mind = Sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Bowtruckle Thorn, species = Bowtruckle, mind = Sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, hasImage = 1, image = bowtruckle, imPosition = 1,description = }
+
+
 }
 
-\species{Celestial Servant}{}{
-\beast{name = Abyssal Servant, species = Celestial Servant, mind = Alien, category = Eldritch, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Angel, species = Celestial Servant, mind = Alien, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Demonus Temporus, species = Celestial Servant, mind = Alien, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Judiciary, species = Celestial Servant, mind = Alien, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Celestial Servant}{b}{
+\beast{name = Angel, species = Celestial Servant, mind = Alien, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Abyssal Servant, species = Celestial Servant, mind = Alien, category = Eldritch, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Judiciary, species = Celestial Servant, mind = Alien, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Demonus Temporus, species = Celestial Servant, mind = Alien, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
 }
 
-\species{Ceratothid}{}{
-\beast{name = Erumpet, species = Ceratothid, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Graphorn, species = Ceratothid, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Re'em, species = Ceratothid, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Ceratothid}{The Ceratothids are a family of loosely related magical quadrupeds. Defined by their huge bulk and relatively bovine\minus{}like appearance\comma{} most Ceratothid\apos{}s have a gentle temperament until angered\comma{} at which point their great mass and inherent magic makes them dangerous foes.}{
+\beast{name = Graphorn, species = Ceratothid, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Erumpet, species = Ceratothid, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Re'em, species = Ceratothid, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Chimaera}{}{
-\beast{name = Chimaera, species = Chimaera, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Chimaera}{d}{
+\beast{name = Chimaera, species = Chimaera, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Cloaked Spirits}{}{
-\beast{name = Dementor, species = Cloaked Spirits, mind = Alien, category = Eldritch, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Lethifold, species = Cloaked Spirits, mind = Alien, category = Eldritch, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Cloaked Spirits}{b}{
+\beast{name = Dementor, species = Cloaked Spirits, mind = Alien, category = Eldritch, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Lethifold, species = Cloaked Spirits, mind = Alien, category = Eldritch, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
 }
 
-\species{Clockwork Soldier}{}{
-\beast{name = Clockwork Solider, species = Clockwork Soldier, mind = Alien, category = Construct, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Clockwork Soldier}{c}{
+\beast{name = Clockwork Solider, species = Clockwork Soldier, mind = Alien, category = Construct, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Creation}{}{
-\beast{name = Blast\minus{}Ended Skrewt, species = Creation, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Hidebehind, species = Creation, mind = Sapient, category = Spirit, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Creation}{d}{
+\beast{name = Hidebehind, species = Creation, mind = Sapient, category = Spirit, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Blast\minus{}Ended Skrewt, species = Creation, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
 }
 
-\species{Demiguise}{}{
-\beast{name = Demiguise, species = Demiguise, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Demiguise}{b}{
+\beast{name = Demiguise, species = Demiguise, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Demon}{}{
-\beast{name = Grindylow, species = Demon, mind = Non\minus{}sapient, category = Humanoid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Kappa, species = Demon, mind = Alien, category = Humanoid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Kelpie, species = Demon, mind = Alien, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Nogtail, species = Demon, mind = Alien, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Pogrebin, species = Demon, mind = Sapient, category = Humanoid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Shadow Demon, species = Demon, mind = Alien, category = Eldritch, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Demon}{c}{
+\beast{name = Grindylow, species = Demon, mind = Non\minus{}sapient, category = Humanoid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Kappa, species = Demon, mind = Alien, category = Humanoid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Kelpie, species = Demon, mind = Alien, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Nogtail, species = Demon, mind = Alien, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Pogrebin, species = Demon, mind = Sapient, category = Humanoid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Shadow Demon, species = Demon, mind = Alien, category = Eldritch, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
 }
 
-\species{Dragon}{}{
-\beast{name = Antipodean Opaleye, species = Dragon, mind = Sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Chinese Fireball, species = Dragon, mind = Non\minus{}sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Common Welsh Green, species = Dragon, mind = Non\minus{}sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Hebridean Black, species = Dragon, mind = Non\minus{}sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Hungarian Horntail, species = Dragon, mind = Non\minus{}sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Norwegian Ridgeback, species = Dragon, mind = Best, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Peruvian Vipertooth, species = Dragon, mind = Sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Romanian Longhorn, species = Dragon, mind = Non\minus{}sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Swedish Shortsnout, species = Dragon, mind = Sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Ukranian Ironbelly, species = Dragon, mind = Sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Dragon}{d}{
+\beast{name = Antipodean Opaleye, species = Dragon, mind = Sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Chinese Fireball, species = Dragon, mind = Non\minus{}sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Common Welsh Green, species = Dragon, mind = Non\minus{}sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Hebridean Black, species = Dragon, mind = Non\minus{}sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Hungarian Horntail, species = Dragon, mind = Non\minus{}sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Norwegian Ridgeback, species = Dragon, mind = Best, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Peruvian Vipertooth, species = Dragon, mind = Sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Romanian Longhorn, species = Dragon, mind = Non\minus{}sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Swedish Shortsnout, species = Dragon, mind = Sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Ukranian Ironbelly, species = Dragon, mind = Sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
 }
 
-\species{Dugbog}{}{
-\beast{name = Dugbog, species = Dugbog, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Dugbog}{b}{
+\beast{name = Dugbog, species = Dugbog, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Elemental Avatar}{}{
-\beast{name = Avatar of Fire, species = Elemental Avatar, mind = Alien, category = Elemental, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Avatar of Ice, species = Elemental Avatar, mind = Alien, category = Elemental, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Avatar of Storms, species = Elemental Avatar, mind = Alien, category = Elemental, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Elemental Avatar}{c}{
+\beast{name = Avatar of Fire, species = Elemental Avatar, mind = Alien, category = Elemental, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Avatar of Ice, species = Elemental Avatar, mind = Alien, category = Elemental, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Avatar of Storms, species = Elemental Avatar, mind = Alien, category = Elemental, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Elf}{}{
-\beast{name = Erkling, species = Elf, mind = Non\minus{}sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Gnome, species = Elf, mind = Non\minus{}sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Gringwart Goff, species = Elf, mind = Sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Pixie, species = Elf, mind = Non\minus{}sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Red Cap, species = Elf, mind = Sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Elf}{d}{
+\beast{name = Erkling, species = Elf, mind = Non\minus{}sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Gnome, species = Elf, mind = Non\minus{}sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Gringwart Goff, species = Elf, mind = Sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Pixie, species = Elf, mind = Non\minus{}sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Red Cap, species = Elf, mind = Sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Fairy}{}{
-\beast{name = Doxy, species = Fairy, mind = Non\minus{}sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = True Fairy, species = Fairy, mind = Non\minus{}sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Fairy}{b}{
+\beast{name = Doxy, species = Fairy, mind = Non\minus{}sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = True Fairy, species = Fairy, mind = Non\minus{}sapient, category = Imp, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
 }
 
-\species{Fish}{}{
-\beast{name = Lobalug, species = Fish, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Plimpy, species = Fish, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Ramora, species = Fish, mind = Non\minus{}sapient, category = Spirit, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Fish}{c}{
+\beast{name = Lobalug, species = Fish, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Plimpy, species = Fish, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Ramora, species = Fish, mind = Non\minus{}sapient, category = Spirit, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Flora}{}{
-\beast{name = Bundimun, species = Flora, mind = Non\minus{}sapient, category = Flora, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Horklump, species = Flora, mind = Non\minus{}sapient, category = Flora, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Mandrake, species = Flora, mind = Non\minus{}sapient, category = Flora, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Whomping Willow, species = Flora, mind = Non\minus{}sapient, category = Flora, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Flora}{d}{
+\beast{name = Bundimun, species = Flora, mind = Non\minus{}sapient, category = Flora, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Horklump, species = Flora, mind = Non\minus{}sapient, category = Flora, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Mandrake, species = Flora, mind = Non\minus{}sapient, category = Flora, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Whomping Willow, species = Flora, mind = Non\minus{}sapient, category = Flora, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
 }
 
-\species{Golem}{}{
-\beast{name = Crystal Golem, species = Golem, mind = Alien, category = Construct, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Iron Golem, species = Golem, mind = Alien, category = Construct, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Stone Golem, species = Golem, mind = Alien, category = Construct, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Golem}{b}{
+\beast{name = Crystal Golem, species = Golem, mind = Alien, category = Construct, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Iron Golem, species = Golem, mind = Alien, category = Construct, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Stone Golem, species = Golem, mind = Alien, category = Construct, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Hag}{}{
-\beast{name = Druidic Hag, species = Hag, mind = Sapient, category = Humanoid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Hag, species = Hag, mind = Sapient, category = Humanoid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Necrotic Hag, species = Hag, mind = Sapient, category = Humanoid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Water Hag, species = Hag, mind = Sapient, category = Humanoid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Hag}{c}{
+\beast{name = Druidic Hag, species = Hag, mind = Sapient, category = Humanoid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Hag, species = Hag, mind = Sapient, category = Humanoid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Necrotic Hag, species = Hag, mind = Sapient, category = Humanoid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Water Hag, species = Hag, mind = Sapient, category = Humanoid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
 }
 
-\species{Herald}{}{
-\beast{name = Augrey, species = Herald, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Pheonix, species = Herald, mind = Sapient, category = Spirit, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Herald}{d}{
+\beast{name = Augrey, species = Herald, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Pheonix, species = Herald, mind = Sapient, category = Spirit, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
 }
 
-\species{Hybrid}{}{
-\beast{name = Griffin, species = Hybrid, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Hippocampus, species = Hybrid, mind = Sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Hippogriff, species = Hybrid, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Hybrid}{b}{
+\beast{name = Griffin, species = Hybrid, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Hippocampus, species = Hybrid, mind = Sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Hippogriff, species = Hybrid, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Inhabitor}{}{
-\beast{name = Inhabitor, species = Inhabitor, mind = Alien, category = Eldritch, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Inhabitor}{c}{
+\beast{name = Inhabitor, species = Inhabitor, mind = Alien, category = Eldritch, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Insectum Magicae}{}{
-\beast{name = Billywig, species = Insectum Magicae, mind = Non\minus{}sapient, category = Insectoid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Chizpurfle, species = Insectum Magicae, mind = Non\minus{}sapient, category = Insectoid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Fire Crab, species = Insectum Magicae, mind = Non\minus{}sapient, category = Elemental, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Flesh\minus{}Eating Slug, species = Insectum Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Flobberworm, species = Insectum Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Glumbumble, species = Insectum Magicae, mind = Non\minus{}sapient, category = Insectoid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Streeler, species = Insectum Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Insectum Magicae}{d}{
+\beast{name = Billywig, species = Insectum Magicae, mind = Non\minus{}sapient, category = Insectoid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Chizpurfle, species = Insectum Magicae, mind = Non\minus{}sapient, category = Insectoid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Fire Crab, species = Insectum Magicae, mind = Non\minus{}sapient, category = Elemental, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Flesh\minus{}Eating Slug, species = Insectum Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Flobberworm, species = Insectum Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Glumbumble, species = Insectum Magicae, mind = Non\minus{}sapient, category = Insectoid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Streeler, species = Insectum Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Lich}{}{
-\beast{name = Lich, species = Lich, mind = Alien, category = Undead, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Lich}{b}{
+\beast{name = Lich, species = Lich, mind = Alien, category = Undead, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Mammalia Magicae}{}{
-\beast{name = Jarvey, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Kneazle, species = Mammalia Magicae, mind = Sapient, category = Spirit, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Mooncalf, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Murtlap, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Niffler, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Best, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Porlock, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Wampus Cat, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Mammalia Magicae}{c}{
+\beast{name = Jarvey, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Kneazle, species = Mammalia Magicae, mind = Sapient, category = Spirit, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Mooncalf, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Murtlap, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Niffler, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Best, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Porlock, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Wampus Cat, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Manticore}{}{
-\beast{name = Manticore, species = Manticore, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Manticore}{d}{
+\beast{name = Manticore, species = Manticore, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Nundu}{}{
-\beast{name = Nundu, species = Nundu, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Nundu}{b}{
+\beast{name = Nundu, species = Nundu, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Ogre}{}{
-\beast{name = Ghoul, species = Ogre, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Troll, species = Ogre, mind = Non\minus{}sapient, category = Gigantoid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Yeti, species = Ogre, mind = Non\minus{}sapient, category = Gigantoid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Ogre}{c}{
+\beast{name = Ghoul, species = Ogre, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Troll, species = Ogre, mind = Non\minus{}sapient, category = Gigantoid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Yeti, species = Ogre, mind = Non\minus{}sapient, category = Gigantoid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Ophidian}{}{
-\beast{name = Basilisk, species = Ophidian, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Cockatrice, species = Ophidian, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Runespoor, species = Ophidian, mind = Sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Ophidian}{d}{
+\beast{name = Basilisk, species = Ophidian, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Cockatrice, species = Ophidian, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Runespoor, species = Ophidian, mind = Sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Ornithes Magicae}{}{
-\beast{name = Diricawl, species = Ornithes Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Fwooper, species = Ornithes Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Jobberknoll, species = Ornithes Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Snidget, species = Ornithes Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Ornithes Magicae}{b}{
+\beast{name = Diricawl, species = Ornithes Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Fwooper, species = Ornithes Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Jobberknoll, species = Ornithes Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Snidget, species = Ornithes Magicae, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
 }
 
-\species{Pegasus}{}{
-\beast{name = Thestral, species = Pegasus, mind = Alien, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Winged Horse, species = Pegasus, mind = Alien, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Pegasus}{c}{
+\beast{name = Thestral, species = Pegasus, mind = Alien, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Winged Horse, species = Pegasus, mind = Alien, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
 }
 
-\species{Puffskein}{}{
-\beast{name = Puffskein, species = Puffskein, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Pygmy Puff, species = Puffskein, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Puffskein}{d}{
+\beast{name = Puffskein, species = Puffskein, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Pygmy Puff, species = Puffskein, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
 }
 
-\species{Quintaped}{}{
-\beast{name = Quintaped, species = Quintaped, mind = Sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Quintaped}{b}{
+\beast{name = Quintaped, species = Quintaped, mind = Sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Raised Dead}{}{
-\beast{name = Banshee, species = Raised Dead, mind = Alien, category = Undead, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Inferius, species = Raised Dead, mind = Alien, category = Undead, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Raised Dead}{c}{
+\beast{name = Banshee, species = Raised Dead, mind = Alien, category = Undead, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Inferius, species = Raised Dead, mind = Alien, category = Undead, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
 }
 
-\species{Salamander}{}{
-\beast{name = Ashwinder, species = Salamander, mind = Non\minus{}sapient, category = Elemental, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Fire Salamander, species = Salamander, mind = Non\minus{}sapient, category = Elemental, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Frost Salamander, species = Salamander, mind = Non\minus{}sapient, category = Elemental, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Moke, species = Salamander, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Salamander}{d}{
+\beast{name = Ashwinder, species = Salamander, mind = Non\minus{}sapient, category = Elemental, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Fire Salamander, species = Salamander, mind = Non\minus{}sapient, category = Elemental, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Frost Salamander, species = Salamander, mind = Non\minus{}sapient, category = Elemental, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Moke, species = Salamander, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
 }
 
-\species{Summoned}{}{
-\beast{name = Draconic Guardians, species = Summoned, mind = Non\minus{}sapient, category = Construct, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Summoned Bird, species = Summoned, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Summoned Snakes, species = Summoned, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Summoned}{c}{
+\beast{name = Draconic Guardians, species = Summoned, mind = Non\minus{}sapient, category = Construct, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Summoned Bird, species = Summoned, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Summoned Snakes, species = Summoned, mind = Non\minus{}sapient, category = Beast, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Swooping Evil}{}{
-\beast{name = Swooping Evil, species = Swooping Evil, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Swooping Evil}{b}{
+\beast{name = Swooping Evil, species = Swooping Evil, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Thunderbird}{}{
-\beast{name = Thunderbird, species = Thunderbird, mind = Non\minus{}sapient, category = Elemental, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Thunderbird}{c}{
+\beast{name = Thunderbird, species = Thunderbird, mind = Non\minus{}sapient, category = Elemental, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
 }
 
-\species{Unicorn}{}{
-\beast{name = Bicorn, species = Unicorn, mind = Sapient, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Mackled Malaclaw, species = Unicorn, mind = Non\minus{}sapient, category = Spirit, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Tebo, species = Unicorn, mind = Non\minus{}sapient, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Unicorn, species = Unicorn, mind = Sapient, category = Spirit, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Unicorn}{d}{
+\beast{name = Bicorn, species = Unicorn, mind = Sapient, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Mackled Malaclaw, species = Unicorn, mind = Non\minus{}sapient, category = Spirit, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
+\beast{name = Tebo, species = Unicorn, mind = Non\minus{}sapient, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Unicorn, species = Unicorn, mind = Sapient, category = Spirit, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
 }
 
-\species{Wyvern}{}{
-\beast{name = Occamy, species = Wyvern, mind = Non\minus{}sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
-\beast{name = Sea Serpent, species = Wyvern, mind = Non\minus{}sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = NaN (NaN),prs = NaN (NaN),spr = NaN (NaN),chr = NaN (NaN),int = NaN (NaN),pcp = NaN (NaN),pow = NaN (NaN),evl = NaN (NaN),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, description = }
+
+
+
+\species{Wyvern}{b}{
+\beast{name = Occamy, species = Wyvern, mind = Non\minus{}sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 1,description = }
+
+
+\beast{name = Sea Serpent, species = Wyvern, mind = Non\minus{}sapient, category = Draconid, summary = , speed = , habitat = , sizeName = , size = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, imPosition = 0,description = }
+
+
 }
+
+
+
 
 
 %%BeastEnd
 
-\end{multicols}

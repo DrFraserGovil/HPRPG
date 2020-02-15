@@ -4,12 +4,16 @@ classdef Species < handle
         Name
         Description
         Beasts
+       
     end
     
     methods
-        function obj = Species(name,description)
+        function obj = Species(name,description,image,image2)
             obj.Name = string(name);
             obj.Description = string(description);
+            
+            
+            
             
             obj.Beasts=Beast.empty;
         end

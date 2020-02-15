@@ -39,10 +39,16 @@ classdef Beast
         SizeName
         Size
         Description
+        Order
+        
+        Image
+        hasImage
+        ImagePos
     end
     
     methods
         function obj = Beast(tableLine)
+            obj.Order = tableLine.SpeciesOrder(1);
             obj.Name = tableLine.Name{1};
             obj.Species = tableLine.Species{1};
             obj.Mind = tableLine.Mind{1};
@@ -106,6 +112,13 @@ classdef Beast
             obj.SizeName = tableLine.SizeName{1};
             obj.Size = tableLine.SizeValue{1};
             obj.Description = tableLine.Description;
+            
+            obj.hasImage = false;
+            obj.Image =tableLine.Image{1};
+            if ~isempty(obj.Image)
+                obj.hasImage = true;
+            end
+            obj.ImagePos = 0;
         end
         
         function text = print(obj)
@@ -126,17 +139,17 @@ classdef Beast
                 text = text + numTitles(i) + "="+num2str(numArray(i)) + ", ";
             end
             
-            hasTitles = ["hasFP","hasImmune","hasResistance","hasSusceptible","hasAbilities","hasActions","hasSkills"];
-            hasTriggers = [obj.hasFP, obj.hasImmune,obj.hasResistant, obj.hasSusceptible, obj.hasAbilities, obj.hasActions,obj.hasSkills];
-            includeTitles = ["fp", "immune", "resistance", "susceptible","abilities","actions","skills"];
-            includeVals = [num2str(obj.FP), string(obj.Immune), string(obj.Resistant), string(obj.Susceptible), string(obj.Abilities), string(obj.Actions), string(obj.Skills)];
+            hasTitles = ["hasFP","hasImmune","hasResistance","hasSusceptible","hasAbilities","hasActions","hasSkills","hasImage"];
+            hasTriggers = [obj.hasFP, obj.hasImmune,obj.hasResistant, obj.hasSusceptible, obj.hasAbilities, obj.hasActions,obj.hasSkills,obj.hasImage];
+            includeTitles = ["fp", "immune", "resistance", "susceptible","abilities","actions","skills","image"];
+            includeVals = [num2str(obj.FP), string(obj.Immune), string(obj.Resistant), string(obj.Susceptible), string(obj.Abilities), string(obj.Actions), string(obj.Skills),string(obj.Image)];
             
             for i = 1:length(hasTitles)
                if hasTriggers(i) 
                   text = text +  hasTitles(i) + " = 1, " + prepareText(includeTitles(i)) + " = " + prepareText(includeVals(i)) + ", ";
                end
             end
-            
+            text = text + "imPosition = " + num2str(obj.ImagePos) + ",";
             text = text + "description = " + prepareText(obj.Description) + "}";
         end
         
@@ -146,10 +159,15 @@ classdef Beast
             
             s = "";
             for i = 1:length(names)
-              
+                
                 v = vals(i);
+                if isnan(v)
+                    v = 0;
+                end
                 mod = floor((v - 10)/2);
+                
                 sMod = num2str(mod);
+                
                 if mod > 0
                     sMod = "+"+sMod;
                 end
