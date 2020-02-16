@@ -3,12 +3,122 @@
 \addcontentsline{toc}{section}{Berserker}
 An intro bit of text 
 
-%%archBegin\archetype{name=Berserker, hp=12, fp=6, armour=None, tool=, disc=, weapon=, prof=, equip=, memorised=, expertI = 2, maxspellI = Beginner, bonusI = Test, expertII = 2, maxspellII = Beginner, expertIII = 2, maxspellIII = Beginner, expertIV = 3, maxspellIV = Beginner, expertV = 3, maxspellV = Novice, expertVI = 3, maxspellVI = Novice, expertVII = 3, maxspellVII = Novice, expertVIII = 4, maxspellVIII = Novice, expertIX = 4, maxspellIX = Novice, expertX = 4, maxspellX = Adept, expertXI = 4, maxspellXI = Adept, expertXII = 5, maxspellXII = Adept, expertXIII = 5, maxspellXIII = Adept, expertXIV = 5, maxspellXIV = Adept, expertXV = 5, maxspellXV = Master, expertXVI = 6, maxspellXVI = Master, expertXVII = 6, maxspellXVII = Master, expertXVIII = 6, maxspellXVIII = Master, expertXIX = 6, maxspellXIX = Master, expertXX = 7, maxspellXX = Ascendant, shortmode = 0}
+%%archBegin\archetype{name=Berserker, hp=12, fp=6, armour=All Armour, tool=None, disc=Choose one spell discipline., weapon=Simple Weapons\comma{}  Bladed Weapons \& Brutish Weapons, prof=Strength and choose an additional one from : Vitality\comma{} Speed\comma{} Intimidation\comma{} Nature., equip=A wand\comma{} a fighter pack  containing a set of Hardened Furs \& either a) a greataxe\comma{} b) a greatsword  or c) 2  lightaxes., memorised=2 spells from the basic spells table., listIName =Fury, singleListMode = 1, listIIName = Endurance, doubleListMode = 1, expertI = 2, maxspellI = Beginner, bonusI = Battle Fury\comma{} Defy Exhaustion, listI_I= 1d4, listII_I= 1, expertII = 2, maxspellII = Beginner, bonusII = Berserker Training I, listI_II= 1d4, listII_II= 2, expertIII = 2, maxspellIII = Beginner, listI_III= 1d6, listII_III= 2, expertIV = 3, maxspellIV = Beginner, bonusIV = Additional Attack, listI_IV= 1d6, listII_IV= 3, expertV = 3, maxspellV = Novice, bonusV = Honed Senses, listI_V= 1d8, listII_V= 3, expertVI = 3, maxspellVI = Novice, bonusVI = Berserker Training II, listI_VI= 1d8, listII_VI= 4, expertVII = 3, maxspellVII = Novice, listI_VII= 1d10, listII_VII= 4, expertVIII = 4, maxspellVIII = Novice, bonusVIII = Feral Fury, listI_VIII= 1d10, listII_VIII= 5, expertIX = 4, maxspellIX = Novice, listI_IX= 3d4, listII_IX= 5, expertX = 4, maxspellX = Adept, bonusX = Berserker Training III, listI_X= 3d4, listII_X= 6, expertXI = 4, maxspellXI = Adept, listI_XI= 3d4, listII_XI= 6, expertXII = 5, maxspellXII = Adept, bonusXII = Additional Attack II, listI_XII= 2d8, listII_XII= 7, expertXIII = 5, maxspellXIII = Adept, listI_XIII= 2d8, listII_XIII= 7, expertXIV = 5, maxspellXIV = Adept, bonusXIV = Berserker Training IV, listI_XIV= 2d8, listII_XIV= 8, expertXV = 5, maxspellXV = Master, listI_XV= 3d6, listII_XV= 8, expertXVI = 6, maxspellXVI = Master, bonusXVI = Mighty Strength, listI_XVI= 3d6, listII_XVI= 9, expertXVII = 6, maxspellXVII = Master, listI_XVII= 3d6, listII_XVII= 9, expertXVIII = 6, maxspellXVIII = Master, bonusXVIII = Berserker Training V, listI_XVIII= 1d20, listII_XVIII= 10, expertXIX = 6, maxspellXIX = Master, listI_XIX= 1d20, listII_XIX= 10, expertXX = 7, maxspellXX = Ascendant, bonusXX = Eternal Wrath, listI_XX= 1d20, listII_XX= $\infty$, shortmode = 0}
 %%archEnd
 
 
 \section*{Acquired Feats}
 
-As with a Barbarian, the berserker will be built around the `rage' feature. 
+\feat{Battle Fury}
+{
+From 1st level, you learn to exhibit the trademark of the Beserker clans: your {\it Battle Fury}. 
 
-Popular idea is that you get a `Rage Die'. When you enter rage, you roll the dice. Add this result to all FIT checks etc, remove it from all damage taken. Everytime you take damage \minus{} if it is larger than current value, you increase your rage to that amount. 
+You may choose to enter into your frenzied state at the beginning of your turn, at which point you roll your {\it Fury Dice}. This starts out as a 1d4, and increases in line with the `Fury' column in the Archetype table. The value of this roll is your {\it Fury Value}.
+
+
+Whilst in a Frenzied State, you get the following benefits:
+
+\begin{itemize}
+	\item You add your current Fury Value to any \attPhys{} or \attSpr{} checks that you make
+	\item Any damage rolls you make are increased by an amount equal to your current Fury Value. 
+	\item Whenever you take damage (except Psychic or Celestial), reduce the amount taken by your current Fury Value. 
+\end{itemize} 
+
+However, in such a furious state, you lose the ability to concentrate quite as effectively:
+\begin{itemize}
+	\item You cannot maintain concentration: you cannot cast {\it Focus} or {\it Ritual} spells whilst frenzied, and you cannot book\minus{}cast spells of any kind. 
+	\item Your heightened adrenaline makes aiming ranged attacks harder: take check\minus{}disadvantage on all ranged accuracy checks and your arcane subjugation value is halved. 
+\end{itemize}
+
+
+Every time you take damage (even if it was reduced to zero by your Fury), you re\minus{}roll your Fury Dice. If the value is larger than your current Fury Value, you increase your FV to this new level.
+
+Your Battle Fury lasts until it is terminated by one of the following conditions:
+\begin{itemize}
+	\item Two consecutive combat rounds pass without attacking, or being attacked
+	\item You fall to 0HP, or are knocked unconscious
+	\item You take the {\it Charmed}, {\it Confused}, or {\it Terrified} status effects. 
+\end{itemize}
+
+When a Battle Fury is terminated, the Berserker gains an additional level of Exhaustion. 
+
+}
+
+\feat{Defy Exhaustion}
+{
+At first level, your barbarian physiology allows you to push your body further than anybody else thought possible. You gain a number of additional `Endurance Points', which increase with your Berserker level, as shown in the Archetype table. 
+
+These Endurance points allow you to brush aside the effects of exhaustion and tiredness. Whenever you are indicated to take an additional level of exhaustion, a Berserker can instead expend an Endurance point, to mitigate this effect. 
+
+When you run out of Endurance points, you begin to take levels of exhaustion as normal. 
+
+Your endurance points regenerate on a long rest. You may not, however, then expend endurance points to remove any exhaustion levels you have gained, they can only be used to prevent the status from being acquired in the first place.
+}
+
+\feat{Berserker Training}
+{
+At 2nd level, and then again at 6th, 10th, 14th and 18th levels, you get the chance to improve and extend your abilities in areas of your choice. 
+
+Choose a new feature from the Training Regimens found at the end of the Archetype. 
+}
+
+\feat{Additional Attack}
+{
+	At 4th level, and again at 12th level, whenever you make a major-action attack you may perform an additional strike. 
+}
+
+\feat{Honed Senses}
+{
+	From 5th level, your senses have become accustomed to your barbarous lifestyle, and you have developed a 6th sense for when things are about to go wrong. 
+
+	You cannot be surprised, and sneak attacks which would normally trigger a critical strike function as normal attacks against you. 
+}
+
+\feat{Feral Fury}
+{
+	From 8th level, if you enter into Battle Fury as soon as a combat encounter starts you gain a bonus. 
+	
+	If the result of your initial Fury Dice is less than half you Barbarian level, you may use that value instead. 
+}
+
+\feat{Mighty Strength}
+{
+	From 16th level, your Strength knows no bounds. 
+	
+	Whenever you perform a Strength check with a result less than your \attPhys{} (Strength) value, you may use that value instead. 
+}
+
+\feat{Eternal Wrath}
+{
+	At 20th level, the adrenaline pumping through your veins is second nature to you. You spend almost every second in a perpetual, all consuming\minus{}rage. 
+	
+	Your Endurance Points become truly unlimited, and you take check\minus{}advantage any time you roll your Fury Dice. 
+}
+
+\section*{Training Regimens}
+
+\subfeat{Controlled Fury}{You may attempt to control your fury. As a minor action you can exit your Battle Fury, and if you pass a DV 15 Logic check, it does not cost you an additional point of Exhaustion.}
+
+\subfeat{Defensive Burst}{By halving your current Fury Value, you may use a Major action to dash over to an ally within movement range, and save them from incoming danger - negating all attacks on them this turn. }
+
+\subfeat{Energizing Fury}{When in a frenzied state, you do not feel the effects of Exhaustion. You may ignore the effects of the {\it Exhausted} status effect until you exit your frenzied state.}
+
+\subfeat{Furious Spellcaster}{You no longer take disadvantage on ranged accuracy checks when casting spells when in a rage, and your Arcane Subjugation value is not halved. The restriction of Focus and Ritual spells remains, however. }
+
+\subfeat{Howling Barbarian}{You learn how to use a major action to release a blood-curdling howl, and perform a Fitness (Intimidation), Spirit (Intimidation) or Power (Intimidation) check (your choice). All beings within 5m must resist this with a Willpower check, or become {\it Terrified} of you.}
+
+\subfeat{Instinctive Retribution}{When attacked, you may choose to sacrifice your {\it Instincts} (setting Block and Dodge to 0 for this round), and make an additional full-turn attack on the being which attacked you.}
+
+\subfeat{Night Fighter}{You become so used to training in dingy conditions that only complete obscuration bothers you. You do not take check-disadvantage when attack dimly lit or lightly obscured targets.}
+
+\subfeat{Reckless Attack}{Whilst in a frenzied state, you can throw aside all concern for your own safety and declare that an attack is {\it Reckless}. You gain advantage on accuracy rolls this turn cycle, but all attacks made against you also get advantage.}
+
+\subfeat{Shieldbreaker}{When you perform a critical strike against an individual if you choose to damage their equipment you may deal a single `normal' attack as well.}
+
+\subfeat{Simmering Rage}{If you re-enter a frenzied state within 30 seconds of exiting it, you may retake your previous Fury Value}
+
+\subfeat{Spell Resistance}{Whilst in a frenzied state you gain check-advantage on all Resist checks against spells.}
+
+ 
+
+
