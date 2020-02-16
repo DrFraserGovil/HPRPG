@@ -87,7 +87,7 @@ function archetypeAssembler(fileNameRoot)
 
         secondHalf = prepareText(readFile(endPoint:end),0);
 
-        fullText = firstHalf + text  + "\n"+ secondHalf
+        fullText = firstHalf + text  + "\n"+ secondHalf;
 
         FID = fopen(targetName,'w');
         fprintf(FID, fullText);
