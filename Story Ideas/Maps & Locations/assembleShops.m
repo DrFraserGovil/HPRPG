@@ -7,35 +7,39 @@ function assembleShops(fileNameRoot)
         disp('Insufficient inputs provided');
         addpath('../../CoreRulebook/Data/Functions/');
         fileNameRoot = '';
- 
-    end
+		originRoot = '';
+	end
   
+	texFiles = dir(originRoot + "*.tex");
+    for i = 1:length(texFiles)
+        targetName = texFiles(i).name;
+        originName = targetName(1:end-4) + ".xlsx";
 
-    f = readtable("DiagonAlley.xlsx");
-    f = sortrows(f);
-    h = height(f);
-    
-    text = "";
-    for i = 1:h
-        b = Shop(f(i,:));
-        
-       text = text + b.print() + "\n\n";
-    end
-    
-   
-    
-    targetName = fileNameRoot + "DiagonAlley.tex";
-    readFile = fileread(targetName);
-    insertPoint = strfind(readFile, '%%ShopBegin');
-    endPoint = strfind(readFile, '%%ShopEnd');
-    firstHalf = prepareText(readFile(1:insertPoint+11),0,0);
+		f = readtable(originName);
+		f = sortrows(f);
+		h = height(f);
 
-    secondHalf = prepareText(readFile(endPoint:end),0,0);
+		text = "";
+		for i = 1:h
+			b = Shop(f(i,:));
 
-    fullText = firstHalf + text  + "\n"+ secondHalf;
+		   text = text + b.print() + "\n\n";
+		end
 
-    FID = fopen(targetName,'w');
-    fprintf(FID, fullText);
-    fclose(FID);
-    
+
+
+
+		readFile = fileread(targetName);
+		insertPoint = strfind(readFile, '%%ShopBegin');
+		endPoint = strfind(readFile, '%%ShopEnd');
+		firstHalf = prepareText(readFile(1:insertPoint+11),0,0);
+
+		secondHalf = prepareText(readFile(endPoint:end),0,0);
+
+		fullText = firstHalf + text  + "\n"+ secondHalf;
+
+		FID = fopen(targetName,'w');
+		fprintf(FID, fullText);
+		fclose(FID);
+	end
 end

@@ -85,7 +85,7 @@ Gain an additional #1 #2 damage \forEvery{}.
 \newcommand{\tablecolorlight}{papyrus!17}
 \newcommand{\tablecolordark}{papDark!65}
 \newcommand{\tablecolorhead}{papDark!250}
-\newcommand{\tablehead}{ \rowcolor{\tablecolorhead}}
+\newcommand{\tableheader}{ \rowcolor{\tablecolorhead}}
 \newcommand{\tablealternate}{ \rowcolors{2}{\tablecolorlight}{\tablecolordark}}
 \newcommand{\archetypealternate}{ \rowcolors{2}{papyrus}{papyrus!40}}
 
@@ -143,7 +143,7 @@ Gain an additional #1 #2 damage \forEvery{}.
   \rowcolors{2}{\tablecolorlight}{\tablecolordark}%
   \savebox{\tablebox}{%
     \begin{tabular}{#1}%
-		 \tablehead
+		 \tableheader
       \BODY%
     \end{tabular}}%
   \begin{tikzpicture}

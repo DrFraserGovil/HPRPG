@@ -1,0 +1,96 @@
+\documentclass[oneside, twocolumn, 9pt, english]{extbook}
+\usepackage{supertabular}
+
+\usepackage{../../HPpack}
+\usepackage{float}
+
+\begin{document}
+
+\begin{titlepage}
+
+    \centering
+    \vfill
+    {\bfseries
+        {\HP \fontsize{40}{35}\selectfont A Guide to Hogsmeade Village}
+    }    
+    \vfill
+    \includegraphics[scale = 0.3]{../../Images/Hogsmeade} % also works with logo.pdf
+    \vfill
+    {\HP \fontsize{30}{24} \selectfont  Harry Potter \\\&\\ The Role Playing Game}
+    \normalsize
+    \vfill
+    {\HP \fontsize{22}{0} \selectfont Version 1.0 \hfill Jack Fraser}
+\end{titlepage}
+
+
+
+	\renewcommand\arraystretch{1.5}
+\newcommand\basicPerson[2]
+{
+	\textbf{\textit{#1}}
+	
+	#2
+
+}
+
+\newcommand\shop[7]
+{
+	\subsection{#1 (\it #4)}
+	
+	\begin{supertabular}{@{} r p{6.5  cm} @{}}
+		\bf Location:	&	#2
+		\\
+		\bf Exterior: &		#5
+		\\
+		\bf Interior:	&	#6
+		\\
+		\bf Proprietor:	&	#3
+		\\
+		\bf Inventory:	&	\parbox[t]{6.5cm}{#7}
+		\\
+	\end{supertabular}
+	~
+	\\
+}
+
+\setlength\parindent{3pt}
+%%ShopBegin
+\shop{Ceridwen\apos{}s Cauldrons}{Hogsmeade}{\basicPerson{}{} }{}{}{}{}
+
+\shop{Dervish \& Banges}{Hogsmeade}{\basicPerson{a}{a} }{a}{a}{a}{a~\\ There is a link to this inventory at a}
+
+\shop{Dogweed \& Deathcap}{Hogsmeade}{\basicPerson{}{} }{}{}{}{}
+
+\shop{Dominic Maestro\apos{}s Music Shop}{Hogsmeade}{\basicPerson{}{} }{}{}{}{}
+
+\shop{Gladrags Wizardwear}{Hogsmeade}{\basicPerson{}{} }{}{}{}{}
+
+\shop{Hog\apos{}s Head Inn}{Hogsmeade}{\basicPerson{}{} }{}{}{}{}
+
+\shop{Hogsmeade Station}{Hogsmeade}{\basicPerson{}{} }{}{}{}{}
+
+\shop{Honeydukes}{Hogsmeade}{\basicPerson{}{} }{}{}{}{}
+
+\shop{J. Pippins Potions}{Hogsmeade}{\basicPerson{}{} }{}{}{}{}
+
+\shop{Post Office}{Hogsmeade}{\basicPerson{}{} }{}{}{}{}
+
+\shop{Scrivenshaft\apos{}s Quill Shop}{Hogsmeade}{\basicPerson{}{} }{}{}{}{}
+
+\shop{Shrieking Shack}{Hogsmeade}{\basicPerson{}{} }{}{}{}{}
+
+\shop{Spintwitches Sporting Needs}{Hogsmeade}{\basicPerson{}{} }{}{}{}{}
+
+\shop{The Magic Neep}{Hogsmeade}{\basicPerson{}{} }{}{}{}{}
+
+\shop{Three Broomsticks}{Hogsmeade}{\basicPerson{}{} }{}{}{}{}
+
+\shop{Tomes and Scrolls}{Hogsmeade}{\basicPerson{}{} }{}{}{}{}
+
+\shop{Zonko\apos{}s}{Hogsmeade}{\basicPerson{}{} }{}{}{}{}
+
+
+%%ShopEnd
+
+
+\end{document}
