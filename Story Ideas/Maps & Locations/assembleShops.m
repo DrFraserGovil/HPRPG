@@ -20,14 +20,20 @@ function assembleShops(fileNameRoot)
 		h = height(f);
 
 		text = "";
-		for i = 1:h
+		expandedText = "";
+        for i = 1:h
 			b = Shop(f(i,:));
 
 		   text = text + b.print() + "\n\n";
-		end
+           if ~isempty(b.ExpandedInventory)
+               expandedText = expandedText + "\n" + prepareText("\expand{" + b.Name + "}{" + b.ExpandedInventory + "}") + "\n";
+           end
+        end
 
-
-
+        
+        text = text + "\\section{Expanded Inventory} \\footnotesize \n\n" + expandedText;
+        
+    
 
 		readFile = fileread(targetName);
 		insertPoint = strfind(readFile, '%%ShopBegin');

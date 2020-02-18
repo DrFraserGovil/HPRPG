@@ -32,7 +32,7 @@ classdef Ingredient < handle
            text = "\\ingredient{";
 			text = text +  "name =" + prepareText(obj.Name) + ", ";
 			text = text + "description =" + prepareText(obj.Description) + ", ";
-            text = text + "cost =" +obj.Cost + ", ";
+            text = text + "cost =" +prepareText(obj.Cost )+ ", ";
            
             
             nC = length(obj.CriticalPotions);
@@ -78,7 +78,9 @@ classdef Ingredient < handle
         
      
         function processCost(obj,cost)
-           sickles = floor(cost);
+            cost = cost*17/50;
+
+            sickles = floor(cost);
            knuts = (cost - sickles)*29;
            knuts = round(knuts/5)*5;
            
@@ -87,17 +89,16 @@ classdef Ingredient < handle
            
            c = "";
            if galleons > 0
-               c = c + num2str(galleons) + "\\galleon{} ";
+               c = c + "\galleon{" + num2str(galleons) + "} ";
                sickles = round(sickles/5)*5;
                knuts =0;
            end
            if sickles > 0 
-              c = c + num2str(sickles) + "\\sickle{} ";
+              c = c + "\sickle{"+ num2str(sickles) + "} ";
            end
            if knuts > 0
-               c = c+num2str(knuts) + "\\knut{} ";
+               c = c+"\knut{ " + num2str(knuts) + "} ";
            end
-
            obj.Cost = c;
 
         end

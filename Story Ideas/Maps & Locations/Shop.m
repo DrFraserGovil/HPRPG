@@ -9,6 +9,8 @@ classdef Shop
         Exterior
         Interior
         Inventory
+        
+        ExpandedInventory;
     end
     
     methods
@@ -21,9 +23,16 @@ classdef Shop
             obj.Exterior = tableLine.Exterior{1};
             obj.Interior = tableLine.Interior{1};
             obj.Inventory = tableLine.Inventory{1};
-            
+            obj.ExpandedInventory = string.empty;
             if ~isempty(tableLine.InventoryLink{1})
-                obj.Inventory = obj.Inventory + "~\\ There is a link to this inventory at " + tableLine.InventoryLink{1};
+                [temp,extend] = fetchInventory(tableLine.InventoryLink{1});
+                
+                if extend == false
+                    obj.Inventory = obj.Inventory + temp;
+                else
+                    obj.Inventory = obj.Inventory + "A full inventory for this shop can be found at the end  of the document";
+                    obj.ExpandedInventory = temp;
+                end
             end
         end
         
@@ -42,3 +51,27 @@ classdef Shop
     end
 end
 
+function [text,extend] = fetchInventory(link)
+    text = "";
+    
+    f = readtable(link + ".xlsx");
+    h = height(f);
+    extend = false;
+    base = "\inventLine";
+    if h > 5
+        extend = true;
+        base = "\invent";
+    end
+
+    for i = 1:h
+        
+        
+        name = f.Item{i} + "~($\times$" + num2str(f.Quantity(i)) +")";
+        
+        text = text + sprintf(prepareText(base +"{" + name +"}{" + f.Description{i} + "}{" + f.Cost{i} + "}") + "\n");   
+        
+        
+        
+    end
+    text = text;
+end

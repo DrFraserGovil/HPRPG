@@ -3,7 +3,7 @@
 \definecolor{backcol}{rgb}{0.2,0.2,0.2}
 \definecolor{linecol}{rgb}{0.3,0.3,0.3}
 \twocolumn
-
+\small
 \chapter{Beasts, Beings and Other Bad Business}
 \normalsize
 There are 3 classes of entity in this game: Beasts, Un\minus{}life and Sapients. 
@@ -129,7 +129,7 @@ The Un\minus{}Life are those beings which cannot truly be called alive, and are 
 {
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[width = 0.45\textwidth,height = 0.4\textwidth, keepaspectratio]{../Images/\image}
+			\includegraphics[width = 0.45\textwidth,height = 0.35\textwidth, keepaspectratio]{../Images/\image}
 		\end{center}
 	\end{figure}
 
@@ -245,7 +245,7 @@ The Un\minus{}Life are those beings which cannot truly be called alive, and are 
 Hatching from eggs the size of rugby balls\comma{} the oldest specimens have legspans in excess of 10 metres. Their equally enormous fangs contain a potent venom.
 
 The speed\comma{} strength and venom\comma{} however\comma{} is not hwat makes the Acromantula a truly awful foe. Rather\comma{} their greatest weapon is their formiddable intellect\comma{} which allows them to outthink even the greatest wizards.}{
-\beast{name = Acromantula Hatchling, species = Acromantula, mind = Non\minus{}sapient, category = Monstrosity, summary = Newborn Giant Spider, speed = 10 metres, habitat = Rainforests of Borneo\comma{} spread worldwide, sizeName = Legspan, size = 1 metre, fit = 8 (-1),prs = 13 (+1),spr = 6 (-2),chr = 4 (-3),int = 12 (+1),pcp = 8 (-1),pow = 8 (-1),evl = 7 (-2),hp=15, block=10, dodge=12, abilityBlock=1, hasResistance = 1, resistance = Poison damage, hasAbilities = 1, abilities = \ability{Languages}{Can speak in the spider tongue}
+\beast{name = Acromantula Hatchling, species = Acromantula, mind = Non\minus{}sapient, category = Monstrosity, summary = Newborn Giant Spider, speed = 10 metres, habitat = Rainforests of Borneo\comma{} spread worldwide, sizeName = Legspan, size = 1 metre, fit = 8 (-1),prs = 13 (+1),spr = 6 (-2),chr = 4 (-3),int = 12 (+1),pcp = 8 (-1),pow = 8 (-1),evl = 7 (-2),hp=15, block=10, dodge=12, abilityBlock=1, hasImmune = 1, immune = Celestial damage, hasResistance = 1, resistance = Poison damage, hasAbilities = 1, abilities = \ability{Languages}{Can speak in the spider tongue}
 
 \abilityBegin{}
 
@@ -254,7 +254,7 @@ The speed\comma{} strength and venom\comma{} however\comma{} is not hwat makes t
 \ability{Web Walker}{An acromantula takes no movement penalty when walked on webbed surfaces}, hasActions = 1, actions = \melee{Bite}{+3}{Deals 1+1d8 piercing damage. Target must suceed a DV10 Vitality check\comma{} or take an additional 2d6 poison damage}, hasSkills = 1, skills = Stealth (+4)\comma{} Nightvision, imPosition = 1,description = A newborn acromantula has a shiny\comma{} hairless and pale\minus{}grey carapace\comma{} covering their body which is only 1 metre across\comma{} and has a diminished intelligence compared to their full grown counterparts.}
 
 
-\beast{name = Acromantula, species = Acromantula, mind = Sapient, category = Monstrosity, summary = Adult Giant Spider, speed = 15 metres, habitat = Rainforests of Borneo\comma{} spread worldwide, sizeName = Legspan, size = 4 metres, fit = 14 (+2),prs = 15 (+2),spr = 10 (0),chr = 6 (-2),int = 18 (+4),pcp = 14 (+2),pow = 12 (+1),evl = 10 (0),hp=45, block=17, dodge=15, abilityBlock=1, hasResistance = 1, resistance = Poison damage, hasSusceptible = 1, susceptible = Fire damage, hasAbilities = 1, abilities = \ability{Languages}{Can speak in the spider tongue\comma{} and understand human languages.}
+\beast{name = Acromantula, species = Acromantula, mind = Sapient, category = Monstrosity, summary = Adult Giant Spider, speed = 15 metres, habitat = Rainforests of Borneo\comma{} spread worldwide, sizeName = Legspan, size = 4 metres, fit = 14 (+2),prs = 15 (+2),spr = 10 (0),chr = 6 (-2),int = 18 (+4),pcp = 14 (+2),pow = 12 (+1),evl = 10 (0),hp=45, block=17, dodge=15, abilityBlock=1, hasImmune = 1, immune = Celestial damage, hasResistance = 1, resistance = Poison damage, hasSusceptible = 1, susceptible = Fire damage, hasAbilities = 1, abilities = \ability{Languages}{Can speak in the spider tongue\comma{} and understand human languages.}
 
 \abilityBegin{}
 
@@ -267,7 +267,7 @@ The speed\comma{} strength and venom\comma{} however\comma{} is not hwat makes t
 \ranged{Web}{+4}{10 metres}{A target individual is covered in sticky webbing. The target is {\it Incapacitated} until they succeed on a DV 14 Strength Resist\comma{} or the webbing absorbs 5 points of physical damage.}, hasSkills = 1, skills = Stealth (+6)\comma{} Strength (+5)\comma{} Observation (+5)\comma{} Nightvision, hasImage = 1, image = Acromantula, imPosition = 0,description = A fully grown Acromantula is something to be greatly feared. They can run incredibly quickly and they utilise a ranged web attack to ensnare their pray\comma{} capturing it for later devourment….}
 
 
-\beast{name = Acromantula Patriarch, species = Acromantula, mind = Sapient, category = Monstrosity, summary = Ruler of the Spider Clan, speed = 5 metres, habitat = Rainforests of Borneo\comma{} spread worldwide, sizeName = Legspan, size = 8 metres, fit = 7 (-2),prs = 14 (+2),spr = 15 (+2),chr = 8 (-1),int = 22 (+6),pcp = 18 (+4),pow = 16 (+3),evl = 15 (+2),hp=100, block=15, dodge=5, abilityBlock=1, hasResistance = 1, resistance = Poison damage, hasSusceptible = 1, susceptible = Fire damage, hasAbilities = 1, abilities = \ability{Languages}{Can speak fluently in both Spider and human languages.}
+\beast{name = Acromantula Patriarch, species = Acromantula, mind = Sapient, category = Monstrosity, summary = Ruler of the Spider Clan, speed = 5 metres, habitat = Rainforests of Borneo\comma{} spread worldwide, sizeName = Legspan, size = 8 metres, fit = 7 (-2),prs = 14 (+2),spr = 15 (+2),chr = 8 (-1),int = 22 (+6),pcp = 18 (+4),pow = 16 (+3),evl = 15 (+2),hp=100, block=15, dodge=5, abilityBlock=1, hasImmune = 1, immune = Celestial damage, hasResistance = 1, resistance = Poison damage, hasSusceptible = 1, susceptible = Fire damage, hasAbilities = 1, abilities = \ability{Languages}{Can speak fluently in both Spider and human languages.}
 
 \abilityBegin{}
 
@@ -329,18 +329,32 @@ A boggart can never harm you\comma{} though they can be difficult to contain. Th
 
 
 \species{Arachnid}{The arachnids are a family of giant spider. Mostly formed from mundane species that were experimented upon by witches and wizards throughout history\comma{} many have since escaped into the wild\comma{} to wreak havoc on muggles and wizardkind alike.}{
+\beast{name = Howling Tick, species = Arachnid, mind = Non\minus{}sapient, category = Beast, summary = Size\minus{}changing Spider, speed = 5 metres, habitat = Urban areas, sizeName = Legspan, size = 10cm, fit = 14 (+2),prs = 15 (+2),spr = 7 (-2),chr = 2 (-4),int = 3 (-4),pcp = 16 (+3),pow = 4 (-3),evl = 2 (-4),hp=14, block=12, dodge=13, abilityBlock=1, hasImmune = 1, immune = Celestial damage, hasAbilities = 1, abilities = \ability{Bloodsucker}{Whenever the Howling Tick lands a successful attack\comma{} it doubles in size\comma{} and its bites become more venemous.
+
+If it goes a combat cycle without feasting on blood\comma{} it shrinks\comma{} until it reaches its resting size of 10cm.
+}
+
+\ability{Languages}{Can understand the spider tongue} 
+
+\ability{Spider Climb}{A Howling Tick may climb across all surfaces\comma{} including ceilings as part of their normal movement}
+
+\ability{Web Walker}{A Howling Tick takes no movement penalty when walked on webbed surfaces}, hasActions = 1, actions = \ability{Leap}{In place of a movement action\comma{} the Howling Tick may leap up to 4 metres\comma{} and then take a bite attack}
+
+\melee{Bite}{+2}{Deals 1d6 poison damage (increased by 1d6 for every increase in size)\comma{} and triggers its {\it Bloodsucker} attribute.}, hasSkills = 1, skills = Stealth (+4)\comma{} Nightvision, hasImage = 1, image = tick, imPosition = 1,description = The name of the Howling Tick is misleading\comma{} as it is neither a tick\comma{} and nor does it howl. Instead the name comes from its tendency to suck blood from its victims\comma{} and the howls of pain that result.
+
+The Howling Tick has the magical ability to grow in size when it feeds\comma{} however they must continually gorge in order to maintain their size\comma{} or they quickly shrink back.}
+
+
 \beast{name = Great Widow, species = Arachnid, mind = Non\minus{}sapient, category = Beast, summary = Poisonous spider, speed = 8 metres, habitat = Urban areas, sizeName = Legspan, size = 40 centimetres, fit = 7 (-2),prs = 16 (+3),spr = 4 (-3),chr = 3 (-4),int = 4 (-3),pcp = 12 (+1),pow = 4 (-3),evl = 2 (-4),hp=25, block=7, dodge=14, abilityBlock=1, hasResistance = 1, resistance = Poison damage, hasAbilities = 1, abilities = \ability{Languages}{Can understand the spider tongue}
 
-\abilityBegin{}
-
-\ability{Spider Climb}{An Great Widow may climb across all surfaces\comma{} including ceilings as part of their normal movement}
+\ability{Spider Climb}{A Great Widow may climb across all surfaces\comma{} including ceilings as part of their normal movement}
 
 
 \ability{Vibration Sense}{When in contact with a webbed surface\comma{} the acromantula knows the location of every other being also in contact with the web.}
 
 \ability{Web Walker}{An Great Widow takes no movement penalty when walked on webbed surfaces}, hasActions = 1, actions = \melee{Bite}{+3}{Deals 3d6 poison damage. On a failed DV 10 Vitality check\comma{} the victim takes the {\it Poisoned: Mild} ststus}
 
-\ranged{Spit}{+4}{5 metres}{A globule of acid burns into you\comma{} dealing 2d8 acid damage}, hasSkills = 1, skills = Stealth (+5), hasImage = 1, image = blackWidow, imPosition = 1,description = Magical experimentation on a {\it Black Widow} produced this grossly oversized specimen\comma{} and gave it the ability to spit acid.}
+\ranged{Spit}{+4}{5 metres}{A globule of acid burns into you\comma{} dealing 2d8 acid damage}, hasSkills = 1, skills = Stealth (+5), hasImage = 1, image = blackWidow, imPosition = 0,description = Magical experimentation on a {\it Black Widow} produced this grossly oversized specimen\comma{} and gave it the ability to spit acid.}
 
 
 }

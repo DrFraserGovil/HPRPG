@@ -59,7 +59,7 @@ classdef Potion < handle
 			text = "\\potion{";
 			text = text +  "name =" + prepareText(obj.Name) + ", ";
 			text = text + "description =" + prepareText(obj.Description) + ", ";
-			text = text + "cost =" +obj.Cost + ", ";
+			text = text + "cost =" +prepareText(obj.Cost) + ", ";
 			text = text + "effect =" + prepareText(obj.Effect) + ", ";
 			text = text + "difficulty =" + num2str(obj.Difficulty) + ", ";
 			text = text + "time =" + obj.BrewTime + ", ";
@@ -134,18 +134,29 @@ classdef Potion < handle
 			end
 		end
 		
-		function processCost(obj,cost)
-			sickleToGalleon = 17;
-			galleons = floor(cost/sickleToGalleon);
-			sickles = round( (cost - sickleToGalleon * galleons)/5)*5;
-			
-			obj.Cost = "";
-			if galleons > 1
-				obj.Cost = obj.Cost + num2str(galleons) + "\\galleon ";
-            else
-				obj.Cost = obj.Cost + num2str(sickles) + "\\sickle";
-			end
-		end
+		 function processCost(obj,cost)
+           sickles = floor(cost);
+           knuts = (cost - sickles)*29;
+           knuts = round(knuts/5)*5;
+           
+           galleons = floor(sickles/17);
+           sickles = sickles - 17*galleons;
+           
+           c = "";
+           if galleons > 0
+               c = c + "\galleon{" + num2str(galleons) + "} ";
+               sickles = round(sickles/5)*5;
+               knuts =0;
+           end
+           if sickles > 0 
+              c = c + "\sickle{"+ num2str(sickles) + "} ";
+           end
+           if knuts > 0
+               c = c+"\knut{ " + num2str(knuts) + "} ";
+           end
+           obj.Cost = c;
+
+        end
 		
 		
 		function processIngredients(obj,inputLine,pouch)
