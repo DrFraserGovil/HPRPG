@@ -8,8 +8,9 @@ function MasterAssembly(quitMode)
     addpath('Items/');
     addpath('Potions/');
 	disp('Assembling Spells');
-    allSpellAssembler(5,'../Chapters/');
+    allSpellAssembler(6,'../Chapters/');
     
+    assembleBooks();
      disp('Assembling Skills');
      assembleSkills();
       disp('Assembling Statuses');

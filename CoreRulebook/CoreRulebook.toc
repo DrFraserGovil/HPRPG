@@ -313,13 +313,13 @@
 \contentsline {subsubsection}{\bf Defensive Burst}{93}{subsubsection*.73}%
 \contentsline {subsubsection}{\bf Energizing Fury}{93}{subsubsection*.74}%
 \contentsline {subsubsection}{\bf Furious Spellcaster}{93}{subsubsection*.75}%
-\contentsline {subsubsection}{\bf Instinctive Retribution}{94}{subsubsection*.76}%
-\contentsline {subsubsection}{\bf Night Fighter}{94}{subsubsection*.77}%
-\contentsline {subsubsection}{\bf Reckless Attack}{94}{subsubsection*.78}%
-\contentsline {subsubsection}{\bf Shieldbreaker}{94}{subsubsection*.79}%
-\contentsline {subsubsection}{\bf Simmering Rage}{94}{subsubsection*.80}%
-\contentsline {subsubsection}{\bf Spell Resistance}{94}{subsubsection*.81}%
-\contentsline {subsubsection}{\bf Howling Barbarian}{94}{subsubsection*.82}%
+\contentsline {subsubsection}{\bf Howling Barbarian}{94}{subsubsection*.76}%
+\contentsline {subsubsection}{\bf Instinctive Retribution}{94}{subsubsection*.77}%
+\contentsline {subsubsection}{\bf Night Fighter}{94}{subsubsection*.78}%
+\contentsline {subsubsection}{\bf Reckless Attack}{94}{subsubsection*.79}%
+\contentsline {subsubsection}{\bf Shieldbreaker}{94}{subsubsection*.80}%
+\contentsline {subsubsection}{\bf Simmering Rage}{94}{subsubsection*.81}%
+\contentsline {subsubsection}{\bf Spell Resistance}{94}{subsubsection*.82}%
 \contentsline {section}{Outlaw}{95}{chapter*.83}%
 \contentsline {subsection}{\numberline {20.0.55}Health \& Fortitude}{95}{subsection.20.0.55}%
 \contentsline {subsection}{\numberline {20.0.56}Proficiencies}{95}{subsection.20.0.56}%
@@ -508,21 +508,23 @@
 \contentsline {subsection}{\numberline {24.1.13}Vulcan: The Plane of Fire}{115}{subsection.24.1.13}%
 \contentsline {chapter}{\numberline {25}\vspace {-1ex}Magic Cheat Sheet}{116}{chapter.25}%
 \contentsline {subsubsection}{How to Cast}{116}{subsubsection*.211}%
-\contentsline {subsubsection}{Memory}{116}{subsubsection*.212}%
-\contentsline {subsubsection}{Accuracy \& Resisting}{116}{subsubsection*.213}%
-\contentsline {subsubsection}{Check Type}{116}{subsubsection*.214}%
-\contentsline {subsubsection}{Check Difficulty}{116}{subsubsection*.215}%
-\contentsline {subsubsection}{FP Costs}{116}{subsubsection*.216}%
+\contentsline {subsubsection}{Memory Casting}{116}{subsubsection*.212}%
+\contentsline {subsubsection}{Book Casting}{116}{subsubsection*.213}%
+\contentsline {subsubsection}{Upcasting}{116}{subsubsection*.214}%
+\contentsline {subsubsection}{Check Type}{116}{subsubsection*.215}%
+\contentsline {subsubsection}{Spell DV}{116}{subsubsection*.216}%
+\contentsline {subsubsection}{FP Costs}{116}{subsubsection*.217}%
+\contentsline {subsubsection}{Accuracy}{116}{subsubsection*.218}%
 \contentsline {chapter}{\numberline {26}Changelog}{117}{chapter.26}%
 \contentsline {section}{\numberline {26.1}Changes in V4.0$\beta $}{117}{section.26.1}%
 \contentsline {subsection}{\numberline {26.1.1}Changes to Artificing}{117}{subsection.26.1.1}%
 \contentsline {subsection}{\numberline {26.1.2}Spellcasting Changes}{117}{subsection.26.1.2}%
 \contentsline {subsection}{\numberline {26.1.3}Changes to Character Attributes}{117}{subsection.26.1.3}%
-\contentsline {subsubsection}{Dodge, Block and Accuracy}{117}{subsubsection*.217}%
+\contentsline {subsubsection}{Dodge, Block and Accuracy}{117}{subsubsection*.219}%
 \contentsline {subsection}{\numberline {26.1.4}New Action Mechanics}{117}{subsection.26.1.4}%
 \contentsline {subsection}{\numberline {26.1.5}Archetypes}{117}{subsection.26.1.5}%
 \contentsline {subsection}{\numberline {26.1.6}Expertise}{117}{subsection.26.1.6}%
-\contentsline {subsubsection}{Proficiencies}{117}{subsubsection*.218}%
+\contentsline {subsubsection}{Proficiencies}{117}{subsubsection*.220}%
 \contentsline {subsection}{\numberline {26.1.7}Spell Changes}{118}{subsection.26.1.7}%
 \contentsline {subsection}{\numberline {26.1.8}Cheat Sheet}{118}{subsection.26.1.8}%
 \contentsline {subsection}{\numberline {26.1.9}Item Changes}{118}{subsection.26.1.9}%

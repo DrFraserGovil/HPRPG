@@ -9,13 +9,13 @@ insertPoint = strfind(readFile, '%%BooksBegin');
 
 endPoint = strfind(readFile, '%%BooksEnd');
 
-firstHalf = prepareText(readFile(1:insertPoint+13));
+firstHalf = prepareText(readFile(1:insertPoint+13),0,0);
 
-secondHalf = prepareText(readFile(endPoint:end));
+secondHalf = prepareText(readFile(endPoint:end),0,0);
 
 
 preamble = ' \begin{center} \footnotesize \begin{rndtable}{|p{\w cm} l |}';
-headers = '\hline \tablehead \normalsize \bf Name & \normalsize \bf Cost \\ \hline ';
+headers = '\hline \normalsize \bf Name & \normalsize \bf Cost \\ \hline ';
 
 text = [preamble headers];
 spellText = prepareText(strcat('\subsection{Spell Books} \spellIntro',text));

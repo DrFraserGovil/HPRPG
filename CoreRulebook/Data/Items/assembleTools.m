@@ -16,7 +16,7 @@ function assembleTools()
 
 
     preamble = ' \begin{center}\begin{rndtable}{|l l l|}';
-    headers = '\hline \tablehead \normalsize \bf Name & \normalsize \bf Weight & \normalsize \bf Cost \\ \hline ';
+    headers = '\hline \normalsize \bf Name & \normalsize \bf Weight & \normalsize \bf Cost \\ \hline ';
 
     text = [preamble headers];
     text = prepareText(text);

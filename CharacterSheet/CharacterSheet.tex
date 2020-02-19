@@ -44,6 +44,21 @@
 \def\attPerShort{PCP}
 \def\attPowShort{POW}
 \def\attEvlShort{EVL}
+\def\ElCheck{\attPow{}}
+\def\KinCheck{\attFin{}}
+\def\TelCheck{\attPer{}}
+\def\TemCheck{\attInt{}}
+\def\BewCheck{\attChr{}}
+\def\PsiCheck{\attSpr{}}
+\def\HexCheck{\attSpr{}}
+\def\CurCheck{\attPow{}}
+\def\HeaCheck{\attPer{}}
+\def\WarCheck{\attInt{}}
+\def\AltCheck{\attFin{}}
+\def\ConCheck{\attSpr{}}
+\def\NecCheck{\attEvl{}}
+\def\OccCheck{\attInt{}}
+
 
 \titleformat{\section} {\centering\vspace{-10ex}\normalfont\bfseries\HP\Huge}{}{0pt}{}[\vspace{-2ex}]
 
@@ -204,11 +219,11 @@
 \def\f{ (\width-\gapx)/3.6  }
 \draw[rounded corners, gray!70,fill = gray!20] ({\cx-\width/2},\top) rectangle ({\cx+\width/2},{\top-\hB});
 \node at (\cx,{\top-0.3}) {\Large \bf   Spellcasting};
-\foreach \c/\a/\b [count=\q from 0] in {{Charms}/{Elemental}/{Kineses},{Divination}/{Telepathic}/{Temporal},{Illusion}/{Bewitchment}/{Psionics},{Malediction}/{Curses}/{Hexes},{Recuperation}/{Healing}/{Warding},{Transfiguration}/{Alteration}/{Conjuration},{Dark Arts}/{Necromancy}/{Occultism}}
+\foreach \a/\b/\c/\d/\e [count=\q from 0] in {{Charms}/{Elemental}/{\attPowShort}/{Kinesis}/{\attFinShort{}},{Divination}/{Telepathic}/{\attPerShort{}}/{Temporal}/{\attIntShort{}},{Illusion}/{Bewitchment}/{\attChrShort{}}/{Psionics}/{\attSprShort{}},{Malediction}/{Curses}/{\attPowShort{}}/{Hexes}/{\attSprShort{}},{Recuperation}/{Healing}/{\attPerShort{}}/{Warding}/{\attIntShort{}},{Transfiguration}/{Alteration}/{\attFinShort{}}/{Conjuration}/{\attPowShort{}},{Dark Arts}/{Necromancy}/{\attEvlShort{}}/{Occultism}/{\attChrShort{}}}
 {
 	\ifthenelse{\q>3}{\def\y{ {(\top-\circleOff)}}\def\x{ {(\p+ (\q-4)*\f)} } }{\def\y{ {(\top-\circleOff+\gapy)} }\def\x{ {(\p + \q*\f)} }}
 	%\draw[gray!70,fill=white] (\x,\y) circle (\r);
-	\node at (\x,{\y+\r+0.2}) {\footnotesize \bf \c};
+	\node at (\x,{\y+\r+0.2}) {\footnotesize \bf \a};
 	
 	\def\bX{\x - 0.8}
 	\def\bY{\y + 0.25}
@@ -218,8 +233,8 @@
 		
 		\draw ({\bX + \delta+0.1},{\bY})--({\x - 0.1},{\bY});
 				\draw ({\bX + \delta+0.1},{\bY-0.6})--({\x - 0.1},{\bY-0.6});
-	\node[anchor=west] at ({\x},{\y+\r-0.4}) {\scriptsize  \a};
-	\node[anchor = west] at ({\x},{\y+\r-1}) {\scriptsize  \b};
+	\node[anchor=west] at ({\x},{\y+\r-0.4}) {\scriptsize  \b \color{gray}{ (\c)}};
+	\node[anchor = west] at ({\x},{\y+\r-1}) {\scriptsize  \d \color{gray}{ (\e)}};
 }
 \def\Qx{\p + 3*\f}
 \def\Qy{\top-\circleOff}
@@ -314,7 +329,7 @@ Don't forget to increase the prerequisite LVL by 2 every time a skill increases.
 \draw[rounded corners] (\left,\top) rectangle ({\totalwidth/2-\left/2},\bottom);
 \draw[rounded corners] ({\totalwidth/2+\left/2},\top) rectangle ({\totalwidth-\left},\bottom);
 \node at ({\left+\q},{\top+0.2}) {  \bf Charms};
-\node at ({(\totalwidth+\left)/2+\q},{\top+0.2}) {  \bf Divination };
+\node at ({(\totalwidth+\left)/2+\q},{\top+0.2}) {  \bf Malediction};
 \foreach \q in {1,2,...,\N}
 {
 	\def\y{\top - \q*\gap}

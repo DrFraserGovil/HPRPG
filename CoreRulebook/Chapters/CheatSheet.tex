@@ -2,51 +2,35 @@
 \begin{landscape}
 \small
 \chapter{\vspace{-1ex}Magic Cheat Sheet}
-
-This section contains a brief summary of the tables needed for spellcasting. This serves as a useful printout to have on hand, to avoid arduous page-flipping. 
-
 \begin{multicols}{3}
 \def\xS{1.8}
 \def\wS{2}
 
-\vbox{
+
 \subsubsection{How to Cast}
 
 To cast a spell, either in combat or in day-to-day life, you must declare the spell which you are about to cast. You must be holding your wand in your dominant hand, hand be able to speak the incantaiton aloud, unless you have a skill or character trait which negates these rules.	
 
-You must then perform a check by rolling the relevant dice, and then compare this value with the Difficulty Value (DV) of the spell, and then finally deduct the appropriate FP cost. 
+You must deduct the appropriate FP cost and (if applicable) perform the appropriate casting check. 
 
-\subsubsection{Memory}
+\subsubsection{Memory Casting}
 
-Spells can be cast in one of two ways: either from memory, or from the pages of a spellbook.
+If you have memorised a spell, you may cast it at any level below the maximum memorised level, without needing an additional casting check. You simply declare the spell, and then either perform an accuracy check, or directly apply the effect as directed. 
 
-Spells cast from memory are considered `default', and most rules are written assuming that this is how they are being cast. 
+\subsubsection{Book Casting}
 
-Of course, you must first learna spell, before you can memorise it. This is what spellbooks are for. You may cast a spell from a spellbook if you have the spellbook open in front of you. Casting in this fashion takes twice as long as normal, leaves you vulnerable to attack, as well as costing more FP to cast. 
+If you have not memorised the spell yet, you must posess a spellbook which contains that spell, and hold it in your non-dominant hand. Casting in this fashion takes an entire combat cycle. In addition, you must perform a spellcasting check, using the specified check type. If you meet the required DV, the spell effect is applied as normal. 
 
-When you have book-cast a spell a certain number of times, it is considered `memorised', and you may cast it from memory in future. The formula to calculate the number of book-casts is:
-$$N = 10 - \left( \text{INT modifier + Arcane Proficiency} \right)$$ 
- 
-}
+After book casting a spell $5 - $\attIntShort{} times (min 1), you memorise the spell. 
 
-\subsubsection{Accuracy \& Resisting}
+\subsubsection{Upcasting}
 
-After a spell has been cast, or an attack has been launched, you need to check that it hits its target. Living beings may instinctively either {\it Dodge} or {\it Block} an incoming attack, using whichever of their respective stats is highest:
-\footnotesize
-\begin{align*}
- \text{Dodge} & = 10 + \text{Finesse modifier+ bonus}
- \\
- \text{Block*} &= 10 + \text{Athletics modifier+ bonus}
-\end{align*}
-\small
-These attributes set the DV of an {\it accuracy check} which an attacker must perform using a d20 check, plus any relevant bonuses. In combat, you may also choose to {\it Evade} or {\it Brace} as a minor action. This allows you to increase the value of Dodge or Block respectively by the value of a standard Resist check. 
+Some spells can be made more powerful when cast by a powerful wizard. Such spells may be cast at a higher level than their base `level' - or {\it upcast}. For these purposes the spell acts like one of the chosen level. 
 
-You may also be asked to perform an accuracy check when casting against an object which is particularly far away or small. 
+If you have not cast a spell in this fashion before, you must `memorise' it, though you do not require a spellbook to do so. You can only upcast spells you have previously memorised.
 
-`Resisting' allows you to grit your teeth and power through the effects of a spell. Some spell effects can be overcome by a particular force of will. To do so, you roll your Resist dice (determined by the {\it Withstand} skill), and check against the DV set by the spell effect.  
-\vbox{
 \subsubsection{Check Type}
-Every spell belongs to one of the Disciplines, which determines the character attribute to use when casting that spell. Appropriate Proficiencies may be added onto spellcasting checks as determined by character skills, or by GM's consent that it is applicable to the spell being cast.
+Every spell belongs to one of the Disciplines, which determines the attribute modifier to use when casting that spell. Additionally, each character has a number of {\it Discipline Proficiencies}. Characters add their expertise modifier to casting checks for disciplines in which they are proficient.  
 \begin{center}
 	\begin{rndtable}{c m{\xS cm} p{\wS cm}}
 	\bf School	&	\bf Discipline	&	\bf Attribute
@@ -67,41 +51,73 @@ Every spell belongs to one of the Disciplines, which determines the character at
 	\end{rndtable}
 \end{center}
 
-
-}
-\vbox{
-\subsubsection{Check Difficulty}
-
+\subsubsection{Spell DV}
 For a cast to be successful, the result of the casting check must be equal to or larger than the value given in this table:
 
+\def\cc{\cellcolor{\tablecolorhead}\bf}
 
 \begin{center}
-	\begin{rndtable}{c c c c c c}
-		~	&{\bf Beginner}	&	{\bf Novice}	&	{\bf Adept}	&	{\bf Expert}	&	{\bf Master}
-		\\
-		\cellcolor{\tablecolorhead} \bf DV: &	\DVBeg	&	\DVNov	&	\DVAdp	&	\DVExp	&	\DVMas
-	\end{rndtable}
+\begin{rndtable}{c c c c c c c c}
+~	& ~ &	\multicolumn{6}{c}{\bf Spell Level}
+\\
+\cc	&	\cc	&	\cc 1 &\cc 2&\cc 3&\cc 4&\cc 5&\cc 6	
+\\
+\cc~	&	\cc1	&	15~&~&~&~&~&
+\\
+\cc&\cc	2	&	10	&	15~&~&~&~&
+\\
+\cc&	\cc3	&	5	&	10	&	20~&~&~&~
+\\
+\cc&	\cc4	&	5	&	10	&	15	&	20~&~&~
+\\
+\cc&	\cc5	&	5	&	10	&	15	&	20	&	25 & 
+\\
+\multirow{-6}{*}{\rotatebox[origin=c]{90}{\cc \bf Caster Level}}&	\cc 6 &	5	&	10	&	15	&20	&25	&30
+\end{rndtable}
 \end{center}
 
-}
 
 \subsubsection{FP Costs}
 Spells `cost' FP to cast. Failed spells cost half the amount of a successful spell and Resisting a spell costs 2FP. The FP cost of a spell is numerically equal to the difficulty of a spell, prior to any skill modifications (i.e. a skill which reduces the difficulty of a certain spell does not reduce the FP of it, and vice versa), unless the spell is being book-cast, in which case use the bracketed values.  
 
 
-{\footnotesize
+{
+\footnotesize
 \def\wFP{1}
 \begin{center}
-	\begin{rndtable}{p{1cm} |c |   c | c |c | c}
-		~	&{\bf Beginner}	&	{\bf Novice}	&	{\bf Adept}	&	{\bf Expert}	&	{\bf Master}
+	\begin{rndtable}{c c    c  c c  c}
+		{\bf Beginner}	&	{\bf Novice}	&	{\bf Adept}	&	{\bf Expert}	&	{\bf Master}	& {\bf Ascendant}
 		\\
-		\cellcolor{\tablecolorhead} \bf Memory &	\FPEntry{\DVBeg}{1}	&	\FPEntry{\DVNov}{1}	&	\FPEntry{\DVAdp}{1}	&	\FPEntry{\DVExp}{1}	&	\FPEntry{\DVMas}{1}
-		\\
-		\cellcolor{\tablecolorhead} \bf Book  &	\FPEntry{\DVBeg}{2}	&	\FPEntry{\DVNov}{2}	&	\FPEntry{\DVAdp}{2}	&	\FPEntry{\DVExp}{2}	&	\FPEntry{\DVMas}{2}
+	2	&	4	&	8	&	16	&	32	&	64
 	\end{rndtable}
 \end{center}
 }
-FP Regenerates at a rate of 2FP per turn cycle in which no FP was deducted. 
+
+\subsubsection{Accuracy}
+
+After a spell has been cast, or an attack has been launched, you need to check that it hits its target. Living beings may instinctively either {\it Dodge} or {\it Block} an incoming attack, using whichever of their respective stats is highest:
+\footnotesize
+\begin{align*}
+ \text{Dodge} & = 10 + \text{\attFin{} modifier+ bonus}
+ \\
+ \text{Block*} &= 10 + \text{\attPhys{} modifier+ bonus}
+\end{align*}
+\small
+These attributes set the DV of an {\it accuracy check} which an attacker must perform using a d20 check, plus any relevant bonuses. In combat, you may also choose to {\it Evade} or {\it Brace} as a minor action:
+
+\def\w{3}
+\def\c{6}
+\begin{center}
+\begin{rndtable}{p{1.2 cm} c | c}
+~	&	\bf Brace	&	\bf Evade
+\\
+\cellcolor{\tablecolorhead}\bf Resist:	&	\parbox[t]{\w cm}{\raggedright Advantage on \attPhysShort{}, \attSprShort{} \& \attPowShort{} Resist checks.}	&	\parbox[t]{\w cm}{\raggedright  Advantage on \attFinShort{}, \attIntShort{} \& \attPerShort{} Resist checks}
+\\
+\cellcolor{\tablecolorhead}\bf Accuracy:	&	\multicolumn{2}{c}{\parbox[t]{\c cm}{\cellcolor{\tablecolorlight}\centering Agressors take disadvantage on accuracy checks made against you this turn}} 
+\end{rndtable}
+\end{center} 
+
+You may also be asked to perform an accuracy check when casting against an object which is particularly far away or small. 
 
 
 

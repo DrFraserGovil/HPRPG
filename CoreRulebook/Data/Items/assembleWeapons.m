@@ -45,7 +45,7 @@ function assembleWeapons()
     foundLines = foundLines(I);
     %% write to table
     preamble = '\begin{rndtable}{|l l c c l |}';
-    headers = '\hline \tablehead \normalsize \bf Weapon & \normalsize \bf Cost & \normalsize \bf Modifier &  \normalsize \bf Damage & \normalsize \bf Properties \\ \hline';
+    headers = '\hline \normalsize \bf Weapon & \normalsize \bf Cost & \normalsize \bf Modifier &  \normalsize \bf Damage & \normalsize \bf Properties \\ \hline';
     text = prepareText(strcat(preamble,headers));
     for j = 1:length(foundNames)
         text = strcat(text, "{ \\it ", foundNames{j}," Weapons} & & & & \\\\ \n");
