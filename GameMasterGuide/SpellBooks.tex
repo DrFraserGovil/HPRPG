@@ -2,7 +2,7 @@
 \usepackage{../HPpack}
 
 \usepackage{titling}
-\newgeometry{left = 0.2cm, right = 0.2cm, top = 0.3cm,bottom = 0.4cm}
+\newgeometry{left = 0.5cm, right = 0.5cm, top = 0.3cm,bottom = 0.1cm}
 \title{A}
 \author{ }
 \date{\vspace{-2.5 cm}}
@@ -44,7 +44,8 @@ You may use any of these effects as long as concentration is maintained. When fo
 \item You can move the water\comma{} or otherwise alter the flow by up to 3 metres
 \item You can cause the water to form simple shapes\comma{} and animate them at your direction. 
 \item You can clear the water\comma{} or cause it to become opaque and cloudy. This lasts for up to one hour after you break concentration.
-\item Drown: if your animated water is within melee range of a being\comma{} you may wrap it around their face\comma{} depriving them of air on a failed Resist. Target can re\minus{}perform this check at the end of every turn. 
+\item Drown: if your animated water is within melee range of a being\comma{} you may use a major action to wrap it around their face\comma{} depriving them of air on a failed Resist. Target can re\minus{}perform this check at the end of every turn. 
+\item Still the water\comma{} or generate waves and ripples across the surface
 \end{spellitemize}}
 \spell{name = Create Fire, school = Charms, discipline = Elemental, type = Focus, level =Beginner, range =Wandtip, incant = incendio, noDur = 1, higher = Casting this spell at a higher level summons a larger and hotter gout of flame.
 
@@ -62,6 +63,7 @@ Note\comma{} however\comma{} that Gamp\apos{}s Laws of Elemental Transfiguration
 \spell{name = Tremor, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Close, incant = crith, noDur = 1, noHigh = 1, resist = Acrobatics, noBlock = 1, effect =A mild tremor shakes the ground. All beings in a 10m radius must succeed a Resist check\comma{} or become {\it Distracted} in the next turn cycle.}
 }
  \spellBook{Further Elemental Studies}{Novice-level Elemental}{
+\spell{name = Burst of Frost, school = Charms, discipline = Elemental, type = Instant, level =Novice, range =Close, incant = isti, noDur = 1, higher = Gain an additional 1d10 Cold damage for every additional spell level dedicated to casting this spell.,noResist =1, negation = Blockable  and Dodgeable,effect =The air around the tip of your wand freezes\comma{} condensing the surrounding water vapour into a tiny globe of ice\comma{} which launches towards your target. If it hits\comma{} the globe explodes doing 2d10 Cold damage.}
 \spell{name = Elemental Weapon, school = Charms, discipline = Elemental, type = Instant, level =Novice, range =Wandtip, incant = gladio subtantia, noDur = 1, higher = The blade gains an additional 1d8 of the chosen damage type \forEvery,noResist =1, noBlock = 1, effect =The elements are bent to your will\comma{} and a blade of nature\minus{}incarnate solidifies around your wand. You now wield a 1d6 shortsword made out of pure fire\comma{} ice\comma{} lightning or earth\comma{} or light\comma{} held together by your strength of will. In addition to the physical cutting effect\comma{} this blade also imparts an elemental effect of 1d8 fire\comma{} cold\comma{} electric\comma{} bludgeoning or celestial damage respectively. 
  
 No additional spells can be cast until this effect is dismissed as a minor action.}
@@ -69,7 +71,13 @@ No additional spells can be cast until this effect is dismissed as a minor actio
 
 However\comma{} this spell does not prevent an ongoing spell from producing more fire after it is removed\comma{} and nor does it effect the `Burned' status of a being.}
 \spell{name = Hovering Light, school = Charms, discipline = Elemental, type = Instant, level =Novice, range =Self, incant = globus, duration = 1 minutes,noHigh = 1, noResist =1, noBlock = 1, effect =Summons a glowing orb\comma{}around 5cm in diameter that hovers above the caster\apos{}s head\comma{} casting bright light for 4m\comma{} and dim light for a further 15m. As a minor action\comma{} the caster may move this light up to 10m in any direction.}
+\spell{name = Ignite, school = Charms, discipline = Elemental, type = Instant, level =Novice, range =Sight, incant = ignis, noDur = 1, higher = \additional{2d6}{Fire},resist = Logic, noBlock = 1, effect =You wave your wand in a complicated pattern\comma{} and an area of the target up to 1m squared bursts into flames\comma{} and begins to expand over the rest of the target. 
+
+Ignited beings take 3d6 fire damage per turn\comma{} and the effect lasts until they come into contact with sufficient water or wind to extinguish the flames\comma{} or they pass a DV 12 Resist check\comma{} and voluntarily take the {\it Prone} status. The resist check can be performed once per turn.}
 \spell{name = Move Earth, school = Charms, discipline = Elemental, type = Focus, level =Novice, range =Close, incant = wykopat, noDur = 1, higher = When cast as a higher level spell\comma{} you may triple the total volume targeted for every additional spell level.,noResist =1, noBlock = 1, effect =Focus on a region of Earth with a volume of 1 cubic metre. You may excavate and move this loose earth around at will\comma{} at a speed of 5m per turn cycle. You may use this earth to raise walls or columns\comma{} but the total amount of matter must be conserved.}
+\spell{name = Speedswim, school = Charms, discipline = Elemental, type = Instant, level =Novice, range =Self, incant = delfini, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =For the duration of the spell\comma{} you retain the ability to conjure a small bubble of air\comma{} and manipulate the water around you\comma{} enabling you to move extremely rapidly whilst in water. Your swimspeed becomes equal to twice your normal movement speed\comma{} and you do not need to breath whilst underwater. 
+
+You also do not take disadvantage for using items\comma{} attacks or spellcasting whilst underwater.}
 \spell{name = Vortex Field, school = Charms, discipline = Elemental, type = Instant, level =Novice, range =Self, incant = dini, duration = 2 minutes,noHigh = 1, resist = Strength, noBlock = 1, effect =A swirling wall of wind evelopes a radius 1m around you\comma{} and follows you around for the duration of the spell. All physical objects entering the field are hurled in a random direction\comma{} and beings take 2d8 bludgeoning damage to pass through (halved on a resist).}
 }
  \spellBook{Secrets of Elemental Sorcery}{Adept-level Elemental}{
@@ -80,10 +88,17 @@ The earthen construct can absorb 10 points of damage\comma{} before the magic ho
 \spell{name = Cloudmove, school = Charms, discipline = Elemental, type = Ritual (30 minutes), level =Adept, range =Sight, incant = syneffo, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Perform a ritual to attune yourself to the weather and climate around you. By gently altering the wind\comma{} the pressure and the humidity you can subtly alter the weather in a 1km radius. You may push a raincloud out of the way to clear the skies\comma{} summon a light drizzle\comma{} or alleviate the worst of a storm. 
 
 This spell cannot be used for large\minus{}scale weather manipulation \minus{} you can only slightly alter what is already present.}
+\spell{name = Fireball, school = Charms, discipline = Elemental, type = Instant, level =Adept, range =Sight, incant = confringo, noDur = 1, higher = \additional{2d6}{Fire},noResist =1, negation = Blockable  and Dodgeable,effect =Launches a fireball at the target\comma{} which explodes on contact for 4d6 Fire Damage on all targets within 2m of the target. This effect is negated on a successful dodge\comma{} and halved on a successful block.}
 \spell{name = Floodlight, school = Charms, discipline = Elemental, type = Instant, level =Adept, range =Wandtip, incant = caecus, duration = White beam,noHigh = 1, resist = Observation, noBlock = 1, effect =Direct a brilliant beam of light from the tip of your wand\comma{} illuminating a cone 10m  in front of you with Bright light\comma{} and dim light a further 10m. If a target is illuminated by the beam and fails to resist\comma{} they are blinded for 2 turns.}
 \spell{name = Freeze, school = Charms, discipline = Elemental, type = Instant, level =Adept, range =Close, incant = glacius, noDur = 1, higher = When cast as a higher level spell\comma{} you may double the volume of water you can freeze\comma{} and add an additional 1d10 Cold damage to the blast.,resist = Vitality, noBlock = 1, effect =Your wand emits a blast of air so cold it makes even the caster\apos{}s fingers feel numb.
 
 This blast may freeze a body of water up equal in size to a cube with sides of length 2m\comma{} or when used on an individual\comma{} the freezing blast does 3d10 cold damage\comma{} halved on a successful Resist.}
+\spell{name = Heat Object, school = Charms, discipline = Elemental, type = Instant, level =Adept, range =Sight, incant = flagrante, duration = 3 turns,noHigh = 1, resist = Speed, noBlock = 1, effect =Causes a target object to heat up to unimaginable temperatures\comma{} doing 3d8 fire damage every time the target object is touched. 
+
+On each contact\comma{} target must succeed a Resist check to withdraw\comma{} or take the {\it Burned: Severe} status effect.}
+\spell{name = Icicle, school = Charms, discipline = Elemental, type = Instant, level =Adept, range =Close, incant = krystallium, noDur = 1, higher = Gain an additional 2 shards \forEvery{},noResist =1, negation = Blockable  and Dodgeable,effect =At your command 3 razor sharp shards of ice fling themselves at your target\comma{} performing an accuracy check for each. 
+
+Each shard does 1d8 piercing damage and 1d8 cold damage.}
 \spell{name = Lightning Bolt, school = Charms, discipline = Elemental, type = Instant, level =Adept, range =Sight, incant = baubilious, noDur = 1, higher = \additional{1d12}{Electrical},resist = Vitality, negation = Blockable  and Dodgeable,effect =Releases a bolt of lightning from the end of your wand. 
 Lightning can initiate fires\comma{} provide electrical current or can be used directly in combat\comma{} where it deals 3d12 electric damage. Targets struck by lightning must succeed in a Resist check\comma{} or be blinded for 2 turns.}
 \spell{name = Wind Tunnel, school = Charms, discipline = Elemental, type = Focus, level =Adept, range =Close, incant = vente polus, noDur = 1, noHigh = 1, resist = Strength, noBlock = 1, effect =Summon a powerful blast of wind from your wand\comma{} in a line 20m long and 2m wide. Every being which is in this region at the beginning of each cycle\comma{} or enters it during the course of the cycle\comma{} must Resist\comma{} or be blown to the end of the line. Those that succeed have their movement speed halved when moving towards you. 
@@ -98,12 +113,28 @@ You may control the windspeed\comma{} the temperature and the level of preciptat
 Mild alterations (i.e. cooling the temperature by a few degrees\comma{} summoning a brisk wind) happen as soon as the ritual is complete. Larger changes (i.e. dismissing an enormous storm\comma{} warming an ice\minus{}cold night) take place gradually over the course of several hours. 
 
 After the changes occur\comma{} the normal climate gradually reasserts itself.}
+\spell{name = Drowning Sphere, school = Charms, discipline = Elemental, type = Focus, level =Expert, range =Close, incant = panigus, noDur = 1, noHigh = 1, resist = Acrobatics, noBlock = 1, effect =A stream of water from every nearby source streams and collects in a sphere up to 3 metres in radius\comma{} hovering above the ground\comma{} a violently twisting vortex of water and matter. 
+
+Any being caught in the initial area\comma{} or which subsequently passes through the sphere must succeed on a Resist\comma{} or be sucked into the sphere. Up to 5 humanoids\comma{} or 1 larger creature (if within the size of the sphere) can be restrained at any one time. Beings inside the sphere are deprived of oxygen and are considered {\it Incapcitated}\comma{} able only to perform a Resist check at the beginning of each turn. 
+
+Succeeding in a resist check deposits you prone at a random point outside the sphere. 
+
+The sphere remains whilst concentration is maintained\comma{} and can be moved at a speed of 3 metres per cycle. When focus is broken\comma{} the sphere disintegrates and the water crashes down. Any being restrained or below the sphere at this point takes 5d8 bludgeoning damage.}
+\spell{name = Electrical Arc, school = Charms, discipline = Elemental, type = Focus, level =Expert, range =Close, incant = electrum maxima, noDur = 1, higher = \additional{1d10}{Electrical},noResist =1, negation = Blockable  and Dodgeable,effect =Whilst you maintain Focus\comma{} a bolt of energy arcs from the end of your wand\comma{} doing 5d10 electrical damage per turn.}
 \spell{name = Erupt, school = Charms, discipline = Elemental, type = Instant, level =Expert, range =Close, incant = purskama, noDur = 1, higher = \additional{2d12}{bludgeoning},noResist =1, negation = Dodgeable,effect =Target a being standing on a patch of earth or mud. The ground underneath them explodes upwards in a violent eruption of loose stones and tumultuous ground\comma{} dealing 5d12 bludegoning damage.}
+\spell{name = Flamethrower, school = Charms, discipline = Elemental, type = Focus, level =Expert, range =Close, incant = ustulo, noDur = 1, higher = \additional{4d10}{Fire},noResist =1, negation = Blockable,effect =An enormous burst of flame rips from the end of your wand\comma{} incinerating everything in a cone up to 5 metres in front of the caster. 
+
+All beings in the cone which fail to block take 8d10 fire damage.}
 }
  \spellBook{Storms\comma{} Seas and Seismic Shocks}{Master-level Elemental}{
 \spell{name = Fissure, school = Charms, discipline = Elemental, type = Instant, level =Master, range =Close, incant = lohe, noDur = 1, noHigh = 1, resist = Acrobatics, noBlock = 1, effect =Target a line of natural ground (earth\comma{} mud\comma{} natural stone) up to 5m long. The earth rips asunder along this line\comma{} forming a fissure 1m wide and 10m deep. Any being caught in this region must pass a Resist check\comma{} or fall inside.
 
 The fissure slams shut at the end of the turn cycle\comma{} trapping those inside underground and dealing 8d12 bludgeoning damage\comma{} and leaving them starved of air until they succeed in a DV 15 Strength check to dig their way out.}
+\spell{name = Flame Whip, school = Charms, discipline = Elemental, type = Instant, level =Master, range =Close, incant = ignellum, noDur = 1, noHigh = 1, resist = Strength, negation = Blockable  and Dodgeable,effect =You summon a thin trail of fire from the end of you wand\comma{} which you can then use as a whip\comma{} performing a melee attack using your Elemental modifier (if you are proficient in Exotic weapons\comma{} you may add your Expertise modifier even if you have already added it). 
+
+Any target hit by your flaming whip takes 9d12 fire damage\comma{} and you may direct the whip such that it wraps around them\comma{} rendering them {\it Incapacitated} until they successfully resist at the end of their turn. A trapped individual takes a further 3d12 Fire damage per turn. 
+
+This spell lasts until you drop your wand\comma{} or you dismiss it as an instant action. No further spells can be cast whilst the whip is active.}
 \spell{name = Tornado, school = Charms, discipline = Elemental, type = Focus, level =Master, range =Close, incant = stilipare, noDur = 1, noHigh = 1, resist = Strength, noBlock = 1, effect =A swirling\comma{} twisting column of cloud forms in the atmosphere above a targeted region within range. After 1 turn cycle of concentration the tornado slams into the ground as a cylinder 5m in radius and 50m tall. You may spend a minor action moving the tornado up to 10m per turn cycle. 
 
 Any being which spends any part of a turn cycle in this region takes 8d8 bludgeoning damage and must succeed on a Resist check\comma{} or be caught in the vortex\comma{} taking the {\it Trapped} status effect.
@@ -111,6 +142,7 @@ Any being which spends any part of a turn cycle in this region takes 8d8 bludgeo
 Beings caught in the vortex take 2d8 bludgeoning damage per cycle and are sucked 5 metres higher into the vortex. Trapped beings may take a major action to perform the Resist check again to escape\comma{} at which point they drop out of the column onto the floor\comma{} with any associated falling damage. 
 
 When the spell ends\comma{} the tornado disspates and all trapped beings are dropped to the floor.}
+\spell{name = Torrent, school = Charms, discipline = Elemental, type = Instant, level =Master, range =Close, incant = chimeros, noDur = 1, noHigh = 1, noResist =1, negation = Dodgeable,effect =You summon a truly gargantuan jet of water\comma{} which you make into either needle\minus{}thin jet\comma{} or a hammer\minus{}blow blast. If it makes contact with a target\comma{} deals 8d10 bludgeoning or piercing damage (your choice).}
 }
  \spellBook{The Avatar of the Elements}{Ascendant-level Elemental}{
 \spell{name = Channel Cataclysm, school = Charms, discipline = Elemental, type = Instant, level =Ascendant, range =Close, incant = moqai, noDur = 1, noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =Raise your wand into the air\comma{} and summon the raw energy of the universe. A bolt of energy descends from the heavens\comma{} into your wand and is directed from your other\comma{} outstretched hand as an energetic blast\comma{} focussed on a single individual.
@@ -123,11 +155,21 @@ The powerful rocking of the earth knocks all beings into the {\it Prone Position
 The earthquake also spawns 2d4 {\it Fissures} at locations chosen by the caster (see the relevant spell). 
 
 For every building or structure in the region\comma{} roll a d4. If the result is a one\comma{} the building collapses and is destroyed. Beings in a destroyed building take 10d10 bludgeoning damage.}
+\spell{name = Immolation, school = Charms, discipline = Elemental, type = Instant, level =Ascendant, range =Close, incant = uro, noDur = 1, noHigh = 1, noResist =1, negation = Dodgeable,effect =A small ember drifts lazily from the end of your wand\comma{} and latches onto your target\comma{} igniting a small part of the target. Once it has taken root\comma{} nothing can extinguish this fire until it either runs out of fuel\comma{} or out of air. No magical intervention known to wizardkind can end its life before one of these conditions is met. 
+
+The ember deals 1d6 damage per turn. Every time a magical or mundane attempt is made to extinguish the fire\comma{} it doubles in intensity spreading rapidly\comma{} and doubles the damage it deals per turn. 
+
+The fire may be moved using the {\it Control Fire} spell\comma{} but only when cast as a Master Level spell\comma{} and even then requires a DV 20 Power check to successfully remove the fire.}
 \spell{name = Tempest, school = Charms, discipline = Elemental, type = Ritual (2 hours), level =Ascendant, range =Self, incant = thyella, noDur = 1, noHigh = 1, resist = Vitality, noBlock = 1, effect =Spend 2 hours adorning yourself with special paints and oils\comma{} attuning yourself to the wrathful spirits of the Air Domain. At any point in the next day\comma{} raise your wand to the heavens and shout the incantation\comma{} summoning the most powerful storms in existence. 
 
 Thick black clouds appear\comma{} blotting out the sun and torrential rain and powerful winds are summoned\comma{} providing severe obscuration to vision. All ranged accuracy and spellcasting checks take disadvantage. 
 
 The caster may also take a minor action to summon bolts of lightning to strike 2d4 targets in sight\comma{} dealing 8d10 electric damage (halved on a resist)\comma{} or to spawn a {\it Tornado} (see relevant spell) which stays fixed at a specified location for 5 turns.}
+\spell{name = Tsunami, school = Charms, discipline = Elemental, type = Focus, level =Ascendant, range =Sight, incant = unda maxima, noDur = 1, noHigh = 1, resist = Strength, noBlock = 1, effect =You conjure a gigantic wall of water\comma{} 15 metres long and 5 metres tall. You may choose how to orient the wave\comma{} which proceeds to move forward at a speed of 20 metres per round.
+
+For every 20 metres the wave moves forward\comma{} it loses 1 metre of height. The wave lasts until its height reaches zero\comma{} or concentration is broken. 
+
+Any being which spends any part of its turn in the wave takes 8d12 damage (halved on a successful resist) and have their speed set to zero until the end of the next round.}
 }
  \spellBook{The Standard Book of Spells}{Beginner-level Kinesis}{
 \spell{name = Clean Surface, school = Charms, discipline = Kinesis, type = Focus, level =Beginner, range =Wandtip, incant = pullundo, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Wave your wand over a surface to erase magical and mundane markings from it. Cleans 1 square metre per turn that the spell is maintained. 
@@ -144,12 +186,18 @@ Any being within this cone finds their clothes have been cleaned and dried\comma
  \spellBook{Achievements in Charming}{Novice-level Kinesis}{
 \spell{name = Cut Object, school = Charms, discipline = Kinesis, type = Instant, level =Novice, range =Close, incant = diffindo, noDur = 1, noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =Cut into an object\comma{} as if you had wielded a sharp knife with a blade of up to 10cm in length.
 If used on a living being\comma{} it is as if you wielded an exceptionally sharp knife\comma{} dealing 2d4 slashing damage.}
+\spell{name = Lasso, school = Charms, discipline = Kinesis, type = Focus, level =Novice, range =Close, incant = carpe rectractum, noDur = 1, noHigh = 1, resist = Strength, noBlock = 1, effect =A lasso of golden light whips out from your wand\comma{} allowing you to initiate a {\it grapple} with the target using your arcane subjugation value instead of your Strength. Target may resist following the usual grappling rules.}
 \spell{name = Lock, school = Charms, discipline = Kinesis, type = Instant, level =Novice, range =Wandtip, incant = colloportus, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Magically lock a door or chest. Mundane attempts to open the lock fail\comma{} and magical attempts must be cast using an unlocking spell at least one level greater than the spell\minus{}level used to cast this spell.}
 \spell{name = Repair Object, school = Charms, discipline = Kinesis, type = Focus, level =Novice, range =Close, incant = reparo, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Fix a broken targeted object. 
 
 Can only fix an object if it is reasonable that you could have repaired it with your bare hands (i.e. you cannot repair complex machinery without expert knowledge). Simple tasks (i.e. repairing glasses) work in a single turn\comma{} but repairing larger structures (i.e. a full stained glass window) require continued Focus.
 
 You can use this to repair a magical object which is physically broken but has its magical nexus intact\comma{} but it cannot restore magic to an object that has lost its nexus.}
+\spell{name = Upwards Blast, school = Charms, discipline = Kinesis, type = Instant, level =Novice, range =Wandtip, incant = ascendio, noDur = 1, higher = This spell can launch targets an additional 5 metres \forEvery{}.,resist = Power, noBlock = 1, effect =Launches the target vertically upwards into the air or through water\comma{} up to a height of 10 metres in a matter of moments. A target may choose to Resist the effects of this spell\comma{} with advantage if they are heavier than the caster.
+
+If a target hits a ceiling\comma{} they take 1d10 bludgeoning damage\comma{} and then if they fail to grab onto anything and fall back to the ground\comma{} they take 1d4 bludgeoning damage for every 2 metres fallen. 
+
+This spell can be cast on the self.}
 \spell{name = Weld Objects, school = Charms, discipline = Kinesis, type = Instant, level =Novice, range =Sight, incant = obharesco, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Stick two objects together\comma{} as if you had fused them together at a molecular level. To break them apart requires either slicing the objects apart\comma{} or pulling them hard enough to break one (or both) of the objects.}
 }
  \spellBook{The Standard Book of Spells (Grade 2)}{Adept-level Kinesis}{
@@ -345,6 +393,11 @@ The being remains asleep until the take damage\comma{} or an ally takes a major 
 \spell{name = Suggestion, school = Illusion, discipline = Bewitchment, type = Instant, level =Adept, range =Close, incant = facite, duration = 2 hours,noHigh = 1, resist = Willpower, noBlock = 1, effect =Make a suggestion to a target within hearing range. The suggestion must be reasonable (i.e. no stabbing themselves) and limited to a single sentence. If target fails to resist\comma{} they must obey this suggestion for the duration.}
 }
  \spellBook{On the Mysteries of the Human Mind}{Expert-level Bewitchment}{
+\spell{name = Bedazzle, school = Illusion, discipline = Bewitchment, type = Ward, level =Expert, range =Wandtip, incant = chameleo, duration = 1 day,noHigh = 1, resist = Observation, noBlock = 1, effect =This spell creates a ward on the target\comma{} which produces a beddazzling and befuddling field\comma{} which causes eyes to simply slide off from the warded region without the brain properly processing it\comma{} rendering the warded target almost perfectly invisible. 
+
+This spell only works on Sapient beings and bests with a (relatively) neural system. Alien beings such as dementors and poltergeists do not have a brain which this field can confuse. 
+
+If the target fails to Resist\comma{} they cannot observe or otherwise detect the warded region.}
 }
  \spellBook{Merlin\apos{}s Tricks and Incantations}{Master-level Bewitchment}{
 \spell{name = True Illusion, school = Illusion, discipline = Bewitchment, type = Ritual (10 minutes), level =Master, range =Sight, incant = stultuvisus, duration = 1 hours,noHigh = 1, resist = Observation, noBlock = 1, effect =Create a perfect illusion of an environment (up to 20m in radius) or people (up to 3)\comma{} which can be interacted with and touched by the target. 
@@ -362,13 +415,23 @@ Illusion lasts for 10 hours. An observer may determine that the illusion is not 
 Whispers do 1d8 psychic damage per turn that the spell is active.}
 \spell{name = False Friendship, school = Illusion, discipline = Psionics, type = Instant, level =Beginner, range =close, incant = amicus maxmius, duration = 1 hour,noHigh = 1, resist = Willpower, noBlock = 1, effect =If the target fails to resist\comma{} you place the idea inside their mind that you are their ally. Gain advantage on all charisma checks directed at the target for the duration  the spell\comma{} if they are not already overtly hostile. At the end of the spell\comma{} or if they succeed in Resisting\comma{} the target becomes aware that you have enchanted and deceived them\comma{} and will become hostile or otherwise seek vengeance.}
 \spell{name = Piercing Wail, school = Illusion, discipline = Psionics, type = Instant, level =Beginner, range =Close, incant = magnus surgerus, noDur = 1, higher = The wail gains an additional 1d4 psychic damage for every additional spell level dedicated to the casting.,resist = Willpower, noBlock = 1, effect =All targets in a 3m spherical radius of the caster take 1d4 points of psychic damage\comma{} and awaken if they are sleeping. The damage is halved on a successful Resist.}
+\spell{name = Shrivelled Ears, school = Illusion, discipline = Psionics, type = Instant, level =Beginner, range =Close, incant = raxus, duration = 1 minute,noHigh = 1, resist = Logic, noBlock = 1, effect =On a failed Resist\comma{} causes the target to believe that their ears have shrivelled up and fallen off\comma{} and temporarily removes the link between ears and the brain. 
+
+Target is effectively deaf and all checks which rely on hearing fail. They also take check\minus{}disadvantage on all Perception checks.}
 }
  \spellBook{Your Mind\comma{} the Weapon}{Novice-level Psionics}{
+\spell{name = Illiteracy, school = Illusion, discipline = Psionics, type = Instant, level =Novice, range =Close, incant = illegibilus, duration = 1 minute,noHigh = 1, resist = Logic, noBlock = 1, effect =On a failed resist\comma{} the target\apos{}s brain becomes scrambled\comma{} and they temporarily lose the ability to read. 
+
+This means they cannot book\minus{}cast\comma{} and if they attempt to focus on a bit of writing for more than 10 seconds\comma{} they take the {\it confused} status.}
+\spell{name = Manipulate Emotions, school = Illusion, discipline = Psionics, type = Instant, level =Novice, range =Close, incant = motus conus, duration = 2 minutes,noHigh = 1, resist = Willpower, noBlock = 1, effect =If the target fails to resist\comma{} you may manipulate their emotions such that they feel an intense emotion of your choosing. You can make them feel incredibly happy\comma{} or incredibly sad\comma{} scared\comma{} or brave. The target is unaware that you have manipulated them in this fashion.}
 \spell{name = Violent Phantasms, school = Illusion, discipline = Psionics, type = Instant, level =Novice, range =Close, incant = umbra impetia, duration = 20 seconds,higher = \additional{1d6}{Psychic},resist = Conviction, negation = Blockable,effect =Purple ethereal energy seeks out the target and infiltrates their mind. The spell causes the target to believe that multiple phantasms are attacking them target\comma{} doing 1d6 psychic damage at the beginning of every  turn that the phantasms are active. 
 
 Afflicted individuals may take a minor action at the end of each turn to re\minus{}perform the Resist check and end the effect.}
 }
  \spellBook{Mindmakers\comma{} Mindbreakers}{Adept-level Psionics}{
+\spell{name = Babbling, school = Illusion, discipline = Psionics, type = Instant, level =Adept, range =Close, incant = longardo, duration = 2 minutes,noHigh = 1, resist = Willpower, noBlock = 1, effect =On a failed Resist\comma{} the target begins babbling incoherently and without control. 
+
+For the duration of the spell\comma{} whenever the target wishes to speak or cast a spell with a verbal component they must successfully Resist to do so without babbling over their intended phrase.}
 \spell{name = Drain Fortitude, school = Illusion, discipline = Psionics, type = Instant, level =Adept, range =Close, incant = delcrus, noDur = 1, higher = \additional{2d6}{Fatigue},resist = Willpower, noBlock = 1, effect =If the target fails to Resist\comma{} you impose your will over them\comma{} doing  2d6 Fatigue damage to the target.}
 \spell{name = Fury, school = Illusion, discipline = Psionics, type = Instant, level =Adept, range =Sight, incant = irafors, duration = 30 seconds,noHigh = 1, resist = Compassion, noBlock = 1, effect =Target performs a Resist check\comma{} if they fail\comma{} target flies into a mindless rage and begins attacking all those around them.}
 \spell{name = Shatter Illusions, school = Illusion, discipline = Psionics, type = Instant, level =Adept, range =Close, incant = conlidus, noDur = 1, higher = When casting as a higher level spell\comma{} you may remove more powerful illusions \minus{} matching the level this spell is cast at.,noResist =1, noBlock = 1, effect =Target an individual and remove all Illusion spells of Adept level and below from them.}
@@ -384,6 +447,9 @@ This effect is negated on a successful Resist\comma{} which occurs whenever you 
 }
  \spellBook{The Immoral Art of Psionics}{Expert-level Psionics}{
 \spell{name = Delusion, school = Illusion, discipline = Psionics, type = Instant, level =Expert, range =Close, incant = falasarium, duration = 5 hours,noHigh = 1, resist = Conviction, noBlock = 1, effect =If target fails a Resist check\comma{} the caster may make them believe one piece of information\comma{} which they will believe to be irrefutably true. The delusion must be vaguely rational\comma{} and may not incur excessive self\minus{}harm\comma{} as judged by the GM.}
+\spell{name = Psychosis, school = Illusion, discipline = Psionics, type = Instant, level =Expert, range =Sight, incant = demensus, noDur = 1, higher = \additional{3d12}{psychic},noResist =1, negation = Dodgeable,effect =The target is wracked with uncontrollable pain as their very perception of reality is messed with. 
+
+Target takes 5d12 psychic damage.}
 \spell{name = Psychosomatism, school = Illusion, discipline = Psionics, type = Focus, level =Expert, range =Sight, incant = animo materia, noDur = 1, noHigh = 1, resist = Conviction, noBlock = 1, effect =You exploit the link between the mind and the body to cause harm to the body by making them truly believe they are suffering harm. 
 
 You conjure an image in their mind of an assailant \minus{} a fearsome dragon or a cloaked duelist. In their mind\comma{} this assailant inflicts damage on them of a damage type chosen by you. 
@@ -394,6 +460,11 @@ On a failed Resist\comma{} their body responds as if this attack had been real \
 The actual reliving of the memory occurs in an instant\comma{} and is over almost instantaneously.}
 }
  \spellBook{Melting Minds: The Master Guide to Psionics}{Master-level Psionics}{
+\spell{name = Linguistic Aphasia, school = Illusion, discipline = Psionics, type = Instant, level =Master, range =Close, incant = squiddle\minus{}de\minus{}bop, duration = 1 hour,noHigh = 1, resist = Logic, noBlock = 1, effect =On a failed resist\comma{} the target\apos{}s mind becomes so completely ruined that they lose the ability to process language. The target can no longer communicate either verbally or with written language properly. 
+
+As far as they are concerned\comma{} everyone is speaking or writing pure nonsense to them\comma{} whilst to everyone else they appear to be spouting gibberish. 
+
+The victim may attempt to resist every turn to end the effect\comma{} though a successful resist (including the first) deals 3d10 psychic damage.}
 \spell{name = Modify Memory, school = Illusion, discipline = Psionics, type = Instant, level =Master, range =Close, incant = obliviate, noDur = 1, noHigh = 1, resist = Conviction, noBlock = 1, effect =If target fails a Resist check\comma{} you may modify the memories of the target\comma{} erasing memories\comma{} or fabricating new ones. 
 
 You may even cause them to forget skills and spells that they currently know: remove one memorised spell or Skill from their character sheet.}
@@ -406,6 +477,7 @@ You may even cause them to forget skills and spells that they currently know: re
 \spell{name = Curse of the Bogies, school = Maledictions, discipline = Curse, type = Instant, level =Beginner, range =Close, incant = Mucous ad nauseam, duration = 1 day,noHigh = 1, resist = Vitality, noBlock = 1, effect =A fine green mist floats from the end of your wand\comma{} into the face of the target. On a failed Resist\comma{} they contract an awful cold. The target becomes visibly ill\comma{} their nose drips snot constantly\comma{} and their throat is sore. 
 
 Every time they open their mouth to speak\comma{} they must succeed a DV 8 Vitality Resist to avoid sneezing. Sneezing during a spell incantation causes the spell to fail.}
+\spell{name = Stickfast, school = Maledictions, discipline = Curse, type = Instant, level =Beginner, range =Close, incant = colloshoo, duration = 15 seconds,noHigh = 1, resist = Strength, negation = Blockable  and Dodgeable,effect =If this spell strikes a target\comma{} it glues their feet to the ground\comma{} setting their movement speed to 0 (though it does not effect magical transport such as apparation). The target may use a major action to perform a Resist check to break free.}
 \spell{name = Trip, school = Maledictions, discipline = Curse, type = Instant, level =Beginner, range =Close, incant = lubricor, noDur = 1, noHigh = 1, resist = Acrobatics, noBlock = 1, effect =If the target is moving this turn cycle and fails to Resist\comma{} they go sprawling onto the ground taking 1 bludgeoning damage\comma{} and take the {\it Prone Position} status.}
 }
  \spellBook{Curses \& Counter Curses}{Novice-level Curse}{
@@ -414,6 +486,7 @@ Every time they open their mouth to speak\comma{} they must succeed a DV 8 Vital
 \spell{name = Mental Burden, school = Maledictions, discipline = Curse, type = Instant, level =Novice, range =Close, incant = onus, duration = 1 minute,noHigh = 1, resist = Intelligence, noBlock = 1, effect =If the target fails to Resist\comma{} all spells cost 50\% more FP than their stated value for the duration of the spell.}
 \spell{name = Prevent Movement, school = Maledictions, discipline = Curse, type = Focus, level =Novice, range =Close, incant = impedimentia, duration = 15 seconds,noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =As this spell hits the target\comma{} a magical rune forms on the floor beneath their feet\comma{} forcing their feet to remain rooted to the ground. The target acquires the Trapped status effect. Their remaining appendages are still free to move\comma{} and the target can still speak – but they cannot move until the spell ends.}
 \spell{name = Strangle, school = Maledictions, discipline = Curse, type = Instant, level =Novice, range =Close, incant = offoco, noDur = 1, noHigh = 1, resist = Vitality, negation = Blockable  and Dodgeable,effect =If this spell hits a living being\comma{} the target must Resist at the end of every turn until they succeed. Until then\comma{} they are deprived of oxygen and cannot speak. After 6 turns\comma{} the victim can no longer take any other actions then attempting to Resist\comma{} and after this they eventually succumb to hypoxia under the usual rules.}
+\spell{name = Warted Skin, school = Maledictions, discipline = Curse, type = Instant, level =Novice, range =Close, incant = furnunculus, duration = 1 hour,noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =After being hit with this spell\comma{} the target breaks out in a horrendous case of warts and boils all over their body. This boils are incredibly itchy and distracting\comma{} giving the afflicted disadvantage on all Spirit checks.}
 }
  \spellBook{Voodoo and Vomiting: A Study in Curses}{Adept-level Curse}{
 \spell{name = Break Focus, school = Maledictions, discipline = Curse, type = Instant, level =Adept, range =Close, incant = adtono, duration = 20 seconds,noHigh = 1, resist = Willpower, noBlock = 1, effect =Disorienting noises and lights distract prevent the target from continued Focus. Afflicted beings cannot cast Focus spells for the duration of this spell \minus{}\minus{} all attempts to do so count as `failed'\comma{} and any current Focus effects are terminated. 
@@ -427,16 +500,19 @@ A successful Resist negates this effect\comma{} but target must take check disad
 The target is Immune to all forms of damage except psychic whilst it is petrified. At the end of each turn in which they are petrified\comma{} a being may perform a Resist check to remove this effect.}
 }
  \spellBook{Cursing your Way to Revenge}{Expert-level Curse}{
-\spell{name = Curse Being, school = Maledictions, discipline = Curse, type = Ritual (10 minutes), level =Expert, range =Sight, incant = maledicto, noDur = 1, noHigh = 1, resist = Power, noBlock = 1, effect =Casts a permanent curse on a target being\comma{} object or location. You may choose the effects of this curse\comma{} though they must be commensurate with the casting level of this spell\comma{} and the GM has a veto. Be inventive!}
-\spell{name = Knockout, school = Maledictions, discipline = Curse, type = Instant, level =Expert, range =Close, incant = stupefy, duration = 20 seconds,noHigh = 1, resist = Willpower, negation = Blockable  and Dodgeable,effect =If the spell hits the target\comma{} they are rendered {\it unconscious} for the duration of the spell. 
+\spell{name = Comatosing Blast, school = Maledictions, discipline = Curse, type = Instant, level =Expert, range =Close, incant = stupefy, duration = 20 seconds,noHigh = 1, resist = Willpower, negation = Blockable  and Dodgeable,effect =If the spell hits the target\comma{} they are rendered {\it unconscious} for the duration of the spell. 
 
 At the end of each turn cycle\comma{} they perform a Resist check to remove this effect.}
+\spell{name = Curse Being, school = Maledictions, discipline = Curse, type = Ritual (10 minutes), level =Expert, range =Sight, incant = maledicto, noDur = 1, noHigh = 1, resist = Power, noBlock = 1, effect =Casts a permanent curse on a target being\comma{} object or location. You may choose the effects of this curse\comma{} though they must be commensurate with the casting level of this spell\comma{} and the GM has a veto. Be inventive!}
 \spell{name = Perpetual Hunger, school = Maledictions, discipline = Curse, type = Instant, level =Expert, range =Close, incant = inedia, duration = 10 minutes,noHigh = 1, resist = Vitality, noBlock = 1, effect =The afflicted feels perpetual\comma{} soul\minus{}sapping hunger. Every minute (20 turns) where at least two mouthfuls of food is not consumed\comma{} suffer necrotic damage equal to the number of minutes since food was last consumed\comma{} until the spell effect ends. Target may perform a Resist check every minute to end the effect.}
 \spell{name = Shield Breaker, school = Maledictions, discipline = Curse, type = Instant, level =Expert, range =Close, incant = misericorde, noDur = 1, noHigh = 1, noResist =1, negation = Dodgeable,effect =Damage a target\apos{}s armour\comma{} reducing its effectiveness by 1d4 points. If the total damage to the armour exceeds its Block bonus\comma{} the armour is destroyed and all positive modifiers are removed. 
 
 For larger creatures who\apos{}s `armour' is their natural scales or tough hide\comma{} this spell effects an area one square metre in area at a time.}
 }
  \spellBook{The Bumper Book of Crooked Curses}{Master-level Curse}{
+\spell{name = Corrupt Object, school = Maledictions, discipline = Curse, type = Ritual (1 hour), level =Master, range =Wandtip, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =This spell allows you to corrupt and redirect the magical nexus of an enchanted object\comma{} causing it to malfunction\comma{} gain additional negative effects\comma{} or destroying it completely. 
+
+You may alter the meaning of the runechains on an enchanted object slightly (i.e. causing a bludger to attack a single person\comma{} rather than follow the rules of quidditch)\comma{} remove a runechain entirely\comma{} or add an additional negative effect of your choosing.}
 \spell{name = Wither, school = Maledictions, discipline = Curse, type = Instant, level =Master, range =Close, incant = unis, duration = 1 minute,higher = The \attPhys{} penalty is increased by 2 \forEvery{}.,resist = Vitality, noBlock = 1, effect =Necrotic energy seeps up from the ground\comma{} into the target\comma{} causing them to undergo a severe physical degradation\comma{} reducing their \attPhys{} score by 4 for the duration of the spell. 
 
 This effect is halved on a successful Resist.}
@@ -456,6 +532,9 @@ You may choose the colour of the sparks from red\comma{} blue\comma{} green or y
 
 Each packet does 1d8 damage of the chosen type.}
 \spell{name = Sting, school = Maledictions, discipline = Hex, type = Instant, level =Beginner, range =Sight, incant = ictus, noDur = 1, higher = \additional{1d6}{poison},noResist =1, negation = Blockable,effect =A blast of purplish energy rockets from your wand\comma{} seeking to strike the enemy in the face. Stings the target for 1d6+1 poison damage.}
+\spell{name = Ticklish Blast, school = Maledictions, discipline = Hex, type = Instant, level =Beginner, range =Close, incant = rictumsempra, duration = 1 minute,higher = \additional{1d6}{Concussive},noResist =1, negation = Blockable  and Dodgeable,effect =When this spell touches the target\comma{} they take 1d6 concussive damage\comma{} and in addition they begin chuckling uncontrollably for the duration of the spell\comma{} reducing their awareness of their surroundings. 
+
+The target takes disadvantage on all perception checks for the duration.}
 }
  \spellBook{Hexes to Make Your Head Spin (Literally)}{Novice-level Hex}{
 \spell{name = Acidic Burst, school = Maledictions, discipline = Hex, type = Instant, level =Novice, range =Wandtip, incant = ambustum, duration = 20 seconds,higher = The acid damage increase by 1d4 per turn for every additional spell\minus{}level dedicated to the casting.,resist = Observation, noBlock = 1, effect =Fills a cube of size 4m with an acidic cloud that does 1d4 acid damage once per turn to all beings which spent any time within the cloud this turn\comma{} until the end of the spell duration. Any being which is within the cloud at the moment it is summoned may attempt to Resist to negate the damage taken on their first turn within the cloud. 
@@ -464,15 +543,11 @@ In a confined space\comma{} such as a cramped tunnel or a sealed room\comma{} th
 \spell{name = Bat Bogey Hex, school = Maledictions, discipline = Hex, type = Instant, level =Novice, range =Sight, incant = vespernasum, duration = 10 seconds,higher = The spell produces an additional bat\comma{} and lasts fro an additional 10 seconds  \forEvery,noResist =1, negation = Blockable  and Dodgeable,effect =Causes the mucus in the target{\apos}s nose to gain sentience\comma{} take the form of a tiny bat\comma{} and then attack the target. 
 Each bat\minus{}bogey does 1d6 points of acid damage per turn for the duration of the spell.}
 \spell{name = Bolt from the Blue, school = Maledictions, discipline = Hex, type = Instant, level =Novice, range =Close, incant = mirum, noDur = 1, higher = \additional{1d10}{Force},resist = Observation, noBlock = 1, effect =A bolt of magical energy strikes out at the target from a random direction\comma{} punishing the unaware. If the target fails to resist\comma{} they take 2d10 force damage.}
-\spell{name = Burst of Frost, school = Maledictions, discipline = Hex, type = Instant, level =Novice, range =Close, incant = isti, noDur = 1, higher = Gain an additional 1d10 Cold damage for every additional spell level dedicated to casting this spell.,noResist =1, negation = Blockable  and Dodgeable,effect =The air around the tip of your wand freezes\comma{} condensing the surrounding water vapour into a tiny globe of ice\comma{} which launches towards your target. If it hits\comma{} the globe explodes doing 2d10 Cold damage.}
 \spell{name = Crackling Fist, school = Maledictions, discipline = Hex, type = Instant, level =Novice, range =Wandtip, incant = grothia, noDur = 1, higher = \additional{2d6}{Bludgeoning},noResist =1, negation = Blockable  and Dodgeable,effect =As you ram your wandtip into an opponent\comma{} an enormous fist\minus{}shaped field of energy explodes into the target\comma{} dealing 3d6 bludgeoning damage.}
 \spell{name = Shockwave, school = Maledictions, discipline = Hex, type = Instant, level =Novice, range =Self, incant = inpusla, noDur = 1, higher = \additional{1d6}{Concussive},resist = Acrobatics, noBlock = 1, effect =A shockwave emanates from the caster in every direction\comma{} for a radius of 3m\comma{} doing 2d6 concussive damage (halved on a successful Resist) to all beings caught in the radius. Beings which fail to resist must roll a 1d4. On a 1\comma{} they are knocked prone.}
 }
  \spellBook{Hexing Your Problems \minus{} the Healthy Coping Mechanism}{Adept-level Hex}{
-\spell{name = Fireball, school = Maledictions, discipline = Hex, type = Instant, level =Adept, range =Sight, incant = confringo, noDur = 1, higher = \additional{2d6}{Fire},noResist =1, negation = Blockable  and Dodgeable,effect =Launches a fireball at the target\comma{} which explodes on contact for 4d6 Fire Damage on all targets within 2m of the target. This effect is negated on a successful dodge\comma{} and halved on a successful block.}
-\spell{name = Heat Object, school = Maledictions, discipline = Hex, type = Instant, level =Adept, range =Sight, incant = flagrante, duration = 3 turns,noHigh = 1, resist = Speed, noBlock = 1, effect =Causes a target object to heat up to unimaginable temperatures\comma{} doing 3d8 fire damage every time the target object is touched. 
-
-On each contact\comma{} target must succeed a Resist check to withdraw\comma{} or take the {\it Burned: Severe} status effect.}
+\spell{name = Exploding Missile, school = Maledictions, discipline = Hex, type = Instant, level =Adept, range =Close, incant = bombarda, noDur = 1, higher = \additional{2d12}{fire},noResist =1, negation = Blockable  and Dodgeable,effect =A small missile launches from the end of your wand and explodes on contact with the target\comma{} dealing 2d12 concussive damage and 1d12 fire damage.}
 \spell{name = Object Swarm, school = Maledictions, discipline = Hex, type = Focus, level =Adept, range =Close, incant = oppugno, noDur = 1, higher = An additional 3 objects are enchanted for every additional spell level dedicated to this spell.,noResist =1, negation = Blockable  and Dodgeable,effect =Causes 5 nearby objects to hurl themselves at the target. 
 
 Each object does 1d4 bludgeoning damage\comma{} with the caster performing an accuracy check for each of them.}
@@ -489,7 +564,6 @@ Those caught in the region take 6d6 of cold damage\comma{} and apply the mild Fr
 
 This spell deals 3d12 Force damage to all targets caught in the region\comma{} halved on a successful Block.}
 \spell{name = Detonation, school = Maledictions, discipline = Hex, type = Instant, level =Expert, range =Sight, incant = expulso, noDur = 1, higher = \additional{2d6}{Force},resist = Power, negation = Dodgeable,effect =Launches a magical bolt at the target which\comma{} if it makes contact\comma{} causes the object to violently tear itself apart\comma{} doing 5d12 force damage. Resist for half damage.}
-\spell{name = Electrical Arc, school = Maledictions, discipline = Hex, type = Focus, level =Expert, range =Close, incant = electrum maxima, noDur = 1, higher = \additional{1d10}{Electrical},noResist =1, negation = Blockable  and Dodgeable,effect =Whilst you maintain Focus\comma{} a bolt of energy arcs from the end of your wand\comma{} doing 5d10 electrical damage per turn.}
 }
  \spellBook{An Auror\apos{}s Toolkit}{Master-level Hex}{
 \spell{name = Crush Bones, school = Maledictions, discipline = Hex, type = Instant, level =Master, range =Sight, incant = obcillo ossium, noDur = 1, higher = \additional{4d10}{bludgeoning},resist = Strength, noBlock = 1, effect =A great force smashes into the opponent\comma{} breaking their bones. Does 8d10 bludgeoning damage\comma{} and applying the {\it Broken Bone} status effect and the associated {\it Serious Injury} status. 
@@ -511,6 +585,7 @@ If the target has a serious wound\comma{} i.e. a broken bone\comma{} cannot heal
  \spellBook{Magic to Make Others Better}{Novice-level Healing}{
 \spell{name = Celestial Burst, school = Recuperation, discipline = Healing, type = Instant, level =Novice, range =Sight, incant = sol maxima, noDur = 1, higher = \additional{2d4}{Celestial},resist = Power, noBlock = 1, effect =A bolt of magic is released from the end of your wand\comma{} rocketing towards a targeted region. The bolt explodes on contact with any solid or astral objects in its path\comma{} releasing a searing white light that does 4d4 Celestial Damage in a 5m radius\comma{} halved on a successful Resist. Beings which are immune to Celestial damage are healed by 2 points instead.}
 \spell{name = Checkup, school = Recuperation, discipline = Healing, type = Instant, level =Novice, range =Wandtip, incant = dispungo, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Enquire as to the health status of the target\comma{} find out their remaining HP\comma{} as well as any status effects\comma{} illnesses\comma{} curses or diseases they currently posses.}
+\spell{name = Clear Airways, school = Recuperation, discipline = Healing, type = Instant, level =Novice, range =Wandtip, incant = Anapneo, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =The target has their airways cleared\comma{} allowing them to breath freely and negating any choking effects.}
 \spell{name = Endure Environment, school = Recuperation, discipline = Healing, type = Instant, level =Novice, range =Wandtip, incant = omnium, duration = 1 day,noHigh = 1, noResist =1, noBlock = 1, effect =Target is protected from the ravages of the environment\comma{} and hence can exist in temperatures in the range \minus{}40  to 50 celsius\comma{} and is unaffected by heavy rain and other weather phenomena. The target is not protected against fire and cold damage\comma{} however.}
 \spell{name = Heal Wounds, school = Recuperation, discipline = Healing, type = Instant, level =Novice, range =Wandtip, incant = episkey, noDur = 1, higher = Heal an additional 1d8 HP \forEvery.,noResist =1, noBlock = 1, effect =Heal the target for 2d8 HP and remove any minor status effects such as burns\comma{} hypoxia and confusion.
 
@@ -523,7 +598,9 @@ If target has a serious wound (i.e. a broken bone or a serious burn)\comma{} thi
 \spell{name = Countercurse, school = Recuperation, discipline = Healing, type = Instant, level =Adept, range =Wandtip, incant = finite maledictum, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Remove the effects of an active spell from the Curse discipline. 
 
 This spell can only remove spells caused by a curse of an equal level as this spell is cast at \minus{} to remove an Expertly cast curse\comma{} this spell must be cast at an Expert level.}
+\spell{name = Irongrip, school = Recuperation, discipline = Healing, type = Instant, level =Adept, range =Wandtip, incant = fero, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =Gives a willing target an incredibly strong grip. Gain check advantage on all grappling checks and attempts to resist disarmament.}
 \spell{name = Mend Bones, school = Recuperation, discipline = Healing, type = Instant, level =Adept, range =Wandtip, incant = ossium emendo, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Repair bones and heal the body. Removes the \textit{Broken Bone} status effect and the associated \textit{Serious Injury} (unless another status effect blocks this).}
+\spell{name = Revive, school = Recuperation, discipline = Healing, type = Instant, level =Adept, range =Wandtip, incant = renervate, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Removes the {\it Unconscious} status effect (unless another status effect prevents that) and awakens targets from even the deepest of slumbers.}
 }
  \spellBook{Ponderances on Advanced Healing}{Expert-level Healing}{
 \spell{name = Feign Death, school = Recuperation, discipline = Healing, type = Ritual (30 minutes), level =Expert, range =Wandtip, incant = fautis, duration = 3 hours,noHigh = 1, noResist =1, noBlock = 1, effect =When cast upon a willing living being\comma{} they are placed into a state of suspended animation which perfectly replicates the outward appearance of death. 
@@ -551,6 +628,9 @@ By summoning great power and energies\comma{} you nuture the tiniest\comma{} van
 A mental alarm forms a psychic connection which alerts you when activated\comma{} and can awaken you if you are sleeping. This connection has a maximum range of 1km. 
 
 The audible alarm produces an ear\minus{}splitting screech when the perimiter is breached. The sound is loud enough to be heard over large distances.}
+\spell{name = Flame Freezing Shield, school = Recuperation, discipline = Warding, type = Ward, level =Beginner, range =Wandtip, incant = glaciagnis, duration = 1 hour,noHigh = 1, resist = Power, noBlock = 1, effect =Causes non\minus{}magical fire to feel lightly cool and tickle the warded subject\comma{} rather than burning them. 
+
+Whenever a caster attempts to inflict magical fire damage on the protect being\comma{} they must succeed on a Resist check\comma{} or the damage is halved.}
 \spell{name = Force Shield, school = Recuperation, discipline = Warding, type = Focus, level =Beginner, range =Self, incant = protego, noDur = 1, higher = The HP of the shield doubles for every additional spell level used to cast the shield,noResist =1, noBlock = 1, effect =This spell erects an impenetrable\comma{} ethereal shield in front of the caster which absorbs incoming attacks.
 
 This shield has a health of 10HP. If an attack is blocked which would cause the shield to drop to 0HP\comma{} the shield fails\comma{} and half the remaining damage is dealt to the caster. 
@@ -780,6 +860,7 @@ The caster may give verbal orders to the inferi\comma{} which they will follow w
 You may create up to 2d4 inferi at a time.}
 }
  \spellBook{Spelles Moste Vyle}{Master-level Necromancy}{
+\spell{name = Burning Blood, school = Dark Arts, discipline = Necromancy, type = Focus, level =Master, range =Close, incant = zesto sidero, noDur = 1, noHigh = 1, noResist =1, negation = Dodgeable,effect =You corrupt their very blood\comma{} turning it into a burning acid\comma{} or molten lead. Whilst you maintain focus\comma{} the target takes 6d12 acid or fire damage (your choice).}
 \spell{name = Create Horcrux, school = Dark Arts, discipline = Necromancy, type = Ritual (1 day), level =Master, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =After performing a profane ritual (the secrets of which are too disgusting to write down here)\comma{} the caster places a portion of their soul into another object. Write down the horcrux on a piece of paper and keep it hidden. 
 
 Whilst a horcrux exists\comma{} the character cannot be killed. Whenever their health is reduced to zero\comma{} their soul is ejected into the Astral Realm\comma{} where it remains until they find a new body to willingly accept them\comma{} at which point they possess this individual\comma{} destroy their identity and warp the body until they have reassumed their mortal form.  
