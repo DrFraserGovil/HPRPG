@@ -19,29 +19,17 @@ This section contains a list of all the spells available in the game. First, the
  \\ 
 Contact Shock & \instSymb & Elemental Weapon & \instSymb & Animate Earth & \instSymb & Adjust Climate & \ritSymb & Fissure & \instSymb & Channel Cataclysm & \instSymb
  \\ 
-Create Fire & \concSymb & Extinguish Flame & \instSymb & Charge Region & \wardSymb & Erupt & \instSymb & Tornado & \concSymb & Earthquake & \instSymb
+Control Fire & \concSymb & Extinguish Flame & \instSymb & Charge Region & \wardSymb & Erupt & \instSymb & Tornado & \concSymb & Earthquake & \instSymb
  \\ 
-Create Water & \concSymb & Hovering Light & \instSymb & Cloudmove & \ritSymb & ~	 & ~	 & ~	 & ~	 & Tempest & \ritSymb
+Control Water & \concSymb & Hovering Light & \instSymb & Cloudmove & \ritSymb & ~	 & ~	 & ~	 & ~	 & Tempest & \ritSymb
  \\ 
-ET1 & \instSymb & Move Earth & \concSymb & Floodlight & \instSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
+Create Fire & \concSymb & Move Earth & \concSymb & Floodlight & \instSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
  \\ 
-ET2 & \instSymb & Vortex Field & \instSymb & Freeze & \instSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
+Create Water & \concSymb & Vortex Field & \instSymb & Freeze & \instSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
  \\ 
-ET3 & \instSymb & ~	 & ~	 & Lightning Bolt & \instSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
+Fresh Air & \instSymb & ~	 & ~	 & Lightning Bolt & \instSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
  \\ 
-ET4 & \instSymb & ~	 & ~	 & Wind Tunnel & \concSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
- \\ 
-ET5 & \instSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
- \\ 
-ET6 & \instSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
- \\ 
-ET7 & \instSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
- \\ 
-ET8 & \instSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
- \\ 
-Fresh Air & \instSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
- \\ 
-Gust & \concSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
+Gust & \concSymb & ~	 & ~	 & Wind Tunnel & \concSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
  \\ 
 Illuminate Wand & \concSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
  \\ 
@@ -467,11 +455,31 @@ You cannot conjure a magical item\comma{} and if you attempt to summon a part of
 \spell{name = Contingency, school = Divination, discipline = Temporal, type = Instant, level =Expert, range =Self, incant = fortasse, noDur = 1, higher = Add an additional 2 contingencies \forEvery{}.,noResist =1, noBlock = 1, effect =You forsee a need for a certain spell in the future\comma{} but you can{\apos}t quite see when. The contingency charm allows you to store a spell in an alternative dimension\comma{} to be called forth instantly when you need it. After casting the contingency charm\comma{} you may then cast the spell that you wish to store. 
 
 You may sacrifice your {\it Instinct} action to summon your contingency as an instantaneous action. You may have a maximum of three contingencies at any one time.}
+\spell{name = Control Fire, school = Charms, discipline = Elemental, type = Focus, level =Beginner, range =Close, incant = ignisempus, noDur = 1, higher = When cast at a higher level\comma{} the maximum area of fire that you can affect doubles \forEvery{}\comma{} and the damage caused by the flame increases by 1d6. You may also perform more extravagant feats of fire manipulation\comma{} at the whim of your GM. Be inventive!,noResist =1, negation = Blockable  and Dodgeable,effect =Upon targeting an area of flame up to 1 metre squared that you can see within range\comma{} you can manipulate the fire in a number of ways:
+
+\begin{spellitemize}
+\item You can move the fire up to 3 metres in any direction\comma{} either by igniting new fuel\comma{} or as a magically floating floating ball of fire. 
+\item You can diminish the ignited area by half (but can never extinguish it)\comma{} or multiply it by two (note that if it exceeds your maximum controllable area you do not control that bit of the blaze)
+\item You can change the colour of the flame
+\item You can cause the flame to take on simple shapes and animate them at your direction. 
+\item You can render yourself immune to this bit of fire (applies only to non\minus{}magical fire\comma{} or fire you created yourself)
+\item Lash out at a target within melee range of the fire\comma{} dealing 1d6 fire damage\comma{} using an Elemental Accuracy check. 
+\end{spellitemize}
+
+You may use any of these effects as long as concentration is maintained. When focus is broken\comma{} the fire resumes its normal course.}
 \spell{name = Control Time, school = Divination, discipline = Temporal, type = Ritual (various lengths), level =Ascendant, range =Self, incant = tempus fugit, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =At the moment you begin the ritual\comma{} you start a stopwatch\comma{} and begin pouring magical energy into the timepiece\comma{} as you focus your understanding of the mysteries of time into this object. 
 
 For every second that you spend performing this ritual\comma{} the stopwatch ticks forward an additional minute. 
 
 When you finish the ritual\comma{} the stopwatch rises into the air\comma{} and forms a shimmering portal to either the past or the future (decided by the caster)\comma{} capable of transporting up to 5 beings. Upon stepping into the portal\comma{} you are transported through time by an amount equal to the reading on the stopwatch. The portal deposits you at your present physical location (taking into account any changes in the local height that may have happened in the intervening time)\comma{} and then closes.}
+\spell{name = Control Water, school = Charms, discipline = Elemental, type = Focus, level =Beginner, range =Close, incant = aguasempus, noDur = 1, higher = When cast at a higher level\comma{} the maximum volume of water that you can effect doubles \forEvery{}. You may also perform more extravagant feats of water manipulation\comma{} at the whim of your GM. Be inventive!,resist = Strength, noBlock = 1, effect =Upon targeting a volume of water up to one metre cube that you can see within range\comma{} you can manipulate it in a number of ways:
+
+\begin{spellitemize}
+\item You can move the water\comma{} or otherwise alter the flow by up to 3 metres
+\item You can cause the water to form simple shapes\comma{} and animate them at your direction. 
+\item You can clear the water\comma{} or cause it to become opaque and cloudy. This lasts for up to one hour after you break concentration.
+\item Drown: if your animated water is within melee range of a being\comma{} you may wrap it around their face\comma{} depriving them of air on a failed Resist. Target can re\minus{}perform this check at the end of every turn. 
+\end{spellitemize}}
 \spell{name = Countercurse, school = Recuperation, discipline = Healing, type = Instant, level =Adept, range =Wandtip, incant = finite maledictum, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Remove the effects of an active spell from the Curse discipline. 
 
 This spell can only remove spells caused by a curse of an equal level as this spell is cast at \minus{} to remove an Expertly cast curse\comma{} this spell must be cast at an Expert level.}
@@ -560,14 +568,6 @@ On a failed resist\comma{} the being is bound to serve you for the duration of t
 \spell{name = Drain Fortitude, school = Illusion, discipline = Psionics, type = Instant, level =Adept, range =Close, incant = delcrus, noDur = 1, higher = \additional{2d6}{Fatigue},resist = Willpower, noBlock = 1, effect =If the target fails to Resist\comma{} you impose your will over them\comma{} doing  2d6 Fatigue damage to the target.}
 \spell{name = Draw Power, school = Dark Arts, discipline = Occultism, type = Ritual (1 hour), level =Beginner, range =Self, noIncant = 1, duration = 1 day,higher = Increase the spellcasting bonus by +1 for every two additional spell levels used to cast this spell.,noResist =1, noBlock = 1, effect =When at a site of ancient magic \minus{}\minus{} be it at a place where some great feat of magic was achieved\comma{} the residence of some powerful being\comma{} or simply somewhere where magic has seeped into the very walls \minus{}\minus{} you may perform this ritual to tap into those ancient powers to gain a +2 bonus to spellcasting checks whilst in this area. This ritual cannot be used at the same site for the next 7 days.}
 \spell{name = Duplicate Object, school = Transfiguration, discipline = Conjuration, type = Instant, level =Expert, range =Wandtip, incant = gemino, duration = 12 hours,noHigh = 1, noResist =1, noBlock = 1, effect =Creates a copy of an object in your possession\comma{} which is identical to the first\comma{} until it disintegrates 12 hours later. These duplicates can be determined to be fake through a DV 10 Investigation check.}
-\spell{name = ET1, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =a}
-\spell{name = ET2, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =a}
-\spell{name = ET3, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =a}
-\spell{name = ET4, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =a}
-\spell{name = ET5, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =a}
-\spell{name = ET6, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =a}
-\spell{name = ET7, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =a}
-\spell{name = ET8, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =a}
 \spell{name = Earthquake, school = Charms, discipline = Elemental, type = Instant, level =Ascendant, range =Close, incant = krakato, noDur = 1, noHigh = 1, resist = Acrobatics, noBlock = 1, effect =Summon a powerful seismic disturbance in a radius of 50m around a region that you can see. 
 
 The powerful rocking of the earth knocks all beings into the {\it Prone Position} unless they Resist\comma{} and all beings performing a Focus action must perform the usual Resist check to maintain concentration.

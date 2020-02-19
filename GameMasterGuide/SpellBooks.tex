@@ -2,7 +2,7 @@
 \usepackage{../HPpack}
 
 \usepackage{titling}
-
+\newgeometry{left = 0.2cm, right = 0.2cm, top = 0.3cm,bottom = 0.4cm}
 \title{A}
 \author{ }
 \date{\vspace{-2.5 cm}}
@@ -16,7 +16,7 @@
 \newcommand\spellBook[3]
 {
 \cleartorightpage
-\title{\vspace{-3 ex} #1 \\ \small A book containing #2 spells}
+\title{\vspace{-5 ex} {\Large  \bf #1} \\ \small A book containing #2 spells}
 \maketitle
 #3
 
@@ -26,6 +26,26 @@
 %%SpellbookBegin
  \spellBook{Lighting the Spark: An Introduction to Elemental Magic}{Beginner-level Elemental}{
 \spell{name = Contact Shock, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Wandtip, incant = electrum, noDur = 1, higher = \additional{1d6}{Electric},noResist =1, noBlock = 1, effect =Charge the tip of your wand with electrical energy. This energy is discharged when your wand\minus{}tip next touches a surface. Does 2 electrical damage on contact\comma{} and also fries any electrical equipment it comes into contact with.}
+\spell{name = Control Fire, school = Charms, discipline = Elemental, type = Focus, level =Beginner, range =Close, incant = ignisempus, noDur = 1, higher = When cast at a higher level\comma{} the maximum area of fire that you can affect doubles \forEvery{}\comma{} and the damage caused by the flame increases by 1d6. You may also perform more extravagant feats of fire manipulation\comma{} at the whim of your GM. Be inventive!,noResist =1, negation = Blockable  and Dodgeable,effect =Upon targeting an area of flame up to 1 metre squared that you can see within range\comma{} you can manipulate the fire in a number of ways:
+
+\begin{spellitemize}
+\item You can move the fire up to 3 metres in any direction\comma{} either by igniting new fuel\comma{} or as a magically floating floating ball of fire. 
+\item You can diminish the ignited area by half (but can never extinguish it)\comma{} or multiply it by two (note that if it exceeds your maximum controllable area you do not control that bit of the blaze)
+\item You can change the colour of the flame
+\item You can cause the flame to take on simple shapes and animate them at your direction. 
+\item You can render yourself immune to this bit of fire (applies only to non\minus{}magical fire\comma{} or fire you created yourself)
+\item Lash out at a target within melee range of the fire\comma{} dealing 1d6 fire damage\comma{} using an Elemental Accuracy check. 
+\end{spellitemize}
+
+You may use any of these effects as long as concentration is maintained. When focus is broken\comma{} the fire resumes its normal course.}
+\spell{name = Control Water, school = Charms, discipline = Elemental, type = Focus, level =Beginner, range =Close, incant = aguasempus, noDur = 1, higher = When cast at a higher level\comma{} the maximum volume of water that you can effect doubles \forEvery{}. You may also perform more extravagant feats of water manipulation\comma{} at the whim of your GM. Be inventive!,resist = Strength, noBlock = 1, effect =Upon targeting a volume of water up to one metre cube that you can see within range\comma{} you can manipulate it in a number of ways:
+
+\begin{spellitemize}
+\item You can move the water\comma{} or otherwise alter the flow by up to 3 metres
+\item You can cause the water to form simple shapes\comma{} and animate them at your direction. 
+\item You can clear the water\comma{} or cause it to become opaque and cloudy. This lasts for up to one hour after you break concentration.
+\item Drown: if your animated water is within melee range of a being\comma{} you may wrap it around their face\comma{} depriving them of air on a failed Resist. Target can re\minus{}perform this check at the end of every turn. 
+\end{spellitemize}}
 \spell{name = Create Fire, school = Charms, discipline = Elemental, type = Focus, level =Beginner, range =Wandtip, incant = incendio, noDur = 1, higher = Casting this spell at a higher level summons a larger and hotter gout of flame.
 
 For every additional casting\minus{}level\comma{} the gout reaches an extra 15cm from your wandtip\comma{} and does 1d6 additional heat damage. The extra heat also allows you to ignite tougher materials\comma{} such as damp wood.,noResist =1, negation = Blockable  and Dodgeable,effect =A small jet of fire is emitted from the tip of your wand\comma{} akin to a large lighter. 
@@ -35,14 +55,6 @@ Coming into contact with fire does 1d6 fire damage\comma{} and applies the {\it 
 For each additional casting level\comma{} the jet of water doubles in intensity \minus{} reaching an extra 30cm and doing 1d8 bludgeoning damage.,noResist =1, negation = Blockable  and Dodgeable,effect =A jet of water is emitted from the tip of your wand\comma{} in a fountain approximately 30cm in length\comma{} useful for extinguishing fires small\comma{} or cleaning surfaces.
 
 Note\comma{} however\comma{} that Gamp\apos{}s Laws of Elemental Transfiguration states that all conjured water evaporates upon drinking: it cannot be used for sustenance.}
-\spell{name = ET1, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =a}
-\spell{name = ET2, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =a}
-\spell{name = ET3, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =a}
-\spell{name = ET4, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =a}
-\spell{name = ET5, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =a}
-\spell{name = ET6, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =a}
-\spell{name = ET7, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =a}
-\spell{name = ET8, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =a}
 \spell{name = Fresh Air, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Close, incant = klinneract, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =A gust of air refreshes the air in a sphere of radius 3 metres around the caster\comma{} removing any gaseous effects and smelling faintly of lavender.}
 \spell{name = Gust, school = Charms, discipline = Elemental, type = Focus, level =Beginner, range =Close, incant = vente, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Energise the winds\comma{} and manipulate the air within a radius of 5m around you. This breeze is strong  enough to subtly alter the path of projectiles passing through the region (all ranged weapon attacks take a 1 point penalty to accuracy)\comma{} or to cause a commotion by slamming doors and howling through open windows.}
 \spell{name = Illuminate Wand, school = Charms, discipline = Elemental, type = Focus, level =Beginner, range =Close, incant = lumos, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Causes the tip of your wand to glow\comma{} like a torch. Casts bright light in a 2m radius\comma{} and dim light for another 10m. This spell last indefinitely\comma{} until Focus is broken\comma{} and does not require drain FP after the initial effect is activated.}
