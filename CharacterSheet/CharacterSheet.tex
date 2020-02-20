@@ -1,11 +1,14 @@
 \documentclass[11pt]{article}
+\usepackage{eufrak}
+\usepackage{rsfso}
 \let\origbar\bar
 \let\origdot\dot
 \usepackage{allrunes}
 \let\bar\origbar
 \let\dot\origdot
-\usepackage{fontspec}
+\usepackage[no-math]{fontspec}
 \usepackage{array}
+\usepackage{stix}
 \usepackage{longtable}
 \usepackage{multicol}
 \usepackage{graphicx}
@@ -14,6 +17,7 @@
 \usepackage[left = 0in, right = 0in, top = 0in, bottom = 0in]{geometry}
 \usepackage{titlesec}
 \usepackage{amsmath}
+\usepackage{MnSymbol}
 \usepackage{calc}
 \usepackage{ifthen}
 \usepackage{tikz}
@@ -24,6 +28,10 @@
 \def\apos{'}
 \setlength{\parskip}{4pt}
 \setlength{\parindent}{0pt}
+
+
+
+
 
 \newfontfamily{\HP}{[ParryHotter.TTF]}
 \renewcommand{\arraystretch}{0.15}
@@ -60,6 +68,10 @@
 \def\OccCheck{\attInt{}}
 
 
+\newcommand\galleon[1]{$\mathfrak{G}$#1}
+\newcommand\sickle[1]{{\textara{f}#1}}
+\newcommand\knut[1]{$\btimes$#1}
+
 \titleformat{\section} {\centering\vspace{-10ex}\normalfont\bfseries\HP\Huge}{}{0pt}{}[\vspace{-2ex}]
 
 
@@ -85,9 +97,9 @@
 
 
 \node at (20.5,0.5) {\includegraphics[width = \s cm,height = \s cm]{../Images/heart}};
- \node at (24.5,0.5) {\includegraphics[width = \s cm,height = \s cm]{../Images/brain}};
+ \node at (25,0.5) {\includegraphics[width = \s cm,height = \s cm]{../Images/brain}};
 \node at (20.5,2.4) {\bf Health Points};
-\node at (24.5,2.4) {\bf Fortitude Points};
+\node at (25,2.4) {\bf Fortitude Points};
 
 %%% attributes block
 \def\cx{0}
@@ -207,34 +219,41 @@
 
 %%dice block
 \def\top{-13.1}
-\def\cx{17.5}
-\def\width{17}
-\def\hB{4.8}
+\def\cx{17}
+\def\width{20}
+\def\hB{5.6}
 \def\r{0.7}
-\def\circleOff{4}
+\def\circleOff{4.7}
 \def\gapx{2}
-\def\delta{0.15}
-\def\gapy{2.2}
+\def\delta{0.25}
+\def\gapy{2.8}
+\def\discgap{0.9}
+\def\textgap{0.25}
 \def\p{  \cx - (\width-\gapx)/2 + 1 }
 \def\f{ (\width-\gapx)/3.6  }
-\draw[rounded corners, gray!70,fill = gray!20] ({\cx-\width/2},\top) rectangle ({\cx+\width/2},{\top-\hB});
-\node at (\cx,{\top-0.3}) {\Large \bf   Spellcasting};
+\draw[rounded corners, gray!50,fill = gray!10] ({\cx-\width/2},\top) rectangle ({\cx+\width/2},{\top-\hB});
+\node at (\cx,{\top-0.3}) {\LARGE \bf   Spellcasting};
 \foreach \a/\b/\c/\d/\e [count=\q from 0] in {{Charms}/{Elemental}/{\attPowShort}/{Kinesis}/{\attFinShort{}},{Divination}/{Telepathic}/{\attPerShort{}}/{Temporal}/{\attIntShort{}},{Illusion}/{Bewitchment}/{\attChrShort{}}/{Psionics}/{\attSprShort{}},{Malediction}/{Curses}/{\attPowShort{}}/{Hexes}/{\attSprShort{}},{Recuperation}/{Healing}/{\attPerShort{}}/{Warding}/{\attIntShort{}},{Transfiguration}/{Alteration}/{\attFinShort{}}/{Conjuration}/{\attPowShort{}},{Dark Arts}/{Necromancy}/{\attEvlShort{}}/{Occultism}/{\attChrShort{}}}
 {
 	\ifthenelse{\q>3}{\def\y{ {(\top-\circleOff)}}\def\x{ {(\p+ (\q-4)*\f)} } }{\def\y{ {(\top-\circleOff+\gapy)} }\def\x{ {(\p + \q*\f)} }}
 	%\draw[gray!70,fill=white] (\x,\y) circle (\r);
-	\node at (\x,{\y+\r+0.2}) {\footnotesize \bf \a};
+	\node at (\x,{\y+\r+0.2}) { \bf \a};
 	
-	\def\bX{\x - 0.8}
-	\def\bY{\y + 0.25}
+	\def\bX{\x - 1.4}
+	\def\bY{\y + 0.1}
 	
+		%%boxes
 		\draw[fill=white] ({\bX},{\bY}) rectangle ({\bX+\delta},{\bY+\delta});
-		\draw[fill=white] ({\bX},{\bY-0.6}) rectangle ({\bX+\delta},{\bY-0.6+\delta});
+		\draw[fill=white] ({\bX},{\bY-\discgap}) rectangle ({\bX+\delta},{\bY-\discgap+\delta});
 		
+		%%lines
 		\draw ({\bX + \delta+0.1},{\bY})--({\x - 0.1},{\bY});
-				\draw ({\bX + \delta+0.1},{\bY-0.6})--({\x - 0.1},{\bY-0.6});
-	\node[anchor=west] at ({\x},{\y+\r-0.4}) {\scriptsize  \b \color{gray}{ (\c)}};
-	\node[anchor = west] at ({\x},{\y+\r-1}) {\scriptsize  \d \color{gray}{ (\e)}};
+		\draw ({\bX + \delta+0.1},{\bY-\discgap})--({\x - 0.1},{\bY-\discgap});
+	
+	
+		%%discpline names
+		\node[anchor=west] at ({\x},{\y + \textgap}) {  \small \b \color{gray}{ (\c)}};
+		\node[anchor = west] at ({\x},{\y + \textgap- \discgap}) { \small \d \color{gray}{ (\e)}};
 }
 \def\Qx{\p + 3*\f}
 \def\Qy{\top-\circleOff}
@@ -249,13 +268,13 @@
 
 
 \node at (13.5,-2.2) {\bf \Large  Skill \& Proficiency Bonuses};
-\draw[rounded corners] (9,-2.6) rectangle (18.2,-12.4);
+\draw[rounded corners] (7,-2.6) rectangle (18.2,-12.4);
 \def\topQ{-3.1}
 \def\gap{0.45}
-\def\x{9.1}
-\def\mid{12.5}
+\def\x{7.1}
+\def\mid{11}
 \def\cx{10}
-\def\delta{0.1}
+\def\delta{0.15}
 \draw (\mid,-2.6)--(\mid,-12.4);
 %
 %\foreach \c [count = \q from 0] in {  {{Health},{ATH} },  {{Strength},{ATH} }  }
@@ -266,22 +285,36 @@
 \foreach \a/\b [count = \q from 0] in { {Acrobatics}/{PRS}, {Arcane}/{INT}, {Chicanery}/{PRS}, {Conviction}/{SPR}, {Deception}/{CHR}, {Empathy}/{PCP}, {History}/{INT}, {Intimidation}/{POW}, {Investigation}/{PCP}, {Logic}/{INT}, {Nature}/{INT}, {Observation}/{PCP}, {Performance}/{CHR}, {Persuasion}/{CHR}, {Research}/{INT}, {Speed}/{FIT}, {Stealth}/{PRS}, {Strength}/{FIT}, {Un-nature}/{INT}, {Vitality}/{FIT}, {Willpower}/{SPR}}
 {
 	\def\y{\topQ - \q*\gap}
-	\draw (\x,{\y+0.04}) rectangle ({\x+\delta},{\y+\delta+0.04});
-	\draw ({\x + 2*\delta},\y)--+({3*\delta},0);
-	\node[anchor = south west] (A) at ({\x+5*\delta},{\y-0.22}) {\scriptsize \a~\textcolor{gray!60}{(\b{})} }; 
+	\draw (\x,{\y+0.1}) rectangle ({\x+\delta},{\y+\delta+0.1});
+	\draw ({\x + 2*\delta},\y)--+({4*\delta},0);
+	\node[anchor = south west] (A) at ({\x+6*\delta},{\y-0.22}) {\scriptsize \a~\textcolor{gray!60}{(\b{})} }; 
 	\draw[gray!50] (\mid,\y)--(18.2,\y); 	
 } 
 
 
 
 \node at (22.5,-2.2) { \bf \Large Inventory};
-\draw[rounded corners](19,-2.6) rectangle (26,-12.4);
+\draw[rounded corners](19,-2.6) rectangle (27,-12.4);
 \foreach \q in {0,1,2,...,20}
 {
 	\def\y{\topQ - \q*\gap}
-	\draw[gray!50] (19,\y)--(26,\y); 
+	\draw[gray!50] (19,\y)--(27,\y); 
 }
 
+\def\r{0.7}
+\draw[gray!90, fill=white] ({19.01 + \r},{-2.61 - \r}) circle (\r);
+\draw[gray!90, fill=white] ({19.01 + \r},{-2.61 - 3.1*\r}) circle (\r);
+\draw[gray!90, fill=white] ({19.01 + \r},{-2.61 - 5.2*\r}) circle (\r);
+
+\newcommand\moneysymb[1]
+{
+	\LARGE\color{gray!70}{#1}
+
+}
+
+\node at ({19.01 + \r/3},{-2.61 - \r}) {\moneysymb{\galleon{}}};
+\node at ({19.01 + \r/3},{-2.61 - 3.1*\r}) {\moneysymb{\sickle{}}};
+\node at ({19.01 + \r/3},{-2.61 - 5.2*\r}) {\moneysymb{\knut{}}};
 \end{tikzpicture}
 
 \newpage
@@ -303,7 +336,7 @@ Don't forget to increase the prerequisite LVL by 2 every time a skill increases.
 \def\z{1.3}
 \def\top{4.3}
 \def\bottom{4.3}
-%%SkillBegin\begin{longtable}{|m{\x cm}|m{\y cm}|m{\z cm}|}\hline  \bf Skill & \bf Prerequisite & \bf Level \\ \hline \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Always Alert}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Ambidextrous}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Animagus}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Expert Thaumaturgy\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Area Dodge}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Battlecry}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}CHR $>13$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Catastrophic Critical}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Cleave}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Defence Against the Dark Arts}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Disciplined}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Eagle-Eyed}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Extended Range}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Familiar}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Focussed Caster}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Golden Touch}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}CHR $>14$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Improved Instincts}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Instinctive Retribution}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Ironclad}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\attPhysShort{} $> 15$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Knife Handler}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Linguist}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Merciful}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Mimicry}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}CHR $> 13$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Mobile}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Moving Target}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\attPhysShort{} $> 12$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Muggle Lover}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Overcome Resistance}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Parry}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Power Attack}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Reload Expert}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Sentinel}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\attPerShort{} $>15$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Silent Magic}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Sprint Start}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Speed Proficiency\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Stabiliser}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Superhero Landing}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Supportive Ally}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Tool-User}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Undead Benefactor}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Wandless Magic}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Silent Magic\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Wandwork}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weak Spot}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Basic Training}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Exotic Fighter}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Fighting Dirty}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Hulk Smash?}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Long Range Threat}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Sharpshooter}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Simple Ranged Training}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Swordfighter}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \end{longtable} %%SkillEnd
+%%SkillBegin\begin{longtable}{|m{\x cm}|m{\y cm}|m{\z cm}|}\hline  \bf Skill & \bf Prerequisite & \bf Level \\ \hline \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Always Alert}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Ambidextrous}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Animagus}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Expert Thaumaturgy\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Area Dodge}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Battlecry}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}CHR $>13$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Catastrophic Critical}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Cleave}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Defence Against the Dark Arts}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Disciplined}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Eagle-Eyed}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Extended Range}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Familiar}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Focussed Caster}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Golden Touch}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}CHR $>14$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Improved Instincts}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Instinctive Retribution}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Ironclad}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\attPhysShort{} $> 15$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Knife Handler}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Last Resort}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Linguist}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Merciful}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Mimicry}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}CHR $> 13$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Mobile}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Moving Target}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\attPhysShort{} $> 12$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Muggle Lover}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Overcome Resistance}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Parry}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Power Attack}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Reload Expert}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Sentinel}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\attPerShort{} $>15$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Silent Magic}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Sprint Start}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Speed Proficiency\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Stabiliser}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Superhero Landing}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Supportive Ally}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Tool-User}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Undead Benefactor}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Wandless Magic}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Silent Magic\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Wandwork}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weak Spot}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Basic Training}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Exotic Fighter}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Fighting Dirty}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Hulk Smash?}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Long Range Threat}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Sharpshooter}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Simple Ranged Training}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Swordfighter}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \end{longtable} %%SkillEnd
 \unskip
 \unpenalty
 \unpenalty}
@@ -324,8 +357,8 @@ Don't forget to increase the prerequisite LVL by 2 every time a skill increases.
 
 \def\top{\h}
 \def\bottom{0}
-\def\gap{0.37}
-\def\N{15}
+\def\gap{0.5}
+\def\N{11}
 \draw[rounded corners] (\left,\top) rectangle ({\totalwidth/2-\left/2},\bottom);
 \draw[rounded corners] ({\totalwidth/2+\left/2},\top) rectangle ({\totalwidth-\left},\bottom);
 \node at ({\left+\q},{\top+0.2}) {  \bf Charms};
@@ -379,7 +412,7 @@ Don't forget to increase the prerequisite LVL by 2 every time a skill increases.
 \def\bottom{-3*\g - 2*\h - \h/1.3}
 \draw[rounded corners] (\left,\top) rectangle ({\totalwidth-\left},\bottom);
 \node at ({\totalwidth/2},{\top+0.2}) {  Dark Arts};
-\def\N{11}
+\def\N{8}
 \foreach \q in {1,2,...,\N}
 {
 	\def\y{\top - \q*\gap}
