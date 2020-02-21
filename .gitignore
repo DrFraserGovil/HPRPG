@@ -7,3 +7,4 @@
 #ignore monsterbuilder
 GameMasterGuide/MonsterGenerator
 
+*.out

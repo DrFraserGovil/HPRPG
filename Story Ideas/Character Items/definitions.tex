@@ -1,0 +1,84 @@
+
+
+\renewcommand\arraystretch{1.5}
+\makeatletter
+\define@key{inventory}{name}{\def\name{#1}}
+\define@key{inventory}{amount}{\def\amount{#1}}
+\define@key{inventory}{class}{\def\class{#1}}
+\define@key{inventory}{acquired}{\def\acquired{#1}}
+\define@key{inventory}{hasAcquired}{\def\hasAcquired{#1}}
+\define@key{inventory}{description}{\def\description{#1}}
+\define@key{inventory}{trueDescription}{\def\trueDescription{#1}}
+\define@key{inventory}{hasTrueDescription}{\def\hasTrueDescription{#1}}
+\define@key{inventory}{purchaseCost}{\def\purchaseCost{#1}}
+\define@key{inventory}{hasCost}{\def\hasCost{#1}}
+\define@key{inventory}{sellValue}{\def\sellValue{#1}}
+
+
+
+\define@key{character}{charname}{\def\name{#1}}
+\define@key{character}{species}{\def\species{#1}}
+\define@key{character}{inventory}{\def\inventory{#1}}
+\makeatother
+
+
+\def\w{6.5}
+
+\newcommand\lineEntry[2]
+{
+	\bf #1	&	#2 \\
+}
+
+\newcommand\inventory[1]
+{
+	\begingroup
+		\setkeys{inventory}{name = none, class = none, acquired = none, hasAcquired = 0, description = none, trueDescription = none, hasTrueDescription = 0, purchaseCost = 0, hasCost = 0, sellValue = 0,amount = 0}
+	
+		\setkeys{inventory}{#1}
+		
+		
+		\subsubsection{\name}
+		
+		\begin{center}
+			\begin{tabular}{r p{\w cm}}
+			\if\hasAcquired1
+				\lineEntry{Acquired:}{\acquired}
+			\fi
+			\if\hasCost1
+				\lineEntry{Cost:}{\purchaseCost}
+			\fi
+			\lineEntry{Amount:}{\amount}
+			\end{tabular}
+		\end{center}
+		
+		\description
+		
+	\endgroup
+
+}
+
+\newcommand\character[7]
+{
+	
+	\title{#1: A Character Guide}
+	\date{}
+	\author{}
+	\maketitle
+	
+	
+	Species: #2
+	
+	Archetype: #3
+	
+	Physical Description: #4
+	
+	Personality: #6 
+	
+	Background: #5
+	
+	\section{Inventory}
+	
+	#7
+
+
+}
