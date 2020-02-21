@@ -1,4 +1,4 @@
-skills= readtable('../CoreRulebook/Data/skills.xlsx');
+	skills= readtable('../CoreRulebook/Data/skills.xlsx');
 [n,~] = size(skills);
 skills = sortrows(skills);
 
