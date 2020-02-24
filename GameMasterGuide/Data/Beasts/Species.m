@@ -8,7 +8,7 @@ classdef Species < handle
     end
     
     methods
-        function obj = Species(name,description,image,image2)
+        function obj = Species(name,description)
             obj.Name = string(name);
             obj.Description = string(description);
             
