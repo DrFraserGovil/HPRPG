@@ -1,170 +1,190 @@
-\contentsline {chapter}{\numberline {1}Potions \& Ingredients}{3}{chapter.1}
-\contentsline {subsection}{\numberline {1.0.1}Failed Mixings}{3}{subsection.1.0.1}
-\contentsline {subsection}{\numberline {1.0.2}Modifying Potions}{3}{subsection.1.0.2}
-\contentsline {subsection}{\numberline {1.0.3}Purchasing Potions}{3}{subsection.1.0.3}
-\contentsline {subsection}{\numberline {1.0.4}Potion List}{4}{subsection.1.0.4}
-\contentsline {section}{\numberline {1.1}Ingredients}{9}{section.1.1}
-\contentsline {chapter}{\numberline {2}Beasts, Beings and Other Bad Business}{13}{chapter.2}
-\contentsline {section}{Acromantula}{13}{section*.1}
-\contentsline {subsection}{Acromantula Hatchling}{13}{section*.1}
-\contentsline {subsection}{Acromantula}{14}{section*.1}
-\contentsline {subsection}{Acromantula Patriarch}{14}{section*.1}
-\contentsline {section}{Apparitions}{15}{section*.1}
-\contentsline {subsection}{Ghost}{15}{section*.2}
-\contentsline {subsection}{Poltergeist}{15}{section*.2}
-\contentsline {subsection}{Boggart}{16}{section*.2}
-\contentsline {section}{Arachnid}{16}{section*.2}
-\contentsline {subsection}{Howling Tick}{16}{section*.3}
-\contentsline {subsection}{Great Widow}{17}{section*.3}
-\contentsline {subsection}{Brood Mother}{17}{section*.3}
-\contentsline {section}{Bowtruckle}{18}{section*.3}
-\contentsline {subsection}{Bowtruckle Splinter}{18}{section*.4}
-\contentsline {subsection}{Bowtruckle Flower}{18}{section*.4}
-\contentsline {subsection}{Bowtruckle Thorn}{18}{section*.4}
-\contentsline {section}{Celestial Servant}{19}{section*.4}
-\contentsline {subsection}{Angel}{19}{section*.5}
-\contentsline {subsection}{Abyssal Servant}{19}{section*.5}
-\contentsline {subsection}{Judiciary}{19}{section*.5}
-\contentsline {subsection}{Demonus Temporus}{19}{section*.5}
-\contentsline {section}{Ceratothid}{19}{section*.5}
-\contentsline {subsection}{Graphorn}{19}{section*.6}
-\contentsline {subsection}{Erumpet}{19}{section*.6}
-\contentsline {subsection}{Re'em}{19}{section*.6}
-\contentsline {section}{Chimaera}{20}{section*.6}
-\contentsline {subsection}{Chimaera}{20}{section*.7}
-\contentsline {section}{Cloaked Spirits}{20}{section*.7}
-\contentsline {subsection}{Dementor}{20}{section*.8}
-\contentsline {subsection}{Lethifold}{20}{section*.8}
-\contentsline {section}{Clockwork Soldier}{21}{section*.8}
-\contentsline {subsection}{Clockwork Solider}{21}{section*.9}
-\contentsline {section}{Creation}{21}{section*.9}
-\contentsline {subsection}{Hidebehind}{21}{section*.10}
-\contentsline {subsection}{Blast-{}Ended Skrewt}{21}{section*.10}
-\contentsline {section}{Demiguise}{22}{section*.10}
-\contentsline {subsection}{Demiguise}{22}{section*.11}
-\contentsline {section}{Demon}{22}{section*.11}
-\contentsline {subsection}{Grindylow}{22}{section*.12}
-\contentsline {subsection}{Kappa}{22}{section*.12}
-\contentsline {subsection}{Kelpie}{22}{section*.12}
-\contentsline {subsection}{Nogtail}{22}{section*.12}
-\contentsline {subsection}{Pogrebin}{23}{section*.12}
-\contentsline {subsection}{Shadow Demon}{23}{section*.12}
-\contentsline {section}{Dragon}{23}{section*.12}
-\contentsline {subsection}{Antipodean Opaleye}{23}{section*.13}
-\contentsline {subsection}{Chinese Fireball}{23}{section*.13}
-\contentsline {subsection}{Common Welsh Green}{23}{section*.13}
-\contentsline {subsection}{Hebridean Black}{23}{section*.13}
-\contentsline {subsection}{Hungarian Horntail}{24}{section*.13}
-\contentsline {subsection}{Norwegian Ridgeback}{24}{section*.13}
-\contentsline {subsection}{Peruvian Vipertooth}{24}{section*.13}
-\contentsline {subsection}{Romanian Longhorn}{24}{section*.13}
-\contentsline {subsection}{Swedish Shortsnout}{24}{section*.13}
-\contentsline {subsection}{Ukranian Ironbelly}{24}{section*.13}
-\contentsline {section}{Elemental Avatar}{25}{section*.13}
-\contentsline {subsection}{Avatar of Fire}{25}{section*.14}
-\contentsline {subsection}{Avatar of Ice}{25}{section*.14}
-\contentsline {subsection}{Avatar of Storms}{25}{section*.14}
-\contentsline {section}{Elf}{25}{section*.14}
-\contentsline {subsection}{Erkling}{25}{section*.15}
-\contentsline {subsection}{Gnome}{25}{section*.15}
-\contentsline {subsection}{Gringwart Goff}{25}{section*.15}
-\contentsline {subsection}{Pixie}{25}{section*.15}
-\contentsline {subsection}{Red Cap}{26}{section*.15}
-\contentsline {section}{Fairy}{26}{section*.15}
-\contentsline {subsection}{Doxy}{26}{section*.16}
-\contentsline {subsection}{True Fairy}{26}{section*.16}
-\contentsline {section}{Fish}{27}{section*.16}
-\contentsline {subsection}{Lobalug}{27}{section*.17}
-\contentsline {subsection}{Plimpy}{27}{section*.17}
-\contentsline {subsection}{Ramora}{27}{section*.17}
-\contentsline {section}{Flora}{27}{section*.17}
-\contentsline {subsection}{Bundimun}{27}{section*.18}
-\contentsline {subsection}{Horklump}{27}{section*.18}
-\contentsline {subsection}{Mandrake}{27}{section*.18}
-\contentsline {subsection}{Whomping Willow}{27}{section*.18}
-\contentsline {section}{Golem}{28}{section*.18}
-\contentsline {subsection}{Crystal Golem}{28}{section*.19}
-\contentsline {subsection}{Iron Golem}{28}{section*.19}
-\contentsline {subsection}{Stone Golem}{28}{section*.19}
-\contentsline {section}{Hag}{28}{section*.19}
-\contentsline {subsection}{Druidic Hag}{28}{section*.20}
-\contentsline {subsection}{Hag}{28}{section*.20}
-\contentsline {subsection}{Necrotic Hag}{28}{section*.20}
-\contentsline {subsection}{Water Hag}{28}{section*.20}
-\contentsline {section}{Herald}{29}{section*.20}
-\contentsline {subsection}{Augrey}{29}{section*.21}
-\contentsline {subsection}{Pheonix}{29}{section*.21}
-\contentsline {section}{Hybrid}{29}{section*.21}
-\contentsline {subsection}{Griffin}{29}{section*.22}
-\contentsline {subsection}{Hippocampus}{29}{section*.22}
-\contentsline {subsection}{Hippogriff}{29}{section*.22}
-\contentsline {section}{Inhabitor}{30}{section*.22}
-\contentsline {subsection}{Inhabitor}{30}{section*.23}
-\contentsline {section}{Insectum Magicae}{30}{section*.23}
-\contentsline {subsection}{Billywig}{30}{section*.24}
-\contentsline {subsection}{Chizpurfle}{30}{section*.24}
-\contentsline {subsection}{Fire Crab}{30}{section*.24}
-\contentsline {subsection}{Flesh-{}Eating Slug}{30}{section*.24}
-\contentsline {subsection}{Flobberworm}{31}{section*.24}
-\contentsline {subsection}{Glumbumble}{31}{section*.24}
-\contentsline {subsection}{Streeler}{31}{section*.24}
-\contentsline {section}{Lich}{31}{section*.24}
-\contentsline {subsection}{Lich}{31}{section*.25}
-\contentsline {section}{Mammalia Magicae}{32}{section*.25}
-\contentsline {subsection}{Dugbog}{32}{section*.26}
-\contentsline {subsection}{Jarvey}{32}{section*.26}
-\contentsline {subsection}{Kneazle}{32}{section*.26}
-\contentsline {subsection}{Mooncalf}{32}{section*.26}
-\contentsline {subsection}{Murtlap}{32}{section*.26}
-\contentsline {subsection}{Niffler}{32}{section*.26}
-\contentsline {subsection}{Porlock}{32}{section*.26}
-\contentsline {subsection}{Wampus Cat}{32}{section*.26}
-\contentsline {section}{Manticore}{33}{section*.26}
-\contentsline {subsection}{Manticore}{33}{section*.27}
-\contentsline {section}{Nundu}{33}{section*.27}
-\contentsline {subsection}{Nundu}{33}{section*.28}
-\contentsline {section}{Ogre}{34}{section*.28}
-\contentsline {subsection}{Ghoul}{34}{section*.29}
-\contentsline {subsection}{Troll}{34}{section*.29}
-\contentsline {subsection}{Yeti}{34}{section*.29}
-\contentsline {section}{Ophidian}{34}{section*.29}
-\contentsline {subsection}{Basilisk}{34}{section*.30}
-\contentsline {subsection}{Cockatrice}{34}{section*.30}
-\contentsline {subsection}{Runespoor}{34}{section*.30}
-\contentsline {section}{Ornithes Magicae}{35}{section*.30}
-\contentsline {subsection}{Diricawl}{35}{section*.31}
-\contentsline {subsection}{Fwooper}{35}{section*.31}
-\contentsline {subsection}{Jobberknoll}{35}{section*.31}
-\contentsline {subsection}{Snidget}{35}{section*.31}
-\contentsline {section}{Pegasus}{35}{section*.31}
-\contentsline {subsection}{Thestral}{35}{section*.32}
-\contentsline {subsection}{Winged Horse}{35}{section*.32}
-\contentsline {section}{Puffskein}{36}{section*.32}
-\contentsline {subsection}{Puffskein}{36}{section*.33}
-\contentsline {subsection}{Pygmy Puff}{36}{section*.33}
-\contentsline {section}{Quintaped}{36}{section*.33}
-\contentsline {subsection}{Quintaped}{36}{section*.34}
-\contentsline {section}{Raised Dead}{37}{section*.34}
-\contentsline {subsection}{Banshee}{37}{section*.35}
-\contentsline {subsection}{Inferius}{37}{section*.35}
-\contentsline {section}{Salamander}{37}{section*.35}
-\contentsline {subsection}{Ashwinder}{37}{section*.36}
-\contentsline {subsection}{Fire Salamander}{37}{section*.36}
-\contentsline {subsection}{Frost Salamander}{37}{section*.36}
-\contentsline {subsection}{Moke}{37}{section*.36}
-\contentsline {section}{Summoned}{38}{section*.36}
-\contentsline {subsection}{Draconic Guardians}{38}{section*.37}
-\contentsline {subsection}{Summoned Bird}{38}{section*.37}
-\contentsline {subsection}{Summoned Snakes}{38}{section*.37}
-\contentsline {section}{Swooping Evil}{38}{section*.37}
-\contentsline {subsection}{Swooping Evil}{38}{section*.38}
-\contentsline {section}{Thunderbird}{39}{section*.38}
-\contentsline {subsection}{Thunderbird}{39}{section*.39}
-\contentsline {section}{Unicorn}{39}{section*.39}
-\contentsline {subsection}{Bicorn}{39}{section*.40}
-\contentsline {subsection}{Mackled Malaclaw}{39}{section*.40}
-\contentsline {subsection}{Tebo}{39}{section*.40}
-\contentsline {subsection}{Unicorn}{39}{section*.40}
-\contentsline {section}{Wyvern}{40}{section*.40}
-\contentsline {subsection}{Occamy}{40}{section*.41}
-\contentsline {subsection}{Sea Serpent}{40}{section*.41}
+\contentsline {chapter}{\numberline {1}Potions \& Ingredients}{3}{chapter.1}%
+\contentsline {subsection}{\numberline {1.0.1}Failed Mixings}{3}{subsection.1.0.1}%
+\contentsline {subsection}{\numberline {1.0.2}Modifying Potions}{3}{subsection.1.0.2}%
+\contentsline {subsection}{\numberline {1.0.3}Purchasing Potions}{3}{subsection.1.0.3}%
+\contentsline {subsection}{\numberline {1.0.4}Potion List}{4}{subsection.1.0.4}%
+\contentsline {section}{\numberline {1.1}Ingredients}{9}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Beasts, Beings and Other Bad Business}{13}{chapter.2}%
+\contentsline {section}{Acromantula}{13}{section*.1}%
+\contentsline {subsection}{Acromantula Hatchling}{13}{section*.1}%
+\contentsline {subsection}{Acromantula}{14}{section*.1}%
+\contentsline {subsection}{Acromantula Patriarch}{14}{section*.1}%
+\contentsline {section}{Apparitions}{15}{section*.1}%
+\contentsline {subsection}{Ghost}{15}{section*.2}%
+\contentsline {subsection}{Poltergeist}{15}{section*.2}%
+\contentsline {subsection}{Boggart}{16}{section*.2}%
+\contentsline {section}{Arachnid}{16}{section*.2}%
+\contentsline {subsection}{Howling Tick}{16}{section*.3}%
+\contentsline {subsection}{Great Widow}{17}{section*.3}%
+\contentsline {subsection}{Brood Mother}{17}{section*.3}%
+\contentsline {section}{Bowtruckle}{18}{section*.3}%
+\contentsline {subsection}{Bowtruckle Splinter}{18}{section*.4}%
+\contentsline {subsection}{Bowtruckle Flower}{18}{section*.4}%
+\contentsline {subsection}{Bowtruckle Thorn}{18}{section*.4}%
+\contentsline {section}{Celestial Servant}{19}{section*.4}%
+\contentsline {subsection}{Angel}{19}{section*.5}%
+\contentsline {subsection}{Abyssal Servant}{19}{section*.5}%
+\contentsline {subsection}{Judiciary}{19}{section*.5}%
+\contentsline {subsection}{Demonus Temporus}{19}{section*.5}%
+\contentsline {section}{Ceratothid}{19}{section*.5}%
+\contentsline {subsection}{Graphorn}{19}{section*.6}%
+\contentsline {subsection}{Erumpet}{19}{section*.6}%
+\contentsline {subsection}{Re'em}{19}{section*.6}%
+\contentsline {section}{Chimaera}{20}{section*.6}%
+\contentsline {subsection}{Chimaera}{20}{section*.7}%
+\contentsline {section}{Cloaked Spirits}{20}{section*.7}%
+\contentsline {subsection}{Dementor}{20}{section*.8}%
+\contentsline {subsection}{Lethifold}{20}{section*.8}%
+\contentsline {section}{Clockwork Soldier}{21}{section*.8}%
+\contentsline {subsection}{Clockwork Solider}{21}{section*.9}%
+\contentsline {section}{Creation}{21}{section*.9}%
+\contentsline {subsection}{Hidebehind}{21}{section*.10}%
+\contentsline {subsection}{Blast-{}Ended Skrewt}{21}{section*.10}%
+\contentsline {section}{Demiguise}{22}{section*.10}%
+\contentsline {subsection}{Demiguise}{22}{section*.11}%
+\contentsline {section}{Demon}{22}{section*.11}%
+\contentsline {subsection}{Grindylow}{22}{section*.12}%
+\contentsline {subsection}{Kappa}{22}{section*.12}%
+\contentsline {subsection}{Kelpie}{22}{section*.12}%
+\contentsline {subsection}{Nogtail}{22}{section*.12}%
+\contentsline {subsection}{Pogrebin}{23}{section*.12}%
+\contentsline {subsection}{Shadow Demon}{23}{section*.12}%
+\contentsline {section}{Dragon}{23}{section*.12}%
+\contentsline {subsection}{Antipodean Opaleye}{23}{section*.13}%
+\contentsline {subsection}{Chinese Fireball}{23}{section*.13}%
+\contentsline {subsection}{Common Welsh Green}{23}{section*.13}%
+\contentsline {subsection}{Hebridean Black}{23}{section*.13}%
+\contentsline {subsection}{Hungarian Horntail}{24}{section*.13}%
+\contentsline {subsection}{Norwegian Ridgeback}{24}{section*.13}%
+\contentsline {subsection}{Peruvian Vipertooth}{24}{section*.13}%
+\contentsline {subsection}{Romanian Longhorn}{24}{section*.13}%
+\contentsline {subsection}{Swedish Shortsnout}{24}{section*.13}%
+\contentsline {subsection}{Ukranian Ironbelly}{24}{section*.13}%
+\contentsline {section}{Elemental Avatar}{25}{section*.13}%
+\contentsline {subsection}{Avatar of Fire}{25}{section*.14}%
+\contentsline {subsection}{Avatar of Ice}{25}{section*.14}%
+\contentsline {subsection}{Avatar of Storms}{25}{section*.14}%
+\contentsline {section}{Elf}{25}{section*.14}%
+\contentsline {subsection}{Erkling}{25}{section*.15}%
+\contentsline {subsection}{Gnome}{25}{section*.15}%
+\contentsline {subsection}{Gringwart Goff}{25}{section*.15}%
+\contentsline {subsection}{Pixie}{25}{section*.15}%
+\contentsline {subsection}{Red Cap}{26}{section*.15}%
+\contentsline {section}{Fairy}{26}{section*.15}%
+\contentsline {subsection}{Doxy}{26}{section*.16}%
+\contentsline {subsection}{True Fairy}{26}{section*.16}%
+\contentsline {section}{Fish}{27}{section*.16}%
+\contentsline {subsection}{Lobalug}{27}{section*.17}%
+\contentsline {subsection}{Plimpy}{27}{section*.17}%
+\contentsline {subsection}{Ramora}{27}{section*.17}%
+\contentsline {section}{Flora}{27}{section*.17}%
+\contentsline {subsection}{Bundimun}{27}{section*.18}%
+\contentsline {subsection}{Horklump}{27}{section*.18}%
+\contentsline {subsection}{Mandrake}{27}{section*.18}%
+\contentsline {subsection}{Whomping Willow}{27}{section*.18}%
+\contentsline {section}{Golem}{28}{section*.18}%
+\contentsline {subsection}{Crystal Golem}{28}{section*.19}%
+\contentsline {subsection}{Iron Golem}{28}{section*.19}%
+\contentsline {subsection}{Stone Golem}{28}{section*.19}%
+\contentsline {section}{Hag}{28}{section*.19}%
+\contentsline {subsection}{Druidic Hag}{28}{section*.20}%
+\contentsline {subsection}{Hag}{28}{section*.20}%
+\contentsline {subsection}{Necrotic Hag}{28}{section*.20}%
+\contentsline {subsection}{Water Hag}{28}{section*.20}%
+\contentsline {section}{Herald}{29}{section*.20}%
+\contentsline {subsection}{Augrey}{29}{section*.21}%
+\contentsline {subsection}{Pheonix}{29}{section*.21}%
+\contentsline {section}{Hybrid}{29}{section*.21}%
+\contentsline {subsection}{Griffin}{29}{section*.22}%
+\contentsline {subsection}{Hippocampus}{29}{section*.22}%
+\contentsline {subsection}{Hippogriff}{29}{section*.22}%
+\contentsline {section}{Inhabitor}{30}{section*.22}%
+\contentsline {subsection}{Inhabitor}{30}{section*.23}%
+\contentsline {section}{Insectum Magicae}{30}{section*.23}%
+\contentsline {subsection}{Billywig}{30}{section*.24}%
+\contentsline {subsection}{Chizpurfle}{30}{section*.24}%
+\contentsline {subsection}{Fire Crab}{30}{section*.24}%
+\contentsline {subsection}{Flesh-{}Eating Slug}{30}{section*.24}%
+\contentsline {subsection}{Flobberworm}{31}{section*.24}%
+\contentsline {subsection}{Glumbumble}{31}{section*.24}%
+\contentsline {subsection}{Streeler}{31}{section*.24}%
+\contentsline {section}{Lich}{31}{section*.24}%
+\contentsline {subsection}{Lich}{31}{section*.25}%
+\contentsline {section}{Mammalia Magicae}{32}{section*.25}%
+\contentsline {subsection}{Dugbog}{32}{section*.26}%
+\contentsline {subsection}{Jarvey}{32}{section*.26}%
+\contentsline {subsection}{Kneazle}{32}{section*.26}%
+\contentsline {subsection}{Mooncalf}{32}{section*.26}%
+\contentsline {subsection}{Murtlap}{32}{section*.26}%
+\contentsline {subsection}{Niffler}{32}{section*.26}%
+\contentsline {subsection}{Porlock}{32}{section*.26}%
+\contentsline {subsection}{Wampus Cat}{32}{section*.26}%
+\contentsline {section}{Manticore}{33}{section*.26}%
+\contentsline {subsection}{Manticore}{33}{section*.27}%
+\contentsline {section}{Nundu}{33}{section*.27}%
+\contentsline {subsection}{Nundu}{33}{section*.28}%
+\contentsline {section}{Ogre}{34}{section*.28}%
+\contentsline {subsection}{Ghoul}{34}{section*.29}%
+\contentsline {subsection}{Troll}{34}{section*.29}%
+\contentsline {subsection}{Yeti}{34}{section*.29}%
+\contentsline {section}{Ophidian}{34}{section*.29}%
+\contentsline {subsection}{Basilisk}{34}{section*.30}%
+\contentsline {subsection}{Cockatrice}{34}{section*.30}%
+\contentsline {subsection}{Runespoor}{34}{section*.30}%
+\contentsline {section}{Ornithes Magicae}{35}{section*.30}%
+\contentsline {subsection}{Diricawl}{35}{section*.31}%
+\contentsline {subsection}{Fwooper}{35}{section*.31}%
+\contentsline {subsection}{Jobberknoll}{35}{section*.31}%
+\contentsline {subsection}{Snidget}{35}{section*.31}%
+\contentsline {section}{Pegasus}{35}{section*.31}%
+\contentsline {subsection}{Thestral}{35}{section*.32}%
+\contentsline {subsection}{Winged Horse}{35}{section*.32}%
+\contentsline {section}{Puffskein}{36}{section*.32}%
+\contentsline {subsection}{Puffskein}{36}{section*.33}%
+\contentsline {subsection}{Pygmy Puff}{36}{section*.33}%
+\contentsline {section}{Quintaped}{36}{section*.33}%
+\contentsline {subsection}{Quintaped}{36}{section*.34}%
+\contentsline {section}{Raised Dead}{37}{section*.34}%
+\contentsline {subsection}{Banshee}{37}{section*.35}%
+\contentsline {subsection}{Inferius}{37}{section*.35}%
+\contentsline {section}{Salamander}{37}{section*.35}%
+\contentsline {subsection}{Ashwinder}{37}{section*.36}%
+\contentsline {subsection}{Fire Salamander}{37}{section*.36}%
+\contentsline {subsection}{Frost Salamander}{37}{section*.36}%
+\contentsline {subsection}{Moke}{37}{section*.36}%
+\contentsline {section}{Summoned}{38}{section*.36}%
+\contentsline {subsection}{Draconic Guardians}{38}{section*.37}%
+\contentsline {subsection}{Summoned Bird}{38}{section*.37}%
+\contentsline {subsection}{Summoned Snakes}{38}{section*.37}%
+\contentsline {section}{Swooping Evil}{38}{section*.37}%
+\contentsline {subsection}{Swooping Evil}{38}{section*.38}%
+\contentsline {section}{Thunderbird}{39}{section*.38}%
+\contentsline {subsection}{Thunderbird}{39}{section*.39}%
+\contentsline {section}{Unicorn}{39}{section*.39}%
+\contentsline {subsection}{Bicorn}{39}{section*.40}%
+\contentsline {subsection}{Mackled Malaclaw}{39}{section*.40}%
+\contentsline {subsection}{Tebo}{39}{section*.40}%
+\contentsline {subsection}{Unicorn}{39}{section*.40}%
+\contentsline {section}{Wyvern}{40}{section*.40}%
+\contentsline {subsection}{Occamy}{40}{section*.41}%
+\contentsline {subsection}{Sea Serpent}{40}{section*.41}%
+\contentsline {chapter}{\numberline {3}Cosmology}{41}{chapter.3}%
+\contentsline {subsection}{\numberline {3.0.1}The Mortal World}{41}{subsection.3.0.1}%
+\contentsline {subsection}{\numberline {3.0.2}The Astral Realm}{41}{subsection.3.0.2}%
+\contentsline {subsection}{\numberline {3.0.3}The Higher Planes}{41}{subsection.3.0.3}%
+\contentsline {subsection}{\numberline {3.0.4}The Eldritch Domains}{41}{subsection.3.0.4}%
+\contentsline {subsection}{\numberline {3.0.5}The Void}{41}{subsection.3.0.5}%
+\contentsline {section}{\numberline {3.1}Higher Planes}{41}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Abyss: The Plane of Terror}{41}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Aeolus: The Plane of Storms and Winds}{41}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Eden: The Plane of Nature}{42}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Elysium: The Plane of Blessings}{42}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Hades: The Plane of Death}{42}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Hyperborea: The Plane of Ice}{42}{subsection.3.1.6}%
+\contentsline {subsection}{\numberline {3.1.7}Machina: The Plane of Order}{42}{subsection.3.1.7}%
+\contentsline {subsection}{\numberline {3.1.8}Nirvana: The Plane of Peace}{42}{subsection.3.1.8}%
+\contentsline {subsection}{\numberline {3.1.9}Pand{\ae }monium: The Plane of Chaos}{42}{subsection.3.1.9}%
+\contentsline {subsection}{\numberline {3.1.10}Scholomancia: The Plane of Knowledge}{42}{subsection.3.1.10}%
+\contentsline {subsection}{\numberline {3.1.11}Tartarus: The Plane of Torture}{42}{subsection.3.1.11}%
+\contentsline {subsection}{\numberline {3.1.12}Valhalla: The Plane of Bravery}{42}{subsection.3.1.12}%
+\contentsline {subsection}{\numberline {3.1.13}Vulcan: The Plane of Fire}{43}{subsection.3.1.13}%
