@@ -53,7 +53,7 @@ function assembleBeasts(fileNameRoot)
         L = length(List(j).Beasts);
         if L > 1
             
-            entry = "\\species{" + List(j).Name + "}{";
+            entry = "\\species{" + List(j)  .Name + "}{";
             entry = entry + prepareText(List(j).Description) + "}{\n";
 
             [~,I] = sort([List(j).Beasts.Order]);
