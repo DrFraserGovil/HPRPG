@@ -88,7 +88,21 @@ Though often closely linked (most creatures of a humanoid {\it type} have a sapi
 \type{Undead}{The undead are profane creations\comma{} the mortal remains of a once\minus{}living creature reanimated by powerful necromantic magic\comma{} or posessed by an evil spirit. The Walking Corpses\comma{} as well as Vampires\comma{} fall into this category.}
 
 
-
+\newcommand\squote[1]
+{
+``#1"
+}
+\newcommand\beastSpell[2]
+{
+	#1	&	{\it #2} \\
+}
+\newcommand\beastSpellList[1]
+{
+	\begin{rndtable}{l l}
+	Level	& Spell \\
+	#1
+	\end{rndtable}
+}
 \definecolor{statblockbg}{HTML}{FDF1DC} 
 
 \makeatletter
@@ -392,23 +406,62 @@ Horrific\comma{} twisted mimicries of mortal forms\comma{} these beasts spread t
 
 \ability{Terrifying Form}{The twisted forms created for the Abyssal Spawn is enough to  drive terror into the heart of even the bravest warrior and possibly drive them insane. }
 
-\ability{Unliving}{As beings which are not truly alive\comma{} Abyssal Spawn need neither air\comma{} food\comma{} drink or sleep in order to survive. However\comma{} they are vulnerable to celestial damage.}}{
-\beast{name = Death Hunter, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = , speed = , habitat = , sizeName = , size = , needsLine = 0, imageHeight = 0.5, habitat = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, needsPage=1, hasImage = 1, image = hunter, imPosition = 0,description = }{0}
+\ability{Unliving}{As beings which are not truly alive\comma{} Abyssal Spawn need neither air\comma{} food\comma{} drink or sleep in order to survive. However\comma{} they are vulnerable to celestial damage.}
+
+\ability{Dust To Dust}{When killed\comma{} Abyssal Horrors leave behind no corpses. Their bodies explode into voidic essence\comma{} which slowly evaporates as black mist.}}{
+\beast{name = Death Hunter, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Sightless Tracker, speed = 25 metres, habitat = Eldritch Domains, sizeName = Length, size = 2 metres, needsLine = 1, imageHeight = 0.5, habitat = Eldritch Domains, fit = 22 (+6),prs = 8 (-1),spr = 12 (+1),chr = 0 (-5),int = 5 (-3),pcp = 21 (+5),pow = 13 (+1),evl = 18 (+4),hp=80, block=17, dodge=19, abilityBlock=1, needsPage=1, hasImmune = 1, immune = All sensory effects\comma{} {\it Charmed} and {\it Terrified} status effects., hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Alien Senses}{A Death Hunter does not use conventional senses to percieve the world around it. It is therefore immune to effects such as Blindness and Deafness\comma{} and can see in perfect darkness}
+
+\ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Death Hunter. The Death Hunter gets advantage on all Resist Checks against magic spells.}
+
+\ability{Terrifying Visage}{When a being first lays eyes on any member of the Abyssal Spawn\comma{} they must succeed on a DV 15 Willpower Resist check\comma{} or become {\it Terrified} of the creatue. All terrified beings must reperform the check again. On  a second failure\comma{} take 5d6 psychic damage.}
+
+\ability{Void Walk}{As Abyssal Spawn\comma{} the Death Hunter can \comma{} with a minute\apos{}s preparation\comma{} enter into the Void\comma{} instantaneously disappearing from their present reality. Once inside the Void\comma{} they can repeat this process to reappear in any other plane in the multiverse. }, hasActions = 1, actions = \melee{Bludgeon}{+11}{Deals 6+1d6 bludgeoning damage}
+
+\melee{Bite}{+10}{Deals 6 + 2d8 piercing damage}
+
+\ability{Pounce}{As a major action\comma{} a Death Hunter may leap up to 5 metres towards a target\comma{} and take a combined Bludgeon and Bite attack.}
+
+\ability{Call Allies}{As a major action\comma{} a Death Hunter may raise their head to the heavens and howl a phrase in Voidic\comma{} stretching across dimensions\comma{} alerting their masters that they have found their quarry. This opens a portal through which the rest of the hunting party may appear.}, hasSkills = 1, skills = Speed (+11)\comma{} Stealth (+4)\comma{} Observation (+10)\comma{} Intimidation (+7), hasImage = 1, image = hunter, hasLanguages = 1, language = Voidic, hasComprehend = 1, comprehend = All spoken languages, imPosition = 0,description = A disgusting pale\minus{}white creature with 6 legs and a face which is entirely featureless except a gaping red maw. 
+
+Incredibly fast\comma{} and with powerful alien senses the Death Hunter serves one purpose: to track and hunt down their target across dimensions.}{0}
 
 
-\beast{name = Flesh Ripper, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = , speed = , habitat = , sizeName = , size = , needsLine = 0, imageHeight = 0.4, habitat = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, needsPage=1, hasImage = 1, image = ripper, imPosition = 1,description = }{0}
+\beast{name = Flesh Ripper, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Animalistic Fighter, speed = 3 metres, habitat = Eldritch Domains, sizeName = Length, size = 5 metres, needsLine = 1, imageHeight = 0.38, habitat = Eldritch Domains, fit = 20 (+5),prs = 15 (+2),spr = 17 (+3),chr = 3 (-4),int = 16 (+3),pcp = 17 (+3),pow = 16 (+3),evl = 18 (+4),hp=140, block=18, dodge=13, abilityBlock=1, needsPage=1, hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Flesh Ripper. They get advantage on all Resist Checks against magic spells.}
+
+\ability{Terrifying Visage}{When a being first lays eyes on any member of the Abyssal Spawn\comma{} they must succeed on a DV 15 Willpower Resist check\comma{} or become {\it Terrified} of the creatue. All terrified beings must reperform the check again. On  a second failure\comma{} take 5d6 psychic damage.}
+
+\ability{Void Walk}{As Abyssal Spawn\comma{} the Flesh Ripper can\comma{} with a minute\apos{}s preparation\comma{} enter into the Void\comma{} instantaneously disappearing from their present reality. Once inside the Void\comma{} they can repeat this process to reappear in any other plane in the multiverse. }, hasActions = 1, actions = \melee{Bite}{+12}{Deals 4d8 piercing damage. On a failed DV 15 Vitality Resist\comma{} target takes an additional 4d8 necrotic damage. }
+
+\melee{Harpoon Tail}{Range: 10 metres\comma{} +7}{Deals 5d6 piercing damage\comma{} and initiates a grapple action.}
+
+\ability{Devour}{Consume a target being in melee range which is {\it Incapacitated}\comma{} instantly killing the being and restoring 4d20 Health points.} 
+
+\ranged{Voidic Bile}{+7}{50 metres}{Spits a gout of black bile which does 3d6 each of Acid\comma{} Necrotic and Poison Damage}, hasSkills = 1, skills = Strength (+11)\comma{} Intimidation (+10), hasImage = 1, image = ripper, hasLanguages = 1, language = Voidic, imPosition = 1,description = A hulking mass of rotting\comma{} oily flesh covered in a bony exoskeleton which seems to twist and warp in multiple dimensions. The Flesh Ripper\apos{}s role is as a heavy assault weapon. It is aided in this by it\apos{}s long\comma{} scorpion like tail\comma{} which ends in a vicious barb. This tail is used to spear beings\comma{} before dragging them\comma{} helpless\comma{} into its maw.}{0}
 
 
-\beast{name = Mind Shredder, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = , speed = , habitat = , sizeName = , size = , needsLine = 0, imageHeight = 0.4, habitat = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, needsPage=1, hasImage = 1, image = shredder, imPosition = 0,description = }{0}
+\beast{name = Mind Shredder, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Mistress of Lies, speed = 5 metres, habitat = Eldritch Domains, sizeName = Height, size = 1.7 metres, needsLine = 1, imageHeight = 0.3, habitat = Eldritch Domains, fit = 10 (0),prs = 14 (+2),spr = 18 (+4),chr = 24 (+7),int = 20 (+5),pcp = 15 (+2),pow = 18 (+4),evl = 22 (+6),hp=60, block=11, dodge=14, abilityBlock=1, needsPage=1, hasFP = 1, fp = 70, hasImmune = 1, immune = Psychic, hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Mind Shredder. They get advantage on all Resist Checks against magic spells.}
+
+\ability{Terrifying Visage}{When a being first lays eyes on any member of the Abyssal Spawn\comma{} they must succeed on a DV 15 Willpower Resist check\comma{} or become {\it Terrified} of the creatue. All terrified beings must reperform the check again. On  a second failure\comma{} take 5d6 psychic damage.}
+
+\ability{Void Walk}{As Abyssal Spawn\comma{} the Mind Shredder can\comma{} with a minute\apos{}s preparation\comma{} enter into the Void\comma{} instantaneously disappearing from their present reality. Once inside the Void\comma{} they can repeat this process to reappear in any other plane in the multiverse. }, hasActions = 1, actions = \ability{Spellcasting}{A Mind Shredder can perform the following spells as silent\comma{} wandless actions:
+
+\beastSpellList{
+\beastSpell{Beginner}{Glamour\comma{} Chaotic Whispers\comma{} Piercing Wail\comma{} Force Shield}
+\beastSpell{Novice}{Horrific Araments\comma{} Necrosis\comma{} Silent Illusion}
+\beastSpell{Adept}{Voidsphere\comma{} Entrance Other\comma{} Speak in Tongues}
+\beastSpell{Expert}{Delusion\comma{} Psychosis\comma{} Waking Dream}
+\beastSpell{Master}{Modify Memory\comma{} Psionic Overload}
+}
+}, hasSkills = 1, skills = Deception (+12)\comma{} Persuasion (+12)\comma{} Willpower (+9), hasImage = 1, image = shredder, hasLanguages = 1, language = Voidic, hasComprehend = 1, comprehend = All spoken languages, imPosition = 0,description = A monstrous female form\comma{} all protruding fangs and tentacles lies behind layers of illusions and deception. Created by the Abyssal Masters for the express purpose of infiltration of the minds of their foes\comma{} the Mind Shredder is weak in body\comma{} but wields immense psionic powers.}{0}
 
 
-\beast{name = Soul Devourer, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = , speed = , habitat = , sizeName = , size = , needsLine = 0, imageHeight = 0.4, habitat = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, needsPage=1, hasImage = 1, image = devourer, imPosition = 1,description = }{0}
+\beast{name = Soul Devourer, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = , speed = , habitat = , sizeName = , size = , needsLine = 0, imageHeight = 0.4, habitat = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 20 (+5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, needsPage=1, hasImage = 1, image = devourer, imPosition = 1,description = }{0}
 
 
-\beast{name = Wielder\minus{}of\minus{}Night, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = , speed = , habitat = , sizeName = , size = , needsLine = 0, imageHeight = 0.4, habitat = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, needsPage=1, hasImage = 1, image = spawn, imPosition = 0,description = }{0}
+\beast{name = Wielder\minus{}of\minus{}Night, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = , speed = , habitat = , sizeName = , size = , needsLine = 0, imageHeight = 0.4, habitat = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 22 (+6),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, needsPage=1, hasImage = 1, image = spawn, imPosition = 0,description = }{0}
 
 
-}{1}{greatOld}{0.6}
+}{1}{greatOld}{0.55}
 
 
 
@@ -448,7 +501,7 @@ Hatching from eggs the size of rugby balls\comma{} the oldest specimens have leg
 
 \ranged{Web}{+6}{30 metres}{A target individual is covered in sticky webbing. The target is {\it Incapacitated} until they succeed on a DV 18 Strength Resist\comma{} or the webbing absorbs 15 points of physical damage.}
 
-\ability{Webbed Domain}{A patriarch may use a major action to launch a globule of sticky material up to 10 metres away from them\comma{} which covers an area of 5m in radius. This area is considered {\it Webbed}. Movement on a webbed area is halved.}, hasSkills = 1, skills = Strength (+3)\comma{} Observation (+9)\comma{} Nightvision, hasImage = 1, image = aragog, hasLanguages = 1, language = Spider Tongue\comma{} Human Languages, imPosition = 0,description = The eldest of the spider monstrosities is known as the {\it Patriarch}. Though they have reached truly gargantuan sizes\comma{} their bodies have become decrepit with age. Their minds\comma{} however\comma{} are razor sharp and they have mastered human speech.}{0}
+\ability{Webbed Domain}{A patriarch may use a major action to launch a globule of sticky material up to 10 metres away from them\comma{} which covers an area of 5m in radius. This area is considered {\it Webbed}. Movement on a webbed area is halved.}, hasSkills = 1, skills = Strength (+4)\comma{} Observation (+10)\comma{} Nightvision, hasImage = 1, image = aragog, hasLanguages = 1, language = Spider Tongue\comma{} Human Languages, imPosition = 0,description = The eldest of the spider monstrosities is known as the {\it Patriarch}. Though they have reached truly gargantuan sizes\comma{} their bodies have become decrepit with age. Their minds\comma{} however\comma{} are razor sharp and they have mastered human speech.}{0}
 
 
 }{1}{bigAcro}{0.5}
@@ -456,7 +509,19 @@ Hatching from eggs the size of rugby balls\comma{} the oldest specimens have leg
 
 
 
-\species{Angels}{a}{
+\species{Angels}{Angels are powerful\comma{} beautiful Celestial creatures\comma{} denizens of Elysium\comma{} one of the Higher Planes\comma{} though they can be found throughout the multiverse. Often perceived as powerful agents of Deities\comma{} servants of benevolent gods\comma{} it is actually unknown who or what provides these powerful creatures with their deeper purpose. 
+
+\ability{Benevolent Fury}{Almost universally pure of heart and intrinsically ethical and good\comma{} Angels are representative of everything full of light and life in the universe. Angels will never compromise their core beliefs. They are not\comma{} however\comma{} pacifists. Angels are great and pwoerful warriors\comma{} and will strike down their enemies in the name of protecting those who cannot protect themselves.}
+
+\ability{Angelic Host}{The Angelic society is known as the {\it Angelic Host}\comma{} a powerful seemingly omniscient society which dwells almost entirely in the Silver City found at the centre of Elysium. This society is highly structured and hierarchical\comma{} with angels being created to fill specific niches within each echelon of society. Each Angel derives their powers from their position within the angelic hierarchy\comma{} with the highest tiers wielding terrifying amounts of power.}
+
+\ability{Holy Crusades}{Angels only leave the Silver City on two conditions\comma{} the most common of which is being directed on a holy quest by one of their superiors. Most Angels met outside of Elysium are conducting such a quest. The difficulty of the quest depends on the ranking of the angel in question: a cherubim might be sent out to conduct a blessing\comma{} or deliver a message\comma{} whilst a quest which calls for an Archangel to be sent would be a truly dire universe\minus{}ending scenario. }
+
+\ability{Fallen Angel}{The other condition under which an Angel is refused entry into the Silver City is if they have {\it fallen}. Though Angels will never compromise their core beliefs\comma{} and are almost inherently good in nature it is possible for them to fall victim to their own pride and hubris. If this happens\comma{} an angel may act against the wishes of the Host\comma{} or inadvertently perform some great act of evil. 
+
+If this happens\comma{} the Host will disavow them\comma{} and cast them out. Without the purpose granted to them by the rigid structure of Angelic society\comma{} many such fallen angels go entirely mad. Others sink into a deep\comma{} vengeful fury and declare war on the Host\comma{} whilst others are believed to undergo a transformation\comma{} becoming powerful demonic creatures. }
+
+\ability{Immortal Spirit}{As a celestial being\comma{} an angel is incredibly resilient and requires neither food\comma{} drink\comma{} air or sleep (though they may enjoy the experience).}}{
 \beast{name = Cherubim, species = Angels, mind = Ineffable, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , needsLine = 0, imageHeight = 0.4, habitat = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, needsPage=1, imPosition = 0,description = }{0}
 
 
@@ -469,7 +534,7 @@ Hatching from eggs the size of rugby balls\comma{} the oldest specimens have leg
 \beast{name = Archangel, species = Angels, mind = Ineffable, category = Celestial, summary = , speed = , habitat = , sizeName = , size = , needsLine = 0, imageHeight = 0.4, habitat = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, needsPage=1, imPosition = 1,description = }{0}
 
 
-}{0}{}{NaN}
+}{1}{host}{0.36}
 
 
 
