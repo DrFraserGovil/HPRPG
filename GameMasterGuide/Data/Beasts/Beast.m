@@ -51,6 +51,8 @@ classdef Beast
         hasImage
         ImagePos
         ImageHeight
+        
+        NeedsPage
     end
     
     methods
@@ -150,6 +152,11 @@ classdef Beast
             obj.ImagePos = 0;
             
             obj.NeedsLine = obj.hasAbilities && (obj.hasSkills || obj.hasImmune || obj.hasImmune || obj.hasLanguages || obj.hasSusceptible);
+        
+            obj.NeedsPage = false;
+            if tableLine.NeedsPage(1) == 1
+                obj.NeedsPage = true;
+            end
         end
         
         function text = print(obj,mode)
@@ -168,8 +175,8 @@ classdef Beast
             
             text = text + obj.statBlock();
             
-            numTitles = ["hp","block","dodge","abilityBlock"];
-            numArray = [obj.HP, obj.Block, obj.Dodge,obj.hasAbilitiesBlock];
+            numTitles = ["hp","block","dodge","abilityBlock","needsPage"];
+            numArray = [obj.HP, obj.Block, obj.Dodge,obj.hasAbilitiesBlock,obj.NeedsPage];
             for i = 1:length(numArray)
                 text = text + numTitles(i) + "="+num2str(numArray(i)) + ", ";
             end
@@ -183,7 +190,9 @@ classdef Beast
                if hasTriggers(i) 
                   text = text +  hasTitles(i) + " = 1, " + prepareText(includeTitles(i)) + " = " + prepareText(includeVals(i)) + ", ";
                end
+            
             end
+            
             text = text + "imPosition = " + num2str(obj.ImagePos) + ",";
             text = text + "description = " + prepareText(obj.Description) + "}";
             

@@ -14,7 +14,7 @@ function assembleBeasts(fileNameRoot)
     f = sortrows(f);
     List = Species.empty;
     for i = 1:height(f)
-        List(i) = Species(f.Name{i},f.Description{i});
+        List(i) = Species(f.Name{i},f.Description{i},f.SpeciesPicture{i}, f.PicHeight(i)  );
     end
     
     f = readtable("NewBeasts.xlsx");
@@ -34,7 +34,7 @@ function assembleBeasts(fileNameRoot)
           
         end
        if found == false
-           c = Species(b.Species,"");
+           c = Species(b.Species,"",string.empty,0);
            c.Beasts(end+1) = b;
            List(end+1) = c;
        end
@@ -65,6 +65,12 @@ function assembleBeasts(fileNameRoot)
                 entry = entry + List(j).Beasts(k).print() + "\n\n\n";
             end
             entry = entry + "}";
+            
+            entry = entry + "{" + num2str(List(j).HasImage) + "}";
+            entry = entry + "{" + List(j).Image + "}";
+            entry = entry + "{" + List(j).Height + "}";
+
+            
             text = text + entry + "\n\n\n\n\n";
         end
         
