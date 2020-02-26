@@ -94,14 +94,14 @@ Though often closely linked (most creatures of a humanoid {\it type} have a sapi
 }
 \newcommand\beastSpell[2]
 {
-	#1	&	{\it #2} \\
+	\bf #1	&	{\it #2} \\
 }
 \newcommand\beastSpellList[1]
 {
-	\begin{rndtable}{l l}
-	Level	& Spell \\
+	
+	\begin{tabular}{l l}
 	#1
-	\end{rndtable}
+	\end{tabular}
 }
 \definecolor{statblockbg}{HTML}{FDF1DC} 
 
@@ -409,7 +409,7 @@ Horrific\comma{} twisted mimicries of mortal forms\comma{} these beasts spread t
 \ability{Unliving}{As beings which are not truly alive\comma{} Abyssal Spawn need neither air\comma{} food\comma{} drink or sleep in order to survive. However\comma{} they are vulnerable to celestial damage.}
 
 \ability{Dust To Dust}{When killed\comma{} Abyssal Horrors leave behind no corpses. Their bodies explode into voidic essence\comma{} which slowly evaporates as black mist.}}{
-\beast{name = Death Hunter, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Sightless Tracker, speed = 25 metres, habitat = Eldritch Domains, sizeName = Length, size = 2 metres, needsLine = 1, imageHeight = 0.5, habitat = Eldritch Domains, fit = 22 (+6),prs = 8 (-1),spr = 12 (+1),chr = 0 (-5),int = 5 (-3),pcp = 21 (+5),pow = 13 (+1),evl = 18 (+4),hp=80, block=17, dodge=19, abilityBlock=1, needsPage=1, hasImmune = 1, immune = All sensory effects\comma{} {\it Charmed} and {\it Terrified} status effects., hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Alien Senses}{A Death Hunter does not use conventional senses to percieve the world around it. It is therefore immune to effects such as Blindness and Deafness\comma{} and can see in perfect darkness}
+\beast{name = Death Hunter, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Sightless Tracker, speed = 25 metres, habitat = Eldritch Domains, sizeName = Length, size = 2 metres, needsLine = 1, imageHeight = 0.5, habitat = Eldritch Domains, fit = 22 (+6),prs = 8 (-1),spr = 12 (+1),chr = 0 (-5),int = 5 (-3),pcp = 21 (+5),pow = 13 (+1),evl = 18 (+4),hp=80, block=17, dodge=19, abilityBlock=1, needsPage=1, hasImmune = 1, immune = Cold damage\comma{} All sensory effects\comma{} {\it Charmed} and {\it Terrified} status effects., hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Alien Senses}{A Death Hunter does not use conventional senses to percieve the world around it. It is therefore immune to effects such as Blindness and Deafness\comma{} and can see in perfect darkness}
 
 \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Death Hunter. The Death Hunter gets advantage on all Resist Checks against magic spells.}
 
@@ -426,7 +426,7 @@ Horrific\comma{} twisted mimicries of mortal forms\comma{} these beasts spread t
 Incredibly fast\comma{} and with powerful alien senses the Death Hunter serves one purpose: to track and hunt down their target across dimensions.}{0}
 
 
-\beast{name = Flesh Ripper, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Animalistic Fighter, speed = 3 metres, habitat = Eldritch Domains, sizeName = Length, size = 5 metres, needsLine = 1, imageHeight = 0.38, habitat = Eldritch Domains, fit = 20 (+5),prs = 15 (+2),spr = 17 (+3),chr = 3 (-4),int = 16 (+3),pcp = 17 (+3),pow = 16 (+3),evl = 18 (+4),hp=140, block=18, dodge=13, abilityBlock=1, needsPage=1, hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Flesh Ripper. They get advantage on all Resist Checks against magic spells.}
+\beast{name = Flesh Ripper, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Animalistic Fighter, speed = 3 metres, habitat = Eldritch Domains, sizeName = Length, size = 5 metres, needsLine = 1, imageHeight = 0.35, habitat = Eldritch Domains, fit = 20 (+5),prs = 15 (+2),spr = 17 (+3),chr = 3 (-4),int = 16 (+3),pcp = 17 (+3),pow = 16 (+3),evl = 18 (+4),hp=140, block=18, dodge=13, abilityBlock=1, needsPage=1, hasImmune = 1, immune = Cold, hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Flesh Ripper. They get advantage on all Resist Checks against magic spells.}
 
 \ability{Terrifying Visage}{When a being first lays eyes on any member of the Abyssal Spawn\comma{} they must succeed on a DV 15 Willpower Resist check\comma{} or become {\it Terrified} of the creatue. All terrified beings must reperform the check again. On  a second failure\comma{} take 5d6 psychic damage.}
 
@@ -439,7 +439,7 @@ Incredibly fast\comma{} and with powerful alien senses the Death Hunter serves o
 \ranged{Voidic Bile}{+7}{50 metres}{Spits a gout of black bile which does 3d6 each of Acid\comma{} Necrotic and Poison Damage}, hasSkills = 1, skills = Strength (+11)\comma{} Intimidation (+10), hasImage = 1, image = ripper, hasLanguages = 1, language = Voidic, imPosition = 1,description = A hulking mass of rotting\comma{} oily flesh covered in a bony exoskeleton which seems to twist and warp in multiple dimensions. The Flesh Ripper\apos{}s role is as a heavy assault weapon. It is aided in this by it\apos{}s long\comma{} scorpion like tail\comma{} which ends in a vicious barb. This tail is used to spear beings\comma{} before dragging them\comma{} helpless\comma{} into its maw.}{0}
 
 
-\beast{name = Mind Shredder, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Mistress of Lies, speed = 5 metres, habitat = Eldritch Domains, sizeName = Height, size = 1.7 metres, needsLine = 1, imageHeight = 0.3, habitat = Eldritch Domains, fit = 10 (0),prs = 14 (+2),spr = 18 (+4),chr = 24 (+7),int = 20 (+5),pcp = 15 (+2),pow = 18 (+4),evl = 22 (+6),hp=60, block=11, dodge=14, abilityBlock=1, needsPage=1, hasFP = 1, fp = 70, hasImmune = 1, immune = Psychic, hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Mind Shredder. They get advantage on all Resist Checks against magic spells.}
+\beast{name = Mind Shredder, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Mistress of Lies, speed = 5 metres, habitat = Eldritch Domains, sizeName = Height, size = 1.7 metres, needsLine = 1, imageHeight = 0.35, habitat = Eldritch Domains, fit = 10 (0),prs = 14 (+2),spr = 18 (+4),chr = 24 (+7),int = 20 (+5),pcp = 15 (+2),pow = 18 (+4),evl = 22 (+6),hp=60, block=11, dodge=14, abilityBlock=1, needsPage=1, hasFP = 1, fp = 70, hasImmune = 1, immune = Psychic\comma{} Cold, hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Mind Shredder. They get advantage on all Resist Checks against magic spells.}
 
 \ability{Terrifying Visage}{When a being first lays eyes on any member of the Abyssal Spawn\comma{} they must succeed on a DV 15 Willpower Resist check\comma{} or become {\it Terrified} of the creatue. All terrified beings must reperform the check again. On  a second failure\comma{} take 5d6 psychic damage.}
 
@@ -455,7 +455,7 @@ Incredibly fast\comma{} and with powerful alien senses the Death Hunter serves o
 }, hasSkills = 1, skills = Deception (+12)\comma{} Persuasion (+12)\comma{} Willpower (+9), hasImage = 1, image = shredder, hasLanguages = 1, language = Voidic, hasComprehend = 1, comprehend = All spoken languages, imPosition = 0,description = A monstrous female form\comma{} all protruding fangs and tentacles lies behind layers of illusions and deception. Created by the Abyssal Masters for the express purpose of infiltration of the minds of their foes\comma{} the Mind Shredder is weak in body\comma{} but wields immense psionic powers.}{0}
 
 
-\beast{name = Soul Devourer, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Eldritch Arcane Master, speed = 2 metres, habitat = Eldritch Domains, sizeName = Height, size = 3 metres, needsLine = 1, imageHeight = 0.25, habitat = Eldritch Domains, fit = 8 (-1),prs = 15 (+2),spr = 25 (+7),chr = 4 (-3),int = 25 (+7),pcp = 13 (+1),pow = 25 (+7),evl = 20 (+5),hp=100, block=9, dodge=12, abilityBlock=1, needsPage=1, hasFP = 1, fp = 200, hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Necrotic Shroud}{The Soul Devourer is surrounded by a field of negative energy. Any being which spends any part of their turn within 2 metres of the Soul Devourer takes 3d8 necrotic damage.}
+\beast{name = Soul Devourer, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Eldritch Arcane Master, speed = 2 metres, habitat = Eldritch Domains, sizeName = Height, size = 3 metres, needsLine = 1, imageHeight = 0.28, habitat = Eldritch Domains, fit = 8 (-1),prs = 15 (+2),spr = 25 (+7),chr = 4 (-3),int = 22 (+6),pcp = 13 (+1),pow = 25 (+7),evl = 20 (+5),hp=100, block=9, dodge=12, abilityBlock=1, needsPage=1, hasFP = 1, fp = 200, hasImmune = 1, immune = Cold, hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Necrotic Shroud}{The Soul Devourer is surrounded by a field of negative energy. Any being which spends any part of their turn within 2 metres of the Soul Devourer takes 3d8 necrotic damage.}
 
 \ability{Soul Grab}{Whenever a being dies inside the Necrotic Shroud\comma{} the Soul Devourer instantly absorbs its soul as if it had cast {\it Soul Snare}}
 
@@ -473,10 +473,28 @@ Incredibly fast\comma{} and with powerful alien senses the Death Hunter serves o
 \beastSpell{Expert}{Create Zombie\comma{} Create Thrall}
 \beastSpell{Master}{Burning Blood\comma{} Word of Death\comma{} Selfshift}
 }
-}, hasSkills = 1, skills = Willpower (+11)\comma{} Arcane (+12)\comma{} Unnature (+12), hasImage = 1, image = devourer, hasLanguages = 1, language = All spoken languages, imPosition = 1,description = The Soul Devourer is the arcane expert of the Abyssal army\comma{} using the souls of the fallen – even their own allies – to cast powerful magics.}{0}
+}, hasSkills = 1, skills = Willpower (+11)\comma{} Arcane (+10)\comma{} Unnature (+10), hasImage = 1, image = devourer, hasLanguages = 1, language = All spoken languages, imPosition = 1,description = The Soul Devourer is the arcane expert of the Abyssal army\comma{} using the souls of the fallen – even their own allies – to cast powerful magics.}{0}
 
 
-\beast{name = Wielder\minus{}of\minus{}Night, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = , speed = , habitat = , sizeName = , size = , needsLine = 0, imageHeight = 0.4, habitat = , fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 22 (+6),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, needsPage=1, hasImage = 1, image = spawn, imPosition = 0,description = }{0}
+\beast{name = Wielder\minus{}of\minus{}Night, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Eldritch General, speed = 10 metres, habitat = Eldritch Domains, sizeName = Height, size = 4 metres, needsLine = 1, imageHeight = 0.25, habitat = Eldritch Domains, fit = 16 (+3),prs = 18 (+4),spr = 19 (+4),chr = 7 (-2),int = 25 (+7),pcp = 23 (+6),pow = 20 (+5),evl = 22 (+6),hp=175, block=15, dodge=17, abilityBlock=1, needsPage=1, hasFP = 1, fp = 50, hasImmune = 1, immune = Necrotic\comma{} Cold, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Soul Devourer. They get advantage on all Resist Checks against magic spells.}
+
+\ability{Terrifying Visage}{When a being first sees a member of the Abyssal Spawn\comma{} they must succeed on a DV 15 Willpower Resist check\comma{} or become {\it Terrified} of the creature. All terrified beings must reperform the check again\comma{} take 5d6 psychic damage on a failure.}
+
+\ability{Void Walk}{As Abyssal Spawn\comma{} the Soul Devourer can\comma{} with a minute\apos{}s preparation\comma{} enter into the Void\comma{} instantaneously disappearing from their present reality. Once inside the Void\comma{} they can repeat this process to reappear in any other plane in the multiverse. }, hasActions = 1, actions = \melee{Abyssal Scythe}{+10}{Deals 4 + 1d4 slashing damage. On a failed DV 15 vitality Resist\comma{} deals an additional 3d6 cold damage.}
+
+\melee{Tentacle Strike}{+7}{Deals 3 + 1d4 bludgeoning damage and allows the Wielder\minus{}of\minus{}Night to initiate a grapple}. 
+
+\ability{Spellcasting}{A Wielder\minus{}of\minus{}Night can perform the following spells as silent\comma{} wandless actions\comma{} and upcast them to Master level:
+\beastSpellList{
+\beastSpell{Beginner}{Taste of Blood\comma{} Force Shield\comma{} Shadow Blast}
+\beastSpell{Novice}{Abyssal Fluid\comma{} Necrosis}
+\beastSpell{Expert}{Arctic Blast\comma{} Black Dragon\apos{}s Fury}
+}
+}
+
+\ability{Multiattack}{The wielder of night may make up to 4 attacks per turn\comma{} with no more than 2 of them being of the same type.}
+
+\ability{Command Legions}{The Wielder\minus{}of\minus{}Night may use their major action to command any other Abyssal Spawn in hearing\comma{} giving them check\minus{}advantage on their next check.}, hasSkills = 1, skills = Willpower (+10)\comma{} Logic (+13)\comma{} Investigation (+12), hasImage = 1, image = spawn, hasLanguages = 1, language = Voidic, imPosition = 0,description = The general of the Abyssal Armies\comma{} commanding untold legions of lesser creatures. They wield an enormous scythe\comma{} which crackles with frost.}{0}
 
 
 }{1}{greatOld}{0.55}
