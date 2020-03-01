@@ -3,6 +3,7 @@ classdef Beast
     properties
         Name
         Species
+        Rating
         Mind
         Category
         Summary
@@ -157,6 +158,12 @@ classdef Beast
             if tableLine.NeedsPage(1) == 1
                 obj.NeedsPage = true;
             end
+            
+            n = tableLine.Rating(1);
+            obj.Rating = "0";
+            if ~isnan(n) && n > 0
+                obj.Rating = num2roman(n);
+            end
         end
         
         function text = print(obj,mode)
@@ -166,8 +173,8 @@ classdef Beast
             
             text = "\\beast{";
            
-            titles = ["name", "species","mind","category","summary","speed","habitat","sizeName","size","needsLine","imageHeight","habitat"];
-            array = [string(obj.Name), string(obj.Species), string(obj.Mind), string(obj.Category), string(obj.Summary), string(obj.Speed), string(obj.Habitat), string(obj.SizeName), string(obj.Size),num2str(obj.NeedsLine),num2str(obj.ImageHeight),string(obj.Habitat)];
+            titles = ["name", "species","mind","category","summary","speed","habitat","sizeName","size","needsLine","imageHeight","habitat","rating"];
+            array = [string(obj.Name), string(obj.Species), string(obj.Mind), string(obj.Category), string(obj.Summary), string(obj.Speed), string(obj.Habitat), string(obj.SizeName), string(obj.Size),num2str(obj.NeedsLine),num2str(obj.ImageHeight),string(obj.Habitat),string(obj.Rating)];
             
             for i = 1:length(array)
                 text = text + prepareText(titles(i)) + " = " + prepareText(array(i)) + ", ";
