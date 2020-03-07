@@ -8,6 +8,7 @@ classdef Beast
         Category
         Summary
         Habitat
+        hasHabitat
         HP
         FP
         hasFP
@@ -54,6 +55,8 @@ classdef Beast
         ImageHeight
         
         NeedsPage
+        
+        IsHuge
     end
     
     methods
@@ -67,6 +70,11 @@ classdef Beast
             obj.HP = tableLine.HP(1);
             obj.FP = tableLine.FP(1);
             obj.Habitat = tableLine.Habitat{1};
+            obj.hasHabitat = false;
+            if ~isempty(obj.Habitat)
+                obj.hasHabitat = true;
+            end
+            
             speaks = tableLine.Speaks{1};
             understands = tableLine.Understands{1};
             
@@ -164,6 +172,11 @@ classdef Beast
             if ~isnan(n) && n > 0
                 obj.Rating = num2roman(n);
             end
+            
+            obj.IsHuge= false;
+            if tableLine.NeedsPage(1) == 2
+                obj.IsHuge = true;
+            end
         end
         
         function text = print(obj,mode)
@@ -173,8 +186,12 @@ classdef Beast
             
             text = "\\beast{";
            
-            titles = ["name", "species","mind","category","summary","speed","habitat","sizeName","size","needsLine","imageHeight","habitat","rating"];
-            array = [string(obj.Name), string(obj.Species), string(obj.Mind), string(obj.Category), string(obj.Summary), string(obj.Speed), string(obj.Habitat), string(obj.SizeName), string(obj.Size),num2str(obj.NeedsLine),num2str(obj.ImageHeight),string(obj.Habitat),string(obj.Rating)];
+            if obj.IsHuge == true
+                text = "\\fullPageBeast{";
+            end
+            
+            titles = ["name", "species","mind","category","summary","speed","habitat","sizeName","size","needsLine","imageHeight","rating"];
+            array = [string(obj.Name), string(obj.Species), string(obj.Mind), string(obj.Category), string(obj.Summary), string(obj.Speed), string(obj.Habitat), string(obj.SizeName), string(obj.Size),num2str(obj.NeedsLine),num2str(obj.ImageHeight),string(obj.Rating)];
             
             for i = 1:length(array)
                 text = text + prepareText(titles(i)) + " = " + prepareText(array(i)) + ", ";
@@ -188,10 +205,10 @@ classdef Beast
                 text = text + numTitles(i) + "="+num2str(numArray(i)) + ", ";
             end
             
-            hasTitles = ["hasFP","hasImmune","hasResistance","hasSusceptible","hasAbilities","hasActions","hasSkills","hasImage","hasLanguages","hasComprehend"];
-            hasTriggers = [obj.hasFP, obj.hasImmune,obj.hasResistant, obj.hasSusceptible, obj.hasAbilities, obj.hasActions,obj.hasSkills,obj.hasImage,obj.hasLanguages,obj.hasComprehend];
-            includeTitles = ["fp", "immune", "resistance", "susceptible","abilities","actions","skills","image","language","comprehend"];
-            includeVals = [num2str(obj.FP), string(obj.Immune), string(obj.Resistant), string(obj.Susceptible), string(obj.Abilities), string(obj.Actions), string(obj.Skills),string(obj.Image),string(obj.Languages),string(obj.Comprehend)];
+            hasTitles = ["hasFP","hasImmune","hasResistance","hasSusceptible","hasAbilities","hasActions","hasSkills","hasImage","hasLanguages","hasComprehend","hasHabitat"];
+            hasTriggers = [obj.hasFP, obj.hasImmune,obj.hasResistant, obj.hasSusceptible, obj.hasAbilities, obj.hasActions,obj.hasSkills,obj.hasImage,obj.hasLanguages,obj.hasComprehend,obj.hasHabitat];
+            includeTitles = ["fp", "immune", "resistance", "susceptible","abilities","actions","skills","image","language","comprehend","habitat"];
+            includeVals = [num2str(obj.FP), string(obj.Immune), string(obj.Resistant), string(obj.Susceptible), string(obj.Abilities), string(obj.Actions), string(obj.Skills),string(obj.Image),string(obj.Languages),string(obj.Comprehend),string(obj.Habitat)];
             
             for i = 1:length(hasTitles)
                if hasTriggers(i) 
