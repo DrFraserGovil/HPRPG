@@ -333,13 +333,15 @@ If the values are comparable, then the encounter is probably suited for the grou
 						colframe=backcol, title=\vspace{-4ex}
 						]
 		
-		\titleBlock
-		%\vspace{-3.3ex}
-		\dndlineLong
-
 		\if#12
 		\begin{multicols}{2}
 		\fi
+		
+		\titleBlock
+		%\vspace{-3.3ex}
+		\lineCross{#1}
+
+		
 		
 		\begin{tabular}{@{} r l r l @{}}
 			
@@ -484,16 +486,17 @@ If the values are comparable, then the encounter is probably suited for the grou
 		
 	\fi	
 	
+	\if\imageMode1
+			\bImage{}
+	\fi
 	
 
 	\begin{strip}
 	\beastBox{2}	
 	\end{strip}
 
-
 	\endgroup
-	~
-	\clearpage
+	
 }
 
 
@@ -612,7 +615,7 @@ Incredibly fast\comma{} and with powerful alien senses the Death Hunter serves o
 \beastSpell{Expert}{Create Zombie\comma{} Create Thrall}
 \beastSpell{Master}{Burning Blood\comma{} Word of Death\comma{} Selfshift}
 }
-}, hasSkills = 1, skills = Willpower (+11)\comma{} Arcane (+10)\comma{} Unnature (+10), hasImage = 1, image = devourer, hasLanguages = 1, language = All spoken languages, hasHabitat = 1, habitat = Eldritch Domains, imPosition = 1,description = The Soul Devourer is the arcane expert of the Abyssal army\comma{} using the souls of the fallen – even their own allies – to cast powerful magics.}{0}
+}, hasSkills = 1, skills = Willpower (+11)\comma{} Arcane (+10)\comma{} Unnature (+10), hasImage = 1, image = devourer, hasLanguages = 1, language = All spoken languages, hasHabitat = 1, habitat = Eldritch Domains, imPosition = 1,description = The Soul Devourer is the arcane expert of the Abyssal army\comma{} using the souls of the fallen â€“ even their own allies â€“ to cast powerful magics.}{0}
 
 
 \beast{name = Wielder\minus{}of\minus{}Night, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Eldritch General, speed = 10 metres, habitat = Eldritch Domains, sizeName = Height, size = 4 metres, needsLine = 1, imageHeight = 0.7, rating = V, fit = 16 (+3),prs = 18 (+4),spr = 19 (+4),chr = 7 (-2),int = 25 (+7),pcp = 23 (+6),pow = 20 (+5),evl = 22 (+6),hp=175, block=15, dodge=17, abilityBlock=1, needsPage=1, hasFP = 1, fp = 50, hasImmune = 1, immune = Necrotic\comma{} Cold, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Soul Devourer. They get advantage on all Resist Checks against magic spells.}
@@ -657,7 +660,7 @@ Hatching from eggs the size of rugby balls\comma{} the oldest specimens have leg
 
 \beast{name = Acromantula, species = Acromantula, mind = Sapient, category = Monstrosity, summary = Adult Giant Spider, speed = 15 metres, habitat = Rainforests of Borneo\comma{} spread worldwide, sizeName = Legspan, size = 4 metres, needsLine = 0, imageHeight = 0.4, rating = V, fit = 14 (+2),prs = 15 (+2),spr = 10 (0),chr = 6 (-2),int = 18 (+4),pcp = 14 (+2),pow = 12 (+1),evl = 13 (+1),hp=45, block=17, dodge=15, abilityBlock=1, needsPage=1, hasImmune = 1, immune = Celestial damage, hasResistance = 1, resistance = Poison damage, hasSusceptible = 1, susceptible = Fire damage, hasActions = 1, actions = \melee{Bite}{+7}{Deals 6+3d8 piercing damage. Target must suceed a DV15 Vitality check\comma{} or take an additional 5d6 poison damage and take the {\it Poisoned: Mild} status effect. }
 
-\ranged{Web}{+4}{10 metres}{A target individual is covered in sticky webbing. The target is {\it Incapacitated} until they succeed on a DV 14 Strength Resist\comma{} or the webbing absorbs 5 points of physical damage.}, hasSkills = 1, skills = Stealth (+6)\comma{} Strength (+5)\comma{} Observation (+5)\comma{} Nightvision, hasImage = 1, image = Acromantula, hasLanguages = 1, language = Spider Tongue, hasComprehend = 1, comprehend = Human Languages, hasHabitat = 1, habitat = Rainforests of Borneo\comma{} spread worldwide, imPosition = 1,description = A fully grown Acromantula is something to be greatly feared. They can run incredibly quickly and they utilise a ranged web attack to ensnare their pray\comma{} capturing it for later devourment….}{0}
+\ranged{Web}{+4}{10 metres}{A target individual is covered in sticky webbing. The target is {\it Incapacitated} until they succeed on a DV 14 Strength Resist\comma{} or the webbing absorbs 5 points of physical damage.}, hasSkills = 1, skills = Stealth (+6)\comma{} Strength (+5)\comma{} Observation (+5)\comma{} Nightvision, hasImage = 1, image = Acromantula, hasLanguages = 1, language = Spider Tongue, hasComprehend = 1, comprehend = Human Languages, hasHabitat = 1, habitat = Rainforests of Borneo\comma{} spread worldwide, imPosition = 1,description = A fully grown Acromantula is something to be greatly feared. They can run incredibly quickly and they utilise a ranged web attack to ensnare their pray\comma{} capturing it for later devourmentâ€¦.}{0}
 
 
 \beast{name = Acromantula Patriarch, species = Acromantula, mind = Sapient, category = Monstrosity, summary = Ruler of the Spider Clan, speed = 5 metres, habitat = Rainforests of Borneo\comma{} spread worldwide, sizeName = Legspan, size = 8 metres, needsLine = 1, imageHeight = 0.4, rating = VI, fit = 7 (-2),prs = 14 (+2),spr = 15 (+2),chr = 8 (-1),int = 22 (+6),pcp = 18 (+4),pow = 16 (+3),evl = 17 (+3),hp=100, block=15, dodge=5, abilityBlock=1, needsPage=1, hasImmune = 1, immune = Celestial damage, hasResistance = 1, resistance = Poison damage, hasSusceptible = 1, susceptible = Fire damage, hasAbilities = 1, abilities = \ability{Void Walk}{As Abyssal Spawn\comma{} the Mind Shredder can\comma{} with a minute\apos{}s preparation\comma{} enter into the Void\comma{} instantaneously disappearing from their present reality. Once inside the Void\comma{} they can repeat this process to reappear in any other plane in the multiverse. }, hasActions = 1, actions = \melee{Bite}{+4}{Deals 6d10 piercing damage. Target must suceed a DV18 Vitality check\comma{} or take an additional 15d6 poison damage and take the {\it Poisoned: Severe} status effect. }
@@ -731,7 +734,7 @@ Unusually out of apparitions and other spiritual creatures\comma{} poltergeists 
 
 \ability{Shapeshift}{A boggart may use a major action to transform into any shape\comma{} to represent something the target is scared of. Any being for which this is their greatest fear must pass a DV 20 Willpower Resist check or become {\it Terrified}. }, hasSkills = 1, skills = Empathy (+7), hasImage = 1, image = boggart, hasComprehend = 1, comprehend = Depends on form taken, hasHabitat = 1, habitat = Wherever humans are found, imPosition = 0,description = A manifestation of fear and primal terror\comma{} the shapeshifting boggart peers into the minds of humans\comma{} and takes the form of their worst nightmare. 
 
-A boggart can never harm you\comma{} though they can be difficult to contain. The accepted trick is to transfigure them to look stupid\comma{} prompting a fit of laughter – which is fatal to a boggart.}{0}
+A boggart can never harm you\comma{} though they can be difficult to contain. The accepted trick is to transfigure them to look stupid\comma{} prompting a fit of laughter â€“ which is fatal to a boggart.}{0}
 
 
 }{1}{spirit}{0.5}
@@ -790,7 +793,7 @@ The Howling Tick has the magical ability to grow in size when it feeds\comma{} h
 
 \beast{name = Spraying Mantis, species = Arachnid, mind = Non\minus{}sapient, category = Beast, summary = Acid\minus{}Spitting Monster, speed = 8 metres, habitat = Tropical Regions, sizeName = Length, size = 1 metre, needsLine = 1, imageHeight = 0.4, rating = III, fit = 14 (+2),prs = 16 (+3),spr = 8 (-1),chr = 2 (-4),int = 4 (-3),pcp = 14 (+2),pow = 4 (-3),evl = 2 (-4),hp=35, block=14, dodge=13, abilityBlock=1, needsPage=1, hasImmune = 1, immune = Celestial damage, hasResistance = 1, resistance = Acid, hasSusceptible = 1, susceptible = Fire, hasAbilities = 1, abilities = \ability{Web Walker}{A Spraying Mantis takes no movement penalty when walking on webbed surfaces}
 
-\ability{Fanged Forearms}{The Spraying Mantis\apos{} hooked and fanged carapace allows it to cling onto targets more tightly – taking check advantage on all grappling checks.}
+\ability{Fanged Forearms}{The Spraying Mantis\apos{} hooked and fanged carapace allows it to cling onto targets more tightly â€“ taking check advantage on all grappling checks.}
 
 \ability{Four Forearms}{The Spraying Mantis has two sets of arms\comma{} and so can grapple up to two individuals at a time.}, hasActions = 1, actions = \melee{Lunge}{+3}{The Spraying Mantis leaps forward up to 5 metres\comma{} and lashes out with its hinged arms\comma{} dealing 2d6 +2 piercing damage\comma{} and initiating a grappling action.}
 
@@ -1180,20 +1183,46 @@ The most famous Aileni is Lord Voldemort\comma{} who rose as an Aileni in in 199
 This warping of their human form allows an Aileni to wield more power\comma{} and the further they deviate from their human origins\comma{} the more powerful and deadly they become.}{0}
 
 
-\fullPageBeast{name = Aberstath, species = Lich, mind = Ineffable, category = Abomination, summary = Demon in Human Form, speed = 15 metres, habitat = , sizeName = , size = , needsLine = 1, imageHeight = 0.4, rating = VII, fit = 17 (+3),prs = 18 (+4),spr = 18 (+4),chr = 14 (+2),int = 22 (+6),pcp = 22 (+6),pow = 27 (+8),evl = 25 (+7),hp=250, block=15, dodge=16, abilityBlock=1, needsPage=0, hasFP = 1, fp = 300, hasImmune = 1, immune = Necrotic, hasResistance = 1, resistance = All magical damage, hasAbilities = 1, abilities = \ability{Human(ish)}{An Aberstath may use items\comma{} equip armour\comma{} learn spells\comma{} and otherwise interact with the world as any other human does.}
+\fullPageBeast{name = Aberstath, species = Lich, mind = Ineffable, category = Abomination, summary = Demon in Human Form, speed = 15 metres, habitat = , sizeName = , size = , needsLine = 1, imageHeight = 0.46, rating = VII, fit = 17 (+3),prs = 18 (+4),spr = 18 (+4),chr = 14 (+2),int = 22 (+6),pcp = 22 (+6),pow = 27 (+8),evl = 25 (+7),hp=250, block=15, dodge=16, abilityBlock=1, needsPage=0, hasFP = 1, fp = 300, hasImmune = 1, immune = Necrotic\comma{} Poison\comma{} Diseases, hasResistance = 1, resistance = All magical damage, hasAbilities = 1, abilities = \ability{Human(ish)}{An Aberstath may use items\comma{} equip armour\comma{} learn spells\comma{} and otherwise interact with the world as any other human does.}
 
 \ability{Great Power}{An Aberstath has incredibly powerful magical abilities. As such they are considered proficient in all schools of magic (proficiency bonus is +10)\comma{} take advantage on all Resist checks against magical effects\comma{} and are considered Resistant to all magical attacks. }
 
-\ability{Unkillable}{Whilst at least one of their Horxcruxes remains intact\comma{} an Aberstath cannot be truly killed. If their hitpoints are reduced to zero\comma{} their body is destroyed. One of the remaining Horcruxes is then instantly incinerated in a mighty inferno\comma{} which dies down to reveal the Aberstath reborn.}, hasActions = 1, actions = \ability{Spellcasting}{An Aberstath is an Ascendant Level spellcaster. It retains any spells it knew as a human\comma{} however their dark nature gives them a preference for the following spells:
+\ability{Unkillable}{Whilst at least one of their Horxcruxes remains intact\comma{} an Aberstath cannot be truly killed. If their hitpoints are reduced to zero\comma{} their body is destroyed. One of the remaining Horcruxes is then instantly incinerated in a mighty inferno\comma{} which dies down to reveal the Aberstath reborn.}
+
+\ability{Unliving}{An Aberstath does not require food\comma{} sleep or air to survive\comma{} and does not age.}, hasActions = 1, actions = \ability{Spellcasting}{An Aberstath is an Ascendant Level spellcaster. It retains any spells it knew as a human\comma{} and can cast them as such. They may also cast the following spells as Wandless\comma{} Silent\comma{} Minor actions. 
 \beastSpellList{
 \beastSpell{Beginner}{Taste of Blood\comma{} Force Shield\comma{} Shadow Blast\comma{} Control Fire\comma{} Chaotic Whispers\comma{} Vicious Slash}
-\beastSpell{Novice}{Abyssal Fluid\comma{} Necrosis\comma{} Blight\comma{} Summon Snake\comma{} Horrific Armaments\comma{} Mental Burden\comma{} Strangle\comma{} Psychic Crush}
+\beastSpell{Novice}{Abyssal Fluid\comma{} Necrosis\comma{} Blight\comma{} Summon Snake\comma{} Horrific Armaments\comma{} Strangle\comma{} Psychic Crush}
 \beastSpell{Adept}{Fireball\comma{} Freeze\comma{} Fury\comma{} Dilute Blood\comma{} Spiral Inversion\comma{} Blood Barrier\comma{} Torture\comma{} Shadow Demon\comma{} Voidsphere}
 \beastSpell{Expert}{Arctic Blast\comma{} Contagion\comma{} Create Thrall\comma{} Create Zombie\comma{} Shield Breaker\comma{} Detonation\comma{} Curse Being\comma{} Psychosis}
 \beastSpell{Master}{Flame Whip\comma{} Psionic Overload\comma{} Corrupt Object\comma{} Cursed Step\comma{} Selfshift\comma{} Word of Death\comma{} Burning Blood\comma{} Crush Bones}
 \beastSpell{Ascendant}{Army of the Dead\comma{} Soul Snare\comma{} Incineration Field\comma{} Taboo\comma{} Revoke Power\comma{} Destroy Mind\comma{} Mass Delusion\comma{} Channel Cataclysm\comma{} Immolation}
 }
-}, hasSkills = 1, skills = Vitality (+13)\comma{} Conviction (+14)\comma{} Willpower (+14)\comma{} Arcane (+16). Wandless Spellcasting\comma{} Silent Spellcasting\comma{} Apparation., hasLanguages = 1, language = Whatever they spoke as a human, imPosition = 1,description = hey}{0}
+}
+
+\melee{Lifedrain}{+6}{By grasping a victim by the throat\comma{} an Aberstath can siphon off life energy from them. The victim takes 3d8+5 necrotic damage\comma{} half of which is restored to the Aberstath. This also initiates a grappling action.}
+
+\ability{Defy Magic}{As an instantaneous action\comma{} the Aberstath can choose to automatically succeed on a Resist check against a spell. This ability can be used three times per day.}
+
+\ability{Imprison Soul}{By targeting an incapacitated being in melee range\comma{} the Aberstath can force them to perform a DV 18 Conviction Resist. On a fail\comma{} they take 10d12 force damage. If this reduces them to zero HP\comma{} then their soul is imprisoned in a nearby object. If this object is not destroyed within 24 hours\comma{} it is considered a new Horcrux for the Aberstath. }
+
+\ability{Sacrifice}{An Aberstath may deliberately destroy one of their own Horcruxes. In doing so\comma{} they restore themselves to full HP and FP\comma{} remove all status effects\comma{} and otherwise regenerate to pristine health.}, hasSkills = 1, skills = Vitality (+13)\comma{} Conviction (+14)\comma{} Willpower (+14)\comma{} Arcane (+16). Wandless Spellcasting\comma{} Silent Spellcasting\comma{} Apparation., hasImage = 1, image = aberstath, hasLanguages = 1, language = Whatever they spoke as a human, imPosition = 1,description = An Aberstath is a truly terrifying being\comma{} the result of a Dark Wizard gone too far in their quest for immortality\comma{} leaving behind a shattered shell of their former self\comma{} inhabited by a powerful and destructive demon. 
+
+The process of creating a Horcrux requires the subject to shatter their soul\comma{} which leaves their essence unstable\comma{} pushing them closer to insanity and abject evil. If a Wizard pushes this process to its logical conclusion\comma{} they will eventually damage their soul so much that it can no longer retain cohesiveness\comma{} and it will splinter away from their body. Their quest for immortality\comma{} ironically\comma{} killing them and denying their soul any chance of eternal life beyond the veil. 
+
+This destruction of the soul is the spiritual equivalent of splitting the atom\comma{} releasing a tremendous amount of energy into the higher planes\comma{} even to the point of weakening the barriers between worlds. 
+
+Such a release of energy rarely goes unnoticed by the creeping\comma{} crawling horrors lying in the void â€“ driven insane by their time spent in abject nothingness. The instant they become aware of a free vessel\comma{} they burst through the walls of reality\comma{} and attempt to make their home in the shattered remains of the unfortunate Aileni. 
+
+This forces  the host to undergo a horrific transformation which rips away the last shreds of humanity\comma{} turning them into a dreaded Aberstath. 
+
+\ability{Tears of the Void}{Initially\comma{} the only visible change when a being undergoes the transition from Et Iniquum or Aileni to a full\minus{}blood Aberstath is that the eyes of the Aileni will suddenly turn into inky black orbs\comma{} blacker than the darkest night. Over time\comma{} their form warps and becomes inhumane\comma{} even undead and skeletal. However\comma{} mo matter what form the Aberstath takes\comma{} they cannot hide their voidic eyes.}
+
+\ability{Consumer of Life}{The being which now resides inside the mortal remains of the host was a resident of the Void\comma{} the inky black nothingness between dimensions. Perhaps it is native to that horrifying realm\comma{} or perhaps it was originally a powerful being which fell into the void\comma{} eons ago. Either way\comma{} an Aberstath has been driven to utter insanity by this experience â€“ their motivations are often deeply insane and disturbed\comma{} and mostly focus on the destruction of all life.}
+
+\ability{Memories of the Shell}{The Aberstath retains all the memories\comma{} experiences and skills of its original host.}
+
+\ability{Souless}{With the destruction of the original host\apos{}s soul\comma{} the Aberstath loses the ability to create new Horcruxes themselves. They must rely on harvesting the souls of others to continue their existence. }}{0}
 
 
 }{0}{}{NaN}
