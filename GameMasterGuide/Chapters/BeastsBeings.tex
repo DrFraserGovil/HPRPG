@@ -142,399 +142,6 @@ For each beast or being in the encounter, add together the encounter value assoc
 
 If the values are comparable, then the encounter is probably suited for the group. 
 
-\newcommand\beastSpell[2]
-{
-	\bf #1	&	\parbox[t]{7.3  cm}{{\it #2}} \\
-}
-\newcommand\beastSpellList[1]
-{
-	
-	\begin{tabular}{l l}
-	#1
-	\end{tabular}
-}
-\definecolor{statblockbg}{HTML}{FDF1DC} 
-
-\makeatletter
-\define@key{beast}{name}{\def\name{#1}}
-\define@key{beast}{species}{\def\species{#1}}
-\define@key{beast}{mind}{\def\mind{#1}}
-\define@key{beast}{category}{\def\category{#1}}
-\define@key{beast}{summary}{\def\summary{#1}}
-\define@key{beast}{hp}{\def\hp{#1}}
-\define@key{beast}{fp}{\def\fp{#1}}
-\define@key{beast}{hasFP}{\def\fpMode{#1}}
-\define@key{beast}{speed}{\def\speed{#1}}
-\define@key{beast}{fit}{\def\fit{#1}}
-\define@key{beast}{prs}{\def\prs{#1}}
-\define@key{beast}{spr}{\def\spr{#1}}
-\define@key{beast}{chr}{\def\chr{#1}}
-\define@key{beast}{int}{\def\int{#1}}
-\define@key{beast}{pcp}{\def\pcp{#1}}
-\define@key{beast}{pow}{\def\pow{#1}}
-\define@key{beast}{evl}{\def\evl{#1}}
-\define@key{beast}{block}{\def\block{#1}}
-\define@key{beast}{dodge}{\def\dodge{#1}}
-\define@key{beast}{hasImmune}{\def\immuneMode{#1}}
-\define@key{beast}{immune}{\def\immune{#1}}
-\define@key{beast}{hasResistance}{\def\resistanceMode{#1}}
-\define@key{beast}{resistance}{\def\resistance{#1}}
-\define@key{beast}{hasSusceptible}{\def\susceptibleMode{#1}}
-\define@key{beast}{susceptible}{\def\susceptible{#1}}
-\define@key{beast}{hasAbilities}{\def\abilitiesMode{#1}}
-\define@key{beast}{abilities}{\def\abilities{#1}}
-\define@key{beast}{hasSkills}{\def\skillsMode{#1}}
-\define@key{beast}{skills}{\def\skills{#1}}
-\define@key{beast}{hasActions}{\def\actionMode{#1}}
-\define@key{beast}{actions}{\def\actions{#1}}
-\define@key{beast}{habitat}{\def\habitat{#1}}
-\define@key{beast}{sizeName}{\def\sizeName{#1}}
-\define@key{beast}{size}{\def\size{#1}}
-\define@key{beast}{abilityBlock}{\def\aBlock{#1}}
-\define@key{beast}{description}{\def\description{#1}}
-\define@key{beast}{image}{\def\image{#1}}
-\define@key{beast}{hasImage}{\def\imageMode{#1}}
-\define@key{beast}{imPosition}{\def\imagePos{#1}}
-\define@key{beast}{hasLanguages}{\def\languageMode{#1}}
-\define@key{beast}{language}{\def\languages{#1}}
-\define@key{beast}{needsLine}{\def\needsLine{#1}}
-\define@key{beast}{comprehend}{\def\comprehend{#1}}
-\define@key{beast}{hasComprehend}{\def\comprehendMode{#1}}
-\define@key{beast}{imageHeight}{\def\imageHeight{#1}}
-\define@key{beast}{habitat}{\def\habitat{#1}}
-\define@key{beast}{needsPage}{\def\needsPage{#1}}
-\define@key{beast}{rating}{\def\rating{#1}}
-\define@key{beast}{hasHabitat}{\def\hasHabitat{#1}}
-%%keyEnd    
-\makeatother
-
-
-\newcommand\titleBlock
-{
-	
-	\definecolor{rulered}{HTML}{9C2B1B} 
-		{ \Large \color{titlered}{\MakeUppercase{\name{}} }}
-		
-		{\it \summary{} (\mind{}~\category{}) }
-
-		MoM Rating: \rating{}
-		
-}
-
-\newcommand\statTable[1]
-{
-	\lineCross{#1}
-	{
-	\footnotesize
-	\begin{center}
-		\begin{tabular}{@{} c c c c c c c c @{}}
-			\bf \color{titlered}{\attPhysShort{}}	&	\bf \color{titlered}{\attFinShort{}}	&	\bf \color{titlered}{\attSprShort{}}	&	\bf \color{titlered}{\attChrShort{}}	&	\bf \color{titlered}{\attIntShort{}}	&	\bf \color{titlered}{\attPerShort{}}	&	\bf \color{titlered}{\attPowShort{}}	&	\bf \color{titlered}{\attEvlShort{}}
-			\\
-			\color{titlered}{\fit}		&	\color{titlered}{\prs}	&	\color{titlered}{\spr}	&	\color{titlered}{\chr}	&	\color{titlered}{\int}	&	\color{titlered}{\pcp}	&	\color{titlered}{\pow}&	\color{titlered}{\evl}
-		\end{tabular}
-	\end{center}
-	}
-	\lineCross{#1}
-}
-
-\newcommand\abilitiesBlock[1]
-{
-			{
-			\setlength\parskip{3 pt}
-			
-			\if\skillsMode1
-				\textbf{\textit{Proficiency: }} \skills
-			\fi
-			
-			\if\immuneMode1
-				\textbf{\textit{Immunity: }} \immune
-			\fi 
-			
-			\if\resistanceMode1
-				\textbf{\textit{Resistance:}} \resistance
-			\fi
-			
-			\if\susceptibleMode1
-				\textbf{\textit{Susceptible:}}	\susceptible
-			\fi
-			
-			\if\languageMode1
-				\textbf{\textit{Speaks:}} \languages
-			\fi
-			
-			\if\comprehendMode1
-				\textbf{\textit{Understands:}} \comprehend
-			\fi
-			\if\needsLine1
-			
-				\lineCross{#1}
-			\fi
-			
-			\abilities
-			
-			}
-
-}
-
-\newcommand\ability[2]
-{
-\textbf{\textit{#1}}: #2
-}
-\newcommand\melee[3]
-{
-\textbf{\textit{#1}}: ({\it melee attack, #2 to hit}) #3
-}
-\newcommand\ranged[4]
-{
-\textbf{\textit{#1}}: ({\it ranged attack, #2 to hit, range: #3}) #4
-}
-\newcommand\bImage
-{
-	\begin{figure}[H]
-		\begin{center}
-			\includegraphics[width = 0.48\textwidth,height = \imageHeight\textwidth, keepaspectratio]{../Images/\image}
-		\end{center}
-	\end{figure}
-
-}
-
-\newcommand \lineCross[1]
-{
-	\if #11
-	{
-		\dndlineLong
-	}
-	\fi
-	\if #12
-	{
-		\dndline
-	}
-	\fi
-}
-
-
-
-\newcommand\beastBox[1]
-{
-	\definecolor{backcol}{HTML}{58180D}
-	\definecolor{linecol}{HTML}{9C2B1B}
-
-	\begin{tcolorbox}[  before skip=7pt plus 2pt,
-						boxrule=0pt,
-						boxsep=0pt,
-						toptitle=4pt,
-						left=7pt,
-	  					right=7pt,
-	  					bottom=11pt,
-	  					arc=0.5mm,
-	  					oversize=0pt,
-	  					colback=papyrus,
-	 					colbacktitle=backcol,
-						colframe=backcol, title=\vspace{-4ex}
-						]
-		
-		\if#12
-		\begin{multicols}{2}
-		\fi
-		
-		\titleBlock
-		%\vspace{-3.3ex}
-		\lineCross{#1}
-
-		
-		
-		\begin{tabular}{@{} r l r l @{}}
-			
-			\if\fpMode1
-				\bf Health: 	&	 \hp{}~Points	&	 \bf Fortitude:	&	\fp{}~Points \\
-			\fi
-			\if \fpMode0
-				\bf Health: 	&	\hp{}	Points &	~&  ~  \\
-			\fi
-			\bf Block:	&	\block & 	\bf Dodge:	&	\dodge \\	
-			\bf Speed : 	&	\parbox[t]{2.5 cm}{\raggedright \small \it \speed}	&	\bf \sizeName	&	\size
-		\end{tabular}
-
-		 \statTable{#1}
-		
-		
-		\if\aBlock1
-			\abilitiesBlock{#1}
-		\fi
-		
-		\if\actionMode1
-			 \subsection*{\color{titlered}{Actions}}
-			 {
-			\setlength\parskip{3 pt}
-			 \actions
-			 }
-		\fi
-		
-		\vspace{1.4 ex}
-		
-		\if#12
-		\end{multicols}
-		\fi
-		
-	\end{tcolorbox}
-	
-}
-
-\newcommand{\beast}[2]
-{
-	\begingroup
-	\setkeys{beast}{name = none, species = None, mind = none, category = none, summary = none, hp = 0, fp = 0, speed = 0m, fit =0, prs = 0, spr = 0, chr = 0, int = 0, pcp = 0, pow = 0, evl = 0, block = 0, dodge = 0, hasImmune = 0, immune = none, hasResistance = 0, resistance = none, hasSusceptible = 0, susceptible = none, hasAbilities =0, abilities = None, hasActions = 0, actions = None, habitat = Nowhere, sizeName = Height, size = 0, description = No description,hasFP = 0,abilityBlock=0,skills=none,hasSkills=0,image = None,hasImage = 0,imPosition=0,needsLine = 1, hasLanguages = 0, language = none,hasComprehend = 0, comprehend = none,imageHeight = 0.5,habitat = nowhere,needsPage = 0,hasHabitat = 0}
-	
-	\setkeys{beast}{#1}
-	
-	\small 
-	\if#20
-		\if\needsPage1
-			\newpage
-		\fi
-	\fi
-	\if#21
-		\clearpage
-	\fi
-	
-	
-	\if\imageMode1
-		\if\imagePos0
-			\bImage{}
-		\fi
-	\fi
-	
-	\if#20
-		\subsection*{\bf \name}
-		\addcontentsline{toc}{subsection}{\name}
-		
-		\if\hasHabitat1
-		
-		{\bf Habitat: } \habitat
-		\fi
-		
-		\description
-		
-	\fi
-	
-	\if#21
-	
-		\section*{\bf \name}
-		\addcontentsline{toc}{section}{\name}
-	
-		\description
-		
-		{\bf Habitat: } \habitat
-		
-		
-	\fi	
-	
-	
-
-	
-	\beastBox{1}
-
-	
-	\if\imageMode1
-		\if\imagePos1
-		\vfill
-			\bImage{}
-		\vfill
-		\fi
-	\fi	
-	
-	\endgroup
-}
-
-
-
-
-\newcommand{\fullPageBeast}[2]
-{
-	\begingroup
-	\setkeys{beast}{name = none, species = None, mind = none, category = none, summary = none, hp = 0, fp = 0, speed = 0m, fit =0, prs = 0, spr = 0, chr = 0, int = 0, pcp = 0, pow = 0, evl = 0, block = 0, dodge = 0, hasImmune = 0, immune = none, hasResistance = 0, resistance = none, hasSusceptible = 0, susceptible = none, hasAbilities =0, abilities = None, hasActions = 0, actions = None, habitat = Nowhere, sizeName = Height, size = 0, description = No description,hasFP = 0,abilityBlock=0,skills=none,hasSkills=0,image = None,hasImage = 0,imPosition=0,needsLine = 1, hasLanguages = 0, language = none,hasComprehend = 0, comprehend = none,imageHeight = 0.5,habitat = nowhere,needsPage = 0,hasHabitat = 0}
-	
-	\setkeys{beast}{#1}
-	
-	\small 
-	
-	\clearpage
-	
-	
-		
-	\if#20
-		\subsection*{\bf \name}
-		\addcontentsline{toc}{subsection}{\name}
-		\if\hasHabitat1
-		
-		{\bf Habitat: } \habitat
-		\fi
-		
-		\description
-		
-	\fi
-	
-	\if#21
-	
-		\section*{\bf \name}
-		\addcontentsline{toc}{section}{\name}
-	
-		\description
-		
-		{\bf Habitat: } \habitat
-		
-		
-	\fi	
-	
-	\if\imageMode1
-			\bImage{}
-	\fi
-	
-
-	\begin{strip}
-	\beastBox{2}	
-	\end{strip}
-
-	\endgroup
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-\newcommand\species[6]
-{
-	\clearpage
-	\section*{\Huge #1}
-	\addcontentsline{toc}{section}{#1}
-	#2
-
-	\if#41
-		\def\image{#5}
-		\def\imageHeight{#6}
-
-		\vfill
-			\bImage{}
-		\vfill
-	\fi
-
-	
-	#3
-	
-	
-}
-
-
-
 %%BeastBegin\species{Abyssal Spawn}{In the most alien and horrifying corners of the multiverse\comma{} deep within the Eldritch Domains dwell creatures beyond mortal comprehension. Mounds of twisting\comma{} writhing tentacles and unblinking eyes which never see light\comma{} their minds ancient and alien\comma{} with desires and motivations which would cause a human to wretch. 
 
 On the rare occasions that these abyssal\comma{} eldritch horrors require something in one of the lower planes\comma{} they send a posse of their enumerable children to execute their will: the {\it Abyssal Spawn}. 
@@ -555,37 +162,31 @@ Horrific\comma{} twisted mimicries of mortal forms\comma{} these beasts spread t
 
 \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Death Hunter. The Death Hunter gets advantage on all Resist Checks against magic spells.}
 
-\ability{Terrifying Visage}{When a being first lays eyes on any member of the Abyssal Spawn\comma{} they must succeed on a DV 15 Willpower Resist check\comma{} or become {\it Terrified} of the creatue. All terrified beings must reperform the check again. On  a second failure\comma{} take 5d6 psychic damage.}
-
-\ability{Void Walk}{As Abyssal Spawn\comma{} the Death Hunter can \comma{} with a minute\apos{}s preparation\comma{} enter into the Void\comma{} instantaneously disappearing from their present reality. Once inside the Void\comma{} they can repeat this process to reappear in any other plane in the multiverse. }, hasActions = 1, actions = \melee{Bludgeon}{+11}{Deals 6+1d6 bludgeoning damage}
+\ability{Terrifying Visage}{When a being first lays eyes on any member of the Abyssal Spawn\comma{} they must succeed on a DV 15 Willpower Resist check\comma{} or become {\it Terrified} of the creatue. All terrified beings must reperform the check again. On  a second failure\comma{} take 5d6 psychic damage.}, hasActions = 1, actions = \melee{Bludgeon}{+11}{Deals 6+1d6 bludgeoning damage}
 
 \melee{Bite}{+10}{Deals 6 + 2d8 piercing damage}
 
 \ability{Pounce}{As a major action\comma{} a Death Hunter may leap up to 5 metres towards a target\comma{} and take a combined Bludgeon and Bite attack.}
 
-\ability{Call Allies}{As a major action\comma{} a Death Hunter may raise their head to the heavens and howl a phrase in Voidic\comma{} stretching across dimensions\comma{} alerting their masters that they have found their quarry. This opens a portal through which the rest of the hunting party may appear.}, hasSkills = 1, skills = Speed (+11)\comma{} Stealth (+4)\comma{} Observation (+10)\comma{} Intimidation (+7), hasImage = 1, image = hunter, hasLanguages = 1, language = Voidic, hasComprehend = 1, comprehend = All spoken languages, hasHabitat = 1, habitat = Eldritch Domains, imPosition = 0,description = A disgusting pale\minus{}white creature with 6 legs and a face which is entirely featureless except a gaping red maw. 
+\ability{Call Allies}{As a major action\comma{} a Death Hunter may raise their head to the heavens and howl a phrase in Voidic\comma{} stretching across dimensions\comma{} alerting their masters that they have found their quarry.}, hasSkills = 1, skills = Speed (+11)\comma{} Stealth (+4)\comma{} Observation (+10)\comma{} Intimidation (+7), hasImage = 1, image = hunter, hasLanguages = 1, language = Voidic, hasComprehend = 1, comprehend = All spoken languages, hasHabitat = 1, habitat = Eldritch Domains, imPosition = 0,description = A disgusting pale\minus{}white creature with 6 legs and a face which is entirely featureless except a gaping red maw. 
 
 Incredibly fast\comma{} and with powerful alien senses the Death Hunter serves one purpose: to track and hunt down their target across dimensions.}{0}
 
 
-\beast{name = Flesh Ripper, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Animalistic Fighter, speed = 3 metres, habitat = Eldritch Domains, sizeName = Length, size = 5 metres, needsLine = 1, imageHeight = 0.33, rating = VI, fit = 20 (+5),prs = 15 (+2),spr = 17 (+3),chr = 3 (-4),int = 16 (+3),pcp = 17 (+3),pow = 16 (+3),evl = 18 (+4),hp=140, block=18, dodge=13, abilityBlock=1, needsPage=1, hasImmune = 1, immune = Cold, hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Flesh Ripper. They get advantage on all Resist Checks against magic spells.}
+\beast{name = Flesh Ripper, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Animalistic Fighter, speed = 3 metres, habitat = Eldritch Domains, sizeName = Length, size = 5 metres, needsLine = 1, imageHeight = 0.33, rating = VI, fit = 20 (+5),prs = 15 (+2),spr = 17 (+3),chr = 3 (-4),int = 16 (+3),pcp = 17 (+3),pow = 16 (+3),evl = 18 (+4),hp=200, block=18, dodge=13, abilityBlock=1, needsPage=1, hasImmune = 1, immune = Cold, hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Flesh Ripper. They get advantage on all Resist Checks against magic spells.}
 
-\ability{Terrifying Visage}{When a being first lays eyes on any member of the Abyssal Spawn\comma{} they must succeed on a DV 15 Willpower Resist check\comma{} or become {\it Terrified} of the creatue. All terrified beings must reperform the check again. On  a second failure\comma{} take 5d6 psychic damage.}
+\ability{Terrifying Visage}{When a being first lays eyes on any member of the Abyssal Spawn\comma{} they must succeed on a DV 15 Willpower Resist check\comma{} or become {\it Terrified} of the creatue. All terrified beings must reperform the check again. On  a second failure\comma{} take 5d6 psychic damage.}, hasActions = 1, actions = \melee{Bite}{+12}{Deals 4d8 piercing damage. On a failed DV 15 Vitality Resist\comma{} target takes an additional 4d8 necrotic damage. }
 
-\ability{Void Walk}{As Abyssal Spawn\comma{} the Flesh Ripper can\comma{} with a minute\apos{}s preparation\comma{} enter into the Void\comma{} instantaneously disappearing from their present reality. Once inside the Void\comma{} they can repeat this process to reappear in any other plane in the multiverse. }, hasActions = 1, actions = \melee{Bite}{+12}{Deals 4d8 piercing damage. On a failed DV 15 Vitality Resist\comma{} target takes an additional 4d8 necrotic damage. }
-
-\melee{Harpoon Tail}{Range: 10 metres\comma{} +7}{Deals 5d6 piercing damage\comma{} and initiates a grapple action.}
+\melee{Harpoon Tail}{Range: 5 metres\comma{} +7}{Deals 5d6 piercing damage\comma{} and initiates a grapple action.}
 
 \ability{Devour}{Consume a target being in melee range which is {\it Incapacitated}\comma{} instantly killing the being and restoring 4d20 Health points.} 
 
 \ranged{Voidic Bile}{+7}{50 metres}{Spits a gout of black bile which does 3d6 each of Acid\comma{} Necrotic and Poison Damage}, hasSkills = 1, skills = Strength (+11)\comma{} Intimidation (+10), hasImage = 1, image = ripper, hasLanguages = 1, language = Voidic, hasHabitat = 1, habitat = Eldritch Domains, imPosition = 1,description = A hulking mass of rotting\comma{} oily flesh covered in a bony exoskeleton which seems to twist and warp in multiple dimensions. The Flesh Ripper\apos{}s role is as a heavy assault weapon. It is aided in this by it\apos{}s long\comma{} scorpion like tail\comma{} which ends in a vicious barb. This tail is used to spear beings\comma{} before dragging them\comma{} helpless\comma{} into its maw.}{0}
 
 
-\beast{name = Mind Shredder, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Mistress of Lies, speed = 5 metres, habitat = Eldritch Domains, sizeName = Height, size = 1.7 metres, needsLine = 1, imageHeight = 0.35, rating = VI, fit = 10 (0),prs = 14 (+2),spr = 18 (+4),chr = 24 (+7),int = 20 (+5),pcp = 15 (+2),pow = 18 (+4),evl = 22 (+6),hp=60, block=11, dodge=14, abilityBlock=1, needsPage=1, hasFP = 1, fp = 70, hasImmune = 1, immune = Psychic\comma{} Cold, hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Mind Shredder. They get advantage on all Resist Checks against magic spells.}
+\beast{name = Mind Shredder, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Mistress of Lies, speed = 5 metres, habitat = Eldritch Domains, sizeName = Height, size = 1.7 metres, needsLine = 1, imageHeight = 0.35, rating = VI, fit = 10 (0),prs = 14 (+2),spr = 18 (+4),chr = 24 (+7),int = 20 (+5),pcp = 15 (+2),pow = 18 (+4),evl = 22 (+6),hp=100, block=11, dodge=14, abilityBlock=1, needsPage=1, hasFP = 1, fp = 70, hasImmune = 1, immune = Psychic\comma{} Cold, hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Mind Shredder. They get advantage on all Resist Checks against magic spells.}
 
-\ability{Terrifying Visage}{When a being first lays eyes on any member of the Abyssal Spawn\comma{} they must succeed on a DV 15 Willpower Resist check\comma{} or become {\it Terrified} of the creatue. All terrified beings must reperform the check again. On  a second failure\comma{} take 5d6 psychic damage.}
-
-\ability{Void Walk}{As Abyssal Spawn\comma{} the Mind Shredder can\comma{} with a minute\apos{}s preparation\comma{} enter into the Void\comma{} instantaneously disappearing from their present reality. Once inside the Void\comma{} they can repeat this process to reappear in any other plane in the multiverse. }, hasActions = 1, actions = \ability{Spellcasting}{A Mind Shredder can perform the following spells as silent\comma{} wandless actions\comma{} and upcast them all to Expert level:
+\ability{Terrifying Visage}{When a being first lays eyes on any member of the Abyssal Spawn\comma{} they must succeed on a DV 15 Willpower Resist check\comma{} or become {\it Terrified} of the creatue. All terrified beings must reperform the check again. On  a second failure\comma{} take 5d6 psychic damage.}, hasActions = 1, actions = \ability{Spellcasting}{A Mind Shredder can perform the following spells as silent\comma{} wandless actions\comma{} and upcast them all to Expert level:
 
 \beastSpellList{
 \beastSpell{Beginner}{Glamour\comma{} Chaotic Whispers\comma{} Piercing Wail\comma{} Force Shield}
@@ -594,49 +195,76 @@ Incredibly fast\comma{} and with powerful alien senses the Death Hunter serves o
 \beastSpell{Expert}{Delusion\comma{} Psychosis\comma{} Waking Dream}
 \beastSpell{Master}{Modify Memory\comma{} Psionic Overload}
 }
+The Mind Shredder has an Arcane Subjugation value of 18.
 }, hasSkills = 1, skills = Deception (+12)\comma{} Persuasion (+12)\comma{} Willpower (+9), hasImage = 1, image = shredder, hasLanguages = 1, language = Voidic, hasComprehend = 1, comprehend = All spoken languages, hasHabitat = 1, habitat = Eldritch Domains, imPosition = 0,description = A monstrous female form\comma{} all protruding fangs and tentacles lies behind layers of illusions and deception. Created by the Abyssal Masters for the express purpose of infiltration of the minds of their foes\comma{} the Mind Shredder is weak in body\comma{} but wields immense psionic powers.}{0}
 
 
-\beast{name = Soul Devourer, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Eldritch Arcane Master, speed = 2 metres, habitat = Eldritch Domains, sizeName = Height, size = 3 metres, needsLine = 1, imageHeight = 0.7, rating = VI, fit = 8 (-1),prs = 15 (+2),spr = 25 (+7),chr = 4 (-3),int = 22 (+6),pcp = 13 (+1),pow = 25 (+7),evl = 20 (+5),hp=100, block=9, dodge=12, abilityBlock=1, needsPage=1, hasFP = 1, fp = 200, hasImmune = 1, immune = Cold, hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Necrotic Shroud}{The Soul Devourer is surrounded by a field of negative energy. Any being which spends any part of their turn within 2 metres of the Soul Devourer takes 3d8 necrotic damage.}
+\fullPageBeast{name = Soul Devourer, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Eldritch Arcane Master, speed = 2 metres, habitat = Eldritch Domains, sizeName = Height, size = 3 metres, needsLine = 1, imageHeight = 0.5, rating = VI, fit = 8 (-1),prs = 15 (+2),spr = 25 (+7),chr = 4 (-3),int = 22 (+6),pcp = 13 (+1),pow = 25 (+7),evl = 20 (+5),hp=140, block=9, dodge=12, abilityBlock=1, needsPage=0, hasFP = 1, fp = 200, hasImmune = 1, immune = Cold, hasResistance = 1, resistance = Necrotic, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Necrotic Shroud}{The Soul Devourer is surrounded by a field of negative energy. Any being which spends any part of their turn within 2 metres of the Soul Devourer takes 4d4 necrotic damage.}
 
 \ability{Soul Grab}{Whenever a being dies inside the Necrotic Shroud\comma{} the Soul Devourer instantly absorbs its soul as if it had cast {\it Soul Snare}}
 
 \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Soul Devourer. They get advantage on all Resist Checks against magic spells.}
 
-\ability{Terrifying Visage}{When a being first sees a member of the Abyssal Spawn\comma{} they must succeed on a DV 15 Willpower Resist check\comma{} or become {\it Terrified} of the creature. All terrified beings must reperform the check again\comma{} take 5d6 psychic damage on a failure.}
+\ability{Terrifying Visage}{When a being first sees a member of the Abyssal Spawn\comma{} they must succeed on a DV 15 Willpower Resist check\comma{} or become {\it Terrified} of the creature. All terrified beings must reperform the check again\comma{} take 5d6 psychic damage on a failure.}, hasActions = 1, actions = \ability{Void Walk}{The Soul Devourer can open a temporary portal through Voidspace to a location they have previously visited anywhere in the Multiverse\comma{} or honing in on the site of a Death Hunter\apos{}s {\it Call Allies} ability. Up to 3d10 creatures can pass through the portal before it collapses.}
 
-\ability{Void Walk}{As Abyssal Spawn\comma{} the Soul Devourer can\comma{} with a minute\apos{}s preparation\comma{} enter into the Void\comma{} instantaneously disappearing from their present reality. Once inside the Void\comma{} they can repeat this process to reappear in any other plane in the multiverse. }, hasActions = 1, actions = \ability{Shroud Flare}{As a minor action\comma{} the Soul Devourer can push its {\it Necrotic Shroud} outwards\comma{} expanding to a radius of 2 + 1d6 metres\comma{} where it remains until the end of the next turn cycle.}
+\ability{Shroud Flare}{As a minor action\comma{} the Soul Devourer can push its {\it Necrotic Shroud} outwards\comma{} expanding to a radius of 2 + 1d6 metres\comma{} where it remains until the end of the next turn cycle.}
+
+\melee{Blood Whip}{reach 5m\comma{} +6}{A stream of blood congeals into an enormous whip\comma{} striking out at a targt for 2d10+4 slashing damage.}
+
+\ranged{Droplet Cascade}{+10}{25m}{1d10 +1 droplets of blood are flicked from a long finger. The Soul Devourer can decide how many droplets strike at which targets. Each droplet deals 1d6 piercing damage.}
+
+\ability{Blood Burst}{As an instantaneous action\comma{} a Soul Devourer may expel a gigantic burst of blood\minus{}red energy in a sphere 15 metres in radius around them. Anything in this region is instantly pushed to the edge\comma{} and on a failed DV 15 Acrobatics Resist\comma{} take 5d8 necrotic damage. This ability cannot be used again for another minute. }
 
 \ability{Spellcasting}{A Soul Devourer can perform the following spells as silent\comma{} wandless actions\comma{} and upcast them all to Master level:
 \beastSpellList{
 \beastSpell{Beginner}{Shadow Blast\comma{} Vicious Slash\comma{} Shroud of Darkness}
 \beastSpell{Novice}{Necrosis\comma{} Blight\comma{} Crippling Fatigue\comma{} Counterspell}
-\beastSpell{Adept}{Plague of Insects\comma{} Shadow Demon\comma{} Voidsphere}
+\beastSpell{Adept}{Plague of Insects\comma{} Shadow Demon\comma{} Voidsphere\comma{} Blood Barrier}
 \beastSpell{Expert}{Create Zombie\comma{} Create Thrall}
 \beastSpell{Master}{Burning Blood\comma{} Word of Death\comma{} Selfshift}
 }
-}, hasSkills = 1, skills = Willpower (+11)\comma{} Arcane (+10)\comma{} Unnature (+10), hasImage = 1, image = devourer, hasLanguages = 1, language = All spoken languages, hasHabitat = 1, habitat = Eldritch Domains, imPosition = 1,description = The Soul Devourer is the arcane expert of the Abyssal army\comma{} using the souls of the fallen â€“ even their own allies â€“ to cast powerful magics.}{0}
+A Soul Devourer has an Arcane Subjugation value of 21.
+}, hasSkills = 1, skills = Willpower (+11)\comma{} Arcane (+10)\comma{} Unnature (+10), hasImage = 1, image = devourer, hasLanguages = 1, language = All spoken languages, hasHabitat = 1, habitat = Eldritch Domains, imPosition = 1,description = The Soul Devourer is every inch as terrifying as its name would suggest\comma{} with a face seemingly composed of a rotting\comma{} skeletal deer skull with enormous antlers protruding from it. Mounted atop the antlers are a series of dripping candles\comma{} said to a allow the Soul Devourer to act as a guide throught he inky darkness of the Void\comma{} as they travel to do their master\apos{}s bidding. 
+
+As the arcane experts of the Abyssal Army\comma{} the Soul Devourers\comma{} as their name might suggest\comma{} rely heavily on the power of ritual sacrifices and the corruption and absorption of slain souls\comma{} even using the souls of their slain allies to power their assaults. Their long\comma{} spider\minus{}like hands are continually dripping with thick\comma{} congealed blood which they use in their profane rituals\comma{} and as a powerful weapon. 
+
+Of all of the Abyssal Spawn\comma{} it seems that the Soul Devourers have the most amount of free will\comma{} and will often explicitly communicate that they are allied with their Abyssal Masters out of convenience\comma{} rather than the rabid\comma{} unthinking loyalty expressed by some of the other soldiers in the Profane Masses. 
+
+Whispered rumours in some corners of the Multiverse indicate that some Soul Devourers have even gone rogue\comma{} and attempted to rebel against their masters\comma{} some have even had a degree of success. That the Soul Devourers remain such an integral part of the Abyssal Army indicates that this rebellious streak is in some way beneficial to their masters\comma{} though no one is quite sure why or how this might be.}{0}
 
 
-\beast{name = Wielder\minus{}of\minus{}Night, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Eldritch General, speed = 10 metres, habitat = Eldritch Domains, sizeName = Height, size = 4 metres, needsLine = 1, imageHeight = 0.7, rating = V, fit = 16 (+3),prs = 18 (+4),spr = 19 (+4),chr = 7 (-2),int = 25 (+7),pcp = 23 (+6),pow = 20 (+5),evl = 22 (+6),hp=175, block=15, dodge=17, abilityBlock=1, needsPage=1, hasFP = 1, fp = 50, hasImmune = 1, immune = Necrotic\comma{} Cold, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Soul Devourer. They get advantage on all Resist Checks against magic spells.}
+\fullPageBeast{name = Wielder\minus{}of\minus{}Night, species = Abyssal Spawn, mind = Ineffable, category = Abomination, summary = Eldritch General, speed = 10 metres, habitat = Eldritch Domains, sizeName = Height, size = 3 metres, needsLine = 1, imageHeight = 0.5, rating = VII, fit = 16 (+3),prs = 18 (+4),spr = 19 (+4),chr = 7 (-2),int = 25 (+7),pcp = 23 (+6),pow = 20 (+5),evl = 22 (+6),hp=175, block=18, dodge=17, abilityBlock=1, needsPage=0, hasFP = 1, fp = 75, hasImmune = 1, immune = Necrotic\comma{} Cold\comma{} Magic below Expert level, hasSusceptible = 1, susceptible = Celestial, hasAbilities = 1, abilities = \ability{Magic Resistance}{As an otherworldly being\comma{} normal magic is weaker against a Wielder\minus{}of\minus{}Night. They get advantage on all Resist Checks against magic spells\comma{} and are totally immune to all spells cast below an Expert level. }
+
+\ability{Voidic Armour}{The Wielder\minus{}of\minus{}Night wears an oily black armour which provides a +3 bonus to its block value.}
 
 \ability{Terrifying Visage}{When a being first sees a member of the Abyssal Spawn\comma{} they must succeed on a DV 15 Willpower Resist check\comma{} or become {\it Terrified} of the creature. All terrified beings must reperform the check again\comma{} take 5d6 psychic damage on a failure.}
 
-\ability{Void Walk}{As Abyssal Spawn\comma{} the Soul Devourer can\comma{} with a minute\apos{}s preparation\comma{} enter into the Void\comma{} instantaneously disappearing from their present reality. Once inside the Void\comma{} they can repeat this process to reappear in any other plane in the multiverse. }, hasActions = 1, actions = \melee{Abyssal Scythe}{+10}{Deals 4 + 1d4 slashing damage. On a failed DV 15 vitality Resist\comma{} deals an additional 3d6 cold damage.}
+\ability{Situational Awareness}{A Wielder\minus{}of\minus{}Night always knows exactly where its foes are. Once it has laid eyes on you\comma{} you cannot hide from it unless you remain out of sight for more than 1 minute.}, hasActions = 1, actions = \ability{Multiattack}{The wielder of night may make up to 4 attacks per turn\comma{} with no more than 2 of them being of the same type.}
+
+\melee{Abyssal Scythe}{+10}{Deals 4 + 2d4 slashing damage. On a failed DV 15 vitality Resist\comma{} deals an additional 3d6 cold damage.}
 
 \melee{Tentacle Strike}{+7}{Deals 3 + 1d4 bludgeoning damage and allows the Wielder\minus{}of\minus{}Night to initiate a grapple}. 
+
+\ability{Maddening Screech}{All living beings within hearing range experience a psychic blast which threatens their sanity. They take 4d6 psychic damage\comma{} and on a failed DV 15 Logic Resist become {\it Distracted} next turn. This ability cannot be used again for 1 minute.}
 
 \ability{Spellcasting}{A Wielder\minus{}of\minus{}Night can perform the following spells as silent\comma{} wandless actions\comma{} and upcast them to Master level:
 \beastSpellList{
 \beastSpell{Beginner}{Taste of Blood\comma{} Force Shield\comma{} Shadow Blast}
 \beastSpell{Novice}{Abyssal Fluid\comma{} Necrosis}
 \beastSpell{Expert}{Arctic Blast\comma{} Black Dragon\apos{}s Fury}
+\beastSpell{Master}{Crush Bones\comma{} Anti\minus{}Magic Ward\comma{} Word of Death}
 }
 }
 
-\ability{Multiattack}{The wielder of night may make up to 4 attacks per turn\comma{} with no more than 2 of them being of the same type.}
+\ability{Command Legions}{The Wielder\minus{}of\minus{}Night may use their major action to command up to 2d8 other Abyssal Spawn in hearing\comma{} giving them check\minus{}advantage on their next check.}, hasSkills = 1, skills = Speed (+10)\comma{} Strength (+10)\comma{} Logic (+14)\comma{} Observation (+13), hasImage = 1, image = spawn, hasLanguages = 1, language = Voidic, hasHabitat = 1, habitat = Eldritch Domains, imPosition = 0,description = In the midst of a pitched battle between the forces of good and evil\comma{} light and dark\comma{} life and death\comma{} one figure stands apart. A grotesque\comma{} scarred humanoid body is sewn onto a countless mass of tentacles which seem to boil and writhe of their own accord. Standing tall over the immense\comma{} endless battlefield\comma{} it surveys the chaos; planning and strategising. 
 
-\ability{Command Legions}{The Wielder\minus{}of\minus{}Night may use their major action to command any other Abyssal Spawn in hearing\comma{} giving them check\minus{}advantage on their next check.}, hasSkills = 1, skills = Willpower (+10)\comma{} Logic (+13)\comma{} Investigation (+12), hasImage = 1, image = spawn, hasLanguages = 1, language = Voidic, hasHabitat = 1, habitat = Eldritch Domains, imPosition = 0,description = The general of the Abyssal Armies\comma{} commanding untold legions of lesser creatures. They wield an enormous scythe\comma{} which crackles with frost.}{0}
+With a movement as fast as the eye can see\comma{} the abomination leaps into battle\comma{} dueling hand\minus{}to\minus{}hand with the most powerful servants of the light\comma{} firing bolts of dark arcane energy from a finger\comma{} and screeching orders to the untold legions of the Abyss. 
+
+This is the Wielder\minus{}of\minus{}Night\comma{} the Commander of the Abyssal Legions\comma{} Slayer of Hope\comma{} Destroyer of Worlds\comma{} and the reason that every sane being in the multiverse is afraid of the darkness. 
+
+It is unknown if the Wielder\minus{}of\minus{}Night is a position\comma{} akin to a general\comma{} or if there is only one of them\comma{} a single mighty champion of the Eldritch Horroers\comma{} who has executed their will throughout the eons. Most scholars hope that it is the latter\comma{} for the idea of there being multiple such beings is to horrible to even consider. 
+
+There is only one recorded instance of a Wielder\minus{}of\minus{}Night stepping onto the Mortal Realm\comma{} at the culmination of the final battle of the Cataclysm. Merlin the Great\comma{} the most powerful Wizard who ever lived\comma{} managed to barely survive its onslaught\comma{} until he tricked it into falling through a Rift in time and space\comma{} which he sealed behind it. So harrowing was this experience\comma{} that Merlin refused to talk about it for hundreds of years after the event.}{0}
 
 
 }{1}{greatOld}{0.55}
@@ -660,7 +288,7 @@ Hatching from eggs the size of rugby balls\comma{} the oldest specimens have leg
 
 \beast{name = Acromantula, species = Acromantula, mind = Sapient, category = Monstrosity, summary = Adult Giant Spider, speed = 15 metres, habitat = Rainforests of Borneo\comma{} spread worldwide, sizeName = Legspan, size = 4 metres, needsLine = 0, imageHeight = 0.4, rating = V, fit = 14 (+2),prs = 15 (+2),spr = 10 (0),chr = 6 (-2),int = 18 (+4),pcp = 14 (+2),pow = 12 (+1),evl = 13 (+1),hp=45, block=17, dodge=15, abilityBlock=1, needsPage=1, hasImmune = 1, immune = Celestial damage, hasResistance = 1, resistance = Poison damage, hasSusceptible = 1, susceptible = Fire damage, hasActions = 1, actions = \melee{Bite}{+7}{Deals 6+3d8 piercing damage. Target must suceed a DV15 Vitality check\comma{} or take an additional 5d6 poison damage and take the {\it Poisoned: Mild} status effect. }
 
-\ranged{Web}{+4}{10 metres}{A target individual is covered in sticky webbing. The target is {\it Incapacitated} until they succeed on a DV 14 Strength Resist\comma{} or the webbing absorbs 5 points of physical damage.}, hasSkills = 1, skills = Stealth (+6)\comma{} Strength (+5)\comma{} Observation (+5)\comma{} Nightvision, hasImage = 1, image = Acromantula, hasLanguages = 1, language = Spider Tongue, hasComprehend = 1, comprehend = Human Languages, hasHabitat = 1, habitat = Rainforests of Borneo\comma{} spread worldwide, imPosition = 1,description = A fully grown Acromantula is something to be greatly feared. They can run incredibly quickly and they utilise a ranged web attack to ensnare their pray\comma{} capturing it for later devourmentâ€¦.}{0}
+\ranged{Web}{+4}{10 metres}{A target individual is covered in sticky webbing. The target is {\it Incapacitated} until they succeed on a DV 14 Strength Resist\comma{} or the webbing absorbs 5 points of physical damage.}, hasSkills = 1, skills = Stealth (+6)\comma{} Strength (+5)\comma{} Observation (+5)\comma{} Nightvision, hasImage = 1, image = Acromantula, hasLanguages = 1, language = Spider Tongue, hasComprehend = 1, comprehend = Human Languages, hasHabitat = 1, habitat = Rainforests of Borneo\comma{} spread worldwide, imPosition = 1,description = A fully grown Acromantula is something to be greatly feared. They can run incredibly quickly and they utilise a ranged web attack to ensnare their pray\comma{} capturing it for later devourment….}{0}
 
 
 \beast{name = Acromantula Patriarch, species = Acromantula, mind = Sapient, category = Monstrosity, summary = Ruler of the Spider Clan, speed = 5 metres, habitat = Rainforests of Borneo\comma{} spread worldwide, sizeName = Legspan, size = 8 metres, needsLine = 1, imageHeight = 0.4, rating = VI, fit = 7 (-2),prs = 14 (+2),spr = 15 (+2),chr = 8 (-1),int = 22 (+6),pcp = 18 (+4),pow = 16 (+3),evl = 17 (+3),hp=100, block=15, dodge=5, abilityBlock=1, needsPage=1, hasImmune = 1, immune = Celestial damage, hasResistance = 1, resistance = Poison damage, hasSusceptible = 1, susceptible = Fire damage, hasAbilities = 1, abilities = \ability{Void Walk}{As Abyssal Spawn\comma{} the Mind Shredder can\comma{} with a minute\apos{}s preparation\comma{} enter into the Void\comma{} instantaneously disappearing from their present reality. Once inside the Void\comma{} they can repeat this process to reappear in any other plane in the multiverse. }, hasActions = 1, actions = \melee{Bite}{+4}{Deals 6d10 piercing damage. Target must suceed a DV18 Vitality check\comma{} or take an additional 15d6 poison damage and take the {\it Poisoned: Severe} status effect. }
@@ -734,7 +362,7 @@ Unusually out of apparitions and other spiritual creatures\comma{} poltergeists 
 
 \ability{Shapeshift}{A boggart may use a major action to transform into any shape\comma{} to represent something the target is scared of. Any being for which this is their greatest fear must pass a DV 20 Willpower Resist check or become {\it Terrified}. }, hasSkills = 1, skills = Empathy (+7), hasImage = 1, image = boggart, hasComprehend = 1, comprehend = Depends on form taken, hasHabitat = 1, habitat = Wherever humans are found, imPosition = 0,description = A manifestation of fear and primal terror\comma{} the shapeshifting boggart peers into the minds of humans\comma{} and takes the form of their worst nightmare. 
 
-A boggart can never harm you\comma{} though they can be difficult to contain. The accepted trick is to transfigure them to look stupid\comma{} prompting a fit of laughter â€“ which is fatal to a boggart.}{0}
+A boggart can never harm you\comma{} though they can be difficult to contain. The accepted trick is to transfigure them to look stupid\comma{} prompting a fit of laughter – which is fatal to a boggart.}{0}
 
 
 }{1}{spirit}{0.5}
@@ -793,7 +421,7 @@ The Howling Tick has the magical ability to grow in size when it feeds\comma{} h
 
 \beast{name = Spraying Mantis, species = Arachnid, mind = Non\minus{}sapient, category = Beast, summary = Acid\minus{}Spitting Monster, speed = 8 metres, habitat = Tropical Regions, sizeName = Length, size = 1 metre, needsLine = 1, imageHeight = 0.4, rating = III, fit = 14 (+2),prs = 16 (+3),spr = 8 (-1),chr = 2 (-4),int = 4 (-3),pcp = 14 (+2),pow = 4 (-3),evl = 2 (-4),hp=35, block=14, dodge=13, abilityBlock=1, needsPage=1, hasImmune = 1, immune = Celestial damage, hasResistance = 1, resistance = Acid, hasSusceptible = 1, susceptible = Fire, hasAbilities = 1, abilities = \ability{Web Walker}{A Spraying Mantis takes no movement penalty when walking on webbed surfaces}
 
-\ability{Fanged Forearms}{The Spraying Mantis\apos{} hooked and fanged carapace allows it to cling onto targets more tightly â€“ taking check advantage on all grappling checks.}
+\ability{Fanged Forearms}{The Spraying Mantis\apos{} hooked and fanged carapace allows it to cling onto targets more tightly – taking check advantage on all grappling checks.}
 
 \ability{Four Forearms}{The Spraying Mantis has two sets of arms\comma{} and so can grapple up to two individuals at a time.}, hasActions = 1, actions = \melee{Lunge}{+3}{The Spraying Mantis leaps forward up to 5 metres\comma{} and lashes out with its hinged arms\comma{} dealing 2d6 +2 piercing damage\comma{} and initiating a grappling action.}
 
@@ -847,7 +475,7 @@ Normally peacable and shy creatures\comma{} they become territorial and violent 
 
 
 
-\beast{name = Chimera, species = Chimera, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , needsLine = 0, imageHeight = 0.5, rating = VII, fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, needsPage=0, hasImage = 1, image = chimera, imPosition = 0,description = hey}{1}
+\fullPageBeast{name = Chimera, species = Chimera, mind = Non\minus{}sapient, category = Monstrosity, summary = , speed = , habitat = , sizeName = , size = , needsLine = 0, imageHeight = 0.5, rating = VII, fit = 0 (-5),prs = 0 (-5),spr = 0 (-5),chr = 0 (-5),int = 0 (-5),pcp = 0 (-5),pow = 0 (-5),evl = 0 (-5),hp=NaN, block=NaN, dodge=NaN, abilityBlock=0, needsPage=0, hasImage = 1, image = chimera, imPosition = 0,description = hey}{1}
 
 
 
@@ -1212,13 +840,13 @@ The process of creating a Horcrux requires the subject to shatter their soul\com
 
 This destruction of the soul is the spiritual equivalent of splitting the atom\comma{} releasing a tremendous amount of energy into the higher planes\comma{} even to the point of weakening the barriers between worlds. 
 
-Such a release of energy rarely goes unnoticed by the creeping\comma{} crawling horrors lying in the void â€“ driven insane by their time spent in abject nothingness. The instant they become aware of a free vessel\comma{} they burst through the walls of reality\comma{} and attempt to make their home in the shattered remains of the unfortunate Aileni. 
+Such a release of energy rarely goes unnoticed by the creeping\comma{} crawling horrors lying in the void – driven insane by their time spent in abject nothingness. The instant they become aware of a free vessel\comma{} they burst through the walls of reality\comma{} and attempt to make their home in the shattered remains of the unfortunate Aileni. 
 
 This forces  the host to undergo a horrific transformation which rips away the last shreds of humanity\comma{} turning them into a dreaded Aberstath. 
 
 \ability{Tears of the Void}{Initially\comma{} the only visible change when a being undergoes the transition from Et Iniquum or Aileni to a full\minus{}blood Aberstath is that the eyes of the Aileni will suddenly turn into inky black orbs\comma{} blacker than the darkest night. Over time\comma{} their form warps and becomes inhumane\comma{} even undead and skeletal. However\comma{} mo matter what form the Aberstath takes\comma{} they cannot hide their voidic eyes.}
 
-\ability{Consumer of Life}{The being which now resides inside the mortal remains of the host was a resident of the Void\comma{} the inky black nothingness between dimensions. Perhaps it is native to that horrifying realm\comma{} or perhaps it was originally a powerful being which fell into the void\comma{} eons ago. Either way\comma{} an Aberstath has been driven to utter insanity by this experience â€“ their motivations are often deeply insane and disturbed\comma{} and mostly focus on the destruction of all life.}
+\ability{Consumer of Life}{The being which now resides inside the mortal remains of the host was a resident of the Void\comma{} the inky black nothingness between dimensions. Perhaps it is native to that horrifying realm\comma{} or perhaps it was originally a powerful being which fell into the void\comma{} eons ago. Either way\comma{} an Aberstath has been driven to utter insanity by this experience – their motivations are often deeply insane and disturbed\comma{} and mostly focus on the destruction of all life.}
 
 \ability{Memories of the Shell}{The Aberstath retains all the memories\comma{} experiences and skills of its original host.}
 
