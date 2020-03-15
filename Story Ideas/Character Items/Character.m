@@ -31,6 +31,14 @@ classdef Character < handle
         
         
         function t = print(obj)
+            if obj.isGM
+                t = obj.gmPrint();
+            else
+                t = obj.characterPrint();
+            end
+        end
+        
+        function t = characterPrint(obj)
            
             t = "\\character";
             t = t + "{" + prepareText(obj.Name) + "}";
@@ -57,10 +65,38 @@ classdef Character < handle
                         t = t + "\n \\subsection{" + prepareText(class) + "}\n";
                     end
                     
-                    t = t + obj.Items(i).print() + "\n";
+                    t = t + obj.Items(i).print(0) + "\n";
                 end
             end
             t = t + "}";
+        end
+        
+        function t = gmPrint(obj)
+            t = "\\GM{";
+            
+            
+            if ~isempty(obj.Items) > 0
+                [~,I] = sort([obj.Items.Name]);
+                obj.Items = obj.Items(I);
+                [~,I] = sort([obj.Items.Class]);
+                obj.Items = obj.Items(I);
+                
+                class = obj.Items(1).Class;
+                t = t + "\n \\subsection{" + prepareText(class) + "}\n";
+                for i = 1:length(obj.Items)
+                    %%assuming items are prepped for printing
+                    if ~strcmp((obj.Items(i).Class),class)
+                        class = obj.Items(i).Class;
+                        t = t + "\n \\subsection{" + prepareText(class) + "}\n";
+                    end
+                    
+                    t = t + obj.Items(i).print(1) + "\n";
+                end
+            end
+            t = t + "}";
+            
+            
+            
         end
         
         function getInventory(obj,tableName)
@@ -78,6 +114,27 @@ classdef Character < handle
                       obj.Items(end+1) = item;
                    end
                end
+           else
+               
+               for i = 1:h
+                   
+                   item = Item(f(i,:),0);
+                   obj.Items(end+1) = item;
+                   
+                   cNames = ["Nikc", "Helena", "Cerise", "Luke"];
+                   obj.Items(i).isOwned = false;
+                    obj.Items(i).Owners = "";
+                   for j = 1:length(cNames)
+                       col = f.(cNames(j));
+                       c = col(i);
+                       if ~isnan(c)
+                           obj.Items(i).isOwned = true; 
+                            obj.Items(i).Owners = obj.Items(i).Owners + cNames(j) + ": " + num2str(c) + "\\";
+                       end
+                   end
+               end
+               
+              
            end
         end
     end

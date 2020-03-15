@@ -1,4 +1,4 @@
-classdef Item
+classdef Item < handle
 
     properties
         Name
@@ -12,6 +12,8 @@ classdef Item
         PurchaseCost
         hasPurchaseCost
         SellValue
+        isOwned;
+        Owners;
     end
     
     methods
@@ -39,10 +41,15 @@ classdef Item
             if isempty(obj.PurchaseCost)
                 obj.hasPurchaseCost = false;
             end
+            obj.isOwned = false;
+            obj.Owners = "";
         end
         
-        function t = print(obj)
+        function t = print(obj,mode)
             t = "\n\\inventory{";
+            if mode == 1
+                t = "\n\\GMinventory{";
+            end
             t = t + "\n\tname = " + prepareText(obj.Name) + ", ";
             t = t + "\n\tamount = " + num2str(obj.Amount) +", ";
             t = t + "\n\tclass = " + prepareText(obj.Class) + ", ";
@@ -59,7 +66,9 @@ classdef Item
                 t = t + "\n\thasCost = " + num2str(obj.hasPurchaseCost) + ", ";
                 t = t + "\n\tpurchaseCost = " + prepareText(obj.PurchaseCost) + ", ";
             end
-            t = t + "\n\tsellValue = " + prepareText(obj.SellValue);
+            t = t + "\n\tsellValue = " + prepareText(obj.SellValue) + ", ";
+            t = t + "\n\tisOwned = " + num2str(obj.isOwned) + ", ";
+            t = t + "\n\towners = " + prepareText(obj.Owners);
             t = t + "\n}";
         end
     end

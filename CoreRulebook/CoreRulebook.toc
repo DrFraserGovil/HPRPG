@@ -506,17 +506,7 @@
 \contentsline {subsubsection}{FP Costs}{120}{subsubsection*.219}%
 \contentsline {subsubsection}{Accuracy}{120}{subsubsection*.220}%
 \contentsline {chapter}{\numberline {25}Changelog}{121}{chapter.25}%
-\contentsline {section}{\numberline {25.1}Changes in V4.0$\beta $}{121}{section.25.1}%
-\contentsline {subsection}{\numberline {25.1.1}Changes to Artificing}{121}{subsection.25.1.1}%
-\contentsline {subsection}{\numberline {25.1.2}Spellcasting Changes}{121}{subsection.25.1.2}%
-\contentsline {subsection}{\numberline {25.1.3}Changes to Character Attributes}{121}{subsection.25.1.3}%
-\contentsline {subsubsection}{Dodge, Block and Accuracy}{121}{subsubsection*.221}%
-\contentsline {subsection}{\numberline {25.1.4}New Action Mechanics}{121}{subsection.25.1.4}%
-\contentsline {subsection}{\numberline {25.1.5}Archetypes}{121}{subsection.25.1.5}%
-\contentsline {subsection}{\numberline {25.1.6}Expertise}{121}{subsection.25.1.6}%
-\contentsline {subsubsection}{Proficiencies}{121}{subsubsection*.222}%
-\contentsline {subsection}{\numberline {25.1.7}Spell Changes}{122}{subsection.25.1.7}%
-\contentsline {subsection}{\numberline {25.1.8}Cheat Sheet}{122}{subsection.25.1.8}%
-\contentsline {subsection}{\numberline {25.1.9}Item Changes}{122}{subsection.25.1.9}%
-\contentsline {subsection}{\numberline {25.1.10}Meta-Changes}{122}{subsection.25.1.10}%
-\contentsline {section}{\numberline {25.2}To Do List}{122}{section.25.2}%
+\contentsline {section}{\numberline {25.1}Changes in V4.0$\gamma $}{121}{section.25.1}%
+\contentsline {subsection}{\numberline {25.1.1}New Action Mechanics}{121}{subsection.25.1.1}%
+\contentsline {subsection}{\numberline {25.1.2}Archetypes}{121}{subsection.25.1.2}%
+\contentsline {subsection}{\numberline {25.1.3}Spell Changes}{121}{subsection.25.1.3}%

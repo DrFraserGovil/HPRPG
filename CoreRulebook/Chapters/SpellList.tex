@@ -45,17 +45,19 @@ Tremor & \instSymb & ~	 & ~	 & Wind Tunnel & \concSymb & ~	 & ~	 & ~	 & ~	 & ~	 
 \\
  \multicolumn{2}{c}{\cellcolor{\tablecolorhead} \bf Beginner}&\multicolumn{2}{c}{\cellcolor{\tablecolorhead} \bf Novice}&\multicolumn{2}{c}{\cellcolor{\tablecolorhead} \bf Adept}&\multicolumn{2}{c}{\cellcolor{\tablecolorhead} \bf Expert}&\multicolumn{2}{c}{\cellcolor{\tablecolorhead} \bf Master}&\multicolumn{2}{c}{\cellcolor{\tablecolorhead} \bf Ascendant}
  \\ 
-Clean Surface & \concSymb & Cut Object & \instSymb & Cushion Fall & \instSymb & Apparate & \instSymb & Invert Gravity & \instSymb & Mass Kinesis & \concSymb
+Clean Surface & \concSymb & Counterspell & \ritSymb & Cushion Fall & \instSymb & Apparate & \instSymb & Invert Gravity & \instSymb & Mass Kinesis & \concSymb
  \\ 
-Halt & \instSymb & Lasso & \concSymb & Shatter & \concSymb & General Counterspell & \ritSymb & Shatterblast & \instSymb & Sphere of Immobility & \instSymb
+Halt & \instSymb & Cut Object & \instSymb & Shatter & \concSymb & Leapfrog & \instSymb & Shatterblast & \instSymb & Sphere of Immobility & \instSymb
  \\ 
-Launder Clothes & \instSymb & Lock & \instSymb & Spider Hands & \instSymb & Leapfrog & \instSymb & Teleport & \instSymb & ~	 & ~	
+Launder Clothes & \instSymb & Lasso & \concSymb & Spider Hands & \instSymb & Stutterjump & \ritSymb & Teleport & \instSymb & ~	 & ~	
  \\ 
-Levitation & \concSymb & Repair Object & \concSymb & Summon Object & \concSymb & Stutterjump & \ritSymb & ~	 & ~	 & ~	 & ~	
+Levitation & \concSymb & Lock & \instSymb & Summon Object & \concSymb & Switch Places & \instSymb & ~	 & ~	 & ~	 & ~	
  \\ 
-Mage Hands & \instSymb & Upwards Blast & \instSymb & Unlock & \instSymb & Switch Places & \instSymb & ~	 & ~	 & ~	 & ~	
+Mage Hands & \instSymb & Repair Object & \concSymb & Unlock & \instSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
  \\ 
-Mark Surface & \concSymb & Weld Objects & \instSymb & Walk on Water & \ritSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
+Mark Surface & \concSymb & Upwards Blast & \instSymb & Walk on Water & \ritSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
+ \\ 
+~	 & ~	 & Weld Objects & \instSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
 \end{rndtable}
 \vspace{3ex}
 }
@@ -178,13 +180,15 @@ Trip & \instSymb & Strangle & \instSymb & Jelly Legs & \concSymb & ~	 & ~	 & ~	 
  \\ 
 Knockback & \instSymb & Acidic Burst & \instSymb & Exploding Missile & \instSymb & Arctic Blast & \instSymb & Crush Bones & \instSymb & Disintegrate & \instSymb
  \\ 
-Mortar Pulse & \instSymb & Bat Bogey Hex & \instSymb & Object Swarm & \concSymb & Black Dragon\apos{}s Fury & \concSymb & Meteor Strike & \instSymb & Heavenly Arsenal & \instSymb
+Magnetising Pulse & \instSymb & Bat Bogey Hex & \instSymb & Object Swarm & \concSymb & Black Dragon\apos{}s Fury & \concSymb & Meteor Strike & \instSymb & Heavenly Arsenal & \instSymb
  \\ 
-Rainbow Sparks & \instSymb & Bolt from the Blue & \instSymb & Recurring Light & \concSymb & Detonation & \instSymb & ~	 & ~	 & ~	 & ~	
+Mortar Pulse & \instSymb & Bolt from the Blue & \instSymb & Recurring Light & \concSymb & Detonation & \instSymb & ~	 & ~	 & ~	 & ~	
  \\ 
-Sting & \instSymb & Crackling Fist & \instSymb & Spiral Inversion & \instSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
+Rainbow Sparks & \instSymb & Crackling Fist & \instSymb & Spiral Inversion & \instSymb & Witch Hunter\apos{}s Bane & \instSymb & ~	 & ~	 & ~	 & ~	
  \\ 
-Ticklish Blast & \instSymb & Shockwave & \instSymb & Stream of Acid & \concSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
+Sting & \instSymb & Shockwave & \instSymb & Stream of Acid & \concSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
+ \\ 
+Ticklish Blast & \instSymb & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	 & ~	
 \end{rndtable}
 \vspace{3ex}
 }
@@ -506,6 +510,13 @@ You may alter the meaning of the runechains on an enchanted object slightly (i.e
 \spell{name = Countercurse, school = Recuperation, discipline = Healing, type = Instant, level =Adept, range =Wandtip, incant = finite maledictum, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Remove the effects of an active spell from the Curse discipline. 
 
 This spell can only remove spells caused by a curse of an equal level as this spell is cast at \minus{} to remove an Expertly cast curse\comma{} this spell must be cast at an Expert level.}
+\spell{name = Counterspell, school = Charms, discipline = Kinesis, type = Ritual (30 seconds), level =Novice, range =Wandtip, incant = finite incantatem, noDur = 1, higher = For every additional spell\minus{}level dedicated to casting this spell\comma{} the maximum spell level which can be ended increases by one. 
+
+In addition\comma{} when contesting against an active spellcaster\comma{} gain a one\minus{}point bonus to your spellcasting check per additional level.,noResist =1, noBlock = 1, effect =End the ongoing effects of any active Beginner\minus{}level spell on the targeted object or being. 
+
+This spell does not work on shields or wards\comma{} or spells from the curses discipline.
+
+If a being is still actively casting a Focus spell on your chosen target\comma{} perform a spellcasting check against the Arcane Subjugation value of the spellcaster\comma{} plus a 1\minus{}point bonus per spell level of the spell they are casting. If your check succeeds\comma{} the caster loses focus and ends their spell.}
 \spell{name = Coven\apos{}s Protection, school = Dark Arts, discipline = Occultism, type = Ritual (4 hours), level =Master, range =Wandtip, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =This ritual can only be performed in an isolated area\comma{} in the middle of the night. By gathering together and invoking the name of an unspeakable\comma{} unknowable power\comma{} you bind the life forces of all participants together\comma{} to form a unified whole. While the Coven exists\comma{} any member may use a minor action to transfer their own HP or FP to any other member of the coven\comma{} and multiple members may send HP/FP to the same target at any given moment. This cannot be used to raise a target\apos{}s HP/FP above their maximum values. If too many points are sent to a target\comma{} the excess points are lost. It is possible for a coven member to die by transferring all of their HP to the network. 
 
 If psychic damage is inflicted on any member of the Coven in the same turn\minus{}cycle that HP or FP are being transferred\comma{} that damage is done to all members of the Coven. If this damage is also a Critical Strike\comma{} then the ritual is distrupted and the spell is ended.}
@@ -705,10 +716,7 @@ The caster is not considered {\it Distracted} when casting this spell\comma{} un
 This blast may freeze a body of water up equal in size to a cube with sides of length 2m\comma{} or when used on an individual\comma{} the freezing blast does 3d10 cold damage\comma{} halved on a successful Resist.}
 \spell{name = Fresh Air, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Close, incant = klinneract, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =A gust of air refreshes the air in a sphere of radius 3 metres around the caster\comma{} removing any gaseous effects and smelling faintly of lavender.}
 \spell{name = Fury, school = Illusion, discipline = Psionics, type = Instant, level =Adept, range =Sight, incant = irafors, duration = 30 seconds,noHigh = 1, resist = Compassion, noBlock = 1, effect =Target performs a Resist check\comma{} if they fail\comma{} target flies into a mindless rage and begins attacking all those around them.}
-\spell{name = General Counterspell, school = Charms, discipline = Kinesis, type = Ritual (30 seconds), level =Expert, range =Wandtip, incant = finite incantatem, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =End the effects of any active spell. If the spell was cast by anyone other than yourself\comma{} the counterspell must be cast at a level exceed the original casting. 
-
-This spell does not work on enemy shields\comma{} curses or spells which are still being cast.}
-\spell{name = Glamour, school = Illusion, discipline = Bewitchment, type = Instant, level =Beginner, range =Close, incant = lux stultium, duration = 1 hour,noHigh = 1, resist = Observation, noBlock = 1, effect =Create a superficial glamour around a person or object\comma{} a simple magical hologram which sits on top of the true surface. This hologram takes any form you desire\comma{} but can only perform minor movements â€“ an illusion over the face of a target may open its mouth as the target does\comma{} but nothing more complex than this. 
+\spell{name = Glamour, school = Illusion, discipline = Bewitchment, type = Instant, level =Beginner, range =Close, incant = lux stultium, duration = 1 hour,noHigh = 1, resist = Observation, noBlock = 1, effect =Create a superficial glamour around a person or object\comma{} a simple magical hologram which sits on top of the true surface. This hologram takes any form you desire\comma{} but can only perform minor movements – an illusion over the face of a target may open its mouth as the target does\comma{} but nothing more complex than this. 
 
 The glamour disintegrates upon physical or magical contact\comma{} and can be seen to be fake if observer succeeds on a Resist check.}
 \spell{name = Glimpse Future, school = Divination, discipline = Temporal, type = Instant, level =Adept, range =Self, incant = posterus, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Get a fleeting glimpse into the future. Choose one of the following:
@@ -746,7 +754,7 @@ Each mote does 4d6 of damage\comma{} negated on a successful Resist. The type of
 \end{spellitemize} 
 
 If the target is Immune to the chosen damage type\comma{} you may roll again. Whilst you have at least one mote in your halo\comma{} you cast bright light around you for 10m\comma{} and dim light for a further 20\comma{}}
-\spell{name = Hellish Light, school = Dark Arts, discipline = Necromancy, type = Instant, level =Novice, range =Close, incant = lumos infernalis, duration = 1 hour,noHigh = 1, resist = Logic, noBlock = 1, effect =By drawing on unearthly powers\comma{} you summon an eerie greenish\minus{}yellow light to illuminate an area 10m in radius around the point of casting. This light is bright\comma{} but appears to emanate from both everywhere\comma{} and nowhere â€“ and casts no shadows. 
+\spell{name = Hellish Light, school = Dark Arts, discipline = Necromancy, type = Instant, level =Novice, range =Close, incant = lumos infernalis, duration = 1 hour,noHigh = 1, resist = Logic, noBlock = 1, effect =By drawing on unearthly powers\comma{} you summon an eerie greenish\minus{}yellow light to illuminate an area 10m in radius around the point of casting. This light is bright\comma{} but appears to emanate from both everywhere\comma{} and nowhere – and casts no shadows. 
 
 All beings besides the caster must succeed on a Logic Resist check the first time they enter the illuminated region\comma{} or become {\it Distracted} next turn cycle.}
 \spell{name = Hidden Hologram, school = Illusion, discipline = Bewitchment, type = Ward, level =Expert, range =Wandtip, incant = occultus indis, duration = 100 years,noHigh = 1, resist = Investigation, noBlock = 1, effect =As with the {\it Implant Message} spell\comma{} you implant a message or other illusion into a warded region\comma{} and choose an audible or visual trigger which activates the illusion. 
@@ -827,7 +835,7 @@ Spikes can only reach up to 2m in length\comma{} and so cannot effect enemies wh
 \spell{name = Launder Clothes, school = Charms, discipline = Kinesis, type = Instant, level =Beginner, range =Close, incant = savatch, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Emit a cone of energy from your wand 2m in length. 
 
 Any being within this cone finds their clothes have been cleaned and dried\comma{} leaving them comfortably warm and smelling faintly of lavender.}
-\spell{name = Leapfrog, school = Charms, discipline = Kinesis, type = Instant, level =Expert, range =Sight, incant = raneus, duration = 1 minute,higher = Add an additional 5m to the maximum jump length \forEvery{}.,noResist =1, noBlock = 1, effect =Target may leap up to 5m in any direction as a major action\comma{} and land safely whilst the spell is active.}
+\spell{name = Leapfrog, school = Charms, discipline = Kinesis, type = Instant, level =Expert, range =Sight, incant = raneus, duration = 1 minute,higher = Add an additional 3m to the maximum jump length \forEvery{}.,noResist =1, noBlock = 1, effect =Target may leap up to 3m in any direction as a major action\comma{} and land safely whilst the spell is active.}
 \spell{name = Legends of the Past, school = Divination, discipline = Temporal, type = Instant, level =Expert, range =Self, incant = gabulus, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Name or describe a person\comma{} place\comma{} or object. The spell brings to your mind a brief summary of the significant lore about the thing you named. The lore might consist of current tales\comma{} forgotten stories\comma{} or even secret lore that has never been widely known. If the thing you named isn't of legendary importance\comma{} you gain no information. The more information you already have about the thing\comma{} the more precise and detailed the information you receive is.}
 \spell{name = Levitation, school = Charms, discipline = Kinesis, type = Focus, level =Beginner, range =Sight, incant = wingardium leviosa, noDur = 1, higher = The maximum mass this spell is capable of lifting multiplies by ten for every additional spell level used to cast it.,noResist =1, noBlock = 1, effect =Cause an object of 100g or less to levitate whilst concentration is maintained. You may move the object in full 3D space at a speed of 1 metre per second.}
 \spell{name = Lightning Bolt, school = Charms, discipline = Elemental, type = Instant, level =Adept, range =Sight, incant = baubilious, noDur = 1, higher = \additional{1d12}{Electrical},resist = Vitality, negation = Blockable  and Dodgeable,effect =Releases a bolt of lightning from the end of your wand. 
@@ -852,6 +860,9 @@ This spell fails if there is no such object within range\comma{} or if the objec
 \spell{name = Magical Makeover, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, range =Self, incant = crinus muto, duration = 1 day,noHigh = 1, noResist =1, noBlock = 1, effect =Alters the colour and style of the caster\apos{}s hair\comma{} apply a layer of makeup\comma{} and scrapes the dirt from under your fingernails. You may alter your appearance as if you had been attended to by a competent hair stylist and make\minus{}up artist.   
 
 Useful for disguises\comma{} or to make yourself look suave in an instant.}
+\spell{name = Magnetising Pulse, school = Maledictions, discipline = Hex, type = Instant, level =Beginner, range =Close, incant = adtraho, duration = 5 seconds,higher = \additional{1d8}{force},resist = Acrobatics or Speed, noBlock = 1, effect =A pulse of energy streaks out towards the target faster than a normal `dodge\apos{} could avoid.
+
+On a failed Resist\comma{} the target takes 1d8 force damage\comma{} and all attacks made on them next turn are at advantage.}
 \spell{name = Major Healing, school = Recuperation, discipline = Healing, type = Instant, level =Expert, range =Wandtip, incant = sana, noDur = 1, higher = Heal an additional 2d12 HP \forEvery{},noResist =1, noBlock = 1, effect =Heals the target of all burns\comma{} frostbite\comma{} poisons and diseases\comma{} and other status effects\comma{} regardless of severity.
 
 In addition\comma{} restores 8d12 HP}
@@ -907,7 +918,7 @@ The target is Immune to all forms of damage except psychic whilst it is petrifie
 \spell{name = Piercing Wail, school = Illusion, discipline = Psionics, type = Instant, level =Beginner, range =Close, incant = magnus surgerus, noDur = 1, higher = The wail gains an additional 1d4 psychic damage for every additional spell level dedicated to the casting.,resist = Willpower, noBlock = 1, effect =All targets in a 3m spherical radius of the caster take 1d4 points of psychic damage\comma{} and awaken if they are sleeping. The damage is halved on a successful Resist.}
 \spell{name = Plague of Insects, school = Dark Arts, discipline = Necromancy, type = Instant, level =Adept, range =Sight, incant = prorepere, duration = 2 minutes,higher = \additional{1d4}{each of poison and piercing},noResist =1, noBlock = 1, effect =Summon a swarm of insects from the ground in an radius 10 metres around a targeted point. All beings besides the caster within the region take 1d4 poison damage and 1d4 piercing damage every turn that they spend time inside the region.}
 \spell{name = Prank, school = Transfiguration, discipline = Conjuration, type = Instant, level =Beginner, range =Close, incant = riddikulus, duration = 2 minutes,noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =Summon a funny hat onto an individual\comma{} or conjure a note with a funny message and stick it to their back. You conjure something to change the appearance of your target with the express intention of making them look as stupid as possible.}
-\spell{name = Prevent Movement, school = Maledictions, discipline = Curse, type = Focus, level =Novice, range =Close, incant = impedimentia, duration = 15 seconds,noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =As this spell hits the target\comma{} a magical rune forms on the floor beneath their feet\comma{} forcing their feet to remain rooted to the ground. The target acquires the Trapped status effect. Their remaining appendages are still free to move\comma{} and the target can still speak â€“ but they cannot move until the spell ends.}
+\spell{name = Prevent Movement, school = Maledictions, discipline = Curse, type = Focus, level =Novice, range =Close, incant = impedimentia, duration = 15 seconds,noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =As this spell hits the target\comma{} a magical rune forms on the floor beneath their feet\comma{} forcing their feet to remain rooted to the ground. The target acquires the Trapped status effect. Their remaining appendages are still free to move\comma{} and the target can still speak – but they cannot move until the spell ends.}
 \spell{name = Privacy Ward, school = Recuperation, discipline = Warding, type = Ward, level =Beginner, range =Wandtip, incant = muffliato, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =Ward a region up to 5m in radius. This ward prevents sound from inside the region being heard from the outside. When inside the region\comma{} sound from both inside and outside may be heard.}
 \spell{name = Protective Field, school = Recuperation, discipline = Warding, type = Ward, level =Adept, range =Close, incant = tueor, duration = 2 minutes,higher = Gain an additional +1 bonus to Block \forEvery{},noResist =1, noBlock = 1, effect =Erects a ward in a cylinder around an individual or an object. If cast around an object\comma{} the ward has a radius of 2m and a height of 4m. When cast around a person\comma{} the field is 20cm larger in radius than the individual is wide\comma{} and 20cm taller. The ward moves as the target is moved. 
 
@@ -968,7 +979,7 @@ You take on the physical attributes and abilities of your new form\comma{} thoug
 
 You are indistinguishable from this chosen form until you choose to break the spell\comma{} or the being you appear to be is `destroyed'\comma{} at which point you revert to your normal form. Any damage taken in your new form is carried over to your true form. If this would reduce you to 0HP\comma{} you fall unconscious and take the {\it Critical Condition} status. 
 
-You can only take actions that your assumed form may take\comma{} and may only speak or cast spells if your chosen form can do so â€“ with the exception of ending this spell.}
+You can only take actions that your assumed form may take\comma{} and may only speak or cast spells if your chosen form can do so – with the exception of ending this spell.}
 \spell{name = Sense Humans, school = Divination, discipline = Telepathy, type = Focus, level =Adept, range =Self, incant = hominim revelio, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Reveals the presence of humanoid life nearby. Whilst concentration is maintained\comma{} the caster knows the distance and direction to every humoid being within 10 metres. 
 
 This spell cannot detect beings with any kind of magical shield in place.}
@@ -1021,7 +1032,7 @@ Whilst they are solid\comma{} they may interact with the physical world\comma{} 
 \spell{name = Soul Ripple, school = Illusion, discipline = Bewitchment, type = Instant, level =Master, range =Wandtip, incant = cessabit, duration = 10 minutes,noHigh = 1, resist = Evil, noBlock = 1, effect =With the gentlest of touches\comma{} you prod the mind of the targeted being\comma{} causing a ripple throughout their soul. A corrupted soul may attempt to resist this effect\comma{} negating it. 
 
 You may choose to make the target either Immune or Susceptible to psychic damage for the duration of the spell.}
-\spell{name = Soul Snare, school = Dark Arts, discipline = Necromancy, type = Instant, level =Ascendant, range =Self, incant = nerco decipula, noDur = 1, higher = If this spell is cast as an Ascendant level spell\comma{} you may the soul to cast an Ascendant level spell.,noResist =1, noBlock = 1, effect =Capture the soul of an enemy killed in the past 30 seconds. 
+\spell{name = Soul Snare, school = Dark Arts, discipline = Necromancy, type = Instant, level =Ascendant, range =Self, incant = nerco decipula, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Capture the soul of an enemy killed in the past 30 seconds. 
 
 This soul may be used to instantly cast any other spell (even one you do now know) at a Master level without a casting check or fortitude cost.
 
@@ -1100,7 +1111,7 @@ When the spell ends\comma{} the tornado disspates and all trapped beings are dro
 However\comma{} this spell cannot be used to reduce a target below 1HP}
 \spell{name = Transmutation, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, range =Close, incant = formum mutatio, duration = 1 hour,higher = The maximum mass this spell is capable of transfiguring multiplies by 5 for every additional spell level used to cast it.,resist = Power, noBlock = 1, effect =Transform a 1kg non\minus{}sapient animal (or part of an animal) or object into a different animal or solid object\comma{} negated on a successful Resist. 
 
-The transformation must (approximately) conserve mass â€“ you cannot turn a rat into a T\minus{}Rex\comma{} for example. The final product of the transfiguration must be a non\minus{}magical in nature (i.e. you cannot enchant items through Transmutation)}
+The transformation must (approximately) conserve mass – you cannot turn a rat into a T\minus{}Rex\comma{} for example. The final product of the transfiguration must be a non\minus{}magical in nature (i.e. you cannot enchant items through Transmutation)}
 \spell{name = Treacherous Terrain, school = Transfiguration, discipline = Alteration, type = Instant, level =Expert, range =Close, incant = transgresso, duration = 2 hours,noHigh = 1, noResist =1, noBlock = 1, effect =Target an area up to 5m in radius and transform it into a deep bog\comma{} a bed of sharpened blades\comma{} or into a sticky mess\comma{} with the associated terrain costs and other effects.}
 \spell{name = Tremor, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Close, incant = crith, noDur = 1, noHigh = 1, resist = Acrobatics, noBlock = 1, effect =A mild tremor shakes the ground. All beings in a 10m radius must succeed a Resist check\comma{} or become {\it Distracted} in the next turn cycle.}
 \spell{name = Trip, school = Maledictions, discipline = Curse, type = Instant, level =Beginner, range =Close, incant = lubricor, noDur = 1, noHigh = 1, resist = Acrobatics, noBlock = 1, effect =If the target is moving this turn cycle and fails to Resist\comma{} they go sprawling onto the ground taking 1 bludgeoning damage\comma{} and take the {\it Prone Position} status.}
@@ -1116,7 +1127,7 @@ For the duration of the spell\comma{} you see things as they truly are. You see 
 You can also see into the minds of your enemies\comma{} giving you an extra few moments to anticipate their actions. You gain check advantage on all accuracy checks\comma{} and they take disadvantage on all accuracy checks against you.}
 \spell{name = True Transfiguration, school = Transfiguration, discipline = Alteration, type = Instant, level =Ascendant, range =Close, incant = omnio mutare, noDur = 1, noHigh = 1, resist = Power, noBlock = 1, effect =On a failed resist\comma{} the target undergoes a complete and true transformation of their nature\comma{} on both a spiritual and a physical level. 
 
-To all intents and purposes\comma{} the target acts as if they have always been of your chosen form â€“ replacing all of their statistics and abilities with those of the assumed form. 
+To all intents and purposes\comma{} the target acts as if they have always been of your chosen form – replacing all of their statistics and abilities with those of the assumed form. 
 
 This spell cannot\comma{} however\comma{} {\it create} a soul. Attempting to convert a non\minus{}living\comma{} dead\comma{} or un\minus{}life object or being into a sapient creature results in spell failure. 
 
@@ -1168,12 +1179,15 @@ This effect is negated on a successful Resist\comma{} which occurs whenever you 
 \spell{name = Walk on Water, school = Charms, discipline = Kinesis, type = Ritual (2 minutes), level =Adept, range =Close, incant = iasus, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =Up to 10 willing beings that you see gain the ability to walk on water and other liquid surfaces such as mud\comma{} snow\comma{} quicksand or lava without sinking or slowing down. Other environmental effects (such as heat) still apply.}
 \spell{name = Warted Skin, school = Maledictions, discipline = Curse, type = Instant, level =Novice, range =Close, incant = furnunculus, duration = 1 hour,noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =After being hit with this spell\comma{} the target breaks out in a horrendous case of warts and boils all over their body. This boils are incredibly itchy and distracting\comma{} giving the afflicted disadvantage on all Spirit checks.}
 \spell{name = Weld Objects, school = Charms, discipline = Kinesis, type = Instant, level =Novice, range =Sight, incant = obharesco, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Stick two objects together\comma{} as if you had fused them together at a molecular level. To break them apart requires either slicing the objects apart\comma{} or pulling them hard enough to break one (or both) of the objects.}
-\spell{name = Will\minus{}O\apos{}\minus{}the\minus{}Wisp, school = Dark Arts, discipline = Occultism, type = Instant, level =Novice, range =Close, incant = desuno, noDur = 1, higher = \additional{1d8}{fire and necrotic},resist = Willpower, negation = Blockable  and Dodgeable,effect =A small burst of rainbow light dances from the end of your wand\comma{} and streaks towards your opponent\comma{} dealing 1d8 fire damage and 1d8 necrotic damage when it makes contact.
+\spell{name = Will\minus{}O\apos{}\minus{}the\minus{}Wisp, school = Dark Arts, discipline = Occultism, type = Instant, level =Novice, range =Close, incant = desuno, noDur = 1, higher = \additional{1d8}{fire and necrotic},resist = Willpower, negation = Blockable,effect =A small burst of rainbow light dances from the end of your wand\comma{} and streaks towards your opponent\comma{} dealing 1d8 fire damage and an additional 1d8 necrotic damage when it makes contact.
 
 The target must then Resist\comma{} or take the {\it Distracted} status next turn.}
 \spell{name = Wind Tunnel, school = Charms, discipline = Elemental, type = Focus, level =Adept, range =Close, incant = vente polus, noDur = 1, noHigh = 1, resist = Strength, noBlock = 1, effect =Summon a powerful blast of wind from your wand\comma{} in a line 20m long and 2m wide. Every being which is in this region at the beginning of each cycle\comma{} or enters it during the course of the cycle\comma{} must Resist\comma{} or be blown to the end of the line. Those that succeed have their movement speed halved when moving towards you. 
 
 Any unsecured objects or are also flung to the end of the line\comma{} and any open flames are extinguished.}
+\spell{name = Witch Hunter\apos{}s Bane, school = Maledictions, discipline = Hex, type = Instant, level =Expert, range =Close, incant = iboq, noDur = 1, noHigh = 1, noResist =1, negation = Blockable,effect =A searing white light solidifies into a maelstrom of vicious barbs\comma{} striking towards the target and dealing 4d10 slashing damage. 
+
+If the attack hits\comma{} the caster may use the distraction to direct a tendril of the energy to remove any {\it Trapped} status effects\comma{} and perform a DV 15 Speed check. On a success\comma{} the caster uses the confusion to teleport to a place they can see within 10 metres of their current location.}
 \spell{name = Wither, school = Maledictions, discipline = Curse, type = Instant, level =Master, range =Close, incant = unis, duration = 1 minute,higher = The \attPhys{} penalty is increased by 2 \forEvery{}.,resist = Vitality, noBlock = 1, effect =Necrotic energy seeps up from the ground\comma{} into the target\comma{} causing them to undergo a severe physical degradation\comma{} reducing their \attPhys{} score by 4 for the duration of the spell. 
 
 This effect is halved on a successful Resist.}

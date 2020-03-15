@@ -13,7 +13,8 @@
 \define@key{inventory}{purchaseCost}{\def\purchaseCost{#1}}
 \define@key{inventory}{hasCost}{\def\hasCost{#1}}
 \define@key{inventory}{sellValue}{\def\sellValue{#1}}
-
+\define@key{inventory}{isOwned}{\def\isOwned{#1}}
+\define@key{inventory}{owners}{\def\owners{#1}}
 
 
 \define@key{character}{charname}{\def\name{#1}}
@@ -62,6 +63,50 @@
 
 }
 
+
+\newcommand\GMinventory[1]
+{
+	\begingroup
+
+		\setkeys{inventory}{name = none, class = none, acquired = none, hasAcquired = 0, description = none, trueDescription = none, hasTrueDescription = 0, purchaseCost = 0, hasCost = 0, sellValue = 0,amount = 0,isOwned = 0, owners = None}
+	
+		\setkeys{inventory}{#1}
+		
+		
+		\subsubsection{\name}
+		
+		\begin{center}
+			\begin{tabular}{r p{\w cm}}
+			\if\hasAcquired1
+				\lineEntry{Acquired:}{\acquired}
+			\fi
+			\if\hasCost1
+				\lineEntry{Cost:}{\purchaseCost}
+			\fi
+			\lineEntry{Sell Value:}{\sellValue}
+			\if\isOwned1
+				\lineEntry{Owners:}{\parbox[t]{4cm}{\owners}}
+			\fi
+			\if\isOwned0
+				\lineEntry{Owners:}{No-one currently owns this item}
+			\fi
+				
+			\end{tabular}
+		\end{center}
+		
+		\description
+		
+		\if\hasTrueDescription1
+		~
+		
+			\textbf{Hidden Description}
+			
+			\trueDescription
+		\fi
+	\endgroup
+
+}
+
 \newcommand\character[7]
 {
 	
@@ -84,6 +129,15 @@
 	\section{Inventory}
 	
 	#7
+
+
+}
+\newcommand\GM[1]
+{
+	
+	\section{Inventory}
+	
+	#1
 
 
 }

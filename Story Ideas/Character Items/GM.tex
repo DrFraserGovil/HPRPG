@@ -1,11 +1,526 @@
-\documentclass[9pt,twocolumn]{article}
+\documentclass[8pt,twocolumn]{article}
 
 \usepackage{../../HPpack}
 \input{definitions}
 
 \begin{document}
 
-	%%CharBegin\character{Game Master}{God}{GM (20)}{The most beuatiful creature alive.}{Noone knows where the GM came from. Some say that he was always there\comma{} others say that he never was.}{Kind yet cruel\comma{} firm yet fair.}{}
+	%%CharBegin\GM{
+ \subsection{Books}
+
+\GMinventory{
+	name = Book2, 
+	amount = 0, 
+	class = Books, 
+	hasAcquired = 1, 
+	acquired = Taken from Hogwarts Library, 
+	description = ?, 
+	hasCost = 1, 
+	purchaseCost = 0, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Helena: 1\\
+}
+
+\GMinventory{
+	name = Cool Cantrips to Make Your Crazy, 
+	amount = 0, 
+	class = Books, 
+	hasAcquired = 1, 
+	acquired = Taken from Hogwarts Library, 
+	description = A book containing the Beginner\minus{}level Psionics spells, 
+	hasCost = 1, 
+	purchaseCost = 0, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Nikc: 1\\
+}
+
+\GMinventory{
+	name = Cures\comma{} Cantrips and Coughs, 
+	amount = 0, 
+	class = Books, 
+	hasAcquired = 1, 
+	acquired = Taken from Hogwarts Library, 
+	description = A book containing the Beginner\minus{}level healing spells, 
+	hasCost = 1, 
+	purchaseCost = 0, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Luke: 1\\
+}
+
+\GMinventory{
+	name = The Dream Oracle, 
+	amount = 0, 
+	class = Books, 
+	hasAcquired = 1, 
+	acquired = Taken from Hogwarts Library, 
+	description = A book containing the Beginner\minus{}level Temporal Spells, 
+	hasCost = 1, 
+	purchaseCost = 0, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Cerise: 1\\
+}
+
+ \subsection{Clothing}
+
+\GMinventory{
+	name = Gloves of Muromets, 
+	amount = 0, 
+	class = Clothing, 
+	hasAcquired = 1, 
+	acquired = Awarded for compleing the Hogwarts Hunt, 
+	description = A pair of iridescent black gloves\comma{} seemingly constructed out of a kind of pearlescent leather you have never seen before. These gloves belonged to the Russian hero\minus{}wizard Ilya Muromets\comma{} who fashioned them from the hide of a vicious monster he slew in single combat. 
+
+Passed down through generations of his family\comma{} they were eventually offered as a prize for students to win if they succeeded in the {\it Hogwarts Hunt}\comma{} which was run by Muromet\apos{}s great\minus{}great\minus{}great\minus{}great\minus{}great\minus{}great granddaughter\comma{} Anna Bogoliubov. 
+
+When you place these gloves on your hands\comma{} they magically resize themselves to fit snugly and infuse you with a magical energy. 
+
+These gloves give you advantage on all grappling checks as well as a +2 bonus on accuracy checks when using ranged weapons., 
+	hasTrueDescription = 1, 
+	trueDescription = These are not the true Gloves of Muromets \minus{} merely a very fine replica. This can be revealed on a DV 18 Investigation check of the gloves., 
+	hasCost = 1, 
+	purchaseCost = Reward, 
+	sellValue = \galleon{20}, 
+	isOwned = 1, 
+	owners = Luke: 1\\
+}
+
+\GMinventory{
+	name = Hat of Buckets, 
+	amount = 0, 
+	class = Clothing, 
+	hasAcquired = 1, 
+	acquired = Given by Lomp as a gift, 
+	description = A broken bucket with the bottom missing\comma{} and some eyeholes drilled into the side. 
+
+The Hat of Buckets was invented by Nikc when he put a broken bucket on his head as a divergence for Lomp\comma{} the somewhate dim proprietor of the Junk Shop. Lomp was so impressed with the invention\comma{} he purchased the idea from Nikc\comma{} and gifted him the first prototype. 
+
+This bucket provides an additional +1 to the Block statistic (though not from attacks from above....), 
+	hasCost = 1, 
+	purchaseCost = \minus{}\knut{5}, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Nikc: 1\\
+}
+
+\GMinventory{
+	name = Hogwarts Robes, 
+	amount = 0, 
+	class = Clothing, 
+	hasAcquired = 1, 
+	acquired = Purchased prior to arriving at Hogwarts, 
+	description = A simple set of black wizards robes with a colourful lining reflecting the Hogwarts House that you belong to. These robes are generally regarded as old fashioned and a bit odd to wear outside of school environs\comma{} but not totally unusual. 
+
+These robes give you a +1 to all casting checks whilst you are wearing them., 
+	hasCost = 1, 
+	purchaseCost = \sickle{10}, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Nikc: 1\\Helena: 1\\Cerise: 1\\Luke: 1\\
+}
+
+\GMinventory{
+	name = Shield Hat, 
+	amount = 0, 
+	class = Clothing, 
+	hasAcquired = 1, 
+	acquired = Purchased from Weasley\apos{}s Wizarding Wheezes, 
+	description = First developed by the Weasley twins as a prank item prior to the Second Wizarding War\comma{} the Ministry took a great interest in the Shield Hat as a defensive item. As a result\comma{} an entirely new line of (mostly) serious products were introduced. 
+
+Outwardly\comma{} the shield hat appears to be a normal pointed wizard\apos{}s hat\comma{} though a peek inside the brim reveals some glowing enchanted runes. Once per day\comma{} the wearer can mentally trigger a the hat to produce a shield which projects outwards for a few moments\comma{} before quickly fading. 
+
+This shield is equivalent to the {\it Force Field} spell cast at a third level. During the turn cycle in which the field is activated\comma{} you have an impenetrable field which stops all spells and physical attacks from passing through it. 
+
+This shield has a health of 40HP. If any attack would cause the shield to drop to 0HP\comma{} the shield is dispelled and half the remaining damage is dealt to the wearer., 
+	hasCost = 1, 
+	purchaseCost = \galleon{0.5}, 
+	sellValue = \galleon{1}, 
+	isOwned = 1, 
+	owners = Nikc: 1\\Helena: 1\\Cerise: 1\\Luke: 1\\
+}
+
+ \subsection{Items}
+
+\GMinventory{
+	name = Crystal Ball, 
+	amount = 0, 
+	class = Items, 
+	hasAcquired = 1, 
+	acquired = Stolen from the Divination Tower, 
+	description = A large ball of crystal which appears clouded at times\comma{} and perfeclty clear at other times. With the appropriate training and magical spells\comma{} you can use this to peer into the past\comma{} present or future., 
+	hasCost = 1, 
+	purchaseCost = Stolen, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Luke: 1\\
+}
+
+\GMinventory{
+	name = Decoy Detonators, 
+	amount = 0, 
+	class = Items, 
+	hasAcquired = 1, 
+	acquired = Purchased from Weasley\apos{}s Wizarding Wheezes, 
+	description = In a tribute to their father\comma{} the Weasley\apos{}s designed the Decoy Detonator to look like a slightly oversized rubber duck\comma{} though with a slightly random assortment of legs\comma{} wheels\comma{} caterpillar treads\comma{} and octopus tentacles stuck to the bottom. 
+
+To activate a decoy detonator\comma{} crank the small handle on the back a couple of times\comma{} and release it. The detonator will scamper away on its mishmash of legs for a distance of up to 2d10 metres\comma{} before exploding with a loud flash. 
+
+This explosion is not violent enough to do physical damage to all but the weakest of beings\comma{} but it provides an excellent distraction and diversion., 
+	hasCost = 1, 
+	purchaseCost = Free, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Cerise: 3\\
+}
+
+\GMinventory{
+	name = Ministry Badge, 
+	amount = 0, 
+	class = Items, 
+	hasAcquired = 1, 
+	acquired = Given by Galen Rex, 
+	description = A very official looking bade\comma{} inscribed with the ministry insignia. The badge itself fits comfortably into the palm of your hand., 
+	hasTrueDescription = 1, 
+	trueDescription = This badge doubles as a tracking and recording device\comma{} relaying all information back to the ministry., 
+	hasCost = 1, 
+	purchaseCost = N/A, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Cerise: 1\\
+}
+
+\GMinventory{
+	name = Moobox of Teleportation, 
+	amount = 0, 
+	class = Items, 
+	hasAcquired = 1, 
+	acquired = Given by Galen Rex, 
+	description = An enchanted portkey given to you by the ministry. The outward appearance is of a {\it Moo box}\comma{} a muggle toy in the shape of a cylinder which produces a loud mooing sound when tipped. This one\comma{} however\comma{} appears to have been warped and broken\comma{} because the noise it makes bears very little resemblence to a real cow. 
+
+Upon tipping it up twice in rapid successiong\comma{} the portkey takes you to Hogsmeade. 
+
+This object is single\minus{}use., 
+	hasCost = 1, 
+	purchaseCost = N/A, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Helena: 1\\
+}
+
+\GMinventory{
+	name = Peruvian Instant Darkness Powder, 
+	amount = 0, 
+	class = Items, 
+	hasAcquired = 1, 
+	acquired = Purchased from Weasley\apos{}s Wizarding Wheezes, 
+	description = A small pouch containing an almost impossibly black\comma{} gritty powder. 
+
+When tossed into the air\comma{} the powder expands an fills a sphere up to 3 metres in radius. The powder is so pervasively black that it prevents all light from passing through it. All sight lines which pass through the afflicted area automatically fail., 
+	hasCost = 1, 
+	purchaseCost = \sickle{2}, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Helena: 4\\
+}
+
+\GMinventory{
+	name = School Satchel, 
+	amount = 0, 
+	class = Items, 
+	hasAcquired = 1, 
+	acquired = Purchased prior to arriving at Hogwarts, 
+	description = A small over\minus{}the\minus{}shoulder bag used by Hogwarts Students. Enough room to contain up to two large textbooks and a number of small items., 
+	hasCost = 1, 
+	purchaseCost = \sickle{5}, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Nikc: 1\\Helena: 1\\Cerise: 1\\Luke: 1\\
+}
+
+\GMinventory{
+	name = Tarnished Necklace, 
+	amount = 0, 
+	class = Items, 
+	hasAcquired = 1, 
+	acquired = Found in the Junk Shop, 
+	description = A stained and grubby metal chain\comma{} with what looks to be (beneath the grime) a gemstone of some kind. 
+
+A magical investigation led you to understand that this was a very valuable bit of jewellery\comma{} though not in the best of conditions. The gemstone in the centre is a very large\comma{} very pure sapphire., 
+	hasCost = 1, 
+	purchaseCost = \knut{5}, 
+	sellValue = \galleon{7}, 
+	isOwned = 1, 
+	owners = Cerise: 1\\
+}
+
+ \subsection{Miscellaneous}
+
+\GMinventory{
+	name = Icon: Defender\apos{}s Coin, 
+	amount = 0, 
+	class = Miscellaneous, 
+	description = A token infused with energy from the Recuperation school of magic. When on your person\comma{} it has one of the following effects:
+\begin{itemize}
+\boldItem{Lay on Hands}{By placing your hands onto the chest of a wounded individual\comma{} you may restore 1d8 HP to them. This increases to 2d8 at 8th level\comma{} 3d8 at 14th level and 4d8 at 18th level. This takes a minor action\comma{} and you cannot use it on the same individual again until you have completed a Short Rest.}
+\boldItem{Residual Ward}{You have a permanent warded shield around you. This shield has HP equal to twice your character level + your Intelligence modifier\comma{} and acts like the {\it Force Shield} spell. Whenever you cast a spell from the Recuperation school\comma{} restore HP to the shield equal to half the FP cost of the spell\comma{} this works even if the shield has reached 0HP and has failed – the field immediately restores itself. The shield regains full strength on completing a long rest.}
+\boldItem{Stabilising Field}{Whenever you fall below 0HP\comma{} you instead take the {\it Critical But Stable} condition. You regenerate HP at a rate of 1 per turn (max 0) until this condition is removed.}
+\boldItem{Ward Reinforce}{Your wards regenerate strength at a rate of 2HP per turn. They cannot exceed their original strength using this effect.}
+\end{itemize}
+When casting a spell from the recuperation school\comma{} you may channel a part of the magical energy into the stone\comma{} altering its effects. This costs an additional FP equal to your character level. 
+
+You may not have the effect of more than one magical Icon active at any one point. If you possess multiple such icons\comma{} you can decide which one is active. You can only change your choice after a long rest., 
+	hasCost = 1, 
+	purchaseCost = \galleon{10}, 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
+\GMinventory{
+	name = Icon: Duellist\apos{}s Bauble, 
+	amount = 0, 
+	class = Miscellaneous, 
+	description = A token infused with energy from the Malediction school of magic. When on your person\comma{} it has one of the following effects:
+\begin{itemize}
+\boldItem{Ally Awareness}{When you cast a spell from the Malediction school which has an {\it Area of Effect}\comma{} you may nominate a number of allies equal to your \attFin{} modifier (min 1) to automatically succeed on their Resist check.}
+\end{itemize}
+When casting a spell from the Malediction school\comma{} you may channel a part of the magical energy into the stone\comma{} altering its effects. This costs an additional FP equal to your character level. 
+
+You may not have the effect of more than one magical Icon active at any one point. If you possess multiple such icons\comma{} you can decide which one is active. You can only change your choice after a long rest., 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
+\GMinventory{
+	name = Icon: Inscrutable Talisman, 
+	amount = 0, 
+	class = Miscellaneous, 
+	description = , 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
+\GMinventory{
+	name = Icon: Shifting Feather, 
+	amount = 0, 
+	class = Miscellaneous, 
+	description = , 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
+\GMinventory{
+	name = Icon: Sorcerous Token, 
+	amount = 0, 
+	class = Miscellaneous, 
+	description = , 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
+\GMinventory{
+	name = Icon: Transmutation Stone, 
+	amount = 0, 
+	class = Miscellaneous, 
+	description = A token infused with energy from the Transfiguration school of magic. When on your person\comma{} it has one of the following effects:
+\begin{itemize}
+\boldItem{Minor Transmutation}{By tapping the stone against a simple object no more than 10kg in mass\comma{} made entirely of wood\comma{} stone\comma{} iron\comma{} copper or silver you may transform it into another of those materials. This lasts for 10 minutes\comma{} before the spell reverts.}
+\boldItem{Purify}{By dropping the stone into a vessel of water\comma{} or rubbing against some food\comma{} you may instantly purify it\comma{} removing any poison\comma{} mould or other contaminants.}
+\boldItem{Dimensional Anchor}{The stone anchors summoned objects to this reality for longer. The effective duration of Conjuration spells is increased by 50\%}
+\boldItem{Hidden Trickster}{You may cast the {\it Prank} spell as a wandless\comma{} silent action. }
+\end{itemize}
+When casting a spell from the transfiguration school\comma{} you may channel a part of the magical energy into the stone\comma{} altering its effects. This costs an additional FP equal to your character level. 
+
+You may not have the effect of more than one magical Icon active at any one point. If you possess multiple such icons\comma{} you can decide which one is active. You can only change your choice after a long rest., 
+	hasCost = 1, 
+	purchaseCost = \galleon{10}, 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
+\GMinventory{
+	name = Icon: Voodoo Doll, 
+	amount = 0, 
+	class = Miscellaneous, 
+	description = A token infused with energy associated with the Dark Arts. When on your person\comma{} it has one of the following effects:
+\begin{itemize}
+\boldItem{Blood Trace}{If you can gather a sample of a being\apos{}s blood\comma{} you may perform a 1 minute ritual to locate that being. For the next hour\comma{} you are aware of the target\apos{}s location\comma{} anywhere in the world.}
+\boldItem{Necrotic Resistance}{You are considered Resistant to Necrotic Damage.}
+\boldItem{Shadowstep}{Whilst you are in dim light or less\comma{} you take advantage on all stealth checks.}
+\boldItem{Life Siphon}{When you kill a being with a spell from the Dark Arts school\comma{} you siphon off a portion of their life\minus{}energy into your own. Restore HP equal to three times the level of the spell used.}
+ \end{itemize}
+When casting a spell from the Dark Arts school\comma{} you may channel a part of the magical energy into the stone\comma{} altering its effects. This costs an additional FP equal to your character level. 
+
+You may not have the effect of more than one magical Icon active at any one point. If you possess multiple such icons\comma{} you can decide which one is active. You can only change your choice after a long rest., 
+	hasCost = 1, 
+	purchaseCost = \galleon{13}, 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
+\GMinventory{
+	name = Mysterious Egg, 
+	amount = 0, 
+	class = Miscellaneous, 
+	description = A pulsing \comma{} off\minus{}white egg\comma{} seemingly covered in a grotesque mucous\minus{}like substance\comma{} approximately the size of a large rugby ball. Inside you can see the shadow of a fist\minus{}sized spider curled up\comma{} occassionally shifting and moving around., 
+	hasTrueDescription = 1, 
+	trueDescription = This is the egg of an Acromantula. It has around 3 days left until it hatches., 
+	hasCost = 1, 
+	purchaseCost = Found, 
+	sellValue = \galleon{8}, 
+	isOwned = 0, 
+	owners = 
+}
+
+ \subsection{Potions}
+
+\GMinventory{
+	name = Wiggenweld Potion, 
+	amount = 0, 
+	class = Potions, 
+	description = A potion which heals 5 hit points when consumed., 
+	hasCost = 1, 
+	purchaseCost = N/A, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Luke: 3\\
+}
+
+ \subsection{Tools}
+
+\GMinventory{
+	name = Alchemy Gear, 
+	amount = 0, 
+	class = Tools, 
+	hasAcquired = 1, 
+	acquired = Purchased prior to arriving at Hogwarts, 
+	description = A set of alchemy tools necessary for mixing potions\comma{} including a collapsible cauldron., 
+	hasCost = 1, 
+	purchaseCost = \sickle{10}, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Luke: 1\\
+}
+
+\GMinventory{
+	name = Forgery Tools, 
+	amount = 0, 
+	class = Tools, 
+	hasAcquired = 1, 
+	acquired = Purchased prior to arriving at Hogwarts, 
+	description = A calligraphy set\comma{} and other widgets and devices necessary to produce authentic\minus{}looking forged documents., 
+	hasCost = 1, 
+	purchaseCost = \sickle{10}, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Cerise: 1\\
+}
+
+ \subsection{Weapons}
+
+\GMinventory{
+	name = Apple and Unicorn Tail Hair Wand, 
+	amount = 0, 
+	class = Weapons, 
+	hasAcquired = 1, 
+	acquired = Purchased prior to arriving at Hogwarts, 
+	description = A golden orange wand\comma{} 10 inches long and very supple. Requires proficiency with Wands in order to use. 
+
+This wand gives +1 to casting and accuracy checks for both Healing and Warding spells\comma{} and reduces the FP cost of spells from the Temporal and Telepathy disicplines by 1., 
+	hasCost = 1, 
+	purchaseCost = \galleon{5}, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Cerise: 1\\Luke: 1\\
+}
+
+\GMinventory{
+	name = Blunted Silver Greatsword, 
+	amount = 0, 
+	class = Weapons, 
+	hasAcquired = 1, 
+	acquired = Found in the Junk Shop, 
+	description = An enormous silver weapon\comma{} approximately 6 feet (2 metres) in length. This is an old and poorly kept blade\comma{} and silver is a very soft metal \minus{} rendering it in less than perfect condition. 
+
+This weapon does 2d6 \minus{}1 slashing damage in its current condition. 
+
+Whenever you perform a strike with this weapon\comma{} roll a d10. On a 1\comma{} this weapon becomes dented and damaged\comma{} taking an additional 1\minus{}point penalty to its damage. This penalty remains until the sword is repaired., 
+	hasCost = 1, 
+	purchaseCost = \knut{5}, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Luke: 1\\
+}
+
+\GMinventory{
+	name = Dagger, 
+	amount = 0, 
+	class = Weapons, 
+	description = A small knife with a wicked edge. Deals 1d4 piercing damage., 
+	hasCost = 1, 
+	purchaseCost = Found, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Luke: 1\\
+}
+
+\GMinventory{
+	name = Hazel and Veela Hair Wand, 
+	amount = 0, 
+	class = Weapons, 
+	hasAcquired = 1, 
+	acquired = Purchased prior to arriving at Hogwarts, 
+	description = A dark brown wand\comma{} 9 inches\comma{} inflexible\comma{} but with many knots and whorls decorating its surface. Requires proficiency with Wands in order to use. 
+
+This wand gives +1 to casting and accuracy checks for both Bewitchment and Psionics spells\comma{} and reduces the FP cost of those same spells by 1FP., 
+	hasCost = 1, 
+	purchaseCost = \galleon{5}, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Nikc: 1\\
+}
+
+\GMinventory{
+	name = Helena\apos{}s Wand, 
+	amount = 0, 
+	class = Weapons, 
+	hasAcquired = 1, 
+	acquired = Purchased prior to arriving at Hogwarts, 
+	description = ?, 
+	hasCost = 1, 
+	purchaseCost = \galleon{5}, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Helena: 1\\
+}
+
+\GMinventory{
+	name = Stone Battleaxe, 
+	amount = 0, 
+	class = Weapons, 
+	hasAcquired = 1, 
+	acquired = Taken from a stone statue at Hogwarts, 
+	description = A stone facimile of a two\minus{}handed battleaxe\comma{} which you prised from the hands of one of the many statues found around the Hogwarts castle. Though only a replica\comma{} it functions perfectly well as a weapon\comma{} though maybe a little on the heavy side. 
+
+This weapon deals 1d12 slashing damage. 
+
+However\comma{} as a stone weapon\comma{} it is particularly vulnerable to shattering. Every time a strike is made with this weapon\comma{} roll a d20. On a natural 1\comma{} this weapon shatters and becomes unusuable., 
+	hasCost = 1, 
+	purchaseCost = Found, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Luke: 1\\
+}
+}
 %%CharEnd
 
 
