@@ -22,6 +22,7 @@ classdef Beast
         POW
         EVL
         
+        Expertise
         Skills
         hasSkills
         Block
@@ -31,6 +32,10 @@ classdef Beast
         Comprehend
         hasComprehend
         NeedsLine
+        ConditionImmune
+        hasConditionImmune
+        Senses
+        hasSenses
         Immune
         hasImmune
         Resistant
@@ -43,6 +48,8 @@ classdef Beast
         hasAbilitiesBlock
         Actions
         hasActions
+        hasLair
+        LairActions
 
         SizeName
         Size
@@ -116,6 +123,16 @@ classdef Beast
             obj.Block = tableLine.Block(1);
             obj.Dodge = tableLine.Dodge(1);
             
+            obj.ConditionImmune = tableLine.ConditionImmune{1};
+            obj.hasConditionImmune = false;
+            if ~isempty(obj.ConditionImmune)
+                obj.hasConditionImmune = true;
+            end
+            obj.Senses = tableLine.Senses{1};
+            obj.hasSenses = false;
+            if ~isempty(obj.Senses)
+                obj.hasSenses = true;
+            end
             obj.Immune = tableLine.Immune{1};
             obj.hasImmune = false;
             if ~isempty(obj.Immune)
@@ -144,6 +161,13 @@ classdef Beast
                 obj.hasActions= true;
             end
             obj.Habitat = tableLine.Habitat{1};
+            
+            
+            obj.LairActions = tableLine.LairAbilities{1};
+            obj.hasLair = false;
+            if ~isempty(obj.LairActions)
+                obj.hasLair = true;
+            end
             
             obj.SizeName = tableLine.SizeName{1};
             obj.Size = tableLine.SizeValue{1};
@@ -205,10 +229,10 @@ classdef Beast
                 text = text + numTitles(i) + "="+num2str(numArray(i)) + ", ";
             end
             
-            hasTitles = ["hasFP","hasImmune","hasResistance","hasSusceptible","hasAbilities","hasActions","hasSkills","hasImage","hasLanguages","hasComprehend","hasHabitat"];
-            hasTriggers = [obj.hasFP, obj.hasImmune,obj.hasResistant, obj.hasSusceptible, obj.hasAbilities, obj.hasActions,obj.hasSkills,obj.hasImage,obj.hasLanguages,obj.hasComprehend,obj.hasHabitat];
-            includeTitles = ["fp", "immune", "resistance", "susceptible","abilities","actions","skills","image","language","comprehend","habitat"];
-            includeVals = [num2str(obj.FP), string(obj.Immune), string(obj.Resistant), string(obj.Susceptible), string(obj.Abilities), string(obj.Actions), string(obj.Skills),string(obj.Image),string(obj.Languages),string(obj.Comprehend),string(obj.Habitat)];
+            hasTitles = ["hasFP","hasImmune","hasResistance","hasSusceptible","hasAbilities","hasActions","hasSkills","hasImage","hasLanguages","hasComprehend","hasHabitat","hasLair","hasConditionImmune","hasSenses"];
+            hasTriggers = [obj.hasFP, obj.hasImmune,obj.hasResistant, obj.hasSusceptible, obj.hasAbilities, obj.hasActions,obj.hasSkills,obj.hasImage,obj.hasLanguages,obj.hasComprehend,obj.hasHabitat,obj.hasLair,obj.hasConditionImmune, obj.hasSenses];
+            includeTitles = ["fp", "immune", "resistance", "susceptible","abilities","actions","skills","image","language","comprehend","habitat","lairActions","conditionImmune", "senses"];
+            includeVals = [num2str(obj.FP), string(obj.Immune), string(obj.Resistant), string(obj.Susceptible), string(obj.Abilities), string(obj.Actions), string(obj.Skills),string(obj.Image),string(obj.Languages),string(obj.Comprehend),string(obj.Habitat),string(obj.LairActions),string(obj.ConditionImmune), string(obj.Senses)];
             
             for i = 1:length(hasTitles)
                if hasTriggers(i) 

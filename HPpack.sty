@@ -188,7 +188,14 @@ Gain an additional #1 #2 damage \forEvery{}.
 \def\negTwo{-2}
 
 %% Spell stuff
-
+\newcommand\boldItem[2]
+{
+	\item {\bf #1}: #2
+}
+\newcommand\emphItem[2]
+{
+	\item \textit{\textbf{#1}}: #2
+}
 % Custom list environment for inside spells
 \newlist{spellitemize}{itemize}{2}
 \setlist[spellitemize,1]{label=\textbullet,leftmargin=2 ex}
@@ -503,9 +510,28 @@ Gain an additional #1 #2 damage \forEvery{}.
 \define@key{beast}{needsPage}{\def\needsPage{#1}}
 \define@key{beast}{rating}{\def\rating{#1}}
 \define@key{beast}{hasHabitat}{\def\hasHabitat{#1}}
+\define@key{beast}{hasLair}{\def\hasLair{#1}}
+\define@key{beast}{lairActions}{\def\lairActions{#1}}
+\define@key{beast}{hasSenses}{\def\hasSenses{#1}}
+\define@key{beast}{senses}{\def\senses{#1}}
+\define@key{beast}{hasConditionImmune}{\def\hasConditionImmune{#1}}
+\define@key{beast}{conditionImmune}{\def\conditionImmune{#1}}
 %%keyEnd    
 \makeatother
 
+\def\defaultSetter
+{
+	\setkeys{beast}{name = none, species = None, mind = none, category = none, summary = none, hp = 0, fp = 0, speed = 0m, fit =0, prs = 0, spr = 0, chr = 0, int = 0, pcp = 0, pow = 0, evl = 0, block = 0, dodge = 0, hasImmune = 0, immune = none, hasResistance = 0, resistance = none, hasSusceptible = 0, susceptible = none, hasAbilities =0, abilities = None, hasActions = 0, actions = None, habitat = Nowhere, sizeName = Height, size = 0, description = No description,hasFP = 0,abilityBlock=0,skills=none,hasSkills=0,image = None,hasImage = 0,imPosition=0,needsLine = 1, hasLanguages = 0, language = none,hasComprehend = 0, comprehend = none,imageHeight = 0.5,habitat = nowhere,needsPage = 0,hasHabitat = 0,hasLair = 0,rating = Unset, hasSenses = 0, hasConditionImmune = 0}
+}
+
+\newcommand\timeLimit[2]
+{
+{\it (#1/#2)}
+}
+\newcommand\recharge[2]
+{
+{\it(#1/recharge: #2)}
+}
 
 \newcommand\titleBlock
 {
@@ -535,42 +561,42 @@ Gain an additional #1 #2 damage \forEvery{}.
 	\lineCross{#1}
 }
 
+\newcommand\dEmph[1]
+{
+	\textbf{\textit{#1}}
+}
+\newcommand\ifAbility[3]
+{
+	\if#11
+		\dEmph{#2:}{#3}
+	\fi
+}
+
 \newcommand\abilitiesBlock[1]
 {
-			{
-			\setlength\parskip{3 pt}
-			
-			\if\skillsMode1
-				\textbf{\textit{Proficiency: }} \skills
-			\fi
-			
-			\if\immuneMode1
-				\textbf{\textit{Immunity: }} \immune
-			\fi 
-			
-			\if\resistanceMode1
-				\textbf{\textit{Resistance:}} \resistance
-			\fi
-			
-			\if\susceptibleMode1
-				\textbf{\textit{Susceptible:}}	\susceptible
-			\fi
-			
-			\if\languageMode1
-				\textbf{\textit{Speaks:}} \languages
-			\fi
-			
-			\if\comprehendMode1
-				\textbf{\textit{Understands:}} \comprehend
-			\fi
-			\if\needsLine1
-			
-				\lineCross{#1}
-			\fi
-			
-			\abilities
-			
-			}
+	\setlength\parskip{3 pt}
+		
+	\ifAbility{\skillsMode}{Expertise}{\skills}
+	
+	\ifAbility{\hasSenses}{Senses}{\senses}
+	
+	\ifAbility{\hasConditionImmune}{Condition Immunity}{\conditionImmune}
+	
+	\ifAbility{\immuneMode}{Immunity}{\immune}
+	
+	\ifAbility{\resistanceMode}{Resistance}{\resistance}
+	
+	\ifAbility{\susceptibleMode}{Susceptible}{\susceptible}
+	
+	\ifAbility{\languageMode}{Speaks}{\languages}
+	
+	\ifAbility{\comprehendMode}{Understands}{\comprehend}
+	
+	\if\needsLine1
+		\lineCross{#1}
+	\fi
+	
+	\abilities
 
 }
 
@@ -668,6 +694,15 @@ Gain an additional #1 #2 damage \forEvery{}.
 			 }
 		\fi
 		
+		\if\hasLair1
+
+			\subsection*{\color{titlered}{Lair Abilities}}
+			 {
+			\setlength\parskip{3 pt}
+			 \lairActions
+			 }
+		\fi 
+		
 		\vspace{1.4 ex}
 		
 		\if#12
@@ -681,7 +716,8 @@ Gain an additional #1 #2 damage \forEvery{}.
 \newcommand{\beast}[2]
 {
 	\begingroup
-	\setkeys{beast}{name = none, species = None, mind = none, category = none, summary = none, hp = 0, fp = 0, speed = 0m, fit =0, prs = 0, spr = 0, chr = 0, int = 0, pcp = 0, pow = 0, evl = 0, block = 0, dodge = 0, hasImmune = 0, immune = none, hasResistance = 0, resistance = none, hasSusceptible = 0, susceptible = none, hasAbilities =0, abilities = None, hasActions = 0, actions = None, habitat = Nowhere, sizeName = Height, size = 0, description = No description,hasFP = 0,abilityBlock=0,skills=none,hasSkills=0,image = None,hasImage = 0,imPosition=0,needsLine = 1, hasLanguages = 0, language = none,hasComprehend = 0, comprehend = none,imageHeight = 0.5,habitat = nowhere,needsPage = 0,hasHabitat = 0}
+	
+	\defaultSetter
 	
 	\setkeys{beast}{#1}
 	
@@ -747,8 +783,7 @@ Gain an additional #1 #2 damage \forEvery{}.
 \newcommand\boxOnlyBeast[1]
 {
 	\begingroup
-	\setkeys{beast}{name = none, species = None, mind = none, category = none, summary = none, hp = 0, fp = 0, speed = 0m, fit =0, prs = 0, spr = 0, chr = 0, int = 0, pcp = 0, pow = 0, evl = 0, block = 0, dodge = 0, hasImmune = 0, immune = none, hasResistance = 0, resistance = none, hasSusceptible = 0, susceptible = none, hasAbilities =0, abilities = None, hasActions = 0, actions = None, habitat = Nowhere, sizeName = , size = , description = No description,hasFP = 0,abilityBlock=0,skills=none,hasSkills=0,image = None,hasImage = 0,imPosition=0,needsLine = 1, hasLanguages = 0, language = none,hasComprehend = 0, comprehend = none,imageHeight = 0.5,habitat = nowhere,needsPage = 0,hasHabitat = 0, rating = I}
-	
+	\defaultSetter
 	\setkeys{beast}{#1}
 	
 	\small 
@@ -762,8 +797,7 @@ Gain an additional #1 #2 damage \forEvery{}.
 \newcommand{\fullPageBeast}[2]
 {
 	\begingroup
-	\setkeys{beast}{name = none, species = None, mind = none, category = none, summary = none, hp = 0, fp = 0, speed = 0m, fit =0, prs = 0, spr = 0, chr = 0, int = 0, pcp = 0, pow = 0, evl = 0, block = 0, dodge = 0, hasImmune = 0, immune = none, hasResistance = 0, resistance = none, hasSusceptible = 0, susceptible = none, hasAbilities =0, abilities = None, hasActions = 0, actions = None, habitat = Nowhere, sizeName = Height, size = 0, description = No description,hasFP = 0,abilityBlock=0,skills=none,hasSkills=0,image = None,hasImage = 0,imPosition=0,needsLine = 1, hasLanguages = 0, language = none,hasComprehend = 0, comprehend = none,imageHeight = 0.5,habitat = nowhere,needsPage = 0,hasHabitat = 0}
-	
+	\defaultSetter
 	\setkeys{beast}{#1}
 	
 	\small 

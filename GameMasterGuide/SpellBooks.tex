@@ -64,6 +64,7 @@ Note\comma{} however\comma{} that Gamp\apos{}s Laws of Elemental Transfiguration
 }
  \spellBook{Further Elemental Studies}{Novice-level Elemental}{
 \spell{name = Burst of Frost, school = Charms, discipline = Elemental, type = Instant, level =Novice, range =Close, incant = isti, noDur = 1, higher = Gain an additional 1d10 Cold damage for every additional spell level dedicated to casting this spell.,noResist =1, negation = Blockable  and Dodgeable,effect =The air around the tip of your wand freezes\comma{} condensing the surrounding water vapour into a tiny globe of ice\comma{} which launches towards your target. If it hits\comma{} the globe explodes doing 2d10 Cold damage.}
+\spell{name = Charge Region, school = Charms, discipline = Elemental, type = Ward, level =Novice, range =Wandtip, incant = rarnus, noDur = 1, higher = \additional{1d10}{Electric},resist = Observation, noBlock = 1, effect =Imbue a non\minus{}metallic object up to 3m in size with an enourmous electric charge. The next being to touch the object takes 2d10 electric damage\comma{} halved on a successful Resisist. Although this spell is classed as a `ward'\comma{} the threat is non\minus{}magical in nature after the spell has been cast. The charge\minus{}buildup therefore does not register to Detect Magic\minus{}style investigation.}
 \spell{name = Dancing Bolt, school = Charms, discipline = Elemental, type = Instant, level =Novice, range =Close, incant = arka gola, noDur = 1, higher = Gain an additional 2 bursts \forEvery{}.,noResist =1, negation = Blockable  and Dodgeable,effect =2 bursts of fire spiral and dance in towards your target\comma{} each dealing 1d10 fire damage on contact (rolling accuracy for each).}
 \spell{name = Elemental Weapon, school = Charms, discipline = Elemental, type = Instant, level =Novice, range =Wandtip, incant = gladio subtantia, noDur = 1, higher = The blade gains an additional 1d8 of the chosen damage type \forEvery,noResist =1, noBlock = 1, effect =The elements are bent to your will\comma{} and a blade of nature\minus{}incarnate solidifies around your wand. You now wield a 1d6 shortsword made out of pure fire\comma{} ice\comma{} lightning or earth\comma{} or light\comma{} held together by your strength of will. In addition to the physical cutting effect\comma{} this blade also imparts an elemental effect of 1d8 fire\comma{} cold\comma{} electric\comma{} bludgeoning or celestial damage respectively. 
  
@@ -85,7 +86,6 @@ You also do not take disadvantage for using items\comma{} attacks or spellcastin
 \spell{name = Animate Earth, school = Charms, discipline = Elemental, type = Instant, level =Adept, range =Close, incant = elus, duration = 1 hour,higher = The animating magic increases in power with each additional spell level: the HP increased by 10 and the damage inflicted increases by 1d6.,noResist =1, negation = Blockable  and Dodgeable,effect =Breath a limited amount of intelligence into a region of earth 1m in radius. This region of earth may transfigure itself into a crude object such as a giant hand\comma{} or a waving club\comma{} and be directed to attack any nearby enemies. The animated earth attacks with an accuracy equal to the spellcasting check\comma{} and does 4d6 bludgeoning damage. 
 
 The earthen construct can absorb 10 points of damage\comma{} before the magic holding it together dissipated.}
-\spell{name = Charge Region, school = Charms, discipline = Elemental, type = Ward, level =Adept, range =Wandtip, incant = rarnus, noDur = 1, higher = \additional{1d10}{Electric},resist = Observation, noBlock = 1, effect =Imbue a non\minus{}metallic object up to 3m in size with an enourmous electric charge. The next being to touch the object takes 3d10 electric damage\comma{} halved on a successful Resisist. Although this spell is classed as a `ward'\comma{} the threat is non\minus{}magical in nature after the spell has been cast. The charge\minus{}buildup therefore does not register to Detect Magic\minus{}style investigation.}
 \spell{name = Cloudmove, school = Charms, discipline = Elemental, type = Ritual (30 minutes), level =Adept, range =Sight, incant = syneffo, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Perform a ritual to attune yourself to the weather and climate around you. By gently altering the wind\comma{} the pressure and the humidity you can subtly alter the weather in a 1km radius. You may push a raincloud out of the way to clear the skies\comma{} summon a light drizzle\comma{} or alleviate the worst of a storm. 
 
 This spell cannot be used for large\minus{}scale weather manipulation \minus{} you can only slightly alter what is already present.}
@@ -102,6 +102,11 @@ On each contact\comma{} target must succeed a Resist check to withdraw\comma{} o
 Each shard does 1d8 piercing damage and 1d8 cold damage.}
 \spell{name = Lightning Bolt, school = Charms, discipline = Elemental, type = Instant, level =Adept, range =Sight, incant = baubilious, noDur = 1, higher = \additional{1d12}{Electrical},resist = Vitality, negation = Blockable  and Dodgeable,effect =Releases a bolt of lightning from the end of your wand. 
 Lightning can initiate fires\comma{} provide electrical current or can be used directly in combat\comma{} where it deals 3d12 electric damage. Targets struck by lightning must succeed in a Resist check\comma{} or be blinded for 2 turns.}
+\spell{name = Stonemeld, school = Charms, discipline = Elemental, type = Ward, level =Adept, range =Self, incant = intermescio, duration = 8 hours,noHigh = 1, noResist =1, noBlock = 1, effect =You step into a stone object or surface large enough to fully contain your body\comma{} melding yourself and all the equipment you carry with the stone for the Duration. Using a movement action\comma{} you step into the stone at a point you can touch. Nothing of your presence remains visible or otherwise detectable by nonmagical means.
+
+While merged with the stone\comma{} you can't see what occurs outside it\comma{} and any Perception checks you make to hear sounds outside it are made with disadvantage. You remain aware of the passage of time and can cast Spells on yourself while merged in the stone. You can use a movement  actionto leave the stone where you entered it\comma{} which ends the spell. You otherwise can't move.
+
+Minor physical damage to the stone doesn't harm you\comma{} but its partial destruction or a change in its shape (to the extent that you no longer fit within it) expels you and deals 6d6 bludgeoning damage to you. The stone's complete destruction (or Transmutation into a different substance) expels you and deals 50 bludgeoning damage to you. If expelled\comma{} you fall prone in an unoccupied space closest to where you first entered.}
 \spell{name = Wind Tunnel, school = Charms, discipline = Elemental, type = Focus, level =Adept, range =Close, incant = vente polus, noDur = 1, noHigh = 1, resist = Strength, noBlock = 1, effect =Summon a powerful blast of wind from your wand\comma{} in a line 20m long and 2m wide. Every being which is in this region at the beginning of each cycle\comma{} or enters it during the course of the cycle\comma{} must Resist\comma{} or be blown to the end of the line. Those that succeed have their movement speed halved when moving towards you. 
 
 Any unsecured objects or are also flung to the end of the line\comma{} and any open flames are extinguished.}
@@ -255,6 +260,7 @@ Beings outside the region can observe the interior\comma{} but attempting to ent
 \spell{name = Induce Anxiety, school = Divination, discipline = Telepathy, type = Instant, level =Beginner, range =Close, incant = falciparum, noDur = 1, higher = This spell does 1d10 damage when cast as a Novice spell\comma{} and subsequently increases by 1d10 \forEvery{},resist = Logic, noBlock = 1, effect =You allow yourself to be caught riflign through the target\apos{}s most embaressing and anxiety\minus{}inducing memories\comma{} and perhaps say something aloud to indicate your awareness. 
 
 The mental stress causes the target to take 1d6 psychic damage (halved on a successful resist).}
+\spell{name = Night Vision, school = Divination, discipline = Telepathy, type = Instant, level =Beginner, range =Wandtip, incant = aspectu, duration = 2 hours,noHigh = 1, noResist =1, noBlock = 1, effect =As you touch your wand to the target\apos{}s head\comma{} their eyes flash an unearthly green. Give the target nightvision for the duration: dim light is as bright as daylight\comma{} and darkness is considered dim.}
 \spell{name = Telepathic Bond, school = Divination, discipline = Telepathy, type = Ritual (2 turns), level =Beginner, range =Wandtip, incant = conanimus, duration = 2 days,higher = The duration of this spell increases by 2 days for every additional level used to cast this spell.,noResist =1, noBlock = 1, effect =Form a mental connection between your mind and the mind of a willing target. You may then use this connection to communicate silently. Target must be within touching distance when the spell is cast\comma{} but the bond has no distance limit after that.}
 }
  \spellBook{Detection is the Best Defense}{Novice-level Telepathy}{
@@ -269,8 +275,8 @@ This spell can detect magical barriers\comma{} but cannot see beyond them.}
 You may then observe the mind of a target individual from a distance. Thought\minus{}detection is not an exact science\comma{} and you will only get a vague shape of their current thoughts and emotions \minus perhaps a quick flash of colour\comma{} a name\comma{} or a feeling of fear. On a successful (passive) Resist\comma{} target becomes aware of the process. 
 
 You may attempt to reshape their surface level thoughts by asking questions\comma{} or showing them objects or images likely to trigger memories or strong feelings.}
+\spell{name = Divine Truth, school = Divination, discipline = Telepathy, type = Focus, level =Novice, range =Close, incant = veritas liberit, noDur = 1, noHigh = 1, resist = Deception, noBlock = 1, effect =Target a sapient being\comma{} on a failed Resist\comma{} the caster is notified by a glowing aura and a soft chime whenever the target makes a statement which they know to be false. The target is unaware of the casting of this spell unless they pass a DV 15 Observation check.}
 \spell{name = Eavesdrop, school = Divination, discipline = Telepathy, type = Focus, level =Novice, range =Close, incant = dumauris, noDur = 1, noHigh = 1, resist = Perception (passive), noBlock = 1, effect =You fortify your own hearing to such an extent that you can listen in on conversations up to 10 meters away. If target Resists\comma{} they become aware of this intrusion.}
-\spell{name = Night Vision, school = Divination, discipline = Telepathy, type = Instant, level =Novice, range =Wandtip, incant = aspectu, duration = 2 hours,noHigh = 1, noResist =1, noBlock = 1, effect =As you touch your wand to the target\apos{}s head\comma{} their eyes flash an unearthly green. Give the target nightvision for the duration: dim light is as bright as daylight\comma{} and darkness is considered dim.}
 \spell{name = Sense Traps, school = Divination, discipline = Telepathy, type = Instant, level =Novice, range =Close, incant = antidolus, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Discover any traps in a 4m radius. If successful\comma{} you may learn the location of the trap\comma{} and the trigger (but not the effect).}
 }
  \spellBook{Communing with Others\comma{} and with Yourself}{Adept-level Telepathy}{
@@ -587,9 +593,9 @@ Care must be taken\comma{} however\comma{} that the chosen word is not too commo
 }
  \spellBook{Basic Hexes for the Busy \& Vexed}{Beginner-level Hex}{
 \spell{name = Knockback, school = Maledictions, discipline = Hex, type = Instant, level =Beginner, range =Close, incant = flipendo, noDur = 1, higher = Each additional casting level dedicated to this spell increases the power of the energy\minus{}wave: do an additional 1d8 force damage and push the target back an extra 2 metres.,resist = Strength, negation = Blockable  and Dodgeable,effect =A wave of energy strikes into the target\comma{} causing 1d8 force damage\comma{} and if the target fails to Resist\comma{} pushing the target backwards up to 1 metre.}
-\spell{name = Magnetising Pulse, school = Maledictions, discipline = Hex, type = Instant, level =Beginner, range =Close, incant = adtraho, duration = 5 seconds,higher = \additional{1d8}{force},resist = Acrobatics or Speed, noBlock = 1, effect =A pulse of energy streaks out towards the target faster than a normal `dodge\apos{} could avoid.
+\spell{name = Magnetising Strike, school = Maledictions, discipline = Hex, type = Instant, level =Beginner, range =Close, incant = adtraho, duration = 30 seconds,higher = \additional{1d8}{force},resist = Acrobatics or Speed, noBlock = 1, effect =A pulse of energy streaks out towards the target faster than a normal `dodge\apos{} could avoid. 
 
-On a failed Resist\comma{} the target takes 1d8 force damage\comma{} and all attacks made on them next turn are at advantage.}
+On a failed Resist\comma{} the target takes 1d8 force damage\comma{} and becomes mildly magnetic. All attacks made on them with melee weapons made of metal are at advantage for the duration of the spell..}
 \spell{name = Mortar Pulse, school = Maledictions, discipline = Hex, type = Instant, level =Beginner, range =Close, incant = sivango, noDur = 1, higher = \additional{2d4}{concussive},resist = Acrobatics, noBlock = 1, effect =Raising your wand into the air\comma{} you send a small blue blob arcing upwards until it smashes down onto a targeted area within range\comma{} releasing a pulse out into a circle 3 metres in radius. 
 
 All beings take 1d4 concussive damage\comma{} halved on a successful Resist.}
@@ -634,7 +640,7 @@ Those caught in the region take 6d6 of cold damage\comma{} and apply the mild Fr
 
 This spell deals 3d12 Force damage to all targets caught in the region\comma{} halved on a successful Block.}
 \spell{name = Detonation, school = Maledictions, discipline = Hex, type = Instant, level =Expert, range =Sight, incant = expulso, noDur = 1, higher = \additional{2d6}{Force},resist = Power, negation = Dodgeable,effect =Launches a magical bolt at the target which\comma{} if it makes contact\comma{} causes the object to violently tear itself apart\comma{} doing 5d12 force damage. Resist for half damage.}
-\spell{name = Witch Hunter\apos{}s Bane, school = Maledictions, discipline = Hex, type = Instant, level =Expert, range =Close, incant = iboq, noDur = 1, noHigh = 1, noResist =1, negation = Blockable,effect =A searing white light solidifies into a maelstrom of vicious barbs\comma{} striking towards the target and dealing 4d10 slashing damage. 
+\spell{name = Witch Hunter\apos{}s Bane, school = Maledictions, discipline = Hex, type = Instant, level =Expert, range =Close, incant = iboq plustra, noDur = 1, noHigh = 1, noResist =1, negation = Blockable,effect =A searing white light solidifies into a maelstrom of vicious barbs\comma{} striking towards the target and dealing 4d10 slashing damage. 
 
 If the attack hits\comma{} the caster may use the distraction to direct a tendril of the energy to remove any {\it Trapped} status effects\comma{} and perform a DV 15 Speed check. On a success\comma{} the caster uses the confusion to teleport to a place they can see within 10 metres of their current location.}
 }
@@ -684,12 +690,10 @@ If target has a serious wound (i.e. a broken bone or a serious burn)\comma{} thi
 \spell{name = Stasis Field, school = Recuperation, discipline = Healing, type = Instant, level =Novice, range =Want, incant = tempocessus, duration = 10 days,noHigh = 1, noResist =1, noBlock = 1, effect =A non\minus{}living target is unaffected by the flow of time for the duration of the spell\comma{} and does not rot or otherwise decay. If the target is the body of a being\comma{} this being cannot become one of the Unliving.}
 }
  \spellBook{Life\comma{} and How to Preserve it}{Adept-level Healing}{
-\spell{name = Bless, school = Recuperation, discipline = Healing, type = Instant, level =Adept, range =Wandtip, incant = benedicte, duration = 2 minutes,higher = The blessing lasts for an additional minute \forEvery{}.,noResist =1, noBlock = 1, effect =The target gets check advantage on all checks for the duration of the blessing.}
 \spell{name = Countercurse, school = Recuperation, discipline = Healing, type = Instant, level =Adept, range =Wandtip, incant = finite maledictum, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Remove the effects of an active spell from the Curse discipline. 
 
 This spell can only remove spells caused by a curse of an equal level as this spell is cast at \minus{} to remove an Expertly cast curse\comma{} this spell must be cast at an Expert level.}
 \spell{name = Healing Lance, school = Recuperation, discipline = Healing, type = Instant, level =Adept, range =Close, incant = lavi thera, noDur = 1, higher = Heals an additional 1d10 \forEvery{}.,noResist =1, noBlock = 1, effect =A bolt of healing energy bursts from your wand a shoots towards your target\comma{} healing them for 3d10 health points.}
-\spell{name = Irongrip, school = Recuperation, discipline = Healing, type = Instant, level =Adept, range =Wandtip, incant = fero, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =Gives a willing target an incredibly strong grip. Gain check advantage on all grappling checks and attempts to resist disarmament.}
 \spell{name = Mend Bones, school = Recuperation, discipline = Healing, type = Instant, level =Adept, range =Wandtip, incant = ossium emendo, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Repair bones and heal the body. Removes the \textit{Broken Bone} status effect and the associated \textit{Serious Injury} (unless another status effect blocks this).}
 \spell{name = Revive, school = Recuperation, discipline = Healing, type = Instant, level =Adept, range =Wandtip, incant = renervate, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Removes the {\it Unconscious} status effect (unless another status effect prevents that) and awakens targets from even the deepest of slumbers.}
 }
@@ -731,6 +735,9 @@ This shield has a health of 10HP. If an attack is blocked which would cause the 
 
 The caster is not considered {\it Distracted} when casting this spell\comma{} unless attacked by an enemy that they cannot see.}
 \spell{name = Privacy Ward, school = Recuperation, discipline = Warding, type = Ward, level =Beginner, range =Wandtip, incant = muffliato, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =Ward a region up to 5m in radius. This ward prevents sound from inside the region being heard from the outside. When inside the region\comma{} sound from both inside and outside may be heard.}
+\spell{name = Silent Step, school = Recuperation, discipline = Warding, type = Ward, level =Beginner, range =Close, incant = quiesco, duration = 5 minutes,higher = You may choose 3 additional targets \forEvery{},noResist =1, noBlock = 1, effect =Target a being and place a benevolent ward on them\comma{} which muffles all sounds made by the being\comma{} including footsteps and spoken language\comma{} making them incredibly hard to hear. 
+
+Affected beings get check\minus{}advantage on Stealth checks.}
 \spell{name = Vengeance Field, school = Recuperation, discipline = Warding, type = Instant, level =Beginner, range =Self, incant = joder voste, duration = 20 seconds,higher = When cast as a higher level spell\comma{} the field absorbs more energy and does an additional 1d8 damage for each additional spell\minus{}level dedicated to the casting.,noResist =1, noBlock = 1, effect =Erect a field of energy around you. The next time you take damage of any type\comma{} this field becomes charged with energy corresponding to that damage type. 
 
 The next attack you make with a physical weapon deals an additional 1d8 damage of the absorbed type.}
@@ -759,6 +766,9 @@ If a being touches any part of the minefield other than the path\comma{} the min
 
 This field gives a +4 bonus to Block statistic for the duration of the spell.}
 \spell{name = Threshold Ward, school = Recuperation, discipline = Warding, type = Ward, level =Adept, range =Sight, incant = desino, duration = 1 year,higher = Double the maximum size of the ward \forEvery{}.,noResist =1, noBlock = 1, effect =Prevents any objects or beings from passing over the edge of the ward. Usually cast on doorways and entrances\comma{} the maximum size of the ward is a circle 2m in radius. The ward is immune to all physical damage\comma{} but can only survive 10 points of spell damage.}
+\spell{name = Zone of Silence, school = Recuperation, discipline = Warding, type = Ward, level =Adept, range =Wandtip, incant = umbra silentium, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =Ward an area up to 3 metres in radius with a powerful enchantment which prevents sound from travelling. No sound can penetrate or travel within this zone whilst the ward remians active. 
+
+All non\minus{}silent spellcasting attempts fail\comma{} as do all hearing\minus{}related checks.}
 }
  \spellBook{Shields and Wards}{Expert-level Warding}{
 \spell{name = Holy Ward, school = Recuperation, discipline = Warding, type = Ward, level =Expert, range =Wandtip, incant = pervetutem luminis, noDur = 1, higher = The spell is capable of inflicting an additional 20 damage \forEvery{}.,noResist =1, noBlock = 1, effect =Create a region up to 10m in radius where the Unlife cannot pass. Unlife attempting to cross the barrier are ignited for 4d12 worth of Celestial  damage per turn that they remain inside the area.
@@ -793,9 +803,43 @@ The ward can absorb 10d20 points of damage (any type) before it disintegrates.}
 }
  \spellBook{A Beginner\apos{}s Guide to Transfiguration}{Beginner-level Alteration}{
 \spell{name = Change Colour, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, range =Close, incant = pigmentus, duration = 2 days,noHigh = 1, noResist =1, noBlock = 1, effect =Causes the colour of an object to change to that specified by the caster.}
+\spell{name = Degrade, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, range =Close, incant = prolabor, duration = 1 minute,higher = This spell effects an additional object or being \forEvery{}.
+
+When cast as an Adept level spell or higher\comma{} you may select two degredations from the list.,resist = Power, noBlock = 1, effect =Choose up to three target objects or beings that you can see within range\comma{} and make subtle minor alterations which generally lessen the quality of the targets.
+
+An object might gain layer of grime\comma{} whilst imperfections might develop across the surface. A previously well\minus{}oiled joint might begin to produce a horrendous squeaking noise. This spell cannot fix a break  an object and remove functionality\comma{} but generally makes an object less pleasant and high\minus{}quality than it was before. When used in this fashion\comma{} the spell has no duration\comma{} and the degredations are considered permanent. 
+
+When this spell is targeted at a living being\comma{} the `degredation' instead allows you to fatigue the muscles of the target to reduce their aim\comma{} or give them a mild headache to disrupt their concentration.
+
+For each targeted being\comma{} the caster chooses one of the following:
+\begin{spellitemize}
+\item Attribute checks
+\item Resist checks
+\item Accuracy checks
+\item Damage checks
+\end{spellitemize}
+
+For the duration of the refinement\comma{} whenever an effected being performs one of their selected checks\comma{} they must roll an additional 1d4 and subtract that result to the result of the roll.}
 \spell{name = Magical Makeover, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, range =Self, incant = crinus muto, duration = 1 day,noHigh = 1, noResist =1, noBlock = 1, effect =Alters the colour and style of the caster\apos{}s hair\comma{} apply a layer of makeup\comma{} and scrapes the dirt from under your fingernails. You may alter your appearance as if you had been attended to by a competent hair stylist and make\minus{}up artist.   
 
 Useful for disguises\comma{} or to make yourself look suave in an instant.}
+\spell{name = Refine, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, range =Close, incant = excolo, duration = 1 minute,higher = This spell effects an additional object or being \forEvery{}.
+
+When cast as an Adept level spell or higher\comma{} you may select two improvements from the list.,noResist =1, noBlock = 1, effect =Choose up to three target objects or beings that you can see within range\comma{} and make subtle minor alterations which generally improve the quality of the object at your direction.
+
+An object might lose a layer of grime\comma{} and imperfections would lessen in severity\comma{} or several dents might fix themselves. A poorly fitting hinge might become smooth and well\minus{}oiled. This spell cannot fix a broken object to restore functionality\comma{} but generally makes an object more pleasant and high\minus{}quality than it was before. When used in this fashion\comma{} the spell has no duration\comma{} and the improvements are considered permanent. 
+
+When this spell is targeted at a living being\comma{} the `improvement' instead allows you to tweak the muscles of the target to give them a burst of speed and improve their reflexes\comma{} or clear their mind to allow to improve memory and increase their motor skills. 
+
+For each targeted being\comma{} the caster chooses one of the following:
+\begin{spellitemize}
+\item Attribute checks
+\item Resist checks
+\item Accuracy checks
+\item Damage checks
+\end{spellitemize}
+
+For the duration of the refinement\comma{} whenever an effected being performs one of their selected checks\comma{} they may roll an additional 1d4 and add that result to the result of the roll.}
 \spell{name = Slip, school = Transfiguration, discipline = Alteration, type = Focus, level =Beginner, range =Sight, incant = glisser, noDur = 1, noHigh = 1, resist = Acrobatics, noBlock = 1, effect =Whilst Focus is maintained\comma{} up to 1 square metre of the targeted surface becomes slippery\comma{} as if it was covered in grease. When a target touches the effected surface and fails the resist check\comma{} they fall over and take the {\it Prone Position} status.}
 \spell{name = Small Change Charm, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, range =Wandtip, incant = psilus, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =The only spell which can alter magical currency. By casting this charm on a set of Galleons\comma{} Sickles and Knuts you may transfigure them into any other combination of coins with an equal monetary value.}
 \spell{name = Transmutation, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, range =Close, incant = formum mutatio, duration = 1 hour,higher = The maximum mass this spell is capable of transfiguring multiplies by 5 for every additional spell level used to cast it.,resist = Power, noBlock = 1, effect =Transform a 1kg non\minus{}sapient animal (or part of an animal) or object into a different animal or solid object\comma{} negated on a successful Resist. 
@@ -836,6 +880,7 @@ If you attempt to enlarge an object or being such that it no longer fits in the 
 \spell{name = Featherweight, school = Transfiguration, discipline = Alteration, type = Instant, level =Adept, range =Wandtip, incant = pluma gravitas, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =Divide the weight of an object by 5. 
 
 In general\comma{} this would make a Medium object become Light\comma{} a Heavy object to become Medium\comma{} and so on.}
+\spell{name = Irongrip, school = Transfiguration, discipline = Alteration, type = Instant, level =Adept, range =Wandtip, incant = fero, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =Gives a willing target an incredibly strong grip. Gain check advantage on all grappling checks and attempts to resist disarmament.}
 \spell{name = Ironmass, school = Transfiguration, discipline = Alteration, type = Instant, level =Adept, range =Close, incant = ferrus gravitas, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =Target a non\minus{}sapient object up to 50kg in weight\comma{} and increase its density such that it becomes so heavy that it cannot be lifted by a single individual. The total mass of the object increases by a hundredfold.}
 \spell{name = Sculpt Matter, school = Transfiguration, discipline = Alteration, type = Focus, level =Adept, range =Close, incant = perseids, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Sculpt a target solid object with your mind\comma{} as if it were made of soft clay. The total mass of the object must remain constant\comma{} but you can shift and scult the matter at will.}
 }

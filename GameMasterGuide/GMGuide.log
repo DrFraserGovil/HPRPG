@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.11)  7 MAR 2020 18:15
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.11)  16 MAR 2020 17:37
 entering extended mode
 **./GMGuide.tex
 (GMGuide.tex
@@ -1706,6 +1706,11 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 
 ]
+Overfull \hbox (12.79448pt too wide) in paragraph at lines 94--94
+[][] 
+ []
+
+
 Overfull \hbox (12.79448pt too wide) in paragraph at lines 95--95
 [][] 
  []
@@ -1770,12 +1775,12 @@ Overfull \hbox (12.79448pt too wide) in paragraph at lines 107--107
 [][] 
  []
 
-
+[5]
 Overfull \hbox (12.79448pt too wide) in paragraph at lines 108--108
 [][] 
  []
 
-[5]
+
 Overfull \hbox (12.79448pt too wide) in paragraph at lines 109--109
 [][] 
  []
@@ -1830,12 +1835,12 @@ Overfull \hbox (12.79448pt too wide) in paragraph at lines 119--119
 [][] 
  []
 
-
+[6]
 Overfull \hbox (12.79448pt too wide) in paragraph at lines 120--120
 [][] 
  []
 
-[6]
+
 Overfull \hbox (12.79448pt too wide) in paragraph at lines 121--121
 [][] 
  []
@@ -1851,13 +1856,13 @@ Overfull \hbox (12.79448pt too wide) in paragraph at lines 123--123
  []
 
 
-Overfull \hbox (12.79448pt too wide) in paragraph at lines 124--124
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\TU/texgyrebonum-regular.otf(0)/m/n/6 Acromantula
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]|\TU/texgyrebonum-regular.otf(0)/m/n/6 Acromantula
+Overfull \hbox (12.79448pt too wide) in paragraph at lines 124--124
+[][] 
  []
 
 
@@ -1866,13 +1871,13 @@ Overfull \hbox (12.79448pt too wide) in paragraph at lines 125--125
  []
 
 
-Overfull \hbox (12.79448pt too wide) in paragraph at lines 126--126
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\TU/texgyrebonum-regular.otf(0)/m/n/6 Jobberknoll
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--126
-[]|\TU/texgyrebonum-regular.otf(0)/m/n/6 Jobberknoll
+Overfull \hbox (12.79448pt too wide) in paragraph at lines 126--126
+[][] 
  []
 
 
@@ -1910,12 +1915,12 @@ Overfull \hbox (12.79448pt too wide) in paragraph at lines 133--133
 [][] 
  []
 
-
+[7]
 Overfull \hbox (12.79448pt too wide) in paragraph at lines 134--134
 [][] 
  []
 
-[7]
+
 Overfull \hbox (12.79448pt too wide) in paragraph at lines 135--135
 [][] 
  []
@@ -1946,13 +1951,13 @@ Overfull \hbox (12.79448pt too wide) in paragraph at lines 140--140
  []
 
 
-Overfull \hbox (12.79448pt too wide) in paragraph at lines 141--141
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
+[]|\TU/texgyrebonum-regular.otf(0)/m/n/6 Acromantula
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
-[]|\TU/texgyrebonum-regular.otf(0)/m/n/6 Acromantula
+Overfull \hbox (12.79448pt too wide) in paragraph at lines 141--141
+[][] 
  []
 
 
@@ -1980,14 +1985,14 @@ Overfull \hbox (12.79448pt too wide) in paragraph at lines 146--146
 [][] 
  []
 
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+[]|\TU/texgyrebonum-regular.otf(0)/m/n/6 Acromantula
+ []
+
 
 Overfull \hbox (12.79448pt too wide) in paragraph at lines 147--147
 [][] 
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 147--147
-[]|\TU/texgyrebonum-regular.otf(0)/m/n/6 Acromantula
  []
 
 
@@ -2001,13 +2006,13 @@ Overfull \hbox (12.79448pt too wide) in paragraph at lines 149--149
  []
 
 
-Overfull \hbox (12.79448pt too wide) in paragraph at lines 150--150
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+[]|\TU/texgyrebonum-regular.otf(0)/m/n/6 Acromantula
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
-[]|\TU/texgyrebonum-regular.otf(0)/m/n/6 Acromantula
+Overfull \hbox (12.79448pt too wide) in paragraph at lines 150--150
+[][] 
  []
 
 
@@ -2031,13 +2036,13 @@ Overfull \hbox (12.79448pt too wide) in paragraph at lines 154--154
  []
 
 
-Overfull \hbox (12.79448pt too wide) in paragraph at lines 155--155
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+[]|\TU/texgyrebonum-regular.otf(0)/m/n/6 Jobberknoll
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
-[]|\TU/texgyrebonum-regular.otf(0)/m/n/6 Jobberknoll
+Overfull \hbox (12.79448pt too wide) in paragraph at lines 155--155
+[][] 
  []
 
 
@@ -2060,19 +2065,19 @@ Overfull \hbox (12.79448pt too wide) in paragraph at lines 159--159
 [][] 
  []
 
-
+[9]
 Overfull \hbox (12.79448pt too wide) in paragraph at lines 160--160
 [][] 
  []
 
-[9]
-Overfull \hbox (12.79448pt too wide) in paragraph at lines 161--161
-[][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
+[]|\TU/texgyrebonum-regular.otf(0)/m/n/6 Acromantula
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--161
-[]|\TU/texgyrebonum-regular.otf(0)/m/n/6 Acromantula
+Overfull \hbox (12.79448pt too wide) in paragraph at lines 161--161
+[][] 
  []
 
 
@@ -2086,7 +2091,12 @@ Overfull \hbox (12.79448pt too wide) in paragraph at lines 163--163
  []
 
 
-Overfull \hbox (12.79448pt too wide) in paragraph at lines 164--164
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 207--207
+[][] 
+ []
+
+
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 208--208
 [][] 
  []
 
@@ -2101,6 +2111,11 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 210--210
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Beautification Potion, Duplicating
+ []
+
+
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 211--211
 [][] 
  []
@@ -2108,11 +2123,6 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 211--211
 
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 212--212
 [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--213
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Beautification Potion, Duplicating
  []
 
 
@@ -2141,7 +2151,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 217--217
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 218--218
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 218--218
 [][] 
  []
 
@@ -2151,7 +2161,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 219--219
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 220--220
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 220--220
 [][] 
  []
 
@@ -2161,18 +2171,18 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 221--221
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 222--222
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Midas’ Mixture and Stew of Near-
+ []
+
+
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 222--222
 [][] 
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 223--223
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 223--223
 [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 224--224
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Midas’ Mixture and Stew of Near-
  []
 
 
@@ -2181,18 +2191,18 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 224--224
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 225--225
+Underfull \hbox (badness 10000) in paragraph at lines 225--225
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Blemish Blitzer and Gloom-inducing
+ []
+
+
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 225--225
 [][] 
  []
 
 
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 226--226
 [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--227
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Blemish Blitzer and Gloom-inducing
  []
 
 
@@ -2211,7 +2221,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 229--229
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 230--230
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 230--230
 [][] 
  []
 
@@ -2220,8 +2230,8 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 231--231
 [][] 
  []
 
-
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 232--232
+[10]
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 232--232
 [][] 
  []
 
@@ -2230,7 +2240,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 233--233
 [][] 
  []
 
-[10]
+
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 234--234
 [][] 
  []
@@ -2266,7 +2276,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 240--240
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 241--241
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 241--241
 [][] 
  []
 
@@ -2276,7 +2286,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 242--242
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 243--243
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 243--243
 [][] 
  []
 
@@ -2296,7 +2306,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 246--246
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 247--247
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 247--247
 [][] 
  []
 
@@ -2306,7 +2316,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 248--248
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 249--249
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 249--249
 [][] 
  []
 
@@ -2371,6 +2381,11 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 261--261
  []
 
 
+Underfull \hbox (badness 7116) in paragraph at lines 262--262
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Blemish Blitzer, Burn-healing paste,
+ []
+
+
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 262--262
 [][] 
  []
@@ -2381,17 +2396,12 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 263--263
  []
 
 
-Underfull \hbox (badness 7116) in paragraph at lines 264--264
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Blemish Blitzer, Burn-healing paste,
- []
-
-
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 264--264
 [][] 
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 265--265
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 265--265
 [][] 
  []
 
@@ -2401,7 +2411,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 266--266
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 267--267
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 267--267
 [][] 
  []
 
@@ -2426,7 +2436,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 271--271
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 272--272
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 272--272
 [][] 
  []
 
@@ -2436,7 +2446,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 273--273
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 274--274
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 274--274
 [][] 
  []
 
@@ -2445,7 +2455,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 275--275
 [][] 
  []
 
-
+[11]
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 276--276
 [][] 
  []
@@ -2455,14 +2465,19 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 277--277
 [][] 
  []
 
-[11]
+
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 278--278
 [][] 
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 279--279
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 279--279
 [][] 
+ []
+
+
+Underfull \hbox (badness 6725) in paragraph at lines 280--280
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Antidote to Common Poisons, Anti-
  []
 
 
@@ -2471,13 +2486,8 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 280--280
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 281--281
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 281--281
 [][] 
- []
-
-
-Underfull \hbox (badness 6725) in paragraph at lines 282--282
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Antidote to Common Poisons, Anti-
  []
 
 
@@ -2486,17 +2496,22 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 282--282
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 283--283
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 283--283
 [][] 
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 284--284
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 284--284
 [][] 
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 285--285
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Curse-Countering Concoction and
+ []
+
+
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 285--285
 [][] 
  []
 
@@ -2506,22 +2521,17 @@ Overfull \hbox (6.01767pt too wide) in paragraph at lines 286--286
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Curse-Countering Concoction and
- []
-
-
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 287--287
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 287--287
 [][] 
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 288--288
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 288--288
 [][] 
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 289--289
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 289--289
 [][] 
  []
 
@@ -2536,6 +2546,16 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 291--291
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 292--292
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Finder’ Friend and Stew of Near-
+ []
+
+
+Underfull \hbox (badness 7256) in paragraph at lines 292--292
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Astral Acid, Fatiguing Infusion and
+ []
+
+
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 292--292
 [][] 
  []
@@ -2543,16 +2563,6 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 292--292
 
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 293--293
 [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--294
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Finder’ Friend and Stew of Near-
- []
-
-
-Underfull \hbox (badness 7256) in paragraph at lines 294--294
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Astral Acid, Fatiguing Infusion and
  []
 
 
@@ -2571,6 +2581,11 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 296--296
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 297--297
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Emanation Elimination Elixir and
+ []
+
+
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 297--297
 [][] 
  []
@@ -2578,11 +2593,6 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 297--297
 
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 298--298
 [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 299--299
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Emanation Elimination Elixir and
  []
 
 
@@ -2656,7 +2666,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 312--312
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 313--313
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 313--313
 [][] 
  []
 
@@ -2666,27 +2676,27 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 314--314
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 315--315
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 315--315
 [][] 
  []
 
-
+[12]
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 316--316
 [][] 
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 317--317
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 317--317
 [][] 
  []
 
-[12]
+
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 318--318
 [][] 
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 319--319
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 319--319
 [][] 
  []
 
@@ -2701,6 +2711,11 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 321--321
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 322--322
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Befuddlement Beverage, Infusion of
+ []
+
+
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 322--322
 [][] 
  []
@@ -2708,11 +2723,6 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 322--322
 
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 323--323
 [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Befuddlement Beverage, Infusion of
  []
 
 
@@ -2726,7 +2736,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 325--325
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 326--326
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 326--326
 [][] 
  []
 
@@ -2736,7 +2746,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 327--327
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 328--328
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 328--328
 [][] 
  []
 
@@ -2746,22 +2756,12 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 329--329
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 330--330
-[][] 
- []
-
-
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 331--331
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 332--332
+Underfull \hbox (badness 10000) in paragraph at lines 330--330
 []\TU/texgyrebonum-regular.otf(0)/m/n/6 Blood-Refilling Potion, Burn-healing
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 332--332
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 330--330
 [][] 
  []
 
@@ -2824,12 +2824,12 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 123--123
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 662--662
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 269--269
 |[] 
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 662--662
+Underfull \hbox (badness 1087) in paragraph at lines 269--269
 []\TU/texgyrebonum-regular.otf(0)/m/n/9 Horrific, twisted mimicries of mortal f
 orms, these beasts
  []
@@ -2839,18 +2839,18 @@ File: ../Images/greatOld.png Graphic file (type bmp)
 File: ../Images/hunter.jpg Graphic file (type bmp)
 <../Images/hunter.jpg>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 662--662
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 269--269
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 662.
+(hyperref)                be the same. Added a new anchor on input line 269.
 
 [17
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 662--662
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 269--269
 |[] 
  []
 
@@ -2859,49 +2859,49 @@ File: ../Images/ripper.jpg Graphic file (type bmp)
 File: ../Images/shredder.jpg Graphic file (type bmp)
 <../Images/shredder.jpg>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 662--662
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 269--269
 |[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
 [][]
  []
 
 [18]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 662--662
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 269--269
 |[] 
  []
 
 File: ../Images/devourer.jpg Graphic file (type bmp)
 <../Images/devourer.jpg>
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 662--662
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 269--269
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 662--662
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 269--269
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 662--662
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 269--269
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 662--662
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 269--269
 [] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 662--662
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 269--269
 |[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
 [][]
  []
 
@@ -2931,44 +2931,44 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 662--662
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 269--269
 |[] 
  []
 
 File: ../Images/spawn.jpg Graphic file (type bmp)
 <../Images/spawn.jpg>
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 662--662
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 269--269
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 662--662
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 269--269
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 662--662
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 269--269
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 662--662
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 269--269
 [] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 662--662
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 269--269
 |[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 662--662
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
 
  []
 
@@ -2998,7 +2998,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 693--693
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 320--320
 |[] 
  []
 
@@ -3007,18 +3007,18 @@ File: ../Images/bigAcro.png Graphic file (type bmp)
 File: ../Images/babyAcro.jpg Graphic file (type bmp)
 <../Images/babyAcro.jpg>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 693--693
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 320--320
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 693.
+(hyperref)                be the same. Added a new anchor on input line 320.
 
 [21
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 693--693
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 320--320
 |[] 
  []
 
@@ -3026,52 +3026,189 @@ Missing character: There is no ^^85 in font [texgyrebonum-regular.otf]/OT:scrip
 t=latn;language=DFLT;mapping=tex-text;!
 File: ../Images/Acromantula.png Graphic file (type bmp)
 <../Images/Acromantula.png>
-File: ../Images/aragog.png Graphic file (type bmp)
-<../Images/aragog.png>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 693--693
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 320--320
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 320--320
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 320--320
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 320--320
+[] 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 320--320
 |[] 
  []
 
-[22]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 723--723
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (41.66571pt too high) has occurred while \output is active []
+
+Extra height:0.0pt when 248.20172pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:248.20172pt Right:301.86743pt Output:248.20172pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:301.86743pt Right:301.86743pt Output:301.86743pt
+- LAST -
+Left:301.86743pt
+Right:301.86743pt
+Output:301.86743pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22
+
+
+]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 320--320
+|[] 
+ []
+
+File: ../Images/aragog.png Graphic file (type bmp)
+<../Images/aragog.png>
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 320--320
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 320--320
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 320--320
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 320--320
+[] 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 320--320
+|[] 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 320--320
+|[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:0.0pt when 207.65408pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:207.65408pt Right:211.77214pt Output:207.65408pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:211.77214pt Right:211.77214pt Output:211.77214pt
+- LAST -
+Left:211.77214pt
+Right:211.77214pt
+Output:211.77214pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23
+
+
+]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 350--350
 |[] 
  []
 
 File: ../Images/host.jpg Graphic file (type bmp)
 <../Images/host.jpg>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 723--723
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 350--350
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 723.
+(hyperref)                be the same. Added a new anchor on input line 350.
 
-[23
+[24
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 723--723
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 350--350
 |[] 
  []
 
 File: ../Images/angel.jpg Graphic file (type bmp)
 <../Images/angel.jpg>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 723--723
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 350--350
 |[] 
  []
 
-[24]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 723--723
+[25]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 350--350
 |[] 
  []
 
-[25
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 350--350
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 350--350
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 350--350
+[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (12.99207pt too high) has occurred while \output is active []
+
+Extra height:0.0pt when 12.792pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:12.792pt Right:25.78407pt Output:12.792pt
+(2)Left:25.78407pt Right:0.0pt Output:25.78407pt
+- LAST -
+Left:25.78407pt
+Right:0.0pt
+Output:25.78407pt
+ [26
+
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 760--760
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 387--387
 |[] 
  []
 
@@ -3080,19 +3217,25 @@ File: ../Images/spirit.jpg Graphic file (type bmp)
 File: ../Images/ghost.png Graphic file (type bmp)
 <../Images/ghost.png>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 760--760
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 387--387
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 760.
+(hyperref)                be the same. Added a new anchor on input line 387.
 
-[26
+[27
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 760--760
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 387--387
 |[] 
+ []
+
+
+Underfull \hbox (badness 3323) in paragraph at lines 387--387
+[]\TU/texgyrebonum-regular.otf(0)/bx/it/8 Expertise: \TU/texgyrebonum-regular.o
+tf(0)/m/n/8 Chicanery (+5), Acrobatics (+5), Improvised Range
  []
 
 File: ../Images/peeves.png Graphic file (type bmp)
@@ -3100,92 +3243,143 @@ File: ../Images/peeves.png Graphic file (type bmp)
 File: ../Images/boggart.jpg Graphic file (type bmp)
 <../Images/boggart.jpg>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 760--760
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 387--387
 |[] 
  []
 
 Missing character: There is no ^^96 in font [texgyrebonum-regular.otf]/OT:scrip
 t=latn;language=DFLT;mapping=tex-text;!
-[27] [28
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 827--827
+[28]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 452--452
 |[] 
  []
 
 File: ../Images/spiders.png Graphic file (type bmp)
 <../Images/spiders.png>
-File: ../Images/Brood.jpg Graphic file (type bmp)
-<../Images/Brood.jpg>
+File: ../Images/blackWidow.png Graphic file (type bmp)
+<../Images/blackWidow.png>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 827--827
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 452--452
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 827.
+(hyperref)                be the same. Added a new anchor on input line 452.
 
 [29
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 827--827
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 452--452
 |[] 
  []
 
-File: ../Images/blackWidow.png Graphic file (type bmp)
-<../Images/blackWidow.png>
 File: ../Images/tick.jpg Graphic file (type bmp)
 <../Images/tick.jpg>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 827--827
-|[] 
- []
-
-[30]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 827--827
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 452--452
 |[] 
  []
 
 Missing character: There is no ^^96 in font [texgyrebonum-regular.otf]/OT:scrip
 t=latn;language=DFLT;mapping=tex-text;!
-[31
+[30]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 452--452
+|[] 
+ []
+
+File: ../Images/Brood.jpg Graphic file (type bmp)
+<../Images/Brood.jpg>
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 452--452
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 452--452
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 452--452
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 452--452
+[] 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 452--452
+|[] 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 452--452
+|[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:0.0pt when 223.37387pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:223.37387pt Right:234.21172pt Output:223.37387pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:234.21172pt Right:234.21172pt Output:234.21172pt
+- LAST -
+Left:234.21172pt
+Right:234.21172pt
+Output:234.21172pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31
+
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 850--850
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 475--475
 |[] 
  []
 
 File: ../Images/bowtruckle.png Graphic file (type bmp)
 <../Images/bowtruckle.png>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 850--850
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 475--475
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 850.
+(hyperref)                be the same. Added a new anchor on input line 475.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 850--850
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 475--475
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 850--850
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 475--475
 |[] 
  []
 
 [32
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 865--865
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 490--490
 |[] 
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 865--865
+Underfull \hbox (badness 2600) in paragraph at lines 490--490
 \TU/texgyrebonum-regular.otf(0)/m/n/9 The Ceratothids are a family of loosely r
 elated magical
  []
@@ -3193,16 +3387,16 @@ elated magical
 File: ../Images/Graphorn.png Graphic file (type bmp)
 <../Images/Graphorn.png>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 865--865
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 490--490
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 865.
+(hyperref)                be the same. Added a new anchor on input line 490.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 865--865
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 490--490
 |[] 
  []
 
@@ -3211,7 +3405,7 @@ File: ../Images/erumpet.png Graphic file (type bmp)
 File: ../Images/reem.png Graphic file (type bmp)
 <../Images/reem.png>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 865--865
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 490--490
 |[] 
  []
 
@@ -3220,24 +3414,24 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 865--865
 ] [34
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 870--870
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 495--495
 |[] 
  []
 
 File: ../Images/chimera.jpg Graphic file (type bmp)
 <../Images/chimera.jpg>
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 870--870
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 495--495
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 870--870
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 495--495
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 870--870
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 495--495
 [] 
  []
 
@@ -3267,23 +3461,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 881--881
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 506--506
 |[] 
  []
 
 File: ../Images/dementor.png Graphic file (type bmp)
 <../Images/dementor.png>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 881--881
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 506--506
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 881.
+(hyperref)                be the same. Added a new anchor on input line 506.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 881--881
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 506--506
 |[] 
  []
 
@@ -3292,23 +3486,23 @@ File: ../Images/lethifold.jpg Graphic file (type bmp)
 [36
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 893--893
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 518--518
 |[] 
  []
 
 File: ../Images/hidebehind.png Graphic file (type bmp)
 <../Images/hidebehind.png>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 893--893
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 518--518
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 893.
+(hyperref)                be the same. Added a new anchor on input line 518.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 893--893
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 518--518
 |[] 
  []
 
@@ -3320,7 +3514,7 @@ File: ../Images/screwt.png Graphic file (type bmp)
 File: ../Images/demiguise.png Graphic file (type bmp)
 <../Images/demiguise.png>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 898--898
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 523--523
 |[] 
  []
 
@@ -3328,89 +3522,89 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 898--898
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 933--933
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 558--558
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 933--933
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 558--558
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 933.
+(hyperref)                be the same. Added a new anchor on input line 558.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 933--933
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 558--558
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 933--933
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 558--558
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 933--933
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 558--558
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 933--933
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 558--558
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 933--933
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 558--558
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 933--933
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 558--558
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 933--933
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 558--558
 |[] 
  []
 
 [39
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 933--933
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 558--558
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 933--933
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 558--558
 |[] 
  []
 
 [40
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 948--948
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 573--573
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 948--948
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 573--573
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 948.
+(hyperref)                be the same. Added a new anchor on input line 573.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 948--948
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 573--573
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 948--948
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 573--573
 |[] 
  []
 
@@ -3418,21 +3612,21 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 948--948
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 960--960
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 585--585
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 960--960
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 585--585
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 960.
+(hyperref)                be the same. Added a new anchor on input line 585.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 960--960
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 585--585
 |[] 
  []
 
@@ -3440,21 +3634,21 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 960--960
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 972--972
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 597--597
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 972--972
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 597--597
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 972.
+(hyperref)                be the same. Added a new anchor on input line 597.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 972--972
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 597--597
 |[] 
  []
 
@@ -3462,57 +3656,57 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 972--972
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 990--990
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 615--615
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 990--990
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 615--615
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 990.
+(hyperref)                be the same. Added a new anchor on input line 615.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 990--990
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 615--615
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 990--990
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 615--615
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 990--990
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 615--615
 |[] 
  []
 
 [44
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1005--1005
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 630--630
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1005--1005
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 630--630
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1005.
+(hyperref)                be the same. Added a new anchor on input line 630.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1005--1005
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 630--630
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1005--1005
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 630--630
 |[] 
  []
 
@@ -3520,26 +3714,26 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1005--1005
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1020--1020
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 645--645
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1020--1020
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 645--645
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1020.
+(hyperref)                be the same. Added a new anchor on input line 645.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1020--1020
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 645--645
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1020--1020
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 645--645
 |[] 
  []
 
@@ -3547,21 +3741,21 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1020--1020
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1032--1032
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 657--657
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1032--1032
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 657--657
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1032.
+(hyperref)                be the same. Added a new anchor on input line 657.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1032--1032
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 657--657
 |[] 
  []
 
@@ -3569,52 +3763,52 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1032--1032
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1050--1050
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 675--675
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1050--1050
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 675--675
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1050.
+(hyperref)                be the same. Added a new anchor on input line 675.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1050--1050
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 675--675
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1050--1050
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 675--675
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1050--1050
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 675--675
 |[] 
  []
 
 [48
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1062--1062
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 687--687
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1062--1062
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 687--687
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1062.
+(hyperref)                be the same. Added a new anchor on input line 687.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1062--1062
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 687--687
 |[] 
  []
 
@@ -3622,21 +3816,21 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1062--1062
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1074--1074
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 699--699
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1074--1074
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 699--699
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1074.
+(hyperref)                be the same. Added a new anchor on input line 699.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1074--1074
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 699--699
 |[] 
  []
 
@@ -3644,52 +3838,52 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1074--1074
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1092--1092
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 717--717
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1092--1092
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 717--717
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1092.
+(hyperref)                be the same. Added a new anchor on input line 717.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1092--1092
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 717--717
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1092--1092
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 717--717
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1092--1092
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 717--717
 |[] 
  []
 
 [51
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1104--1104
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 729--729
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1104--1104
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 729--729
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1104.
+(hyperref)                be the same. Added a new anchor on input line 729.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1104--1104
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 729--729
 |[] 
  []
 
@@ -3697,7 +3891,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1104--1104
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1109--1109
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 734--734
 |[] 
  []
 
@@ -3705,134 +3899,134 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1109--1109
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1135--1135
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 760--760
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1135--1135
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 760--760
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1135.
+(hyperref)                be the same. Added a new anchor on input line 760.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1135--1135
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 760--760
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1135--1135
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 760--760
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1135--1135
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 760--760
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1135--1135
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 760--760
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1135--1135
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 760--760
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1135--1135
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 760--760
 |[] 
  []
 
 [54
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1248--1248
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 873--873
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1248--1248
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 873--873
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1248.
+(hyperref)                be the same. Added a new anchor on input line 873.
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 1248--1248
+Underfull \hbox (badness 1939) in paragraph at lines 873--873
 []\TU/texgyrebonum-regular.otf(0)/m/it/8 Abyssal Fluid, Necrosis, Crippling Fat
 igue, Blight,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
+Underfull \hbox (badness 10000) in paragraph at lines 873--873
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
+Underfull \hbox (badness 10000) in paragraph at lines 873--873
 
  []
 
 [55
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1248--1248
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 873--873
 |[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
+Underfull \hbox (badness 10000) in paragraph at lines 873--873
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
+Underfull \hbox (badness 10000) in paragraph at lines 873--873
 
  []
 
 File: ../Images/Voldemort_Spirit.jpg Graphic file (type bmp)
 <../Images/Voldemort_Spirit.jpg>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1248--1248
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 873--873
 |[] 
  []
 
 
-Overfull \hbox (1.38602pt too wide) in paragraph at lines 1248--1248
+Overfull \hbox (1.38602pt too wide) in paragraph at lines 873--873
  [] 
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 1248--1248
+Underfull \hbox (badness 1939) in paragraph at lines 873--873
 []\TU/texgyrebonum-regular.otf(0)/m/it/8 Abyssal Fluid, Necrosis, Crippling Fat
 igue, Blight,
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 1248--1248
+Underfull \hbox (badness 1205) in paragraph at lines 873--873
 []\TU/texgyrebonum-regular.otf(0)/m/it/8 Army of the Dead, Soul Snare, Incinera
 tion Field,
  []
 
 
-Overfull \hbox (3.33107pt too wide) in paragraph at lines 1248--1248
+Overfull \hbox (3.33107pt too wide) in paragraph at lines 873--873
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
+Underfull \hbox (badness 10000) in paragraph at lines 873--873
 
  []
 
 [56]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1248--1248
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 873--873
 |[] 
  []
 
@@ -3843,42 +4037,42 @@ t=latn;language=DFLT;mapping=tex-text;!
 File: ../Images/aberstath.jpg Graphic file (type bmp)
 <../Images/aberstath.jpg>
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1248--1248
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 873--873
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1248--1248
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 873--873
 [] 
  []
 
 
-Overfull \hbox (1.38602pt too wide) in paragraph at lines 1248--1248
+Overfull \hbox (1.38602pt too wide) in paragraph at lines 873--873
  [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1248--1248
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 873--873
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1248--1248
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 873--873
 [] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1248--1248
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 873--873
 |[] 
  []
 
 
-Overfull \hbox (3.33107pt too wide) in paragraph at lines 1248--1248
+Overfull \hbox (3.33107pt too wide) in paragraph at lines 873--873
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
+Underfull \hbox (badness 10000) in paragraph at lines 873--873
 
  []
 
@@ -3901,69 +4095,54 @@ Output:366.23444pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-LaTeX Warning: Optional argument of \twocolumn too tall on page 57(1 stulpelis)
-.
-
-
-Overfull \vbox (13.62584pt too high) has occurred while \output is active []
-
-
-
-LaTeX Warning: Text page 57 contains only floats.
-
-
-Overfull \vbox (13.62584pt too high) has occurred while \output is active []
-
-
-[57
-
-] [58
+ [57
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1272--1272
+[58
+
+]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 897--897
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1272--1272
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 897--897
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1272.
+(hyperref)                be the same. Added a new anchor on input line 897.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1272--1272
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 897--897
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1272--1272
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 897--897
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1272--1272
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 897--897
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1272--1272
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 897--897
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1272--1272
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 897--897
 |[] 
  []
 
 [59
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1277--1277
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 902--902
 |[] 
  []
 
@@ -3971,21 +4150,21 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1277--1277
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1288--1288
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 913--913
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1288--1288
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 913--913
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1288.
+(hyperref)                be the same. Added a new anchor on input line 913.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1288--1288
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 913--913
 |[] 
  []
 
@@ -3996,7 +4175,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1288--1288
 File: ../Images/nogtail.jpg Graphic file (type bmp)
 <../Images/nogtail.jpg>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1293--1293
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 918--918
 |[] 
  []
 
@@ -4004,7 +4183,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1293--1293
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1297--1297
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 922--922
 |[] 
  []
 
@@ -4012,26 +4191,26 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1297--1297
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1311--1311
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 936--936
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1311--1311
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 936--936
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1311.
+(hyperref)                be the same. Added a new anchor on input line 936.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1311--1311
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 936--936
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1311--1311
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 936--936
 |[] 
  []
 
@@ -4039,26 +4218,26 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1311--1311
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1326--1326
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 951--951
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1326--1326
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 951--951
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1326.
+(hyperref)                be the same. Added a new anchor on input line 951.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1326--1326
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 951--951
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1326--1326
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 951--951
 |[] 
  []
 
@@ -4066,57 +4245,57 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1326--1326
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1344--1344
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 969--969
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1344--1344
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 969--969
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1344.
+(hyperref)                be the same. Added a new anchor on input line 969.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1344--1344
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 969--969
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1344--1344
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 969--969
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1344--1344
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 969--969
 |[] 
  []
 
 [66
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1359--1359
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 984--984
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1359--1359
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 984--984
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1359.
+(hyperref)                be the same. Added a new anchor on input line 984.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1359--1359
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 984--984
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1359--1359
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 984--984
 |[] 
  []
 
@@ -4124,7 +4303,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1359--1359
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1364--1364
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 989--989
 |[] 
  []
 
@@ -4132,7 +4311,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1364--1364
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1368--1368
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 993--993
 |[] 
  []
 
@@ -4140,21 +4319,21 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1368--1368
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1379--1379
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1004--1004
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1379--1379
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1004--1004
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1379.
+(hyperref)                be the same. Added a new anchor on input line 1004.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1379--1379
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1004--1004
 |[] 
  []
 
@@ -4162,7 +4341,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1379--1379
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1384--1384
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1009--1009
 |[] 
  []
 
@@ -4170,21 +4349,21 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1384--1384
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1395--1395
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1020--1020
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1395--1395
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1020--1020
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1395.
+(hyperref)                be the same. Added a new anchor on input line 1020.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1395--1395
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1020--1020
 |[] 
  []
 
@@ -4192,38 +4371,38 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1395--1395
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1413--1413
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1038--1038
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1413--1413
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1038--1038
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1413.
+(hyperref)                be the same. Added a new anchor on input line 1038.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1413--1413
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1038--1038
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1413--1413
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1038--1038
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1413--1413
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1038--1038
 |[] 
  []
 
 [73
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1418--1418
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1043--1043
 |[] 
  []
 
@@ -4231,7 +4410,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1418--1418
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1422--1422
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1047--1047
 |[] 
  []
 
@@ -4239,7 +4418,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1422--1422
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1426--1426
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1051--1051
 |[] 
  []
 
@@ -4247,26 +4426,26 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1426--1426
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1440--1440
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1065--1065
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1440--1440
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1065--1065
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1440.
+(hyperref)                be the same. Added a new anchor on input line 1065.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1440--1440
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1065--1065
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1440--1440
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1065--1065
 |[] 
  []
 
@@ -4274,23 +4453,23 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1440--1440
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1455--1455
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1080--1080
 |[] 
  []
 
 File: ../Images/grindylow.png Graphic file (type bmp)
 <../Images/grindylow.png>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1455--1455
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1080--1080
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1455.
+(hyperref)                be the same. Added a new anchor on input line 1080.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1455--1455
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1080--1080
 |[] 
  []
 
@@ -4299,28 +4478,28 @@ File: ../Images/kappa.jpg Graphic file (type bmp)
 File: ../Images/kelpie.jpg Graphic file (type bmp)
 <../Images/kelpie.jpg>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1455--1455
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1080--1080
 |[] 
  []
 
 [78
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1467--1467
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1092--1092
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1467--1467
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1092--1092
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1467.
+(hyperref)                be the same. Added a new anchor on input line 1092.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1467--1467
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1092--1092
 |[] 
  []
 
@@ -4328,7 +4507,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1467--1467
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1472--1472
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1097--1097
 |[] 
  []
 
@@ -4336,21 +4515,21 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 1472--1472
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1483--1483
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1108--1108
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1483--1483
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1108--1108
 |[] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1483.
+(hyperref)                be the same. Added a new anchor on input line 1108.
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1483--1483
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1108--1108
 |[] 
  []
 
@@ -4470,15 +4649,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 42.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
 Package rerunfilecheck Info: File `GMGuide.out' has not changed.
-(rerunfilecheck)             Checksum: 993A877AA26A45E3E365BCDF60C42521;12917.
+(rerunfilecheck)             Checksum: 5174B2D3950F7734A6838E3EB62759B8;12917.
  ) 
 Here is how much of TeX's memory you used:
- 45836 strings out of 427233
- 846165 string characters out of 3145604
- 1005829 words of memory out of 3000000
- 49698 multiletter control sequences out of 15000+200000
+ 45858 strings out of 427233
+ 846475 string characters out of 3145604
+ 1005500 words of memory out of 3000000
+ 49720 multiletter control sequences out of 15000+200000
  572905 words of font info for 155 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 68i,13n,86p,1573b,1214s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,13n,86p,1529b,1144s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on GMGuide.pdf (85 pages).
