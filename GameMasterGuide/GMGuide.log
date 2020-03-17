@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.11)  16 MAR 2020 17:37
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.11)  17 MAR 2020 16:48
 entering extended mode
 **./GMGuide.tex
 (GMGuide.tex
@@ -2091,31 +2091,6 @@ Overfull \hbox (12.79448pt too wide) in paragraph at lines 163--163
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 207--207
-[][] 
- []
-
-
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 208--208
-[][] 
- []
-
-
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 209--209
-[][] 
- []
-
-
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 210--210
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--211
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Beautification Potion, Duplicating
- []
-
-
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 211--211
 [][] 
  []
@@ -2136,6 +2111,11 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 214--214
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Beautification Potion, Duplicating
+ []
+
+
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 215--215
 [][] 
  []
@@ -2151,7 +2131,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 217--217
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 218--218
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 218--218
 [][] 
  []
 
@@ -2171,17 +2151,12 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 221--221
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--222
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Midas’ Mixture and Stew of Near-
- []
-
-
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 222--222
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 222--222
 [][] 
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 223--223
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 223--223
 [][] 
  []
 
@@ -2191,13 +2166,13 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 224--224
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Blemish Blitzer and Gloom-inducing
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 225--225
+[][] 
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 225--225
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Midas’ Mixture and Stew of Near-
  []
 
 
@@ -2206,7 +2181,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 226--226
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 227--227
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 227--227
 [][] 
  []
 
@@ -2216,12 +2191,17 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 228--228
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Blemish Blitzer and Gloom-inducing
+ []
+
+
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 229--229
 [][] 
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 230--230
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 230--230
 [][] 
  []
 
@@ -2230,18 +2210,18 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 231--231
 [][] 
  []
 
-[10]
+
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 232--232
 [][] 
  []
 
-
+[10]
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 233--233
 [][] 
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 234--234
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 234--234
 [][] 
  []
 
@@ -2276,7 +2256,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 240--240
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 241--241
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 241--241
 [][] 
  []
 
@@ -2296,7 +2276,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 244--244
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 245--245
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 245--245
 [][] 
  []
 
@@ -2306,7 +2286,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 246--246
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 247--247
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 247--247
 [][] 
  []
 
@@ -2326,7 +2306,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 250--250
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 251--251
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 251--251
 [][] 
  []
 
@@ -2381,11 +2361,6 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 261--261
  []
 
 
-Underfull \hbox (badness 7116) in paragraph at lines 262--262
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Blemish Blitzer, Burn-healing paste,
- []
-
-
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 262--262
 [][] 
  []
@@ -2401,8 +2376,13 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 264--264
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 265--265
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 265--265
 [][] 
+ []
+
+
+Underfull \hbox (badness 7116) in paragraph at lines 266--266
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Blemish Blitzer, Burn-healing paste,
  []
 
 
@@ -2421,11 +2401,11 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 268--268
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 269--269
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 269--269
 [][] 
  []
 
-
+[11]
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 270--270
 [][] 
  []
@@ -2436,7 +2416,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 271--271
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 272--272
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 272--272
 [][] 
  []
 
@@ -2455,8 +2435,8 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 275--275
 [][] 
  []
 
-[11]
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 276--276
+
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 276--276
 [][] 
  []
 
@@ -2471,13 +2451,8 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 278--278
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 279--279
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 279--279
 [][] 
- []
-
-
-Underfull \hbox (badness 6725) in paragraph at lines 280--280
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Antidote to Common Poisons, Anti-
  []
 
 
@@ -2501,13 +2476,13 @@ Overfull \hbox (6.01767pt too wide) in paragraph at lines 283--283
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 284--284
-[][] 
+Underfull \hbox (badness 6725) in paragraph at lines 284--284
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Antidote to Common Poisons, Anti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--285
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Curse-Countering Concoction and
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 284--284
+[][] 
  []
 
 
@@ -2516,7 +2491,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 285--285
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 286--286
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 286--286
 [][] 
  []
 
@@ -2526,8 +2501,13 @@ Overfull \hbox (6.01767pt too wide) in paragraph at lines 287--287
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 288--288
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 288--288
 [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--289
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Curse-Countering Concoction and
  []
 
 
@@ -2536,23 +2516,13 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 289--289
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 290--290
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 290--290
 [][] 
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 291--291
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 291--291
 [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Finder’ Friend and Stew of Near-
- []
-
-
-Underfull \hbox (badness 7256) in paragraph at lines 292--292
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Astral Acid, Fatiguing Infusion and
  []
 
 
@@ -2576,13 +2546,18 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 295--295
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 296--296
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Finder’ Friend and Stew of Near-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--297
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Emanation Elimination Elixir and
+Underfull \hbox (badness 7256) in paragraph at lines 296--296
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Astral Acid, Fatiguing Infusion and
+ []
+
+
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 296--296
+[][] 
  []
 
 
@@ -2603,6 +2578,11 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 299--299
 
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 300--300
 [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--301
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Emanation Elimination Elixir and
  []
 
 
@@ -2630,7 +2610,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 305--305
 [][] 
  []
 
-
+[12]
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 306--306
 [][] 
  []
@@ -2666,7 +2646,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 312--312
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 313--313
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 313--313
 [][] 
  []
 
@@ -2680,7 +2660,7 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 315--315
 [][] 
  []
 
-[12]
+
 Overfull \hbox (7.15767pt too wide) in paragraph at lines 316--316
 [][] 
  []
@@ -2706,13 +2686,8 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 320--320
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 321--321
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 321--321
 [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 322--322
-[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Befuddlement Beverage, Infusion of
  []
 
 
@@ -2736,7 +2711,12 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 325--325
  []
 
 
-Overfull \hbox (6.01767pt too wide) in paragraph at lines 326--326
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
+[]\TU/texgyrebonum-regular.otf(0)/m/n/6 Befuddlement Beverage, Infusion of
+ []
+
+
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 326--326
 [][] 
  []
 
@@ -2756,12 +2736,32 @@ Overfull \hbox (7.15767pt too wide) in paragraph at lines 329--329
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--330
+Overfull \hbox (6.01767pt too wide) in paragraph at lines 330--330
+[][] 
+ []
+
+
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 331--331
+[][] 
+ []
+
+
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 332--332
+[][] 
+ []
+
+
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 333--333
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
 []\TU/texgyrebonum-regular.otf(0)/m/n/6 Blood-Refilling Potion, Burn-healing
  []
 
 
-Overfull \hbox (7.15767pt too wide) in paragraph at lines 330--330
+Overfull \hbox (7.15767pt too wide) in paragraph at lines 334--334
 [][] 
  []
 
@@ -4648,15 +4648,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
  (GMGuide.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 42.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
-Package rerunfilecheck Info: File `GMGuide.out' has not changed.
-(rerunfilecheck)             Checksum: 5174B2D3950F7734A6838E3EB62759B8;12917.
+
+
+Package rerunfilecheck Warning: File `GMGuide.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `GMGuide.out':
+(rerunfilecheck)             Before: E8775F9DE1875B67B5AE709B52E57D70;12864
+(rerunfilecheck)             After:  5174B2D3950F7734A6838E3EB62759B8;12917.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 45858 strings out of 427233
- 846475 string characters out of 3145604
- 1005500 words of memory out of 3000000
- 49720 multiletter control sequences out of 15000+200000
- 572905 words of font info for 155 fonts, out of 3000000 for 9000
+ 45857 strings out of 427233
+ 846461 string characters out of 3145604
+ 1014518 words of memory out of 3000000
+ 49719 multiletter control sequences out of 15000+200000
+ 572457 words of font info for 154 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  68i,13n,86p,1529b,1144s stack positions out of 5000i,500n,10000p,200000b,50000s
 

@@ -19,8 +19,9 @@ classdef Ingredient < handle
 			else
 				if ~isempty(tableLine.Name{1})
 					obj.Name = convertCharsToStrings(tableLine.Name{1});
-					obj.processCost(tableLine.Cost(1));
-
+					
+                    obj.Cost = strcat(tableLine.Rarity{1},", ",tableLine.Category{1}); 
+                    
 					obj.Description = tableLine.Description{1};
 				end
 			end
