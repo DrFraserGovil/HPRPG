@@ -1,0 +1,103 @@
+
+\chapter{Main Attributes}\label{C:Attributes}
+
+Attributes are the defining characteristics of your character. They enumerate how strong willed, how athletic and how popular your character is. These characteristics in turn define how good your character is at certain skills -- a character with a large willpower, for instance, will be good at combat magic, whilst a character with a low \attPhys{} would find themselves unable to run away from threats!
+
+\newcommand\attLine[3]
+{
+	#1	(#2):	& \parbox[t]{6 cm}{#3} \\~\\
+}
+
+\begin{tabular}{r l}
+
+	\attLine{\attPhys{}}{\attPhysShort{}}{ The measure of the physical capabilities of a character, as well as their general health. }
+
+	\attLine{ \attFin{}}{\attFinShort{}}{A being's ability to execute actions with delicacy and precision. Picking pockets, hiding and ranged attacks require finesse to execute properly. }
+
+	\attLine{\attSpr{}} {\attSprShort{}} {The internal strength, bravery and conviction of a being. Typically considered the defining characteristic of Gryffindor House. }
+   
+   \attLine{\attChr{}} {\attChrShort{}} {The ability of a leader, and those who influence others. A trait typically associated with Slytherin House.}
+   
+   \attLine{\attInt{} }{\attIntShort{}}{ A measure of analytical ability, memory and ability to assimilate new information. Typically considered the defining trait of Ravenclaw House.}
+   
+    \attLine{\attPer{}}{\attPerShort{}}{ Awareness of the world outside a being's own head -- spotting a hidden tripwire, or the detection of other's emotions. Often going hand in hand with a kind and compassionate soul, perception is considered the defining trait of Hufflepuff House. }
+   
+   \attLine{\attPow{}} {\attPowShort{}}{ The amount of raw magical power a being can wield. Not always a substitute for slyness and inventiveness, however. }
+
+   \attLine{ \attEvl{}} {\attEvlShort{}}{ A measure of a being's depravity, its lack of care for human life. A being with a high Evil stat is one to be feared. }
+   
+\end{tabular}
+	
+In addition to these 8 high-level attributes, there exist a number of specialised domains within most of them. These are known as {\it Proficiencies}. These, along with a more in-depth discussion of the actions associated with each of the attributes, are discussed in more detail on page \pageref{S:Proficiencies}.
+
+
+ \subsection*{Determining Abilities}
+ 
+Perhaps the most important part of Character Creation is determining the attributes of your character. This is done by rolling a 2d6+2 ten times. This gives you 10 numbers between 4 and 14. You may then allocate 7 of these numbers to your non-EVL attributes at will. EVL defaults to zero at character creation. 
+ 
+Generally speaking, you will want to allocate the largest of these values to the attributes which your character will rely on the most -- so a powerful magical warrior will get the largest values allotted to SPR and POW, whilst a seer would get larger values dedicated to PER. 
+ 
+
+ \section{Health \& Fortitude}
+ 
+ Having determined your character's baseline attributes, we may now begin to see how this affects values relevant to gameplay -- namely, the Health and Fortitue of your character.
+ 
+ \subsection*{Health}
+ 
+Health is the physical status of your character: attacking a character lowers their health, and when the health points (HP) of a character reach zero, that character tacquires the {\it Critical Condition} status. If this is not rectified quickly, the character will quickly perish. 
+
+There are three statistics associated with your Health: your {\it Current Health}, your {\it Maximum Health} and {\it Temporary Health}. 
+
+The current health is enumerated through your Health Points (also known as Hit Points), this is a number between 0 and (usually) your Maximum Health statistic, which is the maximum amount of health and vitality that a being intrinsically possesses. You lose HP when you take damage, and regain it when you heal, either naturally or through magical or mundane medicine. 
+
+You may also occasionally encounter effects which give temporary boosts to your maximum health, which is sorted into {\it Temporary Health}. Your HP may only ever exceed your Maximum Health when you are under the effect of such an effect.
+Your HP is therefore always limited to be between 0 and the sum of your maximum health and your temporary health. 
+
+If an effect which provides you with temporary health wears off whilst your HP exceeds your maximum health, you must reduce your HP to satisfy the current HP ceiling. However, with most effects, if your HP is below the ceiling, then you do not alter your HP when your ceiling falls. 
+
+Your maximum health points are determined by your character archetype - each archetype gives a starting max HP, and then an amount by which to increase it each level. In addition, if you possess the {\it Vitality} proficiency, your health increases more rapidly by giving you check-advantage on HP-increasing rolls.
+
+\subsection*{Fortitude}
+
+Fortitude is a character{\apos}s ability to concentrate, which is necessary to cast spells and other feats or great mental prowess. Such actions take effort, and a character{\apos}s fortitude points (FP) will be slowly eroded by engaging in such mental effort.  
+
+When your FP reaches zero, your mind is exhausted, and so you will no longer be able to engage in such complex actions. Some effects which previously effected only your Fortitude will begin to effect your health
+
+As with health, you have three statistics associated with fortitude: {\it Current Fortitude}, {\it Maximum Fortitude}, {\it Temporary Fortitude}. These follow the same rules as their Health counterparts. 
+
+The Maximum Fortitude is, as with HP, grown in conjunction with your Archetype. If you possess the {\it Logic} proficiency, your mind can be trained me easily, giving you check-advantage on FP-increasing rolls.
+
+
+\section{Other Statistics}
+
+In addition to your HP and FP, there are a number of other statistics that impact your character and control how they interact with the world. 
+
+These statistic include:
+\begin{itemize}
+	\item {\bf Base Speed} 
+	
+	This is determined by your choice of species and the {\it Mobile} skill. Determines how fast you move in combat
+	
+	\item {\bf Proficiencies}
+	
+	In addition to the proficiencies mention above, you also may want to keep track of the weapons and tools you are considered proficient in. 
+	
+	\item {\bf Block}
+	
+	One of two {\it Instincts} used to set the DV of accuracy checks. Value set to 10 + \attPhys{} modifier.
+	
+	\item {\bf Dodge}
+	
+	The other {\it Instinct}. Value is 10 + \attFin{} modifier.
+	
+	\item {\bf Spellcasting Bonuses}
+	
+	Wizards have different abilities in each of the schools of magic, and their associated Disciplines. You need to keep track of your abilities in this field. 
+	
+	\item {\bf Spell Power}
+	
+	Determines the DV of resist checks for spells that you cast. Value is 8 + Expertise bonus + POW modifier. 
+\end{itemize}
+
+The useage of these statistics, and the role they play in the game, is discussed in more detail in the relevant sections below. 
+

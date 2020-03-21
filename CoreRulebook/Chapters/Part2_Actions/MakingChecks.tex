@@ -1,0 +1,208 @@
+\chapter{Performing Checks}
+
+
+In general, when you want to perform an action, simply tell the GM what you wish to do. 
+
+If it is a simple action – for example, “I walk to the shop”, then the action is completed with no further involvement. More complex actions may require a ‘check’ to be performed, to determine their success: inform the GM of what you want to do, and the GM will tell you what check to perform. 
+
+Usually, every action you wish to perform falls into the domain of one of your 8 character attributes (where there is ambiguity, the GM's word is final). The a check to jump over a ravine, for example, would be an \attPhys{} check, whilst a check to remember the ingredients of a potion would be an \attInt{} check. Having a higher attribute score in the relevant field will make your check more likely to succeed, via the {\it Modifier} associated with that attribute.  
+
+As always, the GM has the authority to override these general guidelines, if it is suitable to do so. For more detail on how to calculate a check, see page \pageref{S:Checks}.
+
+
+
+\section{Dice}
+
+For almost every action, you will use the 20 sided dice (d20) as the basis of the check. You roll this dice once, and use the first value. 
+
+The most notable exception to this general rule is: {\bf damage checks}, which are used to determine how much damage a given attack or event inflicted. 
+
+If the value of a dice is roll indeterminate, or the dice falls off the table, it is usually best to perform the check again: though you may form your own conventions as to the etiquette in such situations.
+
+\section{Modifiers}
+
+If the GM has assigned the check to one of the Attributes, you then modify the dice roll value by the various bonuses that your character has. 
+
+The primary way to do this is through using the {\it attribute modifiers}. These are 8 values associated with each of your 8 attribute scores. When asked to perform a check associated with, for example, the \attFin{} attribute, you add your \attFin{} modifier on to the d20 check. 
+
+The modifier is calculated using the following formula:
+$$ \text{attribute modifier} = \frac{\text{attribute value} - 10}{2} \text{ (rounded down)} $$
+
+Given that an attribute value of 10 is considered `average', the attribute modifier is a way of quantifying ``how much better than average are you at this specific skill?"
+
+For example, a Level 5 Auror wants to try and convince a ne'er-do-well to reveal the location of their boss. The GM directs her to perform a \attChr{} check to convince the target. The auror has a \attChr{} value of 15, which corresponds to a +2 bonus. After rolling a 12, the total value for the check is 14, which the GM reveals was insufficient to persuade the target. 
+
+
+\begin{center}
+\begin{rndtable}{|c c p{0.1cm} c c|}
+\hline \bf Value 	&\bf 	Modifier  & ~ & \bf Value & \bf Modifier
+\\ \hline
+0-1	&	-5		&	~	&	10-11	&	+ 0
+\\
+2-3	&	-4	&	~	&	12-13	&	+ 1
+\\	
+4-5	& 	-3	&	~	&	14-15	&	+ 2
+\\
+6-7	&	-2		&	~	&	16-17&		+ 3
+\\
+8-9	&	-1		&	~	&	18-19	&	+4
+\\
+\hline
+\end{rndtable}
+\end{center}
+
+
+
+\section{Expertise \& Proficiencies}
+
+\subsection{Expertise Bonus}
+As a character grows and learns, they find certain skills that they excel in. The base level of expertise possessed by the Chief Warlock of the Wizengamot is significantly larger than that of a first year Hogwarts student, even on tasks they have never faced before. When faced with a check in a field in which you are an expert, you are significantly more likely to succeed. 
+
+This is quantified through your {\it Expertise Bonus}.  This is a single number that you may add to checks in areas which you are considered {\it proficient} in. For most characters, the proficiency is calculated from your total character level in the following fashion:
+$$ \text{Expertise bonus} = \frac{\text{Character Level}}{4} + 2 ~~~\text{(rounded down)}$$
+Some Archetypes, however, grant extra expertise bonus, and as such, deviate from this formula. The table representing each class-overview gives the Expertise bonus that class has at a given level. 
+
+
+\subsection{Proficiencies}
+
+There are many areas in which one can be considered {\it proficient} - including the use of wands, weapons, tools and armour. In addition to this, seven of the eight Character Attributes can be broken down into several specialised subdomains: {\bf proficiencies}. Being proficient in a domain means that, when a requested action falls into that field, you may add your proficiency bonus to the resulting check. 
+
+The profiencies are:
+
+\newcommand\prof[2]
+{
+-{\bf #1}:	&	\parbox[t]{ 6 cm}{\raggedright #2} \\	
+}
+\begin{tabular}{l l}
+\prof{\attPhys{}}{Speed, Strength, Vitality}
+\prof{\attFin{}}{Acrobatics, Chicanery, Stealth}
+\prof{\attSpr{}}{Conviction, Will\attPow{}}
+\prof{\attChr{}}{Deception, Performance, Persuasion}
+\prof{\attInt{}}{Arcane, History, Logic,  Nature, Research, Un-nature}
+\prof{\attPer{}}{Empathy, Investigation, Observation}
+\prof{\attPow{}}{Intimidation}
+\end{tabular}
+
+Your GM may therefore ask for a {\it Stealth} check, which is to be interpreted as a \attFin{} check with the Expertise bonus added if you posses the Stealth proficiency. If you are not proficient in Stealth, you simply perform a base \attFin{} check. 
+
+The character sheet provides slots to record your total modifier for each of the listed proficiencies, for ease of use. 
+
+\subsubsection{Unusual Uses}
+
+Generally speaking, the proficiencies are associated with their parent attribute - so Speed will usually be added on to a \attPhys{} check. If you are not told otherwise, you should always assume this is the case. 
+
+However, in certain circumstances it makes sense to cross the borders. For example, if you are attempting to intimidate someone, this is usually associated with the {\it \attPow{}} attribute, but if you are threatening them with physical violence, you might be asked for a ``\attPhys{} (Intimidation)'' check. You might also be asked for a ``\attChr{} (Intimidation)'' check if you are are bluffing and pretending to be more powerful than you are. 
+
+In this case, you use the modifier of the new parent, and add the proficiency bonus if applicable. 
+
+You are always allowed to ask the GM if a proficiency applies to a specific check, even if the proficiency was not explicitly asked for -- but they are always within their rights to refuse!
+
+\subsection{Other Proficiencies}
+
+In addition to the proficiencies associated with attributes, you may also be considered proficient in the use of various classes of weapons, and special tools. There are also some proficiencies with unusual or more nebulous domains-- for example the {\it Muggle-Lover} skill grants you proficiency in muggle-related checks, and archetypes often grant proficiency in certain spell disciplines.  
+
+As with the attribute-proficiencies, being proficient in an area means that you may add your Expertise bonus to the associated checks. 
+
+Weapon-proficiencies explicitly allow you to add the bonus to the {\it accuracy} check, not to the damage check. Some tools also give additional abilities with proficiency in them, as stated in the item description.
+
+\subsection{Multiple Proficiencies} 
+
+Occasionally, you may encounter scenarios where you may apply your Expertise bonus multiple times. For example, a character with both the {\it Muggle-Lover} skill and the {\it persuasion} proficiency attempts to persuade a muggle of something. However, you may only add your Expertise bonus once per check, unless a mechanic explicitly mentions that the bonus is doubled, or halved. 
+
+
+\section{Success \& Failure}
+
+After the GM has decided which ability is relevant to the task a character is trying to perform, an ability check is made. The result a single number -- the result of a dice roll and your  modifiers and bonuses. This value is the {\it Check Value} (CV). It is now time to `resolve' the check, and decide if the action was successful or not. 
+
+The GM assigns the activity a {\it Difficulty Value} (DV). The more difficult a task is, the higher the associated DV. 
+
+\def\w{5}
+\begin{center}
+\begin{rndtable}{|c p{\w cm} c|}
+\hline
+Task Difficulty & 	Description & DV	
+\\ \hline 
+Very Easy & \parbox[t]{\w cm}{\raggedright An everyday task that anyone could be expected to carry out first time.}	&	5
+\\
+Easy & \parbox[t]{\w cm}{\raggedright A simple task that has only a small chance of failure.}& 10
+\\
+Moderate & \parbox[t]{\w cm}{\raggedright A task that a normal person might require a few tries to get right} & 15
+\\
+Hard & \parbox[t]{\w cm}{\raggedright A task that a normal person could not carry out without specialist training} &20
+\\
+Very Hard & \parbox[t]{\w cm}{\raggedright A task that even a trained expert might struggle to complete. } & 25
+\\
+Legendary & \parbox[t]{\w cm}{\raggedright A task that perhaps one person alive could actually complete.}	& 30
+\\ \hline
+\end{rndtable}
+\end{center}
+
+If the CV meets, or exceeds, the assigned DV then the action is successful and the GM will describe the effects of the action. If the CV is less than the DV, the action fails. 
+
+
+
+Many GM's accept that a check which rolls a 20 on the d20 (`nat 20'), if the action succeeds, is said to be a `critical success', and may have positive effects beyond the intended, regardless of the associated modifiers. If the check was an attack, for instance, it is considered a critical strike (page \pageref{S:Sneak}). 
+
+\subsection{Contests}
+
+A subset of actions are those in which the difficulty is not assigned by the GM, but by a check performed by another being. Such an action is termed a {\it Contest}. For instance, when trying to detect a being trying to stay hidden one character performs a Stealth check, whilst the other performs an Observation check. These two values are then compared directly - if the Sneak exceeds the observation, the being is hidden and vice versa. 
+
+When the GM assigns a DV, a check which meets the DV results in a success. However, in a contest, usually only one can `win'. Therefore, {\bf the status quo is maintained on a draw}. If the stealth check equals the observation check, and the being is already hidden, then it remains unspotted. If, however, it was trying to become hidden from a being which could perceive it, then the status quo is preserved and it is not hidden. 
+
+
+\section{Check Advantage}
+
+If you have the status effect {\it Check Advantage}, or are otherwise granted this ability on certain checks, then you may perform checks twice -- and take the largest value. This decreases the likelihood of a negative outcome, and increases the likelihood of a positive one. 
+
+Conversely, a {\it Check Disadvantage} requires you to perform a check twice and take the lower of the two values. 
+
+Check-Advantage and Check-Disadvantage compound each other, to a limited extent. If a character already possesses check-advantage, and gets a second separate effect which also gives them check-advantage, then they are in a state of `super-advantage', in which case you roll three dice, and take the highest. Equally, two disadvantages compound into super-disadvantage. 
+
+A disadvantage layered on an advantage cancel each other out, and a disadvantage on a super-disadvantage reduces it to normal. 
+
+{\bf However, more than two buffs in either direction have no additional effect}. 10 disadvantages and 11 advantages are treated as 2-against-2 (i.e. a normal roll), as are 3 advantages against 10 disadvantages. 
+
+Use the following table for reference:
+
+
+\def\cc{\cellcolor{\tablecolorhead}\bf }
+\begin{center}
+{
+\small
+\renewcommand{\arraystretch}{1.4}
+	\begin{rndtable}{c c c c c}
+	~ & ~	&	\multicolumn{3}{c}{\bf \# Advantages}
+	\\
+	\cc ~	&	\cc~ & \cc 0	&\cc	1	& \cc 2+ 
+	\\
+	\cc~& \cc 0	&	Normal	&	Advantage	&	Super Advantage
+	\\
+	\cc~& \cc 1	&	Disadvantage	&	Normal	&	Advantage
+	\\
+	\multirow{-4}{*}{\rotatebox[origin=c]{90}{\cc \bf \# Disadvantages}} & \cc 2+	&	Super Disadvantage	&	Disadvantage	&	Normal 
+	\end{rndtable}
+}
+\end{center}
+
+
+For (dis)advantages to compound, they must arise from totally different sources - drinking two potions which both provide Advantage will not give super advantage, but being invisible {\it and} drinking a potion would. 
+
+\section{Working Together}
+
+Occasionally two or more characters might decide that, together, they have a better chance of succeeding in a given task, and can work together. A character may only help if they could perform the action themselves (so you could only help pick a lock if you also had proficiency in lockpicking tools), or if you can provide a reasonable justification for how you are helping the action succeed (an untrained individual could help an engineer fix an engine by passing them tools, and holding a flashlight, for example). 
+
+When working together like this, the character with the highest relevant modifier performs the check with check-advantage. 
+
+Sometimes, you might need to complete a task where the entire group needs to succeed, but the group may help each other -- for example, if the entire group needs to jump across a ravine, or if the entire group is searching for a single hidden item. The GM may decided on the most appropriate course of action, but a general first-start is to ask all members of the group to perform the check -- if at least half of the group succeed, the entire group succeeds. 
+
+
+\section{Multiple Attempts}
+
+Sometimes, after an action fails, a character may want to try again immediately. This is generally to be discouraged - it makes the game less fun if everyone is just waiting for Mike to (finally) roll a 20. 
+
+A general rule is that you can't repeat an action until there is a material change in circumstance that might alter the outcome. This doesn't usually apply in combat as you are sacrificing your other combat actions each turn cycle to try anew. 
+
+Outside of combat, however, the GM may make allowances for multiple attempts. This will most commonly occur if you have some finite resource that you are burning through. If you only have 3 fragile lockpicks, there's no particular harm in giving you 3 attempts at opening the door. 
+
+If, however, a character is attempting to `spam' a check -- i.e. just keep rolling the dice until they succeed, and it makes enough narrative sense that the GM doesn't overrule it, then they instead ask you to roll a d100 on the table found on page \pageref{S:Multi}, which will determine the number of failed attempts. 
+

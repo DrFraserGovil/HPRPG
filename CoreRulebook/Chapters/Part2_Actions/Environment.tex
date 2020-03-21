@@ -1,0 +1,104 @@
+\chapter{Environment}
+
+It's not just enemies that you have to be aware of -- sometimes the environment itself can hinder (or potentially help) your progess. From falling off tremendous cliffs, being locked in airtight containers, or getting stuck in a bog, adventuring is sure to bring you to new and interesting places, many of which are going to try to kill you in as many interesting ways as possible. 
+
+
+
+\section{Terrain}
+
+Some terrain is simply much more difficult to traverse than you are usually used to, and this often incurs a penalty to the speed with which you can travel -- along with possibly some other effects, such as movement on ice being unable to change direction rapidly. 
+
+The table below details some basic terrain details:
+\def\y{4.4}
+
+
+\begin{rndtable}{|c c m {\y cm}|}
+\hline
+\bf Terrain & \bf Speed & \parbox[t]{\y cm}{ \raggedright \bf Other Effects}
+\\
+Grass & 100\% & \parbox[t]{\y cm}{ \raggedright None}
+\\ 
+Indoors & 120\% &\parbox[t]{\y cm}{ \raggedright If dusty, leave visible footprints}
+\\ 
+Road/path & 100\% & \parbox[t]{\y cm}{ \raggedright None}
+\\ 
+Caltrops/spikes & 80\% &  \parbox[t]{\y cm}{ \raggedright Does 1d6 piercing damage every 1m}
+\\ 
+Mud & 80\% & \parbox[t]{\y cm}{ \raggedright Always leave footprints. Last for 3 days.}
+\\ 
+Sand & 80\% &  \parbox[t]{\y cm}{ \raggedright Footprints last 2 hours}
+\\ 
+Loose footing & 75 \% & \parbox[t]{\y cm}{ \raggedright 10\% chance per turn that the ground gives way}
+\\ 
+Shallow water & 75\% &  \parbox[t]{\y cm}{ \raggedright Can be attacked by small aquatic beasts. Disguises scent}
+\\ 
+Ice & 75\% & \parbox[t]{\y cm}{ \raggedright Cannot change direction immediately. Must stop, pause, then start moving in a new direction}
+\\ 
+Snow & 60\% &  \parbox[t]{\y cm}{ \raggedright Always leave footprints, last for 2 days (unless snowing). FP does not regenerate whist moving. Applies frostbite if resting for more than 1 hour}
+\\ 
+Thick forest & 50\% & \parbox[t]{\y cm}{ \raggedright Fire attacks have a 50\% chance of igniting the environment}
+\\ 
+Swamp & 50\% &  \parbox[t]{\y cm}{ \raggedright Applies Poisoned status after 1 day}
+\\ 
+Deep Water & 10\% &  \parbox[t]{\y cm}{ \raggedright Requires swimming. Drains 1FP per minute whilst moving. Disguises scent}
+\\ 
+\end{rndtable}
+
+As usual, your GM may modify or add to this list as they feel is appropriate -- this is only a rough guide as to the effects of terrain. 
+
+\section{Vision}
+
+Vision is one of the most important factors to consider -- after all, you can't protect yourself very effectively if you can't see the monster hidden in the dark can you?
+
+Often, simple common sense rules apply -- you cannot see through walls (without an appropriate spell), for example. Thus, even if you can see, for example, the exact position of a miniature on the game map, you must consider that your character does not have this information available to them! Solid objects will often pose the most serious impediment to your vision, though thick foliage or mist might limit the extent of your vision, without totally blocking it.  
+
+
+
+\def\y{3.6}
+\begin{rndtable}{|m{2.6cm} m{1.3 cm} m{\y cm}|}
+\hline
+\bf Obscuration & \bf Distance &\bf Effects
+\\ 
+\parbox[t]{2.7cm}{\raggedright None \\ (Open field, bright light)} & 100\% & None
+\\ 
+\parbox[t]{2.7cm }{ \raggedright Mild \\ (Light mist, rain)} & 80\% & \parbox[t]{\y cm}{\raggedright Disadvantage on checks against non-sight based beings}
+\\ 
+\parbox[t]{2.7cm }{ \raggedright  Moderate \\ (Fog, light foliage, dim light) } & 50\% & \parbox[t]{\y cm }{\raggedright  Disadvantage on all sight based checks. Unimpeded beings get advantage over you. }
+\\ 
+\parbox[t]{2.7cm }{ \raggedright  Severe \\ (Dense foliage, torrential rain, sand/snowstorm)} & 10\% & \parbox[t]{2.7cm }{\raggedright  All sight based checks are disadvantaged \& take a 3 point penalty. Unimpeded beings get advantage \& 1 point bonus against you.}
+\\ 
+\parbox[t]{2.7cm }{ \raggedright Total \\ (Solid objects, total darkness) } & 0\% & \parbox[t]{\y cm }{ \raggedright All vision based checks with a line-of-sight passing through this region fail. Unimpeded beings get advantage \& 2 point bonus over you.}
+\\ \hline
+\end{rndtable}
+
+The effects of these are compounding, for example if you are in a light mist in dim light, your total vision is $80\% \times 50\% = 40\%$ that of your usual seeing distance.  
+
+Various skills may mitigate the negative effects of this, by allowing you to perform perception checks to use your other senses, or to sharpen your eyes to make better use of the available light. 
+
+
+\section{Falling}
+
+You are considered to be ``falling'' if you have dropped more than 2 metres, or have been propelled (by an explosion or a spell effect) over any distance.  
+
+For every metre that you fall, you take 1d4 bludgeoning damage, and upon landing you end up in the `prone' position on the ground. 
+
+ If the surface upon which you fall has any additional hazards (i.e. spikes, caltrops, fire), the associated damage is applied in addition to the falling damage. 
+ 
+ \section{Survival}\label{S:Survival}
+
+
+\subsection{Food}
+ 
+ \subsection{Water}
+ 
+\subsection{Air}\label{S:Air}
+
+
+
+All living beings require air to breathe. The average human being requires approximately 6 litres of air (at 1atm) per minute in order to stay conscious. This scales approximately as $L^3$, so a house elf (at $\sim$1m tall) needs only 1 litre per minute to survive, whilst a giant at 5m will require over 100 litres per minute. 
+
+The amount of time a being can go without oxygen is determined by 1 minute + 1 for every point of the Vitality modifier, with a minimum of 30 seconds. After this time limit is up, the being enters into the Hypoxia status, where their brain begins to shut down, and if it is not cured, then they die. Once in the hypoxia state, it is not sufficient simply to reintroduce the being to a normal environment, you must actively cure the hypoxia with a spell or potion. 
+
+Various beings are immune to these effects to a greater or lesser extent -- the undead do not generally require oxygen to survive, and creatures such as merpeople possess the ability to breath underwater (though they may still suffocate in other ways). 
+
+\subsection{Shelter \& Temperature} \ref{S:Shelter}

@@ -1,5 +1,10 @@
-function assemblePotions()
-
+function assemblePotions(fileNameRoot)
+    
+    if nargin < 1
+        disp('Insufficient inputs provided');
+        addpath('../Functions/');
+        fileNameRoot = '../../Chapters/';
+    end
 	opts = detectImportOptions('potions.xlsx','NumHeaderLines',2);
     opts.VariableNamesRange = 'A1';
     f = readtable("potions.xlsx",opts,'ReadVariableNames',true);
@@ -24,22 +29,20 @@ function assemblePotions()
         if isempty(ing.CriticalPotions) && isempty(ing.OptionalPotions)
            disp(ing.Name + " has no uses") 
         end
-	end
-	
+    end
 	%% output to files
-    fileNameRoot = "../Chapters/";
+
     potionSTrigger = "%%PotionBegin";
     potionETrigger = "%%PotionEnd";
     
 	%basic output
-	fileName = strcat(fileNameRoot, 'Artificing.tex');
+	fileName = strcat(fileNameRoot, 'Part3_Items/PotionMaking.tex');
 	I = [potions.SimpleInclude] == 1;
 	subset = potions(I);
-    length(subset)
 	writeToFile(fileName,subset,potionSTrigger,potionETrigger);
 	
 	%longer output
-	fileName = strcat(fileNameRoot, 'PotionList.tex');
+	fileName = strcat(fileNameRoot, 'Part5_Lists/PotionList.tex');
 	writeToFile(fileName,potions,potionSTrigger,potionETrigger);
 	
 	%rulebook output
@@ -63,7 +66,7 @@ s = cellstr({list.Name});
 
 	list = list(I);
 	potionText = "\n";
-    disp("Writing " + num2str(length(list)) + " potions to file")
+%     disp("Writing " + num2str(length(list)) + " potions to file");
 	for i = 1:length(list)
 		p = list(i);
 		potionText = potionText + p.print() + "\n";

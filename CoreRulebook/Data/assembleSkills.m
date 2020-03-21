@@ -2,20 +2,21 @@ function assembleSkills()
     skills= readtable('skills.xlsx');
    
     [n,~] = size(skills);
-skills = sortrows(skills);
+    skills = sortrows(skills);
 
-skills.SortName = skills.Name;
-for i = 1:n
-   if contains(skills.Name{i},"Species")
-      skills.SortName{i} = strcat('zzz_', skills.SortName{i}); 
-   end
-   if contains(skills.Name{i},"Magic:")
-      skills.SortName{i} = strcat('A_',skills.SortName{i}); 
-   end
-end
+    skills.SortName = skills.Name;
+    for i = 1:n
+       if contains(skills.Name{i},"Species")
+          skills.SortName{i} = strcat('zzz_', skills.SortName{i}); 
+       end
+       if contains(skills.Name{i},"Magic:")
+          skills.SortName{i} = strcat('A_',skills.SortName{i}); 
+       end
+    end
 
-[~,I] = sort(skills.SortName);
-skills = skills(I,:);
+    [~,I] = sort(skills.SortName);
+    skills = skills(I,:);
+    
 
 
     %statuses = sortrows(statuses,5);
@@ -46,7 +47,7 @@ skills = skills(I,:);
 
 
 
-    fileName = '../Chapters/Skill_List.tex';
+    fileName = '../Chapters/Part5_Lists/Skill_List.tex';
     readFile = fileread(fileName);
 
 

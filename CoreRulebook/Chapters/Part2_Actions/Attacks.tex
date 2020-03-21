@@ -1,0 +1,130 @@
+
+
+\section{Making Attacks}\label{S:Attacks}
+
+When making an attack, either with spells, arrows, or with a blade, there are 4 key steps:
+\begin{itemize}
+	\item Select a target 
+	\item Perform an accuracy check 
+	\item See if the target defends themselves
+	\item Calculate the damage inflicted
+\end{itemize}
+
+There are also some special rules regarding melee and ranged attacks.
+\subsection{Target Acquisition}
+
+You may only attack targets that are within the range of the attack you are making. For melee weapons, this is usually 1 metre, though some long weapons such as lances have additional reach. For ranged weapons, the maximum range is specified in the weapon description. Spells also have ranges associated with them, which is discussed more on page \pageref{S:Range}. 
+
+In addition, to determining if the target is in range, you must determine if it is a valid target - you cannot shoot arrows around walls, after all. You must be able to see a target in order to attack it (see below for blindfighting rules), and you may need to consider the fact that a target has cover. 
+
+
+\subsection{Melee Attacks}
+
+A melee attack encompasses all close-range fighting, including fist-fighting, sword-swinging and whip-wrangling.
+
+Typically, a melee attack can only be made against a target if they are within 1 metre of the attacker, with a clear line-of-reach between the two. Some weapons, as well as larger creatures, are able to perform melee attacks at a larger range.  
+
+\subsubsection{Grappling}
+
+If you wish to grab your opponent- either to immobilise them, or to pick them up and throw them off a cliff - you may attempt to initiate a grapple in place of a regular attack. 
+
+To perform a grapple you need two free hands and perform an Strength check, which is contested by the target performing either an Strength or an Acrobatics check. If the grappling succeeds, the target acquires the trapped status. 
+
+If the grappler is strong enough, then they move whilst carrying the target subject to the following constraint:
+
+\begin{center}
+\begin{rndtable}{c c}
+\bf Weight	&	\bf Speed
+\\
+Lighter than Strength value & Unencumbered
+\\
+Heavier than $2 \times$ Strength value	&	Speed halved
+\\
+Heavier than $ 5 \times$ Strength value	&	Speed = 0
+\end{rndtable}
+\end{center}
+
+Here the `strength value' is the raw \attPhys{} value, plus the Expertise Bonus if the Strength proficiency is possessed. 
+
+A grappled target may attempt to use their action to escape. Repeat the contest. 
+
+\subsubsection{Shoving}
+
+{\it Shoving} is considered a special form of grappling - rather than restraining the target, you may choose to push them to the ground (taking the {\it prone position} status), or push them back 1 metre. 
+
+\subsubsection{Two-Weapon Fighting}
+
+It is possible to have multiple one-handed weapons equipped at once -- for example, a dagger in each hand. 
+
+If you are proficient with at least one of these weapons, you may perform a double-strike when making an attack as part of a major action. Perform the damage check with both weapons and sum them together. 
+
+However, unless you are proficient with two-weapon fighting, you may not add your expertise bonus to either weapon check. 
+
+\subsection{Ranged Attacks}
+
+A ranged attack occurs over a longer distance by firing a projectile or magical effect up to the scale of hundreds of metres in some cases. 
+
+\subsubsection{Ranged Weapons}
+
+The description of every ranged weapon gives a maximum range at which the weapon may be fired. Some weapons have multiple ranges depending on the way in which they are used. 
+
+Slings, for example, have a much longer reach when using aerodynamic bullets, as compare to just using rocks. Equally, hip firing a rifle has a much less accurate range than when lying in a sniper nest. 
+
+Generally speaking, you cannot fire a projectile further than this range, as it represents the maximum distance that the projectile can reach. Some weapons (particularly the {\it firearms} class), however, the stated range is merely the range at which you can fire accurately. These weapons {\it can} be fired up to twice their stated range, but take check disadvantage on all accuracy checks beyond this point. 
+
+In addition, you will need to ensure that you have enough ammunition to properly use your ranged weapon.
+\subsubsection{Spells}
+
+Many spells state that they have an effective range, which is discussed more on page \pageref{S:Range}. You cannot exceed this range, without skills which explicitly extend your spellcasting range. 
+
+\subsubsection{Close-Combat Firing}
+
+Ranged weapons and spells are significantly less effective when used on targets which are in close-quarters: aiming requires a clarity of thought that a monster trying to bite your face off denies. 
+
+When attempting to use a ranged attack on a non-incapacitated target within melee range, take check disadvantage on the accuracy check.
+
+\section{Accuracy}
+
+The attacker quantifies their ability to successfully hit their target through an {\it accuracy check}. 
+
+\subsubsection{The Accuracy Check}
+
+An accuracy check is performed using the usual d20 die. However, the associated attribute depends on the type of attack being performed. Generally speaking the following prescription is used:
+
+\begin{center}
+\begin{rndtable}{c c}
+\bf Attack Type	&	\bf Accuracy Attribute
+\\
+Spells	&	Discipline-Dependent
+\\
+Melee Weapons	& Fitness
+\\
+Ranged Weapons	&	Finesse
+\end{rndtable}
+\end{center}
+
+Some weapons diverge from this prescription, for example, a rapier is a melee weapon, but it requires great finesse to use expertly. See the item descriptions on page \pageref{S:WeaponList} for the check for each individual weapon. 
+
+\subsubsection{Proficiency}
+
+In addition, if you are considered proficient with the weapon (or wand) you are using to attack, you may add your proficiency bonus to the accuracy check. 
+
+\subsubsection{Hitting the Target}
+
+When attacking a living being, the DV of the accuracy check is determined by the {\it instinct value} used by the target. If you meet this target, then the attack lands true. If the accuracy check fails, then the attack misses, or is successfully blocked by the target. 
+
+\subsubsection{Additional Difficulty} \label{S:HardToHit}.
+
+Targeting objects which are particularly small, or (for ranged attacks) far away is more difficult.  The additional penalty for hitting such away targets is, with everything measured in metres:
+
+$$ P = \frac{\text{distance}}{10 \times \text{size}} ~~~~ \text{(rounded down)}$$
+
+Therefore, hitting a 1m target at a distance of up to 10m has a DV of 5, whilst the same target 30m away has a DV of 8, and hitting a 1cm target at a distance of of 1m has a DV of 15. 
+
+\subsubsection{Blindfight}\label{S:Unseen}
+
+If you cannot see your enemy, then you cannot select them as a target. You may, however, choose to simply start swinging your sword, or firing spells off in a random direction. You must tell the GM which direction you are attacking in, and then perform an accuracy check with check disadvantage.
+
+If the target is not in the region  you are attacking, you automatically miss (though the GM will still ask for the accuracy roll, to avoid giving away where they actually are!). 
+
+After you successfully hit an unseen attacker, you avoid the disadvantage penalty until your next attack misses or the target moves. You must then retake the penalty until you next land a successful hit, or you detect them through other means. 

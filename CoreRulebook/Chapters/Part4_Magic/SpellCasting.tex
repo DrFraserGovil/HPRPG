@@ -1,0 +1,190 @@
+
+
+
+
+\chapter{Casting Spells}
+
+Spellcasting is the process by which a witch or wizard harness the infinite, chaotic and formless power of {\it magic}, shape it through their intellect or force of will, and project it into the world around them. 
+
+For most wizards, this is achieved through the use of an incantation, a movement of the wand, and deep concentration, though some magic spells require a ritual be conducted before the magic can be executed. 
+
+Some powerful wizards understand that these are simply crutches, guiding tools for the weaker mind - and can cast magic both silently, and without their wand to focus the magical energies. This, however, is an advanced feat and is not to be taken lightly. 
+
+\section{Learning Spells}
+
+In order to cast a spell, you must be guided in how this is achieved - to learn the incantation, the wandwork and the correct patterns of thought which will channel the magical energy correctly. 
+
+\subsection{Spellbooks and Book-Casting}
+
+The most common source of such information is in spellbooks, such as those listed in the Items chapter. If you have a spellbook in your possession, you may be able to flip through and find a spell you would like to cast. By carefully studying the text, you may attempt to cast the spell, whilst using the book for reference. 
+
+This is known as {\it Book-Casting}. 
+
+Book casting is a fairly slow process - even the slightest misreading of the text could result in drastic consequences! When used in combat, book casting always takes up the entirety of your turn. 
+
+After choosing the spell you would wish to cast, you must perform a {\it Casting Check} (see below). If the check succeeds, you must then perform an accuracy check (if relevant), and then the magic effect takes hold. 
+
+Congratulations - you just cast your first spell!
+
+\subsection{Memorising Spells}
+
+After you have book-cast a spell a couple of times - you will begin to get the hang of it. Eventually, you will have comitted the spell to memory. This occurs after you have book-cast a spell a number of times equal to:
+$$ N = 5 - \text{\attInt{} Modifier} ~~~\text{(min 1)} $$
+These book-casts have to be in an appropriate use of the spell - you can't sit and hex a tree 5 times in a row, and expect to learn the spell. You must successfully use the spell for its intended purpose for it to be a valid learning experience. 
+
+Alternatively, you may spend your downtime studying the {\it theory} of the spell, over the practice. Studying a spellbook, or working with a proficient teacher for 1 hours is equivalent to casting the spell once in a real-life scenario. However, knowing something is theory is not always quite enough: you can never {\it completely} learn a spell this way. After completing your research, you must book-cast the spell at least once more, before it is truly memorised. 
+
+\subsection{Memory-Casting}
+
+After a spell is memorised, you no longer need the spellbook to hand in order to cast the spell - instead you can {\it Memory-Cast} it. 
+
+When you are comforable enough with the spell to memory-cast it, the casting check is assumed to succeed, unless you are trying to do something particularly out of the ordinary - such as silent casting. 
+
+A memory cast spell therefore skips the casting check stage, and jumps straight to the accuracy check (if applicable), and then applies the specified spell effect. 
+
+
+
+
+
+\section{Casting Checks}
+
+When casting an unfamiliar spell (or casting a familiar spell at a higher level) there is a non-trivial chance for a spellcaster to flub some important aspect of the spellcasting - which causes the spell to fail to materialise. 
+
+This is quantified through the {\it Casting Check}. A casting check is a normal ability check, performed with a d20 dice. The relevant ability modifier is determined by the kind of spell you are attempting to cast. Spells from different disciplines require different mental abilities in order to manifest, as shown in the table below: 
+
+\def\xS{2}
+\def\wS{2}
+\begin{center}
+	\begin{rndtable}{c m{\xS cm} p{\wS cm}}
+	\bf School	&	\bf Discipline	&	\bf Attribute
+	\\
+	\school{Charms}{Elemental}{\ElCheck}{Kinesis}{\KinCheck}
+	\\
+	\school{Divination}{Telepathy}{\TelCheck}{Temporal}{\TemCheck}
+	\\
+	\school{Illusion}{Bewitchment}{\BewCheck}{Psionics}{\PsiCheck}
+	\\
+	\school{Malediction}{Hexes}{\HexCheck}{Curses}{\CurCheck}
+   \\ 
+   \school{Recuperation}{Healing}{\HeaCheck}{Warding}{\WarCheck}
+	\\
+	\school{Transfiguration}{Alteration}{\AltCheck}{Conjuration}{\ConCheck}
+	\\
+	\school{Dark Arts}{Necromancy}{\NecCheck}{Occultism}{\OccCheck}
+	\end{rndtable}
+\end{center}
+
+In addition, as well as an affinity based on their attribute scores, some beings possess proficiencies in various disciplines. If a being is considered proficient in the spell-school they are attempting to cast, then they add their Expertise Bonus to the casting check. 
+
+
+The difficulty of a spell is determined by the caster's own level, and the difficulty of the spell they are trying to cast. Use the table below to determine the casting DV:
+\def\cc{\cellcolor{\tablecolorhead}\bf}
+
+\begin{center}
+\begin{rndtable}{c c c c c c c c}
+~	& ~ &	\multicolumn{6}{c}{\bf Spell Level}
+\\
+\cc	&	\cc	&	\cc 1 &\cc 2&\cc 3&\cc 4&\cc 5&\cc 6	
+\\
+\cc~	&	\cc1	&	15~&~&~&~&~&
+\\
+\cc&\cc	2	&	10	&	15~&~&~&~&
+\\
+\cc&	\cc3	&	5	&	10	&	20~&~&~&~
+\\
+\cc&	\cc4	&	5	&	10	&	15	&	20~&~&~
+\\
+\cc&	\cc5	&	5	&	10	&	15	&	20	&	25 & 
+\\
+\multirow{-6}{*}{\rotatebox[origin=c]{90}{\cc \bf Caster Level}}&	\cc 6 &	5	&	10	&	15	&20	&25	&30
+\end{rndtable}
+\end{center}
+\subsection{Spell Accuracy}
+
+Spells require an accuracy check in one of two circumstances:
+
+\begin{itemize}
+	\item The spell is classified as either {\it Blockable} or {\it Dodgeable}. 
+	\item The target of the spell is far enough away, or small enough to trigger the `hard-to-hit' rules discussed on page \pageref{S:HardToHit}.
+\end{itemize} 
+
+Perform an accuracy check using the normal d20 dice. The modifier used is the same as the one that is used in the casting check - determined by the spell's discipline, plus the Expertise Bonus if applicable. 
+
+\section{Fortitude Cost}
+
+
+Casting spells is not as simple as waving your wands and saying the magic words -- it takes great mental clarity to cast, and you can become exhausted from casting difficult spells. This mental burden is enumerated through the Fortitude Points attribute. 
+
+You cannot cast a spell if it would send you into negative FP -- you must wait for your head to clear before attempting that spell.  
+
+The FP cost of casting a spell is determined by the difficulty of the spell - i.e. the spell level -- as shown in the table below:
+
+{
+\small
+\def\wFP{1}
+\begin{center}
+	\begin{rndtable}{c c    c  c c  c}
+		{\bf Beginner}	&	{\bf Novice}	&	{\bf Adept}	&	{\bf Expert}	&	{\bf Master}	& {\bf Ascendant}
+		\\
+	2	&	4	&	8	&	16	&	32	&	64
+	\end{rndtable}
+\end{center}
+}
+\subsection{Casting at Higher Level}
+
+When memory-casting, some spells can be cast at varying levels of power - injecting more magical energy into the spell effect, and thereby increasing the effectiveness of these spells. 
+
+If the spell description states that such additional effects are available, then you may choose to cast it as a higher level spell. You cannot cast it as a higher level spell than your current casting level, but you may choose any level between the spell's base level and your spellcasting level. 
+
+Despite the fact that you are memory-casting the chosen spell, because you are casting the spell in an unfamiliar way, you do need to perform a casting check when casting a spell at a higher level. The DV and FP of the spell are equal to that of a normal spell of the chosen level. 
+
+You may `memorise' the higher level spell in the same fashion as you may memorise a book-cast spell - by successfully casting it. At this point, you may forgo the casting check when casting the spell at any level below the one you have just re-memorised. 
+
+{\bf Example:} Sarah is an 8th level witch, trying to levitate a boulder around 80kg in weight. Sarah has memorised the Beginner {\it Levitate} spell, which states it can lift only 1kg of matter. 
+
+However, this mass is multiplied by 10 for every additional spell level. Since Sarah has access to Adept-level spells, she chooses to try to cast {\it Levitate} as an Adept spell, which allows her to lift up to 100kg. 
+
+She successfully passes her DV 20 casting check, and the boulder is lifted. She still needs to pass the casting check to continue lifting boulders - but after 5 or 6, she has `memorised' the adept version of the spell, and does not need to pass the check any more. In the future, she may cast {\it Levitate} as either a Beginner, Novice or Adept level spell, without needing the check - she learned the Novice level for `free', by learning the more powerful Adept version.  
+
+
+
+\section{Resisting Spells}
+
+Even after a spell has successfully hit a target, it is possible for them to fight against the magic, reducing the effects and sometimes negating it entirely. 
+
+This is normaly done by performing a {\it Resist} check before the spell effect is applied, and comparing it to the spellcaster\apos{} Resist DV. If the Resist is greater than or equal to the Resist DV of the spellcaster, the spell effect is modified as the spell description states. 
+
+The Resist DV of a cast spell is enumerated through the {\it Subjugation} statistic:
+
+$$\text{Subjugate} = 8 + \text{Expertise bonus}  + \text{POW modifier}$$
+
+
+
+\section{Spell Range} \label{S:Range}
+
+Some spells have effects which can apply over immense distances, whilst others infuse only the caster with magical energies, and some are only effective up to a certain distance. 
+
+The maximum distance a spell can effect a person is known as the {\it range} of the spell. There are 4 classes of ranges for spells: {\it Self}, {\it Wandtip}, {\it Close} and {\it Sight}.
+
+\subsection{Self}
+
+Spells which have a range of `self' effect only the caster, or in this case of ritual spells involving multiple people, those involved with casting the spell.   
+
+Some spells which fall into this category also extend to cover a given radius - in which case the `self' indicates that the focal point of the spell is the caster. 
+
+\subsection{Wandtip}
+
+A `Wandtip' spell has an extremely limited range. You have to hold your wand directly over the region or being you wish to target, or (in some cases) make physical contact between your wand and the target. 
+
+\subsection{Close}
+
+Most spells are considerd `close range' spells. This means that you can project the magic out of your wand a certain distance - but over extreme ranges, the magic becomes diluted and fizzles out. 
+
+For most individuals, `close range' means the spell can be cast at a target up to 25m away. 
+
+Some individuals have trained themselves to be particularly good at targeting spells at beings a long distance away, and have picked up the {\it Extended Range} skill, which allows them to cast spells further than they normally would. 
+
+\subsection{Sight}
+
+Sight spells are those which have practically no limitation on their range - the only limitation is your ability to detect and select a target.  
+

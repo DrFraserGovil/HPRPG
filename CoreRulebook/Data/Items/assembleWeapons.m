@@ -1,5 +1,9 @@
-function assembleWeapons()
-
+function assembleWeapons(fileNameRoot)
+if nargin < 1
+        disp('Insufficient inputs provided');
+        addpath('../Functions/');
+        fileNameRoot = '../../Chapters/Part3_Items/';
+    end
     weapon = readtable('weapons.xlsx');
   
 
@@ -63,7 +67,7 @@ function assembleWeapons()
     ender = prepareText('\hline\end{rndtable} ');
 
 
-    fileName = '../Chapters/Items.tex';
+    fileName = fileNameRoot + "Weapons.tex";
     readFile = fileread(fileName);
     insertPoint = strfind(readFile, '%%WeaponsBegin');
     endPoint = strfind(readFile, '%%WeaponsEnd');

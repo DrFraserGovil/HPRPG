@@ -1,5 +1,9 @@
-function assembleItems()
-    
+function assembleItems(fileNameRoot)
+    if nargin < 1
+        disp('Insufficient inputs provided');
+        addpath('../Functions/');
+        fileNameRoot = '../../Chapters/Part3_Items/';
+    end
     items = readtable('Items/generic.xlsx');
 
     items = sortrows(items);
@@ -11,7 +15,7 @@ function assembleItems()
     end
     items(I,:) = [];
     
-    fileName = '../Chapters/Adventuring.tex';
+    fileName = fileNameRoot + "BasicGear.tex";
     readFile = fileread(fileName);
 
 

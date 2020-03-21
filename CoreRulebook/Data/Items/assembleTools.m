@@ -1,8 +1,13 @@
-function assembleTools()
+function assembleTools(fileNameRoot)
+    if nargin < 1
+        disp('Insufficient inputs provided');
+        addpath('../Functions/');
+        fileNameRoot = '../../Chapters/Part3_Items/';
+    end
     tools = readtable('Items/tools.xlsx');
     tools = sortrows(tools);
 
-    fileName = '../Chapters/Tools.tex';
+    fileName = fileNameRoot + "Tools.tex";
     readFile = fileread(fileName);
 
 

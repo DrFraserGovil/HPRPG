@@ -1,0 +1,70 @@
+
+\section{Defence}\label{S:Accuracy}
+
+A good fighter knows that all-out attack is rarely the path to victory: defending onself against incoming attacks is just as important. 
+
+\subsection{Instincts} \label{S:AC}
+
+Most beings either block or dodge, without having to devote conscious thought to their reaction. These two actions are therefore termed {\it instincts}. It is these reactions which set the difficulty of an attacker's accuracy check. A higher {\it dodge} or {\it block} statistic makes it harder for an attack to actually hit you. 
+
+The values associated with each statistic are:
+
+\begin{align*} 
+\text{Block} &= 10 + \text{\attPhys{} modifier} 
+\\
+\text{Dodge} &= 10 + \text{\attFin{} modifier} 
+\end{align*}
+
+By default, characters instinctively use whichever of these values is the highest:
+$$ \text{IV} = \max \left( \text{Block}, \text{Dodge} \right)$$
+
+If a character successfully dodges, the attack whizzes by their ear and misses completely. If they successfully block the attack, then they catch the spell or weapon on a piece of armour (or, with the appropriate skill, they can {\it parry} the attack with a weapon). 
+
+\subsubsection{Clothing \& Armour}
+
+Various items may improve either of these statistics. A pair of running shoes, for example, makes it easier to dodge out of the way, whilst a heavy shield makes defending yourself easier. 
+
+Generally speaking, items will be a compromise: wearing heavy armour will bulk up your Block statistic, but will slow you down, reducing your Dodge value. 
+
+Armour is discussed more in the Items chapter, on page \pageref{S:Armour}.
+
+\subsubsection{Bolstering Defences }
+
+Of course, not all defence happens instinctively -- you may make a conscious decision to brace yourself against an incoming attack, or prepare to dive out of the way. Such a decision is classified as a minor action. 
+
+Though by default you automatically use whichever value is highest, when making a conscious decision, you may choose to bolster either statistic by {\it bracing} or {\it evading}. 
+
+Whichever action is chosen, enemies take check-disadvantage on accuracy rolls against you for this turn cycle. In addition, you gain check-advantage on certain Resist checks this round, depending on which action you took. 
+
+\def\w{3.6}
+\def\c{7}
+\small
+\begin{center}
+\begin{rndtable}{p{1.2 cm} c | c}
+~	&	\bf Brace	&	\bf Evade
+\\
+\cellcolor{\tablecolorhead}\bf Resist:	&	\parbox[t]{\w cm}{\raggedright Advantage on \attPhysShort{}, \attSprShort{} \& \attPowShort{} Resist checks.}	&	\parbox[t]{\w cm}{\raggedright  Advantage on \attFinShort{}, \attIntShort{} \& \attPerShort{} Resist checks}
+\\
+\cellcolor{\tablecolorhead}\bf Accuracy:	&	\multicolumn{2}{c}{\parbox[t]{\c cm}{\cellcolor{\tablecolorlight}\centering Agressors take disadvantage on accuracy checks made against you this turn}} 
+\end{rndtable}
+\end{center}
+\normalsize
+\subsection{Cover}
+
+Standing out in the open is a sure-fire way to get hurt quickly. Hiding behind something, be it a tree, a low wall, or even just your ally will make you safer and harder to hit. 
+
+A target which is concealed in this fashion is said to be {\it under cover}. It is up to the GM to determine to what extent a target is hidden from view. This can usually be achieved through the `additional difficulty' mechanics discussed in the {\it Accuracy} section above. 
+
+If a 2m tall target is 15m away, the penalty to hit is zero. However, if they were covered such that only their head ($\sim 30$cm) could be seen, you can estimate that the penalty to hit them would be -5.
+
+Alternatively, you may use the simpler rules that `half cover' (i.e. half of the target is concealed) gives a -2 penalty to the accuracy check, and `three-quarter cover' gives -5, in addition to any other distance penalties. 
+
+\subsection{Undefendable Effects}
+
+Some effects cannot be avoided or blocked: holding up a shield against an incoming cannonball isn't going to prevent much, and trying to dodge out of the way of a tsunami is rarely effective. 
+
+Spells denote in their description if they can be blocked or dodged. For the (rarer) instances of non-spell effects which fall into one of these categories, the GM decides if it is reasonable to dodge or block the effect. 
+
+If the `dominant' instinct (i.e. the one with the highest value) would be ineffective against a given effect, you may use the non-dominant one. However changing your active instinct negates the effect of both the {\it Evade} and {\it Brace} actions for this turn cycle. Therefore, if a being is attacked by multiple effects in one cycle, it may be beneficial to allow one effect to land home, to keep the bonuses against the remainder of the effects. 
+
+Note that even `unblockable' effects are stopped by `impenetrable' fields. 

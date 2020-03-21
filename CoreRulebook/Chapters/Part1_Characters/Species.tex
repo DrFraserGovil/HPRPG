@@ -1,0 +1,112 @@
+
+\chapter{Playable Species} \label{C:Species}
+ 
+ Different magical races have different characteristics, abilities, and affinities with different kinds of magic. Each choice of race/species modifies your attribute values by a set amount and provides a pool of extra points which you can allocate to attributes at will, and some race-specific Abilities and Skills. 
+ 
+It is generally impossible to switch species once a character has been created, except where it makes sense within the story (i.e. a human transitioning to a Vampire after being bitten). 
+
+ 
+ \newcommand{\racetable}[8]{
+ % \begin{center}
+ \begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+ \attPhysShort{} & \attFinShort{} & \attSprShort{} & \attChrShort{} & \attIntShort{} & \attPerShort{} & \attPowShort{} & \attEvlShort{}
+ \\
+ \hline
+ #1 & #2 & #3 & #4 & #5 & #6 & #7 & #8 
+ \\ \hline
+ \end{tabular}
+ %\end{center}
+ }
+ 
+ 
+ 
+ \newcommand{\race}[6]{ 
+ 
+	\begingroup
+	\begin{tcolorbox}[  before skip=7pt plus 2pt,
+			     	  boxrule=0pt,
+			     	  boxsep=0pt,
+			     	  toptitle=4pt,
+			     	  left=0pt,
+			     	  right=0pt,
+			     	  bottom=5pt,
+			     	  arc=0.5mm,
+			     	  oversize=0pt,
+			     	  colback=papyrus,
+			     	 colbacktitle=titlered,
+			     	colframe=titlered, title=\vspace{-4ex}
+     				]
+     		
+	     		{\large \begin{center} \bf #1\end{center}}
+	     		\vspace{-1.3ex}
+	     		
+	     		\dndlineLong
+	     	
+	     		
+	     			
+					
+ {\bf Attribute Modifiers:}
+ 
+ {\centering
+ 
+ \racetable#2
+ 
+ }
+ \begin{tabular}{l l}
+ {\bf Base Speed:} & #3 metres per turn.
+ \\
+ {\bf Attribute points:}  & #4 extra points
+ \\
+ {\bf Skills:} & \parbox[t]{6cm}{\raggedright #5}
+ \end{tabular}
+ 
+ 
+
+   #6
+
+					
+	     		\normalsize
+	     		\dndlineLong
+     
+     	\end{tcolorbox}
+	\endgroup
+ 
+
+ 
+ }
+ 
+ %% { Pure-Blood humans get 4 extra points to spend, and two Beginner Skills to pick from those available}
+ 
+ %ATH   FIN   SPR   CHR    INT    PER    POW      EVL     
+ \race{Pure-Blood Human}{{-1}{-1}{+2}{+1}{+0}{-1}{+2}{+0}}{2}{2}{2 free skills}{ Typically the strongest magic users, pure-bloods find it  easiest to interact with other members of the magical community, whilst struggling to stay hidden amongst the muggles. Because of their lifelong reliance on magic, most pure-bloods are not very athletic or good with their hands.}
+
+
+ \race{Half-Blood Human}{ {+0} {+1} {+2} {+0} {+1} {+0} {0} {0}    }{2.5}{3}{1 free skill}{Not as in-tune with magic as purebloods, nor as adept at blending in as the muggle-borns, half-bloods strike a balance between the two, matching their empathy with magical power. Being a half-blood does not inherently mean only one magical parent: it is a catchall term for those with a non-trivial amount of muggle relatives in the recent past. As a result, the vast majority of magical folk are Half-bloods.}
+ 
+ 
+\race{Muggle-Born Human}{ {+1} {+0} {-1} {+1} {+0} {+1} {-1} {+0}   }{3}{3}{1 free skill}{Coming from a non-magical background, muggle-borns often lack in raw magical power. However, being brought up in a muggle household means that they are often adept at blending in. They are also used to getting by without magic, and will often find themselves more handy and athletic than those born into their magic.}
+ 
+ \if\coreMode1
+ 
+ 
+ 
+	\race{Metamorphmagus}{ {+0} {-2} {+1} {+3}  {-1}  {+0} {-1} {+0}  }{2}{2}{1 free skill \& {\it Morph} }{Metamorphmagi are a rare subspecies of wizard, capable of changing their shape at will. They are differentiated from animagi in that they can only mimic humanoid forms. }
+	
+	 \race{Half Giant}{ {+2} {-3} {+2} {+0} {-2} {+0} {-3} {0}   }{5}{2}{1}{Though rather a rare sight, the offspring of a giant and a human are not unheard of. Their magic is rather weak, but their giant blood gives them extreme strength, physical stamina and a large resistance to magical attacks. Half-giants often find it very hard to disguise themselves -- both from the muggles, and from their wizarding compatriots, who regard them with suspicion.}
+	 
+	 
+	\race{House-Elf}{{-3} {+1}  {-2}  {+3}  {+0}  {+2}  {-3} {+0}   }{1}{2}{Behind the Scenes, Wandless Magic \& Apparate (Novice) }{Usually overlooked by all other sentient beings, house elves are in fact mischievous and quick-witted beings, with a natural propensity for illusion magic. All house-elves are born with the innate ability to apparate, and to move unseen and unheard through large crowds. Though many house elves submit themselves to a life of subservience, those who break free -- the Free Elves --  often find themselves employed in professions where stealth is a requirement.}
+	
+	
+	\race{Goblin}{ {-2} {+4} {+0} {-2} {+5} {+0}  {-1} {0} }{1.5}{3}{Wandless Magic, Golden Touch \& Spellbinder (Novice)}{Goblins are highly intelligent non-humans, living alongside the magical world. Though viewed by many as inferior to their wizard brethren, Goblins are often far more powerful than humans expect, able to perform feats of magic without the use of a wand. They are expert artificers, able to create artefacts  and imbue them with immense powers. Goblins are also adept at the use of warding magic, with their most powerful work being displayed in the security systems at Gringott{\apos}s Bank. Goblins find it difficult (though not entirely impossible) to interact with the non-wizarding world.}
+	 
+	\newpage
+	\race{Half-Veela}{ {+0} {+1} {+1}  {+3} {-1} {-4} {-2} {+2}   }{2}{2}{Fury\apos{}s Visage and 1 free skill}{Inheriting the enchanting beauty of the Veela, and the magical ability of humans, the half-Veela are often able to charm their way through most interactions, having a natural affinity for magic which persuades and influences others. When this does not work in their favour, however, they can call upon the Fury, transforming into a demonic form and possessing the ability to throw fireballs at their foes.}
+	 
+	\race{Werewolf}{ {+2} {+0} {+4} {-2} {-1}  {-1} {-1} {+5}   }{3}{2}{Wolfblood, Wolfmoon \& Corrupted Blood}{A werewolf is a human who has been afflicted by lycanthropy. At the full moon, a werewolf forgoes their human form, and takes the form of a monstrous wolf. They become a mindless killing machine, immeasurably strong and almost immune to magic, the beast within is a terrifying monster. The wolfblood dampens the magical abilities of the wizard, but gives them an increased resistance to magic in return.}
+	 
+	\race{Vampire}{{+0} {+0} {+5} {+3} {-2} {-4} {+3} {+7}   }{2.5}{2}{Vampric Drain, Night\apos{}s Child \& Corrupted Blood}{The corpse of an infected human, inhabited by an ancient, malevolent spirit, a vampire is a creature of the night. Vampires possess a great affinity for the dark arts, but are mortally afraid of the sun. Subsisting only on the blood of humanoids, vampires are feared and hated by all. Vampires often possess astonishingly powerful magic, but popular legends often educate mortals on their weaknesses.}
+	 
+	 
+\fi

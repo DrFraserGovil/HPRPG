@@ -1,0 +1,145 @@
+\chapter{Adventuring Gear}
+
+Adventuring gear is the set of (usually non\minus{}magical) items that you would need to use to survive on a day\minus{}to\minus{}day basis on an adventure.
+\newcommand\generic[2]
+{
+	\vspace{2 ex}
+	\small
+	\vbox{
+	{\bf #1:}~~#2
+	}
+	\normalsize
+}
+
+
+\newcommand\pack[3]
+{
+	\vspace{2 ex}
+	\small
+	\vbox{
+	{\bf #1}
+	
+	\begin{tabular}{l p{6cm}}
+		Cost: & #2 gold
+	\\
+		Contains: & #3
+	\end{tabular}
+	}
+	\normalsize
+}
+
+
+\def\q{1.6}
+\newcommand\itemEntry[3]
+{
+	 \parbox[t]{\q cm}{\bf \raggedright \footnotesize #1}	&	#2	&#3
+}
+
+\newcommand\doubleRow[2]
+{
+	\itemEntry#1 & ~ & \itemEntry#2 \\
+}
+\newcommand\singleRow[1]
+{
+	\itemEntry#1 \\
+}
+
+\def\cw{0.6}
+\def\t{0.01}
+
+\footnotesize
+
+ \begin{center}\begin{rndtable}{|p{\q cm} l p{\cw cm} p{\t cm} p{\q cm} p{\cw cm} l|}\hline 
+ \bf Name & \bf Weight & \bf Cost & ~ &\bf Name & \bf Weight & \bf Cost\\ 
+  \hline
+ %%ItemsBegin
+\doubleRow{{ Acid}{Light}{\sickle{4}~}}{{ Jewellery (luxurious)}{Light}{\galleon{20}~}} 
+\doubleRow{{ Arrows (10)}{Light}{\sickle{4}~}}{{ Ladder (2m)}{Heavy}{\sickle{15}~}} 
+\doubleRow{{ Backpack (25L)}{Light}{\sickle{8}~\knut{15}}}{{ Lamp}{Light}{\sickle{2}~}} 
+\doubleRow{{ Backpack (65L)}{Medium}{\galleon{1}~\sickle{5}~}}{{ Magnifying Glass}{Light}{\sickle{2}~}} 
+\doubleRow{{ Ball bearings}{Light}{\sickle{1}~\knut{20}}}{{ Manacles (Iron)}{Medium}{\sickle{10}~}} 
+\doubleRow{{ Bedroll}{Light}{\sickle{5}~}}{{ Mirror (handheld)}{Light}{\sickle{2}~}} 
+\doubleRow{{ Blowgun Needles (20)}{Light}{\sickle{2}~}}{{ Oil (flask of)}{Light}{\sickle{1}~}} 
+\doubleRow{{ Caltrops}{Medium}{\sickle{6}~\knut{25}}}{{ Paper (20 sheets A4)}{Light}{\knut{10}}} 
+\doubleRow{{ Candle}{Light}{\knut{9}}}{{ Parchment (5 sheets A3)}{Light}{\sickle{2}~}} 
+\doubleRow{{ Case (map or scroll)}{Light}{\sickle{3}~\knut{10}}}{{ Perfume (vial)}{Light}{\sickle{10}~}} 
+\doubleRow{{ Chain (5m)}{Heavy}{\sickle{12}~}}{{ Pole (3 m)}{Light}{\sickle{8}~\knut{15}}} 
+\doubleRow{{ Chalk}{Light}{\knut{19}}}{{ Potion: Antidote}{Light}{\galleon{1}~}} 
+\doubleRow{{ Chest}{Heavy}{\galleon{1}~}}{{ Potion: Pepper\minus{}Up}{Light}{\sickle{10}~\knut{5}}} 
+\doubleRow{{ Crossbow Bolts (10)}{Light}{\sickle{4}~}}{{ Potion: Poison}{Light}{\galleon{2}~}} 
+\doubleRow{{ Crowbar}{Medium}{\sickle{3}~\knut{10}}}{{ Potion: Wiggenweld}{Light}{\sickle{10}~\knut{5}}} 
+\doubleRow{{ Drinking Flask}{Light}{\sickle{3}~\knut{10}}}{{ Rations (1 day)}{Light}{\sickle{2}~\knut{20}}} 
+\doubleRow{{ Firearm Bullets (20)}{Light}{\sickle{10}~}}{{ Rope (20m)}{Light}{\sickle{4}~\knut{20}}} 
+\doubleRow{{ Fishing Rod}{Light}{\sickle{13}~\knut{15}}}{{ Sack}{Light}{\knut{19}}} 
+\doubleRow{{ Floo Powder Pouch}{Light}{\galleon{1}~}}{{ Shovel}{Light}{\sickle{4}~}} 
+\doubleRow{{ Food (1 warm meal)}{Light}{\sickle{3}~\knut{10}}}{{ Slingshot Bullets (10)}{Light}{\sickle{1}~}} 
+\doubleRow{{ Glass Vial}{Light}{\sickle{2}~\knut{20}}}{{ Soap}{Light}{\knut{19}}} 
+\doubleRow{{ Hammer}{Medium}{\sickle{5}~}}{{ Tea Set}{Light}{\sickle{1}~\knut{20}}} 
+\doubleRow{{ Holy Water}{Light}{\galleon{2}~}}{{ Tent (two\minus{}person)}{Light}{\galleon{1}~\sickle{5}~}} 
+\doubleRow{{ Hourglass}{Light}{\sickle{1}~\knut{20}}}{{ Tinderbox}{Light}{\sickle{1}~}} 
+\doubleRow{{ Hunting Trap}{Light}{\galleon{1}~}}{{ Torch}{Light}{\knut{19}}} 
+\doubleRow{{ Ingredient Pouch}{Light}{\sickle{5}~}}{{ Whetstone}{Light}{\sickle{1}~\knut{20}}} 
+\doubleRow{{ Ink}{Light}{\knut{19}}}{{ ~}{~}{~}} 
+\doubleRow{{ Ink pen}{Light}{\knut{19}}}{{ ~}{~}{~}} 
+\doubleRow{{ Jewellery (cheap)}{Light}{\sickle{10}~}}{{ ~}{~}{~}} 
+\doubleRow{{ Jewellery (fine)}{Light}{\galleon{3}~}}{{ ~}{~}{~}} 
+\hline
+\end{rndtable}
+\end{center} 
+
+ 
+ \generic{Acid}{May be splashed on a melee opponent\comma{} or used as an improvised Ranged weapon\comma{} following the normal rules. In either case\comma{} do 3d4 acid damage.}
+ 
+ \generic{Backpack (25L)}{The primary storage for most adventurers. A medium\minus{}sized backpack suitable for adventuring\comma{} with a volume of around 25L}
+ 
+ \generic{Ball bearings}{As a major action\comma{} spill these on the floor covering up to 5 square metres. Any creature passing through this region must succeed on a DV10 FIN Resist check\comma{} or fall prone.}
+ 
+ \generic{Bedroll}{Comfy enough to get a decent night\apos{}s sleep on when out on an adventure.}
+ 
+ \generic{Caltrops}{As a major action\comma{} spill these on the floor covering up to 2 square metres. Any creature passing through this region must succeed on a DV12 FIN check\comma{} or stop moving and take 1d4 piercing damage.}
+ 
+ \generic{Candle}{For 1 hour\comma{} shed bright light 1m radius\comma{} and dim light for a further 1m.}
+ 
+ \generic{Case (map or scroll)}{Safely protects up to 10 large sheets of paper from the elements.}
+ 
+ \generic{Chain (5m)}{A set of large metal links. Can be broken by a DV18 ATH (Strength) check\comma{} or by taking more than 10 physical damage.}
+ 
+ \generic{Chest}{A large wooden structure\comma{} bound with iron bars. Useful for storage\comma{} with an interior volume of 150L.}
+ 
+ \generic{Crowbar}{Gives advantage on Strength checks when leverage can be applied.}
+ 
+ \generic{Drinking Flask}{Contains enough water for one person for one day}
+ 
+ \generic{Floo Powder Pouch}{Can be used to navigate from one fireplace on the Floo network to another. Each pouch contains enough powder for 5 journeys.}
+ 
+ \generic{Holy Water}{May be splashed on a melee opponent\comma{} or used as an improvised Ranged weapon\comma{} following the normal rules. In either case\comma{} do 3d4 Celestial damage.}
+ 
+ \generic{Hunting Trap}{Requires 2 major actions to set\comma{} and forms a ring 0.5m in radius. Any creature that steps into this ring must succeed a DV15 FIN(Speed) check\comma{} or become Trapped\comma{} and taking 1d4 piercing damage. Trap may be broken via a DV10 ATH(Strength) check\comma{} but each failed attempt does a further 1d4 piercing damage.}
+ 
+ \generic{Ingredient Pouch}{Used to keep potion ingredients safe from the elements.}
+ 
+ \generic{Lamp}{For 6 hours\comma{} casts a bright light in a 4m radius\comma{} and dim light for a further 3m.}
+ 
+ \generic{Manacles (Iron)}{Can be broken via a DV15 ATH(Strength check)\comma{} but otherwise immobilises the hands of the wearer.}
+ 
+ \generic{Oil (flask of)}{Contains enough oil to refill a lamp once.}
+ 
+ \generic{Potion: Antidote}{Cures up to 5 points of poison damage.}
+ 
+ \generic{Potion: Pepper\minus{}Up}{Restores 10FP}
+ 
+ \generic{Potion: Poison}{Does 5 Poison damage per turn for 5 turns.}
+ 
+ \generic{Potion: Wiggenweld}{Restores 10HP}
+ 
+ \generic{Rations (1 day)}{Not particularly nourishing\comma{} but enough to fill you up and keep you alive and kicking.}
+ 
+ \generic{Tea Set}{Contains all the ingredients to make a decent cup of tea}
+ 
+ \generic{Tinderbox}{Contains a flint and some tinder\comma{} necessary to create a non\minus{}magical fire.}
+ 
+ \generic{Torch}{Burns for 1 hour\comma{} casting bright light for 2m\comma{} and dim light for a further 2. May be used as an improvised weapon\comma{} where it does an additional 1d4 fire damage.}
+ 
+ \generic{Whetstone}{Useful for sharpening a dulled weapon.}%%ItemsEnd
+\normalsize
+

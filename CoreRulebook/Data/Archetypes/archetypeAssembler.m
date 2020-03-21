@@ -6,7 +6,7 @@ function archetypeAssembler(fileNameRoot)
     if nargin < 1
         disp('Insufficient inputs provided');
         addpath('../Functions/');
-        fileNameRoot = '../../Chapters/';
+        fileNameRoot = '../../Chapters/Part5_Lists/';
         originRoot = "";
     end
     

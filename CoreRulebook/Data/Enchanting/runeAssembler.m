@@ -6,7 +6,7 @@ function runeAssembler(fileNameRoot)
     if nargin < 1
         disp('Insufficient inputs provided');
         addpath('../Functions/');
-        fileNameRoot = '../../Chapters/';
+        fileNameRoot = '../../Chapters/Part3_Items/';
     end
     %% open file
     
@@ -80,7 +80,7 @@ function runeAssembler(fileNameRoot)
     end
 
 	
-	fileName = strcat(fileNameRoot, 'Artificing.tex');
+	fileName = strcat(fileNameRoot, 'Enchanting.tex');
 	
 	readFile = fileread(fileName);
 	insertPoint = strfind(readFile, '%%RuneBegin');

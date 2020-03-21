@@ -7,26 +7,32 @@ function MasterAssembly(quitMode)
     addpath('Functions/');
     addpath('Items/');
     addpath('Potions/');
-	disp('Assembling Spells');
-    allSpellAssembler(6,'../Chapters/');
+	addpath('Enchanting/')
     
-    assembleBooks();
-     disp('Assembling Skills');
-     assembleSkills();
-      disp('Assembling Statuses');
+    disp('Assembling Spells');
+    assembleSpells(6,'../Chapters/Part5_Lists/');
+    
+    disp('Assembling Books')
+    assembleBooks('../Chapters/Part3_Items/');
+    
+    disp('Assembling Skills');
+    assembleSkills();
+    
+    disp('Assembling Statuses');
     assembleStatus()
-     disp('Assembling Weapons');
-    assembleWeapons();
+    
+    disp('Assembling Weapons');
+    assembleWeapons('../Chapters/Part3_Items/');
 	
-     
-     disp('Assembling Tools');
-    assembleTools();
-
+    disp('Assembling Tools');
+    assembleTools('../Chapters/Part3_Items/');
 
     disp('Assembling Potions');
-	assemblePotions();
+	assemblePotions("../Chapters/");
     
-
+    disp('Assembling Runes');
+    runeAssembler('../Chapters/Part3_Items/');
+    
     path(pathdef)
     
     disp('Data Transfer complete. Beginning xelatex compilation now');

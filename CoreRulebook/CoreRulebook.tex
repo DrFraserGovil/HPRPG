@@ -39,57 +39,21 @@
 \tableofcontents
 \normalsize
 \end{spacing}
+
+%%begin document
 \subfile{Chapters/CoreMechanic}
 
-\cleartoleftpage
-\part{Characters} \label{C:CharacterCreation}
 
-\subfile{Chapters/CharacterCreation}
+\input{Chapters/Part1_Characters/Part1Master}
 
 
-\subfile{Chapters/Skills}
+\input{Chapters/Part2_Actions/Part2Master}
 
-\cleartoleftpage
-\part{Actions and their Consequences}
+\input{Chapters/Part3_Items/Part3Master}
 
-\subfile{Chapters/Actions}
+\input{Chapters/Part4_Magic/Part4Master}
 
-\subfile{Chapters/HealthFortitudeStatuses}
+\input{Chapters/Part5_Lists/ListMaster}
 
-\if\coreMode1	
-	\subfile{Chapters/Environment}
-\fi
-\part{Items}
-
-\subfile{Chapters/Items}
-\if \coreMode1
-	\subfile{Chapters/Artificing}
-\fi
-
-\cleartoleftpage
-\part{Magic}
-
-\subfile{Chapters/Spells}
-
-\part{Lists \& Tables}
-
-\small
-\setlength{\parskip}{0em}
-\if \coreMode1
-	\input{Chapters/SpellList}
-\fi
-\if \coreMode0
-	\input{Chapters/SpellListShort}
-\fi
-\input{Chapters/PotionList}
-\subfile{Chapters/Archetypes_List}
-
-\input{Chapters/Skill_List}
-\input{Chapters/StatusList}
-\input{Chapters/RepeatAttempt}
-\part{Appendices}
-
-\cleartoleftpage
-\subfile{Chapters/CheatSheet}
-\subfile{Chapters/changelog}
+\input{Chapters/Part6_Appendices/AppendixMaster}
 \end{document}

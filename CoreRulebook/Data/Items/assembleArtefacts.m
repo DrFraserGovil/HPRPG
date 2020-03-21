@@ -1,6 +1,11 @@
 function assembleArtefacts()
-
-    items = readtable('Items/artefacts.xlsx');
+    if nargin < 1
+        disp('Insufficient inputs provided');
+        addpath('../Functions/');
+        fileNameRoot = '../../Chapters/Part3_Items/';
+    end
+    
+    items = readtable('artefacts.xlsx');
     items = sortrows(items);
 
      I = [];
@@ -11,7 +16,7 @@ function assembleArtefacts()
     end
     items(I,:) = [];
     
-    fileName = '../Chapters/Adventuring.tex';
+    fileName = fileNameRoot + "Artefacts.tex";
     readFile = fileread(fileName);
 
 

@@ -33,7 +33,7 @@ function assembleStatus()
         text = text + prepareText(line) + "\n\n";
     end
 
-    fileName = '../Chapters/StatusList.tex';
+    fileName = '../Chapters/Part5_Lists/StatusList.tex';
     readFile = fileread(fileName);
 
 

@@ -1,0 +1,247 @@
+\chapter{Artificing}\label{S:Artificing}
+
+
+Artificing is the art of creating new items, typically thoe imbued with magical powers. 
+
+The most prominent examples of artificing in the Wizarding world are {\bf Enchanting} and {\it Alchemy}.
+
+\section{Enchanting}
+\label{S:Enchanting}
+
+Enchanting is the process whereby magical items are made – imbuing them with extraordinary abilities. 
+
+Unlike `normal' magic, which has gone through the millenia long process of taming, binding and chaining to individual spells, the artificing is still relatively close to its roots as a primordial magic. It is thought that this is probably due to the heavy influence of goblin work in the artificing arts. 
+
+Enchanting an item is achieved through a laborious process of arcane inscription, in which magical runes are drawn over the object to be enchanted using special {\it Runic Tools}. These runes form a complicated web of magic known as the {\it nexus} of the object. If the nexus of an enchanted object is destroyed (an act which normally, though not always, destroys the enchanted object) the enchantment is released. 
+
+Upon completion of the inscription process, a small sealing charm is placed over the object to charge the nexus, at which point it is revealed if the enchantment holds. 
+
+The effect of the enchantment is determined by two things: the runes inscribed on the surface, but also the willpower of the inscriber, which helps shape the otherwise somewhat vague runes. 
+
+There are thousands of individual runes throughout the known world, complex conjugations and combinations, to help guide the mind of the enchanter. All of the runes, however, can be broken down into three categories. For a successful echantment, you need at least one rune from each category to be imbued into the nexus. 
+
+The three categories are the {\bf Duration Runes}, the {\bf Action Runes} and the {\bf Subject Runes}, which are shown on the next page. 
+
+In addition to these runes, the enchanter must have a clear idea in their mind as to the purpose of the enchantment. For example, the rune sequence:
+\begin{center}
+	\large \rune{\aeternum\clypus\aqua}
+\end{center}
+This reads {\it aeternum clypus aqua} \minus{} or `eternal shield water'. However, an object which provides protection against water and cold damage, and an object which protects a body of water from corruption could both be inscribed with these runes. 
+
+Equally, the rune sequence  \rune{\displos\genero\ignis} could be used on an object which ignites a tiny spark (such as a magical tinderbox), or one which explodes with the fury of a thousand suns. 
+
+As the enchanter is performing the ritual, therefore, it is vital that they hold in their mind (and describe to their GM) exactly what it is that they are trying to imbue the item with. 
+
+\def\durText{The Duration runes specify how long the effect of the enchanted item lasts after it is activated: does it last for only a few seconds at a time, does it release the effect incredibly quickly then halt, or is the effect permanently active? }
+
+\def\accText{The Action runes specifies the kind of action that the enchantment performs \minus{} does it create something new? Alter what is already present?  Does it give the user new abilities, or does it protect them from harm?}
+
+\def\subText{The Subject runes control what the {\it Action} acts upon. Does the `creation' rune form a blast of fire or a jet of water? }
+
+\newcommand\runeRow[3]
+{
+\rune{#2}	&#1	&		\small #3
+\\
+}
+
+\newcommand\runeList[3]
+{
+\subsection{#1}
+
+#2
+
+\begin{center}
+
+\begin{rndtable}{c l p {6 cm} }
+\bf Rune	&	\bf Name	&	\bf Description
+\\
+#3
+\end{rndtable}
+\end{center}
+}
+
+
+\newcommand\runeLevel[3]
+{
+
+\vbox {\subsubsection{#1}
+
+#2
+
+\small
+\begin{center}
+\begin{rndtable}{c c c}
+\bf Duration	&	\bf	Action	&	\bf Subject
+\\
+#3
+\end{rndtable}
+\end{center}
+}
+}
+\newpage
+
+
+
+\def\learnText{
+\subsection{Learning New Runes}
+
+The runes are divided up into 3 varying catergories, depending on how rare and powerful they are: {\it common}, {\it mystical} and {\it legendary}.
+
+Anyone may use any of the runes, if they can get their hands on a text from which to study it. This division merely serves to model how rare the corresponding knowledge is (and how expensive purchasing the relevant tome may be!)
+
+Runes may be learned by finding an scroll, book or other representation of the rune, which the budding enchanter may then study for 30 minutes, before comitting it to memory. 
+
+
+
+}
+\def\commonText{The common runes are those which everyone can be assumed to know, if they have had a basic education in the arcane arts. }
+\def\mysticalText{The mystical runes are rarer and more powerful. Information about these runes can be found only in specialist textbooks sold by unique vendors, or learned from professional enchanters.}
+\def\legendText{The legendary runes give access to incredibly powerful and long\minus{}lasting magics. Normally jealously guarded as trade\minus{}secrets, you may have to pay a pretty penny to get a glimpse at these runes.}
+%%RuneBegin
+
+\runeList{Duration}{\durText{}}{
+\runeRow{displos}{H}{Used for effects that act instantaneously\comma{} releasing all their effect an energy in a split second.}
+\runeRow{velox}{C}{Used for effects which last for a handful of seconds –  burning a target when struck with a weapon\comma{} or activating a temporary shield.}
+\runeRow{lentus}{X}{Used for effects that last on the duration of minutes to hours. The effects tend to be much more gentle that with {\it velox} or {\it displos}\comma{} as the magic gently seeps out over time.}
+\runeRow{aeternum}{\X}{Used for effects which last for extended periods of time\comma{} or are constantly active. As with {\it lentus}\comma{} the effects are diluted by the need to conserve energy.}
+} 
+
+\runeList{Action}{\accText{}}{
+\runeRow{cingo}{p}{The containment rune: used when the enchantment involves restraining or containing the subject matter within the object.}
+\runeRow{clypus}{\D}{The protective rune: used to protect the subject from harm\comma{} extend its lifetime or prevent the degredation of itself or others}
+\runeRow{discite}{\belgthor}{The perception rune: used to extend or nullify the senses\comma{} and to aid in the perception and understanding of the subject.}
+\runeRow{genero}{m}{The creation rune: used to summon something from nothing\comma{} to create an entirely new example of the subject.}
+\runeRow{imperum}{\Pdots}{The manipulation rune: used to allow the manipulation or control of the subject\comma{} without altering its nature.}
+\runeRow{muto}{\tring}{The transformation rune: used to alter the nature and form of the subject.}
+\runeRow{perdero}{y}{The destruction rune: used to project negative energies which degrade\comma{} destroy\comma{} damage and otherwise break and reduce the subject.}
+\runeRow{porto}{\T}{The transmission rune: used to project or transfer the subject over large distances}
+\runeRow{sarco}{o}{The rebuilding rune: used to repair\comma{} heal and restore the subject.}
+} 
+
+\runeList{Subject}{\subText{}}{
+\runeRow{animus}{\y}{The Astral rune: the domain of the spirit\comma{} the extraplanar and the Unliving.}
+\runeRow{aqua}{\dh}{The Water rune: the domain of water\comma{} ice and other fluids.}
+\runeRow{arbor}{Y}{The Nature rune: the domain of plants\comma{} soil\comma{} leaves and the natural world.}
+\runeRow{belua}{\tvimadur}{The Beast rune: the domain of non\minus{}sapient beasts and animals}
+\runeRow{caelus}{\x}{The Air rune: the domain of wind\comma{} storms and flight.}
+\runeRow{fabula}{\thth}{The Arcane rune: the domain of pure magical energies\comma{} spells and power.}
+\runeRow{hominus}{x}{The Body rune: the domain of sapient creatures and their physical form.}
+\runeRow{ignis}{F}{The Fire rune: the domain of flames\comma{} lava\comma{} and heat.}
+\runeRow{locus}{\e}{The Space rune: the domain of length\comma{} volume\comma{} speed and gravity.}
+\runeRow{lux}{w}{The Light rune: the domain of light\comma{} darkness and illusions.}
+\runeRow{morbus}{\rdot}{The Cursed rune: the domain of poisons\comma{} curses\comma{} diseases and other evil and unpleasant things.}
+\runeRow{pondus}{\Y}{The Matter rune: the domain of mass\comma{} objects and the physical world.}
+\runeRow{sensus}{s}{The Mind rune: the domain of consciousness\comma{} dreams and the brain.}
+\runeRow{tempus}{E}{The Time rune: the domain of the past\comma{} the future}
+\runeRow{terra}{\arlaug}{The Earth rune: the domain of earth\comma{} clay\comma{} rocks and stone.}
+} 
+
+
+
+\learnText
+ \runeLevel{Common}{\commonText}{velox (\rune{\velox}) & clypus (\rune{\clypus}) & aqua (\rune{\aqua})
+\\
+lentus (\rune{\lentus}) & imperum (\rune{\imperum}) & caelus (\rune{\caelus})
+\\
+~ & sarco (\rune{\sarco}) & hominus (\rune{\hominus})
+\\
+~ & ~ & ignis (\rune{\ignis})
+\\
+~ & ~ & lux (\rune{\lux})
+\\
+~ & ~ & terra (\rune{\terra})
+\\
+}
+
+
+ \runeLevel{Mystical}{\mysticalText}{displos (\rune{\displos}) & cingo (\rune{\cingo}) & arbor (\rune{\arbor})
+\\
+~ & discite (\rune{\discite}) & belua (\rune{\belua})
+\\
+~ & genero (\rune{\genero}) & fabula (\rune{\fabula})
+\\
+~ & muto (\rune{\muto}) & pondus (\rune{\pondus})
+\\
+~ & perdero (\rune{\perdero}) & sensus (\rune{\sensus})
+\\
+}
+
+
+ \runeLevel{Legendary}{\legendText}{aeternum (\rune{\aeternum}) & porto (\rune{\porto}) & animus (\rune{\animus})
+\\
+~ & ~ & locus (\rune{\locus})
+\\
+~ & ~ & morbus (\rune{\morbus})
+\\
+~ & ~ & tempus (\rune{\tempus})
+\\
+}
+
+
+%%RuneEnd
+
+
+
+\subsection{The Enchanting Process}
+
+To go through with the enchanting process, one must possess a set of Runic Tools, and an object which you wish to enchant. 
+
+You must then select at least three runes that you know (if you have not learned any new runes, these are generally the {\it Basic Runes}), one from each of the three types. Then describe to the GM what effect you wish to imbue into the item. 
+
+If the GM agrees that the selected runes would produce the desired effect, they decide upon a DV of the enchanting, taking into account your relative spell level and the magnitude of the effect that you are attempting to create. 
+
+You must then perform an enchanting check. This is an \attFin{} check plus, if you are proficient in the Runic Tools, your Expertise bonus. 
+
+If the check succeeds, you gain your magical item, and the GM will provide you with the exact description of what you have produced. 
+
+If the check fails, however, there are a number of possible outcomes, entirely at the behest of your GM. If you were attempting a `standard' enchanting, i.e. nothing too far out of the ordinary, or faild only by the skin of your teeth, the GM may ask you to perform the check a second time to patch the flaws in your first attempt. If this second check succeeds, then you will manage to rescue the enchanting and produce a flawed version of the target item. A flawed enchanting may have a reduced number of uses (`charges'), or the magnitude of its effect may be greatly diminished. 
+
+However, the most likely outcome is that the nexus destabilises, and disintegrates the object. If you are incredibly unlucky, the nexus may discharge violently and explode...
+
+\subsubsection{The Limits of Enchanting}
+
+Although it is possible for an unskilled indivudal to lay their hands on a copy of even the most advanced runes, this does not mean that you can enchant whatever you desire. 
+
+A general rule of thumb is that you cannot enchant an item which would outperform a spell of your current level. 
+
+For example, a level 5 character only has access to Novice level spells, but could have access to the runechain \rune{\displos\perdero\hominus} ({\it displos perdero hominus}, instant destroy body), and is attempting to utilise these runes to curse an item with an effect which would cause instant death to the next person to touch it. Instant death, however, is the domain of {\it Word of Death}, a Master level necromancy spell. The GM would therefore assign this an incredibly high DV, or simply rule that this is an impossible task, far beyond your current capabilities. 
+
+Alternatively, you may be able to work with the GM to find way for the effect to be curtailed to an appropriate level \minus{} maybe this cursed object does kill, but only after prolongued contact, during which the caster suffers progressive maladies such as nosebleeds and headaches. This reduces the immediate threat (and hence game\minus{}breaking nature) of the enchantment, but keeps its fundamental essence intact. 
+
+In addition, whilst it is possible for the runechain \rune{\aeternum\cingo\sensus} to imbue items with a limited amount of sentience and ability to function independently (this runechain is found on the bludger and golden snitch, for example), it is outside the realm of most wizards to imbue an item with true sentience. Only the Artificers have discovered how to imbue an item with original thought and true, actual consciousness. 
+
+\subsubsection{Multiple Effects}
+
+Sometimes you may want to layer multiple effects on a single item. 
+
+If these individual effects compliment each other, and form part of a singular cohesive structure, then they can be chained together into a single enchantment. 
+
+An enchantment which lets you create and then manipulate fire, for example could be enchanted as part of a single runechain: \rune{\lentus\genero\ignis\lentus\imperum\ignis} (which you could probably shorten to \rune{\lentus\genero\imperum\ignis}). 
+
+The individual effects would be weaker than if you had just chosen one of the effects, or the DV might be significantly higher, but this poses no intrinsic problems, as the runes work well together. 
+
+However, you attempt to enchant drastically different effects layered onto the same artefact \minus{} you may wish to have a sword which contains a vicious toxin in the blade (\rune{\velox\perdero\morbus}), but also allows you to read the minds of your enemies (\rune{\aeternum\discite\sensus}). These cannot be performed as part of the same enchantment ritual \minus{} you must perform the enchantment twice. 
+
+Note, however, that multiple enchantments (even if they compliment each other) can destabilise the magical nexus. The associated DV of multiply enchanted objects rises exponentially as more effects are added, and the odds of the item blowing up in your hands increases commensurately.  
+
+\subsubsection{Some Examples}
+
+For the purposes of an example, the list below contains the runechains that are used to enchant some of the common magical artefacts found in the wizarding world. 
+
+
+\def\w{2.4}
+\def\q{4}
+\newcommand\artefactRow[4]
+{
+\small #1	&	\parbox[t]{\w cm}{{\centering \rune{#2}} \\ \raggedright \it \footnotesize #3}	&	\parbox[t]{\q cm}{\footnotesize  #4} \\
+}
+\begin{rndtable}{@{} p{\w cm} p{\w cm} p {\q cm}}
+\bf Item 	&	\bf Runes	&	\bf	Justification
+\\
+\artefactRow{Bludger}{\lentus\cingo\sensus\lentus\imperum\pondus}{Long contain mind, long control matter}{The first string provides the bludger with a limited amount of sentience and the second allows it fly and maneouvre itself for a few hours, after being activated.}
+\artefactRow{Deluminator}{\velox\perdero\lux \velox\sarco\lux}{Short destroy light, short restore light}{The deluminator sucks in nearby light on activation (the first half), and then restores it on a second activation (the second half). }
+\artefactRow{Penseive}{\aeternum\cingo\sensus\lentus\discite\sensus}{Eternal store mind, long percieve mind }{A penseive acts as a permanent storage place for memories, and also allows the user to dive in for extended periods of time to view them. }
+\artefactRow{Portkey}{\displos\porto\pondus}{Instant transmit matter}{The portkey performs a single simple purpose: teleport matter instantaneously upon activation.}
+\artefactRow{Self\minus{}Erecting Tent}{\aeternum\genero\locus\aeternum\cingo\pondus\velox\imperum\pondus}{Eternal create space, eternal contain matter, short control matter}{The first two strings make the tent have a larger volume on the inside and to make it act as a shelter to objects inside. The final string enables the tent to assemble itself over a short period of time.}
+\artefactRow{Sneakoscope}{\aeternum\discite\morbus\velox\imperum\pondus}{Eternal percieve cursed, short control matter}{The primary effect of the sneakoscope is contained in the first string: the detection of evil and cursed objects. The second string merely provides the alert mechanism \minus{} the object whistles and spins of its own accord.}
+\end{rndtable}
