@@ -9,7 +9,7 @@ function assembleSpells(maxLevel,fileNameRoot)
             maxLevel = 6;
         end
         addpath('../Functions/');
-        fileNameRoot = '../../Chapters/Part5_Lists';
+        fileNameRoot = '../../Chapters/Part5_Lists/';
     end
     %% open file
     

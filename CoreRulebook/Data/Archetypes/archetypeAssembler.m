@@ -1,18 +1,17 @@
-function archetypeAssembler(fileNameRoot)
+function archetypeAssembler(originRoot)
    
     %if no target given, assume that called directly, else assume called by
     %master
-   
+    
     if nargin < 1
         disp('Insufficient inputs provided');
         addpath('../Functions/');
-        fileNameRoot = '../../Chapters/Part5_Lists/';
         originRoot = "";
     end
     
     texFiles = dir(originRoot + "*.tex");
     for i = 1:length(texFiles)
-        targetName = texFiles(i).name
+        targetName = strcat(originRoot,texFiles(i).name);
         originName = targetName(1:end-4) + ".xlsx";
         
         f = readtable(originName);

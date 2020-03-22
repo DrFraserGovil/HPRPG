@@ -669,10 +669,10 @@ Gain an additional #1 #2 damage \forEvery{}.
 		\begin{tabular}{@{} r l r l @{}}
 			
 			\if\fpMode1
-				\bf Health: 	&	 \hp{}~Points	&	 \bf Fortitude:	&	\fp{}~Points \\
+				\bf Health: 	&	 \parbox[t]{3.5cm}{\raggedright \hp{}~Points}	&	 \bf Fortitude:	&	\fp{}~Points \\
 			\fi
 			\if \fpMode0
-				\bf Health: 	&	\hp{}	Points &	~&  ~  \\
+				\bf Health: 	&	 \parbox[t]{3.5cm}{\raggedright \hp{}	Points} &	~&  ~  \\
 			\fi
 			\bf Block:	&	\block & 	\bf Dodge:	&	\dodge \\	
 			\bf Speed : 	&	\parbox[t]{2.5 cm}{\raggedright \small \it \speed}	&	\bf \sizeName	&	\size
@@ -781,6 +781,7 @@ Gain an additional #1 #2 damage \forEvery{}.
 
 \newcommand\boxOnlyBeast[1]
 {
+
 	\begingroup
 	\defaultSetter
 	\setkeys{beast}{#1}

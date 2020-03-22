@@ -8,6 +8,10 @@ function MasterAssembly(quitMode)
     addpath('Items/');
     addpath('Potions/');
 	addpath('Enchanting/')
+    addpath('Archetypes/')
+    
+    disp('Assembling Archetypes');
+    archetypeAssembler('Archetypes/');
     
     disp('Assembling Spells');
     assembleSpells(6,'../Chapters/Part5_Lists/');
