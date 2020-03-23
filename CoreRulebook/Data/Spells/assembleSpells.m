@@ -145,15 +145,16 @@ function spellBook(schools,fileNameRoot)
 
     f = readtable("bookNames.xlsx");
     text = "";
+    for q = 1:6
     for i = 1:length(schools)
        for j = 1:length(schools(i).Discipline)
           disc = schools(i).Discipline(j);
           tit = ["Beginner", "Novice", "Adept", "Expert","Master","Ascendant"];
           
-          q = string(transpose(f{:,1}));
-          rowID = (q==disc.Name);
+          x = string(transpose(f{:,1}));
+          rowID = (x==disc.Name);
  
-          for q = 1:6
+          
              bName = prepareText(f{rowID,1+q}{1});
              sub =  tit(q) + "-level " + disc.Name;
              

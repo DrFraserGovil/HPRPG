@@ -132,9 +132,11 @@ These robes give you a +1 to all casting checks whilst you are wearing them.,
 
 Outwardly\comma{} the shield hat appears to be a normal pointed wizard\apos{}s hat\comma{} though a peek inside the brim reveals some glowing enchanted runes. Once per day\comma{} the wearer can mentally trigger a the hat to produce a shield which projects outwards for a few moments\comma{} before quickly fading. 
 
-This shield is equivalent to the {\it Force Field} spell cast at a third level. During the turn cycle in which the field is activated\comma{} you have an impenetrable field which stops all spells and physical attacks from passing through it. 
+This shield is equivalent to the {\it Force Field} spell cast at a third level. During the turn cycle in which the field is activated\comma{} an ethereal shield blooms into existence around the wearer.
 
-This shield has a health of 40HP. If any attack would cause the shield to drop to 0HP\comma{} the shield is dispelled and half the remaining damage is dealt to the wearer., 
+Whenever an attack is performed against you whilst the shield is active\comma{} roll 2d4+2 and add this value to your Resist check or your Block value\comma{} as appropriate. If a successful Resist would limit the amount of damage taken\comma{} negate it entirely instead. 
+
+If you fail to Resist\comma{} or the Accuracy exceeds your augmented Block value\comma{} the shield crumples and the spell is ended. The spell which broke the shield is then applied to you at half damage\comma{} with any other effects unmodified. Any other spells which hit you this round act as normal., 
 	hasCost = 1, 
 	purchaseCost = \galleon{0.5}, 
 	sellValue = \galleon{1}, 
@@ -265,7 +267,7 @@ A magical investigation led you to understand that this was a very valuable bit 
 	description = A token infused with energy from the Recuperation school of magic. When on your person\comma{} it has one of the following effects:
 \begin{itemize}
 \boldItem{Lay on Hands}{By placing your hands onto the chest of a wounded individual\comma{} you may restore 1d8 HP to them. This increases to 2d8 at 8th level\comma{} 3d8 at 14th level and 4d8 at 18th level. This takes a minor action\comma{} and you cannot use it on the same individual again until you have completed a Short Rest.}
-\boldItem{Residual Ward}{You have a permanent warded shield around you. This shield has HP equal to twice your character level + your Intelligence modifier\comma{} and acts like the {\it Force Shield} spell. Whenever you cast a spell from the Recuperation school\comma{} restore HP to the shield equal to half the FP cost of the spell\comma{} this works even if the shield has reached 0HP and has failed – the field immediately restores itself. The shield regains full strength on completing a long rest.}
+\boldItem{Residual Ward}{You have a permanent warded shield around you. This shield has HP equal to twice your character level + your Intelligence modifier\comma{} and acts like the {\it Force Shield} spell. Whenever you cast a spell from the Recuperation school\comma{} restore HP to the shield equal to half the FP cost of the spell\comma{} this works even if the shield has reached 0HP and has failed â€“ the field immediately restores itself. The shield regains full strength on completing a long rest.}
 \boldItem{Stabilising Field}{Whenever you fall below 0HP\comma{} you instead take the {\it Critical But Stable} condition. You regenerate HP at a rate of 1 per turn (max 0) until this condition is removed.}
 \boldItem{Ward Reinforce}{Your wards regenerate strength at a rate of 2HP per turn. They cannot exceed their original strength using this effect.}
 \end{itemize}
@@ -286,6 +288,7 @@ You may not have the effect of more than one magical Icon active at any one poin
 	description = A token infused with energy from the Malediction school of magic. When on your person\comma{} it has one of the following effects:
 \begin{itemize}
 \boldItem{Ally Awareness}{When you cast a spell from the Malediction school which has an {\it Area of Effect}\comma{} you may nominate a number of allies equal to your \attFin{} modifier (min 1) to automatically succeed on their Resist check.}
+\boldItem{Overpower}{You may channel extra energy into your Hexes. When performing a damage check for a spell from the Hexes disciplines\comma{} you may spend additional FP to increase the damage by an equal amount. The maximum damage increase is equal to your character level.}
 \end{itemize}
 When casting a spell from the Malediction school\comma{} you may channel a part of the magical energy into the stone\comma{} altering its effects. This costs an additional FP equal to your character level. 
 
@@ -354,7 +357,7 @@ You may not have the effect of more than one magical Icon active at any one poin
 \begin{itemize}
 \boldItem{Blood Trace}{If you can gather a sample of a being\apos{}s blood\comma{} you may perform a 1 minute ritual to locate that being. For the next hour\comma{} you are aware of the target\apos{}s location\comma{} anywhere in the world.}
 \boldItem{Necrotic Resistance}{You are considered Resistant to Necrotic Damage.}
-\boldItem{Shadowstep}{Whilst you are in dim light or less\comma{} you take advantage on all stealth checks.}
+\boldItem{Shadowstep}{The voodoo doll wraps the darkness round you making you hard to see. You take advantage on all stealth checks whilst in dim light or less.}
 \boldItem{Life Siphon}{When you kill a being with a spell from the Dark Arts school\comma{} you siphon off a portion of their life\minus{}energy into your own. Restore HP equal to three times the level of the spell used.}
  \end{itemize}
 When casting a spell from the Dark Arts school\comma{} you may channel a part of the magical energy into the stone\comma{} altering its effects. This costs an additional FP equal to your character level. 
@@ -459,6 +462,16 @@ Whenever you perform a strike with this weapon\comma{} roll a d10. On a 1\comma{
 	sellValue = Worthless, 
 	isOwned = 1, 
 	owners = Luke: 1\\
+}
+
+\GMinventory{
+	name = Broken Wand, 
+	amount = 0, 
+	class = Weapons, 
+	description = A broken version of your previous wand., 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
 }
 
 \GMinventory{
