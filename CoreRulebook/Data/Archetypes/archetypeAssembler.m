@@ -9,10 +9,10 @@ function archetypeAssembler(originRoot)
         originRoot = "";
     end
     
-    texFiles = dir(originRoot + "*.tex");
+    texFiles = dir(originRoot + "*.tex")
     for i = 1:length(texFiles)
-        targetName = strcat(originRoot,texFiles(i).name);
-        originName = targetName(1:end-4) + ".xlsx";
+        targetName = char(strcat(originRoot,texFiles(i).name));
+        originName = strcat(targetName(1:end-4), ".xlsx");
         
         f = readtable(originName);
         h = height(f);
