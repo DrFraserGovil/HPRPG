@@ -3,7 +3,7 @@
 \chapter*{Artificer}
 \addcontentsline{toc}{section}{Artificer}
 An intro bit of text 
-
+\newcommand\itList[2]{\item {\bf #1:} #2}
 %%archBegin\archetype{name=Artificer, hp=8, fp=8, armour=Medium Armour, tool=Choose one from Runic Tools\comma{} Alchemy Gear and Tinkering tools\comma{} plus any two additional tools., disc=Choose one discipline of your choice\comma{} and a further two from Elemental\comma{} Alteration\comma{} Conjuration \& Warding., weapon=Simple Weapons, prof=Choose any two from Arcane\comma{} History\comma{} Logic\comma{} Nature\comma{} Willpower and Investigation., equip=Wand\comma{} a Scholar\apos{}s pack containing the tools selected above., memorised=Any four from the basic spells table., listIName =Ad\minus{}hocs, singleListMode = 1, expertI = 2, maxspellI = Beginner, bonusI = Artificer\apos{}s Specialisation\comma{} Ad\minus{}hoc Creations, listI_I= 2, expertII = 2, maxspellII = Beginner, bonusII = Tools of the Trade, listI_II= 2, expertIII = 2, maxspellIII = Beginner, bonusIII = Specialisation Feature I, listI_III= 3, expertIV = 3, maxspellIV = Novice, bonusIV = Tweak Effect, listI_IV= 3, expertV = 3, maxspellV = Novice, bonusV = Appraising Eyes, listI_V= 4, expertVI = 3, maxspellVI = Novice, listI_VI= 4, expertVII = 3, maxspellVII = Novice, bonusVII = Specialisation Feature II, listI_VII= 5, expertVIII = 4, maxspellVIII = Adept, bonusVIII = Artificial Ally, listI_VIII= 5, expertIX = 4, maxspellIX = Adept, listI_IX= 6, expertX = 4, maxspellX = Adept, bonusX = Mobile Laboratory, listI_X= 6, expertXI = 4, maxspellXI = Expert, listI_XI= 7, expertXII = 5, maxspellXII = Expert, bonusXII = Specialisation Feature III, listI_XII= 7, expertXIII = 5, maxspellXIII = Expert, bonusXIII = Ally Improvement, listI_XIII= 8, expertXIV = 5, maxspellXIV = Expert, listI_XIV= 8, expertXV = 5, maxspellXV = Master, bonusXV = Rapid Work, listI_XV= 10, expertXVI = 6, maxspellXVI = Master, listI_XVI= 10, expertXVII = 6, maxspellXVII = Master, bonusXVII = Specialisation Feature IV, listI_XVII= 12, expertXVIII = 6, maxspellXVIII = Master, bonusXVIII = Ally Improvement II, listI_XVIII= 12, expertXIX = 6, maxspellXIX = Ascendant, listI_XIX= 14, expertXX = 7, maxspellXX = Ascendant, bonusXX = Specialisation Feature V, listI_XX= 15, shortmode = 0}
 %%archEnd
 
@@ -15,7 +15,7 @@ An intro bit of text
 {
 	At first level, when you become an artificer, you must decide which path you wish to follow \minus{} your {\it Specialisation}. You may choose to become an Alchemist, an Enchanter, or a Mechanist. 
 	
-	Each choice grants you proficiency in the relevant tools (Alchemy Gear, Runic Tools and Tinkering Tool, respectively), as detailed in the {\it Proficiencies} section of the archetype outline. In addition your choice of Specialisation grants you additional Features at 3rd, 7th, 12th, 17th and 20th level. These are detailed at the end of the Archetype description. 
+	Each choice grants you proficiency in the relevant tools (Alchemy Gear, Runic Tools and Tinkering Tool, respectively), as detailed in the {\it Proficiencies} section of the archetype outline. In addition your choice of Specialisation grants you additional Features at 3rd, 7th, 12th, and 17th level. These are detailed at the end of the Archetype description. 
 }
 
 \feat{Ad\minus{}hoc Creations}
@@ -70,7 +70,14 @@ An intro bit of text
 {
 	At 15th level, you are able to complete even complex artificing tasks much quicker than before. 
 	
-	When undertaking an artificing check, roll a d6. Divide the time necessary to complete the action by the result of this device. 
+	When undertaking an artificing check, roll a d6. Divide the time necessary to complete the action by the result of this roll. 
+}
+
+\feat{Maximum Effectiveness}
+{
+	At 20th level, your artificing abilities reach their zenith, such that all artificing you perform is always the most potent version possible. 
+	
+	Whenever one of your created items triggers a dice roll to determine its effectiveness, treat the result as the maximum possible value. 
 }
 
 \section*{Alchemist}
@@ -147,7 +154,7 @@ An alchemist is an Artificer who specialises in the mixing of magical potions, a
 	
 	At 13th level, and again at 18th, you learn to make some changes to the formula you use to create the homunculus. At each of these levels, you may choose one of the following effects to permanently imbue your Homunculus with:
 	
-	\newcommand\itList[2]{\item {\bf #1:} #2}
+	
 	
 	\begin{itemize}
 		\itList{Genetic Splicing}{Upon creating a homunculus, expend a sample of an organic ingredient of Rare-level rarity or less into the mixture. The homunculus grows samples of this ingredient on its body, granting you one sample per day. Every time you create a new homunculus, you may choose a new ingredient.}
@@ -172,141 +179,181 @@ An alchemist is an Artificer who specialises in the mixing of magical potions, a
 	Your potions never gain the {\it Flawed Batch} status, and you may spend 5 minutes with your Alchemy Gear to remove the {\it Flawed Batch} status from any other potions you possess.
 }
 
-\subfeat{Maximum Effectiveness}
-{
-	At 20th level, your Potions and Alchemical Ad-hocs are always the most potent form they can be. 
-	
-	Whenever a potion you have created triggers a dice roll, treat the result as the maximum possible value.
-}
 
 \section*{Enchanter}
 
 
-\subfeat{Ad\minus{}Hocs}{ho}
+\subfeat{Enchantment Ad\minus{}Hocs}
+{
+An Enchanter's ad-hoc takes the form of a wax seal, known as a `signum', into which the Enchanter has infused a level of their power. As a minor action, the Enchanter can then inscribe a rune-chain into this wax seal, and press it onto the surface of an item. This provides a rudimentary, temporary form of enchantment into the targeted item: an augmentation. 
+ 
+As with the normal enchanting process, as the Enchanter begins the augmentation, they must describe how the runechain is to be interpreted, in keeping with the limited power of the augmentation, this should usually be limited to a short phrase such as `protect against fire'. As with the usual enchanting ritual, you may only invoke effects which can be described with runes that you have memorised. You may augment an item that has already been enchanted using the traditional method, but an item may not bear more than one augment at any given moment. 
 
-\subfeat{3}{3}
+The power of your ad\minus{}hoc creations increases with your Enchanter level. You should work with your GM to determine the exact effect, within the limits of your current powers. A rough guide is that enchanter ad-hocs cannot heal or do damage exceeding 1d4, increasing by 1d4 every three enchanter levels, and that they should not outperform standard spells which replicate this effect. If an augmented effect requires a Resist check, the DV is set by 8 + your Expertise modifier. 
+	 
+After an Enchanting Ad-hoc is created, the augmented item executes the effect as a normal enchanted item would do for the next 5 minutes, after which the effect wears off.  
+}
 
-\subfeat{7}{7}
+\subfeat{Rune Experimentation}
+{
+	At third level, you learn to dedicate a number of hours to simple brute\minus{}force experimentation, guided by your enchanter's intuition. Upon doing so, you may learn a new rune that you do not yet know. After an hour of work, perform a DV 18 enchanting check. You may repeat this check once an hour until you succeed, for up to 6 hours in a row.
 
-\subfeat{Ally}
+	If you succeed, you choose a new rune to memorise from those you have not yet learned. Generally, you may only choose to learn a Legendary Rune if you already know all of the Mystical runes of the same category.  
 
-\subfeat{12}{12}
+	This ability may only be used again after a Long Rest.
+}
 
-\subfeat{17}{17}
+\subfeat{Enchantment Affinity}
+{
+	At 7th level, you allow the runes to shape your understanding of the item as you undergo the enchanting process, and allow the runes to guide you as you use the item. As a result, you are considered proficient in any weapon or armour that you have enchanted personally.
+}
 
-\subfeat{20}{20}
+\subfeat{Enchanted Ally: Sentient Mind}
+{
+	At 8th level, all Artificers learn to construct an {\it Artificial Ally}. As an Enchanter, your ally takes the form of a True Sentience, stored inside your enchanted creations.
+	
+	The creation of a true Mind, a being possessing consciousness and original thought is a closely guarded secret amongst the Artificer's guilds. The creation of a mind requries 2 hours work, and an enchanted item into which the mind is to be inserted. Upon creating a new Mind, any existing minds cease to exist.
+	
+	All Minds are created with a positive attitude towards their creator, though they have a will of their own, and may cease to obey their master if they feel abused, neglected or betrayed.
+	
+	At 13th level, and again at 18th, you learn to make some changes to the enchantments used to sustain your True Mind. At each of these levels, you may choose one of the following effects to permanently imbue your ally with:
+	
+
+	\begin{itemize}
+		\itList{Mind Projection}{Once per short rest, The True Mind may use its {\it item-hop} ability to project itself into the mind of a non-sapient or sapient creature. The targeted being must perform a DV 12 Willpower Resist check at the end of every turn cycle to expel the True Mind back to its original housing. Whilst the True Mind remains inside, it takes control of the creature and may use all their abilities. If the host dies whilst the Mind resides inside, the Mind is destroyed. The Mind may use its {\it item-hop} ability to return to its original housing.}
+		\itList{Psychic Power}{The damage dealt by the {\it Psychic Worm} attack is increased to 4d4, increasing by 1d4 instead of +1 as the Enchanter level increases.}
+		\itList{Permanent Assistance}{The Mind is always providing the {\it Assisted Use} action to those wielding the item it lives within.}
+		\itList{Fortified Nexus}{The maximum HP of the mind is doubled.}
+		\itList{Recharge Item}{The Mind may use a major action to recharge an item by 1 unit.}		
+	\end{itemize}
+	\boxOnlyBeast{name = True Mind, mind = Sapient, category = Construct, summary = Sentient mind residing inside objects, hp = 3$\times$Enchanter\apos{}s level health, block = 15, dodge = 3, speed = 0m, fit = N/A , prs = N/A, spr = 15 (+2), chr = 13 (+1), int = 17 (+3), pcp = 15 (+2), pow = 10 (+0), evl = Equals Master, rating = III, abilityBlock = 1, hasAbilities = 1, hasSkills = 1, size = 10cm, skills = Arcane (+7)\comma{} Logic (+7)\comma{} Conviction (+2)\comma{} Persuasion (+5), senses=Alien Senses, hasSenses = 1, hasConditionImmune = 1, conditionImmune = All sensory status effects\comma{} Poisoned, hasImmune = 1, immune = Poison, abilities = 
+	
+	\ability{Master\apos{}s Might}{The numerical value of all attributes (except Evil), increases by 1 for every 3 Enchanter levels above 8th possessed by the Creator. The DV values and damage of the Mind\apos{}s attacks also increase by 1.}
+
+	\ability{Item-bound}{The \name{} resides within the magical nexus of an enchanted object. As such it cannot move, and so automatically fails all \attPhys{} and \attFin{} checks. Its health is tied to the object it resides within - damage to the object damages the mind. When the HP of the object/mind pair reaches zero, the item is destroyed, along with the mind. Equally, repairing the object restores the health of the Mind within.}
+	
+	\ability{Limited Animation}{The \name{} may subtly alter the physical form of its host in order to represent its presence, causing a face to appear in the pommel of a sword, or causing a hat to crumple into a human-like visage. This is not enough to allow locomation, however.}
+	
+	, hasLanguages = 1, language= Its Master\apos{}s language., hasActions = 1, actions = 
+	\ability{Item-hop}{A \name{} can use a major action to transfer itself into any other item enchanted by its creator within 25m, adjusting its health appropriately. }
+	
+	\ability{Psychic Worm}{({\it ranged attack, range: 10m}) the Mind may force a tendril of psychic energy into a foe within range, dealing 2d4 psychic damage, halved on a successful Conviction Resist (DV 14). }
+	
+	\ability{Assisted Use}{As a major action, the \name{} may {\it help} the person currently using the item it resides inside. When performing i.e. an attack with a weapon, perform it with advantage. If residing inside armour or other defensive equipment, accuracy checks against the wearer take disadvantage  for this turn cycle. The mind can only help with actions relating to the item it exists within.}  
+	}
+	
+	
+
+}
+
+\subfeat{Nexus of Power}
+{
+	From 12th level, your expertise with enchanted items allows you to discern the flow and storage of arcane power within an enchanted item, and allows you the ability to bolster or disrupt that flow. 
+	
+	Once per turn, when coming into contact with any Enchanted or Augmented item, you may use an instantaneous action to perform a DV 15 Arcane check. On a success, you may choose one of the following effects:
+	\begin{itemize}
+		\item Restore two `charges' of the item's uses
+		\item Drain two `charges' of the item's uses
+		\item Remove an augmentation from the item 
+		\item Decrease a numerical quantity associated with the item (i.e. damage dealt, bonus provided, DV of resist) by 1 point. 
+		\item Undo a previously imposed effect. 
+	\end{itemize}  
+	
+	You may use this effect multiple times on the same item, until you fail the Arcane check, at which point the item becomes immune to further checks for 24 hours. 
+}
+
+\subfeat{Process Stabilisation}
+{
+	At 17th level, your enchanting abilities are such that your enchanting process is very stable and safe. Even during catastrophic failures, there is no risk of the enchanted item detonating. In addition, when an enchantment procedure fails, you always get a second chance to rescue the attempt,  which suffers none of the normal drawbacks associated with a rescued enchantment.  
+}
 
 
 \section*{Mechanist}
 
 
-\subfeat{Ad\minus{}Hocs}{ho}
-
-\subfeat{3}{3}
-
-\subfeat{7}{7}
-
-\subfeat{Ally}
-
-\subfeat{12}{12}
-
-\subfeat{17}{17}
-
-\subfeat{20}{20}
-
-
-\def\sign{{\it signum}}
-\def\signs{{\it signii}}
-\feat{Artificer's Augmentations}{From first level, you learn how to use {\it Augmentations}. 
-
-
-An {Augmentation} is a temporary, rather weak enchantment that can be placed on an item by pressing a wax \sign{} into it. Each \sign{} has a runechain already inscribed upon it, and as the artificer begins the augmentation process they describe how those runes should be interpreted, as they would in the normal enchanting process. 
-
-If the artificer doesn't exceed the capabilities of the \sign{}, then the item is temporarily imbued with the described effect. An augmentation typically lasts for one hour, with minor degradation to the effect quality as it wears off. 
-
-Each \sign{} takes 12 hours to recharge, during which time it cannot be used again. You may use multiple \signs{} inscribed with the same runechain to produce different effects, provided they would fall under the same `umbrella', as described on page \pageref{S:Enchanting}. You cannot place a \sign{} on item which already possesses an augmentation, but you can augment traditionally enchanted items. 
-
-
-The number of \signs{} that you may have at any one time is indicated in the \signs{} column of the class table. You may take 6 hours to produce a new set of \signs{}, with your chosen runes inscribed upon them. When you do so, your old set crumbles into dust and any active augmentations wear off. 
-
-The effects produced by augmentations will always be less potent than those which you are able to produce through the traditional enchantment ritual. As an example, whilst a Beginner\minus{}level enchanter could use the runechain \rune{\velox\genero\ignis} to produce a Sword of Fire capable of inflicting an additional 1d6 Fire damage, a sword augmented with this runechain would be limited to 1d4 fire damage. As your spellcasting (and hence enchanting) abilities increase, so to do your augments. 
- } 
-
-
-\feat{Rune Experimentation}{At second level, you learn to dedicate a number of hours to simple brute\minus{}force experimentation, guided by your enchanter's intuition. Upon doing so, you may learn a new rune that you do not yet know. After an hour of work, perform a DV 18 enchanting check. You may repeat this check once an hour until you succeed, for up to 6 hours in a row.
-
-If you succeed, you choose a new rune to memorise from those you have not yet learned. Generally, you may only choose to learn a Legendary Rune if you already know all of the Mystical runes of the same category.  
-
-This ability may only be used again after a Long Rest.
+\subfeat{Mechanical Ad\minus{}Hocs}
+{
+	A Mechanical Ad-hoc takes the form of a hastily assembled {\it device}, crafted from half-constructed odds and ends you have lying about your person. Taking a major action, you may assemble these parts together into a functional whole. Formed from scraps, devices constructed in such a way are rarely very sturdy - they may execute a single well-defined function once or twice, and then will probably cease to function after that. 
+	
+	The purpose of a mechanical ad-hoc, and the means by which you are achieving it from the components provided must be well defined at the moment of creation - for example you could state that you cobble together a small device which has a loudspeaker attached to a timer: after a certain amount of time, the device triggers emitting an earsplitting shriek. Whilst the components you provide may be complex and electromechanical in nature, the unification of those components together must be simple and obvious from the described components.
+	
+	Because the components which go into creating a device are assumed to have been on your person the entire time, the invoked components of an ad-hoc must be such that they are not individually useful items you might find in your inventory. You could not include ``a gun" as a component, for example, though you could probably assemble a makeshift firearm as a separate ad-hoc action. Alternatively, you may use items from your inventory as components, though they are consumed in this process. Therefore, if you possessed a firearm in your inventory, you could sacrifice it to the creation process. 
+	
+	You should work with your GM to determine the limits of any such created items as your Mechanist level increases (and they retain an absolute veto on your ability to create such devices). As a general rule, mechanical ad-hocs cannot deal damage exceeding 1d6, increasing by 1d6 every three mechanist levels. If a device requires a Resist check, the DV is set by 8 + your Expertise modifier. 
+	
 }
 
-\feat{Expert Enchanter}{From 3rd level, you may double your expertise bonus on enchanting checks, and enchanting rituals take half as long as normal.
-
-In addition, whenever you fail an enchanting check, you get the chance to `rescue' the enchanting with a second check.
- }
-
-\feat{Renew Bindings}{AT 3rd level, you learn how to re\minus{}energise an existing nexus, effectively `recharging' a the enchantment in an item. The ritual takes approximately 1 hour, and costs 10FP to perform. 
-
-You may `recharge' a number of items in a single ritual equal to half your enchanter level. 
+\subfeat{Signature Device}
+{
+	At 3rd level, your engineering know-how has allowed you to construct a unique non-magical artefact, which you consider to be your magnum-opus. 
+	
+	Working with the GM, design a weapon, item of clothing, or other hand-held device. This item must be non-magical, though it may be imbued with abilities which are similar in nature to spells found in the spell list. You are considered proficient with this device, and any checks made with it include your Expertise modifier. 
+	
+	This device should follow the following basic restrictions:
+	\begin{itemize}
+		\item Melee weapons should not exceed 2d6 damage, or a reach beyond 1m
+		\item Ranged weapons should not exceed 1d8 damage, or have a range extending beyond 30m
+		\item Armour should not provide more than a +4 bonus to Block (and should include a penalty to Dodge)
+		\item Items or devices should not have abilities which replicate spell effects greater than Novice level
+		\item Weapons and armour should not have more than 1 additional ability, other items may have up to 2 effects
+		\item Only replicate spell effects it is reasonable to be electromechanically duplicated.
+	\end{itemize}
+	
+	Every 3 subsequent levels (i.e. at 6th, 9th, etc.) you may make improvements to your signature device, such as:
+	\begin{itemize}
+		\item +1 to damage
+		\item Increased range
+		\item +1 to Block (or reduced penalty to Dodge)
+		\item More powerful abilities
+	\end{itemize}
+	
+	You may replace your signature device by spending one week of downtime designing a new one, however this requires cannibalisation of your previous device, so you may only have one such device active at any given moment.
 }
 
-\feat{Appraising Eyes}{At 5th level, your eyes have become accustomed to the magical aura of enchanted items. You can tell at a glance if an item is enchanted, and may take a major action to perform an investigation check. On a success, you may discern the runechain (but not the exact effect) present on an item.}
-
-\feat{Enchantment Affinity}{At 7th level, you allow the runes to shape your understanding of the item as you undergo the enchanting process, and allow the runes to guide you a you use the item. As a result, you are considered proficient in any weapon or armour that you have enchanted personally.
-
-At 18th level, this understanding extends even to items that others have enchanted: you are considered proficient in all enchanted weapons and armour. 
+\subfeat{Singed Experience}
+{
+	From 7th level, you have a certain amount of experience in dealing with accidental explosions and fiery mishaps from your tinkering experience, and have become proficient in avoiding it.
+	
+	Whenever you successfully perform a Resist check to halve the amount of Fire or Concussive damage taken from an effect, instead you negate the damage completely.
 }
 
-\feat{Tweak Enchantment}{Upon reaching 8th level, you gain the ability to place small runes at specific points along the magical nexus of an existing magical item, subtly altering the effects. 
+\subfeat{Mechanical Ally: Clockwork Pet}
+{
+	At 8th level, all Artificers learn to construct an {\it Artificial Ally}. As a Mechanist, your ally takes the form of a Clockwork Pet, a mechanical recreation of an existing animal.
+	
+	Though non-magical in nature, the creation of such a complex device necessitates the use of magic in its creation. The creation of a Clockwork Pet requries 5 hours work and \galleon{1} of materials. Upon creating the clockwork pet, you choose what form it is, by choosing a non-sapient, non-magical creature with a MoM rating of III or less (and with a size less than 1.5 metres) to replicate.
+	
+	Clockwork pets are unerringly loyal to their master, and though they are exquisitely created and can mimic the behaviour of the base creature perfectly, they are entirely deterministic in nature. 
+	
+	\boxOnlyBeast{name = Clockwork Pet, mind = Non-sapient, category = Construct, summary = Clockwork duplicate, hp = 3$\times$Mechanist\apos{}s level health, block = ?, dodge = ?, speed = ?, fit = ? , prs = ?, spr = ?, chr = ?, int = ?, pcp = ?, pow = ?, evl = Equals Master, rating = III, abilityBlock = 1, hasAbilities = 1, hasSkills = 1, size = ?, skills = Determined by form\comma{} Logic (+4), senses=Alien Senses, hasSenses = 1, hasConditionImmune = 1, conditionImmune = All sensory status effects\comma{} Poisoned\comma{} Charmed\comma{} Terrified\comma{} Enraged, hasImmune = 1, immune = Poison\comma{} Psychic, abilities = 
+	
+	\ability{Mechanical Mimic}{The \name{} is constructed in the image of a base non-magical creature, and so all statistics marked with a `?' are replaced with those of the base creature. The \name{} also recreates all of the proficiencies, senses, immunities, abilities and actions of the base creature. Any abilities listed in this stat block are assumed to be {\it in addition} to those of the base creature. Where a conflict arises, the \name{}\apos{}s stats are used instead. }
+	
+	\ability{Master\apos{}s Might}{The numerical value of all attributes (except Evil), increases by 1 for every 3 Mechanist levels above 8th possessed by the Creator. The to-hit values of attacks, as well as DV values for Resists,  and damage of the \name{}\apos{}s attacks also increase by 1.}
 
-Tweaks can be simple aesthetic changes (i.e. change the fire flickering along the blade from red to blue), provide exceptions (i.e. sleep effects do not work on blonde individuals) and other such minor effects. Attempting to alter the effects too much from their intended purpose can fragment the magical nexus, destroying the item, and probably taking out a few nearby buildings. 
+	
+	, hasComprehend = 1, comprehend= Its Master\apos{}s language.
+	}
 
-This action takes 10 minutes to complete, and cannot be used again until completing a Short Rest.}
-
-\feat{Imbue Sentience}{The creation of a true Mind, a being possessing consciousness and original thought is a closely guarded secret amongst the Artificer's guilds. By 10th level, you have learned these secrets for yourself. 
-
-The runechains for such a feat are horrifically long and complicated, necessitating a DV20 enchanting check to produce and 24 hour of work. At the end, however, you produce an artificial sentient being. 
-
-If you had previously created such an artefact, that consciousness transfers into the new item, with the old housing crumbling into dust. 
-
-The consciousness within the item can percieve the outside world with perfect darkvision, and can hear as well as any human, and has a perfect memory. It also has a limited amount of control over its physical form \minus{} often manifesting a face with which to talk by selectively crumpling the fabric it resides inside, or appearing in the imperfections of a gemstone, for example. 
-
-When manifesting a face, the sentience can communicate verbally, and it may always communicate telepathically with a being in contact with the item it resides within. The sentience is created with a friendly disposition towards it creator, and as such may dispense advice and knowledge, or warn them of unseen threats. 
-
- }
-
-\feat{Runecaster}{At 12th level, you begin to realise that enchanting (and the use of runes) is no different than normal spellcasting, and you learn to utilise your knowledge of the Enchanting Runes to form a magic spell from the endless chaos of primordial magic. 
-
-As with the usual enchanting process, you must trace the runes out in the air over the course of a major action, describing what effect you would like this runechain to have. The GM then decides the spellschool and the difficulty of the described spell, based on the magnitude of the effect you are trying to create. You must then perform a casting check to realise the runecast. 
-
-Runecasting is almost always weaker than a spell cast using the normal methods, though it provides much greater flexibility. You cannot runecast to exactly replicate the effects of an existing spell. 
-
-%After successfully performing a Runecast, you may spend 6 hours translating the runechain into a conventional incantation\minus{}based spell, with the discipline and DV set by the GM. You may then memory\minus{}cast this spell, and others may book\minus{}cast it, as they would any other spell.  
+	
+	At 13th level, and again at 18th, you learn to make some changes to the internal mechanism of your Clockwork Pet. At each of these levels, you may choose one of the following effects to permanently imbue your ally with:
+	
+	\begin{itemize}
+		\itList{Hardy Construction}{The HP of the construct is doubled, and it takes a bonus to Block equal to one-third your Mechanist level}
+		\itList{Perfect Mimicry}{Coat the outside of the construct in a realistic looking disguise - it looks exactly like the creature it is mimicking, taking advantage on all stealth checks.}
+		\itList{Reinforced Claws}{The melee attacks of the creature deal an additional 1d6 slashing damage, and the damage increase associated with the {\it Master\apos{}s Might} ability is increased to 1d6.}
+		\itList{Coiled Springs}{Increase the base speed of the construct by 2m, and allow it to make one additional attack per cycle.}
+		\itList{Self-Destruct}{If given the order by its master, the Clockwork Pet initiates a procedure which totally destroys itself, and deals 1d8 concussive damage per Mechanist level in a 5m radius around the construct.}
+	\end{itemize}
+	
 }
 
-\feat{Networked Augmentations}{At 14th level, you learn how to modify your Augmentations to form a psychic network, along which both messages and Sentiences can travel. 
-
-Any being touching an item currently bearing an active augment (anywhere in the multiverse) may communicate with you, or with any other being touching such an item, and you may communicate with them. 
-
-If you bear an item containing a Sentience, it may also traverse this psychic network to temporarily inhabit augmented items. It will act as if it is in its `home' object, and will always return before the Augmentation wears off. Moving along the network takes a minor action. 
+\subfeat{Mechanical Mind}
+{
+	From 12th level, whenever you perform a check using your Tinkering tools, or using an item which you have created, you may choose to use your \attInt{} modifier instead of the specified one. 
 }
 
-\feat{Empowered Sentience}{At 16th level, you learn how to modify your sentience\minus{}inducing runes to allow the channeling of magical power. You may teach the Sentience up to 3 Beginner or Novice\minus{}level spells which you have memorised. 
-
-The Sentience is then able to cast these spells at will as major actions, from whichever item it is currently inhabiting. The Sentience has a +4 to accuracy checks, and has a subjugation value of 13.
-
-Every time you re\minus{}create the sentience from scratch, it forgets the spells it learned in its previous incarnation.
+\subfeat{Master Worker}
+{
+	Whenever you perform an artificing check, if the result is less than your Mechanist level, you may use that value instead. 
 }
-
-\feat{Shared Soul}{At 20th level, you have learned one of the most dangerous secrets of all: how to cheat death.
-
-When you create a sentience, enough of your personality and soul mingles with that of your creation for it to be viable to use the sentience to rebuild your personality after your death. 
-
-Normally the {\it Spark of Life} spell requires a being to have been dead for less than 24 hours, and with a relatively intact body, in order for it to be viable for the soul to be clinging on. 
-
-However, if you die whilst connected to your Sentience through the psychic network, your soul may reside in the network for a year and a day, before it moves on to the other side. As long as the enchanted item remains intact, your body can be repaired and your soul returned to it within this timeframe. 
-
-After using this skill, your soul can become fragile. You may only use this skill to cheat death once.
-
-Unlike Horcruxes, no dark or unspeakable magic is involved, and your soul remains intact throughout. You cannot permanently cheat death \minus{} only delay it slightly.  
- }
