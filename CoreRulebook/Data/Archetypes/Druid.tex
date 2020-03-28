@@ -36,7 +36,7 @@ An intro bit of text
 {
 From 2nd level, a Druid's senses are deeply intertwined with their fundamental connection to nature. 
 
-Whilst in contact with some significant aspect of the natural world \minus{} feet on untouched earth, or placing a hand on a mighty oak \minus{} a Druid gains advantage on all Perception checks. 
+Whilst in contact with some significant aspect of the natural world \minus{} feet on untouched earth, or placing a hand on a mighty oak \minus{} a Druid gains advantage on all Observation and Investigation checks. 
 }
 
 \feat{Reclaim Nature}
@@ -106,7 +106,7 @@ The Asteria are spirits of the moon and the stars, guardians of knowledge and fa
 {
 	Those who follow the Asteria, and Seers in general, are often derided and dismissed as passive observers. From 7th level, you learn that this is untrue, as you gain the ability to subtly alter the strands of fate, picking out a desirable future and making minute alterations to the present to navigate your way there. 
 	
-	At the end of every long rest, you gain access to a number of {\it Fate Dice}. After any check is performed within 5m of you, you may expend one of your dice to either increase or decrease the result of the roll by the amount rolled on your Fate Die. The size and number of dice you gain is detailed below. The minimum result of any roll is a 1, and you cannot use this ability to increase the result of a dice roll above its maximum value. 
+	At the end of every long rest, you gain access to a number of {\it Fate Dice}. Before any check is performed within 5m of you, you may expend one of your dice to either increase or decrease the result of the roll by the amount rolled on your Fate Die. The size and number of dice you gain is detailed below. The minimum result of any roll is a 1, and you cannot use this ability to increase the result of a dice roll above its maximum value. 
 	
 	\begin{center}
 		\newcommand\entry[3]{#1	&	#2	&	#3	\\}
@@ -174,11 +174,76 @@ in your current situation.
 
 \subsection{Aspect of the Dryad}
 
-\subfeat{1}{1}
-\subfeat{4}{4}
-\subfeat{7}{7}
-\subfeat{11}{11}
-\subfeat{15}{15}
+Dryads are tree spirits, beings which reside within and protect plants. Associated with life, growth, healing and longevity, dryads are unusual and fickle creatures. 
+
+\subfeat{Seed of Growth}{
+
+At first level, upon choosing to follow the Dryads, many Druids report having a dream in which a Dryad offers them a choice of single seed of a number of trees, representing the first step in their path to greatness.
+
+Choose from the following trees:
+
+\begin{center}
+	\newcommand\entry[2]{#1	&	#2	\\}
+	\begin{rndtable}{p{2.4cm} p {6.2cm} }
+		\entry{\bf Tree}{\bf Effect}
+		\entry{Mighty Oak}{You become proficient in {\it Strength}, and have advantage on all Strength checks.}
+		\entry{Healing Willow}{Whenever you take an action which restores HP to an individual, restore additional HP equal to your \attPerShort{} modifier}
+		\entry{Soothing Pine}{You and allies within 5m have advantage to Resist the effects of {\it Terrified, Enraged} and {\it Charmed} status effects.}
+		\entry{Piercing Holly}{Unarmed strikes and grapples by or against you deal an additional 1d6 piercing damage to your opponent}
+		\entry{Protective Alder}{You gain a bonus to your block value equal to 1 + one-third your Druid level (rounded up).}
+		\entry{Knowing Beech}{You may cast {\it Commune With Nature} as a wandles, silent and instantaneous action 3 times per short rest.}
+	\end{rndtable}
+\end{center} 
+
+}
+\subfeat{Encourage Growth}
+{
+	At 4th level, you gain the ability to manipulate and speed up the growth of organic processes. You may use this ability as a major action once per short rest, gaining an additional use at 6th, 12th and 17th levels respectively. 
+	
+	When invoking this ability, you may choose from the following effects:
+	
+	\begin{itemize}[itemsep=0em]
+		\boldItem{Nuture Plant}{Choose a single plant that you can see within range. Over the next minute, you can cause this plant to grow in size by a number of metres equal to one-third your druid level. You may guide this growth to an extent, causing it to sprout branches in a particular direction, or produce fruit. The plant growth must be within the realms of what the plant could achieve naturally - you merely accelerate and guide the process.}
+		\boldItem{Enrich Field}{Choose an area up to 100m in radius, and imbue it with natural, positive energy. All plants which grow in this region for the next year grow unusually fast and are exceptionally bountiful. }
+		\boldItem{Healing Moss}{You may direct your growing, energizing powers into healing a living being by causing a magical moss to grow over their wounds, knitting them together. You may heal HP equal to 1d6 per Druid level, divided up between any creatures you can see within range.}
+	\end{itemize}
+	
+}
+\subfeat{Hybrid Seed}
+{
+	At 7th level, you may choose another Tree Seed from the {\it Seed of Growth} ability, or from the supplemental seeds shown below:
+	
+	\begin{center}
+	\newcommand\entry[2]{#1	&	#2	\\}
+	\begin{rndtable}{p{2.4cm} p {6.2cm} }
+		\entry{\bf Tree}{\bf Effect}
+		\entry{Basking Palm}{Your natural healing ability is increased. Your recovery dice increase to d8s.}
+		\entry{Giant Sequoia}{Gain an additional ability for you {\it Encourage Growth} feature: you may choose to cast the {\it Alter Size} spell on yourself as a wandless, silent action. }  
+		\entry{Poisonous Yew}{Once per short rest, by taking a major action, you may exude a poison from your skin. For the next 5 minutes whenever a being makes physical contact with you, it must perform a Vitality Resist against your Arcane Subjugation, taking the {\it Poisoned: Mild} status effect on a failure.}
+		\entry{Tangled Ash}{Gain an additional ability for you {\it Encourage Growth} feature: you may choose to cause a large number of grasses and vines to sprout from the ground, snaring at the feet of those who pass. Designate an area up to 5m in radius, excluding any number of sub-areas you choose. Movement speeds through this region are halved. The overgrown area has a HP of 1d4 per Druid level and can be damaged by Fire, Necrotic or Slashing damage.  When HP is reduced to zero, the effect vanishes.  }
+	\end{rndtable}
+\end{center} 
+}
+
+\subfeat{Lay Down Roots}
+{
+	For a tree, their entire existence is centred around their connection to the ground: their roots. From 11th level, you gain the ability to lay down `roots' into the Astral plane.
+	
+	At the end of a long rest, choose from the following bonuses, which you maintain until your next long rest:
+	\begin{itemize}[itemsep=0em]
+		\boldItem{Groundhold}{Whilst your feet are on the ground, you cannot be moved unless you choose to be. Any magical or mundane effect which moves you through space (i.e. not telportation effects) fails unless you choose to allow it.}
+		\boldItem{Draw Nutrients}{You do not need to consume food, and you gain an additional 2 recovery dice when you take a short rest.}
+		\boldItem{Rootsense}{Whilst your feet are on the ground, you gain {\it tremorsense} for 5m around you. }		 
+	\end{itemize}
+}
+
+
+\subfeat{Tree of Life}
+{
+	At 15th level, you are granted the power to defy death, at least for a while. 
+	
+	Once per long rest, if you or an ally within 100m would suffer from an effect that would normally cause them to die or enter the {\it Critical Condition} status, you may choose to expend all of your remaining FP to restore them to half their maximum HP, and remove any negative status effects they are afflicted with. You then regain 3d4 FP, or half your previous FP, whichever is lower. 
+}
 
 \subsection{Aspect of the Nymph}
 
@@ -213,7 +278,7 @@ The Nymphs are elemental spirits \minus{} they embody and inhabit the frigid lak
 }
 \subfeat{Elemental Action}
 {
-	Whenever you use a major action to perform an attack, you may take an additional major action to cast a spell from the Elemental discipline. 
+	Beginning at 11th level, whenever you use a major action to perform an attack, you may take an additional major action to cast a spell from the Elemental discipline. 
 }
 
 
