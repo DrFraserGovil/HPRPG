@@ -12,13 +12,13 @@ classdef SpellDiscipline < handle
         function obj = SpellDiscipline(name)
             obj.Name = name;
             
-            obj.Spells = {Spell.empty,Spell.empty,Spell.empty,Spell.empty,Spell.empty,Spell.empty};
+            obj.Spells = {Spell.empty,Spell.empty,Spell.empty,Spell.empty,Spell.empty,Spell.empty,Spell.empty};
         end
         
         function max = maxSpellNumber(obj)
             max= 0;
-            for j = 1:6
-                ell = length(obj.Spells{j});
+            for j = 0:6
+                ell = length(obj.Spells{j+1});
                 if ell > max
                     max = ell;
                 end

@@ -50,8 +50,8 @@ classdef Spell < handle
             obj.Type = line.Type{1};
             n = line.Level;
 			obj.Range = line.Range{1};
-            levelNames = ["Beginner", "Novice","Adept", "Expert", "Master", "Ascendant"];
-            name = levelNames(n);
+            levelNames = ["Trivial","Beginner", "Novice","Adept", "Expert", "Master", "Ascendant"];
+            name = levelNames(n+1);
             obj.Level = n;
             obj.LevelName = name;
            
@@ -82,7 +82,7 @@ classdef Spell < handle
         end
         
         function t = output(sp)
-            t = "\\spell{";
+            t = "\\spell{\n\t";
             t = t+ "name = " + prepareText(sp.Name)+", ";
             t = t + "school = " + sp.School+", ";
             t = t + "discipline = " + sp.Discipline+", ";
@@ -132,7 +132,7 @@ classdef Spell < handle
             
               
             %% end
-            t = t + "effect =" + prepareText(sp.Effect) + "}";
+            t = t + "effect =" + prepareText(sp.Effect) + "\n}";
         end
     end
 end

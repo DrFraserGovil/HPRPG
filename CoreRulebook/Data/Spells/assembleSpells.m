@@ -13,9 +13,11 @@ function assembleSpells(maxLevel,fileNameRoot)
     end
     %% open file
     
-    opts = detectImportOptions('AllSpells.xlsx','NumHeaderLines',2);
-    opts.VariableNamesRange = 'A1';
-    f = readtable("AllSpells.xlsx",opts,'ReadVariableNames',true);
+    if ~exist("spellOpts","var")
+        spellOpts = detectImportOptions('AllSpells.xlsx','NumHeaderLines',2);
+        spellOpts.VariableNamesRange = 'A1';
+    end
+    f = readtable("AllSpells.xlsx",spellOpts,'ReadVariableNames',true);
 
     %% read in the file line by line and sort into schools and disciplines
     schools = SpellSchool.empty;
@@ -32,10 +34,10 @@ function assembleSpells(maxLevel,fileNameRoot)
                     schoolFound = true;
                     disc = schools(j).hasDiscipline(newSpell.Discipline);
                     if disc > 0    
-                        schools(j).Discipline(disc).Spells{newSpell.Level}(end+1) = newSpell;
+                        schools(j).Discipline(disc).Spells{newSpell.Level+1}(end+1) = newSpell;
                     else
                         newDisc = SpellDiscipline(newSpell.Discipline);
-                        newDisc.Spells{newSpell.Level}(1) = newSpell;
+                        newDisc.Spells{newSpell.Level+1}(1) = newSpell;
                         schools(j).Discipline(end+1) = newDisc;
                     end
                 end
@@ -44,7 +46,7 @@ function assembleSpells(maxLevel,fileNameRoot)
             if schoolFound == false
                newSchool = SpellSchool(newSpell.School);
                newDisc = SpellDiscipline(newSpell.Discipline);
-               newDisc.Spells{newSpell.Level}(1) = newSpell;
+               newDisc.Spells{newSpell.Level+1}(1) = newSpell;
                newSchool.Discipline(1) = newDisc;
                schools(end+1) = newSchool;
             end
@@ -58,9 +60,9 @@ function assembleSpells(maxLevel,fileNameRoot)
        [~,I]= sort({schools(i).Discipline.Name});
        schools(i).Discipline = schools(i).Discipline(I);
        for j = 1:length(schools(i).Discipline)
-            for k = 1:6
-                [~,I] = sort({schools(i).Discipline(j).Spells{k}.Name});
-                schools(i).Discipline(j).Spells{k} = schools(i).Discipline(j).Spells{k}(I);
+            for k = 0:6
+                [~,I] = sort({schools(i).Discipline(j).Spells{k+1}.Name});
+                schools(i).Discipline(j).Spells{k+1} = schools(i).Discipline(j).Spells{k+1}(I);
             end
        end
     end
@@ -72,40 +74,28 @@ function assembleSpells(maxLevel,fileNameRoot)
     disciplineTableText =  '\\scriptsize';
     
     for i = 1:length(schools)
-        t = "\\vbox{\n\\subsection{" + schools(i).Name + "}\n";
+        t = "\\schoolTables{" + schools(i).Name + "}\n{";
         
         for j = 1:length(schools(i).Discipline)
             disc = schools(i).Discipline(j);
-            t = t + "\n\\vbox{\n"; 
-            
-            col = ">{\\centering\\arraybackslash}m{\\w cm} >{\\centering\\arraybackslash}m{\\s cm}";
-            t = t + "\\begin{rndtable}{"+ col + col + col + col + col + col + "}\n";
-            t =t + "\\multicolumn{12}{c}{\\bf \\normalsize " + disc.Name + "} \n\\\\\n ";
-			array = ["Beginner", "Novice", "Adept", "Expert", "Master", "Ascendant"];
-            for q = 1:6
-                t = t + "\\multicolumn{2}{c}{\\cellcolor{\\tablecolorhead} \\bf " + array(q)+ "}";
-                if q <6
-                    t = t + "&";
-                end
-            end
-            
+            t = t + "\n\t\\discTable{" + disc.Name + "}\n\t{"; 
+                        
             for row = 1:disc.maxSpellNumber()
-                t = t + "\n \\\\ \n";
-                for column = 1:6
-                    
+                t = t + "\n \t\t\\spellRow";
+                for z = 0:6
+                    column = z  +1;
                     if row <= length(disc.Spells{column})
                         sp = disc.Spells{column}(row);
-                        t = t + prepareText(sp.Name) + " & " +sp.Symbol;
+                        
+                        t = t + "{  \\spellEntry{" + prepareText(sp.Name) + "}{" +sp.Symbol +" } }";
                     else
-                        t = t + "~\t & ~\t";
+                        t = t + "{ \\emptySpell{} }";
                     end
-                    
-                    if column < 6
-                        t = t + " & ";
-                    end
-                end        
+
+                end
+                t = t + "\n";
             end
-            t= t + "\n\\end{rndtable}\n\\vspace{3ex}\n}";
+            t= t + "\t}\n ~ \n";
         end
         
         t = t + "\n}";
@@ -117,7 +107,7 @@ function assembleSpells(maxLevel,fileNameRoot)
     listText = '\n \\normalsize \\clearpage \n\\begin{multicols}{3}\n';
     
     for i = 1:length(allSpells)
-       listText = listText +  allSpells(i).output() + "\n";
+       listText = listText +  allSpells(i).output() + "\n\n\n";
     end
     listText = listText + "\\end{multicols}";
     
@@ -145,11 +135,12 @@ function spellBook(schools,fileNameRoot)
 
     f = readtable("bookNames.xlsx");
     text = "";
-    for q = 1:6
+    for qq = 1:6
+        q = qq + 1;
     for i = 1:length(schools)
        for j = 1:length(schools(i).Discipline)
           disc = schools(i).Discipline(j);
-          tit = ["Beginner", "Novice", "Adept", "Expert","Master","Ascendant"];
+          tit = ["Trivial","Beginner", "Novice", "Adept", "Expert","Master","Ascendant"];
           
           x = string(transpose(f{:,1}));
           rowID = (x==disc.Name);
