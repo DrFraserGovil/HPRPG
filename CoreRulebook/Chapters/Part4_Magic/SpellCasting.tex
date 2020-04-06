@@ -79,24 +79,24 @@ In addition, as well as an affinity based on their attribute scores, some beings
 
 The difficulty of a spell is determined by the caster's own level, and the difficulty of the spell they are trying to cast. Use the table below to determine the casting DV:
 \def\cc{\cellcolor{\tablecolorhead}\bf}
-
+\def\vcol{\multirow{-6}{*}{\rotatebox[origin=c]{90}{\cc \bf Caster Level}}}
 \begin{center}
-\begin{rndtable}{c c c c c c c c}
-~	& ~ &	\multicolumn{6}{c}{\bf Spell Level}
+\begin{rndtable}{c c c c c c c c c}
+~	& ~ &	\multicolumn{7}{c}{\bf Spell Level}
 \\
-\cc	&	\cc	&	\cc 1 &\cc 2&\cc 3&\cc 4&\cc 5&\cc 6	
+\cc	&	\cc	&	 \cc 0 & \cc 1 &\cc 2&\cc 3&\cc 4&\cc 5&\cc 6	
 \\
-\cc~	&	\cc1	&	15~&~&~&~&~&
+\cc~	&	\cc1	&	8 & 	15~&~&~&~&~&
 \\
-\cc&\cc	2	&	10	&	15~&~&~&~&
+\cc&\cc	2	&			5 & 	12	&	15~&~&~&~&
 \\
-\cc&	\cc3	&	5	&	10	&	20~&~&~&~
+\cc&	\cc3	& 		3 &		8	&	12	&	15~&~&~&~
 \\
-\cc&	\cc4	&	5	&	10	&	15	&	20~&~&~
+\cc&	\cc4	&		3 &		5	&	8	&	12	&	15~&~&~
 \\
-\cc&	\cc5	&	5	&	10	&	15	&	20	&	25 & 
+\cc&	\cc5	&		1 &		3	&	5	&	8	&	12	&	15 & 
 \\
-\multirow{-6}{*}{\rotatebox[origin=c]{90}{\cc \bf Caster Level}}&	\cc 6 &	5	&	10	&	15	&20	&25	&30
+\vcol&	\cc 6 &			1 & 	3	&	5	&	8	&   12 	&15	&20
 \end{rndtable}
 \end{center}
 \subsection{Spell Accuracy}
@@ -120,13 +120,13 @@ You cannot cast a spell if it would send you into negative FP -- you must wait f
 The FP cost of casting a spell is determined by the difficulty of the spell - i.e. the spell level -- as shown in the table below:
 
 {
-\small
+\footnotesize
 \def\wFP{1}
 \begin{center}
-	\begin{rndtable}{c c    c  c c  c}
-		{\bf Beginner}	&	{\bf Novice}	&	{\bf Adept}	&	{\bf Expert}	&	{\bf Master}	& {\bf Ascendant}
+	\begin{rndtable}{c c c    c  c c  c}
+		{\bf Trivial} & {\bf Beginner}	&	{\bf Novice}	&	{\bf Adept}	&	{\bf Expert}	&	{\bf Master}	& {\bf Ascendant}
 		\\
-	2	&	4	&	8	&	16	&	32	&	64
+	0 & 2	&	4	&	8	&	16	&	32	&	64
 	\end{rndtable}
 \end{center}
 }
@@ -156,9 +156,17 @@ This is normaly done by performing a {\it Resist} check before the spell effect 
 
 The Resist DV of a cast spell is enumerated through the {\it Subjugation} statistic:
 
-$$\text{Subjugate} = 8 + \text{Expertise bonus}  + \text{POW modifier}$$
+$$\text{Subjugate} = 8 + \text{\attPow{} modifier}  + \text{Spellcasting modifier}$$
 
+Noe that if the spellcasting check is a power check then you {\bf do} add your power modifier in twice, one of the rare cases where a modifier is doubled. The statistic used to Resist a spell is given in the spell description. Some spells can be Resisted using a choice of several skills, at the choice of the target or depending on the circumstances the Resist is imposed. Some of these combinations are common enough that they are given a special name:
 
+\subsubsection{Attention Resist}
+
+An Attention Resist may be performed using either an {\bf Observation} or an {\it Investigation} resist. The choice is usually made by the GM depending on the situation: for instance an Attention Resist to see through an illusion would use an Observation check at a distance, but an Investigation check when a detailed, close-up study could be performed. 
+
+\subsubsection{Reflex Resist}
+
+A Reflex resist, similar to a normal {\it Dodge} instinct is called for whenever you need to simply avoid something - stopping your hand moments before touching a boiling surface, or diving out of the way of a wall of wire. As such it is performed using either a {\bf Speed} check to rapidly react, or an {\bf Acrobatics} check to contort yourself around and away from the target, whilst maintaining balance. The choice here should be made by the character, except under extenuating circumstances.  
 
 \section{Spell Range} \label{S:Range}
 

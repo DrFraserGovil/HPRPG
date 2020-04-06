@@ -25,7 +25,7 @@
 \begin{document}
 %%SpellbookBegin
 
- \spellBook{Lighting the Spark: An Introduction to Elemental Magic}{Beginner-level Elemental}{
+ \spellBook{a}{Trivial \& Beginner-level Elemental}{
 \spell{
 	name = Compel Flames, school = Charms, discipline = Elemental, type = Focus, level =Beginner, range =Close, incant = ignisempus, noDur = 1, higher = When cast at a higher level\comma{} the maximum area of fire that you can affect doubles \forEvery{}\comma{} and the damage caused by the flame increases by 1d6. You may also perform more extravagant feats of fire manipulation\comma{} at the whim of your GM. Be inventive!,noResist =1, negation = Blockable  and Dodgeable,effect =Upon targeting an area of flame up to 1 metre squared that you can see within range\comma{} you can manipulate the fire in a number of ways:
 
@@ -41,6 +41,9 @@
 You may use any of these effects as long as concentration is maintained. When focus is broken\comma{} the fire resumes its normal course.
 }
 \spell{
+	name = Contact Shock, school = Charms, discipline = Elemental, type = Instant, level =Trivial, range =Wandtip, incant = electrum, noDur = 1, higher = \additional{1d6}{Electric},noResist =1, noBlock = 1, effect =Charge the tip of your wand with electrical energy. This energy is discharged when your wand\minus{}tip next touches a surface. Does 2 electrical damage on contact\comma{} and also fries any electrical equipment it comes into contact with.
+}
+\spell{
 	name = Direct Fluids, school = Charms, discipline = Elemental, type = Focus, level =Beginner, range =Close, incant = aguasempus, noDur = 1, higher = When cast at a higher level\comma{} the maximum volume of water that you can effect doubles \forEvery{}. You may also perform more extravagant feats of water manipulation\comma{} at the whim of your GM. Be inventive!,resist = Strength, noBlock = 1, effect =Upon targeting a volume of water (or similar fluids with a water\minus{}like consistency) up to one metre cube that you can see within range\comma{} you can manipulate it in a number of ways:
 
 \begin{spellitemize}
@@ -53,6 +56,9 @@ You may use any of these effects as long as concentration is maintained. When fo
 }
 \spell{
 	name = Earthrumble, school = Charms, discipline = Elemental, type = Instant, level =Beginner, range =Close, incant = crith, noDur = 1, noHigh = 1, resist = Acrobatics, noBlock = 1, effect =A mild tremor shakes the ground. All beings in a 10m radius must succeed a Resist check\comma{} or become {\it Distracted} in the next turn cycle.
+}
+\spell{
+	name = Glowing Wand, school = Charms, discipline = Elemental, type = Focus, level =Trivial, range =Close, incant = lumos, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Causes the tip of your wand to glow\comma{} like a torch. Casts bright light in a 2m radius\comma{} and dim light for another 10m. This spell last indefinitely\comma{} until Focus is broken\comma{} and does not require drain FP after the initial effect is activated.
 }
 \spell{
 	name = Howling Winds, school = Charms, discipline = Elemental, type = Focus, level =Beginner, range =Close, incant = vente, noDur = 1, higher = When cast at a higher level\comma{} you can perform more extravagant feats of wind manipulation. The penalty to ranged accuracy checks increases by 1 \forEvery{}.
@@ -75,8 +81,11 @@ For each additional casting level\comma{} the jet of water doubles in intensity 
 
 Note\comma{} however\comma{} that Gamp\apos{}s Laws of Elemental Transfiguration states that all conjured water evaporates upon drinking: it cannot be used for sustenance.
 }
+\spell{
+	name = Refreshing Breeze, school = Charms, discipline = Elemental, type = Instant, level =Trivial, range =Close, incant = klinneract, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =A gust of air refreshes the air in a sphere of radius 3 metres around the caster\comma{} removing any gaseous effects and smelling faintly of lavender.
 }
- \spellBook{The Standard Book of Spells}{Beginner-level Kinesis}{
+}
+ \spellBook{b}{Trivial \& Beginner-level Kinesis}{
 \spell{
 	name = Discarnate Digits, school = Charms, discipline = Kinesis, type = Instant, level =Beginner, range =Close, incant = titillatio, duration = 5 minutes,noHigh = 1, noResist =1, noBlock = 1, effect =The caster produces an ethereal pair of hands that lasts for the duration of the spell\comma{} or until they move more than 10m away from the caster. You can use a minor action to control the hands. You can use the hand to manipulate an object\comma{} open an unlocked door or container\comma{} stow or retrieve an item from an open container\comma{} or pour the contents out of a vial\comma{} but cannot use them to attack or carry items heavier than {\it Light}. Hands may be moved at a speed of 10m per turn\comma{} in addition to their action.
 }
@@ -93,14 +102,22 @@ If used on a living being\comma{} you may choose one of the following effects\co
 \end{spellitemize}
 }
 \spell{
+	name = Housemage\apos{}s Delight, school = Charms, discipline = Kinesis, type = Instant, level =Trivial, range =Close, incant = savatch, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Emit a cone of energy from your wand 2m in length. 
+
+Any being within this cone finds their clothes have been cleaned and dried\comma{} leaving them comfortably warm and smelling faintly of lavender. Dirty surfaces\comma{} or those defaced with writing and graffiti are wiped clean and left sparkling and immaculate.
+}
+\spell{
 	name = Levitation, school = Charms, discipline = Kinesis, type = Focus, level =Beginner, range =Sight, incant = wingardium leviosa, noDur = 1, higher = The maximum mass this spell is capable of lifting multiplies by ten for every additional spell level used to cast it.,resist = Strength, noBlock = 1, effect =Cause an object of 1kg or less to levitate whilst concentration is maintained. You may control the height of the object\comma{} but you may not move it horizontally. A being may attempt to grab hold of the levitating object\comma{} and whilst they can move it horizontally\comma{} they may only change its height by performing a Resist check\comma{} breaking the enchantment on a success.
+}
+\spell{
+	name = Magical Marker, school = Charms, discipline = Kinesis, type = Focus, level =Trivial, range =Wandtip, incant = stylum, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Use your wand as anything from a thin marker to a thick paintbrush. The tip of the {\it brush} can be up to 0.5m away from the tip of your wand\comma{} but follows the motion of your wand exactly. The {\it paint} is a magical adhesive that sticks to any surface\comma{} and may be of any colour you choose.
 }
 \spell{
 	name = Spectral Knife, school = Charms, discipline = Kinesis, type = Instant, level =Beginner, range =Close, incant = diffindo, noDur = 1, noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =Cut into any solid object\comma{} as if you had wielded a sharp\comma{} adamantium knife with a blade of up to 10cm in length.
 If used on a living being\comma{} it is as if you wielded an exceptionally sharp knife\comma{} dealing 2d4 slashing damage.
 }
 }
- \spellBook{Reading People\comma{} Reading Minds}{Beginner-level Telepathy}{
+ \spellBook{c}{Trivial \& Beginner-level Telepathy}{
 \spell{
 	name = Aid Ally, school = Divination, discipline = Telepathy, type = Instant, level =Beginner, range =Wandtip, incant = auxilio, noDur = 1, higher = Gain an additional 1d4 bonus for every {\bf two} additional casting levels dedicated to this spell.,noResist =1, noBlock = 1, effect =By laying your hand upon a sapient being\comma{} you may channel magical energy into them. On the next check the target performs\comma{} roll 1d4\comma{} and add it to the check.
 }
@@ -117,6 +134,9 @@ Will deactivate charms whose sole purpose is to remain hidden.
 This spell can detect magical barriers\comma{} but cannot see beyond them.
 }
 \spell{
+	name = Eavesdrop, school = Divination, discipline = Telepathy, type = Focus, level =Trivial, range =Close, incant = dumauris, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =You fortify your own hearing to such an extent that you can listen in on conversations up to 20 meters away with perfect clarity.
+}
+\spell{
 	name = Engender Anxiety, school = Divination, discipline = Telepathy, type = Instant, level =Beginner, range =Close, incant = falciparum, noDur = 1, higher = This spell does 1d10 damage when cast as a Novice spell\comma{} and subsequently increases by 1d10 \forEvery{},resist = Logic, noBlock = 1, effect =You allow yourself to be caught rifling through the target\apos{}s most embaressing and anxiety\minus{}inducing memories\comma{} and perhaps say something aloud to indicate your awareness. 
 
 The mental stress causes the target to take 1d6 psychic damage (halved on a successful resist).
@@ -128,7 +148,7 @@ The mental stress causes the target to take 1d6 psychic damage (halved on a succ
 	name = Night Vision, school = Divination, discipline = Telepathy, type = Instant, level =Beginner, range =Wandtip, incant = aspectu, duration = 2 hours,noHigh = 1, noResist =1, noBlock = 1, effect =As you touch your wand to the target\apos{}s head\comma{} their eyes flash an unearthly green. Give the target nightvision for the duration: dim light is as bright as daylight\comma{} and darkness is considered dim.
 }
 }
- \spellBook{The Dream Oracle}{Beginner-level Temporal}{
+ \spellBook{d}{Trivial \& Beginner-level Temporal}{
 \spell{
 	name = Distressing Omen, school = Divination, discipline = Temporal, type = Instant, level =Beginner, range =Close, incant = mitus, noDur = 1, higher = \additional{1d8}{psychic},resist = Logic, noBlock = 1, effect =Speak aloud an omen\comma{} layering into your voice the power of the future\comma{} to warp the mind of your opponent. Target must succeed on a Resist check or take 1d8 psychic damage.
 }
@@ -146,8 +166,11 @@ If you are looking for a specific object\comma{} you must be familiar with it (i
 
 This spell fails if there is no such object within range\comma{} or if the object is protected by any kind of magical ward or lock.
 }
+\spell{
+	name = Receive Omen, school = Divination, discipline = Temporal, type = Ritual (2 minutes), level =Trivial, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Use your tea leaves to receive an omen about the future. Ask a question about the outcome of an event. The tea leaves will tell you if the outcome is positive\comma{} negative\comma{} or neutral.
 }
- \spellBook{Easy Spells to Fool Muggles}{Beginner-level Bewitchment}{
+}
+ \spellBook{e}{Trivial \& Beginner-level Bewitchment}{
 \spell{
 	name = Aura of Kindness, school = Illusion, discipline = Bewitchment, type = Instant, level =Beginner, range =Close, incant = amicus, duration = 1 hour,higher = Gain an additional +1 bonus \forEvery{},noResist =1, noBlock = 1, effect =This spell creates an aura of kindness and warmth around you. If the target is not overtly hostile\comma{} this causes then to like you: charisma checks by the caster on the individual get a +1 bonus for the duration of the spell.
 }
@@ -170,8 +193,17 @@ This illusion cannot make a sound and is non\minus{}corporeal\comma{} but does n
 
 An observer may determine that the illusion is not real by performing a Resist check as a major action\comma{} or by attempting to physically interact with it.
 }
+\spell{
+	name = Lure, school = Illusion, discipline = Bewitchment, type = Instant, level =Trivial, range =Close, incant = ollius, noDur = 1, noHigh = 1, resist = Logic, noBlock = 1, effect =Choose a target that you can see within range\comma{} and create a dangling lure in front of their face\comma{} or some other illusion to draw their attention towards you. On a failed resist\comma{} the target will\comma{} if possible\comma{} use its actions this turn to attack you instead of another target. If the target would be unable to make an attack against you this turn\comma{} the spell fails.
 }
- \spellBook{Cool Cantrips to Make You Crazy}{Beginner-level Psionics}{
+\spell{
+	name = Minor Trickery, school = Illusion, discipline = Bewitchment, type = Instant, level =Trivial, range =Close, incant = mico, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Create a minor magical trick\comma{} such as a flash of light\comma{} a brief shower of sparks or a puff of smoke. You could make a magical symbol float briefly in the air\comma{} or cause the hairs on the back of a target\apos{}s head to stand on end. Whilst this spell is very versatile\comma{} and the effects certainly look magical in nature\comma{} they serve no real purpose beyond looking pretty\comma{} though several enterprising wizards have used this spell on street corners whilst pretending to do muggle ``magic”.
+}
+\spell{
+	name = Throw Voice, school = Illusion, discipline = Bewitchment, type = Focus, level =Trivial, range =Close, incant = ventrilofors, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Cast your voice such that\comma{} when you speak\comma{} your voice appears to emanate from somewhere up to 15 metres away from your actual position.
+}
+}
+ \spellBook{f}{Trivial \& Beginner-level Psionics}{
 \spell{
 	name = Chaotic Whispers, school = Illusion, discipline = Psionics, type = Focus, level =Beginner, range =Sight, incant = rastarum, noDur = 1, higher = The whispers gain in power when this spell is cast at a higher level: doing 1d8 additional damage for each additional casting level.,resist = Logic, noBlock = 1, effect =The target hears a voice in their ear whispering maddening words that slowly drive them insane. Target may take a minor action to perform a Resist check at the start of their turn\comma{} when one succeeds\comma{} the spell is broken. 
 
@@ -179,6 +211,9 @@ Whispers do 1d8 psychic damage per turn that the spell is active.
 }
 \spell{
 	name = False Friendship, school = Illusion, discipline = Psionics, type = Instant, level =Beginner, range =close, incant = amicus maxmius, duration = 1 hour,noHigh = 1, resist = Willpower, noBlock = 1, effect =If the target fails to resist\comma{} you place the idea inside their mind that you are their ally. Gain advantage on all charisma checks directed at the target for the duration  the spell\comma{} if they are not already overtly hostile. At the end of the spell\comma{} or if they succeed in Resisting\comma{} the target becomes aware that you have enchanted and deceived them\comma{} and will become hostile or otherwise seek vengeance.
+}
+\spell{
+	name = Manipulate Emotions, school = Illusion, discipline = Psionics, type = Instant, level =Trivial, range =Close, incant = motus conus, duration = 2 minutes,noHigh = 1, resist = Willpower, noBlock = 1, effect =If the target fails to resist\comma{} you may manipulate their emotions such that they feel an intense emotion of your choosing. You can make them feel incredibly happy\comma{} or incredibly sad\comma{} scared\comma{} or brave. The target is unaware that you have manipulated them in this fashion until the spell effect ends or the successfully Resist.
 }
 \spell{
 	name = Piercing Wail, school = Illusion, discipline = Psionics, type = Instant, level =Beginner, range =Close, incant = magnus surgerus, noDur = 1, higher = The wail gains an additional 1d4 psychic damage for every additional spell level dedicated to the casting.,resist = Willpower, noBlock = 1, effect =All targets in a 3m spherical radius of the caster take 1d4 points of psychic damage\comma{} and awaken if they are sleeping. The damage is halved on a successful Resist.
@@ -189,7 +224,17 @@ Whispers do 1d8 psychic damage per turn that the spell is active.
 Target is effectively deaf and all checks which rely on hearing fail. They also take check\minus{}disadvantage on all Perception checks.
 }
 }
- \spellBook{A Compendium of Common Curses}{Beginner-level Curse}{
+ \spellBook{l}{Trivial \& Beginner-level Conjuration}{
+\spell{
+	name = Palpatation, school = Maledictions, discipline = Conjuration, type = Instant, level =Trivial, range =Close, incant = vena, noDur = 1, noHigh = 1, resist = Vitality, noBlock = 1, effect =On a failed Resist\comma{} you cause the target\apos{}s heart to miss a beat. Next cycle\comma{} the target\apos{}s speed is halved.
+}
+}
+ \spellBook{g}{Trivial \& Beginner-level Curse}{
+\spell{
+	name = Backlash, school = Maledictions, discipline = Curse, type = Instant, level =Trivial, range =Close, incant = vindictus, noDur = 1, noHigh = 1, noResist =1, negation = Blockable,effect =You imbue the air around the target with a positive energy field which discharges whenever they perform an action which causes harm. 
+
+Whenever the target causes any other being to lose HP\comma{} they take 1d4 points of force damage.
+}
 \spell{
 	name = Bubbling Warts, school = Maledictions, discipline = Curse, type = Instant, level =Beginner, range =Close, incant = furnunculus, duration = 1 hour,noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =After being hit with this spell\comma{} the target breaks out in a horrendous case of warts and boils all over their body. This boils are incredibly itchy and distracting\comma{} giving the afflicted disadvantage on all Spirit checks.
 }
@@ -202,7 +247,15 @@ Every time they open their mouth to speak\comma{} they must succeed a DV 10 Vita
 	name = Jelly Legs, school = Maledictions, discipline = Curse, type = Focus, level =Beginner, range =Close, incant = locomotor wibbly, noDur = 1, noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =If this spell makes contact with a living being\comma{} it causes their legs to turn to jelly and collapse underneath them. The target takes the {\it Prone Position} status and cannot remove it whilst concentration is maintained.
 }
 \spell{
+	name = Minor Curse, school = Maledictions, discipline = Curse, type = Instant, level =Trivial, range =Sight, incant = lombus, noDur = 1, noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =A beam of light causes the target\apos{}s muscles to atrophy and their mind to cloud for an instant\comma{} before the effect wears off. The target must deduct 1d4 from the value of their next check.
+}
+\spell{
 	name = Stickfast, school = Maledictions, discipline = Curse, type = Instant, level =Beginner, range =Close, incant = colloshoo, duration = 15 seconds,noHigh = 1, resist = Strength, negation = Blockable  and Dodgeable,effect =If this spell strikes a target\comma{} it glues their feet to the ground\comma{} setting their movement speed to 0 (though it does not effect magical transport such as apparation). The target may use a major action to perform a Resist check to break free.
+}
+\spell{
+	name = Sudden Sound, school = Maledictions, discipline = Curse, type = Instant, level =Trivial, range =Close, incant = ferio, noDur = 1, noHigh = 1, resist = Attention, noBlock = 1, effect =You create a loud sound of your choice to crash into a target\apos{}s ears. On a failed Resist\comma{} the target is mildly distracted and loses any check\minus{}advantage it may have on accuracy checks this turn. 
+
+If the target is currently concealed from allies of the caster\comma{} they may take an additional Observation check with advantage\comma{} to detect the target.
 }
 \spell{
 	name = Taste of Blood, school = Maledictions, discipline = Curse, type = Ward, level =Beginner, range =Close, incant = sanguinifors, duration = 1 minute,higher = The additional damage increases by 1d4 (or 1d6 if damaged) \forEvery{}.,resist = Intimidation, noBlock = 1, effect =You place a cursed ward onto a target of your choice\comma{} if they fail to Resist. 
@@ -213,7 +266,10 @@ This ward allows you to deal an additional 1d4 damage whenever you perform a dam
 	name = Tripwire, school = Maledictions, discipline = Curse, type = Instant, level =Beginner, range =Close, incant = lubricor, noDur = 1, noHigh = 1, resist = Acrobatics, noBlock = 1, effect =If the target is moving this turn cycle and fails to Resist\comma{} they go sprawling onto the ground taking 1 bludgeoning damage\comma{} and take the {\it Prone Position} status.
 }
 }
- \spellBook{Basic Hexes for the Busy \& Vexed}{Beginner-level Hex}{
+ \spellBook{h}{Trivial \& Beginner-level Hex}{
+\spell{
+	name = Knockback, school = Maledictions, discipline = Hex, type = Instant, level =Trivial, range =Close, incant = flipendo, noDur = 1, higher = Each additional casting level dedicated to this spell increases the power of the energy\minus{}wave: do an additional 1d8 force damage and push the target back an extra 2 metres.,resist = Strength, negation = Blockable  and Dodgeable,effect =A wave of energy strikes into the target\comma{} causing 1d6 force damage\comma{} and if the target fails to Resist\comma{} pushing the target backwards up to 1 metre.
+}
 \spell{
 	name = Magnetising Strike, school = Maledictions, discipline = Hex, type = Instant, level =Beginner, range =Close, incant = adtraho, duration = 30 seconds,higher = \additional{1d8}{force},resist = Acrobatics or Speed, noBlock = 1, effect =A pulse of energy streaks out towards the target faster than a normal `dodge\apos{} could avoid. 
 
@@ -240,7 +296,7 @@ Each packet does 1d8 damage of the chosen type.
 The target takes disadvantage on all perception checks for the duration.
 }
 }
- \spellBook{Cures\comma{} Cantrips and Coughs}{Beginner-level Healing}{
+ \spellBook{I}{Trivial \& Beginner-level Healing}{
 \spell{
 	name = Boost Health, school = Recuperation, discipline = Healing, type = Instant, level =Beginner, range =Close, incant = levo, duration = 12 hours,higher = Gain an additional 1d6 temporary health points for every additional spell\minus{}level used to cast this spell.,noResist =1, noBlock = 1, effect =Emit a calming\comma{} healing warmth from the end of your wand to bolster the strength of your allies. Target up to 2d4 beings in range\comma{} and provide them with 5 temporary health points.
 }
@@ -255,8 +311,11 @@ If the target has a serious wound\comma{} i.e. a broken bone\comma{} cannot heal
 \spell{
 	name = Spare the Wounded, school = Recuperation, discipline = Healing, type = Instant, level =Beginner, range =Sight, incant = clementia, duration = 1 day,noHigh = 1, resist = Evil, noBlock = 1, effect =If the subject falls below 5HP\comma{} they are considered a non\minus{}combatant and can only be targeted by beings which successfully Resist. This spell is negated if subject engages in hostile activity\comma{} and subjects may be damaged by area of effect attacks centred on other valid targets.
 }
+\spell{
+	name = Stabilise Patient, school = Recuperation, discipline = Healing, type = Instant, level =Trivial, range =Wandtip, incant = firmum, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Stabilises the patient and replaces the \textit{Critical Condition} status with {\it Critical But Stable}.
 }
- \spellBook{Self\minus{}Defensive Spellwork}{Beginner-level Warding}{
+}
+ \spellBook{j}{Trivial \& Beginner-level Warding}{
 \spell{
 	name = Caterwauling Alarm, school = Recuperation, discipline = Warding, type = Ward, level =Beginner, range =Wandtip, incant = caterwaul, duration = 2 weeks,noHigh = 1, noResist =1, noBlock = 1, effect =Casts a ward on an area which detects when a living being larger than a rat touches or enters a designated region up to 10m in radius. You may choose the form of the alarm on casting \minus{} either mental or audible. 
 
@@ -292,7 +351,12 @@ Affected beings get check\minus{}advantage on Stealth checks.
 The next attack you make with a physical weapon deals an additional 1d8 damage of the absorbed type.
 }
 }
- \spellBook{A Beginner\apos{}s Guide to Transfiguration}{Beginner-level Alteration}{
+ \spellBook{k}{Trivial \& Beginner-level Alteration}{
+\spell{
+	name = Aerodynamic Rectification, school = Transfiguration, discipline = Alteration, type = Instant, level =Trivial, range =Wandtip, incant = volant, duration = 1 minute,noHigh = 1, noResist =1, noBlock = 1, effect =You imbue a 1d4 small stones or other small\comma{} nearby object with a magical aura which causes them to move more easily through the air.
+
+When you or another being uses these as improvised throwing weapons\comma{} or as ammunition for a sling\comma{} you may add your proficiency modifier to the accuracy check\comma{} even if you are not proficient in the relevant field. On a successful hit\comma{} the object deals an additional 1d6 bludgeoning damage.
+}
 \spell{
 	name = Degrade, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, range =Close, incant = prolabor, duration = 1 minute,higher = This spell effects an additional object or being \forEvery{}.
 
@@ -322,6 +386,11 @@ For the duration of the degradation\comma{} whenever an effected being performs 
 \end{spellitemize}
 }
 \spell{
+	name = Magical Makeover, school = Transfiguration, discipline = Alteration, type = Instant, level =Trivial, range =Self, incant = crinus muto, duration = 1 day,noHigh = 1, noResist =1, noBlock = 1, effect =Alters the colour and style of the caster\apos{}s hair\comma{} apply a layer of makeup\comma{} and scrapes the dirt from under your fingernails. You may alter your appearance as if you had been attended to by a competent hair stylist and make\minus{}up artist.   
+
+Useful for disguises\comma{} or to make yourself look suave in an instant.
+}
+\spell{
 	name = Refine, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, range =Close, incant = excolo, duration = 1 minute,higher = This spell effects an additional object or being \forEvery{}.
 
 When cast as an Adept level spell or higher\comma{} you may select two improvements from the list.,noResist =1, noBlock = 1, effect =Choose up to three target objects or beings that you can see within range\comma{} and make subtle minor alterations which generally improve the quality of the object at your direction.
@@ -344,7 +413,13 @@ For the duration of the refinement\comma{} whenever an effected being performs o
 	name = Slip, school = Transfiguration, discipline = Alteration, type = Focus, level =Beginner, range =Sight, incant = glisser, noDur = 1, noHigh = 1, resist = Acrobatics, noBlock = 1, effect =Whilst Focus is maintained\comma{} up to 1 square metre of the targeted surface becomes slippery\comma{} as if it was covered in grease. When a target touches the effected surface and fails the resist check\comma{} they fall over and take the {\it Prone Position} status.
 }
 \spell{
+	name = Small Change Charm, school = Transfiguration, discipline = Alteration, type = Instant, level =Trivial, range =Wandtip, incant = psilus, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =The only spell which can alter magical currency. By casting this charm on a set of Galleons\comma{} Sickles and Knuts you may transfigure them into any other combination of coins with an equal monetary value.
+}
+\spell{
 	name = Solidify \& Strengthen, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, range =Close, incant = duro, duration = 1 hour,higher = Hardened objects can absorb an additional 5 points of damage \forEvery{}.,noResist =1, noBlock = 1, effect =Freezes a non\minus{}living object into its current form\comma{} such that it can no longer bend or flex and reinforce the structure of the object with magical energy. Hardened objects can absorb an additional 10 points of damage before they crumble and break and can be used to provide cover.
+}
+\spell{
+	name = Touch of Colour, school = Transfiguration, discipline = Alteration, type = Instant, level =Trivial, range =Close, incant = pigmentus, duration = 1 day,noHigh = 1, noResist =1, noBlock = 1, effect =Causes the colour of an object to change to that specified by the caster. The resulting colour is not purely monochromatic\comma{} but appears as if you were viewing the object through a thick pane of coloured glass of the chosen colour.
 }
 \spell{
 	name = Transmutation, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, range =Close, incant = mutatio, duration = 1 hour,higher = The maximum mass this spell is capable of transfiguring multiplies by 5 for every additional spell level used to cast it.,resist = Power, noBlock = 1, effect =Transform a 1kg non\minus{}sapient animal (or part of an animal) or object into a different animal or solid object\comma{} negated on a successful Resist. If you are targeting a being which is in combat with you\comma{} they take advantage on the Resist check. 
@@ -352,9 +427,12 @@ For the duration of the refinement\comma{} whenever an effected being performs o
 The transformation must (approximately) conserve mass – you cannot turn a rat into a T\minus{}Rex\comma{} for example. The final product of the transfiguration must be a non\minus{}magical in nature (i.e. you cannot enchant items through Transmutation)
 }
 }
- \spellBook{The Illusion of {\it Thin Air}}{Beginner-level Conjuration}{
+ \spellBook{l}{Trivial \& Beginner-level Conjuration}{
 \spell{
 	name = Conjure Bubble, school = Transfiguration, discipline = Conjuration, type = Instant, level =Beginner, range =Close, incant = ebublio, duration = 1 hour,higher = Gain  +10 HP to the bubble for every additional casting level dedicated to this spell.,noResist =1, noBlock = 1, effect =Conjures a large\comma{} hard\minus{}to\minus{}pop\comma{} airtight\comma{} spherical bubble radius specified by the caster (max: 2m). The bubble can use to encase enemies\comma{} or to protect the caster. The bubble provides a bonus to Block of +2\comma{} and has a HP of 20\comma{} but is instantly destroyed upon taking 1 point of piercing damage.
+}
+\spell{
+	name = Conjure Flowers, school = Transfiguration, discipline = Conjuration, type = Instant, level =Trivial, range =Wandtip, incant = orchideous, duration = 3 days,noHigh = 1, noResist =1, noBlock = 1, effect =Conjures a bouquet of flowers from thin air. You may choose the species of flower from any of the common species. The flowers remain perfectly preserved for the duration of the spell\comma{} but wilt and die in an instant at the end of the spell\apos{}s effect.
 }
 \spell{
 	name = Erupting Spike, school = Transfiguration, discipline = Conjuration, type = Instant, level =Beginner, range =Close, incant = voco dens, noDur = 1, higher = An extra spike is generated for every additional spell level used to cast this spell.,noResist =1, negation = Blockable  and Dodgeable,effect =Conjure an enormous spike to transfigure itself from the surrounding walls or floor\comma{} impaling the target. A spike which lands true does 2d6 piercing damage. 
@@ -363,6 +441,9 @@ Spikes can only reach up to 2m in length\comma{} and so cannot effect enemies wh
 }
 \spell{
 	name = Grasping Tendrils, school = Transfiguration, discipline = Conjuration, type = Instant, level =Beginner, range =Close, incant = manibarius, duration = 30 seconds,higher = \additional{1d4}{piercing},resist = Reflex, noBlock = 1, effect =You summon a set of grasping\comma{} oily tentacles from the other side of the astral realm\comma{} allow them to reach through a portal which you set into a wall or floor. The tendrils can reach up to 3m from the portal\comma{} and will attack anyone who enters into this region\comma{} dealing 1d4+1 piercing damage as the tentacles strike out at them\comma{} halved on a successful Resist.
+}
+\spell{
+	name = Prank, school = Transfiguration, discipline = Conjuration, type = Instant, level =Trivial, range =Close, incant = riddikulus, duration = 2 minutes,noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =You conjure something onto or near your target with the express intention of making them look as stupid as possible: Summon a funny hat onto an individual\comma{} or conjure up a note with a funny message and stick it to their back\comma{} this spell allows you to perform minor\comma{} harmless pranks in an instant.
 }
 \spell{
 	name = Shimmering Confetti, school = Transfiguration, discipline = Conjuration, type = Instant, level =Beginner, range =Close, incant = chamak, noDur = 1, noHigh = 1, resist = Logic, noBlock = 1, effect =Conjures a shower of golden\comma{} shimmering particles to cover every person and surface in a 4m radius. If a being fails to resist\comma{} the first attack to land this turn cycle is considered a {\it Critical Strike}.
@@ -374,8 +455,16 @@ The shield actively intercepts incoming attacks\comma{} providing you with a you
 
 When the shield blocks an attack\comma{} it takes the damage. The shield has 3d8HP and shatters into dust when it reaches 0HP. Any excess damage from the attack which reduced the shield to 0HP is transferred to the caser.
 }
+\spell{
+	name = Swordstrike, school = Transfiguration, discipline = Conjuration, type = Instant, level =Trivial, range =Wandtip, incant = galdio, noDur = 1, noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =After casting this spell\comma{} a non\minus{}magical shortsword erupts into existence and makes an attack against an enemy within melee range. You may perform the accuracy check using either a Conjuration Spellcasting check\comma{} or a normal shortsword check. 
+
+If the strike hits the target\comma{} it deals 1d6 slashing damage. If the caster is proficient in the use of a shortsword\comma{} their \attPhys{} modifier is added to the damage.
 }
- \spellBook{Necromancy: A Misunderstood Skill}{Beginner-level Necromancy}{
+}
+ \spellBook{m}{Trivial \& Beginner-level Necromancy}{
+\spell{
+	name = Envelop in Shadows, school = Dark Arts, discipline = Necromancy, type = Instant, level =Trivial, range =Sight, incant = malusangui, noDur = 1, higher = Gain 1d10 additional necrotic damage for each additional spell level.,noResist =1, negation = Blockable  and Dodgeable,effect =You concentrate\comma{} and the nearby shadows flock to your wand\comma{} curling around like an evil candy floss\comma{} before launching themselves at your target dealing 1d6 necrotic damage.
+}
 \spell{
 	name = Instil Terror, school = Dark Arts, discipline = Necromancy, type = Instant, level =Beginner, range =Close, incant = timeant, duration = 4 minutes,noHigh = 1, resist = Willpower, noBlock = 1, effect =On a failed Resist\comma{} the target becomes {\it Terrified} of the caster.
 }
@@ -383,13 +472,19 @@ When the shield blocks an attack\comma{} it takes the damage. The shield has 3d8
 	name = Vicious Slash, school = Dark Arts, discipline = Necromancy, type = Instant, level =Beginner, range =Close, incant = sectumsempra, noDur = 1, higher = Gain an additional 1d8 slashing damage for each additional spell level dedicated to casting this spell.,noResist =1, negation = Blockable,effect =Bolts of energy strike out at the target\comma{} goughing at them and leaving deep\comma{} cursed wounds\comma{} for 1d8 points of slashing damage. This damage is halved on a successful Block.
 }
 }
- \spellBook{An A\minus{}Z of Spooky Spells}{Beginner-level Occultism}{
+ \spellBook{n}{Trivial \& Beginner-level Occultism}{
+\spell{
+	name = Blood Pact, school = Dark Arts, discipline = Occultism, type = Ritual (1 hour), level =Trivial, range =Self, noIncant = 1, duration = 1 day,noHigh = 1, noResist =1, noBlock = 1, effect =Perform a ritual in which all members of a group mix their blood in the centre of  a pentagram\comma{} binding them together. For the duration of the spell\comma{} whenever all members of this group work together to complete a task\comma{} gain a bonus to the group check equal to the number of people in the pact.
+}
 \spell{
 	name = Demoncall, school = Dark Arts, discipline = Occultism, type = Instant, level =Beginner, range =Sight, incant = profundum, duration = 30 minutes,higher = For every additional spell\minus{}level dedicated to casting this spell\comma{} the maximum MoM rating of a demon that you can summon increases by 1. Demons with ratings IV and above can take more complex commands – up to a single phrase.,noResist =1, noBlock = 1, effect =Convince a demon (MoM rating II or less) to break through the walls between reality and come to your aid\comma{} opening a rift at a spot you choose within 10m of your position. You may choose the type of demon from those that you have previously studied or encountered.
 
 The demon will take a single\minus{}word command when it leaps into existence\comma{} and the caster may use a minor action to give it an additional one\minus{}word command\comma{} replacing the first. The demon will follow these commands to the best of its abilities. The demon remains in existence until its HP reaches zero\comma{} the spell duration ends\comma{} or the caster uses a minor action to dismiss it\comma{} at which point the demon returns to its home dimensions.
 
 The summoned will remain friendly to you and your allies until any of them cause it to lose HP\comma{} or force it to perform a Resist check for any reason\comma{} at which point it will consider you foes\comma{} and will engage you if appropriate. In doing so you lose the ability to command or dismiss the demon.
+}
+\spell{
+	name = Draw Power, school = Dark Arts, discipline = Occultism, type = Ritual (1 hour), level =Trivial, range =Self, noIncant = 1, duration = 1 day,higher = Increase the spellcasting bonus by +1 for every two additional spell levels used to cast this spell.,noResist =1, noBlock = 1, effect =When at a site of ancient magic \minus{}\minus{} be it at a place where some great feat of magic was achieved\comma{} the residence of some powerful being\comma{} or simply somewhere where magic has seeped into the very walls \minus{}\minus{} you may perform this ritual to tap into those ancient powers to gain a +2 bonus to spellcasting checks whilst in this area. This ritual cannot be used at the same site for the next 7 days.
 }
 \spell{
 	name = Shroud of Darkness, school = Dark Arts, discipline = Occultism, type = Instant, level =Beginner, range =Close, incant = tenebrosa, duration = 2 minutes,noHigh = 1, resist = Power, noBlock = 1, effect =A layer of darkness settles on the immediate vicinity\comma{} extinguishing all sources of light within a 10 metre radius. 
@@ -400,7 +495,7 @@ For the duration of the spell all attempts to create new light fail\comma{} unle
 	name = Unfathomable Visage, school = Dark Arts, discipline = Occultism, type = Instant, level =Beginner, range =Self, incant = facadus horribilis, duration = 1 minute,higher = Gain an additional bonus of 1d4 \forEvery{}.,noResist =1, noBlock = 1, effect =Imbue yourself with the essence of one of the Eldritch beings\comma{} giving a bonus to any one of your Attributes equal to 1d4\comma{} in doing so\comma{} however\comma{} your face transforms into a horrifying edifice which drives all who gaze upon it to go insane: they will either fly into a murderous rage\comma{} become catatonic\comma{} or flee from you.
 }
 }
- \spellBook{Further Elemental Studies}{Novice-level Elemental}{
+ \spellBook{Lighting the Spark: An Introduction to Elemental Magic}{Novice-level Elemental}{
 \spell{
 	name = Burst of Frost, school = Charms, discipline = Elemental, type = Instant, level =Novice, range =Close, incant = isti, noDur = 1, higher = Gain an additional 1d10 Cold damage for every additional spell level dedicated to casting this spell.,noResist =1, negation = Blockable  and Dodgeable,effect =The air around the tip of your wand freezes\comma{} condensing the surrounding water vapour into a tiny globe of ice\comma{} which launches towards your target. If it hits\comma{} the globe explodes doing 2d10 Cold damage.
 }
@@ -440,7 +535,7 @@ You also do not take disadvantage for using items\comma{} attacks or spellcastin
 	name = Vortex Field, school = Charms, discipline = Elemental, type = Instant, level =Novice, range =Self, incant = dini, duration = 2 minutes,noHigh = 1, resist = Strength, noBlock = 1, effect =A swirling wall of wind evelopes a radius 1m around you\comma{} and follows you around for the duration of the spell. All physical objects entering the field are hurled in a random direction\comma{} and beings take 2d8 bludgeoning damage to pass through (halved on a resist).
 }
 }
- \spellBook{Achievements in Charming}{Novice-level Kinesis}{
+ \spellBook{The Standard Book of Spells}{Novice-level Kinesis}{
 \spell{
 	name = Counterspell, school = Charms, discipline = Kinesis, type = Instant, level =Novice, range =Wandtip, incant = finite incantatem, noDur = 1, higher = For every additional spell\minus{}level dedicated to casting this spell\comma{} the maximum spell level which can be ended increases by one. 
 
@@ -477,7 +572,7 @@ This spell can be cast on the self.
 	name = Walk on Water, school = Charms, discipline = Kinesis, type = Ritual (2 minutes), level =Novice, range =Close, incant = iasus, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =Up to 10 willing beings that you see gain the ability to walk on water and other liquid surfaces such as mud\comma{} snow\comma{} quicksand or lava without sinking or slowing down. Other environmental effects (such as heat) still apply.
 }
 }
- \spellBook{Detection is the Best Defense}{Novice-level Telepathy}{
+ \spellBook{Reading People\comma{} Reading Minds}{Novice-level Telepathy}{
 \spell{
 	name = Bestial Ally, school = Divination, discipline = Telepathy, type = Instant, level =Novice, range =Sight, incant = nonparum, duration = 10 minutes,noHigh = 1, noResist =1, noBlock = 1, effect =Establish a psychic connection with a friendly or {\it Charmed} beast. You may use an instantaneous action to communicate with the beast\comma{} and it will follow them if it would obey a spoken being. The beast can communicate simple emotions and images back through the link.
 }
@@ -500,7 +595,7 @@ You may attempt to reshape their surface level thoughts by asking questions\comm
 As a telepathy spell which works on detection and interpretation of psychic energies\comma{} this spell can only detect devices\comma{} spells or altered environments which were {\bf deliberately} laid out with the intention of harming\comma{} hindering or altering upon being triggered. Hence\comma{} whilst a pitfall trap would show up to the effects of this spell\comma{} a floor that has been rendered unstable by decay does not\comma{} as there is no malicious psychic residue for the spell to detect\comma{} despite their similar physical result.
 }
 }
- \spellBook{The Future is an Open Book (And so is This)}{Novice-level Temporal}{
+ \spellBook{The Dream Oracle}{Novice-level Temporal}{
 \spell{
 	name = All\minus{}seeing Eye, school = Divination, discipline = Temporal, type = Instant, level =Novice, range =Self, incant = orbis, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =You may create an invisible\comma{} floating eye in front of you. You are telepathically linked to the eye\comma{} and see everything that the eye sees\comma{} and may use a minor action to instruct the eye to move up to 20m in any direction (including vertical). The Eye cannot pass through solid walls\comma{} but may squeeze through gaps as small as 4cm in diameter. 
 
@@ -519,7 +614,7 @@ The Eye can see into the Astral Realm and the Mortal Plain simultaneously.
 	name = Hunter\apos{}s Mark, school = Divination, discipline = Temporal, type = Instant, level =Novice, range =Sight, incant = venari, duration = 3 days,noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =Attach a marker to the target which glows brightly in the astral realm. The Caster remains aware of the location of the target for the duration of the spell\comma{} or until the mark is removed by magical means.
 }
 }
- \spellBook{Jiggery Pockery \& Hocus Pocus}{Novice-level Bewitchment}{
+ \spellBook{Easy Spells to Fool Muggles}{Novice-level Bewitchment}{
 \spell{
 	name = Calm Being, school = Illusion, discipline = Bewitchment, type = Instant, level =Novice, range =Close, incant = paxus, noDur = 1, noHigh = 1, resist = Willpower, noBlock = 1, effect =Calms the target down. Remove {\it Terrified} status\comma{} {\it Rage} effects and  other related phenomena from target such as a Berserker\apos{}s Battle Fury. An unwilling target can mitigate this effect by attempting to Resist.
 }
@@ -551,7 +646,7 @@ On a failed Resist\comma{} they instead attack the duplicate. Duplicates have a 
 The triggering condition can be chosen by the caster in any form they wish\comma{} though it is limited to an audible or visual trigger occuring within 5 metres of the ward.
 }
 }
- \spellBook{Your Mind\comma{} the Weapon}{Novice-level Psionics}{
+ \spellBook{Cool Cantrips to Make You Crazy}{Novice-level Psionics}{
 \spell{
 	name = Illiteracy, school = Illusion, discipline = Psionics, type = Instant, level =Novice, range =Close, incant = illegibilus, duration = 1 minute,noHigh = 1, resist = Logic, noBlock = 1, effect =On a failed resist\comma{} the target\apos{}s brain becomes scrambled\comma{} and they temporarily lose the ability to read. 
 
@@ -568,7 +663,9 @@ The target takes 2d8 psychic damage\comma{} halved on a successful resist.
 Afflicted individuals may take a minor action at the end of each turn to re\minus{}perform the Resist check and end the effect.
 }
 }
- \spellBook{Curses \& Counter Curses}{Novice-level Curse}{
+ \spellBook{The Illusion of {\it Thin Air}}{Novice-level Conjuration}{
+}
+ \spellBook{A Compendium of Common Curses}{Novice-level Curse}{
 \spell{
 	name = Conjunctivitis, school = Maledictions, discipline = Curse, type = Instant, level =Novice, range =Close, incant = ranki, duration = 15 seconds,noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =Causes the eyes of the victim to swell shut\comma{} effectively {\it blinding} them for the duration of the spell.
 }
@@ -589,7 +686,7 @@ This does not effect beings which do not have blood.
 	name = Prevent Movement, school = Maledictions, discipline = Curse, type = Focus, level =Novice, range =Close, incant = impedimentia, duration = 1 minute,noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =As this spell hits the target\comma{} a magical rune forms on the floor beneath their feet\comma{} forcing their feet to remain rooted to the ground. The target acquires the Trapped status effect. Their remaining appendages are still free to move\comma{} and the target can still speak – but they cannot move until the spell ends.
 }
 }
- \spellBook{Hexes to Make Your Head Spin (Literally)}{Novice-level Hex}{
+ \spellBook{Basic Hexes for the Busy \& Vexed}{Novice-level Hex}{
 \spell{
 	name = Acidic Burst, school = Maledictions, discipline = Hex, type = Instant, level =Novice, range =Wandtip, incant = ambustum, duration = 20 seconds,higher = The acid damage increase by 1d4 per turn for every additional spell\minus{}level dedicated to the casting.,resist = Observation, noBlock = 1, effect =Fills a cube of size 4m with an acidic cloud that does 1d4 acid damage once per turn to all beings which spent any time within the cloud this turn\comma{} until the end of the spell duration. Any being which is within the cloud at the moment it is summoned may attempt to Resist to negate the damage taken on their first turn within the cloud. 
 
@@ -609,7 +706,7 @@ Each bat\minus{}bogey does 1d6 points of acid damage per turn for the duration o
 	name = Shockwave, school = Maledictions, discipline = Hex, type = Instant, level =Novice, range =Self, incant = inpusla, noDur = 1, higher = \additional{1d6}{Concussive},resist = Acrobatics, noBlock = 1, effect =A shockwave emanates from the caster in every direction\comma{} for a radius of 3m\comma{} doing 2d6 concussive damage (halved on a successful Resist) to all beings caught in the radius. Beings which fail to resist must roll a 1d4. On a 1\comma{} they are knocked prone.
 }
 }
- \spellBook{Magic to Make Others Better}{Novice-level Healing}{
+ \spellBook{Cures\comma{} Cantrips and Coughs}{Novice-level Healing}{
 \spell{
 	name = Celestial Burst, school = Recuperation, discipline = Healing, type = Instant, level =Novice, range =Sight, incant = sol maxima, noDur = 1, higher = \additional{2d4}{Celestial},resist = Power, noBlock = 1, effect =A bolt of magic is released from the end of your wand\comma{} rocketing towards a targeted region. The bolt explodes on contact with any solid or astral objects in its path\comma{} releasing a searing white light that does 4d4 Celestial Damage in a 5m radius\comma{} halved on a successful Resist. Beings which are immune to Celestial damage are healed by 2 points instead.
 }
@@ -631,7 +728,7 @@ If target has a serious wound (i.e. a broken bone or a serious burn)\comma{} thi
 	name = Stasis Field, school = Recuperation, discipline = Healing, type = Instant, level =Novice, range =Want, incant = tempocessus, duration = 10 days,noHigh = 1, noResist =1, noBlock = 1, effect =A non\minus{}living target is unaffected by the flow of time for the duration of the spell\comma{} and does not rot or otherwise decay. If the target is the body of a being\comma{} this being cannot become one of the Unliving.
 }
 }
- \spellBook{How Not to be Killed: A Guide for the Discerning Wizard}{Novice-level Warding}{
+ \spellBook{Self\minus{}Defensive Spellwork}{Novice-level Warding}{
 \spell{
 	name = Beartrap, school = Recuperation, discipline = Warding, type = Ward, level =Novice, range =Close, incant = ursa dentes, duration = 5 days,higher = The ward gains an additional 1d8 piercing damage for every additional spell\minus{}level dedicated to casting it.,resist = Acrobatics, noBlock = 1, effect =Ward a region of a flat surface (Such as the walls or the floor) which creates an invisible trap of 2m in radius. When a being crosses over the threshold\comma{} the ward slams shut\comma{} doing 3d8 worth of piercing damage and applying the Trapped status effect. A successful resist takes half damage and nullifies the Trapping effect.
 }
@@ -653,7 +750,7 @@ This field halts any physical object that touches or passes through it. Objects 
 	name = Runic Shield, school = Recuperation, discipline = Warding, type = Ward, level =Novice, range =Wandtip, incant = scutum, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =Choose a Damage Type. Target is Resistant to that damage type for the duration of the spell. Each individual may only have one Runic Shield active at a time.
 }
 }
- \spellBook{Transmutation and Transformative Tricks}{Novice-level Alteration}{
+ \spellBook{A Beginner\apos{}s Guide to Transfiguration}{Novice-level Alteration}{
 \spell{
 	name = Alter Size, school = Transfiguration, discipline = Alteration, type = Instant, level =Novice, range =Close, incant = engorgio/reducio, duration = 5 minutes,noHigh = 1, resist = Power, noBlock = 1, effect =Multiply or divide the size of a target by 2 on a failed resist. If the target is in combat with you\comma{} it takes advantage on the Resist. 
 
@@ -680,7 +777,7 @@ In general\comma{} this would make a Medium object become Light\comma{} a Heavy 
 	name = Thick Air, school = Transfiguration, discipline = Alteration, type = Focus, level =Novice, range =Close, incant = temporio, duration = 1 minute,higher = You may target an additional individual \forEvery{}.,resist = Speed, noBlock = 1, effect =Transforms the air around the 1d6 targets into a thick soup. Each targeted being must succeed on a Resist check or reduce their movement speed to 50\% of its normal value for the duration of the spell.
 }
 }
- \spellBook{Making and Unmaking: The Art of Conjuration}{Novice-level Conjuration}{
+ \spellBook{The Illusion of {\it Thin Air}}{Novice-level Conjuration}{
 \spell{
 	name = Bestial Summons, school = Transfiguration, discipline = Conjuration, type = Instant, level =Novice, range =Wandtip, incant = dicobessia, duration = 10 minutes,higher = Double the number of snakes summoned \forEvery,noResist =1, noBlock = 1, effect =Summon a Non\minus{}Sapient Beast (or a number of beasts) into existence in a space that you can see within range. 
 
@@ -709,7 +806,7 @@ You cannot conjure a magical item\comma{} and if you attempt to summon a part of
 In a confined area\comma{} duration is doubled.
 }
 }
- \spellBook{The Forbidden Arts}{Novice-level Necromancy}{
+ \spellBook{Necromancy: A Misunderstood Skill}{Novice-level Necromancy}{
 \spell{
 	name = Blight, school = Dark Arts, discipline = Necromancy, type = Instant, level =Novice, range =Close, incant = thanatos, noDur = 1, higher = The radius of this spell is doubled for every additional spell level used to cast it.,resist = Vitality, noBlock = 1, effect =A cylinder of necrotic energy extends outwards from you in a radius of 10m and height 100 metres. All simple plants within range die instantly\comma{} and all other living beings take 2d8 necrotic damage (halved on a successful resist)
 }
@@ -730,7 +827,7 @@ All beings besides the caster must succeed on a Logic Resist check the first tim
 	name = Necrosis, school = Dark Arts, discipline = Necromancy, type = Instant, level =Novice, range =Sight, incant = carnes mortis, noDur = 1, higher = \additional{1d10}{necrotic},noResist =1, negation = Blockable,effect =A bolt of sickly green energy crackles into your opponent\comma{} seeking to destroy their life force and spreading evil and decay. Do 2d10 necrotic damage.
 }
 }
- \spellBook{Rehabilitating Blood and Darkness in Everyday Magic}{Novice-level Occultism}{
+ \spellBook{An A\minus{}Z of Spooky Spells}{Novice-level Occultism}{
 \spell{
 	name = Abyssal Fluid, school = Dark Arts, discipline = Occultism, type = Focus, level =Novice, range =Close, incant = sucus infernum, noDur = 1, higher = Gain an additional 1d8 necrotic damage for every additional spell\minus{}level used to cast this spell.,noResist =1, negation = Blockable  and Dodgeable,effect =A pencil\minus{}thin jet of inky black fluid emerges from the end of your wand for as long as Focus is maintained\comma{} reaching in an arc up to 2m away. All targets touched by the fluid take 2d8 necrotic damage this turn\comma{} and half as much again on their next turn.
 }
@@ -752,7 +849,7 @@ The question must be said out loud for all to hear\comma{} but the answer may be
 The target must then Resist\comma{} or take the {\it Distracted} status next turn.
 }
 }
- \spellBook{Secrets of Elemental Sorcery}{Adept-level Elemental}{
+ \spellBook{Further Elemental Studies}{Adept-level Elemental}{
 \spell{
 	name = Broiling Beam, school = Charms, discipline = Elemental, type = Instant, level =Adept, range =Sight, incant = flagrante, duration = 3 turns,noHigh = 1, resist = Speed, noBlock = 1, effect =Causes a target object to heat up to unimaginable temperatures\comma{} melting and deforming plastics or rubber\comma{} and igniting objects such as papers. More resilient materials such as stone or metal retain the heat unchanged\comma{} though they may glow red hot. 
 
@@ -803,7 +900,7 @@ The earthen construct can absorb 40 points of damage\comma{} before the magic ho
 Any unsecured objects or are also flung to the end of the line\comma{} and any open flames are extinguished.
 }
 }
- \spellBook{The Standard Book of Spells (Grade 2)}{Adept-level Kinesis}{
+ \spellBook{Achievements in Charming}{Adept-level Kinesis}{
 \spell{
 	name = Dampen Deadly Drop, school = Charms, discipline = Kinesis, type = Instant, level =Adept, range =Sight, incant = sofus, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Painlessly break the fall of the target from any height up to 50 metres.
 }
@@ -827,7 +924,7 @@ If either of the objects is a sentient being\comma{} they may each attempt to Re
 	name = Summon From Afar, school = Charms, discipline = Kinesis, type = Focus, level =Adept, range =Self, incant = accio, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Summon non\minus{}shielded objects within a 500m radius. They will fly to your current position at a speed of 100m per cycle as long as Focus is maintained. Objects must be light enough that the caster could reasonably pick it up.
 }
 }
- \spellBook{Communing with Others\comma{} and with Yourself}{Adept-level Telepathy}{
+ \spellBook{Detection is the Best Defense}{Adept-level Telepathy}{
 \spell{
 	name = Commune with Nature, school = Divination, discipline = Telepathy, type = Ritual (5 turns), level =Adept, range =Self, incant = naturus amicus, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =You tap into the consciousness that binds all living things together\comma{} and receive information about the natural order of things in the vicinity. Outdoors\comma{} the range is 3km\comma{} whilst underground it is only 100m. Spell fails in artificial environments such as towns. You instantly learn any 3 three bits of information about \begin{spellitemize}\item terrain and bodies of water \item nearby buildings \item abundant plants\comma{} animals or minerals \item frequent visitors\comma{} both sapient and bestial \end{spellitemize}
 }
@@ -845,7 +942,7 @@ Individuals may attempt to hide or obfuscate their links by performing a success
 	name = Speak in Tongues, school = Divination, discipline = Telepathy, type = Ritual (5 minutes), level =Adept, range =Self, incant = lingua maxima, duration = 4 minutes,noHigh = 1, noResist =1, noBlock = 1, effect =By meditating for 5 minutes\comma{} you may understand and speak the language of a willing target individual. Target must be a sapient being\comma{} or otherwise able to speak at least one language.
 }
 }
- \spellBook{Unfogging the Future}{Adept-level Temporal}{
+ \spellBook{The Future is an Open Book (And so is This)}{Adept-level Temporal}{
 \spell{
 	name = Astral Onslaught, school = Divination, discipline = Temporal, type = Instant, level =Adept, range =Sight, incant = devonus, noDur = 1, higher = This spell gains an additional 1d6 points of Celestial damage for every additional spell\minus{}level used to cast it.,noResist =1, negation = Blockable  and Dodgeable,effect =By focussing your inner energies\comma{} you are able to summon an ethereal weapon to strike at enemies with a presence on other planes of existence. Do 5d6 Celestial damage to targets in both the material world\comma{} and the astral realm.
 }
@@ -873,7 +970,7 @@ This spell fails if there is no such being within range\comma{} if the object is
 	name = Obfuscation, school = Divination, discipline = Temporal, type = Ritual (1 hour), level =Adept, range =Wandtip, incant = obscuras, duration = 1 week,noHigh = 1, noResist =1, noBlock = 1, effect =All attempts to identify\comma{} locate\comma{} scry on\comma{} or otherwise detect the target using magical means fail.
 }
 }
- \spellBook{A Gentle Guide to Persuading the Mind}{Adept-level Bewitchment}{
+ \spellBook{Jiggery Pockery \& Hocus Pocus}{Adept-level Bewitchment}{
 \spell{
 	name = Bedazzle, school = Illusion, discipline = Bewitchment, type = Ward, level =Adept, range =Wandtip, incant = chameleo, duration = 1 day,higher = When cast as a higher level spell\comma{} choose one additional target \forEvery{}.,resist = Observation, noBlock = 1, effect =This spell creates a ward on the target\comma{} which produces a beddazzling and befuddling field\comma{} which causes eyes to simply slide off from the warded region without the brain properly processing it\comma{} rendering the warded target almost perfectly invisible. 
 
@@ -908,7 +1005,7 @@ On a failed Resist\comma{} the target will willingly attempt to carry out this a
 The spell effect ends if the caster or their allies damage the target.
 }
 }
- \spellBook{Mindmakers\comma{} Mindbreakers}{Adept-level Psionics}{
+ \spellBook{Your Mind\comma{} the Weapon}{Adept-level Psionics}{
 \spell{
 	name = Babbling, school = Illusion, discipline = Psionics, type = Instant, level =Adept, range =Close, incant = longardo, duration = 2 minutes,noHigh = 1, resist = Willpower, noBlock = 1, effect =On a failed Resist\comma{} the target begins babbling incoherently and without control. 
 
@@ -930,7 +1027,9 @@ For the duration of the spell\comma{} whenever the target wishes to speak or cas
 	name = Suppress Intelligence, school = Illusion, discipline = Psionics, type = Instant, level =Adept, range =Wandtip, incant = romanes, duration = 2 minutes,higher = The Intelligence drain increases by 2 points \forEvery{}.,resist = Intelligence, noBlock = 1, effect =By touching your wand\minus{}tip to the head of the target\comma{} reduce their Intelligence attribute by 3 points (min 0) for the duration of the spell. This effect is negated on a successful Resist.
 }
 }
- \spellBook{Voodoo and Vomiting: A Study in Curses}{Adept-level Curse}{
+ \spellBook{Making and Unmaking: The Art of Conjuration}{Adept-level Conjuration}{
+}
+ \spellBook{Curses \& Counter Curses}{Adept-level Curse}{
 \spell{
 	name = Break Focus, school = Maledictions, discipline = Curse, type = Instant, level =Adept, range =Close, incant = adtono, duration = 20 seconds,noHigh = 1, resist = Willpower, noBlock = 1, effect =Disorienting noises and lights distract prevent the target from continued Focus. Afflicted beings cannot cast Focus spells for the duration of this spell \minus{}\minus{} all attempts to do so count as `failed'\comma{} and any current Focus effects are terminated. 
 
@@ -953,7 +1052,7 @@ The target is Immune to all forms of damage except psychic whilst it is petrifie
 	name = Strangle, school = Maledictions, discipline = Curse, type = Instant, level =Adept, range =Close, incant = offoco, noDur = 1, noHigh = 1, resist = Vitality, negation = Blockable  and Dodgeable,effect =If this spell hits a living being\comma{} the target must Resist at the end of every turn until they succeed. Until then\comma{} they are deprived of oxygen and cannot speak. After 6 turns\comma{} the victim can no longer take any other actions then attempting to Resist\comma{} and after this they eventually succumb to hypoxia under the usual rules.
 }
 }
- \spellBook{Hexing Your Problems \minus{} the Healthy Coping Mechanism}{Adept-level Hex}{
+ \spellBook{Hexes to Make Your Head Spin (Literally)}{Adept-level Hex}{
 \spell{
 	name = Exploding Missile, school = Maledictions, discipline = Hex, type = Instant, level =Adept, range =Close, incant = bombarda, noDur = 1, higher = \additional{2d12}{fire},noResist =1, negation = Blockable  and Dodgeable,effect =A small missile launches from the end of your wand and explodes on contact with the target\comma{} dealing 2d12 concussive damage and 1d12 fire damage.
 }
@@ -976,7 +1075,7 @@ The target takes 3d10 bludgeoning damage\comma{} halved on a successful Resist.
 	name = Stream of Acid, school = Maledictions, discipline = Hex, type = Focus, level =Adept, range =Close, incant = saeclifors, noDur = 1, higher = Gain an additional 2d6 acid damage for every additional spell\minus{}level used to cast this spell.,noResist =1, negation = Dodgeable,effect =You conjure a pencil\minus{}thin stream of corrosive green acid in a line from the tip of your wand up to a distance of 3m. A being which falls into this region must succeed in dodging\comma{} or the acid dissolves armour\comma{} clothes and skin alike\comma{} doing 4d6 acid damage.
 }
 }
- \spellBook{Life\comma{} and How to Preserve it}{Adept-level Healing}{
+ \spellBook{Magic to Make Others Better}{Adept-level Healing}{
 \spell{
 	name = Countercurse, school = Recuperation, discipline = Healing, type = Instant, level =Adept, range =Wandtip, incant = finite maledictum, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Remove the effects of an active spell from the Curse discipline. 
 
@@ -992,7 +1091,7 @@ This spell can only remove spells caused by a curse of an equal level as this sp
 	name = Revive, school = Recuperation, discipline = Healing, type = Instant, level =Adept, range =Wandtip, incant = renervate, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Removes the {\it Unconscious} status effect (unless another status effect prevents that) and awakens targets from even the deepest of slumbers.
 }
 }
- \spellBook{An Anthology of Safeguarding Measures}{Adept-level Warding}{
+ \spellBook{How Not to be Killed: A Guide for the Discerning Wizard}{Adept-level Warding}{
 \spell{
 	name = Anti\minus{}Muggle Ward, school = Recuperation, discipline = Warding, type = Ward, level =Adept, range =Wandtip, incant = repello mugletum, duration = 1 month,higher = The radius of the ward trebles with every additional spell level dedicated to its casting.,noResist =1, noBlock = 1, effect =Forms a warded area up to 10m in radius that muggles cannot enter or even perceive. 
 
@@ -1020,7 +1119,7 @@ This field gives a +4 bonus to Block statistic for the duration of the spell.
 All non\minus{}silent spellcasting attempts fail\comma{} as do all hearing\minus{}related checks.
 }
 }
- \spellBook{Theories of Transubstantial Transfiguration}{Adept-level Alteration}{
+ \spellBook{Transmutation and Transformative Tricks}{Adept-level Alteration}{
 \spell{
 	name = Alter Astral Aspect, school = Transfiguration, discipline = Alteration, type = Instant, level =Adept, range =Close, incant = madas, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =Change how the object is registers when viewed by magical means (I.e the {\it Identify} spell)\comma{} make a mundane object appear magical\comma{} or make a wizard appear as a sofa\comma{} or a dragon. 
 
@@ -1054,7 +1153,7 @@ The effect ends either when the magic is dispelled\comma{} the spell effect ends
 	name = Sculpt Matter, school = Transfiguration, discipline = Alteration, type = Focus, level =Adept, range =Close, incant = perseids, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Sculpt a target solid object with your mind\comma{} as if it were made of soft clay. The total mass of the object must remain constant\comma{} but you can shift and sculpt the matter at will.
 }
 }
- \spellBook{Summoning Your Desires}{Adept-level Conjuration}{
+ \spellBook{Making and Unmaking: The Art of Conjuration}{Adept-level Conjuration}{
 \spell{
 	name = Banish, school = Transfiguration, discipline = Conjuration, type = Instant, level =Adept, range =Sight, incant = valeo fendus, noDur = 1, noHigh = 1, resist = Power, noBlock = 1, effect =Target a creature from another plane of existence\comma{} either a summoned creature\comma{} or one which has travelled here through other means. If it fails to Resist\comma{} it is banished from this reality and returns home. If the target is a summoned creature and the caster is aware of the Banishment being cast\comma{} they can use a Reaction to give their creature advantage in the check. 
 
@@ -1073,7 +1172,7 @@ This spell has no effect on beings native to this plane of existence.
 	name = Vanish Object, school = Transfiguration, discipline = Conjuration, type = Instant, level =Adept, range =Close, incant = evanesco, noDur = 1, higher = The mass of objects you can vanish doubles \forEvery{}.,resist = Power, noBlock = 1, effect =Cause a 1kg animal or object to vanish\comma{} without a trace. Sentient beings must pass a DV8 resist check to avoid being vanished.
 }
 }
- \spellBook{Defying Nature}{Adept-level Necromancy}{
+ \spellBook{The Forbidden Arts}{Adept-level Necromancy}{
 \spell{
 	name = Blood Barrier, school = Dark Arts, discipline = Necromancy, type = Ward, level =Adept, range =Wandtip, incant = confusangui, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Use blood to draw warding runes onto an object or person. Erects a swirling\comma{} red barrier which is impenetrable\comma{} though not opaque or soundproof. Barrier absorbs up to 20d6 damage\comma{} but takes triple damage from Celestial damage. 
 Each individual{\apos}s blood can only be used once for blood magic.
@@ -1092,7 +1191,7 @@ Fiendfyre cannot be extinguished by mundane means. Attempting to do so infuriate
 However\comma{} this spell cannot be used to reduce a target below 1HP
 }
 }
- \spellBook{Living in Shadow: The Memoirs of an Occultist}{Adept-level Occultism}{
+ \spellBook{Rehabilitating Blood and Darkness in Everyday Magic}{Adept-level Occultism}{
 \spell{
 	name = Solidify Ghost, school = Dark Arts, discipline = Occultism, type = Ritual (10 minutes), level =Adept, range =Close, noIncant = 1, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =By spending time performing a ritual in which you enchant a pinch of salt or ash with occult words and runes\comma{} you gain the ability to solidify ghosts and other etheral apparitions. 
 
@@ -1108,7 +1207,7 @@ As a minor action\comma{} you may move the sphere up to 10m in any direction (in
 Any being which passes through the space occupied by the sphere must succed in a Resist check\comma{} or take 3d8 cold damage and be randomly teleported anywhere in a 30metre radius.
 }
 }
- \spellBook{The Fundamental Power}{Expert-level Elemental}{
+ \spellBook{Secrets of Elemental Sorcery}{Expert-level Elemental}{
 \spell{
 	name = Adjust Climate, school = Charms, discipline = Elemental, type = Ritual (1 hour), level =Expert, range =Self, incant = kilmas, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Summon a magical wind which drastically alters the climate in a region. Bring a hot\comma{} arid wind to the arctic \minus{} or an arctic wind into the Sahara.
 
@@ -1139,7 +1238,7 @@ The sphere remains whilst concentration is maintained\comma{} and can be moved a
 All beings in the cone which fail to block take 8d10 fire damage.
 }
 }
- \spellBook{Charms: An Expert Guide}{Expert-level Kinesis}{
+ \spellBook{The Standard Book of Spells (Grade 2)}{Expert-level Kinesis}{
 \spell{
 	name = Apparate/Disapparate, school = Charms, discipline = Kinesis, type = Instant, level =Expert, range =Self, noIncant = 1, noDur = 1, higher = You may bring an additional passenger \forEvery{}.,noResist =1, noBlock = 1, effect =You may teleport yourself and up to 2 additional passengers to a place you are intimately familiar with. Passengers must be in physical contact with you the moment this spell is cast. 
 
@@ -1151,7 +1250,7 @@ If anything happens to the caster in the turn that this spell is cast which woul
 	name = Leapfrog, school = Charms, discipline = Kinesis, type = Instant, level =Expert, range =Sight, incant = raneus, duration = 1 minute,higher = Add an additional 3m to the maximum jump length \forEvery{}.,noResist =1, noBlock = 1, effect =Target may leap up to 3m in any direction as a major action\comma{} and land safely whilst the spell is active.
 }
 }
- \spellBook{Peeking Behind the Mystic Veil}{Expert-level Telepathy}{
+ \spellBook{Communing with Others\comma{} and with Yourself}{Expert-level Telepathy}{
 \spell{
 	name = Disrupt Connection, school = Divination, discipline = Telepathy, type = Instant, level =Expert, range =Sight, incant = ruinosus, noDur = 1, noHigh = 1, resist = Willpower, noBlock = 1, effect =Sever a telepathic connection possessed by the target. This may be used to sever a link such as that caused by the {\it Telepathic Bond} spell\comma{} or the link between caster and a summoned being. An untethered summoned being no  longer accepts orders from their creator\comma{} and will potentially attack them. A successful resist negates this effect\comma{} but the target takes 2d4 psychic damage instead.
 }
@@ -1168,7 +1267,7 @@ The camera moves with the target\comma{} staying at least 4m away from them. The
 If the target successfully resists\comma{} they become aware of the scrying attempt\comma{} and may use a minor action to disable it either immediately\comma{} or at any subsequent point. You may not re\minus{}establish a scrying connection for 24 hours after a scrying effort is terminated in this fashion.
 }
 }
- \spellBook{Death Omens: What to Do When You Know the Worst is Coming}{Expert-level Temporal}{
+ \spellBook{Unfogging the Future}{Expert-level Temporal}{
 \spell{
 	name = Legends of the Past, school = Divination, discipline = Temporal, type = Instant, level =Expert, range =Self, incant = gabulus, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Name or describe a person\comma{} place\comma{} or object. The spell brings to your mind a brief summary of the significant lore about the thing you named. The lore might consist of current tales\comma{} forgotten stories\comma{} or even secret lore that has never been widely known. If the thing you named isn't of legendary importance\comma{} you gain no information. The more information you already have about the thing\comma{} the more precise and detailed the information you receive is.
 }
@@ -1181,7 +1280,7 @@ You may observe your chosen timestream up to 1 year into the past.
 	name = Timeslip, school = Divination, discipline = Temporal, type = Instant, level =Expert, range =Sight, noIncant = 1, duration = 2 minutes,noHigh = 1, resist = Power, noBlock = 1, effect =Create a perturbation in the temporal vortex which\comma{} on a failed Resist\comma{} catapaults the target forward in time\comma{} effectively removing them from reality for the duration of the spell. When the spell ends\comma{} the target reappears at their original location\comma{} unaware that time has passed.
 }
 }
- \spellBook{On the Mysteries of the Human Mind}{Expert-level Bewitchment}{
+ \spellBook{A Gentle Guide to Persuading the Mind}{Expert-level Bewitchment}{
 \spell{
 	name = Beguiling Totem, school = Illusion, discipline = Bewitchment, type = Instant, level =Expert, range =Wandtip, incant = fascinare, duration = 1 day,higher = Increase the effective radius by 50m \forEvery{}.,resist = Willpower, noBlock = 1, effect =Target an object between 1m and 20m in size and enchant it with an aura that sings an enticing song into the minds of your targets\comma{} or fills them with fear and dread. 
 
@@ -1204,7 +1303,7 @@ The disguises mimic any sounds\comma{} smells and any other stimuli that would b
 It is important to note that these effects are illusory in nature\comma{} not true alterations to your form. If a being tries to interact with you and\comma{} for example\comma{} finds you are much fatter than your disguise makes out to be\comma{} they will become aware of you being disguised. Equally\comma{} the disguises are non\minus{}corporeal and so objects will pass through them.
 }
 }
- \spellBook{The Immoral Art of Psionics}{Expert-level Psionics}{
+ \spellBook{Mindmakers\comma{} Mindbreakers}{Expert-level Psionics}{
 \spell{
 	name = Delusion, school = Illusion, discipline = Psionics, type = Instant, level =Expert, range =Close, incant = falasarium, duration = 5 hours,noHigh = 1, resist = Conviction, noBlock = 1, effect =If target fails a Resist check\comma{} the caster may make them believe one piece of information\comma{} which they will believe to be irrefutably true. The delusion must be vaguely rational\comma{} and may not incur excessive self\minus{}harm\comma{} as judged by the GM.
 }
@@ -1235,7 +1334,9 @@ The target will react as if what they see is real (for them\comma{} it appears t
 This effect is negated on a successful Resist\comma{} which occurs whenever you introduce a new element to the illusion (i.e. a new character\comma{} or a new scenario).
 }
 }
- \spellBook{Cursing your Way to Revenge}{Expert-level Curse}{
+ \spellBook{Summoning Your Desires}{Expert-level Conjuration}{
+}
+ \spellBook{Voodoo and Vomiting: A Study in Curses}{Expert-level Curse}{
 \spell{
 	name = Curse Being, school = Maledictions, discipline = Curse, type = Ritual (10 minutes), level =Expert, range =Sight, incant = maledicto, noDur = 1, noHigh = 1, resist = Power, noBlock = 1, effect =Casts a permanent curse on a target being\comma{} object or location that you can see within range. You may choose the effects of this curse\comma{} though they must be commensurate with the casting level of this spell\comma{} and the GM has a veto. Be inventive!
 }
@@ -1248,7 +1349,7 @@ This effect is negated on a successful Resist\comma{} which occurs whenever you 
 For larger creatures who\apos{}s `armour' is their natural scales or tough hide\comma{} this spell effects an area one square metre in area at a time.
 }
 }
- \spellBook{Dark Forces: A Guide to Self\minus{}Defense}{Expert-level Hex}{
+ \spellBook{Hexing Your Problems \minus{} the Healthy Coping Mechanism}{Expert-level Hex}{
 \spell{
 	name = Arctic Blast, school = Maledictions, discipline = Hex, type = Instant, level =Expert, range =Close, incant = gelidus, duration = 3 turns,higher = \additional{2d6}{Cold},resist = Vitality, noBlock = 1, effect =A cylinder of radius 5m and height 2m around the target is decreased in temperature by 50 degrees celsius. 
 
@@ -1268,7 +1369,7 @@ This spell deals 3d12 Force damage to all targets caught in the region\comma{} h
 If the attack hits\comma{} the caster may use the distraction to direct a tendril of the energy to remove any {\it Trapped} status effects\comma{} and perform a DV 15 Speed check. On a success\comma{} the caster uses the confusion to teleport to a place they can see within 10 metres of their current location.
 }
 }
- \spellBook{Ponderances on Advanced Healing}{Expert-level Healing}{
+ \spellBook{Life\comma{} and How to Preserve it}{Expert-level Healing}{
 \spell{
 	name = Final Cure, school = Recuperation, discipline = Healing, type = Instant, level =Expert, range =Close, incant = requiescat in pace, noDur = 1, higher = \additional{2d8}{celestial},resist = Evil, noBlock = 1, effect =A heavenly glow descends upon an area 3m in radius around the caster. Any Ghost\comma{} Inferi\comma{} or other Unliving that once used to be a living creature caught in this radius takes 5d8 celestial damage\comma{} as the sound of an angelic choir sings out. Damage is halved on a successful Resist.
 }
@@ -1283,7 +1384,7 @@ In addition\comma{} restores 8d12 HP
 The next time that a spell effect would reduce the target to 0HP\comma{} they are instead reduced to 1HP\comma{} and the spell ends.
 }
 }
- \spellBook{Shields and Wards}{Expert-level Warding}{
+ \spellBook{An Anthology of Safeguarding Measures}{Expert-level Warding}{
 \spell{
 	name = Holy Ward, school = Recuperation, discipline = Warding, type = Ward, level =Expert, range =Wandtip, incant = pervetutem luminis, noDur = 1, higher = The spell is capable of inflicting an additional 20 damage \forEvery{}.,noResist =1, noBlock = 1, effect =Create a region up to 10m in radius where the Unlife cannot pass. Unlife attempting to cross the barrier are ignited for 4d12 worth of Celestial  damage per turn that they remain inside the area.
 
@@ -1298,7 +1399,7 @@ The shield fails when 50 damage has been inflicted.
 Your patronus may also take a turn as if were a real being (albeit an Astral being) at your command. The patronus is astral in nature and cannot interact with the physical realm\comma{} however\comma{} it may move at a speed of 30metres per round and any Unlife it passes within 1m of must succeed on a Resist check or take the {\it Terrified} status and 4d8 of Celestial damage.
 }
 }
- \spellBook{The Subtle Nuances of Transmogrification\comma{} Transformation and Transfiguration}{Expert-level Alteration}{
+ \spellBook{Theories of Transubstantial Transfiguration}{Expert-level Alteration}{
 \spell{
 	name = Draconic Guardians, school = Transfiguration, discipline = Alteration, type = Instant, level =Expert, range =Close, incant = draconifors, duration = 1 hour,higher = The number of dragons summoned increases by 3 \forEvery{}.,noResist =1, noBlock = 1, effect =Choose up to three small objects\comma{} such as nearby rocks and imbue them with draconic fury. The objects transfigure themselves into small dragonlike entities\comma{} which take flight and\comma{} on your command\comma{} attack your foes. The dragons remain in their form for the duration of the spell\comma{} or until their HP is reduced to zero\comma{} at which point they revert to their original form. 
 
@@ -1354,7 +1455,7 @@ For the duration of the spell\comma{} you gain the following benefits:
 	name = Treacherous Terrain, school = Transfiguration, discipline = Alteration, type = Instant, level =Expert, range =Close, incant = transgresso, duration = 2 hours,noHigh = 1, noResist =1, noBlock = 1, effect =Target an area up to 5m in radius and transform it into a deep bog\comma{} a bed of sharpened blades\comma{} or into a sticky mess\comma{} with the associated terrain costs and other effects.
 }
 }
- \spellBook{Conjuring and Summoning for the Experienced Witch}{Expert-level Conjuration}{
+ \spellBook{Summoning Your Desires}{Expert-level Conjuration}{
 \spell{
 	name = Conjure Elemental, school = Transfiguration, discipline = Conjuration, type = Instant, level =Expert, range =Wandtip, incant = diconativus, duration = 10 minutes,noHigh = 1, noResist =1, noBlock = 1, effect =Summon an Elemental creature or a Sprite (or a number of such beings) into existence in a space that you can see within range. 
 
@@ -1381,7 +1482,7 @@ You have a number of `points’ equal to the spell level used to cast this spell
 Within this restriction\comma{} you may choose the kind of being from any that you have previously encountered or studied in detail. If Non\minus{}sapient\comma{} the summoned creatures will obey your commands as if they were well\minus{}trained pets\comma{} if Sapient\comma{} the creature acts as a loyal servant and is considered friendly towards you and your allies. If no command is given\comma{} they will act as a normal being\comma{} and retaliate if attacked\comma{} or run away if outmatched.
 }
 }
- \spellBook{Magick Moste Evile}{Expert-level Necromancy}{
+ \spellBook{Defying Nature}{Expert-level Necromancy}{
 \spell{
 	name = Blood Moon, school = Dark Arts, discipline = Necromancy, type = Ritual (1 day), level =Expert, range =Wandtip, noIncant = 1, duration = 1 day,higher = The duration of this spell increases sevenfold for every additional spell\minus{}level used to cast it.,noResist =1, noBlock = 1, effect =By sacrificing an animal larger than a cat\comma{} you may use the inherent power of its blood to manipulate the power of the Sun and the Moon: the sky becomes overcast and takes on an unhealthy red glow. This blocks out the effects of the sun and the moon on Vampires\comma{} Werewolves\comma{} and other such creatures. Werewolves may still choose to undergo their transformation\comma{} but retain humanoid intelligence when doing so.
 }
@@ -1420,7 +1521,7 @@ The caster may give verbal orders to the inferi\comma{} which they will follow w
 You may create up to 2d4 inferi at a time.
 }
 }
- \spellBook{Covens: The Power in the Circle}{Expert-level Occultism}{
+ \spellBook{Living in Shadow: The Memoirs of an Occultist}{Expert-level Occultism}{
 \spell{
 	name = Commune with the Dead, school = Dark Arts, discipline = Occultism, type = Ritual (2 hours), level =Expert, range =Self, incant = amisit amicum, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =You may summon a spirit of a deceased humanoid\comma{} and ask 3 questions of them\comma{} or temporarily borrow one of their skills and/or spells for 1 minute. 
 
@@ -1439,7 +1540,7 @@ If the target is not awake when this ritual is attempted\comma{} the spell fails
 	name = Summoning Circle, school = Dark Arts, discipline = Occultism, type = Ward, level =Expert, range =Wandtip, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =By gathering together a group (only one of whom needs to be able to cast this spell)\comma{} you create a special altar from which conjuration spells are especially powerful. The radius of this region is 2m\comma{} and whilst inside it\comma{} you gain a bonus to Conjuration casting checks equal to the number of people who created the summoning circle.
 }
 }
- \spellBook{Storms\comma{} Seas and Seismic Shocks}{Master-level Elemental}{
+ \spellBook{The Fundamental Power}{Master-level Elemental}{
 \spell{
 	name = Almighty Deluge, school = Charms, discipline = Elemental, type = Instant, level =Master, range =Close, incant = chimeros, noDur = 1, noHigh = 1, noResist =1, negation = Dodgeable,effect =You summon a truly gargantuan jet of water\comma{} which you make into either needle\minus{}thin jet\comma{} or a hammer\minus{}blow blast. If it makes contact with a target\comma{} deals 8d10 bludgeoning or piercing damage (your choice).
 }
@@ -1465,7 +1566,7 @@ When the spell ends\comma{} the tornado disspates and all trapped beings are dro
 The fissure slams shut at the end of the turn cycle\comma{} trapping those inside underground and dealing 8d12 bludgeoning damage\comma{} and leaving them starved of air until they succeed in a DV 15 Strength check to dig their way out.
 }
 }
- \spellBook{Extreme Incantations}{Master-level Kinesis}{
+ \spellBook{Charms: An Expert Guide}{Master-level Kinesis}{
 \spell{
 	name = Gravimetric Destabilisation, school = Charms, discipline = Kinesis, type = Instant, level =Master, range =Close, incant = reimannius, duration = 1 minute,noHigh = 1, resist = Strength, noBlock = 1, effect =By focussing your intellect on a cylinder 10m in radius and 40m in height\comma{} you reverse the fall of gravity. Any unsecured objects or beings fall upwards\comma{} and those near an anchored object must Resist to hold on. 
 
@@ -1482,7 +1583,7 @@ Living entities caught in the radius take 10d6 concussive damage\comma{} halved 
 	name = Teleportation Field, school = Charms, discipline = Kinesis, type = Instant, level =Master, range =Close, incant = cruratele, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =You may send a non\minus{}living object up to 1 cubic metre in size to anywhere that you have previously visited\comma{} are familiar with\comma{} or know the exact spatial location of. Spell failure still teleports the object\comma{} but to an unknown location.
 }
 }
- \spellBook{Mind Beyond Body}{Master-level Telepathy}{
+ \spellBook{Peeking Behind the Mystic Veil}{Master-level Telepathy}{
 \spell{
 	name = Link Inversion, school = Divination, discipline = Telepathy, type = Instant, level =Master, range =Sight, incant = ruinosus invertus, noDur = 1, noHigh = 1, resist = Conviction, noBlock = 1, effect =As with the {\it Disrupt Connection} spell\comma{} if the target fails to Resist\comma{} this spell severs the link between two beings such as that caused by {\it Telepathic Bond}\comma{} or by summoning a being. 
 
@@ -1492,7 +1593,7 @@ This link is then given to you \minus{}\minus{} giving you access to the telepat
 	name = Network of the Minds, school = Divination, discipline = Telepathy, type = Ritual (10 minutes), level =Master, range =Close, incant = reticulum, duration = 1 day,higher = When cast for 7 days in a row\comma{} the spell has a duration of 6 months.,noResist =1, noBlock = 1, effect =Establish a telepathic link between you and up to 6 other individuals. All beings in the link are able to communicate with any other members of the link\comma{} regardless of distance\comma{} the lack of a shared language and status effects such as {\it Paralyzed}.
 }
 }
- \spellBook{Time \& its Mysteries}{Master-level Temporal}{
+ \spellBook{Death Omens: What to Do When You Know the Worst is Coming}{Master-level Temporal}{
 \spell{
 	name = Astral Cloak, school = Divination, discipline = Temporal, type = Instant, level =Master, range =Self, incant = moxus, duration = 5 minutes,noHigh = 1, noResist =1, noBlock = 1, effect =After uttering the incantation\comma{} you step partially into the astral realm. Most of your being resides within the Mortal Realm\comma{} but enough of your physical form seems to twist into infinite dimensions beyond the scope of human eyesight that most beings find it difficult to focus on where you actually are. 
 
@@ -1504,7 +1605,7 @@ Beings which cannot see into the Astral Realm take check double disadvantage on 
 You may sacrifice your {\it Instinct} action to summon your contingency as an instantaneous action. You may have a maximum of three contingencies at any one time.
 }
 }
- \spellBook{Merlin\apos{}s Tricks and Incantations}{Master-level Bewitchment}{
+ \spellBook{On the Mysteries of the Human Mind}{Master-level Bewitchment}{
 \spell{
 	name = Invisibility, school = Illusion, discipline = Bewitchment, type = Ward, level =Master, range =Wandtip, incant = levis obliqua, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =Choose up to 3 target beings or objects and render them perfectly invisible until the spell ends\comma{} or the invisibility field is broken. Any equipment and clothing held by the targets is also invisible as long as it remains on their person.
 
@@ -1525,7 +1626,7 @@ The spell effect ends if the caster or their allies damage the target.
 You may choose to make the target either Immune or Susceptible to a chosen damage type for the duration of the spell. If this spell is cast a second time\comma{} the previous effect is instantly ended.
 }
 }
- \spellBook{Melting Minds: The Master Guide to Psionics}{Master-level Psionics}{
+ \spellBook{The Immoral Art of Psionics}{Master-level Psionics}{
 \spell{
 	name = Linguistic Aphasia, school = Illusion, discipline = Psionics, type = Instant, level =Master, range =Close, incant = squiddle\minus{}de\minus{}bop, duration = 1 hour,noHigh = 1, resist = Logic, noBlock = 1, effect =On a failed resist\comma{} the target\apos{}s mind becomes so completely ruined that they lose the ability to process language. The target can no longer communicate either verbally or with written language properly. 
 
@@ -1544,7 +1645,9 @@ You may even cause them to forget skills and spells that they currently know: re
 This spell extends out in a cone up to 3 metres from your wand. All creatures caught in this region take 7d12 psychic damage\comma{} halved on a successful resist.
 }
 }
- \spellBook{The Bumper Book of Crooked Curses}{Master-level Curse}{
+ \spellBook{Conjuring and Summoning for the Experienced Witch}{Master-level Conjuration}{
+}
+ \spellBook{Cursing your Way to Revenge}{Master-level Curse}{
 \spell{
 	name = Corrupt Object, school = Maledictions, discipline = Curse, type = Ritual (1 hour), level =Master, range =Wandtip, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =This spell allows you to corrupt and redirect the magical nexus of an enchanted object\comma{} causing it to malfunction\comma{} gain additional negative effects\comma{} or destroying it completely. 
 
@@ -1563,7 +1666,7 @@ If the afflicted stays in one place for more than 5 seconds\comma{} they too bec
 This effect is halved on a successful Resist.
 }
 }
- \spellBook{An Auror\apos{}s Toolkit}{Master-level Hex}{
+ \spellBook{Dark Forces: A Guide to Self\minus{}Defense}{Master-level Hex}{
 \spell{
 	name = Crush Bones, school = Maledictions, discipline = Hex, type = Instant, level =Master, range =Sight, incant = obcillo ossium, noDur = 1, higher = \additional{4d10}{bludgeoning},resist = Strength, noBlock = 1, effect =A great force smashes into the opponent\comma{} breaking their bones. Does 8d10 bludgeoning damage\comma{} and applying the {\it Broken Bone} status effect and the associated {\it Serious Injury} status. 
 
@@ -1573,7 +1676,7 @@ If the target succeeds in a resist\comma{} the damage is halved and the status e
 	name = Meteor Strike, school = Maledictions, discipline = Hex, type = Instant, level =Master, range =Sight, incant = bothynus, noDur = 1, higher = The meteor deals an additional 2d6 fire damage and 2d6 concussive damage \forEvery{}.,resist = Acrobatics, noBlock = 1, effect =A giant orb of fire and rock slams down into the ground at a targeted point\comma{} releasing a shockwave over a region 5m in radius. All beings in the region take 5d6 fire damage and 5d6 concussive damage.
 }
 }
- \spellBook{Journals of St. Mungo\comma{} the Master Healer}{Master-level Healing}{
+ \spellBook{Ponderances on Advanced Healing}{Master-level Healing}{
 \spell{
 	name = Regenerate, school = Recuperation, discipline = Healing, type = Instant, level =Master, range =Wandtip, incant = regus, duration = 5 minutes,noHigh = 1, noResist =1, noBlock = 1, effect =This spells vastly increases the natural healing rate of a being \minus{} they heal at a rate of 40HP per minute (2HP per combat cycle)\comma{} broken bones mend themselves and even severed limbs regrow over the course of the spell.
 }
@@ -1583,7 +1686,7 @@ If the target succeeds in a resist\comma{} the damage is halved and the status e
 The target is {\it Unconscious} for the duration\comma{} awakening only when the spell duration finishes\comma{} or the original caster expends a major action to reawaken them.
 }
 }
- \spellBook{The Shield in the Dark}{Master-level Warding}{
+ \spellBook{Shields and Wards}{Master-level Warding}{
 \spell{
 	name = Anti\minus{}Apparition Ward, school = Recuperation, discipline = Warding, type = Ward, level =Master, range =Wandtip, incant = nonvidetus, duration = 1 week,noHigh = 1, noResist =1, noBlock = 1, effect =Prevents apparition inside the designated area: no human can apparate in our out for the duration of the ward. Attempts to apparate into the region trigger a {\it splice} and reflect the individual back to their origin.
 }
@@ -1593,7 +1696,7 @@ The target is {\it Unconscious} for the duration\comma{} awakening only when the
 Enchanted items regain their abilities after they are removed from the region\comma{} but enchantments on individuals are not re\minus{}established.
 }
 }
- \spellBook{Altering the World}{Master-level Alteration}{
+ \spellBook{The Subtle Nuances of Transmogrification\comma{} Transformation and Transfiguration}{Master-level Alteration}{
 \spell{
 	name = Mass Reshape Body, school = Transfiguration, discipline = Alteration, type = Instant, level =Master, range =Close, incant = subsintus, duration = 1 hour,noHigh = 1, resist = Conviction, noBlock = 1, effect =You transform and reshape the body of up to 3d4 target beings within range\comma{} molding them into a new\comma{} animalistic forms. Unwilling targets can nullify this effect by succeeding on a Resist check\comma{} which is performed with advantage if the target is currently in combat with the caster. 
 
@@ -1627,7 +1730,7 @@ Under all but powerful magical investigation\comma{} you are indistinguishable f
 The effect ends either when the magic is dispelled\comma{} the spell effect ends\comma{} or your chosen form is destroyed or drops to 0HP. You reassume your natural form with the original amount of HP. If the reversion was because of dropping to 0HP\comma{} any excess damage is then dealt to your original form\comma{} you do not suffer any additional side effects from having been reduced to 0HP in their animal form.
 }
 }
- \spellBook{The Demons Beyond the Veil}{Master-level Conjuration}{
+ \spellBook{Conjuring and Summoning for the Experienced Witch}{Master-level Conjuration}{
 \spell{
 	name = Dimensional Binding, school = Transfiguration, discipline = Conjuration, type = Ritual (5 turns), level =Master, range =Self, incant = subjungus, duration = 1 day,noHigh = 1, resist = Power, noBlock = 1, effect =By inscribing a magic circle on the floor\comma{} you create a region where celestial beings from other planes can be trapped and bent to your will. For the next hour\comma{} if an Unlife\comma{} or other being originating from any plane other than the Mortal Realm\comma{} enters into the region\comma{} you may cast a pinch of salt into the circle to complete the ritual and attempt to impose your will over it. 
 
@@ -1643,7 +1746,7 @@ Within these restrictions\comma{} you may summon a Champion(s) of your choice th
 The chosen beings enter into this dimension bound to your will\comma{} they will obey any command you give them through the psychic link which connects you (costing a minor action). If a summoned being reaching 0HP the link is broken and the being returns to its native plane.
 }
 }
- \spellBook{Spelles Moste Vyle}{Master-level Necromancy}{
+ \spellBook{Magick Moste Evile}{Master-level Necromancy}{
 \spell{
 	name = Burning Blood, school = Dark Arts, discipline = Necromancy, type = Focus, level =Master, range =Close, incant = zesto sidero, noDur = 1, noHigh = 1, noResist =1, negation = Dodgeable,effect =You corrupt their very blood\comma{} turning it into a burning acid\comma{} or molten lead. Whilst you maintain focus\comma{} the target takes 6d12 acid or fire damage (your choice).
 }
@@ -1660,7 +1763,7 @@ Whilst a horcrux exists\comma{} the character cannot be killed\comma{} though th
 A horcrux can only be destroyed through extremely potent spells or poisons\comma{} and a being may create multiple such horcruxes\comma{} though you are warned that a soul can only be splintered so many times before it shatters completely – creating more than 2 + SPR modifier horcruxes can lead to horrifying consequences.
 }
 }
- \spellBook{Theories on the World Beyond}{Master-level Occultism}{
+ \spellBook{Covens: The Power in the Circle}{Master-level Occultism}{
 \spell{
 	name = Coven\apos{}s Protection, school = Dark Arts, discipline = Occultism, type = Ritual (4 hours), level =Master, range =Wandtip, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =This ritual can only be performed in an isolated area\comma{} in the middle of the night. By gathering together and invoking the name of an unspeakable\comma{} unknowable power\comma{} you bind the life forces of all participants together\comma{} to form a unified whole. While the Coven exists\comma{} any member may use a minor action to transfer their own HP or FP to any other member of the coven\comma{} and multiple members may send HP/FP to the same target at any given moment. This cannot be used to raise a target\apos{}s HP/FP above their maximum values. If too many points are sent to a target\comma{} the excess points are lost. It is possible for a coven member to die by transferring all of their HP to the network. 
 
@@ -1672,7 +1775,7 @@ If psychic damage is inflicted on any member of the Coven in the same turn\minus
 Any attempt to deviate from the exact wording of the vow causes the participant to instantly perish.
 }
 }
- \spellBook{The Avatar of the Elements}{Ascendant-level Elemental}{
+ \spellBook{Storms\comma{} Seas and Seismic Shocks}{Ascendant-level Elemental}{
 \spell{
 	name = Channel Cataclysm, school = Charms, discipline = Elemental, type = Instant, level =Ascendant, range =Close, incant = moqai, noDur = 1, noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =Raise your wand into the air\comma{} and summon the raw energy of the universe. A bolt of energy descends from the heavens\comma{} into your wand and is directed from your other\comma{} outstretched hand as an energetic blast\comma{} focussed on a single individual.
 
@@ -1709,7 +1812,7 @@ For every 20 metres the wave moves forward\comma{} it loses 1 metre of height. T
 Any being which spends any part of its turn in the wave takes 8d12 damage (halved on a successful resist) and have their speed set to zero until the end of the next round.
 }
 }
- \spellBook{The Matter of Mass}{Ascendant-level Kinesis}{
+ \spellBook{Extreme Incantations}{Ascendant-level Kinesis}{
 \spell{
 	name = Mass Kinesis, school = Charms, discipline = Kinesis, type = Focus, level =Ascendant, range =Close, incant = ballatutti, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Control huge numbers of objects as they levitate and move around: write a thousand books with a thousand quills\comma{} conduct a swordfight with multiple blades at once. 
 
@@ -1723,7 +1826,7 @@ You may only perform up to 5 unique actions with the objects\comma{} but you may
 Beings outside the region can observe the interior\comma{} but attempting to enter the region causes 15d6 force damage\comma{} as the being also becomes partially trapped.
 }
 }
- \spellBook{The True Power of the Soul}{Ascendant-level Telepathy}{
+ \spellBook{Mind Beyond Body}{Ascendant-level Telepathy}{
 \spell{
 	name = Join Minds, school = Divination, discipline = Telepathy, type = Ritual (3 hours), level =Ascendant, range =Self, noIncant = 1, duration = 1 week,noHigh = 1, noResist =1, noBlock = 1, effect =You perform a ritual which involves two people (only one of whom needs to know how to cast this spell). This spell joins your souls together in an intricate fashion. You become but one soul\comma{} in two bodies. 
 
@@ -1741,7 +1844,7 @@ For the duration of the spell\comma{} you see things as they truly are. You see 
 You can also see into the minds of your enemies\comma{} giving you an extra few moments to anticipate their actions. You gain check advantage on all accuracy checks\comma{} and they take disadvantage on all accuracy checks against you.
 }
 }
- \spellBook{Stepping Through the Ages}{Ascendant-level Temporal}{
+ \spellBook{Time \& its Mysteries}{Ascendant-level Temporal}{
 \spell{
 	name = Astral Projection, school = Divination, discipline = Temporal, type = Ritual (2 minutes), level =Ascendant, range =Self, incant = ambilofors, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Leave your physical form behind\comma{} and project your spirit into the Astral Realm. You mortal body falls unconscious as your spirit leaves it. 
 
@@ -1761,7 +1864,7 @@ For every second that you spend performing this ritual\comma{} the stopwatch tic
 When you finish the ritual\comma{} the stopwatch rises into the air\comma{} and forms a shimmering portal to either the past or the future (decided by the caster)\comma{} capable of transporting up to 5 beings. Upon stepping into the portal\comma{} you are transported through time by an amount equal to the reading on the stopwatch. The portal deposits you at your present physical location (taking into account any changes in the local height that may have happened in the intervening time)\comma{} and then closes.
 }
 }
- \spellBook{Light and Perception: The Magician\apos{}s Mastery}{Ascendant-level Bewitchment}{
+ \spellBook{Merlin\apos{}s Tricks and Incantations}{Ascendant-level Bewitchment}{
 \spell{
 	name = True Illusion, school = Illusion, discipline = Bewitchment, type = Ritual (10 minutes), level =Ascendant, range =Sight, incant = stultuvisus, duration = 1 day,noHigh = 1, resist = Investigation, noBlock = 1, effect =Create a perfect illusion which can be interacted with and touched by the target. This illusion replicates sounds\comma{} smells\comma{} heat and all other imaginable stimuli. The illusion can occupy a space up to 20m in radius and can include any environments\comma{} people\comma{} beasts and monsters that the caster can imagine. 
 
@@ -1770,7 +1873,7 @@ The caster may also imbue any `characters’ within the illusion with a semblanc
 An observer may determine that the illusion is not real by performing a Resist as a major action.
 }
 }
- \spellBook{The Apotheosis of the Psionics}{Ascendant-level Psionics}{
+ \spellBook{Melting Minds: The Master Guide to Psionics}{Ascendant-level Psionics}{
 \spell{
 	name = Destroy Mind, school = Illusion, discipline = Psionics, type = Instant, level =Ascendant, range =Close, incant = mentis perdero, noDur = 1, noHigh = 1, resist = Conviction, noBlock = 1, effect =Shatter the mind of a sapient target being on a failed resist\comma{} rendering them a shadow of their former self. Choose from one of the following effects:
 
@@ -1785,7 +1888,9 @@ An observer may determine that the illusion is not real by performing a Resist a
 	name = Mass Delusion, school = Illusion, discipline = Psionics, type = Instant, level =Ascendant, range =Sight, incant = falasarium maxima, duration = 12 hours,noHigh = 1, resist = Conviction, negation = Blockable,effect =Apply the {\it Delusion} spell to 4d6 targets of your choice. The delusion is the same to all targets.
 }
 }
- \spellBook{Damn\comma{} or Be Damned}{Ascendant-level Curse}{
+ \spellBook{The Demons Beyond the Veil}{Ascendant-level Conjuration}{
+}
+ \spellBook{The Bumper Book of Crooked Curses}{Ascendant-level Curse}{
 \spell{
 	name = Revoke Power, school = Maledictions, discipline = Curse, type = Instant, level =Ascendant, range =Close, incant = anakalo, duration = 1 hour,noHigh = 1, resist = Power, noBlock = 1, effect =On a failed Resist\comma{} the caster may revoke one ability of the target for the duration of the spell. 
 
@@ -1799,7 +1904,7 @@ When casting the Taboo curse\comma{} the caster designates up to 7 {\it enforcer
 Care must be taken\comma{} however\comma{} that the chosen word is not too common \minus{} as the enforcers have no way of sifting through which uses of the chosen word are relevant or not.
 }
 }
- \spellBook{Majestic Hexes for the Experienced Duelist}{Ascendant-level Hex}{
+ \spellBook{An Auror\apos{}s Toolkit}{Ascendant-level Hex}{
 \spell{
 	name = Disintegrate, school = Maledictions, discipline = Hex, type = Instant, level =Ascendant, range =Sight, incant = reducto, noDur = 1, noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =If the spell makes contact with matter\comma{} causes it to instantly disintegrate. Living beings take 15d10 worth of force damage.
 }
@@ -1823,7 +1928,7 @@ Each mote does 4d6 of damage\comma{} negated on a successful Resist. The type of
 If the target is Immune to the chosen damage type\comma{} you may roll again. Whilst you have at least one mote in your halo\comma{} you cast bright light around you for 10m\comma{} and dim light for a further 20\comma{}
 }
 }
- \spellBook{Ressurection\comma{} a Fools Goal?}{Ascendant-level Healing}{
+ \spellBook{Journals of St. Mungo\comma{} the Master Healer}{Ascendant-level Healing}{
 \spell{
 	name = Mass Healing, school = Recuperation, discipline = Healing, type = Instant, level =Ascendant, range =Close, incant = enervate maxima, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Roll 10d10\comma{} and multiply this result by 10 (alternatively\comma{} use the average result of 500). 
 
@@ -1835,7 +1940,7 @@ You may restore this amount of HP to all living beings within range\comma{} dist
 By summoning great power and energies\comma{} you nuture the tiniest\comma{} vanishing flicker of life which remains within this being\comma{} and restore them back to life. The being comes back with 0HP and the {\it Critical but Stable} condition.
 }
 }
- \spellBook{Defending Against  the Undefendable}{Ascendant-level Warding}{
+ \spellBook{The Shield in the Dark}{Ascendant-level Warding}{
 \spell{
 	name = Fidelius Ward, school = Recuperation, discipline = Warding, type = Ritual (2 weeks), level =Ascendant, range =Wandtip, incant = onsigno scientia, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Select a target object\comma{} being or region of radius 10m in radius\comma{} and a second being\comma{} the {\it Keeper}\comma{} which cannot be the caster. 
 
@@ -1855,7 +1960,7 @@ A successful Resist at either point allows one to pull back before too much dama
 The ward can absorb 10d20 points of damage (any type) before it disintegrates.
 }
 }
- \spellBook{Shaping the Clay of Reality}{Ascendant-level Alteration}{
+ \spellBook{Altering the World}{Ascendant-level Alteration}{
 \spell{
 	name = Guardian Army, school = Transfiguration, discipline = Alteration, type = Instant, level =Ascendant, range =Close, incant = piertotom locomotum, duration = 1 day,noHigh = 1, noResist =1, noBlock = 1, effect =Transform up to 5d6 nearby statues\comma{} trees and other large inanimate objects into powerful guardians to fight by your side\comma{} and imbue them with purpose. These guardians are considered as Stone Golems unless otherwise indicated/. 
 
@@ -1875,7 +1980,7 @@ This spell is permanent\comma{} and cannot be dispelled. The only way to undo th
 This spell cannot {\it create} a soul\comma{} however. Attempting to convert a non\minus{}living\comma{} dead\comma{} or un\minus{}life object or being into a sapient creature results in spell failure\comma{} or creates an organic body which is in a coma.
 }
 }
- \spellBook{The Outer Planes}{Ascendant-level Conjuration}{
+ \spellBook{The Demons Beyond the Veil}{Ascendant-level Conjuration}{
 \spell{
 	name = Archon\apos{}s Spirit, school = Transfiguration, discipline = Conjuration, type = Ritual (1 week), level =Ascendant, range =Self, noIncant = 1, duration = 1 minute,noHigh = 1, noResist =1, noBlock = 1, effect =Spend an entire week imbuing yourself with the energies of far\minus{}flung realities\comma{} melding your very soul with the mighty powers beyond this reality\comma{} the Archons\comma{} and convincing the almighty beings that exist there to aid you in your quest. Upon completing this ritual\comma{} you are granted a single Celestial Token. 
 
@@ -1902,7 +2007,7 @@ If this attack reduces them to 0HP\comma{} they are instantly absorbed into the 
 When the spell ends\comma{} either because the duration is completed or the caster loses focus\comma{} the rift slams shut\comma{} releasing a shockwave which deals a further 4d12 concussive damage to beings within 3m of the rift.
 }
 }
- \spellBook{Secrets of the Darkest Art}{Ascendant-level Necromancy}{
+ \spellBook{Spelles Moste Vyle}{Ascendant-level Necromancy}{
 \spell{
 	name = Army of the Dead, school = Dark Arts, discipline = Necromancy, type = Ritual (1 day), level =Ascendant, range =Self, noIncant = 1, duration = A year and a day,noHigh = 1, noResist =1, noBlock = 1, effect =You may raise the bodies of up to 10d20 deceased individuals found within a radius of 1 km. 
 
@@ -1922,7 +2027,7 @@ Alternatively you may choose to absorb the soul to heal the character to full he
 Only one soul may be trapped at any given time.
 }
 }
- \spellBook{Eldritch Domains}{Ascendant-level Occultism}{
+ \spellBook{Theories on the World Beyond}{Ascendant-level Occultism}{
 \spell{
 	name = Sacrifice\apos{}s Shield, school = Dark Arts, discipline = Occultism, type = Ward, level =Ascendant, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =You allow the next strike made against you to kill you\comma{} and banish your soul to the Eldritch domains. In return\comma{} your sacrifice and love fuels a charm so powerful it cannot be resisted or overcome by force alone. 
 

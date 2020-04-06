@@ -14,7 +14,7 @@ function MasterAssembly(quitMode)
     archetypeAssembler('Archetypes/');
     
     disp('Assembling Spells');
-    assembleSpells(6,'../Chapters/Part5_Lists/');
+    assembleSpells(6,'../');
     
     disp('Assembling Books')
     assembleBooks('../Chapters/Part3_Items/');

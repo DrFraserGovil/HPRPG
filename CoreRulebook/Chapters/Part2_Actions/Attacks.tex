@@ -1,4 +1,4 @@
-
+\newpage
 
 \section{Making Attacks}\label{S:Attacks}
 
@@ -15,12 +15,12 @@ There are also some special rules regarding melee and ranged attacks.
 
 You may only attack targets that are within the range of the attack you are making. For melee weapons, this is usually 1 metre, though some long weapons such as lances have additional reach. For ranged weapons, the maximum range is specified in the weapon description. Spells also have ranges associated with them, which is discussed more on page \pageref{S:Range}. 
 
-In addition, to determining if the target is in range, you must determine if it is a valid target - you cannot shoot arrows around walls, after all. You must be able to see a target in order to attack it (see below for blindfighting rules), and you may need to consider the fact that a target has cover. 
+In addition, to determining if the target is in range, you must determine if it is a valid target - you cannot shoot arrows around walls, after all. You must be able to see a target in order to attack it (or see below for rules on fighting invisible enemies), and you may need to consider the fact that a target has cover. 
 
 
 \subsection{Melee Attacks}
 
-A melee attack encompasses all close-range fighting, including fist-fighting, sword-swinging and whip-wrangling.
+A melee attack encompasses all close-range fighting, including fist-fighting, sword-swinging and whip-wrangling. 
 
 Typically, a melee attack can only be made against a target if they are within 1 metre of the attacker, with a clear line-of-reach between the two. Some weapons, as well as larger creatures, are able to perform melee attacks at a larger range.  
 
@@ -60,9 +60,12 @@ If you are proficient with at least one of these weapons, you may perform a doub
 
 However, unless you are proficient with two-weapon fighting, you may not add your expertise bonus to either weapon check. 
 
+
+
+
 \subsection{Ranged Attacks}
 
-A ranged attack occurs over a longer distance by firing a projectile or magical effect up to the scale of hundreds of metres in some cases. 
+A ranged attack occurs over a longer distance by firing a projectile or magical effect over hundreds of metres in some cases. 
 
 \subsubsection{Ranged Weapons}
 
@@ -70,7 +73,7 @@ The description of every ranged weapon gives a maximum range at which the weapon
 
 Slings, for example, have a much longer reach when using aerodynamic bullets, as compare to just using rocks. Equally, hip firing a rifle has a much less accurate range than when lying in a sniper nest. 
 
-Generally speaking, you cannot fire a projectile further than this range, as it represents the maximum distance that the projectile can reach. Some weapons (particularly the {\it firearms} class), however, the stated range is merely the range at which you can fire accurately. These weapons {\it can} be fired up to twice their stated range, but take check disadvantage on all accuracy checks beyond this point. 
+Generally speaking, you cannot fire a projectile further than this range, as it represents the maximum distance that the projectile can reach. Some weapons (particularly the {\it firearms} class, though your GM will rule which weapons this is true for), however, the stated range is merely the range at which you can fire accurately. These weapons {\it can} be fired up to twice their stated range, but take check disadvantage on all accuracy checks beyond this point. 
 
 In addition, you will need to ensure that you have enough ammunition to properly use your ranged weapon.
 \subsubsection{Spells}
@@ -97,9 +100,9 @@ An accuracy check is performed using the usual d20 die. However, the associated 
 \\
 Spells	&	Discipline-Dependent
 \\
-Melee Weapons	& Fitness
+Melee Weapons	& \attPhys{}
 \\
-Ranged Weapons	&	Finesse
+Ranged Weapons	&	\attFin{}
 \end{rndtable}
 \end{center}
 
@@ -113,7 +116,7 @@ In addition, if you are considered proficient with the weapon (or wand) you are 
 
 When attacking a living being, the DV of the accuracy check is determined by the {\it instinct value} used by the target. If you meet this target, then the attack lands true. If the accuracy check fails, then the attack misses, or is successfully blocked by the target. 
 
-\subsubsection{Additional Difficulty} \label{S:HardToHit}.
+\subsubsection{Additional Difficulty} \label{S:HardToHit}
 
 Targeting objects which are particularly small, or (for ranged attacks) far away is more difficult.  The additional penalty for hitting such away targets is, with everything measured in metres:
 

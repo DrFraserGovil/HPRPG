@@ -3,16 +3,17 @@ opts.VariableNamesRange = 'A1';
 f = readtable("AllSpells.xlsx",opts,'ReadVariableNames',true);
 
 
-damageDetected = (f.Ascendant > 0);
+damageDetected = (f.DoesDamage == 1);
 f(~damageDetected,:) = [];
 fTitles = string(transpose(f{:,1}));
-dMax = 200;
-N = 30000;
+dMax = 300;
+N = 1000000;
 h = height(f);
 nLevels = 6;
-damage = zeros(h,nLevels,dMax);
+damage = zeros(h,nLevels+1,dMax);
 
 for i = 1:h
+
    ell = f.Level(i);
    for j = ell:nLevels
         eLevels = (j - ell);
@@ -26,12 +27,12 @@ for i = 1:h
             end
         end
         for z = 1:N
-           damage(i,j,r(z)+1) = damage(i,j,r(z)+1)+ 1; 
+           damage(i,j+1,r(z)+1) = damage(i,j+1,r(z)+1)+ 1; 
         end
    end
 end
 
-for i = 1:6
+for i = 0:6
 figure()
 produceImage(damage,i,fTitles,N);
 title(strcat("Level ", num2str(i)));
@@ -39,7 +40,7 @@ colorbar
 end
 
 function produceImage(grid,level,titles,N)
-   interest = squeeze(grid(:,level,:));
+   interest = squeeze(grid(:,level+1,:));
    [p,m] = size(interest);
    while any(interest(:,m)) == 0
        m = m - 1;

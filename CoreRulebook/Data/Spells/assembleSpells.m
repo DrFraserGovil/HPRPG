@@ -1,4 +1,4 @@
-function assembleSpells(maxLevel,fileNameRoot)
+function assembleSpells(maxLevel,additionalRoot)
    
     %if no target given, assume that called directly, else assume called by
     %master
@@ -9,8 +9,9 @@ function assembleSpells(maxLevel,fileNameRoot)
             maxLevel = 6;
         end
         addpath('../Functions/');
-        fileNameRoot = '../../Chapters/Part5_Lists/';
+        additionalRoot = '../../';
     end
+    fileNameRoot = strcat(additionalRoot,'Chapters/Part5_Lists/');
     %% open file
     
     if ~exist("spellOpts","var")
@@ -128,43 +129,55 @@ function assembleSpells(maxLevel,fileNameRoot)
     fprintf(FID, fullText);
     fclose(FID);
     
-    spellBook(schools,fileNameRoot)
+    spellBook(schools,additionalRoot)
 end
 
-function spellBook(schools,fileNameRoot)
-
-    f = readtable("bookNames.xlsx");
-    text = "";
-    for qq = 1:6
-        q = qq + 1;
+function spellBook(schools,root)
+    bookRoot = strcat(root,"Data/Spells/Spellbooks/");
     for i = 1:length(schools)
-       for j = 1:length(schools(i).Discipline)
-          disc = schools(i).Discipline(j);
-          tit = ["Trivial","Beginner", "Novice", "Adept", "Expert","Master","Ascendant"];
-          
-          x = string(transpose(f{:,1}));
-          rowID = (x==disc.Name);
- 
-          
-             bName = prepareText(f{rowID,1+q}{1});
-             sub =  tit(q) + "-level " + disc.Name;
-             
-             text = text + "\n \\spellBook{"+bName+"}{"+sub+"}{\n";
-             
-             for k = 1:length(disc.Spells{q})
-				 
-                 text = text + disc.Spells{q}(k).output() + "\n";
-             end
-             
-             text = text + "}";
-             
-          end
-     
-       end
+        for j = 1:length(schools(i).Discipline)
+            
+            for k = 1:length(schools(i).Discipline(j).Spells{1})
+               schools(i).Discipline(j).Spells{2}(end+1) = schools(i).Discipline(j).Spells{1}(k);
+            end
+            
+            [~,I] = sort({schools(i).Discipline(j).Spells{2}.Name});
+            schools(i).Discipline(j).Spells{2} = schools(i).Discipline(j).Spells{2}(I);
+        end
+    end
+
+
+    f = readtable(bookRoot + "bookNames.xlsx");
+    text = "";
+    for q = 1:6
+        
+        for i = 1:length(schools)
+            for j = 1:length(schools(i).Discipline)
+                disc = schools(i).Discipline(j);
+                tit = ["Trivial \\& Beginner", "Novice", "Adept", "Expert","Master","Ascendant"];
+                
+                x = string(transpose(f{:,1}));
+                rowID = (x==disc.Name);
+                
+                
+                bName = prepareText(f{rowID,1+q}{1});
+                sub =  tit(q) + "-level " + disc.Name;
+                
+                text = text + "\n \\spellBook{"+bName+"}{"+sub+"}{\n";
+                
+                for k = 1:length(disc.Spells{q+1})
+                    
+                    text = text + disc.Spells{q+1}(k).output() + "\n";
+                end
+                
+                text = text + "}";
+                
+            end
+            
+        end
     end
     
-
-     fileName = strcat(fileNameRoot, '../../../GameMasterGuide/SpellBooks.tex');
+    fileName = bookRoot + "SpellBooks.tex";
 
     readFile = fileread(fileName);
     insertPoint = strfind(readFile, '%%SpellbookBegin');

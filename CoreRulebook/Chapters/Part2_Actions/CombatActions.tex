@@ -2,17 +2,52 @@
 \chapter{Combat}
 
 \section{The Combat Cycle}
-Unlike most RPGs, which tend to use a turn-based system for combat, this game uses a simultaneous combat system. The reason for this is that whilst the turn-based combat fits in with how we play games (I have my turn, you have yours, etc.), it is not entirely realistic: in a fight, you don't wait patiently for everyone else to complete attacking you before finally returning fire: everybody is completing actions at once. 
 
-After combat is initiated, a series of turn cycles occur. Each turn cycle allows every character in combat one major action, such as: a movement, casting a spell, or using an item. 
+HP\&TRPG uses a {\it Simultaneous Combat System} which differs from those used in other similar games. Rather than actions being resolved in a number of {\it turns} taken individually by each player, combat is split into a number of {\it Combat Cycles}, often referred to as ``Turn Cycles", or simply `cycles'. 
 
-At the start of each turn cycle there is a period of time (to be decided by your GM), during which you must decide on what you will do. Players may talk to each other during this time, but do be aware that discussing your tactics in front of the GM may give the game away, you wouldn't start shouting your plan out whilst fighting the enemy now, would you? 
+Each such cycle is split into five phases: {\bf Reasoning}, {\bf Reveal}, {\bf Reaction}, {\bf Resolution}, and {\bf Results}.
 
-After this time is up, each player writes down their action on a scrap of paper (to prevent last minute changes of heart), and then all players (including the GM) reveal their action simultaneously. 
+\subsubsection{Reasoning}
 
-The GM then resolves the effects of all these actions - directing characters to perform accuracy and damage checks where appropriate - and then narrating the outcome, and the response (if any) of the remaining aggressors. 
+At the beginning of each cycle there are a few brief moments where each player decides on the actions that they will be undertaking in this turn cycle: the Reasoning phase. 
 
-The combat cycle then begins anew until the conflict is resolved. 
+You are allowed to converse with and advise each other during this time, but note that unless you have explicitly noted that you spent time planning your actions in advance, any major cooperative actions will require explicit communication between the characters, which could be overheard by the enemy. 
+
+\subsubsection{Reveal}
+
+After the GM has decided that everyone has had enough time to plan, they move play into the Reveal phase: they go around the table asking each character what they will be doing. The order in which the reveal happens does not particularly matter, as all actions will be executed simultaneously in the next phase. 
+
+There are several abilities and spells which state that they must be announced before any other actions are declared, if you are uses one of these then you should notify the GM to go first. Equally, in the interest of preventing `metagaming', it is usual for the GM to state the actions of any opponents after all of the player characters have announced their actions. 
+
+The `action budget', and the kinds of actions you can use are discussed in more detail on page \pageref{S:CombatActions}. 
+
+\subsubsection{Reaction}
+
+During the Reaction phase characters may choose, if they are able, to attempt to nullify some or all of the effects of an effect which were announced during the Reveal phase.
+
+This might, for example, take the form of casting a magical shield to defend them from an attack they have just spotted. Some characters gain additional abilities they can use during this phase, such as performing additional attacks on distracted enemies.
+
+Reactions are discussed in more detail on page \pageref{S:Reactions}. 
+
+\subsubsection{Resolution}
+
+After the Reveal any subsequent Reactions, the GM and the players then work together to resolve the actions and divine the consequences. This will involve making ability checks, rolling for accuracy and other such combat mechanics discussed throughout this chapter. 
+
+The key point is that all of of the actions occur simultaneously. Recall that spells, arrows, and sword swings have a finite travel time, so it is entirely feasible for two players to attack each other simultaneously and it does not matter who initiated first. Reactions occur in a suitably small timeframe after this: between the characters undertaking their normal actions and the thing they are `reacting' to taking effect.
+
+It might, of course, still be possible for actions to come into conflict with each other: if two characters attempt to occupy the same space, for example. It is up to the GM's discretion how to deal with edge cases like this - for the example given, it is recommended that this be treated as a `body slam', and both characters should recoil and (depending on the speed of the impact) take some damage. 
+
+There are imaginable cases where the ordering of actions not only matters, but can have critically important results: for example, if a character uses a healing action at the same time that someone casts a damaging spell that would cause them to die. If the healing action occurs first, they could be raised above the point where the spell woudl kill them, and they survive. However if the attack lands first, no amount of healing will bring back the dead. An ordering of the results is therefore needed in order to determine if the target is alive or dead at the end of the combat round. 
+
+In cases such as this it is useful to remember that it is the {\it casting} of the spells, or the initiation of the sword-swing that is simultaneous: so the ordering in which the effects are applied can be inferred from the distance between the caster and the target. If this would still result in a tied result, the two characters should perform a head-to-head Speed ability check to determine who has the edge. 
+ 
+
+\subsubsection{Result}
+
+The Result phase is the end of the combat cycle: during this time any attacks land home, and spell effects are applied. Characters and foes deduct the relevant HP and FP, and apply any status effects they may have gained. 
+ 
+ Atfer the result phase, the cycle begins anew until the combat has been diffused, and gameplay returns to the more fluid style. 
+
 
 \subsection{Time}
 
@@ -20,37 +55,42 @@ Each combat cycle is assumed to have a duration of around 3 seconds.
 
 Attempting to perform actions that last significantly longer than this requires spreading the action across multiple turns -- though may choose to abort such an action if you feel your talents are better placed elsewhere. 
 
-\subsection{Resolving Conflicts}
+If an effect or action has a specified duration, such as a spell which lasts for 10 seconds, this is measured from one `Result' phase to another. 
 
-Since all actions are considered to be simultaneous, the order in which the actions are resolved does not usually matter. Recall that spells, arrows, and sword swings have a finite travel time, so it is entirely feasible for two players to attack each other simultaneously and it does not matter who initiated first.
+If any part of the duration of an effect overlaps with a cycle, it is assumed to apply to all of it. The `10 second' effect, therefore, applies over the next 4 combat cycles after the effect is applied. 
 
-It might, of course, still be possible for actions to come into conflict with each other: if two characters attempt to occupy the same space, for example. It is up to the GM's discretion how to deal with edge cases like this - for the example given, it is recommended that this be treated as a `body slam', and both characters should recoil and take some damage. 
+\newpage
 
-There might also be cases where two spells are cast simultaneously where the ordering does actually matter: for example, if you heal someone at the same time that someone casts a damaging spell that would take them below 50\% health, incurring the ``major injury{\apos \apos} status. If the healing action occurs first, then they are not taken below 50\% health, but if the damage action occurs first, then they do fall below 50\%, even if they are then brought back up over that threshold. The final health that the character ends up on might be the same, but the ordering of actions effects whether they have the {\it major injury} status at the end of the turn. 
-
-In cases such as this it is useful to remember that it is the {\it casting} of the spell that is simultaneous: so the ordering in which the spell effects should take place can be inferred from the distance between the caster and the target. The issue above is resolved simply by looking at whoever is closest to the target. 
+ \section{Taking Actions} \label{S:CombatActions}
  
-
- \section{Taking Actions}
+ During each Reasoning phase, you may decide how to allocate your character\apos{}s time during this combat cycle. Every character may take the following actions: 
  
- During each combat cycle, each character may take {\bf one} major action, or {\bf two} minor actions. In addition, your character has a number of {\it instincts} which they execute to avoid damage and brace against incoming attacks. 
+ \begin{itemize}
+	\item One minor-action Movement
+	\item One major action, or two minor actions
+ \end{itemize}
  
- The list below gives some common mechanics for both major and minor actions. As usual, however, characters are free to be as inventive as they like. It is up to the GM to determine if an action is major or minor in nature, and how to resolve it. 
+ In addition, a character has a number of {\it instincts} which they automatically execute to avoid damage and brace against incoming attacks. 
+ 
+ The dedicated ``movement'' action can be allocated as any number of smaller sub-movements (within reason). You may therefore move half your minor-movement speed, stop to use a major action, and then use your remaining movement. Alternatively you may use your movement entirely before, after and even during your other actions.  
+ 
+ The list below gives some common mechanics for both major and minor actions. As usual, however, characters are free to be as inventive as they like. If it is not counted in the actions below, is up to the GM to determine if an action is major or minor in nature, and how to resolve it. 
  
  \subsection{Major Actions}
  
- Major actions take an entire turn to complete, and as such are considered the main way to engage in combat. Some skills and archetype abilities allow you to perform multiple iterations of a single major action per turn, or may grant you multiple major actions to take. 
+ Major actions take virtually the entire turn to complete, and as such are considered the main way to engage in combat. Some skills and archetype abilities allow you to perform multiple iterations of a single major action per turn (i.e. 3 attacks as one major action), or may grant you multiple major actions to take, overriding the normal allocation. 
  
  \subsubsection{Attacking}
  
  Casting a spell, swinging a sword, or loosing an arrow takes (usually) a full turn to complete, and so you may decide to use your entire turn to make an attack.
  
-The rules for performing attacks are elaborated on page \pageref{S:Attacks}
+The rules for performing attacks are elaborated on page \pageref{S:Attacks}.
+
  \subsubsection{Movement}
  
  When used as a major action, movement allows you to move on foot up to a distance given by your {\it running speed} statistic, which is calculated from your base speed (derived from your race) and your fitness attribute:
 \small
-$$ \text{running speed} = \big(\text{Base Speed } + \text{\attPhys{} modifier}\big) \text{ per round} $$  
+$$ \text{running speed} = \big(\text{Base Speed } + \text{\attPhys{} modifier}\big) \text{ metres per round} $$  
 \normalsize
 
 The rules discussed on page \pageref{S:SpecialMovement} concerning special movement, such as climbing, swimming or crawling, also apply in combat. 
@@ -93,12 +133,17 @@ During a minor movement, one moves only {\bf half as far} as during a full-turn 
 
 Just as there is a difference between a full-on sprint (a major action) and a quick jog (a minor action), so to is there a difference between a zeroed in shot on your enemy (a major action), and releasing a spray of covering fire to keep your enemies on their toes (a minor action). 
 
-A quick attack takes only a minor action to complete. The penalty for this, however, is that you must take check-disadvantage on the associated accuracy checks (or for spells which only require a Resist check, they get advantage on the Resist check). 
+A quick attack takes only a minor action to complete, however their rapid and slightly careless nature imposes the following effects:
+\begin{itemize}
+	\item All accuracy checks are performed with disadvantage
+	\item All Resist attempts performed by the target of your attack are performed with advantage
+\end{itemize}
 
-
+You can only cast `offensive' spells as a Quick-Attack action, i.e. those which inflict harm or negative effects directly on your opponents. ``Utility'' spells, even if they would inflict harm eventually, require more attention and focus than a careless Quick-Attack can provide. 
+ 
 \subsubsection{Communication}
 
-Communicating vital information - such as the location of a hidden enemy or trap - to your comrades takes a minor action. Note that it is assumed that the enemy can hear you, unless you make an effort to not be understood. 
+Communicating vital information - such as the location of a hidden enemy or trap - to your comrades takes a minor action. Note that it is assumed that the enemy can hear you communicating, unless you make an effort to not be understood. 
 
 \subsubsection{Using Items (sometimes)}
 
@@ -112,13 +157,36 @@ Any item use that can be completed in around 1 second, or which can be easily `m
 
 See page \pageref{S:Accuracy} for more details on this mechanic. 
 
+\section{Reactions} \label{S:Reactions}
+
+A Reaction occurs when a being responds to some action being imposed upon them. Such are actions are declared during the Reaction phase, and the effects of this action then modify the results of other actions being taken this cycle. 
+
+In general, the most common uses of a reaction are to use one of the following:
+
+\begin{itemize}
+	\item Cast a {\it Shield} spell, or a {\it Counterspell} to negate a magical attack
+	\item Use an {\it Evade} or {\it Brace} action to bolster your defences. 
+\end{itemize}
+
+Using a Reaction is not something you can do reliably, as it requires a clarity of mind and purpose. {\bf After using a Reaction, you temporarily lose the ability to use one} until you can regain your composure. 
+
+During the {\it Results} phase of every turn, roll a d6. On a 5-6, you regain your ability to use a reaction.
+
+\subsubsection{Reaction Spells}
+
+You may only cast a spell as a reaction if you have memorised it. Bookcasting takes too long to work effectively as a Reaction. However, all spells which are cast as a reaction {\it must} perform a spellcasting check, as the casting is occuring under immense time pressure. 
+
+In addition to the two spells mentioned, you may also cast more complex spells, with the limitation that they must solely be focussed on denying the effect you are reacting to, and should never include attacks without an ability saying otherwise. It would, for example, be acceptable to cast {\it Compel Flames} to redirect a fire-based attack, though you would need to upcast it to a suitable level (usually equal to the attacking spell\apos{}s level) in order for it to be effective. 
+
+If a spell is cast silently then it is impossible to identify what spell is being cast before it is too late, and so reactions to silent-cast spells must rely on more basic protection, or simply guess at what the spell {\it might} be. 
+
 
 
 \subsection{Conditional Actions}
 
-The use of the simultaneous combat system raises some interesting opportunities with conditional actions, which are actions that depend on the actions that another character takes.
+The use of the simultaneous combat system raises some interesting opportunities with conditional actions: those which depend on the actions that another character takes.
 
-The actual action, as well as the trigger condition, needs to be declared during the normal turn cycle -- but the action itself is not triggered until all other actions had been triggered. 
+The actual action, as well as the trigger condition, needs to be declared during the normal Reveal Phase -- but the action itself is treated as a `Reaction'. You may use a conditional action even if you have not yet recovered your reaction, however you may not expend a reaction on the same turn as using a conditional action. 
 
 For example, it could be that you declare as your action \textit{if the troll attacks player A, then I cast a healing spell on player A}. You could also attempt to prevent the damage from being taken in the first place, by declaring \textit{if the troll attacks player A, then I cast the knockback charm on the troll}. The GM may ask for a check to determine if you are close enough and have fast enough reactions for your spell to interrupt the action, but if you pass this, then you may be able to save your friend.
 
