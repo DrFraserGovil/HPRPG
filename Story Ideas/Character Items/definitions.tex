@@ -1,5 +1,4 @@
 
-
 \renewcommand\arraystretch{1.5}
 \makeatletter
 \define@key{inventory}{name}{\def\name{#1}}
@@ -107,7 +106,7 @@
 
 }
 
-\newcommand\character[7]
+\newcommand\character[8]
 {
 	
 	\title{#1: A Character Guide}
@@ -124,14 +123,48 @@
 	
 	{\bf Personality:} #6 
 	
+	
+	{\bf Inventory Summary}
+	
+	\summary{#8}
+	
+	
 	{\bf Background:} #5
 	
-	\section{Inventory}
+	\section{Detailed Inventory}
 	
 	#7
 
 
 }
+
+\newcommand\summaryHeader[1]
+{
+	\it #1	& ~ \\
+
+}
+
+\newcommand\summaryEntry[2]
+{
+	\hspace{0.5 cm}\parbox[t]{4.5 cm}{#1} & #2 \\
+
+}
+
+\newcommand\summary[1]
+{
+{
+\begin{center}
+\renewcommand{\arraystretch}{0.8}
+	\scriptsize
+	\begin{rndtable}{p{5 cm} c}
+	\bf Item & \bf Quantity \\
+	#1
+	
+	\end{rndtable}
+	\end{center}
+}
+}
+
 \newcommand\GM[1]
 {
 	

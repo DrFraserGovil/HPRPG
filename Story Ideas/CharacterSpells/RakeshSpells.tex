@@ -1,0 +1,115 @@
+\input{spellDefinitions} 
+
+\spellDoc{Rakesh\apos{}s Spells}{
+{ \footnotesize 
+ \discTable{Memorised Spells}
+{
+	\spellRow{\spellEntry{Knockback}{\instSymb}}{\spellEntry{Arcane Shield}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\spellEntry{Minor Trickery}{\instSymb}}{\spellEntry{Blur}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\spellEntry{Palpatation}{\instSymb}}{\spellEntry{Curse of the Bogies}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\spellEntry{Prank}{\instSymb}}{\spellEntry{Discarnate Digits}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\emptySpell{}}{\spellEntry{Glamour}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\emptySpell{}}{\spellEntry{Levitation}{\concSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\emptySpell{}}{\spellEntry{Locate Object}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\emptySpell{}}{\spellEntry{Rainbow Sparks}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\emptySpell{}}{\spellEntry{Remedy}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\emptySpell{}}{\spellEntry{Sting}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\emptySpell{}}{\spellEntry{Transmutation}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+}}
+
+\begin{multicols}{3}
+	 \spell{
+	name = Arcane Shield, school = Recuperation, discipline = Warding, type = Instant, level =Beginner, range =Self, incant = protego, noDur = 1, higher = Increase the strength of the shield by 1 point \forEvery{}.,noResist =1, noBlock = 1, effect =An ethereal shield blossoms from the end of your wand\comma{} protecting you from both magical and physical harm. 
+
+Whenever an attack is performed against you whilst the shield is active\comma{} roll 2d4 and add this value to your Resist check or your Block value\comma{} as appropriate. If a successful Resist would limit the amount of damage taken\comma{} negate it entirely instead. 
+
+If you fail to Resist\comma{} or the Accuracy exceeds your augmented Block value\comma{} the shield crumples and the spell is ended. The spell which broke the shield is then applied to you at half damage\comma{} with any other effects unmodified. Any other spells which hit you this round act as normal.
+}
+
+	 \spell{
+	name = Blur, school = Illusion, discipline = Bewitchment, type = Instant, level =Beginner, range =Wandtip, incant = celeritate, duration = 3 turns,higher = Gain an additional +1 bonus \forEvery{},noResist =1, noBlock = 1, effect =The target of this spell (which may be the catser) seems to become blurry around the edges\comma{} it is difficult to tell exactly where they are\comma{} and where they aren{\apos}t.
+Gain a +2 bonus to Dodge for the duration.
+}
+
+	 \spell{
+	name = Curse of the Bogies, school = Maledictions, discipline = Curse, type = Instant, level =Beginner, range =Close, incant = Mucous ad nauseam, duration = 1 day,noHigh = 1, resist = Vitality, noBlock = 1, effect =A fine green mist floats from the end of your wand\comma{} into the face of the target. On a failed Resist\comma{} they contract an awful cold. The target becomes visibly ill\comma{} their nose drips snot constantly\comma{} and their throat is sore. 
+
+Every time they open their mouth to speak\comma{} they must succeed a DV 10 Vitality Resist to avoid sneezing. Sneezing during a spell incantation causes the spell to fail.
+}
+
+	 \spell{
+	name = Discarnate Digits, school = Charms, discipline = Kinesis, type = Instant, level =Beginner, range =Close, incant = titillatio, duration = 5 minutes,noHigh = 1, noResist =1, noBlock = 1, effect =The caster produces an ethereal pair of hands that lasts for the duration of the spell\comma{} or until they move more than 10m away from the caster. You can use a minor action to control the hands. You can use the hand to manipulate an object\comma{} open an unlocked door or container\comma{} stow or retrieve an item from an open container\comma{} or pour the contents out of a vial\comma{} but cannot use them to attack or carry items heavier than {\it Light}. Hands may be moved at a speed of 10m per turn\comma{} in addition to their action.
+}
+
+	 \spell{
+	name = Glamour, school = Illusion, discipline = Bewitchment, type = Instant, level =Beginner, range =Close, incant = lux stultium, duration = 1 hour,noHigh = 1, resist = Attention, noBlock = 1, effect =Create a superficial glamour around a person or object\comma{} a simple magical hologram which sits on top of the true surface. This hologram takes any form the caster can imagine\comma{} but can only perform minor movements – an illusion over the face of a target may open its mouth as the target does\comma{} but nothing more complex than this. 
+
+The glamour disintegrates upon physical or magical contact\comma{} and can be seen to be fake if observer succeeds on a Resist check.
+}
+
+	 \spell{
+	name = Knockback, school = Maledictions, discipline = Hex, type = Instant, level =Trivial, range =Close, incant = flipendo, noDur = 1, higher = Each additional casting level dedicated to this spell increases the power of the energy\minus{}wave: do an additional 1d8 force damage and push the target back an extra 2 metres.,resist = Strength, negation = Blockable  and Dodgeable,effect =A wave of energy strikes into the target\comma{} causing 1d6 force damage\comma{} and if the target fails to Resist\comma{} pushing the target backwards up to 1 metre.
+}
+
+	 \spell{
+	name = Levitation, school = Charms, discipline = Kinesis, type = Focus, level =Beginner, range =Sight, incant = wingardium leviosa, noDur = 1, higher = The maximum mass this spell is capable of lifting multiplies by ten for every additional spell level used to cast it.,resist = Strength, noBlock = 1, effect =Cause an object of 1kg or less to levitate whilst concentration is maintained. You may control the height of the object\comma{} but you may not move it horizontally. A being may attempt to grab hold of the levitating object\comma{} and whilst they can move it horizontally\comma{} they may only change its height by performing a Resist check\comma{} breaking the enchantment on a success.
+}
+
+	 \spell{
+	name = Locate Object, school = Divination, discipline = Temporal, type = Instant, level =Beginner, range =Self, incant = locus, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =After casting this spell\comma{} you must shout a description or the name of the object you are searching for. If you are within 1km of the object\comma{} you gain a snapshot of the object you are searching for\comma{} and the direction in which it is moving. 
+
+If you are looking for a specific object\comma{} you must be familiar with it (i.e. have seen it up close at least once). Alternatively\comma{} you may describe a class of object (i.e. a necklace)\comma{} and the spell will find the nearest such object. 
+
+This spell fails if there is no such object within range\comma{} or if the object is protected by any kind of magical ward or lock.
+}
+
+	 \spell{
+	name = Minor Trickery, school = Illusion, discipline = Bewitchment, type = Instant, level =Trivial, range =Close, incant = mico, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Create a minor magical trick\comma{} such as a flash of light\comma{} a brief shower of sparks or a puff of smoke. You could make a magical symbol float briefly in the air\comma{} or cause the hairs on the back of a target\apos{}s head to stand on end. Whilst this spell is very versatile\comma{} and the effects certainly look magical in nature\comma{} they serve no real purpose beyond looking pretty\comma{} though several enterprising wizards have used this spell on street corners whilst pretending to do muggle ``magic”.
+}
+
+	 \spell{
+	name = Palpatation, school = Maledictions, discipline = Curse, type = Instant, level =Trivial, range =Close, incant = vena, noDur = 1, noHigh = 1, resist = Vitality, noBlock = 1, effect =On a failed Resist\comma{} you cause the target\apos{}s heart to miss a beat. Next cycle\comma{} the target\apos{}s speed is halved.
+}
+
+	 \spell{
+	name = Prank, school = Transfiguration, discipline = Conjuration, type = Instant, level =Trivial, range =Close, incant = riddikulus, duration = 2 minutes,noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =You conjure something onto or near your target with the express intention of making them look as stupid as possible: Summon a funny hat onto an individual\comma{} or conjure up a note with a funny message and stick it to their back\comma{} this spell allows you to perform minor\comma{} harmless pranks in an instant.
+}
+
+	 \spell{
+	name = Rainbow Sparks, school = Maledictions, discipline = Hex, type = Instant, level =Beginner, range =Close, incant = verdimillious, noDur = 1, higher = Create an additional packet of sparks for each level above Beginner used to cast this spell.,noResist =1, negation = Blockable  and Dodgeable,effect =Shoots a packet of small sparks from your wand\comma{} which rocket from the end of your wand towards a single enemy. 
+
+You may choose the colour of the sparks from red\comma{} blue\comma{} green or yellow. The colour of the sparks reflects the damage done: fire\comma{} cold\comma{} acid and electric respectively. 
+
+Each packet does 1d12 damage of the chosen type.
+}
+
+	 \spell{
+	name = Remedy, school = Recuperation, discipline = Healing, type = Instant, level =Beginner, range =Wandtip, incant = enervate, noDur = 1, higher = This spell heals for an additional 1d8 damage for every additional spell level dedicated to it.,noResist =1, noBlock = 1, effect =Your wand emits healing rays which close small wounds as you pass your wand over them. Heal for 1d8 points of health.
+
+If the target has a {\it Major Injury}\comma{} cannot heal them above 25\% HP.
+}
+
+	 \spell{
+	name = Sting, school = Maledictions, discipline = Hex, type = Instant, level =Beginner, range =Sight, incant = ictus, noDur = 1, higher = \additional{1d10}{poison},noResist =1, negation = Blockable,effect =A blast of purplish energy rockets from your wand\comma{} seeking to strike the enemy in the face. Stings the target for 1d10 poison damage.
+}
+
+	 \spell{
+	name = Transmutation, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, range =Close, incant = mutatio, duration = 1 hour,higher = The maximum mass this spell is capable of transfiguring multiplies by 5 for every additional spell level used to cast it.,resist = Power, noBlock = 1, effect =Transform a 1kg non\minus{}sapient animal (or part of an animal) or object into a different animal or solid object\comma{} negated on a successful Resist. If you are targeting a being which is in combat with you\comma{} they take advantage on the Resist check. 
+
+The transformation must (approximately) conserve mass – you cannot turn a rat into a T\minus{}Rex\comma{} for example. The final product of the transfiguration must be a non\minus{}magical in nature (i.e. you cannot enchant items through Transmutation)
+}
+
+
+\end{multicols}
+}

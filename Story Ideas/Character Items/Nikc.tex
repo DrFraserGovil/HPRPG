@@ -6,6 +6,38 @@
 \begin{document}
 
 	%%CharBegin\character{Nikc}{Halfblood Human}{Gryffindor (3)}{?}{?}{?}{
+ \subsection{Currency}
+
+\inventory{
+	name = Galleons, 
+	amount = 6, 
+	class = Currency, 
+	description = The largest denomination of wizarding Currency. Worth 17 sickles., 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
+\inventory{
+	name = Sickles, 
+	amount = 2, 
+	class = Currency, 
+	description = The most common denomination of wizarding currency. Worth 29 Knuts., 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
+\inventory{
+	name = Knuts, 
+	amount = 27, 
+	class = Currency, 
+	description = The smallest denomination of wizarding currency., 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
  \subsection{Books}
 
 \inventory{
@@ -14,7 +46,7 @@
 	class = Books, 
 	hasAcquired = 1, 
 	acquired = Taken from Hogwarts Library, 
-	description = A book containing the Beginner\minus{}level Psionics spells, 
+	description = A book containing Trivial and Beginner level Psionics spells, 
 	hasCost = 1, 
 	purchaseCost = 0, 
 	sellValue = Worthless, 
@@ -59,6 +91,22 @@ These robes give you a +1 to all casting checks whilst you are wearing them.,
 }
 
 \inventory{
+	name = Padded Gear, 
+	amount = 1, 
+	class = Clothing, 
+	hasAcquired = 1, 
+	acquired = Simon\apos{}s Simple Shields, 
+	description = A set of thick\comma{} padded clothes which protect you from both the environment\comma{} and from your foes. 
+
+Fortifies your Block value by +2\comma{} reduces Dodge by \minus{}1, 
+	hasCost = 1, 
+	purchaseCost = \galleon{0.5}, 
+	sellValue = \galleon{0.5}, 
+	isOwned = 0, 
+	owners = 
+}
+
+\inventory{
 	name = Shield Hat, 
 	amount = 1, 
 	class = Clothing, 
@@ -81,6 +129,44 @@ If you fail to Resist\comma{} or the Accuracy exceeds your augmented Block value
 }
 
  \subsection{Items}
+
+\inventory{
+	name = Fine Lockpicking Tools, 
+	amount = 1, 
+	class = Items, 
+	hasAcquired = 1, 
+	acquired = Ioan\apos{}s Corpse, 
+	description = A set of arcane lockpicks\comma{} allowing you to pick both mundane and magical locks. With proficiency in these tools\comma{} can add your Expertise bonus to lockpicking checks., 
+	sellValue = \sickle{6}, 
+	isOwned = 0, 
+	owners = 
+}
+
+\inventory{
+	name = Food Supplies, 
+	amount = 1, 
+	class = Items, 
+	hasAcquired = 1, 
+	acquired = Flibberdegibits \& Watchemecallems, 
+	description = Enough food and supplies to keep you going for a few days, 
+	hasCost = 1, 
+	purchaseCost = \sickle{3}, 
+	sellValue = \sickle{3}, 
+	isOwned = 0, 
+	owners = 
+}
+
+\inventory{
+	name = Mysterious Note, 
+	amount = 1, 
+	class = Items, 
+	hasAcquired = 1, 
+	acquired = Ioan\apos{}s Corpse, 
+	description = A mysterious note\comma{} implicating a thief in a mysterious robbery at the Coffin Shop., 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
 
 \inventory{
 	name = School Satchel, 
@@ -113,6 +199,42 @@ This wand gives +1 to casting and accuracy checks for both Bewitchment and Psion
 	isOwned = 0, 
 	owners = 
 }
+}{
+ \summaryHeader{Currency}
+
+\summaryEntry{Galleons}{6}
+
+\summaryEntry{Sickles}{2}
+
+\summaryEntry{Knuts}{27}
+
+ \summaryHeader{Books}
+
+\summaryEntry{Cool Cantrips to Make Your Crazy}{1}
+
+ \summaryHeader{Clothing}
+
+\summaryEntry{Hat of Buckets}{1}
+
+\summaryEntry{Hogwarts Robes}{1}
+
+\summaryEntry{Padded Gear}{1}
+
+\summaryEntry{Shield Hat}{1}
+
+ \summaryHeader{Items}
+
+\summaryEntry{Fine Lockpicking Tools}{1}
+
+\summaryEntry{Food Supplies}{1}
+
+\summaryEntry{Mysterious Note}{1}
+
+\summaryEntry{School Satchel}{1}
+
+ \summaryHeader{Weapons}
+
+\summaryEntry{Hazel and Veela Hair Wand}{1}
 }
 %%CharEnd
 

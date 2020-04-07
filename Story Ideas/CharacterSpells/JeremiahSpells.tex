@@ -1,0 +1,175 @@
+\input{spellDefinitions} 
+
+\spellDoc{Jeremiah\apos{}s Spells}{
+{ \footnotesize 
+ \discTable{Memorised Spells}
+{
+	\spellRow{\spellEntry{Confound}{\instSymb}}{\spellEntry{Arcane Shield}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\spellEntry{Glowing Wand}{\concSymb}}{\spellEntry{Attuned Reactions}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\spellEntry{Hidden Ember}{\wardSymb}}{\spellEntry{Compel Flames}{\concSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\spellEntry{Pocketwatch}{\instSymb}}{\spellEntry{Degrade}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\spellEntry{Resistance}{\instSymb}}{\spellEntry{Direct Fluids}{\concSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\spellEntry{Stabilisation}{\instSymb}}{\spellEntry{Erupting Spike}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\emptySpell{}}{\spellEntry{Identify Object}{\ritSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\emptySpell{}}{\spellEntry{Locate Object}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\emptySpell{}}{\spellEntry{Refine}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\emptySpell{}}{\spellEntry{Remedy}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\emptySpell{}}{\spellEntry{Tripwire}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+}}
+
+\begin{multicols}{3}
+	 \spell{
+	name = Arcane Shield, school = Recuperation, discipline = Warding, type = Instant, level =Beginner, range =Self, incant = protego, noDur = 1, higher = Increase the strength of the shield by 1 point \forEvery{}.,noResist =1, noBlock = 1, effect =An ethereal shield blossoms from the end of your wand\comma{} protecting you from both magical and physical harm. 
+
+Whenever an attack is performed against you whilst the shield is active\comma{} roll 2d4 and add this value to your Resist check or your Block value\comma{} as appropriate. If a successful Resist would limit the amount of damage taken\comma{} negate it entirely instead. 
+
+If you fail to Resist\comma{} or the Accuracy exceeds your augmented Block value\comma{} the shield crumples and the spell is ended. The spell which broke the shield is then applied to you at half damage\comma{} with any other effects unmodified. Any other spells which hit you this round act as normal.
+}
+
+	 \spell{
+	name = Attuned Reactions, school = Divination, discipline = Temporal, type = Instant, level =Beginner, range =Close, incant = pugnat, duration = 1 minute,higher = You may target an additional individual \forEvery{}.,noResist =1, noBlock = 1, effect =Choose a sapient target within range\comma{} and grant them the ability to see just a few microseconds into the future\comma{} enhancing their reflexes for the duration of the spell. 
+
+When rolling to recover Reactions\comma{} you regain your reaction on a roll of 3\minus{}6.
+}
+
+	 \spell{
+	name = Compel Flames, school = Charms, discipline = Elemental, type = Focus, level =Beginner, range =Close, incant = ignisempus, noDur = 1, higher = When cast at a higher level\comma{} the maximum area of fire that you can affect doubles \forEvery{}\comma{} and the damage caused by the flame increases by 2d6. You may also perform more extravagant feats of fire manipulation\comma{} at the whim of your GM. Be inventive!,noResist =1, negation = Blockable  and Dodgeable,effect =Upon targeting an area of flame up to 1 metre squared that you can see within range\comma{} you can manipulate the fire in a number of ways\comma{} using your turn to produce one of the following effects:
+
+\begin{spellitemize}
+\item Move the fire up to 3 metres in any direction\comma{} either by igniting new fuel\comma{} or as a magically floating floating ball of fire. 
+\item Diminish the ignited area by half (but can never extinguish it)\comma{} or multiply it by two (note that if it exceeds your maximum controllable area you do not control that bit of the blaze)
+\item Change the colour of the flame
+\item Cause the flame to take on simple shapes and animate them at your direction. 
+\item Render yourself immune to this bit of fire (applies only to non\minus{}magical fire\comma{} or fire you created yourself)
+\item Lash out at a target within melee range of the fire\comma{} dealing 2d6 fire damage\comma{} using an Elemental Accuracy check. 
+\end{spellitemize}
+
+You may use any of these effects as long as concentration is maintained. When focus is broken\comma{} the fire resumes its normal course.
+}
+
+	 \spell{
+	name = Confound, school = Maledictions, discipline = Curse, type = Instant, level =Trivial, range =Close, incant = lombus, noDur = 1, noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =A beam of light causes the target\apos{}s muscles to atrophy and their mind to cloud for an instant\comma{} before the effect wears off. The target must deduct 1d4 from the value of their next check.
+}
+
+	 \spell{
+	name = Degrade, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, range =Close, incant = prolabor, duration = 1 minute,higher = This spell effects an additional object or being \forEvery{}.
+
+When cast as an Adept level spell or higher\comma{} you may select two degredations from the list.,resist = Power, noBlock = 1, effect =Choose up to three target objects or beings that you can see within range\comma{} and make subtle minor alterations which generally lessen the quality of the targets.
+
+An object might gain layer of grime\comma{} whilst imperfections develop across the surface. A previously well\minus{}oiled joint might begin to produce a horrendous squeaking noise. This spell cannot break an object and remove functionality\comma{} but instead generally makes an object less pleasant and high\minus{}quality than it was before. When used in this fashion\comma{} the spell has no duration\comma{} and the degredations are considered permanent. 
+
+When this spell is targeted at a living being\comma{} the `degredation' instead allows you to fatigue the muscles of the target to reduce their aim\comma{} or give them a mild headache to disrupt their concentration.
+
+For each targeted being which fails to Resist\comma{} the caster chooses one of the following:
+\begin{spellitemize}
+\item Attribute checks
+\item Resist checks
+\item Accuracy checks
+\item Damage checks
+\end{spellitemize}
+
+For the duration of the degradation\comma{} whenever an effected being performs one of their selected checks\comma{} they must roll an additional 1d4 and subtract that result from the result of the roll.
+}
+
+	 \spell{
+	name = Direct Fluids, school = Charms, discipline = Elemental, type = Focus, level =Beginner, range =Close, incant = aguasempus, noDur = 1, higher = When cast at a higher level\comma{} the maximum volume of water that you can effect doubles \forEvery{} and your water jets deal an additional 1d10 damage. You may also perform more extravagant feats of water manipulation\comma{} at the whim of your GM. Be inventive!,resist = Reflex, noBlock = 1, effect =Upon targeting a volume of water (or similar fluids with a water\minus{}like consistency) up to one metre cube that you can see within range\comma{} you can manipulate it in a number of ways\comma{} using a major action to produce one of the following effects:
+
+\begin{spellitemize}
+\item Move the water\comma{} or otherwise alter the flow by up to 3 metres
+\item Cause the water to form simple shapes\comma{} and animate them at your direction. 
+\item Clear the water\comma{} or cause it to become opaque and cloudy. This lasts for up to one hour after you break concentration.
+\item Cause a piercing jet of water to strike out at a target within melee range of the water dealing 1d10 of bludgeoning or piercing damage\comma{} halved on a successful Resist.
+\item Still the water\comma{} or generate waves and ripples across the surface
+\end{spellitemize}
+}
+
+	 \spell{
+	name = Erupting Spike, school = Transfiguration, discipline = Conjuration, type = Instant, level =Beginner, range =Close, incant = voco dens, noDur = 1, higher = An extra spike is generated for every additional spell level used to cast this spell.,noResist =1, negation = Blockable  and Dodgeable,effect =Conjure an enormous spike to transfigure itself from the surrounding walls or floor\comma{} impaling the target. A spike which lands true does 2d6 piercing damage. 
+
+Spikes can only reach up to 2m in length\comma{} and so cannot effect enemies which are more than 2m from a solid surface.
+}
+
+	 \spell{
+	name = Glowing Wand, school = Charms, discipline = Elemental, type = Focus, level =Trivial, range =Close, incant = lumos, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Causes the tip of your wand to glow like a torch. Casts bright light in a 2m radius\comma{} and dim light for another 5m.
+}
+
+	 \spell{
+	name = Hidden Ember, school = Recuperation, discipline = Warding, type = Ward, level =Trivial, range =Close, incant = anthros, duration = 5 minutes,noHigh = 1, resist = Reflex, noBlock = 1, effect =You lock a magical fire into a small arcane ward up to 1m in radius\comma{} which you place on a surface you can see within range. 
+
+The next being to touch this area activates the ward and takes 1d6 fire damage\comma{} halved on a successful Resist.
+}
+
+	 \spell{
+	name = Identify Object, school = Divination, discipline = Temporal, type = Ritual (5 minutes), level =Beginner, range =Wandtip, incant = dicemi, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =By touching your wand\minus{}tip to an object and entering into a deep trance\comma{} you may learn about the object. 
+
+You learn any magical effects the object may have been enchanted or cursed with and the uses and limitations of those effects. You also learn the purpose of the object (if unknown)\comma{} and the provenance of it. 
+
+If the object possesses a notable history\comma{} you may also learn fragments of that past.
+}
+
+	 \spell{
+	name = Locate Object, school = Divination, discipline = Temporal, type = Instant, level =Beginner, range =Self, incant = locus, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =After casting this spell\comma{} you must shout a description or the name of the object you are searching for. If you are within 1km of the object\comma{} you gain a snapshot of the object you are searching for\comma{} and the direction in which it is moving. 
+
+If you are looking for a specific object\comma{} you must be familiar with it (i.e. have seen it up close at least once). Alternatively\comma{} you may describe a class of object (i.e. a necklace)\comma{} and the spell will find the nearest such object. 
+
+This spell fails if there is no such object within range\comma{} or if the object is protected by any kind of magical ward or lock.
+}
+
+	 \spell{
+	name = Pocketwatch, school = Divination, discipline = Temporal, type = Instant, level =Trivial, range =Self, noIncant = 1, duration = 1 day,noHigh = 1, noResist =1, noBlock = 1, effect =For the duration of the spell\comma{} you are aware of the exact current time\comma{} as well as able to perfectly measure the time between any two events.
+}
+
+	 \spell{
+	name = Refine, school = Transfiguration, discipline = Alteration, type = Instant, level =Beginner, range =Close, incant = excolo, duration = 1 minute,higher = This spell effects an additional object or being \forEvery{}.
+
+When cast as an Adept level spell or higher\comma{} you may select two improvements from the list.,noResist =1, noBlock = 1, effect =Choose up to three target objects or beings that you can see within range\comma{} and make subtle minor alterations which generally improve the quality of the object at your direction.
+
+An object might lose a layer of grime\comma{} and imperfections would lessen in severity\comma{} or several dents might fix themselves. A poorly fitting hinge might become smooth and well\minus{}oiled. This spell cannot fix a broken object to restore functionality\comma{} but generally makes an object more pleasant and high\minus{}quality than it was before. When used in this fashion\comma{} the spell has no duration\comma{} and the improvements are considered permanent. 
+
+When this spell is targeted at a living being\comma{} the `improvement' instead allows you to tweak the muscles of the target to give them a burst of speed and improve their reflexes\comma{} or clear their mind to allow to improve memory and increase their motor skills. 
+
+For each targeted being\comma{} the caster chooses one of the following:
+\begin{spellitemize}
+\item Attribute checks
+\item Resist checks
+\item Accuracy checks
+\item Damage checks
+\end{spellitemize}
+
+For the duration of the refinement\comma{} whenever an effected being performs one of their selected checks\comma{} they may roll an additional 1d4 and add that result to the result of the roll.
+}
+
+	 \spell{
+	name = Remedy, school = Recuperation, discipline = Healing, type = Instant, level =Beginner, range =Wandtip, incant = enervate, noDur = 1, higher = This spell heals for an additional 1d8 damage for every additional spell level dedicated to it.,noResist =1, noBlock = 1, effect =Your wand emits healing rays which close small wounds as you pass your wand over them. Heal for 1d8 points of health.
+
+If the target has a {\it Major Injury}\comma{} cannot heal them above 25\% HP.
+}
+
+	 \spell{
+	name = Resistance, school = Recuperation, discipline = Healing, type = Instant, level =Trivial, range =Close, incant = relucto, duration = 1 minute,noHigh = 1, noResist =1, noBlock = 1, effect =You target up to 4 nearby living beings and suffuse them with the determination to look after themselves\comma{} and protect themselves from harm. 
+
+The next Resist check that is performed by each of these being (within the duration of the spell) is done with advantage.
+}
+
+	 \spell{
+	name = Stabilisation, school = Recuperation, discipline = Healing, type = Instant, level =Trivial, range =Wandtip, incant = firmum, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Stabilises the patient and replaces the \textit{Critical Condition} status with {\it Critical But Stable}.
+}
+
+	 \spell{
+	name = Tripwire, school = Maledictions, discipline = Curse, type = Instant, level =Beginner, range =Close, incant = lubricor, noDur = 1, noHigh = 1, resist = Acrobatics, noBlock = 1, effect =If the target is moving this turn cycle and fails to Resist\comma{} they go sprawling onto the ground taking 1 bludgeoning damage\comma{} and take the {\it Prone Position} status.
+}
+
+
+\end{multicols}
+}

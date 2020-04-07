@@ -1,0 +1,72 @@
+\input{spellDefinitions} 
+
+\spellDoc{Luke\apos{}s Spells}{
+{ \footnotesize 
+ \discTable{Memorised Spells}
+{
+	\spellRow{\spellEntry{Pummeling Thoughts}{\instSymb}}{\spellEntry{Halt}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\spellEntry{Resistance}{\instSymb}}{\spellEntry{Heightened Vitality}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\spellEntry{Throw Voice}{\concSymb}}{\spellEntry{Locate Object}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\emptySpell{}}{\spellEntry{Magnetising Strike}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\emptySpell{}}{\spellEntry{Remedy}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+}}
+
+\begin{multicols}{3}
+	 \spell{
+	name = Halt, school = Charms, discipline = Kinesis, type = Instant, level =Beginner, range =Close, incant = stabit, noDur = 1, noHigh = 1, resist = Speed, noBlock = 1, effect =Stop an object or being in their tracks. An inanimate object clatters to the floor and lies still. 
+
+If used on a living being\comma{} you may choose one of the following effects\comma{} which apply only on a failed resist:
+\begin{spellitemize}
+\item Target moves half their movement speed this turn\comma{} before being halted 
+\item Choose one accuracy check they make this turn cycle and cause it to fail {\it before} the check is made. 
+\end{spellitemize}
+}
+
+	 \spell{
+	name = Heightened Vitality, school = Recuperation, discipline = Healing, type = Instant, level =Beginner, range =Close, incant = levo, duration = 12 hours,higher = Gain an additional 1d6 temporary health points for every additional spell\minus{}level used to cast this spell.,noResist =1, noBlock = 1, effect =Emit a calming\comma{} healing warmth from the end of your wand to bolster the strength of your allies. Target up to 2d4 beings in range\comma{} and provide them with 5 temporary health points.
+}
+
+	 \spell{
+	name = Locate Object, school = Divination, discipline = Temporal, type = Instant, level =Beginner, range =Self, incant = locus, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =After casting this spell\comma{} you must shout a description or the name of the object you are searching for. If you are within 1km of the object\comma{} you gain a snapshot of the object you are searching for\comma{} and the direction in which it is moving. 
+
+If you are looking for a specific object\comma{} you must be familiar with it (i.e. have seen it up close at least once). Alternatively\comma{} you may describe a class of object (i.e. a necklace)\comma{} and the spell will find the nearest such object. 
+
+This spell fails if there is no such object within range\comma{} or if the object is protected by any kind of magical ward or lock.
+}
+
+	 \spell{
+	name = Magnetising Strike, school = Maledictions, discipline = Hex, type = Instant, level =Beginner, range =Close, incant = adtraho, duration = 10 seconds,higher = \additional{1d10}{Force},noResist =1, negation = Dodgeable,effect =A pulse of greyish energy streaks out towards the target. If it strikes the target they take 1d10 force damage\comma{} and become mildly magnetic. 
+
+All attacks made on them with melee weapons made of metal are at advantage for the duration of the spell..
+}
+
+	 \spell{
+	name = Pummeling Thoughts, school = Illusion, discipline = Psionics, type = Instant, level =Trivial, range =Close, incant = esekaphilos, noDur = 1, higher = \additional{1d8}{psychic},noResist =1, negation = Blockable  and Dodgeable,effect =Project your thoughts forward through your wand\comma{} into the brain of your target\comma{} causing immense confusion and mental trauma. 
+
+On a hit\comma{} the target takes 1d8 psychic damage.
+}
+
+	 \spell{
+	name = Remedy, school = Recuperation, discipline = Healing, type = Instant, level =Beginner, range =Wandtip, incant = enervate, noDur = 1, higher = This spell heals for an additional 1d8 damage for every additional spell level dedicated to it.,noResist =1, noBlock = 1, effect =Your wand emits healing rays which close small wounds as you pass your wand over them. Heal for 1d8 points of health.
+
+If the target has a {\it Major Injury}\comma{} cannot heal them above 25\% HP.
+}
+
+	 \spell{
+	name = Resistance, school = Recuperation, discipline = Healing, type = Instant, level =Trivial, range =Close, incant = relucto, duration = 1 minute,noHigh = 1, noResist =1, noBlock = 1, effect =You target up to 4 nearby living beings and suffuse them with the determination to look after themselves\comma{} and protect themselves from harm. 
+
+The next Resist check that is performed by each of these being (within the duration of the spell) is done with advantage.
+}
+
+	 \spell{
+	name = Throw Voice, school = Illusion, discipline = Bewitchment, type = Focus, level =Trivial, range =Close, incant = ventrilofors, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Cast your voice such that\comma{} when you speak\comma{} your voice appears to emanate from somewhere up to 15 metres away from your actual position.
+}
+
+
+\end{multicols}
+}

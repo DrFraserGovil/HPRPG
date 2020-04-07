@@ -6,15 +6,47 @@
 \begin{document}
 
 	%%CharBegin\character{Helena}{Halfblood Human}{Ravenclaw (3)}{?}{?}{?}{
+ \subsection{Currency}
+
+\inventory{
+	name = Galleons, 
+	amount = 0, 
+	class = Currency, 
+	description = The largest denomination of wizarding Currency. Worth 17 sickles., 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
+\inventory{
+	name = Sickles, 
+	amount = 11, 
+	class = Currency, 
+	description = The most common denomination of wizarding currency. Worth 29 Knuts., 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
+\inventory{
+	name = Knuts, 
+	amount = 24, 
+	class = Currency, 
+	description = The smallest denomination of wizarding currency., 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
  \subsection{Books}
 
 \inventory{
-	name = Book2, 
+	name = The Illusion of Thin Air, 
 	amount = 1, 
 	class = Books, 
 	hasAcquired = 1, 
 	acquired = Taken from Hogwarts Library, 
-	description = ?, 
+	description = A book containing Trivial and Beginner level Conjuration spells, 
 	hasCost = 1, 
 	purchaseCost = 0, 
 	sellValue = Worthless, 
@@ -36,6 +68,22 @@ These robes give you a +1 to all casting checks whilst you are wearing them.,
 	hasCost = 1, 
 	purchaseCost = \sickle{10}, 
 	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
+\inventory{
+	name = Padded Gear, 
+	amount = 1, 
+	class = Clothing, 
+	hasAcquired = 1, 
+	acquired = Simon\apos{}s Simple Shields, 
+	description = A set of thick\comma{} padded clothes which protect you from both the environment\comma{} and from your foes. 
+
+Fortifies your Block value by +2\comma{} reduces Dodge by \minus{}1, 
+	hasCost = 1, 
+	purchaseCost = \galleon{0.5}, 
+	sellValue = \galleon{0.5}, 
 	isOwned = 0, 
 	owners = 
 }
@@ -63,6 +111,20 @@ If you fail to Resist\comma{} or the Accuracy exceeds your augmented Block value
 }
 
  \subsection{Items}
+
+\inventory{
+	name = Food Supplies, 
+	amount = 1, 
+	class = Items, 
+	hasAcquired = 1, 
+	acquired = Flibberdegibits \& Watchemecallems, 
+	description = Enough food and supplies to keep you going for a few days, 
+	hasCost = 1, 
+	purchaseCost = \sickle{3}, 
+	sellValue = \sickle{3}, 
+	isOwned = 0, 
+	owners = 
+}
 
 \inventory{
 	name = Moobox of Teleportation, 
@@ -127,6 +189,40 @@ When tossed into the air\comma{} the powder expands an fills a sphere up to 3 me
 	isOwned = 0, 
 	owners = 
 }
+}{
+ \summaryHeader{Currency}
+
+\summaryEntry{Galleons}{0}
+
+\summaryEntry{Sickles}{11}
+
+\summaryEntry{Knuts}{24}
+
+ \summaryHeader{Books}
+
+\summaryEntry{The Illusion of Thin Air}{1}
+
+ \summaryHeader{Clothing}
+
+\summaryEntry{Hogwarts Robes}{1}
+
+\summaryEntry{Padded Gear}{1}
+
+\summaryEntry{Shield Hat}{1}
+
+ \summaryHeader{Items}
+
+\summaryEntry{Food Supplies}{1}
+
+\summaryEntry{Moobox of Teleportation}{1}
+
+\summaryEntry{Peruvian Instant Darkness Powder}{4}
+
+\summaryEntry{School Satchel}{1}
+
+ \summaryHeader{Weapons}
+
+\summaryEntry{Helena\apos{}s Wand}{1}
 }
 %%CharEnd
 

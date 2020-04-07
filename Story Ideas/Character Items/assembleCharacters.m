@@ -41,6 +41,13 @@ function assembleCharacters(fileNameRoot)
 		FID = fopen(targetName,'w');
 		fprintf(FID, fullText);
 		fclose(FID);
+        
+        sysCommand = "xelatex " + targetName;
+        system(sysCommand);
+        rms = ["aux", "log", "out"];
+        for i = 1:length(rms)
+            system("rm *." + rms(i) );
+        end
     end
     
 end

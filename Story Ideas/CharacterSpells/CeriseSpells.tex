@@ -1,0 +1,62 @@
+\input{spellDefinitions} 
+
+\spellDoc{Cerise\apos{}s Spells}{
+{ \footnotesize 
+ \discTable{Memorised Spells}
+{
+	\spellRow{\spellEntry{Glowing Wand}{\concSymb}}{\spellEntry{Distressing Omen}{\instSymb}}{\emptySpell{}}{\spellEntry{Irongrip}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\spellEntry{Insight}{\instSymb}}{\spellEntry{Eyes of the Beast}{\concSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\spellEntry{Receive Omen}{\ritSymb}}{\spellEntry{Rainbow Sparks}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\spellEntry{Unkownable Attack}{\instSymb}}{\spellEntry{Remedy}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+}}
+
+\begin{multicols}{3}
+	 \spell{
+	name = Distressing Omen, school = Divination, discipline = Temporal, type = Instant, level =Beginner, range =Close, incant = mitus, noDur = 1, higher = \additional{1d8}{psychic},resist = Logic, noBlock = 1, effect =Speak aloud an omen\comma{} layering into your voice the power of the future\comma{} to warp the mind of your opponent. Target must succeed on a Resist check or take 1d8 psychic damage.
+}
+
+	 \spell{
+	name = Eyes of the Beast, school = Divination, discipline = Telepathy, type = Focus, level =Beginner, range =Close, incant = oculi bestia, noDur = 1, noHigh = 1, resist = Willpower, noBlock = 1, effect =You may enter into the mind of a beast\comma{} if it fails to Resist (a friendly beast does not resist this spell). For the duration of the spell you may see\comma{} hear and otherwise sense exactly what the animal does. The connection to the beast remains up to a distance of 1km\comma{} before the link is broken.
+}
+
+	 \spell{
+	name = Glowing Wand, school = Charms, discipline = Elemental, type = Focus, level =Trivial, range =Close, incant = lumos, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Causes the tip of your wand to glow like a torch. Casts bright light in a 2m radius\comma{} and dim light for another 5m.
+}
+
+	 \spell{
+	name = Insight, school = Divination, discipline = Telepathy, type = Instant, level =Trivial, range =Sight, incant = sagittus, noDur = 1, noHigh = 1, resist = Deception, noBlock = 1, effect =On laying eyes upon a target sapient being\comma{} you may attempt to use your magic to learn a snippet of information about them. On a failed Resist\comma{} you learn the name of the target\comma{} the languages they speak and a short description of the target\comma{} as interpreted by their own view of themselves.
+}
+
+	 \spell{
+	name = Irongrip, school = Transfiguration, discipline = Alteration, type = Instant, level =Adept, range =Wandtip, incant = fero, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =Gives a willing target an incredibly strong grip. Gain check advantage on all grappling checks and attempts to resist disarmament.
+}
+
+	 \spell{
+	name = Rainbow Sparks, school = Maledictions, discipline = Hex, type = Instant, level =Beginner, range =Close, incant = verdimillious, noDur = 1, higher = Create an additional packet of sparks for each level above Beginner used to cast this spell.,noResist =1, negation = Blockable  and Dodgeable,effect =Shoots a packet of small sparks from your wand\comma{} which rocket from the end of your wand towards a single enemy. 
+
+You may choose the colour of the sparks from red\comma{} blue\comma{} green or yellow. The colour of the sparks reflects the damage done: fire\comma{} cold\comma{} acid and electric respectively. 
+
+Each packet does 1d12 damage of the chosen type.
+}
+
+	 \spell{
+	name = Receive Omen, school = Divination, discipline = Temporal, type = Ritual (2 minutes), level =Trivial, range =Self, noIncant = 1, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Use your tea leaves to receive an omen about the future. Ask a question about the outcome of an event. The tea leaves will tell you if the outcome is positive\comma{} negative\comma{} or neutral.
+}
+
+	 \spell{
+	name = Remedy, school = Recuperation, discipline = Healing, type = Instant, level =Beginner, range =Wandtip, incant = enervate, noDur = 1, higher = This spell heals for an additional 1d8 damage for every additional spell level dedicated to it.,noResist =1, noBlock = 1, effect =Your wand emits healing rays which close small wounds as you pass your wand over them. Heal for 1d8 points of health.
+
+If the target has a {\it Major Injury}\comma{} cannot heal them above 25\% HP.
+}
+
+	 \spell{
+	name = Unkownable Attack, school = Dark Arts, discipline = Occultism, type = Instant, level =Trivial, range =Close, incant = sidus orci, noDur = 1, higher = When cast as a Beginner\minus{}level spell\comma{} this spell deals 1d12 force damage\comma{} increasing by 1d12 \forEvery{}.,noResist =1, negation = Blockable  and Dodgeable,effect =An utterly alien and unknown force\comma{} shaped by the beings you dedicate your occult rituals to\comma{} leaps from the end of your wand and attack your foe. The force deals 1d8 force damage.
+}
+
+
+\end{multicols}
+}

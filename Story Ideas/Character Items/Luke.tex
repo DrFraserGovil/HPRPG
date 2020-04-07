@@ -6,6 +6,28 @@
 \begin{document}
 
 	%%CharBegin\character{Luke O\apos{}Callaghan}{Halfblood Human}{Hufflepuff (3)}{?}{?}{?}{
+ \subsection{Currency}
+
+\inventory{
+	name = Sickles, 
+	amount = 10, 
+	class = Currency, 
+	description = The most common denomination of wizarding currency. Worth 29 Knuts., 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
+\inventory{
+	name = Knuts, 
+	amount = 8, 
+	class = Currency, 
+	description = The smallest denomination of wizarding currency., 
+	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
  \subsection{Books}
 
 \inventory{
@@ -14,7 +36,7 @@
 	class = Books, 
 	hasAcquired = 1, 
 	acquired = Taken from Hogwarts Library, 
-	description = A book containing the Beginner\minus{}level healing spells, 
+	description = A book containing Trivial and Beginner level healing spells, 
 	hasCost = 1, 
 	purchaseCost = 0, 
 	sellValue = Worthless, 
@@ -47,6 +69,22 @@ These gloves give you advantage on all grappling checks as well as a +2 bonus on
 }
 
 \inventory{
+	name = Heavy Shield, 
+	amount = 1, 
+	class = Clothing, 
+	hasAcquired = 1, 
+	acquired = Simon\apos{}s Simple Shields, 
+	description = A very large\comma{} very heavy steel shield. 
+
+This enormous shield provides you with a +3 value to block\comma{} \minus{}1 to dodge and prevents you from using two\minus{}handed weapons., 
+	hasCost = 1, 
+	purchaseCost = \sickle{10}, 
+	sellValue = \sickle{6}, 
+	isOwned = 0, 
+	owners = 
+}
+
+\inventory{
 	name = Hogwarts Robes, 
 	amount = 1, 
 	class = Clothing, 
@@ -58,6 +96,22 @@ These robes give you a +1 to all casting checks whilst you are wearing them.,
 	hasCost = 1, 
 	purchaseCost = \sickle{10}, 
 	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
+\inventory{
+	name = Padded Gear, 
+	amount = 1, 
+	class = Clothing, 
+	hasAcquired = 1, 
+	acquired = Simon\apos{}s Simple Shields, 
+	description = A set of thick\comma{} padded clothes which protect you from both the environment\comma{} and from your foes. 
+
+Fortifies your Block value by +2\comma{} reduces Dodge by \minus{}1, 
+	hasCost = 1, 
+	purchaseCost = \galleon{0.5}, 
+	sellValue = \galleon{0.5}, 
 	isOwned = 0, 
 	owners = 
 }
@@ -96,6 +150,20 @@ If you fail to Resist\comma{} or the Accuracy exceeds your augmented Block value
 	hasCost = 1, 
 	purchaseCost = Stolen, 
 	sellValue = Worthless, 
+	isOwned = 0, 
+	owners = 
+}
+
+\inventory{
+	name = Food Supplies, 
+	amount = 1, 
+	class = Items, 
+	hasAcquired = 1, 
+	acquired = Flibberdegibits \& Watchemecallems, 
+	description = Enough food and supplies to keep you going for a few days, 
+	hasCost = 1, 
+	purchaseCost = \sickle{3}, 
+	sellValue = \sickle{3}, 
 	isOwned = 0, 
 	owners = 
 }
@@ -170,7 +238,7 @@ This wand gives +1 to casting and accuracy checks for both Healing and Warding s
 	acquired = Found in the Junk Shop, 
 	description = An enormous silver weapon\comma{} approximately 6 feet (2 metres) in length. This is an old and poorly kept blade\comma{} and silver is a very soft metal \minus{} rendering it in less than perfect condition. 
 
-This weapon does 2d6 \minus{}1 slashing damage in its current condition. 
+This weapon does 2d6 \minus{}2 slashing damage in its current condition. 
 
 Whenever you perform a strike with this weapon\comma{} roll a d10. On a 1\comma{} this weapon becomes dented and damaged\comma{} taking an additional 1\minus{}point penalty to its damage. This penalty remains until the sword is repaired., 
 	hasCost = 1, 
@@ -209,6 +277,54 @@ However\comma{} as a stone weapon\comma{} it is particularly vulnerable to shatt
 	isOwned = 0, 
 	owners = 
 }
+}{
+ \summaryHeader{Currency}
+
+\summaryEntry{Sickles}{10}
+
+\summaryEntry{Knuts}{8}
+
+ \summaryHeader{Books}
+
+\summaryEntry{Cures\comma{} Cantrips and Coughs}{1}
+
+ \summaryHeader{Clothing}
+
+\summaryEntry{Gloves of Muromets}{1}
+
+\summaryEntry{Heavy Shield}{1}
+
+\summaryEntry{Hogwarts Robes}{1}
+
+\summaryEntry{Padded Gear}{1}
+
+\summaryEntry{Shield Hat}{1}
+
+ \summaryHeader{Items}
+
+\summaryEntry{Crystal Ball}{1}
+
+\summaryEntry{Food Supplies}{1}
+
+\summaryEntry{School Satchel}{1}
+
+ \summaryHeader{Potions}
+
+\summaryEntry{Wiggenweld Potion}{3}
+
+ \summaryHeader{Tools}
+
+\summaryEntry{Alchemy Gear}{1}
+
+ \summaryHeader{Weapons}
+
+\summaryEntry{Apple and Unicorn Tail Hair Wand}{1}
+
+\summaryEntry{Blunted Silver Greatsword}{1}
+
+\summaryEntry{Dagger}{1}
+
+\summaryEntry{Stone Battleaxe}{1}
 }
 %%CharEnd
 

@@ -9,17 +9,15 @@
  \subsection{Books}
 
 \GMinventory{
-	name = Book2, 
+	name = An A\minus{}Z of Spooky Spells, 
 	amount = 0, 
 	class = Books, 
 	hasAcquired = 1, 
-	acquired = Taken from Hogwarts Library, 
-	description = ?, 
-	hasCost = 1, 
-	purchaseCost = 0, 
+	acquired = Coffin Shop, 
+	description = A book containing Trivial and Beginner level Occultism spells, 
 	sellValue = Worthless, 
 	isOwned = 1, 
-	owners = Helena: 1\\
+	owners = Cerise: 1\\
 }
 
 \GMinventory{
@@ -28,7 +26,7 @@
 	class = Books, 
 	hasAcquired = 1, 
 	acquired = Taken from Hogwarts Library, 
-	description = A book containing the Beginner\minus{}level Psionics spells, 
+	description = A book containing Trivial and Beginner level Psionics spells, 
 	hasCost = 1, 
 	purchaseCost = 0, 
 	sellValue = Worthless, 
@@ -42,7 +40,7 @@
 	class = Books, 
 	hasAcquired = 1, 
 	acquired = Taken from Hogwarts Library, 
-	description = A book containing the Beginner\minus{}level healing spells, 
+	description = A book containing Trivial and Beginner level healing spells, 
 	hasCost = 1, 
 	purchaseCost = 0, 
 	sellValue = Worthless, 
@@ -56,12 +54,26 @@
 	class = Books, 
 	hasAcquired = 1, 
 	acquired = Taken from Hogwarts Library, 
-	description = A book containing the Beginner\minus{}level Temporal Spells, 
+	description = A book containing Trivial and Beginner level Temporal Spells, 
 	hasCost = 1, 
 	purchaseCost = 0, 
 	sellValue = Worthless, 
 	isOwned = 1, 
 	owners = Cerise: 1\\
+}
+
+\GMinventory{
+	name = The Illusion of Thin Air, 
+	amount = 0, 
+	class = Books, 
+	hasAcquired = 1, 
+	acquired = Taken from Hogwarts Library, 
+	description = A book containing Trivial and Beginner level Conjuration spells, 
+	hasCost = 1, 
+	purchaseCost = 0, 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Helena: 1\\
 }
 
  \subsection{Clothing}
@@ -107,6 +119,22 @@ This bucket provides an additional +1 to the Block statistic (though not from at
 }
 
 \GMinventory{
+	name = Heavy Shield, 
+	amount = 0, 
+	class = Clothing, 
+	hasAcquired = 1, 
+	acquired = Simon\apos{}s Simple Shields, 
+	description = A very large\comma{} very heavy steel shield. 
+
+This enormous shield provides you with a +3 value to block\comma{} \minus{}1 to dodge and prevents you from using two\minus{}handed weapons., 
+	hasCost = 1, 
+	purchaseCost = \sickle{10}, 
+	sellValue = \sickle{6}, 
+	isOwned = 1, 
+	owners = Luke: 1\\
+}
+
+\GMinventory{
 	name = Hogwarts Robes, 
 	amount = 0, 
 	class = Clothing, 
@@ -118,6 +146,22 @@ These robes give you a +1 to all casting checks whilst you are wearing them.,
 	hasCost = 1, 
 	purchaseCost = \sickle{10}, 
 	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Nikc: 1\\Helena: 1\\Cerise: 1\\Luke: 1\\
+}
+
+\GMinventory{
+	name = Padded Gear, 
+	amount = 0, 
+	class = Clothing, 
+	hasAcquired = 1, 
+	acquired = Simon\apos{}s Simple Shields, 
+	description = A set of thick\comma{} padded clothes which protect you from both the environment\comma{} and from your foes. 
+
+Fortifies your Block value by +2\comma{} reduces Dodge by \minus{}1, 
+	hasCost = 1, 
+	purchaseCost = \galleon{0.5}, 
+	sellValue = \galleon{0.5}, 
 	isOwned = 1, 
 	owners = Nikc: 1\\Helena: 1\\Cerise: 1\\Luke: 1\\
 }
@@ -142,6 +186,38 @@ If you fail to Resist\comma{} or the Accuracy exceeds your augmented Block value
 	sellValue = \galleon{1}, 
 	isOwned = 1, 
 	owners = Nikc: 1\\Helena: 1\\Cerise: 1\\Luke: 1\\
+}
+
+ \subsection{Currency}
+
+\GMinventory{
+	name = Galleons, 
+	amount = 0, 
+	class = Currency, 
+	description = The largest denomination of wizarding Currency. Worth 17 sickles., 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Nikc: 6\\Helena: 0\\Cerise: 1\\
+}
+
+\GMinventory{
+	name = Knuts, 
+	amount = 0, 
+	class = Currency, 
+	description = The smallest denomination of wizarding currency., 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Nikc: 27\\Helena: 24\\Cerise: 15\\Luke: 8\\
+}
+
+\GMinventory{
+	name = Sickles, 
+	amount = 0, 
+	class = Currency, 
+	description = The most common denomination of wizarding currency. Worth 29 Knuts., 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Nikc: 2\\Helena: 11\\Cerise: 7\\Luke: 10\\
 }
 
  \subsection{Items}
@@ -179,12 +255,40 @@ This explosion is not violent enough to do physical damage to all but the weakes
 }
 
 \GMinventory{
+	name = Fine Lockpicking Tools, 
+	amount = 0, 
+	class = Items, 
+	hasAcquired = 1, 
+	acquired = Ioan\apos{}s Corpse, 
+	description = A set of arcane lockpicks\comma{} allowing you to pick both mundane and magical locks. With proficiency in these tools\comma{} can add your Expertise bonus to lockpicking checks., 
+	sellValue = \sickle{6}, 
+	isOwned = 1, 
+	owners = Nikc: 1\\
+}
+
+\GMinventory{
+	name = Food Supplies, 
+	amount = 0, 
+	class = Items, 
+	hasAcquired = 1, 
+	acquired = Flibberdegibits \& Watchemecallems, 
+	description = Enough food and supplies to keep you going for a few days, 
+	hasCost = 1, 
+	purchaseCost = \sickle{3}, 
+	sellValue = \sickle{3}, 
+	isOwned = 1, 
+	owners = Nikc: 1\\Helena: 1\\Cerise: 1\\Luke: 1\\
+}
+
+\GMinventory{
 	name = Ministry Badge, 
 	amount = 0, 
 	class = Items, 
 	hasAcquired = 1, 
 	acquired = Given by Galen Rex, 
-	description = A very official looking bade\comma{} inscribed with the ministry insignia. The badge itself fits comfortably into the palm of your hand., 
+	description = A very official looking bade\comma{} inscribed with the ministry insignia. The badge itself fits comfortably into the palm of your hand. 
+
+You discover that it also seems to function as a `passkey’\comma{} allowing you access through Ministry police lines., 
 	hasTrueDescription = 1, 
 	trueDescription = This badge doubles as a tracking and recording device\comma{} relaying all information back to the ministry., 
 	hasCost = 1, 
@@ -210,6 +314,18 @@ This object is single\minus{}use.,
 	sellValue = Worthless, 
 	isOwned = 1, 
 	owners = Helena: 1\\
+}
+
+\GMinventory{
+	name = Mysterious Note, 
+	amount = 0, 
+	class = Items, 
+	hasAcquired = 1, 
+	acquired = Ioan\apos{}s Corpse, 
+	description = A mysterious note\comma{} implicating a thief in a mysterious robbery at the Coffin Shop., 
+	sellValue = Worthless, 
+	isOwned = 1, 
+	owners = Nikc: 1\\
 }
 
 \GMinventory{
@@ -454,7 +570,7 @@ This wand gives +1 to casting and accuracy checks for both Healing and Warding s
 	acquired = Found in the Junk Shop, 
 	description = An enormous silver weapon\comma{} approximately 6 feet (2 metres) in length. This is an old and poorly kept blade\comma{} and silver is a very soft metal \minus{} rendering it in less than perfect condition. 
 
-This weapon does 2d6 \minus{}1 slashing damage in its current condition. 
+This weapon does 2d6 \minus{}2 slashing damage in its current condition. 
 
 Whenever you perform a strike with this weapon\comma{} roll a d10. On a 1\comma{} this weapon becomes dented and damaged\comma{} taking an additional 1\minus{}point penalty to its damage. This penalty remains until the sword is repaired., 
 	hasCost = 1, 

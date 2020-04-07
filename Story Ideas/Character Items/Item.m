@@ -2,6 +2,8 @@ classdef Item < handle
 
     properties
         Name
+        SortName
+        SortClass
         Amount
         Class
         Description
@@ -19,7 +21,25 @@ classdef Item < handle
     methods
         function obj = Item(tableLine,amount)
             obj.Name = string(tableLine.Name{1});
+            
+            
+            
             obj.Class = string(tableLine.Class{1});
+            
+            obj.SortClass = obj.Class;
+            obj.SortName = obj.Name;
+            if obj.Class == "Currency"
+                obj.SortClass = "AAAAAA";
+                
+                if obj.Name == "Galleons"
+                    obj.SortName = "a";
+                elseif obj.Name == "Sickles"
+                    obj.SortName = "b";
+                elseif obj.Name == "Knuts"
+                    obj.SortName = "c";
+                end
+            end
+            
             obj.Description = tableLine.Description{1};
             obj.Acquired = tableLine.Acquired{1};
             obj.hasAcquired = true;

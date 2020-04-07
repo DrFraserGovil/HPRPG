@@ -238,6 +238,47 @@ Gain an additional #1 #2 damage \forEvery{}.
 
 
 
+\def\s{0.22}
+\def\w{1.7}
+
+\newcommand\spellEntry[2]
+{
+	#1	&	#2
+}
+\def\emptySpell{ \spellEntry{~}{~}}
+\newcommand\spellHeader[1]
+{
+	\multicolumn{2}{c}{\cellcolor{\tablecolorhead} \bf #1}
+}
+\def\headers
+{
+	\spellHeader{Trivial}	&	\spellHeader{Beginner}	&	\spellHeader{Novice}	&	\spellHeader{Adept}	&	\spellHeader{Expert}	&	\spellHeader{Master}	&	\spellHeader{Ascendant} \\
+}
+\newcommand\spellRow[7]
+{
+	#1	&	#2	&	#3	&	#4	&	#5	&	#6	&	#7 \\
+}
+
+\newcommand\discTable[2]
+{
+	\begin{rndtable}{@{} >{\centering\arraybackslash}m{\w cm} c >{\centering\arraybackslash}m{\w cm} c >{\centering\arraybackslash}m{\w cm} c >{\centering\arraybackslash}m{\w cm} c >{\centering\arraybackslash}m{\w cm} c >{\centering\arraybackslash}m{\w cm} c >{\centering\arraybackslash}m{\w cm} c @{}}
+	\multicolumn{14}{c}{\bf \normalsize #1} \\
+	\headers{}
+	#2
+	\end{rndtable}
+
+
+}
+
+
+\newcommand\schoolTables[2]
+{
+	{
+	\scriptsize
+	\subsection{#1}
+	#2
+	}
+}
 
 
 \def\instSymb{\faMagic}
