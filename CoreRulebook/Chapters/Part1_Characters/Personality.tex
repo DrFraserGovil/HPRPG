@@ -1,0 +1,159 @@
+%% DEFINITIONS
+\newcommand\gapText[1]
+{
+	~~~~~\parbox[t]{5.8 cm}{\raggedright #1}
+}
+
+\newcommand\persEntry[2]
+{
+	{\bf #1} & \gapText{#2} \\
+}
+\newcommand\personality[6]
+{
+	%\vbox
+	{
+	\subsubsection{\key{ #1}}
+	
+	#2
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{r l }
+	
+	\persEntry{Bonuses}{#3}
+	
+	\persEntry{Assets \& Flaws}{You draw strength from #4, though your #5 often leads you into trouble. }
+	
+	\persEntry{Nourishment}{You regain Fortitude whenever you #6.}
+	\end{tabular}
+	}
+}
+
+
+%% CHAPTER BEGIN
+\chapter{Personalities}\label{C:Personality}
+
+A character's personality is the very core of their being: it determines who they truly are, what they view as important and nourishing and how they approach a problem. It also defines any key strengths or weaknesses that a character has, which can be used as interesting jumping-off points for role-playing within the game. 
+
+Most importantly, the Personality that you have defines what actions and conditions you need in order to rid yourself of unwanted stress and anguish, and hence to recover {\it Fortitude}. Each Personality also provides two additional capability dots to assign. 
+
+For those characters who find themselves at Hogwarts School of Witchcraft and Wizardry, they are {\it Sorted} into houses based on these shared key personality traits, and so many of the core Personality types can be found in one of those houses. Under all but the most exceptional circumstances, possessing one of these personality types will cause the Sorting Hat to place you into the associated House when you arrive at Hogwarts. 
+
+\section{Gryffindor House}
+
+\begin{displayquote}
+	\it You might belong in Gryffindor,
+	\\
+	Where dwell the brave at heart,
+	\\
+	Their daring, nerve, and chivalry
+	\\
+	Set Gryffindors apart
+\end{displayquote}
+
+Gryffindor House honours the ideals laid down by their Founder, Godric Gryffindor: Valour, Cameraderie, Bravery, and the willingness to do what is right, no matter the personal cost. They are also typically associated with those who rebel against authority. 
+
+Every Personality associated with Gryffindor provides an additional dot to the \key{Bravery} Ability, representing their unrelenting will.
+
+\personality{Champion}{As a Champion, you have a strong vision of Right and Wrong, and are willing to go out of your way to defend those values. You defend the weak from violence, the virtuous from corruption, and the inoccent from injustice. }{Gain one dot in \key{Bravery}, and one dot in \key{Conviction}}{your \key{Sacrifices}, giving others a chance to succeed whilst risking yourself}{\key{Inflexibility} }{give up an opportunity, or risk yourself, in order to help another}
+
+\newpage
+\personality{Rebel}{A rebel hates being told what to do. As a rebel you attempt to forge your own path, ignoring and defying those who would attempt to control you. You prize chaos not just for its own sake, but because you believe that destroying the Old Ways is the only way to move on.}{Gain one dot in \key{Bravery}, and one in \key{Willpower}}{your \key{Distinctivness} and Individuality, knowing that you are your own person}{\key{Lack of Respect}}{defy authority in some meaningful fashion}
+
+\personality{Sportsman}{You prize physical achievement, the testing of the limits of your capabilities against others, but also against what you know you are capable of. You love the fellowship of working with a team, and the thrill of victory.}{Gain one dot in \key{Bravery}, and one in \key{Fitness} }{your \key{Teamwork}, working with others to exceed your individual strength}{\key{Overconfidence}}{work with your allies to push yourself beyond your normal limits} 
+
+\personality{Trickster}{A trickster takes a simple joy in subverting expectations and doing what is not expected. You have the ability to find joy and inspire chuckles in every aspect of life, even when in the most dire of situations - it is a rare individual who can genuinely laugh in the face of certain doom, but you somehow manage it}{Gain one dot in \key{Bravery} and on in \key{Covert}}{your \key{Joy} in everyday life and ability to find inspiration in the mundane}{\key{Excession}, not knowing when enough is enough,}{perform a prank, or elicit a laugh from one of your allies}
+
+
+
+
+\section{Hufflepuff House}
+
+\begin{displayquote}
+\it You might belong in Hufflepuff,
+\\
+Where they are just and loyal,
+\\
+Those patient Hufflepuffs are true,
+\\
+And unafraid of toil.
+\end{displayquote}
+
+Though often seen as the laughing stock of the Hogwarts Houses, Helga Hufflepuff founded this house to forward the ideas of Kindness, Loyalty, Friendship and Diligence. Though not always the most powerful mages, or the highest academic achievers, a Hufflepuff student is a valued ally, and a more valued friend. 
+
+All personalities associated with Hufflepuff provides an additional dot in \key{Kindness}, representing their warm hearts.
+
+\personality{Adjudicator}{You often find yourself at the confluence of arguments and discussions, being asked to make a decision, or cast a deciding vote. Your allies, and sometimes even your enemies, trust you in your judgments, and value your advice.}{Gain one dot in \key{Kindness} and one in \key{Logic} }{your \key{Honesty} when it comes to making a decision, you weigh arguments based on their own merits, and will tell your friends when they are wrong}{\key{Stubbornness}}{resolve a dispute or disagreement without things getting out of hand}
+
+\personality{Caregiver}{You are dedicated to the wellfare of others, and devote your efforts to helping your allies in any way you can. You are always there to lend a hand and provide a shoulder to cry on.}{Gain one dot in \key{Kindness} and one in \key{Insight} }{your \key{Compassion} and willingness to share}{tendency to become \key{Overprotective}}{protect another, or nurture them and help them through life}
+\vfill 
+\personality{Idealist}{You have a vision of a better world, and you are dedicated to bringing it about. You know that your ideas might be unrealistic, but you also know that a journey of a thousand miles begins with a single step: there is no excuse to not at least {\it try} and build a better world.}{Gain one dot in \key{Kindness} and one in \key{Willpower}}{your \key{Imagination}, unbound by what the world {\it is}, you see it as it {\it could be}}{\key{Naivety}}{live out your ideal in some significant way, or convince another to do the same}
+
+\personality{Labourer}{You are not the smartest, the fastest, or the most charming - yet you are by far the most hard working. What comes easily to others, you must work long hours to achieve, and yet you do not complain, working with a single minded stamina and endurance that would break all others. When you set your mind on a task, you will work yourself to the bone in order to achieve your goal.}{Gain one dot in \key{Kindness} and one in \key{Vitality}}{\key{Perseverance}, the willingness to just keep on going, no matter what}{\key{Inflexibility}, and inability to see when enough is enough}{complete a difficult task through perseverance and force of will}
+
+\newpage
+\section{Ravenclaw House}
+
+\begin{displayquote}
+\it Or yet in wise old Ravenclaw,
+\\
+If you've a ready mind,
+\\
+Where those of wit and learning,
+\\
+Will always find their kind.
+\end{displayquote}
+Ravenclaw is the house that prizes knowledge and an inquisitive mind above all other traits, following the lead of the studious Rowena Ravenclaw. Members of this house prize learning and academic achievement above all others, though this can also lead them to be seen as suck-ups to those in power. 
+
+All Personalities associated with Ravenclaw House gain an additional point in \key{Intelligence}, representing their studious nature.
+
+\personality{Educator}{You take joy from helping others to learn and understand what you know, walking them through difficult steps and helping them achieve their goals. You enjoy spreading wisdom and ensuring that others are well informed, not to show off, but because you wish others to experience the same joy of knowing as you do.}{Gain one dot in \key{Intelligence} and another in \key{Eloquence}}{your \key{Patience} in helping even the most difficult students to achieve their goals}{tendency to come across as \key{Patronising}}{you see someone benefit in some discernable way from the knowledge or skills you have imparted to them}
+
+\personality{Geek}{You love to learn, plain and simple. You absorb knowledge like there is no tomorrow, even beyond a typical Ravenclaw. You have a deep, burning passion for certain topics and you can get lost for days attempting to learn all there is to know. A fountain of knowledge in every respect.}{Gain one dot in \key{Intelligence} and one dot in a \key{Knowledge} field of your choice}{your \key{Passion} for certain topics, and a desire to know all their is to know}{occasional \key{Obsession} can take this too far and}{learn something new about one of your areas of interest}
+
+\personality{Perfectionist}{Great is never quite good enough for you - you always need things to be {\it exactly} right. You accept nothing less than absolute perfection in everything you do, working on a project until it is exactly, perfectly the way you want it. }{Gain one point in \key{Intelligence} and one in \key{Precision} }{\key{Attention to Detail}, knowing that everything you did is perfect}{\key{Fear of Failure}}{complete a significant accomplishment without a single flaw}
+
+\personality{Prodigy}{You are a singularly gifted individual in a certain extremely narrow field of study, with natural abilities surpassing even those of trained experts. You have built a life around these abilities and dedicate much of your time to becoming even better. }{Gain one point in \key{Intelligence} and one in a field related to your prodigy field, such as \key{Logic} (chess, maths), \key{Performance} (music) or \key{Craft} (art)}{\key{Excellence}, being the best, even in a narrow field, gives you something to work for}{\key{Disdain} for those less skilled thain you}{are able to display your prodigious abilities to an admiring audience}
+
+\newpage
+
+\section{Slytherin House}
+
+\begin{displayquote}
+\it Or perhaps in Slytherin,
+\\
+You{\apos}ll make your real friends,
+\\
+Those cunning folk use any means,
+\\
+To achieve their ends.
+\end{displayquote}
+
+Slytherin as a house has had an unfortunate past, not helped by Salazar Slytherin's obsession with blood-purity, and the ascendancy of the Slytherin-obsessed Lord Voldemort. However, evil and racism are not the ideals presented by Slytherin house: rather, they prize and cultivate people with ambition, charm and with lofty goals, those driven make a name for themselves and achieve greatness.
+
+Every personality associated with Slytherin House gains an additional point in \key{Eloquence}, representing their charismatic nature. 
+
+\personality{Aspirant}{You are a highly driven and motivated person, who knows exactly what they want to achieve in life: make a name for yourself. You want to be revered as the greatest in your field, and for your name to live on throughout history.}{Gain one point in \key{Eloquence} and one in a field associated with your end goal, such as \key{Imbue} (Master Craftsman), \key{Pilot} (Professional Quidditch player) and so on}{your single-minded \key{purpose}, which drives every action you take}{\key{hubris} and inability to see when you are hurting others}{are able to do, create or display something which will last the test of time, and make a name for yourself.}
+
+
+\personality{Leader}{You are a natural born leader, desiring order and cohesion in your social groups - especially that directed by yourself. You ooze natural charisma and charm, and can convince even the most stubborn of your allies (and even enemits) that you are correct. }{Gain one dot in \key{Eloquence} and one in \key{Charm} }{your \key{Confidence} and ability to inspire}{\key{Intolerance} of those who do not listen to your ideas}{when you guide a group to follow a plan to complete a task}
+
+\personality{Peacock}{You believe that the greatest act of appreciation is to be {\it noticed}, so you do everything you can to break the mold and become a person of note. You are flamboyant, expressive and artistic in every way breaking down the boundaries of what is acceptable.}{Gain one dot in \key{Eloquence} and one in \key{Craft}}{your \key{Artistry}, both in the things you create and the way you live your life}{your \key{Hedonism} and lust for attention}{become the centre of attention through some great or outrageous action.}
+
+\personality{Schemer}{You are always planning something, a scheme or side hustle. You have plans upon plans, and contingencies upon that. Your ambition in life is to never be caught by surprise - you know all kinds of people who can help you get exactly what you need, even if that's sometimes on the shady side. You are always looking out for the next big score - or anything that could disrupt your plans.}{Gain one dot in \key{Eloquence} and one in \key{Alertness}}{your \key{Forsight} and ability to plan for even the most unexpected event}{\key{Selfishness}}{hatch and execute a plan, scheme or con}
+
+
+\newpage
+
+\section{Other Personalities}
+
+There are many other people in the world, and not all of them fit into the 4-House scheme set at Hogwarts, some of these are listed below. 
+
+\personality{Atrocity}{You are a corrupted, evil soul who takes delight in spreading chaos and inflicting pain. You view kindness as a weakness and honour as a fools crutch. Sensible people run from you, and those who don'stay soon learn the error of their ways.}{Gain one dot in \key{Willpower} and \key{Conviction}}{your \key{Power}, craving more of it to fuel your atrocities}{\key{Lack of Restraint}}{you inflict some unspeakably terrible act on a victim}
+
+\personality{Acolyte}{You follow a higher power, dedicating your entire life into their service. Perhaps you devote yourself to a god or gods, a demonic or angelic presence or even simply a supremely powerful human, their will is your command.}{Gain one dot in \key{Conviction} and another dot in a field associated with the being you have dedicated yourself to serve.}{your \key{Dedication} to a greater cause}{single minded \key{Fanatacism}}{you perform a significant act in service of your master}
+
+\personality{Innocent}{You are unaware of the cruelty of the world, either because of your young age, or because of a lack of experience. You take a naive view of the world, not completely understanding what is going on, though often your lack of experience and prior misconceptions paves the way for startling insight. }{You gain one dot in \key{Kindness} and \key{Insight} }{your \key{Purity} of spirit, uncorrupted by the evil forces of the world, you are a beacon of innocence}{\key{Immaturity}}{you feel loved, cared for and protected}
+
+
+\personality{Loner}{You don't relate well to other people, preferring to isolate yourself and work alone. You're most comfortable sitting in silence, and find dealing with others a difficult job. You have survived this far without the help of others, why start now?}{Gain one dot in \key{Willpower} and one in \key{Alertness} }{your \key{Self-Reliance} and ability to survive}{\key{Social Ineptitude}}{solve a problem or complete a difficult action without the help of others.}
+
+\personality{Preserver}{You believe that the old ways of doing things exist for a reason, and that they should be protected. You are wary of sudden changes and view them with scepticism. You are not against all change, but you think that the traditional methods deserve respect and change should only be implemented for a good reason.}{Gain one dot in \key{Conviction} and one in \key{History} }{your \key{Connection to the Past}}{\key{Inflexibility}}{preserve the status quo by using traditional methods, or convincing others to do the same.}
