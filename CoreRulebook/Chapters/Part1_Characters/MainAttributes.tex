@@ -1,103 +1,261 @@
+%% DEFINITIONS
 
-\chapter{Main Attributes}\label{C:Attributes}
-
-Attributes are the defining characteristics of your character. They enumerate how strong willed, how athletic and how popular your character is. These characteristics in turn define how good your character is at certain skills -- a character with a large willpower, for instance, will be good at combat magic, whilst a character with a low \attPhys{} would find themselves unable to run away from threats!
-
-\newcommand\attLine[3]
+\newcommand\abilityRow[2]
 {
-	#1	(#2):	& \parbox[t]{6 cm}{#3} \\~\\
+	\imp{#1} & \parbox[t]{6.8 cm}{\raggedright #2} \\
 }
 
-\begin{tabular}{r l}
-
-	\attLine{\attPhys{}}{\attPhysShort{}}{ The measure of the physical capabilities of a character, as well as their general health. }
-
-	\attLine{ \attFin{}}{\attFinShort{}}{A being's ability to execute actions with delicacy and precision. Picking pockets, hiding and ranged attacks require finesse to execute properly. }
-
-	\attLine{\attSpr{}} {\attSprShort{}} {The internal strength, bravery and conviction of a being. Typically considered the defining characteristic of Gryffindor House. }
-   
-   \attLine{\attChr{}} {\attChrShort{}} {The ability of a leader, and those who influence others. A trait typically associated with Slytherin House.}
-   
-   \attLine{\attInt{} }{\attIntShort{}}{ A measure of analytical ability, memory and ability to assimilate new information. Typically considered the defining trait of Ravenclaw House.}
-   
-    \attLine{\attPer{}}{\attPerShort{}}{ Awareness of the world outside a being's own head -- spotting a hidden tripwire, or the detection of other's emotions. Often going hand in hand with a kind and compassionate soul, perception is considered the defining trait of Hufflepuff House. }
-   
-   \attLine{\attPow{}} {\attPowShort{}}{ The amount of raw magical power a being can wield. Not always a substitute for slyness and inventiveness, however. }
-
-   \attLine{ \attEvl{}} {\attEvlShort{}}{ A measure of a being's depravity, its lack of care for human life. A being with a high Evil stat is one to be feared. }
-   
-\end{tabular}
-	
-In addition to these 8 high-level attributes, there exist a number of specialised domains within most of them. These are known as {\it Proficiencies}. These, along with a more in-depth discussion of the actions associated with each of the attributes, are discussed in more detail on page \pageref{S:Proficiencies}.
+\newcommand\abilityTable[1]
+{
+	\small
+	\begin{center}
+		\begin{rndtable}{r l}
+		\bf Ability	& \bf Description \\
+		#1
+		\end{rndtable}
+	\end{center}
+}
+\def\cc{\cellcolor{\tablecolorhead}\bf}
+\newcommand\fourRow[4]{{\cc \bf \key{#1}}	&	\imp{#2}	&	\imp{#3}	&	\imp{#4} \\}
 
 
- \subsection*{Determining Abilities}
+%% BEGIN CHAPTER
+
+\chapter{Capabilities}\label{C:Aspects}
+
+A character's ability to function in the world is defined by their capabilities across a wide number of areas. These capabilities are split into 3 categories: \key{Aspects}, \key{Abilities} and \key{Affinities}. 
+
+This section deals with the first two of these. \key{Affinities} are discussed in detail in the Magic section starting on page \pageref{C:Magic}.
+
+\section{Capability Dots}
+
+Each one of the 9 Aspects and myriad Abilities and Affinities represents a way for a character to interact with the world. How {\it well} they can do so depends on their competence in that field. 
+
+To this end, each and every one of the Aspects and Affinities is represented by between 0 and 7 `dots'. Each dot represents a 12-sided dice that can be rolled when that capability is used. 
+
+Zero dots means that you are absolutely useless in the field, totally untrained and with no idea what you are doing. Five dots, on the other hand, represents the peak of human achievement: perhaps a dozen people in the entire world have 7 dots in a given area. Almost everyone finds themselves somewhere in the region of 1-4. 
+
+A character can never gain more than 5 dots as part of their normal life, however magic is a crazy and fickle thing: once in a blue moon you may temporarily find yourself with more than 7 dice allocated to a given capability as the result of a spell. This is a rare and wondrous event. Maybe you should sing a song. 
+
+You have already been granted dots in certain fields by your species and your Archetype: you also get to allocate a larger number of additional points, as described in this chapter. 
+
+Do not fret if there are gaps in your abilities, as your character will continue to grow and improve as the game progresses. 
+
+\section{Aspects}
+
+Aspects are the fundamental characteristics of a character: every action that is performed finds one of the 9 Aspects at its root.
+
+\subsection{Aspects Classification}
+
+There are nine core Aspects: Fitness, Precision, Vitality, Charm, Deception, Insight, Intelligence, Willpower and Perception. Each of these aspects is classified in two ways, once by the Aspect's \key{Type} and then by the Aspect's \key{Method}. 
+
+~
+
+\vbox{
+	The Type determines which of three key attributes of a character is being used:
+	\begin{itemize}[itemsep = 0em]
+		\keyItem{Physical}{The capacity to use your body to interact with the material world.}
+		\keyItem{Social}{The capacity to interact and understand others.}
+		\keyItem{Mental}{The capacity to use your mind and process information.}
+	\end{itemize}
+}
+
+\vbox{
+	The Method determines how that ability is used:
+	\begin{itemize}[itemsep = 0em]
+		\keyItem{Project}{The capacity to use the {Type} to its maximum possible level, pushing and striving for great effects.}
+		\keyItem{Manipulate}{The capacity to use the {Type} in a careful and refined fashion, to maintain control of the situation.}
+		\keyItem{Absorb}{The capacity to resist or take in the {Type}.}
+	\end{itemize}
+}
+
+The 9 aspects therefore lie on a 3x3 grid:
+
+\begin{center}
+	\begin{rndtable}{r c c c}
+		\fourRow{~}{\key{Physical}}{\key{ Social}}{\key{ Mental}}
+		\fourRow{Project}{Fitness}{Charm}{Intelligence}
+		\fourRow{Manipulate}{Precision}{Deception}{Willpower}
+		\fourRow{Absorb}{Vitality}{Insight}{Perception}
+	\end{rndtable}
+\end{center}
+
+\subsection{Aspect Descriptions}
+
+Each aspect is, obviously, useful in different circumstances. Below you will find a brief summary of when you might be expected to use each of these aspects.
+
+\subsubsection{Fitness}
+
+\key{Fitness} is the base aspect for any action which requires a character to exert themselves physically: to run and jump, or to lift heavy objects. It is also used in combat whenever using a weapon which relies on speed or strength in order to do damage.
+
+
+\subsubsection{Precision}
+
+\key{Precision} is the base aspect for any action in which accuracy and a steady hand is key: picking locks, painting a glorious fresco or even casting an intricate enchantment. Precision is also important for its use in aiming ranged weapons such as firearms, and can also be used to dive out of the way of an attack at the last minute. 
+
+
+\subsubsection{Vitality}
+
+\key{Vitality} is the base aspect for any action taken whilst under extreme physical stress, or in which the health of a character is called into question. As a measure of the character's general health levels, Vitality therefore represents their ability to stave off physical and medical impediements. 
+
+
+\subsubsection{Charm} 
+
+Any social interaction which requires persasion, charisma and vivacity to try and convince another to part with something will use \key{Charm} as its base aspect.  Casting magic spells which require an appeal to some other, higher power will also find Charm to be a valuable source of magical strength. 
+
+
+\subsubsection{Deception}
+
+When subterfuge and trickery are called for, look no further than \key{Deception}. Lies, half-truths, as well as the ability to convincingly embody another character fall into the domain of {Deception}. Some magic, such as illusions, require the caster to mislead their foes and so often use Deception as their basis. 
+
+
+\subsubsection{Insight}
+
+\key{Insight} is called for as a base aspect whenever a character is trying to ascertain the true meaning behind another character's words or actions. It represents the emotional intelligence of a character. 
+
+
+\subsubsection{Intelligence}
+
+Whenever sheer mental processing power is needed, \key{Intelligence} is appropriate. Particularly complex tasks - including certain spells - are well suited to an Intelligence check.
+
+\subsubsection{Willpower}
+
+\key{Willpower} is the ability to manipulate your own mind, as well as the ability to project change onto others. Measuring both a level of stubborness, as well as a zen-like mastery over fear. Whenever sheer force of will is needed, Willpower will work as a great aspect. 
+
+
+
+\subsubsection{Perception}
+
+The ability to absorb information, through all 5 senses is governed by \key{Perception}. Perception is vital in the race to defeat foes, else a character risks being ambushed. Perception can also be used whenever great attention to detail is needed, allowing the detection of even the tiniest flaw.  
+
+
+\subsection{Assigning Aspects}
+
+Every character starts off with a baseline of a 1-dot rating in each of the 9 Aspects, and you must then decide which areas they are skilled in. When creating a character, you need to have a clear idea of their role in the story: their personality and basic abilities. This will stem naturally from their backstory and origins, so you should spend time thinking about who your character is, before diving into the numbers. 
+
+Upon making this decision, you then rank the 3 Aspect Types (Physical, Social \& Mental) in order of importance to the character. Into the most Important Type, you may distribute 7 dots. The secondary type gets 5 dots to allocate, and the least important type gets only three dots. 
+
+\begin{center}
+	\small
+	\begin{rndtable}{c c}
+	Ranking &  Allocated Dots \\
+	Highest & 7
+	\\
+	Middle 	&	5
+	\\
+	Lowest & 3
+	\end{rndtable}
+\end{center}
+
+During this stage, you may not allocate more than 3 additional dots to a single Aspect, though you may end up with more than this limiting number of dots in a field if you benefit from some a racial or Archetype bonus. 
+
+
+
+\section{Abilities}
+
+Although your \key{Aspects} inform the broad approach used to complete an action, it is your \key{Abilities} which determine exactly how you will go about doing so, narrowing down the specific kind of skills you will be using. 
+
+Each of the 30 aspects is classified as either being \key{Innate}, \key{Practical} or \key{Learned}. These differ in how the skills are acquired and used, with the primary mechanical difference being how a `zero-dot' rating is treated in each field. 
+
+For an Innate ability, having no experience is no barrier to attempting an action as the actions represent natural extensions of your Aspects. Practical abilities, however, you may still attempt an action without training, but the action is much more difficult as you lack any proper training into how to undertake the action. For an action relying on a knowledge ability, having no training makes using the action impossible in all but the rarest of circumstances.
+
+The sections below elaborate on each of these skills, along with a brief summary of each ability. A full description of each ability can be found in Part \ref{C:Actions}.
+
+
+\subsection{Innate}
+
+An \key{Innate} ability is one which represents some aspect of a character's intrinsic social, mental or physical abilities, differing from the fundamental Aspects by their specificity to a single task. Though many people are born being particularly good in one or more of these areas (hence `innate'), they are still areas that can be worked on and improved. 
+
+As these mostly represent extensions of you fundamental aspects to individual fields, having 0 dots in an Innate ability is not a barrier to attempting the activity, though you must rely wholly on your base Aspect to complete the task. 
+
+\abilityTable
+{
+	\abilityRow{Alertness}{Rapidly detect and identify threats and miniscule clues.}
+	\abilityRow{Bravery}{Defy worry and terror and stare down foes much stronger than yourself}
+	\abilityRow{Conviction}{Understand your own reality, and the moral and intellectual positions you hold dear.}
+	\abilityRow{Eloquence}{Express yourself appropriately for the situation at hand}
+	\abilityRow{Intimidation}{Inflict terror into the hearts of your foes.}
+	\abilityRow{Kindness}{Show your gentle side, making others feel loved and safe.}
+	\abilityRow{Kinship}{Befriend and control animals}
+	\abilityRow{Logic}{Solve puzzles, spot clever solutions and use reason to solve your problems.}
+	\abilityRow{Speed}{Get from A to B as quickly as possible}
+	\abilityRow{Strength}{Exert physical force to lift and move heavy objects and beings}
+}
+
+
+\newpage
+\subsection{Practical}
+
+A \key{Practical} ability is one which you have learned through hands-on experience, laborious training and practice. Though they rely on an Aspect to direct the task, they are separate from your intrinsic abbilities and often requires some special tool or equipment to complete. 
+
+Generally, anyone can attempt to perform a practical action, even if they have no training (0 dots), relying instead on their instinctive Aspects to get a lucky break. However, the DV of the associated action is increased by 2, to reflect the complete lack of training. 
  
-Perhaps the most important part of Character Creation is determining the attributes of your character. This is done by rolling a 2d6+2 ten times. This gives you 10 numbers between 4 and 14. You may then allocate 7 of these numbers to your non-EVL attributes at will. EVL defaults to zero at character creation. 
- 
-Generally speaking, you will want to allocate the largest of these values to the attributes which your character will rely on the most -- so a powerful magical warrior will get the largest values allotted to SPR and POW, whilst a seer would get larger values dedicated to PER. 
- 
+\abilityTable
+{
+	\abilityRow{Acrobatics}{Leap, flip, tumble and contort yourself}
+	\abilityRow{Brawl}{Punch, kick, bite and otherwise wrestle your way to dominance}
+	\abilityRow{Covert}{Use stealth and slight of hand to move and act without being spotted}
+	\abilityRow{Craft}{Tinker with devices, form armour and produce masterful artwork}
+	\abilityRow{Imbue}{Perform delicate acts of magical creation, mixing potions or enchanting items}
+	\abilityRow{Marksmanship}{Hit your target, either throwing objects, or using firearms}
+	\abilityRow{Performance}{Embody another character, either as a disuise or for theatrical purposes}
+	\abilityRow{Pilot}{Effectively handle and drive vehicles such as cars and broomsticks.}
+	\abilityRow{Skirmish}{Use blades, axes and other close-combat weapons effectively} 
+	\abilityRow{Survival}{Survive in the hostile environment of the wild}
+}
 
- \section{Health \& Fortitude}
- 
- Having determined your character's baseline attributes, we may now begin to see how this affects values relevant to gameplay -- namely, the Health and Fortitue of your character.
- 
- \subsection*{Health}
- 
-Health is the physical status of your character: attacking a character lowers their health, and when the health points (HP) of a character reach zero, that character tacquires the {\it Critical Condition} status. If this is not rectified quickly, the character will quickly perish. 
+\subsection{Knowledge}
 
-There are three statistics associated with your Health: your {\it Current Health}, your {\it Maximum Health} and {\it Temporary Health}. 
+A \key{Knowledge} ability is one which has been learned through intensive study, attending classes and days spent in the library. A knowledge ability can be used either to recall information, or to weave that information into another action. 
 
-The current health is enumerated through your Health Points (also known as Hit Points), this is a number between 0 and (usually) your Maximum Health statistic, which is the maximum amount of health and vitality that a being intrinsically possesses. You lose HP when you take damage, and regain it when you heal, either naturally or through magical or mundane medicine. 
-
-You may also occasionally encounter effects which give temporary boosts to your maximum health, which is sorted into {\it Temporary Health}. Your HP may only ever exceed your Maximum Health when you are under the effect of such an effect.
-Your HP is therefore always limited to be between 0 and the sum of your maximum health and your temporary health. 
-
-If an effect which provides you with temporary health wears off whilst your HP exceeds your maximum health, you must reduce your HP to satisfy the current HP ceiling. However, with most effects, if your HP is below the ceiling, then you do not alter your HP when your ceiling falls. 
-
-Your maximum health points are determined by your character archetype - each archetype gives a starting max HP, and then an amount by which to increase it each level. In addition, if you possess the {\it Vitality} proficiency, your health increases more rapidly by giving you check-advantage on HP-increasing rolls.
-
-\subsection*{Fortitude}
-
-Fortitude is a character{\apos}s ability to concentrate, which is necessary to cast spells and other feats or great mental prowess. Such actions take effort, and a character{\apos}s fortitude points (FP) will be slowly eroded by engaging in such mental effort.  
-
-When your FP reaches zero, your mind is exhausted, and so you will no longer be able to engage in such complex actions. Some effects which previously effected only your Fortitude will begin to effect your health
-
-As with health, you have three statistics associated with fortitude: {\it Current Fortitude}, {\it Maximum Fortitude}, {\it Temporary Fortitude}. These follow the same rules as their Health counterparts. 
-
-The Maximum Fortitude is, as with HP, grown in conjunction with your Archetype. If you possess the {\it Logic} proficiency, your mind can be trained me easily, giving you check-advantage on FP-increasing rolls.
-
-
-\section{Other Statistics}
-
-In addition to your HP and FP, there are a number of other statistics that impact your character and control how they interact with the world. 
-
-These statistic include:
-\begin{itemize}
-	\item {\bf Base Speed} 
+It is generally impossible to use a knowledge action in which a character has zero experience: if the knowledge is not there, it cannot be used. There may be cases where you can appeal to some lower-level knowledge to try an Aspect-Only roll, but this is entirely at the discretion of the GM.
 	
-	This is determined by your choice of species and the {\it Mobile} skill. Determines how fast you move in combat
-	
-	\item {\bf Proficiencies}
-	
-	In addition to the proficiencies mention above, you also may want to keep track of the weapons and tools you are considered proficient in. 
-	
-	\item {\bf Block}
-	
-	One of two {\it Instincts} used to set the DV of accuracy checks. Value set to 10 + \attPhys{} modifier.
-	
-	\item {\bf Dodge}
-	
-	The other {\it Instinct}. Value is 10 + \attFin{} modifier.
-	
-	\item {\bf Spellcasting Bonuses}
-	
-	Wizards have different abilities in each of the schools of magic, and their associated Disciplines. You need to keep track of your abilities in this field. 
-	
-	\item {\bf Spell Power}
-	
-	Determines the DV of resist checks for spells that you cast. Value is 8 + Expertise bonus + POW modifier. 
-\end{itemize}
+\abilityTable
+{
+	\abilityRow{Arcane}{Understand the effects and abilities of magic and other supernatural phenomena}
+	\abilityRow{General}{Small amounts of aggregate knowledge on a variety of topics}
+	\abilityRow{History}{Recall prominant names, places and events throughout history}
+	\abilityRow{Investigation}{Meta-knowledge: you know how to learn and uncover new information, by closely inspecting both books and the physical world}
+	\abilityRow{Medicine}{Understand the functioning of the humanoid body, and how to heal its ailments.}
+	\abilityRow{Nature}{Familiarity with the behaviour and life cycle of plants and beasts, both magical and mundane.}
+	\abilityRow{Popular}{Know what's going on in the world of media, TV and celebrity}
+	\abilityRow{Science}{Understand the mundane science behind the natural world: physics, chemistry, biology and beyond} 
+	\abilityRow{Technology}{Comprehension of the goings-on in computers and other technologcal marvels}
+	\abilityRow{World}{Knowledge of the geography of the Earth, and the people in it on both a macro and a micro level}
+} 
 
-The useage of these statistics, and the role they play in the game, is discussed in more detail in the relevant sections below. 
+
+\subsection{Additional Abilities}
+
+In addition to the 3$\times$10 standard ability array, characters can gain access to additional actions and abilities, personalised to them. 
+
+This will most commonly arise from the choice of Archetype and Race: each Archetype grants a number of ``Special Actions'', which are manifest through three additional Abilities, and some Races also gain addiitonal abilities. These actions and the associated abilities are discussed in more detail in the relevant Archetypes and Races sections. 
+
+
+\subsubsection{Custom Abilities}
+You may also work with the GM if you feel that a given character should have additional abilities because of their background and previous experiences. This is encouraged only within the limits that it keeps the game fun and interesting and is sufficiently differentiated from the existing abilities.
+
+It would be perfectly acceptable to give a character from a circus a special ``Juggle" or ``Tightrope" ability, as this opens up alternative and interesting actions for them to take without drastically altering the balance of the game. A super-dedicated warrior asking for an insta-kill move, or a scholar claiming to have access to an infinite library, however, would drastically alter the flow of the game without making it more fun and interesting. 
+
+You are not required to come up with an additional ability, but if you have a fun idea, you should ask your GM if this is OK. As always, they have a veto, but may supply an alternative idea which works better in their world. 
+
+\subsection{Assigning Abilities}
+
+Similarly to the assignment of the Aspects, you must first decide which form of Ability your character will have spent most of their time becoming proficient in: ranking the three choices of Innate, Practical and Knowledge in order of importance. To the first of these you may allocate 12 dots, 8 dots into the second most important, and 4 into your lowest rated class:
+
+
+\begin{center}
+	\small
+	\begin{rndtable}{c c}
+	Ranking &  Allocated Dots \\
+	Highest & 12
+	\\
+	Middle 	&	8
+	\\
+	Lowest & 4
+	\end{rndtable}
+\end{center}
+
+
+During this stage, you may not allocate more than 3 dots to a single Ability, though you may end up with more than this limiting number of dots in a field if you benefit from some a racial or Archetype bonus. 
 

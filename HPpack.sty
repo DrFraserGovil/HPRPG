@@ -94,6 +94,9 @@ Gain an additional #1 #2 damage \forEvery{}.
 \newcommand\dndFont{texgyrebonum}
 \setmainfont[BoldFont = \dndFont-bold.otf,ItalicFont = \dndFont-italic.otf,BoldItalicFont = \dndFont-bolditalic.otf]{\dndFont-regular.otf}
 
+\newcommand\key[1]{\textsc{\textbf{#1}}}
+\newcommand\imp[1]{\textsc{#1}}
+\newcommand\dv{\key{DV}}
 %%DnD-mimicking lines.
 
 \newcommand{\dndline}{%
@@ -190,6 +193,11 @@ Gain an additional #1 #2 damage \forEvery{}.
 \newcommand\boldItem[2]
 {
 	\item {\bf #1}: #2
+}
+
+\newcommand\keyItem[2]
+{
+	\item \key{#1}: #2
 }
 \newcommand\emphItem[2]
 {

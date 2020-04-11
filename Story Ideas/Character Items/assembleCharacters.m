@@ -11,7 +11,7 @@ function assembleCharacters(fileNameRoot)
     end
   
     Characters = Character.empty;
-	base = ["Cerise","Helena","Luke","Nikc","GM"];
+	base = ["Cerise","Helena","Luke","Nikc","Rakesh", "Jeremiah", "GM"];
     texFiles = base +".tex";
     for i = 1:length(texFiles)
         targetName = char(texFiles(i));

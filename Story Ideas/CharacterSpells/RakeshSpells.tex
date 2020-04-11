@@ -4,19 +4,21 @@
 { \footnotesize 
  \discTable{Memorised Spells}
 {
-	\spellRow{\spellEntry{Knockback}{\instSymb}}{\spellEntry{Arcane Shield}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+	\spellRow{\spellEntry{Defensive Flare}{\wardSymb}}{\spellEntry{Arcane Shield}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
 
-	\spellRow{\spellEntry{Minor Trickery}{\instSymb}}{\spellEntry{Blur}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+	\spellRow{\spellEntry{Glowing Wand}{\concSymb}}{\spellEntry{Curse of the Bogies}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
 
-	\spellRow{\spellEntry{Palpatation}{\instSymb}}{\spellEntry{Curse of the Bogies}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+	\spellRow{\spellEntry{Knockback}{\instSymb}}{\spellEntry{Halt}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
 
-	\spellRow{\spellEntry{Prank}{\instSymb}}{\spellEntry{Discarnate Digits}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+	\spellRow{\spellEntry{Minor Trickery}{\instSymb}}{\spellEntry{Levitation}{\concSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
 
-	\spellRow{\emptySpell{}}{\spellEntry{Glamour}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+	\spellRow{\spellEntry{Palpitation}{\instSymb}}{\spellEntry{Locate Object}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
 
-	\spellRow{\emptySpell{}}{\spellEntry{Levitation}{\concSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+	\spellRow{\spellEntry{Prank}{\instSymb}}{\spellEntry{Night Vision}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
 
-	\spellRow{\emptySpell{}}{\spellEntry{Locate Object}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+	\spellRow{\emptySpell{}}{\spellEntry{Privacy Ward}{\wardSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
+
+	\spellRow{\emptySpell{}}{\spellEntry{Produce Fire}{\concSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
 
 	\spellRow{\emptySpell{}}{\spellEntry{Rainbow Sparks}{\instSymb}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}{\emptySpell{}}
 
@@ -38,24 +40,29 @@ If you fail to Resist\comma{} or the Accuracy exceeds your augmented Block value
 }
 
 	 \spell{
-	name = Blur, school = Illusion, discipline = Bewitchment, type = Instant, level =Beginner, range =Wandtip, incant = celeritate, duration = 3 turns,higher = Gain an additional +1 bonus \forEvery{},noResist =1, noBlock = 1, effect =The target of this spell (which may be the catser) seems to become blurry around the edges\comma{} it is difficult to tell exactly where they are\comma{} and where they aren{\apos}t.
-Gain a +2 bonus to Dodge for the duration.
-}
-
-	 \spell{
 	name = Curse of the Bogies, school = Maledictions, discipline = Curse, type = Instant, level =Beginner, range =Close, incant = Mucous ad nauseam, duration = 1 day,noHigh = 1, resist = Vitality, noBlock = 1, effect =A fine green mist floats from the end of your wand\comma{} into the face of the target. On a failed Resist\comma{} they contract an awful cold. The target becomes visibly ill\comma{} their nose drips snot constantly\comma{} and their throat is sore. 
 
 Every time they open their mouth to speak\comma{} they must succeed a DV 10 Vitality Resist to avoid sneezing. Sneezing during a spell incantation causes the spell to fail.
 }
 
 	 \spell{
-	name = Discarnate Digits, school = Charms, discipline = Kinesis, type = Instant, level =Beginner, range =Close, incant = titillatio, duration = 5 minutes,noHigh = 1, noResist =1, noBlock = 1, effect =The caster produces an ethereal pair of hands that lasts for the duration of the spell\comma{} or until they move more than 10m away from the caster. You can use a minor action to control the hands. You can use the hand to manipulate an object\comma{} open an unlocked door or container\comma{} stow or retrieve an item from an open container\comma{} or pour the contents out of a vial\comma{} but cannot use them to attack or carry items heavier than {\it Light}. Hands may be moved at a speed of 10m per turn\comma{} in addition to their action.
+	name = Defensive Flare, school = Recuperation, discipline = Warding, type = Ward, level =Trivial, range =Wandtip, incant = defendo, duration = 10 minutes,noHigh = 1, noResist =1, noBlock = 1, effect =You place a minor defensive ward onto a target\comma{} which flares into life the next time they take damage. 
+
+If the targeted being takes damage before the end of the spell duration\comma{} the ward activates and they are considered Resistant to the attack. The ward is then removed.
 }
 
 	 \spell{
-	name = Glamour, school = Illusion, discipline = Bewitchment, type = Instant, level =Beginner, range =Close, incant = lux stultium, duration = 1 hour,noHigh = 1, resist = Attention, noBlock = 1, effect =Create a superficial glamour around a person or object\comma{} a simple magical hologram which sits on top of the true surface. This hologram takes any form the caster can imagine\comma{} but can only perform minor movements – an illusion over the face of a target may open its mouth as the target does\comma{} but nothing more complex than this. 
+	name = Glowing Wand, school = Charms, discipline = Elemental, type = Focus, level =Trivial, range =Close, incant = lumos, noDur = 1, noHigh = 1, noResist =1, noBlock = 1, effect =Causes the tip of your wand to glow like a torch. Casts bright light in a 2m radius\comma{} and dim light for another 5m.
+}
 
-The glamour disintegrates upon physical or magical contact\comma{} and can be seen to be fake if observer succeeds on a Resist check.
+	 \spell{
+	name = Halt, school = Charms, discipline = Kinesis, type = Instant, level =Beginner, range =Close, incant = stabit, noDur = 1, noHigh = 1, resist = Speed, noBlock = 1, effect =Stop an object or being in their tracks. An inanimate object clatters to the floor and lies still. 
+
+If used on a living being\comma{} you may choose one of the following effects\comma{} which apply only on a failed resist:
+\begin{spellitemize}
+\item Target moves half their movement speed this turn\comma{} before being halted 
+\item Choose one accuracy check they make this turn cycle and cause it to fail {\it before} the check is made. 
+\end{spellitemize}
 }
 
 	 \spell{
@@ -79,11 +86,27 @@ This spell fails if there is no such object within range\comma{} or if the objec
 }
 
 	 \spell{
-	name = Palpatation, school = Maledictions, discipline = Curse, type = Instant, level =Trivial, range =Close, incant = vena, noDur = 1, noHigh = 1, resist = Vitality, noBlock = 1, effect =On a failed Resist\comma{} you cause the target\apos{}s heart to miss a beat. Next cycle\comma{} the target\apos{}s speed is halved.
+	name = Night Vision, school = Divination, discipline = Telepathy, type = Instant, level =Beginner, range =Wandtip, incant = aspectu, duration = 2 hours,noHigh = 1, noResist =1, noBlock = 1, effect =As you touch your wand to the target\apos{}s head\comma{} their eyes flash an unearthly green. Give the target nightvision for the duration: dim light is as bright as daylight\comma{} and darkness is considered dim.
+}
+
+	 \spell{
+	name = Palpitation, school = Maledictions, discipline = Curse, type = Instant, level =Trivial, range =Close, incant = vena, noDur = 1, noHigh = 1, resist = Vitality, noBlock = 1, effect =On a failed Resist\comma{} you cause the target\apos{}s heart to miss a beat. Next cycle\comma{} the target\apos{}s speed is halved.
 }
 
 	 \spell{
 	name = Prank, school = Transfiguration, discipline = Conjuration, type = Instant, level =Trivial, range =Close, incant = riddikulus, duration = 2 minutes,noHigh = 1, noResist =1, negation = Blockable  and Dodgeable,effect =You conjure something onto or near your target with the express intention of making them look as stupid as possible: Summon a funny hat onto an individual\comma{} or conjure up a note with a funny message and stick it to their back\comma{} this spell allows you to perform minor\comma{} harmless pranks in an instant.
+}
+
+	 \spell{
+	name = Privacy Ward, school = Recuperation, discipline = Warding, type = Ward, level =Beginner, range =Wandtip, incant = muffliato, duration = 1 hour,noHigh = 1, noResist =1, noBlock = 1, effect =Ward a region up to 5m in radius. This ward prevents sound from inside the region being heard from the outside. When inside the region\comma{} sound from both inside and outside may be heard.
+}
+
+	 \spell{
+	name = Produce Fire, school = Charms, discipline = Elemental, type = Focus, level =Beginner, range =Wandtip, incant = incendio, noDur = 1, higher = Casting this spell at a higher level summons a larger and hotter gout of flame.
+
+For every additional casting\minus{}level\comma{} the gout reaches an extra 15cm from your wandtip\comma{} and does 1d10 additional heat damage. The extra heat also allows you to ignite progressively tougher materials\comma{} such as damp wood.,noResist =1, negation = Blockable  and Dodgeable,effect =A small jet of fire is emitted from the tip of your wand\comma{} akin to a large lighter. The flame reaches out about 5 cm from the tip of your wandm and can be used to ignite larger fires. 
+
+If in melee range with a target\comma{} you can attempt to burn your target using a melee spell attack. Coming into contact with the fire does 1d10 fire damage\comma{} and applies the {\it Burned: Minor} status effect.
 }
 
 	 \spell{
