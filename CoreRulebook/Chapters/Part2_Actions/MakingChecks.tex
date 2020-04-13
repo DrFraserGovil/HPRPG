@@ -3,152 +3,126 @@
 
 In general, when you want to perform an action, simply tell the GM what you wish to do. 
 
-If it is a simple action – for example, “I walk to the shop”, then the action is completed with no further involvement. More complex actions may require a ‘check’ to be performed, to determine their success: inform the GM of what you want to do, and the GM will tell you what check to perform. 
-
-Usually, every action you wish to perform falls into the domain of one of your 8 character attributes (where there is ambiguity, the GM's word is final). The a check to jump over a ravine, for example, would be an \attPhys{} check, whilst a check to remember the ingredients of a potion would be an \attInt{} check. Having a higher attribute score in the relevant field will make your check more likely to succeed, via the {\it Modifier} associated with that attribute.  
-
-As always, the GM has the authority to override these general guidelines, if it is suitable to do so. For more detail on how to calculate a check, see page \pageref{S:Checks}.
+If it is a simple action – for example, “I walk to the shop”, then the action is completed with no further involvement. More complex actions may require a ‘check’ to be performed, to determine their success: inform the GM of what you want to do, and how you want to achieve it. Working with the GM, you then decide what check to perform, and the GM will decide the condition of the success.
 
 
+\section{Forming a Dice Pool}
 
-\section{Dice}
+An action's success or failure is determined by rolling a \key{Dice Pool}, comparing each dice with a set value, and counting the number of `successes'.
 
-For almost every action, you will use the 20 sided dice (d20) as the basis of the check. You roll this dice once, and use the first value. 
+\subsection{Ratings}
 
-The most notable exception to this general rule is: {\bf damage checks}, which are used to determine how much damage a given attack or event inflicted. 
+The number of dice which go into a Pool is determined by a character's \key{Rating} in the required area. These ratings are associated with each of the \key{Aspects}, \key{Abilities} and \key{Affinities} discussed on page \pageref{C:Aspects}, and are (generally) numbers between 0 and 7. These numbers indicate the number of dice that are allocated to the dice pool when that skill is used, and may be interpreted as a general measure of a character's ability in that field:
 
-If the value of a dice is roll indeterminate, or the dice falls off the table, it is usually best to perform the check again: though you may form your own conventions as to the etiquette in such situations.
-
-\section{Modifiers}
-
-If the GM has assigned the check to one of the Attributes, you then modify the dice roll value by the various bonuses that your character has. 
-
-The primary way to do this is through using the {\it attribute modifiers}. These are 8 values associated with each of your 8 attribute scores. When asked to perform a check associated with, for example, the \attFin{} attribute, you add your \attFin{} modifier on to the d20 check. 
-
-The modifier is calculated using the following formula:
-$$ \text{attribute modifier} = \frac{\text{attribute value} - 10}{2} \text{ (rounded down)} $$
-
-Given that an attribute value of 10 is considered `average', the attribute modifier is a way of quantifying ``how much better than average are you at this specific skill?"
-
-For example, a Level 5 Auror wants to try and convince a ne'er-do-well to reveal the location of their boss. The GM directs her to perform a \attChr{} check to convince the target. The auror has a \attChr{} value of 15, which corresponds to a +2 bonus. After rolling a 12, the total value for the check is 14, which the GM reveals was insufficient to persuade the target. 
-
-
+\newcommand\dualRow[2]{#1	&	#2	\\}
 \begin{center}
-\begin{rndtable}{|c c p{0.1cm} c c|}
-\hline \bf Value 	&\bf 	Modifier  & ~ & \bf Value & \bf Modifier
-\\ \hline
-0-1	&	-5		&	~	&	10-11	&	+ 0
-\\
-2-3	&	-4	&	~	&	12-13	&	+ 1
-\\	
-4-5	& 	-3	&	~	&	14-15	&	+ 2
-\\
-6-7	&	-2		&	~	&	16-17&		+ 3
-\\
-8-9	&	-1		&	~	&	18-19	&	+4
-\\
-\hline
+\begin{rndtable}{c p{5 cm}}
+\bf Ratings&\bf Summary \\
+\dualRow{\emptyCape}{Usless, totally untrained}
+\dualRow{\oneCape}{Beginner, marginal training}
+\dualRow{\twoCape}{Novice, some training}
+\dualRow{\threeCape}{Average, fair training}
+\dualRow{\fourCape}{Adept, some high-level training, low level professional}
+\dualRow{\fiveCape}{Expert, high-level training, trained professional}
+\dualRow{\sixCape}{Master, ultimate training, famous professional}
+\dualRow{\sevenCape}{Ascendant, no known rivals}
 \end{rndtable}
-\end{center}
+\end{center} 
+
+A character with 3 dots in Intelligence therefore rolls 3d12 when an Intelligence check is called for. 
+
+\subsubsection{Combining Skills}
+
+More often than not, you will not be using one of your base \key{Aspects} to complete a skill - you will also be utilising an \key{Ability} to complete the action. For spellcasting, this would instead be replaced by an \key{Affinity}. 
+
+For example, leaping over a cliff clearly uses the \imp{Fitness} Aspect, but if you take a run-up to increase your range, you may utilise your \imp{Speed} ability to increase your chances of success. This would therefore be termed a \imp{Fitness (Speed)} check, and the dice pool would be formed from the sum of your dots in both the Fitness and Speed areas.
+
+Hence, if performing a flying leap over a cavern, a character would perform the \imp{Fitness (Speed)} check, and sum their dots in the \imp{Fitness} aspect (say, 3) and the \imp{Speed} ability (2), and hence have a pool of 5 12-sided dice to use to complete the action. 
+
+\subsubsection{Bonuses and Penalties}
+
+You might sometimes have magical or mundane effects present which modify the number of dice you are allowed to allocate to a given pool. These modifiers cannot push the number below zero, but they may push them above 7, given you truly superhuman abilities.
+
+
+\subsubsection{Zero-Pools}
+
+Sometimes, either as a result of your own lack of ability, or because of some negative magical or mundane effect, a character may find themselves in a situation where there they have no dots to allocate to a dice pool. 
+
+Sometimes this precludes your ability to undertake the action entirely (a \key{Knowledge} ability, for example, often requires at least one dot for the information to be retained), but often does not. In such a situation, you roll two dice, and use the lowest value. 
+
+
+\section{Determing the Checktype}
 
 
 
-\section{Expertise \& Proficiencies}
+The most important ingredient in performing a check is deciding how exactly you are achieving this goal. This is an exercise in roleplaying, more than a hard-and-fast rule: you must evaluate the situation and your character's capabilities and decide how they would utilise their skills to best complete the action. 
 
-\subsection{Expertise Bonus}
-As a character grows and learns, they find certain skills that they excel in. The base level of expertise possessed by the Chief Warlock of the Wizengamot is significantly larger than that of a first year Hogwarts student, even on tasks they have never faced before. When faced with a check in a field in which you are an expert, you are significantly more likely to succeed. 
+In certain situations, the GM may rule that all but a single attribute check would render an action impossible: when sitting a physics exam, nothing but an \imp{Intelligence (Science)} check is going to help you. However, the GM is encouraged to generally avoid this hardline stance, and instead state an {\it ideal} check which would result in the most success for the stated action, and then allow the players to roleplay a potentially different route to completing the action. 
 
-This is quantified through your {\it Expertise Bonus}.  This is a single number that you may add to checks in areas which you are considered {\it proficient} in. For most characters, the proficiency is calculated from your total character level in the following fashion:
-$$ \text{Expertise bonus} = \frac{\text{Character Level}}{4} + 2 ~~~\text{(rounded down)}$$
-Some Archetypes, however, grant extra expertise bonus, and as such, deviate from this formula. The table representing each class-overview gives the Expertise bonus that class has at a given level. 
+For the players, the temptation is to use this as an opportunity to default to what a character is best at, in order to get the most amount of dice. However, trying to leap over a cavern using your knowledge of Biology from an \imp{Intelligence (Science)} check is not going to be very successful, and will probably lead to you plummeting to your death no matter how many dice you roll! 
 
+However, a player {\it could} attempt to argue that such a check could still be relevant: perhaps your character has studied Newtonian Physics and so can calculate the correct angles and distances required. This might hold some sway with your GM, though you will probably have to defeat a much higher DV, or require more successes for the action to fully complete. 
 
-\subsection{Proficiencies}
+Developing an interesting narrative about a character and their backstory is more important than a strict adherence to logic and rules, so as long as you can weave and roleplay a convincing narrative as to how you are using a certain skill to complete the action at hand, the GM is encouraged to let you try. The tradeoff is that outlandish skill choices are often poorly suited and therefore make a task significantly more difficult and, even if they succeed, will bring you less success than if you had used a more straitforward approach. 
 
-There are many areas in which one can be considered {\it proficient} - including the use of wands, weapons, tools and armour. In addition to this, seven of the eight Character Attributes can be broken down into several specialised subdomains: {\bf proficiencies}. Being proficient in a domain means that, when a requested action falls into that field, you may add your proficiency bonus to the resulting check. 
-
-The profiencies are:
-
-\newcommand\prof[2]
-{
--{\bf #1}:	&	\parbox[t]{ 6 cm}{\raggedright #2} \\	
-}
-\begin{tabular}{l l}
-\prof{\attPhys{}}{Speed, Strength, Vitality}
-\prof{\attFin{}}{Acrobatics, Chicanery, Stealth}
-\prof{\attSpr{}}{Conviction, Will\attPow{}}
-\prof{\attChr{}}{Deception, Performance, Persuasion}
-\prof{\attInt{}}{Arcane, History, Logic,  Nature, Research, Un-nature}
-\prof{\attPer{}}{Empathy, Investigation, Observation}
-\prof{\attPow{}}{Intimidation}
-\end{tabular}
-
-Your GM may therefore ask for a {\it Stealth} check, which is to be interpreted as a \attFin{} check with the Expertise bonus added if you posses the Stealth proficiency. If you are not proficient in Stealth, you simply perform a base \attFin{} check. 
-
-The character sheet provides slots to record your total modifier for each of the listed proficiencies, for ease of use. 
-
-\subsubsection{Unusual Uses}
-
-Generally speaking, the proficiencies are associated with their parent attribute - so Speed will usually be added on to a \attPhys{} check. If you are not told otherwise, you should always assume this is the case. 
-
-However, in certain circumstances it makes sense to cross the borders. For example, if you are attempting to intimidate someone, this is usually associated with the {\it \attPow{}} attribute, but if you are threatening them with physical violence, you might be asked for a ``\attPhys{} (Intimidation)'' check. You might also be asked for a ``\attChr{} (Intimidation)'' check if you are are bluffing and pretending to be more powerful than you are. 
-
-In this case, you use the modifier of the new parent, and add the proficiency bonus if applicable. 
-
-You are always allowed to ask the GM if a proficiency applies to a specific check, even if the proficiency was not explicitly asked for -- but they are always within their rights to refuse!
-
-\subsection{Other Proficiencies}
-
-In addition to the proficiencies associated with attributes, you may also be considered proficient in the use of various classes of weapons, and special tools. There are also some proficiencies with unusual or more nebulous domains-- for example the {\it Muggle-Lover} skill grants you proficiency in muggle-related checks, and archetypes often grant proficiency in certain spell disciplines.  
-
-As with the attribute-proficiencies, being proficient in an area means that you may add your Expertise bonus to the associated checks. 
-
-Weapon-proficiencies explicitly allow you to add the bonus to the {\it accuracy} check, not to the damage check. Some tools also give additional abilities with proficiency in them, as stated in the item description.
-
-\subsection{Multiple Proficiencies} 
-
-Occasionally, you may encounter scenarios where you may apply your Expertise bonus multiple times. For example, a character with both the {\it Muggle-Lover} skill and the {\it persuasion} proficiency attempts to persuade a muggle of something. However, you may only add your Expertise bonus once per check, unless a mechanic explicitly mentions that the bonus is doubled, or halved. 
+The players and the GM should work together to decide upon the relevant mix of Aspects and Abilities which form the dice pool, using the combination which makes the most sense, or which provides the richest source of roleplaying material. 
 
 
 \section{Success \& Failure}
 
-After the GM has decided which ability is relevant to the task a character is trying to perform, an ability check is made. The result a single number -- the result of a dice roll and your  modifiers and bonuses. This value is the {\it Check Value} (CV). It is now time to `resolve' the check, and decide if the action was successful or not. 
+After deciding upon the ingredients which will go into making the dice pool, the next thing is for the GM to determine the \key{Difficulty} of the task. This is a single number, between 2 and 12 which represents the liklihood of failure. A GM may also decide that an action is utterly impossible under the current circumstances (no matter the dice rolls, you cannot jump to the moon!). 
 
-The GM assigns the activity a {\it Difficulty Value} (DV). The more difficult a task is, the higher the associated DV. 
-
+An example of some common difficulties is shown below:
 \def\w{5}
 \begin{center}
 \begin{rndtable}{|c p{\w cm} c|}
 \hline
 Task Difficulty & 	Description & DV	
-\\ \hline 
-Very Easy & \parbox[t]{\w cm}{\raggedright An everyday task that anyone could be expected to carry out first time.}	&	5
+\\ 
+\key{Very Easy} & \parbox[t]{\w cm}{\raggedright An everyday task that most people could be expected to carry out first time.}	&	4
 \\
-Easy & \parbox[t]{\w cm}{\raggedright A simple task that has only a small chance of failure.}& 10
+\key{Easy} & \parbox[t]{\w cm}{\raggedright A simple task that has only a small chance of failure.}& 6
 \\
-Moderate & \parbox[t]{\w cm}{\raggedright A task that a normal person might require a few tries to get right} & 15
+\key{Standard} & \parbox[t]{\w cm}{\raggedright A task that a normal person might require a few tries to get right} & 8
 \\
-Hard & \parbox[t]{\w cm}{\raggedright A task that a normal person could not carry out without specialist training} &20
+\key{Hard} & \parbox[t]{\w cm}{\raggedright A task that a normal person could not carry out without specialist training} & 10 
 \\
-Very Hard & \parbox[t]{\w cm}{\raggedright A task that even a trained expert might struggle to complete. } & 25
-\\
-Legendary & \parbox[t]{\w cm}{\raggedright A task that perhaps one person alive could actually complete.}	& 30
-\\ \hline
+\key{Very Hard} & \parbox[t]{\w cm}{\raggedright A task that even a trained expert might struggle to complete. } & 12
+\\ 
 \end{rndtable}
 \end{center}
 
-If the CV meets, or exceeds, the assigned DV then the action is successful and the GM will describe the effects of the action. If the CV is less than the DV, the action fails. 
+Every dice rolled from the pool which meets or exceeds the DV counts towards a success. You then report back to the GM the number of success you achieved, which determines how effective the action was:
 
 
+\begin{center}
+	\begin{rndtable}{c p{6cm}}
+		\bf \# Successes & \bf Degree \\
+		\dualRow{1}{\key{Marginal}: You just scrape by completing the action, perhaps incurring some mild side effects}
+		\dualRow{2}{\key{Okay}: you complete the action with a small amount of leeway. You did it, but not elegantly}
+		\dualRow{3}{\key{Good}: you did the action, and you did it well}
+		\dualRow{4}{\key{Complete}: you did the action, and got more than you expected.}
+		\dualRow{5}{\key{Excellent}: you did the action, and achieved significantly more than you set out to do}
+		\dualRow{6}{\key{Flawless}: You did the action perfectly, and got lots more besides}
+		\dualRow{7+}{\key{Legendary}: You completed the action so well people will be telling stories of it for years to come.}
+	\end{rndtable}
+\end{center}
 
-Many GM's accept that a check which rolls a 20 on the d20 (`nat 20'), if the action succeeds, is said to be a `critical success', and may have positive effects beyond the intended, regardless of the associated modifiers. If the check was an attack, for instance, it is considered a critical strike (page \pageref{S:Sneak}). 
+\subsubsection{Automatic Success}
+
+Rolling dozens of dice may be fun, but when Barry, the most prolific athlete of his generation, wants to hop across a small stream, rolling $>10$d12 against a DV of 3 seems a little overkill. 
+
+As a general rule, if the number of dice in the pool exceeds the DV of an action your GM may simply decide that the action completes automatically. This rule does not generaly apply in combat, or in situations where the consequences of failure are particularly dire. 
+
+\subsubsection{Failure}
+
+If you fail to gain any successes, the action is a failure
+
+\subsubsection{Botches}
 
 \subsection{Contests}
 
-A subset of actions are those in which the difficulty is not assigned by the GM, but by a check performed by another being. Such an action is termed a {\it Contest}. For instance, when trying to detect a being trying to stay hidden one character performs a Stealth check, whilst the other performs an Observation check. These two values are then compared directly - if the Sneak exceeds the observation, the being is hidden and vice versa. 
-
-When the GM assigns a DV, a check which meets the DV results in a success. However, in a contest, usually only one can `win'. Therefore, {\bf the status quo is maintained on a draw}. If the stealth check equals the observation check, and the being is already hidden, then it remains unspotted. If, however, it was trying to become hidden from a being which could perceive it, then the status quo is preserved and it is not hidden. 
-
+Many actions are not just one character doing something whilst the world holds its breath. Quite often the 
 
 \section{Check Advantage}
 

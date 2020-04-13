@@ -55,19 +55,20 @@
 \contentsline {subsection}{\numberline {5.3.5}Assigning Abilities}{14}{subsection.5.3.5}
 \contentsline {part}{II\hspace {1em}Actions and their Consequences}{15}{part.2}
 \contentsline {chapter}{\numberline {6}Performing Checks}{16}{chapter.6}
-\contentsline {section}{\numberline {6.1}Dice}{16}{section.6.1}
-\contentsline {section}{\numberline {6.2}Modifiers}{16}{section.6.2}
-\contentsline {section}{\numberline {6.3}Expertise \& Proficiencies}{16}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Expertise Bonus}{16}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Proficiencies}{16}{subsection.6.3.2}
-\contentsline {subsubsection}{Unusual Uses}{16}{subsubsection*.33}
-\contentsline {subsection}{\numberline {6.3.3}Other Proficiencies}{17}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Multiple Proficiencies}{17}{subsection.6.3.4}
-\contentsline {section}{\numberline {6.4}Success \& Failure}{17}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Contests}{17}{subsection.6.4.1}
-\contentsline {section}{\numberline {6.5}Check Advantage}{17}{section.6.5}
-\contentsline {section}{\numberline {6.6}Working Together}{17}{section.6.6}
-\contentsline {section}{\numberline {6.7}Multiple Attempts}{17}{section.6.7}
+\contentsline {section}{\numberline {6.1}Forming a Dice Pool}{16}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Ratings}{16}{subsection.6.1.1}
+\contentsline {subsubsection}{Combining Skills}{16}{subsubsection*.33}
+\contentsline {subsubsection}{Bonuses and Penalties}{16}{subsubsection*.34}
+\contentsline {subsubsection}{Zero-Pools}{16}{subsubsection*.35}
+\contentsline {section}{\numberline {6.2}Determing the Checktype}{16}{section.6.2}
+\contentsline {section}{\numberline {6.3}Success \& Failure}{16}{section.6.3}
+\contentsline {subsubsection}{Automatic Success}{17}{subsubsection*.36}
+\contentsline {subsubsection}{Failure}{17}{subsubsection*.37}
+\contentsline {subsubsection}{Botches}{17}{subsubsection*.38}
+\contentsline {subsection}{\numberline {6.3.1}Contests}{17}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.4}Check Advantage}{17}{section.6.4}
+\contentsline {section}{\numberline {6.5}Working Together}{17}{section.6.5}
+\contentsline {section}{\numberline {6.6}Multiple Attempts}{17}{section.6.6}
 \contentsline {part}{III\hspace {1em}Items}{19}{part.3}
 \contentsline {part}{IV\hspace {1em}Magic}{20}{part.4}
 \contentsline {part}{V\hspace {1em}Lists \& Tables}{21}{part.5}
