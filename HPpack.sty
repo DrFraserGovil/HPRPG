@@ -180,6 +180,8 @@ Gain an additional #1 #2 damage \forEvery{}.
 \def\attPowShort{POW}
 \def\attEvlShort{EVL}
 
+
+
 \newcommand{\emptyCape}{$\circ\circ\circ\circ\circ\circ\circ$}
 \newcommand{\oneCape}{$\bullet \circ\circ\circ\circ\circ\circ$}
 \newcommand{\twoCape}{$\bullet\bullet\circ\circ\circ\circ$}
@@ -251,6 +253,26 @@ Gain an additional #1 #2 damage \forEvery{}.
 \def\OccCheck{\attChr{}}
 
 
+
+%%%%RATINGS TABLE
+\newcommand\dualRow[2]{#1	&	#2	\\}
+\newcommand\ratingTable[8]
+{
+\footnotesize
+\begin{center}
+\begin{rndtable}{c p{7.4 cm}}
+\bf Rating&\bf Summary \\
+\dualRow{\emptyCape}{#1}
+\dualRow{\oneCape}{#2}
+\dualRow{\twoCape}{#3}
+\dualRow{\threeCape}{#4}
+\dualRow{\fourCape}{#5}
+\dualRow{\fiveCape}{#6}
+\dualRow{\sixCape}{#7}
+\dualRow{\sevenCape}{#8}
+\end{rndtable}
+\end{center} 
+}
 
 \def\s{0.22}
 \def\w{1.7}

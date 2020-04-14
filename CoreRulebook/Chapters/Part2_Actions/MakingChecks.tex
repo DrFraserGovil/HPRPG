@@ -14,20 +14,14 @@ An action's success or failure is determined by rolling a \key{Dice Pool}, compa
 
 The number of dice which go into a Pool is determined by a character's \key{Rating} in the required area. These ratings are associated with each of the \key{Aspects}, \key{Abilities} and \key{Affinities} discussed on page \pageref{C:Aspects}, and are (generally) numbers between 0 and 7. These numbers indicate the number of dice that are allocated to the dice pool when that skill is used, and may be interpreted as a general measure of a character's ability in that field:
 
-\newcommand\dualRow[2]{#1	&	#2	\\}
-\begin{center}
-\begin{rndtable}{c p{5 cm}}
-\bf Ratings&\bf Summary \\
-\dualRow{\emptyCape}{Usless, totally untrained}
-\dualRow{\oneCape}{Beginner, marginal training}
-\dualRow{\twoCape}{Novice, some training}
-\dualRow{\threeCape}{Average, fair training}
-\dualRow{\fourCape}{Adept, some high-level training, low level professional}
-\dualRow{\fiveCape}{Expert, high-level training, trained professional}
-\dualRow{\sixCape}{Master, ultimate training, famous professional}
-\dualRow{\sevenCape}{Ascendant, no known rivals}
-\end{rndtable}
-\end{center} 
+\ratingTable{Usless, totally untrained}
+{Beginner, marginal training}
+{Novice, some training}
+{Average, fair training}
+{Adept, some high-level training, low level professional}
+{Expert, high-level training, trained professional}
+{Master, ultimate training, famous professional}
+{Ascendant, no known rivals}
 
 A character with 3 dots in Intelligence therefore rolls 3d12 when an Intelligence check is called for. 
 
@@ -43,6 +37,7 @@ Hence, if performing a flying leap over a cavern, a character would perform the 
 
 You might sometimes have magical or mundane effects present which modify the number of dice you are allowed to allocate to a given pool. These modifiers cannot push the number below zero, but they may push them above 7, given you truly superhuman abilities.
 
+The GM may also decree that certain situations give you more or less dice than you would normally expect - if you are caught totally unawares, for example, they may dock one or two dice from your Pool, to represent your surprise and lack of care. Equally, if you have spent a few hours preparing an ambush, you may gain an additional die. These effects could also be represented through a modification of the DV - it is up to the GM to decide which approach is most appropriate.
 
 \subsubsection{Zero-Pools}
 
@@ -68,7 +63,7 @@ Developing an interesting narrative about a character and their backstory is mor
 The players and the GM should work together to decide upon the relevant mix of Aspects and Abilities which form the dice pool, using the combination which makes the most sense, or which provides the richest source of roleplaying material. 
 
 
-\section{Success \& Failure}
+\section{Difficulty}
 
 After deciding upon the ingredients which will go into making the dice pool, the next thing is for the GM to determine the \key{Difficulty} of the task. This is a single number, between 2 and 12 which represents the liklihood of failure. A GM may also decide that an action is utterly impossible under the current circumstances (no matter the dice rolls, you cannot jump to the moon!). 
 
@@ -85,12 +80,31 @@ Task Difficulty & 	Description & DV
 \\
 \key{Standard} & \parbox[t]{\w cm}{\raggedright A task that a normal person might require a few tries to get right} & 8
 \\
-\key{Hard} & \parbox[t]{\w cm}{\raggedright A task that a normal person could not carry out without specialist training} & 10 
+\key{Hard} & \parbox[t]{\w cm}{\raggedright A task that a normal person could not reliably carry out without specialist training} & 10 
 \\
 \key{Very Hard} & \parbox[t]{\w cm}{\raggedright A task that even a trained expert might struggle to complete. } & 12
 \\ 
 \end{rndtable}
 \end{center}
+
+\subsubsection{Intractable Difficulties}
+
+Of course, a DV of 12 is the maximum value that an action can require, as no dice roll can exceed 12. However, this cannot always represent the difficulty of some exquisitley difficult tasks. 
+
+For example, a DV 12 action has a 1-in-12 (8\%) chance of succeeding for a character with a one-dot rating, and even 1-in-144 (0.7\%) for a zero-dot rating. A character with 10 dots allocated to a DV 12 action has a 33\% chance of success. However, there are clearly actions for which the chances need to be below that point. 
+
+For example, even Albus Dumbledore would be hard-pressed to even hit a Snitch moving at 3 times the speed of sound with a simple hex. Such an action is possible, but it's rarity is far below a simple DV12 action. Therefore the GM can invoke an {\it Intractable Difficulty}. 
+
+In this case, they simply state a minimum number of successes that must be achieved in order for the action to succeed. These successes are automatically absorbed into the action to even make it into a possibility - this is done before cancelling the successes with the catastrophes, which can lead to an extraordinary amount of bad luck. 
+
+For example, if Dumbledore were to attempt to hit the aforementioned Snitch, the GM may rule that this extraordinary action requires a DV 12 action, with an intractability of 2. Albus goes ahead and rolls 14 dice (he was an extraordinary wizard!), gaining \imp{1-1-4-5-5-6-7-7-8-10-11-12-12-12}. Two of these 12s are absorbed by the intractability, leaving Albus with \imp{1-1-12}, which results in a Catastrophe - perhaps he accidentally hexes a student as collatoral damage. 
+
+If the action had been DV 10, intractability of 2, then Albus would have scored a single success, and so would have skimmed the Snitch, but probably not done any serious damage. 
+
+
+\newpage
+
+\section{Success \& Failure}
 
 Every dice rolled from the pool which meets or exceeds the DV counts towards a success. You then report back to the GM the number of success you achieved, which determines how effective the action was:
 
@@ -98,8 +112,8 @@ Every dice rolled from the pool which meets or exceeds the DV counts towards a s
 \begin{center}
 	\begin{rndtable}{c p{6cm}}
 		\bf \# Successes & \bf Degree \\
-		\dualRow{1}{\key{Marginal}: You just scrape by completing the action, perhaps incurring some mild side effects}
-		\dualRow{2}{\key{Okay}: you complete the action with a small amount of leeway. You did it, but not elegantly}
+		\dualRow{1}{\key{Marginal}: You just scrape by completing the action, perhaps incurring some side effects}
+		\dualRow{2}{\key{Okay}: you complete the action with a small amount of leeway. You did it, but not elegantly and there may be side effects}
 		\dualRow{3}{\key{Good}: you did the action, and you did it well}
 		\dualRow{4}{\key{Complete}: you did the action, and got more than you expected.}
 		\dualRow{5}{\key{Excellent}: you did the action, and achieved significantly more than you set out to do}
@@ -118,71 +132,47 @@ As a general rule, if the number of dice in the pool exceeds the DV of an action
 
 If you fail to gain any successes, the action is a failure. You fall short of your leap, you bungle your attempt to charm a guard, or you simply cannot remember the information you seek. 
 
-
+The exact outcome of a failed check are up to the GM to narrate, based on the current situation and the degree of failure. Generally speaking, the outcome of a failure is not overly severe, however: a failed \imp{Charm (Eloquence)} to charm your way past a guard won't result in the guard arresting or impaling you, they would simply not allow you to pass. Of course, you may have roleplayed yourself into an all-or-nothing situation, in which case a failure can have some very serious negative consequences - you should be careful to try and mitigate situations like that!
 
 \subsubsection{Catastrophes}
 
-Some failures are much worse than others: Catastrophes. 
+Some failures are much worse than others: \key{Catastrophes}. 
 
-A catastrophe is triggered when a dice rolls comes up as a \key{1}, and cancels out one success. 
+A catastrophe is triggered when a dice rolls comes up as a \key{1}, and results in a fumble so serious that it absorbs one of your successes in order to mitigate the failure. Every Catastrophe reduces the number of successes by 1. For example, a roll of \imp{1-5-7-8-8-10} against a DV of 8 would normally have 3 successes, however the single catastrophe reduces this down to 2 successes. 
+
+If a check ever results in more Catastrophes than successes, then you suffer a \key{Catastrophic Failure}. These are the worst possible failures, and can often really ruin your day. Rather than hijacking a broomstick, you find yourself plummeting towards the ground, or an attempt to hex your foe leads you to vomiting slugs all over the school field. 
+
+Some effects can also increase the \key{Catastrophe Range} for certain actions. This means that a Catastrophe is triggered even on higher numbers. For example, a {\it Broken Wand} raises the Catastrophe Range to 3 for spellcasting efforts, meaning that the dice rolls 1, 2 \& 3 all trigger catastrophes. If the Catastrophe Range ever exceeds the nominal DV of an action, the DV is reset to be one more than the maximum catastrophe trigger - with a broken wand, no spellcasting DV can ever be below 4, for example.
+
 
 \subsection{Contests}
 
-Many actions are not just one character doing something whilst the world holds its breath. Quite often the 
+Many actions are not just one character doing something whilst the world holds its breath. Quite often the efforts of one character are being opposed by the other. For example, if Bruce is trying to shove a Death Eater off a ledge, they will contest their strengths to see who ends up the victor. 
 
-\section{Check Advantage}
+Each character performs an action with the DV set by the difficulty of the {\it instigator's} action. Hence if Bruce attempts a simple shove, with a DV 4 or 5, the standard DV for the Death Eater to Resist would be 4 or 5. Of course, the attacker might choose to make things harder for themselves - maybe Bruce attempts a flying leap (DV 7), or a roundhouse kick (DV 9). The opponent would then have to match the DV of the `attack' in their attempt to Resist it. 
 
-If you have the status effect {\it Check Advantage}, or are otherwise granted this ability on certain checks, then you may perform checks twice -- and take the largest value. This decreases the likelihood of a negative outcome, and increases the likelihood of a positive one. 
+The GM may also rule that the situations are different enough that the characters have different DVs: if Bruce is on firm, safe ground whilst the Death Eater is on loose terrain at the very edge of the cliff - pushing is incredibly easy, whilst Resisting is hard. Hence Bruce may be able to perform a simple DV 4 push, whilst the Death Eater must resist with a DV of 8 or higher. 
 
-Conversely, a {\it Check Disadvantage} requires you to perform a check twice and take the lower of the two values. 
+When the DV is chosen, both characters perform the check and compare their number of successes. The `success' of the contest is determined by how many more successful Instigations there were than Resists: if Bruce rolled 5 successes and the Death Eater rolled 3, then the push action has 2 successes, and the situation is resolved using this value - in this case an \imp{Okay} success: the Death Eater probably plummets off the ledge, but has time to shout out a warning to their allies as they do so.
 
-Check-Advantage and Check-Disadvantage compound each other, to a limited extent. If a character already possesses check-advantage, and gets a second separate effect which also gives them check-advantage, then they are in a state of `super-advantage', in which case you roll three dice, and take the highest. Equally, two disadvantages compound into super-disadvantage. 
+If the opponent gets more successes than the instigator, the action fails. The Death Eater manages to hold their ground, and the action then proceeds. 
 
-A disadvantage layered on an advantage cancel each other out, and a disadvantage on a super-disadvantage reduces it to normal. 
-
-{\bf However, more than two buffs in either direction have no additional effect}. 10 disadvantages and 11 advantages are treated as 2-against-2 (i.e. a normal roll), as are 3 advantages against 10 disadvantages. 
-
-Use the following table for reference:
-
-
-\def\cc{\cellcolor{\tablecolorhead}\bf }
-\begin{center}
-{
-\small
-\renewcommand{\arraystretch}{1.4}
-	\begin{rndtable}{c c c c c}
-	~ & ~	&	\multicolumn{3}{c}{\bf \# Advantages}
-	\\
-	\cc ~	&	\cc~ & \cc 0	&\cc	1	& \cc 2+ 
-	\\
-	\cc~& \cc 0	&	Normal	&	Advantage	&	Super Advantage
-	\\
-	\cc~& \cc 1	&	Disadvantage	&	Normal	&	Advantage
-	\\
-	\multirow{-4}{*}{\rotatebox[origin=c]{90}{\cc \bf \# Disadvantages}} & \cc 2+	&	Super Disadvantage	&	Disadvantage	&	Normal 
-	\end{rndtable}
-}
-\end{center}
-
-
-For (dis)advantages to compound, they must arise from totally different sources - drinking two potions which both provide Advantage will not give super advantage, but being invisible {\it and} drinking a potion would. 
+In the case where the number of Instigations equals the number of Resists, the status quo is preserved. In the example above, the Death Eater was not plummeting off the ledge, so on an equal-contest, they remain that way. However, if Bruce was trying to save his ally from being dropped off a ledge by a Death Eater, the status quo is that the ally is going off the ledge. 
 
 \section{Working Together}
 
-Occasionally two or more characters might decide that, together, they have a better chance of succeeding in a given task, and can work together. A character may only help if they could perform the action themselves (so you could only help pick a lock if you also had proficiency in lockpicking tools), or if you can provide a reasonable justification for how you are helping the action succeed (an untrained individual could help an engineer fix an engine by passing them tools, and holding a flashlight, for example). 
+Occasionally two or more characters might decide that, together, they have a better chance of succeeding in a given task, and can work together. A character may only help if they could perform the action themselves (so you could only help pick a lock if you also had experience with lockpicking tools), or if you can provide a reasonable justification for how you are helping the action succeed (an untrained individual could help an engineer fix an engine by passing them tools, and holding a flashlight, for example). 
 
-When working together like this, the character with the highest relevant modifier performs the check with check-advantage. 
+If multiple parties are actively partaking in the action, they each roll a check, and sum their successes and catastrophes together. For example Bruce and Jane are both searching the dungeons for clues, a DV 6 action. Bruce rolls \imp{1,1,3,10} and Jane rolls \imp{3,7,10,10,11}. Jane uses one of her successes to nullify Bruce's catastrophe - perhaps she spots a trap just moments before he steps in it - giving the group a total of 2 successes for the search - an adequate but not great sweep of the room. 
 
-Sometimes, you might need to complete a task where the entire group needs to succeed, but the group may help each other -- for example, if the entire group needs to jump across a ravine, or if the entire group is searching for a single hidden item. The GM may decided on the most appropriate course of action, but a general first-start is to ask all members of the group to perform the check -- if at least half of the group succeed, the entire group succeeds. 
+Alternatively, if a character is providing only incidental help - i.e. the engineer/assistant example given above, the GM may rule that this simply grants an additional dice to the person performing the bulk of the action.
 
 
 \section{Multiple Attempts}
 
-Sometimes, after an action fails, a character may want to try again immediately. This is generally to be discouraged - it makes the game less fun if everyone is just waiting for Mike to (finally) roll a 20. 
+Sometimes, after an action fails, a character may want to try again immediately. This is generally to be discouraged - it makes the game less fun if everyone is just waiting for Mike to (finally) roll a 3 successes. 
 
 A general rule is that you can't repeat an action until there is a material change in circumstance that might alter the outcome. This doesn't usually apply in combat as you are sacrificing your other combat actions each turn cycle to try anew. 
 
 Outside of combat, however, the GM may make allowances for multiple attempts. This will most commonly occur if you have some finite resource that you are burning through. If you only have 3 fragile lockpicks, there's no particular harm in giving you 3 attempts at opening the door. 
-
-If, however, a character is attempting to `spam' a check -- i.e. just keep rolling the dice until they succeed, and it makes enough narrative sense that the GM doesn't overrule it, then they instead ask you to roll a d100 on the table found on page \pageref{S:Multi}, which will determine the number of failed attempts. 
 
