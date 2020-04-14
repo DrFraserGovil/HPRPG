@@ -1,0 +1,370 @@
+\chapter{Roll Statistics}
+
+In this chapter I provide a statistical breakdown of the liklihood of certain rolls. This is only for the \"uber keen GM who wants to take a peek behind the metaphorical curtain. 
+
+\section{Analytic Probability}
+
+The success of an action is determined by rolling a dice pool of $N$ dice (accumulated from Attributes, Abilities, Affinities and various bonuses). Each of these dice is then compared to a target number, the DV. Every dice which exceeds the DV counts as a success, whilst every dice within the `catastrophe range' subtracts from the number of successes. 
+
+The total number of successes is therefore determined by the number of dice which exceed the DV and those which fall into the catastrophe range. The rules ensure that the DV and the catastrophe range can never overlap, so we may always assume these to be mutually independent possibilities. 
+
+Since the events of `rolling a success' and `rolling a catastrophe' are mutually exclusive, success-or-failure events, we may model them with a Binomial distribution. Hence, the probability of rolling $n$ successes from $N$ dice, with a probability $p$ of success is:
+
+$$ P(n | N, p) = B(n_s,N,p) = {^N}C_{n} p^{n} (1 - p)^{N - n} $$
+
+Where ${^n}C_r$ is the usual $n$-choose-$r$ function:
+
+$$ {^n}C_r = \frac{n!}{r!(n-r)!} $$
+
+In order to score $n_s$ total successes, we must therefore succeed in rolling $n_s+f$ dice which exceed the DV, {\bf and} $f$ dice which meet the catastrophe condition. 
+
+The probability of rolling a success is determined by the DV and the maximum possible value of the dice, $D$, assuming a normal numbering between 1 and $D$. Hence:
+
+$$ p\left( \text{roll} \geq \text{DV}| D\text{-sided dice}\right ) = \frac{D + 1 - \text{DV}}{D} $$ 
+
+Hence, the probability of rolling $n_s + f$ dice from our original pool is:
+
+$$ P\left(n_s + f | N,  \frac{D + 1 - \text{DV}}{D}  \right)  = B(n_s + f , N, p_s ) $$ 
+
+The probability of rolling $f$ catastrophes depends on $p_c$, the catastrophe probability and $N_c$, the remaining dice left to roll that many catastrophes. $N_c$ must simply be the number of dice not already determined to be successes:
+$$N_c = N - n_s - f$$
+The catastrophe probability is slightly more subtle, a first glance would indicate that it would take the form:
+$$ p_c \neq \frac{D + 1 - \text{X}}{D} $$
+Where $X$ is the maximum end of the catastrophe range (usually equal to 1). However, we must take into account that we already know that the dice in the `catastrophe pool' cannot exceed the DV, else they would already have been counted. Hence:
+$$ p_c = \frac{X}{\text{DV} - 1} $$
+Therefore, the probability of rolling $f$ catastrophes, given an initial pool of $N$ dice, of which $n_s + f$ have already been used is:
+$$p\left(f \text{ catastrophes} | N, n_s + f, \frac{X}{\text{DV + 1}} \right) = B(f, N- n_s -f, p_c) $$ 
+
+Therefore, the combined probability of doing both things simultaneously is:
+
+\begin{align*}
+ p(n_s, f | N, D, \text{DV}, X)  =& B(n_s + f, N,p_s) \times B(f,N - n_s - f, p_c)
+ \\
+ & = {^N}C_{n_s + f} \left(\frac{D + 1 - \text{DV}}{D} \right)^{n_s + f} \left( \frac{ \text{DV} - 1}{D} \right)^{N - n_s - f}
+ \\ 
+	& \times {^{N - n_s - f}}C_f \left( \frac{X}{\text{DV} - 1} \right)^f \left(\frac{\text{DV} - 1 - X}{\text{DV}} \right)^{N - n_s - 2f}
+	\\
+	& \times \Theta(N - n_s - 2 f)
+ \end{align*}
+This final function, $\Theta(x)$ is the Heaviside step function, it evaluates to zero whenever the argument is less than 0, and ensures that you are never relying on more dice than you actually have. If using a statistics package which evaluates the Binomial function directly, it should include this constraint automatically. 
+
+The total probability of getting $n_s$ successes is therefore the sum over all possible combinations of $n_s + f$, giving:
+
+$$ p(n_s | N,D, \text{DV},X) = \sum_{f = 0}^{N - n_s}B(n_s + f, N,p_s) \times B(f,N - n_s - f, p_c)$$
+
+The probability of a benign failure is therefore:
+$$ p(\text{fail}) = p(0 | N,D, \text{DV}, X)$$
+Whilst the probability of a Catastrophe is found by summing over all negative values of $n_s$:
+$$ p(\text{catastrophe}) = \sum_{n_s = - N}^{-1} p(n_s | N, D, \text{DV}, X)$$
+
+\section{Outcome Tables}
+
+In this section a number of tables representing various probabilities.
+
+
+\newcounter{rowcount}
+\newcommand\rowcount{\stepcounter{rowcount}\therowcount}
+\def\cc{\cellcolor{\tablecolorhead}\bf}
+
+\newcommand\vcol
+{
+	\def\compare{13}
+	\ifnum\therowcount=\compare\relax
+		\multirow{-14}{*}{\rotatebox[origin=c]{90}{\cc \bf Number of Dice}}
+	\fi
+}
+\newcommand\probRow[9]
+{
+		\cc \vcol & \cc \rowcount & #1	&	#2	&	#3	&	#4	&	#5	&	#6	&	#7	&	#8	&	#9 \\
+}
+
+\newcommand\probTable[1]
+{
+	\vbox{
+		\setcounter{rowcount}{0}
+		\scriptsize
+		\begin{center}
+			\begin{rndtable}{@{} m{0.3cm}m{0.2cm}ccccccccc}
+			~&~&\multicolumn{9}{c}{\cc \bf Number of Successes} \\
+			\cc \bf~&\cc \bf~&\cc \bf \tiny Catastrophe&{\cc \bf \tiny Failure}&{\cc \bf 1}&{\cc \bf 2}&{\cc \bf 3}&{\cc \bf 4}&{\cc \bf 5}&{\cc \bf 6}&{\cc \bf $\geq$7}\\
+				#1
+				
+			\end{rndtable}
+		\end{center}
+		}
+}
+
+\subsection{Difficulty = 4}
+\subsubsection{Catastrophe Range = 1-1}
+\probTable{
+\probRow{8.3}{17}{75}{-}{-}{-}{-}{-}{-}
+\probRow{3.5}{15}{25}{56}{-}{-}{-}{-}{-}
+\probRow{2.7}{6.7}{20}{28}{42}{-}{-}{-}{-}
+\probRow{1.5}{4.5}{11}{23}{28}{32}{-}{-}{-}
+\probRow{1}{2.5}{7.1}{14}{25}{26}{24}{-}{-}
+\probRow{0.63}{1.6}{4.3}{9.8}{17}{25}{24}{18}{-}
+\probRow{0.4}{0.98}{2.7}{6.3}{12}{19}{24}{21}{13}
+\probRow{0.26}{0.62}{1.7}{4.1}{8.3}{14}{20}{23}{28}
+\probRow{0.16}{0.39}{1.1}{2.7}{5.7}{10}{16}{20}{43}
+\probRow{0.11}{0.25}{0.7}{1.7}{3.8}{7.3}{12}{17}{57}
+\probRow{0.068}{0.16}{0.45}{1.1}{2.6}{5.1}{8.9}{14}{68}
+\probRow{0.044}{0.1}{0.29}{0.74}{1.7}{3.5}{6.4}{10}{77}
+\probRow{0.028}{0.065}{0.18}{0.48}{1.1}{2.4}{4.6}{7.8}{83}
+\probRow{0.018}{0.042}{0.12}{0.31}{0.75}{1.6}{3.2}{5.7}{88}
+} 
+
+\subsubsection{Catastrophe Range = 1-2}
+\probTable{
+\probRow{17}{8.3}{75}{-}{-}{-}{-}{-}{-}
+\probRow{5.6}{26}{13}{56}{-}{-}{-}{-}{-}
+\probRow{7.8}{6.3}{30}{14}{42}{-}{-}{-}{-}
+\probRow{3.9}{10}{9.5}{30}{14}{32}{-}{-}{-}
+\probRow{4}{4.1}{14}{12}{29}{13}{24}{-}{-}
+\probRow{2.4}{4.9}{6.2}{16}{14}{27}{12}{18}{-}
+\probRow{2.2}{2.5}{6.9}{8.3}{18}{14}{24}{10}{13}
+\probRow{1.4}{2.5}{3.8}{8.8}{10}{19}{15}{21}{19}
+\probRow{1.2}{1.5}{3.7}{5.3}{11}{12}{19}{14}{33}
+\probRow{0.87}{1.3}{2.3}{4.9}{6.8}{12}{13}{18}{41}
+\probRow{0.71}{0.88}{2}{3.3}{6.3}{8.2}{13}{13}{52}
+\probRow{0.52}{0.75}{1.4}{2.8}{4.3}{7.6}{9.4}{14}{59}
+\probRow{0.41}{0.52}{1.1}{2}{3.7}{5.4}{8.8}{10}{68}
+\probRow{0.31}{0.43}{0.81}{1.6}{2.7}{4.7}{6.6}{9.8}{73}
+} 
+
+\subsubsection{Catastrophe Range = 1-3}
+\probTable{
+\probRow{25}{$<$0.1}{75}{-}{-}{-}{-}{-}{-}
+\probRow{6.3}{38}{$<$0.1}{56}{-}{-}{-}{-}{-}
+\probRow{16}{$<$0.1}{42}{$<$0.1}{42}{-}{-}{-}{-}
+\probRow{5.1}{21}{$<$0.1}{42}{$<$0.1}{32}{-}{-}{-}
+\probRow{10}{$<$0.1}{26}{$<$0.1}{40}{$<$0.1}{24}{-}{-}
+\probRow{3.8}{13}{$<$0.1}{30}{$<$0.1}{36}{$<$0.1}{18}{-}
+\probRow{7.1}{$<$0.1}{17}{$<$0.1}{31}{$<$0.1}{31}{$<$0.1}{13}
+\probRow{2.7}{8.7}{$<$0.1}{21}{$<$0.1}{31}{$<$0.1}{27}{10}
+\probRow{4.9}{$<$0.1}{12}{$<$0.1}{23}{$<$0.1}{30}{$<$0.1}{30}
+\probRow{2}{5.8}{$<$0.1}{15}{$<$0.1}{25}{$<$0.1}{28}{24}
+\probRow{3.4}{$<$0.1}{8}{$<$0.1}{17}{$<$0.1}{26}{$<$0.1}{46}
+\probRow{1.4}{4}{$<$0.1}{10}{$<$0.1}{19}{$<$0.1}{26}{39}
+\probRow{2.4}{$<$0.1}{5.6}{$<$0.1}{13}{$<$0.1}{21}{$<$0.1}{58}
+\probRow{1}{2.8}{$<$0.1}{7.3}{$<$0.1}{15}{$<$0.1}{22}{52}
+} 
+
+\subsection{Difficulty = 6}
+\subsubsection{Catastrophe Range = 1-1}
+\probTable{
+\probRow{8.3}{33}{58}{-}{-}{-}{-}{-}{-}
+\probRow{6.3}{21}{39}{34}{-}{-}{-}{-}{-}
+\probRow{4.7}{13}{28}{34}{20}{-}{-}{-}{-}
+\probRow{3.5}{9.1}{20}{29}{26}{12}{-}{-}{-}
+\probRow{2.6}{6.4}{14}{24}{27}{19}{6.8}{-}{-}
+\probRow{2}{4.5}{10}{19}{24}{23}{14}{3.9}{-}
+\probRow{1.5}{3.3}{7.7}{14}{21}{23}{18}{9.2}{2.3}
+\probRow{1.1}{2.4}{5.7}{11}{17}{21}{20}{14}{7.5}
+\probRow{0.82}{1.7}{4.2}{8.4}{14}{19}{20}{17}{15}
+\probRow{0.61}{1.3}{3.1}{6.4}{11}{16}{19}{18}{24}
+\probRow{0.46}{0.94}{2.3}{4.9}{8.8}{13}{17}{18}{34}
+\probRow{0.35}{0.7}{1.7}{3.7}{6.9}{11}{15}{18}{43}
+\probRow{0.26}{0.52}{1.3}{2.8}{5.4}{9}{13}{16}{52}
+\probRow{0.2}{0.39}{0.97}{2.1}{4.2}{7.2}{11}{14}{60}
+} 
+
+\subsubsection{Catastrophe Range = 1-2}
+\probTable{
+\probRow{17}{25}{58}{-}{-}{-}{-}{-}{-}
+\probRow{11}{26}{29}{34}{-}{-}{-}{-}{-}
+\probRow{11}{16}{28}{26}{20}{-}{-}{-}{-}
+\probRow{8.6}{13}{21}{26}{20}{12}{-}{-}{-}
+\probRow{7.3}{10}{17}{22}{22}{14}{6.8}{-}{-}
+\probRow{6.2}{8.3}{14}{19}{21}{18}{10}{3.9}{-}
+\probRow{5.2}{6.7}{12}{16}{19}{18}{13}{6.9}{2.3}
+\probRow{4.4}{5.5}{9.5}{14}{17}{18}{15}{10}{5.9}
+\probRow{3.8}{4.6}{7.9}{12}{16}{17}{16}{12}{11}
+\probRow{3.2}{3.8}{6.6}{10}{14}{16}{16}{14}{17}
+\probRow{2.7}{3.2}{5.6}{8.7}{12}{15}{16}{14}{23}
+\probRow{2.3}{2.6}{4.7}{7.4}{11}{13}{15}{15}{30}
+\probRow{2}{2.2}{4}{6.4}{9.2}{12}{14}{14}{36}
+\probRow{1.7}{1.9}{3.3}{5.4}{8}{11}{13}{14}{42}
+} 
+
+\subsubsection{Catastrophe Range = 1-3}
+\probTable{
+\probRow{25}{17}{58}{-}{-}{-}{-}{-}{-}
+\probRow{15}{32}{19}{34}{-}{-}{-}{-}{-}
+\probRow{18}{15}{30}{17}{20}{-}{-}{-}{-}
+\probRow{14}{18}{18}{26}{13}{12}{-}{-}{-}
+\probRow{14}{12}{20}{18}{20}{9.6}{6.8}{-}{-}
+\probRow{12}{12}{15}{20}{16}{15}{6.8}{3.9}{-}
+\probRow{11}{9.4}{14}{16}{18}{14}{11}{4.6}{2.3}
+\probRow{9.9}{8.7}{12}{15}{16}{15}{11}{7.7}{4.4}
+\probRow{9.1}{7.4}{11}{13}{15}{14}{13}{8.4}{8.1}
+\probRow{8.2}{6.7}{9.5}{12}{14}{15}{13}{10}{12}
+\probRow{7.5}{5.8}{8.6}{11}{13}{14}{13}{11}{16}
+\probRow{6.8}{5.3}{7.6}{10}{12}{13}{13}{11}{20}
+\probRow{6.2}{4.7}{6.9}{9.2}{11}{13}{13}{12}{25}
+\probRow{5.7}{4.2}{6.2}{8.4}{10}{12}{12}{12}{29}
+} 
+
+\subsection{Difficulty = 8}
+\subsubsection{Catastrophe Range = 1-1}
+\probTable{
+\probRow{8.3}{50}{42}{-}{-}{-}{-}{-}{-}
+\probRow{9}{32}{42}{17}{-}{-}{-}{-}{-}
+\probRow{8.2}{23}{36}{26}{7.2}{-}{-}{-}{-}
+\probRow{7.2}{17}{30}{28}{14}{3}{-}{-}{-}
+\probRow{6.2}{14}{24}{28}{19}{7.5}{1.3}{-}{-}
+\probRow{5.3}{11}{20}{26}{22}{12}{3.8}{0.52}{-}
+\probRow{4.5}{8.8}{17}{23}{23}{15}{6.9}{1.8}{0.22}
+\probRow{3.8}{7.2}{14}{20}{22}{18}{10}{3.8}{0.96}
+\probRow{3.3}{5.9}{12}{18}{21}{19}{13}{6.1}{2.5}
+\probRow{2.8}{4.9}{9.8}{16}{20}{19}{15}{8.5}{4.9}
+\probRow{2.4}{4.1}{8.2}{13}{18}{19}{16}{11}{8.1}
+\probRow{2}{3.4}{6.9}{12}{16}{18}{17}{13}{12}
+\probRow{1.7}{2.9}{5.9}{10}{14}{17}{17}{14}{17}
+\probRow{1.5}{2.4}{5}{8.7}{13}{16}{17}{15}{22}
+} 
+
+\subsubsection{Catastrophe Range = 1-2}
+\probTable{
+\probRow{17}{42}{42}{-}{-}{-}{-}{-}{-}
+\probRow{17}{31}{35}{17}{-}{-}{-}{-}{-}
+\probRow{16}{25}{30}{22}{7.2}{-}{-}{-}{-}
+\probRow{15}{20}{27}{23}{12}{3}{-}{-}{-}
+\probRow{14}{17}{23}{23}{15}{6.3}{1.3}{-}{-}
+\probRow{13}{15}{21}{22}{17}{9.1}{3.1}{0.52}{-}
+\probRow{12}{13}{18}{20}{18}{11}{5.2}{1.5}{0.22}
+\probRow{11}{12}{17}{19}{18}{13}{7.1}{2.8}{0.82}
+\probRow{10}{10}{15}{18}{18}{14}{8.8}{4.3}{1.9}
+\probRow{9.7}{9.3}{14}{17}{17}{15}{10}{5.7}{3.4}
+\probRow{9}{8.4}{12}{15}{16}{15}{11}{7}{5.4}
+\probRow{8.3}{7.6}{11}{14}{16}{15}{12}{8.2}{7.7}
+\probRow{7.7}{6.9}{10}{13}{15}{15}{13}{9.2}{10}
+\probRow{7.2}{6.3}{9.3}{12}{14}{15}{13}{10}{13}
+} 
+
+\subsubsection{Catastrophe Range = 1-3}
+\probTable{
+\probRow{25}{33}{42}{-}{-}{-}{-}{-}{-}
+\probRow{23}{32}{28}{17}{-}{-}{-}{-}{-}
+\probRow{24}{25}{27}{17}{7.2}{-}{-}{-}{-}
+\probRow{23}{22}{24}{19}{9.6}{3}{-}{-}{-}
+\probRow{23}{19}{22}{18}{12}{5}{1.3}{-}{-}
+\probRow{22}{17}{20}{18}{13}{6.9}{2.5}{0.52}{-}
+\probRow{22}{16}{18}{17}{14}{8.3}{3.8}{1.2}{0.22}
+\probRow{21}{14}{17}{17}{14}{9.4}{5}{2.1}{0.67}
+\probRow{20}{13}{16}{16}{14}{10}{6.1}{2.9}{1.4}
+\probRow{20}{12}{15}{15}{14}{11}{7}{3.8}{2.3}
+\probRow{19}{12}{14}{15}{14}{11}{7.8}{4.6}{3.5}
+\probRow{18}{11}{13}{14}{14}{11}{8.4}{5.3}{4.9}
+\probRow{18}{10}{12}{14}{13}{12}{8.9}{6}{6.4}
+\probRow{17}{9.6}{12}{13}{13}{12}{9.3}{6.6}{8}
+} 
+
+\subsection{Difficulty = 10}
+\subsubsection{Catastrophe Range = 1-1}
+\probTable{
+\probRow{8.3}{67}{25}{-}{-}{-}{-}{-}{-}
+\probRow{12}{49}{33}{6.3}{-}{-}{-}{-}{-}
+\probRow{13}{38}{35}{13}{1.6}{-}{-}{-}{-}
+\probRow{13}{31}{34}{17}{4.2}{0.39}{-}{-}{-}
+\probRow{13}{26}{32}{20}{7.1}{1.3}{0.098}{-}{-}
+\probRow{13}{23}{29}{22}{9.9}{2.7}{0.39}{0.024}{-}
+\probRow{12}{20}{27}{23}{12}{4.3}{0.93}{0.11}{$<$0.1}
+\probRow{12}{18}{25}{23}{14}{6}{1.7}{0.31}{0.034}
+\probRow{11}{16}{23}{23}{16}{7.7}{2.7}{0.63}{0.11}
+\probRow{10}{15}{21}{22}{17}{9.3}{3.8}{1.1}{0.26}
+\probRow{9.8}{13}{20}{22}{18}{11}{4.9}{1.7}{0.51}
+\probRow{9.3}{12}{18}{21}{18}{12}{6.1}{2.4}{0.9}
+\probRow{8.7}{11}{17}{20}{18}{13}{7.3}{3.2}{1.4}
+\probRow{8.3}{10}{16}{19}{18}{14}{8.4}{4}{2.1}
+} 
+
+\subsubsection{Catastrophe Range = 1-2}
+\probTable{
+\probRow{17}{58}{25}{-}{-}{-}{-}{-}{-}
+\probRow{22}{42}{29}{6.3}{-}{-}{-}{-}{-}
+\probRow{24}{34}{29}{11}{1.6}{-}{-}{-}{-}
+\probRow{25}{30}{27}{14}{3.6}{0.39}{-}{-}{-}
+\probRow{26}{26}{26}{15}{5.6}{1.1}{0.098}{-}{-}
+\probRow{26}{24}{24}{16}{7.3}{2.1}{0.34}{0.024}{-}
+\probRow{26}{22}{23}{17}{8.7}{3.1}{0.73}{0.1}{$<$0.1}
+\probRow{26}{20}{22}{17}{9.8}{4.1}{1.2}{0.24}{0.03}
+\probRow{26}{19}{20}{17}{11}{5.1}{1.8}{0.45}{0.085}
+\probRow{25}{18}{20}{17}{11}{5.9}{2.4}{0.72}{0.19}
+\probRow{25}{17}{19}{17}{12}{6.7}{3}{1}{0.34}
+\probRow{25}{16}{18}{16}{12}{7.3}{3.6}{1.4}{0.55}
+\probRow{25}{15}{17}{16}{12}{7.9}{4.1}{1.8}{0.83}
+\probRow{24}{15}{17}{16}{13}{8.4}{4.7}{2.2}{1.2}
+} 
+
+\subsubsection{Catastrophe Range = 1-3}
+\probTable{
+\probRow{25}{50}{25}{-}{-}{-}{-}{-}{-}
+\probRow{31}{38}{25}{6.3}{-}{-}{-}{-}{-}
+\probRow{34}{31}{23}{9.4}{1.6}{-}{-}{-}{-}
+\probRow{36}{27}{22}{11}{3.1}{0.39}{-}{-}{-}
+\probRow{38}{25}{21}{12}{4.4}{0.98}{0.098}{-}{-}
+\probRow{39}{23}{19}{12}{5.4}{1.6}{0.29}{0.024}{-}
+\probRow{40}{21}{18}{12}{6.1}{2.2}{0.56}{0.085}{$<$0.1}
+\probRow{40}{20}{17}{12}{6.7}{2.8}{0.85}{0.18}{0.026}
+\probRow{41}{19}{17}{12}{7.1}{3.3}{1.2}{0.31}{0.066}
+\probRow{41}{18}{16}{12}{7.4}{3.7}{1.5}{0.46}{0.13}
+\probRow{42}{17}{15}{12}{7.6}{4.1}{1.8}{0.63}{0.22}
+\probRow{42}{16}{15}{12}{7.8}{4.4}{2.1}{0.8}{0.33}
+\probRow{42}{15}{14}{12}{7.9}{4.7}{2.3}{0.98}{0.47}
+\probRow{43}{15}{14}{11}{8}{4.9}{2.6}{1.2}{0.63}
+} 
+
+\subsection{Difficulty = 12}
+\subsubsection{Catastrophe Range = 1-1}
+\probTable{
+\probRow{8.3}{83}{8.3}{-}{-}{-}{-}{-}{-}
+\probRow{15}{71}{14}{0.69}{-}{-}{-}{-}{-}
+\probRow{19}{61}{18}{1.7}{0.058}{-}{-}{-}{-}
+\probRow{23}{54}{20}{2.9}{0.19}{$<$0.1}{-}{-}{-}
+\probRow{26}{48}{21}{4.1}{0.4}{0.02}{$<$0.1}{-}{-}
+\probRow{28}{44}{22}{5.2}{0.68}{0.05}{$<$0.1}{$<$0.1}{-}
+\probRow{30}{40}{23}{6.3}{1}{0.099}{$<$0.1}{$<$0.1}{$<$0.1}
+\probRow{31}{37}{23}{7.2}{1.4}{0.17}{0.013}{$<$0.1}{$<$0.1}
+\probRow{33}{35}{23}{8}{1.8}{0.25}{0.025}{$<$0.1}{$<$0.1}
+\probRow{34}{33}{22}{8.7}{2.1}{0.36}{0.042}{$<$0.1}{$<$0.1}
+\probRow{34}{31}{22}{9.3}{2.5}{0.48}{0.065}{$<$0.1}{$<$0.1}
+\probRow{35}{30}{22}{9.8}{2.9}{0.62}{0.095}{0.011}{$<$0.1}
+\probRow{36}{28}{21}{10}{3.3}{0.77}{0.13}{0.017}{$<$0.1}
+\probRow{36}{27}{21}{11}{3.7}{0.93}{0.18}{0.025}{$<$0.1}
+} 
+
+\subsubsection{Catastrophe Range = 1-2}
+\probTable{
+\probRow{17}{75}{8.3}{-}{-}{-}{-}{-}{-}
+\probRow{28}{59}{13}{0.69}{-}{-}{-}{-}{-}
+\probRow{36}{48}{14}{1.6}{0.058}{-}{-}{-}{-}
+\probRow{41}{41}{15}{2.4}{0.17}{$<$0.1}{-}{-}{-}
+\probRow{46}{36}{15}{3.1}{0.33}{0.018}{$<$0.1}{-}{-}
+\probRow{49}{32}{15}{3.6}{0.51}{0.041}{$<$0.1}{$<$0.1}{-}
+\probRow{52}{29}{14}{4}{0.69}{0.073}{$<$0.1}{$<$0.1}{$<$0.1}
+\probRow{54}{27}{14}{4.3}{0.87}{0.11}{$<$0.1}{$<$0.1}{$<$0.1}
+\probRow{56}{25}{13}{4.6}{1}{0.16}{0.017}{$<$0.1}{$<$0.1}
+\probRow{58}{23}{13}{4.7}{1.2}{0.21}{0.026}{$<$0.1}{$<$0.1}
+\probRow{60}{21}{12}{4.8}{1.3}{0.26}{0.037}{$<$0.1}{$<$0.1}
+\probRow{61}{20}{12}{4.8}{1.4}{0.31}{0.05}{$<$0.1}{$<$0.1}
+\probRow{63}{19}{11}{4.9}{1.5}{0.36}{0.064}{$<$0.1}{$<$0.1}
+\probRow{64}{18}{11}{4.8}{1.6}{0.41}{0.08}{0.012}{$<$0.1}
+} 
+
+\subsubsection{Catastrophe Range = 1-3}
+\probTable{
+\probRow{25}{67}{8.3}{-}{-}{-}{-}{-}{-}
+\probRow{40}{49}{11}{0.69}{-}{-}{-}{-}{-}
+\probRow{49}{38}{12}{1.4}{0.058}{-}{-}{-}{-}
+\probRow{56}{31}{11}{1.9}{0.15}{$<$0.1}{-}{-}{-}
+\probRow{61}{26}{11}{2.3}{0.26}{0.016}{$<$0.1}{-}{-}
+\probRow{64}{23}{9.8}{2.4}{0.37}{0.033}{$<$0.1}{$<$0.1}{-}
+\probRow{68}{20}{9.1}{2.5}{0.46}{0.053}{$<$0.1}{$<$0.1}{$<$0.1}
+\probRow{70}{18}{8.4}{2.6}{0.53}{0.074}{$<$0.1}{$<$0.1}{$<$0.1}
+\probRow{73}{16}{7.7}{2.5}{0.59}{0.095}{0.011}{$<$0.1}{$<$0.1}
+\probRow{75}{15}{7.1}{2.5}{0.63}{0.12}{0.015}{$<$0.1}{$<$0.1}
+\probRow{77}{13}{6.6}{2.4}{0.65}{0.13}{0.02}{$<$0.1}{$<$0.1}
+\probRow{79}{12}{6.1}{2.3}{0.67}{0.15}{0.025}{$<$0.1}{$<$0.1}
+\probRow{80}{11}{5.7}{2.2}{0.68}{0.16}{0.03}{$<$0.1}{$<$0.1}
+\probRow{81}{10}{5.3}{2.1}{0.68}{0.17}{0.034}{$<$0.1}{$<$0.1}
+} 
