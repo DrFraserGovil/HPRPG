@@ -254,13 +254,25 @@ Gain an additional #1 #2 damage \forEvery{}.
 
 
 
+
+\def\levelZero{\imp{Nihil}}
+\def\levelOne{\imp{Primus}}
+\def\levelTwo{\imp{Dua}}
+\def\levelThree{\imp{Tria}}
+\def\levelFour{\imp{Qartum}}
+\def\levelFive{\imp{Qinta}}
+\def\levelSix{\imp{Sextus}}
+\def\levelSeven{\imp{Sumnus}}
+
 %%%%RATINGS TABLE
 \newcommand\dualRow[2]{#1	&	#2	\\}
+\newcommand\triRow[3]{#1	&	#2	& #3\\}
 \newcommand\ratingTable[8]
 {
-\footnotesize
+
 \begin{center}
-\begin{rndtable}{c p{7.4 cm}}
+\footnotesize
+\begin{rndtable}{c p{7.8 cm}}
 \bf Rating&\bf Summary \\
 \dualRow{\emptyCape}{#1}
 \dualRow{\oneCape}{#2}
@@ -273,6 +285,25 @@ Gain an additional #1 #2 damage \forEvery{}.
 \end{rndtable}
 \end{center} 
 }
+\newcommand\extendedRatingTable[8]
+{
+
+\begin{center}
+\footnotesize
+\begin{rndtable}{c c p{6.3 cm}}
+\bf Rating&\bf Name & \bf Summary \\
+\triRow{\emptyCape}#1
+\triRow{\oneCape}#2
+\triRow{\twoCape}#3
+\triRow{\threeCape}#4
+\triRow{\fourCape}#5
+\triRow{\fiveCape}#6
+\triRow{\sixCape}#7
+\triRow{\sevenCape}#8
+\end{rndtable}
+\end{center} 
+}
+
 
 \def\s{0.22}
 \def\w{1.7}
@@ -335,9 +366,9 @@ Gain an additional #1 #2 damage \forEvery{}.
 \!\mult{#1}{#2}
 }
 
-\def\wS{4.8}
-\def\xS{1.4}
-\newcommand\col[2]{\multicolumn{1}{c}{\parbox[t]{#2 cm}{\raggedright #1}}}
+\def\wS{3}
+\def\xS{2}
+\newcommand\col[2]{\multicolumn{1}{c}{\parbox[t]{#2 cm}{\raggedright \imp{#1}}}}
 
 \newcommand\school[5]
 {

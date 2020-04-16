@@ -30,108 +30,154 @@
 \contentsline {subsubsection}{\textsc {\textbf { Innocent}}}{10}{subsubsection*.20}
 \contentsline {subsubsection}{\textsc {\textbf { Loner}}}{10}{subsubsection*.21}
 \contentsline {subsubsection}{\textsc {\textbf { Preserver}}}{10}{subsubsection*.22}
-\contentsline {chapter}{\numberline {4}Character Archetype}{11}{chapter.4}
-\contentsline {chapter}{\numberline {5}Capabilities}{12}{chapter.5}
-\contentsline {section}{\numberline {5.1}Capability Dots}{12}{section.5.1}
-\contentsline {section}{\numberline {5.2}Aspects}{12}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Aspects Classification}{12}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Assigning Aspects}{12}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Abilities}{12}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Innate}{13}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Practical}{13}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Knowledge}{13}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}Additional Abilities}{13}{subsection.5.3.4}
-\contentsline {subsubsection}{Custom Abilities}{14}{subsubsection*.23}
-\contentsline {subsection}{\numberline {5.3.5}Assigning Abilities}{14}{subsection.5.3.5}
-\contentsline {section}{\numberline {5.4}Health}{14}{section.5.4}
-\contentsline {section}{\numberline {5.5}Fortitude}{14}{section.5.5}
-\contentsline {section}{\numberline {5.6}Heroism \& Villainy}{14}{section.5.6}
-\contentsline {part}{II\hspace {1em}Actions and their Consequences}{15}{part.2}
-\contentsline {chapter}{\numberline {6}Performing Checks}{16}{chapter.6}
-\contentsline {section}{\numberline {6.1}Forming a Dice Pool}{16}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Ratings}{16}{subsection.6.1.1}
-\contentsline {subsubsection}{Combining Skills}{16}{subsubsection*.24}
-\contentsline {subsubsection}{Bonuses and Penalties}{16}{subsubsection*.25}
-\contentsline {subsubsection}{Zero-Pools}{16}{subsubsection*.26}
-\contentsline {section}{\numberline {6.2}Determing the Checktype}{16}{section.6.2}
-\contentsline {section}{\numberline {6.3}Difficulty}{16}{section.6.3}
-\contentsline {subsubsection}{Intractable Difficulties}{17}{subsubsection*.27}
-\contentsline {section}{\numberline {6.4}Success \& Failure}{17}{section.6.4}
-\contentsline {subsubsection}{Automatic Success}{17}{subsubsection*.28}
-\contentsline {subsubsection}{Failure}{17}{subsubsection*.29}
-\contentsline {subsubsection}{Catastrophes}{17}{subsubsection*.30}
-\contentsline {subsection}{\numberline {6.4.1}Contests}{17}{subsection.6.4.1}
-\contentsline {section}{\numberline {6.5}Working Together}{18}{section.6.5}
-\contentsline {section}{\numberline {6.6}Multiple Attempts}{18}{section.6.6}
-\contentsline {section}{\numberline {6.7}Using \textsc {\textbf {Aspects}} and \textsc {\textbf {Abilities}}}{18}{section.6.7}
-\contentsline {subsection}{\numberline {6.7.1}Aspect Descriptions}{18}{subsection.6.7.1}
-\contentsline {subsubsection}{Fitness}{18}{subsubsection*.31}
-\contentsline {subsubsection}{Precision}{18}{subsubsection*.32}
-\contentsline {subsubsection}{Vitality}{18}{subsubsection*.33}
-\contentsline {subsubsection}{Charm}{18}{subsubsection*.34}
-\contentsline {subsubsection}{Deception}{18}{subsubsection*.35}
-\contentsline {subsubsection}{Insight}{18}{subsubsection*.36}
-\contentsline {subsubsection}{Intelligence}{19}{subsubsection*.37}
-\contentsline {subsubsection}{Willpower}{19}{subsubsection*.38}
-\contentsline {subsubsection}{Perception}{19}{subsubsection*.39}
-\contentsline {section}{\numberline {6.8}Ability Descriptions}{19}{section.6.8}
-\contentsline {subsection}{\numberline {6.8.1}Innate Abilities}{19}{subsection.6.8.1}
-\contentsline {subsubsection}{Alertness}{19}{subsubsection*.40}
-\contentsline {subsubsection}{Bravery}{19}{subsubsection*.41}
-\contentsline {subsubsection}{Conviction}{19}{subsubsection*.42}
-\contentsline {subsubsection}{Eloquence}{20}{subsubsection*.43}
-\contentsline {subsubsection}{Intimidation}{20}{subsubsection*.44}
-\contentsline {subsubsection}{Kindness}{20}{subsubsection*.45}
-\contentsline {subsubsection}{Kinship}{20}{subsubsection*.46}
-\contentsline {subsubsection}{Logic}{20}{subsubsection*.47}
-\contentsline {subsubsection}{Speed}{21}{subsubsection*.48}
-\contentsline {subsubsection}{Strength}{21}{subsubsection*.49}
-\contentsline {subsection}{\numberline {6.8.2}Practical Abilities}{21}{subsection.6.8.2}
-\contentsline {subsubsection}{Acrobatics}{21}{subsubsection*.50}
-\contentsline {subsubsection}{Brawl}{21}{subsubsection*.51}
-\contentsline {subsubsection}{Covert}{21}{subsubsection*.52}
-\contentsline {subsubsection}{Craft}{21}{subsubsection*.53}
-\contentsline {subsubsection}{Imbue}{21}{subsubsection*.54}
-\contentsline {subsubsection}{Marksmanship}{21}{subsubsection*.55}
-\contentsline {subsubsection}{Performance}{21}{subsubsection*.56}
-\contentsline {subsubsection}{Pilot}{21}{subsubsection*.57}
-\contentsline {subsubsection}{Skirmish}{21}{subsubsection*.58}
-\contentsline {subsubsection}{Survival}{21}{subsubsection*.59}
-\contentsline {subsection}{\numberline {6.8.3}Knowledge Abilities}{21}{subsection.6.8.3}
-\contentsline {subsubsection}{Arcane}{21}{subsubsection*.60}
-\contentsline {subsubsection}{General}{21}{subsubsection*.61}
-\contentsline {subsubsection}{History}{21}{subsubsection*.62}
-\contentsline {subsubsection}{Investigation}{21}{subsubsection*.63}
-\contentsline {subsubsection}{Medicine}{21}{subsubsection*.64}
-\contentsline {subsubsection}{Muggle}{21}{subsubsection*.65}
-\contentsline {subsubsection}{Nature}{21}{subsubsection*.66}
-\contentsline {subsubsection}{Science}{21}{subsubsection*.67}
-\contentsline {subsubsection}{Technology}{21}{subsubsection*.68}
-\contentsline {subsubsection}{World}{21}{subsubsection*.69}
-\contentsline {part}{III\hspace {1em}Items}{22}{part.3}
-\contentsline {part}{IV\hspace {1em}Magic}{23}{part.4}
-\contentsline {part}{V\hspace {1em}Lists \& Tables}{24}{part.5}
-\contentsline {part}{VI\hspace {1em}Appendices}{25}{part.6}
-\contentsline {chapter}{\numberline {7}Roll Statistics}{26}{chapter.7}
-\contentsline {section}{\numberline {7.1}Analytic Probability}{26}{section.7.1}
-\contentsline {section}{\numberline {7.2}Outcome Tables}{26}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Difficulty = 4}{26}{subsection.7.2.1}
-\contentsline {subsubsection}{Catastrophe Range = 1-1}{26}{subsubsection*.70}
-\contentsline {subsubsection}{Catastrophe Range = 1-2}{26}{subsubsection*.71}
-\contentsline {subsubsection}{Catastrophe Range = 1-3}{27}{subsubsection*.72}
-\contentsline {subsection}{\numberline {7.2.2}Difficulty = 6}{27}{subsection.7.2.2}
-\contentsline {subsubsection}{Catastrophe Range = 1-1}{27}{subsubsection*.73}
-\contentsline {subsubsection}{Catastrophe Range = 1-2}{27}{subsubsection*.74}
-\contentsline {subsubsection}{Catastrophe Range = 1-3}{27}{subsubsection*.75}
-\contentsline {subsection}{\numberline {7.2.3}Difficulty = 8}{27}{subsection.7.2.3}
-\contentsline {subsubsection}{Catastrophe Range = 1-1}{27}{subsubsection*.76}
-\contentsline {subsubsection}{Catastrophe Range = 1-2}{27}{subsubsection*.77}
-\contentsline {subsubsection}{Catastrophe Range = 1-3}{28}{subsubsection*.78}
-\contentsline {subsection}{\numberline {7.2.4}Difficulty = 10}{28}{subsection.7.2.4}
-\contentsline {subsubsection}{Catastrophe Range = 1-1}{28}{subsubsection*.79}
-\contentsline {subsubsection}{Catastrophe Range = 1-2}{28}{subsubsection*.80}
-\contentsline {subsubsection}{Catastrophe Range = 1-3}{28}{subsubsection*.81}
-\contentsline {subsection}{\numberline {7.2.5}Difficulty = 12}{28}{subsection.7.2.5}
-\contentsline {subsubsection}{Catastrophe Range = 1-1}{28}{subsubsection*.82}
-\contentsline {subsubsection}{Catastrophe Range = 1-2}{28}{subsubsection*.83}
-\contentsline {subsubsection}{Catastrophe Range = 1-3}{29}{subsubsection*.84}
+\contentsline {chapter}{\numberline {4}Character {Archetype}}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}\textsc {Archetype} Abilities}{11}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Assigning \textsc {Archetype} Abilities}{11}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}\textsc {Archetype} Feats}{11}{section.4.2}
+\contentsline {section}{\numberline {4.3}Changing Archetype}{11}{section.4.3}
+\contentsline {Chapter}{Archetypes List}{11}{section.4.3}
+\contentsline {section}{Auror}{12}{chapter*.23}
+\contentsline {section}{\numberline {4.4}Auror{} \textsc {Capabilities} }{12}{section.4.4}
+\contentsline {section}{\numberline {4.5}Auror{} Special \textsc {Abilities}}{12}{section.4.5}
+\contentsline {subsubsection}{\textsc {Innate Ability: Intuition}}{12}{subsubsection*.24}
+\contentsline {subsubsection}{\textsc {Practical Ability: Interrogate}}{12}{subsubsection*.25}
+\contentsline {subsubsection}{\textsc {Knowledge Ability: Tracking}}{12}{subsubsection*.26}
+\contentsline {section}{\numberline {4.6}\textsc {Auror} Feats}{12}{section.4.6}
+\contentsline {subsubsection}{\textsc {Ambush}}{12}{subsubsection*.27}
+\contentsline {subsubsection}{\textsc {Cold Cases}}{12}{subsubsection*.28}
+\contentsline {subsubsection}{\textsc {Familiar Terrain}}{12}{subsubsection*.29}
+\contentsline {subsubsection}{\textsc {Lie Detector}}{12}{subsubsection*.30}
+\contentsline {subsubsection}{\textsc {Rapid Reflexes}}{12}{subsubsection*.31}
+\contentsline {subsubsection}{\textsc {Unwavering Focus}}{12}{subsubsection*.32}
+\contentsline {chapter}{\numberline {5}Capabilities}{13}{chapter.5}
+\contentsline {section}{\numberline {5.1}Capability Dots}{13}{section.5.1}
+\contentsline {section}{\numberline {5.2}Aspects}{13}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Aspects Classification}{13}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Assigning Aspects}{13}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Abilities}{13}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Innate}{14}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Practical}{14}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Knowledge}{14}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Additional Abilities}{14}{subsection.5.3.4}
+\contentsline {subsubsection}{Custom Abilities}{15}{subsubsection*.33}
+\contentsline {subsection}{\numberline {5.3.5}Assigning Abilities}{15}{subsection.5.3.5}
+\contentsline {section}{\numberline {5.4}Health}{15}{section.5.4}
+\contentsline {section}{\numberline {5.5}Fortitude}{15}{section.5.5}
+\contentsline {section}{\numberline {5.6}Heroism \& Villainy}{15}{section.5.6}
+\contentsline {part}{II\hspace {1em}Actions and their Consequences}{16}{part.2}
+\contentsline {chapter}{\numberline {6}Performing Checks}{17}{chapter.6}
+\contentsline {section}{\numberline {6.1}Forming a Dice Pool}{17}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Ratings}{17}{subsection.6.1.1}
+\contentsline {subsubsection}{Combining Skills}{17}{subsubsection*.34}
+\contentsline {subsubsection}{Bonuses and Penalties}{17}{subsubsection*.35}
+\contentsline {subsubsection}{Zero-Pools}{17}{subsubsection*.36}
+\contentsline {section}{\numberline {6.2}Determing the Checktype}{17}{section.6.2}
+\contentsline {section}{\numberline {6.3}Difficulty}{18}{section.6.3}
+\contentsline {subsubsection}{Intractable Difficulties}{18}{subsubsection*.37}
+\contentsline {section}{\numberline {6.4}Success \& Failure}{18}{section.6.4}
+\contentsline {subsubsection}{Automatic Success}{18}{subsubsection*.38}
+\contentsline {subsubsection}{Failure}{18}{subsubsection*.39}
+\contentsline {subsubsection}{Catastrophes}{19}{subsubsection*.40}
+\contentsline {subsection}{\numberline {6.4.1}Contests}{19}{subsection.6.4.1}
+\contentsline {section}{\numberline {6.5}Working Together}{19}{section.6.5}
+\contentsline {section}{\numberline {6.6}Multiple Attempts}{19}{section.6.6}
+\contentsline {section}{\numberline {6.7}Using \textsc {\textbf {Aspects}} and \textsc {\textbf {Abilities}}}{20}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Aspect Descriptions}{20}{subsection.6.7.1}
+\contentsline {subsubsection}{Fitness}{20}{subsubsection*.41}
+\contentsline {subsubsection}{Precision}{20}{subsubsection*.42}
+\contentsline {subsubsection}{Vitality}{20}{subsubsection*.43}
+\contentsline {subsubsection}{Charm}{20}{subsubsection*.44}
+\contentsline {subsubsection}{Deception}{20}{subsubsection*.45}
+\contentsline {subsubsection}{Insight}{20}{subsubsection*.46}
+\contentsline {subsubsection}{Intelligence}{20}{subsubsection*.47}
+\contentsline {subsubsection}{Willpower}{21}{subsubsection*.48}
+\contentsline {subsubsection}{Perception}{21}{subsubsection*.49}
+\contentsline {section}{\numberline {6.8}Ability Descriptions}{21}{section.6.8}
+\contentsline {subsection}{\numberline {6.8.1}Innate Abilities}{21}{subsection.6.8.1}
+\contentsline {subsubsection}{Alertness}{21}{subsubsection*.50}
+\contentsline {subsubsection}{Bravery}{21}{subsubsection*.51}
+\contentsline {subsubsection}{Conviction}{22}{subsubsection*.52}
+\contentsline {subsubsection}{Eloquence}{22}{subsubsection*.53}
+\contentsline {subsubsection}{Intimidation}{22}{subsubsection*.54}
+\contentsline {subsubsection}{Kindness}{22}{subsubsection*.55}
+\contentsline {subsubsection}{Kinship}{22}{subsubsection*.56}
+\contentsline {subsubsection}{Logic}{23}{subsubsection*.57}
+\contentsline {subsubsection}{Speed}{23}{subsubsection*.58}
+\contentsline {subsubsection}{Strength}{23}{subsubsection*.59}
+\contentsline {subsection}{\numberline {6.8.2}Practical Abilities}{23}{subsection.6.8.2}
+\contentsline {subsubsection}{Acrobatics}{24}{subsubsection*.60}
+\contentsline {subsubsection}{Brawl}{24}{subsubsection*.61}
+\contentsline {subsubsection}{Covert}{24}{subsubsection*.62}
+\contentsline {subsubsection}{Craft}{24}{subsubsection*.63}
+\contentsline {subsubsection}{Imbue}{24}{subsubsection*.64}
+\contentsline {subsubsection}{Marksmanship}{24}{subsubsection*.65}
+\contentsline {subsubsection}{Performance}{24}{subsubsection*.66}
+\contentsline {subsubsection}{Pilot}{24}{subsubsection*.67}
+\contentsline {subsubsection}{Skirmish}{24}{subsubsection*.68}
+\contentsline {subsubsection}{Survival}{24}{subsubsection*.69}
+\contentsline {subsection}{\numberline {6.8.3}Knowledge Abilities}{24}{subsection.6.8.3}
+\contentsline {subsubsection}{Arcane}{24}{subsubsection*.70}
+\contentsline {subsubsection}{General}{24}{subsubsection*.71}
+\contentsline {subsubsection}{History}{24}{subsubsection*.72}
+\contentsline {subsubsection}{Investigation}{24}{subsubsection*.73}
+\contentsline {subsubsection}{Medicine}{24}{subsubsection*.74}
+\contentsline {subsubsection}{Muggle}{24}{subsubsection*.75}
+\contentsline {subsubsection}{Nature}{24}{subsubsection*.76}
+\contentsline {subsubsection}{Science}{24}{subsubsection*.77}
+\contentsline {subsubsection}{Technology}{24}{subsubsection*.78}
+\contentsline {subsubsection}{World}{24}{subsubsection*.79}
+\contentsline {part}{III\hspace {1em}Items}{25}{part.3}
+\contentsline {part}{IV\hspace {1em}Magic}{26}{part.4}
+\contentsline {chapter}{\numberline {7}Understanding Magic}{27}{chapter.7}
+\contentsline {section}{\numberline {7.1}Schools, Disciplines \& \textsc {Affinities}}{27}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}\textsc {\textbf {Affinities}}}{27}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Discipline Descriptions}{27}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Charms}{27}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Divination}{27}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Illusion}{28}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Malediction}{28}{subsection.7.2.4}
+\contentsline {subsection}{\numberline {7.2.5}Recuperation}{28}{subsection.7.2.5}
+\contentsline {subsection}{\numberline {7.2.6}Transfiguration}{28}{subsection.7.2.6}
+\contentsline {subsection}{\numberline {7.2.7}Dark Arts}{28}{subsection.7.2.7}
+\contentsline {chapter}{\numberline {8}Casting Spells}{29}{chapter.8}
+\contentsline {section}{\numberline {8.1}Choosing the Spell}{29}{section.8.1}
+\contentsline {subsubsection}{A Note on Roleplaying}{29}{subsubsection*.80}
+\contentsline {section}{\numberline {8.2}Casting Checks}{29}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Casting Failure}{30}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Success}{30}{subsection.8.2.2}
+\contentsline {subsubsection}{Inherent Effect}{30}{subsubsection*.81}
+\contentsline {subsubsection}{Required Successes}{30}{subsubsection*.82}
+\contentsline {subsubsection}{Optional Successes}{31}{subsubsection*.83}
+\contentsline {subsubsection}{Example Spellcasting}{31}{subsubsection*.84}
+\contentsline {section}{\numberline {8.3}Negating Spells}{31}{section.8.3}
+\contentsline {subsubsection}{Example Negations}{31}{subsubsection*.85}
+\contentsline {section}{\numberline {8.4}Extended Casting}{32}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Concentration}{32}{subsection.8.4.1}
+\contentsline {subsection}{\numberline {8.4.2}Catch-Casting}{32}{subsection.8.4.2}
+\contentsline {subsection}{\numberline {8.4.3}Rituals}{32}{subsection.8.4.3}
+\contentsline {section}{\numberline {8.5}Learning Spells}{32}{section.8.5}
+\contentsline {part}{V\hspace {1em}Lists \& Tables}{33}{part.5}
+\contentsline {part}{VI\hspace {1em}Appendices}{34}{part.6}
+\contentsline {chapter}{\numberline {9}Roll Statistics}{35}{chapter.9}
+\contentsline {section}{\numberline {9.1}Analytic Probability}{35}{section.9.1}
+\contentsline {section}{\numberline {9.2}Outcome Tables}{35}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}Difficulty = 4}{36}{subsection.9.2.1}
+\contentsline {subsubsection}{Catastrophe Range = 1-1}{36}{subsubsection*.86}
+\contentsline {subsubsection}{Catastrophe Range = 1-2}{36}{subsubsection*.87}
+\contentsline {subsubsection}{Catastrophe Range = 1-3}{36}{subsubsection*.88}
+\contentsline {subsection}{\numberline {9.2.2}Difficulty = 6}{36}{subsection.9.2.2}
+\contentsline {subsubsection}{Catastrophe Range = 1-1}{36}{subsubsection*.89}
+\contentsline {subsubsection}{Catastrophe Range = 1-2}{36}{subsubsection*.90}
+\contentsline {subsubsection}{Catastrophe Range = 1-3}{36}{subsubsection*.91}
+\contentsline {subsection}{\numberline {9.2.3}Difficulty = 8}{37}{subsection.9.2.3}
+\contentsline {subsubsection}{Catastrophe Range = 1-1}{37}{subsubsection*.92}
+\contentsline {subsubsection}{Catastrophe Range = 1-2}{37}{subsubsection*.93}
+\contentsline {subsubsection}{Catastrophe Range = 1-3}{37}{subsubsection*.94}
+\contentsline {subsection}{\numberline {9.2.4}Difficulty = 10}{37}{subsection.9.2.4}
+\contentsline {subsubsection}{Catastrophe Range = 1-1}{37}{subsubsection*.95}
+\contentsline {subsubsection}{Catastrophe Range = 1-2}{37}{subsubsection*.96}
+\contentsline {subsubsection}{Catastrophe Range = 1-3}{37}{subsubsection*.97}
+\contentsline {subsection}{\numberline {9.2.5}Difficulty = 12}{38}{subsection.9.2.5}
+\contentsline {subsubsection}{Catastrophe Range = 1-1}{38}{subsubsection*.98}
+\contentsline {subsubsection}{Catastrophe Range = 1-2}{38}{subsubsection*.99}
+\contentsline {subsubsection}{Catastrophe Range = 1-3}{38}{subsubsection*.100}

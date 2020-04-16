@@ -1,25 +1,39 @@
 \part{Magic}\label{C:Magic}
 
-%~ \newcommand\schoolDescribe[6]
-%~ {
-	%~ \subsection{#1}
+\newcommand\sprow[2]
+	{
+		\parbox[t]{1.8cm}{\it #1} & \parbox[t]{6.8 cm}{\small #2} \\
+	}
+
+\newcommand\schoolDescribe[6]
+{
 	
-	%~ #2
+	\subsection{#1}
 	
-	%~ \subsubsection{{\it #3} Magic}
+	{
+	\setlength\parskip{5 pt}
+	#2
 	
-	%~ #4
+	The #1 School contains the #3 and #5 disciplines. 
+	}
 	
-	%~ \subsubsection{{\it #5} Magic}
 	
-	%~ #6
-%~ }
+	\begin{rndtable}{r l}
+		\bf Discipline	&	\bf Description \\
+		\sprow{#3}{#4}
+		\sprow{#5}{#6}
+	\end{rndtable}
+	
+	\normalsize
+}
 
 
-%~ \input{Chapters/Part4_Magic/SpellSchools}
+\input{Chapters/Part4_Magic/SpellSchools}
+
+\input{Chapters/Part4_Magic/SpellCasting}
 
 %~ \input{Chapters/Part4_Magic/SpellTypes}
 
 %~ \input{Chapters/Part4_Magic/SpellShapes}
 
-%~ \input{Chapters/Part4_Magic/SpellCasting}
+
