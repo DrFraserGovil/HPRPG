@@ -11,7 +11,8 @@
 
 \newcommand\feat[2]
 {
-	\subsubsection{\imp{#1}}
+	\vspace{\minus{}0.4cm}
+	\subsubsection{\key{#1}}
 	
 	#2
 
@@ -26,6 +27,7 @@
 \define@key{archetype}{name}{\def\name{#1}}
 \define@key{archetype}{article}{\def\article{#1}}
 \define@key{archetype}{bonuses}{\def\bonuses{#1}}
+\define@key{archetype}{experience}{\def\experience{#1}}
 \define@key{archetype}{feats}{\def\feats{#1}}
 \define@key{archetype}{bonusWidth}{\def\bonusWidth{#1}}
 \define@key{archetype}{description}{\def\description{#1}}
@@ -64,7 +66,7 @@
 \newcommand\archetype[1]
 {
 	\begingroup
-	\setkeys{archetype}{name= None,article = A, bonuses = , description= None,innateAbility= None,innateDescription= None,innateNil= None,innateI= None,innateII= None,innateIII= None,innateIV= None,innateV= None,innateVI= None,innateVII= None,knowledgeAbility= None,knowledgeDescription= None,knowledgeNil= None,knowledgeI= None,knowledgeII= None,knowledgeIII= None,knowledgeIV= None,knowledgeV= None,knowledgeVI= None,knowledgeVII= None,practicalAbility= None,practicalDescription= None,practicalNil= None,practicalI= None,practicalII= None,practicalIII= None,practicalIV= None,practicalV= None,practicalVI= None,practicalVII= None,bonusWidth = 3, feats = } 
+	\setkeys{archetype}{name= None,article = A, bonuses = , description= None,innateAbility= None,innateDescription= None,innateNil= None,innateI= None,innateII= None,innateIII= None,innateIV= None,innateV= None,innateVI= None,innateVII= None,knowledgeAbility= None,knowledgeDescription= None,knowledgeNil= None,knowledgeI= None,knowledgeII= None,knowledgeIII= None,knowledgeIV= None,knowledgeV= None,knowledgeVI= None,knowledgeVII= None,practicalAbility= None,practicalDescription= None,practicalNil= None,practicalI= None,practicalII= None,practicalIII= None,practicalIV= None,practicalV= None,practicalVI= None,practicalVII= None,bonusWidth = 3, feats = , experience = \item Do something } 
 
 	\setkeys{archetype}{#1}
 	
@@ -77,7 +79,7 @@
 	
 	\section{\name{} \imp{Capabilities} }
 	
-	\article{} \imp{\name} gets the following bonuses to their \imp{Aspects}, \imp{Abilities} and \imp{Affinities}. Where a choice is given, you cannot make the same choice twice. 
+	\article{} \imp{\name} gets the following bonuses to their \imp{Aspects}, \imp{Abilities} and \imp{Affinities}. Where a choice is given, you cannot make the same choice twice. Note that these are {\it bonuses} on top of those granted by other abilities and natural starting values. 
 	
 	\begin{center}
 	\begin{rndtable}{c c}
@@ -86,7 +88,15 @@
 	\end{rndtable}
 	\end{center}
 	
-	Note that these are {\it bonuses} on top of those granted by other abilities and natural starting values. 
+	
+	
+	\section{\name{} Experience}
+	
+	\article{} \imp{\name} gains additional experience when they:
+	\begin{itemize}[itemsep = 0cm]
+		\experience
+	\end{itemize}
+	
 	\section{\name{} Special \imp{Abilities}}
 	
 	A character following the path of the \imp{\name{}} can use the following special abilities: \key{\innateAbility}, \key{\practicalAbility} and \key{\knowledgeAbility}.
@@ -110,65 +120,98 @@
 \def\auror{\imp{Auror}}
 
 
-%%ArchetypeBegin
-\archetype{name = Auror,article = An,
-description = As a profession\comma{} the \auror{}s are a group of highly-trained law enforcement officials working for the \imp{Ministry of Magic}\comma{} as well as a catchall term for those dedicated to catching bad guys and making them pay.
+%%Begin
+\archetype
+{
+	name = Auror,
+	description = As a profession\comma{} the \auror{}s are a group of highly\minus{}trained law enforcement officials working for the \imp{Ministry of Magic}\comma{} as well as a catchall term for those dedicated to catching bad guys and making them pay.
 
 \imp{Aurors} (or even those who merely wish to emulate them) seek out their target with a single minded zeal\comma{} dedicated to the cause of finding the truth and bringing villains to justice. They adore solving mysteries and puzzles\comma{} and abhore those who would bring harm to others. 
 
 Their pursuit of justice often puts them in harm's way\comma{} and so the budding \auror{} is encouraged to focus on magic which allows them to protect themselves from harm\comma{} as well as incapacitate their foes. 
 
-However\comma{} the defining trait of an \auror{} is not their combat abilities but instead their ability to discover clues\comma{} intuit motives and hunt down their foes. ,
-bonuses = \bonus{Insight}{\twoCape}
+However\comma{} the defining trait of an \auror{} is not their combat abilities but instead their ability to discover clues\comma{} intuit motives and hunt down their foes.,
+	experience = \item Track down or hunt a target
+\item Solve a mystery 
+\item Prevent a crime,
+	bonuses = \bonus{Insight}{\twoCape}
 \bonus{Investigation}{\twoCape}
 \bonus{Hexes or Warding}{\twoCape}
 \bonus{Perception}{\oneCape}
 \bonus{Brawl}{\oneCape}
-\bonus{Warding or Hexes}{\oneCape}
-,
-bonusWidth = 3,
-innateAbility = Intuition,
-innateDescription = \imp{\innateAbility} is the inherent\comma{} instinctive understanding of the minds of others possessed by an insightful and trained mind. Bypassing all \imp{Logic} and conscious reasoning\comma{} \imp{intuition} allows an \name{} to make great strides in their understanding of people and their actions by getting inside their heads and understanding the way that they think. Though not useful for solving traditional intellectual puzzles\comma{} \imp{\innateAbility} can allow an \imp{\name} to suddenly have a flash of insight into the motives\comma{} aims or drive of another being. 
+\bonus{Warding or Hexes}{\oneCape},
+	innateAbility = Intuition,
+	innateDescription = \imp{\innateAbility} is the inherent\comma{} instinctive understanding of the minds of others possessed by an insightful and trained mind. Bypassing all \imp{Logic} and conscious reasoning\comma{} \imp{intuition} allows an \name{} to make great strides in their understanding of people and their actions by getting inside their heads and understanding the way that they think. Though not useful for solving traditional intellectual puzzles\comma{} \imp{\innateAbility} can allow an \imp{\name} to suddenly have a flash of insight into the motives\comma{} aims or drive of another being. 
 
-If you wish to know why someone would behave in a given way\comma{} why a certain shop was robbed and not another\comma{} or where a target might head next - an \name{}'s \imp{\innateAbility} is surely the best tool.
-,
-innateNil = Unintuitive. You cannot make the inductive leaps required to solve this kind of problem.,
-innateI = You have brief glimpses of insight\comma{} but you're wrong more often than not.,
-innateII = Subpar\comma{} but not terrible. You are an adequate detective.,
-innateIII = You have an intuitive mind - not excellent\comma{} but it's enough to get into the mind of your average ne'er-do-well,
-innateIV = With a seasoned you can see the hidden meaning behind the actions of others and get a glimpse into their true motive,
-innateV =  As an Expert detective your honed \imp{Intuition} means you can glean the intentions and motive behind even the most seasoned crook\comma{} enabling you to stay one step ahead of them. 
-innateVI = Everything you know about a target paints a picture of their life, allowing you to truly understand them\comma{} how they see the world and how you can defeat them,
-innateVII = Divine intuition: you can see into the souls of your targets and know their true intentions better than they do,
-practicalAbility = Interrogate,
-practicalDescription = {The art of extracting information out of a target, either unwilling to divulge or unaware they're being questioned, is a key skill for an \imp{\name} to master. 
+If you wish to know why someone would behave in a given way\comma{} why a certain shop was robbed and not another\comma{} or where a target might head next \minus{} an \name{}'s \imp{\innateAbility} is surely the best tool,
+	practicalAbility = Interrogate,
+	practicalDescription = The art of extracting information out of a target\comma{} either unwilling to divulge or unaware they're being questioned\comma{} is a key skill for an \imp{\name} to master.   Whilst the untrained would have to rely on raw \imp{Charm}\comma{} \imp{Eloquence}\comma{} \imp{Deception} or even \imp{Intimidation} to try and convince them to give up their information\comma{} the skill of \imp{Interrogation} allows you to dance delicately between all of these skills\comma{} executing known psychological tricks and even shrouding your true questions behind layers of misdirection so your target does not even know when they're giving up valuable information.,
+	knowledgeAbility = Tracking,
+	knowledgeDescription = Hunting down a foe is a key part of being an \imp{\name}\comma{} and part of that is being able to survey a scene and see where they were\comma{} what they did\comma{} and where they're going next.
 
-Whilst the untrained would have to rely on raw \imp{Charm}, \imp{Eloquence}, \imp{Deception} or even \imp{Intimidation} to try and convince them to give up their information, the skill of \imp{Interrogation} allows you to dance delicately between all of these skills, executing known psychological tricks and even shrouding your true questions behind layers of misdirection so your target does not even know when they're giving up valuable information.},
-practicalNil = {Untrained. You ask questions. They might not get answered},
-practicalI = {You have an awareness of the skills and techniques, but you execute them poorly},
-practicalII = {You've been on a few training courses, and seen how things are done, but you don't yet have much practice},
-practicalIII = {You are a trained interrogator, and can get most people to talk},
-practicalIV = {You know all the standard interrogation tricks, and even came up with a few of your own.},
-practicalV = {You know just the right questions to ask, and which buttons to press in order to get all but the most willfull individuals to spill the beans},
-practicalVI = {Lifelong crooks start to sweat when you are the one asking the questions},
-practicalVII = {Truly uncanny: when you sit down with someone, they just cannot {\bf stop} telling you their secrets},
-knowledgeAbility = Tracking,
-knowledgeDescription = {Hunting down a foe is a key part of being an \imp{\name}, and part of that is being able to survey a scene and see where they were, what they did, and where they're going next.
+Whilst \imp{Intuition} relies on a general understanding of the target's thought pattern\comma{} when you \imp{Track} a target you look for the trail that they have left \minus{} scuffs in the dirt\comma{} broken twigs in the forest and even more abstract trails such as an online presence or a paper trail. Whatever evidence you need to find your target\comma{} \imp{Tracking} can help you out.,
+	feats = \feat{Ambush}{When you attack from hiding\comma{} spring a trap or successfully orchestrate an ambush\comma{} you gain +2 dice to your first attack roll}
 
-Whilst \imp{Intuition} relies on a general understanding of the target's thought pattern, when you \imp{Track} a target you look for the trail that they have left - scuffs in the dirt, broken twigs in the forest and even more abstract trails such as an online presence or a paper trail. Whatever evidence you need to find your target, \imp{Tracking} can help you out.},
-knowledgeNil = {You're not really sure what a fingerprint is, or why you'd even want one},
-knowledgeI = {You understand the very basics of tracking, and can follow a clear trail},
-knowledgeII = {You can get a general idea of the direction a person is heading or where they are going},
-knowledgeIII = {You can survey a scene and get a pretty good idea of what happened, spotting tracks and signs of movement or fights},
-knowledgeIV = {Your knowledge of tracking allows you to discern how long ago someone might have been here, from the smallest clues},
-knowledgeV =  {You are an expert tracker, and could trace a single rat through a city},
-knowledgeVI = {Your tracking ability is reaching its zenith, a single glimpse at a scene is enough to tell you when your target passed through, and where they're going next} ,
-knowledgeVII = {Ever-vigilant: you can spot a rumpled patch of grass, or a slightly open door from a mile away. You can perfectly see how people moved around a scene, leaving the evidence you see before you.},
-feats = \feat{Ambush}{When you attack from hiding, spring a trap or successfully orchestrate an ambush, you gain +2 dice to your first attack roll}
-\feat{Cold Cases}{When performing a \imp{Knowledge} check, if you can relate the information you seek to a historical or past case you reduce the DV by 2.}
-\feat{Familiar Terrain}{Choose a favoured terrain such as \imp{Grasslands}, \imp{Forests}, \imp{Urban Areas}, \imp{Caverns}, or name a specific region, such as \imp{Hogwarts}. Whilst in your favoured terrain you gain an additional dice on every action which utilises the surroundings such as a \imp{Tracking} or \imp{Covert} check.}
+\feat{Cold Cases}{When performing a \imp{Knowledge} check\comma{} if you can relate the information you seek to a historical or past case you reduce the DV by 2.}
+
+\feat{Familiar Terrain}{Choose a favoured terrain such as \imp{Grasslands}\comma{} \imp{Forests}\comma{} \imp{Urban Areas}\comma{} \imp{Caverns}\comma{} or name a specific region\comma{} such as \imp{Hogwarts}. Whilst in your favoured terrain you gain an additional dice on every action which utilises the surroundings such as a \imp{Tracking} or \imp{Covert} check.}
+
 \feat{Lie Detector}{You can automatically detect when someone is lying to you by telling you deliberate falsehoods.}
-\feat{Rapid Reflexes}{When performing a \key{Reflex} roll, you may roll the dice twice and take the largest value. }
-\feat{Unwavering Focus}{Once per day you may expend a \imp{Fortitude} point to reroll all \imp{Catastrophe} dice you rolled, declaring this action after the roll has been performed.}
+
+\feat{Rapid Reflexes}{When performing a \key{Reflex} roll\comma{} you may roll the dice twice and take the largest value. }
+
+\feat{Unwavering Focus}{Once per day you may expend a \imp{Fortitude} point to reroll all \imp{Catastrophe} dice you rolled\comma{} declaring this action after the roll has been performed.},
+	article = An,
+	bonusWidth = 3
 }
-%%ArchetypeEnd
+
+\archetype
+{
+	name = Druid,
+	innateAbility = Belonging,
+	practicalAbility = Nurture,
+	knowledgeAbility = Commune
+}
+
+\archetype
+{
+	name = Scholar,
+	innateAbility = Eureka,
+	practicalAbility = Collaboration,
+	knowledgeAbility = Speculation
+}
+
+\archetype
+{
+	name = Warrior,
+	innateAbility = Rage,
+	practicalAbility = Command,
+	knowledgeAbility = Tactics
+}
+
+\archetype
+{
+	name = Artificer,
+	innateAbility = Complexity,
+	practicalAbility = Hack,
+	knowledgeAbility = Analyse
+}
+
+\archetype
+{
+	name = Outlaw,
+	innateAbility = Savvy,
+	practicalAbility = Pickpocket,
+	knowledgeAbility = Underworld
+}
+
+\archetype
+{
+	name = Noble,
+	innateAbility = Wealth,
+	practicalAbility = Inspire,
+	knowledgeAbility = Society
+}
+
+
+%%End
