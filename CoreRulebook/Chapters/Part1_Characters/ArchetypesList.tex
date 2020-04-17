@@ -9,9 +9,14 @@
 
 }
 
+\newcommand\bname
+{
+	\imp{\name}
+}
+
 \newcommand\feat[2]
 {
-	\vspace{\minus{}0.4cm}
+	\vspace{-0.4cm}
 	\subsubsection{\key{#1}}
 	
 	#2
@@ -20,7 +25,7 @@
 
 \newcommand\bonus[2]
 {
-	\parbox[t]{\bonusWidth cm}{\hfill \raggedright\imp{#1}}	&	#2 \\
+	\imp{#1}	&	#2 \\
 }
 
 \makeatletter
@@ -72,17 +77,18 @@
 	
 	
 	\chapter*{\name}
+	
 	\addcontentsline{toc}{section}{\name}
 	
 	\small 
 	\description
 	
-	\section{\name{} \imp{Capabilities} }
+	\section*{\imp{\name{}} {Capabilities} }
 	
 	\article{} \imp{\name} gets the following bonuses to their \imp{Aspects}, \imp{Abilities} and \imp{Affinities}. Where a choice is given, you cannot make the same choice twice. Note that these are {\it bonuses} on top of those granted by other abilities and natural starting values. 
 	
 	\begin{center}
-	\begin{rndtable}{c c}
+	\begin{rndtable}{r c}
 		\bf Capability	&	\bf Bonus Rating \\
 		\bonuses
 	\end{rndtable}
@@ -90,25 +96,25 @@
 	
 	
 	
-	\section{\name{} Experience}
+	\section*{\name{} Experience}
 	
 	\article{} \imp{\name} gains additional experience when they:
 	\begin{itemize}[itemsep = 0cm]
 		\experience
 	\end{itemize}
 	
-	\section{\name{} Special \imp{Abilities}}
+	\section*{\name{} Special \imp{Abilities}}
 	
-	A character following the path of the \imp{\name{}} can use the following special abilities: \key{\innateAbility}, \key{\practicalAbility} and \key{\knowledgeAbility}.
+	A character following the path of the \imp{\name{}} can use the following special abilities: \key{\innateAbility}, \key{\practicalAbility} and \key{\knowledgeAbility}. At Character Creation each of these skills has a rating of one, with a further three dots distributed amongst them at your design.
 	
 	\ability{Innate}{\innateAbility}{\innateDescription}{\ratingTable{\innateNil}{\innateI}{\innateII}{\innateIII}{\innateIV}{\innateV}{\innateVI}{\innateVII}}
 	\ability{Practical}{\practicalAbility}{\practicalDescription}{\ratingTable{\practicalNil}{\practicalI}{\practicalII}{\practicalIII}{\practicalIV}{\practicalV}{\practicalVI}{\practicalVII}}
 	\ability{Knowledge}{\knowledgeAbility}{\knowledgeDescription}{\ratingTable{\knowledgeNil}{\knowledgeI}{\knowledgeII}{\knowledgeIII}{\knowledgeIV}{\knowledgeV}{\knowledgeVI}{\knowledgeVII}}
 	
 	
-	\section{\imp{\name} Feats}
+	\section*{\imp{\name} Feats}
 	
-	As an Auror progresses, they may choose to take some of the following feats:
+	\article{} \bname{} choose to take some of the following feats as they increase their abilities:
 	
 	\feats
 	\endgroup
@@ -116,11 +122,20 @@
 }
 
 
-\addcontentsline{toc}{Chapter}{Archetypes List}
 \def\auror{\imp{Auror}}
 
 
 %%Begin
+\archetype
+{
+	name = Artificer,
+	innateAbility = Complexity,
+	practicalAbility = Hack,
+	knowledgeAbility = Analyse,
+	article = An,
+	bonusWidth = 3
+}
+
 \archetype
 {
 	name = Auror,
@@ -131,9 +146,9 @@
 Their pursuit of justice often puts them in harm's way\comma{} and so the budding \auror{} is encouraged to focus on magic which allows them to protect themselves from harm\comma{} as well as incapacitate their foes. 
 
 However\comma{} the defining trait of an \auror{} is not their combat abilities but instead their ability to discover clues\comma{} intuit motives and hunt down their foes.,
-	experience = \item Track down or hunt a target
-\item Solve a mystery 
-\item Prevent a crime,
+	experience = \item Track down or hunt an elusive target
+\item Solve a significant mystery 
+\item Prevent a crime or other unethical act from occuring,
 	bonuses = \bonus{Insight}{\twoCape}
 \bonus{Investigation}{\twoCape}
 \bonus{Hexes or Warding}{\twoCape}
@@ -168,33 +183,51 @@ Whilst \imp{Intuition} relies on a general understanding of the target's thought
 \archetype
 {
 	name = Druid,
+	description = A {\imp{\name}} is a witch or wizard who has dedicated their life to the understanding\comma{} protection and preservation of the natural order of things. 
+
+From the smallest fungus\comma{} to the most vicious of dragons\comma{} as well as the very bones of the Earth\comma{} and the stars in the sky – all {\imp{\name}}s feel a deep connection to them all. From this connection to nature\comma{} the \imp{\name}s draw their powers their understanding of all forms of magic is shaped into how it affects and relates to nature.
+
+In the popular mythology of \imp{\name}s\comma{} even in the Wizarding world\comma{} they are seen as eccentric pacifists\comma{} a pushover afraid to even hurt a fly. However\comma{} a true \imp{\name} understands that death and destruction are a part of the every day cycle of nature. If an old tree must burn so that a dozen new flowers may blossom\comma{} a \imp{Druid} is often more than happy to oblige.,
+	experience = \item Solve a problem by using their connection to nature
+\item Protect some aspect of nature from signifiant harm,
+	bonuses = \bonus{Willpower}{\twoCape}
+\bonus{Kinship}{\twoCape}
+\bonus{Nature}{\twoCape}
+\bonus{Elemental or Temporal}{\twoCape}
+\bonus{Insight}{\oneCape},
 	innateAbility = Belonging,
+	innateDescription = A \imp{\name} with a high innate sense of \imp{Belonging} has an intuitive\comma{} almost supernatural ability to determine when the natural\comma{} organic\comma{} order of things has been disrupted or influenced.
+
+By looking at a lone tree in an underground cave\comma{} such a character may attempt to discover if it \imp{Belongs} here\comma{} simply growing naturally\comma{} or if it was placed there and forced to grow by other means\comma{} or if a pack of dogs attacked out of natural instinct\comma{} or trained instructions. 
+
+The sense of \imp{Belonging} is not an exact art\comma{} but merely gives a \imp{\name} an additional insight into disruptions and alterations of nature.,
 	practicalAbility = Nurture,
-	knowledgeAbility = Commune
-}
+	practicalDescription = The ability to nurture life\comma{} in all its forms\comma{} is critical to the role of a \imp{\name}. 
 
-\archetype
-{
-	name = Scholar,
-	innateAbility = Eureka,
-	practicalAbility = Collaboration,
-	knowledgeAbility = Speculation
-}
+A high \imp{Nuture} score allows a \imp{\name} to care for plants\comma{} animals and nature in general\comma{} providing them with the support\comma{} nutrition and guidance they need.
 
-\archetype
-{
-	name = Warrior,
-	innateAbility = Rage,
-	practicalAbility = Command,
-	knowledgeAbility = Tactics
-}
+Less useful on humans (\imp{Kindness} is probably more useful)\comma{} a successful \imp{Nurture} check ensures that life will continue and thrive where you set your mind to it. Those that you successfully \imp{Nurture} will owe you gratitude and become positive towards you.,
+	knowledgeAbility = Commune,
+	knowledgeDescription = It is said that\comma{} in ages past\comma{} the \imp{\name}s could speak to the winds\comma{} the trees\comma{} the beasts and even the stars themselves to seek answers. 
 
-\archetype
-{
-	name = Artificer,
-	innateAbility = Complexity,
-	practicalAbility = Hack,
-	knowledgeAbility = Analyse
+Such abilities are beyond all but the most powerful \bname{}s nowadays\comma{} but the ability to \imp{Commune} remains important. 
+
+A \imp{Commune} check allows you to communicate – in a very rough fashion – with the natural world. You may attempt to commune with a wounded Hippogriff to learn what happened to it\comma{} or with a scorched tree to learn how the forest fire started. 
+
+The way in which nature responds is often esoteric and open to interpretation\comma{} but a high \imp{Commune} skill represents an ability to interpret these vague signs.,
+	feats = \feat{Asteria’s Eyes}{The stars above see all\comma{} and as you attune yourself to the vastness of nature\comma{} you tap into this. Whilst under an open sky\comma{} you have perfect night vision and +1d to all sight\minus{}related checks.}
+
+\feat{Dryad’s Embrace}{You channel the nurturing energy of the spirits of ancient trees. Once per day you may attempt a DV 8 \imp{Nurture} check on a plant\comma{} causing it to magically grow up to 30cm per success.}
+
+\feat{Nature’s Cloak}{Whilst in a natural space\comma{} you may use your familiarty with nature to reduce the DV of any \imp{Covert} action by 2}
+
+\feat{Nymph’s Fury}{Channeling the power of primal\comma{} elemental spirits grants you additional power. When casting an \imp{Elemental} spell\comma{} your spells deal an additional level of damage.}
+
+\feat{Organic Repose}{Once per day\comma{} you may expend a \imp{Fortitude} point to recover 3 levels of Health.}
+
+\feat{Satyr Spirit}{When casting a spell on an animal you are not in combat with\comma{} you gain one automatic success\comma{} as if you had spent a \imp{Fortitude} point},
+	article = A,
+	bonusWidth = 4
 }
 
 \archetype
@@ -202,15 +235,102 @@ Whilst \imp{Intuition} relies on a general understanding of the target's thought
 	name = Outlaw,
 	innateAbility = Savvy,
 	practicalAbility = Pickpocket,
-	knowledgeAbility = Underworld
+	knowledgeAbility = Underworld,
+	article = An,
+	bonusWidth = 3
 }
 
 \archetype
 {
-	name = Noble,
+	name = Scholar,
+	bonuses = \bonus{Investigation}{\twoCape}
+\bonus{Intelligence}{\twoCape}
+\bonus{Any \imp{Knowledge} or \imp{Affinity}}{\twoCape}
+\bonus{Willpower}{\oneCape}
+\bonus{Logic}{\oneCape},
+	innateAbility = Eureka,
+	practicalAbility = Collaboration,
+	knowledgeAbility = Speculation,
+	knowledgeDescription = A \bname{}\comma{} by their very nature\comma{} spends most of their day confronted with problems to which no one knows the solution. 
+
+When there is no actual knowledge to be found\comma{} the only thing left to do is \imp{Speculate}. 
+
+Speculation allows you to draw dispirate threads of knowledge\comma{} in order to make conclusions about things you otherwise have no knowledge of. The risk is\comma{} of course\comma{} that you get things completely and utterly incorrect – but a scholar knows the limits of this guesswork\comma{} and with a high \imp{Speculation} can draw remarkable conclusions with only limited knowledge.,
+	article = A,
+	bonusWidth = 3
+}
+
+\archetype
+{
+	name = Sophisticate,
+	description = A \imp{\name} is a refined person\comma{} proficient in using their wits\comma{} formenting gossip and rumours\comma{} and weaponising the force of their personality to get their way in this world – the renown of their family\comma{} or the weight of coin in their pocket is entirely incidental\comma{} of course. 
+
+Many people believe that \name{}s are born into their suave\comma{} charm and connections to those in the upper echelons of society\comma{} but there are of those who have struggled up the ranks of class and affluence to attain the status of \imp{\name}. Though these people may be privately regarded as interlopers by the old\minus{}guard\comma{} they are every bit as affluent and influential. 
+
+There are still others who are simply bluffing their way through\comma{} running the long\minus{}con and hoping nobody catches on…,
+	experience = \item Use rumours and gossip to your own advantage
+\item Turn an enemy into a friend\comma{} or otherwise significantly manipulate someone,
+	bonuses = \bonus{Eloquence}{\threeCape}
+\bonus{Charm or Deception}{\twoCape}
+\bonus{Bewitchment}{\twoCape}
+\bonus{Deception or Charm}{\oneCape}
+\bonus{Cerebral}{\oneCape},
 	innateAbility = Wealth,
+	innateDescription = \imp{Wealth} is not merely a measure of how much money you have\comma{} it is how you project an aura of wealth\comma{} confidence and belonging in high places. 
+
+A character with a high \imp{Wealth} lives a charmed life in society – they can cruise past security in clubs and political institutions\comma{} they can gain a favour and otherwise bend those around them to their will by flashing some cash (imaginary or not). Money opens many doors\comma{} and \imp{Wealth} allows you access to that world\comma{} even without actually having to spend the coins.,
 	practicalAbility = Inspire,
-	knowledgeAbility = Society
+	knowledgeAbility = Society,
+	knowledgeDescription = Sometimes\comma{} knowing the right people is knowing everything. 
+
+A high \imp{Society} knowledge means that you know everyone who is anyone. You are up on all the gossip and know who is talking to who. You are aware of the feuds and alliances\comma{} as well as some of the more sordid rumours….,
+	feats = \feat{Burn Book}{When using your skills to spread rumours\comma{} misinformation or gossip\comma{} or when trying to discredit an individual\comma{} gain +2 dice}
+\feat{Mesmerising Presence}{Once per day\comma{} you may use your alluring charm to slightly hypnotise a person. They remember talking to you\comma{}  but are slightly starstruck and overpowered by your personality\comma{} such that they cannot recall what you talked about.}
+\feat{One for you\comma{} two for me}{Whenever you or your allies gain an amount of \imp{Galleons}\comma{} you gain one additional coin.}
+\feat{Unbreakable Vow}{When you willingly shake on a deal or contract with another sapient being both you and your partner are bound together by a magical oath. If either of you breaks the contract\comma{} the offending party takes the maximum amount of \imp{Harm} and falls into a \imp{Critical Condition}\comma{} alerting the other. },
+	article = A,
+	bonusWidth = 3
+}
+
+\archetype
+{
+	name = Warrior,
+	description = A \bname{} is someone who is dedicated to the martial arts\comma{} trained in the use of both physical and magical combat to defeat your foes. 
+
+Warriors range from delicate and refined duelists\comma{} to axe\minus{}wielding maniacs. Being a warrior is more than just being handy with a weapon\comma{} however. A great warrior never goes into battle unprepared\comma{} and study and knowledge of tactics\comma{} history and the weaknesses of your foes is vital in achieving victory. 
+
+No matter what weapons they wield\comma{} a warrior carefully balances their combat skills\comma{} their tactical knowledge and a deep\minus{}seated rage against those who would defy them.,
+	experience = \item Defeat a worthy opponent in battle
+\item Execute a novel or interesting stratagem,
+	bonuses = \bonus{Brawl\comma{} Skirmish or Marksmanship}{\twoCape}
+\bonus{Hexes\comma{} Curses or Wards}{\twoCape}
+\bonus{Fitness}{\twoCape}
+\bonus{Perception}{\oneCape}
+\bonus{Wards\comma{} Hexes or Curses}{\oneCape}
+\bonus{Skirmish\comma{} Marksmanship or Brawl}{\oneCape},
+	innateAbility = Rage,
+	innateDescription = \imp{Rage} is the deep seated anger that lies within the hearts of most people\comma{} even the most benevolent of us. A \bname{}\comma{} however\comma{} has learned to weaponise their rage\comma{} either by letting it out in an unbridled fury\comma{} or harnessing it\comma{} fuelling their cold\comma{} calculated actions. \imp{Rage} allows a warrior to perform almost impossible feats\comma{} but they risk their own safety whilst doing so.
+
+Whilst in combat\comma{} \imp{Rage} can be substituted for almost any physical act\comma{} and often requires far fewer successes to achieve – weapon attacks fuelled by rage deal 2 points of damage per success\comma{} for example. However\comma{} on any turn in which you use a \imp{Rage} check\comma{} you get a 1\minus{}dice penalty on any Resist checks. This penalty is cumulative until you spend a turn without using \imp{Rage}.,
+	practicalAbility = Command,
+	practicalDescription = A \bname{} is trained not only in their own combat\comma{} but in the leadership of others. Using a \imp{Command} allows a \bname{} to influence the tide of battle on a large scale\comma{} giving advice\comma{} issuing orders and otherwise taking control of the situation. 
+
+A \bname{} with a high \imp{Command} is respected as a warrior\comma{} and others will leap to follow your orders. Those who follow the issued command will find that the action is easier than expected\comma{} being buoyed and inspired by the \imp{Command}.,
+	knowledgeAbility = Tactics,
+	knowledgeDescription = A \bname{} lives and dies by their knowledge of tactics. Whether it is trying to discern a viable approach to defeating a seemingly implacable foe\comma{} or recognising a strategy employed by the enemy\comma{} a \imp{Tactics} check can help reveal how an opponent functions\comma{} and what the best way to defeat them is.,
+	feats = \feat{Bloodlust}{On any turn in which you successfully incapacitate (lethally or not) a foe\comma{} you may take an additional free action to perform another attack\comma{} with a 2\minus{}dice penalty on the check.}
+
+\feat{Duelist}{When fighting one\minus{}on\minus{}one with another target\comma{} you automatically gain one automatic success on any attack rolls. }
+
+\feat{Furious Spellcaster}{Up to three times a day\comma{} you may elect to use a \imp{Rage} check\comma{} rather than the associated \imp{Affinity} to perform a spellcasting check. The maximum spell level is still determined by your \imp{Affinity}. }
+
+\feat{Holistic Tactics}{Whenever a \imp{Tactics} check is successful in determining the tactics of a foe\comma{} you may use this knowledge to infer any Resistances\comma{} Immunities or Susceptabilities the target has.}
+
+\feat{Student of War}{If you study\comma{} read up on and otherwise prepare for a target before engaging them in combat\comma{} the DV of all attacks you make against them is reduced by 1.}
+
+\feat{Savage Attacker}{Your attacks\comma{} both physical and magical\comma{} gain a bonus point of damage.},
+	article = A,
+	bonusWidth = 4.7
 }
 
 

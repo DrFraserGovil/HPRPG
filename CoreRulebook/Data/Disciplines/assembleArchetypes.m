@@ -50,9 +50,9 @@ function assembleArchetypes(fileRoot)
     readFile = fileread(fileName);
     insertPoint = strfind(readFile, '%%Begin');
     endPoint = strfind(readFile, '%%End');
-    firstHalf = prepareText(readFile(1:insertPoint+7),0);
+    firstHalf = prepareText(readFile(1:insertPoint+7),0,0);
 
-    secondHalf = prepareText(readFile(endPoint:end),0);
+    secondHalf = prepareText(readFile(endPoint:end),0,0);
 
     fullText = firstHalf +t + "\n" + secondHalf;
     FID = fopen(fileName,'w');
