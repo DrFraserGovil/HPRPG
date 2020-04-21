@@ -92,7 +92,7 @@
 {
 	\def\y{\subBoxesTop - \expGap - 2.5*\boxDim - \c*\subExpGap}
 	\draw[fill = black] ({\leftLimit + \subBoxesDelta + \subExpGap}, {\y+\bulletR}) circle (\bulletR);
-	\draw[gray!70]({\leftLimit + \subBoxesDelta + \subExpGap+6*\bulletR}, {\y}) -- ({\leftLimit + \subBoxesDelta + \subBoxesWidth - \subBoxesDelta}, {\y});
+	\draw[gray!70]({\leftLimit + \subBoxesDelta + \subExpGap+6*\bulletR}, {\y-4*\bulletR}) -- ({\leftLimit + \subBoxesDelta + \subBoxesWidth - \subBoxesDelta}, {\y-4*\bulletR});
 }
 
 \draw[rounded corners, gray!70, fill = gray!35] ({(\rightColumn+\leftLimit)/2 + \subBoxesDelta}, {\subBoxesTop}) rectangle ({\rightColumn - \subBoxesDelta},{\subBoxesBottom}); 
@@ -109,8 +109,17 @@
 \foreach \c in {1,2,3,4,5}
 {
 	\def\y{\subBoxesTop - \expGap - 2.5*\boxDim - \c*\subExpGap}
-	\draw[fill = black] ({\leftLimit + \subBoxesWidth + 3*\subBoxesDelta + \subExpGap}, {\y+\bulletR}) circle (\bulletR);
-	\draw[gray!70]({\leftLimit + +\subBoxesWidth + 3*\subBoxesDelta + \subExpGap+6*\bulletR}, {\y}) -- ({\rightColumn - 2*\subBoxesDelta}, {\y});
+	\draw[fill = black] ({\leftLimit + \subBoxesWidth + 3*\subBoxesDelta + \subExpGap}, {\y}) circle (\bulletR);
+	
+	\if\c1
+			\node[anchor=west] at ({\leftLimit + +\subBoxesWidth + 3*\subBoxesDelta + \subExpGap+6*\bulletR}, {\y}) {\scriptsize \imp{Sleeping (1/day)}};
+	\else
+		\if\c2
+			\node[anchor = west] at ({\leftLimit + +\subBoxesWidth + 3*\subBoxesDelta + \subExpGap+6*\bulletR}, {\y}) {\scriptsize \imp{Eating (2/day)}};
+		\else
+			\draw[gray!70]({\leftLimit + +\subBoxesWidth + 3*\subBoxesDelta + \subExpGap+6*\bulletR}, {\y-4*\bulletR}) -- ({\rightColumn - 2*\subBoxesDelta}, {\y-4*\bulletR});
+		\fi
+	\fi
 }
 
 
@@ -304,11 +313,11 @@
 			
 			\def\xCirc{\x + - 4 * \widthUnits + \abilityWidth - \k*(\boxSmall*1.42)};
 			
-			\if\k6
-				\smallDot{\xCirc}{\y}{black}
-			\else
+			%~ \if\k6
+				%~ \smallDot{\xCirc}{\y}{black}
+			%~ \else
 				\smallDot{\xCirc}{\y}{white}
-			\fi
+			%~ \fi
 		}	
 	}
 }	
