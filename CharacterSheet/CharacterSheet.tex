@@ -1,79 +1,17 @@
 \documentclass[11pt]{article}
-\usepackage{eufrak}
-\usepackage{rsfso}
-\let\origbar\bar
-\let\origdot\dot
-\usepackage{allrunes}
-\let\bar\origbar
-\let\dot\origdot
-\usepackage[no-math]{fontspec}
-\usepackage{array}
-\usepackage{stix}
-\usepackage{longtable}
-\usepackage{multicol}
-\usepackage{graphicx}
-\usepackage{tcolorbox}
+\usepackage{../HPpack}
 
-\usepackage[left = 0in, right = 0in, top = 0in, bottom = 0in]{geometry}
-\usepackage{titlesec}
-\usepackage{amsmath}
-\usepackage{MnSymbol}
-\usepackage{calc}
-\usepackage{ifthen}
+\newgeometry{left = 0in, right = 0in, top = 0in, bottom = 0in}
+
 \usepackage{tikz}
 \usetikzlibrary{positioning}
-\usepackage{array}
 \usepackage{lscape}
-\usepackage{multicol}
-\def\apos{'}
-\setlength{\parskip}{4pt}
-\setlength{\parindent}{0pt}
 
 
-
-
-
-\newfontfamily{\HP}{[ParryHotter.TTF]}
-\renewcommand{\arraystretch}{0.15}
-
-\def\attPhys{Fitnes}
-\def\attFin{Precision}
-\def\attSpr{Spirit}
-\def\attChr{Charisma}
-\def\attInt{Intelligence}
-\def\attPer{Perception}
-\def\attPow{Power}
-\def\attEvl{Evil}
-\def\attPhysShort{FIT}
-\def\attFinShort{PRS}
-\def\attSprShort{SPR}
-\def\attChrShort{CHR}
-\def\attIntShort{INT}
-\def\attPerShort{PCP}
-\def\attPowShort{POW}
-\def\attEvlShort{EVL}
-\def\ElCheck{\attPow{}}
-\def\KinCheck{\attFin{}}
-\def\TelCheck{\attPer{}}
-\def\TemCheck{\attInt{}}
-\def\BewCheck{\attChr{}}
-\def\PsiCheck{\attSpr{}}
-\def\HexCheck{\attSpr{}}
-\def\CurCheck{\attPow{}}
-\def\HeaCheck{\attPer{}}
-\def\WarCheck{\attInt{}}
-\def\AltCheck{\attFin{}}
-\def\ConCheck{\attSpr{}}
-\def\NecCheck{\attEvl{}}
-\def\OccCheck{\attInt{}}
-
-
-\newcommand\galleon[1]{$\mathfrak{G}$#1}
-\newcommand\sickle[1]{{\textara{f}#1}}
-\newcommand\knut[1]{$\btimes$#1}
-
-\titleformat{\section} {\centering\vspace{-10ex}\normalfont\bfseries\HP\Huge}{}{0pt}{}[\vspace{-2ex}]
-
+\def\maxHeight{21.2}
+\def\heightUnits{\maxHeight/100}
+\def\maxWidth{27.6}
+\def\widthUnits{\maxWidth/100}
 
 \begin{document}
 
@@ -81,346 +19,370 @@
 
 \begin{tikzpicture}
 
+\node at (0,0) {};
+\node at (0,\maxHeight) {};
+\node at (\maxWidth,\maxHeight) {};
+\node at (\maxWidth,0) {};
 
-\def\h{1.8};
-\node at (0.5,{\h+0.2}) {~~\bf \large Name:};
-\node at (0.5, {\h-0.7}) {~~\bf \large  Species:};
-\node at (0.5, {\h-1.6}) {~~\bf  \large Archetype:};
+\def\leftLimit{0*\widthUnits}
+\def\halfDivider{45*\heightUnits}
+\def\rightColumn{35*\widthUnits}
 
-\draw[rounded corners] (2.5,{\h-1.9})rectangle (9,{\h-0.9});
-\fill[white, rounded corners] (2,{\h - 1.1}) rectangle (9,{\h -0.1});
-\draw[rounded corners] (2,{\h - 1.1}) rectangle (9,{\h -0.1});
-\fill[white, rounded corners] (1.5,{\h - 0.3}) rectangle (9,{\h + 0.7});
-\draw[rounded corners] (1.5,{\h - 0.3}) rectangle (9,{\h + 0.7});
-
-\def\s{3.6}
-
-
-\node at (20.5,0.5) {\includegraphics[width = \s cm,height = \s cm]{../Images/heart}};
- \node at (25,0.5) {\includegraphics[width = \s cm,height = \s cm]{../Images/brain}};
-\node at (20.5,2.4) {\bf Health Points};
-\node at (25,2.4) {\bf Fortitude Points};
-
-%%% attributes block
-\def\cx{0}
-\def\w{2.5}
-\def\gap{0.67}
-\def\hB{1.9}
-\def \xgap{ (\w + 0.8)}
-\def\ry{0.5}
-\def\voff{-1.2}
-\draw[rounded corners, gray!70, fill = gray!20] ({\cx-\gap},{\voff+\gap}) rectangle ({\cx + \xgap + \w+\gap},{\voff-4*(\hB+\gap)});
-\foreach \c [count = \q from 0] in { {Fitness}, {Precision}, {Spirit}, {Charisma}, {Intelligence},{Perception}, {Power}, {Evil} }
+\def\sqrtTwo{1.4142135623730951}
+\def\boxDim{1.3*\widthUnits};
+\def\boxSmall{0.9*\widthUnits};
+\def\boxTiny{0.5*\widthUnits}
+\renewcommand\square[4]
 {
-	\def\y{ {\voff-(\q - Mod(\q,2))*(\hB+\gap)/2} }
-	\def\x{  {\cx + Mod(\q,2)*\xgap} }
-	\draw[rounded corners,gray!70,fill=white] (\x,\y) rectangle ({\x +\w},{\y - \hB});
-	
-	\draw[domain = 0:360, variable = \t,samples = 100,gray!70,fill = white] plot ({\x + \w/2*(1+0.7*cos(\t))}, {\y-\hB+\ry*sin(\t)});
-	\node at ({\x+\w/2},{\y-0.2}) {\small \bf \c};
+	\draw[fill=#4,rotate around ={45:({#1},{#2})},#3] ({#1-\boxDim/2},{#2-\boxDim/2}) rectangle ({#1+\boxDim/2},{#2+\boxDim/2});
+}
+
+\newcommand\smallDot[3]
+{
+	\draw[fill=#3,rotate around ={45:({#1},{#2})}] ({#1-\boxSmall/2},{#2-\boxSmall/2}) rectangle ({#1+\boxSmall/2},{#2+\boxSmall/2});
+}
+\newcommand\tinyDot[3]
+{
+	\draw[fill=#3,rotate around ={45:({#1},{#2})}] ({#1-\boxTiny/2},{#2-\boxTiny/2}) rectangle ({#1+\boxTiny/2},{#2+\boxTiny/2});
+}
+
+
+
+%%%% CHARACTER BOX
+
+\def\characterBoxTop{\maxHeight - 1*\heightUnits}
+\def\characterGap{4.5 * \heightUnits}
+
+\draw[rounded corners,gray!70,fill=gray!10] ({\leftLimit},{\halfDivider+ 0.5*\heightUnits})rectangle ({\rightColumn},{\characterBoxTop});
+
+\def\entryTop{\characterBoxTop - 3*\heightUnits};
+
+\node at ({(\leftLimit + \rightColumn)/2},{\entryTop}) {\HP \LARGE Character};
+\foreach \entry [count = \c from 1] in {{Name}, {Family}, {Personality}, {Archetype} }
+{
+	\def\y{\entryTop-\c*\characterGap};
+	\node[anchor = west] (A) at ({\leftLimit}, {\y})  {\large \key{\entry:}};
+}
+\def\subBoxesTop{\entryTop - 3*\heightUnits - 4*\characterGap}
+\def\subBoxesDelta{\widthUnits};
+\def\subBoxesBottom{\halfDivider + 1.2*\heightUnits};
+\def\subBoxesWidth{(\rightColumn-\leftLimit)/2 - 2*\subBoxesDelta};
+
+
+
+%%EXP box
+\draw[rounded corners, gray!70, fill = gray!35] ({\leftLimit+\subBoxesDelta}, {\subBoxesTop}) rectangle ({(\rightColumn+\leftLimit)/2 - \subBoxesDelta},{\subBoxesBottom}); 
+\def\gapFac{1.5}
+\def\miniBoxesWidth{\boxDim*6*\gapFac};
+\def\modDelta{(\subBoxesWidth-\miniBoxesWidth)/2};
+\def\initX{\leftLimit + \subBoxesDelta+\modDelta}
+\def\expGap{5 * \heightUnits}
+\node at ({\leftLimit + \subBoxesDelta + (\subBoxesWidth)/2},{\subBoxesTop-\heightUnits}) {\imp{Experience}};
+
+\foreach \c in {0,1,2,3,4,5,6}
+{
+	\def\x{\initX + \c*1.5*\boxDim};
+	\square{\x}{\subBoxesTop - \expGap}{}{white}
+}
+
+\node[anchor = west] at ({\leftLimit + \subBoxesDelta},{\subBoxesTop -\expGap - 2.5 *\boxDim}) {\scriptsize Experience Triggers:};
+\def\subExpGap{3.3*\heightUnits}
+\def\bulletR{0.2*\heightUnits}
+\foreach \c in {1,2,3,4,5}
+{
+	\def\y{\subBoxesTop - \expGap - 2.5*\boxDim - \c*\subExpGap}
+	\draw[fill = black] ({\leftLimit + \subBoxesDelta + \subExpGap}, {\y+\bulletR}) circle (\bulletR);
+	\draw[gray!70]({\leftLimit + \subBoxesDelta + \subExpGap+6*\bulletR}, {\y}) -- ({\leftLimit + \subBoxesDelta + \subBoxesWidth - \subBoxesDelta}, {\y});
+}
+
+\draw[rounded corners, gray!70, fill = gray!35] ({(\rightColumn+\leftLimit)/2 + \subBoxesDelta}, {\subBoxesTop}) rectangle ({\rightColumn - \subBoxesDelta},{\subBoxesBottom}); 
+\node at ({\leftLimit + \subBoxesDelta + (\subBoxesWidth)/2},{\subBoxesTop-\heightUnits}) {\imp{Experience}};
+
+
+\node at ({\leftLimit + 3*\subBoxesDelta + 3*(\subBoxesWidth)/2},{\subBoxesTop-\heightUnits}) {\imp{Nourishment}};
+
+\newdimen\myunit
+\pgfextractx{\myunit}{\pgfpointxy{{\subBoxesWidth-\subBoxesDelta/2}}{0}}
+\node[anchor = north west] at ({\leftLimit + 3*\subBoxesDelta + (\subBoxesWidth)},{\subBoxesTop-2.8*\heightUnits}) {\parbox[t]{1\myunit}{\raggedright \scriptsize Doing \imp{Nourishing} activities restores \key{Fortitude}}};
+
+\node[anchor = west] at ({\leftLimit + 3*\subBoxesDelta + (\subBoxesWidth)},{\subBoxesTop -\expGap - 2.5 *\boxDim}) {\scriptsize Nourishment Triggers:};
+\foreach \c in {1,2,3,4,5}
+{
+	\def\y{\subBoxesTop - \expGap - 2.5*\boxDim - \c*\subExpGap}
+	\draw[fill = black] ({\leftLimit + \subBoxesWidth + 3*\subBoxesDelta + \subExpGap}, {\y+\bulletR}) circle (\bulletR);
+	\draw[gray!70]({\leftLimit + +\subBoxesWidth + 3*\subBoxesDelta + \subExpGap+6*\bulletR}, {\y}) -- ({\rightColumn - 2*\subBoxesDelta}, {\y});
 }
 
 
 
 
-\draw[rounded corners] (10,2.5) rectangle (14,{\h-1.1});
-\draw[rounded corners] (9.95	,2.55) rectangle (18.05,\voff);
-\draw[rounded corners] (10,{\h-1.2}) rectangle (14,{\voff+0.05});
-\draw[rounded corners] (14.1,{\h-1.2}) rectangle (18,{\voff+0.05});
-\draw[rounded corners] (14.1,2.5) rectangle (18,{\h-1.1});
-\node at (12,2.2) {\bf \small  Level};
-\node at (16,2.2) {\bf \small  Progress};
-\node at (12,{\h-1.4}) {\small  \bf Expertise };
-\node at (16,{\h-1.4}) {\small \bf Movement};
-\def\w{4}
-\def\b{-1.6}
 
 
-
-%~ \node at (4.5,-13.2) {  Statuses \& Temportary Effects};
-%~ \draw[rounded corners] (0,-13.5) rectangle (9,-17);
+%%% ASPECT BOX
 
 
-\def\cT{-14.7}
-\def\ct{-18.5}
-
-%%%%% COLUMN ONE
-\def\cx{1}
-
-%%potion
-\node at ({\cx+0.05},{\cT + 1.5}) {\includegraphics[scale = 0.27]{../Images/potion}};
-\node at (\cx, \cT) {\bf Potioneering};
-
-%% shield
-
-\def\cy{-15}
-\def\pdx{0.45}
-\def\pdy{}
-\def\r{0.9}
-\def\R{2.28};
-\def\xfrac{1/2}
-
-\def\yfrac{1/2}
-\def\thetaS{-30}
-\def\thetaE{50}
-\def\thetaA{90}
-\def\thetaB{150}
-\draw[domain = \thetaS:\thetaE,thick] plot ({\cx + \pdx + \r*sin(\x)},{\cy - \r*cos(\x)});
-\draw[domain = \thetaS:\thetaE,thick] plot ({\cx - \pdx - \r*sin(\x)},{\cy - \r*cos(\x)});
-
-\draw[domain = \thetaA:\thetaB,thick] plot ({\cx - \pdx - \r*sin(\thetaE) + \R*sin(\x)},{\cy - \r*cos(\thetaE) +1.3*\R*cos(\x)});
-\draw[domain = \thetaA:\thetaB,thick] plot ({\cx + \pdx + \r*sin(\thetaE) - \R*sin(\x)},{\cy - \r*cos(\thetaE) +1.3*\R*cos(\x)});
-%\draw[domain = \thetaS:\thetaE] plot ({\cx - \pdx - \r*sin(\x)},{\cy - \r*cos(\x)});
-\node at (\cx, \ct) {\bf Block};
+\def\ry{0.7}
 
 
+\def\interAspectGap{0.8*\widthUnits}
+\def\aspectSectionSize{ (\rightColumn - \leftLimit - 2*\subBoxesDelta - 2 * \interAspectGap)/3}
+\def\aspectBoxHeight{\aspectSectionSize/2.2}
+\def\aspectTop{\halfDivider - 4*\heightUnits};
+\def\aspectVerticalGap{2*\heightUnits}
+\def\interDotGap{(\aspectSectionSize - 7*1.42*\boxSmall)/8};
+\draw[rounded corners, gray!70, fill = gray!10] ({\leftLimit},{\halfDivider - 0.5*\heightUnits}) rectangle ({\rightColumn},{0});
+\node at ({(\leftLimit + \rightColumn)/2},{\aspectTop}) {\HP \LARGE Aspects};
 
 
-%%%%COLUMN TWO 
-\def\cx{4.8}
-%% enchantment
-\def\cy{-13}
-\def\r{0.15}
-\draw[domain = 0:360, variable = \t, samples = 100,thick] plot ({\cx + 1.4*sin(\t)*sin(\t/2)}, {\cy - cos(\t)});
-%\draw (\cx,{\cy-1-\r}) circle (\r);
-%\node at (\cx,{\cy - 1- \r-0.05}) {\textarc{j}};
-\foreach \a/\b [count=\q from 0] in {0/{j},  50/{\Ing}, 80/{\RR}   }
+\foreach \Row [count = \i from 0] in { { {Fitness}, {Charm}, {Intelligence} },  { {Precision}, {Deception} , {Willpower} },   { {Vitality}, {Insight} , {Perception} },   }
 {
-	\def\x{ {\cx + 1.4*sin(\a)*sin(\a/2)} };
-	\def\xE{ {\cx + 1.4*sin(\a)*sin(\a/2)} };
-	\def\xS{ {\cx + 1.4*sin(360 - \a)*sin((360-\a)/2)} };
-	\def\yS{ \cy - cos(\a)   };
-	\def\yE{ \cy - cos(\a)  - 0.1};
-	\if\q0
-		\def\yE{\yS}
-	\fi
-	\draw (\xE,{\yS})--(\xE,{\yE});
-	\draw (\xE,{\yE - \r}) circle (\r);
-	\node at (\xE,{\yE - \r-0.03}) {\scriptsize\textarc{\b}};
+	\def\y{ \halfDivider - 9*\heightUnits - \i*(\aspectBoxHeight*(1+1/6)+\ry + \aspectVerticalGap)}
 	
-	\draw (\xS,{\yS})--(\xS,{\yE});
-	\draw (\xS,{\yE - \r}) circle (\r);
-	\node at (\xS,{\yE - \r-0.03}) {\scriptsize\textarc{\b}};
-}
-\node at (\cx, \cT) {\bf Enchantment};
-
-
-%%avoid
-
-\def\cy{-16.9}
-\def\D{1.4}
-\def\r{0.9}
-\def\R{1}
-\draw (\cx,\cy) circle (\r);
-\draw[ultra thick, ->] (\cx,{\cy-\D})--(\cx,{\cy-\R}) arc (90:270:-\R) -- (\cx,{\cy + \D}); 
-\node at (\cx, \ct) {\bf Dodge};
-
-
-
-%%dice block
-\def\top{-13.1}
-\def\cx{17}
-\def\width{20}
-\def\hB{5.6}
-\def\r{0.7}
-\def\circleOff{4.7}
-\def\gapx{2}
-\def\delta{0.25}
-\def\gapy{2.8}
-\def\discgap{0.9}
-\def\textgap{0.25}
-\def\p{  \cx - (\width-\gapx)/2 + 1 }
-\def\f{ (\width-\gapx)/3.6  }
-\draw[rounded corners, gray!50,fill = gray!10] ({\cx-\width/2},\top) rectangle ({\cx+\width/2},{\top-\hB});
-\node at (\cx,{\top-0.3}) {\LARGE \bf   Spellcasting};
-\foreach \a/\b/\c/\d/\e [count=\q from 0] in {{Charms}/{Elemental}/{\attPowShort}/{Kinesis}/{\attFinShort{}},{Divination}/{Telepathic}/{\attPerShort{}}/{Temporal}/{\attIntShort{}},{Illusion}/{Bewitchment}/{\attChrShort{}}/{Psionics}/{\attSprShort{}},{Malediction}/{Curses}/{\attPowShort{}}/{Hexes}/{\attSprShort{}},{Recuperation}/{Healing}/{\attPerShort{}}/{Warding}/{\attIntShort{}},{Transfiguration}/{Alteration}/{\attFinShort{}}/{Conjuration}/{\attPowShort{}},{Dark Arts}/{Necromancy}/{\attEvlShort{}}/{Occultism}/{\attChrShort{}}}
-{
-	\ifthenelse{\q>3}{\def\y{ {(\top-\circleOff)}}\def\x{ {(\p+ (\q-4)*\f)} } }{\def\y{ {(\top-\circleOff+\gapy)} }\def\x{ {(\p + \q*\f)} }}
-	%\draw[gray!70,fill=white] (\x,\y) circle (\r);
-	\node at (\x,{\y+\r+0.2}) { \bf \a};
-	
-	\def\bX{\x - 1.4}
-	\def\bY{\y + 0.1}
-	
-		%%boxes
-		\draw[fill=white] ({\bX},{\bY}) rectangle ({\bX+\delta},{\bY+\delta});
-		\draw[fill=white] ({\bX},{\bY-\discgap}) rectangle ({\bX+\delta},{\bY-\discgap+\delta});
+	\foreach \entry [count = \j from 0] in \Row
+	{
+		\def\x{ \leftLimit + \subBoxesDelta + \aspectSectionSize/2+ \j * (\aspectSectionSize+\interAspectGap) }
 		
-		%%lines
-		\draw ({\bX + \delta+0.1},{\bY})--({\x - 0.1},{\bY});
-		\draw ({\bX + \delta+0.1},{\bY-\discgap})--({\x - 0.1},{\bY-\discgap});
+		\draw[rounded corners,gray!70,fill=gray!35] ({\x- \aspectSectionSize/2},{\y+\aspectSectionSize/6}) rectangle ({\x+ \aspectSectionSize/2},{\y -\aspectBoxHeight});
+		\node at ({\x}, {\y}) {\key{\entry}};
+		
 	
+		\draw[domain = 0:360, variable = \t,samples = 30,gray!70,fill = gray!20] plot ({\x + (\aspectSectionSize/2)*cos(\t))}, {\y-\aspectBoxHeight-\ry*sin(\t)});
+		
+		\foreach \k in {0,1,2,3,4,5,6}
+		{
+			
+			\def\xCirc{\x - \aspectSectionSize/2 + \interDotGap + \boxSmall*1.42/2 + \k*(\interDotGap + \boxSmall*1.42)};
+			\if\k0
+				\smallDot{\xCirc}{\y-\aspectBoxHeight}{black}
+			\else
+				\smallDot{\xCirc}{\y-\aspectBoxHeight}{white}
+			\fi
+		
+		}
+		
 	
-		%%discpline names
-		\node[anchor=west] at ({\x},{\y + \textgap}) {  \small \b \color{gray}{ (\c)}};
-		\node[anchor = west] at ({\x},{\y + \textgap- \discgap}) { \small \d \color{gray}{ (\e)}};
-}
-\def\Qx{\p + 3*\f}
-\def\Qy{\top-\circleOff}
-%\node at (0,0) {\Qx \Qy};
-\node at ({\Qx},{\Qy+\r+0.2}) {\small \bf Arcane Subjugation};
-\def\R{1.3}
-\def\delta{0.04}
-\draw[gray!70,fill=white, rotate around={0: ({\Qx},{\Qy})}] ({\Qx-\R/2},{\Qy-\R/2}) rectangle ({\Qx+\R/2},{\Qy+\R/2});
-\draw[gray!70,fill=white, rotate around={0: ({\Qx},{\Qy})}] ({\Qx-\R/2+\delta},{\Qy-\R/2+\delta}) rectangle ({\Qx+\R/2-\delta},{\Qy+\R/2-\delta} );
-
-
-
-
-\node at (13.5,-2.2) {\bf \Large  Skill \& Proficiency Bonuses};
-\draw[rounded corners] (7,-2.6) rectangle (18.2,-12.4);
-\def\topQ{-3.1}
-\def\gap{0.45}
-\def\x{7.1}
-\def\mid{11}
-\def\cx{10}
-\def\delta{0.15}
-\draw (\mid,-2.6)--(\mid,-12.4);
-%
-%\foreach \c [count = \q from 0] in {  {{Health},{ATH} },  {{Strength},{ATH} }  }
-%{{Health}, {Speed},{Strength},{Precision},{Stealth},{Dexterity},{Endurance},{Willpower},{Performance},{Deception},{Persuasion},{Research},{Arcane},{Flora \& Fauna},{History}, {Surroundings},{Emotions},{Intimidation},{Chaos}}
-
-%
-
-\foreach \a/\b [count = \q from 0] in { {Acrobatics}/{PRS}, {Arcane}/{INT}, {Chicanery}/{PRS}, {Conviction}/{SPR}, {Deception}/{CHR}, {Empathy}/{PCP}, {History}/{INT}, {Intimidation}/{POW}, {Investigation}/{PCP}, {Logic}/{INT}, {Nature}/{INT}, {Observation}/{PCP}, {Performance}/{CHR}, {Persuasion}/{CHR}, {Research}/{INT}, {Speed}/{FIT}, {Stealth}/{PRS}, {Strength}/{FIT}, {Un-nature}/{INT}, {Vitality}/{FIT}, {Willpower}/{SPR}}
-{
-	\def\y{\topQ - \q*\gap}
-	\draw (\x,{\y+0.1}) rectangle ({\x+\delta},{\y+\delta+0.1});
-	\draw ({\x + 2*\delta},\y)--+({4*\delta},0);
-	\node[anchor = south west] (A) at ({\x+6*\delta},{\y-0.22}) {\scriptsize \a~\textcolor{gray!60}{(\b{})} }; 
-	\draw[gray!50] (\mid,\y)--(18.2,\y); 	
-} 
-
-
-
-\node at (22.5,-2.2) { \bf \Large Inventory};
-\draw[rounded corners](19,-2.6) rectangle (27,-12.4);
-\foreach \q in {0,1,2,...,20}
-{
-	\def\y{\topQ - \q*\gap}
-	\draw[gray!50] (19,\y)--(27,\y); 
+	}
 }
 
-\def\r{0.7}
-\draw[gray!90, fill=white] ({19.01 + \r},{-2.61 - \r}) circle (\r);
-\draw[gray!90, fill=white] ({19.01 + \r},{-2.61 - 3.1*\r}) circle (\r);
-\draw[gray!90, fill=white] ({19.01 + \r},{-2.61 - 5.2*\r}) circle (\r);
 
-\newcommand\moneysymb[1]
+%%% ABILITIES BOX
+\def\secondColumn{\rightColumn + 1*\widthUnits}
+\def\secondRight{100*\widthUnits}
+\def\gap{\textcolor{gray!70}{\underline{\hspace{1.8cm}}}}
+\draw[rounded corners, gray!70, fill = gray!20] ({\secondColumn},{\halfDivider - 0.5*\heightUnits}) rectangle ({\secondRight},{0});
+\node at ({(\secondColumn + \secondRight)/2},{\aspectTop}) {\HP \LARGE Abilities};
+
+\def\interAbilityGap{0.3*\widthUnits}
+\def\abilityHeight{2.8*\heightUnits}
+\def\abilityWidth{((\secondRight - \secondColumn) - 4 * \interAbilityGap)/3}
+
+\def\columnStart{\aspectTop - 5*\heightUnits}
+\foreach \Header/\Column [count = \i from 0] in  {  {Innate}/{{Alertness}, {Bravery}, {Conviction}, {Eloquence}, {Intimidation}, {Kindness}, {Kinship}, {Logic}, {Speed}, {Strength},{\gap{}},{\gap{}} }, {Practical}/{{Acrobatics}, {Brawl}, {Covert}, {Craft}, {Imbue}, {Marksmanship}, {Performance}, {Pilot}, {Skirmish}, {Survival}, {\gap{}},{\gap{}} }, {Knowledge}/{{Arcane}, {General}, {History}, {Investigation}, {Medicine}, {Muggle}, {Nature}, {Science}, {Technology}, {World}, {\gap},{\gap}}, }
 {
-	\LARGE\color{gray!70}{#1}
+	\def\x{\secondColumn + \interAbilityGap + \i*(\interAbilityGap + \abilityWidth)}
+	
+	\node at ({\x+\abilityWidth/2},{\columnStart}) {\key{\Header}};
+	
+	\foreach \entry [count = \j from 1] in \Column
+	{
+		\def\y{\columnStart - \interAbilityGap - \j*\abilityHeight}
+		
+		\node[anchor = west] at ({\x},{\y}) {\footnotesize\imp{\entry}:};
+	
+		\foreach \k in {0,1,2,3,4,5,6}
+		{
+			
+			\def\xCirc{\x + - 4 * \widthUnits + \abilityWidth - \k*(\boxSmall*1.42)};
+			
+			\smallDot{\xCirc}{\y}{white}
 
+		
+		}
+	
+	}
+	
+}	
+
+%%%% Status box 
+\def\halfUp{68.4*\heightUnits}
+\def\skinnyWidth{23*\widthUnits}
+\def\skinnyLimit{\secondColumn + \skinnyWidth}
+\draw[rounded corners,gray!70,fill=gray!10] ({\secondColumn},{\halfUp + 0.5*\heightUnits})rectangle ({\skinnyLimit},{\characterBoxTop});
+
+\def\healthGap{0.5*\widthUnits}
+\def\healthWidth{(\skinnyWidth - 3*(\healthGap))/2}
+
+%%%Health
+\draw[rounded corners,gray!70,fill=gray!30] ({\secondColumn+\healthGap},{\halfUp+ 0.5*\heightUnits+\healthGap})rectangle ({\secondColumn+\healthGap+\healthWidth},{\characterBoxTop-\healthGap});
+
+
+
+\def\ytop{\characterBoxTop - 3.1*\healthGap}
+\def\x{\secondColumn + \healthGap + (\healthWidth)/2}
+\def\xCirc{\secondColumn + \healthGap+0.7*1.42*\boxDim}
+\newdimen\healthX
+\pgfextractx{\healthX}{\pgfpointxy{{\healthWidth - 1.3*(0.7*1.42+1)*\boxDim}}{0}}
+
+
+\node at ({\x},{\ytop}) {\key{Health}};
+
+\foreach \a [count = \k from 1] in {{Sore}, {Bruised \hfill (-1d)}, {Hurt \hfill(-2d)}, {Injured\hfill (-3d)}, {Wounded\hfill (-4d)}, {Mangled\hfill (-5d) }, {Critical \\ Condition}  }
+{
+	\def\yCirc{\ytop -\boxDim*\sqrtTwo*(\k*1.1 + 1/2)}
+	\square{\xCirc}{\yCirc}{}{white}
+	\node[anchor = west] at ({\xCirc+\boxDim},{\yCirc}) {\parbox[t]{1\healthX}{\scriptsize\imp{\a}}};
 }
 
-\node at ({19.01 + \r/3},{-2.61 - \r}) {\moneysymb{\galleon{}}};
-\node at ({19.01 + \r/3},{-2.61 - 3.1*\r}) {\moneysymb{\sickle{}}};
-\node at ({19.01 + \r/3},{-2.61 - 5.2*\r}) {\moneysymb{\knut{}}};
+\def\lineHeight{\ytop - 9*1.42*\boxDim}
+\draw[gray!70] ({\secondColumn + \healthGap}, {\lineHeight})--++({\healthWidth},0);
+\def\bigH{\lineHeight - \halfUp -0.5*\heightUnits - \healthGap}
+\def\deltaH{(\bigH - 2*\sqrtTwo*\boxDim)/3}
+
+
+\foreach \k in {-1.5,-0.5,0.5,1.5}
+{
+	\square{\x+\k*1.42*\boxDim}{\lineHeight -\deltaH - \sqrtTwo/2*\boxDim}{dotted}{gray!20}
+	\square{\x+\k*1.42*\boxDim}{\lineHeight - \deltaH*2 -  3*\sqrtTwo/2*\boxDim}{dotted}{gray!20}
+}
+
+
+\draw[rounded corners,gray!70,fill=gray!30] ({\secondColumn+2*\healthGap+\healthWidth},{\halfUp+ 0.5*\heightUnits+\healthGap})rectangle ({\skinnyLimit - \healthGap},{\characterBoxTop-\healthGap});
+
+\def\x{\secondColumn + 2* \healthGap + 3/2*(\healthWidth)}
+\def\xCirc{\secondColumn + 2*\healthGap + \healthWidth+0.7*1.42*\boxDim}
+\node at ({\x},{\ytop}) {\key{Fortitude}};
+
+\foreach \a [count = \k from 1] in {{Fresh}, {Fired Up}, {On A Roll}, {Pushing It}, {Tired}, {Drained}, {Burned Out}  }
+{
+	\def\yCirc{\ytop -\boxDim*\sqrtTwo*(\k*1.1 + 1/2)}
+	\square{\xCirc}{\yCirc}{}{white}
+	\node[anchor = west] at ({\xCirc+\boxDim},{\yCirc}) {\parbox[t]{1\healthX}{\scriptsize\imp{\a}}};
+}
+\def\sqrtTwo{1.4142135623730951}
+\draw[gray!70] ({\secondColumn + 2*\healthGap + \healthWidth}, {\lineHeight})--++({\healthWidth},0);
+\def\bigH{\lineHeight - \halfUp -0.5*\heightUnits - \healthGap}
+\def\deltaH{(\bigH - 2*\sqrtTwo*\boxDim)/3}
+
+
+\foreach \k in {-1.5,-0.5,0.5,1.5}
+{
+	\square{\x+\k*1.42*\boxDim}{\lineHeight -\deltaH - \sqrtTwo/2*\boxDim}{dotted}{gray!20}
+	\square{\x+\k*1.42*\boxDim}{\lineHeight - \deltaH*2 -  3*\sqrtTwo/2*\boxDim}{dotted}{gray!20}
+}
+
+
+
+
+%%% Status Box
+\draw[rounded corners,gray!70,fill=gray!10] ({\secondColumn},{\halfUp - 0.5*\heightUnits})rectangle ({\skinnyLimit},{\halfDivider + 0.5*\heightUnits});
+
+\def\x{(\skinnyLimit + \secondColumn)/2}
+\def\yC{\halfUp - 1.5*\heightUnits}
+
+\node at ({\x},{\yC}) {\key{Statuses \& Feats}};
+
+
+%%%% Spellcasting box
+\def\affinityHeight{\abilityHeight*0.87}
+\def\secondLeft{\skinnyLimit + 1*\widthUnits}
+\draw[rounded corners,gray!70,fill=gray!10] ({\secondLeft},{\halfUp - 0.5*\heightUnits})rectangle ({\secondRight},{\halfDivider + 0.5*\heightUnits});
+
+\def\xC{(\secondLeft + \secondRight)/2}
+\node at ({\xC},{\yC-1*\heightUnits}) {\Large \HP Affinities};
+
+\foreach \Column [count = \i from 0] in  { {{Alteration}, {Bewitchment}, {Cerebral}, {Conjuration}, {Curses}, {Elemental}, {Healing}}, {{Hex}, {Kinesis}, {Occultism}, {Psionics}, {Temporal}, {Warding}, {Necromancy}}, }
+{
+	\def\x{\secondLeft+ \interAbilityGap + \i*(\interAbilityGap + \abilityWidth*0.93)}
+	\foreach \entry [count = \j from 0] in \Column
+	{
+		\def\y{\yC - 4.3*\heightUnits - \j*\affinityHeight}
+		
+		\node[anchor = west] at ({\x},{\y}) {\footnotesize\key{\entry}:};
+	
+		\foreach \k in {0,1,2,3,4,5,6}
+		{
+			
+			\def\xCirc{\x + - 4 * \widthUnits + \abilityWidth - \k*(\boxSmall*1.42)};
+			
+			\if\k6
+				\smallDot{\xCirc}{\y}{black}
+			\else
+				\smallDot{\xCirc}{\y}{white}
+			\fi
+		}	
+	}
+}	
+
+
+
+
+%%%% Inventory Box
+\draw[rounded corners,gray!70,fill=gray!10] ({\secondLeft},{\halfUp + 0.5*\heightUnits})rectangle ({\secondRight},{\characterBoxTop});
+\def\yC{\characterBoxTop - 1.5*\heightUnits}
+\node at ({\xC},{\yC-0.2*\heightUnits}) {\Large \HP Inventory};
+
+\def\wealthHeight{0.5*\heightUnits}
+\def\invGap{0.5*\widthUnits}
+
+\def\wealthWidth{6.3*\widthUnits}
+
+\def\invWidth{(\secondRight - (\secondLeft) - 3*\invGap - \wealthWidth)}
+\def\subHeight{\yC - 2*\heightUnits}
+\def\textHeight{\subHeight - 1*\heightUnits}
+
+\draw[rounded corners,gray!70,fill=gray!30] ({\secondLeft+\invGap},{\halfUp + 0.5*\heightUnits+\wealthHeight})rectangle ({\secondLeft+\invGap + \invWidth},{\subHeight});
+\node at ({\secondLeft+\invGap + \invWidth/2},{\textHeight}) {\key{Equipment}};
+
+
+\def\equipHGap{0.5*\heightUnits}
+\def\HStart{\textHeight - 1*\heightUnits}
+\def\HEnd{\halfUp + 0.5*\heightUnits +\wealthHeight}
+\def\HJump{((\HEnd) - (\HStart) - 8*\equipHGap)/7}
+
+\def\XStart{\secondLeft + \invGap}
+\def\XEnd{\secondLeft + \invGap + \invWidth}
+\def\XGap{2*\heightUnits}
+\def\XJump{((\XEnd) - (\XStart) - 3*\XGap)/2}
+
+\foreach \i in {0,1}
+{
+	\def\x{\XStart + \XGap + \XJump/2 + \i*(\XJump + \XGap)}
+	\foreach \j in {0,1,2,3,4,5,6}
+	{
+		\def\y{\HStart+\equipHGap + \HJump/2 + \j*(\HJump + \equipHGap)}
+		
+		\smallDot{\x-\XJump/2}{\y}{white};
+		\draw[gray!70]  ({\x-\XJump/2+\sqrtTwo*\boxSmall},{\y-\sqrtTwo/2*\boxSmall})--({\x+\XJump/2},{\y-\sqrtTwo/2*\boxSmall});
+	}
+}
+
+
+
+
+\draw[rounded corners,gray!70,fill=gray!30] ({\secondLeft+2*\invGap + \invWidth},{\halfUp + 0.5*\heightUnits+\wealthHeight})rectangle ({\secondRight - \invGap},{\subHeight});
+\def\xW{\secondRight - \invGap - \wealthWidth/2}
+\node at ({\xW},{\textHeight}) {\small \key{Galleons}};
+\def\moneyGap{(\boxDim*1.42)}
+\foreach \k in {0,1,2,3,4,5,6}
+{
+	
+	\def\yCirc{\textHeight - (\k+1)*\moneyGap};
+	
+	\square{\xW}{\yCirc}{}{white}
+
+}	
+\node at ({\xW},{\textHeight - 8*\moneyGap}) {\small \imp{Vault}};
+
+\def\vaultY{\textHeight - 9.3*\moneyGap};
+
+\def\vaultSize{3.3*\widthUnits}
+\draw[] ({\xW - \vaultSize/2},{\vaultY - \vaultSize/2}) rectangle ({\xW + \vaultSize/2},{\vaultY + \vaultSize/2});
+\def\vaultSize{3*\widthUnits}
+\draw[fill=white] ({\xW - \vaultSize/2},{\vaultY - \vaultSize/2}) rectangle ({\xW + \vaultSize/2},{\vaultY + \vaultSize/2});
+
 \end{tikzpicture}
-
-\newpage
-\newsavebox\ltmcbox
-
-\begin{multicols}{3}
-\section{\huge Skill List}
-\vspace{0.5cm}
-Don't forget to increase the prerequisite LVL by 2 every time a skill increases. 
-
-\newcommand{\fivecirc}{\circ\circ\circ\circ\circ}
-\newcommand{\oneblack}{\bullet \circ\circ\circ\circ}
-\definecolor{pale}{rgb}{0.7,0.7,0.7}
-\setbox\ltmcbox\vbox{
-\makeatletter\col@number\@ne
-\scriptsize
-\def\x{2.7}
-\def\y{3}
-\def\z{1.3}
-\def\top{4.3}
-\def\bottom{4.3}
-%%SkillBegin\begin{longtable}{|m{\x cm}|m{\y cm}|m{\z cm}|}\hline  \bf Skill & \bf Prerequisite & \bf Level \\ \hline \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Always Alert}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Ambidextrous}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Animagus}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Expert Thaumaturgy\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Area Dodge}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Battlecry}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}CHR $>13$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Catastrophic Critical}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Cleave}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Defence Against the Dark Arts}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Disciplined}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Eagle-Eyed}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Extended Range}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Familiar}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Focussed Caster}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Golden Touch}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}CHR $>14$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Improved Instincts}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Instinctive Retribution}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Ironclad}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\attPhysShort{} $> 15$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Knife Handler}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Last Resort}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Linguist}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Merciful}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Mimicry}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}CHR $> 13$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Mobile}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Moving Target}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\attPhysShort{} $> 12$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Muggle Lover}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Overcome Resistance}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Parry}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Power Attack}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Reload Expert}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Sentinel}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\attPerShort{} $>15$\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Silent Magic}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Sprint Start}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Speed Proficiency\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Stabiliser}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ\circ\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Superhero Landing}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Supportive Ally}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Tool-User}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Undead Benefactor}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Wandless Magic}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}Silent Magic\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Wandwork}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weak Spot}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Basic Training}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Exotic Fighter}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Fighting Dirty}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Hulk Smash?}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Long Range Threat}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Sharpshooter}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Simple Ranged Training}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \vspace{1ex}\parbox[t]{\x cm}{\raggedright Weapons: Swordfighter}\vspace{1ex}  &  \vspace{1ex}\parbox[t]{\y cm}{\centering \color{pale}\vspace{1ex}}& {\vspace{-\top ex}\vspace{-1ex} \normalsize $$\circ$$\vspace{1ex}\vspace{-\bottom ex}}\\ \hline \end{longtable} %%SkillEnd
-\unskip
-\unpenalty
-\unpenalty}
-
-\unvbox\ltmcbox
-\end{multicols}
 
 \end{landscape}
-\newpage
-\begin{tikzpicture}
-\def\left{0.6}
-\def\totalwidth{21.7}
-\def\w{10}
-\def\h{6}
-\def\g{0.8}
-\def\q{ (\totalwidth - 3*\left)/4}
-\node at ({\totalwidth/2},\h+0.8) { \HP \huge Learned Spells};
-
-\def\top{\h}
-\def\bottom{0}
-\def\gap{0.5}
-\def\N{11}
-\draw[rounded corners] (\left,\top) rectangle ({\totalwidth/2-\left/2},\bottom);
-\draw[rounded corners] ({\totalwidth/2+\left/2},\top) rectangle ({\totalwidth-\left},\bottom);
-\node at ({\left+\q},{\top+0.2}) {  \bf Charms};
-\node at ({(\totalwidth+\left)/2+\q},{\top+0.2}) {  \bf Malediction};
-\foreach \q in {1,2,...,\N}
-{
-	\def\y{\top - \q*\gap}
-	\draw[gray!50] (\left,\y)--(\totalwidth/2-\left/2,\y); 
-}
-\foreach \q in {1,2,...,\N}
-{
-	\def\y{\top - \q*\gap}
-	\draw[gray!50] (\totalwidth/2+\left/2,\y)--(\totalwidth-\left,\y); 
-}
-
-\def\top{-\g}
-\def\bottom{-\g -\h}
-\draw[rounded corners] (\left,\top) rectangle ({\totalwidth/2-\left/2},\bottom);
-\draw[rounded corners] ({\totalwidth/2+\left/2},\top) rectangle ({\totalwidth-\left},\bottom);
-\node at ({\left+\q},{\top+0.2}) {  Transfiguration};
-\node at ({(\totalwidth+\left)/2+\q},{\top+0.2}) {  Recuperation};
-\foreach \q in {1,2,...,\N}
-{
-	\def\y{\top - \q*\gap}
-	\draw[gray!50] (\left,\y)--(\totalwidth/2-\left/2,\y); 
-}
-\foreach \q in {1,2,...,\N}
-{
-	\def\y{\top - \q*\gap}
-	\draw[gray!50] (\totalwidth/2+\left/2,\y)--(\totalwidth-\left,\y); 
-}
-
-
-\def\top{-2*\g-\h}
-\def\bottom{-2*\g-2*\h}
-\draw[rounded corners] (\left,\top) rectangle ({\totalwidth/2-\left/2},\bottom);
-\draw[rounded corners] ({\totalwidth/2+\left/2},\top) rectangle ({\totalwidth-\left},\bottom);
-\node at ({\left+\q},{\top+0.2}) {  Illusion};
-\node at ({(\totalwidth+\left)/2+\q},{\top+0.2}) {  Divination};
-\foreach \q in {1,2,...,\N}
-{
-	\def\y{\top - \q*\gap}
-	\draw[gray!50] (\left,\y)--(\totalwidth/2-\left/2,\y); 
-}
-\foreach \q in {1,2,...,\N}
-{
-	\def\y{\top - \q*\gap}
-	\draw[gray!50] (\totalwidth/2+\left/2,\y)--(\totalwidth-\left,\y); 
-}
-\def\top{-3*\g-2*\h}
-\def\bottom{-3*\g - 2*\h - \h/1.3}
-\draw[rounded corners] (\left,\top) rectangle ({\totalwidth-\left},\bottom);
-\node at ({\totalwidth/2},{\top+0.2}) {  Dark Arts};
-\def\N{8}
-\foreach \q in {1,2,...,\N}
-{
-	\def\y{\top - \q*\gap}
-	\draw[gray!50] (\left,\y)--(\totalwidth - \left,\y); 
-}
-
-
-\end{tikzpicture}
 
 
 
