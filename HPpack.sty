@@ -271,11 +271,19 @@ Gain an additional #1 #2 damage \forEvery{}.
 \newcommand\triRow[3]{#1	&	#2	& #3\\}
 \newcommand\ratingTable[8]
 {
+\dotTable{#1}{#2}{#3}{#4}{#5}{#6}{#7}{#8}{Summary}
+}
+\newcommand\spellTable[8]
+{
+\dotTable{#1}{#2}{#3}{#4}{#5}{#6}{#7}{#8}{Example Spells}
+}
+\newcommand\dotTable[9]
+{
 
 \begin{center}
 \footnotesize
 \begin{rndtable}{c p{7.8 cm}}
-\bf Rating&\bf Summary \\
+\bf Rating&\bf #9 \\
 \dualRow{\emptyCape}{#1}
 \dualRow{\oneCape}{#2}
 \dualRow{\twoCape}{#3}

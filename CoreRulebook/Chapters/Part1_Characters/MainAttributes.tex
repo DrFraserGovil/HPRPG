@@ -86,9 +86,9 @@ A full description of the Attributes, and the situations in which they are used,
 
 Every character starts off with a baseline of a 1-dot rating in each of the 9 Aspects (though some \imp{Family} heritages can impose penaltis which reduce this to zero), as well as gaining a few bonuses 
 
-On top of this baseline, you may then allocate an additional number of points in order to represent a character's natural 
+On top of this baseline, you may then allocate an additional number of points in order to represent a character's natural abilities.
 
-During this stage, you may not increase an \imp{Attributes}'s rating to more than four dots. 
+Each character gains 8 free dots which they can allocate to any of the 9 \imp{Aspects}, with the only limitation being that during this stage, you may not increase an \imp{Attributes}'s rating to more than four dots. 
 
 
 
@@ -187,7 +187,109 @@ On top of this, each character may allocate 18 additional dots to their \imp{abi
 These dots may be allocated freely amongst the chosen category, with the exception that during this stage, you may not increase an ability's rating to more than 4 dots. 
 
 
-\section{Affinities} \label{S:Wandchoosing}
+\section{Affinities \& The Wandchoosing} \label{S:Wandchoosing}
+
+The individual descriptions of \imp{Affinities} are discussed more on page \pageref{S:DiscDescs}, for now it suffices to note that they function almost identically to \imp{Abilities}, except they focus on a spellcaster's ability to understand and cast magical spells. 
+
+Some characters - muggles, mostly - as well as many beasts simply have no ability to knowlingly use magic, and so have no \imp{Affinities} - their \imp{Affinity} is less than \imp{Zero}, and they cannot even attempt a spellcasting action. 
+
+For those that can use magic, as usual, their \imp{Archetype} gives a base level of ability in certain fields - \imp{Warriors} gain abilities in combat magic, whilst a \imp{Sophisticate} has \imp{Affinities} in manipulation and deception magic, and so on. 
+
+The remainder of your affinities are determined by the most important coming-of-age ritual a young witch or wizard goes through: the \key{Wandchoosing}. 
+
+\key{Wandlore} is a mysterious and poorly understood area of magic (see \pageref{S:Wandlore} for more information), but one of the few things that is well established is that a witch or wizard doesn't choose their wand: {\bf the wand chooses them}. Why and how a mage forms a bond with their wand is of a mystery, but it is thought to indicate something fundamental about their wielder - and though there are many wildly varying theories about what this means, it is known that certain properties of the wand lend themselves to a deeper understanding of certain types of magic. 
+
+When creating a mage, the inherent \imp{Affinities} that they possess is therefore determined by the kind of wand that they wield. 
+
+\subsection{Choosing a Wand}
+
+A wand has 7 principle components which define it - the \key{Wood} that it is constructed from, the magical \key{Core} that lies at the centre of it, the \key{Length} as well as the overall \key{Shape}, \key{Flexibility}, \key{Finish} and the presence of any \key{Decorations}. 
+
+At character creation, you may choose a combination of these components, representing your natural affinity for magic. 
+
+The net result of this process is that each witch and wizard starts off with two disicplines with a two-dot rating, and 4 with a 1-dot rating. 
+
+\subsubsection{\key{Wood} and \key{Core}}
+
+The primary component of a wand is the \key{wood} from which it is fashioned, and the magical \key{Core} which lies at its heart. 
+
+Each kind of wood, as well as different cores, resonate differently with magical energies from different disciplines. Hence, a wizard with a strong affinity for a given type of magic would have a \key{Wood}-\key{Core} pair which matched that. 
+
+As these represent the strongest natural affinities that a being possesses, you gain a two-dot rating (\twoCape) in the disciple associated with your chosen wood and core. 
+
+\renewcommand\triRow[3]{\imp{#1}	&	{#2}	&	#3	\\}
+\begin{center}
+	\begin{rndtable}{l l l}
+		\bf Discipline & \bf Wood	&	\bf Core
+		\\
+		\triRow{Alteration}{Chestnut}{Kelpie Mane}
+		\triRow{Bewitchment}{Larch}{Veela Hair}
+		\triRow{Cerebral}{Cedar}{Kneazle Whiskers}
+		\triRow{Conjuration}{Ebony}{Fiendfyre Ember}
+		\triRow{Curses}{Holly}{Malaclaw Shard}
+		\triRow{Elemental}{Sycamore}{Thunderbird Feather}
+		\triRow{Healing}{Willow}{Pheonix Feather}
+		\triRow{Hexes}{Blackthorn}{Dragon Heartstring}
+		\triRow{Kinesis}{Walnut}{Billywig Sting}
+		\triRow{Necromancy}{Yew}{Basilisk Horn}
+		\triRow{Occultism}{Maple}{Thestral Tail}
+		\triRow{Psionics}{Hazel}{Banshee Hair}
+		\triRow{Temporal}{Redwood}{Unicorn Hair}
+		\triRow{Warding}{Rowan}{Fire Crab Jewel}
+	\end{rndtable}
+\end{center}
+
+
+
+\subsubsection{Minor Properties}
+
+Though the core and wood are the primary link between the wand and the \imp{Affinities} of the wielder, it cannot be ignored that there are many other properties of wands, such as their \imp{Length}, \imp{Felxibility} and the overall \imp{Shape} of the wand. 
+
+Each of these properties relates to a lesser \imp{Affinity} of the mage - each choice relates to a one-dot advancement (\oneCape{}) in the field of your choice. 
+
+In order to prevent chaotic interplanar resonance collapse (an incredibly bad thing...unless you enjoy your nostrils being upside down, that is) each choice must be unique - you cannot stack two disciplines of the same type to get a two-dot rating, and nor can you choose the same field as your \imp{Wood} or \imp{Core} in order to get a three dot rating. 
+
+\newcommand\quartRow[4]{\imp{#1}	&	{#2}	&	#3	&	#4\\}
+\begin{center}
+	\begin{rndtable}{l l l l}
+		\bf Discipline & \bf Length	&	\bf Flexibility & \bf Shape
+		\\
+		\quartRow{Alteration}{11"}{Supple}{Undulating}
+		\quartRow{Bewitchment}{12"}{Pliant}{Spiralled}
+		\quartRow{Cerebral}{14"}{Soft}{Tapered}
+		\quartRow{Conjuration}{13"5'}{Rigid}{Curved}
+		\quartRow{Curses}{10"}{Unbending}{Curved handle}
+		\quartRow{Elemental}{10"5'}{Firm}{Organic, twig-like}
+		\quartRow{Healing}{14"5'}{Whippy}{Crooked}
+		\quartRow{Hexes}{8"5'}{Stiff}{Bladelike}
+		\quartRow{Kinesis}{9"}{Swishy}{Straight}
+		\quartRow{Necromancy}{15"}{Hard}{Serpentine}
+		\quartRow{Occultism}{9"5'}{Bendy}{Asymmetric cross section}
+		\quartRow{Psionics}{11"5'}{Brittle}{Needle-like point}
+		\quartRow{Temporal}{12"5'}{Springy}{Looping}
+		\quartRow{Warding}{13"}{Unyielding}{Flared hilt}
+	\end{rndtable}
+\end{center}
+
+\subsubsection{Other Properties}
+
+Although these are the main properties of a wand, it is not the only way in which a wand matches the personality and abilities of its owner. 
+
+Some wands have intricate carvings along their hilt, or have an elaborate metal handle and a glowing gem embedded in the hilt (or for the more extravagant witch or wizard - a glwoing crystal on the tip of the wand!)
+
+You may choose up to 2 additional customisations for your wand, each of which grants an additinal one-dot rating in a new discipline of your choice. You should justify why this customisation relates to your field - perhaps the crystal has hypnotic properties - hence the advancement in \imp{Bewitchment}. 
+
+
+At the end of this process, you should have built your own unique wand, and your character should have the following affinity ratings:
+\begin{center}
+	\begin{rndtable}{c c}
+	\bf Rating	&	\bf Amount \\
+	\emptyCape	&	7 \\
+	\oneCape	&	5 \\
+	\twoCape	&	2
+	\end{rndtable}
+\end{center}
+
 
 \section{Health}
 

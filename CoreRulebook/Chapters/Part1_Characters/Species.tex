@@ -1,18 +1,87 @@
 
-\chapter{Playable Species} \label{C:Species}
+\chapter{Family} \label{C:Species}
  
- Different magical races have different characteristics, abilities, and affinities with different kinds of magic. Each choice of race/species modifies your attribute values by a set amount and provides a pool of extra points which you can allocate to attributes at will, and some race-specific Abilities and Skills. 
  
-It is generally impossible to switch species once a character has been created, except where it makes sense within the story (i.e. a human transitioning to a Vampire after being bitten). 
+ Although the fate of a being is never set in stone, and is ultimately decided by free will, hard work and personal achievement, there is no denying that the heritage and familial origins of a magic wielder has a deep impact on how they initially view and interact with the world. 
+ 
+ The \key{Family} of a character determines these initial genetic and cultural impressions, and how they impact a character.
+ 
+ 
+ Since your family is rather set in stone, tt is generally impossible to switch once a character has been created, except where it makes sense within the story (i.e. a human transitioning to a Vampire after being bitten). 
+
+
+
+\newcommand\family[4]
+{
+	\subsubsection{#1}
+	
+	#3
+	
+	Coming from a #2 heritage gives you the following additional bonuses and feats:
+
+	\begin{itemize}
+		#4
+	\end{itemize}
+}
+
+
+
+\section{Humans}
+
+	Humans are perhaps the most common of the magic-wielding species, their population outweighing those of the other magical species by almost a factor of 10 by the time of the 21st century. Those who cannot wield magic (`muggles') outnumber the wizards by an even larger factor. 
+	
+	Despite this numerical dominance, wizardkind came into their magic relatively late - unlike the other elder species, their magic is relatively weak until it is harness and focussed through the use of spells and magical wands. 
+
+	
+	\family{Muggles}{Muggle}{Muggles (also known as `no-mags' in the USA, and a variety of other names worldwide and formally known as `Humans of Limited Magic Capabilities') are those humans who cannot access or control the magical forces which permeate the fabric of reality. Even pre-enchanted magical items and magical potions, when wielded by a muggle, malfunction and misbehave in unreliable ways. 
+	
+		Due to the \imp{International Statute of Secrecy}, most muggles are totally unaware that magic even exists, considering it a fairy tale or a myth. A notable exception to this are the {\bf Squibs}, who are the rare muggles born to magical parents - though they are born into the magical world, they cannot particiapte fully.}
+		{
+			\boldItem{Magic deficient}{You are unable to cast magic, or use magical items. Unless you have a direct connection to the magical world, you are unaware of its existence and therefore must take a zero-dot rating in the \imp{Arcane} knowledge skill.}
+			\boldItem{Physically Reliant}{Without the crutch of magic to rely on, you are better skilled with your hands - get a one-dot bonus to either your \imp{Fitness} or \imp{Precision} scores, and one dot in either \imp{Speed} or \imp{strength}}
+			\boldItem{Muggle Education}{Gain an additional 5-dots to spread between the \imp{Muggle}, \imp{Science}, \imp{Technology} and \imp{World} fields. You cannot use this to exceed a 3-dot rating.} 
+		}
+	
+	\family{Muggleborns}{Muggleborn}{Muggleborns (sometimes referred to by the derogetary term `mudbloods') are witches or wizards who are born to totally non-magical parents. Whether their magic arises spontaneously, or because of some long-distant magical relative is unknown. Muggleborns are relatively uncommon, making up perhaps 10\% of the student body at Hogwarts. 
+	
+	Muggleborns are usually told about their magical power at a relatively young age, though they typically remain raised in their muggle household. Muggleborns therefore often feel that they are strung between two worlds - that of magic, and that of their original family. Because of their upbringing, muggleborns find it easiest out of all the witches and wizards to interact with th muggle world. }
+	{
+		\boldItem{Muggle Education}{Gain an additional 3-dots to spread between the \imp{Muggle}, \imp{Science}, \imp{Technology} and \imp{World} fields. You cannot use this to exceed a 3-dot rating.} 
+		\boldItem{Physically Reliant}{Growing up without the crutch of magic to rely on, you learned to be better skilled with your hands - get a one-dot bonus to either your \imp{Fitness} or \imp{Precision} scores, and one dot in either \imp{Speed} or \imp{strength}}
+	} 
+
+	\family{Halfbloods}{Halfblood}{Halfbloods are by the far the most common kind of witch or wizard - they are those who have a non-trivial amount of muggle DNA, the cutoff is typically considered having at least one muggle grandparent. The unpleasant obsession with `blood purity' which plagued the 20th century led to many Halfbloods claiming to be `purebloods', despite all evidence to the contrary. 
+	
+	Halfbloods are typically raised in a magical household - even if only one of their parents is magical. They are therefore used to magic occuring in everyday life, and are much more comfortable with using magic for trivial or mundane tasks. }
+	{
+		\boldItem{Magical Household}{Being raised in a magical household, you have seen magic being used from a very young age, and are therefore very familiar with most forms of magic. Whenever making a knowledge check to identify a spell or magical effect, gain +1d}
+		\boldItem{Parenting Style}{The way in which a half-blood is raised depends on the views of their parents. Some ignore the muggle side of things entirely, others emphasise the dual heritage. You may choose a style from the list below:
+			\begin{itemize}
+				\boldItem{Magic-Only}{You are almost totally out of touch with your muggle heritage, perhaps even unaware it exists. Gain a two-dot rating in \imp{Arcane}}
+				\boldItem{Mixed}{You recieved a mixed upbringing, in touch with both sides of your heritage. Gain one-dot rating in each of \imp{Arcane} and \imp{Muggle}}
+				\boldItem{Muggle-only}{Your parents raised you as a muggle, in the hope it would give you a more balanced outlook on life. Gain one dot in \imp{Charm} and one in \imp{Muggle}.}
+			\end{itemize}
+			}
+	}
+	
+	\family{Purebloods}{Pureblood}{A true-pureblood is a genuinely rare witch or wizard, able to trace their ancestry back generations through entirely magical folk. The names of a pureblood are typically well-known by those in the wizarding communities, as being essentially magical nobility -- the most famous purebloods are the so-called `Sacred 28', 28 families of renowned magical heritage including the Blacks, the Lestranges,  the Longbottoms, the Malfoys, the Potters and the Weasleys. 
+	
+	The high status of many purebloods in wizarding society comes an unpleasant air of elitism and entitlement, though individual purebloods are often perfectly pleasant people.
+	
+	As with Halfbloods, Purebloods are raised in a magical household, though unlike many halfbloods, they do so without any muggle influences whatsoever. The muggle world absolutely baffles almost all purebloods - even those who adore muggles (such as Arthur Weasley) simply cannot wrap their heads around their way of living. 
+	 
+	}
+	{
+		\boldItem{Arcane Brain}{Your entire upbringing has centred around magic, to the exclusion of all else. You gain a two-dot rating in \imp{Arcane}, but can take no points in \imp{Muggle} at character creation.}
+		\boldItem{High Society}{Most pureblood families are well connected, and so you have grown up meeting and interacting with important people - gain a one dot rating in \imp{Eloquence}.}
+		\boldItem{Magical Household}{Being raised in a magical household, you have seen magic being used from a very young age, and are therefore very familiar with most forms of magic. Whenever making a knowledge check to identify a spell or magical effect, gain +1d}
+	}
+
+
+\section{Unfinished Heritages:}
 
 \begin{itemize}
-	\item Human
-	\begin{itemize}
-		\item Muggle
-		\item Muggleborn
-		\item Halfblood
-		\item Pureblood
-	\end{itemize}
+
 	\item Imp
 	\begin{itemize}
 		\item Leprechaun

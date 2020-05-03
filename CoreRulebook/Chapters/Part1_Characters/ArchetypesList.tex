@@ -156,10 +156,9 @@ However\comma{} the defining trait of an \auror{} is not their combat abilities 
 \item Prevent a crime or other unethical act from occuring,
 	bonuses = \bonus{Insight}{\twoCape}
 \bonus{Investigation}{\twoCape}
-\bonus{Hexes or Warding}{\twoCape}
 \bonus{Perception}{\oneCape}
 \bonus{Brawl}{\oneCape}
-\bonus{Warding or Hexes}{\oneCape},
+\bonus{Survival}{\oneCape},
 	innateAbility = Intuition,
 	innateDescription = \imp{\innateAbility} is the inherent\comma{} instinctive understanding of the minds of others possessed by an insightful and trained mind. Bypassing all \imp{Logic} and conscious reasoning\comma{} \imp{intuition} allows an \name{} to make great strides in their understanding of people and their actions by getting inside their heads and understanding the way that they think. Though not useful for solving traditional intellectual puzzles\comma{} \imp{\innateAbility} can allow an \bname{} to suddenly have a flash of insight into the motives\comma{} aims or drive of another being. 
 
@@ -170,6 +169,17 @@ If you wish to know why someone would behave in a given way\comma{} why a certai
 	knowledgeDescription = Hunting down a foe is a key part of being an \bname{}\comma{} and part of that is being able to survey a scene and see where they were\comma{} what they did\comma{} and where they're going next.
 
 Whilst \imp{Intuition} relies on a general understanding of the target's thought pattern\comma{} when you \imp{Track} a target you look for the trail that they have left \minus{} scuffs in the dirt\comma{} broken twigs in the forest and even more abstract trails such as an online presence or a paper trail. Whatever evidence you need to find your target\comma{} \imp{Tracking} can help you out.,
+	feats = \feat{Ambush}{When you attack from hiding\comma{} spring a trap or successfully orchestrate an ambush\comma{} you gain one automatic success on your first attack roll\comma{} as if you had expended a \imp{Fortitude} point.}
+
+\feat{Cold Cases}{When performing a \imp{Knowledge} check\comma{} if you can relate the information you seek to a historical or past case you reduce the DV by 2.}
+
+\feat{Familiar Terrain}{Choose a favoured terrain such as \imp{Grasslands}\comma{} \imp{Forests}\comma{} \imp{Urban Areas}\comma{} \imp{Caverns}\comma{} or name a specific region\comma{} such as \imp{Hogwarts}. Whilst in your favoured terrain you gain an additional dice on every action which utilises the surroundings such as a \imp{Tracking} or \imp{Covert} check.}
+
+\feat{Lie Detector}{You can automatically detect when someone is lying to you by telling you deliberate falsehoods.}
+
+\feat{Rapid Reflexes}{When performing a \key{Reflex} roll\comma{} you may roll the dice twice and take the largest value. }
+
+\feat{Unwavering Focus}{Once per day you may expend a \imp{Fortitude} point to reroll all \imp{Catastrophe} dice you rolled\comma{} declaring this action after the roll has been performed.},
 	article = An,
 	bonusWidth = 3
 }
@@ -187,7 +197,6 @@ In the popular mythology of \bname{}s\comma{} even in the Wizarding world\comma{
 	bonuses = \bonus{Willpower}{\twoCape}
 \bonus{Kinship}{\twoCape}
 \bonus{Nature}{\twoCape}
-\bonus{Elemental or Healing}{\twoCape}
 \bonus{Insight}{\oneCape},
 	innateAbility = Belonging,
 	innateDescription = A \bname{} with a high innate sense of \imp{Belonging} has an intuitive\comma{} almost supernatural ability to determine when the natural\comma{} organic\comma{} order of things has been disrupted or influenced.
@@ -227,9 +236,42 @@ The way in which nature responds is often esoteric and open to interpretation\co
 \archetype
 {
 	name = Outlaw,
+	description = An \bname{} is someone who sits outside the normal constraints of the law (or \comma{} at Hogwarts\comma{} the rules laid down by teachers). Eternally at conflict between their own desires and those of society\comma{} many \bname{}s end up starting into a life of crime\comma{} putting their skills to more nefarious use. 
+
+Others turn this defiance of law and order to become perennial tricksters\comma{} revelling in chaos and uncertainty. 
+
+An \bname{}\comma{} whichever path they take in life\comma{} lives and dies by their preparedness and ability to surprise those would ensnare and imprison them. Those who would catch an \bname{} should prepare to have every trick in the book thrown at them.,
+	bonuses = \bonus{Covert}{\threeCape}
+\bonus{Precision}{\twoCape}
+\bonus{Perception or Deception}{\oneCape}
+\bonus{Acrobatics or Skirmish}{\oneCape},
 	innateAbility = Savvy,
+	innateDescription = You don’t get far in life as an \bname{} if you don’t develop a sixth sense when something is awry – is this a trap? Were those footsteps I heard? 
+
+\imp{Savvy} is this inherent level of constant awareness (some would call it paranoia)\comma{} which allows an \bname{} to stay one step ahead of their enemies. 
+
+A high Savvy check can be used to evade and detect problems based on a pure gut instinct that something is amiss. Whilst rarely perfect\comma{} \imp{Savvy} is an invaluable tool.,
 	practicalAbility = Pickpocket,
+	practicalDescription = Rifling through the pockets of an unsuspecting mark is a highly specialised skill\comma{} moreso than a simple \imp{Covert} action can normally achieve. 
+
+As an \bname{}\comma{} you have some experience in this field however. On a successful \imp{Pickpocket} check you may use some stealthy method to distract a target whilst you quickly nab something from their very person. 
+
+You must take care that you do this unnoticed\comma{} as people tend to get a bit antsy about theft…,
 	knowledgeAbility = Underworld,
+	knowledgeDescription = The local \bname{} always knows a few secrets – where to get your hands on a certain black market item\comma{} and the location of secret passages and escape routes. 
+
+As an adult\comma{} they are probably familiar with the workings of the penal system (and how to exploit it)\comma{} whilst in Hogwarts\comma{} this knowledge can be used when questions about Detention come up.,
+	feats = \feat{Arcane Trickster}{You can cast spells from the \imp{Kinesis} up to \imp{Una} level as Silent and Wandless actions for the purposes of chicanery\comma{} pranks\comma{} tricks and other such shenanigans.}
+
+\feat{Hidden Weapon}{Up to three times a day\comma{} you can draw a previously unknown small blade from a fold in your robes\comma{} or a hidden pocket\comma{} and then use it. This is an instantaneous action.}
+
+\feat{Move in Shadows}{Whilst outside of bright light\comma{} all attempts to percieve you have a DV 2 higher than normal.}
+
+\feat{Naturally Shifty}{Doing unscrupulous deeds comes as naturally to you as breathing – gain one additional success on any \imp{Covert} action as if you had spent a \imp{Fortitude} point.}
+
+\feat{Sly Action}{At the end of a turn cycle\comma{} if you have not been directly targeted for an attack and not attacked anyone else\comma{} you may take an additional action at the end of the cycle to move\comma{} use an item\comma{} or otherwise attempt to hide}
+
+\feat{Surprise Attack}{Whenever you attack a target from a position where they cannot see you\comma{} you deal an additional level of harm.},
 	article = An,
 	bonusWidth = 3
 }
@@ -244,23 +286,37 @@ Whilst the conventional \bname{} is most at home with a chalkboard covered in sy
 Whilst they prefer to term their adventures `field work’\comma{} there is no doubt that scholarship can sometimes be a dangerous experience. Most \bname{}s will stop at nothing\comma{} however\comma{} to help further their research. 
 
 A \bname{} is typically a hyper\minus{}specialist\comma{} rather than a generalist\comma{} and so chooses one area of knowledge to focus specifically on\comma{} which informs much of their remaining knowledge.,
+	experience = \item Use intelligence and knowledge to overcome a significant obstacle
+\item Discover something new or undiscovered relating to your field of expertise.,
 	bonuses = \bonus{Investigation}{\twoCape}
 \bonus{Intelligence}{\twoCape}
-\bonus{Any \imp{Knowledge} or \imp{Affinity}}{\twoCape}
-\bonus{Willpower}{\oneCape}
-\bonus{Logic}{\oneCape}
-\bonus{Temporal\comma{} Cerebral or Healing}{\oneCape},
-	innateAbility = a,
+\bonus{Any \imp{Knowledge} ability}{\twoCape}
+\bonus{Willpower}{\oneCape},
+	innateAbility = Stubbornness,
+	innateDescription = It is often said that \imp{Intelligence} is the most important characteristic for a \imp{Scholar} to have. However\comma{} those who have spent any time banging their head against a seemingly unknowable\comma{} unsolvable problem will tell you that \imp{Stubbornness} is the only true requirement. 
+
+Whenever repeated failures\comma{} constant letdowns and deadends would cause most others to give up and move on\comma{} a \bname{} can use their innate desire to {\it know} to make just a few more attemots. 
+
+At the GM’s discretion\comma{} a DV 8 \imp{Stubbornness} check can allow a \bname{} to make additional checks after the first has failed – the more successes\comma{} the more lenient they will be.,
 	practicalAbility = Collaboration,
+	practicalDescription = The work of a \bname{} is often considered to be solitary\comma{} but a wise muggle once said that scholarship is `built on the shoulders of giants’ \minus{} those who wish to see further must rely on the work of others. 
+
+A \imp{Collaboration} check allows you to work effectively with others\comma{} and boost the efficiency of the group as a whole\comma{} and as such can be substituted in a group or combined check for most other skills.,
 	knowledgeAbility = Speculation,
 	knowledgeDescription = A \bname{}\comma{} by their very nature\comma{} spends most of their day confronted with problems to which no one knows the solution. 
 
 When there is no actual knowledge to be found\comma{} the only thing left to do is \imp{Speculate}. 
 
-Speculation allows you to draw dispirate threads of knowledge\comma{} in order to make conclusions about things you otherwise have no knowledge of. The risk is\comma{} of course\comma{} that you get things completely and utterly incorrect – but a scholar knows the limits of this guesswork\comma{} and with a high \imp{Speculation} can draw remarkable conclusions with only limited knowledge.,
-	feats = \feat{Healer}{Whenever you restore a Health to a being\comma{} restore one additional point. }
+Speculation allows you to draw disperate threads of knowledge\comma{} in order to make conclusions about things you otherwise have no knowledge of. The risk is\comma{} of course\comma{} that you get things completely and utterly incorrect – but a scholar knows the limits of this guesswork\comma{} and with a high \imp{Speculation} can draw remarkable conclusions with only limited knowledge.,
+	feats = \feat{Expertise}{Choose a spell discipline\comma{} or a viable target of a spell\comma{} which is associated with your area of research. When casting a spell of this school\comma{} or a spell on your chosen target\comma{} you gain an additional success\comma{} as if you had expended a \imp{Fortitude} point.}
 
-\feat{Novel Technique}{Whenever you use a spell in a new and novel fashion\comma{} you gain +1d for the spellcasting effort.},
+\feat{Healer}{Whenever you restore a Health to a being\comma{} restore one additional point. }
+
+\feat{Master of the Mind}{When an action would interrupt you casting a spell requiring continuing concentration\comma{} the DV to remain focussed is 2 lower than normal.}
+
+\feat{Novel Technique}{Whenever you use a spell in a new and novel fashion\comma{} you gain +2d for the spellcasting effort.}
+
+\feat{Quick Learner}{You need to spend half the usual time in order to learn a new spell or potion recipe.},
 	article = A,
 	bonusWidth = 3
 }
@@ -277,14 +333,15 @@ There are still others who are simply bluffing their way through\comma{} running
 \item Turn an enemy into a friend\comma{} or otherwise significantly manipulate someone,
 	bonuses = \bonus{Eloquence}{\threeCape}
 \bonus{Charm or Deception}{\twoCape}
-\bonus{Bewitchment}{\twoCape}
-\bonus{Deception or Charm}{\oneCape}
-\bonus{Psionic or Kinetic}{\oneCape},
+\bonus{Deception or Charm}{\oneCape},
 	innateAbility = Wealth,
 	innateDescription = \imp{Wealth} is not merely a measure of how much money you have\comma{} it is how you project an aura of wealth\comma{} confidence and belonging in high places. 
 
 A character with a high \imp{Wealth} lives a charmed life in society – they can cruise past security in clubs and political institutions\comma{} they can gain a favour and otherwise bend those around them to their will by flashing some cash (imaginary or not). Money opens many doors\comma{} and \imp{Wealth} allows you access to that world\comma{} even without actually having to spend the coins.,
-	practicalAbility = Unknown,
+	practicalAbility = Bamboozle,
+	practicalDescription = Whilst \imp{Eloquence}\comma{} \imp{Charm} and \imp{Intimidation} are undoubtedly useful skills\comma{} a \bname{} often values simply overcoming their targets with sheer force of personality. 
+
+Whether it is through fast\minus{}talking jargon\comma{} or simply through a formiddable force of will\comma{} a character with a high \imp{Bamboozle} score cuts a swathe of confusion through a crowd.Taking and doing what they want not because they’ve earned it\comma{} but because everyone else is too shocked to really try to stop them.,
 	knowledgeAbility = Society,
 	knowledgeDescription = Sometimes\comma{} knowing the right people is knowing everything. 
 
@@ -308,11 +365,10 @@ No matter what weapons they wield\comma{} a warrior carefully balances their com
 	experience = \item Defeat a worthy opponent in battle
 \item Execute a novel or interesting stratagem,
 	bonuses = \bonus{Brawl\comma{} Skirmish or Marksmanship}{\twoCape}
-\bonus{Hexes\comma{} Curses or Wards}{\twoCape}
 \bonus{Fitness}{\twoCape}
 \bonus{Perception}{\oneCape}
-\bonus{Wards\comma{} Hexes or Curses}{\oneCape}
-\bonus{Skirmish\comma{} Marksmanship or Brawl}{\oneCape},
+\bonus{Skirmish\comma{} Marksmanship or Brawl}{\oneCape}
+\bonus{Intimidation}{\oneCape},
 	innateAbility = Rage,
 	innateDescription = \imp{Rage} is the deep seated anger that lies within the hearts of most people\comma{} even the most benevolent of us. A \bname{}\comma{} however\comma{} has learned to weaponise their rage\comma{} either by letting it out in an unbridled fury\comma{} or harnessing it\comma{} fuelling their cold\comma{} calculated actions. \imp{Rage} allows a warrior to perform almost impossible feats\comma{} but they risk their own safety whilst doing so.
 
@@ -323,7 +379,9 @@ Whilst in combat\comma{} \imp{Rage} can be substituted for almost any physical a
 A \bname{} with a high \imp{Command} is respected as a warrior\comma{} and others will leap to follow your orders. Those who follow the issued command will find that the action is easier than expected\comma{} being buoyed and inspired by the \imp{Command}.,
 	knowledgeAbility = Tactics,
 	knowledgeDescription = A \bname{} lives and dies by their knowledge of tactics. Whether it is trying to discern a viable approach to defeating a seemingly implacable foe\comma{} or recognising a strategy employed by the enemy\comma{} a \imp{Tactics} check can help reveal how an opponent functions\comma{} and what the best way to defeat them is.,
-	feats = \feat{Bloodlust}{On any turn in which you successfully incapacitate (lethally or not) a foe\comma{} you may take an additional free action to perform another attack\comma{} with a 2\minus{}dice penalty on the check.}
+	feats = \feat{Blind Rage}{When using a \imp{Rage} action to attack\comma{} you take only half the dice penalty due to injuries.}
+
+\feat{Bloodlust}{On any turn in which you successfully incapacitate (lethally or not) a foe\comma{} you may take an additional free action to perform another attack\comma{} with a 2\minus{}dice penalty on the check.}
 
 \feat{Duelist}{When fighting one\minus{}on\minus{}one with another target\comma{} you automatically gain one automatic success on any attack rolls. }
 
