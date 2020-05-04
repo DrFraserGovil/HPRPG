@@ -283,15 +283,62 @@
 
 
 %%% Status Box
-\draw[rounded corners,gray!70,fill=gray!10] ({\secondColumn},{\halfUp - 0.5*\heightUnits})rectangle ({\skinnyLimit},{\halfDivider + 0.5*\heightUnits});
+\def\heroHeight{5.3*\widthUnits}
+
+\draw[rounded corners,gray!70,fill=gray!10] ({\secondColumn},{\halfUp - 1*\heightUnits - \heroHeight})rectangle ({\skinnyLimit},{\halfDivider + 0.5*\heightUnits});
 
 \def\x{(\skinnyLimit + \secondColumn)/2}
-\def\yC{\halfUp - 1.5*\heightUnits}
+\def\yC{\halfUp -\heroHeight- 4*\heightUnits}
 
-\node at ({\x},{\yC}) {\key{Statuses \& Feats}};
+\node at ({\x},{\yC}) {\Large \HP {Negation}};
+\def\jump{3*\heightUnits}
+\foreach \negate [count = \i from 0] in { {Block}, {Dodge}, {Endure} }
+{
+	\def\y{\yC - (\i + 1)*\jump}
+	
+	\node[anchor = west] at ({\secondColumn + \widthUnits},{\y}) {\key{\negate}:};
+
+	\foreach \k in {0,1,2,3,4,5,6}
+	{
+		
+		\def\xCirc{\secondColumn + 11 *\widthUnits + \sqrtTwo*\boxSmall*\k};
+		
+		%~ \if\k6
+			%~ \smallDot{\xCirc}{\y}{black}
+		%~ \else
+			\smallDot{\xCirc}{\y}{white}
+		%~ \fi
+	}	
+
+}
+
+%%% HEROISM BOX
+\draw[rounded corners,gray!70,fill=gray!10] ({\secondColumn},{\halfUp - 0.5*\heightUnits})rectangle ({\skinnyLimit},{\halfUp - 0.5*\heightUnits-\heroHeight});
+\def\yH{\halfUp - 2.1*\heightUnits}
+\node at ({\x},{\yH}) {\Large \HP {Heroism \& Villainy}};
+
+\def\yHH{\yH - 3*\heightUnits}
+\node[anchor = west] at ({\secondColumn + 0.5*\widthUnits},{\yHH}) {\key{Hero}};
+\node[anchor = east] at ({\skinnyLimit - 0.5*\widthUnits},{\yHH}) {\key{Villain}};
+
+\def\delta{(\skinnyLimit - (\secondColumn) - 7*\sqrtTwo*\boxDim)/2}
+\foreach \k in {0,1,2,3,4,5,6}
+{
+	
+	\def\xCirc{\secondColumn + \delta + (\k + 2)*\sqrtTwo*\boxSmall };
+	
+	%~ \if\k6
+		%~ \smallDot{\xCirc}{\y}{black}
+	%~ \else
+		\smallDot{\xCirc}{\yHH}{white}
+	%~ \fi
+}	
+
+
 
 
 %%%% Spellcasting box
+\def\yC{\halfUp - 2.3*\heightUnits}
 \def\affinityHeight{\abilityHeight*0.87}
 \def\secondLeft{\skinnyLimit + 1*\widthUnits}
 \draw[rounded corners,gray!70,fill=gray!10] ({\secondLeft},{\halfUp - 0.5*\heightUnits})rectangle ({\secondRight},{\halfDivider + 0.5*\heightUnits});
