@@ -308,23 +308,13 @@
 \contentsline {chapter}{\numberline {11}Roll Statistics}{57}{chapter.11}
 \contentsline {section}{\numberline {11.1}Analytic Probability}{57}{section.11.1}
 \contentsline {section}{\numberline {11.2}Outcome Tables}{57}{section.11.2}
-\contentsline {subsection}{\numberline {11.2.1}Difficulty = 4}{58}{subsection.11.2.1}
-\contentsline {subsubsection}{Catastrophe Range = 1-1}{58}{subsubsection*.149}
-\contentsline {subsubsection}{Catastrophe Range = 1-2}{58}{subsubsection*.150}
-\contentsline {subsubsection}{Catastrophe Range = 1-3}{58}{subsubsection*.151}
-\contentsline {subsection}{\numberline {11.2.2}Difficulty = 6}{58}{subsection.11.2.2}
-\contentsline {subsubsection}{Catastrophe Range = 1-1}{58}{subsubsection*.152}
-\contentsline {subsubsection}{Catastrophe Range = 1-2}{58}{subsubsection*.153}
-\contentsline {subsubsection}{Catastrophe Range = 1-3}{58}{subsubsection*.154}
-\contentsline {subsection}{\numberline {11.2.3}Difficulty = 8}{59}{subsection.11.2.3}
-\contentsline {subsubsection}{Catastrophe Range = 1-1}{59}{subsubsection*.155}
-\contentsline {subsubsection}{Catastrophe Range = 1-2}{59}{subsubsection*.156}
-\contentsline {subsubsection}{Catastrophe Range = 1-3}{59}{subsubsection*.157}
-\contentsline {subsection}{\numberline {11.2.4}Difficulty = 10}{59}{subsection.11.2.4}
-\contentsline {subsubsection}{Catastrophe Range = 1-1}{59}{subsubsection*.158}
-\contentsline {subsubsection}{Catastrophe Range = 1-2}{59}{subsubsection*.159}
-\contentsline {subsubsection}{Catastrophe Range = 1-3}{59}{subsubsection*.160}
-\contentsline {subsection}{\numberline {11.2.5}Difficulty = 12}{60}{subsection.11.2.5}
-\contentsline {subsubsection}{Catastrophe Range = 1-1}{60}{subsubsection*.161}
-\contentsline {subsubsection}{Catastrophe Range = 1-2}{60}{subsubsection*.162}
-\contentsline {subsubsection}{Catastrophe Range = 1-3}{60}{subsubsection*.163}
+\contentsline {subsection}{\numberline {11.2.1}Difficulty = 3}{58}{subsection.11.2.1}
+\contentsline {subsection}{\numberline {11.2.2}Difficulty = 4}{58}{subsection.11.2.2}
+\contentsline {subsection}{\numberline {11.2.3}Difficulty = 5}{58}{subsection.11.2.3}
+\contentsline {subsection}{\numberline {11.2.4}Difficulty = 6}{58}{subsection.11.2.4}
+\contentsline {subsection}{\numberline {11.2.5}Difficulty = 7}{58}{subsection.11.2.5}
+\contentsline {subsection}{\numberline {11.2.6}Difficulty = 8}{58}{subsection.11.2.6}
+\contentsline {subsection}{\numberline {11.2.7}Difficulty = 9}{59}{subsection.11.2.7}
+\contentsline {subsection}{\numberline {11.2.8}Difficulty = 10}{59}{subsection.11.2.8}
+\contentsline {subsection}{\numberline {11.2.9}Difficulty = 11}{59}{subsection.11.2.9}
+\contentsline {subsection}{\numberline {11.2.10}Difficulty = 12}{59}{subsection.11.2.10}
