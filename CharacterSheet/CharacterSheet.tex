@@ -136,11 +136,11 @@
 \def\interAspectGap{0.8*\widthUnits}
 \def\aspectSectionSize{ (\rightColumn - \leftLimit - 2*\subBoxesDelta - 2 * \interAspectGap)/3}
 \def\aspectBoxHeight{\aspectSectionSize/2.2}
-\def\aspectTop{\halfDivider - 4*\heightUnits};
+\def\aspectTop{\halfDivider - 0.2*\heightUnits};
 \def\aspectVerticalGap{2*\heightUnits}
 \def\interDotGap{(\aspectSectionSize - 7*1.42*\boxSmall)/8};
 \draw[rounded corners, gray!70, fill = gray!10] ({\leftLimit},{\halfDivider - 0.5*\heightUnits}) rectangle ({\rightColumn},{0});
-\node at ({(\leftLimit + \rightColumn)/2},{\aspectTop}) {\HP \LARGE Aspects};
+\node[anchor=north] at ({(\leftLimit + \rightColumn)/2},{\aspectTop}) {\HP \LARGE Aspects};
 
 
 \foreach \Row [count = \i from 0] in { { {Fitness}, {Charm}, {Intelligence} },  { {Precision}, {Deception} , {Willpower} },   { {Vitality}, {Insight} , {Perception} },   }
@@ -178,25 +178,27 @@
 \def\secondColumn{\rightColumn + 1*\widthUnits}
 \def\secondRight{100*\widthUnits}
 \def\gap{\textcolor{gray!70}{\underline{\hspace{1.8cm}}}}
-\draw[rounded corners, gray!70, fill = gray!20] ({\secondColumn},{\halfDivider - 0.5*\heightUnits}) rectangle ({\secondRight},{0});
-\node at ({(\secondColumn + \secondRight)/2},{\aspectTop}) {\HP \LARGE Abilities};
+\def\abilityBoxHeight{\halfDivider  - 23*\heightUnits}
+
+\draw[rounded corners, gray!70, fill = gray!20] ({\secondColumn},{\halfDivider - 0.5*\heightUnits}) rectangle ({\secondRight},{\abilityBoxHeight});
+\node[anchor=north] at ({(\secondColumn + \secondRight)/2},{\aspectTop}) {\HP \Large Major Abilities};
 
 \def\interAbilityGap{0.3*\widthUnits}
-\def\abilityHeight{2.8*\heightUnits}
+\def\abilityHeight{2.7*\heightUnits}
 \def\abilityWidth{((\secondRight - \secondColumn) - 4 * \interAbilityGap)/3}
 
 \def\columnStart{\aspectTop - 5*\heightUnits}
-\foreach \Header/\Column [count = \i from 0] in  {  {Innate}/{{Alertness}, {Bravery}, {Conviction}, {Eloquence}, {Intimidation}, {Kindness}, {Kinship}, {Logic}, {Speed}, {Strength},{\gap{}},{\gap{}} }, {Practical}/{{Acrobatics}, {Brawl}, {Covert}, {Craft}, {Imbue}, {Marksmanship}, {Performance}, {Pilot}, {Skirmish}, {Survival}, {\gap{}},{\gap{}} }, {Knowledge}/{{Arcane}, {General}, {History}, {Investigation}, {Medicine}, {Muggle}, {Nature}, {Science}, {Technology}, {World}, {\gap},{\gap}}, }
+\foreach \Header [count = \i from 0] in  {  {Innate}, {Practical}, {Knowledge} }
 {
 	\def\x{\secondColumn + \interAbilityGap + \i*(\interAbilityGap + \abilityWidth)}
 	
 	\node at ({\x+\abilityWidth/2},{\columnStart}) {\key{\Header}};
 	
-	\foreach \entry [count = \j from 1] in \Column
+	\foreach \j in {1,...,5,6}
 	{
 		\def\y{\columnStart - \interAbilityGap - \j*\abilityHeight}
 		
-		\node[anchor = west] at ({\x},{\y}) {\footnotesize\imp{\entry}:};
+		\node[anchor = west] at ({\x},{\y}) {\footnotesize\imp{\gap}:};
 	
 		\foreach \k in {0,1,2,3,4,5,6}
 		{
@@ -212,17 +214,115 @@
 	
 }	
 
+%%Spellbox
+
+\def\affinityHeight{\abilityHeight*0.87}
+\def\spellLimit{78*\widthUnits}
+\def\spellTop{\abilityBoxHeight - 0.7*\heightUnits}
+\def\yC{\spellTop - 5.4*\heightUnits}
+\def\spellHeight{2.3*\heightUnits}
+\draw[rounded corners, gray!70, fill = gray!20] ({\secondColumn},{\abilityBoxHeight - 1*\heightUnits}) rectangle ({\spellLimit},{0});
+\node[anchor=north] at ({(\secondColumn + \spellLimit)/2},{\spellTop}) {\HP \Large Magical Affinities};
+
+
+\foreach \Column [count = \i from 0] in  { {{Alteration}, {Bewitchment}, {Cerebral}, {Conjuration}, {Curses}, {Elemental}, {Healing}}, {{Hexes}, {Kinesis}, {Occultism}, {Psionics}, {Temporal}, {Warding}, {Necromancy}}, }
+{
+	\def\x{\secondColumn+ \interAbilityGap + \i*(\interAbilityGap + \abilityWidth)}
+	\foreach \entry [count = \j from 0] in \Column
+	{
+		\def\y{\yC  - \j*\spellHeight}
+		
+		\node[anchor = west] at ({\x},{\y}) {\footnotesize\key{\entry}:};
+	
+		\foreach \k in {0,1,2,3,4,5,6}
+		{
+			
+			\def\xCirc{\x + - 4 * \widthUnits + \abilityWidth - \k*(\boxSmall*1.42)};
+			
+			
+				\smallDot{\xCirc}{\y}{white}
+	
+		}	
+	}
+}	
+
+
+%%%% NEGATE BOX
+
+
+\def\heroHeight{5.6*\widthUnits}
+
+\draw[rounded corners,gray!70,fill=gray!10] ({\spellLimit + 1*\widthUnits},{\abilityBoxHeight - 1*\heightUnits})rectangle ({\secondRight},{\heroHeight+1*\heightUnits});
+
+\def\x{(\spellLimit + 1*\widthUnits + \secondRight)/2}
+
+
+\node[anchor = north] at ({\x},{\spellTop}) {\Large \HP {Negation}};
+\def\jump{2.9*\heightUnits}
+\foreach \negate [count = \i from 0] in { {Block}, {Dodge}, {Endure} }
+{
+	\def\y{\yC - (\i)*\jump}
+	
+	\node[anchor = west] at ({\spellLimit + \widthUnits},{\y}) {\key{\negate}:};
+
+	\foreach \k in {0,1,2,3,4,5,6}
+	{
+		
+		\def\xCirc{\spellLimit + 11 *\widthUnits + \sqrtTwo*\boxSmall*\k};
+		
+		%~ \if\k6
+			%~ \smallDot{\xCirc}{\y}{black}
+		%~ \else
+			\smallDot{\xCirc}{\y}{white}
+		%~ \fi
+	}	
+
+}
+
+%%% HEROISM BOX
+\draw[rounded corners,gray!70,fill=gray!10] ({\spellLimit+\widthUnits},{\heroHeight})rectangle ({\secondRight},{0});
+\def\yH{\heroHeight - 0.1*\heightUnits}
+\node[anchor=north] at ({\x},{\yH}) {\Large \HP {Heroism \& Villainy}};
+
+\def\yHH{\yH - 4.6*\heightUnits}
+\node[anchor = west] at ({\spellLimit + 1.5*\widthUnits},{\yHH}) {\key{Hero}};
+\node[anchor = east] at ({\secondRight - 0.5*\widthUnits},{\yHH}) {\key{Villain}};
+
+\def\delta{(\secondRight - (\spellLimit + \widthUnits) - 7*\sqrtTwo*\boxDim)/2}
+\foreach \k in {0,1,2,3,4,5,6}
+{
+	
+	\def\xCirc{\spellLimit  + \delta + (\k + 2)*\sqrtTwo*\boxSmall };
+	
+	%~ \if\k6
+		%~ \smallDot{\xCirc}{\y}{black}
+	%~ \else
+		\smallDot{\xCirc}{\yHH}{white}
+	%~ \fi
+}	
+
+
+
+
+
+
+
+
+
 %%%% Status box 
-\def\halfUp{68.4*\heightUnits}
+\def\halfUp{74*\heightUnits}
+\def\boxHeight{27*\heightUnits}
+
 \def\skinnyWidth{23*\widthUnits}
 \def\skinnyLimit{\secondColumn + \skinnyWidth}
-\draw[rounded corners,gray!70,fill=gray!10] ({\secondColumn},{\halfUp + 0.5*\heightUnits})rectangle ({\skinnyLimit},{\characterBoxTop});
+\draw[rounded corners,gray!70,fill=gray!10] ({\secondColumn},{\halfDivider + 0.5*\heightUnits})rectangle ({\skinnyLimit},{\characterBoxTop});
 
 \def\healthGap{0.5*\widthUnits}
 \def\healthWidth{(\skinnyWidth - 3*(\healthGap))/2}
 
 %%%Health
-\draw[rounded corners,gray!70,fill=gray!30] ({\secondColumn+\healthGap},{\halfUp+ 0.5*\heightUnits+\healthGap})rectangle ({\secondColumn+\healthGap+\healthWidth},{\characterBoxTop-\healthGap});
+\def\top{\characterBoxTop}
+\draw[rounded corners,gray!70,fill=gray!30] ({\secondColumn+\healthGap},{\top-\boxHeight})rectangle ({\secondColumn+\healthGap+\healthWidth},{\characterBoxTop-\healthGap});
 
 
 
@@ -244,24 +344,23 @@
 
 \def\lineHeight{\ytop - 9*1.42*\boxDim}
 \draw[gray!70] ({\secondColumn + \healthGap}, {\lineHeight})--++({\healthWidth},0);
-\def\bigH{\lineHeight - \halfUp -0.5*\heightUnits - \healthGap}
-\def\deltaH{(\bigH - 2*\sqrtTwo*\boxDim)/3}
+\def\bigH{\lineHeight + \boxHeight  - \top}
+\def\deltaH{(\bigH - \sqrtTwo*\boxDim)/2}
 
 
-\foreach \k in {-1.5,-0.5,0.5,1.5}
+\foreach \k in {-2,-1,0,1,2}
 {
-	\square{\x+\k*1.42*\boxDim}{\lineHeight -\deltaH - \sqrtTwo/2*\boxDim}{dotted}{gray!20}
-	\square{\x+\k*1.42*\boxDim}{\lineHeight - \deltaH*2 -  3*\sqrtTwo/2*\boxDim}{dotted}{gray!20}
+	\square{\x+\k*1.42*\boxDim}{\lineHeight + \deltaH - \sqrtTwo/2*\boxDim}{dotted}{gray!20}
 }
 
 
-\draw[rounded corners,gray!70,fill=gray!30] ({\secondColumn+2*\healthGap+\healthWidth},{\halfUp+ 0.5*\heightUnits+\healthGap})rectangle ({\skinnyLimit - \healthGap},{\characterBoxTop-\healthGap});
+\draw[rounded corners,gray!70,fill=gray!30] ({\secondColumn+2*\healthGap+\healthWidth},{\top-\boxHeight})rectangle ({\skinnyLimit - \healthGap},{\characterBoxTop-\healthGap});
 
 \def\x{\secondColumn + 2* \healthGap + 3/2*(\healthWidth)}
 \def\xCirc{\secondColumn + 2*\healthGap + \healthWidth+0.7*1.42*\boxDim}
 \node at ({\x},{\ytop}) {\key{Fortitude}};
 
-\foreach \a [count = \k from 1] in {{Fresh}, {Fired Up}, {On A Roll}, {Pushing It}, {Tired}, {Drained}, {Burned Out}  }
+\foreach \a [count = \k from 1] in {{Awake}, {Weary}, {Pushing It}, {Tired}, {Drained}, {Exhausted}, {Burned Out}  }
 {
 	\def\yCirc{\ytop -\boxDim*\sqrtTwo*(\k*1.1 + 1/2)}
 	\square{\xCirc}{\yCirc}{}{white}
@@ -269,106 +368,36 @@
 }
 \def\sqrtTwo{1.4142135623730951}
 \draw[gray!70] ({\secondColumn + 2*\healthGap + \healthWidth}, {\lineHeight})--++({\healthWidth},0);
-\def\bigH{\lineHeight - \halfUp -0.5*\heightUnits - \healthGap}
-\def\deltaH{(\bigH - 2*\sqrtTwo*\boxDim)/3}
 
 
-\foreach \k in {-1.5,-0.5,0.5,1.5}
+\foreach \k in {-2,-1,0,1,2}
 {
-	\square{\x+\k*1.42*\boxDim}{\lineHeight -\deltaH - \sqrtTwo/2*\boxDim}{dotted}{gray!20}
-	\square{\x+\k*1.42*\boxDim}{\lineHeight - \deltaH*2 -  3*\sqrtTwo/2*\boxDim}{dotted}{gray!20}
+	\square{\x+\k*1.42*\boxDim}{\lineHeight + \deltaH - \sqrtTwo/2*\boxDim}{dotted}{gray!20}
 }
 
 
+%% health rules
 
-
-%%% Status Box
-\def\heroHeight{5.3*\widthUnits}
-
-\draw[rounded corners,gray!70,fill=gray!10] ({\secondColumn},{\halfUp - 1*\heightUnits - \heroHeight})rectangle ({\skinnyLimit},{\halfDivider + 0.5*\heightUnits});
-
-\def\x{(\skinnyLimit + \secondColumn)/2}
-\def\yC{\halfUp -\heroHeight- 4*\heightUnits}
-
-\node at ({\x},{\yC}) {\Large \HP {Negation}};
-\def\jump{3*\heightUnits}
-\foreach \negate [count = \i from 0] in { {Block}, {Dodge}, {Endure} }
+\newdimen\textUnit
+\pgfextractx{\textUnit}{\pgfpointxy{{((\skinnyLimit)-(\secondColumn)-3*\healthGap)}}{0}}
+\newcommand\textBlock[3]
 {
-	\def\y{\yC - (\i + 1)*\jump}
-	
-	\node[anchor = west] at ({\secondColumn + \widthUnits},{\y}) {\key{\negate}:};
-
-	\foreach \k in {0,1,2,3,4,5,6}
-	{
-		
-		\def\xCirc{\secondColumn + 11 *\widthUnits + \sqrtTwo*\boxSmall*\k};
-		
-		%~ \if\k6
-			%~ \smallDot{\xCirc}{\y}{black}
-		%~ \else
-			\smallDot{\xCirc}{\y}{white}
-		%~ \fi
-	}	
+	\node[anchor = north west] at ({#1},{#2}) { \parbox[t]{1\textUnit}{\tiny \raggedright #3}};
 
 }
 
-%%% HEROISM BOX
-\draw[rounded corners,gray!70,fill=gray!10] ({\secondColumn},{\halfUp - 0.5*\heightUnits})rectangle ({\skinnyLimit},{\halfUp - 0.5*\heightUnits-\heroHeight});
-\def\yH{\halfUp - 2.1*\heightUnits}
-\node at ({\x},{\yH}) {\Large \HP {Heroism \& Villainy}};
+\textBlock{\secondColumn + \healthGap}{\top-\boxHeight-2*\heightUnits}{{\footnotesize \key{Health}} \\ {\it You lose health by taking \imp{Damage}. Fill in boxes equal to the \imp{Level} of damage taken. If you have already taken that level of damage, instead place a number of marks into the next available box equal to the harm level. When you have accumulated 4 marks in the box, it is considered full. \\ Health is restored through healing magic, potions, medical attention, or simple rest.   }};
 
-\def\yHH{\yH - 3*\heightUnits}
-\node[anchor = west] at ({\secondColumn + 0.5*\widthUnits},{\yHH}) {\key{Hero}};
-\node[anchor = east] at ({\skinnyLimit - 0.5*\widthUnits},{\yHH}) {\key{Villain}};
-
-\def\delta{(\skinnyLimit - (\secondColumn) - 7*\sqrtTwo*\boxDim)/2}
-\foreach \k in {0,1,2,3,4,5,6}
-{
-	
-	\def\xCirc{\secondColumn + \delta + (\k + 2)*\sqrtTwo*\boxSmall };
-	
-	%~ \if\k6
-		%~ \smallDot{\xCirc}{\y}{black}
-	%~ \else
-		\smallDot{\xCirc}{\yHH}{white}
-	%~ \fi
-}	
+\textBlock{\secondColumn + \healthGap}{\top-\boxHeight-14*\heightUnits}{{\footnotesize \key{Fortitude}} \\ {\it You can expend fortitude to: \begin{itemize}[noitemsep,leftmargin = 10pt,topsep=0pt] \item Gain one automatic success (a roll of 12) on a check \item Get an extra action in a round of combat \item Cast magic one level higher than your current \imp{Affinity}. \item Ignore all penalties due to injury for a short period of time (1 turn)\end{itemize} Fortitude is restored by completing nourishing actions.   }};
 
 
 
 
-%%%% Spellcasting box
+
 \def\yC{\halfUp - 2.3*\heightUnits}
 \def\affinityHeight{\abilityHeight*0.87}
 \def\secondLeft{\skinnyLimit + 1*\widthUnits}
-\draw[rounded corners,gray!70,fill=gray!10] ({\secondLeft},{\halfUp - 0.5*\heightUnits})rectangle ({\secondRight},{\halfDivider + 0.5*\heightUnits});
-
 \def\xC{(\secondLeft + \secondRight)/2}
-\node at ({\xC},{\yC-1*\heightUnits}) {\Large \HP Affinities};
-
-\foreach \Column [count = \i from 0] in  { {{Alteration}, {Bewitchment}, {Cerebral}, {Conjuration}, {Curses}, {Elemental}, {Healing}}, {{Hex}, {Kinesis}, {Occultism}, {Psionics}, {Temporal}, {Warding}, {Necromancy}}, }
-{
-	\def\x{\secondLeft+ \interAbilityGap + \i*(\interAbilityGap + \abilityWidth*0.93)}
-	\foreach \entry [count = \j from 0] in \Column
-	{
-		\def\y{\yC - 4.3*\heightUnits - \j*\affinityHeight}
-		
-		\node[anchor = west] at ({\x},{\y}) {\footnotesize\key{\entry}:};
-	
-		\foreach \k in {0,1,2,3,4,5,6}
-		{
-			
-			\def\xCirc{\x + - 4 * \widthUnits + \abilityWidth - \k*(\boxSmall*1.42)};
-			
-			%~ \if\k6
-				%~ \smallDot{\xCirc}{\y}{black}
-			%~ \else
-				\smallDot{\xCirc}{\y}{white}
-			%~ \fi
-		}	
-	}
-}	
-
 
 
 
@@ -393,7 +422,7 @@
 \def\equipHGap{0.5*\heightUnits}
 \def\HStart{\textHeight - 1*\heightUnits}
 \def\HEnd{\halfUp + 0.5*\heightUnits +\wealthHeight}
-\def\HJump{((\HEnd) - (\HStart) - 8*\equipHGap)/7}
+\def\HJump{((\HEnd) - (\HStart) - 6*\equipHGap)/5}
 
 \def\XStart{\secondLeft + \invGap}
 \def\XEnd{\secondLeft + \invGap + \invWidth}
@@ -403,7 +432,7 @@
 \foreach \i in {0,1}
 {
 	\def\x{\XStart + \XGap + \XJump/2 + \i*(\XJump + \XGap)}
-	\foreach \j in {0,1,2,3,4,5,6}
+	\foreach \j in {0,1,2,3,4}
 	{
 		\def\y{\HStart+\equipHGap + \HJump/2 + \j*(\HJump + \equipHGap)}
 		
@@ -418,23 +447,52 @@
 \draw[rounded corners,gray!70,fill=gray!30] ({\secondLeft+2*\invGap + \invWidth},{\halfUp + 0.5*\heightUnits+\wealthHeight})rectangle ({\secondRight - \invGap},{\subHeight});
 \def\xW{\secondRight - \invGap - \wealthWidth/2}
 \node at ({\xW},{\textHeight}) {\small \key{Galleons}};
-\def\moneyGap{(\boxDim*1.42)}
+\def\moneyGap{(\boxSmall*1.42)}
 \foreach \k in {0,1,2,3,4,5,6}
 {
 	
 	\def\yCirc{\textHeight - (\k+1)*\moneyGap};
 	
-	\square{\xW}{\yCirc}{}{white}
+	\smallDot{\xW}{\yCirc}{white}
 
 }	
 \node at ({\xW},{\textHeight - 8*\moneyGap}) {\small \imp{Vault}};
 
-\def\vaultY{\textHeight - 9.3*\moneyGap};
+\def\vaultY{\textHeight - 10*\moneyGap};
 
 \def\vaultSize{3.3*\widthUnits}
 \draw[] ({\xW - \vaultSize/2},{\vaultY - \vaultSize/2}) rectangle ({\xW + \vaultSize/2},{\vaultY + \vaultSize/2});
 \def\vaultSize{3*\widthUnits}
 \draw[fill=white] ({\xW - \vaultSize/2},{\vaultY - \vaultSize/2}) rectangle ({\xW + \vaultSize/2},{\vaultY + \vaultSize/2});
+
+
+
+
+%% spellbook
+
+
+
+\def\xB{(\secondLeft + \secondRight)/2};
+\def\yB{(\halfUp + \halfDivider)/2};
+
+\def\imWidth{(\secondRight-(\secondLeft) - \widthUnits)};
+\def\imHeight{(\halfUp-(\halfDivider)-\heightUnits)};
+\newdimen\imUnit
+\pgfextractx{\imUnit}{\pgfpointxy{{\imWidth}}{0}}
+\newdimen\heightUnit
+\pgfextractx{\heightUnit}{\pgfpointxy{{\imHeight}}{0}}
+
+
+\node at ({\xB},{\yB}) {\includegraphics[width=\imUnit,height = \heightUnit]{../Images/book}};
+
+
+\def\titleHeight{\yB + \imHeight/2 - 4.3*\heightUnits}
+\def\angle{15}
+\node[rotate=\angle] at ({\xB -\imWidth/4},{\titleHeight}) {\large\HP Arcane};
+\node[rotate = -\angle] at ({\xB +\imWidth/4},{\titleHeight}) {\large \HP Spellbook};
+
+
+
 
 \end{tikzpicture}
 
