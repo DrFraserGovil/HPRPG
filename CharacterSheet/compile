@@ -5,4 +5,5 @@ then
 	matlab -nodisplay -nodesktop < "assembleSkills.m"
 fi
 xelatex CharacterSheet.tex
+#pdfjam CharacterSheet.pdf 2-3	--paper a4paper -o CharacterSheet.pdf
 xdg-open CharacterSheet.pdf

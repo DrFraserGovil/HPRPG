@@ -8,30 +8,11 @@
 \usepackage{lscape}
 
 
-\def\maxHeight{21.2}
-\def\heightUnits{\maxHeight/100}
-\def\maxWidth{27.6}
-\def\widthUnits{\maxWidth/100}
-
 \begin{document}
-
-\begin{landscape}
-
-\begin{tikzpicture}
-
-\node at (0,0) {};
-\node at (0,\maxHeight) {};
-\node at (\maxWidth,\maxHeight) {};
-\node at (\maxWidth,0) {};
-
-\def\leftLimit{0*\widthUnits}
-\def\halfDivider{45*\heightUnits}
-\def\rightColumn{35*\widthUnits}
-
-\def\sqrtTwo{1.4142135623730951}
-\def\boxDim{1.3*\widthUnits};
-\def\boxSmall{0.9*\widthUnits};
-\def\boxTiny{0.5*\widthUnits}
+\newcommand\sqrtTwo{1.4142135623730951}
+\newcommand\boxDim{1.3*\widthUnits}
+\newcommand\boxSmall{0.9*\widthUnits}
+\newcommand\boxTiny{0.5*\widthUnits}
 \renewcommand\square[4]
 {
 	\draw[fill=#4,rotate around ={45:({#1},{#2})},#3] ({#1-\boxDim/2},{#2-\boxDim/2}) rectangle ({#1+\boxDim/2},{#2+\boxDim/2});
@@ -47,11 +28,31 @@
 }
 
 
+\begin{landscape}
+
+\begin{tikzpicture}
+\def\maxHeight{21.2}
+\def\heightUnits{\maxHeight/100}
+\def\maxWidth{27.6}
+\def\widthUnits{\maxWidth/100}
+
+
+\node at (0,0) {};
+\node at (0,\maxHeight) {};
+\node at (\maxWidth,\maxHeight) {};
+\node at (\maxWidth,0) {};
+\def\characterBoxTop{\maxHeight - 1*\heightUnits}
+\def\characterGap{4.5 * \heightUnits}
+
+
+\def\leftLimit{0*\widthUnits}
+\def\halfDivider{45*\heightUnits}
+\def\rightColumn{35*\widthUnits}
+
 
 %%%% CHARACTER BOX
 
-\def\characterBoxTop{\maxHeight - 1*\heightUnits}
-\def\characterGap{4.5 * \heightUnits}
+
 
 \draw[rounded corners,gray!70,fill=gray!10] ({\leftLimit},{\halfDivider+ 0.5*\heightUnits})rectangle ({\rightColumn},{\characterBoxTop});
 
@@ -499,7 +500,79 @@
 
 
 \begin{tikzpicture}
-	\draw[rounded corners,gray!70,fill=gray!10] ({\leftLimit},{\halfDivider+ 0.5*\heightUnits})rectangle ({\rightColumn},{\characterBoxTop});
+	\def\maxHeight{21.2}
+	\def\heightUnits{\maxHeight/100}
+	\def\maxWidth{27.6}
+	\def\widthUnits{\maxWidth/100}
+
+
+\node at (0,0) {};
+\node at (0,\maxHeight) {};
+\node at (\maxWidth,\maxHeight) {};
+\node at (\maxWidth,0) {};
+
+
+	
+	
+	%%% ABILITIES BOX
+	\def\abilityLeft{0}
+	\def\abilityRight{65*\widthUnits}
+
+	\def\gap{\textcolor{gray!70}{\underline{\hspace{1.8cm}}}}
+	\def\abilityBoxHeight{27*\heightUnits}
+	\def\abilityTop{\maxHeight - 1 * \heightUnits}
+	
+	\draw[rounded corners, gray!70, fill = gray!20] ({\abilityLeft},{\abilityTop}) rectangle ({\abilityRight},{\maxHeight-\abilityBoxHeight});
+	\node[anchor=north] at ({(\abilityLeft + \abilityRight)/2},{\abilityTop}) {\HP \Large Minor Abilities};
+
+	\def\interAbilityGap{0.3*\widthUnits}
+	\def\abilityHeight{2.7*\heightUnits}
+	\def\abilityWidth{((\abilityRight - \abilityLeft) - 4 * \interAbilityGap)/3}
+	
+	\def\columnStart{\abilityTop - 5*\heightUnits}
+	\foreach \Header [count = \i from 0] in  {  {Innate}, {Practical}, {Knowledge} }
+	{
+		\def\x{\abilityLeft+ \interAbilityGap + \i*(\interAbilityGap + \abilityWidth)}
+		
+		\node at ({\x+\abilityWidth/2},{\columnStart}) {\key{\Header}};
+		
+		\foreach \j in {1,...,5,6}
+		{
+			\def\y{\columnStart - \interAbilityGap - \j*\abilityHeight}
+			
+			\node[anchor = west] at ({\x},{\y}) {\footnotesize\imp{\gap}:};
+		
+			\foreach \k in {0,1,2,3,4,5,6}
+			{
+				\def\xCirc{\x + - 4 * \widthUnits + \abilityWidth - \k*(\boxSmall*1.42)};
+				\smallDot{\xCirc}{\y}{white}
+			}
+		
+		}
+		
+	}	
+	
+	\draw[rounded corners, gray!70, fill = gray!20] ({\abilityRight + \widthUnits},{\abilityTop}) rectangle ({\maxWidth},{\maxHeight-\abilityBoxHeight});
+	\node[anchor=north] at ({(\maxWidth + \abilityRight + \widthUnits)/2},{\abilityTop}) {\HP \Large Status Effects};
+	
+	
+	\def\delta{1.5*\heightUnits}
+	\def\quarterTop{\maxHeight - \abilityBoxHeight - \delta}
+	\def\quarterHeight{(\maxHeight - \abilityBoxHeight - 3*\delta)/2};
+	
+	\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 + \delta/2},{\quarterTop}) rectangle ({\maxWidth},{\quarterTop - \quarterHeight});
+	\node[anchor = north] at ({3*\maxWidth/4 + \delta/4},{\quarterTop}) {\HP \Large Full Inventory};
+	
+	
+	\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 - \delta/2},{\quarterTop}) rectangle ({0},{\quarterTop - \quarterHeight});
+	\node[anchor = north] at ({\maxWidth/4 + \delta/4},{\quarterTop}) {\HP \Large Full Spell List};
+	
+	\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 + \delta/2},{\quarterTop-\quarterHeight - \delta}) rectangle ({\maxWidth},{\delta});
+	\node[anchor = north] at ({3* \maxWidth/4 + \delta/4},{\quarterTop-\quarterHeight - \delta}) {\HP \Large Character Notes};
+	
+	
+	\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 - \delta/2},{\quarterTop-\quarterHeight - \delta}) rectangle ({0},{\delta});
+	\node[anchor = north] at ({\maxWidth/4 + \delta/4},{\quarterTop-\quarterHeight - \delta}) {\HP \Large Character Feats and Abilities};
 \end{tikzpicture}
 
 
