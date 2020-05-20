@@ -18,6 +18,7 @@
 \usepackage{graphicx}
 \usepackage[left = 0.35in, right = 0.35	 in, top = 0.42in, bottom = 0.3in]{geometry}
 \usepackage{titlesec}
+\usepackage{pdfpages}
 \usepackage{lscape}
 \usepackage{enumitem}
 \usepackage{setspace}
@@ -273,9 +274,40 @@ Gain an additional #1 #2 damage \forEvery{}.
 {
 \dotTable{#1}{#2}{#3}{#4}{#5}{#6}{#7}{#8}{Summary}
 }
-\newcommand\spellTable[8]
+\newcommand\spellTable
 {
-\dotTable{#1}{#2}{#3}{#4}{#5}{#6}{#7}{#8}{Example Spells}
+
+\begin{center}
+\footnotesize
+\begin{rndtable}{c p{7.8 cm}}
+\bf Ratings&	\bf Example Spells \\
+
+	\if\haszero1
+		\dualRow{\emptyCape}{\zero}
+	\fi
+	\if\hasone1
+	\dualRow{\oneCape}{\one}
+	\fi
+	\if\hastwo1
+		\dualRow{\twoCape}{\two}
+	\fi
+	\if\hasthree1
+		\dualRow{\threeCape}{\three}
+	\fi
+	\if\hasfour1
+		\dualRow{\fourCape}{\four}
+	\fi
+	\if\hasfive1
+		\dualRow{\fiveCape}{\five}
+	\fi
+	\if\hassix1
+		\dualRow{\sixCape}{\six}
+	\fi
+	\if\hasseven1
+		\dualRow{\sevenCape}{\seven}
+	\fi
+\end{rndtable}
+\end{center} 
 }
 \newcommand\dotTable[9]
 {

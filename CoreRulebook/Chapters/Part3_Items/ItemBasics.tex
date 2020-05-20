@@ -1,108 +1,144 @@
 \chapter{Item Basics}
 
-\section{Currency \& the Economy}
 
-The wizarding currency is commonly broken up into 3 coins: the bronze {\bf Knut}\comma{} the silver {\bf Sickle} and the golden {\bf Galleon}. Because the system was designed by goblins \minus{} who have a different intrinsic idea about mental arithmetic \minus{} the coinage has an unusual exchange rate.
+`\key{Item}' is a catchall term for any physical object that a character has in their possession. This encompasses their clothing, their wands, their money and anything else they might own. 
 
-\subsubsection{Knut}
+Some items are important because they allow you to carryout basic tasks - writing a letter is going to be difficult without a pen or a quill to hand. If you do not have the relevant item (and you lack the necessary resources to improvise such an item), you will have to find another way around the task. This generally will be perfectly obvious to those involved, and so the rulebook does not provide rules detailing this.
 
-The bronze knut\comma{} denoted by the symbol \knut{}\comma{} is the lowest denomination coin in the wizarding world. Typically considered `loose change'\comma{} individual exchanges rarely occur with Knuts\comma{} though a veritable fortune in knuts is estimated to be found down the sides of sofas of the wizarding world. 
+On the other hand, some items provide benefits beyond their basic functionality - higher quality tools produce higher quality results, and armour protects your vital organs, as well as your modesty - in which case it is necessary to formulate a system for providing these effects. This chapter details the details and magnitudes of effects that can result from such items. 
 
-\subsubsection{Sickle}
-
-The silver sickle (\sickle{}) is the primary currency used by most wizards. Prices for everyday items are generally listed on the order of tens of sickles. An low\minus{}skilled worker could be expected to be earning around 10 sickles for a full days work. 
-
-There are 29\knut{} in one sickle. 
-
-\subsubsection{Galleon}
-
-The galleon\comma{} \galleon{}\comma{} is the largest denomination of currency\comma{} consisting as it does of 17\sickle{}\comma{} or 493\knut{}. 
-
-Most wizards rarely handle or carry around actual galleons \minus{} purchases that occur on this scale are often directed through Gringotts \minus{} though it is not unheard of for rich wizards to flash their golden coins around town.
-
-\subsection{Muggle Exchange Rate}
-
-The exchange rate between muggle and wizarding currencies can be hard to pin down\comma{} as their respective economies bear very little resemblance to each other. What is scarce in one world is often common in the other. 
-
-However\comma{} since the economic crash in 1929\comma{} Gringotts has agreed to establish a fixed exchange rate. Under the current scheme\comma{} Gringotts will purchase £20 for 50\galleon. This works out to give 1 GBP to be equal to 10 knuts\comma{} or just under £3 to a sickle.
+Of course, objects in the Wizarding World are also often not what they seem - items and potions imbued with magic can have vastly powerful and varied effects. The creation of such items is known as \key{Artificing} and is detailed at the very end of this chapter.
 
 
 
-\def\cc{\cellcolor{\tablecolorhead}}
-\begin{center}
-	\begin{rndtable}{c c c c c}
-	~	&	\multicolumn{4}{c}{\bf Value}
-	\\
-	\multirow{\negTwo}{*}{\cc \bf Coin}	&	\cc \knut	&\cc	\sickle	& \cc \galleon & \cc £
-	\\
-	\cc	\knut		& 1		&	0.034	&	0.002	&	0.1	
-	\\
-	\cc\sickle		&29		&	1		&	0.059	&	2.94
-	\\
-	\cc\galleon		&493	&	17		&	1		&	50
-	\\
-	\cc  £		&	9.86	&	0.34	&	0.02	&	1
-	\end{rndtable}
-\end{center}
+\section{Equipped, Carried Stored Items}
 
-\newcommand\pack[3]
-{
-	\vspace{2 ex}
-	\small
-	\vbox{
-	{\bf #1}
-	
-	\begin{tabular}{l p{6cm}}
-		Cost: & #2 gold
-	\\
-		Contains: & #3
-	\end{tabular}
-	}
-	\normalsize
-}
-\subsection{Prices \& Availability}
+An \imp{Item} is classified as being either \key{Equipped}, \key{Carried}, or \key{Stored}, in order to allow you to keep track of your possessions. All items which are currently on your person (i.e. not \imp{Stored}) are said to be in your \key{Inventory}.
 
-Many items in this guide are listed with an associated price. This is the `standard purchase price' (SPP)\comma{} and is the price one could expect to pay for the item in a large population centre\comma{} during normal economic times\comma{} without excessive bartering. 
+\subsection{Equipped Item}
 
-However\comma{} this price may increase or decrease for certain items\comma{} depending on the location and the adventure you are undergoing. 
+An item is \key{equipped} if you are actively carrying it on your person - clothing is equipped when you are wearing it, and items such as wands and weapons are \imp{equipped} if they are being held in your hand or holstered for quick access, smaller items are \imp{equipped} if they are being held in a pocket. 
 
-If\comma{} for example\comma{} you had {\it accidentally} triggered a worldwide famine\comma{} then food items could become exceptionally expensive and cost far more than the SPP. Conversely\comma{} if you manage to rid a local lake of the hippocampus that had been terrorising it\comma{} you may find the bountiful fishing harvest reduces the price of fish for a few days. 
+Because these items are already on your person, they can be used easily and immediately: you can simply tell the GM that you have drawn your wand and wish to cast a spell. Most items must be \imp{equipped} before they can be used; you can't whack someone with your magical sword\comma{} if your magical sword is in your bag\comma{} after all. 
 
-Some items may also simply be unavailable \minus{} either because you are speaking to the wrong person (don't go to a bookstore for potions!)\comma{} because of outside influences\comma{} or simply because the item is so rare that none of the available merchants possess it to sell to you. 
+The character sheet on page \pageref{S:CharacterSheet} has a space for such important items as your wand, armour and so on on the first page. When an item is \imp{equipped}, you are encouraged to shade in the dot associated with that item, so that you may easily determine what is currently accessible. 
 
-\subsection{Selling \& Bartering}
+\subsection{Carried Items}
 
-You may also sell your own found or manufactured items to amenable vendors. Items generally sell for 50\% of their SPP\comma{} and no amount of bartering will raise it to 100\%\comma{} unless you can demonstrate your wares are of a significantly higher quality\comma{} and hence not subject to the `standard' price. 
+Items which are on your person, but that are not currently \imp{equipped} are said to be \key{Carried}. The default assumption is that an item is being \imp{carried}, unless you have stated otherwise and explicitly \imp{equipped} it. 
 
-As with purchasing your items\comma{} your ability to sell is dependent on you finding a willing (even enthusiastic) buyer\comma{} as well as the surrounding economic circumstances. 
+For the most part, these items are assumed to be in a backpack or otherwise carried in some sensible fashion. You may remove an item from your bag in order to use or \imp{equip} it, but this typically takes time, and so may not be appropriate in \imp{combat}, unless you have no other choice. You may also transfer items from one character to another, though again, this takes time and requires that characters be within passing distance of each other, unless magic is involed!
 
-Note that since 1692 is has been a crime in the wizarding world to allow magical items to fall into the hands of muggles \minus{} a crime which\comma{} in the most egregious of circumstances\comma{} has a punishment of death. 
+Over the course of your adventure, you are likely to pick up any number of interesting trinkets, magical or otherwise. Unless you are expecting to be using or \imp{equipping} these items on a regular basis, you might find the \imp{Full Inventory} section on the reverse of the \imp{Character Sheet} to be a useful place to store such items. 
 
 
-\section{Equipped Items}
+\subsection{Stored Items}
 
-An item that is equipped can be used immediately. In combat\comma{} this would count as your major action. Simply tell your GM that you are using a certain item\comma{} and you may then carry out the effect that the item has. 
+A \key{Stored} item is an item which you own, but are not carrying on your person - having either placed it in a secure area (every student at Hogwarts has a large, secured chest in their \imp{Common Room}), or hidden away in a secret location. 
 
-Some items must be equipped before they can be used; you can't whack someone with your magical sword\comma{} if your magical sword is in your bag\comma{} after all. Generally speaking\comma{} getting items out of storage is not a major action; you may retrieve and then use a health potion in a single motion\comma{} for example. Some items\comma{} however\comma{} might take longer to equip: strapping on a suit of armour\comma{} for instance\comma{} clearly takes some time!
+You should keep track of these items on your character sheet, but note that retrieving these items is a non-trivial task, and is not something that can generally be done in a hurry. 
 
-
-
-\section{Storing Items}
-
-Items that are not currently equipped are stored in your backpack\comma{} which you should probably try to keep on you at all times. Losing it would be bad!
-
-Items may be transferred between members of a party at any time\comma{} if they are within 1m (or you may use a spell such as accio). In combat\comma{} switching an item counts as a major action for both characters. 
+Items which are \imp{stored} in an unsecure location are also at risk of theft - if you leave the priceless \imp{Staff of Merlin} in a rented room at the \imp{Leaky Cauldron}, don't be surprised if it's not there when you come back for it in three weeks time. 
 
 
 
 \section{Item Weight}
 
-Rather than keeping track of the exact weight of each individual item in your backback\comma{} this game opts for a more free\minus{}form approach to tracking item weight. Each item is categorised as either `Light'\comma{} `Medium'\comma{} `Heavy' or `Very Heavy'. 
+Rather than keeping track of the exact weight of each individual item in your backback\comma{}, each item is instead categorised as either `Light'\comma{} `Medium'\comma{} `Heavy' or `Very Heavy'. A shorthand using `*' is used to easily mark these items:
+\begin{itemize}[itemsep = 0pt]
+\item A `Light item' (no * rating) can be picked up without thinking. They can typically easily fit into your pocket; a sheaf of paper\comma{} some candles and a wizard's wand are all `light'. 
 
-A `Light item' can be picked up without thinking. They can typically easily fit into your pocket; a sheaf of paper\comma{} some candles and a wizard's wand are all `light'. 
+\item A `medium' weight item (*) has a reasonable amount of heft to it\comma{} but can be held comfortably without strain; most weapons are categorised as `medium', as are spellbooks.
 
-A `medium' weight item has a reasonable amount of heft to it\comma{} but can be held comfortably without strain; most weapons are categorised as `medium'. 
+\item A `heavy' item (**) requires two hands to carry without strain; a suit of armour\comma{} as well as cumbersome objects such as the bludger are classified as `heavy'.
 
-A `heavy' item requires two hands to carry without strain; medium and heavy armour\comma{} as well as cumbersome objects such as the bludger are classified as `heavy'.
+\item A `very heavy' item (***) cannot be carried by one person alone: multiple individuals are required. A chest full of gold and jewels would be `very heavy'. 
+\end{itemize}
+As a general rule, if the total weight of items being carried (measured in `*'s) exceeds twice their combined \imp{Fitness + Strength} score, you have gone way past what is reasonable.  
 
-A `very heavy' item cannot be carried by one person alone: multiple individuals are required. A chest full of gold and jewels would be `very heavy'. 
+That being said, this is a deliberately vague system, and players are to be given a certain amount of leniency in carrying items (faffing about with numbers is less fun than running around a magical castle). However at any point the GM may ask a player to justify how, for example, they were just able to execute a full sprint whilst carrying Hogwarts' entire supply of cauldrons on their person, and impose penalties and consequences as appropriate. 
+
+
+
+
+
+
+\chapter{Currency \& the Economy}
+
+The currency used by Wizarding Britain is managed by the Goblin Clans who run Gringotts bank. The currency is broken up into 3 coins: the bronze \key{Knut} (\knut{})\comma{} the silver \key{Sickle} (\sickle{}) and the golden \key{Galleon} (\galleon{}). Because the system was designed by goblins \minus{} who have a different intrinsic idea about mental arithmetic \minus{} the coinage has an unusual exchange rate, with 1 \imp{sickle} being worth 29 \imp{knuts}, and 1 \imp{Galleon} being worth 17 \imp{sickles}, or 493 \imp{knuts}. 
+
+
+\section{Abstracted Wealth}
+
+Just as this game does not require the players to track the daily ablutions of their characters, it can become somewhat tiresome to have to keep track of the exact amount of coin that is being spent at any given moment -- especially given the mindmelting unfamiliar multiplication tables you would need to become familiar with to function in this world. 
+
+Hence, it is assumed that characters have enough \imp{knuts} and \imp{sickles} on them to get by in daily life - and such transactions occur without needing to keep track of any exchange of currency. A character can merely note off-handedly that they visited a grocery store while passing through town, and stocked up on rations, and you may freely tip your waiter when visiting Diagon Alley, without having to worry about modifying your character sheet.
+
+The players must only keep track of their assests on a larger scale -- represented through a more abstracted wealth system, which is measured in \key{galleons}. A \imp{Galleon} would be spent on a large, unusual purchase, something which goes far beyond everyday expenditure: purchasing unusual potion equipment, bribing your way past a guard, or gaining access to a portkey for long-distance travel. 
+
+Though this should not be taken as a strict exchange rate, you may imagine a \imp{Galleon} as being worth approximately £100.
+
+\subsubsection{Introducing Granularity}
+
+Should the story lead in that direction, the GM may also decide that your group has become particularly destitute, and resources are so tight that you are {\it forced} to keep track of currency at a very granular level. In this case, you may instead track sickles on every single purchase made. 
+
+This is an option that is always available, but should only be used for narrative reasons where the grim realism of poverty is relevant and interesting. 
+
+\subsubsection{Abusing the System}
+
+With a system such as this, the temptation is, therefore, that the players could try and exploit this abstracted system. By splitting up a high-cost shopping trip into a number of small individual purchases you could avoid any individual transaction requiring more than a \imp{Galleon}, and hence it would cost you nothing to acquire.
+
+This should be avoided as violating the spirit of the abstracted wealth system which, after all, is designed to make your life as a player less complex and fiddly!
+
+If such shenanigans are taking place, the GM may step in and decree that, cumulatively, an entire Galleon has been spent, rebalancing the scales. 
+
+\subsubsection{Magical Currency}
+
+It should be noted that Wizarding coins are inherently magical in nature. The Goblin Clans which run Gringotts have staked their reputation -- even their very acceptance within wizarding society -- on the security of their transactions, and the validity of their coinage. 
+
+Wizarding currency cannot be altered, synthesised, duplicated or otherwise gained through simple magical means. Attempting to do so may draw dire consequences from the authorities. Forgery is a dangerous game within the wizarding world.
+
+
+\subsection{Carrying Money}
+
+\imp{Galleons} are pretty hefty coins, and carrying too many of them on your person is just asking to be `relieved' of them by some of the more nimble-fingered (or thuggish) members of society. 
+
+In general, a character can carry no more than \galleon{7} on their person during day-to-day life. These are represented by the 7 \imp{Galleon} dots present in the \imp{Inventory} section of the \imp{Character Sheet}. You may carry more than this amount for very short periods of time, but doing so on more than a rare occasion could be disastrous for your finances.
+
+
+\section{Vaults}
+Since every witch and wizard is entitled to a small vault at Gringotts, you may expand your wealth without incurring excess risk by using their services to store your excess \imp{Galleons}. 
+
+A \key{Vault} acts as a secure storage place for your \imp{Galleons}. You can add or remove coins from your vault whenever you have access to one of the Gringotts' branches scattered across the magical world: in addition to the main site in Diagon Alley, they run small branches in wizard-heavy locations such as Godric's Hollow and Hogsmeade.  
+
+In addition, when making an exceptionally large purchase (a racing-quality broom, for example, can cost in excess of \galleon{100}) it is clearly not feasible to walk around with that amount of money in your pocket. If the transaction is occuring with a large, reputable business, Gringotts has a system whereby you may spend the money directly from your \imp{Vault}. 
+
+Unless you are willing to invest in one of Gringott's more premium services, the reverse is not generally true: you cannot automatically deposit funds into your \imp{Vault} when making a transaction.  
+
+
+Note that if you are currently on the run from the law, you may find your accounts have been frozen and you do not have access to your normal \imp{Vault}. You may try to set up your own secure \imp{Vault} to store money in, in which case this takes over most of the functionality of your previous vault, though you must manually attend it to remove or add money to the vault.
+
+\section{Purchasing, Selling \& Prices}
+
+
+You may purchase items if you find a willing vendor - places like \imp{Diagon Alley} are of course filled with people willing to sell you things. Hogwart's, officially, has no need for money, but you may find that the students there have set up a viable black market, and trips to Hogsmeade also allow an opportunity for spending. 
+
+
+\subsection{Prices}
+
+Many items in this guide are listed with an associated price. This is the `standard purchase price'\comma{} and is the price one could expect to pay for the item in a large population centre\comma{} during normal economic times\comma{} without excessive bartering. 
+
+However\comma{} this price may increase or decrease for certain items\comma{} depending on the location and the adventure you are undergoing. 
+
+If\comma{} for example\comma{} you had {\it accidentally} triggered a worldwide famine\comma{} then food items could become exceptionally expensive and you have to start spending \imp{Galleons} to ensure you have food. Conversely\comma{} if you manage to rid a local lake of the hippocampus that had been terrorising it\comma{} you may find the bountiful fishing harvest reduces the price of fish for a few days. 
+
+Some items may also simply be unavailable \minus{} either because you are speaking to the wrong person (don't go to a bookstore for potions!)\comma{} because of outside influences\comma{} or simply because the item is so rare that none of the available merchants possess it to sell to you. The item lists present in this section are {\it not} a shopping list, they are merely a guide. 
+
+\subsection{Selling \& Bartering}
+
+You may also sell your own found or manufactured items to amenable vendors. Items generally sell for 50\% of their standard price\comma{} and no amount of bartering will raise it to 100\%\comma{} unless you can demonstrate your wares are of a significantly higher quality\comma{} and hence not subject to the `standard' price. 
+
+As with purchasing your items\comma{} your ability to sell is dependent on you finding a willing (even enthusiastic) buyer\comma{} as well as the surrounding economic circumstances. 
+
+Note that since 1692 is has been a crime in the wizarding world to allow magical items to fall into the hands of muggles \minus{} a crime which\comma{} in the most egregious of circumstances\comma{} has a punishment of death. 
+

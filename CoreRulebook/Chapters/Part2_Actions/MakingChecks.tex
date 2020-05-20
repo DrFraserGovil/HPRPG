@@ -135,9 +135,30 @@ The exact outcome of a failed check are up to the GM to narrate, based on the cu
 
 Some failures are much worse than others: \key{Catastrophes}. 
 
-A catastrophe is triggered when a dice rolls comes up as a \key{1}, and results in a fumble so serious that it absorbs one of your successes in order to mitigate the failure. Every Catastrophe reduces the number of successes by 1, starting with the highest rolled number. For example, a roll of \imp{1-5-7-8-8-10} against a DV of 8 would normally have 3 successes, however the single catastrophe reduces this down to 2 successes. 
+Whilst a normal failure does not detract from your successes, a \imp{Catastrophe} is a failure so severe that it eats away at your achievements, reducing their effectivemess. 
 
-If a check ever results in more Catastrophes than successes, then you suffer a \key{Catastrophic Failure}. These are the worst possible failures, and can often really ruin your day. Rather than hijacking a broomstick, you find yourself plummeting towards the ground, or an attempt to hex your foe leads you to vomiting slugs all over the school field. 
+
+A catastrophe is triggered when a dice rolls comes up at or below the \key{Catastrophe Limit} (CL). Usually, the \imp{Catastrophe Limit} is equal to half the DV of the action (rounded down), though your GM may rules that certain circumstanes alter the CL, without also altering the DV -- perhaps attempting a very easy action but under heavy enemy fire, for example, as the action is likely to succeed, but the penalties for failure are much harsher than normally expected.
+
+\begin{center}
+	\begin{rndtable}{ c c}
+		\key{ Difficulty}	&	\key{Catastrophe Limit}
+		\\
+		2-3	&	1
+		\\
+		4-5	&	2
+		\\
+		6-7	&	3
+		\\
+		8-9	&	4
+		\\
+		10-11 & 5
+	\end{rndtable}
+\end{center}
+
+Each rolled \imp{Catastrophe} results in a fumble so serious that it absorbs one of your successes. Therefore every Catastrophe reduces the number of successes by 1, starting with the highest rolled number. For example, a roll of \imp{1-3-5-7-8-8-10} against a DV of 8 would normally have 3 successes, however with a CL of 8/2 = 4,  the two catastrophes reduces this down to 1 successes. 
+
+If a check ever results in more \imp{Catastrophes} than successes, then you suffer a \key{Catastrophic Failure}. These are the worst possible failures, and can often really ruin your day. Rather than hijacking a broomstick, you find yourself plummeting towards the ground, or an attempt to hex your foe leads you to vomiting slugs all over the school field. 
 
 Some effects can also increase the \key{Catastrophe Range} for certain actions. This means that a Catastrophe is triggered even on higher numbers. For example, a {\it Broken Wand} raises the Catastrophe Range to 3 for spellcasting efforts, meaning that the dice rolls 1, 2 \& 3 all trigger catastrophes. If the Catastrophe Range ever exceeds the nominal DV of an action, the DV is reset to be one more than the maximum catastrophe trigger - with a broken wand, no spellcasting DV can ever be below 4, for example.
 
@@ -145,13 +166,7 @@ Some effects can also increase the \key{Catastrophe Range} for certain actions. 
 
 The opposite of a \imp{Catastrophe} is, of course, a \key{Miracle}. 
 
-A miracular success occurs whenever you roll a \key{12}. If a \imp{Catastrophe} occurs and attempts to remove a \imp{Miracle}, you instead remove the \imp{Catastrophe}. Each \imp{Miracle} can only ward off a single rolled \imp{Catastrophe}, but this ensures that the action succeeds - even if only with a single success - and therefore prevents a \imp{Catastrophic Failure}. 
-
-For example, against a DV of 8, the roll \imp{1-1-4-7-9-10-10-12} has 1 \imp{miracle}, 3 \imp{successes} and two \imp{catastrophes}. The \imp{Miracle} reduces the number of \imp{catastrophes} to 1, and so the final catastrophe eliminates the rolled \imp{10}, leaving a three \imp{successes}. 
-
-However, if you had rolled \imp{1-1-1-8-12}, two \imp{successes} and three \imp{catastrophes}, the total remains at {\bf a single success}, despite the \imp{catastrophes} seemingly outnumbering the successes. A \imp{Miracle} can therefore really save your bacon when the chips are down! 
-
-Note that \imp{Miracles} are only relevant when the DV is below 12 - if the DV is equal to 12, even being able to attempt the action is miracular. 
+A miracular success occurs whenever you roll a \key{12}. A miracular success means that, even if the action fails, it does not do so catastrophically. 
 
 
 \subsection{Contests}
