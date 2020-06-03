@@ -32,7 +32,7 @@ Breakneck & 10km/h & 1 hour & {\raggedright -10 penalty to all checks made whils
 \end{center}
 
 \normalsize
-If you attempt to travel for longer than the `duration' of the selected pace, you risk exhausting yourself. After the first additional kilometre travelled, all members of the party must succeed a DV 10 Vitality check. This check must be repeated after every subsequent kilometre travelled, with the DV increasing by 1 each time. After failing this check, you must halt, and take an additional level of exhaustion. 
+If you attempt to travel for longer than the `duration' of the selected pace, you risk exhausting yourself. After the first additional kilometre travelled, all members of the party must succeed a DV 6 \key{Vitality} check (you may modifiy the dice pool with relevant \imp{Abilities} if the GM allows it). This check must be repeated after every subsequent kilometre travelled, with the DV increasing by 1 each time. After failing this check, you must halt, and take an additional level of exhaustion. 
 
 This timer resets after a rest of more than 8 hours, after which time you can take up your pace again. 
 
@@ -50,7 +50,7 @@ You may make checks to navigate, to track a foe keep or to keep an eye out for e
 
 Whilst travelling at a slow pace, you may make an effort to remain hidden, the rules for which are elaborated on more on page \pageref{S:Stealth}. 
 
-If the Slow or Normal pace is used, a member of your part may elect themselves as a map-maker, if they have the {\it Observation} proficiency. Having a map makes it impossible to get lost (unless the scenery is magically altered, of course), and you can always retrace your steps. 
+If the Slow or Normal pace is used, a member of your part may elect themselves as a map-maker, if they have at least one dot in the \imp{World} ability. Having a map makes it impossible to get lost (unless the scenery is magically altered, of course), and you can always retrace your steps. 
 
 \subsection{Special Movement}\label{S:SpecialMovement}
 
@@ -60,7 +60,7 @@ Walking and running are not the only kinds of movement out there: navigating a d
 
 Slopes between 0 and 30 degrees are considered `gentle', and you suffer no penalty for traversing them. Between  Between 30 degrees and 50 degrees a slope is considered `steep', and you must move at half speed, but can walk without aid. 
 
-Slopes above 50 degrees are considered `sheer', and must use an explicit climbing action to navigate. Climbing requires use of both hands and feet, as well as the existence of solid hand/foot holds, and you move and one quarter your usual speed. If you wish to use an item, or perform an action whilst climbing , you must halt, perform a DV 10 Strength check to stabilise yourself, and then use one free hand. 
+Slopes above 50 degrees are considered `sheer', and must use an explicit climbing action to navigate. Climbing requires use of both hands and feet, as well as the existence of solid hand/foot holds, and you move and one quarter your usual speed. If you wish to use an item, or perform an action whilst climbing , you must halt, perform a DV 6 \imp{Fitness (Strength)} (or similar) check to stabilise yourself, and then use one free hand. 
 
 Trying to navigate a sheer slope without the existence of material to hold on to requires the use of specialised tools or magic, or else you will surely fall and perish. 
 
@@ -68,20 +68,9 @@ Trying to navigate a sheer slope without the existence of material to hold on to
 
 When standing in water that is up to waist deep, your movement speed is reduced to one-half of its usual value, although the presence of strong currents may increase or decrease this. 
 
-If the water is deeper than this, you must start to swim. Swimming moves at one-quarter your usual speed and costs 1FP for every 30m travelled. If you stop moving whilst in water that is deeper than your height, you must tread water to keep your head above water. This costs 1FP per minute to maintain. If you reach 0FP, your head will fall below water, and you will drown. 
+If the water is deeper than this, you must start to swim. Swimming moves at one-quarter your usual speed and costs 1FP for every 30m travelled. If you stop moving whilst in water that is deeper than your height, you must tread water to keep your head above water. Every 5 minutes, you must perform a DV 8 \imp{Fitness} check (again, modified by an ability, if relevant), to ensure you are able to keep afloat. On a \imp{Failure}, your head dips underwater for a moment, increasing the DV by 1. On a \imp{Catastrophic Failure}, you begin to drown.
 
 If you wish to swim under water, you may do so, referring to the rules about air found on page \pageref{S:Air}. 
-
-\subsubsection{Jumping}
-
-To leap over a chasm, you need to ensure that both the height and length of your jump is sufficient to clear the obstacle. Every character has a number of `jump points' equal to 1 + \attPhys{} modifier. You may spend these points to achieve either vertical or horizontal distance. You gain 2 additional points by taking a run up of at least 3 metres. 
-
-Each horizontal metre costs 1 point, whilst each vertical metre costs 3.  It is possible to do a `pure' long jump or high jump, but note that a long jump with zero height added to it will typically leave you gripping the edge of a chasm by your fingertips, so it is important not to neglect the height of your jumps. 
-
-The above describes a `basic' jump (DV 5 \attPhysShort{} check). You may choose to make the jump more difficult, by adding 1 additional point, at the expense of increasing the DV of the jump by 5. 
-
-A level 6 thief has an \attPhys{} score of 15, and wishes to leap across a chasm that is 6m wide. By taking a runup they have 5 jump points available to them. One of these is dedicated to height so that they land on their feet, leaving only 4m of horizontal distance left. A DV 5 jump will therefore be insufficient, but a DV 15 jump, if it succeeds, clear the gap. The thief therefore decides to risk everything, and go for the more difficult jump. 
-
 
 
 
@@ -97,26 +86,18 @@ You may take rests whilst delving deep into unfriendly territory, but note that 
 
 You should only rest in a place where it makes sense to rest – it does not makes sense, for example, to take a quick nap in whilst delving through the dungeons of an evil warlord, even if you have cleared the immediate area of enemies. Of course, if you kill the Warlord and claim his castle as your own, then it is a different matter...
 
-\subsection{Short Rest}
-
-A short rest is a period of around one hour, which allows your character to steady their mind, grab a bite to eat, read a book, and perhaps tend to some minor wounds.
-
-
-During a short rest, gain a number of recovery dice, equal to your character level. Each recovery die is a d4. Roll your recovery die, and add that amount to either your HP {\bf or} to your FP. Each recovery die may be allocated individually, but you cannot split the result of an individual dice across both reservoirs. 
-
-However, note that no amount of rest or sleep can heal broken bones, or cure a concussion: these severe status effects limit the amount of HP that can be restored, usually limiting regeneration to 50\% of max health. 
-
-For every additional hour spent resting per day (consectively or not), you get one fewer recovery die. This resets on a long rest.
 
 \subsection{Long Rest}
 
-A long rest is an extended period of respite -- upwards of 8 hours. This allows your character to sleep and recover from more serious wounds. Upon a long rest, you restore both HP and FP to their maximum values, unless a status effect prevents this. 
+A \key{long rest} is an extended period of respite -- upwards of 7 hours. The beginning of a \imp{Long Rest} is a normal place for the GM to distribute \imp{EXP}, as discussed on page \pageref{S:Progression}.
 
-A long rest also allows you to recover from exhaustion: 8 hours sleep allows you to remove 1 level of exhaustion. 
+If accompanied by a nutritious meal, a \key{Long Rest} is considered a \imp{Nourishing Action}, and so restores 2 points of \imp{Fortitude}. 
+
+A \imp{long rest} also allows you to recover from exhaustion: 7 hours sleep allows you to remove 1 level of exhaustion. 
 
 \section{Social Actions}
 
-An adventure rarely happens in isolation, and there will be many times that your group will have to interact with other people. Characters that are part of the larger world are known as Non-Player Characters (NPCs), and interacting with them will often be key. 
+An adventure rarely happens in isolation, and there will be many times that your group will have to interact with other people. Characters that are part of the larger world are known as \key{Non-Player Characters} (\imp{NPC}s), and interacting with them will often be key. 
 
 \subsection{Active vs. Descriptive Roleplaying}
 
@@ -130,7 +111,7 @@ Neither approach is right or wrong, or better or worse -- the aim is for you to 
 
 Of course, sometimes you may have to rely on descriptive roleplaying when your character is doing something that you cannot do. Your character might be thousands of times clever than you, or charismatic beyond all human reckoning. You character doesn't have to be limited by your own experiences -- if a shy player is unsure of what an extroverted, flambouyant character would do in this scenario, you may fall back on descriptive work, though your GM will should try to help you embellish.
 
-Of course, the converse is also true, though somewhat harder: there are many things that the players know, but the characters don't - if a merchant tries to sell you a new item for twice the price its listed in this handbook, do your characters know they're being overcharged? You might immediately recognise the inscription as being in Ancient Greek, but does you INT 7 character recognise the symbols? Try not to let such metagaming influence your character's actions. 
+Of course, the converse is also true, though somewhat harder: there are many things that the players know, but the characters don't - if a merchant tries to sell you a new item for twice the price its listed in this handbook, do your characters know they're being overcharged? You might immediately recognise the inscription as being in Ancient Greek, but does your zero-\imp{Intelligence} character recognise the symbols? Try not to let such metagaming influence your character's actions. 
 
 Finding a healthy balance between these two playstyles is key to having fun in this game, and exploring your character - feel free to experiment!
 
@@ -140,23 +121,3 @@ Of course, roleplaying is not the only factor to take into account in social int
 
 Keep an eye on your skill proficiencies, and let these guide your choices when interacting with an NPC, if you are especially good at lying, or particularly intimidating, you may elect to use those skills instead of a more honest approach. Of course, you must also consider that, like in real life, social interactions can often have consequences later on. 
 
-\subsection{Attitudes}
-
-NPCs are generally split into 5 categories, based on their attitude towards you and your group. This helps provide a first-guess of how to approach a scenario. 
-
-A character's attitude towards you make social interaction with them much easier, in addition to the roleplaying benefits of this, you gain a numerical bonus to charisma checks towards these characters, representing their likelihood to believe and follow you.
-\begin{center}
-\begin{rndtable}{l p{4cm} c}
-\bf Attitude &	\bf Description	&	\bf CHR bonus
-\\
-Ally	&	A very close friend, whose interests align with yours almost all the time. &+5
-\\
-Friendly	&	Someone who likes you, and is inclined to agree with you	&	+2
-\\
-Indifferent	&	Someone who has no feelings for you either way. A total stranger. 	& +0
-\\
-Unfriendly	&	A character who dislikes you, and doesn't want you around.	& -2
-\\
-Enemy	&	A character that truly hates you. They would disagree with you purely out of spite. 	&	-5
-\end{rndtable}
-\end{center} 

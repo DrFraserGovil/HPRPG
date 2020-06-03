@@ -5,34 +5,68 @@
 
 In real life, combat is a dangerous, messy and chaotic affair. This does not lend itself overly well to a game, as it will inevitably descend into a rush of people talking over each other as everyone attempts to defend and attack at the same time 
 
-Therefore, when entering combat play enters into a more structured format. A number of {\it Turn Cycles} occur one after another, during which each player reveals and resolves their actions in turn. However, note that this is merely an abstraction from the chaos of several actions going on at once: every action in a turn cycle is considered to be simultaneous with every other action. The order in which events occur is as follows:
+Therefore, when entering combat play enters into a more structured format, known as the \key{Reaction Cycle}, or the \key{Combat Cycle}. It is critical to note that, although this breaks the action down into a nice cycle of resolving actions one at a time, this is an abstraction from the chaos of combat: every action declared in a single \imp{Reaction Cycle} is occuring near-simultaneously.
 
-\begin{itemize}
-	\item All attacks and movements occur simultaneously
-	\item All reactions to the main actions
-	\item Any Conditional actions 
-	\item Any reactions to the conditional actions
-\end{itemize}
+Since every action occurs all at once, what matters is not necessarily who acts first, but what information you have before you are forced to act, and therefore what you are able to reasonably react to.
 
-Because of fixed ordering of events, the order in which players take their turns does not matter. The GM may elect to go around the table in a certain direction or use any other method to decide who announces their action first, usually leaving characters under the GM's control until last (to prevent too much metagaming). During your alloted slot, you announce any actions you will be taking, and then perform the necessary rolls to resolve them.
+Upon entering combat, every character and being involved in the conflict rolls a single d12, and adds the result of this dice to the number of dice in their \imp{Perception} pool. This is known as a \key{Reflex Roll}:
+$$ \text{\imp{Reflex Roll}} = \text{1d12 + \imp{Perception} value} $$
 
-If at any point an action executed before you in the annoucement order would conflict with an action you are planning on taking, you may alert the GM and jump up in the order in order to execute your action\footnote{This is similar to the system used in the popular boardgame {\it Diplomacy} } before your chosen action becomes irrelevant or impossible. 
+The GM then orders the players and the antagonists in order of their \imp{Reflex Roll}. Any ties are resolved by mutual agreemet (if between players), by comparing \imp{Perception} values (highest wins), and if necessary, a simple roll-off until a winner is decided.
 
-For instance, consider a fight where Jonathan and Susan are fighting an escaped Runespoor. The GM tells Jonathan's player that he is to go first, Susan second and then the Runespoor last. Jonathan is running low on HP, and so elects to flee. Unfortunately, the GM then announces that the Runespoor was using its action to attack Jonathan this turn - so the Runespoor jumps up in the turn order, quickly executes its attack, before Jonathan continues with his movement. 
+The character at the top of the resulting \key{Reflex Order} order may choose to be the initiator and voluntarily choose to act first -- this in effect places them at the bottom of the \imp{Reflex Order}, but potentially allows them to put everyone else on the back foot by taking control of the situation. Alternatively, they may choose to use their magnificent reflexes to wait and see what happens.
 
-Equally if, going first in the cycle, the Runespoor elects to run and take cover, both Jonathan and Susan may announce that they were intending to attack the Runespoor this turn, and so they may jump ahead in the order and resolve their attacks on the fleeing creature before it slips out of sight. When the turn cycle returns to them, they may use any remaining actions, reactions or movement as appropriate.
+Actions are then announced in {\bf Reverse Order} - the characters who rolled a low \imp{Reflex Roll} must announce their actions first, without knowing what those higher up in the order are up to. This allows characters with a better \imp{Reflexes} to react to actions going on around them, and potentially counter and negate actions made by those with worse reflexes than them.  
 
-Any damage or status effects applied due to attacks are applied in a special `results' phase which occurs at the end of the turn cycle. It is during this phase that all attacks are assumed to land (or miss), therefore spell effects do not take hold until the beginning of the next round, even if they were announced at the very beginning of the Turn Cycle, unless the effect explicitly states that its effect applies this turn.  
+\subsection{Applying Effects}
+
+After all actions have been announced, the effects of all actions this round are applied. 
+
+Because the effects are explicitly not applied until after all actions are announced, it is perfectly possible for two characters to attack each other (and indeed, stun or even kill each other) on the same turn. The character's utter the spells simultaneously, with the spells crossing in midair.
+
+\subsection{Jumping Initiative}
+
+Of course, it could get a little tricky to keep track of all the `pending' effects that have been announced, remembering the effects of the seven spells cast this round, and how they have been modified by attempts to dodge or shield against them is obviously beyond even the most dedicated GM. 
+
+It is therefore encouraged that players should `jump initiative' when they wish to modify the effects of a spell that is being cast by someone lower down the initiative than them. Consider for example a duel between John, his arch-rival Samantha and 3 others. Samantha is at the bottom of the reflex cycle, whilst John is at the top. 
+
+Samantha goes first and announces that she is casting a \levelThree{} blast of fire, directed towards John. John is pretty hurt already, and knows that, no matter what, he needs to deflect this fire blast, so he tells the GM that he would like to `jump initiative' and expend his action out of the usual reflex cycle to immediately cast a \levelTwo{} shield spell. 
+
+John would, of course, be allowed to wait to see what the remaining three characters did before doing this -- but for ease of keeping track of what is happening, it is encouraged that players jump up in initiative in order to allow all effects related to an individual to be resolved at once. 
+
+A benign GM may allow a player to `undo' this action if it turns out to have been a catastrophic error (i.e. if one of Samantha's allies releases a much more powerful attack which would have obviously been the one they would have shielded against the most strongly), but this should not be used to escape from a bad dice roll - this should be used only whe the additional information would genuinely have altered the course of action. The GM may choose to simply transfer the previous dice roll to the new attempt, or ask for an entirely new dice roll. 
 
 
 
-\subsubsection{Using Minis}
 
-If you are using miniatures or tokens to represent the positions of your characters and their enemies during combat, it can be helpful to have two tokens to represent a character: one to represent where a character is whilst all players are deciding upon and resolving their actions, and a second to denote the position they have elected to move to. 
+%~ A number of {\it Turn Cycles} occur one after another, during which each player reveals and resolves their actions in turn. However, note that this is merely an abstraction from the chaos of several actions going on at once: every action in a turn cycle is considered to be simultaneous with every other action. The order in which events occur is as follows:
 
-At the end of the turn cycle, all the simultaneous actions `execute', and the characters move to their chosen locations. 
+%~ \begin{itemize}
+	%~ \item All attacks and movements occur simultaneously
+	%~ \item All reactions to the main actions
+	%~ \item Any Conditional actions 
+	%~ \item Any reactions to the conditional actions
+%~ \end{itemize}
 
-This allows you to keep track of both where characters are moving to, and also what characters can still see as any remaining actions this turn cycle are resolved. 
+%~ Because of fixed ordering of events, the order in which players take their turns does not matter. The GM may elect to go around the table in a certain direction or use any other method to decide who announces their action first, usually leaving characters under the GM's control until last (to prevent too much metagaming). During your alloted slot, you announce any actions you will be taking, and then perform the necessary rolls to resolve them.
+
+%~ If at any point an action executed before you in the annoucement order would conflict with an action you are planning on taking, you may alert the GM and jump up in the order in order to execute your action\footnote{This is similar to the system used in the popular boardgame {\it Diplomacy} } before your chosen action becomes irrelevant or impossible. 
+
+%~ For instance, consider a fight where Jonathan and Susan are fighting an escaped Runespoor. The GM tells Jonathan's player that he is to go first, Susan second and then the Runespoor last. Jonathan is running low on HP, and so elects to flee. Unfortunately, the GM then announces that the Runespoor was using its action to attack Jonathan this turn - so the Runespoor jumps up in the turn order, quickly executes its attack, before Jonathan continues with his movement. 
+
+%~ Equally if, going first in the cycle, the Runespoor elects to run and take cover, both Jonathan and Susan may announce that they were intending to attack the Runespoor this turn, and so they may jump ahead in the order and resolve their attacks on the fleeing creature before it slips out of sight. When the turn cycle returns to them, they may use any remaining actions, reactions or movement as appropriate.
+
+%~ Any damage or status effects applied due to attacks are applied in a special `results' phase which occurs at the end of the turn cycle. It is during this phase that all attacks are assumed to land (or miss), therefore spell effects do not take hold until the beginning of the next round, even if they were announced at the very beginning of the Turn Cycle, unless the effect explicitly states that its effect applies this turn.  
+
+
+
+%~ \subsubsection{Using Minis}
+
+%~ If you are using miniatures or tokens to represent the positions of your characters and their enemies during combat, it can be helpful to have two tokens to represent a character: one to represent where a character is whilst all players are deciding upon and resolving their actions, and a second to denote the position they have elected to move to. 
+
+%~ At the end of the turn cycle, all the simultaneous actions `execute', and the characters move to their chosen locations. 
+
+%~ This allows you to keep track of both where characters are moving to, and also what characters can still see as any remaining actions this turn cycle are resolved. 
 
 \subsection{Time}
 
@@ -40,7 +74,7 @@ Each combat cycle is assumed to have a duration of around 3 seconds.
 
 Attempting to perform actions that last significantly longer than this requires spreading the action across multiple turns -- though may choose to abort such an action if you feel your talents are better placed elsewhere. 
 
-If an effect or action has a specified duration, such as a spell which lasts for 10 seconds, this is measured from one `Result' phase to another. 
+If an effect or action has a specified duration, such as a spell which lasts for 10 seconds, this is measured from the end of a turn cycle.
 
 If any part of the duration of an effect overlaps with a cycle, it is assumed to apply to all of it. The `10 second' effect, therefore, applies over the next 4 combat cycles after the effect is applied. 
 
@@ -50,12 +84,9 @@ If any part of the duration of an effect overlaps with a cycle, it is assumed to
  During each Turn Cycle, you may decide how to allocate your character\apos{}s time during this combat cycle. Every character may take the following actions: 
  
  \begin{itemize}
-	\item One minor-action Movement
+	\item One normal Movement
 	\item One major action, or two minor actions
-	\item (Potentially) a reaction
  \end{itemize}
- 
- In addition, a character has a number of {\it instincts} which they automatically execute to avoid damage and brace against incoming attacks. 
  
  The dedicated ``movement'' action can be allocated as any number of smaller sub-movements (within reason). You may therefore move half your minor-movement speed, stop to use a major action, and then use your remaining movement. Alternatively you may use your movement entirely before, after and even during your other actions.  
  
@@ -71,16 +102,23 @@ If any part of the duration of an effect overlaps with a cycle, it is assumed to
  
 The rules for performing attacks are elaborated on page \pageref{S:Attacks}.
 
+
+	\subsubsection{Negating}
+	
+	If an attack is on its way towards you (or you suspect it will be soon), you may attempt to negate the effects of it. 
+	
+	You may choose to \key{Block}, \key{Dodge} or \key{Endure} an attack, rolling dice pools as appropriate. Every success reduces the \imp{Power} of the incoming attack by 1 point. Successes may be divided up between any attacks which are directed towards you this turn cycle. 
+	
+	See the section on Negation for more detail (INCLUDE LINK!)
+	
  \subsubsection{Movement}
  
- When used as a major action, movement allows you to move on foot up to a distance given by your {\it running speed} statistic, which is calculated from your base speed (derived from your race) and your fitness attribute:
+ When used as a major action, movement allows you to move on foot up to a distance given by your {\it running speed} statistic, which is calculated from your \imp{Speed} attribute:
 \small
-$$ \text{running speed} = \big(\text{Base Speed } + \text{\attPhys{} modifier}\big) \text{ metres per round} $$  
+$$ \text{running speed} = \big(\text{3 } + \text{\imp{speed} rating }\big) \text{ metres per round} $$  
 \normalsize
 
 The rules discussed on page \pageref{S:SpecialMovement} concerning special movement, such as climbing, swimming or crawling, also apply in combat. 
-
-{\bf Sprinting:} If you possess the {\it Speed} proficiency and you made a full-turn movement last cycle, you may convert your movement into a {\it sprint}, and add your expertise bonus to your speed. You may then maintain this until you need to stop or change direction. 
 
 Whilst moving, you need to be careful that you do not collide with other beings - either your allies or your enemies. You cannot enter space that is currently being occupied by another solid being (ghosts, however, are fair game). 
 
@@ -114,18 +152,6 @@ However, there is a middle ground between the sprint of a full-turn movement, an
 
 During a minor movement, one moves only {\bf half as far} as during a full-turn movement, but since you are not focussed solely on moving as far as possible, you can perform other minor actions. 
 
-\subsubsection{Quick Attack}
-
-Just as there is a difference between a full-on sprint (a major action) and a quick jog (a minor action), so to is there a difference between a zeroed in shot on your enemy (a major action), and releasing a spray of covering fire to keep your enemies on their toes (a minor action). 
-
-A quick attack takes only a minor action to complete, however their rapid and slightly careless nature imposes the following effects:
-\begin{itemize}
-	\item All accuracy checks are performed with disadvantage
-	\item All Resist attempts performed by the target of your attack are performed with advantage
-\end{itemize}
-
-You can only cast `offensive' spells as a Quick-Attack action, i.e. those which inflict harm or negative effects directly on your opponents. ``Utility'' spells, even if they would inflict harm eventually, require more attention and focus than a careless Quick-Attack can provide. 
- 
 \subsubsection{Communication}
 
 Communicating vital information - such as the location of a hidden enemy or trap - to your comrades takes a minor action. Note that it is assumed that the enemy can hear you communicating, unless you make an effort to not be understood. 
@@ -142,41 +168,19 @@ Any item use that can be completed in around 1 second, or which can be easily `m
 
 See page \pageref{S:Accuracy} for more details on this mechanic. 
 
-\section{Reactions} \label{S:Reactions}
-
-A Reaction occurs when a being responds to some action being imposed upon them. Reactions are declared when another being declares an action such as an attack, and as normal, allow you to jump up in the turn order, quickly attempt to modify or nullify the action, before the turn cycle proceeds as normal. 
-
-In general, the most common uses of a reaction are to use one of the following:
-
-\begin{itemize}
-	\item Cast a {\it Shield} spell, or a {\it Counterspell} to negate a magical attack
-	\item Use an {\it Evade} or {\it Brace} action to bolster your defences. 
-\end{itemize}
-
-Using a Reaction is not something you can do reliably, as it requires a clarity of mind and purpose. {\bf After using a Reaction, you temporarily lose the ability to use one} until you can regain your composure. 
-
-During the {\it Results} phase of every turn, roll a d6. On a 5-6, you regain your ability to use a reaction.
-
-\subsubsection{Reaction Spells}
-
-You may only cast a spell as a reaction if you have memorised it. Bookcasting takes too long to work effectively as a Reaction. However, all spells which are cast as a reaction {\it must} perform a spellcasting check, as the casting is occuring under immense time pressure. 
-
-In addition to the two spells mentioned, you may also cast more complex spells, with the limitation that they must solely be focussed on denying the effect you are reacting to, and should never include attacks without an ability saying otherwise. It would, for example, be acceptable to cast {\it Compel Flames} to redirect a fire-based attack, though you would need to upcast it to a suitable level (usually equal to the attacking spell\apos{}s level) in order for it to be effective, but you would not then be able to direct the flames to attack an enemy as part of your reaction. 
-
-If a spell is cast silently then it is impossible to identify what spell is being cast before it is too late, and so reactions to silent-cast spells must rely on more basic protection, or simply guess at what the spell {\it might} be. 
 
 
 
-\subsection{Conditional Actions}
 
-The use of the simultaneous combat system raises some interesting opportunities with conditional actions: those which depend on the actions that another character takes.
+\subsection{Delaying Actions}
 
-The actual action, as well as the trigger condition, needs to be declared during the normal Reveal Phase -- but the action itself is treated as a `Reaction'. You may use a conditional action even if you have not yet recovered your reaction, however you may not expend a reaction on the same turn as using a conditional action. 
+A character with a particularly poor position in the \imp{Reflex Order} might decide to wait a bit to see what is happening before making an action. 
 
-For example, it could be that you declare as your action \textit{if the troll attacks player A, then I cast a healing spell on player A}. You could also attempt to prevent the damage from being taken in the first place, by declaring \textit{if the troll attacks player A, then I cast the knockback charm on the troll}. The GM may ask for a check to determine if you are close enough and have fast enough reactions for your spell to interrupt the action, but if you pass this, then you may be able to save your friend.
+In doing so, move into a special temporary \imp{Reflex Order} which occurs after the main cycle has completed. All characters in this \imp{Reflex Order} use their same rolls as before to determine who must act first.
 
-You are only allowed a single conditional clause in your declaration, and if that conditional does not come to pass, then your character does not do anything: there is no \verb|if-then-else| in this game!
+However, because they hesitated to see what was happening, they have much less time to react than everyone else -- all their actions occur at a dice penalty. To determine the magnitude of this penalty, roll a DV 8 \imp{Perception (Alertness)} check. The magnitude of the dice penalty is:
+$$ M = 5 - \text{successes   (min 1)} $$
 
-If a seemingly unbreakable condition-chain arises (i.e. player A says he will perform X if player B does Y, but player B says he will only perform Y if player A does X), it is up to the GM to resolve the conditionals -- in such cases the answer is usually \textit{nothing happens}, but there may be examples where the GM feels it is more appropriate that the action-chain is triggered. 
+The players who delayed their action then announce their actions and resolve as normal. 
 
 
