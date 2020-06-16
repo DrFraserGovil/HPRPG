@@ -1,8 +1,9 @@
 %% DEFINITIONS
 
-\newcommand\abilityRow[2]
+\newcommand\abilityRow[3]
 {
-	\imp{#1} & \parbox[t]{6.8 cm}{\raggedright #2} \\
+	\index{Abilities!#3!#1}
+	\index{#1|see{Abilities, #3 (#1)}}\imp{#1} & \parbox[t]{6.8 cm}{\raggedright #2} \\
 }
 
 \newcommand\abilityTable[1]
@@ -21,13 +22,13 @@
 
 %% BEGIN CHAPTER
 
-\chapter{Capabilities}\label{C:Aspects}
+\chapter{Capabilities}\label{C:Aspects}\index{Capabilities}\index{Aspects}\index{Abilities}\index{Affinities}
 
-A character's ability to function in the world is defined by their capabilities across a wide number of areas. These capabilities are split into 3 categories: \key{Aspects}, \key{Abilities} and \key{Affinities}. 
+A character's ability to function in the world is defined by their \key{capabilities} across a wide number of areas. These \imp{capabilities} are split into 3 categories: \key{Aspects}, \key{Abilities} and \key{Affinities}. 
 
 The full description of the \key{Affinities} is left for the Magic section starting on page \pageref{C:Magic}, the discussion on \imp{Affinities} here is limited to their assignment at character creation. 
 
-\section{Capability Dots}
+\section{Capability Dots}\index{Dots}
 
 Each one of the 9 Aspects and myriad Abilities and Affinities represents a way for a character to interact with the world. How {\it well} they can do so depends on their competence in that field. 
 
@@ -35,7 +36,7 @@ To this end, each and every one of the Aspects and Affinities is represented by 
 
 Zero dots means that you are absolutely useless in the field, totally untrained and with no idea what you are doing. Five dots, on the other hand, represents the peak of human achievement: perhaps a dozen people in the entire world have 7 dots in a given area. Almost everyone finds themselves somewhere in the region of 1-4. 
 
-A character can never gain more than 5 dots as part of their normal life, however magic is a crazy and fickle thing: once in a blue moon you may temporarily find yourself with more than 7 dice allocated to a given capability as the result of a spell. This is a rare and wondrous event. Maybe you should sing a song. 
+A character can never gain more than 7 dots as part of their normal life, however magic is a crazy and fickle thing: once in a blue moon you may temporarily find yourself with more than 7 dice allocated to a given capability as the result of a spell or a magical item. This is a rare and wondrous event. Maybe you should sing a song. 
 
 You have already been granted dots in certain fields by your species and your Archetype: you also get to allocate a larger number of additional points, as described in this chapter. 
 
@@ -79,10 +80,11 @@ The 9 aspects therefore lie on a 3x3 grid:
 		\fourRow{Absorb}{Vitality}{Insight}{Perception}
 	\end{rndtable}
 \end{center}
+\index{Fitness}\index{Charm}\index{Intelligence}\index{Precision}\index{Deception}\index{Willpower}\index{Vitality}\index{Insight}\index{Perception}
 
 A full description of the Attributes, and the situations in which they are used, can be found on page \pageref{S:Proficiencies}.
 
-\subsection{Assigning Aspects}
+\subsection{Assigning Aspects}\index{Character Creation!Aspect Points}\index{Aspects!Assigning Aspects}
 
 Every character starts off with a baseline of a 1-dot rating in each of the 9 Aspects (though some \imp{Family} heritages can impose penaltis which reduce this to zero), as well as gaining a few bonuses 
 
@@ -91,7 +93,7 @@ On top of this baseline, you may then allocate an additional number of points in
 Each character gains 8 free dots which they can allocate to any of the 9 \imp{Aspects}, with the only limitation being that during this stage, you may not increase an \imp{Attributes}'s rating to more than four dots. 
 
 
-\section{Abilities}
+\section{Abilities}\index{Abilities}\index{Abilities!Innate}\index{Abilities!Practical}\index{Abilities!Learned}
 
 Although your \key{Aspects} inform the broad approach used to complete an action, it is your \key{Abilities} which determine exactly how you will go about doing so, narrowing down the specific kind of skills you will be using. 
 
@@ -103,27 +105,27 @@ The sections below elaborate on each of these skills, along with a brief summary
 
 
 
-\subsection{Innate}
+\subsection{Innate} \index{Abilities!Innate}
 
 An \key{Innate} ability is one which represents some aspect of a character's intrinsic social, mental or physical abilities. Though many people are born being particularly good in one or more of these areas (hence `innate'), they are still areas that can be worked on and improved. 
 
 
 \abilityTable
 {
-	\abilityRow{Alertness}{Rapidly detect and identify threats and miniscule clues.}
-	\abilityRow{Bravery}{Defy worry and terror and stare down foes much stronger than yourself}
-	\abilityRow{Conviction}{Understand your own reality, and the moral and intellectual positions you hold dear.}
-	\abilityRow{Eloquence}{Express yourself appropriately for the situation at hand}
-	\abilityRow{Intimidation}{Inflict terror into the hearts of your foes, assert authority and command people to follow your directions}
-	\abilityRow{Kindness}{Show your gentle side, making others feel loved and safe.}
-	\abilityRow{Kinship}{Befriend and control animals}
-	\abilityRow{Logic}{Solve puzzles, spot clever solutions and use reason to solve your problems.}
-	\abilityRow{Speed}{Get from A to B as quickly as possible}
-	\abilityRow{Strength}{Exert physical force to lift and move heavy objects and beings}
+	\abilityRow{Alertness}{Rapidly detect and identify threats and miniscule clues.}{Innate}
+	\abilityRow{Bravery}{Defy worry and terror and stare down foes much stronger than yourself}{Innate}
+	\abilityRow{Conviction}{Understand your own reality, and the moral and intellectual positions you hold dear.}{Innate}
+	\abilityRow{Eloquence}{Express yourself appropriately for the situation at hand}{Innate}
+	\abilityRow{Intimidation}{Inflict terror into the hearts of your foes, assert authority and command people to follow your directions}{Innate}
+	\abilityRow{Kindness}{Show your gentle side, making others feel loved and safe.}{Innate}
+	\abilityRow{Kinship}{Befriend and control animals}{Innate}
+	\abilityRow{Logic}{Solve puzzles, spot clever solutions and use reason to solve your problems.}{Innate}
+	\abilityRow{Speed}{Get from A to B as quickly as possible}{Innate}
+	\abilityRow{Strength}{Exert physical force to lift and move heavy objects and beings}{Innate}
 }
 
 
-\subsection{Practical}
+\subsection{Practical}\index{Abilities!Practical}
 
 A \key{Practical} ability is one which you have learned through hands-on experience, laborious training and practice. Though they rely on an Aspect to direct the task, they are separate from your intrinsic abbilities and often requires some special tool or equipment to complete. 
 
@@ -131,36 +133,36 @@ Generally, anyone can attempt to perform a practical action, even if they have n
  
 \abilityTable
 {
-	\abilityRow{Acrobatics}{Leap, flip, tumble and contort yourself}
-	\abilityRow{Brawl}{Punch, kick, bite and otherwise wrestle your way to dominance}
-	\abilityRow{Covert}{Use stealth and slight of hand to move and act without being spotted}
-	\abilityRow{Craft}{Tinker with devices, form armour and produce masterful artwork}
-	\abilityRow{Imbue}{Perform delicate acts of magical creation, mixing potions or enchanting items}
-	\abilityRow{Marksmanship}{Hit your target, either throwing objects, or using firearms}
-	\abilityRow{Performance}{Embody another character, either as a disuise or for theatrical purposes}
-	\abilityRow{Pilot}{Effectively handle and drive vehicles such as cars and broomsticks.}
-	\abilityRow{Skirmish}{Use blades, axes and other close-combat weapons effectively} 
-	\abilityRow{Survival}{Survive in the hostile environment of the wild}
+	\abilityRow{Acrobatics}{Leap, flip, tumble and contort yourself}{Practical}
+	\abilityRow{Brawl}{Punch, kick, bite and otherwise wrestle your way to dominance}{Practical}
+	\abilityRow{Covert}{Use stealth and slight of hand to move and act without being spotted}{Practical}
+	\abilityRow{Craft}{Tinker with devices, form armour and produce masterful artwork}{Practical}
+	\abilityRow{Imbue}{Perform delicate acts of magical creation, mixing potions or enchanting items}{Practical}
+	\abilityRow{Marksmanship}{Hit your target, either throwing objects, or using firearms}{Practical}
+	\abilityRow{Performance}{Embody another character, either as a disuise or for theatrical purposes}{Practical}
+	\abilityRow{Pilot}{Effectively handle and drive vehicles such as cars and broomsticks.}{Practical}
+	\abilityRow{Skirmish}{Use blades, axes and other close-combat weapons effectively}{Practical}
+	\abilityRow{Survival}{Survive in the hostile environment of the wild}{Practical}
 }
 
-\subsection{Knowledge}
+\subsection{Learned}\index{Abilities!Learned}
 
-A \key{Knowledge} ability is one which has been learned through intensive study, attending classes and days spent in the library. A knowledge ability can be used either to recall information, or to weave that information into another action. 
+A \key{Learned} ability is one which has been learned through intensive study, attending classes and days spent in the library. A knowledge ability can be used either to recall information, or to weave that information into another action. 
 
 It is generally impossible to use a knowledge action in which a character has zero experience: if the knowledge is not there, it cannot be used. There may be cases where you can appeal to some lower-level knowledge to try an Aspect-Only roll, but this is entirely at the discretion of the GM.
 	
 \abilityTable
 {
-	\abilityRow{Arcane}{Understand the effects and abilities of magic and other supernatural phenomena}
-	\abilityRow{General}{Small amounts of aggregate knowledge on a variety of topics}
-	\abilityRow{History}{Recall prominant names, places and events throughout history}
-	\abilityRow{Investigation}{Meta-knowledge: you know how to learn and uncover new information, by closely inspecting both books and the physical world}
-	\abilityRow{Medicine}{Understand the functioning of the humanoid body, and how to heal its ailments.}
-	\abilityRow{Muggle}{Understand the Muggle world, and know what's going on in the world of media, TV and celebrity}
-	\abilityRow{Nature}{Familiarity with the behaviour and life cycle of plants and beasts, both magical and mundane.}
-	\abilityRow{Science}{Understand the mundane science behind the natural world: physics, chemistry, biology and beyond} 
-	\abilityRow{Technology}{Comprehension of the goings-on in computers and other technologcal marvels}
-	\abilityRow{World}{Knowledge of the geography of the Earth, and the people in it on both a macro and a micro level}
+	\abilityRow{Arcane}{Understand the effects and abilities of magic and other supernatural phenomena}{Learned}
+	\abilityRow{General}{Small amounts of aggregate knowledge on a variety of topics}{Learned}
+	\abilityRow{History}{Recall prominant names, places and events throughout history}{Learned}
+	\abilityRow{Investigation}{Meta-knowledge: you know how to learn and uncover new information, by closely inspecting both books and the physical world}{Learned}
+	\abilityRow{Medicine}{Understand the functioning of the humanoid body, and how to heal its ailments.}{Learned}
+	\abilityRow{Muggle}{Understand the Muggle world, and know what's going on in the world of media, TV and celebrity}{Learned}
+	\abilityRow{Nature}{Familiarity with the behaviour and life cycle of plants and beasts, both magical and mundane.}{Learned}
+	\abilityRow{Science}{Understand the mundane science behind the natural world: physics, chemistry, biology and beyond} {Learned}
+	\abilityRow{Technology}{Comprehension of the goings-on in computers and other technologcal marvels}{Learned}
+	\abilityRow{World}{Knowledge of the geography of the Earth, and the people in it on both a macro and a micro level}{Learned}
 } 
 
 
@@ -171,7 +173,7 @@ In addition to the 3$\times$10 standard ability array, characters can gain acces
 This will most commonly arise from the choice of Archetype and Race: each Archetype grants a number of ``Special Actions'', which are manifest through three additional Abilities, and some Races also gain addiitonal abilities. These actions and the associated abilities are discussed in more detail in the relevant Archetypes and Races sections. 
 
 
-\subsubsection{Custom Abilities}
+\subsubsection{Custom Abilities}\index{Abilities!Custom}
 You may also work with the GM if you feel that a given character should have additional abilities because of their background and previous experiences. This is encouraged only within the limits that it keeps the game fun and interesting and is sufficiently differentiated from the existing abilities.
 
 It would be perfectly acceptable to give a character from a circus a special ``Juggle" or ``Tightrope" ability, as this opens up alternative and interesting actions for them to take without drastically altering the balance of the game. A super-dedicated warrior asking for an insta-kill move, or a scholar claiming to have access to an infinite library, however, would drastically alter the flow of the game without necessarily making it more fun and interesting. 
@@ -179,7 +181,7 @@ It would be perfectly acceptable to give a character from a circus a special ``J
 You are not required to come up with an additional ability, but if you have a fun idea, you should ask your GM if this is OK. As always, they have a veto, but may supply an alternative idea which works better in their world. 
 
 
-\subsection{Major \& Minor Abilities}
+\subsection{Major \& Minor Abilities}\index{Abilities!Major \& Minor Abilities}
 
 Of course, not every person uses every possible ability - those raised in a Wizarding household would probably never even consider using the \imp{science}, or \imp{technology} knowledge abilities, and a weedy scholar is unlikely to ever shoot a gun, rendering the \imp{Marksman} skill somewhat useless for them. 
 
@@ -188,9 +190,9 @@ This distinction is made through the \key{Major} and \key{Minor Abilities}. The 
 You have 5 \imp{Major Abilities} associated with each of \imp{Innate}, \imp{Practical} and \imp{Knowledge}. These are chosen at character creation, but can be swapped out later. 
 
 The character sheet contains 6 slots on the front for your 5 chosen major abilities in each category (plus the one from your Archetype), with a further five slots on the rear for you to record your minor abilities. 
-\subsection{Assigning Abilities}
 
 
+\subsection{Assigning Abilities}\index{Character Creation!Ability Points}\index{Abilities!Assigning Abilities}
 
 
 As with the fundamental \imp{Attributes}, a character typically gets a base-level of abilities from a combination of their \imp{Abilities} from their \key{Family}, \key{Personality} and \key{Archetype}.
@@ -200,7 +202,7 @@ On top of this, each character may allocate 18 additional dots to their \imp{maj
 These dots may be allocated freely amongst the \imp{Major Abilities} (or more rarely, extending into the \imp{Minor Abilities}) in the chosen category, with the exception that during this stage, you may not increase an ability's rating to more than 4 dots. 
 
 
-\section{Affinities \& The Wandchoosing} \label{S:Wandchoosing}
+\section{Affinities \& The Wandchoosing} \label{S:Wandchoosing}\index{Character Creation!Affinity Points}\index{Wandchoosing|see{Assigning Affinities}}\index{Affinities!Assigning Affinities}
 
 The individual descriptions of \imp{Affinities} are discussed more on page \pageref{S:DiscDescs}, for now it suffices to note that they function almost identically to \imp{Abilities}, except they focus on a spellcaster's ability to understand and cast magical spells. 
 
@@ -214,7 +216,7 @@ The remainder of your affinities are determined by the most important coming-of-
 
 When creating a mage, the inherent \imp{Affinities} that they possess is therefore determined by the kind of wand that they wield. 
 
-\subsection{Choosing a Wand}
+\subsection{Choosing a Wand}\index{Wand}
 
 A wand has 7 principle components which define it - the \key{Wood} that it is constructed from, the magical \key{Core} that lies at the centre of it, the \key{Length} as well as the overall \key{Shape}, \key{Flexibility}, \key{Finish} and the presence of any \key{Decorations}. 
 
@@ -222,7 +224,7 @@ At character creation, you may choose a combination of these components, represe
 
 The net result of this process is that each witch and wizard starts off with two disicplines with a two-dot rating, and 4 with a 1-dot rating. 
 
-\subsubsection{\key{Wood} and \key{Core}}
+\subsubsection{\key{Wood} and \key{Core}}\index{Wand!Properties}
 
 The primary component of a wand is the \key{wood} from which it is fashioned, and the magical \key{Core} which lies at its heart. 
 

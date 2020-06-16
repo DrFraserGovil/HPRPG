@@ -12,7 +12,20 @@ On top of this base level of competence, you may then add on your ability in a c
 }
 \subsection{Aspect Descriptions}
 
-\subsubsection{Fitness}
+\newcommand\indexLinker[1]{\index{Aspects!#1 Aspect|see{#1}}}
+\indexLinker{Fitness}
+\indexLinker{Precision}
+\indexLinker{Vitality}
+\indexLinker{Charm}
+\indexLinker{Deception}
+\indexLinker{Insight}
+\indexLinker{Intelligence}
+\indexLinker{Willpower}
+\indexLinker{Perception}
+
+\newcommand\aspectHead[1]{\subsubsection{#1} \index{#1}}
+\newcommand\abilityHead[2]{\subsubsection{#1}\index{Abilities!#2!#1}}
+\aspectHead{Fitness}
 
 \key{Fitness} is the base aspect for any action which requires a character to exert themselves physically: to run and jump, or to lift heavy objects. 
 
@@ -20,7 +33,15 @@ It is also used in combat whenever using a weapon which relies on speed or stren
 
 Some more inventive uses of \imp{Fitness} could include pairing it with \imp{Intimidation}, if you are trying to physically intimidate somebody, or perhaps a \imp{Fitness (Survival)} or \imp{Fitness (World)} could also be used to flee from a foe, using your knowledge of the local area to escape from their sight. An acrobat or a trickster could make great use of a \imp{Fitness (Performance)} or \imp{Fitness (Acrobatics)}, either to please an audience or to create a distraction. 
 
-\subsubsection{Precision}
+\index{Abilities!Practical!Brawl}
+\index{Abilities!Practical!Skirmish}
+\index{Abilities!Innate!Intimidation}
+\index{Abilities!Practical!Survival}
+\index{Abilities!Learned!World}
+\index{Abilities!Practical!Acrobatics}
+\index{Abilities!Practical!Performance}
+
+\aspectHead{Precision}
 
 \key{Precision} is the base aspect for any action in which accuracy and a steady hand is key: picking locks, painting a glorious fresco or assembling a delicate machine. 
 
@@ -28,15 +49,19 @@ Some more inventive uses of \imp{Fitness} could include pairing it with \imp{Int
 
 Those who prefer not to be seen would use a \imp{Precision (Covert)} action to sneak around unseen, or to delicately pick a lock. 
 
+\index{Abilities!Practical!Marksmanship}
+\index{Abilities!Practical!Imbuing}
+\index{Abilities!Practical!Crafting}
+\index{Abilities!Practical!Covert}
 
-
-\subsubsection{Vitality}
+\aspectHead{Vitality}
 
 \key{Vitality} is the base aspect for any action taken whilst under physical stress, or in which the health of a character is called into question. As a measure of the character's general health levels, Vitality therefore represents their ability to stave off physical and medical impediments. 
 
 When under extreme physical duress, at the limits of your stamina, you can often substitute \imp{Vitality} for a number of other \imp{Aspects}. This would probably have a lesser effect than usual, but when the chips are down, you don't have much of a choice.  
 
-\subsubsection{Charm} 
+
+\aspectHead{Charm} 
 
 Any social interaction which requires persasion, charisma and vivacity to try and convince another to part with something will use \key{Charm} as its base aspect. 
 
@@ -44,8 +69,10 @@ For honest folk, it therefore forms the basis of most social interactions, frequ
 
 Casting magic spells which require an appeal to some other, higher power will also find \imp{Charm} to be a valuable source of magical strength. 
 
+\index{Abilities!Innate!Eloquence}
+\index{Abilities!Learned!Science}
 
-\subsubsection{Deception}
+\aspectHead{Deception}
 
 When subterfuge and trickery are called for, look no further than \key{Deception}. Lies, half-truths, as well as the ability to convincingly embody another character fall into the domain of \imp{Deception}. 
 
@@ -53,8 +80,10 @@ Like \imp{Charm} deception is often paired with \imp{Eloquence} as well as vario
 
 Some magic, such as illusions, require the caster to mislead their foes and so often use \imp{Deception} as their basis. 
 
+\index{Abilities!Innate!Eloquence}
+\index{Abilities!Practical!Performance}
 
-\subsubsection{Insight}
+\aspectHead{Insight}
 
 \key{Insight} is called for as a base aspect whenever a character is trying to ascertain the true meaning behind another character's words or actions. It represents the emotional intelligence of a character, and their ability to peer beyond the facade being presented to the world. 
 
@@ -62,7 +91,12 @@ A benevolent person would pair \imp{Insight} with \imp{Kindness} or \imp{Eloquen
 
 Some healing magics rely heavily on the caster being able to understand what ails their patient, and \imp{Insight} can be used to great effect.  
 
-\subsubsection{Intelligence}
+\index{Abilities!Innate!Kindness}
+\index{Abilities!Innate!Eloquence}
+\index{Abilities!Innate!Intimidation}
+\index{Abilities!Innate!Alertness}
+
+\aspectHead{Intelligence}
 
 Whenever sheer mental processing power is needed, \key{Intelligence} is appropriate. Particularly complex tasks - including certain spells - are well suited to an Intelligence check.
 
@@ -70,7 +104,9 @@ Whenever sheer mental processing power is needed, \key{Intelligence} is appropri
 
 In a pinch, a character can also use their \imp{Intelligence} as a substitute for many other activities, but in doing so they are probably relying on theoretical knowledge, rather than practical experience, so the risk of failure can increase significantly. 
 
-\subsubsection{Willpower}
+\index{Abilities!Innate!Logic}
+
+\aspectHead{Willpower}
 
 \key{Willpower} is the ability to manipulate your own mind, as well as the ability to project change onto others. 
 
@@ -80,16 +116,22 @@ Casting hexes and spells which have the intent to cause harm to others also requ
 
 Whenever sheer force of will is needed, \imp{Willpower} will work as a great aspect. 
 
+\index{Abilities!Innate!Conviction}
+\index{Abilities!Innate!Bravery}
+\index{Abilities!Innate!Strength}
 
 
-\subsubsection{Perception}
+\aspectHead{Perception}
 
 The ability to absorb information, through all 5 senses is governed by \key{Perception}. Perception is vital in the race to defeat foes, else a character risks being ambushed. Perception can also be used whenever great attention to detail is needed, allowing the detection of even the tiniest flaw.  
 
 \imp{Perception}'s greatest ally is \imp{Alertness}, the combination of the two allowing a character to recognise threats from a distance. \imp{Perception (Investigation)} checks are also a good combination when combing through a large pile of books, or searching for a hidden groove in the floor. A careful flier might also prefer a \imp{Perception (Pilot)} check in order to fly their broomstick safely, avoiding potential dangers. . 
 
+\index{Abilities!Innate!Alertness}
+\index{Abilities!Learned!Investigation}
+\index{Abilities!Practical!Pilot}
 
-\section{Ability Descriptions}
+\section{Ability Descriptions}\index{Abilities}
 
 \subsection{Innate Abilities}
 
@@ -97,7 +139,7 @@ An \key{Innate} ability is one which represents some aspect of a character's int
 
 As these mostly represent extensions of you fundamental aspects to individual fields, having 0 dots in an Innate ability is not a barrier to attempting the activity, though you must rely wholly on your base Aspect to complete the task. 
 
-\subsubsection{Alertness}
+\abilityHead{Alertness}{Innate}
 
 \key{Alertness} is your ability to detect, process and notice external threats. It is their continual, total awareness of their external surroundings. A person with a high Alertness is very difficult to surprise or ambush, whilst conversly, those with a low \imp{Alertness} often find themselves falling into traps.
 
@@ -123,7 +165,7 @@ Therefore, if a character is attempting to remain hidden, the GM may use your {\
 For example, Bruce, Jane and Simon are searching through the Forbidden Forest. Jane is the most alert, with 3 dots in Perception and 4 in Alertness, giving her a passive perception of 7. The GM then rolls for the Acromantula sneaking around in the canopy above them, getting \imp{2-3-5-6-8-10}, which scores two successes, an \imp{Okay} success. Jane would perhaps hear a small rustling, or get a feeling she is being watched but nothing else. 
 
 
-\subsubsection{Bravery}
+\abilityHead{Bravery}{Innate}
 
 The wizarding world is full of terrifying monsters and evil mages who would do you harm. \key{Bravery} is the ability to resist the urge to flee in terror, and instead stare down beings far more terrifying and powerful than yourself, without batting an eye. 
 
@@ -139,7 +181,7 @@ The wizarding world is full of terrifying monsters and evil mages who would do y
 {You are close to completely mastering your fear - you can stare death in the face and barely flinch}
 {You fear nothing. Monsters are the ones who fear {\it you} }
 
-\subsubsection{Conviction}
+\abilityHead{Conviction}{Innate}
 
 Magic can often make you doubt your own reality, conjuring impossible images in your mind, or compelling you to take actions. Politicians and leaders throughout history have also used more mundane methods to achieve the same goals, using cunning words and rhetorical tricks to convince you to take immoral and illegal actions. \key{Conviction} allows you to resist all of these, by grounding and cemeting your understanding of reality, and providing you with the moral strength to understand right from wrong. 
 
@@ -156,7 +198,7 @@ Often paired with \imp{Willpower}, allowing you to resist the effects of mind-al
 {Your conviction is iron, and your reality is concrete. You know your world, and your place within it - nothing can sway you from your beliefs}
 
 
-\subsubsection{Eloquence}
+\abilityHead{Eloquence}{Innate}
 \key{Eloquence} allows you to choose the perfect choice of words for a situation, whether it is to \imp{Charm} or \imp{Decieve} someone using their lingo, or to choose the right words to navigate a delicate emotional situation, using \imp{Insight} as your guide. You might also use \imp{Eloquence} when trying to find the correct words to describe to others a complex idea you have figured out using your phenomenal \imp{intelligence}.
 
 
@@ -170,7 +212,7 @@ Often paired with \imp{Willpower}, allowing you to resist the effects of mind-al
 {You are a great orator, able to move people to tears with your delicate choice of words, or show just the right amount of deference in your tone.}
 {You always have the perfect words, and speak to everyone in their own language, giving them exactly what they need in order to understand your intent. Your words can alter the course of entire nations for decades to come.}
 
-\subsubsection{Intimidation}
+\abilityHead{Intimidation}{Innate}
 
 \key{Intimidation} is called for whenever you want to exude authority, give commands, compel swift obediance and even imbue your foes with terror. 
 
@@ -187,7 +229,7 @@ The skills combined with intimidation depend on how you are going about exerting
 {You exude authority from every pore, and those around you snap into line as your very aura instils terror into their hearts}
 
 
-\subsubsection{Kindness}
+\abilityHead{Kindness}{Innate}
 
 With \key{Kindness} you exude a calming aura, and have the ability to show affection. You use \imp{kindness} to interact with those you truly care about, using \imp{Charm} or \imp{Insight} to get them on your side. If you're merely pretending to be kind to get something, perhaps \imp{Deception (Kindness)} would be more appropriate. 
 
@@ -202,7 +244,7 @@ With \key{Kindness} you exude a calming aura, and have the ability to show affec
 {The ultimate benevolent soul, you exude kindness and decency in an aura. People become happier just being in your presence.}
 
 
-\subsubsection{Kinship}
+\abilityHead{Kinship}{Innate}
 
 A character with a high \key{Kindship} feels a close connection to animals and other living beings, able to gain their trust, train them, and with sufficient kindness and patience, get them to listen to you. 
 
@@ -218,7 +260,7 @@ Most commonly paired with \imp{Charm}, though someone who has extensively studie
 {Ferocious beasts have to take a moment before they attack you, though you probably can't stop them if they're hungry.}
 {Newt Scamander would be proud: animals love you, even those normally considered utterly untrainable.}
 
-\subsubsection{Logic}
+\abilityHead{Logic}{Innate}
 
 \key{Logic} is a character's ability to exhibit inference and deduction - working out how ideas are linked and follow on from one another. It allows a character to solve puzzles or deduce motives based on a disparate set of clues. It is very often paired with raw \imp{Intelligence}, though a \imp{Charm (Logic)} check could be used to convince somebody that a given course of action is the only logical choice. 
 
@@ -232,7 +274,7 @@ Most commonly paired with \imp{Charm}, though someone who has extensively studie
 {Logician - you can see the relevance of seemingly insignificant clues, even if you can't quite fit them into the big picture yet}
 {Sherlockian: you can assemble the bigger picture from the most fragmented and disparate of clues. Your powers of deduction are unrivalled.}
 
-\subsubsection{Speed}
+\abilityHead{Speed}{Innate}
 
 \key{Speed} allows you to move rapidly, when coupled with \imp{Fitness} it allows you to outrun your foes and performing running leaps, and with \imp{Precision} it allows you to dodge out of the way of attacks. 
 
@@ -249,7 +291,7 @@ Each level of \imp{Speed} also allows you to move 1m further in each round of co
  {Usain Bolt would be proud, you can sprint with the best of the best}
 
 
-\subsubsection{Strength}
+\abilityHead{Strength}{Innate}
 
 \key{Strength} is needed whenever you must exert immense physical force: moving or lifting heavy objects, or performing physical acts which require explosive bursts of power, such as a standing leap. 
 
@@ -270,48 +312,48 @@ Each level of \imp{Speed} also allows you to move 1m further in each round of co
 
 A \key{Practical} ability is one which you have learned through hands-on experience, laborious training and practice. Though they rely on an Aspect to direct the task, they are separate from your intrinsic abbilities and often requires some special tool or equipment to complete. 
 
-\subsubsection{Acrobatics}
+\abilityHead{Acrobatics}{Practical} 
 
-\subsubsection{Brawl}
+\abilityHead{Brawl}{Practical} 
 
-\subsubsection{Covert}
+\abilityHead{Covert}{Practical} 
 
-\subsubsection{Craft}
+\abilityHead{Craft}{Practical} 
 
-\subsubsection{Imbue}
+\abilityHead{Imbue}{Practical} 
 
-\subsubsection{Marksmanship}
+\abilityHead{Marksmanship}{Practical} 
 
-\subsubsection{Performance}
+\abilityHead{Performance}{Practical} 
 
-\subsubsection{Pilot}
+\abilityHead{Pilot}{Practical} 
 
-\subsubsection{Skirmish}
+\abilityHead{Skirmish}{Practical} 
 
-\subsubsection{Survival}
+\abilityHead{Survival}{Practical} 
 
-\subsection{Knowledge Abilities}
+\subsection{Knowledge Abilities}{Practical} 
 
 
 A \key{Knowledge} ability is one which has been learned through intensive study, attending classes and days spent in the library. A knowledge ability can be used either to recall information, or to weave that information into another action. 
 	
 
-\subsubsection{Arcane}
+\abilityHead{Arcane}{Learned}
 
-\subsubsection{General}
+\abilityHead{General}{Learned}
 
-\subsubsection{History}
+\abilityHead{History}{Learned}
 
-\subsubsection{Investigation}
+\abilityHead{Investigation}{Learned}
 
-\subsubsection{Medicine}
+\abilityHead{Medicine}{Learned}
 
-\subsubsection{Muggle}
+\abilityHead{Muggle}{Learned}
 
-\subsubsection{Nature}
+\abilityHead{Nature}{Learned}
 
-\subsubsection{Science}
+\abilityHead{Science}{Learned}
 
-\subsubsection{Technology}
+\abilityHead{Technology}{Learned}
 
-\subsubsection{World}
+\abilityHead{World}{Learned}
