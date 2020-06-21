@@ -1,43 +1,28 @@
-function v = success(r,n,dv,cat,die)
-        
-    if nargin < 4
-        cat = 1;
+function v = success(nDice,dv)
+    catastrophe = max(1,floor(dv/3));
+    NTries = 300000;
+    rolls = randi([1,12],[NTries,nDice]);
+    
+    fails = sum(rolls <= catastrophe,2);
+    successes = sum(rolls >= dv,2);
+    miracles = sum(rolls == 12,2);
+
+ 
+    modifiedFails = max(0,fails - miracles);
+    
+   
+   
+    net = successes - fails;
+    
+
+    catFails = (net < 0 & miracles == 0);
+    net(~catFails & net < 0) = 0;
+    
+    
+    distVector = zeros(1,nDice + 2);
+    distVector(1) = sum(catFails);
+    for i = 0:nDice
+        distVector(i+2) = sum(net == i);
     end
-    if nargin < 5
-        die = 12;
-    end
-
-    if length(r) > 1
-        for i = 1:length(r)
-            v(i) = success(r(i),n,dv,cat,die);
-        end
-    else
-
-
-        if r < 0
-           % disp("Negative number detected: calculating catastrophe probability")
-            v = 1;
-            for j = 0:n
-                v = v - success(j,n,dv,cat,die);
-            end
-        else
-
-
-            X = die;
-            p = (X + 1 - dv)/12;
-            pCritFail = cat/(dv - 1);
-            j = 0:n-r;
-
-
-            successes = r + j;
-            spareDice = n - r- j;
-            requiredCrits = j;
-
-
-            block1 = binopdf(successes,n,p);
-            block2 = binopdf(requiredCrits,spareDice,pCritFail);
-
-            v = sum(block1.*block2);
-        end
-    end
+    v = distVector/NTries;
 end

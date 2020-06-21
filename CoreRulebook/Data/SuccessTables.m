@@ -1,7 +1,6 @@
 Ns = 1:14;
-DVs = 3:1:12;
+DVs = 3:1:11;
 cats = 2:3;
-successes = -1:7;
 
 M = [];
 i = 0;
@@ -9,39 +8,61 @@ t = "";
 
 for DV = DVs
     t = t + "\\subsection{Difficulty = " + num2str(DV) + "}\n";
-    for cat = cats
-        t = t+  "\\subsubsection{Catastrophe Range = 1-" + num2str(cat) + "}\n";
+    cat = floor(DV/2);
+   % for cat = cats
+   %     t = t+  "\\subsubsection{Catastrophe Range = 1-" + num2str(cat) + "}\n";
         
-    t = t + "\\probTable{\n";
-for N = Ns
-    i = i + 1;
-    j = 0;
-    t = t + "\\probRow";
-    for ns = successes
-        if ns > N
-            t = t + "{-}";
-        else
-        j = j + 1;
-        
-        if j < length(successes)
-            value = success(ns,N,DV,cat);
-        else
-            value = 0;
-            for np = ns:N
-                value = value + success(np,N,DV,cat);
+        t = t + "\\probTable{\n";
+        for N = Ns
+            i = i + 1;
+            j = 0;
+            t = t + "\\probRow";
+            vector = success(N,DV);
+            
+            pFail = vector(1) + vector(2);
+           
+            pSuccess = 1 - pFail;
+            mean = sum([-1:N].*vector);
+            q = -1;
+            t = t + "{";
+            for w = -1:7
+                if w > N
+                    t = t + "{-}";
+                else
+                    j = j + 1;
+                    
+                    if w < 7
+                        value = vector(j);
+                        
+                    else
+                        value = 0;
+                        for k = 7:length(vector)
+                            value = value + vector(k);
+                        end
+                    end
+                    
+                   
+                    q = q + 1;
+                    if value > 1e-3
+                        text = num2str( round(value*100,2,'Significant'));
+                    else
+                        text = "$<$0.1";
+                    end
+                    t = t + "{" + text + "}";
+                end
             end
+            t = t + "}";
+            t = t + "{" + num2str( round(pFail*100,2,'Significant')) + "}";
+            t = t + "{" + num2str( round(pSuccess*100,2,'Significant')) + "}";
+            
+            if mean > 0
+                t = t + "{" + num2str( round(mean,2,'Significant')) + "}";
+            else
+                t = t + "{Catastrophe}";
+            end
+            t = t + "\n";
         end
-        if value > 1e-4
-        text = num2str( round(value*100,2,'Significant'));
-        else
-            text = "$<$0.1";
-        end
-        t = t + "{" + text + "}"; 
-        end
-    end
-    t = t + "\n";
-end
-t = t + "} \n\n";
-    end
+        t = t + "} \n\n";
+    %end
 end
 fprintf(t)
