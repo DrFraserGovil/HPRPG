@@ -33,53 +33,32 @@ All of the \imp{base runes} fall into one of three categories: the \key{Control 
 
 
 
-
-\def\durText{}
-
-\def\esoText{The \key{Esoteric Runes} specifies the kind of action that the enchantment performs \minus{} does it create something new? Alter what is already present?  Does it give the user new abilities, or does it protect them from harm?}
-
-\def\subText{The Subject \imp{runes} control what the {\it Action} acts upon. Does the `creation' rune form a blast of fire or a jet of water? }
-
 \newcommand\runeRow[3]
 {
-\rune{#2}	&#1	&		\small #3
-\\
+	\rune{#2}	&	#1	&		\small #3 \\
+}
+\newcommand\esoRow[3]
+{
+	\runeRow{#1}{#2}{Used to contain magic associated with the \key{#3} discipline.}
 }
 
 \newcommand\runeList[3]
 {
-\subsection{#1}
+	\subsection{#1}
 
-#2
+	#2
 
-\begin{center}
-
-\begin{rndtable}{c l p {6 cm} }
-\bf Rune	&	\bf Name	&	\bf Description
-\\
-#3
-\end{rndtable}
-\end{center}
+	\begin{center}
+		\begin{rndtable}{c l p {6 cm} }
+			\bf Rune	&	\bf Name	&	\bf Description
+			\\
+			
+			#3
+		\end{rndtable}
+	\end{center}
 }
 
 
-\newcommand\runeLevel[3]
-{
-
-{\subsubsection{#1}
-
-#2
-
-\small
-\begin{center}
-\begin{rndtable}{c c c}
-\bf Duration	&	\bf	Action	&	\bf Subject
-\\
-#3
-\end{rndtable}
-\end{center}
-}
-}
 
 
 
@@ -89,15 +68,15 @@ All of the \imp{base runes} fall into one of three categories: the \key{Control 
 	The way in which the magical item is used and controlled is determined by the \key{Control Runes} - does the item respond to words and phrases, the approach of a foe, or does it activate when worn?  
 }
 {
-	\runeRow{fabulum}{\fabulum}{Used for triggers that rely on an arcane or magical action occuring, such as a spell being cast upon them, or placed upon an enchanted item.}
+	%\runeRow{fabulum}{\fabulum}{Used for triggers that rely on an arcane or magical action occuring, such as a spell being cast upon them, or placed upon an enchanted item.}
 	
-	\runeRow{iuxta}{\iuxta}{Induces a field which can detect the proximity of specified being or objects - useful for triggering effects when an item is approached or worn.}
+	\runeRow{iuxta}{a}{Induces a field which can detect the proximity of specified being or objects - useful for triggering effects when an item is approached or worn.}
 	
 	\runeRow{mentis}{\mentis}{Allows a wielder to control the effects of the item with their mind.}
 	
 	\runeRow{oculum}{\oculum}{Triggers the enchantment when a visual trigger occurs, such as a particular image appearing, or light landing on it in a specific fashion.}
 	
-	\runeRow{salto}{\salto}{Useful for enchantments that should trigger when a particular 
+	\runeRow{salto}{\salto}{Useful for enchantments that should trigger when a particular }
 } 
 
 \runeList{Duration}
@@ -117,7 +96,17 @@ All of the \imp{base runes} fall into one of three categories: the \key{Control 
 	The \key{Esoteric Runes} shape the nexus to accept magic from a certain discipline, and therefore determines the category of magic the enchantment is capable of reproducing.
 }
 {
-	\runeRow{aevum}{\aevum}{Used to contain magic from the \imp{Temporal} displine}
+	\esoRow{aevum}{\aevum}{Temporal}
+	
+	\esoRow{animus}{\animus}{Cerebral}
+	
+	\esoRow{basiorum}{\basiorum}{Hexes}
+	
+	\esoRow{canto}{\canto}{Bewitchment}
+	
+	\esoRow{clypus}{\clypus}{Warding}
+	
+	\esoRow{
 } 
 
 
