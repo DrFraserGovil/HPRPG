@@ -87,7 +87,7 @@ Magic is invoked through the casting of a magic spell.
 	\summaryRow{Conjuration}{Banish, Bind, Forge, Manifest}
 	\summaryRow{Curse}{Corrupt, Disable, Disarm, Infect}
 	\summaryRow{Elemental}{Burn, Excavate, Freeze, Gust, Illuminate, Shock, Soak}
-	\summaryRow{Healing}{Heal, Purify, Restore, Sustain}
+	\summaryRow{Hermetics}{Heal, Project, Purify, Restore, Sustain}
 	\summaryRow{Hex}{Disintegrate, Force, Jinx, Strike}
 	\summaryRow{Kinesis}{Halt, Move, Repair, Seek, Teleport}
 	\summaryRow{Necromancy}{Blight, Defile, Drain, Kill, Raise}
@@ -157,11 +157,11 @@ Transmutation spells typically last 1 hour when cast on inanimate objects\comma{
 
 	\spell{name = Bind, incantation = Impedimentia, book = Conjuring and Summoning for the Experienced Witch, description = Constrain a target in both a physical or metaphysical sense: summon ropes to ensnare them\comma{} or bind a summoned creature to  this reality and to your will., haszero=0, hasone=1, one=\spExample{Slow}{Summon impediments into the path of a target\comma{} slowing them to half speed.}, hastwo=1, two=\spExample{Hold}{Summon ropes to hold a person in place\comma{} immobilising them.}, hasthree=0, hasfour=0, hasfive=0, hassix=0, hasseven=1, seven=\spExample{Dimensional Binding}{Bind a summoned creature or object to this plane of existence – permanently tying them to your current plane of existence. This spell ends only when dispelled\comma{} or when the creature dies.}, hasExamples = 1}
 
-	\spell{name = Forge, incantation = Sortia, book = Summoning Your Desires, description = Create an entirely new object\comma{} either by assembling existing materials\comma{} or by simply willing it into existence. 
+	\spell{name = Forge, incantation = Confabricor, book = Summoning Your Desires, description = Create an entirely new object\comma{} either by assembling existing materials\comma{} or by simply willing it into existence. 
 
 Summoned objects are always lesser in quality than those that they attempt to mimic\comma{} and typically disintegrate into dust after mere minutes to hours., haszero=0, hasone=1, one=\spExample{Simple Object}{Summon small\comma{} simple\comma{} and crude objects – such as a cup or a quill.}, hastwo=1, two=\spExample{Larger objects}{Summon larger objects\comma{} such as tables or chairs}, hasthree=1, three=\spExample{Summon Weapon}{Summon an object with enough structural integratity to be used as a weapon.}, hasfour=1, four=\spExample{Dimensional Tether}{Bind a \imp{Manifested} being to you for a longer period of time.}, hasfive=0, hassix=0, hasseven=0, hasExamples = 1}
 
-	\spell{name = Manifest, incantation = Confabricor, book = The Demons Beyond the Veil, description = Conjure a living being out of nothing\comma{} fabricating them from raw magic\comma{} or pulling an existing creature from some other plane of existence. 
+	\spell{name = Manifest, incantation = Sortia, book = The Demons Beyond the Veil, description = Conjure a living being out of nothing\comma{} fabricating them from raw magic\comma{} or pulling an existing creature from some other plane of existence. 
 
 Summoned beings are generally created with a positive attitude towards you\comma{} and will obey your commands (to a limited extent)\comma{} as if they were a trained animal or friendly person. Summonings generally disintegrate within a few minutes unless bolstered by a \imp{Bind}., haszero=0, hasone=0, hastwo=0, hasthree=0, hasfour=0, hasfive=0, hassix=0, hasseven=0, hasExamples = 0}
 
@@ -219,11 +219,13 @@ Summoned beings are generally created with a positive attitude towards you\comma
 }
 
 
-\discipline{Healing}
+\discipline{Hermetics}
 {
 	\spell{name = Heal, incantation = Enervate, book = Cures\comma{} Cantrips and Coughs, description = Restore life to a target\comma{} causing their wounds to knit shut and repair broken bones. 
 
 A basic \imp{Heal} spell removes one level of harm for each point of \imp{Power}., haszero=0, hasone=0, hastwo=0, hasthree=1, three=\spExample{Knit Bones}{Cause broken bones to repair themselves\comma{} healing larger amounts of harm.}, hasfour=0, hasfive=0, hassix=1, six=\spExample{Regeneration}{Regenerate lost limbs\comma{} regrow bones\comma{} and otherwise vastly accelerate the natural healing process.}, hasseven=0, hasExamples = 1}
+
+	\spell{name = Project, incantation = Expecto Patronum, book = Manipulating the Forces of Life, description = Project powerful postivie energies into the world\comma{} known as a `patronus’\comma{} powered by powerful positive memories. Beings which are an antithesis to life\comma{} such as dementors and demons\comma{} find this energy repulsive and harmful., haszero=1, zero=\spExample{Tainted Taste}{The weakest form of patronus\comma{} offers little protection\comma{} but makes you `taste’ worse to foul beings\comma{} and hence a less tempting target.}, hasone=0, hastwo=0, hasthree=0, hasfour=1, four=\spExample{Corporeal Patronus}{Summon a patronus which takes the form of you `spirit animal’. This being guides and protects you whilst the spell lasts.}, hasfive=0, hassix=0, hasseven=0, hasExamples = 1}
 
 	\spell{name = Purify, incantation = Largitus, book = Purity of Body, description = Banish rot and decay\comma{} cause evil magics to burn away and defy attempts to defile living beings with necromantic magic., haszero=1, zero=\spExample{Preserve}{Prevent food from rotting.}, hasone=0, hastwo=1, two=\spExample{Basic Countercurse}{Remove the effects of an active curse.}, hasthree=0, hasfour=0, hasfive=0, hassix=0, hasseven=1, seven=\spExample{Purify the Defiled}{Target a large number of undead creatures and dismantle the foul magic holding them together.}, hasExamples = 1}
 
@@ -295,7 +297,7 @@ If a \imp{Kill} spell hits a target with at least a power rating of \imp{4} rema
 
 	\spell{name = Eclipse, incantation = Umbra, book = An A\minus{}Z of Spooky Spells, description = Manipulate and control darkness and shadows\comma{} extinguishing light or hurling bolts of dark energy towards your foes., haszero=0, hasone=0, hastwo=0, hasthree=0, hasfour=0, hasfive=0, hassix=0, hasseven=0, hasExamples = 0}
 
-	\spell{name = Supplicate, incantation = Conpreco Estra, book = Living in Shadow: The Memoirs of an Occultist, description = Prostrate yourself before a mighty\comma{} otherworldly power\comma{} and beg them for your assistance. Learn hidden and unknowable secrets\comma{} gain mighty boons\comma{} or draw down their wrath on your foes., haszero=0, hasone=0, hastwo=0, hasthree=0, hasfour=0, hasfive=0, hassix=0, hasseven=0, hasExamples = 0}
+	\spell{name = Supplicate, incantation = Conpreco Estra, book = Living in Shadow: The Memoirs of an Occultist, description = Prostrate yourself before a mighty\comma{} otherworldly power\comma{} and beg them for your assistance. Learn hidden and unknowable secrets\comma{} gain mighty boons\comma{} or draw down their wrath on your foes., haszero=0, hasone=0, hastwo=0, hasthree=1, three=\spExample{Deal with the Devil}{Offer something in return for a powerful boon\comma{} such as knowledge\comma{} or temporary use of an unknown spell.}, hasfour=0, hasfive=0, hassix=0, hasseven=0, hasExamples = 1}
 
 
 }
