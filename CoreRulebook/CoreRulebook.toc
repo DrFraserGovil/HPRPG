@@ -266,9 +266,7 @@
 \contentsline {subsection}{\numberline {13.1.6}Imbuing}{48}{subsection.13.1.6}
 \contentsline {subsubsection}{Enchantment Success}{48}{subsubsection*.158}
 \contentsline {subsubsection}{Enchantment Failure}{48}{subsubsection*.159}
-\contentsline {subsubsection}{The Limits of Enchanting}{49}{subsubsection*.160}
-\contentsline {subsubsection}{Multiple Effects}{49}{subsubsection*.161}
-\contentsline {subsubsection}{Some Examples}{49}{subsubsection*.162}
+\contentsline {subsection}{\numberline {13.1.7}Some Examples}{48}{subsection.13.1.7}
 \contentsline {part}{IV\hspace {1em}Magic}{50}{part.4}
 \contentsline {chapter}{\numberline {14}Understanding Magic}{51}{chapter.14}
 \contentsline {section}{\numberline {14.1}Schools, Disciplines \& \textsc {Affinities}}{51}{section.14.1}
@@ -284,25 +282,25 @@
 \contentsline {chapter}{\numberline {15}Casting Spells}{53}{chapter.15}
 \contentsline {section}{\numberline {15.1}Choosing the Spell}{53}{section.15.1}
 \contentsline {subsection}{\numberline {15.1.1}Spell Level}{53}{subsection.15.1.1}
-\contentsline {subsubsection}{A Note on Roleplaying}{53}{subsubsection*.163}
+\contentsline {subsubsection}{A Note on Roleplaying}{53}{subsubsection*.160}
 \contentsline {section}{\numberline {15.2}Casting Checks}{54}{section.15.2}
 \contentsline {subsection}{\numberline {15.2.1}Casting Failure}{54}{subsection.15.2.1}
 \contentsline {subsection}{\numberline {15.2.2}Success}{54}{subsection.15.2.2}
-\contentsline {subsubsection}{Inherent Effect}{55}{subsubsection*.164}
-\contentsline {subsubsection}{Required Successes}{55}{subsubsection*.165}
-\contentsline {subsubsection}{Optional Successes}{55}{subsubsection*.166}
-\contentsline {subsubsection}{Example Spellcasting}{55}{subsubsection*.167}
+\contentsline {subsubsection}{Inherent Effect}{55}{subsubsection*.161}
+\contentsline {subsubsection}{Required Successes}{55}{subsubsection*.162}
+\contentsline {subsubsection}{Optional Successes}{55}{subsubsection*.163}
+\contentsline {subsubsection}{Example Spellcasting}{55}{subsubsection*.164}
 \contentsline {section}{\numberline {15.3}Extended Casting}{56}{section.15.3}
 \contentsline {subsection}{\numberline {15.3.1}Concentration}{56}{subsection.15.3.1}
 \contentsline {subsection}{\numberline {15.3.2}Catch-Casting}{56}{subsection.15.3.2}
 \contentsline {subsection}{\numberline {15.3.3}Rituals}{56}{subsection.15.3.3}
 \contentsline {chapter}{\numberline {16}Negating Spells}{57}{chapter.16}
-\contentsline {subsubsection}{Example Negations}{57}{subsubsection*.168}
+\contentsline {subsubsection}{Example Negations}{57}{subsubsection*.165}
 \contentsline {chapter}{\numberline {17}Learning Spells}{58}{chapter.17}
 \contentsline {subsection}{\numberline {17.0.1}Teachers}{58}{subsection.17.0.1}
 \contentsline {subsection}{\numberline {17.0.2}Books}{58}{subsection.17.0.2}
-\contentsline {subsubsection}{Magical Aura}{58}{subsubsection*.169}
-\contentsline {subsubsection}{Depleted Spellbooks}{58}{subsubsection*.170}
+\contentsline {subsubsection}{Magical Aura}{58}{subsubsection*.166}
+\contentsline {subsubsection}{Depleted Spellbooks}{58}{subsubsection*.167}
 \contentsline {subsection}{\numberline {17.0.3}Trial and Error}{58}{subsection.17.0.3}
 \contentsline {subsection}{\numberline {17.0.4}Finalising the Learning}{59}{subsection.17.0.4}
 \contentsline {chapter}{\numberline {18}Spells}{60}{chapter.18}

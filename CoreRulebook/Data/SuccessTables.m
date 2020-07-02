@@ -35,10 +35,12 @@ for DV = DVs
                         value = vector(j);
                         
                     else
+                        
                         value = 0;
-                        for k = 7:length(vector)
+                        for k = 9:length(vector)
                             value = value + vector(k);
                         end
+
                     end
                     
                    

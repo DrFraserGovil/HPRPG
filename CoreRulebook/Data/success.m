@@ -1,6 +1,6 @@
 function v = success(nDice,dv)
     catastrophe = max(1,floor(dv/3));
-    NTries = 300000;
+    NTries = 800000;
     rolls = randi([1,12],[NTries,nDice]);
     
     fails = sum(rolls <= catastrophe,2);

@@ -68,6 +68,8 @@ All of the \imp{base runes} fall into one of three categories: the \key{Control 
 	The way in which the magical item is used and controlled is determined by the \key{Control Runes} - does the item respond to words and phrases, the approach of a foe, or does it activate when worn?  
 }
 {
+	\runeRow{animax}{\animax}{Used for enchantments which are `sentient', and appear to be controlled at the will of a living being within the item.}
+
 	\runeRow{fabulum}{\fabulum}{Used for triggers that rely on an arcane or magical action occuring, such as a spell being cast upon them, or placed upon an enchanted item.}
 	
 	\runeRow{iuxta}{a}{Induces a field which can detect the proximity of specified being or objects - useful for triggering effects when an item is approached or worn.}
@@ -92,7 +94,7 @@ All of the \imp{base runes} fall into one of three categories: the \key{Control 
 {
 	\runeRow{displos}{\displos}{Used for effects that act instantaneously\comma{} releasing all their effect an energy in a split second.}
 	\runeRow{velox}{\velox}{Used for effects which last for a handful of seconds –  burning a target when struck with a weapon\comma{} or activating a temporary shield.}
-	\runeRow{lentus}{\lentus}{Used for effects that last on the duration of minutes to hours. The effects tend to be much more gentle that with {\it velox} or {\it displos}\comma{} as the magic gently seeps out over time.}
+	\runeRow{lentus}{\lentus}{Used for effects that last on the duration of minutes to hours. The effects tend to be much more gentle, as the magic gently seeps out over time.}
 \runeRow{aeternum}{\aeternum}{Used for effects which last for extended periods of time\comma{} or are constantly active. As with {\it lentus}\comma{} the effects are diluted by the need to conserve energy.}
 } 
 
@@ -133,19 +135,6 @@ All of the \imp{base runes} fall into one of three categories: the \key{Control 
 
 
 
-\def\learnText{
-\subsection{Learning New \imp{runes}}
-
-The \imp{runes} are divided up into 3 varying catergories, depending on how rare and powerful they are: {\it common}, {\it mystical} and {\it legendary}.
-
-Anyone may use any of the \imp{runes}, if they can get their hands on a text from which to study it. This division merely serves to model how rare the corresponding knowledge is (and how expensive purchasing the relevant tome may be!)
-
-Runes may be learned by finding an scroll, book or other representation of the rune, which the budding enchanter may then study for 30 minutes, before comitting it to memory. 
-
-
-
-}
-
 
 
 \subsection{Imbuing}
@@ -166,14 +155,14 @@ In order for the enchanting ritual to complete you must meet a number of success
 
 \begin{center}
 	\begin{rndtable}{c c c}
-		\key{Difficulty}	&	\key{Examples}	&	\key{Successes}
+		\key{Difficulty}	&	\key{Description}	&	\key{Successes}
 		\\
 		\enchantRow{Trivial}{Magical Lantern, Enchanted Oragami, Disappearing Ink}{5}
 		\enchantRow{Common}{Bludger, Beautifying Robes, Rememberall, Dictating Quill}{10}
 		\enchantRow{Singular}{Golden Snitch, Two-Way Mirror}{15}
 		\enchantRow{Rare}{Basic Broomstick, Antimagic Bracelet}{20}
 		\enchantRow{Extraordinary}{Magical Map, Pensieve}{25}
-		\enchantRow{Mythical}{Invisibility Cloak, Racing Broom, Horcrux}{30}
+		\enchantRow{Mythical}{Unique magical items which would be remembered throughout history for the enigmatic magic and immense power}{30}
 	\end{rndtable}
 \end{center}
 
@@ -187,64 +176,73 @@ The exact nature of the failure of an enchantment is up for the GM to decide, bu
 
 
 
-To go through with the enchanting process, one must possess a set of Runic Tools, and an object which you wish to enchant. 
-
-You must then select at least three \imp{runes} that you know (if you have not learned any new \imp{runes}, these are generally the {\it Basic \imp{runes}}), one from each of the three types. Then describe to the GM what effect you wish to imbue into the item. 
-
-If the GM agrees that the selected \imp{runes} would produce the desired effect, they decide upon a DV of the enchanting, taking into account your relative spell level and the magnitude of the effect that you are attempting to create. 
-
-You must then perform an enchanting check. This is an \attFin{} check plus, if you are proficient in the Runic Tools, your Expertise bonus. 
-
-If the check succeeds, you gain your magical item, and the GM will provide you with the exact description of what you have produced. 
-
-If the check fails, however, there are a number of possible outcomes, entirely at the behest of your GM. If you were attempting a `standard' enchanting, i.e. nothing too far out of the ordinary, or faild only by the skin of your teeth, the GM may ask you to perform the check a second time to patch the flaws in your first attempt. If this second check succeeds, then you will manage to rescue the enchanting and produce a flawed version of the target item. A flawed enchanting may have a reduced number of uses (`charges'), or the magnitude of its effect may be greatly diminished. 
-
-However, the most likely outcome is that the nexus destabilises, and disintegrates the object. If you are incredibly unlucky, the nexus may discharge violently and explode...
-
-\subsubsection{The Limits of Enchanting}
-
-Although it is possible for an unskilled indivudal to lay their hands on a copy of even the most advanced \imp{runes}, this does not mean that you can enchant whatever you desire. 
-
-A general rule of thumb is that you cannot enchant an item which would outperform a spell of your current level. 
-
-For example, a level 5 character only has access to Novice level spells, but could have access to the runechain \rune{\displos\perdero\hominus} ({\it displos perdero hominus}, instant destroy body), and is attempting to utilise these \imp{runes} to curse an item with an effect which would cause instant death to the next person to touch it. Instant death, however, is the domain of {\it Word of Death}, a Master level necromancy spell. The GM would therefore assign this an incredibly high DV, or simply rule that this is an impossible task, far beyond your current capabilities. 
-
-Alternatively, you may be able to work with the GM to find way for the effect to be curtailed to an appropriate level \minus{} maybe this cursed object does kill, but only after prolongued contact, during which the caster suffers progressive maladies such as nosebleeds and headaches. This reduces the immediate threat (and hence game\minus{}breaking nature) of the enchantment, but keeps its fundamental essence intact. 
-
-In addition, whilst it is possible for the runechain \rune{\aeternum\cingo\sensus} to imbue items with a limited amount of sentience and ability to function independently (this runechain is found on the bludger and golden snitch, for example), it is outside the realm of most wizards to imbue an item with true sentience. Only the Artificers have discovered how to imbue an item with original thought and true, actual consciousness. 
-
-\subsubsection{Multiple Effects}
-
-Sometimes you may want to layer multiple effects on a single item. 
-
-If these individual effects compliment each other, and form part of a singular cohesive structure, then they can be chained together into a single enchantment. 
-
-An enchantment which lets you create and then manipulate fire, for example could be enchanted as part of a single runechain: \rune{\lentus\genero\ignis\lentus\imperum\ignis} (which you could probably shorten to \rune{\lentus\genero\imperum\ignis}). 
-
-The individual effects would be weaker than if you had just chosen one of the effects, or the DV might be significantly higher, but this poses no intrinsic problems, as the \imp{runes} work well together. 
-
-However, you attempt to enchant drastically different effects layered onto the same artefact \minus{} you may wish to have a sword which contains a vicious toxin in the blade (\rune{\velox\perdero\morbus}), but also allows you to read the minds of your enemies (\rune{\aeternum\discite\sensus}). These cannot be performed as part of the same enchantment ritual \minus{} you must perform the enchantment twice. 
-
-Note, however, that multiple enchantments (even if they compliment each other) can destabilise the magical nexus. The associated DV of multiply enchanted objects rises exponentially as more effects are added, and the odds of the item blowing up in your hands increases commensurately.  
-
-\subsubsection{Some Examples}
-
-For the purposes of an example, the list below contains the runechains that are used to enchant some of the common magical artefacts found in the wizarding world. 
 
 
-\def\w{2.4}
-\def\q{4}
-\newcommand\artefactRow[4]
-{
-\small #1	&	\parbox[t]{\w cm}{{\centering \rune{#2}} \\ \raggedright \it \footnotesize #3}	&	\parbox[t]{\q cm}{\footnotesize  #4} \\
-}
-\begin{rndtable}{@{} p{\w cm} p{\w cm} p {\q cm}}
-\bf Item 	&	\bf \imp{runes}	&	\bf	Justification
-\\
-\artefactRow{Bludger}{\lentus\cingo\sensus\lentus\imperum\pondus}{Long contain mind, long control matter}{The first string provides the bludger with a limited amount of sentience and the second allows it fly and maneouvre itself for a few hours, after being activated.}
-\artefactRow{Deluminator}{\velox\perdero\lux \velox\sarco\lux}{Short destroy light, short restore light}{The deluminator sucks in nearby light on activation (the first half), and then restores it on a second activation (the second half). }
-\artefactRow{Penseive}{\aeternum\cingo\sensus\lentus\discite\sensus}{Eternal store mind, long percieve mind }{A penseive acts as a permanent storage place for memories, and also allows the user to dive in for extended periods of time to view them. }
-\artefactRow{Portkey}{\displos\porto\pondus}{Instant transmit matter}{The portkey performs a single simple purpose: teleport matter instantaneously upon activation.}
-\artefactRow{Self\minus{}Erecting Tent}{\aeternum\genero\locus\aeternum\cingo\pondus\velox\imperum\pondus}{Eternal create space, eternal contain matter, short control matter}{The first two strings make the tent have a larger volume on the inside and to make it act as a shelter to objects inside. The final string enables the tent to assemble itself over a short period of time.}
-\artefactRow{Sneakoscope}{\aeternum\discite\morbus\velox\imperum\pondus}{Eternal percieve cursed, short control matter}{The primary effect of the sneakoscope is contained in the first string: the detection of evil and cursed objects. The second string merely provides the alert mechanism \minus{} the object whistles and spins of its own accord.}
-\end{rndtable}
+
+%~ \subsubsection{The Limits of Enchanting}
+
+%~ Although it is possible for an unskilled indivudal to lay their hands on a copy of even the most advanced \imp{runes}, this does not mean that you can enchant whatever you desire. 
+
+%~ A general rule of thumb is that you cannot enchant an item which would outperform a spell of your current level. 
+
+%~ For example, a level 5 character only has access to Novice level spells, but could have access to the runechain \rune{\displos\perdero\hominus} ({\it displos perdero hominus}, instant destroy body), and is attempting to utilise these \imp{runes} to curse an item with an effect which would cause instant death to the next person to touch it. Instant death, however, is the domain of {\it Word of Death}, a Master level necromancy spell. The GM would therefore assign this an incredibly high DV, or simply rule that this is an impossible task, far beyond your current capabilities. 
+
+%~ Alternatively, you may be able to work with the GM to find way for the effect to be curtailed to an appropriate level \minus{} maybe this cursed object does kill, but only after prolongued contact, during which the caster suffers progressive maladies such as nosebleeds and headaches. This reduces the immediate threat (and hence game\minus{}breaking nature) of the enchantment, but keeps its fundamental essence intact. 
+
+%~ In addition, whilst it is possible for the runechain \rune{\aeternum\cingo\sensus} to imbue items with a limited amount of sentience and ability to function independently (this runechain is found on the bludger and golden snitch, for example), it is outside the realm of most wizards to imbue an item with true sentience. Only the Artificers have discovered how to imbue an item with original thought and true, actual consciousness. 
+
+%~ \subsubsection{Multiple Effects}
+
+%~ Sometimes you may want to layer multiple effects on a single item. 
+
+%~ If these individual effects compliment each other, and form part of a singular cohesive structure, then they can be chained together into a single enchantment. 
+
+%~ An enchantment which lets you create and then manipulate fire, for example could be enchanted as part of a single runechain: \rune{\lentus\genero\ignis\lentus\imperum\ignis} (which you could probably shorten to \rune{\lentus\genero\imperum\ignis}). 
+
+%~ The individual effects would be weaker than if you had just chosen one of the effects, or the DV might be significantly higher, but this poses no intrinsic problems, as the \imp{runes} work well together. 
+
+%~ However, you attempt to enchant drastically different effects layered onto the same artefact \minus{} you may wish to have a sword which contains a vicious toxin in the blade (\rune{\velox\perdero\morbus}), but also allows you to read the minds of your enemies (\rune{\aeternum\discite\sensus}). These cannot be performed as part of the same enchantment ritual \minus{} you must perform the enchantment twice. 
+
+%~ Note, however, that multiple enchantments (even if they compliment each other) can destabilise the magical nexus. The associated DV of multiply enchanted objects rises exponentially as more effects are added, and the odds of the item blowing up in your hands increases commensurately.  
+
+\subsection{Some Examples}
+
+For the purposes of illustration, the table below contains a brief description of the enchanting profiles of some well-known magical items:
+
+\newcommand\artefactRow[7]{\small \imp{#1} & \parbox[t]{1 cm}{\raggedright \rune{#2}\\ {\it \tiny #3\\#4\\#5}}& \parbox[t]{4 cm}{\raggedright #6} & \imp{#7} \\} 
+
+\small
+\begin{center}
+	\begin{rndtable}{p{2cm} c c c c}
+		Name	&	Runes	&	Description	&	Rarirty \\
+		\artefactRow{Disappearing Ink}{\vox\displos\canto}{Voice}{Instant}{Bewitchment}{A vial of ink which, when a command phrase is uttered, switches between visible and invisible.}{Trivial}
+		\artefactRow{Enchanted Origami}{\animax\lentus\motu}{Sentient}{Long}{Kinesis}{A weakly enchanted piece of paper, folded to appear as an animal. The enchantment causes it to act like the animal for a period of time.}{Trivial}
+		\artefactRow{Magical Lantern}{\oculum\aeternum\primum}{Visual}{Eternal}{Elemental}{A simple object which glows brightly when placed in a region of darkness.}{Trivial}
+		\artefactRow{Beautifying Robes}{\iuxta\aeternum\canto}{Proximity}{Eternal}{Bewitchment}{A set of robes which make the wearer appear more physically attractive.}{Common}
+		\artefactRow{Bludger}{\animax\lentus\kinesis}{Sentient}{Long}{Kinesis}{A strong though simple enchantment placed on an enchanted solid ball used in \imp{Quidditch}. When released, the ball seeks out players and attempts to smash them.}{Common}
+	\end{rndtable}
+\end{center}
+\normalsize
+
+
+%~ \subsubsection{Some Examples}
+
+%~ For the purposes of an example, the list below contains the runechains that are used to enchant some of the common magical artefacts found in the wizarding world. 
+
+
+%~ \def\w{2.4}
+%~ \def\q{4}
+%~ \newcommand\artefactRow[4]
+%~ {
+%~ \small #1	&	\parbox[t]{\w cm}{{\centering \rune{#2}} \\ \raggedright \it \footnotesize #3}	&	\parbox[t]{\q cm}{\footnotesize  #4} \\
+%~ }
+%~ \begin{rndtable}{@{} p{\w cm} p{\w cm} p {\q cm}}
+%~ \bf Item 	&	\bf \imp{runes}	&	\bf	Justification
+%~ \\
+%~ \artefactRow{Bludger}{\lentus\cingo\sensus\lentus\imperum\pondus}{Long contain mind, long control matter}{The first string provides the bludger with a limited amount of sentience and the second allows it fly and maneouvre itself for a few hours, after being activated.}
+%~ \artefactRow{Deluminator}{\velox\perdero\lux \velox\sarco\lux}{Short destroy light, short restore light}{The deluminator sucks in nearby light on activation (the first half), and then restores it on a second activation (the second half). }
+%~ \artefactRow{Penseive}{\aeternum\cingo\sensus\lentus\discite\sensus}{Eternal store mind, long percieve mind }{A penseive acts as a permanent storage place for memories, and also allows the user to dive in for extended periods of time to view them. }
+%~ \artefactRow{Portkey}{\displos\porto\pondus}{Instant transmit matter}{The portkey performs a single simple purpose: teleport matter instantaneously upon activation.}
+%~ \artefactRow{Self\minus{}Erecting Tent}{\aeternum\genero\locus\aeternum\cingo\pondus\velox\imperum\pondus}{Eternal create space, eternal contain matter, short control matter}{The first two strings make the tent have a larger volume on the inside and to make it act as a shelter to objects inside. The final string enables the tent to assemble itself over a short period of time.}
+%~ \artefactRow{Sneakoscope}{\aeternum\discite\morbus\velox\imperum\pondus}{Eternal percieve cursed, short control matter}{The primary effect of the sneakoscope is contained in the first string: the detection of evil and cursed objects. The second string merely provides the alert mechanism \minus{} the object whistles and spins of its own accord.}
+%~ \end{rndtable}
