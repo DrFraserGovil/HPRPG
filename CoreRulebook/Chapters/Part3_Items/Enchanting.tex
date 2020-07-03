@@ -78,7 +78,7 @@ All of the \imp{base runes} fall into one of three categories: the \key{Control 
 	
 	\runeRow{oculum}{\oculum}{Triggers the enchantment when a visual trigger occurs, such as a particular image appearing, or light landing on it in a specific fashion.}
 	
-	\runeRow{salto}{\salto}{Useful for enchantments that should trigger when a particular ritualistic motion is performed either near or with the object.}
+	\runeRow{salto}{\salto}{Useful for enchantments that should trigger when a particular ritualistic motion is performed either near or with the object, or when the object is interacted with in some physical way.}
 	
 	\runeRow{seculum}{\seculum}{A {\it seculum} rune activates the energy within the nexus on a fixed schedule, allowing the enchanter to create a time-based trigger. }
 	
@@ -143,28 +143,87 @@ Whilst the \imp{Runes} are being inscribed, the artificer must channel magical e
 
 You must describe to the GM what it is you are attempting to achieve, which the GM will use to determine the scale of the enchanting effort that you are attempting, using the tables below. The GM also uses this time to make a judgement call if you are even able to attempt this enchantment, and if the runes you have selected wouldproduce the desired effect. If the GM consents, you may begin to imbuing process. 
 
-For every 6 hours that you spend focussed entirely on the Imbuing process, you may perform an \imp{Imbuing} check using the DV determined by the GM as part of a long term project (see page \pageref{S:Extended}). 
+For every 6 hours that you spend focussed entirely on the Imbuing process, you may perform an \imp{Imbuing} check as part of a long term project (see page \pageref{S:Extended}). Every success you gain from the check is allocated into the project-pool. 
+
+The DV of the check is determined by the GM from their assessment of the rarity of the item (see \pageref{S:ItemRarity}) and the \imp{Imbuing} ability of the enchanter. 
+
+\newcommand\tHeader[1]{ \cc \imp{ #1} }
+\newcommand\dvRow[7]{#1&#2&#3&#4&#5&#6&#7}
+
+\newcommand\dvTable[7]
+{
+	\footnotesize
+	\begin{center}
+		\begin{rndtable}{@{} c r c c c c c c c @{}}
+			~ & ~ & \multicolumn{7}{c}{\cc \small Imbuing Ability} 
+			\\
+			\cc & \cc	&	\tHeader{1}	&	\tHeader{2}	&	\tHeader{3}	&	\tHeader{4}	&	\tHeader{5}	&	\tHeader{6}	&	\tHeader{7}
+			\\
+			\cc &  \tHeader{Trivial}	&	#1
+			\\
+			\cc & \tHeader{Common} 	&	#2
+			\\
+			\cc & \tHeader{Singular}	&	#3
+			\\
+			\cc & \tHeader{Unusual}	&	#4
+			\\
+			\cc & \tHeader{Rare}	&	#5
+			\\
+			\cc & \tHeader{Extraordinary}	&	#6
+			\\
+			\multirow{-7}{*}{\rotatebox[origin=c]{90}{\cc \bf \small Item Rarity} } & \tHeader{Mythical} & #7
+		\end{rndtable}
+	
+	\end{center}
+	\normalsize
+}
+
+\dvTable
+{
+	\dvRow{8}{7}{6}{5}{4}{3}{2}
+}
+{
+	\dvRow{9}{8}{7}{6}{5}{4}{3}
+}
+{
+	\dvRow{10}{9}{8}{7}{6}{5}{4}
+}
+{
+	\dvRow{11}{10}{9}{8}{7}{6}{5}
+}
+{
+	\dvRow{-}{11}{10}{9}{8}{7}{6}
+}
+{
+	\dvRow{-}{-}{11}{10}{9}{8}{7}
+}
+{
+	\dvRow{-}{-}{-}{11}{10}{9}{8}
+}
 
 
 \subsubsection{Enchantment Success}
 
-In order for the enchanting ritual to complete you must meet a number of successes determined by your GM. As a rough guide, the following table gives some exampless of project difficulties, and how many successes it is recommended for these items to be enchanted:
-
-\newcommand\enchantRow[3]{ \key{#1} & \parbox[t]{4.5 cm}{\small \raggedright #2} & #3 \\}
+In order for the enchanting ritual to complete you must meet a number of successes determined by the difficulty of the enchanting effort your are attempting
 
 
-\begin{center}
-	\begin{rndtable}{c c c}
-		\key{Difficulty}	&	\key{Description}	&	\key{Successes}
-		\\
-		\enchantRow{Trivial}{Magical Lantern, Enchanted Oragami, Disappearing Ink}{5}
-		\enchantRow{Common}{Bludger, Beautifying Robes, Rememberall, Dictating Quill}{10}
-		\enchantRow{Singular}{Golden Snitch, Two-Way Mirror}{15}
-		\enchantRow{Rare}{Basic Broomstick, Antimagic Bracelet}{20}
-		\enchantRow{Extraordinary}{Magical Map, Pensieve}{25}
-		\enchantRow{Mythical}{Unique magical items which would be remembered throughout history for the enigmatic magic and immense power}{30}
-	\end{rndtable}
-\end{center}
+
+%~ \newcommand\enchantRow[3]{ \key{#1} & \parbox[t]{4.5 cm}{\small \raggedright #2} & #3 \\}
+
+
+%~ \begin{center}
+	%~ \begin{rndtable}{c c c}
+		%~ \key{Difficulty}	&	\key{Description}	&	\key{Successes}
+		%~ \\
+		%~ \enchantRow{Trivial}{Very simple and cheap enchanted objects - a normal wizard would expect to have dozens of such items in their possession.}{5}
+		%~ \enchantRow{Common}{Though they might not own many as many of these items, a normal witch would be familiar and comfortable with \imp{Common} items in everyday life.}{10}
+		%~ \enchantRow{Singular}{Verging on impressive magical power, your normal magic-user probably owns only a handful of these items, and they would be treated as prized possessions.}{15}
+		%~ \enchantRow{Unusual}{An \imp{Unusual} magical item would usually be enough to draw inquisitive looks when displayed - a normal witch or wizard probably only owns one or two of these throughout their lifetime (if they are lucky).}{20}
+		%~ \enchantRow{Rare}{A rare item would be passed down through a family as a treasured heirloom, and kept under the highest security when not being used. There are probably no more than a few thousand \imp{Rare} items in the country at any one time. }{20}
+		%~ \enchantRow{Extraordinary}{Most witches and wizards would only ever have seen an \imp{Extraordinary} magical item, and very, very few will have owned them. An object of this power is usually either stored in \imp{Gringotts}, or on display in a museum.}{25}
+		%~ \enchantRow{Mythical}{\imp{Mythical} items are unique magical items which would be remembered throughout history for their enigmatic magic and immense power. Even being able to see, let alone own, a Mythical item would be a thing to tell stories about.}{30}
+	%~ \end{rndtable}
+%~ \end{center}
 
 
 \subsubsection{Enchantment Failure}
@@ -205,25 +264,69 @@ The exact nature of the failure of an enchantment is up for the GM to decide, bu
 
 %~ Note, however, that multiple enchantments (even if they compliment each other) can destabilise the magical nexus. The associated DV of multiply enchanted objects rises exponentially as more effects are added, and the odds of the item blowing up in your hands increases commensurately.  
 
-\subsection{Some Examples}
+\subsection{Some Examples}\label{E:EnchantingExamples}
 
 For the purposes of illustration, the table below contains a brief description of the enchanting profiles of some well-known magical items:
 
-\newcommand\artefactRow[7]{\small \imp{#1} & \parbox[t]{1 cm}{\raggedright \rune{#2}\\ {\it \tiny #3\\#4\\#5}}& \parbox[t]{4 cm}{\raggedright #6} & \imp{#7} \\} 
-
-\small
-\begin{center}
-	\begin{rndtable}{p{2cm} c c c c}
-		Name	&	Runes	&	Description	&	Rarirty \\
-		\artefactRow{Disappearing Ink}{\vox\displos\canto}{Voice}{Instant}{Bewitchment}{A vial of ink which, when a command phrase is uttered, switches between visible and invisible.}{Trivial}
-		\artefactRow{Enchanted Origami}{\animax\lentus\motu}{Sentient}{Long}{Kinesis}{A weakly enchanted piece of paper, folded to appear as an animal. The enchantment causes it to act like the animal for a period of time.}{Trivial}
-		\artefactRow{Magical Lantern}{\oculum\aeternum\primum}{Visual}{Eternal}{Elemental}{A simple object which glows brightly when placed in a region of darkness.}{Trivial}
-		\artefactRow{Beautifying Robes}{\iuxta\aeternum\canto}{Proximity}{Eternal}{Bewitchment}{A set of robes which make the wearer appear more physically attractive.}{Common}
-		\artefactRow{Bludger}{\animax\lentus\kinesis}{Sentient}{Long}{Kinesis}{A strong though simple enchantment placed on an enchanted solid ball used in \imp{Quidditch}. When released, the ball seeks out players and attempts to smash them.}{Common}
+\newcommand\artefactRow[6]{\small \imp{#1} & \parbox[t]{1 cm}{\raggedright \rune{#2}\\ {\it \tiny #3\\#4\\#5}}& \parbox[t]{5.4 cm}{\raggedright \footnotesize #6}  \\} 
+\newcommand\artefactList[2]
+{
+	\small
+	\subsubsection{#1}
+	\begin{center}
+	\begin{rndtable}{p{2cm} c c c}
+		Name	&	Runes	&	Description	 \\
+		#2
 	\end{rndtable}
 \end{center}
-\normalsize
+	
+	\normalsize
+}
 
+
+\artefactList{Trivial}
+{
+	\artefactRow{Disappearing Ink}{\vox\displos\canto}{Voice}{Instant}{Bewitchment}{A vial of ink which, when a command phrase is uttered, switches between visible and invisible.}
+	\artefactRow{Enchanted Origami}{\animax\lentus\motu}{Sentient}{Long}{Kinesis}{A weakly enchanted piece of paper, folded to appear as an animal. The enchantment causes it to `come alive' for a period of time.}
+	\artefactRow{Magical Lantern}{\oculum\aeternum\primum}{Visual}{Eternal}{Elemental}{A simple object which glows brightly when placed in a region of darkness.}
+	\artefactRow{Sneakoscope}{\fabulum\velox\animus}{Arcane}{Short}{Cerebral}{A small object which buzzes and hums when it detects the usage of magic from the \imp{Dark Arts} school.}
+}
+
+\artefactList{Common}
+{
+	\artefactRow{Beautifying Robes}{\iuxta\aeternum\canto}{Proximity}{Eternal}{Bewitchment}{A set of robes which make the wearer appear more physically attractive.}
+	\artefactRow{Bludger}{\animax\lentus\motu}{Sentient}{Long}{Kinesis}{A strong though simple enchantment placed on an enchanted solid ball used in \imp{Quidditch}. When released, the ball seeks out players and attempts to smash them.}
+	\artefactRow{Rememberall}{\sessio\aeternum\animus}{Proximity}{Eternal}{Cerebral}{A small orb which changes colour when someone nearby forgets something.}
+	\artefactRow{Swindler's Coin}{\mentis\displos\muto}{Mental}{Instant}{Change}{A small silver sickle which appears perfectly normal, when tossed, the owner can control if it lands on heads or tails with perfect accuracy.}
+}
+\artefactList{Singular}
+{
+	\artefactRow{Two-Way Mirrors}{\vox\lentus\animus}{Voice}{Long}{Cerebral}{A pair of small, handheld mirrors. When a command word is spoken, they may be used to communicate with each other akin to a muggle `video call'.}
+	\artefactRow{Wound-Sealing Cloak}{\salto\displos\sarco}{Somatic}{Instant}{Hermetic}{When an attack passes through this cloak, it automatically seals itself around the wound to prevent further infection or bleeding, healing up to level 3 \imp{Harm} once per day.}
+}
+\artefactList{Unusual}
+{
+	\artefactRow{Basic Broom}{\mentis\aeternum\motu}{Mental}{Eternal}{Kinesis}{A basic broomstick allows the user to fly, though they won't be breaking any records whilst doing so.}
+}
+
+\artefactList{Rare}
+{
+
+}
+
+\artefactList{Extraordinary}
+{
+	\artefactRow{Racing Broom}{\mentis\aeternum\motu}{Mental}{Eternal}{Kinesis}{A far superior enchantment when compared to the basic version, a racing broom turns tighter, responds quicker and goes like the clappers.}
+
+}
+
+
+
+\artefactList{Mythical}
+{
+	\artefactRow{Astral Cloak}{\iuxta\aeternum\canto\aevum}{Proximity}{Eternal}{Bewitchment \& Temporal}{A true cloak of invisibility, shifting the wearer partly into another realm, and thereby protecting them entirely from magical and mundane attacks. Magical effects cannot pass through this wondrous item.}
+	\artefactRow{Horcrux}{\sessio\aeternum\lues}{Passive}{Eternal}{Necromancy}{A horcrux, on its own, is nothing particularly interesting: merely an exquisitely prepared vessel. When paired with a profane and disgusting ritual (the details of which are to horrifying to describe here), however, it can be used to store a part of the creator's soul, thereby tethering them to the realm of the living as long as the horcrux is intact.}
+}
 
 %~ \subsubsection{Some Examples}
 
