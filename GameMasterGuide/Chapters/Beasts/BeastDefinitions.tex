@@ -1,0 +1,278 @@
+
+\newcommand\beastSpell[2]
+{
+	\bf #1	&	\parbox[t]{7.3  cm}{{\it #2}} \\
+}
+\newcommand\beastSpellList[1]
+{
+	
+	\begin{tabular}{l l}
+	#1
+	\end{tabular}
+}
+\definecolor{statblockbg}{HTML}{FDF1DC} 
+
+\makeatletter
+\define@key{beast}{name}{\def\name{#1}}
+\define@key{beast}{species}{\def\species{#1}}
+\define@key{beast}{mind}{\def\mind{#1}}
+\define@key{beast}{category}{\def\category{#1}}
+
+\define@key{beast}{speed}{\def\speed{#1}}
+
+\define@key{beast}{fit}{\def\fit{#1}}
+\define@key{beast}{prs}{\def\prs{#1}}
+\define@key{beast}{vit}{\def\vit{#1}}
+
+\define@key{beast}{cha}{\def\cha{#1}}
+\define@key{beast}{dec}{\def\dec{#1}}
+\define@key{beast}{ins}{\def\ins{#1}}
+
+\define@key{beast}{int}{\def\int{#1}}
+\define@key{beast}{wil}{\def\wil{#1}}
+\define@key{beast}{pcp}{\def\pcp{#1}}
+
+
+\define@key{beast}{nUnharmed}{\def\nUnharmed{#1}}
+\define@key{beast}{nBruised}{\def\nBruised{#1}}
+\define@key{beast}{nHurt}{\def\nHurt{#1}}
+\define@key{beast}{nInjured}{\def\nInjured{#1}}
+\define@key{beast}{nWounded}{\def\nWounded{#1}}
+\define@key{beast}{nMangled}{\def\nMangled{#1}}
+\define@key{beast}{fortitude}{\def\fortitude{#1}}
+
+\define@key{beast}{block}{\def\block{#1}}
+\define@key{beast}{dodge}{\def\dodge{#1}}
+\define@key{beast}{hasImmune}{\def\immuneMode{#1}}
+\define@key{beast}{immune}{\def\immune{#1}}
+\define@key{beast}{hasResistance}{\def\resistanceMode{#1}}
+\define@key{beast}{resistance}{\def\resistance{#1}}
+\define@key{beast}{hasSusceptible}{\def\susceptibleMode{#1}}
+\define@key{beast}{susceptible}{\def\susceptible{#1}}
+\define@key{beast}{hasAbilities}{\def\abilitiesMode{#1}}
+\define@key{beast}{abilities}{\def\abilities{#1}}
+\define@key{beast}{hasSkills}{\def\skillsMode{#1}}
+\define@key{beast}{skills}{\def\skills{#1}}
+\define@key{beast}{hasActions}{\def\actionMode{#1}}
+\define@key{beast}{actions}{\def\actions{#1}}
+\define@key{beast}{habitat}{\def\habitat{#1}}
+\define@key{beast}{sizeName}{\def\sizeName{#1}}
+\define@key{beast}{size}{\def\size{#1}}
+\define@key{beast}{abilityBlock}{\def\aBlock{#1}}
+\define@key{beast}{description}{\def\description{#1}}
+\define@key{beast}{image}{\def\image{#1}}
+\define@key{beast}{hasImage}{\def\imageMode{#1}}
+\define@key{beast}{imPosition}{\def\imagePos{#1}}
+\define@key{beast}{hasLanguages}{\def\languageMode{#1}}
+\define@key{beast}{language}{\def\languages{#1}}
+\define@key{beast}{needsLine}{\def\needsLine{#1}}
+\define@key{beast}{comprehend}{\def\comprehend{#1}}
+\define@key{beast}{hasComprehend}{\def\comprehendMode{#1}}
+\define@key{beast}{imageHeight}{\def\imageHeight{#1}}
+\define@key{beast}{habitat}{\def\habitat{#1}}
+\define@key{beast}{needsPage}{\def\needsPage{#1}}
+\define@key{beast}{rating}{\def\rating{#1}}
+\define@key{beast}{hasHabitat}{\def\hasHabitat{#1}}
+\define@key{beast}{hasLair}{\def\hasLair{#1}}
+\define@key{beast}{lairActions}{\def\lairActions{#1}}
+\define@key{beast}{hasSenses}{\def\hasSenses{#1}}
+\define@key{beast}{senses}{\def\senses{#1}}
+\define@key{beast}{hasConditionImmune}{\def\hasConditionImmune{#1}}
+\define@key{beast}{conditionImmune}{\def\conditionImmune{#1}}
+%%keyEnd    
+\makeatother
+
+\def\defaultSetter
+{
+	\setkeys{beast}{name = none, species = None, mind = none, rating = Unset, category = none, description = None, fit =0, prs = 0, vit =0, cha = 0, dec = 0, ins = 0, int = 0, wil =0, pcp = 0, block = 0, dodge = 0, nUnharmed =0, nBruised = 0, nHurt = 0, nInjured = 0, nWounded = 0, nMangled = 0,fortitude = 0}
+}
+\newcounter{yCount}
+\newcounter{nonZeroCount}
+\newcommand{\healthBox}
+{%q
+	\key{Health}
+	
+    \begin{tikzpicture}
+       \def\bx{0.65}
+       \def\nTotal{ \fpeval{\nUnharmed + \nBruised + \nHurt + \nInjured + \nWounded + \nMangled + 1} }
+       
+       
+       %\draw (0,0) rectangle ({\nTotal*\bx},{2*\bx});
+       %\draw (0,\bx)--({\nTotal*\bx},{\bx});
+       \foreach \c in {1,2,...,{\nTotal}}
+       {
+			%\draw ({\c*\bx},\bx)--({\c*\bx},{2*\bx});
+			
+			
+			%\draw ({(\c)*\bx}, {1.5*\bx})--({(\c-0.5)*\bx}, {2*\bx})--({(\c-1)*\bx}, {1.5*\bx})--({(\c-0.5)*\bx}, {\bx})--cycle;
+       }
+       
+       \setcounter{yCount}{0}
+       \setcounter{nonZeroCount}{0}
+       \foreach [count = \j from 0] \a/\b in { {Unharmed}/\nUnharmed, {Bruised \\(-1)}/\nBruised, {Hurt\\ (-2)}/\nHurt, {Injured(-3)}/\nInjured, {Wounded \\(-4)}/\nWounded, {Mangled (-5)}/\nMangled, {Critical}/1}
+       {
+			\def\xVal{ {(\theyCount + (\b)/2)*\bx} + \thenonZeroCount*\bx/4}
+			\def\lx { {\theyCount *\bx} + \thenonZeroCount*\bx/4}
+			\if \b0
+				%%
+			\else
+				\node[anchor = center] at (\xVal,{0}) {\parbox[t]{1cm}{\tiny\centering \a}};
+				
+				\foreach \j in {1,...,\b}
+				{
+					\def\cx{\lx + (\j-1)*\bx}
+					\def\sqrtT{\bx/1.414213562373095}
+					\draw[rotate around={45:({\cx+\bx/2},\bx)}] ({\cx+\bx/2-\sqrtT/2},{\bx-\sqrtT/2})rectangle ({\cx+\bx/2+\sqrtT/2},{\bx+\sqrtT/2});
+					%\draw ({(\c)*\bx}, {1.5*\bx})--({(\c-0.5)*\bx}, {2*\bx})--({(\c-1)*\bx}, {1.5*\bx})--({(\c-0.5)*\bx}, {\bx})--cycle;
+				}
+				
+				\addtocounter{nonZeroCount}{1}
+				%\draw ({\xVal - \b/2*\bx},0) rectangle ({\xVal + \b/2*\bx},{2*\bx});
+			\fi
+			\addtocounter{yCount}{\b}
+       }
+       
+    \end{tikzpicture}%
+}
+
+\newcommand{\fortitudeBox}
+{%q
+	\if\fortitude0
+		%who knows?
+	\else
+		\key{Fortitude:}
+	
+	    \begin{tikzpicture}
+	       \def\bx{0.65}
+	     
+	       
+	       
+	       %\draw (0,0) rectangle ({\nTotal*\bx},{2*\bx});
+	       %\draw (0,\bx)--({\nTotal*\bx},{\bx});
+	       \foreach \c in {1,...,{\fortitude}}
+	       {
+		
+				
+				\draw ({(\c)*\bx}, {1.5*\bx})--({(\c-0.5)*\bx}, {2*\bx})--({(\c-1)*\bx}, {1.5*\bx})--({(\c-0.5)*\bx}, {\bx})--cycle;
+	       }
+	       
+	    \end{tikzpicture}%
+	 \fi
+}
+
+
+
+\newcommand\ratingB[1]
+{
+	\if#10
+		\emptyCape
+	\fi
+	\if#11
+		\oneCape
+	\fi
+	\if#12
+		\twoCape
+	\fi
+	\if#13
+		\threeCape
+	\fi
+	\if#14
+		\fourCape
+	\fi
+	\if#15
+		\fiveCape
+	\fi
+	\if#16
+		\sixCape
+	\fi
+	\if#17
+		\sevenCape
+	\fi
+}
+
+
+\newcommand\titleBlock
+{
+	\definecolor{rulered}{HTML}{9C2B1B} 
+		{ \Huge \color{titlered}{\MakeUppercase{\name{}} }}
+		
+		MoM Rating: \rating{} {\it (\mind{}~\category{}) }
+}
+
+
+\def\w{2.3}
+\newcommand\stat[2]
+{
+	\parbox[t]{\w cm}{\vspace{0.3cm} \centering \key{#1} \\ \ratingB{#2}}
+}
+\newcommand\statBlock
+{
+	
+	
+	\healthBox{}
+		
+	\fortitudeBox{}
+	
+	\key{Aspects:}
+	
+	\vspace{-0.8 cm}
+	\footnotesize
+	\begin{center}
+		\begin{tabular}{@{}  m{\w cm}  m{\w cm}  m{\w cm} @{}}
+				 %\hline
+				\stat{Fitness}{\fit}	&	\stat{Charm}{\cha}	&	\stat{Intelligence}{\int}
+				\\ %\hline
+				\stat{Precision}{\prs}	&	\stat{Deception}{\dec}	&	\stat{Willpower}{\wil}
+				\\ % \hline
+				\stat{Vitality}{\vit}	&	\stat{Insight}{\ins}	&	\stat{Perception}{\pcp}
+				\\ %\hline
+		\end{tabular}
+	\end{center}
+	
+}
+
+\newcommand\ability[2]
+{
+\textbf{\textit{#1}}: #2
+}
+\newcommand\melee[3]
+{
+\textbf{\textit{#1}}: ({\it melee attack, #2 to hit}) #3
+}
+\newcommand\ranged[4]
+{
+\textbf{\textit{#1}}: ({\it ranged attack, #2 to hit, range: #3}) #4
+}
+
+
+
+\newcommand\beast[1]
+{
+	\begingroup
+	
+	\defaultSetter
+	\setkeys{beast}{#1}
+	
+	\titleBlock{}
+
+	{\it \description}
+
+	\statBlock
+
+	\endgroup
+}
+
+\newcommand\species[3]
+{
+	\clearpage
+	\section*{\Huge #1}
+	\addcontentsline{toc}{section}{#1}
+	#2
+
+	~
+	
+	#3
+	
+	
+}
+

@@ -1,0 +1,43 @@
+\chapter{Bestiary}
+
+In this section a number of different creatures are presented for the GM's use in building encounters. These creatures come with a set of basic canonical background information, as well as a `statblock', which contains the necessary statistics for these creatures to perform checks, and ultimately engage in combat and other character interactions.
+
+
+\section{Beast Abilities}
+
+Whilst all \imp{Beasts} share the same 9 base \imp{Aspects} as player characters, and many of the same \imp{Abilities}. However for streamlining reasons, the number of \imp{Abilities} each individual beast has is more restricted than a player character: if an \imp{Ability} is not mentioned in the provided statblock, you may assume it has a value of \emptyCape. 
+
+Though they have far fewer proficiencies, Beasts do have access to all of the same \imp{Abilities} as the player characters - though actions such as \imp{Imbue} and \imp{Craft} are unlikely to come up except in the most unusual of circumstances! 
+
+In addition to the 30 base \imp{Abilities}, some beasts have additional abilities determined by their non-human and, in some cases, magical, physiology:
+\newcommand\abilityRow[2]
+{
+
+	\key{#1} & \parbox[t]{6.8 cm}{\raggedright #2} \\
+}
+
+\newcommand\abilityTable[1]
+{
+	\small
+	\begin{center}
+		\begin{rndtable}{r l}
+		\bf Ability	& \bf Description \\
+		#1
+		\end{rndtable}
+	\end{center}
+}
+
+\abilityTable
+{
+	\abilityRow{Climb}{Many beings have the ability to climb trees, and adhere to solid surfaces. A high rating means they can move without hinderance.}
+	\abilityRow{Command}{Some creatures command their lessers and may order them to do their bidding - a higher rating indicates the level of control they have over their forces.}
+	\abilityRow{Elusion}{Elusion is the natural camouflaging ability of a being - morphing into the background, changing colour and even turning invisible.}
+	\abilityRow{Flight}{A creature with the flying ability may defy gravity, either with wings, or innate magical levitation. A higher rating means faster flight and more elaborate maneouvers.}
+	\abilityRow{Regeneration}{This ability allows a creature to heal themselves rapidly as their physical form regenerates.}
+	\abilityRow{Senses}{Many creatures have senses beyond those that humans have: the ability to sense tremors in the ground, see in the dark, as well as more arcane abilities such as the ability to detect magic.}
+	\abilityRow{Shapechange}{A creature with this ability may alter their shape and form - a higher rating means more drastic changes to their appearance.}
+	\abilityRow{Spellcasting}{A replacement for individual \imp{Affinities}. A creature with this ability can innately cast magic using this statistic.} 
+}
+
+\input{Chapters/Beasts/BeastDefinitions}
+\input{Chapters/Beasts/BeastList}

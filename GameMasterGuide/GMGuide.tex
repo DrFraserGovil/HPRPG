@@ -1,8 +1,20 @@
 \documentclass[oneside, twocolumn, 9pt, english]{extbook}
 
 \usepackage{../HPpack}
-
-
+\usepackage{etoolbox}
+\usetikzlibrary{
+    positioning,
+    shapes.multipart
+    }
+\tikzset{
+    mynode/.style={
+        draw,
+        rectangle split,
+        rectangle split parts=2,
+        text centered,
+    },
+}
+\usepackage{xfp}
 \begin{document}
 
 \begin{titlepage}
@@ -36,7 +48,7 @@
 \input{Chapters/Potions}
 
 
-\subfile{Chapters/BeastsBeings}
+\input{Chapters/Beasts/BeastMaster}
 
 \subfile{Chapters/Cosmology}
 \end{document}
