@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.3.20)  6 JUL 2020 17:29
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.18)  6 JUL 2020 21:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3018,7 +3018,7 @@ Overfull \hbox (4.48868pt too wide) in paragraph at lines 40--40
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 14--14
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 35--35
 |[] 
  []
 
@@ -3134,14 +3134,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
  (./GMGuide.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 54.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 54.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 41662 strings out of 493007
- 797961 string characters out of 6136719
- 910121 words of memory out of 5000000
- 44979 multiletter control sequences out of 15000+600000
- 585816 words of font info for 181 fonts, out of 8000000 for 9000
+ 41610 strings out of 493007
+ 797320 string characters out of 6136718
+ 909591 words of memory out of 5000000
+ 44926 multiletter control sequences out of 15000+600000
+ 585824 words of font info for 182 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 62i,13n,75p,10412b,713s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,16n,75p,10412b,746s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on GMGuide.pdf (20 pages).
