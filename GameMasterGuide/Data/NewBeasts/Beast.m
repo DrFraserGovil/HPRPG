@@ -8,6 +8,8 @@ classdef Beast
         Mind
         Category
         
+        Description
+        
         Fitness
         Precision
         Vitality
@@ -62,6 +64,7 @@ classdef Beast
             obj.Mind = tableLine.Mind{1};
             obj.Category = tableLine.Category{1};
             obj.Rating = tableLine.Rating(1);
+            obj.Description = tableLine.Description{1};
             
             obj.Unharmed = tableLine.Unharmed(1);
             obj.Bruised = tableLine.Bruised(1);
@@ -139,7 +142,7 @@ classdef Beast
             
             end
            
-           text = text + "}";
+           text = text + "description = " + prepareText(obj.Description) + "}";
         end
         
         function s = statBlock(obj)

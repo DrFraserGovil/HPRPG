@@ -20,8 +20,8 @@
     opts = detectImportOptions("beasts.xlsx","NumHeaderLines",2);
     f = readtable("beasts.xlsx",opts);
     
-    g = {'SpeciesOrder','Name','Species','Desription','Rating','Mind','Category','Unharmed','Bruised','Hurt','Injured','Wounded','Mangled','Fortitude','Fitness','Precision','Vitality','Charm','Deception','Insight','Intelligence','Willpower','Perception','Block','Dodge','Defy','Immune','Resistant','Susceptible','Languages','Armaments','Skills','Abilities'};
-    f.Properties.VariableNames = g
+    g = {'SpeciesOrder','Name','Species','Description','Rating','Mind','Category','Unharmed','Bruised','Hurt','Injured','Wounded','Mangled','Fortitude','Fitness','Precision','Vitality','Charm','Deception','Insight','Intelligence','Willpower','Perception','Block','Dodge','Defy','Immune','Resistant','Susceptible','Languages','Armaments','Skills','Abilities'};
+    f.Properties.VariableNames = g;
     f = sortrows(f);
     h = height(f);
     
@@ -66,7 +66,7 @@
 
             for k = 1:length(List(j).Beasts)
                 List(j).Beasts(k).ImagePos = 1- (mod(k,2));
-                List(j).Beasts(k)
+
                 entry = entry + List(j).Beasts(k).print() + "\n\n\n";
             end
             entry = entry + "\n}";
@@ -80,7 +80,7 @@
         end
         
         if L == 1
-           text = text + List(j).Beasts(1).print(1) + "\n\n\n\n"; 
+           text = text + List(j).Beasts(1).print() + "\n\n\n\n"; 
         end
     end
     
