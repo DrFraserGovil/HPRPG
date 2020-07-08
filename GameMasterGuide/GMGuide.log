@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.3.20)  7 JUL 2020 14:20
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.3.20)  8 JUL 2020 14:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1688,63 +1688,72 @@ Package: xfp 2018/02/21 L3 Floating point unit
 . Defining command \inteval with sig. 'm' on line 39.
 .................................................
 )
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen291
+\WF@size=\dimen292
+\c@WF@wrappedlines=\count352
+\WF@box=\box126
+\WF@everypar=\toks54
+Package: wrapfig 2003/01/31  v 3.6
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
  (./GMGuide.aux)
 \openout1 = `GMGuide.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 18.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 19.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for LRC/fruc/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for LRA/frua/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for LRN/frun/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for LRT/frut/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for LRL/frul/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for LRM/frum/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 18.
-LaTeX Font Info:    Try loading font information for LS1+stix on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for LRC/fruc/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for LRA/frua/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for LRN/frun/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for LRT/frut/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for LRL/frul/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for LRM/frum/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 19.
+LaTeX Font Info:    Try loading font information for LS1+stix on input line 19.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/stix/ls1stix.fd
 File: ls1stix.fd 2015/04/17 v1.1.2-latex STIX LS1 font definitions
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 18.
-LaTeX Font Info:    Try loading font information for LS2+stix on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 19.
+LaTeX Font Info:    Try loading font information for LS2+stix on input line 19.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/stix/ls2stix.fd
 File: ls2stix.fd 2015/04/17 v1.1.2-latex STIX LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1780,14 +1789,14 @@ LaTeX Font Info:    ... okay on input line 18.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box126
+\AtBeginShipoutBox=\box127
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 99.
 
 )
 ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 19.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1795,11 +1804,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count352
+\c@section@level=\count353
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
 
 (./GMGuide.out) (./GMGuide.out)
 \@outlinefile=\write6
@@ -3010,323 +3019,2724 @@ Overfull \hbox (4.48868pt too wide) in paragraph at lines 40--40
  [] 
  []
 
-(./Chapters/Beasts/BeastDefinitions.tex
-\c@yCount=\count353
-\c@nonZeroCount=\count354
-) (./Chapters/Beasts/BeastList.tex
 [15
 
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 35--35
-|[] 
+] (./Chapters/Beasts/BeastDefinitions.tex
+\c@yCount=\count354
+\c@nonZeroCount=\count355
+) (./Chapters/Beasts/BeastList.tex
+File: ../Images/babyAcro.jpg Graphic file (type bmp)
+<../Images/babyAcro.jpg>
+
+Underfull \hbox (badness 6927) in paragraph at lines 44--44
+[]\TU/texgyrebonum-regular.otf(0)/m/n/8 A newborn \TU/texgyrebonum-regular.otf(
+0)/m/sc/8 acromantula \TU/texgyrebonum-regular.otf(0)/m/n/8 has a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 44--44
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 44--44
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 44--44
+[] 
+ []
+
+File: ../Images/Acromantula.png Graphic file (type bmp)
+<../Images/Acromantula.png>
+
+Underfull \hbox (badness 1163) in paragraph at lines 44--44
+\TU/texgyrebonum-regular.otf(0)/m/n/8 snare their pray, capturing it for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 44--44
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 44--44
+[] 
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 44--44
+[]\TU/texgyrebonum-regular.otf(0)/bx/it/9 Webwalker\TU/texgyrebonum-regular.otf
+(0)/m/n/9 : An Acromantula Adult takes no movement
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+
  []
 
 [16
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 70--70
-|[] 
+Overfull \hbox (12.63342pt too wide) in paragraph at lines 44--44
+[][]
  []
 
-[17
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 104--104
-|[] 
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+
  []
 
-[18
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 141--141
-|[] 
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 44--44
+[] 
  []
 
-[19
+File: ../Images/aragog.png Graphic file (type bmp)
+<../Images/aragog.png>
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 169--169
-|[] 
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+
  []
 
-[20
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 189--189
-|[] 
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 44--44
+[]|[]| 
  []
 
-[21
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 210--210
-|[] 
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 44--44
+[] 
  []
 
-[22
 
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 227--227
-|[] 
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+[]
  []
 
-[23
 
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 269--269
-|[] 
  []
 
-[24
 
-] [25
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 310--310
-|[] 
+Overfull \hbox (12.63342pt too wide) in paragraph at lines 44--44
+[][]
  []
 
-[26
 
-] [27
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 330--330
-|[] 
  []
 
-[28
 
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 387--387
-|[] 
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 44--44
+[] 
  []
 
-[29
 
-] [30
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 407--407
-|[] 
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 79--79
+[]|[]| 
  []
 
-[31
 
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 424--424
-|[] 
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 79--79
+[] 
  []
 
-[32
 
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 447--447
-|[] 
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 79--79
+[] 
  []
 
-[33
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 467--467
-|[] 
+[17]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 79--79
+[]|[]| 
  []
 
-[34
 
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 502--502
-|[] 
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 79--79
+[] 
  []
 
-[35
 
-] [36
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 522--522
-|[] 
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 79--79
+[] 
  []
 
-[37
 
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 539--539
-|[] 
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 79--79
+[]|[]| 
  []
 
-[38
 
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 562--562
-|[] 
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 79--79
+[] 
  []
 
-[39
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 579--579
-|[] 
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 79--79
+[] 
  []
 
-[40
 
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 596--596
-|[] 
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 79--79
+[]|[]| 
  []
 
-[41
 
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 619--619
-|[] 
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 79--79
+[] 
  []
 
-[42
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 636--636
-|[] 
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 79--79
+[] 
  []
 
-[43
+File: ../Images/ghost.png Graphic file (type bmp)
+<../Images/ghost.png>
 
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 672--672
-|[] 
+Underfull \hbox (badness 4328) in paragraph at lines 113--113
+\TU/texgyrebonum-regular.otf(0)/m/n/8 to remain behind, though it is
  []
 
-[44
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 719--719
-|[] 
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 113--113
+[]|[]| 
  []
 
-[45
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 748--748
-|[] 
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 113--113
+[] 
  []
 
-[46
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 769--769
-|[] 
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 113--113
+[] 
  []
 
-[47
+File: ../Images/peeves.png Graphic file (type bmp)
+<../Images/peeves.png>
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 797--797
-|[] 
+Underfull \hbox (badness 1924) in paragraph at lines 113--113
+\TU/texgyrebonum-regular.otf(0)/m/n/8 chief. They appear as a short,
  []
 
-[48
 
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 817--817
-|[] 
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
+[]\TU/texgyrebonum-regular.otf(0)/m/n/8 Unusually out of apparitions
  []
 
-[49
 
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 840--840
-|[] 
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
+\TU/texgyrebonum-regular.otf(0)/m/n/8 and other spiritual creatures,
  []
 
-[50
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 860--860
-|[] 
+Underfull \hbox (badness 3735) in paragraph at lines 113--113
+\TU/texgyrebonum-regular.otf(0)/m/n/8 poltergeists are able to take on
  []
 
-[51
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 881--881
-|[] 
+Underfull \hbox (badness 2617) in paragraph at lines 113--113
+\TU/texgyrebonum-regular.otf(0)/m/n/8 physical form and cast primitive
  []
 
-[52
-
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 902--902
-|[] 
+[18]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 113--113
+[]|[]| 
  []
 
-[53
 
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 925--925
-|[] 
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 113--113
+[] 
  []
 
-[54
 
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 971--971
-|[] 
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 113--113
+[] 
  []
 
-[55
+File: ../Images/boggart.jpg Graphic file (type bmp)
+<../Images/boggart.jpg>
 
-] [56
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1003--1003
-|[] 
+Underfull \hbox (badness 2376) in paragraph at lines 113--113
+[]\TU/texgyrebonum-regular.otf(0)/m/n/8 A manifestation of fear and pri-
  []
 
-[57
 
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1023--1023
-|[] 
+Underfull \hbox (badness 3240) in paragraph at lines 113--113
+[]\TU/texgyrebonum-regular.otf(0)/m/n/8 A boggart can never harm you,
  []
 
-[58
 
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1040--1040
-|[] 
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 113--113
+[]|[]| 
  []
 
-[59
 
-
-]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1061--1061
-|[] 
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 113--113
+[] 
  []
 
-))) (./Chapters/Cosmology.tex [60
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 113--113
+[] 
+ []
+
+File: ../Images/blackWidow.png Graphic file (type bmp)
+<../Images/blackWidow.png>
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 148--148
+[]|[]| 
+ []
 
 
-]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 148--148
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 148--148
+[] 
+ []
+
+File: ../Images/tick.jpg Graphic file (type bmp)
+<../Images/tick.jpg>
+[19]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 148--148
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 148--148
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 148--148
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 148--148
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 148--148
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 148--148
+[] 
+ []
+
+File: ../Images/Brood.jpg Graphic file (type bmp)
+<../Images/Brood.jpg>
+
+Underfull \hbox (badness 1226) in paragraph at lines 148--148
+\TU/texgyrebonum-regular.otf(0)/m/n/8 result of a freak mutation which
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 148--148
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 148--148
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 148--148
+[] 
+ []
+
+[20]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 176--176
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 176--176
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 176--176
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 176--176
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 176--176
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 176--176
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 176--176
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 176--176
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 176--176
+[] 
+ []
+
+File: ../Images/Graphorn.png Graphic file (type bmp)
+<../Images/Graphorn.png>
+
+Underfull \hbox (badness 2707) in paragraph at lines 196--196
+\TU/texgyrebonum-regular.otf(0)/m/n/8 sectetuer adipiscing elit. Etiam
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 196--196
+\TU/texgyrebonum-regular.otf(0)/m/n/8 ut metus. Pellentesque placerat.
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 196--196
+\TU/texgyrebonum-regular.otf(0)/m/n/8 turpis. Mauris lacinia lorem sit
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 196--196
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 196--196
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 196--196
+[] 
+ []
+
+File: ../Images/erumpet.png Graphic file (type bmp)
+<../Images/erumpet.png>
+[21]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 196--196
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 196--196
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 196--196
+[] 
+ []
+
+File: ../Images/reem.png Graphic file (type bmp)
+<../Images/reem.png>
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 196--196
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 196--196
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 196--196
+[] 
+ []
+
+File: ../Images/chimera.jpg Graphic file (type bmp)
+<../Images/chimera.jpg>
+[22]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 201--201
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 201--201
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 201--201
+[] 
+ []
+
+File: ../Images/dementor.png Graphic file (type bmp)
+<../Images/dementor.png>
+
+Underfull \hbox (badness 2707) in paragraph at lines 217--217
+\TU/texgyrebonum-regular.otf(0)/m/n/8 sectetuer adipiscing elit. Etiam
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 217--217
+\TU/texgyrebonum-regular.otf(0)/m/n/8 ut metus. Pellentesque placerat.
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 217--217
+\TU/texgyrebonum-regular.otf(0)/m/n/8 turpis. Mauris lacinia lorem sit
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 217--217
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 217--217
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 217--217
+[] 
+ []
+
+File: ../Images/lethifold.jpg Graphic file (type bmp)
+<../Images/lethifold.jpg>
+[23]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 217--217
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 217--217
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 217--217
+[] 
+ []
+
+File: ../Images/hidebehind.png Graphic file (type bmp)
+<../Images/hidebehind.png>
+
+Underfull \hbox (badness 2707) in paragraph at lines 234--234
+\TU/texgyrebonum-regular.otf(0)/m/n/8 sectetuer adipiscing elit. Etiam
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 234--234
+\TU/texgyrebonum-regular.otf(0)/m/n/8 ut metus. Pellentesque placerat.
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 234--234
+\TU/texgyrebonum-regular.otf(0)/m/n/8 turpis. Mauris lacinia lorem sit
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 234--234
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 234--234
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 234--234
+[] 
+ []
+
+File: ../Images/screwt.png Graphic file (type bmp)
+<../Images/screwt.png>
+[24]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 234--234
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 234--234
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 234--234
+[] 
+ []
+
+File: ../Images/demiguise.png Graphic file (type bmp)
+<../Images/demiguise.png>
+
+Underfull \hbox (badness 2707) in paragraph at lines 239--239
+\TU/texgyrebonum-regular.otf(0)/m/n/8 sectetuer adipiscing elit. Etiam
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 239--239
+\TU/texgyrebonum-regular.otf(0)/m/n/8 ut metus. Pellentesque placerat.
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 239--239
+\TU/texgyrebonum-regular.otf(0)/m/n/8 turpis. Mauris lacinia lorem sit
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 239--239
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 239--239
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 239--239
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 276--276
+[]|[]| 
+ []
+
+[25]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 276--276
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 276--276
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 276--276
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 276--276
+[]|[]| 
+ []
+
+[26]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 276--276
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 276--276
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 276--276
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 276--276
+[]|[]| 
+ []
+
+[27]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 317--317
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 317--317
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 317--317
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+[28]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 317--317
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 317--317
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 317--317
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 317--317
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+[29]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 317--317
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 317--317
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 317--317
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 317--317
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 337--337
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 337--337
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 337--337
+[] 
+ []
+
+[30]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 337--337
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 337--337
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 337--337
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 337--337
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 337--337
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 337--337
+[] 
+ []
+
+File: ../Images/brownie.jpg Graphic file (type bmp)
+<../Images/brownie.jpg>
+
+Underfull \hbox (badness 1622) in paragraph at lines 394--394
+\TU/texgyrebonum-regular.otf(0)/m/n/8 manoid creature which has been
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 394--394
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 394--394
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 394--394
+[] 
+ []
+
+[31]
+File: ../Images/dobby.jpg Graphic file (type bmp)
+<../Images/dobby.jpg>
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 394--394
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 394--394
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 394--394
+[] 
+ []
+
+File: ../Images/imp.png Graphic file (type bmp)
+<../Images/imp.png>
+
+Underfull \hbox (badness 2753) in paragraph at lines 394--394
+[]\TU/texgyrebonum-regular.otf(0)/m/n/8 The archetypal impish prankster,
+ []
+
+
+Underfull \hbox (badness 2495) in paragraph at lines 394--394
+\TU/texgyrebonum-regular.otf(0)/m/n/8 the Ellengæst, also known as a
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 394--394
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 394--394
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 394--394
+[] 
+ []
+
+File: ../Images/dunaelf.jpg Graphic file (type bmp)
+<../Images/dunaelf.jpg>
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 394--394
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 394--394
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 394--394
+[] 
+ []
+
+File: ../Images/vaettir.jpg Graphic file (type bmp)
+<../Images/vaettir.jpg>
+[32]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 394--394
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 394--394
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 394--394
+[] 
+ []
+
+File: ../Images/huldufolk.jpg Graphic file (type bmp)
+<../Images/huldufolk.jpg>
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 394--394
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 394--394
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 394--394
+[] 
+ []
+
+[33]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 414--414
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 414--414
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 414--414
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 414--414
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 414--414
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 414--414
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 414--414
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 414--414
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 414--414
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 431--431
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 431--431
+[] 
+ []
+
+[34]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 431--431
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 431--431
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 431--431
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 431--431
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 454--454
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 454--454
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 454--454
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 454--454
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 454--454
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 454--454
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 454--454
+[]|[]| 
+ []
+
+[35]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 454--454
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 454--454
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 454--454
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 454--454
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 454--454
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 474--474
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 474--474
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 474--474
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 474--474
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 474--474
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 474--474
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 474--474
+[]|[]| 
+ []
+
+[36]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 474--474
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 474--474
+[] 
+ []
+
+File: ../Images/giant.jpg Graphic file (type bmp)
+<../Images/giant.jpg>
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 509--509
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 509--509
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 509--509
+[] 
+ []
+
+File: ../Images/oldGiant.jpg Graphic file (type bmp)
+<../Images/oldGiant.jpg>
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 509--509
+[]|[]| 
+ []
+
+[37]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 509--509
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 509--509
+[] 
+ []
+
+File: ../Images/warrior.jpg Graphic file (type bmp)
+<../Images/warrior.jpg>
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 509--509
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 509--509
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 509--509
+[] 
+ []
+
+File: ../Images/gurg.jpg Graphic file (type bmp)
+<../Images/gurg.jpg>
+
+Underfull \hbox (badness 2707) in paragraph at lines 509--509
+\TU/texgyrebonum-regular.otf(0)/m/n/8 sectetuer adipiscing elit. Etiam
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 509--509
+\TU/texgyrebonum-regular.otf(0)/m/n/8 ut metus. Pellentesque placerat.
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 509--509
+\TU/texgyrebonum-regular.otf(0)/m/n/8 turpis. Mauris lacinia lorem sit
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 509--509
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 509--509
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 509--509
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 529--529
+[]|[]| 
+ []
+
+[38]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 529--529
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 529--529
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 529--529
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 529--529
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 529--529
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 529--529
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 529--529
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 529--529
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 546--546
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 546--546
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 546--546
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 546--546
+[]|[]| 
+ []
+
+[39]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 546--546
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 546--546
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 569--569
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 569--569
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 569--569
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 569--569
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 569--569
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 569--569
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 569--569
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 569--569
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 569--569
+[] 
+ []
+
+[40]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 569--569
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 569--569
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 569--569
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 586--586
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 586--586
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 586--586
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 586--586
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 586--586
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 586--586
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 603--603
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 603--603
+[] 
+ []
+
+[41]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 603--603
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 603--603
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 603--603
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 603--603
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 626--626
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 626--626
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 626--626
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 626--626
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 626--626
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 626--626
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 626--626
+[]|[]| 
+ []
+
+[42]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 626--626
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 626--626
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 626--626
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 626--626
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 626--626
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 643--643
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 643--643
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 643--643
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 643--643
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 643--643
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 643--643
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 648--648
+[]|[]| 
+ []
+
+[43]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 648--648
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 648--648
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 679--679
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 679--679
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 679--679
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 679--679
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 679--679
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 679--679
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 679--679
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 679--679
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 679--679
+[] 
+ []
+
+[44]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 679--679
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 679--679
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 679--679
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 679--679
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 679--679
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 679--679
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 679--679
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 679--679
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 679--679
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 679--679
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 679--679
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 679--679
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 726--726
+[]|[]| 
+ []
+
+[45]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 726--726
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 726--726
+[] 
+ []
+
+File: ../Images/Voldemort_Spirit.jpg Graphic file (type bmp)
+<../Images/Voldemort_Spirit.jpg>
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 726--726
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 726--726
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 726--726
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 726--726
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 726--726
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 726--726
+[] 
+ []
+
+File: ../Images/aberstath.jpg Graphic file (type bmp)
+<../Images/aberstath.jpg>
+[46]
+Overfull \vbox (4.49167pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 726--726
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 726--726
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 726--726
+[] 
+ []
+
+File: ../Images/solon.jpg Graphic file (type bmp)
+<../Images/solon.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
+
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 749--749
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 749--749
+[] 
+ []
+
+[47]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 749--749
+[] 
+ []
+
+File: ../Images/phlogiston.jpg Graphic file (type bmp)
+<../Images/phlogiston.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
+
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 749--749
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 749--749
+[] 
+ []
+
+
+Overfull \hbox (12.63342pt too wide) in paragraph at lines 749--749
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
+
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 749--749
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 778--778
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 778--778
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 778--778
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 778--778
+[]|[]| 
+ []
+
+[48]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 778--778
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 778--778
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 778--778
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 778--778
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 778--778
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 778--778
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 778--778
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 778--778
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 778--778
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 778--778
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 778--778
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 778--778
+[]|[]| 
+ []
+
+[49]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 778--778
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 778--778
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 783--783
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 783--783
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 783--783
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 799--799
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 799--799
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 799--799
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 799--799
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 799--799
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 799--799
+[] 
+ []
+
+File: ../Images/nogtail.jpg Graphic file (type bmp)
+<../Images/nogtail.jpg>
+
+Underfull \hbox (badness 2707) in paragraph at lines 804--804
+\TU/texgyrebonum-regular.otf(0)/m/n/8 sectetuer adipiscing elit. Etiam
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 804--804
+\TU/texgyrebonum-regular.otf(0)/m/n/8 ut metus. Pellentesque placerat.
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 804--804
+\TU/texgyrebonum-regular.otf(0)/m/n/8 turpis. Mauris lacinia lorem sit
+ []
+
+[50]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 804--804
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 804--804
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 804--804
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 808--808
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 808--808
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 808--808
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 827--827
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 827--827
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 827--827
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 827--827
+[]|[]| 
+ []
+
+[51]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 827--827
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 827--827
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 827--827
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 827--827
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 827--827
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 847--847
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 847--847
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 847--847
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 847--847
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 847--847
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 847--847
+[] 
+ []
+
+[52]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 847--847
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 847--847
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 847--847
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 870--870
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 870--870
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 870--870
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 870--870
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 870--870
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 870--870
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 870--870
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 870--870
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 870--870
+[] 
+ []
+
+[53]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 870--870
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 870--870
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 870--870
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 890--890
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 890--890
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 890--890
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 890--890
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 890--890
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 890--890
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 890--890
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 890--890
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 890--890
+[] 
+ []
+
+[54]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 895--895
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 895--895
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 895--895
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 911--911
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 911--911
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 911--911
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 911--911
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 911--911
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 911--911
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 916--916
+[]|[]| 
+ []
+
+[55]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 916--916
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 916--916
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 932--932
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 932--932
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 932--932
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 932--932
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 932--932
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 932--932
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 955--955
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 955--955
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 955--955
+[] 
+ []
+
+[56]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 955--955
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 955--955
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 955--955
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 955--955
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 955--955
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 955--955
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 955--955
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 955--955
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 955--955
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 960--960
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 960--960
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 960--960
+[] 
+ []
+
+File: ../Images/hunter.jpg Graphic file (type bmp)
+<../Images/hunter.jpg>
+[57]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1001--1001
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1001--1001
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1001--1001
+[] 
+ []
+
+File: ../Images/ripper.jpg Graphic file (type bmp)
+<../Images/ripper.jpg>
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1001--1001
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1001--1001
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1001--1001
+[] 
+ []
+
+File: ../Images/shredder.jpg Graphic file (type bmp)
+<../Images/shredder.jpg>
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1001--1001
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1001--1001
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1001--1001
+[] 
+ []
+
+File: ../Images/devourer.jpg Graphic file (type bmp)
+<../Images/devourer.jpg>
+[58]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1001--1001
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1001--1001
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1001--1001
+[] 
+ []
+
+File: ../Images/spawn.jpg Graphic file (type bmp)
+<../Images/spawn.jpg>
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1001--1001
+[]|[]| 
+ []
+
+[59]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1001--1001
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1001--1001
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1006--1006
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1006--1006
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1006--1006
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1010--1010
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1010--1010
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1010--1010
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1029--1029
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1029--1029
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1029--1029
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1029--1029
+[]|[]| 
+ []
+
+[60]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1029--1029
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1029--1029
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1029--1029
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1029--1029
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1029--1029
+[] 
+ []
+
+File: ../Images/grindylow.png Graphic file (type bmp)
+<../Images/grindylow.png>
+
+Underfull \hbox (badness 2707) in paragraph at lines 1049--1049
+\TU/texgyrebonum-regular.otf(0)/m/n/8 sectetuer adipiscing elit. Etiam
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 1049--1049
+\TU/texgyrebonum-regular.otf(0)/m/n/8 ut metus. Pellentesque placerat.
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 1049--1049
+\TU/texgyrebonum-regular.otf(0)/m/n/8 turpis. Mauris lacinia lorem sit
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1049--1049
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1049--1049
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1049--1049
+[] 
+ []
+
+File: ../Images/kappa.jpg Graphic file (type bmp)
+<../Images/kappa.jpg>
+
+Underfull \hbox (badness 2707) in paragraph at lines 1049--1049
+\TU/texgyrebonum-regular.otf(0)/m/n/8 sectetuer adipiscing elit. Etiam
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 1049--1049
+\TU/texgyrebonum-regular.otf(0)/m/n/8 ut metus. Pellentesque placerat.
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 1049--1049
+\TU/texgyrebonum-regular.otf(0)/m/n/8 turpis. Mauris lacinia lorem sit
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1049--1049
+[]|[]| 
+ []
+
+[61]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1049--1049
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1049--1049
+[] 
+ []
+
+File: ../Images/kelpie.jpg Graphic file (type bmp)
+<../Images/kelpie.jpg>
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1049--1049
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1049--1049
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1049--1049
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1066--1066
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1066--1066
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1066--1066
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1066--1066
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1066--1066
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1066--1066
+[] 
+ []
+
+[62]
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1071--1071
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1071--1071
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1071--1071
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1087--1087
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1087--1087
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1087--1087
+[] 
+ []
+
+
+Overfull \hbox (0.85698pt too wide) in paragraph at lines 1087--1087
+[]|[]| 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1087--1087
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1087--1087
+[] 
+ []
+
+))) (./Chapters/Cosmology.tex [63]
 Chapter 4.
 
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 21--21
@@ -3367,7 +5777,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 66--66
 |[] 
  []
 
-[61
+[64
 
 
 ]
@@ -3405,7 +5815,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 138--138
 |[] 
  []
 
-[62]
+[65]
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 148--148
 |[] 
  []
@@ -3430,24 +5840,20 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 184--184
 |[] 
  []
 
-) [63]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
+) [66]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
  (./GMGuide.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 54.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 54.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 55.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 55.
  ) 
 Here is how much of TeX's memory you used:
- 41612 strings out of 493007
- 797437 string characters out of 6136719
- 925584 words of memory out of 5000000
- 44927 multiletter control sequences out of 15000+600000
+ 41875 strings out of 493007
+ 802325 string characters out of 6136719
+ 931739 words of memory out of 5000000
+ 45145 multiletter control sequences out of 15000+600000
  585832 words of font info for 183 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 62i,16n,75p,10412b,746s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,18n,75p,10412b,752s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on GMGuide.pdf (64 pages).
+Output written on GMGuide.pdf (67 pages).

@@ -20,7 +20,7 @@
     opts = detectImportOptions("beasts.xlsx","NumHeaderLines",2);
     f = readtable("beasts.xlsx",opts);
     
-    g = {'SpeciesOrder','Name','Species','Description','Rating','Mind','Category','Unharmed','Bruised','Hurt','Injured','Wounded','Mangled','Fortitude','Fitness','Precision','Vitality','Charm','Deception','Insight','Intelligence','Willpower','Perception','Block','Dodge','Defy','Immune','Resistant','Susceptible','Languages','Armaments','Skills','Abilities'};
+    g = {'SpeciesOrder','Name','Species','Description','Rating','Mind','Category','Unharmed','Bruised','Hurt','Injured','Wounded','Mangled','Fortitude','Fitness','Precision','Vitality','Charm','Deception','Insight','Intelligence','Willpower','Perception','Block','Dodge','Defy','Immune','Resistant','Susceptible','Languages','Armaments','Skills','Abilities','Image','Stack'};
     f.Properties.VariableNames = g;
     f = sortrows(f);
     h = height(f);

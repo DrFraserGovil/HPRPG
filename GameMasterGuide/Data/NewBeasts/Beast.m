@@ -41,25 +41,38 @@ classdef Beast
         Resistant
         Susceptible
         
+        
         Languages
+        HasLanguages
         Armaments
+        HasArmaments
         Skills
         Abilities
         
         Image
-        hasImage
+        HasImage
         ImagePos
         ImageHeight
+        
+        Article;
         
         NeedsPage
         
         IsHuge
+        
+        ImageStack
     end
     
     methods
         function obj = Beast(tableLine)
             obj.Order = tableLine.SpeciesOrder(1);
             obj.Name = tableLine.Name{1};
+            
+            obj.Article = "A";
+            if any(obj.Name(1) == ["A","E","I","O","U"])
+               obj.Article = "An"; 
+            end
+            
             obj.Species = tableLine.Species{1};
             obj.Mind = tableLine.Mind{1};
             obj.Category = tableLine.Category{1};
@@ -97,13 +110,29 @@ classdef Beast
             obj.Immune = tableLine.Immune{1};
             obj.Susceptible = tableLine.Susceptible{1};
             obj.Languages = tableLine.Languages{1};
+            obj.HasLanguages = true;
+            if (obj.Languages == "")
+                obj.HasLanguages = false;
+            end
             obj.Skills = tableLine.Skills{1};
             obj.HasSkills = true;
             if (obj.Skills == "")
                 obj.HasSkills = false;
             end
             obj.Armaments = tableLine.Armaments{1};
+            obj.HasArmaments = true;
+            if(obj.Armaments == "")
+                obj.HasArmaments = false;
+            end
             obj.Abilities = tableLine.Abilities{1};
+            
+            obj.Image = tableLine.Image{1};
+            obj.HasImage = true;
+            if (obj.Image == "")
+                obj.HasImage = false;
+            end
+            
+            obj.ImageStack = tableLine.Stack(1);
         end
         
         function text = print(obj)
@@ -111,17 +140,17 @@ classdef Beast
             text = "\\beast{";
            
             
-            titles = ["name", "species","mind","category","rating"];
-            array = [string(obj.Name), string(obj.Species), string(obj.Mind), string(obj.Category),string(obj.Rating)];
+            titles = ["name", "species","mind","category","rating","abilities","article"];
+            array = [string(obj.Name), string(obj.Species), string(obj.Mind), string(obj.Category),string(obj.Rating),string(obj.Abilities),string(obj.Article)];
             
             for i = 1:length(array)
                 text = text + prepareText(titles(i)) + " = " + prepareText(array(i)) + ", ";
             end
             
             text = text + obj.statBlock();
-            
-            numTitles = ["nUnharmed","nBruised","nHurt","nInjured","nWounded","nMangled","block","dodge","fortitude"];
-            numArray = [obj.Unharmed, obj.Bruised, obj.Hurt, obj.Injured, obj.Wounded, obj.Mangled, obj.Block, obj.Dodge,obj.Fortitude];
+            text = text + obj.ResistanceText();
+            numTitles = ["nUnharmed","nBruised","nHurt","nInjured","nWounded","nMangled","block","dodge","defy","fortitude","imageStack"];
+            numArray = [obj.Unharmed, obj.Bruised, obj.Hurt, obj.Injured, obj.Wounded, obj.Mangled, obj.Block, obj.Dodge,obj.Defy,obj.Fortitude,obj.ImageStack];
             for i = 1:length(numArray)
                 val = numArray(i);
                 if isnan(val)
@@ -130,10 +159,10 @@ classdef Beast
                 text = text + numTitles(i) + "="+num2str(val) + ", ";
             end
             
-            hasTitles = ["hasSkills"];
-            hasTriggers = [obj.HasSkills];
-            includeTitles = ["skills"];
-            includeVals = [string(obj.Skills)];
+            hasTitles = ["hasSkills","hasAttacks","hasLanguages","hasImage"];
+            hasTriggers = [obj.HasSkills,obj.HasArmaments,obj.HasLanguages,obj.HasImage];
+            includeTitles = ["skills","attacks","languages","image"];
+            includeVals = [string(obj.Skills),string(obj.Armaments),string(obj.Languages),string(obj.Image)   ];
             
             for i = 1:length(hasTitles)
                if hasTriggers(i) 
@@ -157,8 +186,47 @@ classdef Beast
                     v = 0;
                 end
                
+                s = s + names(i) + " =" + num2str(v) + ", ";
             end
                 
+        end
+        
+        function s = ResistanceText(obj)
+           s = "";
+           ns = ["Immune", "Resistant", "Susceptible"];
+           vs = [string(obj.Immune), string(obj.Resistant), string(obj.Susceptible)];
+           
+           ns2 = string.empty;
+           nonZero = string.empty;
+           for i = 1:length(ns)
+              if (vs(i) ~= "")
+                  ns2(end+1) = ns(i);
+                  nonZero(end+1) = vs(i);
+              end
+           end
+           
+           if isempty(nonZero)
+               s = "hasDamage = 0, ";
+           else
+               s = "damage =";
+               
+               for i = 1:length(nonZero)
+                   s = s + "\key{" + ns2(i) + "} to \textit{" + vs(i) + "}";
+                   
+                   if length(nonZero) > 1
+                      if i < length(nonZero) -1
+                          s = s + "\comma{} ";
+                      end
+                      if i == length(nonZero) -1
+                          s = s + " and ";
+                      end
+                   end
+               end
+               
+               s = "hasDamage = 1, " + prepareText(s) + ", ";
+           end
+           
+           
         end
     end
 end

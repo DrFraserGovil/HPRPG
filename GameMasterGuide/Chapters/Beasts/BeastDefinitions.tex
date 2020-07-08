@@ -41,6 +41,7 @@
 \define@key{beast}{nWounded}{\def\nWounded{#1}}
 \define@key{beast}{nMangled}{\def\nMangled{#1}}
 \define@key{beast}{fortitude}{\def\fortitude{#1}}
+\define@key{beast}{article}{\def\article{#1}}
 
 
 \define@key{beast}{skills}{\def\skills{#1}}
@@ -48,7 +49,21 @@
 
 \define@key{beast}{block}{\def\block{#1}}
 \define@key{beast}{dodge}{\def\dodge{#1}}
+\define@key{beast}{defy}{\def\defy{#1}}
 
+\define@key{beast}{hasDamage}{\def\hasDamage{#1}}
+\define@key{beast}{damage}{\def\damage{#1}}
+
+\define@key{beast}{abilities}{\def\abilities{#1}}
+\define@key{beast}{attacks}{\def\attacks{#1}}
+\define@key{beast}{hasAttacks}{\def\hasAttacks{#1}}
+
+\define@key{beast}{hasLanguages}{\def\hasLanguages{#1}}
+\define@key{beast}{languages}{\def\languages{#1}}
+
+\define@key{beast}{hasImage}{\def\hasImage{#1}}
+\define@key{beast}{image}{\def\image{#1}}
+\define@key{beast}{imageStack}{\def\imageStack{#1}}
 %~ \define@key{beast}{hasImmune}{\def\immuneMode{#1}}
 %~ \define@key{beast}{immune}{\def\immune{#1}}
 %~ \define@key{beast}{hasResistance}{\def\resistanceMode{#1}}
@@ -90,7 +105,7 @@
 
 \def\defaultSetter
 {
-	\setkeys{beast}{name = none, species = None, mind = none, rating = Unset, category = none, description = None, fit =0, prs = 0, vit =0, cha = 0, dec = 0, ins = 0, int = 0, wil =0, pcp = 0, nUnharmed =0, nBruised = 0, nHurt = 0, nInjured = 0, nWounded = 0, nMangled = 0,fortitude = 0, skills = 0, hasSkills = 0}
+	\setkeys{beast}{name = none, species = None, mind = none, rating = Unset, category = none, description = None, fit =0, prs = 0, vit =0, cha = 0, dec = 0, ins = 0, int = 0, wil =0, pcp = 0, nUnharmed =0, nBruised = 0, nHurt = 0, nInjured = 0, nWounded = 0, nMangled = 0,fortitude = 0, skills = 0, hasSkills = 0, block = 0, dodge = 0, defy = 0,hasDamage = 0, damage = , abilities = ,hasAttacks = 0, attacks = None,article = A, hasLanguages = 0, languages = None, hasImage = 0, image = None}
 }
 \newcounter{yCount}
 \newcounter{nonZeroCount}
@@ -116,7 +131,7 @@
        
        \setcounter{yCount}{0}
        \setcounter{nonZeroCount}{0}
-       \foreach [count = \j from 0] \a/\b in { {Fine}/\nUnharmed, {Bruised \\(-1)}/\nBruised, {Hurt\\ (-2)}/\nHurt, {Injured(-3)}/\nInjured, {Harmed \\(-4)}/\nWounded, {Mangled (-5)}/\nMangled, {Critical}/1}
+       \foreach [count = \j from 0] \a/\b in { {Fine}/\nUnharmed, {Bruised \\(-1)}/\nBruised, {Hurt\\ (-2)}/\nHurt, {Injured\\(-3)}/\nInjured, {Harmed \\(-4)}/\nWounded, {Mangled (-5)}/\nMangled, {Critical}/1}
        {
 			\def\g{1.7}
 			\def\xVal{ {(\theyCount + (\b)/2)*\bx} + \thenonZeroCount*\bx/\g}
@@ -148,8 +163,9 @@
 	\if\fortitude0
 		%who knows?
 	\else
+		\parbox[t]{3.5 cm}{
 		\key{Fortitude:}
-	
+		\\~\\
 	    \begin{tikzpicture}
 	      
 	       \foreach \c in {1,...,{\fortitude}}
@@ -161,6 +177,7 @@
 	       }
 	       
 	    \end{tikzpicture}%
+	    }
 	 \fi
 }
 
@@ -192,8 +209,31 @@
 	\if#17
 		\sevenCape
 	\fi
+	\if#18
+		\sevenCape{} + \oneCape
+	\fi
+	\if#19
+		\sevenCape{} + \twoCape
+	\fi
+	\def\ten{10}
+	\ifnum#1=\ten
+		\sevenCape{} + \threeCape
+	\fi
+	
+	\def\eleven{11}
+	\ifnum#1=\eleven
+		\sevenCape{} + \fourCape
+	\fi
 }
 
+\newcommand\understands[1]
+{
+	\imp{Understands: } #1
+}
+\newcommand\speaks[1]
+{
+	\imp{Speaks: } #1
+}
 \newcommand\skill[2]
 {
 	~& \imp{#1}: & \ratingB{#2} \\
@@ -202,17 +242,19 @@
 \newcommand\titleBlock
 {
 	\definecolor{rulered}{HTML}{9C2B1B} 
-		{ \Huge \color{titlered}{\MakeUppercase{\name{}} }}
+		{ \huge \color{titlered}{\MakeUppercase{\name{}} }}
 		
 		MoM Rating: \rating{} {\it (\mind{}~\category{}) }
 }
 
 \newcommand\skillBlock
 {
-	\key{Skills:}
+	\key{Abilities:}
 	
 	\begin{tabular}{@{} p{2cm} r c @{} }
 		 \skills{}
+		 
+		
 	\end{tabular}
 }
 \def\w{2.1}
@@ -226,7 +268,19 @@
 	
 	\healthBox{}
 		
-	\fortitudeBox{}
+	\begin{tabular}{m{4cm} m{4cm}}
+	\fortitudeBox{}	&	\begin{tabular}{||l l||}
+								\hline\hline
+								\key{Block}	& \ratingB{\block}
+								\\
+								\key{Dodge}	&	\ratingB{\dodge}
+								\\
+								\key{Defy}	&	\ratingB{\defy}
+								\\\hline\hline
+						\end{tabular}
+	\end{tabular}
+	
+	\damage{}
 	
 	\key{Aspects:}	
 	\footnotesize
@@ -241,6 +295,7 @@
 		\end{tabular}
 	\normalsize
 	
+
 	
 }
 
@@ -248,15 +303,35 @@
 {
 \textbf{\textit{#1}}: #2
 }
-\newcommand\melee[3]
+\newcommand\melee[5]
 {
-\textbf{\textit{#1}}: ({\it melee attack, #2 to hit}) #3
+\parbox[t]{9.5cm}{\textbf{\textit{#1}}: ({\it melee attack, #2 dice, DV \fpeval{7+#3}}) \\ Effect: \imp{#4}, with Power #5}
 }
-\newcommand\ranged[4]
+\newcommand\ranged[6]
 {
-\textbf{\textit{#1}}: ({\it ranged attack, #2 to hit, range: #3}) #4
+\parbox[t]{10cm}{\textbf{\textit{#1}}: ({\it ranged attack, #3 dice, DV \fpeval{7+#4}, range #2m}) \\ Effect: \imp{#5}, with Power #6}
 }
 
+
+\newcommand\sideBySide
+{
+	\begin{minipage}{0.23 \textwidth}
+	\includegraphics[width = 0.9 \textwidth, keepaspectratio=true]{../Images/\image}
+	\end{minipage}
+	\begin{minipage}{0.25\textwidth}
+	\description{}
+	\end{minipage}
+
+}
+\newcommand\verticalStack
+{
+	{\centering
+	\includegraphics[width = 0.4 \textwidth, keepaspectratio=true]{../Images/\image}
+	}
+	
+	\description{}
+
+}
 
 
 \newcommand\beast[1]
@@ -266,10 +341,21 @@
 	\defaultSetter
 	\setkeys{beast}{#1}
 	
-	\titleBlock{}
+	\vbox
+	{
+		\titleBlock{}
+		
+		\if\hasImage1
+			\if\imageStack1
+				\verticalStack
+			\else
+				\sideBySide
+			\fi
+		\else
+			\description{}
+		\fi
+	}
 	
-	{\it \description}
-
 	\statBlock
 
 	\if\hasSkills1
@@ -277,14 +363,33 @@
 		\skillBlock{}
 	\fi
 
+	\dndline
+	
+	\abilities{}
+	
+	\if\hasLanguages1
+		\ability{Languages}{\languages}
+	\fi
+		
+	\if\hasAttacks1
+		\subsubsection*{Armaments \& Attacks}
+		\attacks{}
+	\fi
+	
+	\dndline
+	~
+	
 	\endgroup
 }
 
 \newcommand\species[3]
 {
-	\clearpage
-	\section*{\Huge #1}
+	%\clearpage
+
+		{ \Huge{\MakeUppercase{#1} }}
+		
 	\addcontentsline{toc}{section}{#1}
+	
 	#2
 
 	~
