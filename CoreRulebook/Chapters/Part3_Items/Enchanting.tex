@@ -29,10 +29,16 @@ Each rune inscribed on the surface of the object alters the nature of the nexus,
 Ones these \imp{runes} are chosen, the enchanter must begin the complex task of inscribing interlinking chains of these \imp{runes} in arcane shapes and patterns over the surface of the object.  The selection of \imp{runes} is therefore of vital importance to the outcome of the enchantment. 
 
 
-All of the \imp{base runes} fall into one of three categories: the \key{Control Runes}, the \key{Esoteric Runes} and the \key{Duration Runes}. For a successful echantment, you need at least one rune from each category to be inscribed into the nexus. 
+All of the \imp{Ancient Runes} fall into one of three categories: the \key{Control Runes}, the \key{Esoteric Runes} and the \key{Duration Runes}. For a successful echantment, you need at least one rune from each category to be inscribed into the nexus. 
 
 
+\subsubsection{Learning Runes}
 
+Whilst, for simplicity, the runes are presented as singular entities within this rulebook (the `base rune'), when a witch `learns' a rune, they are actually learning the complex `grammar' needed to conjugate and modify the base runes into the complex webs of magic required for enchanting. 
+
+Learning a new rune, therefore, can be an arduous task, and usually requires studying a tome dedicated to that singular rune for a number of hours. Locating the relevant tome might be an adventure in and of itself - the \imp{Hogwarts Library} is unlikely to stock any tomes regarding the use of \rune{\lues}, the necromantic rune, for example.
+
+As a rough guide, once a rune-tome has been located, a character may perform an \imp{Intelligence (Investigation)} check (DV 7). Each success reduces the required study time by 1 hour, starting from 8 hours. Once this time has elapsed, your character is considered to have memorised the use of this rune. 
 \newcommand\runeRow[3]
 {
 	\rune{#2}	&	#1	&		\small #3 \\
@@ -135,9 +141,7 @@ All of the \imp{base runes} fall into one of three categories: the \key{Control 
 
 
 
-
-
-\subsection{Imbuing}
+\subsection{The Enchanting Ritual}
 
 Whilst the \imp{Runes} are being inscribed, the artificer must channel magical energy into the runes, to be stored and shaped in the nexus. To do this, they must hold a very precise idea of the effect they wish to imbue into the item. 
 
@@ -204,26 +208,23 @@ The DV of the check is determined by the GM from their assessment of the rarity 
 
 \subsubsection{Enchantment Success}
 
-In order for the enchanting ritual to complete you must meet a number of successes determined by the difficulty of the enchanting effort your are attempting
+In order for the enchanting ritual to complete you must meet a number of successes determined by the difficulty of the enchanting effort your are attempting:
 
+\newcommand\sucRow[2]{ \key{#1}  & #2 \\}
+\begin{center}
+\begin{rndtable}{l c}
+	\bf Rarity & \bf Successes \\
+	\sucRow{Trivial}{5}
+	\sucRow{Common}{10}
+	\sucRow{Singular}{15}
+	\sucRow{Unusual}{20}
+	\sucRow{Rate}{30}
+	\sucRow{Extraordinary}{40}
+	\sucRow{Mythical}{50+}
+\end{rndtable}
+\end{center}
 
-
-%~ \newcommand\enchantRow[3]{ \key{#1} & \parbox[t]{4.5 cm}{\small \raggedright #2} & #3 \\}
-
-
-%~ \begin{center}
-	%~ \begin{rndtable}{c c c}
-		%~ \key{Difficulty}	&	\key{Description}	&	\key{Successes}
-		%~ \\
-		%~ \enchantRow{Trivial}{Very simple and cheap enchanted objects - a normal wizard would expect to have dozens of such items in their possession.}{5}
-		%~ \enchantRow{Common}{Though they might not own many as many of these items, a normal witch would be familiar and comfortable with \imp{Common} items in everyday life.}{10}
-		%~ \enchantRow{Singular}{Verging on impressive magical power, your normal magic-user probably owns only a handful of these items, and they would be treated as prized possessions.}{15}
-		%~ \enchantRow{Unusual}{An \imp{Unusual} magical item would usually be enough to draw inquisitive looks when displayed - a normal witch or wizard probably only owns one or two of these throughout their lifetime (if they are lucky).}{20}
-		%~ \enchantRow{Rare}{A rare item would be passed down through a family as a treasured heirloom, and kept under the highest security when not being used. There are probably no more than a few thousand \imp{Rare} items in the country at any one time. }{20}
-		%~ \enchantRow{Extraordinary}{Most witches and wizards would only ever have seen an \imp{Extraordinary} magical item, and very, very few will have owned them. An object of this power is usually either stored in \imp{Gringotts}, or on display in a museum.}{25}
-		%~ \enchantRow{Mythical}{\imp{Mythical} items are unique magical items which would be remembered throughout history for their enigmatic magic and immense power. Even being able to see, let alone own, a Mythical item would be a thing to tell stories about.}{30}
-	%~ \end{rndtable}
-%~ \end{center}
+Once you have reached the required number of successes, you have completed the enchanting process, and now possess a newly enchanted object. Your GM should finalise any remaining questions about the properties of the new object, such as any limitations or finite uses, and then you may begin to use it as you wish.
 
 
 \subsubsection{Enchantment Failure}
@@ -238,31 +239,31 @@ The exact nature of the failure of an enchantment is up for the GM to decide, bu
 
 
 
-%~ \subsubsection{The Limits of Enchanting}
+\subsection{The Limits of Enchanting}
 
-%~ Although it is possible for an unskilled indivudal to lay their hands on a copy of even the most advanced \imp{runes}, this does not mean that you can enchant whatever you desire. 
+Although it is possible for an unskilled indivudal to lay their hands on the \imp{runes} needed to create even the most powerful of items, the basic rules of magic still apply. For instance, one cannot enchant a magic item to produce infinite amounts of food, as this would violate the rules regarding conjuration magic. See the page \pageref{S:Laws} for more on the \imp{Laws of Magic}.
 
-%~ A general rule of thumb is that you cannot enchant an item which would outperform a spell of your current level. 
+An additional note of caution is warranted regarding the use of the rune \rune{\animax}, the rune of sentience. Only in the hands of the most powerful enchanters can this replicate a true sentient mind within the enchanted item (such as that found within the \imp{Sorting Hat} ). In the hands of most enchanters this rune is much more limited, producing a more animalistic, basic mind which, though able to respond to external stimuli, is not intelligent or conscious.  
 
-%~ For example, a level 5 character only has access to Novice level spells, but could have access to the runechain \rune{\displos\perdero\hominus} ({\it displos perdero hominus}, instant destroy body), and is attempting to utilise these \imp{runes} to curse an item with an effect which would cause instant death to the next person to touch it. Instant death, however, is the domain of {\it Word of Death}, a Master level necromancy spell. The GM would therefore assign this an incredibly high DV, or simply rule that this is an impossible task, far beyond your current capabilities. 
 
-%~ Alternatively, you may be able to work with the GM to find way for the effect to be curtailed to an appropriate level \minus{} maybe this cursed object does kill, but only after prolongued contact, during which the caster suffers progressive maladies such as nosebleeds and headaches. This reduces the immediate threat (and hence game\minus{}breaking nature) of the enchantment, but keeps its fundamental essence intact. 
+\subsection{Multiple Effects}
 
-%~ In addition, whilst it is possible for the runechain \rune{\aeternum\cingo\sensus} to imbue items with a limited amount of sentience and ability to function independently (this runechain is found on the bludger and golden snitch, for example), it is outside the realm of most wizards to imbue an item with true sentience. Only the Artificers have discovered how to imbue an item with original thought and true, actual consciousness. 
+Sometimes you may want to layer multiple effects on a single item. 
 
-%~ \subsubsection{Multiple Effects}
+\subsubsection{Complimentary Effects} 
 
-%~ Sometimes you may want to layer multiple effects on a single item. 
+If these individual effects compliment each other, and form part of a singular cohesive structure, then they can be chained together into a single enchantment. 
 
-%~ If these individual effects compliment each other, and form part of a singular cohesive structure, then they can be chained together into a single enchantment. 
+An enchanted cloak which lets you control nearby fire with your mind, but also bestows a resistance against fire could be enchanted with the combined runechain \rune{\mentis\velox\primum\iuxta\aeternum\clypus} - though the runes are very different, they clearly flow as part of the same enchantment (a `cloak of fire') and so the nexus can easily be modified to accomodate this additional effect. 
 
-%~ An enchantment which lets you create and then manipulate fire, for example could be enchanted as part of a single runechain: \rune{\lentus\genero\ignis\lentus\imperum\ignis} (which you could probably shorten to \rune{\lentus\genero\imperum\ignis}). 
+The individual effects would be weaker than if you had just chosen one of the effects, or the item would be classed as a significantly \imp{rarer} item, therefore requiring more time and effort to enchant, but this poses no intrinsic problems. 
 
-%~ The individual effects would be weaker than if you had just chosen one of the effects, or the DV might be significantly higher, but this poses no intrinsic problems, as the \imp{runes} work well together. 
+\subsubsection{Non-Complimentary Effects}
 
-%~ However, you attempt to enchant drastically different effects layered onto the same artefact \minus{} you may wish to have a sword which contains a vicious toxin in the blade (\rune{\velox\perdero\morbus}), but also allows you to read the minds of your enemies (\rune{\aeternum\discite\sensus}). These cannot be performed as part of the same enchantment ritual \minus{} you must perform the enchantment twice. 
+However, if you attempt to enchant drastically different effects layered onto the same artefact \minus{} you may wish to have a sword which contains a vicious toxin in the blade (\rune{\sessio\displos\morbus}), but also allows you to read the minds of your enemies (\rune{\mentis\velox\animus}). Whilst undeniably a powerful weapon, these two magical effects don't necessarily `mesh' well together, and you would have to twist yourself in nots to try and come up with a narrative reason why these two effects arise from a single magical effect. 
 
-%~ Note, however, that multiple enchantments (even if they compliment each other) can destabilise the magical nexus. The associated DV of multiply enchanted objects rises exponentially as more effects are added, and the odds of the item blowing up in your hands increases commensurately.  
+These effects, therefore cannot be performed as part of the same enchantment ritual, and only the most powerful of \imp{Artificers} are able to enchant an already enchanted item. 
+
 
 \subsection{Some Examples}\label{E:EnchantingExamples}
 
@@ -289,7 +290,7 @@ For the purposes of illustration, the table below contains a brief description o
 	\artefactRow{Disappearing Ink}{\vox\displos\canto}{Voice}{Instant}{Bewitchment}{A vial of ink which, when a command phrase is uttered, switches between visible and invisible.}
 	\artefactRow{Enchanted Origami}{\animax\lentus\motu}{Sentient}{Long}{Kinesis}{A weakly enchanted piece of paper, folded to appear as an animal. The enchantment causes it to `come alive' for a period of time.}
 	\artefactRow{Magical Lantern}{\oculum\aeternum\primum}{Visual}{Eternal}{Elemental}{A simple object which glows brightly when placed in a region of darkness.}
-	\artefactRow{Sneakoscope}{\fabulum\velox\animus}{Arcane}{Short}{Cerebral}{A small object which buzzes and hums when it detects the usage of magic from the \imp{Dark Arts} school.}
+	\artefactRow{Swindler's Coin}{\mentis\displos\muto}{Mental}{Instant}{Change}{A small silver sickle which appears perfectly normal, when tossed, the owner can control if it lands on heads or tails with perfect accuracy.}
 }
 
 \artefactList{Common}
@@ -297,7 +298,7 @@ For the purposes of illustration, the table below contains a brief description o
 	\artefactRow{Beautifying Robes}{\iuxta\aeternum\canto}{Proximity}{Eternal}{Bewitchment}{A set of robes which make the wearer appear more physically attractive.}
 	\artefactRow{Bludger}{\animax\lentus\motu}{Sentient}{Long}{Kinesis}{A strong though simple enchantment placed on an enchanted solid ball used in \imp{Quidditch}. When released, the ball seeks out players and attempts to smash them.}
 	\artefactRow{Rememberall}{\sessio\aeternum\animus}{Proximity}{Eternal}{Cerebral}{A small orb which changes colour when someone nearby forgets something.}
-	\artefactRow{Swindler's Coin}{\mentis\displos\muto}{Mental}{Instant}{Change}{A small silver sickle which appears perfectly normal, when tossed, the owner can control if it lands on heads or tails with perfect accuracy.}
+	\artefactRow{Sneakoscope}{\fabulum\velox\animus}{Arcane}{Short}{Cerebral}{A small object which buzzes and hums when it detects the usage of magic from the \imp{Dark Arts} school.}
 }
 \artefactList{Singular}
 {
@@ -328,24 +329,3 @@ For the purposes of illustration, the table below contains a brief description o
 	\artefactRow{Horcrux}{\sessio\aeternum\lues}{Passive}{Eternal}{Necromancy}{A horcrux, on its own, is nothing particularly interesting: merely an exquisitely prepared vessel. When paired with a profane and disgusting ritual (the details of which are to horrifying to describe here), however, it can be used to store a part of the creator's soul, thereby tethering them to the realm of the living as long as the horcrux is intact.}
 }
 
-%~ \subsubsection{Some Examples}
-
-%~ For the purposes of an example, the list below contains the runechains that are used to enchant some of the common magical artefacts found in the wizarding world. 
-
-
-%~ \def\w{2.4}
-%~ \def\q{4}
-%~ \newcommand\artefactRow[4]
-%~ {
-%~ \small #1	&	\parbox[t]{\w cm}{{\centering \rune{#2}} \\ \raggedright \it \footnotesize #3}	&	\parbox[t]{\q cm}{\footnotesize  #4} \\
-%~ }
-%~ \begin{rndtable}{@{} p{\w cm} p{\w cm} p {\q cm}}
-%~ \bf Item 	&	\bf \imp{runes}	&	\bf	Justification
-%~ \\
-%~ \artefactRow{Bludger}{\lentus\cingo\sensus\lentus\imperum\pondus}{Long contain mind, long control matter}{The first string provides the bludger with a limited amount of sentience and the second allows it fly and maneouvre itself for a few hours, after being activated.}
-%~ \artefactRow{Deluminator}{\velox\perdero\lux \velox\sarco\lux}{Short destroy light, short restore light}{The deluminator sucks in nearby light on activation (the first half), and then restores it on a second activation (the second half). }
-%~ \artefactRow{Penseive}{\aeternum\cingo\sensus\lentus\discite\sensus}{Eternal store mind, long percieve mind }{A penseive acts as a permanent storage place for memories, and also allows the user to dive in for extended periods of time to view them. }
-%~ \artefactRow{Portkey}{\displos\porto\pondus}{Instant transmit matter}{The portkey performs a single simple purpose: teleport matter instantaneously upon activation.}
-%~ \artefactRow{Self\minus{}Erecting Tent}{\aeternum\genero\locus\aeternum\cingo\pondus\velox\imperum\pondus}{Eternal create space, eternal contain matter, short control matter}{The first two strings make the tent have a larger volume on the inside and to make it act as a shelter to objects inside. The final string enables the tent to assemble itself over a short period of time.}
-%~ \artefactRow{Sneakoscope}{\aeternum\discite\morbus\velox\imperum\pondus}{Eternal percieve cursed, short control matter}{The primary effect of the sneakoscope is contained in the first string: the detection of evil and cursed objects. The second string merely provides the alert mechanism \minus{} the object whistles and spins of its own accord.}
-%~ \end{rndtable}

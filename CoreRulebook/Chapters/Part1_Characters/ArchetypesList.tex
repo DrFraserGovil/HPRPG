@@ -1,5 +1,5 @@
 
-\renewcommand\ability[4]
+\newcommand\ability[4]
 {
 	\subsubsection{\imp{#1 Ability: #2}}
 	
@@ -130,14 +130,36 @@
 \archetype
 {
 	name = Artificer,
-	innateAbility = Complexity,
-	practicalAbility = Hack,
+	description = {\bname{}}s are those individuals who revel in the act of creation\comma{} in making things more than the sum of their parts. 
+
+Coming in many varieties – from the magic\minus{}item driven \imp{Enchanters} to the potion\minus{}mixing \imp{Alchemists} and even the more muggle\minus{}minded \imp{Technicians}\comma{} an \imp{Artificer} is both creative and technical\comma{} addressing challenges with a little something they prepared earlier. 
+
+Many \imp{Artificers} seal themselves away in their laboratories\comma{} only surfacing for air when absolutely necessary – but it is not unusual for some to take a more libearl appraoch to `field testing’ their equipment. What’s the point of creating the ultimate magical weapon if you don’t get to shoot it at things?,
+	experience = \item Solve a problem using technical knowledge or innovation
+\item Create something new and impressive,
+	bonuses = \bonus{Imbue or Craft}{\twoCape}
+\bonus{Arcane or Technology}{\twoCape}
+\bonus{Investigation}{\twoCape}
+\bonus{Logic}{\oneCape},
+	innateAbility = Danger,
+	innateDescription = As experimentalists\comma{} most often using themselves as their test subjects\comma{} many {\bname{}}s have had to develop a sixth sense for an incoming explosion when things are suddenly going south. 
+
+This ability allows artificers to sense that something very bad is about to happen – be it the minute ticking of a trap mechanism\comma{} the whiff of the acidic poition behind a hidden compartment\comma{} and allows them to get more advanced warning than their less experienced compatriots.,
+	practicalAbility = Modify,
+	practicalDescription = The ability to take something and quickly hack it in order to make it into something else\comma{} or extend its current capabilities\comma{} is a hallmark of the \bname{}’s craft. 
+
+From small aesthetic jobs\comma{} such as changing the colour of an alchemical solution from red to blue\comma{} to (at the highest possible levels)\comma{} re\minus{}enchanting an already imbued artefact\comma{} the ability to \imp{Modify} the properties of an object is hugely valuable.,
 	knowledgeAbility = Analyse,
+	knowledgeDescription = Artificers are adept at discerning the function of objects\comma{} both magical and mundane\comma{} which is reflected in the \imp{analyse} ability. 
+
+This ability may be used in order to determine the purpose or properties of a target for the maximum effect outside of an \imp{Identify} spell.,
 	feats = \feat{Adept Alchemist}{Whenever you undertake a potion mixing effort\comma{} you gain one automatic success\comma{} as if you had expended a \imp{Fortitude} point.}
 
 \feat{Expert Enchanter}{Whenever you undertake an enchanting effort\comma{} you gain one automatic success\comma{} as if you had expended a \imp{Fortitude} point.}
 
-\feat{Master Mechanist}{Whenever you undertake a tinkering or mechanical manufacturing effort\comma{} you gain one automatic success\comma{} as if you had expended a \imp{Fortitude} point.},
+\feat{Master Mechanist}{Whenever you undertake a tinkering or mechanical manufacturing effort\comma{} you gain one automatic success\comma{} as if you had expended a \imp{Fortitude} point.}
+
+\feat{Hidden Magic}{When you complete a \imp{Enchantment} or \imp{Potion making} project\comma{} you may expend an additional hour to make the magic completely hidden. Runes are hidden and alchemical creations can appear as mundane fluids. Only upon activation or a spell such as \imp{Identify} can the ture nature be divined.},
 	article = An,
 	bonusWidth = 3
 }
@@ -152,9 +174,8 @@
 Their pursuit of justice often puts them in harm's way\comma{} and so the budding \auror{} is encouraged to focus on magic which allows them to protect themselves from harm\comma{} as well as incapacitate their foes. 
 
 However\comma{} the defining trait of an \auror{} is not their combat abilities but instead their ability to discover clues\comma{} intuit motives and hunt down their foes.,
-	experience = \item Track down or hunt an elusive target
-\item Solve a significant mystery 
-\item Prevent a crime or other unethical act from occuring,
+	experience = \item Solve a problem using investigation\comma{} tracking and detective work
+\item Track down or hunt an elusive target or solve a significant mystery,
 	bonuses = \bonus{Insight}{\twoCape}
 \bonus{Investigation}{\twoCape}
 \bonus{Perception}{\oneCape}
@@ -242,6 +263,8 @@ The way in which nature responds is often esoteric and open to interpretation\co
 Others turn this defiance of law and order to become perennial tricksters\comma{} revelling in chaos and uncertainty. 
 
 An \bname{}\comma{} whichever path they take in life\comma{} lives and dies by their preparedness and ability to surprise those would ensnare and imprison them. Those who would catch an \bname{} should prepare to have every trick in the book thrown at them.,
+	experience = \item Solve a problem using trickery\comma{} deception or subterfuge
+\item Further their own aims or self\minus{}interest at the expense of the law or local rules,
 	bonuses = \bonus{Covert}{\threeCape}
 \bonus{Precision}{\twoCape}
 \bonus{Perception or Deception}{\oneCape}
@@ -330,7 +353,7 @@ Speculation allows you to draw disperate threads of knowledge\comma{} in order t
 Many people believe that \name{}s are born into their suave\comma{} charm and connections to those in the upper echelons of society\comma{} but there are of those who have struggled up the ranks of class and affluence to attain the status of \bname{}. Though these people may be privately regarded as interlopers by the old\minus{}guard\comma{} they are every bit as affluent and influential. 
 
 There are still others who are simply bluffing their way through\comma{} running the long\minus{}con and hoping nobody catches on…,
-	experience = \item Use rumours and gossip to your own advantage
+	experience = \item Overcome a  problem using rumours\comma{} gossip or skills of persuasion and deception
 \item Turn an enemy into a friend\comma{} or otherwise significantly manipulate someone,
 	bonuses = \bonus{Eloquence}{\threeCape}
 \bonus{Charm or Deception}{\twoCape}
@@ -363,8 +386,9 @@ A high \imp{Society} knowledge means that you know everyone who is anyone. You a
 Warriors range from delicate and refined duelists\comma{} to axe\minus{}wielding maniacs. Being a warrior is more than just being handy with a weapon\comma{} however. A great warrior never goes into battle unprepared\comma{} and study and knowledge of tactics\comma{} history and the weaknesses of your foes is vital in achieving victory. 
 
 No matter what weapons they wield\comma{} a warrior carefully balances their combat skills\comma{} their tactical knowledge and a deep\minus{}seated rage against those who would defy them.,
-	experience = \item Defeat a worthy opponent in battle
-\item Execute a novel or interesting stratagem,
+	experience = \item Overcome a problem with combat and martial prowess.
+\item Defeat a worthy opponent in battle
+Or execute a novel or interesting stratagem,
 	bonuses = \bonus{Brawl\comma{} Skirmish or Marksmanship}{\twoCape}
 \bonus{Fitness}{\twoCape}
 \bonus{Perception}{\oneCape}
