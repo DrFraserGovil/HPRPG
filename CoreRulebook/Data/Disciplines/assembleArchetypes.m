@@ -31,12 +31,13 @@ function assembleArchetypes(fileRoot)
                     text = string.empty;
                 end
 
-
+            
             end
             if ~isempty(text)
                 t = t + ",\n\t" + headers(j) + " = " + prepareText(text)+ "";
             end
         end
+        t = t + ", feats = \\" + f{i,1}{1} + "Feats";
         t = t + "\n}\n\n";
     end
 

@@ -14,14 +14,7 @@
 	\imp{\name}
 }
 
-\newcommand\feat[2]
-{
-	\vspace{-0.4cm}
-	\subsubsection{\key{#1}}
-	
-	#2
 
-}
 
 \newcommand\bonus[2]
 {
@@ -135,7 +128,7 @@
 Coming in many varieties – from the magic\minus{}item driven \imp{Enchanters} to the potion\minus{}mixing \imp{Alchemists} and even the more muggle\minus{}minded \imp{Technicians}\comma{} an \imp{Artificer} is both creative and technical\comma{} addressing challenges with a little something they prepared earlier. 
 
 Many \imp{Artificers} seal themselves away in their laboratories\comma{} only surfacing for air when absolutely necessary – but it is not unusual for some to take a more libearl appraoch to `field testing’ their equipment. What’s the point of creating the ultimate magical weapon if you don’t get to shoot it at things?,
-	experience = \item Solve a problem using technical knowledge or innovation
+	experience = \item Solve a problem using technical knowledge\comma{} innovation or one of their creations
 \item Create something new and impressive,
 	bonuses = \bonus{Imbue or Craft}{\twoCape}
 \bonus{Arcane or Technology}{\twoCape}
@@ -153,15 +146,8 @@ From small aesthetic jobs\comma{} such as changing the colour of an alchemical s
 	knowledgeDescription = Artificers are adept at discerning the function of objects\comma{} both magical and mundane\comma{} which is reflected in the \imp{analyse} ability. 
 
 This ability may be used in order to determine the purpose or properties of a target for the maximum effect outside of an \imp{Identify} spell.,
-	feats = \feat{Adept Alchemist}{Whenever you undertake a potion mixing effort\comma{} you gain one automatic success\comma{} as if you had expended a \imp{Fortitude} point.}
-
-\feat{Expert Enchanter}{Whenever you undertake an enchanting effort\comma{} you gain one automatic success\comma{} as if you had expended a \imp{Fortitude} point.}
-
-\feat{Master Mechanist}{Whenever you undertake a tinkering or mechanical manufacturing effort\comma{} you gain one automatic success\comma{} as if you had expended a \imp{Fortitude} point.}
-
-\feat{Hidden Magic}{When you complete a \imp{Enchantment} or \imp{Potion making} project\comma{} you may expend an additional hour to make the magic completely hidden. Runes are hidden and alchemical creations can appear as mundane fluids. Only upon activation or a spell such as \imp{Identify} can the ture nature be divined.},
 	article = An,
-	bonusWidth = 3
+	bonusWidth = 3, feats = \ArtificerFeats
 }
 
 \archetype
@@ -191,19 +177,8 @@ If you wish to know why someone would behave in a given way\comma{} why a certai
 	knowledgeDescription = Hunting down a foe is a key part of being an \bname{}\comma{} and part of that is being able to survey a scene and see where they were\comma{} what they did\comma{} and where they're going next.
 
 Whilst \imp{Intuition} relies on a general understanding of the target's thought pattern\comma{} when you \imp{Track} a target you look for the trail that they have left \minus{} scuffs in the dirt\comma{} broken twigs in the forest and even more abstract trails such as an online presence or a paper trail. Whatever evidence you need to find your target\comma{} \imp{Tracking} can help you out.,
-	feats = \feat{Ambush}{When you attack from hiding\comma{} spring a trap or successfully orchestrate an ambush\comma{} you gain one automatic success on your first attack roll\comma{} as if you had expended a \imp{Fortitude} point.}
-
-\feat{Cold Cases}{When performing a \imp{Knowledge} check\comma{} if you can relate the information you seek to a historical or past case you reduce the DV by 2.}
-
-\feat{Familiar Terrain}{Choose a favoured terrain such as \imp{Grasslands}\comma{} \imp{Forests}\comma{} \imp{Urban Areas}\comma{} \imp{Caverns}\comma{} or name a specific region\comma{} such as \imp{Hogwarts}. Whilst in your favoured terrain you gain an additional dice on every action which utilises the surroundings such as a \imp{Tracking} or \imp{Covert} check.}
-
-\feat{Lie Detector}{You can automatically detect when someone is lying to you by telling you deliberate falsehoods.}
-
-\feat{Rapid Reflexes}{When performing a \key{Reflex} roll\comma{} you may roll the dice twice and take the largest value. }
-
-\feat{Unwavering Focus}{Once per day you may expend a \imp{Fortitude} point to reroll all \imp{Catastrophe} dice you rolled\comma{} declaring this action after the roll has been performed.},
 	article = An,
-	bonusWidth = 3
+	bonusWidth = 3, feats = \AurorFeats
 }
 
 \archetype
@@ -240,19 +215,8 @@ Such abilities are beyond all but the most powerful \bname{}s nowadays\comma{} b
 A \imp{Commune} check allows you to communicate – in a very rough fashion – with the natural world. You may attempt to commune with a wounded Hippogriff to learn what happened to it\comma{} or with a scorched tree to learn how the forest fire started. 
 
 The way in which nature responds is often esoteric and open to interpretation\comma{} but a high \imp{Commune} skill represents an ability to interpret these vague signs.,
-	feats = \feat{Asteria’s Eyes}{The stars above see all\comma{} and as you attune yourself to the vastness of nature\comma{} you tap into this. Whilst under an open sky\comma{} you have perfect night vision and +1d to all sight\minus{}related checks.}
-
-\feat{Dryad’s Embrace}{You channel the nurturing energy of the spirits of ancient trees. Once per day you may attempt a DV 8 \imp{Nurture} check on a plant\comma{} causing it to magically grow up to 30cm per success.}
-
-\feat{Nature’s Cloak}{Whilst in a natural space\comma{} you may use your familiarty with nature to reduce the DV of any \imp{Covert} action by 2}
-
-\feat{Nymph’s Fury}{Channeling the power of primal\comma{} elemental spirits grants you additional power. When casting an \imp{Elemental} spell\comma{} your spells deal an additional level of damage.}
-
-\feat{Organic Repose}{Once per day\comma{} you may expend a \imp{Fortitude} point to recover 3 levels of Health.}
-
-\feat{Satyr Spirit}{When casting a spell on an animal you are not in combat with\comma{} you gain one automatic success\comma{} as if you had spent a \imp{Fortitude} point},
 	article = A,
-	bonusWidth = 4
+	bonusWidth = 4, feats = \DruidFeats
 }
 
 \archetype
@@ -285,19 +249,8 @@ You must take care that you do this unnoticed\comma{} as people tend to get a bi
 	knowledgeDescription = The local \bname{} always knows a few secrets – where to get your hands on a certain black market item\comma{} and the location of secret passages and escape routes. 
 
 As an adult\comma{} they are probably familiar with the workings of the penal system (and how to exploit it)\comma{} whilst in Hogwarts\comma{} this knowledge can be used when questions about Detention come up.,
-	feats = \feat{Arcane Trickster}{You can cast spells from the \imp{Kinesis} up to \imp{Primus} level as Silent and Wandless actions for the purposes of chicanery\comma{} pranks\comma{} tricks and other such shenanigans.}
-
-\feat{Hidden Weapon}{Up to three times a day\comma{} you can draw a previously unknown small blade from a fold in your robes\comma{} or a hidden pocket\comma{} and then use it. This is an instantaneous action.}
-
-\feat{Move in Shadows}{Whilst outside of bright light\comma{} all attempts to percieve you have a DV 2 higher than normal.}
-
-\feat{Naturally Shifty}{Doing unscrupulous deeds comes as naturally to you as breathing – gain one additional success on any \imp{Covert} action as if you had spent a \imp{Fortitude} point.}
-
-\feat{Sly Action}{At the end of a turn cycle\comma{} if you have not been directly targeted for an attack and not attacked anyone else\comma{} you may take an additional action at the end of the cycle to move\comma{} use an item\comma{} or otherwise attempt to hide}
-
-\feat{Surprise Attack}{Whenever you attack a target from a position where they cannot see you\comma{} you deal an additional level of harm.},
 	article = An,
-	bonusWidth = 3
+	bonusWidth = 3, feats = \OutlawFeats
 }
 
 \archetype
@@ -332,17 +285,8 @@ A \imp{Collaboration} check allows you to work effectively with others\comma{} a
 When there is no actual knowledge to be found\comma{} the only thing left to do is \imp{Speculate}. 
 
 Speculation allows you to draw disperate threads of knowledge\comma{} in order to make conclusions about things you otherwise have no knowledge of. The risk is\comma{} of course\comma{} that you get things completely and utterly incorrect – but a scholar knows the limits of this guesswork\comma{} and with a high \imp{Speculation} can draw remarkable conclusions with only limited knowledge.,
-	feats = \feat{Expertise}{Choose a spell discipline\comma{} or a viable target of a spell\comma{} which is associated with your area of research. When casting a spell of this school\comma{} or a spell on your chosen target\comma{} you gain an additional success\comma{} as if you had expended a \imp{Fortitude} point.}
-
-\feat{Healer}{Whenever you restore a Health to a being\comma{} restore one additional point. }
-
-\feat{Master of the Mind}{When an action would interrupt you casting a spell requiring continuing concentration\comma{} the DV to remain focussed is 2 lower than normal.}
-
-\feat{Novel Technique}{Whenever you use a spell in a new and novel fashion\comma{} you gain +2d for the spellcasting effort.}
-
-\feat{Quick Learner}{You need to spend half the usual time in order to learn a new spell or potion recipe.},
 	article = A,
-	bonusWidth = 3
+	bonusWidth = 3, feats = \ScholarFeats
 }
 
 \archetype
@@ -370,12 +314,8 @@ Whether it is through fast\minus{}talking jargon\comma{} or simply through a for
 	knowledgeDescription = Sometimes\comma{} knowing the right people is knowing everything. 
 
 A high \imp{Society} knowledge means that you know everyone who is anyone. You are up on all the gossip and know who is talking to who. You are aware of the feuds and alliances\comma{} as well as some of the more sordid rumours….,
-	feats = \feat{Burn Book}{When using your skills to spread rumours\comma{} misinformation or gossip\comma{} or when trying to discredit an individual\comma{} gain +2 dice}
-\feat{Mesmerising Presence}{Once per day\comma{} you may use your alluring charm to slightly hypnotise a person. They remember talking to you\comma{}  but are slightly starstruck and overpowered by your personality\comma{} such that they cannot recall what you talked about.}
-\feat{One for you\comma{} two for me}{Whenever you or your allies gain an amount of \imp{Galleons}\comma{} you gain one additional coin.}
-\feat{Unbreakable Vow}{When you willingly shake on a deal or contract with another sapient being both you and your partner are bound together by a magical oath. If either of you breaks the contract\comma{} the offending party takes the maximum amount of \imp{Harm} and falls into a \imp{Critical Condition}\comma{} alerting the other. },
 	article = A,
-	bonusWidth = 3
+	bonusWidth = 3, feats = \SophisticateFeats
 }
 
 \archetype
@@ -404,21 +344,8 @@ Whilst in combat\comma{} \imp{Rage} can be substituted for almost any physical a
 A \bname{} with a high \imp{Command} is respected as a warrior\comma{} and others will leap to follow your orders. Those who follow the issued command will find that the action is easier than expected\comma{} being buoyed and inspired by the \imp{Command}.,
 	knowledgeAbility = Tactics,
 	knowledgeDescription = A \bname{} lives and dies by their knowledge of tactics. Whether it is trying to discern a viable approach to defeating a seemingly implacable foe\comma{} or recognising a strategy employed by the enemy\comma{} a \imp{Tactics} check can help reveal how an opponent functions\comma{} and what the best way to defeat them is.,
-	feats = \feat{Blind Rage}{When using a \imp{Rage} action to attack\comma{} you take only half the dice penalty due to injuries.}
-
-\feat{Bloodlust}{On any turn in which you successfully incapacitate (lethally or not) a foe\comma{} you may take an additional free action to perform another attack\comma{} with a 2\minus{}dice penalty on the check.}
-
-\feat{Duelist}{When fighting one\minus{}on\minus{}one with another target\comma{} you automatically gain one automatic success on any attack rolls. }
-
-\feat{Furious Spellcaster}{Up to three times a day\comma{} you may elect to use a \imp{Rage} check\comma{} rather than the associated \imp{Affinity} to perform a spellcasting check. The maximum spell level is still determined by your \imp{Affinity}. }
-
-\feat{Holistic Tactics}{Whenever a \imp{Tactics} check is successful in determining the tactics of a foe\comma{} you may use this knowledge to infer any Resistances\comma{} Immunities or Susceptabilities the target has.}
-
-\feat{Student of War}{If you study\comma{} read up on and otherwise prepare for a target before engaging them in combat\comma{} the DV of all attacks you make against them is reduced by 1.}
-
-\feat{Savage Attacker}{Your attacks\comma{} both physical and magical\comma{} gain a bonus point of damage.},
 	article = A,
-	bonusWidth = 4.7
+	bonusWidth = 4.7, feats = \WarriorFeats
 }
 
 

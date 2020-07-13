@@ -240,20 +240,7 @@ Gain an additional #1 #2 damage \forEvery{}.
 
 
 
-\def\ElCheck{\attPow{}}
-\def\KinCheck{\attFin{}}
-\def\TelCheck{\attPer{}}
-\def\TemCheck{\attInt{}}
-\def\BewCheck{\attChr{}}
-\def\PsiCheck{\attSpr{}}
-\def\HexCheck{\attSpr{}}
-\def\CurCheck{\attPow{}}
-\def\HeaCheck{\attPer{}}
-\def\WarCheck{\attInt{}}
-\def\AltCheck{\attFin{}}
-\def\ConCheck{\attPow{}}
-\def\NecCheck{\attEvl{}}
-\def\OccCheck{\attChr{}}
+
 
 
 
@@ -421,90 +408,24 @@ Gain an additional #1 #2 damage \forEvery{}.
 
 
 
-\makeatletter
-\define@key{spell}{name}{\def\name{#1}}
-\define@key{spell}{incant}{\def\incant{#1}}
-\define@key{spell}{school}{\def\school{#1}}
-\define@key{spell}{discipline}{\def\discipline{#1}}
-\define@key{spell}{type}{\def\type{#1}}
-\define@key{spell}{level}{\def\level{#1}}
-\define@key{spell}{fp}{\def\fp{#1}}
-\define@key{spell}{attribute}{\def\att{#1}}
-\define@key{spell}{proficiency}{\def\prof{#1}}
-\define@key{spell}{dv}{\def\dv{#1}}
-\define@key{spell}{effect}{\def\effect{#1}}
-\define@key{spell}{duration}{\def\duration{#1}}
-\define@key{spell}{noIncant}{\def\incantMode{#1}}
-\define@key{spell}{noProf}{\def\profMode{#1}}
-\define@key{spell}{noDur}{\def\durMode{#1}}
-\define@key{spell}{higher}{\def\higher{#1}}
-\define@key{spell}{noHigh}{\def\highMode{#1}}
 
-\define@key{spell}{resist}{\def\resist{#1}}
-\define@key{spell}{resistDV}{\def\resistDV{#1}}
 
-\define@key{spell}{noResist}{\def\resistMode{#1}}
-\define@key{spell}{noBlock}{\def\blockMode{#1}}
-\define@key{spell}{negation}{\def\negation{#1}}
-\define@key{spell}{range}{\def\range{#1}}
-\makeatother
-\newcommand{\spell}[1]
+
+%%% feats
+
+\newcommand\feat[4]
 {
-	\setkeys{spell}{name=None,incant = \minus{}, school = None, discipline=None,type = None, level = 0, fp = 0, attribute = None, proficiency = None, dv = 0, effect = None,noIncant = 0,noProf=0,noDur=0,duration=None,higher=None,noHigh=0, resist = None, resistDV = none, noResist = 0,noBlock=0,negation=None,range = None}
-	\setkeys{spell}{#1}
-	\vbox{
-	{\normalsize \color{rulered}\name }
-	\footnotesize
-	
+	\key{#1}: 
+	\if#31
+		(Prerequisite: #4)
 		
-	{\it \level{}\minus{}level \school{} (\discipline)} 
-	\vspace{1ex}
-	
-	\begin{tabular}{@{} l  l @{}}
-		
-	
-	
-		
-		{\bf Spell Type:} & \type \\ 
-	
-	
-	\if\incantMode0 
-			{\bf Incantation:} & {\it \incant} \\
-		\fi
-	
-	\if\durMode0
-		{\bf Duration}  & \duration \\
 	\fi
+	{\it #2} 
 	
-	{\bf Range}	&	\range \\
-	
-	\if\resistMode0
-		{\bf Resist: } & \resist \\
-	\fi
-	\if\blockMode0
-		{\bf Negation: }	&	\negation
-	\fi
-	%~{\bf DV:}~~~~~~~~~\quad~~~~\dv
-	
-	\end{tabular}
-	}
-	{\footnotesize
-	\vspace{1ex}
-	
-	\effect
-	
-	\vspace{1 ex}
 	
 
-	\if\highMode0
-
-		\higher
-	\fi
-	}
-	\vspace{3ex}
-	
-	\small
 }
+
 
 
 
