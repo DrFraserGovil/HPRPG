@@ -20,13 +20,13 @@ However, sometimes you might wish to travel over distances which will take more 
 Pace & Speed & Duration & Effect
 \\
 \hline 
-Slow & 2km/h & 8 hours & Can remain hidden, or draw a map
+Slow & 2km/h & 10 hours & Can remain hidden, or draw a map
 \\ 
 Normal & 4 km/h & 7 hours & Can draw a map
 \\ 
-Rapid & 6 km/h & 5 hours & -5 penalty to all checks made whilst moving. Costs 5 FP per hour.
+Rapid & 6 km/h & 5 hours & +1 DV to all actions 
 \\ 
-Breakneck & 10km/h & 1 hour & {\raggedright -10 penalty to all checks made whilst moving. Costs 2 FP per minute and 5 HP per hour.}
+Breakneck & 10km/h & 1 hour & {\raggedright+3 DV to all actions}
 \\ \hline
 \end{rndtable}
 \end{center}
@@ -34,7 +34,7 @@ Breakneck & 10km/h & 1 hour & {\raggedright -10 penalty to all checks made whils
 \normalsize
 If you attempt to travel for longer than the `duration' of the selected pace, you risk exhausting yourself. After the first additional kilometre travelled, all members of the party must succeed a DV 6 \key{Vitality} check (you may modifiy the dice pool with relevant \imp{Abilities} if the GM allows it). This check must be repeated after every subsequent kilometre travelled, with the DV increasing by 1 each time. After failing this check, you must halt, and take an additional level of exhaustion. 
 
-This timer resets after a rest of more than 8 hours, after which time you can take up your pace again. 
+This timer resets after taking a \imp{Long Rest}.
 
 \subsection{Vehicles \& Mounts}\index{Vehicles}
 
@@ -68,7 +68,7 @@ Trying to navigate a sheer slope without the existence of material to hold on to
 
 When standing in water that is up to waist deep, your movement speed is reduced to one-half of its usual value, although the presence of strong currents may increase or decrease this. 
 
-If the water is deeper than this, you must start to swim. Swimming moves at one-quarter your usual speed and costs 1FP for every 30m travelled. If you stop moving whilst in water that is deeper than your height, you must tread water to keep your head above water. Every 5 minutes, you must perform a DV 8 \imp{Fitness} check (again, modified by an ability, if relevant), to ensure you are able to keep afloat. On a \imp{Failure}, your head dips underwater for a moment, increasing the DV by 1. On a \imp{Catastrophic Failure}, you begin to drown.
+If the water is deeper than this, you must start to swim. Swimming moves at one-quarter your usual speed, but is considered \imp{Breakneck} speed. If you stop moving whilst in water that is deeper than your height, you must tread water to keep your head above water. Every 5 minutes, you must perform a DV 8 \imp{Fitness} check (again, modified by an ability, if relevant), to ensure you are able to keep afloat. On a \imp{Failure}, your head dips underwater for a moment, increasing the DV by 1. On a \imp{Catastrophic Failure}, you begin to drown.
 
 If you wish to swim under water, you may do so, referring to the rules about air found on page \pageref{S:Air}. 
 
@@ -76,16 +76,21 @@ If you wish to swim under water, you may do so, referring to the rules about air
 
 \section{Resting}\index{Sleep}\index{Resting|see{Sleep}}
 
-You can't spend all day, everyday doing heroic deeds, lurking in the library, or performing mighty magic: sometimes, you need to get some rest. 
+You can't spend all day, everyday doing heroic deeds, lurking in the library, or performing mighty magic: sometimes, you need to get some \key{rest}. 
 
 Resting is an important action that can only occur when not in combat. Attempts to rest during combat are highly likely to get you killed on the spot. 
 
-When in safe territory, you may set up camp, and get a few hours shut-eye to recover from your ordeals (see the Asleep status effect for details). But be warned, the night is dark and full of terrors, and who knows what might sneak up on you whilst you are resting…
+When in safe territory, you may settle down for a while at catch your breath to recover. You may also attempt a longer rest: set up camp and attempt to get some shut-eye to recover from your ordeals (see the \key{Asleep} status effect for details). But be warned, the night is dark and full of terrors, and who knows what might sneak up on you whilst you are resting…
 
 You may take rests whilst delving deep into unfriendly territory, but note that resting after every single encounter is generally frowned upon, and the GM might start throwing more and more unpleasant random encounters at you if you begin to take things to the extremes. 
 
 You should only rest in a place where it makes sense to rest – it does not makes sense, for example, to take a quick nap in whilst delving through the dungeons of an evil warlord, even if you have cleared the immediate area of enemies. Of course, if you kill the Warlord and claim his castle as your own, then it is a different matter...
 
+\subsection{Short Rest}
+
+A \key{Short Rest} is a small period of time (between 15 minutes and an hour) where you sit down, grab a bite to eat, and generally catch your breath. 
+
+Several character \imp{Feats} can be used again after such a rest, and a \imp{Short Rest} provides an opportunity to stretch out sore muscles, knock out a few dents in your armour and thereby recover from the \key{Drain} imposed on your defenses (see page \pageref{S:Defence}).
 
 \subsection{Long Rest}\index{Long Rest|see{Sleep}}
 
@@ -103,11 +108,11 @@ An adventure rarely happens in isolation, and there will be many times that your
 
 \subsection{Active vs. Descriptive Roleplaying}
 
-There are two key philosophies to RPGs, especially when it comes to social interactions. In the Dungeons and Dragons parlance, they are `active' and `descriptive'. 
+There are two key philosophies to RPGs, especially when it comes to social interactions. In the \imp{Dungeons and Dragons} parlance, they are \key{active} and \key{descriptive}. 
 
-Descriptive roleplaying is when a player describes what their character does -- ``Gunter goes and talks to the man at the bar, and tries to convince him to help us". 
+\imp{Descriptive} roleplaying is when a player describes what their character does -- ``Gunter goes and talks to the man at the bar, and tries to convince him to help us". 
 
-In constrast, an active roleplayer would act out the conversation -- they may put on a voice, or echo the body language of the character, so an active roleplayer might decide that Gunter has a deep voice and an Irish accent, and would say ``hey, barkeep -- have you heard any news about the griffin attacks recently?". 
+In contrast, an \imp{active} roleplayer would act out the conversation -- they may put on a voice, or echo the body language of the character, so an active roleplayer might decide that Gunter has a deep voice and an Irish accent, and say {\it ``hey, barkeep -- have you heard any news about the griffin attacks recently?"}. 
 
 Neither approach is right or wrong, or better or worse -- the aim is for you to have as much fun as possible. 
 
@@ -119,7 +124,7 @@ Finding a healthy balance between these two playstyles is key to having fun in t
 
 \subsection{Checks}\index{Checks!Social Roleplaying \& Checks}
 
-Of course, roleplaying is not the only factor to take into account in social interactions: you will also need to use ability checks -- after Gunter tries to convince the barkeep, the GM may ask for a Persuasion check to see how well you made your case to the him.
+Of course, roleplaying is not the only factor to take into account in social interactions: you will also need to use ability checks -- after Gunter tries to convince the barkeep, the GM may ask for a \imp{Charm (Eloquence)} check to see how well you made your case to the him.
 
 Keep an eye on your skill proficiencies, and let these guide your choices when interacting with an NPC, if you are especially good at lying, or particularly intimidating, you may elect to use those skills instead of a more honest approach. Of course, you must also consider that, like in real life, social interactions can often have consequences later on. 
 

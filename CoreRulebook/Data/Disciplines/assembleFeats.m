@@ -11,14 +11,13 @@ function assembleFeats(fileRoot)
     fileNameRoot = strcat(fileRoot,'Chapters/Part1_Characters/');
     
     f = readtable("Feats.xlsx");
-    
+    f = sortrows(f,1);
     featList = Feat.empty;
     nFeat = [];
     ownerList = string.empty;
     for i = 1:height(f)
        feat = Feat();
        feat= feat.ReadIn(f(i,:));
-       
        ownerFound = false;
        for j = 1:length(ownerList)
           if ownerList(j) == feat.Owner
