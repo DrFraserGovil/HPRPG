@@ -282,7 +282,7 @@
 	
 	\damage{}
 	
-	\key{Aspects:}	
+	{\centering
 	\footnotesize
 	\begin{tabular}{@{}  m{\w cm}  m{\w cm}  m{\w cm} @{}}
 				 %\hline
@@ -293,8 +293,9 @@
 				\stat{Vitality}{\vit}	&	\stat{Insight}{\ins}	&	\stat{Perception}{\pcp}
 				\\ %\hline
 		\end{tabular}
-	\normalsize
 	
+	\normalsize
+	}
 
 	
 }
@@ -309,25 +310,31 @@
 }
 \newcommand\ranged[6]
 {
-\parbox[t]{10cm}{\textbf{\textit{#1}}: ({\it ranged attack, #3 dice, DV \fpeval{7+#4}, range #2m}) \\ Effect: \imp{#5}, with Power #6}
+\parbox[t]{10cm}{\textbf{\textit{#1}}: ({\it ranged attack: #2m, #3 dice, DV \fpeval{7+#4}}) \\ Effect: \imp{#5}, with Power #6}
+}
+
+\newcommand\area[6]
+{
+	\parbox[t]{9.5cm}{\textbf{\textit{#1}}: ({\it area attack: #2, #3 dice, DV \fpeval{7+#4}}) \\ Effect: \imp{#5}, with Power #6}	
 }
 
 
 \newcommand\sideBySide
 {
-	\begin{minipage}{0.23 \textwidth}
-	\includegraphics[width = 0.9 \textwidth, keepaspectratio=true]{../Images/\image}
+	\begin{minipage}{0.2 \textwidth}
+	\includegraphics[width = 0.98 \textwidth, keepaspectratio=true]{../Images/\image}
 	\end{minipage}
-	\begin{minipage}{0.25\textwidth}
+	\begin{minipage}{0.29\textwidth}
 	\description{}
 	\end{minipage}
 
 }
 \newcommand\verticalStack
 {
-	{\centering
+	\begin{center}
+	
 	\includegraphics[width = 0.4 \textwidth, keepaspectratio=true]{../Images/\image}
-	}
+	\end{center}
 	
 	\description{}
 
@@ -343,6 +350,7 @@
 	
 	\vbox
 	{
+	\dndline
 		\titleBlock{}
 		
 		\if\hasImage1
@@ -363,7 +371,7 @@
 		\skillBlock{}
 	\fi
 
-	\dndline
+	\dndlineFade{black}
 	
 	\abilities{}
 	
@@ -376,7 +384,7 @@
 		\attacks{}
 	\fi
 	
-	\dndline
+	
 	~
 	
 	\endgroup
@@ -389,6 +397,7 @@
 		{ \Huge{\MakeUppercase{#1} }}
 		
 	\addcontentsline{toc}{section}{#1}
+	~
 	
 	#2
 

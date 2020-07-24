@@ -1,4 +1,5 @@
-    function assembleBeasts(fileNameRoot)
+
+function assembleBeasts(fileNameRoot)
    
     %if no target given, assume that called directly, else assume called by
     %master
