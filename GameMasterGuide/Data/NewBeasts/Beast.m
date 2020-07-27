@@ -211,7 +211,7 @@ classdef Beast
                s = "damage =";
                
                for i = 1:length(nonZero)
-                   s = s + "\key{" + ns2(i) + "} to \textit{" + vs(i) + "}";
+                   s = s + "\key{" + ns2(i) + "} to \textit{" + nonZero(i) + "}";
                    
                    if length(nonZero) > 1
                       if i < length(nonZero) -1

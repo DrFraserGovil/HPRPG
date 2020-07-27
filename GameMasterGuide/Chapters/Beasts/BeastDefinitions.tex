@@ -112,6 +112,8 @@
 \def\bx{0.45}
 \newcommand{\healthBox}
 {%q
+
+	\vbox{
 	\key{Health}
 	
     \begin{tikzpicture}
@@ -156,6 +158,7 @@
        }
        
     \end{tikzpicture}%
+    }
 }
 
 \newcommand{\fortitudeBox}
@@ -163,6 +166,7 @@
 	\if\fortitude0
 		%who knows?
 	\else
+		\vbox{
 		\parbox[t]{3.5 cm}{
 		\key{Fortitude:}
 		\\~\\
@@ -177,6 +181,8 @@
 	       }
 	       
 	    \end{tikzpicture}%
+	    }
+	    
 	    }
 	 \fi
 }
@@ -352,17 +358,16 @@
 	{
 	\dndline
 		\titleBlock{}
-		
+	}	
 		\if\hasImage1
 			\if\imageStack1
 				\verticalStack
 			\else
 				\sideBySide
 			\fi
-		\else
-			\description{}
 		\fi
-	}
+	
+
 	
 	\statBlock
 

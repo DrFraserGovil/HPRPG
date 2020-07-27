@@ -214,15 +214,61 @@ Normally peacable and shy creatures\comma{} they become territorial and violent 
 
 
 
-\species{Cloaked Spirits}
+\species{Cloakwraiths}
 {
-	d
+	A tattered black cloak might not seem the most terrifying piece of attire that a being could don\comma{} though those who have encountered the \key{Cloakwraiths} might say differently. 
+
+No\minus{}one really knows where they come from\comma{} though ancient legends say that they are the spirits of those too evil to pass to the other side. Some \imp{wraiths} appear as gaunt almost\minus{}humanoids beneath their eponymous shrouds\comma{} whilst others seem to have no corporeal form. Some believe that they are in fact a single type of being at various points in their lifecycle\comma{} whilst others believe them to be individual manifestations of primal human fears.
+
+What they all have in common (besides the ominous cloak)\comma{} is an evil aura of terror\comma{} and a hunger for human souls.
 }
 {
-\beast{name = Dementor, species = Cloaked Spirits, mind = Ineffable, category = Abomination, rating = 6, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = dementor, description = \blindtext{2}}
+\beast{name = Lethifold, species = Cloakwraiths, mind = Ineffable, category = Abomination, rating = 4, abilities = \ability{Soporific Aura}{Any creature within 1m of the \name{} takes 2d penalty to all attempts to \imp{Resist} sleep.}
+
+\ability{Magical Resistance}{The \name{} gets a +3d bonus to all \imp{Resist} checks against all spells cast below a \levelFour{} level (except the \imp{Patronus})}
+
+\ability{Digestion}{A being trapped by the \imp{Envelop} ability is trapped within the \name{} and begins to be digested\comma{} taking level one harm on the first turn it is trapped\comma{} level two on the second\comma{} and so on. If the being reaches the \imp{Critical Condition} in this fashion\comma{} it is instantly killed\comma{} and absorbed into the \name{}. }, article = A, fit =1, prs =4, vit =1, cha =0, dec =0, ins =3, int =1, wil =1, pcp =1, hasDamage = 1, damage =\key{Immune} to \textit{\imp{Physical} damage} and \key{Susceptible} to \textit{Patronus charm\comma{} Incandescent Damage}, nUnharmed=1, nBruised=3, nHurt=2, nInjured=0, nWounded=0, nMangled=1, block=1, dodge=3, defy=5, fortitude=2, imageStack=1, hasSkills = 1, skills = \skill{Covert}{5}
+\skill{Flight}{2}, hasAttacks = 1, attacks = \area{Subdue Prey}{sphere 3m around \name{}}{4}{0}{Sleep Status}{1 + Successes {\it (once per day)}}
+
+\melee{Envelop}{4}{\minus{}1}{Incapacitated Status}{3 + Successes}, hasImage = 1, image = lethifold, description = Also known as a \key{Living Shroud}\comma{} a \name{} is a carnivorous and highly dangerous magical creature. 
+
+Unlike other \imp{Cloakwraiths}\comma{} a \name{} appears to have no physical form\comma{} appearing instead as a gently floating and flapping shroud of black fabric\comma{} which crawls out of the shadows to envelop and then devour their victim. 
+
+When a \name{} devours a victim\comma{} the only remaining sign of their once\minus{}physical existence is a slight thickening of the lethifold\comma{} and a handful of thread\minus{}like tendrils extending from beneath its body\comma{} otherwise the lethifold leaves no trace.}
 
 
-\beast{name = Lethifold, species = Cloaked Spirits, mind = Ineffable, category = Abomination, rating = 5, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = lethifold, description = \blindtext{2}}
+\beast{name = Dementor, species = Cloakwraiths, mind = Ineffable, category = Abomination, rating = 5, abilities = \ability{Auror of Futility}{An icy\comma{} soul\minus{}sapping aura extends around a \name{} for a radius of 3m. Beings within this radius suffer a 2d penalty to resist the \imp{Terrified} status effect\comma{} and a 1d penalty to all other actions.}
+
+\ability{Hovering Menace}{A \imp{Dementor} may move freely in 3D without hindrance.}
+
+\ability{Magical Resistance}{The \name{} gets a +3d bonus to all \imp{Resist} checks against all spells cast below a \levelFour{} level (except the \imp{Patronus})}
+
+\ability{Paralyzed With Fear}{If a being becomes \imp{Terrified} of the \name{}\comma{} they remain rooted in place for one turn cycle (\imp{Incapacitated})\comma{} before they can attempt to flee.}, article = A, fit =2, prs =3, vit =2, cha =0, dec =1, ins =4, int =3, wil =3, pcp =2, hasDamage = 1, damage =\key{Resistant} to \textit{\imp{Physical} damage} and \key{Susceptible} to \textit{Patronus charm\comma{} Incandescent Damage}, nUnharmed=8, nBruised=0, nHurt=0, nInjured=1, nWounded=0, nMangled=0, block=2, dodge=4, defy=5, fortitude=3, imageStack=0, hasSkills = 1, skills = \skill{Intimidation}{5}
+\skill{Flight}{4}, hasAttacks = 1, attacks = \area{Intensify Aura}{sphere 15m around \name{}}{6}{\minus{}2}{Cold damage / Terrified Status}{2 + Successes\comma{} distributed between effects\comma{} {\it (once per hour)}}
+
+\melee{Clutching Claws}{6}{\minus{}2}{Cutting Damage}{1 + Successes}
+
+\melee{Dementor’s Kiss}{8}{0}{Necrotic Damage}{5 + Successes (Requires target to be \imp{Incapacitated})}, hasLanguages = 1, languages = \speaks{Abyssal\comma{} Human Languages}, hasImage = 1, image = dementor, description = Perhaps the most feared (and certainly the most well\minus{}known) of the \imp{Cloakwraiths}\comma{} the \name{} appear as exceptionally tall\comma{} gaunt and necrotic humanoids benath their cloak\comma{} as their float effortlessly through space. 
+
+They use an aura of ice and terror to incapacitate their foes\comma{} before delivering the infamous `dementor’s kiss’\comma{} an act which devours the very soul of a being\comma{} leaving them a lifeless husk. 
+
+Strangely\comma{} despite being reviled and feared throughout history\comma{} \imp{Dementors} are the only \imp{Abomination} ever employed by the \imp{Ministry} – being used as guards/torturers for \imp{Azkaban Prison} for almost 200 years\comma{} until they sided with \imp{Lord Voldemort}.}
+
+
+\beast{name = Shuagh, species = Cloakwraiths, mind = Ineffable, category = Abomination, rating = 6, abilities = \ability{Innate Power}{The \name{} may use their \imp{Spellcasting} ability to cast the \imp{Corrupt}\comma{} \imp{Compel} and \imp{Delude} spells}
+
+\ability{Magical Resistance}{The \name{} gets a +3d bonus to all \imp{Resist} checks against all spells cast below a \levelFour{} level (except the \imp{Patronus})}
+
+\ability{Puppets of War}{Any being which is reduced to the \imp{Critical Condtion} status within 50m of the \name{} instead heals 1 level of harm\comma{} and must begin fighting another target of the \name{}s’s choosing.}
+
+\ability{Soul Mount}{Whilst mounted\comma{} the \name{} gains +2 damage to all attacks against unmounted foes. Any damage dealt to the mount is dealt to the \name{} }, article = A, fit =5, prs =3, vit =3, cha =0, dec =4, ins =2, int =5, wil =6, pcp =2, hasDamage = 1, damage =\key{Resistant} to \textit{\imp{Physical} damage} and \key{Susceptible} to \textit{Patronus charm\comma{} Incandescent Damage}, nUnharmed=3, nBruised=3, nHurt=3, nInjured=0, nWounded=2, nMangled=1, block=5, dodge=1, defy=6, fortitude=6, imageStack=1, hasSkills = 1, skills = \skill{Intimidation}{7}
+\skill{Conviction}{4}
+\skill{Skirmish}{5}
+\skill{Strength}{3}
+\skill{Speed}{2}
+\skill{Spellcasting}{4}, hasAttacks = 1, attacks = \melee{Sword strike}{10}{\minus{}1}{Stabbing/Cutting damage}{2 + Successes}, hasLanguages = 1, languages = \speaks{All verbal languages}, hasImage = 1, image = shuagh, description = The \name{} are a form of mounted \imp{Cloakwraith}\comma{} never seen without their sickly and skeletal horses\comma{} which produce no sound as they gallop over devastated wasteland. 
+
+Seemingly unique amonst the other \imp{Cloakwraiths}\comma{} the \name{} use tools and weapons to achieve their goals: the formenting of war\comma{} chaos and unbridled fury. The very presence of a \name{} is enough to anger even the most passive of individuals\comma{} and so the arrival of a \name{} was often seen as the precursor to bloodshed and infighting.}
 
 
 
@@ -742,11 +788,15 @@ This forces  the host to undergo a horrific transformation which rips away the l
 
 \species{Light Elemental}
 {
-	
+	The \key{Radiant Gardens} are one of the realms beyond our own which resonates strongly with one of the primal magical elements – in this case the element of \key{Light}. The beings native to this particular corner of the multiverse are therefore known as \imp{Light Elementals}. 
+
+The \imp{Radiant Gardens} are an almost heaven\minus{}like domain\comma{} filled at all times with a diffuse\comma{} golden glow\comma{} interspersed with rainbows containing more colours than the human mind can conceive of. \imp{Light Elementals}\comma{} having formed from this incandescant space\comma{} are all therefore naturally able to manipulate and channel radiance in all its forms\comma{} and abhore darkness and shadows. 
+
+Just as no two rainbows are perfectly alike\comma{} so too are \imp{Light Elements} unique and distinct creatures\comma{} with wildly varying morphology and characteristics – some appear as perfectly normal solid creatures\comma{} whilst others seem to be made up of pure\comma{} distilled light.
 }
 {
 \beast{name = Solon, species = Light Elemental, mind = Non\minus{}Sapient, category = Elemental, rating = 3, abilities = \ability{Elemental Magic}{The solon may use its \imp{Spellcasting} ability to cast spells. It knows the \imp{Illuminate}\comma{} \imp{Sense} and \imp{Move} spells.}, article = A, fit =2, prs =3, vit =3, cha =2, dec =0, ins =1, int =1, wil =3, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{Celestial}\comma{} \key{Resistant} to \textit{Fire} and \key{Susceptible} to \textit{Bludgeoning}, nUnharmed=1, nBruised=1, nHurt=1, nInjured=1, nWounded=0, nMangled=0, block=4, dodge=1, defy=2, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Spellcasting}{3}
-\skill{Flight}{2}, hasLanguages = 1, languages = \speaks{Celestial}, hasImage = 1, image = solon, description = \name{}s are lesser elementals hailing from the Radiant Gardens\comma{} the Elemental plane of light. They are crystalline creatures\comma{} and glow with an inner radiance which shifts and refracts through their bodies as they move.}
+\skill{Flight}{2}, hasAttacks = 1, attacks = \ability{Crystal Shards}{Whenever the \name{} takes physical damage\comma{} they may choose to take an additional level of harm to deflect fragments of their body into a creatue within 2m\comma{} dealing level 5 \imp{Stabbing} damage.}, hasLanguages = 1, languages = \speaks{Celestial}, hasImage = 1, image = solon, description = \name{}s are lesser elementals hailing from the Radiant Gardens\comma{} the Elemental plane of light. They are crystalline creatures\comma{} and glow with an inner radiance which shifts and refracts through their bodies as they move.}
 
 
 \beast{name = Phlogiston, species = Light Elemental, mind = Ineffable, category = Elemental, rating = 4, abilities = \ability{Elemental Magic}{The \name{} may use its \imp{Spellcasting} ability to cast spells. It knows the \imp{Illuminate}\comma{} \imp{Fire} and \imp{Move} spells.}
@@ -769,13 +819,13 @@ Though normally calm and blissful creatures\comma{} when angered or afraid\comma
 
 \melee{Jagged Tail}{10}{2}{Bashing}{5 + Successes (Reach 5m)}
 
-\area{Downdraft}{circle 10m radius below current flying position)}{8}{0}{Prone}{1 + Successes}, hasLanguages = 1, languages = \speaks{Celestial}, hasImage = 1, image = chalkydri, description = Also known as the `Heralds of Dawn’\comma{} these winged serpent\minus{}like creatures were often mistaken for a species of \imp{Dragon} throughout history\comma{} and it is only recently that their true origins have been determined. 
+\area{Downdraft}{circle 10m radius below current flying position)}{8}{0}{Prone}{1 + Successes}, hasLanguages = 1, languages = \speaks{Celestial}, hasImage = 1, image = chalkydri, description = Also known as the `Heralds of Dawn’\comma{} these copper\minus{}skinned\comma{} winged serpent\minus{}like creatures were often mistaken for a species of \imp{Dragon} throughout history\comma{} and it is only recently that their true origins have been determined. 
 
-Possessing the face and tail of a crocodile\comma{} but the body of a lion and rows upon rows of wings (up to 12 pairs on the oldest known entities)\comma{} these creatures reside within the coronosphere of a sun\comma{} descending planetside only for a few hours per year\comma{} and even then\comma{} they appear only during the first few moments of dawn. 
+Possessing the face and tail of a crocodile\comma{} but the body of a lion and rows upon rows of rainbow\minus{}coloured wings (up to 14 pairs on the oldest known specimen)\comma{} these creatures typically reside within the coronosphere of a sun\comma{} or near some other cosmically powerful source of light\comma{} descending planetside only for a few hours per year\comma{} and even then\comma{} they appear only during the first few moments of dawn. 
 
 When the sunlight hits their copper\minus{}bronze skin\comma{} it splits off into a mesmerising rainbow display\comma{} and causes their entire body to hum with a resonance like a chorus of angels. Legend holds that it is this song which brings the dawn\comma{} rather than the other way around.
 
-Though they do not seem particularly intelligent\comma{} and are currently classified as `beasts’ by the \imp{Ministry}\comma{} this does not mean that they are savage – in fact\comma{} the \name{} are often kind and gentle creatures\comma{} the few times that they have been recorded as coming into direct contact with humans it was eventually discovered that the humans were threatening some other life form with extinction\comma{} drawing the ire of the \name{}.}
+Though they do not seem particularly intelligent\comma{} and are currently classified as `beasts’ by the \imp{Ministry}\comma{} this does not mean that they are savage – in fact\comma{} the \name{} are often kind and gentle creatures\comma{} the few times that they have been recorded as coming into direct conflict with humans it was eventually discovered that the humans were threatening some other life form with extinction\comma{} drawing the ire of the \name{}.}
 
 
 
