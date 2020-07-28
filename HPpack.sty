@@ -23,6 +23,7 @@
 \usepackage{enumitem}
 \usepackage{setspace}
 \usepackage{multicol}
+
 \let\origbar\bar
 \let\origdot\dot
 \usepackage{allrunes}
@@ -44,6 +45,8 @@
 \usepackage{makecell}
 \usepackage{array}
 \usepackage[hidelinks]{hyperref}
+
+\usepackage{phaistos}
 
 %%Page setup
 \setlength{\parskip}{4pt}
@@ -193,6 +196,77 @@ Gain an additional #1 #2 damage \forEvery{}.
 \newcommand{\fiveCape}{$\mdblkdiamond\mdblkdiamond\mdblkdiamond\mdblkdiamond\mdblkdiamond\mdwhtdiamond\mdwhtdiamond$}
 \newcommand{\sixCape}{$\mdblkdiamond\mdblkdiamond\mdblkdiamond\mdblkdiamond\mdblkdiamond\mdblkdiamond\mdwhtdiamond$}
 \newcommand{\sevenCape}{$\mdblkdiamond\mdblkdiamond\mdblkdiamond\mdblkdiamond\mdblkdiamond\mdblkdiamond\mdblkdiamond$}
+
+
+
+
+\newcommand\ratingB[1]
+{
+	\if#10
+		\emptyCape
+	\fi
+	\if#11
+		\oneCape
+	\fi
+	\if#12
+		\twoCape
+	\fi
+	\if#13
+		\threeCape
+	\fi
+	\if#14
+		\fourCape
+	\fi
+	\if#15
+		\fiveCape
+	\fi
+	\if#16
+		\sixCape
+	\fi
+	\if#17
+		\sevenCape
+	\fi
+	\if#18
+		\sevenCape{} + \oneCape
+	\fi
+	\if#19
+		\sevenCape{} + \twoCape
+	\fi
+	\def\ten{10}
+	\ifnum#1=\ten
+		\sevenCape{} + \threeCape
+	\fi
+	
+	\def\eleven{11}
+	\ifnum#1=\eleven
+		\sevenCape{} + \fourCape
+	\fi
+}
+
+
+
+%%weapon stuff
+\newcommand\rangetable
+{
+\begin{center}
+	\begin{rndtable}{c c c}
+		\bf Range	&	\bf Melee Distance	&	\bf Ranged Distance 
+		\\
+		Short	&	0m	&	10m
+		\\
+		Normal	&	1m	&	25m
+		\\
+		Extended	&	2m	&	50m
+		\\
+		Long	&	3m	&	100m
+		\\
+		Extreme	&	10m	&	1km
+	\end{rndtable}
+\end{center}
+}
+
+
+
 %%AC stuff
 \def\baseDodge{8}
 \def\baseBlock{8}

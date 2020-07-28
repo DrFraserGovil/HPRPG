@@ -189,48 +189,6 @@
 
 
 
-\newcommand\ratingB[1]
-{
-	\if#10
-		\emptyCape
-	\fi
-	\if#11
-		\oneCape
-	\fi
-	\if#12
-		\twoCape
-	\fi
-	\if#13
-		\threeCape
-	\fi
-	\if#14
-		\fourCape
-	\fi
-	\if#15
-		\fiveCape
-	\fi
-	\if#16
-		\sixCape
-	\fi
-	\if#17
-		\sevenCape
-	\fi
-	\if#18
-		\sevenCape{} + \oneCape
-	\fi
-	\if#19
-		\sevenCape{} + \twoCape
-	\fi
-	\def\ten{10}
-	\ifnum#1=\ten
-		\sevenCape{} + \threeCape
-	\fi
-	
-	\def\eleven{11}
-	\ifnum#1=\eleven
-		\sevenCape{} + \fourCape
-	\fi
-}
 
 \newcommand\understands[1]
 {
