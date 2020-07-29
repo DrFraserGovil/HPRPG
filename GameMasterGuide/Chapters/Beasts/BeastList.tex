@@ -40,7 +40,7 @@ Though  they can run incredibly quickly and they utilise a ranged web attack to 
 
 \beast{name = Acromantula Patriarch, species = Acromantula, mind = Sapient, category = Monstrosity, rating = 6, abilities = \ability{Webwalker}{\article{} \name{} takes no movement penalty on webbed surfaces\comma{} and uses their \imp{Inhuman Senses} to sense vibrations in their webs.}
 
-\ability{Summon Legions}{Whilst within their lair\comma{} a \name{} may use a DV 7 \imp{Command} action to summon a number of \imp{Acromantula Adults} and \imp{Acromantula Hatchlings} to serve them.}, article = An, fit =1, prs =3, vit =3, cha =2, dec =5, ins =5, int =6, wil =6, pcp =4, hasDamage = 1, damage =\key{Immune} to \textit{Poison}, nUnharmed=7, nBruised=1, nHurt=1, nInjured=1, nWounded=1, nMangled=3, block=2, dodge=2, defy=6, fortitude=5, imageStack=1, hasSkills = 1, skills = \skill{Climb}{1}
+\ability{Summon Legions}{Whilst within their lair\comma{} a \name{} may use a DV 7 \imp{Command} action to summon a number of \imp{Acromantula Adults} and \imp{Acromantula Hatchlings} to serve them.}, article = An, fit =1, prs =3, vit =3, cha =2, dec =5, ins =5, int =6, wil =6, pcp =4, hasDamage = 1, damage =\key{Immune} to \textit{Poison}, nUnharmed=4, nBruised=1, nHurt=1, nInjured=1, nWounded=1, nMangled=2, block=2, dodge=2, defy=6, fortitude=5, imageStack=1, hasSkills = 1, skills = \skill{Climb}{1}
 \skill{Command}{7}
 \skill{Inhuman Senses}{7}
 \skill{Strength}{4}, hasAttacks = 1, attacks = \melee{Poison Fangs}{3}{0}{Poison}{7+Successes}
@@ -75,7 +75,19 @@ If this happens\comma{} the Host will disavow them\comma{} and cast them out. Wi
 \ability{Immortal Spirit}{As a celestial being\comma{} an angel is incredibly resilient and requires neither food\comma{} drink\comma{} air or sleep (though they may enjoy the experience).}
 }
 {
-\beast{name = Cherubim, species = Angels, mind = Ineffable, category = Celestial, rating = 6, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = }
+\beast{name = Cherubim, species = Angels, mind = Ineffable, category = Celestial, rating = 4, abilities = , article = A, fit =3, prs =4, vit =4, cha =4, dec =1, ins =4, int =5, wil =5, pcp =3, hasDamage = 1, damage =\key{Immune} to \textit{Incandescent}\comma{} \key{Resistant} to \textit{All physical damage} and \key{Susceptible} to \textit{Necrotic}, nUnharmed=3, nBruised=2, nHurt=1, nInjured=0, nWounded=1, nMangled=1, block=1, dodge=4, defy=3, fortitude=5, imageStack=0, hasSkills = 1, skills = \skill{Flight}{4}
+\skill{Marksman}{4}
+\skill{Skirmish}{3}, hasAttacks = 1, attacks = \melee{Heavenly Sword}{6}{0}{Slashing Damage}{3 + Successes}
+
+\ranged{Heartbow}{50}{7}{\minus{}1}{Manipulate Emotions}{1 + Successes}
+
+\ranged{Bow \& Arrow}{50}{9}{\minus{}1}{Stabbing Damage}{2 + Successes}, hasLanguages = 1, languages = \speaks{All spoken languages}, hasImage = 1, image = cherubim, description = The \name{} are the lowest (and youngest) order of \imp{Angels}\comma{} and as such are typically given the least dangerous quests. It is thought that this is the reason that \imp{Muggle} art has depicted them as chubby little babies with wings.
+
+Of course\comma{} even the most lowly angel wields immense power\comma{} and the idea of them taking on such a lowly form is considered highly insulting. Instead they appear as the typical `angel’\comma{} a beautiful\comma{} winged individual of indeterminate gender\comma{} whose voice sings out like a choir. 
+
+The holy quests assigned to the Cherubim are those which most commonly involve mortal beings\comma{} they are often tasked with delivering important missives to Emperors\comma{} providing visions of the future to prompt heros to venture forth to vanquish evil\comma{} or to act as a guardian for an important indivual as they grow. 
+
+With these gentle prompts\comma{} the \name{} are able to alter the course of events across the multiverse.}
 
 
 \beast{name = Seraphim, species = Angels, mind = Ineffable, category = Celestial, rating = 6, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = }

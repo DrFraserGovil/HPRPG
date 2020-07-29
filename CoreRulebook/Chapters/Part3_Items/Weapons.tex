@@ -31,7 +31,7 @@ This list is not meant to be exhaustive, and you may, with the assistance of the
 }
 \newcommand\weapon[8]
 {
-	\imp{#1}	&	#2	&	 \ratingB{#4} $\left( \text{#3}\right)$ & #5 & #6 \imp{#7} & \parbox[t]{4 cm}{\raggedright #8} \\
+	\imp{#1}	&	#2	&	 \ratingB{#4} $\left( \text{#3}\right)$ & #5 & #6 \imp{#7} & \parbox[t]{4 cm}{\raggedright \imp{#8}} \\
 
 }
 
@@ -91,14 +91,26 @@ The \imp{Damage} dealt by the weapon is of the specified type - if more than one
 
 In addition to simply doling out damage, \imp{Weapons} have a variety of other properties which distinguishes them from each other. Of course, it is not possible to model this completely within a game without it beocme horrifyingly fiddly. The additional properties included in the final column of each weapon's entry is intended to provide some limit modelling of these differences. 
 
-\begin{itemize}
+\begin{itemize}[leftmargin = 4 pt]
+	\keyItem{Burst Attack}{A \imp{Burst Attack} weapon has the ability to `attack' multiple times at once, at the cost of discharging more ammunition/power from the weapon. For each additional `burst' applied, deduct an additional ammunition/usage from the tally, but reduce the DV of the attack by 1.}
 	\keyItem{Concealed}{A weapon with the \imp{Concealed} property can easily be hidden on your person - in a pocket or inside a jacket - without it being suspicious}
-	\keyItem{Cumbersome}{The \imp{Cumbersome} property is applied to weapons with a longer than normal range, but which cannot be used at short range. A weapon with this property cannot be used against targets closer than the next range increment down. For example, a \imp{Long} range, \imp{Cumbersome} weapon cannot be used against a target closer than \imp{Extended} range.}
+	\keyItem{Cumbersome}{The \imp{Cumbersome} property is applied to weapons with a longer than normal range, but which cannot be used at a lesser range. A weapon with this property cannot be used against targets closer than the next range increment down. For example, a \imp{Long} range, \imp{Cumbersome} weapon cannot be used against a target closer than \imp{Extended} range.}
+	\keyItem{Grapple}{A weapon with the \imp{Grapple} property can be used to grab onto people or things, to pull them closer or to immobilise foes.}
 	\keyItem{Paired}{A \imp{paired} weapon is more effective when used in unison with another of the same type. If you have one of this weapon in each hand, all attacks deal an additional level of damage.}  
-	
+	\keyItem{Poisoned}{A \imp{Poisoned} weapon works especially well with toxins, potions and other \imp{alchemical} concoctions. Opponents suffer a 1d penalty to resist poisons delivered via these weapons.}
 	\keyItem{Reload}{A weapon with the \imp{Reload} property has only a finite amount of ammunition before you must manually insert a new magazine into the weapon. The number of uses before a reload action is required is stated in the weapon description. }
+	\keyItem{Thrown}{A \imp{Thrown} tag is applied to a melee weapon which can also double as a ranged weapon. When used in this fashion, they are assumed to have a \imp{Short} range, but otherwise use the same statistics.}
 	\keyItem{Two-Handed}{This simple property means that both hands must be used in order to operate the weapon. These weapons can usually be carried in only one hand, but any other held items must be stowed or dropped before an attack can be performed.}
-	\keyItem{Variable Fire}{}
+	
 \end{itemize}
 
 Note that, despite the inclusion of the \imp{Reloading} property for ranged weapons, it is \imp{not} recommended that you keep track of the total amount of ammunition in your possession, as this violates the principle of abstraction discussed on page \pageref{S:ItemAbstraction}.
+
+\subsection{Weapon Cost}
+
+Note that, unlike many other items in this chapter, the weapons presented here are not given an associated Rarity and/or price. This is because the availability of certain weapon technology relies incredibly heavily on the kind of game your GM is running. 
+
+In a true-realistic model of the modern world, you would probably have to spend more to buy a weapon-quality sword than you would a simple rifle, whilst in a game set during the Witch Trials, any firearms weapons will simply not be available to the average shopper. It is encouraged that the DM therefore modifies the prices heavily in accordance with the rarity they wish each item to have. 
+
+As a rough baseline, for a game set C. 21st century, a weapon's cost in \imp{Galleons} is equal to its base weapon damage. 
+

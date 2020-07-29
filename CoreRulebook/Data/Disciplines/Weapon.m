@@ -20,7 +20,7 @@ classdef Weapon
             obj.Proficiency = string(tableLine.Proficiency{1});
             obj.ProficiencyValue = num2str(tableLine.ProficiencyVal(1));
             obj.Difficulty = num2str(tableLine.Difficulty(1));
-            obj.DamageBase = string(tableLine.DamageBase{1});
+            obj.DamageBase = num2str(tableLine.DamageBase(1));
             obj.Type = string(tableLine.Type{1});
             obj.Notes = string(tableLine.Additional{1});
             

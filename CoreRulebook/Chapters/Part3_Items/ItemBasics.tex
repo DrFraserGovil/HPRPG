@@ -65,20 +65,20 @@ That being said, this is a deliberately vague system, and players are to be give
 
 In order to help quantify and codify how prevalent certain items are in the magical world, a 7-tier\footnote{You may have noticed that everything in this game is based around the number `7' - this is intentional. After all, 7 is the most intrinsically powerful magical number!} system is used to classify all items.
 
-\newcommand\enchantRow[2]{ \key{#1} & \parbox[t]{6 cm}{\small \raggedright #2}  \\}
+\newcommand\enchantRow[3]{ \key{#1} & \parbox[t]{4.5 cm}{\small \raggedright #2}  & {\small #3}\\}
 
 
 \begin{center}
-	\begin{rndtable}{c c}
-		\key{Difficulty}	&	\key{Description}	
+	\begin{rndtable}{c c c}
+		\key{Difficulty}	&	\key{Description}	& \key{Cost} (\galleon{})
 		\\
-		\enchantRow{Trivial}{Very simple, cheap and abundant objects - a normal wizard would expect to have dozens of such items in their possession.}
-		\enchantRow{Common}{Though they might not own many as many of these items, a normal witch would be familiar and comfortable with \imp{Common} items in everyday life.}
-		\enchantRow{Singular}{Verging on impressive, either in rarity or in magical power, your normal magic-user probably owns only a handful of these items, and they would be treated as prized possessions.}
-		\enchantRow{Unusual}{An \imp{Unusual} magical would usually be enough to draw inquisitive looks when displayed - a normal witch or wizard probably only owns one or two of these throughout their lifetime (if they are lucky).}
-		\enchantRow{Rare}{A rare item would be passed down through a family as a treasured heirloom, and kept under the highest security when not being used. There are probably no more than a few thousand \imp{Rare} items in the country at any one time. }
-		\enchantRow{Extraordinary}{Most witches and wizards would only ever have seen an \imp{Extraordinary} magical item, and very, very few will have owned them. An object of this power is usually either stored in \imp{Gringotts}, or on display in a museum.}
-		\enchantRow{Mythical}{\imp{Mythical} items are unique magical items which would be remembered throughout history for their enigmatic magic and immense power. Even being able to see, let alone own, a Mythical item would be a thing to tell stories about.}
+		\enchantRow{Trivial}{Very simple, cheap and abundant objects - a normal wizard would expect to have dozens of such items in their possession.}{$\sim${0}}
+		\enchantRow{Common}{Though they might not own many as many of these items, a normal witch would be familiar and comfortable with \imp{Common} items in everyday life.}{1-2}
+		\enchantRow{Singular}{Verging on impressive, either in rarity or in magical power, your normal magic-user probably owns only a handful of these items, and they would be treated as prized possessions.}{3-5}
+		\enchantRow{Unusual}{An \imp{Unusual} magical would usually be enough to draw inquisitive looks when displayed - a normal witch or wizard probably only owns one or two of these throughout their lifetime (if they are lucky).}{5-10}
+		\enchantRow{Rare}{A rare item would be passed down through a family as a treasured heirloom, and kept under the highest security when not being used. There are probably no more than a few thousand \imp{Rare} items in the country at any one time. }{10-100}
+		\enchantRow{Extraordinary}{Most witches and wizards would only ever have seen an \imp{Extraordinary} magical item, and very, very few will have owned them. An object of this power is usually either stored in \imp{Gringotts}, or on display in a museum.}{100-1000}
+		\enchantRow{Mythical}{\imp{Mythical} items are unique magical items which would be remembered throughout history for their enigmatic magic and immense power. Even being able to see, let alone own, a Mythical item would be a thing to tell stories about.}{1000 +}
 	\end{rndtable}
 \end{center}
 
@@ -150,20 +150,18 @@ You may purchase items if you find a willing vendor - places like \imp{Diagon Al
 
 \subsection{Prices}
 
-Many items in this guide are listed with an associated price. This is the `standard purchase price'\comma{} and is the price one could expect to pay for the item in a large population centre\comma{} during normal economic times\comma{} without excessive bartering. 
+The cost of an item is determined by its \imp{Rarity}(see page \pageref{S:ItemRarity}), which provides an appropriate cost bracket for each item depending on how rare it is within the wizarding world. As such, the exact price you must pay depends on the details of the world that your \imp{GM} has constructed for you - if, for example, they decide that \imp{Floo Powder} is incredibly rare (perhaps due to a recent magical mishap), the price will shoot up accordingly. 
 
-However\comma{} this price may increase or decrease for certain items\comma{} depending on the location and the adventure you are undergoing. 
+Some items in this chapter come with either an associated rarity, or in rarer cases, a suggested price. These are, however, merely suggestions for your \imp{GM}. The item lists present in this section are {\it not} a shopping list, they are merely a guide for some basic worldbuilding.
 
-If\comma{} for example\comma{} you had {\it accidentally} triggered a worldwide famine\comma{} then food items could become exceptionally expensive and you have to start spending \imp{Galleons} to ensure you have food. Conversely\comma{} if you manage to rid a local lake of the hippocampus that had been terrorising it\comma{} you may find the bountiful fishing harvest reduces the price of fish for a few days. 
-
-Some items may also simply be unavailable \minus{} either because you are speaking to the wrong person (don't go to a bookstore for potions!)\comma{} because of outside influences\comma{} or simply because the item is so rare that none of the available merchants possess it to sell to you. The item lists present in this section are {\it not} a shopping list, they are merely a guide. 
+Some items may also simply be unavailable \minus{} either because you are speaking to the wrong person (don't go to a bookstore for potions!)\comma{} because of outside influences\comma{} or simply because the item is so rare that none of the available merchants possess it to sell to you. If you wish to find such a particularly rare item, you may have to do more than simply waltz into Diagon Alley! 
 
 \subsection{Selling \& Bartering}
 
-You may also sell your own found or manufactured items to amenable vendors. Items generally sell for 50\% of their standard price\comma{} and no amount of bartering will raise it to 100\%\comma{} unless you can demonstrate your wares are of a significantly higher quality\comma{} and hence not subject to the `standard' price. 
+You may also sell your own found or manufactured items to amenable vendors. Items generally sell for 50\% of the price that you could buy one for\comma{} unless you can demonstrate your wares are of a significantly higher quality\comma{} and hence not subject to the `standard' price. 
 
 As with purchasing your items\comma{} your ability to sell is dependent on you finding a willing (even enthusiastic) buyer\comma{} as well as the surrounding economic circumstances. 
 
-Note that since 1692 is has been a crime in the wizarding world to allow magical items to fall into the hands of muggles \minus{} a crime which\comma{} in the most egregious of circumstances\comma{} has a punishment of death. 
+Note that since 1692 is has been a crime in the wizarding world to allow magical items to fall into the hands of muggles \minus{} a crime which\comma{} in the most egregious of circumstances\comma{} has a punishment of death. Unless your \imp{GM} is open to a `Muggle-Wizarding War' scenario, you may wish to refrain from selling magical items on the mundane marketplace...
 
 
