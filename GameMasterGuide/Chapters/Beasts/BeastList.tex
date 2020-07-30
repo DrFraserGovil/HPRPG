@@ -188,19 +188,33 @@ The \imp{Ministry} has only been able to gather evidence of a handful of individ
 \ability{Unkillable}{It is impossible to kill an apparition\comma{} though it is possible to banish them for a time. The only known way to permanently deal with an apparition is to plunge one into the Void\comma{} or help them find the closure they need\comma{} or otherwise convince them to relinquish their hold on the mortal realm. }
 }
 {
-\beast{name = Ghost, species = Apparitions, mind = Ineffable, category = Phantasm, rating = , abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = ghost, description = A ghost is the imprint of the soul of a once\minus{}living wizard or witch\comma{} left to wander the material realm after their physical form has died. A ghost resembles their former selves at the moment of their death\comma{} though in a translucent\comma{} silver\minus{}grey form. 
+\beast{name = Ghost, species = Apparitions, mind = Ineffable, category = Phantasm, rating = , abilities = \ability{Incorporeal Form}{A \name{} has no physical form\comma{} and so may move through solid objects  at their flight speed\comma{} and is immune to all normal attacks.}
+
+\ability{Wisdom of Life}{A \name{} gains additional \imp{Knowledge} abilities based on their experiences during their life. }, article = A, fit =0, prs =2, vit =0, cha =3, dec =3, ins =2, int =3, wil =3, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{All damage}, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=7, defy=2, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Intimidation}{2}
+\skill{History}{3}
+\skill{Flight}{1}, hasAttacks = 1, attacks = \ranged{Haunting}{5}{5}{\minus{}1}{Terrified Status}{1 + Successes}, hasLanguages = 1, languages = \speaks{The languages they spoke in life}, hasImage = 1, image = ghost, description = A ghost is the imprint of the soul of a once\minus{}living wizard or witch\comma{} left to wander the material realm after their physical form has died. A ghost resembles their former selves at the moment of their death\comma{} though in a translucent\comma{} silver\minus{}grey form. 
 
 No\minus{}one knows what causes a ghost to remain behind\comma{} though it is posited that these fleshless spirits were mortally afraid of death or have some extraordinarily strong connection to the locations they haunt.}
 
 
-\beast{name = Poltergeist, species = Apparitions, mind = Ineffable, category = Phantasm, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = peeves, description = A poltergeist is an amortal\comma{} indestructable spirit of chaos and mischief. They appear as a short\comma{} childlike figure dressed in a motley jester\apos{}s garb\comma{} with glowing orange eyes\comma{} which twinkle with mischief. 
+\beast{name = Poltergeist, species = Apparitions, mind = Ineffable, category = Phantasm, rating = II, abilities = \ability{Phaseshift}{A \name{} may use an action to shift between corporeal and incorporeal form and vice versa. Whilst in incorporeal form the \name{} is immune to all harm\comma{} can fly and can pass through solid objects.}, article = A, fit =2, prs =5, vit =1, cha =2, dec =3, ins =3, int =2, wil =4, pcp =3, hasDamage = 1, damage =\key{Resistant} to \textit{All damage}, nUnharmed=1, nBruised=1, nHurt=1, nInjured=0, nWounded=0, nMangled=1, block=1, dodge=4, defy=3, fortitude=2, imageStack=0, hasSkills = 1, skills = \skill{Covert}{4}
+\skill{Marksmanship}{3}
+\skill{Flight}{3}
+\skill{Spellcasting}{2}, hasAttacks = 1, attacks = \ranged{Throw Objects}{10}{7}{\minus{}2}{Bashing damage}{1 + Successes}
+
+\ability{Arcane Trickster}{A \name{} may use their \imp{Spellcasting} ability to cast the \imp{Move\comma{} Degrade\comma{} Mirage} and \imp{Bypass} spells.}, hasLanguages = 1, languages = \speaks{Human languages}, hasImage = 1, image = peeves, description = A poltergeist is an amortal\comma{} indestructable spirit of chaos and mischief. They appear as a short\comma{} childlike figure dressed in a motley jester\apos{}s garb\comma{} with glowing orange eyes\comma{} which twinkle with mischief. 
 
 Brought into existence by a critical mass of humans\comma{} trickery and mischief\comma{} poltergeists haunt the specific place which they are tied to. 
 
 Unusually out of apparitions and other spiritual creatures\comma{} poltergeists are able to take on physical form and cast primitive forms of magic \minus{} which they use to wreak chaos and play pranks on unsuspecting humans.}
 
 
-\beast{name = Boggart, species = Apparitions, mind = Ineffable, category = Phantasm, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = boggart, description = A manifestation of fear and primal terror\comma{} the shapeshifting boggart peers into the minds of humans\comma{} and takes the form of their worst nightmare. 
+\beast{name = Boggart, species = Apparitions, mind = Ineffable, category = Phantasm, rating = II, abilities = \ability{Phobomorph}{A \name{} can use its \imp{Shapeshift} ability to take on any form it desires (even esoteric and abstract concepts can be represented). If this ability is used to take the form of something the target fears\comma{} the DV to resist the \imp{Incite Fear} ability is increased by 3.}
+
+\ability{Killing Joke}{A \name{} fears and hates laughter. A peal of genuine laughter instantly causes the \name{} to take the \imp{Critical Condition} status.}, article = A, fit =1, prs =2, vit =0, cha =1, dec =4, ins =6, int =2, wil =3, pcp =3, hasDamage = 1, damage =\key{Immune} to \textit{All damage} and \key{Susceptible} to \textit{Genuine laughter}, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=1, dodge=2, defy=3, fortitude=3, imageStack=0, hasSkills = 1, skills = \skill{Shapeshift}{6}
+\skill{Intimidation}{3}, hasAttacks = 1, attacks = \ability{Pierce Soul}{A target within 10m of the \name{} must contest a DV 7 \imp{Insight} from the Boggart. On a faiulre\comma{} the \name{} learns a piece of information from the target\comma{} such as their deepest fear.}
+
+\ranged{Incite Terror}{5}{7}{0}{Terrified Status}{1 + Success}, hasImage = 1, image = boggart, description = A manifestation of fear and primal terror\comma{} the shapeshifting boggart peers into the minds of humans\comma{} and takes the form of their worst nightmare. 
 
 A boggart can never harm you\comma{} though they can be difficult to contain. The accepted trick is to transfigure them to look stupid\comma{} prompting a fit of laughter – which is fatal to a boggart.}
 
@@ -300,11 +314,7 @@ Normally peacable and shy creatures\comma{} they become territorial and violent 
 
 \species{Cloakwraiths}
 {
-	A tattered black cloak might not seem the most terrifying piece of attire that a being could don\comma{} though those who have encountered the \key{Cloakwraiths} might say differently. 
-
-No\minus{}one really knows where they come from\comma{} though ancient legends say that they are the spirits of those too evil to pass to the other side. Some \imp{wraiths} appear as gaunt almost\minus{}humanoids beneath their eponymous shrouds\comma{} whilst others seem to have no corporeal form. Some believe that they are in fact a single type of being at various points in their lifecycle\comma{} whilst others believe them to be individual manifestations of primal human fears.
-
-What they all have in common (besides the ominous cloak)\comma{} is an evil aura of terror\comma{} and a hunger for human souls.
+	
 }
 {
 \beast{name = Lethifold, species = Cloakwraiths, mind = Ineffable, category = Abomination, rating = IV, abilities = \ability{Soporific Aura}{Any creature within 1m of the \name{} takes 2d penalty to all attempts to \imp{Resist} sleep.}
@@ -872,11 +882,7 @@ This forces  the host to undergo a horrific transformation which rips away the l
 
 \species{Light Elemental}
 {
-	The \key{Radiant Gardens} are one of the realms beyond our own which resonates strongly with one of the primal magical elements – in this case the element of \key{Light}. The beings native to this particular corner of the multiverse are therefore known as \imp{Light Elementals}. 
-
-The \imp{Radiant Gardens} are an almost heaven\minus{}like domain\comma{} filled at all times with a diffuse\comma{} golden glow\comma{} interspersed with rainbows containing more colours than the human mind can conceive of. \imp{Light Elementals}\comma{} having formed from this incandescant space\comma{} are all therefore naturally able to manipulate and channel radiance in all its forms\comma{} and abhore darkness and shadows. 
-
-Just as no two rainbows are perfectly alike\comma{} so too are \imp{Light Elements} unique and distinct creatures\comma{} with wildly varying morphology and characteristics – some appear as perfectly normal solid creatures\comma{} whilst others seem to be made up of pure\comma{} distilled light.
+	
 }
 {
 \beast{name = Solon, species = Light Elemental, mind = Non\minus{}Sapient, category = Elemental, rating = III, abilities = \ability{Floating}{The \name{} naturally floats in the air using its \imp{Flight} ability.}, article = A, fit =2, prs =3, vit =3, cha =2, dec =0, ins =1, int =1, wil =3, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{Celestial}\comma{} \key{Resistant} to \textit{Fire} and \key{Susceptible} to \textit{Bludgeoning}, nUnharmed=1, nBruised=1, nHurt=1, nInjured=1, nWounded=0, nMangled=0, block=4, dodge=1, defy=2, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Spellcasting}{3}
@@ -1003,7 +1009,7 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 	c
 }
 {
-\beast{name = Basilisk, species = Ophidian, mind = Non\minus{}sapient, category = Monstrosity, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+\beast{name = Basilisk, species = Ophidian, mind = Non\minus{}sapient, category = Monstrosity, rating = VII, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = basilisk, description = Basilisk stuff blah blah blah blah blah lsodhs dihs douhu didhl iew lj fil ldfiuha iudew lid ewilugd uiweg dugweldu}
 
 
 \beast{name = Cockatrice, species = Ophidian, mind = Non\minus{}sapient, category = Monstrosity, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
