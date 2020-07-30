@@ -76,7 +76,7 @@ classdef Beast
             obj.Species = tableLine.Species{1};
             obj.Mind = tableLine.Mind{1};
             obj.Category = tableLine.Category{1};
-            obj.Rating = tableLine.Rating(1);
+            obj.Rating = num2roman(tableLine.Rating(1));
             obj.Description = tableLine.Description{1};
             
             obj.Unharmed = tableLine.Unharmed(1);
