@@ -14,7 +14,9 @@ The basic mechanism for performing an attack, be it with a magical \imp{spell}, 
 
 \subsection{Target Acquisition}
 
-You may only attack targets that are within the range of the attack you are making. For melee weapons, this is usually 1 metre, though some long weapons such as lances have additional reach. For ranged weapons, the maximum range is specified in the weapon description. 
+You may only attack targets that are within the range of the attack you are making. For melee weapons, this is usually 1 metre, with ranged weapons extending to higher ranges. Each weapon has a range specified as \imp{Short}, \imp{Normal} etc., which are translated into physical distances as follows:
+
+\rangetable{}
 
 In addition, to determining if the target is in range, you must determine if it is a valid target - you cannot shoot arrows around walls, after all. You must be able to see a target in order to attack it (or see below for rules on fighting invisible enemies), and you may need to consider the fact that a target has cover. 
 
@@ -24,32 +26,71 @@ If you are performing an attack using a magical spell, you simply cast the spell
 
 If, however, you are performing an attack using a weapon, or even simply with your bare fists, then you must perform an \key{Attack Roll}. To do this, you must, as usual, determine the \imp{skills} that are being used to perform the attack. As a general guide:
 \begin{itemize}
-	\keyItem{Melee (Brawl)}{Punching someone in the face, or using an improvised weapon in a bar fight would use \key{Fitness (Brawl)}}
-	\keyItem{Melee (Refined)}{Using a melee weapon in a more controlled fashion would use \key{Fitness (Skirmish)}, though you may argue that a refined and elegant attacker could use \key{Precision (Skirmish)}} 
+	\keyItem{Melee (Ugly) = Fitness (Brawl)}{i.e. Punching someone in the face, or using an improvised weapon in a bar fight.}
+	\keyItem{Melee (Refined) = \key{Fitness (Skirmish)}}{i.e. using a proper melee weapon in a controlled fashion (you may argue that a refined and elegant attacker could use \imp{Precision} instead of \imp{Fitness})} 
 	\keyItem{Ranged}{Strinking a target from a distance will almost always use \key{Precision (Marksmanship)}}
 \end{itemize} 
 
-Each weapon provides a \key{Base Damage} statistic and a DV associated with them (note that if you do not meet the requirements to be considered proficient with the weapon, the DV is increased by 2). See the weapon list on page
+Each weapon (and spell) provides a \key{Base Damage} statistic and a DV associated with them (note that if you do not meet the requirements to be considered proficient with the weapon, the DV is increased by 2). See the weapon list on page \pageref{S:Weapons} for the full list. 
+
+When performing an attack with a weapon\footnote{or, if unarmed, you use the \imp{No Weapon} statistics for kicking, punching and headbutting.}, you simply roll your \imp{Attack Pool} against the weapon DV. If the attack is a success, the attack deals damage to the opponent equal to the \imp{Base Damage} and, usually, an additional level of damage for every additional success scored above the first. 
+
+For example, if a character is wielding a \imp{Greatsword} (a DV 7 weapon, with a \imp{Base damage} of 3) against a foe within melee range, they would roll their \imp{Fitness (Skirmish)} pool against a DV of 7. If they gained 6 successes in total, the attack would deal \imp{Level 3 + 5 = 8} harm, which would be enough to instantly reduce a human into a \imp{Critical Condition}. 
+
+When using spells to perform attacks, the rules are similar, and are outlined on page \pageref{S:CastingSpells}.
 
 \section{Melee Attacks}
 
-A melee attack encompasses all close-range fighting, including fist-fighting, sword-swinging and whip-wrangling. 
+A melee attack encompasses all close-range fighting, including fist-fighting, sword-swinging and whip-wrangling. Though it is rare, you may also attempt a form of spellcasting called `melee spell attacks' - imbuing your fists with electrical energy as you suckerpunch a bully is a surefire way to get their attention!
 
 Typically, a melee attack can only be made against a target if they are within 1 metre of the attacker, with a clear line-of-reach between the two. Some weapons, as well as larger creatures, are able to perform melee attacks at an extended range. 
 
 
-Whilst at close range, there are a number of additional manoeuvres that you might wish to use, as well as a simple  
 
-\subsection{Melee Manouvers}
-\subsubsection{Grappling}
 
-If you wish to grab your opponent- either to immobilise them, or to pick them up and throw them off a cliff - you may attempt to initiate a grapple in place of a regular attack. 
+\subsection{Melee Manoeuvers}
 
-To perform a grapple you need two free hands and perform (usually) a \imp{Fitness (Strength)} check, which is contested by the target performing another check to escape (usually either a \imp{Speed} or \imp{Acrobatics} check, or simply going head to head with \imp{Strength}). If the grappling succeeds, the target acquires the \key{trapped} status. 
 
-If the grappler is strong enough (determined by an additional \imp{Fitness (Strength)} check with the DV determined by the size of the target), they may drag the grappled opponent along with them. Unless the strength check was spectacularly successful, this will usually significantly reduce the movement speed. 
+Whilst at close range, there are a number of additional manoeuvres that you might wish to use, beyond simply hitting them with a big stick.
+
+These are simply some ideas - you may feel free to expand on or modify this list as you see fit, subject to the \imp{DM}'s approval.
+
+\subsubsection{Called Strike}
+
+It always reasonably assumed that you are attempting to attack the most vulnerable parts of a target, however, if you have reason to believe that focussing one one specific part would have greater effect - perhaps you know there is a weak spot in the armour plating of a dragon, or see that the Dark Wizard limps a little with his right leg - you may perform a \imp{Called Strike} to target that area.
+
+A \imp{called strike} imposes a 2d penalty on the \imp{Attack roll}, however, if you are correct that this is a vulnerable region, the target is considered \imp{Susceptible} to the attack (or removes \imp{Resistance} to the attack, if applicable).
+
+An attack roll with a \imp{called Strike} will almost always require \imp{Precision} instead of \imp{Fitness} for the roll. 
+
+\subsubsection{Disarm}
+
+A form of \imp{Called Shot} (see above). Rather than dealing damage, however, you target the enemies weapon or other armaments, in an attempt to remove it. Rather than \imp{Damage}, the attack has the effect of \imp{Disarm}, with the power determined according to the normal damage rules. 
+
+The foe must defend themselves appropriately (i.e. reduce the \imp{Power} of the attack to 0), or drop their weapon. 
+
+This cannot normally be used against foes for whom their `weapon' is integrated into their body. 
+
+\subsubsection{Feint}
+
+Peform an attack using the \imp{Deception} statistic rather the usual one to confuse your foe with a faked attack. If the target fails on a contested \imp{Insight (Alertness)} check against the \imp{Attack Roll}, you deal no damage but they are considered \imp{Susceptible} to your next attack.  
+
+\subsubsection{Grapple}
+
+To perform a grapple you need two free hands and perform (usually) a \imp{Fitness (Brawl)} check, which is contested by the target performing another check to escape (usually either a \imp{Speed} or \imp{Acrobatics} check, or simply going head to head with \imp{Strength} or \imp{Brawl}). If the grappling succeeds, the target acquires the \key{Trapped} status. 
+
+The grappler may still move, dragging the victim around with them. If the victim is roughly the same size as the grappler, this slows them down to half speed. If the victim is larger or heavier than they could reasonably lift, this action is not possible. 
 
 A grappled target may attempt to use their action to escape, in which case, repeat the contest. 
+
+
+\subsubsection{Shove}
+
+You may simply push a target back - contest a \imp{Fitness (Strength)} or \imp{Fitness (Brawl)} check against the target's. The target is pushed back 0.5m for every success. 
+
+\subsubsection{Trip}
+
+Contest a \imp{Precision (Brawl)} check (or other similarly argued pool) against the foe's \imp{Precision (Acrobatics)} pool to keep their balance. On a success, the target falls over and takes the \imp{Prone Position} status. 
 
 \subsubsection{Two-Weapon Fighting}
 
@@ -64,39 +105,80 @@ A ranged attack occurs over a longer distance by firing a projectile or magical 
 
 \subsubsection{Ranged Weapons}
 
-The description of every ranged weapon gives a maximum range at which the weapon may be fired. Some weapons have multiple ranges depending on the way in which they are used. 
+As with melee weapons, the description of ranged weapons found on page \pageref{S:Weapons} states the range over which they may be used. However, unlike melee weapons, this is considered the {\it effective} range, rather than the absolute limit. You may push yourself to attack a foe an additional 50\% further away, however doing so is incredibly hard and so increases the DV by +2. 
 
-Generally speaking, you cannot fire a projectile further than this range, as it represents the maximum distance that the projectile can reach. Some weapons (particularly the {\it firearms} class, though your GM will rule which weapons this is true for), however, the stated range is merely the range at which you can fire accurately. These weapons {\it can} be fired up to twice their stated range, but the DV increases by 3 when you go over this range.
+Note that though some ranged weapons (i.e. crossbows and firearms) require you to \imp{reload} occassionally, you are not required to keep track of your total ammunition for ranged weapons, unless your GM rules that you have been away from civilisation long enough to be running dangerously low on supplies. It is assumed that reasonable people have enough supplies on them to last. 
 
-In addition, you will need to ensure that you have enough ammunition to properly use your ranged weapon.
+\subsection{Ranged Manoeuvers}
 
+\subsubsection{Aim}
+
+You may take a turn to steady your self and take aim at a foe. You gain +1d to your next attack for every consecutive turn spent aiming. 
+
+The maximum bonus you can gain is equal to your \imp{Marksmanship} rating. 
+
+\subsubsection{Called Shot}
+
+As with the melee \imp{Called Strike}, a \imp{called shot} imposes a 2d penalty on the \imp{Attack roll}, however, if you correctly call the shot to target a vulnerable region, the target is considered \imp{Susceptible} to the attack (or removes \imp{Resistance} to the attack, if applicable).
 
 \subsubsection{Close-Combat Firing}
 
-Ranged weapons and spells are significantly less effective when used on targets which are in close-quarters: aiming requires a clarity of thought that a monster trying to bite your face off denies. 
+Ranged weapons and spells are significantly less effective when an enemy is up close and personal: aiming requires a clarity of thought that a monster trying to bite your face off denies. 
 
-When attempting to use a ranged attack on a non-incapacitated target within melee range, take a 2d penalty on the accuracy check.
-
-\section{Accuracy}
-
-The attacker quantifies their ability to successfully hit their target through an \key{accuracy check}. 
-
-The \imp{Dice Pool} and \imp{DV} of this check is determined by the type of attack and the weapon 
+When performing a \imp{ranged attack roll} whilst a non-incapacitated foe is within melee range\imp{Note that this is {\it their} melee range, not yours} of you (this foe could be the target of the attack, or simply a different enemy), you take a 2d penalty to the attack. 
 
 
+\subsubsection{Covering Fire}
 
-%~ \subsubsection{Additional Difficulty} \label{S:HardToHit}
+You may use your attack roll to intimidate your foes, rather than harm them - contest your attack roll against a \imp{Willpower (bravery)} check (or similar) against a number of foes within range (up to twice your \imp{Marksmanship} level.) Each foe that fails must use their entire movement next action to find cover, or otherwise retreat from you. 
 
-%~ Targeting objects which are particularly small, or (for ranged attacks) far away is more difficult.  The additional penalty for hitting such away targets is, with everything measured in metres:
+This action normally empties the clip of whichever weapon you are using. 
 
-%~ $$ P = \frac{\text{distance}}{10 \times \text{size}} ~~~~ \text{(rounded down)}$$
 
-%~ Therefore, hitting a 1m target at a distance of up to 10m has a DV of 5, whilst the same target 30m away has a DV of 8, and hitting a 1cm target at a distance of of 1m has a DV of 15. 
+\subsubsection{Strafe}
 
-%~ \subsubsection{Blindfight}\label{S:Unseen}
+When wielding a weapon capable of \imp{Burst Fire}, you may choose to attack multiple targets in a single round, completely emptying your clip. 
 
-%~ If you cannot see your enemy, then you cannot select them as a target. You may, however, choose to simply start swinging your sword, or firing spells off in a random direction. You must tell the GM which direction you are attacking in, and then perform an accuracy check with check disadvantage.
+You may double the number of dice used for the \imp{Attack roll} and attack any number of targets within range. The total \imp{Damage} scored must be evenly divided up between the number of targets chosen (rounded down). 
 
-%~ If the target is not in the region  you are attacking, you automatically miss (though the GM will still ask for the accuracy roll, to avoid giving away where they actually are!). 
+If you succeed, but would deal less damage than the number of targets selected (i.e. after rounding, doing 0 damage), you may choose instead to deal your weapon's \imp{Base Damage} to a single target. 
 
-%~ After you successfully hit an unseen attacker, you avoid the disadvantage penalty until your next attack misses or the target moves. You must then retake the penalty until you next land a successful hit, or you detect them through other means. 
+
+
+\section{Additional Considerations}
+
+In addition to these above, the following additional rules might need to be used. These rules are generally considered more flexible and optional, as they rely much more on specifics of your own table's individual `theatre of the mind'.
+
+\subsection{Fighting Blind}\label{S:Unseen}
+
+If you cannot see your enemy, either because of darkness, camouflage or magical concealment, then you cannot generally select them as a target. 
+
+You may, however, choose to simply start swinging your sword, or firing spells off in a random direction, or simply towards where you think your foe may be. You must tell the GM which direction you are attacking in, and then perform a normal \imp{Attack Roll}, with a 3d penalty.
+
+If the target is not in the region  you are attacking, you automatically miss - though the GM will still ask for the accuracy roll, to avoid giving away where they actually are!
+
+On a success, the attack hits as normal.  
+
+\subsection{Cover}
+
+If a target is crouching down behind a low wall, it is much harder to hit them between the eyes with a snowball than if they were out in the open. 
+
+Using the environment for protection from attacks is known as using \key{Cover}. Generally speaking, cover only applies to \imp{Ranged} attacks, though it is of course conceivable to apply it to melee attacks in certain circumstances. 
+
+Cover is split into 4 levels: light, normal, strong and total. Heavier cover makes it more difficult for foes to attack you, however it also makes it more difficult for you to attack others. Therefore, cover imposes both an increase in the DV for attacks against you, but also for attacks performed by you, until you move out of cover. 
+
+Note that, due to the simultaneous nature of combat cycles, if you move out of cover during a round, you cannot regain cover by moving back into cover at the end of your turn: attacks will hit you whilst you are unprotected. To remain in cover, you must stay covered for the entirety of your turn.
+
+\newcommand\coverRow[4]{#1	&	\parbox[t]{3.8 cm}{\raggedright #2}	&	#3	&	#4 \\}
+\begin{center}
+	\begin{rndtable}{c c c c}
+	\bf Cover	&\bf Description	&	\bf DV to be Hit	&	\bf DV to Hit
+	\\
+	\coverRow{None}{Open areas, completely visible}{+0}{+0}
+	\coverRow{Light}{Lying prone, heavy mist, approx. half your body visible}{+1}{+0}
+	\coverRow{Strong}{Behind tree, or partially around a corner, approx 1/4 of your body visible}{+2}{+1}
+	\coverRow{Strong}{Crouched behind wall, only head visibe}{+3}{+3}
+	\coverRow{Total}{Completely obscured}{-}{-}
+	\end{rndtable}
+\end{center}
+Total cover implies that you are completely hidden, and therefore are not a valid target for attack. Of course, you may still be in danger if your opponent starts blowing apart the wall you are hiding behind, but they cannot hit you with a conventional attack. 

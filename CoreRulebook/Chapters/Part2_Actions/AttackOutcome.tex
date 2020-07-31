@@ -1,51 +1,77 @@
+\chapter{Calculating Damage}
 
 
-\section{Doing Damage} \label{S:Damage}
-
-
-
-
-
-\subsection{Damage Types}
+After the \imp{Combat Cycle} has completed, all the attacks and responses have been declared, the effects are then applied to the respective characters. 
 
 
 
-Many effects specify what kind of damage they do (for instance, a sword does 1d8 slashing damage). This helps the players and the GM work out how the damage is done, and also how it is affected by any weaknesses and resistances possessed by the target. 
 
-Some damage types do damage in unusual ways - draining Fortitude instead of Health, for example. 
+\section{Damage Types}
 
+
+
+Many effects specify what kind of damage they do: for instance, a punch deals \imp{Bashing} damage, whilst summoning a bolt of lightning onto a foe deal \imp{Electric} damage. 
+
+Whilst this is often merely just for flavour, enabling your group to differentiate between the burns you gained fighting the fire demons, vs the cuts and slashes gained from annoying a hippogriff, some creatures have a natural ability to resist certain kinds of attacks, and others are much more vulnerable to them. 
+
+Magical effects, potions and enduring status effects can also provide a vulnerability to, or protection from, certain kinds of attack. If you know you are going up against a powerful foe, you may therefore tailor your attacks towards those that they are weak against, whilst bolstering your defences against their preferred form of attack. 
+
+Each damage type falls into one of three categories: \key{Physical}, \key{Energetic} and \key{Vitriolic}.
+
+
+\newcommand\damCat[3]
+{
+	\subsection{#1}
+	
+	#2
+	
+	\begin{itemize}
+	#3
+	\end{itemize}
+}
 \newcommand\damage[2]
 {
-\textbf{ \textit{#1}}: #2
+
+\keyItem{#1}{#2}
 }
 
-\damage{Acid}{A corrosive spray of acid attacks the HP of a target, and weakens their armour.}
 
-\damage{Bludgeoning}{The blunt-force of a hammer, or the force of falling on the ground deals bone-breaking bludgeoning HP damage.}
+\damCat{Physical}
+{
+	\key{Physical damage} causes cuts and bruises, breaks bones and pierces vital organs. Almost all normal weaponry deals \imp{Physical} damage, and many magical effects mimic the effects by summoning walls of force to crush a foe. 
+}
+{
+	\damage{Bashing}{This kind of damage arises when someone is struck forcefully with a blunt object, such as a fist, a club, or (in extreme cases) a warhammer. Commonly leaves bruising and broken bones.}
+	\damage{Crushing}{Whilst similar to \imp{Bashing}, \imp{crushing} damage is dealt when something falls from a great height, or is trapped between two heavy objects. Normally very painful, and very hard to evade or negate.}
+	\damage{Cutting}{When attacked with a sharp blade, expect to suffer \imp{Cutting} damage. \imp{Cutting} damage causes targets to bleed profusely.}
+	\damage{Stabbing}{\imp{Stabbing} damage is caused by attacks that pierce the skin, and cause trouble on the inside of your body. Almost all \imp{ranged} weaponry relies on stabbing damage from their projectiles. }
+}
 
-\damage{Celestial}{Celestial damage is dealt by pure-otherworldly energy, and damages the HP of Unliving and celestials, but does no harm to living beings.}
+\damCat{Energetic}
+{
+	\key{Energetic} damage is caused by an interaction with some kind of elemental or energetic force - sticking ones hand into a burning flame, or subjecting yourself to freezing cold temperatures. Whilst \imp{Muggles} are certainly familiar with most types of \imp{Energetic} damage, it is normally only wizards who can manipulate these forces on such an individual and powerful level. 
+}
+{
 
-\damage{Cold}{Freezing temperatures seep at both your willpower and your health. Damages both the HP of a target, and half as much damage again to FP. } 
+	\damage{Cold}{Freezing temperatures seep into your flesh, causing frostbite and even freezing your limbs solid. }
+	\damage{Fire}{\imp{Fire damage} burns of a the victim, and can often lead to long-lasting burns. In extreme cases, the target may catch on fire and continue to take fire damage until the fire is extinguished.}	
+	\damage{Electric}{Bolts of lightning, or simply touching a high-voltage wire, can lead to \imp{Electic damage}. Known for conducting itself through all manner of materials such as metal and water, \imp{electric} damage can often be used to control large crowds of foes.}
+	\damage{Incandesence}{A rare and unusual form of damage, imposed by pure radiant light. Whilst many living beings have some form of resistance to it, beings of darkness and shadow find it repulsive. As such, it is usually associated with life and goodness.}
+}
 
-\damage{Concussive}{A concussive blast from an explosion or a shockwave causes deafening concussive HP damage.}
 
-\damage{Electric}{Bolts of lightning, or simply touching a high-voltage wire, can lead to electrical HP damage. Electrical damage conducts through water and metal, harming all those in contact.}
+\damCat{Vitriolic}
+{
+	\key{Vitriolic} damage is an unusual form of damage, and is usually classified as that which saps, degrades and destroys its target. 
+}
+{
+	\damage{Acid}{When coming into contact with a corrosive or caustic substance, you are likely to suffer \imp{Acid} damage....physical items are also very likely to get harmed as well!}
+	\damage{Necrotic}{An evil, soul-sapping, rotting force degrades the body of living beings, causing it to blacken and die. If \imp{Incandesence} is associated with light and life, \imp{Necrotic} is the exact opposite.}
+	\damage{Poison}{When injected with a toxic substance, the venom courses around the victim's system, dealing awful \imp{Poison} damage to their internal organs. }
+	\damage{Psychic}{A rare form of damage, where a psychic force infiltrates a target's brain and causes them to suffer such mental anguish that they near death.}
+}
 
-\damage{Fatigue}{A magical will-sapping force damages only your FP.}
 
-\damage{Fire}{Fire damage burns the flesh to reduce the HP of a target, and can often lead to long-lasting burns.}
-
-\damage{Force}{A pure magical energy that directly damages HP.}
-
-\damage{Necrotic}{The evil energies of the undead withers your soul as it damages your body -- reducing HP and FP by equal amounts.}
-
-\damage{Piercing}{Daggers, spears and teeth can puncture even the thickest armour to damage HP.}
-
-\damage{Poison}{Venomous stings and poisoned weapons damage HP, and may lead to some other unpleasant side effects}
-
-\damage{Psychic}{Damage that originates not from the body, but from the mind, to damage your HP. You often cannot block psychic damage, you must instead rely on Resisting it.}
-
-\damage{Slashing}{Swinging blades and flashing claws damage the HP of unprotected targets.} 
 
 
 
