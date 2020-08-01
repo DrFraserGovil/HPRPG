@@ -15,6 +15,8 @@ Hatching from eggs the size of rugby balls\comma{} the oldest specimens have leg
 {
 \beast{name = Acromantula Hatchling, species = Acromantula, mind = Non\minus{}Sapient, category = Monstrosity, rating = III, abilities = \ability{Webwalker}{\article{} \name{} takes no movement penalty on webbed surfaces\comma{} and uses their \imp{Inhuman Senses} to sense vibrations in their webs.}
 
+\ability{Sticky Feet}{A \name{} may use their \imp{Climbing} ability to walk on any vertical surface.}
+
 \ability{Tiny}{\name{}s can occupy the same space as another being\comma{} climbing over them. Their small size also grants them a non\minus{}damaging terminal velocity.}, article = An, fit =2, prs =3, vit =2, cha =0, dec =0, ins =1, int =1, wil =1, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{Poison\comma{} Falling Damage}, nUnharmed=1, nBruised=0, nHurt=2, nInjured=0, nWounded=0, nMangled=1, block=1, dodge=3, defy=1, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Climb}{3}
 \skill{Covert}{4}
 \skill{Inhuman Senses}{2}, hasAttacks = 1, attacks = \melee{Poison Fangs}{4}{0}{Poison Damage}{1+Successes}, hasLanguages = 1, languages = \understands{Spider Tongue}, hasImage = 1, image = babyAcro, description = A newborn \imp{acromantula} is tiny when compared to their full grown counterparts – though with a legspan of up to 40cm\comma{} they are still significantly larger than almost all non\minus{}magical spiders. 
@@ -24,7 +26,10 @@ Their body is covered in a shiny\comma{} hairless and pale\minus{}grey carapace\
 Despite their limited intelligence and diluted poison\comma{} \name{}s are often encountered in nauseating flocks of thousands upon thousands\comma{} and in such large numbers\comma{} they pose a deadly threat to even the most powerful magic user.}
 
 
-\beast{name = Acromantula Adult, species = Acromantula, mind = Sapient, category = Monstrosity, rating = V, abilities = \ability{Webwalker}{\article{} \name{} takes no movement penalty on webbed surfaces\comma{} and uses their \imp{Inhuman Senses} to sense vibrations in their webs.}, article = An, fit =5, prs =4, vit =4, cha =0, dec =1, ins =1, int =4, wil =3, pcp =3, hasDamage = 1, damage =\key{Immune} to \textit{Poison} and \key{Resistant} to \textit{Falling Damage}, nUnharmed=3, nBruised=2, nHurt=1, nInjured=1, nWounded=1, nMangled=2, block=3, dodge=4, defy=3, fortitude=3, imageStack=0, hasSkills = 1, skills = \skill{Climb}{6}
+\beast{name = Acromantula Adult, species = Acromantula, mind = Sapient, category = Monstrosity, rating = V, abilities = \ability{Webwalker}{\article{} \name{} takes no movement penalty on webbed surfaces\comma{} and uses their \imp{Inhuman Senses} to sense vibrations in their webs.}
+
+
+\ability{Sticky Feet}{A \name{} may use their \imp{Climbing} ability to walk on any vertical surface.}, article = An, fit =5, prs =4, vit =4, cha =0, dec =1, ins =1, int =4, wil =3, pcp =3, hasDamage = 1, damage =\key{Immune} to \textit{Poison} and \key{Resistant} to \textit{Falling Damage}, nUnharmed=3, nBruised=2, nHurt=1, nInjured=1, nWounded=1, nMangled=2, block=3, dodge=4, defy=3, fortitude=3, imageStack=0, hasSkills = 1, skills = \skill{Climb}{6}
 \skill{Covert}{4}
 \skill{Inhuman Senses}{5}
 \skill{Speed}{5}
@@ -38,7 +43,10 @@ As a result of this violent and competitive environment\comma{} a fully grown \i
 Though  they can run incredibly quickly and they utilise a ranged web attack to ensnare their pray\comma{} the most terrifying aspect of a full\minus{}grown \imp{Acromantula} is their above\minus{}human level of intelligence\comma{} not only can they liquiefy your innards\comma{} they can counter even the most elaborate plan to outwit them.}
 
 
-\beast{name = Acromantula Patriarch, species = Acromantula, mind = Sapient, category = Monstrosity, rating = VI, abilities = \ability{Webwalker}{\article{} \name{} takes no movement penalty on webbed surfaces\comma{} and uses their \imp{Inhuman Senses} to sense vibrations in their webs.}, article = An, fit =1, prs =3, vit =3, cha =2, dec =5, ins =5, int =6, wil =6, pcp =4, hasDamage = 1, damage =\key{Immune} to \textit{Poison}, nUnharmed=4, nBruised=1, nHurt=1, nInjured=1, nWounded=1, nMangled=2, block=2, dodge=2, defy=6, fortitude=5, imageStack=1, hasSkills = 1, skills = \skill{Climb}{1}
+\beast{name = Acromantula Patriarch, species = Acromantula, mind = Sapient, category = Monstrosity, rating = VI, abilities = \ability{Webwalker}{\article{} \name{} takes no movement penalty on webbed surfaces\comma{} and uses their \imp{Inhuman Senses} to sense vibrations in their webs.}
+
+
+\ability{Sticky Feet}{A \name{} may use their \imp{Climbing} ability to walk on any vertical surface.}, article = An, fit =1, prs =3, vit =3, cha =2, dec =5, ins =5, int =6, wil =6, pcp =4, hasDamage = 1, damage =\key{Immune} to \textit{Poison}, nUnharmed=4, nBruised=1, nHurt=1, nInjured=1, nWounded=1, nMangled=2, block=2, dodge=2, defy=6, fortitude=5, imageStack=1, hasSkills = 1, skills = \skill{Climb}{1}
 \skill{Command}{7}
 \skill{Inhuman Senses}{7}
 \skill{Strength}{4}, hasAttacks = 1, attacks = \melee{Poison Fangs}{3}{0}{Poison}{7+Successes}
@@ -238,10 +246,22 @@ Whatever the mechanism for bringing them into this world\comma{} many have since
 \ability{Webspinners}{As members of the spider family\comma{} all arachnids have an affinity for spinning webs\comma{} and using them to sense and then ensnare their prey.}
 }
 {
-\beast{name = Great Widow, species = Arachnid, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = blackWidow, description = Magical experimentation on a {\it Black Widow} produced this grossly oversized specimen\comma{} and gave it the ability to spit acid.}
+\beast{name = Great Widow, species = Arachnid, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = \ability{Webwalker}{\article{} \name{} takes no movement penalty on webbed surfaces\comma{} and uses their \imp{Inhuman Senses} to sense vibrations in their webs.}
+
+\ability{Sticky Feet}{A \name{} may use their \imp{Climbing} ability to walk on any vertical surface.}, article = A, fit =2, prs =3, vit =2, cha =0, dec =1, ins =1, int =1, wil =2, pcp =4, hasDamage = 1, damage =\key{Immune} to \textit{Poison}, nUnharmed=1, nBruised=1, nHurt=1, nInjured=0, nWounded=0, nMangled=1, block=1, dodge=2, defy=1, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Climb}{3} \skill{Covert}{4} \skill{Inhuman Senses}{3}, hasAttacks = 1, attacks = \melee{Bite}{5}{\minus{}2}{Stabbing damage}{1 + Successes}
+
+\ability{Inject Poison}{{\it three / day} As an instant action\comma{} the \name{} injects a victim of its \imp{Bite} attack with venom. Victim takes the \imp{Poisoned} status effect (level 3 harm\comma{} requires 5 successes\comma{} DV 7) }
+
+\ranged{Acid Spit}{5}{4}{\minus{}1}{Acid damage}{1 + Successes}, hasLanguages = 1, languages = \understands{Spider Tongue}, hasImage = 1, image = blackWidow, description = Magical experimentation on a {\it Black Widow} produced this grossly oversized specimen\comma{} and gave it the ability to spit acid.}
 
 
-\beast{name = Howling Tick, species = Arachnid, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = tick, description = The name of the Howling Tick is misleading\comma{} as it is neither a tick\comma{} and nor does it howl. Instead the name comes from its tendency to suck blood from its victims\comma{} and the howls of pain that result.
+\beast{name = Howling Tick, species = Arachnid, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = \ability{Webwalker}{\article{} \name{} takes no movement penalty on webbed surfaces\comma{} and uses their \imp{Inhuman Senses} to sense vibrations in their webs.}
+
+\ability{Prolific Jumpers}{As part of their movement\comma{} a \name{} may jump a distance up to their total movement speed\comma{} in any direction.}, article = A, fit =4, prs =3, vit =1, cha =0, dec =0, ins =1, int =1, wil =2, pcp =3, hasDamage = 0, nUnharmed=2, nBruised=2, nHurt=0, nInjured=0, nWounded=1, nMangled=0, block=1, dodge=3, defy=1, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Speed}{4}
+\skill{Cover}{3}
+\skill{Inhuman Senses}{2}, hasAttacks = 1, attacks = \ability{Leap Attack}{As a single action\comma{} the \name{} may jump up to 5m and perform a \imp{Bite} attack.}
+
+\melee{Bite}{5}{\minus{}1}{Stabbing damage}{2 + Successes}, hasLanguages = 1, languages = \understands{Spider Tongue}, hasImage = 1, image = tick, description = The name of the Howling Tick is misleading\comma{} as it is neither a tick\comma{} and nor does it howl. Instead the name comes from its tendency to suck blood from its victims\comma{} and the howls of pain that result.
 
 The Howling Tick has the magical ability to grow in size when it feeds\comma{} however they must continually gorge in order to maintain their size\comma{} or they quickly shrink back.}
 
