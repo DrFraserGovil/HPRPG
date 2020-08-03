@@ -3,6 +3,15 @@
 
 A good fighter knows that all-out attack is rarely the path to victory: defending onself against incoming attacks is just as important. 
 
+\section{Defending from Attacks}
+
+When an attack is performed, be it a melee or ranged weapon attack, or a spell hurled in your general direction, it comes with an associated \key{Power}. 
+
+For most weapon attacks, and a large number of spells, this \imp{Power} is directed towards causing \imp{Harm}, reducing the \imp{health} of the target. Other kinds of attacks use their \imp{power} for other means - the \imp{Disable} spell, for example, devotes its \imp{Power} to rendering the target temporarily unconscious. 
+
+When you wish to defend from an attack - of any kind - you perform a \key{Resist} check using the chosen pool, and deduct the number of successes gained from the total \imp{Power} of the attack. If the \imp{Power} of the attack reaches zero, it is nullified and the effect is cancelled. If you do not reduce the \imp{Power} to zero, then the effect is still applied, albeit at a reduced amount.  
+
+
 \section{Defence Statistics}
 
 Your ability to negate incoming attacks is governed by three additional statistics: \key{Block}, \key{Dodge} and \key{Endure}, which govern the three ways that you may prevent an attack from harming you. 
@@ -19,7 +28,7 @@ Your ability to negate incoming attacks is governed by three additional statisti
 	\end{rndtable}
 \end{center}
 
-When trying to negate an attack, you must determine which of these abilities you will be using. 
+When trying to negate an attack, you must determine which of these abilities you will be using. This determines the base ability you will be using in the \imp{pool} for your \imp{resist} check. 
 
 However, note that note every form of defence is going to be applicable and appropriate - if a cannonball is hurtling towards you, holding up your puny metal shield isn't going to help. Equally, trying to \imp{Endure} as a Hippogriff sinks its claws into your flesh isn't going to do much to mitigate the harm you are suffering. If you attempt to use an inapporpriate mitigation technique, the \imp{GM} may either impose a higher DV, or simply rule it as inneffective. 
 
@@ -31,6 +40,109 @@ However, some effects may increase or decrease your \imp{Defence} ratings, witho
 
 Therefore, whilst the \imp{Aspects} serve as a basis for the \imp{Defense} statistics, they may diverge fairly significantly. 
 
-\section{Defending from Attacks}
+\subsection{Defence Bonuses}
 
-When an attack is performed
+Just as some weapons deal additional damage, independent of the number of successes gained, some items, spells and abilities grant you additional bonuses to different aspects of your defence.
+
+These are referred to as your \imp{Base Defence Bonuses}, and a space for them is included at the end of the ratings row in the character sheet found on page \pageref{S:CharacterSheet}.
+
+Whenever you gain at least one success on a \imp{Resist} roll, you increase the number of successed by the stated amount. 
+
+If a character (with a 3-star \imp{Fitness} rating) is wearing a set of armour which provides a +2d bonus to \imp{Block} and a +1 bonus to the \imp{Base Block Bonus} performs a \imp{Block} roll gaining 3 successes, they would reduce the power of an incoming attack by a total of 3 + 1 = 4.  
+
+\section{Full-Action Defence}
+
+If you devote a full \imp{Major Action} to defending yourself from an attack, then you form a pool from the base \imp{Defence} statistic that you are using, and the associated \imp{Ability} that you are using, exactly as if you were making a normal \imp{Ability Check}, as discussed on page \pageref{C:Checks}.
+
+For instance, if you are in a fist-fight, you might use a \imp{Block (Brawl)} check to use your martial arts abilities to deflect a or absorb blow, equally, you may wish to use a \imp{Dodge (Acrobatics)} check to flip and tumble out of the way of an attack. When a magical spell attempts to knock you out cold, a \imp{Endure (Conviction)} check can provide the sheer force of will to continue unabated. 
+
+Generally speaking, you can only perform one such check with a single action. However, you may distribute the total number of successes up between as many attacks as you wish, as long as the \imp{GM} rules that the chosen form of defence would help negate those attacks. 
+
+In addition, you may still use a \imp{Quick Defence} (see below) on any attack to which you have dedicated zero successes from your original defence. Doing so does not incure \imp{Drain}. 
+
+
+\section{Quick Defence}
+
+If you do not wish to devote your entire turn to defending yourself, do not fret, as you still have an instinctive ability to negate attacks incoming attacks: \imp{Quick defense}. As before, there are three ways to negate these attacks (\key{Quickblock}, \key{Quickdodge} and \key{Quickendure}).
+
+Doing one of these three actions is an instantaneous action, and you may declare it out of the normal turn cycle, as soon as you are attacked. You may perform one such action for every attack directed towards you, with no upper limit. If you did use a \imp{Full-turn} defense, you may also use a \imp{quickdefence} action on any remaining attacks which were not affected by that action.
+
+However, as these are quick, instinctive reactions, you do not have time to leverage your full \imp{Abilities}: a \imp{quickdefence} pool is formed entirely from your base \imp{Defence Statistics}. For example, a \imp{Quickblock} check would only roll dice equal to the \imp{Block} rating. 
+
+\subsection{Drain}
+
+Even the most highly trained warrior has their limits - they cannot keep on ducking and diving, or driving away attacks for ever. Eventually they tire out, their muscles get sore, their armour gets worn and dented and an attack slips through the net. 
+
+This process is modelled through \key{Drain}. 
+
+Whenever you use a \imp{quickdefence} reaction without pairing it with a \imp{Full-turn defence}, you add one level of \imp{Drain} to the associated statistic. Each level of drain reduces the \imp{rating} available, and persists until you are able to get a quick breather and take a \imp{short rest}.
+
+Consider a character with a the following defence statistics:
+
+
+\newcommand\defenseStar[2]
+{
+	\begin{tikzpicture}
+		\def\r{0.15}
+		\def\cfill{white}
+		\if#21
+			\def\cfill{black}
+		\fi
+		\def\dfill{white}
+		\if#11
+			\def\dfill{black}
+		\fi
+		\draw[fill = \cfill] (0,0) circle ({\r*1.6});
+		\draw[rotate =45,fill = \dfill] ({-\r},{-\r}) rectangle ({\r},{\r});
+	\end{tikzpicture}
+}
+\begin{center}
+	\begin{rndtable}{l l}
+		\bf Statistic	&	\bf Rating
+		\\
+		\bf Block	&	\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{0}{0}\defenseStar{0}{0}\defenseStar{0}{0}
+		\\
+		\bf Dodge & \defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{0}{0}\defenseStar{0}{0}\defenseStar{0}{0}\defenseStar{0}{0}
+		\\
+		\bf Endure & \defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{0}{0}\defenseStar{0}{0}
+	\end{rndtable}
+\end{center}
+
+After using a \imp{quickblock} reaction in which they are able to roll 3 dice, they incur one level of drain on their block statistic, which we denote as:
+
+\begin{center}
+	\begin{rndtable}{l l}
+		\bf Statistic	&	\bf Rating
+		\\
+		\bf Block	&	\defenseStar{1}{1}\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{0}{0}\defenseStar{0}{0}\defenseStar{0}{0}
+		\\
+		\bf Dodge & \defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{0}{0}\defenseStar{0}{0}\defenseStar{0}{0}\defenseStar{0}{0}
+		\\
+		\bf Endure & \defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{0}{0}\defenseStar{0}{0}
+	\end{rndtable}
+\end{center}
+
+The next time they wish to use a \imp{Quickblock}, or a \imp{Full-turn block}, their \imp{block} statistic is considered to be equal to three. 
+
+This process continues until your level of \imp{drain} is equal to the original rating. In the example below, our character has \imp{quickdodged} three times, and so their \imp{Dodge} rating has been reduced to zero:
+
+\begin{center}
+	\begin{rndtable}{l l}
+		\bf Statistic	&	\bf Rating
+		\\
+		\bf Block	&	\defenseStar{1}{1}\defenseStar{1}{1}\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{0}{0}\defenseStar{0}{0}\defenseStar{0}{0}
+		\\
+		\bf Dodge & \defenseStar{1}{1}\defenseStar{1}{1}\defenseStar{1}{1}\defenseStar{0}{0}\defenseStar{0}{0}\defenseStar{0}{0}\defenseStar{0}{0}
+		\\
+		\bf Endure & \defenseStar{1}{1}\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{1}{0}\defenseStar{0}{0}\defenseStar{0}{0}
+	\end{rndtable}
+\end{center}
+
+At this point, the character is consider \key{Fully Drained}, and cannot \imp{resist} further attacks using that statistic any more. 
+
+
+\subsection{Restoring Drain}
+
+All levels of \imp{Drain} are restored upon taking a \imp{Short Rest}, a period of between 30 minutes to an hour during which a character stretches their tired muscles, undents their armour and clears their heads, ready for the next challenge ahead. 
+
+Equally, various magical abilities can restore and repair your abilities in the middle of combat. For example, the \imp{Repair} spell would be effective at removing levels of drain in \imp{Block}, whilst the \imp{Inspire} spell would be good for bolstering a character's \imp{Endure} rating.

@@ -19,7 +19,7 @@ Hatching from eggs the size of rugby balls\comma{} the oldest specimens have leg
 
 \ability{Tiny}{\name{}s can occupy the same space as another being\comma{} climbing over them. Their small size also grants them a non\minus{}damaging terminal velocity.}, article = An, fit =2, prs =3, vit =2, cha =0, dec =0, ins =1, int =1, wil =1, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{Poison\comma{} Falling Damage}, nUnharmed=1, nBruised=0, nHurt=2, nInjured=0, nWounded=0, nMangled=1, block=1, dodge=3, defy=1, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Climb}{3}
 \skill{Covert}{4}
-\skill{Inhuman Senses}{2}, hasAttacks = 1, attacks = \meleeConsequence{Poison Fangs}{3}{0}{Piercing Damage}{1+Successes}{If the attack deals any damage\comma{} the victim takes the \imp{Poisoned} status (1 harm\comma{} requires 5 successes)}, hasLanguages = 1, languages = \understands{Spider Tongue}, hasImage = 1, image = babyAcro, description = A newborn \imp{acromantula} is tiny when compared to their full grown counterparts – though with a legspan of up to 40cm\comma{} they are still significantly larger than almost all non\minus{}magical spiders. 
+\skill{Inhuman Senses}{2}, hasAttacks = 1, attacks = \meleeConsequence{Poison Fangs}{3}{0}{Stabbing Damage}{1+Successes}{If the attack deals any damage\comma{} the victim takes the \imp{Poisoned} status (1 \imp{harm}\comma{} requires 5 successes)}, hasLanguages = 1, languages = \understands{Spider Tongue}, hasImage = 1, image = babyAcro, description = A newborn \imp{acromantula} is tiny when compared to their full grown counterparts – though with a legspan of up to 40cm\comma{} they are still significantly larger than almost all non\minus{}magical spiders. 
 
 Their body is covered in a shiny\comma{} hairless and pale\minus{}grey carapace\comma{} which hardens and grows darker as they grow older – eventually they shed this skin as they enter the adult phase of their life. 
 
@@ -33,7 +33,7 @@ Despite their limited intelligence and diluted poison\comma{} \name{}s are often
 \skill{Covert}{4}
 \skill{Inhuman Senses}{5}
 \skill{Speed}{5}
-\skill{Strength}{3}, hasAttacks = 1, attacks = \melee{Poison Fangs}{7}{0}{Poison Damage}{2+Successes}
+\skill{Strength}{3}, hasAttacks = 1, attacks = \meleeConsequence{Poison Fangs}{6}{0}{Stabbing Damage}{1+Successes}{If the attack deals any damage\comma{} the victim takes the \imp{Poisoned} status (2 \imp{harm}\comma{} requires 8 successes)}
 
 \ranged{Websac}{10}{6}{0}{Trapped Status}{1 + Successes}, hasLanguages = 1, languages = \understands{Human Languages}
 \speaks{Spider Tongue}, hasImage = 1, image = Acromantula, description = From a nest of several thousand \imp{Hatchlings}\comma{} only one or two survive the brutal and vicious ascent to adulthood within an \imp{Acromantula} colony\comma{} shedding their final adolescant carapace to become a full\minus{}grown \imp{Acromantula}.
@@ -49,7 +49,7 @@ Though  they can run incredibly quickly and they utilise a ranged web attack to 
 \ability{Sticky Feet}{A \name{} may use their \imp{Climbing} ability to walk on any vertical surface.}, article = An, fit =1, prs =3, vit =3, cha =2, dec =5, ins =5, int =6, wil =6, pcp =4, hasDamage = 1, damage =\key{Immune} to \textit{Poison}, nUnharmed=4, nBruised=1, nHurt=1, nInjured=1, nWounded=1, nMangled=2, block=2, dodge=2, defy=6, fortitude=5, imageStack=1, hasSkills = 1, skills = \skill{Climb}{1}
 \skill{Command}{7}
 \skill{Inhuman Senses}{7}
-\skill{Strength}{4}, hasAttacks = 1, attacks = \melee{Poison Fangs}{3}{0}{Poison}{7+Successes}
+\skill{Strength}{4}, hasAttacks = 1, attacks = \meleeConsequence{Poison Fangs}{3}{0}{Stabbing Damage}{4+Successes}{If the attack deals any damage\comma{} the victim takes the \imp{Poisoned} status (5 \imp{harm}\comma{} requires 10 successes)}
 
 \ranged{Websac}{30}{10}{0}{Trapped}{1 + Successes}
 
@@ -124,9 +124,8 @@ With these gentle prompts\comma{} the \name{} are able to alter the course of ev
 \skill{Alertness}{5}
 \skill{Covert}{4}
 \skill{Intimidation}{3}
-\skill{Spellcasting}{4}, hasAttacks = 1, attacks = \melee{Heavenly Sword}{6}{\minus{}1}{Slashing Damage}{3 + Successes}
+\skill{Spellcasting}{4}, hasAttacks = 1, attacks = \meleeConsequence{Heavenly Smite}{6}{\minus{}1}{Slashing Damage}{3 + Successes}{A \name{} may expend a \imp{Fortitude} point to immediately perform an additional 2 sword strikes on their target.}
 
-\ability{Smite}{A \name{} may expend a \imp{Fortitude} point to perform two additional \imp{Heavenly Sword} attacks\comma{} dealing \imp{Incandescent} damage. }
 
 \ability{Celestial Spells}{A \name{} may use their \imp{Spellcasting} ability to cast the \imp{Sense\comma{} Banish\comma{} Bind\comma{} Disarm\comma{} Heal\comma{} Disintegrate\comma{} Jinx\comma{} Move\comma{} Compel} and \imp{Shield} spells\comma{} as well as any from the \imp{Elemental} school. }, hasLanguages = 1, languages = \speaks{All spoken languages}, hasImage = 1, image = seraphim, description = The most numerous class of \imp{Angelic Warrior}\comma{} the \name{} are the righteous smiters of the universe. Appearing as a magnificent armoured humanoid with multiple pairs of soft\comma{} golden wings extending from their back\comma{} they wield spears forged from pure light and a soft golden halo is ever\minus{}present above their head. 
 
@@ -166,9 +165,8 @@ The \name{}s have an almost perfect recollection of every event in history\comma
 \skill{Conviction}{7}
 \skill{Bravery}{7}
 \skill{Skirmish}{6}
-\skill{Spellcasting}{5}, hasAttacks = 1, attacks = \melee{Sword strike}{13}{\minus{}1}{Stabbing/Cutting damage}{2 + Successes} 
+\skill{Spellcasting}{5}, hasAttacks = 1, attacks = \meleeConsequence{Heavenly Smite}{13}{\minus{}1}{Slashing Damage}{3 + Successes}{A \name{} may expend a \imp{Fortitude} point to immediately perform an additional 2 sword strikes on their target.}
 
-\ability{Smite}{An \name{} may expend a \imp{Fortitude} point to perform two additional \imp{Heavenly Sword} attacks\comma{} dealing \imp{Incandescent} damage. }
 
 \area{Radiant Aura}{10m sphere around \name{}}{10}{7}{Incandesence}{1+Successes}
 
@@ -248,9 +246,7 @@ Whatever the mechanism for bringing them into this world\comma{} many have since
 {
 \beast{name = Great Widow, species = Arachnid, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = \ability{Webwalker}{\article{} \name{} takes no movement penalty on webbed surfaces\comma{} and uses their \imp{Inhuman Senses} to sense vibrations in their webs.}
 
-\ability{Sticky Feet}{A \name{} may use their \imp{Climbing} ability to walk on any vertical surface.}, article = A, fit =2, prs =3, vit =2, cha =0, dec =1, ins =1, int =1, wil =2, pcp =4, hasDamage = 1, damage =\key{Immune} to \textit{Poison}, nUnharmed=1, nBruised=1, nHurt=1, nInjured=0, nWounded=0, nMangled=1, block=1, dodge=2, defy=1, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Climb}{3} \skill{Covert}{4} \skill{Inhuman Senses}{3}, hasAttacks = 1, attacks = \melee{Bite}{5}{\minus{}2}{Stabbing damage}{1 + Successes}
-
-\ability{Inject Poison}{{\it three / day} As an instant action\comma{} the \name{} injects a victim of its \imp{Bite} attack with venom. Victim takes the \imp{Poisoned} status effect (level 3 harm\comma{} requires 5 successes\comma{} DV 7) }
+\ability{Sticky Feet}{A \name{} may use their \imp{Climbing} ability to walk on any vertical surface.}, article = A, fit =2, prs =3, vit =2, cha =0, dec =1, ins =1, int =1, wil =2, pcp =4, hasDamage = 1, damage =\key{Immune} to \textit{Poison}, nUnharmed=1, nBruised=1, nHurt=1, nInjured=0, nWounded=0, nMangled=1, block=1, dodge=2, defy=1, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Climb}{3} \skill{Covert}{4} \skill{Inhuman Senses}{3}, hasAttacks = 1, attacks = \meleeConsequence{Poison Fangs}{5}{0}{Stabbing Damage}{1+Successes}{If the attack deals any damage\comma{} the victim takes the \imp{Poisoned} status (1 \imp{harm}\comma{} requires 5 successes)}
 
 \ranged{Acid Spit}{5}{4}{\minus{}1}{Acid damage}{1 + Successes}, hasLanguages = 1, languages = \understands{Spider Tongue}, hasImage = 1, image = blackWidow, description = Magical experimentation on a {\it Black Widow} produced this grossly oversized specimen\comma{} and gave it the ability to spit acid.}
 
@@ -259,19 +255,27 @@ Whatever the mechanism for bringing them into this world\comma{} many have since
 
 \ability{Prolific Jumpers}{As part of their movement\comma{} a \name{} may jump a distance up to their total movement speed\comma{} in any direction.}, article = A, fit =4, prs =3, vit =1, cha =0, dec =0, ins =1, int =1, wil =2, pcp =3, hasDamage = 0, nUnharmed=2, nBruised=2, nHurt=0, nInjured=0, nWounded=1, nMangled=0, block=1, dodge=3, defy=1, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Speed}{4}
 \skill{Cover}{3}
-\skill{Inhuman Senses}{2}, hasAttacks = 1, attacks = \ability{Leap Attack}{As a single action\comma{} the \name{} may jump up to 5m and perform a \imp{Bite} attack.}
+\skill{Inhuman Senses}{2}, hasAttacks = 1, attacks = \ability{Leap Attack}{As a single action\comma{} the \name{} may jump up to 5m and perform a \imp{Bite} attack\comma{} and then jump a further 1m.}
 
 \melee{Bite}{5}{\minus{}1}{Stabbing damage}{2 + Successes}, hasLanguages = 1, languages = \understands{Spider Tongue}, hasImage = 1, image = tick, description = The name of the Howling Tick is misleading\comma{} as it is neither a tick\comma{} and nor does it howl. Instead the name comes from its tendency to suck blood from its victims\comma{} and the howls of pain that result.
 
 The Howling Tick has the magical ability to grow in size when it feeds\comma{} however they must continually gorge in order to maintain their size\comma{} or they quickly shrink back.}
 
 
-\beast{name = Spraying Mantis, species = Arachnid, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = , article = A, fit =3, prs =5, vit =2, cha =0, dec =1, ins =2, int =2, wil =1, pcp =3, hasDamage = 1, damage =\key{Immune} to \textit{Acid\comma{} Poison}, nUnharmed=3, nBruised=0, nHurt=1, nInjured=1, nWounded=0, nMangled=1, block=3, dodge=2, defy=2, fortitude=3, imageStack=0, hasLanguages = 1, languages = \understands{Spider Tongue}, description = A gigantic\comma{} horrifying crossbreed between a spider\comma{} and a praying mantis resulted in a grotesque monstrosity. The being appears\comma{} outwardly\comma{} to be a giant metre\minus{}long insect walking on 4 legs\comma{} with an additional 4 arms turned into hinged and hooked arms which they use to catch their prey. 
+\beast{name = Spraying Mantis, species = Arachnid, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = \ability{Four Forearms}{The \name{} has two sets of arms\comma{} and so can grapple up to two individuals at a time.}
+
+\ability{Webwalker}{\article{} \name{} takes no movement penalty on webbed surfaces\comma{} and uses their \imp{Inhuman Senses} to sense vibrations in their webs.}, article = A, fit =3, prs =5, vit =2, cha =0, dec =1, ins =2, int =2, wil =1, pcp =3, hasDamage = 1, damage =\key{Immune} to \textit{Acid\comma{} Poison}, nUnharmed=3, nBruised=0, nHurt=1, nInjured=1, nWounded=0, nMangled=1, block=3, dodge=2, defy=2, fortitude=3, imageStack=0, hasSkills = 1, skills = \skill{Speed}{4}
+\skill{Brawl}{2}
+\skill{Covert}{2}, hasAttacks = 1, attacks = \meleeConsequence{Hooked Arms}{5}{\minus{}1}{Stabbing Damage}{2 + Successes}{The \name{} then initiates a \imp{Grapple} action}
+
+\area{Acid Spray}{Cone\comma{} 3m in length from \name{}’s mouth}{5}{0}{Acid damage}{1 + Successes}
+
+\ability{Liquefaction}{The \name{} injects a \imp{Grappled} target with caustic digestive juices\comma{} dealing level 4 \imp{Acid} damage. If this reduces the target to a \imp{Critical Condition}\comma{} the target is reduced to liquid and devoured by the \name{}.}, hasLanguages = 1, languages = \understands{Spider Tongue}, hasImage = 1, image = spraying, description = A gigantic\comma{} horrifying crossbreed between a spider\comma{} and a praying mantis resulted in a grotesque monstrosity. The being appears\comma{} outwardly\comma{} to be a giant metre\minus{}long insect walking on 4 legs\comma{} with an additional 4 arms turned into hinged and hooked arms which they use to catch their prey. 
 
 True to their name\comma{} they also spray acidic juices on their prey\comma{} to aid in their eventual digestion.}
 
 
-\beast{name = Brood Mother, species = Arachnid, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = Brood, description = This grossly oversized spider is the result of a freak mutation which  causes them to grow to grotesque sizes and become viciously maternal. A Brood Mother will collect any and all spider eggs that it finds and nuture them as if they were her own in the dark\comma{} secluded where she has built her nest.}
+
 
 
 
@@ -293,13 +297,13 @@ Normally peacable and shy creatures\comma{} they become territorial and violent 
 \ability{Long Fingers}{Nominally evolved to help dig insects out of the bark of a tree\comma{} the long spindly fingers of a bowtruckle can be used to perform very delicate tasks\comma{} such as picking a lock\comma{} or used offensively to poke out the eyes of those who threaten their treetop homes.}
 }
 {
-\beast{name = Bowtruckle Splinter, species = Bowtruckle, mind = Non\minus{}sapient, category = Imp, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Bowtruckle Flower, species = Bowtruckle, mind = Non\minus{}sapient, category = Imp, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Bowtruckle Thorn, species = Bowtruckle, mind = Non\minus{}sapient, category = Imp, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
 
 
 
@@ -313,13 +317,13 @@ Normally peacable and shy creatures\comma{} they become territorial and violent 
 	The Ceratothids are a family of loosely related magical quadrupeds. Defined by their huge bulk and relatively bovine\minus{}like appearance\comma{} most Ceratothid\apos{}s have a gentle temperament until angered\comma{} at which point their great mass and inherent magic makes them dangerous foes.
 }
 {
-\beast{name = Graphorn, species = Ceratothid, mind = Non\minus{}sapient, category = Beast, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = Graphorn, description = \blindtext{2}}
 
 
-\beast{name = Erumpet, species = Ceratothid, mind = Non\minus{}sapient, category = Beast, rating = V, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = erumpet, description = \blindtext{2}}
 
 
-\beast{name = Re'em, species = Ceratothid, mind = Non\minus{}sapient, category = Beast, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = reem, description = \blindtext{2}}
+
+
+
 
 
 
@@ -328,7 +332,7 @@ Normally peacable and shy creatures\comma{} they become territorial and violent 
 
 
 
-\beast{name = Chimera, species = Chimera, mind = Non\minus{}sapient, category = Monstrosity, rating = VII, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = chimera, description = \blindtext{2}}
+
 
 
 
@@ -400,10 +404,10 @@ Seemingly unique amonst the other \imp{Cloakwraiths}\comma{} the \name{} use too
 	b
 }
 {
-\beast{name = Hidebehind, species = Creations, mind = Sapient, category = Sprite, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = hidebehind, description = \blindtext{2}}
 
 
-\beast{name = Blast\minus{}Ended Skrewt, species = Creations, mind = Non\minus{}sapient, category = Monstrosity, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = screwt, description = \blindtext{2}}
+
+
 
 
 
@@ -412,7 +416,7 @@ Seemingly unique amonst the other \imp{Cloakwraiths}\comma{} the \name{} use too
 
 
 
-\beast{name = Demiguise, species = Demiguise, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = demiguise, description = \blindtext{2}}
+
 
 
 
@@ -421,31 +425,31 @@ Seemingly unique amonst the other \imp{Cloakwraiths}\comma{} the \name{} use too
 	Long thought extinct by the muggles\comma{} dinosaurs are a class of ancient lizard and reptilian creatures which dominated life on Earth up until 75 million years ago.
 }
 {
-\beast{name = Ankylosaurus, species = Dinosaurs, mind = Non\minus{}sapient, category = Beast, rating = V, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Diplodocus, species = Dinosaurs, mind = Non\minus{}sapient, category = Beast, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Plesiosaurus, species = Dinosaurs, mind = Non\minus{}sapient, category = Beast, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Pterodactul, species = Dinosaurs, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Spinosaurus, species = Dinosaurs, mind = Non\minus{}sapient, category = Beast, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Stegosaurus, species = Dinosaurs, mind = Non\minus{}sapient, category = Beast, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Tricerotops, species = Dinosaurs, mind = Non\minus{}sapient, category = Beast, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Tyrannosaurus Rex, species = Dinosaurs, mind = Non\minus{}sapient, category = Beast, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Velociraptor, species = Dinosaurs, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -459,34 +463,34 @@ Seemingly unique amonst the other \imp{Cloakwraiths}\comma{} the \name{} use too
 	c
 }
 {
-\beast{name = Antipodean Opaleye, species = Dragons, mind = Sapient, category = Draconid, rating = VI, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Chinese Fireball, species = Dragons, mind = Non\minus{}sapient, category = Draconid, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Common Welsh Green, species = Dragons, mind = Non\minus{}sapient, category = Draconid, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Hebridean Black, species = Dragons, mind = Non\minus{}sapient, category = Draconid, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Hungarian Horntail, species = Dragons, mind = Non\minus{}sapient, category = Draconid, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Norwegian Ridgeback, species = Dragons, mind = Best, category = Draconid, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Peruvian Vipertooth, species = Dragons, mind = Sapient, category = Draconid, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Romanian Longhorn, species = Dragons, mind = Non\minus{}sapient, category = Draconid, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Swedish Shortsnout, species = Dragons, mind = Sapient, category = Draconid, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Ukranian Ironbelly, species = Dragons, mind = Sapient, category = Draconid, rating = VI, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -500,13 +504,13 @@ Seemingly unique amonst the other \imp{Cloakwraiths}\comma{} the \name{} use too
 	b
 }
 {
-\beast{name = Avatar of Fire, species = Elemental Avatar, mind = Ineffable, category = Elemental, rating = V, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Avatar of Ice, species = Elemental Avatar, mind = Ineffable, category = Elemental, rating = V, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Avatar of Storms, species = Elemental Avatar, mind = Ineffable, category = Elemental, rating = V, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
 
 
 
@@ -530,40 +534,22 @@ Though they have a love for tricks and fun\comma{} the most common form of elf t
 \ability{Holding Court}{Elven society is chaotic and unorganised. They rarely recognise a leader\comma{} though they sometimes assemble themselves into bands and groups for the purpose of safety. This all changes when one of the Elven Princes summons them to their Seelie Court. Every free\minus{}elf belongs to one of these courts\comma{} which is presided over by one of the more powerful Hulduf{\'o}lk. Court is only summoned in times of great emergency\comma{} such as conflict with another court\comma{} or when a great external threat is detected.}
 }
 {
-\beast{name = House\minus{}Elf, species = Elf, mind = Sapient, category = Imp, rating = I, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = brownie, description = A House\minus{}Elf is a small impish humanoid creature which has been bound\comma{} or inherited a binding\comma{} to a given master. House\minus{}Elves are incredibly devoted to these masters\comma{} and will obey every order given to them. Typically treated as household servants\comma{} their magic is dedicated to the upkeep of the home and\comma{} on incredibly rare occasions\comma{} the repelling of intruders.}
 
 
-\beast{name = Br{\'u}nb{\'a}su, species = Elf, mind = Sapient, category = Imp, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = dobby, description = It is said that the \name{} were the original species that were enslaved and magically altered over generations to become the House\minus{}Elves. Long considered extinct\comma{} the freeing of Dobby the House\minus{}Elf\comma{} the first Free\minus{}Elf in 1000 years\comma{} has led to a resurgence in the \name{} as a newly re\minus{}recognised species. 
-
-Though rejecting their former enslavement\comma{} the \name{} retain a love of order and cleanliness\comma{} and will often do chores for a household – on the condition of respect and equitable payment. They are easily offended\comma{} and if they feel denigrated or slighted\comma{} they will wreck the place\comma{} and will never return.}
 
 
-\beast{name = Elleng\ae{}st, species = Elf, mind = Sapient, category = Imp, rating = II, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = imp, description = The archetypal impish prankster\comma{} the \name{}\comma{} also known as a `Puck’\comma{} or a `True Imp’ competes only with the Poltergeist for the mischief\minus{}maker\apos{}s crown. They adore slapstick comedy and petty theft\comma{} often building themselves a nest out of their stolen objects. 
-
-Visually\comma{} an \name{} appears to be a small\comma{} flightless fairy; a slender humanoid\comma{} approximately a foot tall. Their mouth is filled with a disturbing number of teeth\comma{} but they’re too small to harm a human\comma{} and are used to supply their mostly\minus{}insect based diet.}
 
 
-\beast{name = Dun\ae{}lf, species = Elf, mind = Sapient, category = Imp, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = dunaelf, description = The warriors and guardians of the Elves\comma{} the \name{} make great use of their nimble nature and their ability to turn invisible\comma{} more than making up for their diminutive stature. The \name{} also wield magical bows which inflict agonising pain on their targets.}
 
 
-\beast{name = V\ae{}ttir, species = Elf, mind = Sapient, category = Imp, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = vaettir, description = The least human\minus{}like of the elves\comma{} the \name{} are a species of elves which have an affinity for the primal elements\comma{} and the associated magics. 
-
-Though capable of wielding all of the elements\comma{} many \name{} find themselves drawn to one element in particular. This reflects in their outwards appearance\comma{} which slowly begins to shift and change. A fire\minus{}bound \name{} grows a fiery red beard and orange eyes\comma{} whilst a water\minus{}bound \name{}\apos{}s skin turns blue and appears permanently damp. Current arcane knowledge has found no additional abilities granted with this change\comma{} so it is unknown if there is any particular reason for this `bonding’ process to occur.}
 
 
-\beast{name = Hulduf{\'o}lk, species = Elf, mind = Sapient, category = Sprite, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = huldufolk, description = The \name{} (Icelandic for {\it The Hidden People}) are powerful extraplanar beings which most closely resemble the Tolkenien elves\comma{} for they appear as $\sim$5ft humanoids of exceptional\comma{} unearthly beauty and appear to glow from within with a golden radiance. 
 
-The \name{} reside within a group of dimensions known as the {\it Seelie Courts}\comma{} which lie close to the Astral realm. Each Seelie Court is a verdant paradise\comma{} populated entirely by elves\comma{} both those species which are found on Earth\comma{} and myriad others.
 
-Each Court is ruled over by an Elf\minus{}Prince\comma{} the most powerful \name{} in the Court\comma{} as well as their advisors and attendants. Typically these offices are all held by other \name{}s\comma{} though rarely you may find a Dun\ae{}lf or V\ae{}ttir who has risen through the ranks of the Court to serve in these lofty positions. 
 
-Even those elves which reside on Earth are (technically) members of a Court\comma{} and must obey the summons from their Prince when it is time for them to attend their Seelie Court\comma{} failure to do so leads to expulsion (or worse). In reality\comma{} however\comma{} the Seelie Courts are rarely called in such a manner and Earthbound elves may not even know that they belong to a Court until the summons arrives. 
 
-The \name{} wield immense and powerful magic\comma{} which they primarily use to cause mischief\comma{} mayhem and to disrupt the plans of the other members of the courts. The most famous conflict between various courts is that between Oberon and Titania\comma{} with the conflict spilling over into the Mortal Plane on more than one occasion\comma{} even making its way into the muggle subconscious. 
 
-On rare occasions a Court can become corrupted by evil – either due to the profane actions of the Prince themselves\comma{} or because of some external corrupting influence such as a Voidic Incursion. A corrupted court is known as an {\it Unseelie Court}\comma{} and is often a source of violence\comma{} conflict and further corruption. 
 
-Though not all \name{}s are Elf\minus{}Princes\comma{} those which are have access to the specified {\it Lair Actions} whilst they remain in their Court.}
 
 
 
@@ -577,13 +563,13 @@ Though not all \name{}s are Elf\minus{}Princes\comma{} those which are have acce
 	d
 }
 {
-\beast{name = Doxy, species = Fairy, mind = Non\minus{}sapient, category = Imp, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Pixie, species = Fairy, mind = Non\minus{}sapient, category = Imp, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = True Fairy, species = Fairy, mind = Non\minus{}sapient, category = Imp, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
 
 
 
@@ -597,10 +583,10 @@ Though not all \name{}s are Elf\minus{}Princes\comma{} those which are have acce
 	b
 }
 {
-\beast{name = Draconic Guardian, species = False Dragon, mind = Non\minus{}sapient, category = Construct, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Hydra, species = False Dragon, mind = Non\minus{}sapient, category = Monstrosity, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
 
 
 
@@ -614,16 +600,16 @@ Though not all \name{}s are Elf\minus{}Princes\comma{} those which are have acce
 	c
 }
 {
-\beast{name = Lobalug, species = Fish, mind = Non\minus{}sapient, category = Beast, rating = I, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Mackled Malaclaw, species = Fish, mind = Non\minus{}sapient, category = Beast, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Plimpy, species = Fish, mind = Non\minus{}sapient, category = Beast, rating = I, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Ramora, species = Fish, mind = Non\minus{}sapient, category = Phantasm, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
+
 
 
 
@@ -637,13 +623,13 @@ Though not all \name{}s are Elf\minus{}Princes\comma{} those which are have acce
 	d
 }
 {
-\beast{name = Bundimun, species = Flora, mind = Non\minus{}sapient, category = Flora, rating = I, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Horklump, species = Flora, mind = Non\minus{}sapient, category = Flora, rating = I, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Mandrake, species = Flora, mind = Non\minus{}sapient, category = Flora, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
 
 
 
@@ -669,16 +655,16 @@ What is a constant amongst all giants is their phenomenal strength and their wil
 \ability{Magic Appreciation}{Though they cannot wield magic themselves\comma{} giants are aware of magic and find the idea of it fascinating (as long as it is not being used agains them that is). The best way to integrate yourself with a giant is to provide them with a spectactular show of magic\comma{} and gift them a magical device or trinket.}
 }
 {
-\beast{name = Giant Civilian, species = Giants, mind = Sapient, category = Gigantoid, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = giant, description = Giant civilians\comma{} though monstrous in size and appearance\comma{} are not mighty warriors. Despite this\comma{} their immense strength and resistance to magic means that they can still pose a severe hazard to the unwary wizard.}
 
 
-\beast{name = Giant Elder, species = Giants, mind = Sapient, category = Gigantoid, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = oldGiant, description = Giant elders are civilian leaders\comma{} who have earned respect from their clan not merely through martial prowess (though many were mighty warriors in their youth)\comma{} but through their relatively high intellect.}
 
 
-\beast{name = Giant Warrior, species = Giants, mind = Sapient, category = Gigantoid, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = warrior, description = A \name{} dedicates their life to combat – be it hunting for supplies\comma{} or fighting in the mighty giant wars and skirmishes that saturate history.}
 
 
-\beast{name = Giant Gurg, species = Giants, mind = Sapient, category = Gigantoid, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = gurg, description = \blindtext{2}}
+
+
+
+
 
 
 
@@ -692,13 +678,13 @@ What is a constant amongst all giants is their phenomenal strength and their wil
 	b
 }
 {
-\beast{name = Crystal Golem, species = Golem, mind = Ineffable, category = Construct, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Iron Golem, species = Golem, mind = Ineffable, category = Construct, rating = V, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Stone Golem, species = Golem, mind = Ineffable, category = Construct, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
 
 
 
@@ -712,10 +698,10 @@ What is a constant amongst all giants is their phenomenal strength and their wil
 	c
 }
 {
-\beast{name = Kneazle, species = Guardian Spirit, mind = Sapient, category = Sprite, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Porlock, species = Guardian Spirit, mind = Non\minus{}sapient, category = Sprite, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
 
 
 
@@ -729,16 +715,16 @@ What is a constant amongst all giants is their phenomenal strength and their wil
 	d
 }
 {
-\beast{name = Druidic Hag, species = Hag, mind = Sapient, category = Humanoid, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Hag, species = Hag, mind = Sapient, category = Humanoid, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Necrotic Hag, species = Hag, mind = Sapient, category = Humanoid, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Water Hag, species = Hag, mind = Sapient, category = Humanoid, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
+
 
 
 
@@ -752,10 +738,10 @@ What is a constant amongst all giants is their phenomenal strength and their wil
 	b
 }
 {
-\beast{name = Hell Hound, species = Hellion, mind = Non\minus{}sapient, category = Demon, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Hellion, species = Hellion, mind = Sapient, category = Demon, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
 
 
 
@@ -769,10 +755,10 @@ What is a constant amongst all giants is their phenomenal strength and their wil
 	c
 }
 {
-\beast{name = Augrey, species = Herald, mind = Non\minus{}sapient, category = Sprite, rating = III, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Pheonix, species = Herald, mind = Sapient, category = Sprite, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
 
 
 
@@ -786,16 +772,16 @@ What is a constant amongst all giants is their phenomenal strength and their wil
 	d
 }
 {
-\beast{name = Erkling, species = Hobgoblin, mind = Non\minus{}sapient, category = Imp, rating = III, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Gnome, species = Hobgoblin, mind = Non\minus{}sapient, category = Imp, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Gringwart Goff, species = Hobgoblin, mind = Sapient, category = Imp, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Red Cap, species = Hobgoblin, mind = Sapient, category = Imp, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
+
 
 
 
@@ -809,10 +795,10 @@ What is a constant amongst all giants is their phenomenal strength and their wil
 	b
 }
 {
-\beast{name = Griffin, species = Hybrid, mind = Non\minus{}sapient, category = Beast, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Hippogriff, species = Hybrid, mind = Non\minus{}sapient, category = Beast, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
 
 
 
@@ -821,7 +807,7 @@ What is a constant amongst all giants is their phenomenal strength and their wil
 
 
 
-\beast{name = Inhabitor, species = Inhabitor, mind = Ineffable, category = Abomination, rating = V, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
 
 
 
@@ -830,25 +816,25 @@ What is a constant amongst all giants is their phenomenal strength and their wil
 	d
 }
 {
-\beast{name = Billywig, species = Insectum Magicae, mind = Non\minus{}sapient, category = Beast, rating = I, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Chizpurfle, species = Insectum Magicae, mind = Non\minus{}sapient, category = Beast, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Fire Crab, species = Insectum Magicae, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Flesh\minus{}Eating Slug, species = Insectum Magicae, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Flobberworm, species = Insectum Magicae, mind = Non\minus{}sapient, category = Beast, rating = , abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Glumbumble, species = Insectum Magicae, mind = Non\minus{}sapient, category = Beast, rating = I, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Streeler, species = Insectum Magicae, mind = Non\minus{}sapient, category = Beast, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
+
+
+
+
 
 
 
@@ -862,40 +848,16 @@ What is a constant amongst all giants is their phenomenal strength and their wil
 	b
 }
 {
-\beast{name = Et Iniquum, species = Lich, mind = Sapient, category = Humanoid, rating = VI, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = When a powerful wizard seeks to defy death\comma{} they may tear their soul asunder\comma{} and store a portion inside a Horcrux. In doing so\comma{} the wizard stops being fully human\comma{} and becomes an {\it Et Iniquii}\comma{} the Tethered Soul. 
-
-Outwardly human\comma{} the Et Iniquii differ only in their affinity for Dark Magic\comma{} and their inability to die.}
 
 
-\beast{name = \inotator, species = Lich, mind = Sapient, category = Phantasm, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = Voldemort_Spirit, description = When the body of an Et Iniquum or an Aileni is destroyed\comma{} their spirit remains bound to the Mortal Plane\comma{} as long as their Horcrux(es) remain intact. 
-
-With nowhere else to go\comma{} this spirit manifests as a dark apparition called an {\it \inotator{}}. A formless wisp\comma{} the \inotator{} seeks out living beings and whispers intheir ear\comma{} attempting to corrupt them into its service and allow them to merge together. Many Dark Wizards which go down the path of creating a Horcrux have a dedicated leiutenant who will act as a host for them until a new body can be created.}
 
 
-\beast{name = Aileni, species = Lich, mind = Sapient, category = Humanoid, rating = VI, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = When an \inotator{} regenerates itself a new body\comma{} the result is something more than human. An imprint of the true form of the being\apos{}s soul is left on the new form \minus{} resulting in a being which is more animalistic\comma{} sadistic\comma{} and much\comma{} much more powerful. 
-
-The most famous Aileni is Lord Voldemort\comma{} who rose as an Aileni in in 1995 after 14 years as an \inotator{}. His pride in his Slytherin heritage imprinted a serpentine form on his Aileni form\comma{} with red eyes and snake\minus{}slit slits\comma{} rather than a nose. Many other deformities have been reported in Aileni throughout history \minus{} Herpo the Foul was said to be more spider than man by the time he died his final death.  
-
-This warping of their human form allows an Aileni to wield more power\comma{} and the further they deviate from their human origins\comma{} the more powerful and deadly they become.}
 
 
-\beast{name = Aberstath, species = Lich, mind = Ineffable, category = Abomination, rating = VII, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = aberstath, description = An Aberstath is a truly terrifying being\comma{} the result of a Dark Wizard gone too far in their quest for immortality\comma{} leaving behind a shattered shell of their former self\comma{} inhabited by a powerful and destructive demon. 
 
-The process of creating a Horcrux requires the subject to shatter their soul\comma{} which leaves their essence unstable\comma{} pushing them closer to insanity and abject evil. If a Wizard pushes this process to its logical conclusion\comma{} they will eventually damage their soul so much that it can no longer retain cohesiveness\comma{} and it will splinter away from their body. Their quest for immortality\comma{} ironically\comma{} killing them and denying their soul any chance of eternal life beyond the veil. 
 
-This destruction of the soul is the spiritual equivalent of splitting the atom\comma{} releasing a tremendous amount of energy into the higher planes\comma{} even to the point of weakening the barriers between worlds. 
 
-Such a release of energy rarely goes unnoticed by the creeping\comma{} crawling horrors lying in the void – driven insane by their time spent in abject nothingness. The instant they become aware of a free vessel\comma{} they burst through the walls of reality\comma{} and attempt to make their home in the shattered remains of the unfortunate Aileni. 
 
-This forces  the host to undergo a horrific transformation which rips away the last shreds of humanity\comma{} turning them into a dreaded Aberstath. 
-
-\ability{Tears of the Void}{Initially\comma{} the only visible change when a being undergoes the transition from Et Iniquum or Aileni to a full\minus{}blood Aberstath is that the eyes of the Aileni will suddenly turn into inky black orbs\comma{} blacker than the darkest night. Over time\comma{} their form warps and becomes inhumane\comma{} even undead and skeletal. However\comma{} mo matter what form the Aberstath takes\comma{} they cannot hide their voidic eyes.}
-
-\ability{Consumer of Life}{The being which now resides inside the mortal remains of the host was a resident of the Void\comma{} the inky black nothingness between dimensions. Perhaps it is native to that horrifying realm\comma{} or perhaps it was originally a powerful being which fell into the void\comma{} eons ago. Either way\comma{} an Aberstath has been driven to utter insanity by this experience – their motivations are often deeply insane and disturbed\comma{} and mostly focus on the destruction of all life.}
-
-\ability{Memories of the Shell}{The Aberstath retains all the memories\comma{} experiences and skills of its original host.}
-
-\ability{Souless}{With the destruction of the original host\apos{}s soul\comma{} the Aberstath loses the ability to create new Horcruxes themselves. They must rely on harvesting the souls of others to continue their existence. }}
 
 
 
@@ -959,22 +921,22 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 	c
 }
 {
-\beast{name = Dugbog, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Beast, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Jarvey, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Beast, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Mooncalf, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Beast, rating = I, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Murtlap, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Beast, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Niffler, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Beast, rating = I, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Wampus Cat, species = Mammalia Magicae, mind = Non\minus{}sapient, category = Beast, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
+
+
+
 
 
 
@@ -983,7 +945,7 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 
 
 
-\beast{name = Manticore, species = Manticore, mind = Non\minus{}sapient, category = Monstrosity, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
 
 
 
@@ -992,10 +954,10 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 	b
 }
 {
-\beast{name = Bluebirds, species = Mundane Animal, mind = Non\minus{}sapient, category = Beast, rating = I, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Viper, species = Mundane Animal, mind = Non\minus{}sapient, category = Beast, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
 
 
 
@@ -1004,11 +966,11 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 
 
 
-\beast{name = Nogtail, species = Beast Demon, mind = Ineffable, category = Demon, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = nogtail, description = \blindtext{2}}
 
 
 
-\beast{name = Nundu, species = Nundu, mind = Non\minus{}sapient, category = Beast, rating = VII, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
 
 
 
@@ -1017,13 +979,13 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 	d
 }
 {
-\beast{name = Ghoul, species = Ogre, mind = Non\minus{}sapient, category = Gigantoid, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Troll, species = Ogre, mind = Sapient, category = Gigantoid, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Yeti, species = Ogre, mind = Non\minus{}sapient, category = Gigantoid, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
 
 
 
@@ -1037,13 +999,13 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 	c
 }
 {
-\beast{name = Basilisk, species = Ophidian, mind = Non\minus{}sapient, category = Monstrosity, rating = VII, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = basilisk, description = Basilisk stuff blah blah blah blah blah lsodhs dihs douhu didhl iew lj fil ldfiuha iudew lid ewilugd uiweg dugweldu}
 
 
-\beast{name = Cockatrice, species = Ophidian, mind = Non\minus{}sapient, category = Monstrosity, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Runespoor, species = Ophidian, mind = Sapient, category = Monstrosity, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
 
 
 
@@ -1057,16 +1019,16 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 	b
 }
 {
-\beast{name = Diricawl, species = Ornithes Magicae, mind = Non\minus{}sapient, category = Beast, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Fwooper, species = Ornithes Magicae, mind = Non\minus{}sapient, category = Beast, rating = II, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Jobberknoll, species = Ornithes Magicae, mind = Non\minus{}sapient, category = Beast, rating = I, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Snidget, species = Ornithes Magicae, mind = Non\minus{}sapient, category = Beast, rating = I, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
+
 
 
 
@@ -1080,13 +1042,13 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 	c
 }
 {
-\beast{name = Hippocampus, species = Pegasus, mind = Ineffable, category = Celestial, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Thestral, species = Pegasus, mind = Ineffable, category = Celestial, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Winged Horse, species = Pegasus, mind = Ineffable, category = Celestial, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
 
 
 
@@ -1095,7 +1057,7 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 
 
 
-\beast{name = Pogrebin, species = Rock Demon, mind = Sapient, category = Demon, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
 
 
 
@@ -1104,10 +1066,10 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 	d
 }
 {
-\beast{name = Puffskein, species = Puffskeins, mind = Non\minus{}sapient, category = Beast, rating = I, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Pygmy Puff, species = Puffskeins, mind = Non\minus{}sapient, category = Beast, rating = , abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
 
 
 
@@ -1116,7 +1078,7 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 
 
 
-\beast{name = Quintaped, species = Quintaped, mind = Sapient, category = Monstrosity, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
 
 
 
@@ -1125,10 +1087,10 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 	b
 }
 {
-\beast{name = Banshee, species = Raised Dead, mind = Ineffable, category = Undead, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Inferius, species = Raised Dead, mind = Ineffable, category = Undead, rating = IV, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
 
 
 
@@ -1142,16 +1104,16 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 	d
 }
 {
-\beast{name = Ashwinder, species = Salamanders, mind = Non\minus{}sapient, category = Elemental, rating = III, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Fire Salamander, species = Salamanders, mind = Non\minus{}sapient, category = Elemental, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Frost Salamander, species = Salamanders, mind = Non\minus{}sapient, category = Elemental, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Moke, species = Salamanders, mind = Non\minus{}sapient, category = Elemental, rating = I, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
+
 
 
 
@@ -1160,7 +1122,7 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 
 
 
-\beast{name = Shadow Demon, species = Shadow Demons, mind = Ineffable, category = Demon, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
 
 
 
@@ -1169,35 +1131,19 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 	
 }
 {
-\beast{name = Death Hunter, species = Soldiers of the Abyss, mind = Ineffable, category = Abomination, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = hunter, description = A disgusting pale\minus{}white creature with 6 legs and a face which is entirely featureless except a gaping red maw. 
-
-Incredibly fast\comma{} and with powerful alien senses the Death Hunter serves one purpose: to track and hunt down their target across dimensions. When their target is located\comma{} they release an earsplitting howl across dimensions\comma{} drawing their allies in.}
 
 
-\beast{name = Flesh Ripper, species = Soldiers of the Abyss, mind = Ineffable, category = Abomination, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = ripper, description = A hulking mass of rotting\comma{} oily flesh covered in a bony exoskeleton which seems to twist and warp in multiple dimensions. The Flesh Ripper\apos{}s role is as a heavy assault weapon. It is aided in this by it\apos{}s long\comma{} scorpion like tail\comma{} which ends in a vicious barb. This tail is used to spear beings\comma{} before dragging them\comma{} helpless\comma{} into its maw.}
 
 
-\beast{name = Mind Shredder, species = Soldiers of the Abyss, mind = Ineffable, category = Abomination, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = shredder, description = A monstrous female form\comma{} all protruding fangs and tentacles lies behind layers of illusions and deception. Created by the Abyssal Masters for the express purpose of infiltration of the minds of their foes\comma{} the Mind Shredder is weak in body\comma{} but wields immense psionic powers.}
 
 
-\beast{name = Soul Devourer, species = Soldiers of the Abyss, mind = Ineffable, category = Abomination, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = devourer, description = The Soul Devourer is every inch as terrifying as its name would suggest\comma{} with a face seemingly composed of a rotting\comma{} skeletal deer skull with enormous antlers protruding from it. Mounted atop the antlers are a series of dripping candles\comma{} said to a allow the Soul Devourer to act as a guide throught he inky darkness of the Void\comma{} as they travel to do their master\apos{}s bidding. 
-
-As the arcane experts of the Abyssal Army\comma{} the Soul Devourers\comma{} as their name might suggest\comma{} rely heavily on the power of ritual sacrifices and the corruption and absorption of slain souls\comma{} even using the souls of their slain allies to power their assaults. Their long\comma{} spider\minus{}like hands are continually dripping with thick\comma{} congealed blood which they use in their profane rituals\comma{} and as a powerful weapon. 
-
-Of all of the Abyssal Spawn\comma{} it seems that the Soul Devourers have the most amount of free will\comma{} and will often explicitly communicate that they are allied with their Abyssal Masters out of convenience\comma{} rather than the rabid\comma{} unthinking loyalty expressed by some of the other soldiers in the Profane Masses. 
-
-Whispered rumours in some corners of the Multiverse indicate that some Soul Devourers have even gone rogue\comma{} and attempted to rebel against their masters\comma{} some have even had a degree of success. That the Soul Devourers remain such an integral part of the Abyssal Army indicates that this rebellious streak is in some way beneficial to their masters\comma{} though no one is quite sure why or how this might be.}
 
 
-\beast{name = Wielder\minus{}of\minus{}Night, species = Soldiers of the Abyss, mind = Ineffable, category = Abomination, rating = VII, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = spawn, description = In the midst of a pitched battle between the forces of good and evil\comma{} light and dark\comma{} life and death\comma{} one figure stands apart. A grotesque\comma{} scarred humanoid body is sewn onto a countless mass of tentacles which seem to boil and writhe of their own accord. Standing tall over the immense\comma{} endless battlefield\comma{} it surveys the chaos; planning and strategising. 
 
-With a movement as fast as the eye can see\comma{} the abomination leaps into battle\comma{} dueling hand\minus{}to\minus{}hand with the most powerful servants of the light\comma{} firing bolts of dark arcane energy from a finger\comma{} and screeching orders to the untold legions of the Abyss. 
 
-This is the Wielder\minus{}of\minus{}Night\comma{} the Commander of the Abyssal Legions\comma{} Slayer of Hope\comma{} Destroyer of Worlds\comma{} and the reason that every sane being in the multiverse is afraid of the darkness. 
 
-It is unknown if the Wielder\minus{}of\minus{}Night is a position\comma{} akin to a general\comma{} or if there is only one of them\comma{} a single mighty champion of the Eldritch Horroers\comma{} who has executed their will throughout the eons. Most scholars hope that it is the latter\comma{} for the idea of there being multiple such beings is too horrible to even consider. 
 
-There is only one recorded instance of a Wielder\minus{}of\minus{}Night stepping onto the Mortal Realm\comma{} at the culmination of the final battle of the Cataclysm. Merlin the Great\comma{} the most powerful Wizard who ever lived\comma{} managed to barely survive its onslaught\comma{} until he tricked it into falling through a Rift in time and space\comma{} which he sealed behind it. So harrowing was this experience\comma{} that Merlin refused to talk about it for hundreds of years after the event.}
+
 
 
 
@@ -1206,11 +1152,11 @@ There is only one recorded instance of a Wielder\minus{}of\minus{}Night stepping
 
 
 
-\beast{name = Swooping Evil, species = Swooping Evil, mind = Non\minus{}sapient, category = Monstrosity, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
 
-\beast{name = Thunderbird, species = Thunderbird, mind = Non\minus{}sapient, category = Elemental, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
 
 
 
@@ -1219,13 +1165,13 @@ There is only one recorded instance of a Wielder\minus{}of\minus{}Night stepping
 	
 }
 {
-\beast{name = Bicorn, species = Unicorns, mind = Sapient, category = Celestial, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Tebo, species = Unicorns, mind = Non\minus{}sapient, category = Celestial, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Unicorn, species = Unicorns, mind = Sapient, category = Phantasm, rating = VI, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
+
 
 
 
@@ -1239,13 +1185,13 @@ There is only one recorded instance of a Wielder\minus{}of\minus{}Night stepping
 	
 }
 {
-\beast{name = Grindylow, species = Water Demons, mind = Non\minus{}sapient, category = Demon, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = grindylow, description = \blindtext{2}}
 
 
-\beast{name = Kappa, species = Water Demons, mind = Ineffable, category = Demon, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, hasImage = 1, image = kappa, description = \blindtext{2}}
 
 
-\beast{name = Kelpie, species = Water Demons, mind = Ineffable, category = Demon, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=1, hasImage = 1, image = kelpie, description = \blindtext{2}}
+
+
+
 
 
 
@@ -1259,10 +1205,10 @@ There is only one recorded instance of a Wielder\minus{}of\minus{}Night stepping
 	
 }
 {
-\beast{name = Human\minus{}form, species = Werewolf, mind = Sapient, category = Humanoid, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Wolf\minus{}form, species = Werewolf, mind = Non\minus{}sapient, category = Monstrosity, rating = VI, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
 
 
 
@@ -1271,7 +1217,7 @@ There is only one recorded instance of a Wielder\minus{}of\minus{}Night stepping
 
 
 
-\beast{name = Whomping Willow, species = Trees, mind = Non\minus{}sapient, category = Flora, rating = IV, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
 
 
 
@@ -1280,10 +1226,10 @@ There is only one recorded instance of a Wielder\minus{}of\minus{}Night stepping
 	
 }
 {
-\beast{name = Occamy, species = Wyverns, mind = Non\minus{}sapient, category = Draconid, rating = V, abilities = , article = An, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
 
 
-\beast{name = Sea Serpent, species = Wyverns, mind = Non\minus{}sapient, category = Draconid, rating = V, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = \blindtext{2}}
+
+
 
 
 

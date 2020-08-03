@@ -61,6 +61,7 @@ classdef Beast
         IsHuge
         
         ImageStack
+        Empty;
     end
     
     methods
@@ -102,6 +103,8 @@ classdef Beast
             obj.Willpower = tableLine.Willpower(1);
             obj.Perception = tableLine.Perception(1);
             
+            obj.Empty = obj.Fitness + obj.Precision + obj.Vitality + obj.Charm + obj.Deception + obj.Insight + obj.Intelligence + obj.Willpower + obj.Perception;
+            
             obj.Block = tableLine.Block(1);
             obj.Defy = tableLine.Defy(1);
             obj.Dodge = tableLine.Dodge(1);
@@ -136,7 +139,8 @@ classdef Beast
         end
         
         function text = print(obj)
-            
+            text = "";
+            if obj.Empty > 0
             text = "\\beast{";
            
             
@@ -172,6 +176,7 @@ classdef Beast
             end
            
            text = text + "description = " + prepareText(obj.Description) + "}";
+            end
         end
         
         function s = statBlock(obj)

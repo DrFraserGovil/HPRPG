@@ -260,23 +260,31 @@
 
 \node[anchor = north] at ({\x},{\spellTop}) {\Large \HP {Negation}};
 \def\jump{2.9*\heightUnits}
-\foreach \negate [count = \i from 0] in { {Block}, {Dodge}, {Endure} }
+\foreach \negate [count = \i from 0] in { {Block:}, {Dodge:}, {Endure:} }
 {
 	\def\y{\yC - (\i)*\jump}
 	
-	\node[anchor = west] at ({\spellLimit + \widthUnits},{\y}) {\key{\negate}:};
-
+	\node[anchor = west] at ({\spellLimit + \widthUnits},{\y}) {\key{\negate{}}};
+	\def\r{\sqrtTwo*\boxSmall/1.6}
 	\foreach \k in {0,1,2,3,4,5,6}
 	{
 		
-		\def\xCirc{\spellLimit + 11 *\widthUnits + \sqrtTwo*\boxSmall*\k};
+		\def\xCirc{\spellLimit + 8.2 *\widthUnits + 2*\r*\k};
 		
 		%~ \if\k6
 			%~ \smallDot{\xCirc}{\y}{black}
 		%~ \else
 			\smallDot{\xCirc}{\y}{white}
+			\draw ({\xCirc},{\y}) circle ({\r});
 		%~ \fi
 	}	
+	
+	\def\wBox{0.7 * \widthUnits}
+	\def\wBoxd{1.1 * \wBox}
+	\def\xBox{\spellLimit + 9 *\widthUnits + 14*\r}
+	
+	\draw[fill=white] ({\xBox-\wBox},{\y-\wBox}) rectangle ({\xBox + \wBox},{\y + \wBox});
+	\draw ({\xBox-\wBoxd},{\y-\wBoxd}) rectangle ({\xBox + \wBoxd},{\y + \wBoxd});
 
 }
 
