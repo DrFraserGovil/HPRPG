@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.18)  1 AUG 2020 14:29
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.3.20)  3 AUG 2020 11:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3585,6 +3585,11 @@ Overfull \hbox (10.35841pt too wide) in paragraph at lines 278--278
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+
+ []
+
+
 Overfull \hbox (5.59999pt too wide) in paragraph at lines 278--278
 []|[]| 
  []
@@ -3616,12 +3621,12 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 278--278
 [] 
  []
 
-
+[23]
 Overfull \hbox (10.35841pt too wide) in paragraph at lines 306--306
 [] 
  []
 
-[23]
+
 Overfull \hbox (5.59999pt too wide) in paragraph at lines 306--306
 []|[]| 
  []
@@ -3735,885 +3740,886 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 331--331
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 389--389
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 393--393
 [] 
  []
 
 File: ../Images/lethifold.jpg Graphic file (type bmp)
 <../Images/lethifold.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 389--389
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 393--393
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 389--389
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 393--393
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 389--389
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 393--393
 [] 
  []
 
 File: ../Images/dementor.png Graphic file (type bmp)
 <../Images/dementor.png>
 
-Underfull \hbox (badness 3019) in paragraph at lines 389--389
+Underfull \hbox (badness 3019) in paragraph at lines 393--393
 \TU/texgyrebonum-regular.otf(0)/m/n/8 the Dementor appear as exceptionally
  []
 
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 389--389
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 393--393
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 389--389
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 393--393
 []|[]| 
  []
 
 [26]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 389--389
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 393--393
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 389--389
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 393--393
 [] 
  []
 
 File: ../Images/shuagh.jpg Graphic file (type bmp)
 <../Images/shuagh.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 389--389
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 393--393
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 389--389
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 393--393
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 406--406
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 410--410
 [] 
  []
 
+[27]
 File: ../Images/hidebehind.png Graphic file (type bmp)
 <../Images/hidebehind.png>
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 406--406
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 410--410
 []$[]$ $[]$ 
  []
 
-[27]
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 406--406
+
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 410--410
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 406--406
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 410--410
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 406--406
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 410--410
 [] 
  []
 
 File: ../Images/screwt.png Graphic file (type bmp)
 <../Images/screwt.png>
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 406--406
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 410--410
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 406--406
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 410--410
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 411--411
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 415--415
 [] 
  []
 
 File: ../Images/demiguise.png Graphic file (type bmp)
 <../Images/demiguise.png>
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 411--411
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 415--415
 []$[]$ $[]$ 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 411--411
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 415--415
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 411--411
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 415--415
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 448--448
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 452--452
 [] 
- []
-
-
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 448--448
-[]|[]| 
  []
 
 [28]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 448--448
-[] 
- []
-
-
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 448--448
-[] 
- []
-
-
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 448--448
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 452--452
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 448--448
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 452--452
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 448--448
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 452--452
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 448--448
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 452--452
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 448--448
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 452--452
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 448--448
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 452--452
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 448--448
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 452--452
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 448--448
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 452--452
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 448--448
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 452--452
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 448--448
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 452--452
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 448--448
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 452--452
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 448--448
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 452--452
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 448--448
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 452--452
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 448--448
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 452--452
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 448--448
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 452--452
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 448--448
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 452--452
+[]|[]| 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 452--452
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 452--452
+[] 
+ []
+
+
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 452--452
 []|[]| 
  []
 
 [29]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 448--448
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 452--452
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 448--448
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 452--452
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 448--448
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 452--452
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 448--448
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 452--452
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 448--448
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 452--452
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 448--448
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 452--452
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 448--448
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 452--452
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 489--489
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 489--489
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 493--493
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 489--489
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 489--489
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 489--489
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 493--493
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 489--489
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 489--489
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 489--489
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 493--493
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 489--489
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 489--489
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 489--489
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 493--493
 []|[]| 
  []
 
 [30]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 489--489
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 489--489
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 489--489
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 493--493
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 489--489
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 489--489
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 489--489
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 493--493
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 489--489
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 489--489
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 489--489
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 493--493
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 489--489
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 489--489
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 489--489
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 493--493
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 489--489
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 489--489
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 489--489
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 493--493
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 489--489
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 489--489
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 489--489
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 493--493
 []|[]| 
  []
 
 [31]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 489--489
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 493--493
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 509--509
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 513--513
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 509--509
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 513--513
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 509--509
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 513--513
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 509--509
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 513--513
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 509--509
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 513--513
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 509--509
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 513--513
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 509--509
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 513--513
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 509--509
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 513--513
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 509--509
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 513--513
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 566--566
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 570--570
 [] 
  []
 
 File: ../Images/brownie.jpg Graphic file (type bmp)
 <../Images/brownie.jpg>
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 566--566
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 570--570
 []$[]$ $[]$ 
  []
 
 [32]
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 566--566
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 570--570
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 566--566
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 570--570
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 566--566
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 570--570
 [] 
  []
 
 File: ../Images/dobby.jpg Graphic file (type bmp)
 <../Images/dobby.jpg>
 
-Underfull \hbox (badness 2020) in paragraph at lines 566--566
+Underfull \hbox (badness 2020) in paragraph at lines 570--570
 []\TU/texgyrebonum-regular.otf(0)/m/n/8 Though rejecting their former enslave-
  []
 
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 566--566
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 570--570
 []$[]$ $[]$ 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 566--566
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 570--570
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 566--566
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 570--570
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 566--566
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 570--570
 [] 
  []
 
 File: ../Images/imp.png Graphic file (type bmp)
 <../Images/imp.png>
 
-Underfull \hbox (badness 3514) in paragraph at lines 566--566
+Underfull \hbox (badness 3514) in paragraph at lines 570--570
 []\TU/texgyrebonum-regular.otf(0)/m/n/8 Visually, an Ellengæst appears to be
  []
 
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 566--566
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 570--570
 []$[]$ $[]$ 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 566--566
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 570--570
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 566--566
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 570--570
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 566--566
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 570--570
 [] 
  []
 
 File: ../Images/dunaelf.jpg Graphic file (type bmp)
 <../Images/dunaelf.jpg>
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 566--566
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 570--570
 []|[]| 
  []
 
 [33]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 566--566
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 570--570
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 566--566
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 570--570
 [] 
  []
 
 File: ../Images/vaettir.jpg Graphic file (type bmp)
 <../Images/vaettir.jpg>
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 566--566
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 570--570
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 566--566
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 570--570
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 566--566
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 570--570
 [] 
  []
 
 File: ../Images/huldufolk.jpg Graphic file (type bmp)
 <../Images/huldufolk.jpg>
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 566--566
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 570--570
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 566--566
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 570--570
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 586--586
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 590--590
 [] 
  []
 
 [34]
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 586--586
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 590--590
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 586--586
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 590--590
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 586--586
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 590--590
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 586--586
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 590--590
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 586--586
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 590--590
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 586--586
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 590--590
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 586--586
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 590--590
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 586--586
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 590--590
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 603--603
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 607--607
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 603--603
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 607--607
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 603--603
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 607--607
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 603--603
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 607--607
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 603--603
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 607--607
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 603--603
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 607--607
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 626--626
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 630--630
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 626--626
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 630--630
 []|[]| 
  []
 
 [35]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 626--626
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 630--630
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 626--626
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 630--630
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 626--626
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 630--630
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 626--626
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 630--630
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 626--626
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 630--630
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 626--626
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 630--630
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 626--626
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 630--630
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 626--626
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 630--630
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 626--626
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 630--630
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 626--626
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 630--630
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 646--646
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 650--650
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 646--646
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 650--650
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 646--646
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 650--650
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 646--646
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 650--650
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 646--646
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 650--650
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 646--646
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 650--650
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 646--646
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 650--650
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 646--646
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 650--650
 []|[]| 
  []
 
 [36]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 646--646
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 650--650
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 681--681
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 685--685
 [] 
  []
 
 File: ../Images/giant.jpg Graphic file (type bmp)
 <../Images/giant.jpg>
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 681--681
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 685--685
 []$[]$ $[]$ 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 681--681
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 685--685
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 681--681
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 685--685
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 681--681
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 685--685
 [] 
  []
 
 File: ../Images/oldGiant.jpg Graphic file (type bmp)
 <../Images/oldGiant.jpg>
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 681--681
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 685--685
 []$[]$ $[]$ 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 681--681
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 685--685
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 681--681
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 685--685
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 681--681
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 685--685
 [] 
  []
 
@@ -4621,1454 +4627,1462 @@ Overfull \hbox (10.35841pt too wide) in paragraph at lines 681--681
 File: ../Images/warrior.jpg Graphic file (type bmp)
 <../Images/warrior.jpg>
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 681--681
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 685--685
 []$[]$ $[]$ 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 681--681
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 685--685
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 681--681
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 685--685
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 681--681
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 685--685
 [] 
  []
 
 File: ../Images/gurg.jpg Graphic file (type bmp)
 <../Images/gurg.jpg>
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 681--681
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 685--685
 []$[]$ $[]$ 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 681--681
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 685--685
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 681--681
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 685--685
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 701--701
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 705--705
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 701--701
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 705--705
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 701--701
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 705--705
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 701--701
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 705--705
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 701--701
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 705--705
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 701--701
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 705--705
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 701--701
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 705--705
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 701--701
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 705--705
 []|[]| 
  []
 
 [38]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 701--701
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 705--705
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 718--718
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 722--722
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 718--718
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 722--722
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 718--718
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 722--722
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 718--718
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 722--722
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 718--718
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 722--722
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 718--718
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 722--722
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 741--741
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 745--745
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 741--741
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 745--745
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 741--741
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 745--745
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 741--741
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 745--745
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 741--741
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 745--745
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 741--741
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 745--745
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 741--741
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 745--745
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 741--741
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 745--745
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 741--741
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 745--745
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 741--741
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 745--745
 [] 
  []
 
 [39]
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 741--741
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 745--745
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 741--741
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 745--745
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 758--758
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 762--762
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 758--758
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 762--762
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 758--758
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 762--762
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 758--758
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 762--762
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 758--758
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 762--762
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 758--758
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 762--762
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 775--775
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 779--779
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 775--775
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 779--779
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 775--775
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 779--779
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 775--775
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 779--779
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 775--775
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 779--779
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 775--775
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 779--779
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 798--798
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 802--802
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 798--798
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 802--802
 []|[]| 
  []
 
 [40]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 798--798
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 802--802
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 798--798
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 802--802
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 798--798
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 802--802
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 798--798
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 802--802
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 798--798
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 802--802
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 798--798
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 802--802
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 798--798
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 802--802
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 798--798
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 802--802
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 798--798
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 802--802
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 798--798
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 802--802
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 815--815
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 819--819
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 815--815
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 819--819
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 815--815
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 819--819
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 815--815
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 819--819
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 815--815
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 819--819
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 815--815
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 819--819
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 820--820
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 824--824
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 820--820
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 824--824
 []|[]| 
  []
 
 [41]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 820--820
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 824--824
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 851--851
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 855--855
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 851--851
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 855--855
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 851--851
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 855--855
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 851--851
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 855--855
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 851--851
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 855--855
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 851--851
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 855--855
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 851--851
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 855--855
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 851--851
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 855--855
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 851--851
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 855--855
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 851--851
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 855--855
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 851--851
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 855--855
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 851--851
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 855--855
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 851--851
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 855--855
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 851--851
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 855--855
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 851--851
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 855--855
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 851--851
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 855--855
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 851--851
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 855--855
 []|[]| 
  []
 
 [42]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 851--851
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 855--855
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 851--851
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 855--855
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 851--851
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 855--855
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 851--851
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 855--855
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 898--898
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 902--902
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 898--898
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 902--902
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 898--898
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 902--902
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 898--898
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 902--902
 [] 
  []
 
 File: ../Images/Voldemort_Spirit.jpg Graphic file (type bmp)
 <../Images/Voldemort_Spirit.jpg>
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 898--898
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 902--902
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 898--898
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 902--902
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 898--898
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 902--902
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 898--898
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 902--902
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 898--898
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 902--902
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 898--898
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 902--902
 [] 
  []
 
 File: ../Images/aberstath.jpg Graphic file (type bmp)
 <../Images/aberstath.jpg>
 [43]
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 898--898
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 902--902
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 898--898
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 902--902
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 944--944
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 952--952
 [] 
  []
 
 File: ../Images/solon.jpg Graphic file (type bmp)
 <../Images/solon.jpg>
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 944--944
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 952--952
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 944--944
+Underfull \hbox (badness 10000) in paragraph at lines 952--952
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 944--944
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 952--952
 []|[]| 
  []
 
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 944--944
+[44]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 952--952
 [] 
  []
 
-[44]
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 944--944
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 952--952
 [] 
  []
 
 File: ../Images/phlogiston.jpg Graphic file (type bmp)
 <../Images/phlogiston.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 944--944
+Underfull \hbox (badness 10000) in paragraph at lines 952--952
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 944--944
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 952--952
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 944--944
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 952--952
 [] 
  []
 
 
-Overfull \hbox (12.63342pt too wide) in paragraph at lines 944--944
+Overfull \hbox (12.63342pt too wide) in paragraph at lines 952--952
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 944--944
+Underfull \hbox (badness 10000) in paragraph at lines 952--952
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 944--944
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 952--952
 [] 
  []
 
 File: ../Images/chalkydri.jpg Graphic file (type bmp)
 <../Images/chalkydri.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 944--944
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 952--952
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 944--944
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 952--952
 []|[]| 
  []
 
-[45]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 944--944
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 952--952
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 944--944
+Underfull \hbox (badness 10000) in paragraph at lines 952--952
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 944--944
+Underfull \hbox (badness 10000) in paragraph at lines 952--952
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 944--944
+Underfull \hbox (badness 10000) in paragraph at lines 952--952
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 944--944
+Underfull \hbox (badness 10000) in paragraph at lines 952--952
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 944--944
+Underfull \hbox (badness 10000) in paragraph at lines 952--952
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 944--944
+Underfull \hbox (badness 10000) in paragraph at lines 952--952
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 973--973
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 981--981
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 973--973
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 981--981
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 973--973
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 981--981
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 973--973
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 981--981
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 973--973
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 981--981
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 973--973
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 981--981
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 973--973
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 981--981
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 973--973
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 981--981
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 973--973
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 981--981
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 973--973
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 981--981
 [] 
- []
-
-
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 973--973
-[]|[]| 
  []
 
 [46]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 973--973
-[] 
- []
-
-
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 973--973
-[] 
- []
-
-
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 973--973
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 981--981
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 973--973
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 981--981
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 973--973
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 981--981
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 973--973
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 981--981
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 973--973
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 981--981
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 978--978
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 981--981
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 978--978
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 981--981
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 978--978
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 981--981
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 994--994
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 986--986
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 994--994
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 986--986
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 994--994
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 986--986
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 994--994
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1002--1002
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 994--994
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1002--1002
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 994--994
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1002--1002
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 999--999
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1002--1002
+[] 
+ []
+
+
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1002--1002
+[]|[]| 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1002--1002
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1007--1007
 [] 
  []
 
 File: ../Images/nogtail.jpg Graphic file (type bmp)
 <../Images/nogtail.jpg>
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 999--999
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 1007--1007
 []$[]$ $[]$ 
  []
 
 [47]
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 999--999
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1007--1007
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 999--999
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1007--1007
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1003--1003
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1011--1011
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1003--1003
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1011--1011
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1003--1003
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1011--1011
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1022--1022
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1030--1030
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1022--1022
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1030--1030
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1022--1022
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1030--1030
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1022--1022
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1030--1030
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1022--1022
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1030--1030
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1022--1022
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1030--1030
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1022--1022
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1030--1030
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1022--1022
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1030--1030
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1022--1022
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1030--1030
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1042--1042
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1050--1050
 [] 
  []
 
-File: ../Images/basilisk.jpg Graphic file (type bmp)
-<../Images/basilisk.jpg>
+
+! LaTeX Error: File `../Images/basilisk' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1050 }
+        
+? 
 [48]
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1042--1042
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1050--1050
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1042--1042
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1050--1050
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1042--1042
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1050--1050
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1042--1042
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1050--1050
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1042--1042
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1050--1050
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1042--1042
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1050--1050
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1042--1042
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1050--1050
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1042--1042
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1050--1050
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1073--1073
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1073--1073
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1073--1073
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1073--1073
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1073--1073
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1073--1073
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1073--1073
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1073--1073
 []|[]| 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1073--1073
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1073--1073
+[] 
  []
 
 [49]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1065--1065
-[] 
- []
-
-
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1065--1065
-[] 
- []
-
-
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1073--1073
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1065--1065
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1073--1073
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1085--1085
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1093--1093
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1085--1085
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1093--1093
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1085--1085
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1093--1093
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1085--1085
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1093--1093
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1085--1085
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1093--1093
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1085--1085
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1093--1093
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1085--1085
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1093--1093
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1085--1085
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1093--1093
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1085--1085
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1093--1093
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1090--1090
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1098--1098
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1090--1090
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1098--1098
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1090--1090
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1098--1098
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1106--1106
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1114--1114
 [] 
+ []
+
+
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1114--1114
+[]|[]| 
  []
 
 [50]
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1106--1106
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1114--1114
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1114--1114
+[] 
+ []
+
+
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1114--1114
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1106--1106
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1114--1114
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1106--1106
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1119--1119
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1106--1106
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1119--1119
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1106--1106
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1119--1119
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1111--1111
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1135--1135
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1111--1111
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1135--1135
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1111--1111
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1135--1135
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1127--1127
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1135--1135
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1127--1127
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1135--1135
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1127--1127
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1135--1135
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1127--1127
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1158--1158
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1127--1127
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1158--1158
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1127--1127
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1158--1158
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1150--1150
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1158--1158
 [] 
- []
-
-
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1150--1150
-[]|[]| 
  []
 
 [51]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1150--1150
-[] 
- []
-
-
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1150--1150
-[] 
- []
-
-
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1150--1150
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1158--1158
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1150--1150
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1158--1158
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1150--1150
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1158--1158
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1150--1150
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1158--1158
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1150--1150
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1158--1158
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1150--1150
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1158--1158
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1150--1150
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1158--1158
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1150--1150
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1158--1158
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1155--1155
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1163--1163
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1155--1155
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1163--1163
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1155--1155
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1163--1163
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1196--1196
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1204--1204
 [] 
  []
 
 File: ../Images/hunter.jpg Graphic file (type bmp)
 <../Images/hunter.jpg>
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1196--1196
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1204--1204
 []|[]| 
  []
 
-[52]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1196--1196
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1204--1204
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1196--1196
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1204--1204
 [] 
  []
 
 File: ../Images/ripper.jpg Graphic file (type bmp)
 <../Images/ripper.jpg>
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 1196--1196
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 1204--1204
 []$[]$ $[]$ 
  []
 
-
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1196--1196
+[52]
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1204--1204
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1196--1196
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1204--1204
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1196--1196
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1204--1204
 [] 
  []
 
 File: ../Images/shredder.jpg Graphic file (type bmp)
 <../Images/shredder.jpg>
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1196--1196
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1204--1204
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1196--1196
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1204--1204
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1196--1196
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1204--1204
 [] 
  []
 
 File: ../Images/devourer.jpg Graphic file (type bmp)
 <../Images/devourer.jpg>
-[53]
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1196--1196
+
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1204--1204
 []|[]| 
  []
 
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1196--1196
+[53]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1204--1204
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1196--1196
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1204--1204
 [] 
  []
 
 File: ../Images/spawn.jpg Graphic file (type bmp)
 <../Images/spawn.jpg>
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1196--1196
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1204--1204
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1196--1196
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1204--1204
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1201--1201
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1209--1209
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1201--1201
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1209--1209
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1201--1201
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1209--1209
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1205--1205
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1213--1213
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1205--1205
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1213--1213
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1205--1205
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1213--1213
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1232--1232
 [] 
  []
 
 [54]
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1224--1224
-[] 
- []
-
-
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1224--1224
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1232--1232
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1224--1224
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1232--1232
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1224--1224
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1232--1232
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1224--1224
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1232--1232
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1224--1224
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1232--1232
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1224--1224
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1232--1232
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1224--1224
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1232--1232
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1224--1224
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1232--1232
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1244--1244
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1252--1252
 [] 
  []
 
 File: ../Images/grindylow.png Graphic file (type bmp)
 <../Images/grindylow.png>
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 1244--1244
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 1252--1252
 []$[]$ $[]$ 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1244--1244
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1252--1252
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1244--1244
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1252--1252
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1244--1244
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1252--1252
 [] 
  []
 
 File: ../Images/kappa.jpg Graphic file (type bmp)
 <../Images/kappa.jpg>
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 1244--1244
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 1252--1252
 []$[]$ $[]$ 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1244--1244
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1252--1252
 []|[]| 
  []
 
 [55]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1244--1244
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1252--1252
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1244--1244
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1252--1252
 [] 
  []
 
 File: ../Images/kelpie.jpg Graphic file (type bmp)
 <../Images/kelpie.jpg>
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1244--1244
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1252--1252
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1244--1244
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1252--1252
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1261--1261
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1269--1269
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1261--1261
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1269--1269
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1261--1261
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1269--1269
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1261--1261
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1269--1269
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1261--1261
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1269--1269
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1261--1261
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1269--1269
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1266--1266
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1274--1274
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1266--1266
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1274--1274
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1266--1266
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1274--1274
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1282--1282
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1290--1290
 [] 
  []
 
 [56]
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1282--1282
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1290--1290
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1282--1282
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1290--1290
 [] 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 1282--1282
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1290--1290
 [] 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1282--1282
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1290--1290
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1282--1282
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1290--1290
 [] 
  []
 
@@ -6186,10 +6200,10 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 55.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 55.
  ) 
 Here is how much of TeX's memory you used:
- 42022 strings out of 493007
- 804416 string characters out of 6136718
- 940421 words of memory out of 5000000
- 45278 multiletter control sequences out of 15000+600000
+ 42039 strings out of 493007
+ 804448 string characters out of 6136719
+ 940653 words of memory out of 5000000
+ 45277 multiletter control sequences out of 15000+600000
  585840 words of font info for 184 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  62i,18n,75p,10412b,769s stack positions out of 5000i,500n,10000p,200000b,80000s

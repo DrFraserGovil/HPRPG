@@ -19,7 +19,7 @@ Hatching from eggs the size of rugby balls\comma{} the oldest specimens have leg
 
 \ability{Tiny}{\name{}s can occupy the same space as another being\comma{} climbing over them. Their small size also grants them a non\minus{}damaging terminal velocity.}, article = An, fit =2, prs =3, vit =2, cha =0, dec =0, ins =1, int =1, wil =1, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{Poison\comma{} Falling Damage}, nUnharmed=1, nBruised=0, nHurt=2, nInjured=0, nWounded=0, nMangled=1, block=1, dodge=3, defy=1, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Climb}{3}
 \skill{Covert}{4}
-\skill{Inhuman Senses}{2}, hasAttacks = 1, attacks = \melee{Poison Fangs}{4}{0}{Poison Damage}{1+Successes}, hasLanguages = 1, languages = \understands{Spider Tongue}, hasImage = 1, image = babyAcro, description = A newborn \imp{acromantula} is tiny when compared to their full grown counterparts – though with a legspan of up to 40cm\comma{} they are still significantly larger than almost all non\minus{}magical spiders. 
+\skill{Inhuman Senses}{2}, hasAttacks = 1, attacks = \meleeConsequence{Poison Fangs}{3}{0}{Piercing Damage}{1+Successes}{If the attack deals any damage\comma{} the victim takes the \imp{Poisoned} status (1 harm\comma{} requires 5 successes)}, hasLanguages = 1, languages = \understands{Spider Tongue}, hasImage = 1, image = babyAcro, description = A newborn \imp{acromantula} is tiny when compared to their full grown counterparts – though with a legspan of up to 40cm\comma{} they are still significantly larger than almost all non\minus{}magical spiders. 
 
 Their body is covered in a shiny\comma{} hairless and pale\minus{}grey carapace\comma{} which hardens and grows darker as they grow older – eventually they shed this skin as they enter the adult phase of their life. 
 
@@ -266,7 +266,7 @@ Whatever the mechanism for bringing them into this world\comma{} many have since
 The Howling Tick has the magical ability to grow in size when it feeds\comma{} however they must continually gorge in order to maintain their size\comma{} or they quickly shrink back.}
 
 
-\beast{name = Spraying Mantis, species = Arachnid, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = , article = A, fit =0, prs =0, vit =0, cha =0, dec =0, ins =0, int =0, wil =0, pcp =0, hasDamage = 0, nUnharmed=0, nBruised=0, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=0, dodge=0, defy=0, fortitude=0, imageStack=0, description = A gigantic\comma{} horrifying crossbreed between a spider\comma{} and a praying mantis resulted in a grotesque monstrosity. The being appears\comma{} outwardly\comma{} to be a giant metre\minus{}long insect walking on 4 legs\comma{} with an additional 4 arms turned into hinged and hooked arms which they use to catch their prey. 
+\beast{name = Spraying Mantis, species = Arachnid, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = , article = A, fit =3, prs =5, vit =2, cha =0, dec =1, ins =2, int =2, wil =1, pcp =3, hasDamage = 1, damage =\key{Immune} to \textit{Acid\comma{} Poison}, nUnharmed=3, nBruised=0, nHurt=1, nInjured=1, nWounded=0, nMangled=1, block=3, dodge=2, defy=2, fortitude=3, imageStack=0, hasLanguages = 1, languages = \understands{Spider Tongue}, description = A gigantic\comma{} horrifying crossbreed between a spider\comma{} and a praying mantis resulted in a grotesque monstrosity. The being appears\comma{} outwardly\comma{} to be a giant metre\minus{}long insect walking on 4 legs\comma{} with an additional 4 arms turned into hinged and hooked arms which they use to catch their prey. 
 
 True to their name\comma{} they also spray acidic juices on their prey\comma{} to aid in their eventual digestion.}
 
@@ -334,7 +334,11 @@ Normally peacable and shy creatures\comma{} they become territorial and violent 
 
 \species{Cloakwraiths}
 {
-	
+	A tattered black cloak might not seem the most terrifying piece of attire that a being could don\comma{} though those who have encountered the \key{Cloakwraiths} might say differently. 
+
+No\minus{}one really knows where they come from\comma{} though ancient legends say that they are the spirits of those too evil to pass to the other side. Some \imp{wraiths} appear as gaunt almost\minus{}humanoids beneath their eponymous shrouds\comma{} whilst others seem to have no corporeal form. Some believe that they are in fact a single type of being at various points in their lifecycle\comma{} whilst others believe them to be individual manifestations of primal human fears.
+
+What they all have in common (besides the ominous cloak)\comma{} is an evil aura of terror\comma{} and a hunger for human souls.
 }
 {
 \beast{name = Lethifold, species = Cloakwraiths, mind = Ineffable, category = Abomination, rating = IV, abilities = \ability{Soporific Aura}{Any creature within 1m of the \name{} takes 2d penalty to all attempts to \imp{Resist} sleep.}
@@ -902,7 +906,11 @@ This forces  the host to undergo a horrific transformation which rips away the l
 
 \species{Light Elemental}
 {
-	
+	The \key{Radiant Gardens} are one of the realms beyond our own which resonates strongly with one of the primal magical elements – in this case the element of \key{Light}. The beings native to this particular corner of the multiverse are therefore known as \imp{Light Elementals}. 
+
+The \imp{Radiant Gardens} are an almost heaven\minus{}like domain\comma{} filled at all times with a diffuse\comma{} golden glow\comma{} interspersed with rainbows containing more colours than the human mind can conceive of. \imp{Light Elementals}\comma{} having formed from this incandescant space\comma{} are all therefore naturally able to manipulate and channel radiance in all its forms\comma{} and abhore darkness and shadows. 
+
+Just as no two rainbows are perfectly alike\comma{} so too are \imp{Light Elements} unique and distinct creatures\comma{} with wildly varying morphology and characteristics – some appear as perfectly normal solid creatures\comma{} whilst others seem to be made up of pure\comma{} distilled light.
 }
 {
 \beast{name = Solon, species = Light Elemental, mind = Non\minus{}Sapient, category = Elemental, rating = III, abilities = \ability{Floating}{The \name{} naturally floats in the air using its \imp{Flight} ability.}, article = A, fit =2, prs =3, vit =3, cha =2, dec =0, ins =1, int =1, wil =3, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{Celestial}\comma{} \key{Resistant} to \textit{Fire} and \key{Susceptible} to \textit{Bludgeoning}, nUnharmed=1, nBruised=1, nHurt=1, nInjured=1, nWounded=0, nMangled=0, block=4, dodge=1, defy=2, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Spellcasting}{3}

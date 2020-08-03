@@ -272,9 +272,19 @@
 {
 \parbox[t]{9.5cm}{\textbf{\textit{#1}}: ({\it melee attack, #2 dice, DV \fpeval{7+#3}}) \\ Effect: \imp{#4}, with Power #5}
 }
+
+\newcommand\meleeConsequence[6]
+{
+	\parbox[t]{9.5cm}{\textbf{\textit{#1}}: ({\it melee attack, #2 dice, DV \fpeval{7+#3}}) \\ Effect: \imp{#4}, with Power #5 \\ In addition: #6}
+}
 \newcommand\ranged[6]
 {
 \parbox[t]{10cm}{\textbf{\textit{#1}}: ({\it ranged attack: #2m, #3 dice, DV \fpeval{7+#4}}) \\ Effect: \imp{#5}, with Power #6}
+}
+
+\newcommand\rangedConsequence[7]
+{
+\parbox[t]{10cm}{\textbf{\textit{#1}}: ({\it ranged attack: #2m, #3 dice, DV \fpeval{7+#4}}) \\ Effect: \imp{#5}, with Power #6. \\ In addition: #7}
 }
 
 \newcommand\area[6]
