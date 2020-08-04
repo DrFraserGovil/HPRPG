@@ -31,7 +31,7 @@ classdef Feat
         
         function s = print(obj)
             s = "\feat{";
-            s = s + obj.Name +" }{";
+            s = s + obj.Name +"}{";
             s = s + obj.Description + "}{";
             s = s + obj.HasPrerequisite + "}{";
             s = s + obj.Prerequisite + "}";
