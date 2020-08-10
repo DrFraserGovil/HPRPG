@@ -16,7 +16,7 @@ function assembleArchetypes(fileRoot)
 
     f = readtable("Archetypes.xlsx");
     headers = f.Properties.VariableNames;
-
+    f = sortrows(f,1);
     t = "";
     for i = 1:height(f)
         t = t + "\\archetype\n{\n\tname = " +f{i,1}{1};

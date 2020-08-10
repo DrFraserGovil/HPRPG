@@ -132,7 +132,7 @@ Many \imp{Artificers} seal themselves away in their laboratories\comma{} only su
 \item Create something new and impressive,
 	bonuses = \bonus{Imbue or Craft}{\twoCape}
 \bonus{Arcane or Technology}{\twoCape}
-\bonus{Investigation}{\twoCape}
+\bonus{Intelligence}{\twoCape}
 \bonus{Logic}{\oneCape},
 	innateAbility = Danger,
 	innateDescription = As experimentalists\comma{} most often using themselves as their test subjects\comma{} many {\bname{}}s have had to develop a sixth sense for an incoming explosion when things are suddenly going south. 
@@ -215,6 +215,36 @@ The way in which nature responds is often esoteric and open to interpretation\co
 
 \archetype
 {
+	name = Guru,
+	description = A \bname{} is a person who has dedicated themselves to the art of self\minus{}improvement\comma{} on both a spiritual level\comma{} and on a magical level. 
+
+\bname{}s follow the belief that before you can help others\comma{} you must first be able to help yourself. For this reason\comma{} most of their magics and abilities are focussed inwards\comma{} allowing them to improve and grow their natural abilities to supernatural levels.,
+	experience = \item Overcome an obstacle using inner strength\comma{} or by fortifying their natural abilities,
+	bonuses = \bonus{Conviction}{\twoCape}
+\bonus{Willpower or Insight}{\twoCape}
+\bonus{Brawl or Skirmish}{\oneCape}
+\bonus{Speed or Strength}{\oneCape}
+\bonus{Acrobatics}{\oneCape},
+	innateAbility = Wisdom,
+	innateDescription = On the journey to self\minus{}enlightenment\comma{} you often pick up a few words of wisdom\comma{} parables and ideas about the world. 
+
+With a high \imp{Wisdom}\comma{} you can dispense this wisdom to others – either helping them through difficult times\comma{} or using them to gain a glimpse of insight into the problem at hand. \imp{Wisdom} is infinitely useful\comma{} but often somewhat abstract in its use.,
+	practicalAbility = Glide,
+	practicalDescription = One minute there\comma{} one minute gone: a high \imp{Glide} allows you to move with seemingly superhuman speed\comma{} without actually needing to expend energy running everywhere – instead you simply move with purpose and precision. 
+
+An excellent ability for dodging attacks\comma{} or simply vanishing intoo a crowd when a teacher tries to get a good look at your face. 
+
+This ability isn’t quite magical\comma{} but you have an almost ninja\minus{}like ability to move quietly and unseen.,
+	knowledgeAbility = Self,
+	knowledgeDescription = A \bname{} specialises in the knowledge of the self – the ability to truly know one’s own nature – you cannot be the master of your mind until you know it\comma{} after all. 
+
+A high knowledge in \imp{Self} allows a \bname{} to identify any ongoing effects such as poisons\comma{} or notice when magical effects are subtly manipulating them.,
+	article = A,
+	bonusWidth = 3, feats = \GuruFeats
+}
+
+\archetype
+{
 	name = Outlaw,
 	description = An \bname{} is someone who sits outside the normal constraints of the law (or \comma{} at Hogwarts\comma{} the rules laid down by teachers). Eternally at conflict between their own desires and those of society\comma{} many \bname{}s end up starting into a life of crime\comma{} putting their skills to more nefarious use. 
 
@@ -254,9 +284,7 @@ As an adult\comma{} they are probably familiar with the workings of the penal sy
 
 Whilst the conventional \bname{} is most at home with a chalkboard covered in symbols\comma{} or ensconced in a dusty library\comma{} most scholars these days appreciate that information\comma{} both new and old\comma{} requires stepping outside your traditional comfort zones. You can’t exactly study the behaviour of dragons without going and poking a few dragons\comma{} after all. 
 
-Whilst they prefer to term their adventures `field work’\comma{} there is no doubt that scholarship can sometimes be a dangerous experience. Most \bname{}s will stop at nothing\comma{} however\comma{} to help further their research. 
-
-A \bname{} is typically a hyper\minus{}specialist\comma{} rather than a generalist\comma{} and so chooses one area of knowledge to focus specifically on\comma{} which informs much of their remaining knowledge.,
+Whilst they prefer to term their adventures `field work’\comma{} there is no doubt that scholarship can sometimes be a dangerous experience. Most \bname{}s will stop at nothing\comma{} however\comma{} to help further their research.,
 	experience = \item Use intelligence and knowledge to overcome a significant obstacle
 \item Discover something new or undiscovered relating to your field of expertise.,
 	bonuses = \bonus{Investigation}{\twoCape}
