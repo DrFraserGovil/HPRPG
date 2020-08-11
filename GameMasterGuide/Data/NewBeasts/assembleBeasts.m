@@ -29,6 +29,7 @@ function assembleBeasts(fileNameRoot)
     
     for i = 1:h
         b = Beast(f(i,:));
+
         found = false;
         for j = 1:length(List)
            
@@ -49,6 +50,7 @@ function assembleBeasts(fileNameRoot)
     for i = 1:length(List)
         if length(List(i).Beasts) == 1
             List(i).Name = List(i).Beasts(1).Name;
+
         end
     end
     
@@ -57,7 +59,7 @@ function assembleBeasts(fileNameRoot)
     for j = 1:length(List)
         L = length(List(j).Beasts);
         if L > 1
-            
+       
             entry = "\\species{" + List(j)  .Name + "}\n{\n";
             entry = entry + "\t" + prepareText(List(j).Description) + "\n}\n{\n";
 
@@ -81,7 +83,7 @@ function assembleBeasts(fileNameRoot)
         end
         
         if L == 1
-           text = text + List(j).Beasts(1).print() + "\n\n\n\n"; 
+           text = text + List(j).Beasts(1).print(1) + "\n\n\n\n"; 
         end
     end
     

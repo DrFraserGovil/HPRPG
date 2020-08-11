@@ -64,6 +64,8 @@
 \define@key{beast}{hasImage}{\def\hasImage{#1}}
 \define@key{beast}{image}{\def\image{#1}}
 \define@key{beast}{imageStack}{\def\imageStack{#1}}
+
+\define@key{beast}{speciesOnly}{\def\speciesOnly{#1}}
 %~ \define@key{beast}{hasImmune}{\def\immuneMode{#1}}
 %~ \define@key{beast}{immune}{\def\immune{#1}}
 %~ \define@key{beast}{hasResistance}{\def\resistanceMode{#1}}
@@ -105,7 +107,7 @@
 
 \def\defaultSetter
 {
-	\setkeys{beast}{name = none, species = None, mind = none, rating = Unset, category = none, description = None, fit =0, prs = 0, vit =0, cha = 0, dec = 0, ins = 0, int = 0, wil =0, pcp = 0, nUnharmed =0, nBruised = 0, nHurt = 0, nInjured = 0, nWounded = 0, nMangled = 0,fortitude = 0, skills = 0, hasSkills = 0, block = 0, dodge = 0, defy = 0,hasDamage = 0, damage = , abilities = ,hasAttacks = 0, attacks = None,article = A, hasLanguages = 0, languages = None, hasImage = 0, image = None}
+	\setkeys{beast}{name = none, species = None, mind = none, rating = Unset, category = none, description = None, fit =0, prs = 0, vit =0, cha = 0, dec = 0, ins = 0, int = 0, wil =0, pcp = 0, nUnharmed =0, nBruised = 0, nHurt = 0, nInjured = 0, nWounded = 0, nMangled = 0,fortitude = 0, skills = 0, hasSkills = 0, block = 0, dodge = 0, defy = 0,hasDamage = 0, damage = , abilities = ,hasAttacks = 0, attacks = None,article = A, hasLanguages = 0, languages = None, hasImage = 0, image = None, speciesOnly = 0}
 }
 \newcounter{yCount}
 \newcounter{nonZeroCount}
@@ -205,9 +207,16 @@
 }
 \newcommand\titleBlock
 {
+	\if\speciesOnly0
 	\definecolor{rulered}{HTML}{9C2B1B} 
+		\dndline
 		{ \huge \color{titlered}{\MakeUppercase{\name{}} }}
-		
+		\addcontentsline{toc}{subsection}{\name{}}
+	\else
+		{ \Huge{\MakeUppercase{\name{}} }}
+		\addcontentsline{toc}{section}{\name{}}
+	\fi
+	
 		MoM Rating: \rating{} {\it (\mind{}~\category{}) }
 }
 
@@ -324,7 +333,7 @@
 	
 	\vbox
 	{
-		\dndline
+		
 		\titleBlock{}
 		\if\hasImage0
 			\description{}
@@ -382,5 +391,10 @@
 	#3
 	
 	
+}
+
+\newcommand\speciesBeast[1]
+{
+	\beast{#1, speciesOnly = 1}
 }
 

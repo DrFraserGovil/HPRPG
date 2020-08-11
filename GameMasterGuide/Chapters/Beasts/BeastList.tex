@@ -290,6 +290,8 @@ True to their name\comma{} they also spray acidic juices on their prey\comma{} t
 
 Normally peacable and shy creatures\comma{} they become territorial and violent when their home tree is threatened. 
 
+The classification of the intelligence of the \imp{Bowtruckles} has been somewhat controversial – they are evidently intelligent and able to communicate with and understand humans\comma{} however they do not seem to possess the ability for abstract thinking or tool usage that most consider necessary for a \imp{sapient} classification. 
+
 \ability{Camouflaged}{Bowtruckles blend in perfectly with their trees\comma{} when they wish to pass unnoticed\comma{} they appear as nothing more than a set of leafy twigs. It is only by cathcing them in motion that they can be easily spotted.}
 
 \ability{Natural Climbers}{Living their entire life in trees\comma{} bowtruckles are natural climbers\comma{} and can move across near\minus{}sheer vertical surfaces as easily as they walk}. 
@@ -297,13 +299,35 @@ Normally peacable and shy creatures\comma{} they become territorial and violent 
 \ability{Long Fingers}{Nominally evolved to help dig insects out of the bark of a tree\comma{} the long spindly fingers of a bowtruckle can be used to perform very delicate tasks\comma{} such as picking a lock\comma{} or used offensively to poke out the eyes of those who threaten their treetop homes.}
 }
 {
+\beast{name = Softwood Bowtruckle, species = Bowtruckle, mind = Non\minus{}sapient, category = Imp, rating = II, abilities = \ability{One with wood}{The \name{} may use their \imp{Elusion} ability to appear as a simple twig or leaf. As long as they remain still\comma{} this illusion is near\minus{}perfect.}, article = A, fit =1, prs =3, vit =1, cha =3, dec =1, ins =2, int =2, wil =2, pcp =3, hasDamage = 1, damage =\key{Susceptible} to \textit{Fire}, nUnharmed=1, nBruised=0, nHurt=0, nInjured=1, nWounded=0, nMangled=0, block=1, dodge=2, defy=1, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Elusion}{5}
+\skill{Covert}{4}
+\skill{Acrobatics}{3}
+\skill{Climb}{3}
+\skill{Kindness}{2}
+\skill{Kinship}{2}, hasAttacks = 1, attacks = \melee{Poke}{4}{\minus{}2}{Stabbing damage}{1 + Successes}
+
+\melee{Go for the eyes}{6}{\minus{}1}{Blinded condition}{1 + Successes}, hasLanguages = 1, languages = \understands{Human language}, hasImage = 1, image = bowtruckle, description = The \name{}\comma{} as the name may suggest\comma{} reside within softwood trees\comma{} typically pine\comma{} cedars\comma{} firs\comma{} yews and redwoods\comma{} and prefer a cooler or damper environment than their hardwood cousins. They appear as green\minus{}skinned elfin creatures with leaves growing from random parts of their body\comma{} and are often said to have `kind faces’.
+
+The \imp{Softwood} branch of the family are incredibly flexible\comma{} able to contort themselves through even the smallest of gaps as they hunt for insects\comma{} though this comes at the expense of a natural armour. 
+
+The softwood is the most friendly of the bowtruckle species\comma{} often forming friendships with humans and other animals which they pass down through generations. However\comma{} they have also shown a tendancy to become emotional and sulk when their `friend’ gives them insufficient attention.}
 
 
+\beast{name = Hardwood Bowtruckle, species = Bowtruckle, mind = Non\minus{}sapient, category = Imp, rating = III, abilities = \ability{One with wood}{The \name{} may use their \imp{Elusion} ability to appear as a simple twig or leaf. As long as they remain still\comma{} this illusion is near\minus{}perfect.}
 
+\ability{Charcoal skin}{The first time a \name{} takes \imp{Fire} damage\comma{} it loses its \imp{Susceptibility} to fire damage for 24 hours\comma{} and the \name{} takes on a blackened appearance.}, article = A, fit =2, prs =2, vit =2, cha =1, dec =1, ins =1, int =3, wil =3, pcp =3, hasDamage = 1, damage =\key{Susceptible} to \textit{Fire}, nUnharmed=1, nBruised=1, nHurt=0, nInjured=1, nWounded=1, nMangled=0, block=3, dodge=2, defy=1, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Elusion}{5}
+\skill{Covert}{3}
+\skill{Climb}{3}
+\skill{Brawl}{2}
+\skill{Strength}{2}
+\skill{Bravery}{2}
+\skill{Intimidation}{2}, hasAttacks = 1, attacks = \melee{Poke}{6}{\minus{}2}{Stabbing damage}{1 + Successes}
 
+\melee{Go for the eyes}{7}{\minus{}1}{Blinded condition}{1 + Successes}, hasLanguages = 1, languages = \understands{Human language}, hasImage = 1, image = barktruckle, description = Residing within mighty hardwood trees such as oaks\comma{} ironwoods\comma{} mahoganies and willows\comma{} the Hardwoods are much hardier and more resilient than their softwood bretheren. 
 
+The bodies of the hardwood bowtruckles seem to be composed almost entirely from bark\comma{} wood and twigs intertwined to form the body. Small sproutings of green may be seen from their body during spring (from which their young grow)\comma{} but otherwise they are without discernable features. 
 
-
+This hardiness has evolved because life for the hardwoods is much tougher and more violent than the softwoods. Whilst softwoods are known to form friendships and only attack when provoked\comma{} the hardwoods are more likely to flee or lash out at unwanted visitors.}
 
 
 
@@ -966,7 +990,19 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 
 
 
+\speciesBeast{name = Nogtail, species = Beast Demon, mind = Ineffable, category = Demon, rating = IV, abilities = \ability{Blighting Presence}{A \name{} exudes an aura which curses the land around it for 1km in every direction from its nest. For every week the Nogtail has been nesting\comma{} all beings in this radius take a 1d penalty (max 5d) to all checks made\comma{} plants wither and die\comma{} and animals become sickly and weak. }
 
+\ability{Nogtail Weakness}{If a pure\minus{}white dog is brought within 10m of the \imp{Nogtail}\comma{} it becomes \imp{Terrified} and must use its movement to get as far away from the creature as possible.}
+
+\ability{Moving Target}{On any turn in which the \name{} moves more than half its movement\comma{} it gains +1d to all \imp{Dodge} checks\comma{} and incurs no drain.}, article = A, fit =5, prs =2, vit =3, cha =0, dec =1, ins =1, int =2, wil =4, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{Necrotic}\comma{} \key{Resistant} to \textit{Physical damage} and \key{Susceptible} to \textit{Incandescent}, nUnharmed=3, nBruised=1, nHurt=1, nInjured=1, nWounded=2, nMangled=0, block=1, dodge=6, defy=2, fortitude=3, imageStack=1, hasSkills = 1, skills = \skill{Speed}{6}, hasAttacks = 1, attacks = \melee{Bite}{7}{\minus{}2}{Stabbing damage}{1 + Successes}
+
+\ranged{Focussed Blight}{5}{6}{0}{Necrotic damage}{1 + Successes}
+
+\ability{Energy Reserves}{The \name{} uses some of the cursed energy it has stored in its nest: the effect from the \imp{Blighting presence} becomes one level less severe\comma{} but the \name{} makes a \imp{Focussed Blight} attack against all targets in range.}, hasImage = 1, image = nogtail, description = One of the lesser demons still native to the mortal realm\comma{} the \name{} resembles a stunted piglet\comma{} albeit with a thick stubby tail and elongated legs. 
+
+Nogtails are known to sneak into farms to suckle from an ordinary pig\comma{} bringing with them a terrible\comma{} cursed blight which stuck to the land. Capable of reaching immense speeds on land\comma{} catching a Nogtail is therefore impossible – the only way to drive one off for good is to hunt them down and chase it away with a pure\minus{}white dog. 
+
+The nogtail poses a threat not only because of the blight which follows it\comma{} but because of their voracious appetite\comma{} wicked teeth and willingness to take a bite out of any fool who gets too close to them.}
 
 
 

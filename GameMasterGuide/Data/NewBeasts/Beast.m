@@ -138,11 +138,17 @@ classdef Beast
             obj.ImageStack = tableLine.Stack(1);
         end
         
-        function text = print(obj)
+        function text = print(obj,mode)
+            if nargin < 2
+                mode = 0;
+            end
+            
             text = "";
             if obj.Empty > 0
             text = "\\beast{";
-           
+            if mode == 1
+               text = "\\speciesBeast{"; 
+            end
             
             titles = ["name", "species","mind","category","rating","abilities","article"];
             array = [string(obj.Name), string(obj.Species), string(obj.Mind), string(obj.Category),string(obj.Rating),string(obj.Abilities),string(obj.Article)];
