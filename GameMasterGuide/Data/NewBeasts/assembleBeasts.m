@@ -15,7 +15,7 @@ function assembleBeasts(fileNameRoot)
     f = sortrows(f);
     List = Species.empty;
     for i = 1:height(f)
-        List(i) = Species(f.Name{i},f.Description{i},f.SpeciesPicture{i}, f.PicHeight(i)  );
+        List(i) = Species(f.Name{i},f.Description{i} );
     end
     
     opts = detectImportOptions("beasts.xlsx","NumHeaderLines",2);
@@ -40,7 +40,7 @@ function assembleBeasts(fileNameRoot)
           
         end
        if found == false
-           c = Species(b.Species,"",string.empty,0);
+           c = Species(b.Species,"");
            c.Beasts(end+1) = b;
            List(end+1) = c;
        end

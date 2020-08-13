@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.18)  12 AUG 2020 17:04
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.18)  13 AUG 2020 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3496,564 +3496,874 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--229
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 282--282
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 290--290
 [] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 282.
+(hyperref)                be the same. Added a new anchor on input line 290.
 
 File: ../Images/blackWidow.png Graphic file (type bmp)
 <../Images/blackWidow.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 []\TU/texgyrebonum-regular.otf(0)/m/n/8 Magical experimentation on a \TU/texgyr
 ebonum-regular.otf(0)/m/it/8 Black
  []
 
 
-Underfull \hbox (badness 1472) in paragraph at lines 282--282
+Underfull \hbox (badness 1472) in paragraph at lines 290--290
 \TU/texgyrebonum-regular.otf(0)/m/it/8 Widow \TU/texgyrebonum-regular.otf(0)/m/
 n/8 produced this grossly oversized
  []
 
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 282--282
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 290--290
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 282--282
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 290--290
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 282--282
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 290--290
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 
  []
 
 [23]
-Overfull \hbox (12.63342pt too wide) in paragraph at lines 282--282
+Overfull \hbox (12.63342pt too wide) in paragraph at lines 290--290
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 282--282
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 290--290
 [] 
  []
 
 File: ../Images/tick.jpg Graphic file (type bmp)
 <../Images/tick.jpg>
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 282--282
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 290--290
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 282--282
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 290--290
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 282--282
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 290--290
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 282--282
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 290--290
 [] 
  []
 
+File: ../Images/spraying.jpg Graphic file (type bmp)
+<../Images/spraying.jpg>
 
-! LaTeX Error: File `../Images/spraying' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.282 }
-       
-? 
-
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 282--282
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 290--290
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 282--282
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 290--290
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 282--282
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 290--290
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 
  []
 
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 290--290
+[] 
+ []
+
+File: ../Images/Brood.jpg Graphic file (type bmp)
+<../Images/Brood.jpg>
+
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 290--290
+[]$[]$ $[]$ 
+ []
+
 [24]
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+
+ []
+
+
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 290--290
+[]|[]| 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 290--290
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+[]
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 335--335
 [] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 334.
+(hyperref)                be the same. Added a new anchor on input line 335.
+
+File: ../Images/nogtail.jpg Graphic file (type bmp)
+<../Images/nogtail.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
+
+ []
+
+
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 335--335
+[]|[]| 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 335--335
+[] 
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
+
+ []
+
+
+Overfull \hbox (12.63342pt too wide) in paragraph at lines 335--335
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
+
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 335--335
+[] 
+ []
+
+File: ../Images/kishi.jpg Graphic file (type bmp)
+<../Images/kishi.jpg>
+
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 335--335
+[]$[]$ $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
+
+ []
+
+
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 335--335
+[]|[]| 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 335--335
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
+
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 387--387
+[] 
+ []
+
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 387.
 
 File: ../Images/bowtruckle.png Graphic file (type bmp)
 <../Images/bowtruckle.png>
 
-Underfull \hbox (badness 1014) in paragraph at lines 334--334
+Underfull \hbox (badness 1014) in paragraph at lines 387--387
 \TU/texgyrebonum-regular.otf(0)/m/n/8 ships with humans and other animals
  []
 
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 334--334
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 387--387
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 387--387
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 334--334
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 387--387
 []|[]| 
  []
 
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 334--334
+[26]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 387--387
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 387--387
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 387--387
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 387--387
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 387--387
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 334--334
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 387--387
 [] 
  []
 
+File: ../Images/barktruckle.jpg Graphic file (type bmp)
+<../Images/barktruckle.jpg>
 
-! LaTeX Error: File `../Images/barktruckle' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.334 }
-       
-? 
-
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 334--334
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 387--387
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 387--387
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 334--334
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 387--387
 []|[]| 
  []
 
-[25]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 334--334
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 387--387
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 387--387
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 387--387
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 387--387
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 387--387
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 421--421
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 427--427
 [] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 421.
+(hyperref)                be the same. Added a new anchor on input line 427.
 
-File: ../Images/lethifold.jpg Graphic file (type bmp)
-<../Images/lethifold.jpg>
+File: ../Images/Graphorn.png Graphic file (type bmp)
+<../Images/Graphorn.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 1163) in paragraph at lines 427--427
+\TU/texgyrebonum-regular.otf(0)/m/n/8 golden horns running across its back,
+ []
+
+
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 427--427
+[]$[]$ $[]$ 
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 421--421
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 427--427
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 421--421
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 427--427
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
 
  []
 
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
+
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 427--427
+[] 
+ []
+
+File: ../Images/erumpet.png Graphic file (type bmp)
+<../Images/erumpet.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
+
+ []
+
+
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 427--427
+[]|[]| 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 427--427
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
+
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 427--427
+[] 
+ []
+
+[28]
+File: ../Images/reem.jpg Graphic file (type bmp)
+<../Images/reem.jpg>
+
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 427--427
+[]$[]$ $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
+
+ []
+
+
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 427--427
+[]|[]| 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 427--427
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
+
+ []
+
+File: ../Images/chimera.png Graphic file (type bmp)
+<../Images/chimera.png>
+
+Overfull \hbox (7.25076pt too wide) in paragraph at lines 448--448
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
+
+ []
+
+
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 448--448
+[]|[]| 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 448--448
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
+
+ []
+
+
+Overfull \hbox (12.63342pt too wide) in paragraph at lines 448--448
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
+
+ []
+
+
+Overfull \hbox (12.63342pt too wide) in paragraph at lines 448--448
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
+
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 510--510
+[] 
+ []
+
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 510.
+
+File: ../Images/lethifold.jpg Graphic file (type bmp)
+<../Images/lethifold.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+
+ []
+
+
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 510--510
+[]|[]| 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 510--510
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 510--510
 [] 
  []
 
 File: ../Images/dementor.png Graphic file (type bmp)
 <../Images/dementor.png>
 
-Underfull \hbox (badness 3019) in paragraph at lines 421--421
+Underfull \hbox (badness 3019) in paragraph at lines 510--510
 \TU/texgyrebonum-regular.otf(0)/m/n/8 the Dementor appear as exceptionally
  []
 
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 421--421
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 510--510
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 421--421
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 510--510
 []|[]| 
  []
 
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 421--421
+[30]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 510--510
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 421--421
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 510--510
 [] 
  []
 
 File: ../Images/shuagh.jpg Graphic file (type bmp)
 <../Images/shuagh.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 421--421
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 510--510
 []|[]| 
  []
 
-[27]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 421--421
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 510--510
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
 
  []
 
-[28]
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 938--938
+[31] [32]
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1027--1027
 [] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 938.
+(hyperref)                be the same. Added a new anchor on input line 1027.
 
 File: ../Images/solon.jpg Graphic file (type bmp)
 <../Images/solon.jpg>
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 938--938
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 1027--1027
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 938--938
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1027
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 938--938
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1027--1027
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 938--938
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1027--1027
 [] 
  []
 
-[29]
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 938--938
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1027--1027
 [] 
  []
 
 File: ../Images/phlogiston.jpg Graphic file (type bmp)
 <../Images/phlogiston.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 938--938
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1027
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 938--938
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1027--1027
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 938--938
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1027--1027
 [] 
  []
 
 
-Overfull \hbox (12.63342pt too wide) in paragraph at lines 938--938
+Overfull \hbox (12.63342pt too wide) in paragraph at lines 1027--1027
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 938--938
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1027
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 938--938
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 1027--1027
 [] 
  []
 
 File: ../Images/chalkydri.jpg Graphic file (type bmp)
 <../Images/chalkydri.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 938--938
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1027
 
  []
 
 
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 938--938
-[]|[]| 
- []
-
-[30]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 938--938
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 938--938
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 938--938
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 938--938
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 938--938
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 938--938
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 938--938
-
- []
-
-File: ../Images/nogtail.jpg Graphic file (type bmp)
-<../Images/nogtail.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
-
- []
-
-
-Overfull \hbox (5.59999pt too wide) in paragraph at lines 1005--1005
+Overfull \hbox (5.59999pt too wide) in paragraph at lines 1027--1027
 []|[]| 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 1005--1005
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 1027--1027
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1027
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1027
 
  []
 
-[31]
-Overfull \hbox (12.63342pt too wide) in paragraph at lines 1005--1005
+
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1027
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1027
 
  []
 
-))) (./Chapters/Cosmology.tex [32]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1027
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1027
+
+ []
+
+[34]))) (./Chapters/Cosmology.tex [35]
 Chapter 4.
 
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 21--21
@@ -4094,7 +4404,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 66--66
 |[] 
  []
 
-[33
+[36
 
 
 ]
@@ -4132,7 +4442,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 138--138
 |[] 
  []
 
-[34]
+[37]
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 148--148
 |[] 
  []
@@ -4157,7 +4467,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 184--184
 |[] 
  []
 
-) [35]
+) [38]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
  (./GMGuide.aux)
@@ -4165,12 +4475,12 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 55.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 55.
  ) 
 Here is how much of TeX's memory you used:
- 41946 strings out of 493007
- 802287 string characters out of 6136718
- 941176 words of memory out of 5000000
- 45206 multiletter control sequences out of 15000+600000
+ 41961 strings out of 493007
+ 802920 string characters out of 6136718
+ 941182 words of memory out of 5000000
+ 45235 multiletter control sequences out of 15000+600000
  585840 words of font info for 184 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  62i,18n,75p,10412b,770s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on GMGuide.pdf (36 pages).
+Output written on GMGuide.pdf (39 pages).

@@ -31,69 +31,76 @@
 \contentsline {subsection}{Great Widow{}}{23}{section*.4}
 \contentsline {subsection}{Howling Tick{}}{24}{section*.4}
 \contentsline {subsection}{Spraying Mantis{}}{24}{section*.4}
-\contentsline {section}{Bowtruckle}{24}{section*.4}
-\contentsline {subsection}{Softwood Bowtruckle{}}{25}{section*.5}
-\contentsline {subsection}{Hardwood Bowtruckle{}}{25}{section*.5}
-\contentsline {section}{Ceratothid}{26}{section*.5}
-\contentsline {section}{Cloakwraiths}{26}{section*.5}
-\contentsline {subsection}{Lethifold{}}{26}{section*.6}
-\contentsline {subsection}{Dementor{}}{27}{section*.6}
-\contentsline {subsection}{Shuagh{}}{27}{section*.6}
-\contentsline {section}{Creations}{28}{section*.6}
-\contentsline {section}{Dinosaurs}{28}{section*.6}
-\contentsline {section}{Dragons}{28}{section*.6}
-\contentsline {section}{Elemental Avatar}{28}{section*.6}
-\contentsline {section}{Elf}{28}{section*.6}
-\contentsline {section}{Fairy}{28}{section*.6}
-\contentsline {section}{False Dragon}{28}{section*.6}
-\contentsline {section}{Fish}{28}{section*.6}
-\contentsline {section}{Flora}{28}{section*.6}
-\contentsline {section}{Giants}{28}{section*.6}
-\contentsline {section}{Golem}{29}{section*.6}
-\contentsline {section}{Guardian Spirit}{29}{section*.6}
-\contentsline {section}{Hag}{29}{section*.6}
-\contentsline {section}{Hellion}{29}{section*.6}
-\contentsline {section}{Herald}{29}{section*.6}
-\contentsline {section}{Hobgoblin}{29}{section*.6}
-\contentsline {section}{Hybrid}{29}{section*.6}
-\contentsline {section}{Insectum Magicae}{29}{section*.6}
-\contentsline {section}{Lich}{29}{section*.6}
-\contentsline {section}{Light Elemental}{29}{section*.6}
-\contentsline {subsection}{Solon{}}{29}{section*.7}
-\contentsline {subsection}{Phlogiston{}}{30}{section*.7}
-\contentsline {subsection}{Chalkydri{}}{30}{section*.7}
-\contentsline {section}{Mammalia Magicae}{31}{section*.7}
-\contentsline {section}{Mundane Animal}{31}{section*.7}
-\contentsline {section}{Nogtail{}}{31}{section*.7}
-\contentsline {section}{Ogre}{32}{section*.7}
-\contentsline {section}{Ophidian}{32}{section*.7}
-\contentsline {section}{Ornithes Magicae}{32}{section*.7}
-\contentsline {section}{Pegasus}{32}{section*.7}
-\contentsline {section}{Puffskeins}{32}{section*.7}
-\contentsline {section}{Raised Dead}{32}{section*.7}
-\contentsline {section}{Salamanders}{32}{section*.7}
-\contentsline {section}{Soldiers of the Abyss}{32}{section*.7}
-\contentsline {section}{Unicorns}{32}{section*.7}
-\contentsline {section}{Water Demons}{32}{section*.7}
-\contentsline {section}{Werewolf}{32}{section*.7}
-\contentsline {section}{Wyverns}{32}{section*.7}
-\contentsline {chapter}{\numberline {4}Cosmology}{33}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.1}The Mortal World}{33}{subsection.4.0.1}
-\contentsline {subsection}{\numberline {4.0.2}The Astral Realm}{33}{subsection.4.0.2}
-\contentsline {subsection}{\numberline {4.0.3}The Higher Planes}{33}{subsection.4.0.3}
-\contentsline {subsection}{\numberline {4.0.4}The Eldritch Domains}{33}{subsection.4.0.4}
-\contentsline {subsection}{\numberline {4.0.5}The Void}{33}{subsection.4.0.5}
-\contentsline {section}{\numberline {4.1}Higher Planes}{33}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Abyss: The Plane of Terror}{33}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Aeolus: The Plane of Storms and Winds}{34}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Eden: The Plane of Nature}{34}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Elysium: The Plane of Blessings}{34}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Hades: The Plane of Death}{34}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}Hyperborea: The Plane of Ice}{34}{subsection.4.1.6}
-\contentsline {subsection}{\numberline {4.1.7}Machina: The Plane of Order}{34}{subsection.4.1.7}
-\contentsline {subsection}{\numberline {4.1.8}Nirvana: The Plane of Peace}{34}{subsection.4.1.8}
-\contentsline {subsection}{\numberline {4.1.9}Pand{\ae }monium: The Plane of Chaos}{35}{subsection.4.1.9}
-\contentsline {subsection}{\numberline {4.1.10}Scholomancia: The Plane of Knowledge}{35}{subsection.4.1.10}
-\contentsline {subsection}{\numberline {4.1.11}Tartarus: The Plane of Torture}{35}{subsection.4.1.11}
-\contentsline {subsection}{\numberline {4.1.12}Valhalla: The Plane of Bravery}{35}{subsection.4.1.12}
-\contentsline {subsection}{\numberline {4.1.13}Vulcan: The Plane of Fire}{35}{subsection.4.1.13}
+\contentsline {subsection}{Brood Mother{}}{24}{section*.4}
+\contentsline {section}{Beast Demon}{25}{section*.4}
+\contentsline {subsection}{Nogtail{}}{25}{section*.5}
+\contentsline {subsection}{Kishi{}}{26}{section*.5}
+\contentsline {section}{Bowtruckle}{26}{section*.5}
+\contentsline {subsection}{Softwood Bowtruckle{}}{26}{section*.6}
+\contentsline {subsection}{Hardwood Bowtruckle{}}{27}{section*.6}
+\contentsline {section}{Ceratothid}{27}{section*.6}
+\contentsline {subsection}{Graphorn{}}{27}{section*.7}
+\contentsline {subsection}{Erumpent{}}{28}{section*.7}
+\contentsline {subsection}{Re'em{}}{29}{section*.7}
+\contentsline {section}{Chimera{}}{29}{section*.7}
+\contentsline {section}{Cloakwraiths}{30}{section*.7}
+\contentsline {subsection}{Lethifold{}}{30}{section*.8}
+\contentsline {subsection}{Dementor{}}{30}{section*.8}
+\contentsline {subsection}{Shuagh{}}{31}{section*.8}
+\contentsline {section}{Creations}{31}{section*.8}
+\contentsline {section}{Dinosaurs}{31}{section*.8}
+\contentsline {section}{Dragons}{32}{section*.8}
+\contentsline {section}{Elemental Avatar}{32}{section*.8}
+\contentsline {section}{Elf}{32}{section*.8}
+\contentsline {section}{Fairy}{32}{section*.8}
+\contentsline {section}{False Dragon}{32}{section*.8}
+\contentsline {section}{Fish}{32}{section*.8}
+\contentsline {section}{Flora}{32}{section*.8}
+\contentsline {section}{Giants}{32}{section*.8}
+\contentsline {section}{Golem}{32}{section*.8}
+\contentsline {section}{Guardian Spirit}{32}{section*.8}
+\contentsline {section}{Hag}{32}{section*.8}
+\contentsline {section}{Hellion}{33}{section*.8}
+\contentsline {section}{Herald}{33}{section*.8}
+\contentsline {section}{Hobgoblin}{33}{section*.8}
+\contentsline {section}{Hybrid}{33}{section*.8}
+\contentsline {section}{Insectum Magicae}{33}{section*.8}
+\contentsline {section}{Lich}{33}{section*.8}
+\contentsline {section}{Light Elemental}{33}{section*.8}
+\contentsline {subsection}{Solon{}}{33}{section*.9}
+\contentsline {subsection}{Phlogiston{}}{33}{section*.9}
+\contentsline {subsection}{Chalkydri{}}{34}{section*.9}
+\contentsline {section}{Mammalia Magicae}{35}{section*.9}
+\contentsline {section}{Mundane Animal}{35}{section*.9}
+\contentsline {section}{Ogre}{35}{section*.9}
+\contentsline {section}{Ophidian}{35}{section*.9}
+\contentsline {section}{Ornithes Magicae}{35}{section*.9}
+\contentsline {section}{Pegasus}{35}{section*.9}
+\contentsline {section}{Puffskeins}{35}{section*.9}
+\contentsline {section}{Raised Dead}{35}{section*.9}
+\contentsline {section}{Salamanders}{35}{section*.9}
+\contentsline {section}{Soldiers of the Abyss}{35}{section*.9}
+\contentsline {section}{Unicorns}{35}{section*.9}
+\contentsline {section}{Water Demons}{35}{section*.9}
+\contentsline {section}{Werewolf}{35}{section*.9}
+\contentsline {section}{Wyverns}{35}{section*.9}
+\contentsline {chapter}{\numberline {4}Cosmology}{36}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.1}The Mortal World}{36}{subsection.4.0.1}
+\contentsline {subsection}{\numberline {4.0.2}The Astral Realm}{36}{subsection.4.0.2}
+\contentsline {subsection}{\numberline {4.0.3}The Higher Planes}{36}{subsection.4.0.3}
+\contentsline {subsection}{\numberline {4.0.4}The Eldritch Domains}{36}{subsection.4.0.4}
+\contentsline {subsection}{\numberline {4.0.5}The Void}{36}{subsection.4.0.5}
+\contentsline {section}{\numberline {4.1}Higher Planes}{36}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Abyss: The Plane of Terror}{36}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Aeolus: The Plane of Storms and Winds}{37}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Eden: The Plane of Nature}{37}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Elysium: The Plane of Blessings}{37}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Hades: The Plane of Death}{37}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}Hyperborea: The Plane of Ice}{37}{subsection.4.1.6}
+\contentsline {subsection}{\numberline {4.1.7}Machina: The Plane of Order}{37}{subsection.4.1.7}
+\contentsline {subsection}{\numberline {4.1.8}Nirvana: The Plane of Peace}{37}{subsection.4.1.8}
+\contentsline {subsection}{\numberline {4.1.9}Pand{\ae }monium: The Plane of Chaos}{38}{subsection.4.1.9}
+\contentsline {subsection}{\numberline {4.1.10}Scholomancia: The Plane of Knowledge}{38}{subsection.4.1.10}
+\contentsline {subsection}{\numberline {4.1.11}Tartarus: The Plane of Torture}{38}{subsection.4.1.11}
+\contentsline {subsection}{\numberline {4.1.12}Valhalla: The Plane of Bravery}{38}{subsection.4.1.12}
+\contentsline {subsection}{\numberline {4.1.13}Vulcan: The Plane of Fire}{38}{subsection.4.1.13}

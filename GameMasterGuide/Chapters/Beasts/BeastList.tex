@@ -275,7 +275,60 @@ The Howling Tick has the magical ability to grow in size when it feeds\comma{} h
 True to their name\comma{} they also spray acidic juices on their prey\comma{} to aid in their eventual digestion.}
 
 
+\beast{name = Brood Mother, species = Arachnid, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = \ability{Webwalker}{\article{} \name{} takes no movement penalty on webbed surfaces\comma{} and uses their \imp{Inhuman Senses} to sense vibrations in their webs.}   
 
+\ability{Sticky Feet}{A \name{} may use their \imp{Climbing} ability to walk on any vertical surface.}
+
+\ability{Nest Builder}{If a \name{} spends more than one day in a location\comma{} they begin to construct a nest – a region up to 5m in radius around some central point. Whilst within their nest\comma{} a \name{} gets +1d to all checks.}, article = A, fit =2, prs =3, vit =2, cha =0, dec =1, ins =1, int =2, wil =2, pcp =3, hasDamage = 1, damage =\key{Resistant} to \textit{Poison}, nUnharmed=2, nBruised=1, nHurt=1, nInjured=1, nWounded=1, nMangled=1, block=2, dodge=2, defy=1, fortitude=3, imageStack=0, hasSkills = 1, skills = \skill{Inhuman Senses}{5} 
+\skill{Climb}{3} 
+\skill{Covert}{4} 
+\skill{Command}{3}, hasAttacks = 1, attacks = \meleeConsequence{Poison Fangs}{4}{\minus{}1}{Stabbing damage}{1 + Successes}{If the attack deals any damage\comma{} the victim takes the \imp{Poisoned} status (1 \imp{harm}\comma{} requires 10 successes)}
+\ability{Hatch Brood}{Perform a DV 7 \imp{Command} check\comma{} hatching a number of spiders equal to the successes into a space adjacent to the \name{}. Each hatchling has 1 level of health\comma{} but otherwise has the same statistics as the \name{}\comma{} without the \imp{Hatch Brood} ability..}, hasLanguages = 1, languages = \understands{Spider Tongue}, hasImage = 1, image = Brood, description = This grossly oversized spider is the result of a freak mutation which  causes them to grow to grotesque sizes and become viciously maternal. A Brood Mother will collect any and all spider eggs that it finds and nuture them as if they were her own in the dark\comma{} secluded where she has built her nest.}
+
+
+
+}
+
+
+
+
+\species{Beast Demon}
+{
+	Demons prowled the earth for many millenia before the dawn of human civilization\comma{} and come in many thousands of shapes and forms. The \imp{Beast Demons} are those which share – at least to a cursory glance – a visual similarity with a non\minus{}magical creature\comma{} as well as a more bestial intelligence\comma{} and reliance on primal instinct above tactics and reasoned thought. 
+
+Typically using their more unassuming forms to get close to their prey\comma{} they unleash their demonic fury and hunger upon their prey\comma{} leaving no trace of their meal.
+}
+{
+\beast{name = Nogtail, species = Beast Demon, mind = Ineffable, category = Demon, rating = IV, abilities = \ability{Blighting Presence}{A \name{} exudes an aura which curses the land around it for 1km in every direction from its nest. For every week the Nogtail has been nesting\comma{} all beings in this radius take a 1d penalty (max 5d) to all checks made\comma{} plants wither and die\comma{} and animals become sickly and weak. }
+
+\ability{Nogtail Weakness}{If a pure\minus{}white dog is brought within 10m of the \imp{Nogtail}\comma{} it becomes \imp{Terrified} and must use its movement to get as far away from the creature as possible.}
+
+\ability{Moving Target}{On any turn in which the \name{} moves more than half its movement\comma{} it gains +1d to all \imp{Dodge} checks\comma{} and incurs no drain.}, article = A, fit =5, prs =2, vit =3, cha =0, dec =1, ins =1, int =2, wil =4, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{Necrotic}\comma{} \key{Resistant} to \textit{Physical damage} and \key{Susceptible} to \textit{Incandescent}, nUnharmed=3, nBruised=1, nHurt=1, nInjured=1, nWounded=2, nMangled=0, block=1, dodge=6, defy=2, fortitude=3, imageStack=1, hasSkills = 1, skills = \skill{Speed}{6}, hasAttacks = 1, attacks = \melee{Bite}{7}{\minus{}2}{Stabbing damage}{1 + Successes}
+
+\ranged{Focussed Blight}{5}{6}{0}{Necrotic damage}{1 + Successes}
+
+\ability{Energy Reserves}{The \name{} uses some of the cursed energy it has stored in its nest: the effect from the \imp{Blighting presence} becomes one level less severe\comma{} but the \name{} makes a \imp{Focussed Blight} attack against all targets in range.}, hasImage = 1, image = nogtail, description = One of the lesser demons still native to the mortal realm\comma{} the \name{} resembles a stunted piglet\comma{} albeit with a thick stubby tail and elongated legs. 
+
+Nogtails are known to sneak into farms to suckle from an ordinary pig\comma{} bringing with them a terrible\comma{} cursed blight which stuck to the land. Capable of reaching immense speeds on land\comma{} catching a Nogtail is therefore impossible – the only way to drive one off for good is to hunt them down and chase it away with a pure\minus{}white dog. 
+
+The nogtail poses a threat not only because of the blight which follows it\comma{} but because of their voracious appetite\comma{} wicked teeth and willingness to take a bite out of any fool who gets too close to them.}
+
+
+\beast{name = Kishi, species = Beast Demon, mind = Ineffable, category = Demon, rating = V, abilities = \ability{Carrion Hauler}{The \name{} does not have its speed halved when dragging a \imp{grappled} foe unless they are {\it significantly} heavier than the \name{}. }
+
+\ability{Two Mouths}{The \name{} may use its \imp{Hypnotic Words} ability whilst \imp{Grappling} a foe\comma{} but not its \imp{Evicerating Bite}.}, article = A, fit =4, prs =3, vit =2, cha =5, dec =5, ins =3, int =3, wil =4, pcp =2, hasDamage = 0, nUnharmed=2, nBruised=1, nHurt=0, nInjured=2, nWounded=0, nMangled=2, block=2, dodge=3, defy=3, fortitude=3, imageStack=0, hasSkills = 1, skills = \skill{Eloquence}{4}
+\skill{Intimidation}{3}
+\skill{Spellcasting}{3}
+\skill{Speed}{3}
+\skill{Cover}{3}, hasAttacks = 1, attacks = \melee{Evicerating Bite}{6}{\minus{}1}{Stabbing damage}{3 + Successes}
+
+\melee{Swift Scratch}{4}{\minus{}1}{Cutting damage}{1 + Successes}
+
+\melee{Latching Bite}{4}{0}{Grappled Status}{6 + Successes}
+
+\ability{Hypnotic Words}{The \name{} may use its \imp{Spellcasting} ability to cast the \imp{Charm} and \imp{Delude} spells. }, hasLanguages = 1, languages = \speaks{Human languages\comma{} Abyssal}, hasImage = 1, image = kishi, description = Native to the southern part of Africa\comma{} this demonic entity takes the form of a beautifully sleek and well\minus{}kept hyena\comma{} marred only by the addition of a humanoid head protruding from the back of its normal snouted face.
+
+This human face speaks honeyed words in a calming\comma{} almost hypnotic voice and is known to lure children out into the darkness\comma{} where the hyena mouth uses its wickedly long teeth and near\minus{}unbreakable grip to maul any who cross its path.}
 
 
 
@@ -341,13 +394,33 @@ This hardiness has evolved because life for the hardwoods is much tougher and mo
 	The Ceratothids are a family of loosely related magical quadrupeds. Defined by their huge bulk and relatively bovine\minus{}like appearance\comma{} most Ceratothid\apos{}s have a gentle temperament until angered\comma{} at which point their great mass and inherent magic makes them dangerous foes.
 }
 {
+\beast{name = Graphorn, species = Ceratothid, mind = Non\minus{}sapient, category = Beast, rating = IV, abilities = \ability{Graphorn Hide}{Whenever an attack \imp{Power} is reduced to zero by a \imp{Resist}\comma{} the \name{} takes no \imp{Drain}.}, article = A, fit =3, prs =1, vit =5, cha =1, dec =0, ins =1, int =1, wil =2, pcp =3, hasDamage = 1, damage =\key{Resistant} to \textit{Physical damage}, nUnharmed=6, nBruised=2, nHurt=0, nInjured=2, nWounded=0, nMangled=2, block=6, dodge=1, defy=6, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Strength}{4}
+\skill{Indimidation}{3}
+\skill{Bravery}{3}, hasAttacks = 1, attacks = \meleeConsequence{Horn Gore}{7}{0}{Stabbing Damage}{2 + Successes}{If the \name{} moves at least half its full movement before taking this attack\comma{} it deals an additional three levels of harm.}
+
+\meleeConsequence{Body Slam}{5}{\minus{}2}{Crushing Damage}{3 + Successes}{This ability leaves the \name{} \imp{Prone} }
+
+\melee{Tail strike}{(range 3m)\comma{} 6}{\minus{}2}{Bashing damage}{1 + Successes}, hasImage = 1, image = Graphorn, description = The Graphorn is found in mountainous European regions. Large and greyish purple with a humped back\comma{} the Graphorn has a number of very long\comma{} sharp and golden horns running across its back\comma{} walks on large\comma{} four\minus{}thumbed feet\comma{} and has an extremely aggressive nature. Their mouth is surrounded by a number of prehensile tendrils\comma{} which they use both for manipulating food\comma{} and for sensing their surroundings. 
+
+Mountain trolls can occasionally be seen mounted on Graphorns\comma{} though the latter do not seem to take kindly to attempts to tame them and it is more common to see a troll covered in Graphorn scars. Powdered Graphorn horn is used in many potions\comma{} though it is immensely expensive owing to the difficulty in collecting it. Graphorn hide is even tougher than a dragon’s and repels most spells.}
 
 
+\beast{name = Erumpent, species = Ceratothid, mind = Non\minus{}sapient, category = Beast, rating = V, abilities = \ability{Erumpent Hide}{When the \imp{Block} ability is reduced to zero through \imp{Drain}\comma{} the \imp{Erumpent} loses its immunity to spells.}, article = An, fit =3, prs =2, vit =4, cha =1, dec =1, ins =1, int =1, wil =1, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{\imp{Elemental spells\comma{} Hexes } and \imp{Curses} cast below \levelFour{} level.}, nUnharmed=5, nBruised=2, nHurt=3, nInjured=1, nWounded=0, nMangled=1, block=4, dodge=1, defy=3, fortitude=2, imageStack=1, hasSkills = 1, skills = \skill{Strength}{5}, hasAttacks = 1, attacks = \meleeConsequence{Impale}{7}{\minus{}1}{Stabbing Damage}{2 + Successes}{Attempts to \imp{Block} this attack automatically fail.}
+
+\meleeConsequence{Body Slam}{5}{\minus{}2}{Crushing Damage}{3 + Successes}{This ability leaves the \name{} \imp{Prone} }
+
+\ability{Explosive Injection}{Select a target harmed by the \imp{Impale} attack within the last 3 rounds. A n explosion is triggered with radius 5m\comma{} centred on that target\comma{} dealing level 6 \imp{Fire} damage to all in range.}, hasImage = 1, image = erumpet, description = An enourmous\comma{} rhinocerous\minus{}like magical beast hailing from Africa\comma{} the Erumpent is an extremely dangeous beast\comma{} thanks to the gigantic horn which protrudes from its head. 
+
+This horn pierces even the toughest armour and contains a naturally\minus{}occuring alchemical which causes whatever it is injected into to detonate in a mighty explosion. In addition to this overwhelming (literal) firepower\comma{} the Erumpent’s hide is near\minus{}immune to many powerful magics.}
 
 
+\beast{name = Re'em, species = Ceratothid, mind = Non\minus{}sapient, category = Beast, rating = IV, abilities = \ability{Unstoppable}{Once it has started moving\comma{} the magic within the \name{}’s blood negates all magic which would stop it\comma{} slow it\comma{} or otherwise alter its course. }, article = A, fit =7, prs =2, vit =4, cha =2, dec =0, ins =1, int =1, wil =1, pcp =2, hasDamage = 1, damage =\key{Resistant} to \textit{Physical damage}, nUnharmed=4, nBruised=0, nHurt=2, nInjured=0, nWounded=3, nMangled=2, block=5, dodge=1, defy=3, fortitude=2, imageStack=0, hasSkills = 1, skills = \skill{Strength}{9}, hasAttacks = 1, attacks = \ability{Trampling Charge}{The \name{} moves in a straight line a distance equal to its movement speed\comma{} tracing a cylinder with a 1m radius. Any being caught in this region which does not use the \imp{Dodge} action (Or have an ally do the same to save them) takes level 5 \imp{crushing} damage. }
 
+\meleeConsequence{Body Slam}{6}{\minus{}2}{Crushing Damage}{3 + Successes}{This ability leaves the \name{} \imp{Prone} }, hasImage = 1, image = reem, description = Once abundant across the North American continent\comma{} the mighty \name{} has been hunted to near extinction. Their mighty frames reach up to 3m\comma{} and are completely covered in a lustrous golden hide.
 
+Though exquisite\comma{} this hide is not the reason for their desirability as prey: rather it is their blood\comma{} which acts as a powerful alchemical reagent\comma{} imparting on the drinker a fraction of the immense strength of the \name{}. 
 
+It is said that once a \name{} has started moving\comma{} no force\comma{} physical or magical can stop them or change their path unless they choose to – researchers have found that diving out of the way of the path of a \name{} on the warpath is often the most sensible option.}
 
 
 
@@ -356,7 +429,23 @@ This hardiness has evolved because life for the hardwoods is much tougher and mo
 
 
 
+\speciesBeast{name = Chimera, species = Chimera, mind = Non\minus{}sapient, category = Monstrosity, rating = VII, abilities = \ability{Eyes everywhere}{A \name{} has perfect 360$^\circ$ vision\comma{} and cannot be snuck up upon or surprised\comma{} except by magical invisibility.}, article = A, fit =4, prs =4, vit =5, cha =2, dec =2, ins =2, int =4, wil =6, pcp =7, hasDamage = 0, nUnharmed=6, nBruised=4, nHurt=3, nInjured=2, nWounded=2, nMangled=0, block=5, dodge=6, defy=5, fortitude=7, imageStack=1, hasAttacks = 1, attacks = \ability{Multiheaded}{As a single \imp{Major action}\comma{} each head may make an attack of their choosing\comma{} or attempt to negate an incoming attack.}
 
+\melee{Lion’s Bite}{12}{\minus{}2}{Stabbing damage}{1 + Successes}
+
+\area{Lion’s Roar}{all beings within 30m who can hear}{7}{0}{Terrified status}{4 + Successes}
+
+\ranged{Goat’s Flame}{10}{6}{\minus{}1}{FIre damage}{3 + Successes}
+
+\melee{Goat’s Electrification}{5}{\minus{}1}{Electric damage}{4 + Successes}
+
+\melee{Snake’s Bite}{(range 2m) 8}{\minus{}1}{Stabbing damage}{1 + Successes}
+
+\rangedConsequence{Snake’s Poison}{10m}{7}{0}{Poison damage}{1 + Successes}{If the being takes harm from this attack\comma{} they take the \imp{Poisoned} status (2 \imp{harm}\comma{} requires 10 \imp{successes})}, hasImage = 1, image = chimera, description = One of the most dangerous\comma{} and notorious\comma{} artificial magical creatues in all of history\comma{} the \imp{Chimera} truly is a terrifying beast. Said to have been created by the mad witch \imp{Echidna}\comma{} the `mother of monsters’\comma{} the \name{} escaped into the world and began their reign of terror. 
+
+Possessing the heads of both a lion and a goat\comma{} with a further snake\minus{}head protruding from its serpentine tail – all of which have the ability to act independently\comma{} the chimera would be terrifying enough with this alone. Alas\comma{} \imp{Echidna} was not yet done – the goat’s head has the ability to breath gouts of fire and summon bolts of lightning\comma{} whilst the lion’s head can release a howl which pierces deep into the minds of those unfortunate enough to be surrounding it. 
+
+Only one wizard is on record as having successfully defeating a chimera – and they were killed by the sheer effort required. Humanity is lucky that the chimera are also incredibly individualistic and violent towards their own kind\comma{} only mating once a century – else chimera would probably be the dominant species on this planet.}
 
 
 
@@ -987,22 +1076,6 @@ Though they do not seem particularly intelligent\comma{} and are currently class
 
 }
 
-
-
-
-\speciesBeast{name = Nogtail, species = Beast Demon, mind = Ineffable, category = Demon, rating = IV, abilities = \ability{Blighting Presence}{A \name{} exudes an aura which curses the land around it for 1km in every direction from its nest. For every week the Nogtail has been nesting\comma{} all beings in this radius take a 1d penalty (max 5d) to all checks made\comma{} plants wither and die\comma{} and animals become sickly and weak. }
-
-\ability{Nogtail Weakness}{If a pure\minus{}white dog is brought within 10m of the \imp{Nogtail}\comma{} it becomes \imp{Terrified} and must use its movement to get as far away from the creature as possible.}
-
-\ability{Moving Target}{On any turn in which the \name{} moves more than half its movement\comma{} it gains +1d to all \imp{Dodge} checks\comma{} and incurs no drain.}, article = A, fit =5, prs =2, vit =3, cha =0, dec =1, ins =1, int =2, wil =4, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{Necrotic}\comma{} \key{Resistant} to \textit{Physical damage} and \key{Susceptible} to \textit{Incandescent}, nUnharmed=3, nBruised=1, nHurt=1, nInjured=1, nWounded=2, nMangled=0, block=1, dodge=6, defy=2, fortitude=3, imageStack=1, hasSkills = 1, skills = \skill{Speed}{6}, hasAttacks = 1, attacks = \melee{Bite}{7}{\minus{}2}{Stabbing damage}{1 + Successes}
-
-\ranged{Focussed Blight}{5}{6}{0}{Necrotic damage}{1 + Successes}
-
-\ability{Energy Reserves}{The \name{} uses some of the cursed energy it has stored in its nest: the effect from the \imp{Blighting presence} becomes one level less severe\comma{} but the \name{} makes a \imp{Focussed Blight} attack against all targets in range.}, hasImage = 1, image = nogtail, description = One of the lesser demons still native to the mortal realm\comma{} the \name{} resembles a stunted piglet\comma{} albeit with a thick stubby tail and elongated legs. 
-
-Nogtails are known to sneak into farms to suckle from an ordinary pig\comma{} bringing with them a terrible\comma{} cursed blight which stuck to the land. Capable of reaching immense speeds on land\comma{} catching a Nogtail is therefore impossible – the only way to drive one off for good is to hunt them down and chase it away with a pure\minus{}white dog. 
-
-The nogtail poses a threat not only because of the blight which follows it\comma{} but because of their voracious appetite\comma{} wicked teeth and willingness to take a bite out of any fool who gets too close to them.}
 
 
 
