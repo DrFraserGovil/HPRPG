@@ -4,48 +4,33 @@ function assembleTools(fileNameRoot)
         addpath('../Functions/');
         fileNameRoot = '../../Chapters/Part3_Items/';
     end
-    tools = readtable('Items/tools.xlsx');
+    tools = readtable('tools.xlsx');
     tools = sortrows(tools);
 
-    fileName = fileNameRoot + "Tools.tex";
-    readFile = fileread(fileName);
+    fileName = fileNameRoot + "toolList.tex";
+    
 
-
-    insertPoint = strfind(readFile, '%%ToolsBegin');
-
-    endPoint = strfind(readFile, '%%ToolsEnd');
-
-    firstHalf = prepareText(readFile(1:insertPoint+13));
-
-    secondHalf = prepareText(readFile(endPoint:end));
-
-
-    preamble = ' \begin{center}\begin{rndtable}{|l l l|}';
-    headers = '\hline \normalsize \bf Name & \normalsize \bf Weight & \normalsize \bf Cost \\ \hline ';
-
-    text = [preamble headers];
-    text = prepareText(text);
+    text = "";
     n = size(tools);
-    descriptionText = "";
-    for (i = 1:n)
+
+    for i = 1:n
         if ~isempty(tools.Name{i})
             tool = prepareText(tools.Name{i});
-            weight = prepareText(tools.Weight{i});
-            cost = prepareText(tools.Cost(i));
-            description = prepareText(tools.Description{i});
-            line = strcat('\t\\bf ',{' '}, tool, '\t&\t ', weight, '\t&\t', cost, '\n \\\\ \n'); 
-            text = strcat(text,line);
-
-            entry = strcat('\n \n \\tool{',tool,'}{',description,'}');
-            descriptionText = descriptionText + entry;
+            attribute =  prepareText(tools.Attribute{i});
+            components =  prepareText(tools.Components{i});
+            description = prepareText(tools.Purpose{i});
+            
+            
+            
+            
+            line = "\\tool{"+tool + "}{" + attribute + "}{" + components + "}{" + description +"}\n";
+            text = text + line;
         end
     end
-    ender = '\\hline\n\\end{rndtable}\n\\end{center} \n';
-
-    fullText = strcat(firstHalf, text, ender, descriptionText, secondHalf);
+   
 
 
 
     FID = fopen(fileName,'w');
-    fprintf(FID,fullText);
+    fprintf(FID,text);
 end

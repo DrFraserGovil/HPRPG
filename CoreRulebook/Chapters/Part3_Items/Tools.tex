@@ -1,21 +1,29 @@
 \chapter{Tools}\label{S:Tools}
 
-%~ \newcommand\tool[2]
-%~ {
-	%~ \vspace{2 ex}
-	%~ \small
-	%~ \vbox{
-	%~ {\bf #1}
+\newcommand\tool[4]
+{
 	
-	%~ #2
-	%~ }
-	%~ \normalsize
-%~ }
+	\begin{rndtable}{r p{7cm}}
+		\multicolumn{2}{c}{\large \key{#1}}
+		\\
+		\key{Attribute} & {#2}
+		\\
+		\key{Components} & {#3}
+		\\
+		\key{Purpose} & {#4}
+	\end{rndtable}
+	\vspace{0.5 cm}
+}
 
 %~ A tool helps you to do something you couldn't otherwise do with your bare hands \minus{}\minus{} or even with your wand \minus{}\minus{} such as craft or repair an item\comma{} forge a document\comma{} or pick a lock. Anyone can use a tool\comma{} but only someone who is proficient in it will be able to use a tool to its full potential. Proficiency in a tool is granted through Racial or Archetype abilities\comma{} or by taking the Tool\minus{}User Skill. 
 
-%~ A common list of tools is presented below:
+A \key{tool} is a special item which is necessary for the completion of a specific task. Without having the tool to hand, completing the task becomes much more difficult as you are forced to \imp{improvise} the tools yourself - as per page \pageref{S:Quality}, using \imp{Improvised} tools imposes a -2d to any checks, and raises the \imp{Catastrophe Limit} by one. Without the appropriate tools, checks are therefore much harder and much more likely to end in \imp{catastrophe}.
 
+Tools all cost around \galleon{1} to purchase, as even at a \imp{Normal} quality, they represent finely crafted or lightly enchanted items which can be used again and again. 
+
+A common list of tools is presented below:
+
+\input{Chapters/Part3_Items/toolList}
 
 %~ %%ToolsBegin
   %~ \begin{center}\begin{rndtable}{|l l l|}\hline \normalsize \bf Name & \normalsize \bf Weight & \normalsize \bf Cost \\ \hline 	\bf Alchemy Gear	&	Medium	&	\sickle{11}~\knut{25}
