@@ -329,24 +329,31 @@
 \contentsline {subsubsection}{A Note on Roleplaying}{74}{subsubsection*.160}
 \contentsline {section}{\numberline {23.2}Casting Checks}{75}{section.23.2}
 \contentsline {subsection}{\numberline {23.2.1}Casting Failure}{75}{subsection.23.2.1}
-\contentsline {subsection}{\numberline {23.2.2}Success}{75}{subsection.23.2.2}
-\contentsline {subsubsection}{Inherent Effect}{76}{subsubsection*.161}
-\contentsline {subsubsection}{Required Successes}{76}{subsubsection*.162}
-\contentsline {subsubsection}{Optional Successes}{76}{subsubsection*.163}
-\contentsline {subsubsection}{Example Spellcasting}{76}{subsubsection*.164}
-\contentsline {section}{\numberline {23.3}Extended Casting}{77}{section.23.3}
-\contentsline {subsection}{\numberline {23.3.1}Concentration}{77}{subsection.23.3.1}
-\contentsline {subsection}{\numberline {23.3.2}Catch-Casting}{77}{subsection.23.3.2}
-\contentsline {subsection}{\numberline {23.3.3}Rituals}{77}{subsection.23.3.3}
-\contentsline {chapter}{\numberline {24}Negating Spells}{78}{chapter.24}
-\contentsline {subsubsection}{Example Negations}{78}{subsubsection*.165}
-\contentsline {chapter}{\numberline {25}Learning Spells}{79}{chapter.25}
-\contentsline {subsection}{\numberline {25.0.1}Teachers}{79}{subsection.25.0.1}
-\contentsline {subsection}{\numberline {25.0.2}Books}{79}{subsection.25.0.2}
-\contentsline {subsubsection}{Magical Aura}{79}{subsubsection*.166}
-\contentsline {subsubsection}{Depleted Spellbooks}{79}{subsubsection*.167}
-\contentsline {subsection}{\numberline {25.0.3}Trial and Error}{79}{subsection.25.0.3}
-\contentsline {subsection}{\numberline {25.0.4}Finalising the Learning}{80}{subsection.25.0.4}
+\contentsline {section}{\numberline {23.3}Spellcasting Success}{75}{section.23.3}
+\contentsline {subsection}{\numberline {23.3.1}Required Successes}{76}{subsection.23.3.1}
+\contentsline {subsubsection}{Insufficient Successes}{76}{subsubsection*.161}
+\contentsline {subsection}{\numberline {23.3.2}Calculating Effect}{76}{subsection.23.3.2}
+\contentsline {subsubsection}{Power}{76}{subsubsection*.162}
+\contentsline {subsubsection}{Allocating Successes}{76}{subsubsection*.163}
+\contentsline {section}{\numberline {23.4}Example Spellcasting}{76}{section.23.4}
+\contentsline {subsubsection}{Jane vs The Whompong Willow}{76}{subsubsection*.164}
+\contentsline {subsubsection}{Michael's Training}{77}{subsubsection*.165}
+\contentsline {section}{\numberline {23.5}Extended Casting}{77}{section.23.5}
+\contentsline {subsection}{\numberline {23.5.1}Concentration}{77}{subsection.23.5.1}
+\contentsline {subsection}{\numberline {23.5.2}Catch-Casting}{77}{subsection.23.5.2}
+\contentsline {subsection}{\numberline {23.5.3}Rituals}{77}{subsection.23.5.3}
+\contentsline {chapter}{\numberline {24}Learning Spells}{78}{chapter.24}
+\contentsline {subsection}{\numberline {24.0.1}Teachers}{78}{subsection.24.0.1}
+\contentsline {subsection}{\numberline {24.0.2}Books}{78}{subsection.24.0.2}
+\contentsline {subsubsection}{Magical Aura}{78}{subsubsection*.166}
+\contentsline {subsubsection}{Depleted Spellbooks}{78}{subsubsection*.167}
+\contentsline {subsection}{\numberline {24.0.3}Trial and Error}{78}{subsection.24.0.3}
+\contentsline {subsection}{\numberline {24.0.4}Finalising the Learning}{79}{subsection.24.0.4}
+\contentsline {chapter}{\numberline {25}Negating Spells}{80}{chapter.25}
+\contentsline {section}{\numberline {25.1}Resisting Against Magic}{80}{section.25.1}
+\contentsline {section}{\numberline {25.2}Using Magic to Resist}{80}{section.25.2}
+\contentsline {subsection}{\numberline {25.2.1}Limitations}{80}{subsection.25.2.1}
+\contentsline {subsubsection}{Example Negations}{80}{subsubsection*.168}
 \contentsline {chapter}{\numberline {26}Spells}{81}{chapter.26}
 \contentsline {section}{\numberline {26.1}Spell Summary}{81}{section.26.1}
 \contentsline {section}{\numberline {26.2}Alteration}{81}{section.26.2}

@@ -110,51 +110,65 @@ If the cast was a \key{Catastrophe}, however, due to the rolled 1s outnumbering 
 
 
 
-\subsection{Success}
+\section{Spellcasting Success}
 
-If your casting was a success, then you successfully summon the desired magical effect. However, the actual effectiveness of the spell must now be evaluated by accounting for the number of successes. 
-
-\subsubsection{Inherent Effect}
-
-The inherent effectiveness of a spell is determined by the level used to cast it. Casting a \imp{Incendio Tria} spell is obviously going to be more intrinsically powerful than an \imp{Incendio Dua} spell.
-
-You may think of a spell has having a \key{Power} rating, the inherent \imp{Power} of a spell is equal to the spell level used to cast it, but can be modified by additional successes. 
-
-For a damage-causing spell, for example, each point of Power deals 1 point of damage to the target, so a \levelOne{} spell deals 1 level of harm, whilst a \levelSeven{} spell deals 7 levels, enough to instantly kill a normal person. Equally, Power can be used to calculate the duration of a given spell effect - a stunning spell cast at \levelThree{} would be enough to knock a being out for 3 rounds. 
-
-\subsubsection{Required Successes}
-
-Before the effects of a spell can be applied, however, you must first successfully ensure that the magic hits its target. Projecting magic out of yourself is a difficult task - even when you successfully cast the spell, there are certain feats that require a minimum degree of success before they actually work. 
-
-For example, casting a spell an another person requires not only that the spell is cast, but that you can successfully target them and {\it push} the effect out towards them. Targeting more individuals would equally require a larger number of successes, as there is also a difference between casting a spell on a target within wandreach and at the edge of your vision. 
-
-Use the following table to determine the minimum number of successes required for given spellcasting effects:
+If you gain at least one success, however, the spellcasting is considered a success, and you must now work out how powerful the magical effect you have manifested is. 
 
 
-\newcommand\rrow[3]
-{
-	\key{#1}	&	\parbox[t]{4cm}{\small \raggedright #2}	&	\parbox[t]{2cm}{\small\centering  \raggedright#3} \\
-}
-\begin{center}
-	\begin{rndtable}{c l c}
-	\bf Effect	&	\bf Example	&	\bf Successes
-	\\
-	\rrow{Self}{Casting a spell on yourself}{0}
-	\rrow{Wandtip}{Casting a spell on a target you can place your wand or hands upon}{+1 per target}
-	\rrow{Ranged}{Cast a spell on a target at a distance}{+2 per target}
-	\rrow{Mass}{Cast a spell on a large area, affecting everyone in the region}{+4 and up}
-	\end{rndtable}
-\end{center}
+\subsection{Required Successes}
 
-With \key{Mass} spells, the required successes is determined by the GM depending on the magnitude of the effect required, but generally such spells are rather difficult. 
+	Magic is a complex beast, and even when your spellcasting is a `success', you may find that your attempted goal was such that a marginal success is simply not enough to get by - there are certain feats that require a minimum degree of success before they actually work. 
 
-If you do not meet the minimum number of required successes for the effect the manifest, you may either reduce the number of targets selected (i.e. blast only 1 of your 2 targets) or reduce the targeted area you have chosen until you have enough successes, but you cannot materially alter the nature of the spell - i.e. you could not change a \imp{Mass} spell to a \imp{Ranged} spell. 
+	For example, casting a spell an another person requires not only that the spell is cast, but that you can successfully target them and {\it push} the effect out towards them. Targeting more individuals would equally require a larger number of successes, as there is also a difference between casting a spell on a target within wandreach and at the edge of your vision. 
 
-Alternatively, you may simply abandon the casting, treating it as a \imp{Spellcasting Failure}, or you may attempt to use \imp{Extended Casting} (discussed below) in order to focus your mind and complete the casting after gathering your thoughts again. 
+	For a spell effect to successfully materialise, you must gain a number of successes equal to the \imp{required successes} listed below:
 
-\subsubsection{Optional Successes}
+	
+	\newcommand\rrow[3]
+	{
+		\key{#1}	&	\parbox[t]{4cm}{\small \raggedright #2}	&	\parbox[t]{2cm}{\small\centering  \raggedright#3} \\
+	}
+	\begin{center}
+		\begin{rndtable}{c l c}
+		\bf Effect	&	\bf Example	&	\bf Successes
+		\\
+		\rrow{Self}{Casting a spell on yourself}{0}
+		\rrow{Wandtip}{Casting a spell on a target you can place your wand or hands upon}{+1 per target}
+		\rrow{Ranged}{Cast a spell on a target at a distance}{+2 per target}
+		\rrow{Mass}{Cast a spell on a large area, affecting everyone in the region}{+4 and up}
+		\end{rndtable}
+	\end{center}
+	
+	With \key{Mass} spells, the required successes is determined by the GM depending on the magnitude of the effect required, but generally such spells are rather difficult. 
+	
+	\subsubsection{Insufficient Successes}
+	
+	If you do not meet the minimum number of required successes for the effect the manifest, even though the spellcasting was `successful', you do not quite manage to manifest the spell you wished for. 
+	
+	If possible, you may reduce the number of targets selected (i.e. blast only 1 of your 2 targets) or reduce the targeted area you have chosen until you have enough successes, but you cannot materially alter the nature of the spell - i.e. you could not change a \imp{Mass} spell to a \imp{Ranged} spell, or convert a spell targeted at an ally into a \imp{self} spell.  
+	
+	You could also attempt to use a \imp{Catch-Casting} effort (see below) to refocus your efforts on your next turn - any successes rolled this turn are added to your pool next turn, or alternatively, you may simply abandon the casting, treating it as a \imp{Spellcasting Failure}, in which case magical or \imp{archetype} features relating to failure can kick in.
+	
+	
 
-After meeting your required successes, the spell effect materialises. Your remaining successes may then be allocated to increase the effectiveness of the manifested spell by increasing the magnitude, decreasing the possibility of a foe avoiding or negating the spell, or even making the spell effect last longer. 
+
+\subsection{Calculating Effect}
+
+After deducting the \imp{successes} needed to manifest the spell, you are ready to begin to see how much magical energy you were able to summon.
+
+\subsubsection{Power}
+
+The effectiveness of a magical effect is enumerated through its \imp{Power}. For a spell which attacks a target, each level of \imp{power} corresponds to a level of \imp{harm}, whilst a spell which imposes a lingering status effect on a foe uses the \imp{power} to determine the duration of the effect. 
+
+
+The \imp{base} level of \imp{power} in a spell is equal to the \imp{level} the spell was cast at. A \levelOne{} spell has a \imp{base power} of 1, whilst a \levelFive{} spell has a \imp{base power} of 5. After all, gaining 3 \imp{successes} on an \imp{incendio una} will inevitably produce a less powerful flame than than 3 \imp{successes} on an \imp{incendio sumnus}.
+
+
+
+
+\subsubsection{Allocating Successes}
+You may also increase the spell \imp{power} by \imp{overpowering} the spell: allocating some of your remaining \imp{successes}. Alternatively, you may choose to sacrifice a bit of additional power by making your spell harder to \imp{resist}. You can choose one of the options on the list below:
+
 
 \begin{center}
 	\begin{rndtable}{c l p{2 cm}}
@@ -168,21 +182,30 @@ After meeting your required successes, the spell effect materialises. Your remai
 
 Note that the \imp{Extend} option does not apply to spells where the duration is set by the \imp{Power} (i.e. stunning spells). Instead it could be used to increase the duration of a shield or ward which has an explicit duration. 
 
-The maximum number of additional dice that can be assigned to a given optional effect is equal to twice the spell's level (or 1, for \levelZero{} spells). 
-
 You may also choose to leave some successes unused - if you are attempting to subdue a wild beast, you may not want to risk killing it. Equally, some spells are all-or-nothing, and so as long as the minimum requirements are met, additional successes may not do anything beyond increasing the flavour of the GM's descriptions. 
 
-\subsubsection{Example Spellcasting}
+\section{Example Spellcasting}
 
-Jane has gotten herself into a confrontation with the Whomping Willow and is trying to set it on fire to teach it a lesson. She has an \imp{Affinity} of 3 in the Elemental discipline, so she decides to fire a bolt of flaming energy at her foe (a \levelThree{} feat). This means that she must defeat a DV of 8, and must have at least 2 successes in order to fire the bolt at such a distance. 
+Consider the following examples of how a spellcasting calculation would be carried out.
+
+\subsubsection{Jane vs The Whompong Willow}
+
+Jane has gotten herself into a confrontation with the Whomping Willow and is trying to set it on fire to teach it a lesson. 
+
+She has an \imp{Affinity} of 3 in the Elemental discipline, so she decides to fire a bolt of flaming energy at her foe (a \levelTwo{} feat). This means that she must defeat a DV of 7, and must have at least 2 successes in order to fire the bolt at a ranged target.
 
 Jane's player reasons that since Jane is doing this out of anger, \imp{Willpower} seems like an appropriate \imp{Aspect} to use, and the GM agrees, building her dice pool up to a total of 7. There are no other bonuses relevant to this moment, so Jane performs the dice check. 
 
-With a roll of \imp{1-4-5-8-8-9-11}, Jane has three successes, two of which are used to form the blast of fire. Since Jane is angry, she uses her additional success to deal an additional point of damage. This spell therefore deals 4 points of fire damage to the Whomping Willow. 
+With a roll of \imp{1-4-5-8-8-9-11}, Jane has three successes, two of which are used to form the blast of fire. Since Jane is angry, she uses her additional success to deal an additional point of damage. This spell therefore deals \imp{Level Three} harm to the Whomping Willow.
 
-Meanwhile, Michael is busy practicing for duelling class. He casts \imp{Stupefy} to attempt to temporarily confound his opponent (a \levelOne{} effect). Michael has an affinity of 3 in the \imp{curses} discipline, and since he is training, an \imp{Intelligence} (rating 3) check seems relevant. Michael therefore has 6 dice to roll against a DV of 6. Michael decides that to give himself the edge, he's going to try and get in close to his opponent and force the spell at a \imp{Wandtip} range. 
 
-After rolling \imp{2-3-7-8-9-11}, he has four successes, one of which is required for the spell to work. Since this spell is a very basic one, Michael knows that it is easy to Resist, so he expends two of his successes to \imp{Defy} and hence increase the Resist DV by 2, the maximum amount for a \levelOne{} spell, and so uses the remaining point to \imp{Overpower}, and so increase the power of the spell.
+\subsubsection{Michael's Training}
+
+Meanwhile, Michael is busy practicing for duelling class. He casts \imp{Stupefy} (i.e. the \imp{Disable} spell) to attempt to temporarily confound his opponent (a \levelOne{} effect). Michael has an affinity of 3 in the \imp{curses} discipline, and since he is training, an \imp{Intelligence} (rating 3) check seems relevant. 
+
+Michael therefore has 6 dice to roll against a DV of 6. Michael decides that to give himself the edge, he's going to try and get in close to his opponent and force the spell at a \imp{Wandtip} range. 
+
+After rolling \imp{2-3-7-8-9-11}, he has three successes, one of which is required for the spell to work. Since this spell is a very basic one, Michael knows that it is easy to Resist, so he expends one of his successes to \imp{Defy} and hence increase the Resist DV by 1, and uses the remaining point to \imp{Overpower}, and so increase the power of the spell to a 2-\imp{power} stun.
 
 
 
