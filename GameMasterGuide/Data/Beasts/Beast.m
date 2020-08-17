@@ -1,238 +1,178 @@
 classdef Beast
 
     properties
+        Order
         Name
         Species
         Rating
         Mind
         Category
-        Summary
-        Habitat
-        hasHabitat
-        HP
-        FP
-        hasFP
-        Speed
-        FIT
-        PRS
-        SPR
-        CHR
-        INT
-        PCP
-        POW
-        EVL
         
-        Expertise
-        Skills
-        hasSkills
+        Description
+        
+        Fitness
+        Precision
+        Vitality
+        Charm
+        Deception
+        Insight
+        Intelligence
+        Willpower
+        Perception
+        
+        Unharmed
+        Bruised
+        Hurt
+        Injured
+        Wounded
+        Mangled
+        
+        Fortitude
+        HasFortitude
+        
         Block
         Dodge
-        Languages
-        hasLanguages
-        Comprehend
-        hasComprehend
-        NeedsLine
-        ConditionImmune
-        hasConditionImmune
-        Senses
-        hasSenses
+        Defy
+        
+        SKills
+        HasSkills
+        
         Immune
-        hasImmune
         Resistant
-        hasResistant
         Susceptible
-        hasSusceptible
+        
+        
+        Languages
+        HasLanguages
+        Armaments
+        HasArmaments
+        Skills
         Abilities
         
-        hasAbilities
-        hasAbilitiesBlock
-        Actions
-        hasActions
-        hasLair
-        LairActions
-
-        SizeName
-        Size
-        Description
-        Order
-        
         Image
-        hasImage
+        HasImage
         ImagePos
         ImageHeight
+        
+        Article;
         
         NeedsPage
         
         IsHuge
+        
+        ImageStack
+        Empty;
     end
     
     methods
         function obj = Beast(tableLine)
             obj.Order = tableLine.SpeciesOrder(1);
             obj.Name = tableLine.Name{1};
+            
+            obj.Article = "A";
+            if any(obj.Name(1) == ["A","E","I","O","U"])
+               obj.Article = "An"; 
+            end
+            
             obj.Species = tableLine.Species{1};
             obj.Mind = tableLine.Mind{1};
             obj.Category = tableLine.Category{1};
-            obj.Summary = tableLine.Summary{1};
-            obj.HP = tableLine.HP(1);
-            obj.FP = tableLine.FP(1);
-            obj.Habitat = tableLine.Habitat{1};
-            obj.hasHabitat = false;
-            if ~isempty(obj.Habitat)
-                obj.hasHabitat = true;
+            obj.Rating = num2roman(tableLine.Rating(1));
+            obj.Description = tableLine.Description{1};
+            
+            obj.Unharmed = tableLine.Unharmed(1);
+            obj.Bruised = tableLine.Bruised(1);
+            obj.Hurt = tableLine.Hurt(1);
+            obj.Injured = tableLine.Injured(1);
+            obj.Wounded = tableLine.Wounded(1);
+            obj.Mangled = tableLine.Mangled(1);
+            
+            obj.Fortitude = tableLine.Fortitude(1);
+            obj.HasFortitude = true;
+            if isnan(obj.Fortitude)
+                obj.HasFortitude = false;
             end
             
-            speaks = tableLine.Speaks{1};
-            understands = tableLine.Understands{1};
+            obj.Fitness = tableLine.Fitness(1);
+            obj.Precision = tableLine.Precision(1);
+            obj.Vitality = tableLine.Vitality(1);
+            obj.Charm = tableLine.Charm(1);
+            obj.Deception = tableLine.Deception(1);
+            obj.Insight = tableLine.Insight(1);
+            obj.Intelligence = tableLine.Intelligence(1);
+            obj.Willpower = tableLine.Willpower(1);
+            obj.Perception = tableLine.Perception(1);
             
-            obj.Languages = speaks;
-            obj.hasLanguages = false;
-            if ~isempty(speaks)
-                obj.hasLanguages = true;
-            end
+            obj.Empty = obj.Fitness + obj.Precision + obj.Vitality + obj.Charm + obj.Deception + obj.Insight + obj.Intelligence + obj.Willpower + obj.Perception;
             
-            obj.Comprehend= understands;
-            obj.hasComprehend = false;
-            if ~isempty(understands)
-                obj.hasComprehend = true;
-            end
-            
-            
-            
-            obj.hasFP = false;
-            if ~isnan(obj.FP) && (obj.FP > 0)
-                obj.hasFP = true;
-            
-            end
-            
-            obj.Speed = tableLine.Speed{1};
-            obj.FIT = tableLine.FIT(1);
-            obj.PRS = tableLine.PRS(1);
-            obj.SPR = tableLine.SPR(1);
-            obj.CHR = tableLine.CHR(1);
-            obj.INT = tableLine.INT(1);
-            obj.PCP = tableLine.PCP(1);
-            obj.POW = tableLine.POW(1);
-            obj.EVL = tableLine.EVL(1);
-            
-            obj.Skills = tableLine.Skills{1};
-            obj.hasSkills = false;
-            if ~isempty(obj.Skills)
-                obj.hasSkills=true;
-            end
             obj.Block = tableLine.Block(1);
+            obj.Defy = tableLine.Defy(1);
             obj.Dodge = tableLine.Dodge(1);
             
-            obj.ConditionImmune = tableLine.ConditionImmune{1};
-            obj.hasConditionImmune = false;
-            if ~isempty(obj.ConditionImmune)
-                obj.hasConditionImmune = true;
-            end
-            obj.Senses = tableLine.Senses{1};
-            obj.hasSenses = false;
-            if ~isempty(obj.Senses)
-                obj.hasSenses = true;
-            end
-            obj.Immune = tableLine.Immune{1};
-            obj.hasImmune = false;
-            if ~isempty(obj.Immune)
-                obj.hasImmune = true;
-            end
             obj.Resistant = tableLine.Resistant{1};
-            obj.hasResistant = false;
-            if ~isempty(obj.Resistant)
-                obj.hasResistant= true;
-            end
+            obj.Immune = tableLine.Immune{1};
             obj.Susceptible = tableLine.Susceptible{1};
-            obj.hasSusceptible = false;
-            if ~isempty(obj.Susceptible)
-                obj.hasSusceptible = true;
+            obj.Languages = tableLine.Languages{1};
+            obj.HasLanguages = true;
+            if (obj.Languages == "")
+                obj.HasLanguages = false;
             end
-            
+            obj.Skills = tableLine.Skills{1};
+            obj.HasSkills = true;
+            if (obj.Skills == "")
+                obj.HasSkills = false;
+            end
+            obj.Armaments = tableLine.Armaments{1};
+            obj.HasArmaments = true;
+            if(obj.Armaments == "")
+                obj.HasArmaments = false;
+            end
             obj.Abilities = tableLine.Abilities{1};
-            obj.hasAbilities = false;
-            if ~isempty(obj.Abilities)
-                obj.hasAbilities = true;
-            end
-            obj.hasAbilitiesBlock = any([obj.hasAbilities,obj.hasImmune,obj.hasResistant,obj.hasSusceptible,obj.hasSkills]);
-            obj.Actions = tableLine.Actions{1};
-            obj.hasActions = false;
-            if ~isempty(obj.Actions)
-                obj.hasActions= true;
-            end
-            obj.Habitat = tableLine.Habitat{1};
             
-            
-            obj.LairActions = tableLine.LairAbilities{1};
-            obj.hasLair = false;
-            if ~isempty(obj.LairActions)
-                obj.hasLair = true;
+            obj.Image = tableLine.Image{1};
+            obj.HasImage = true;
+            if (obj.Image == "")
+                obj.HasImage = false;
             end
             
-            obj.SizeName = tableLine.SizeName{1};
-            obj.Size = tableLine.SizeValue{1};
-            obj.Description = tableLine.Description;
-            
-            obj.hasImage = false;
-            obj.ImageHeight = tableLine.ImageHeight(1);
-            if isnan(obj.ImageHeight)
-                obj.ImageHeight=0.4;
-            end
-            obj.Image =tableLine.Image{1};
-            if ~isempty(obj.Image)
-                obj.hasImage = true;
-            end
-            obj.ImagePos = 0;
-            
-            obj.NeedsLine = obj.hasAbilities && (obj.hasSkills || obj.hasImmune || obj.hasImmune || obj.hasLanguages || obj.hasSusceptible);
-        
-            obj.NeedsPage = false;
-            if tableLine.NeedsPage(1) == 1
-                obj.NeedsPage = true;
-            end
-            
-            n = tableLine.Rating(1);
-            obj.Rating = "0";
-            if ~isnan(n) && n > 0
-                obj.Rating = num2roman(n);
-            end
-            
-            obj.IsHuge= false;
-            if tableLine.NeedsPage(1) == 2
-                obj.IsHuge = true;
-            end
+            obj.ImageStack = tableLine.Stack(1);
         end
         
         function text = print(obj,mode)
-            if nargin <2
+            if nargin < 2
                 mode = 0;
             end
             
+            text = "";
+            if obj.Empty > 0
             text = "\\beast{";
-           
-            if obj.IsHuge == true
-                text = "\\fullPageBeast{";
+            if mode == 1
+               text = "\\speciesBeast{"; 
             end
             
-            titles = ["name", "species","mind","category","summary","speed","habitat","sizeName","size","needsLine","imageHeight","rating"];
-            array = [string(obj.Name), string(obj.Species), string(obj.Mind), string(obj.Category), string(obj.Summary), string(obj.Speed), string(obj.Habitat), string(obj.SizeName), string(obj.Size),num2str(obj.NeedsLine),num2str(obj.ImageHeight),string(obj.Rating)];
+            titles = ["name", "species","mind","category","rating","abilities","article"];
+            array = [string(obj.Name), string(obj.Species), string(obj.Mind), string(obj.Category),string(obj.Rating),string(obj.Abilities),string(obj.Article)];
             
             for i = 1:length(array)
                 text = text + prepareText(titles(i)) + " = " + prepareText(array(i)) + ", ";
             end
             
             text = text + obj.statBlock();
-            
-            numTitles = ["hp","block","dodge","abilityBlock","needsPage"];
-            numArray = [obj.HP, obj.Block, obj.Dodge,obj.hasAbilitiesBlock,obj.NeedsPage];
+            text = text + obj.ResistanceText();
+            numTitles = ["nUnharmed","nBruised","nHurt","nInjured","nWounded","nMangled","block","dodge","defy","fortitude","imageStack"];
+            numArray = [obj.Unharmed, obj.Bruised, obj.Hurt, obj.Injured, obj.Wounded, obj.Mangled, obj.Block, obj.Dodge,obj.Defy,obj.Fortitude,obj.ImageStack];
             for i = 1:length(numArray)
-                text = text + numTitles(i) + "="+num2str(numArray(i)) + ", ";
+                val = numArray(i);
+                if isnan(val)
+                    val = 0;
+                end
+                text = text + numTitles(i) + "="+num2str(val) + ", ";
             end
             
-            hasTitles = ["hasFP","hasImmune","hasResistance","hasSusceptible","hasAbilities","hasActions","hasSkills","hasImage","hasLanguages","hasComprehend","hasHabitat","hasLair","hasConditionImmune","hasSenses"];
-            hasTriggers = [obj.hasFP, obj.hasImmune,obj.hasResistant, obj.hasSusceptible, obj.hasAbilities, obj.hasActions,obj.hasSkills,obj.hasImage,obj.hasLanguages,obj.hasComprehend,obj.hasHabitat,obj.hasLair,obj.hasConditionImmune, obj.hasSenses];
-            includeTitles = ["fp", "immune", "resistance", "susceptible","abilities","actions","skills","image","language","comprehend","habitat","lairActions","conditionImmune", "senses"];
-            includeVals = [num2str(obj.FP), string(obj.Immune), string(obj.Resistant), string(obj.Susceptible), string(obj.Abilities), string(obj.Actions), string(obj.Skills),string(obj.Image),string(obj.Languages),string(obj.Comprehend),string(obj.Habitat),string(obj.LairActions),string(obj.ConditionImmune), string(obj.Senses)];
+            hasTitles = ["hasSkills","hasAttacks","hasLanguages","hasImage"];
+            hasTriggers = [obj.HasSkills,obj.HasArmaments,obj.HasLanguages,obj.HasImage];
+            includeTitles = ["skills","attacks","languages","image"];
+            includeVals = [string(obj.Skills),string(obj.Armaments),string(obj.Languages),string(obj.Image)   ];
             
             for i = 1:length(hasTitles)
                if hasTriggers(i) 
@@ -240,20 +180,14 @@ classdef Beast
                end
             
             end
-            
-            text = text + "imPosition = " + num2str(obj.ImagePos) + ",";
-            text = text + "description = " + prepareText(obj.Description) + "}";
-            
-            if mode == 1
-                text = text + "{1}";
-            else
-                text = text + "{0}";
+           
+           text = text + "description = " + prepareText(obj.Description) + "}";
             end
         end
         
         function s = statBlock(obj)
-            names = ["fit", "prs","spr","chr","int","pcp","pow","evl"];
-            vals = [obj.FIT, obj.PRS, obj.SPR, obj.CHR, obj.INT, obj.PCP, obj.POW, obj.EVL];
+            names = ["fit", "prs","vit","cha","dec","ins","int","wil","pcp"];
+            vals = [obj.Fitness, obj.Precision, obj.Vitality, obj.Charm, obj.Deception, obj.Insight, obj.Intelligence, obj.Willpower, obj.Perception];
             
             s = "";
             for i = 1:length(names)
@@ -262,18 +196,48 @@ classdef Beast
                 if isnan(v)
                     v = 0;
                 end
-                mod = floor((v - 10)/2);
-                
-                sMod = num2str(mod);
-                
-                if mod > 0
-                    sMod = "+"+sMod;
-                end
-                val = num2str(v) + " (" + sMod + ")";
-                
-                s = s + names(i) + " = " + val + ",";
+               
+                s = s + names(i) + " =" + num2str(v) + ", ";
             end
                 
+        end
+        
+        function s = ResistanceText(obj)
+           s = "";
+           ns = ["Immune", "Resistant", "Susceptible"];
+           vs = [string(obj.Immune), string(obj.Resistant), string(obj.Susceptible)];
+           
+           ns2 = string.empty;
+           nonZero = string.empty;
+           for i = 1:length(ns)
+              if (vs(i) ~= "")
+                  ns2(end+1) = ns(i);
+                  nonZero(end+1) = vs(i);
+              end
+           end
+           
+           if isempty(nonZero)
+               s = "hasDamage = 0, ";
+           else
+               s = "damage =";
+               
+               for i = 1:length(nonZero)
+                   s = s + "\key{" + ns2(i) + "} to \textit{" + nonZero(i) + "}";
+                   
+                   if length(nonZero) > 1
+                      if i < length(nonZero) -1
+                          s = s + "\comma{} ";
+                      end
+                      if i == length(nonZero) -1
+                          s = s + " and ";
+                      end
+                   end
+               end
+               
+               s = "hasDamage = 1, " + prepareText(s) + ", ";
+           end
+           
+           
         end
     end
 end
