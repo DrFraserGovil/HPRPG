@@ -1,82 +1,53 @@
 function assembleWeapons(fileNameRoot)
-if nargin < 1
+   
+    %if no target given, assume that called directly, else assume called by
+    %master
+   
+    if nargin < 1
         disp('Insufficient inputs provided');
-        addpath('../Functions/');
+        addpath('../../../CoreRulebook/Data/Functions/');
         fileNameRoot = '../../Chapters/Part3_Items/';
+ 
     end
-    weapon = readtable('weapons.xlsx');
-  
-
-    n = size(weapon);
     
-    %%process and sort categories
-    knownNames = ["Unarmed", "Simple","Bladed", "Brutish", "Reach", "Exotic",  "Simple Ranged","Ranged","Firearms" ];
-    foundNames = [];
-    foundLines = {};
-    for i = 1:n
-        type = weapon.Type{i};
-        
-        found = -1;
-        for j = 1:length(foundNames)
-           if strcmp(type,foundNames{j})
-               found=j;
-               foundLines{found}(end+1,:) = weapon(i,:);
-           end
-        end
-        if found == -1
-            foundNames{end+1} = type;
-
-            found = length(foundNames);
-            foundLines{end+1} = weapon(i,:);
+    f = readtable("Weapons.xlsx");
+    f = sortrows(f,1);
+    f = sortrows(f,6);
+    f = sortrows(f,5);
+    
+    melee = Weapon.empty;
+    ranged = Weapon.empty;
+    
+    
+    for i = 1:height(f)
+        w = Weapon(f(i,:));
+        if w.Category == "Ranged"
+            ranged(end+1) = w;
+        else
+            melee(end+1) = w;
         end
     end
-    I = [];
-    lost =[];
-    for j = 1:length(foundNames)
-       loc = -1;
-       for q = 1:length(knownNames)
-          if strcmp(knownNames{q},foundNames{j})
-              I(q) = j; 
-              loc = j;
-          end
-       end
-       if loc == - 1;
-           lost(end+1) = j;
-       end
+    
+    t1 = "\\def\\meleeWeapon\n{"; 
+    for i = 1:length(melee)
+       t1 = t1 + "\n\t" + prepareText(melee(i).print()); 
     end
-    I = [I lost];
-    foundNames= foundNames(I);
-    foundLines = foundLines(I);
-    %% write to table
-    preamble = '\begin{rndtable}{|l l c c l |}';
-    headers = '\hline \normalsize \bf Weapon & \normalsize \bf Cost & \normalsize \bf Modifier &  \normalsize \bf Damage & \normalsize \bf Properties \\ \hline';
-    text = prepareText(strcat(preamble,headers));
-    for j = 1:length(foundNames)
-        text = strcat(text, "{ \\it ", foundNames{j}," Weapons} & & & & \\\\ \n");
-        
-        for (i = 1:height(foundLines{j}))
-            line = foundLines{j}(i,:);
-            notes = strcat('\\parbox[t]{\\l cm}{', line.Notes{1}, '}');
-            check = strcat(line.Dice{1},'~', line.Damage{1});
-
-
-            line = strcat("\\bf ~~~~~", line.Weapon{1}, "\t&\t", prepareText(line.Cost{1}),"\t&\t",prepareText(line.Check{1}),"\t&\t",check, "\t&\t",notes,"\\\\ \n");
-            text = strcat(text, line);
-        end
+    t1 = t1 + "\n}\n";
+    
+    t2 = "\\def\\rangedWeapon\n{"; 
+    for i = 1:length(ranged)
+       t2 = t2 + "\n\t" + prepareText(ranged(i).print()); 
     end
-    ender = prepareText('\hline\end{rndtable} ');
+    t2 = t2 + "\n}\n";
+    
+    text = t1 + t2;
+    
+     targetName = fileNameRoot + "WeaponList.tex";
+    
 
+    fullText = text;
 
-    fileName = fileNameRoot + "Weapons.tex";
-    readFile = fileread(fileName);
-    insertPoint = strfind(readFile, '%%WeaponsBegin');
-    endPoint = strfind(readFile, '%%WeaponsEnd');
-
-    firstHalf = prepareText(readFile(1:insertPoint+14));
-    secondHalf = prepareText(readFile(endPoint:end));
-
-    fullText = strcat(firstHalf, text, ender, secondHalf);
-
-    FID = fopen(fileName,'w');
+    FID = fopen(targetName,'w');
     fprintf(FID, fullText);
+    fclose(FID);
 end
