@@ -3,39 +3,30 @@ function MasterAssembly(quitMode)
         quitMode = 0;
     end
     
-    addpath('Spells/');
+    addpath('Disciplines/');
     addpath('Functions/');
     addpath('Items/');
-    addpath('Potions/');
-	addpath('Enchanting/')
-    addpath('Archetypes/')
+    %addpath('Potions/');
+	addpath('Artificing/')
+    addpath('Archetype/')
+    addpath('Feats/')
     
     disp('Assembling Archetypes');
-    archetypeAssembler('Archetypes/');
+    assembleArchetypes('../');
     
     disp('Assembling Spells');
-    assembleSpells(6,'../');
-    
-    disp('Assembling Books')
-    assembleBooks('../Chapters/Part3_Items/');
+    assembleSpells('../');
     
     disp('Assembling Skills');
-    assembleSkills();
+    assembleFeats('../');
     
-    disp('Assembling Statuses');
-    assembleStatus()
     
     disp('Assembling Weapons');
-    assembleWeapons('../Chapters/Part3_Items/');
+    assembleWeapons('../');
 	
     disp('Assembling Tools');
-    assembleTools('../Chapters/Part3_Items/');
+    assembleTools('../');
 
-    disp('Assembling Potions');
-	assemblePotions("../Chapters/");
-    
-    disp('Assembling Runes');
-    runeAssembler('../Chapters/Part3_Items/');
     
     path(pathdef)
     

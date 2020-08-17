@@ -3,11 +3,8 @@ function assembleArchetypes(fileRoot)
     %if no target given, assume that called directly, else assume called by
     %master
 
-    if nargin < 2
+    if nargin < 1
         disp('Insufficient inputs provided');
-        if nargin < 1
-            maxLevel = 6;
-        end
         addpath('../Functions/');
         fileRoot = '../../';
     end
