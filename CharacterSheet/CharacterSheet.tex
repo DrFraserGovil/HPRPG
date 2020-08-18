@@ -219,7 +219,7 @@
 
 \def\affinityHeight{\abilityHeight*0.87}
 \def\spellLimit{78*\widthUnits}
-\def\spellTop{\abilityBoxHeight - 0.7*\heightUnits}
+\def\spellTop{\abilityBoxHeight - 0.72*\heightUnits}
 \def\yC{\spellTop - 5.4*\heightUnits}
 \def\spellHeight{2.3*\heightUnits}
 \draw[rounded corners, gray!70, fill = gray!20] ({\secondColumn},{\abilityBoxHeight - 1*\heightUnits}) rectangle ({\spellLimit},{0});
@@ -251,18 +251,18 @@
 %%%% NEGATE BOX
 
 
-\def\heroHeight{5.6*\widthUnits}
+\def\heroHeight{6.85*\widthUnits}
 
 \draw[rounded corners,gray!70,fill=gray!10] ({\spellLimit + 1*\widthUnits},{\abilityBoxHeight - 1*\heightUnits})rectangle ({\secondRight},{\heroHeight+1*\heightUnits});
 
 \def\x{(\spellLimit + 1*\widthUnits + \secondRight)/2}
 
 
-\node[anchor = north] at ({\x},{\spellTop}) {\Large \HP {Negation}};
-\def\jump{2.9*\heightUnits}
+\node[anchor = north] at ({\x},{\spellTop}) {\Large \HP {Defence}};
+\def\jump{2.7*\heightUnits}
 \foreach \negate [count = \i from 0] in { {Block:}, {Dodge:}, {Endure:} }
 {
-	\def\y{\yC - (\i)*\jump}
+	\def\y{\yC +0.7 *\heightUnits - (\i)*\jump}
 	
 	\node[anchor = west] at ({\spellLimit + \widthUnits},{\y}) {\key{\negate{}}};
 	\def\r{\sqrtTwo*\boxSmall/1.6}
@@ -289,26 +289,10 @@
 }
 
 %%% HEROISM BOX
-\draw[rounded corners,gray!70,fill=gray!10] ({\spellLimit+\widthUnits},{\heroHeight})rectangle ({\secondRight},{0});
-\def\yH{\heroHeight - 0.1*\heightUnits}
-\node[anchor=north] at ({\x},{\yH}) {\Large \HP {Heroism \& Villainy}};
+\draw[rounded corners,gray!70,fill=gray!10] ({\spellLimit+\widthUnits},{\heroHeight+0.5*\heightUnits})rectangle ({\secondRight},{0});
+\def\yH{\heroHeight+0.4*\heightUnits}
+\node[anchor=north] at ({\x},{\yH}) {\HP {Current Status}};
 
-\def\yHH{\yH - 4.6*\heightUnits}
-\node[anchor = west] at ({\spellLimit + 1.5*\widthUnits},{\yHH}) {\key{Hero}};
-\node[anchor = east] at ({\secondRight - 0.5*\widthUnits},{\yHH}) {\key{Villain}};
-
-\def\delta{(\secondRight - (\spellLimit + \widthUnits) - 7*\sqrtTwo*\boxDim)/2}
-\foreach \k in {0,1,2,3,4,5,6}
-{
-	
-	\def\xCirc{\spellLimit  + \delta + (\k + 2)*\sqrtTwo*\boxSmall };
-	
-	%~ \if\k6
-		%~ \smallDot{\xCirc}{\y}{black}
-	%~ \else
-		\smallDot{\xCirc}{\yHH}{white}
-	%~ \fi
-}	
 
 
 
@@ -497,7 +481,7 @@
 
 \def\titleHeight{\yB + \imHeight/2 - 4.3*\heightUnits}
 \def\angle{15}
-\node[rotate=\angle] at ({\xB -\imWidth/4},{\titleHeight}) {\large\HP Arcane};
+\node[rotate=\angle] at ({\xB -\imWidth/4},{\titleHeight}) {\large\HP Magical};
 \node[rotate = -\angle] at ({\xB +\imWidth/4},{\titleHeight}) {\large \HP Spellbook};
 
 
@@ -560,8 +544,37 @@
 		
 	}	
 	
-	\draw[rounded corners, gray!70, fill = gray!20] ({\abilityRight + \widthUnits},{\abilityTop}) rectangle ({\maxWidth},{\maxHeight-\abilityBoxHeight});
-	\node[anchor=north] at ({(\maxWidth + \abilityRight + \widthUnits)/2},{\abilityTop}) {\HP \Large Status Effects};
+	%%ability list
+	%\draw[rounded corners, gray!70, fill = gray!20] ({\abilityRight + \widthUnits},{\abilityTop}) rectangle ({\maxWidth},{\maxHeight-\abilityBoxHeight});
+	\node[anchor=north] at ({(\maxWidth + \abilityRight + \widthUnits)/2},{\abilityTop}) {\HP \Large Full Ability List};
+	
+	\newcommand\entry[2]{ \ca{#2} \parbox[t]{2.5cm}{\centering #1} } 
+	\newcommand\ca[1]{\cellcolor{#1}}
+
+	\newcommand\abilityRow[3]
+	{
+		\entry{#1}{gray!20}	& 	\entry{#2}{gray!20} & 	\entry{#3}{gray!20} \\
+	}
+	\node[anchor = north] at ({(\maxWidth + \abilityRight + \widthUnits)/2},{\abilityTop-4*\heightUnits})
+	{
+		\scriptsize
+		\setlength\extrarowheight{-3pt}
+		\begin{rndtable}{c c c}
+		
+		\entry{\key{Innate}}{gray!70}	&	\entry{\key{Practical}}{gray!70} & \entry{\key{Knowledge}}{gray!70} \\
+	\abilityRow{Alertness}{Acrobatics}{Arcane}
+	\abilityRow{Bravery}{Brawl}{General}
+	\abilityRow{Conviction}{Covert}{History}
+	\abilityRow{Eloquence}{Craft}{Investigation}
+	\abilityRow{Intimidation}{Imbue}{Medicine}
+	\abilityRow{Kindness}{Marksmanship}{Muggle}
+	\abilityRow{Kinship}{Performance}{Nature}
+	\abilityRow{Logic}{Pilot}{Science}
+	\abilityRow{Speed}{Skirmish}{Technology}
+	\abilityRow{Strength}{Survival}{World}
+	\abilityRow{+1 from archetype}{+1 from archetype}{+1 from archetype}
+		\end{rndtable}
+	};
 	
 	
 	\def\delta{1.5*\heightUnits}
