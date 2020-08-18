@@ -1,4 +1,4 @@
-\chapter{Calculating Damage}
+\chapter{Calculating Effects}
 
 
 After the \imp{Combat Cycle} has completed, all the attacks and responses have been declared, the effects are then applied to the respective characters. 
@@ -31,15 +31,18 @@ If a character takes \imp{level three} harm, they would therefore fill in the fi
 		\draw[rotate =\theta,fill = \dfill] ({-\r},{-\r}) rectangle ({\r},{\r});
 		
 		\ifnum#1>0
-			\draw[rotate =\theta] ({0},{-\r}) -- ({0},{\r});
+			\draw[rotate =\theta,fill = \dfill] ({-\r},{-\r}) -- ({\r},{\r});
 			
 			\ifnum#1>1
-				\draw[rotate =\theta,fill = \dfill] ({-\r},{0}) -- ({\r},{0});
+				
+				\draw[rotate =\theta,fill = \dfill] ({-\r},{\r}) -- ({\r},{-\r});
 				\ifnum#1>2
-					\draw[rotate =\theta,fill = \dfill] ({-\r},{-\r}) -- ({\r},{\r});
+					
+					\draw[rotate =\theta,fill = \dfill] ({-\r},{0}) -- ({\r},{0});
 					
 					\ifnum#1>3
-						\draw[rotate =\theta,fill = \dfill] ({-\r},{\r}) -- ({\r},{-\r});
+						
+						\draw[rotate =\theta] ({0},{-\r}) -- ({0},{\r});
 					\fi
 					
 				\fi
@@ -94,7 +97,9 @@ For example, the character below has taken \imp{level 4} harm in total, and then
 	\df{5}\df{5}\df{5}\df{5}\df{4}\df{0}\df{0} + \imp{5 harm}$~~\Longrightarrow~~$\df{5}\df{5}\df{5}\df{5}\df{5}\df{4}\df{0}
 \end{center}
 
-\subsection{Healing}
+
+
+\section{Healing}
 
 The restoration of \imp{health} through magical, mundane or alchemical means follows a similar pattern - albeit in reverse. 
 
