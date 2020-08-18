@@ -1,4 +1,4 @@
-\chapter{Calculating Effects}
+\chapter{Effects, Damage \& Statuses}
 
 
 After the \imp{Combat Cycle} has completed, all the attacks and responses have been declared, the effects are then applied to the respective characters. 
@@ -115,6 +115,27 @@ However, if you have more \imp{harm} than \imp{healing}, the effect is converted
 	\df{5}\df{5}\df{5}\df{5}\df{0}\df{0}\df{0} + \imp{3 healing}$~~\Longrightarrow~~$\df{5}\df{5}\df{5}\df{2}\df{0}\df{0}\df{0}
 \end{center}
 
+\section{Effects of Harm}
+
+After \imp{harm} has been applied to the victim, they usually begin to suffer the consequences of that harm as their arms shake, blood drips down their face and their physical condition begins to degrade. 
+
+For basic humanoids, for every level of harm they take after \imp{level one}, they begin to suffer a 1d penalty to rolls made for \imp{ability} checks and \imp{attack rolls}, increasing to a maximum of a 5d penalty at \imp{level 6} harm. 
+
+If using the \imp{character sheet} on page \pageref{S:CharacterSheet}, the current penalty a character is suffering is detailed next to their health track. 
+
+Note that this penalty only applies when a \imp{health-diamond} has been completely filled in - if a diamond only has \imp{tallies} in it, you do not suffer the associated penalty. If a character is healed such that the \imp{health diamond} is no longer completely filled in (or indeed, empty), they also immediately reduce their dice penalty to match their new level of harm. 
+
+\subsection{Avoiding Penalties}
+
+A character may temporarily negate the effects of their harm by expending a \imp{fortitude} point. This removes all harm-related penalties from a being for the duration of this \imp{combat cycle} - though some \imp{feats} expand this period somewhat. 
+
+In addition, \imp{harm}-related penalties are {\bf not} applied to \imp{Resist} rolls using the \imp{defence statistics}. 
+
+\subsection{Additional Health}
+
+If a \imp{character} gains an additional level of \imp{health}, either through the \imp{progression rules} (page \pageref{S:Progression}), or through magical means, this point goes at the {\it front} of the health track, and is removed before the `normal' \imp{health} is touched. For this reason, such characters do not begin to suffer a dice penalty until they reach \imp{level 3} harm. 
+
+If this additional level of health is conferred whilst a character has already suffered \imp{harm}, readjust the health scale  as if they had {\it always} had that level of \imp{health}. 
 
 \section{Damage Types}
 
@@ -216,10 +237,25 @@ Some have a weakness to a particular spell (i.e. \imp{Dementors} are considered 
 Your \imp{GM} may also rule that a certain \imp{called} shot would hit a \imp{susceptible} area, even if it is not explicitly listed - kicking a human between the legs (particularly the male of the species) is likely to confer a significant advantage to the attacker, even if this is not explicitly mentioned in the stat block of each humanoid!
 
 
-%~ \section{Statuses}
+\section{Status Effects}
 
-%~ In addition to dealing damage, you can also inflict negative statuses on your foes, or conversely you may gain a positive status from an item or spell. Statuses are (often temporary) effects and conditions which alter a being's capability for the duration of their effect. Statuses can arise as a result of an enemies attack, a magic spell, or from an interaction with the environment. 
+In addition to dealing damage, you can also inflict negative statuses on your foes, or conversely you may gain a positive status from an item or spell. Statuses are (often temporary) effects and conditions which alter a being's capability for the duration of their effect. Statuses can arise as a result of an enemies attack, a magic spell, or from an interaction with the environment. 
 
+
+
+\newcommand\status[3]
+{
+	\subsubsection{#1}
+	
+	{\it #2}
+	
+	\begin{itemize}
+	\renewcommand\labelitemi{\minus{}}
+		#3
+	\end{itemize}
+}
+
+\input{Chapters/Part2_Actions/StatusList}
 %~ The majority of statuses are negative - they impair the character. However, a few statuses such as {\it Invisible} and {\it Calm Mind} are beneficial. 
 
 %~ Most conditions are only temporary, and will wear off after a certain amount of time - or can be ended by a simple character action. Some Statuses, however, are more serious and can only be removed by magical or medical intervention. The effect which causes a status should specify the termination condition, if any. 
