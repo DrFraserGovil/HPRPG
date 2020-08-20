@@ -27,13 +27,6 @@ Ones these \imp{runes} are chosen, the enchanter must begin the complex task of 
 All of the \imp{Ancient Runes} fall into one of three categories: the \key{Control Runes}, the \key{Esoteric Runes} and the \key{Duration Runes}. For a successful echantment, you need at least one rune from each category to be inscribed into the nexus. 
 
 
-\subsection{Learning Runes}
-
-Whilst, for simplicity, the runes are presented as singular entities within this rulebook (the `base rune'), when a witch `learns' a rune, they are actually learning the complex `grammar' needed to conjugate and modify the base runes into the complex webs of magic required for enchanting. 
-
-Learning a new rune, therefore, can be an arduous task, and usually requires studying a tome dedicated to that singular rune for a number of hours. Locating the relevant tome might be an adventure in and of itself - the \imp{Hogwarts Library} is unlikely to stock any tomes regarding the use of \rune{\lues}, the necromantic rune, for example.
-
-As a rough guide, once a rune-tome has been located, a character may perform an \imp{Intelligence (Investigation)} check (DV 7). Each success reduces the required study time by 1 hour, starting from 8 hours. Once this time has elapsed, your character is considered to have memorised the use of this rune. 
 \newcommand\runeRow[3]
 {
 	\rune{#2}	&	#1	&		\small #3 \\
@@ -136,88 +129,25 @@ As a rough guide, once a rune-tome has been located, a character may perform an 
 
 
 
+\subsection{Learning Runes}
+
+Whilst, for simplicity, the runes are presented as singular entities within this rulebook (the `base rune'), when a witch `learns' a rune, they are actually learning the complex `grammar' needed to conjugate and modify the base runes into the complex webs of magic required for enchanting. 
+
+Learning a new rune, therefore, can be an arduous task, and usually requires studying a tome dedicated to that singular rune for a number of hours. Locating the relevant tome might be an adventure in and of itself - the \imp{Hogwarts Library} is unlikely to stock any tomes regarding the use of \rune{\lues}, the necromantic rune, for example.
+
+As a rough guide, once a rune-tome has been located, a character may perform an \imp{Intelligence (Investigation)} check (DV 7). Each success reduces the required study time by 1 hour, starting from 8 hours. Once this time has elapsed, your character is considered to have memorised the use of this rune. 
+
+\newpage
+
 \section{The Enchanting Ritual}
 
 Whilst the \imp{Runes} are being inscribed, the artificer must channel magical energy into the runes, to be stored and shaped in the nexus. To do this, they must hold a very precise idea of the effect they wish to imbue into the item. 
 
-You must describe to the GM what it is you are attempting to achieve, which the GM will use to determine the scale of the enchanting effort that you are attempting, using the tables below. The GM also uses this time to make a judgement call if you are even able to attempt this enchantment, and if the runes you have selected wouldproduce the desired effect. If the GM consents, you may begin to imbuing process. 
+Following the basic \imp{artificing} guidelines given on page \pageref{S:ArtificingBasics}, you must first describe (as precisely as possible) the effect that you are trying to imbue into the target item, and describe why and how your selected runes allow you to perform this action. If the \imp{GM} concurs that your selected runes would create a \imp{nexus} for your chosen enchantment, they will choose a \imp{DV} and a required number of successes using the standard \imp{artificing} guidelines. 
 
-For every 6 hours that you spend focussed entirely on the Imbuing process, you may perform an \imp{Imbuing} check as part of a long term project (see page \pageref{S:Extended}). Every success you gain from the check is allocated into the project-pool. 
-
-The DV of the check is determined by the GM from their assessment of the rarity of the item (see \pageref{S:ItemRarity}) and the \imp{Imbuing} ability of the enchanter. 
-
-\newcommand\tHeader[1]{ \cc \imp{ #1} }
-\newcommand\dvRow[7]{#1&#2&#3&#4&#5&#6&#7}
-
-\newcommand\dvTable[7]
-{
-	\footnotesize
-	\begin{center}
-		\begin{rndtable}{@{} c r c c c c c c c @{}}
-			~ & ~ & \multicolumn{7}{c}{\cc \small Imbuing Ability} 
-			\\
-			\cc & \cc	&	\tHeader{1}	&	\tHeader{2}	&	\tHeader{3}	&	\tHeader{4}	&	\tHeader{5}	&	\tHeader{6}	&	\tHeader{7}
-			\\
-			\cc &  \tHeader{Trivial}	&	#1
-			\\
-			\cc & \tHeader{Common} 	&	#2
-			\\
-			\cc & \tHeader{Singular}	&	#3
-			\\
-			\cc & \tHeader{Unusual}	&	#4
-			\\
-			\cc & \tHeader{Rare}	&	#5
-			\\
-			\cc & \tHeader{Extraordinary}	&	#6
-			\\
-			\multirow{-7}{*}{\rotatebox[origin=c]{90}{\cc \bf \small Item Rarity} } & \tHeader{Mythical} & #7
-		\end{rndtable}
-	
-	\end{center}
-	\normalsize
-}
-
-\dvTable
-{
-	\dvRow{8}{7}{6}{5}{4}{3}{2}
-}
-{
-	\dvRow{9}{8}{7}{6}{5}{4}{3}
-}
-{
-	\dvRow{10}{9}{8}{7}{6}{5}{4}
-}
-{
-	\dvRow{11}{10}{9}{8}{7}{6}{5}
-}
-{
-	\dvRow{-}{11}{10}{9}{8}{7}{6}
-}
-{
-	\dvRow{-}{-}{11}{10}{9}{8}{7}
-}
-{
-	\dvRow{-}{-}{-}{11}{10}{9}{8}
-}
-
+For every 6 hours that you spend focussed entirely on the Imbuing process, you may perform an \imp{Imbuing} check. Every success you gain from the check is allocated into the project-pool. 
 
 \subsection{Enchantment Success}
-
-In order for the enchanting ritual to complete you must meet a number of successes determined by the difficulty of the enchanting effort your are attempting:
-
-\newcommand\sucRow[2]{ \key{#1}  & #2 \\}
-\begin{center}
-\begin{rndtable}{l c}
-	\bf Rarity & \bf Successes \\
-	\sucRow{Trivial}{5}
-	\sucRow{Common}{10}
-	\sucRow{Singular}{15}
-	\sucRow{Unusual}{20}
-	\sucRow{Rate}{30}
-	\sucRow{Extraordinary}{40}
-	\sucRow{Mythical}{50+}
-\end{rndtable}
-\end{center}
 
 Once you have reached the required number of successes, you have completed the enchanting process, and now possess a newly enchanted object. Your GM should finalise any remaining questions about the properties of the new object, such as any limitations or finite uses, and then you may begin to use it as you wish.
 

@@ -1,0 +1,134 @@
+\chapter{Artificing Basics} \label{S:ArtificingBasic}
+
+\key{Artificing} is the process by which new obejcts - both \imp{magical} and \imp{mundane} are created. When you want a new magic potion, a talking sword, or a complex catapault system, you will need to turn to artificing. 
+
+There are four kinds of \imp{artificing} considered within the confines of this ruleset: \key{Alchemy, Enchanting, Forging} and \key{Art}. 
+
+\imp{Alchemy} is the ancient art of combining herbal, elemental and tokenistic ingredients to produce consumable potions, salves, poisons, gases and other such creations, whilst \imp{Enchanting} is the art of impregnating a physical object with magical properties. Both of these are highly magical acts, and require the budding artificer to channel their own magical energies into the creation: they are therefore governed by the \key{Imbue} \imp{ability}. 
+
+On the other hand, \imp{forging} is the assembling of mundane creations from their base materials - this might include literal forging, heating and shaping metal, but it also includes woodwork, mechanical tinkering and many more. \imp{Art} is perhaps the most nebulous of these topics, but generally includes the creation of objects of beauty and majesty - in the magical world, these objects are often shaped into the likeness of a real person or event, allowing the creation of moving photographs or talking portraits. These domains rely more heavily on the ability to work with one's hands, and so are governed by the \key{crafting} \imp{ability}. 
+
+
+In order to \imp{artifice} a new item, your \imp{character} will need the tools, the materials and - most importantly - the skills and knowledge in order to go about the creation. 
+
+\section{Basic Outline}
+
+All but the most trivial of artificing efforts will fall under the purview of an \imp{Extended Action}, the mechanics of which are discussed on page \pageref{S:Extended}.
+
+The specifics of the necessary ingredients, procedures and tools are detailed in the following sections, however, as a general rule, all artificing efforts require 4 basic steps.
+
+\subsubsection{Designing the Product}
+
+Working with the \imp{GM}, follow the individual \imp{artificing} rules to design the item to create, effect to enchant, or potion to brew. 
+
+At this step, you should describe as clearly as possible the product you are trying to create. 
+
+\subsubsection{Assigning Difficulty}
+
+Using your description, the \imp{GM} then determines the \key{rarity} of the product that you have described, using the \imp{item rarity} conditions described on page \pageref{S:ItemRarity}. 
+
+The following table then gives a way to match the \imp{rarity} to the \imp{ability} of the person undertaking the task:
+
+
+\newcommand\tHeader[1]{ \cc \imp{ #1} }
+\newcommand\dvRow[7]{#1&#2&#3&#4&#5&#6&#7}
+
+\newcommand\dvTable[7]
+{
+	\footnotesize
+	\begin{center}
+		\begin{rndtable}{@{} c r c c c c c c c @{}}
+			~ & ~ & \multicolumn{7}{c}{\cc \small Artificing Ability} 
+			\\
+			\cc & \cc	&	\tHeader{1}	&	\tHeader{2}	&	\tHeader{3}	&	\tHeader{4}	&	\tHeader{5}	&	\tHeader{6}	&	\tHeader{7}
+			\\
+			\cc &  \tHeader{Trivial}	&	#1
+			\\
+			\cc & \tHeader{Common} 	&	#2
+			\\
+			\cc & \tHeader{Singular}	&	#3
+			\\
+			\cc & \tHeader{Unusual}	&	#4
+			\\
+			\cc & \tHeader{Rare}	&	#5
+			\\
+			\cc & \tHeader{Extraordinary}	&	#6
+			\\
+			\multirow{-7}{*}{\rotatebox[origin=c]{90}{\cc \bf \small Item Rarity} } & \tHeader{Mythical} & #7
+		\end{rndtable}
+	
+	\end{center}
+	\normalsize
+}
+
+\dvTable
+{
+	\dvRow{8}{7}{6}{5}{4}{3}{2}
+}
+{
+	\dvRow{9}{8}{7}{6}{5}{4}{3}
+}
+{
+	\dvRow{10}{9}{8}{7}{6}{5}{4}
+}
+{
+	\dvRow{11}{10}{9}{8}{7}{6}{5}
+}
+{
+	\dvRow{-}{11}{10}{9}{8}{7}{6}
+}
+{
+	\dvRow{-}{-}{11}{10}{9}{8}{7}
+}
+{
+	\dvRow{-}{-}{-}{11}{10}{9}{8}
+}
+
+The \imp{Artificing Ability} is the rating that the character possesses in either the \imp{Imbuing} field (for \imp{Enchanting} and \imp{Alchemy}) or in \imp{Crafting} (for \imp{Forging} and \imp{Art})
+
+
+\subsubsection{Determining Complexity}
+
+The final step before beginning the creation is determining how long the item creation is actually going to take - in other words, the number of \imp{successes} that mst be accumulated before the \imp{artificing} feat is completed. A suggested format is given below:
+
+\newcommand\sucRow[2]{ \key{#1}  & #2 \\}
+{\small
+\begin{center}
+\begin{rndtable}{l c}
+	\bf Complexity & \bf Successes \\
+	\sucRow{Simple}{5}
+	\sucRow{Easy}{10}
+	\sucRow{Fiddly}{15}
+	\sucRow{Arduous}{20}
+	\sucRow{Tough}{30}
+	\sucRow{Formidable}{40}
+	\sucRow{Everlasting}{50+}
+\end{rndtable}
+\end{center}
+}
+As a general rule, the complexity will almost always map directly onto the \imp{rarity} (i.e. a \imp{trivial} construction will almost always be \imp{simple}, and a \imp{Mythical} object will almost always be \imp{everlasting}), however it is possible that something might be incredibly easy to build - but time consuming. 
+
+Building a truly gigantic cardboard construction requires no more than basic skills, but certainly takes a long time for a less skilled individual. The GM may therefore choose to mix and match the \imp{Rarity} and the \imp{Complexity} at their discretion.  
+
+
+\subsubsection{Performing the Rolls}
+
+After the \imp{DV} and the required number of successes has been determined, you may begin to undertake the \imp{artificing} process. 
+
+At the end of every 6 hours spent working on the project, you perform an \imp{artificing} check (an \imp{Aspect} + the relevant \imp{artificing ability}) against the assigned DV. Each success is allocated towards the \imp{extended project}. 
+
+For most projects, the \imp{GM} may be perfectly happy for you to take these 6-hour periods of work at random points, with gaps and rests in between. They may also allow those 6 hours to be cumulative - so 1 hour per day would trigger a roll at the end of the 6th day. However, some more complex procedures may cause the \imp{GM} to ask you to spend larger consecutive periods with the project - or risk losing it. If you begin brewing a \imp{Polyjuice potion} in March, and don't come back for it until \imp{December}...don't be surprised when the \imp{GM} asks you to start again from scratch!
+\subsubsection{Describing the Item}
+
+Once the checks have been completed, the \imp{GM} describes the finished product and confirms the properties and effects that it possesses. The characters may then record the new item into the \imp{Inventory}.
+
+
+\subsection{A Note to Players}
+
+As a \imp{player}, you also have a responsibility to work with the \imp{GM} when undertaking \imp{artificing} efforts. 
+
+By design, the \imp{crafting} system is necessarily open ended and freeform, and is designed to result in magical effects, mechanics and synergies beyond the limited imagination of the author. 
+
+The risk is, therefore, that as a player you manage to invent something with some properties which would render the item so ludicrously overpowered and over-useful that, even though it conforms to the rules set out here, it would nevertheless `break' the game. The \imp{GM} should rightly intervene if they feel that the inclusion of such an item would render the game less fun for everyone (including them!)
+
+If this occurs, you should work with the \imp{GM} to come to a compromise whereby you perhaps limit the abilities of your new superweapon to a more manageable degree. Equally, you should perhaps allow the \imp{GM} a period of latitutde after creating an item where you may still work together to tinker with or clarify the exact effects and mechanics - no \imp{GM} has perfect foresight after all. This should only be used in exceptional circumstances, or in a very short period of time after the item is created. 
