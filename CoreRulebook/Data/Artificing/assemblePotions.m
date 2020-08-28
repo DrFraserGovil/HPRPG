@@ -3,89 +3,68 @@ function assemblePotions(fileNameRoot)
     if nargin < 1
         disp('Insufficient inputs provided');
         addpath('../Functions/');
-        fileNameRoot = '../../Chapters/';
+        fileNameRoot = '../../';
     end
-	opts = detectImportOptions('potions.xlsx','NumHeaderLines',2);
-    opts.VariableNamesRange = 'A1';
-    f = readtable("potions.xlsx",opts,'ReadVariableNames',true);
 	
-	N = height(f);
-	
-	potions = Potion.empty;
-	
-	pouch = IngredientPouch();
-	for i = 1:N
-		p = Potion(f(i,:),pouch);
-		
-		if ~isempty(p.Name)
-		
-			potions(end+1) = p;
-		end
-	end
-	
-	for i = 1:length(pouch.Ingredients)
-		ing = pouch.Ingredients(i);
-		
-        if isempty(ing.CriticalPotions) && isempty(ing.OptionalPotions)
-           disp(ing.Name + " has no uses") 
-        end
+    %% load in ingredients
+	f = readtable("ingredients.xlsx");
+    f = sortrows(f);
+    ings = Ingredient.empty;
+    for i = 1:height(f)
+       ings(end+1) = Ingredient(f(i,:));
+ 
     end
-	%% output to files
-
-    potionSTrigger = "%%PotionBegin";
-    potionETrigger = "%%PotionEnd";
-    
-	%basic output
-	fileName = strcat(fileNameRoot, 'Part3_Items/PotionMaking.tex');
-	I = [potions.SimpleInclude] == 1;
-	subset = potions(I);
-	writeToFile(fileName,subset,potionSTrigger,potionETrigger);
-	
-	%longer output
-	fileName = strcat(fileNameRoot, 'Part5_Lists/PotionList.tex');
-	writeToFile(fileName,potions,potionSTrigger,potionETrigger);
-	
-	%rulebook output
-	fileName = strcat(fileNameRoot, '../../GameMasterGuide/Chapters/Potions.tex');
-	writeToFile(fileName,potions,potionSTrigger,potionETrigger);
-    
-    %%ingredient output
-    ingSTrigger = "%%IngredientBegin";
-    ingETrigger = "%%IngredientEnd";
-    q = [pouch.Ingredients];
-    writeToFile(fileName,q,ingSTrigger,ingETrigger);
-    
    
-end
-
-function writeToFile(fileName,list,startTrigger,endTrigger)
-
-s = cellstr({list.Name});
-
-	[~,I] = sort(s);
-
-	list = list(I);
-	potionText = "\n";
-%     disp("Writing " + num2str(length(list)) + " potions to file");
-	for i = 1:length(list)
-		p = list(i);
-		potionText = potionText + p.print() + "\n";
-	end
-	
-	
-	%% output to file
-
-	readFile = fileread(fileName);
+    %% load in effects
+    g = readtable("effects.xlsx");
+    g = sortrows(g);
+    effects = Effect.empty;
+    for i = 1:height(g)
+        effects(end+1) = Effect(g(i,:),ings);
+    end
     
-	insertPoint = strfind(readFile, startTrigger);
-    endPoint = strfind(readFile, endTrigger);
-    firstHalf = prepareText(readFile(1:insertPoint+length(char(startTrigger))),0);
-
-    secondHalf = prepareText(readFile(endPoint:end),0);
-	
-	fullText = firstHalf + potionText + "\n\n" + secondHalf;
-	FID = fopen(fileName,'w');
-    fprintf(FID, fullText);
-    fclose(FID);
-	sprintf(fullText);
+    %% checks for missing effects
+    z = [effects.Name];
+    missingText = "Missing Effects:\n";
+    q = 0;
+    for i = 1:length(ings)
+       for j = 1:length(ings(i).Properties)
+           if ~any(ings(i).Properties(j) == z)
+              missingText = missingText + "\t" + ings(i).Properties(j) + "  \t(" + ings(i).Name + ")\n";
+              q = q + 1;
+           end
+       end
+    end
+    if q > 0
+        missingText = missingText + "(Total %d missing)\n";
+        fprintf(missingText,q);
+    end
+    
+    rares = unique([ings.Rarity]);
+    
+    %% print out ingredients
+    text = "";
+    for i = 1:length(rares)
+        text = text + "\\def\\" + rares(i) + "List{";
+        for j = 1:length(ings)
+            if ings(j).Rarity == rares(i)
+                text = text + "\n\t" + ings(j).print();
+            end
+        end
+        text = text + "\n}\n";
+    end
+    
+    
+    
+    text = text + "\n\n\\def\\effectList{";
+     for i = 1:length(effects)
+         if length(effects(i).Ingredients) > 0
+            text = text + "\n\t" + effects(i).print();
+         end
+     end
+    text = text + "\n}";
+    
+    fileName = fileNameRoot + "Chapters/Part5_Artificing/IngredientList.tex";
+    FID = fopen(fileName,'w');
+    fprintf(FID, text);
 end
