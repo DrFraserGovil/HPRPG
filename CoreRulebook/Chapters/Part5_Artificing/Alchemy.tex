@@ -44,7 +44,7 @@ This system is designed to be largely freeform, allowing players to experiment a
 
 The \imp{GM} should now attempt to determine the exact details of the potion you are making (and also perhaps dream up some complications or mitigating factors). They should ask the potion mixer to describe exactly the effects of the potion they are trying to make, the magnitude of the effects, and the number of doses intended. 
 
-The \imp{difficulty} of the mixing is determined using the basic \imp{artificing rules} found on page \pageref{T:ArtificingDV}. In short, the \imp{GM} uses the properties of the potion mixing that is being attempted to divine a \imp{Rarity} for the potion.
+The \imp{difficulty} of the mixing is determined using the basic \imp{artificing rules} found on page \pageref{T:ArtificingDV}. In short, the \imp{GM} uses the rarity of the ingredients and the properties of the potion mixing that is being attempted to divine a \imp{Rarity} for the potion.
 
 As suggested on page \pageref{T:ArtificingDV}, the \imp{Rarity} also corresponds to the number of required successes for the potion to be completed. However, attempting to brew a larger dose may increase the number of required successes. Most \imp{alchemy} attempts would produce only a small number of samples of the desired potion - usually between 1 and 3 (at the \imp{GM}s discretion). This number can be increased by voluntarily increasing the \imp{complexity} of the project by one level - if a \imp{Fiddly} project would produce 2 samples, then you may brew 4 potions by making the mixing \imp{arduous}, or 6 potions by making it \imp{tough}
 
@@ -69,7 +69,63 @@ Below is a list of the ingredient properties which are used for the `default' al
 }
 \end{strip}
 
-\section{Ingredient List}
+\section{Ingredients}
+
+Below is presented a list of ingredients, along with a brief description of their origin, as well as the all-important descriptions of its \imp{alchemical properties}. 
+
+\subsection{Harvesting \& Acquiring Ingredients}
+
+Character are encouraged, wherever possible, to gather their own ingredients for potion mixing - after all, it is always more satisfying to mix things that you harvested yourself, rather than using store-bought ingredients. The potency of the magic is just a {\it bit} stronger when there is a personal connection. 
+
+However, sometimes it is just not practical to go dragon hunting when you want to whip up a quick batch of \key{fire-breathing philter} - in which case merchants in all magical centres can surely be found who will service your needs. 
+
+ 
+\subsection{Retroactive Purchases}
+
+In keeping with the general theme of abstraction and simplifaction present in the \imp{financial} system of the game, so to is a certain level of abstraction levied at the purchasing and tracking ingredients.
+
+Some players may simply not find it fun to keep a maintained list of all the alchemical supplies they have gathered, and any serious potion-oriented character would quickly find themselves overwhelmed with the maintenance of such a list. It is therefore encouraged that a level of \key{retroactive purchasing} be allowed. 
+
+When ingredients are purchased at a shop, rather than purchasing (for example), {\it five samples of dragons blood, two samples of newts eyes and a scoop of scarab beetles}, instead the character sheet encodes the ability to purchase {\it $x$ samples of rare ingredients, or $y$ samples of a common ingredient}. 
+
+The exact ingredients that were purchased can be decided retroactively - when a potion mixing requires some {\it fairy wings}, as long as you have purchased a \imp{common} ingredient, you can decide that it was fairy wings, before marking it off. 
+
+When purchasing `retroactive ingredients', the following price guides may suffice:
+
+\begin{center}
+\begin{rndtable}{c c}
+\key{Rarity}	&	\key{Cost}
+\\
+\imp{Abundant}	&	100+ samples for \galleon{1}
+\\
+\imp{Common}	&	20 samples for \galleon{1}
+\\
+\imp{Singular}	&	10 samples for \galleon{1}
+\\
+\imp{Unusual}	&	3 samples for \galleon{1}
+\\
+\imp{Rare}	&	1 sample for \galleon{1}
+\\
+\imp{Extraordinary}	&	\galleon{3} per sample
+\\
+\imp{Mythical}	&	\galleon{10}+ per sample
+\end{rndtable} 
+\end{center}
+
+The secondary character sheet contains slots to mark how many `retroactive' ingredients you have purchased in the form of a number of diamonds for each rarity. Each time you select which ingredient was purchased from your set, remove the mark. Note that \imp{Abundant} ingredients are so cheap and easily available that any respectable potion-maker may assume that they have a near-infinite supply. The \imp{GM} should only charge for these ingredients if truly monumental quantities are being used. 
+
+The \imp{GM} may, of course, rule that the desired ingredient was not available at the time of purchase (or perhaps has not survived the months or years that have passed since it was purchased...), in which case you may have to track down an ingredient specifically, though this should generally only apply to specific volatile, rare or hard to obtain ingredients. 
+
+This also does not apply to ingredients which you have harvested yourself - you use those as you would normally expect, recording them individually and marking them off as they are used or sold. 
+
+\subsection{Ingredient Rarity}
+As with all items, \imp{Ingredients} are classified by their \imp{rarity}, which encompasses the difficulty of acquiring, harvesting, processing and preserving the ingredient. 
+
+It may be assumed that a rarer ingredient is necessarily more powerful - to the extant that the limiting factor on most potion mixing efforts is the rarest item used in the mixture. Unless a particularly good `ingredient narrative' can be concocted, a \imp{potion} can never be assigned a \imp{rarity} higher than that of its most rare ingredient. 
+
+In this fashion, potions are limited in their effectiveness by the availability of ingredients - you cannot mix a \imp{mythical} poison capable of bringing down dragons with a single droplet without some seriously \imp{mythical} ingredients. 
+
+
 
 \newcommand\ingredient[3]
 {
@@ -79,12 +135,13 @@ Below is a list of the ingredient properties which are used for the `default' al
 \newcommand\ingredientList[2]
 {
 	\subsection{		#1}
-
+{
 	\scriptsize
 \begin{rndtable}{l l l}
 {\small \key{Ingredient}}	&	{\small \key{Description} } &	{\small \key{Effects}} \\
 #2
 \end{rndtable}
+}
 }
 
 \ingredientList{Abundant Ingredients}{\AbundantList}
@@ -96,3 +153,24 @@ Below is a list of the ingredient properties which are used for the `default' al
 \ingredientList{Mythical Ingredients}{\MythicalList}
 
 \section{Selected Recipes}
+
+Though alchemy is inherently a very personal affair, with individual witches and wizards harbouring their own secret recipes which they pass on down through the generations, the following suggests some very common base recipes for a number of potions. 
+
+
+
+\newcommand\potion[5]
+{
+	\subsubsection{#1}
+	
+	{\it #2}
+	
+	\begin{tabular}{l p{5cm}}
+		\key{Rarity:}	& #3
+		\\
+		\key{Ingredients:}	& \imp{#4}
+		\\
+		\key{Effect:}	& #5
+	\end{tabular}
+}
+
+\potion{Wiggenweld Potion}{This bright red fluid is instantly recognisable as a basic healing potion: inducing the natural healing abilities of the drinker}{Common}{Wiggenweld Bark, Horklump Juice, Dittany}{Drinker rolls a DV 7 \imp{Vitality} check, healing for 1 level + 1 for each success.} 

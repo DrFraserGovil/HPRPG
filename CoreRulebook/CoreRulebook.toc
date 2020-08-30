@@ -459,42 +459,46 @@
 \contentsline {subsubsection}{Improvised Ingredients}{97}{subsubsection*.179}
 \contentsline {subsection}{\numberline {29.1.2}Preparing the Project}{97}{subsection.29.1.2}
 \contentsline {section}{\numberline {29.2}Ingredient Properties}{98}{section.29.2}
-\contentsline {section}{\numberline {29.3}Ingredient List}{99}{section.29.3}
-\contentsline {subsection}{\numberline {29.3.1} Abundant Ingredients}{99}{subsection.29.3.1}
-\contentsline {subsection}{\numberline {29.3.2} Common Ingredients}{99}{subsection.29.3.2}
-\contentsline {subsection}{\numberline {29.3.3} Singular Ingredients}{100}{subsection.29.3.3}
-\contentsline {subsection}{\numberline {29.3.4} Unusual Ingredients}{100}{subsection.29.3.4}
-\contentsline {subsection}{\numberline {29.3.5} Rare Ingredients}{100}{subsection.29.3.5}
-\contentsline {subsection}{\numberline {29.3.6} Extraordinary Ingredients}{100}{subsection.29.3.6}
-\contentsline {subsection}{\numberline {29.3.7} Mythical Ingredients}{101}{subsection.29.3.7}
+\contentsline {section}{\numberline {29.3}Ingredients}{99}{section.29.3}
+\contentsline {subsection}{\numberline {29.3.1}Harvesting \& Acquiring Ingredients}{99}{subsection.29.3.1}
+\contentsline {subsection}{\numberline {29.3.2}Retroactive Purchases}{99}{subsection.29.3.2}
+\contentsline {subsection}{\numberline {29.3.3}Ingredient Rarity}{99}{subsection.29.3.3}
+\contentsline {subsection}{\numberline {29.3.4} Abundant Ingredients}{99}{subsection.29.3.4}
+\contentsline {subsection}{\numberline {29.3.5} Common Ingredients}{100}{subsection.29.3.5}
+\contentsline {subsection}{\numberline {29.3.6} Singular Ingredients}{100}{subsection.29.3.6}
+\contentsline {subsection}{\numberline {29.3.7} Unusual Ingredients}{100}{subsection.29.3.7}
+\contentsline {subsection}{\numberline {29.3.8} Rare Ingredients}{101}{subsection.29.3.8}
+\contentsline {subsection}{\numberline {29.3.9} Extraordinary Ingredients}{101}{subsection.29.3.9}
+\contentsline {subsection}{\numberline {29.3.10} Mythical Ingredients}{101}{subsection.29.3.10}
 \contentsline {section}{\numberline {29.4}Selected Recipes}{101}{section.29.4}
-\contentsline {chapter}{\numberline {30}Enchanting}{102}{chapter.30}
-\contentsline {section}{\numberline {30.1}The Nexus}{102}{section.30.1}
-\contentsline {section}{\numberline {30.2}Runes}{102}{section.30.2}
-\contentsline {subsection}{\numberline {30.2.1}Control}{102}{subsection.30.2.1}
-\contentsline {subsection}{\numberline {30.2.2}Duration}{102}{subsection.30.2.2}
-\contentsline {subsection}{\numberline {30.2.3}Esoteric}{102}{subsection.30.2.3}
-\contentsline {subsection}{\numberline {30.2.4}Learning Runes}{103}{subsection.30.2.4}
-\contentsline {section}{\numberline {30.3}The Enchanting Ritual}{103}{section.30.3}
-\contentsline {subsection}{\numberline {30.3.1}Enchantment Success}{103}{subsection.30.3.1}
-\contentsline {subsection}{\numberline {30.3.2}Enchantment Failure}{103}{subsection.30.3.2}
-\contentsline {section}{\numberline {30.4}The Limits of Enchanting}{103}{section.30.4}
-\contentsline {section}{\numberline {30.5}Multiple Effects}{103}{section.30.5}
-\contentsline {subsection}{\numberline {30.5.1}Complimentary Effects}{103}{subsection.30.5.1}
-\contentsline {subsection}{\numberline {30.5.2}Non-Complimentary Effects}{103}{subsection.30.5.2}
-\contentsline {section}{\numberline {30.6}Some Examples}{104}{section.30.6}
-\contentsline {subsubsection}{Abundant}{104}{subsubsection*.180}
-\contentsline {subsubsection}{Common}{104}{subsubsection*.181}
-\contentsline {subsubsection}{Singular}{104}{subsubsection*.182}
-\contentsline {subsubsection}{Unusual}{104}{subsubsection*.183}
-\contentsline {subsubsection}{Rare}{104}{subsubsection*.184}
-\contentsline {subsubsection}{Extraordinary}{104}{subsubsection*.185}
-\contentsline {subsubsection}{Mythical}{104}{subsubsection*.186}
-\contentsline {part}{VI\hspace {1em}Appendices}{105}{part.6}
-\contentsline {chapter}{\numberline {31}Changelog}{106}{chapter.31}
-\contentsline {section}{\numberline {31.1}Changes in V4.0}{106}{section.31.1}
-\contentsline {subsection}{\numberline {31.1.1}Core System Change}{106}{subsection.31.1.1}
-\contentsline {subsection}{\numberline {31.1.2}Spells}{106}{subsection.31.1.2}
-\contentsline {subsection}{\numberline {31.1.3}Money}{106}{subsection.31.1.3}
-\contentsline {section}{\numberline {31.2}To Do List}{106}{section.31.2}
-\contentsline {part}{VII\hspace {1em}Character Sheet}{107}{part.7}
+\contentsline {subsubsection}{Wiggenweld Potion}{102}{subsubsection*.180}
+\contentsline {chapter}{\numberline {30}Enchanting}{103}{chapter.30}
+\contentsline {section}{\numberline {30.1}The Nexus}{103}{section.30.1}
+\contentsline {section}{\numberline {30.2}Runes}{103}{section.30.2}
+\contentsline {subsection}{\numberline {30.2.1}Control}{103}{subsection.30.2.1}
+\contentsline {subsection}{\numberline {30.2.2}Duration}{103}{subsection.30.2.2}
+\contentsline {subsection}{\numberline {30.2.3}Esoteric}{104}{subsection.30.2.3}
+\contentsline {subsection}{\numberline {30.2.4}Learning Runes}{104}{subsection.30.2.4}
+\contentsline {section}{\numberline {30.3}The Enchanting Ritual}{104}{section.30.3}
+\contentsline {subsection}{\numberline {30.3.1}Enchantment Success}{104}{subsection.30.3.1}
+\contentsline {subsection}{\numberline {30.3.2}Enchantment Failure}{104}{subsection.30.3.2}
+\contentsline {section}{\numberline {30.4}The Limits of Enchanting}{104}{section.30.4}
+\contentsline {section}{\numberline {30.5}Multiple Effects}{105}{section.30.5}
+\contentsline {subsection}{\numberline {30.5.1}Complimentary Effects}{105}{subsection.30.5.1}
+\contentsline {subsection}{\numberline {30.5.2}Non-Complimentary Effects}{105}{subsection.30.5.2}
+\contentsline {section}{\numberline {30.6}Some Examples}{105}{section.30.6}
+\contentsline {subsubsection}{Abundant}{105}{subsubsection*.181}
+\contentsline {subsubsection}{Common}{105}{subsubsection*.182}
+\contentsline {subsubsection}{Singular}{105}{subsubsection*.183}
+\contentsline {subsubsection}{Unusual}{105}{subsubsection*.184}
+\contentsline {subsubsection}{Rare}{105}{subsubsection*.185}
+\contentsline {subsubsection}{Extraordinary}{105}{subsubsection*.186}
+\contentsline {subsubsection}{Mythical}{105}{subsubsection*.187}
+\contentsline {part}{VI\hspace {1em}Appendices}{107}{part.6}
+\contentsline {chapter}{\numberline {31}Changelog}{108}{chapter.31}
+\contentsline {section}{\numberline {31.1}Changes in V4.0}{108}{section.31.1}
+\contentsline {subsection}{\numberline {31.1.1}Core System Change}{108}{subsection.31.1.1}
+\contentsline {subsection}{\numberline {31.1.2}Spells}{108}{subsection.31.1.2}
+\contentsline {subsection}{\numberline {31.1.3}Money}{108}{subsection.31.1.3}
+\contentsline {section}{\numberline {31.2}To Do List}{108}{section.31.2}
+\contentsline {part}{VII\hspace {1em}Character Sheet}{109}{part.7}

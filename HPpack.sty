@@ -503,56 +503,6 @@ Gain an additional #1 #2 damage \forEvery{}.
 
 
 
-%%Potion stuff
-
-\makeatletter
-\define@key{potion}{name}{\def\name{#1}}
-\define@key{potion}{description}{\def\visible{#1}}
-\define@key{potion}{cost}{\def\cost{#1}}
-\define@key{potion}{effect}{\def\effect{#1}}
-\define@key{potion}{difficulty}{\def\difficulty{#1}}
-\define@key{potion}{time}{\def\time{#1}}
-\define@key{potion}{othereffect}{\def\side{#1}}
-\define@key{potion}{doses}{\def\dose{#1}}
-\define@key{potion}{essential}{\def\essential{#1}}
-\define@key{potion}{optional}{\def\optional{#1}}
-\makeatother
-\def\q{4.2}
-\def\g{0.9}
-\def\h{1.8}
-\def\ll{1}
-\newcommand{\potion}[1]
-{
-	\setkeys{potion}{name=None}
-	\setkeys{potion}{#1}
-	\vbox{
-	\renewcommand{\arraystretch}{1.2}
-	{\normalsize \color{rulered}\name }
-
-	\footnotesize
-	{\it \visible}
-	
-	
-	
-	\vspace{1ex}
-	\begin{tabular}{@{} >{\centering\arraybackslash}m{\g cm} >{\centering\arraybackslash}m{\h cm} >{\centering\arraybackslash}m{\g cm} >{\centering\arraybackslash}m{\ll cm} @{}}
-		\cellcolor{white}\textbf{Cost}	&	\bf Mixing Time	&\bf Dose&	\bf Difficulty 
-		\\
-		\cost{}	&	\time{}	& \dose{}&	\difficulty{} 
-	\end{tabular}
-
-\vspace{1 ex}
-{\bf Ingredients}:~~		\parbox[t]{\q cm}{ \raggedright \essential}
-
-
-	{\raggedright \effect}
-	}
-	
-	
-	\vspace{3 ex}
-}
-
-
 %%Enchanting stuff
 \def\displos{H}
 \def\velox{C}
