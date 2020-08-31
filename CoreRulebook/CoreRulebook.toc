@@ -252,18 +252,19 @@
 \contentsline {subsection}{\numberline {14.1.1}Basic Harm}{54}{subsection.14.1.1}
 \contentsline {subsection}{\numberline {14.1.2}Cumulative Harm}{54}{subsection.14.1.2}
 \contentsline {section}{\numberline {14.2}Healing}{54}{section.14.2}
-\contentsline {section}{\numberline {14.3}Effects of Harm}{54}{section.14.3}
-\contentsline {subsection}{\numberline {14.3.1}Avoiding Penalties}{54}{subsection.14.3.1}
-\contentsline {subsection}{\numberline {14.3.2}Additional Health}{55}{subsection.14.3.2}
-\contentsline {section}{\numberline {14.4}Damage Types}{55}{section.14.4}
-\contentsline {subsection}{\numberline {14.4.1}Physical}{55}{subsection.14.4.1}
-\contentsline {subsection}{\numberline {14.4.2}Energetic}{55}{subsection.14.4.2}
-\contentsline {subsection}{\numberline {14.4.3}Vitriolic}{55}{subsection.14.4.3}
-\contentsline {section}{\numberline {14.5}Immunity, Resistance \& Susceptibility}{55}{section.14.5}
-\contentsline {subsection}{\numberline {14.5.1}Immunity}{56}{subsection.14.5.1}
+\contentsline {section}{\numberline {14.3}Determining Order}{54}{section.14.3}
+\contentsline {section}{\numberline {14.4}Effects of Harm}{55}{section.14.4}
+\contentsline {subsection}{\numberline {14.4.1}Avoiding Penalties}{55}{subsection.14.4.1}
+\contentsline {subsection}{\numberline {14.4.2}Additional Health}{55}{subsection.14.4.2}
+\contentsline {section}{\numberline {14.5}Damage Types}{55}{section.14.5}
+\contentsline {subsection}{\numberline {14.5.1}Physical}{55}{subsection.14.5.1}
+\contentsline {subsection}{\numberline {14.5.2}Energetic}{55}{subsection.14.5.2}
+\contentsline {subsection}{\numberline {14.5.3}Vitriolic}{56}{subsection.14.5.3}
+\contentsline {section}{\numberline {14.6}Immunity, Resistance \& Susceptibility}{56}{section.14.6}
+\contentsline {subsection}{\numberline {14.6.1}Immunity}{56}{subsection.14.6.1}
 \contentsline {subsubsection}{Resistance}{56}{subsubsection*.144}
 \contentsline {subsubsection}{Susecptibility}{56}{subsubsection*.145}
-\contentsline {subsection}{\numberline {14.5.2}Odd Weaknesses}{56}{subsection.14.5.2}
+\contentsline {subsection}{\numberline {14.6.2}Odd Weaknesses}{56}{subsection.14.6.2}
 \contentsline {chapter}{\numberline {15}Status Effects}{57}{chapter.15}
 \contentsline {section}{\numberline {15.1}Removing Statuses}{57}{section.15.1}
 \contentsline {section}{\numberline {15.2}Status List}{57}{section.15.2}

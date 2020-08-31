@@ -138,50 +138,51 @@ classdef Beast
             obj.ImageStack = tableLine.Stack(1);
         end
         
-        function text = print(obj,mode)
+        function [text, added] = print(obj,mode)
             if nargin < 2
                 mode = 0;
             end
-            
+            added = 0;
             text = "";
             if obj.Empty > 0
-            text = "\\beast{";
-            if mode == 1
-               text = "\\speciesBeast{"; 
-            end
-            
-            titles = ["name", "species","mind","category","rating","abilities","article"];
-            array = [string(obj.Name), string(obj.Species), string(obj.Mind), string(obj.Category),string(obj.Rating),string(obj.Abilities),string(obj.Article)];
-            
-            for i = 1:length(array)
-                text = text + prepareText(titles(i)) + " = " + prepareText(array(i)) + ", ";
-            end
-            
-            text = text + obj.statBlock();
-            text = text + obj.ResistanceText();
-            numTitles = ["nUnharmed","nBruised","nHurt","nInjured","nWounded","nMangled","block","dodge","defy","fortitude","imageStack"];
-            numArray = [obj.Unharmed, obj.Bruised, obj.Hurt, obj.Injured, obj.Wounded, obj.Mangled, obj.Block, obj.Dodge,obj.Defy,obj.Fortitude,obj.ImageStack];
-            for i = 1:length(numArray)
-                val = numArray(i);
-                if isnan(val)
-                    val = 0;
+                added = 1;
+                text = "\\beast{";
+                if mode == 1
+                   text = "\\speciesBeast{"; 
                 end
-                text = text + numTitles(i) + "="+num2str(val) + ", ";
-            end
-            
-            hasTitles = ["hasSkills","hasAttacks","hasLanguages","hasImage"];
-            hasTriggers = [obj.HasSkills,obj.HasArmaments,obj.HasLanguages,obj.HasImage];
-            includeTitles = ["skills","attacks","languages","image"];
-            includeVals = [string(obj.Skills),string(obj.Armaments),string(obj.Languages),string(obj.Image)   ];
-            
-            for i = 1:length(hasTitles)
-               if hasTriggers(i) 
-                  text = text +  hasTitles(i) + " = 1, " + prepareText(includeTitles(i)) + " = " + prepareText(includeVals(i)) + ", ";
-               end
-            
-            end
-           
-           text = text + "description = " + prepareText(obj.Description) + "}";
+
+                titles = ["name", "species","mind","category","rating","abilities","article"];
+                array = [string(obj.Name), string(obj.Species), string(obj.Mind), string(obj.Category),string(obj.Rating),string(obj.Abilities),string(obj.Article)];
+
+                for i = 1:length(array)
+                    text = text + prepareText(titles(i)) + " = " + prepareText(array(i)) + ", ";
+                end
+
+                text = text + obj.statBlock();
+                text = text + obj.ResistanceText();
+                numTitles = ["nUnharmed","nBruised","nHurt","nInjured","nWounded","nMangled","block","dodge","defy","fortitude","imageStack"];
+                numArray = [obj.Unharmed, obj.Bruised, obj.Hurt, obj.Injured, obj.Wounded, obj.Mangled, obj.Block, obj.Dodge,obj.Defy,obj.Fortitude,obj.ImageStack];
+                for i = 1:length(numArray)
+                    val = numArray(i);
+                    if isnan(val)
+                        val = 0;
+                    end
+                    text = text + numTitles(i) + "="+num2str(val) + ", ";
+                end
+
+                hasTitles = ["hasSkills","hasAttacks","hasLanguages","hasImage"];
+                hasTriggers = [obj.HasSkills,obj.HasArmaments,obj.HasLanguages,obj.HasImage];
+                includeTitles = ["skills","attacks","languages","image"];
+                includeVals = [string(obj.Skills),string(obj.Armaments),string(obj.Languages),string(obj.Image)   ];
+
+                for i = 1:length(hasTitles)
+                   if hasTriggers(i) 
+                      text = text +  hasTitles(i) + " = 1, " + prepareText(includeTitles(i)) + " = " + prepareText(includeVals(i)) + ", ";
+                   end
+
+                end
+
+               text = text + "description = " + prepareText(obj.Description) + "}";
             end
         end
         

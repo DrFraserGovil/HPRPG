@@ -115,6 +115,39 @@ However, if you have more \imp{harm} than \imp{healing}, the effect is converted
 	\df{5}\df{5}\df{5}\df{5}\df{0}\df{0}\df{0} + \imp{3 healing}$~~\Longrightarrow~~$\df{5}\df{5}\df{5}\df{2}\df{0}\df{0}\df{0}
 \end{center}
 
+\section{Determining Order}
+
+It should not have avoided your notice that the system for determining harm is not independent of the order in which the harm is applied: dealing \imp{Level 1} harm and then \imp{Level 6} harm has a different final outcome than dealing \imp{Level 6} harm then \imp{Level 1}. 
+
+This is not normally a particular problem (and is, in fact, a feature of the \imp{harm} system, not a bug), however since all \imp{harm} dealt and \imp{healing} bestowed in a given combat cycle is applied simultaneously there must be a system for working out the final result. 
+
+The order in which effects are applied is as follows:
+
+\begin{enumerate}
+	\item All \imp{Harm} is applied first. Effects are applied from {\bf most harm to least}
+	\item All \imp{Healing} is applied second. Effects are applied from {\bf least healing to most}
+\end{enumerate}
+
+If this system seems hard to remember: {\imp you use whichever ordering maximises the harm dealt and the healing applied}. 
+
+If an unharmed character suffered three attacks (2, 5 and 4 harm respectively) and two healing effects (2 and 6 healing respectively), the following calculation would occur.
+
+{\it The combination of harm would result in a full level 5 harm being applied, with the 2 and 4 being converted into tallies. This puts the character at \imp{Level 6 Harm}, with one additional tally.
+ 
+\begin{center}
+	\df{0}\df{0}\df{0}\df{0}\df{0}\df{0}\df{0} + \imp{(2,5,4) harm}$\Longrightarrow$\df{5}\df{5}\df{5}\df{5}\df{5}\df{5}\df{1}
+\end{center}
+
+The {\it smallest} healing (level 2) pushes the character to \imp{Level 5 Harm}, with 4 tallies. The largest healing is then applied, pushing the character completely back to full health. }
+
+
+\begin{center}
+	\df{5}\df{5}\df{5}\df{5}\df{5}\df{5}\df{1} + \imp{(6,2) healing}$\Longrightarrow$\df{0}\df{0}\df{0}\df{0}\df{0}\df{0}\df{0}
+\end{center} 
+
+Note that if a character suffers enough harm to take the \imp{Critical Condition} status, the healing phase is skipped, as this status prevents simple healing.
+
+
 \section{Effects of Harm}
 
 After \imp{harm} has been applied to the victim, they usually begin to suffer the consequences of that harm as their arms shake, blood drips down their face and their physical condition begins to degrade. 

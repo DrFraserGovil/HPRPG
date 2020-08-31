@@ -57,6 +57,7 @@ function assembleBeasts(fileNameRoot)
     [~,I] = sort([List.Name]);
     List = List(I);
     for j = 1:length(List)
+        added = 0;
         L = length(List(j).Beasts);
         if L > 1
        
@@ -68,18 +69,18 @@ function assembleBeasts(fileNameRoot)
 
 
             for k = 1:length(List(j).Beasts)
-                List(j).Beasts(k).ImagePos = 1- (mod(k,2));
-
-                entry = entry + List(j).Beasts(k).print() + "\n\n\n";
+                [t,addedTemp ] = List(j).Beasts(k).print();
+                entry = entry + t;
+                if addedTemp == 1
+                    added = added + addedTemp;
+                    entry = entry + "\n";
+                end
             end
             entry = entry + "\n}";
             
-%             entry = entry + "{" + num2str(List(j).HasImage) + "}";
-%             entry = entry + "{" + List(j).Image + "}";
-%             entry = entry + "{" + List(j).Height + "}";
-
-            
-            text = text + entry + "\n\n\n\n\n";
+            if added > 0
+                text = text + entry + "\n\n\n\n\n";
+            end
         end
         
         if L == 1
