@@ -472,7 +472,14 @@
 \contentsline {subsection}{\numberline {29.3.9} Extraordinary Ingredients}{101}{subsection.29.3.9}
 \contentsline {subsection}{\numberline {29.3.10} Mythical Ingredients}{101}{subsection.29.3.10}
 \contentsline {section}{\numberline {29.4}Selected Recipes}{101}{section.29.4}
-\contentsline {subsubsection}{Wiggenweld Potion}{102}{subsubsection*.180}
+\contentsline {subsubsection}{Antidote to Common Poisons}{102}{subsubsection*.180}
+\contentsline {subsubsection}{Amortentia}{102}{subsubsection*.181}
+\contentsline {subsubsection}{Baruffio's Brain Elixir}{102}{subsubsection*.182}
+\contentsline {subsubsection}{Draught of the Living Death}{102}{subsubsection*.183}
+\contentsline {subsubsection}{Felix Felices}{102}{subsubsection*.184}
+\contentsline {subsubsection}{Pepperup Potion}{102}{subsubsection*.185}
+\contentsline {subsubsection}{Nirvan's Noxious Clouds}{102}{subsubsection*.186}
+\contentsline {subsubsection}{Wiggenweld Potion}{102}{subsubsection*.187}
 \contentsline {chapter}{\numberline {30}Enchanting}{103}{chapter.30}
 \contentsline {section}{\numberline {30.1}The Nexus}{103}{section.30.1}
 \contentsline {section}{\numberline {30.2}Runes}{103}{section.30.2}
@@ -488,13 +495,13 @@
 \contentsline {subsection}{\numberline {30.5.1}Complimentary Effects}{105}{subsection.30.5.1}
 \contentsline {subsection}{\numberline {30.5.2}Non-Complimentary Effects}{105}{subsection.30.5.2}
 \contentsline {section}{\numberline {30.6}Some Examples}{105}{section.30.6}
-\contentsline {subsubsection}{Abundant}{105}{subsubsection*.181}
-\contentsline {subsubsection}{Common}{105}{subsubsection*.182}
-\contentsline {subsubsection}{Singular}{105}{subsubsection*.183}
-\contentsline {subsubsection}{Unusual}{105}{subsubsection*.184}
-\contentsline {subsubsection}{Rare}{105}{subsubsection*.185}
-\contentsline {subsubsection}{Extraordinary}{105}{subsubsection*.186}
-\contentsline {subsubsection}{Mythical}{105}{subsubsection*.187}
+\contentsline {subsubsection}{Abundant}{105}{subsubsection*.188}
+\contentsline {subsubsection}{Common}{105}{subsubsection*.189}
+\contentsline {subsubsection}{Singular}{105}{subsubsection*.190}
+\contentsline {subsubsection}{Unusual}{105}{subsubsection*.191}
+\contentsline {subsubsection}{Rare}{105}{subsubsection*.192}
+\contentsline {subsubsection}{Extraordinary}{105}{subsubsection*.193}
+\contentsline {subsubsection}{Mythical}{105}{subsubsection*.194}
 \contentsline {part}{VI\hspace {1em}Appendices}{107}{part.6}
 \contentsline {chapter}{\numberline {31}Changelog}{108}{chapter.31}
 \contentsline {section}{\numberline {31.1}Changes in V4.0}{108}{section.31.1}
