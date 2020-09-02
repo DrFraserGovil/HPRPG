@@ -226,7 +226,7 @@
 \node[anchor=north] at ({(\secondColumn + \spellLimit)/2},{\spellTop}) {\HP \Large Magical Affinities};
 
 
-\foreach \Column [count = \i from 0] in  { {{Alteration}, {Bewitchment}, {Cerebral}, {Conjuration}, {Curses}, {Elemental}, {Healing}}, {{Hexes}, {Kinesis}, {Occultism}, {Psionics}, {Temporal}, {Warding}, {Necromancy}}, }
+\foreach \Column [count = \i from 0] in  { {{Alteration}, {Bewitchment}, {Cerebral}, {Conjuration}, {Curses}, {Elemental}, {Hermetics}}, {{Hexes}, {Kinesis}, {Occultism}, {Psionics}, {Temporal}, {Warding}, {Necromancy}}, }
 {
 	\def\x{\secondColumn+ \interAbilityGap + \i*(\interAbilityGap + \abilityWidth)}
 	\foreach \entry [count = \j from 0] in \Column
@@ -379,7 +379,7 @@
 
 }
 
-\textBlock{\secondColumn + \healthGap}{\top-\boxHeight-2*\heightUnits}{{\footnotesize \key{Health}} \\ {\it You lose health by taking \imp{Damage}. Fill in boxes equal to the \imp{Level} of damage taken. If you have already taken that level of damage, instead place a number of marks into the next available box equal to the harm level. When you have accumulated 4 marks in the box, it is considered full. \\ Health is restored through healing magic, potions, medical attention, or simple rest.   }};
+\textBlock{\secondColumn + \healthGap}{\top-\boxHeight-2*\heightUnits}{{\footnotesize \key{Health}} \\ {\it You lose health by taking \imp{Harm}. Fill in boxes equal to the \imp{Level} of damage taken. If you have already taken that level of damage, instead place a number of marks into the next available box equal to the harm level. When you have accumulated 5 marks in the box, it is considered full. \\ Health is restored through healing magic, potions, medical attention, or simple rest.   }};
 
 \textBlock{\secondColumn + \healthGap}{\top-\boxHeight-14*\heightUnits}{{\footnotesize \key{Fortitude}} \\ {\it You can expend fortitude to: \begin{itemize}[noitemsep,leftmargin = 10pt,topsep=0pt] \item Gain one automatic success (a roll of 12) on a check \item Get an extra action in a round of combat \item Cast magic one level higher than your current \imp{Affinity}. \item Ignore all penalties due to injury for a short period of time (1 turn)\item Negate a \imp{Catastrophic Failure}\end{itemize} Fortitude is restored by completing nourishing actions.   }};
 
@@ -582,24 +582,98 @@
 	\def\quarterHeight{(\maxHeight - \abilityBoxHeight - 3*\delta)/2};
 	
 	\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 + \delta/2},{\quarterTop}) rectangle ({\maxWidth},{\quarterTop - \quarterHeight});
-	\node[anchor = north] at ({3*\maxWidth/4 + \delta/4},{\quarterTop}) {\HP \Large Full Inventory};
+	\node[anchor = north] at ({3*\maxWidth/4 + \delta/4},{\quarterTop}) {\HP \Large Carried Items};
+	
+	
 	
 	
 	\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 - \delta/2},{\quarterTop}) rectangle ({0},{\quarterTop - \quarterHeight});
 	\node[anchor = north] at ({\maxWidth/4 + \delta/4},{\quarterTop}) {\HP \Large Full Spell List};
 	
 	\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 + \delta/2},{\quarterTop-\quarterHeight - \delta}) rectangle ({\maxWidth},{\delta});
-	\node[anchor = north] at ({3* \maxWidth/4 + \delta/4},{\quarterTop-\quarterHeight - \delta}) {\HP \Large Character Notes};
+	\node[anchor = north] at ({3* \maxWidth/4 + \delta/4},{\quarterTop-\quarterHeight - \delta}) {\HP \Large Stored Items};
 	
 	
-	\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 - \delta/2},{\quarterTop-\quarterHeight - \delta}) rectangle ({0},{\delta});
-	\node[anchor = north] at ({\maxWidth/4 + \delta/4},{\quarterTop-\quarterHeight - \delta}) {\HP \Large Character Feats and Abilities};
+	%\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 - \delta/2},{\quarterTop-\quarterHeight - \delta}) rectangle ({0},{\delta});
+	\node[anchor = north] at ({\maxWidth/4 + \delta/4},{\quarterTop-\quarterHeight - \delta}) {\HP \Large Character Progression};
+	
+	\node at ({\maxWidth/4 + \delta/4},{(\quarterTop-\quarterHeight)/2-\delta}) 
+	{
+		\small
+		\newcommand\expRow[2]{\ca{gray!20}{\bf #1}	&	\ca{gray!20}\parbox[t]{6cm}{#2}	\\}
+			\begin{rndtable}{r l}
+				\ca{gray!70}\bf Ability	&	\ca{gray!70}\bf Exp Cost
+				\\
+				\expRow{Increase Aspect Rating}{$=~2\times$ new attribute score}
+				\expRow{Increase Affinity Rating}{$=~3\times$ new affinity score}
+				\expRow{Increase Major Ability Rating}{=~New \imp{Ability} score}
+				\expRow{Increase Minor Ability Rating}{=~ 1 + New \imp{Ability} score}
+				\expRow{Swap Major and Minor Ability}{ =~ 1 \imp{Exp}}
+				\expRow{Gain New Feat}{ =~ 7 + Current number of feats}
+				\expRow{Increase Health or Fortitude}{ = 10 + 4 for each previous purchase}
+			\end{rndtable}
+	};
+	
+	
 \end{tikzpicture}
 
 
 \end{landscape}
 
+\begin{tikzpicture}
+	\def\maxWidth{21.2}
+	\def\maxHeight{27.6}
+	\def\heightUnits{\maxHeight/100}
+	
+	\def\widthUnits{\maxWidth/100}
 
+	\node at (0,0) {};
+	\node at (0,\maxHeight) {};
+	\node at (\maxWidth,\maxHeight) {};
+	\node at (\maxWidth,0) {};
+
+	\def\alchemyHeight{33*\heightUnits}
+	\def\delta{1*\widthUnits}
+	\def\pouchWidth{60*\widthUnits}
+	
+	\draw[rounded corners, gray!70, fill = gray!10] ({0},{\maxHeight-1*\heightUnits}) rectangle ({\maxWidth},{\maxHeight - \alchemyHeight});
+	\node[anchor = north] at ({\maxWidth/2}, {\maxHeight-1*\heightUnits}) {\HP \Large Potion Making};
+	
+	\draw[rounded corners, gray!70, fill = gray!20] ({\delta},{\maxHeight-5*\heightUnits}) rectangle ({\pouchWidth},{\maxHeight - \alchemyHeight+\delta});
+
+	\node[anchor = north] at ({(\pouchWidth + \delta)/2}, {\maxHeight-5*\heightUnits}) {\HP Ingredient Pouch};
+
+	\def\subpouchWidth{30*\widthUnits}
+	\def\gap{1.8*\heightUnits}
+	\foreach \rarity/\cost [count = \i from 1] in { {Abundant}/{~}, {Common}/{20 samples = \galleon{1}}, {Singular}/{10 samples = \galleon{1}}, {Unusual}/{3 samples = \galleon{1}}, {Rare}/{1 sample = \galleon{1}}, {Extraordinary}/{1 sample = \galleon{3}}, {Mythical}/{1 sample = \galleon{10+}} }
+	{
+		
+		
+		\if \i1
+			\def\ingy{\maxHeight -5*\heightUnits - \i*2*\gap}	
+			\node[anchor = east] at ({\subpouchWidth - \delta - 11 * \boxSmall*1.42},{\ingy}) {\small \imp{\rarity{}:}}; 
+		
+			\node at ({\subpouchWidth - 1.5*\delta - 4 * \boxSmall*1.42},{\ingy}) {\footnotesize\textit{Always on hand}};
+		\else
+			\def\ingy{\maxHeight -4*\heightUnits - \i*2*\gap}	
+			\node[anchor = east] at ({\subpouchWidth - \delta - 11 * \boxSmall*1.42},{\ingy}) {\small \imp{\rarity{}:}}; 
+			\node[anchor = east] at ({\subpouchWidth - \delta - 11 * \boxSmall*1.42},{\ingy-0.7*\gap}) {\tiny \textit{\cost{}}}; 
+		
+			\foreach \k in {0,1,2,3,...,9}
+			{
+				\def\xCirc{\subpouchWidth - 1.5*\delta - \k*(\boxSmall*1.42)};
+				\smallDot{\xCirc}{\ingy}{white}
+				\smallDot{\xCirc}{\ingy-1.42*\boxSmall}{white}
+			}
+		\fi
+	}
+	
+	\draw[rounded corners, gray!70, fill = gray!30] ({\subpouchWidth+\delta},{\maxHeight-8.3*\heightUnits}) rectangle ({\pouchWidth-\delta},{\maxHeight - \alchemyHeight+2*\delta});
+	\node[anchor =north] at ({(\subpouchWidth+\pouchWidth)/2},{\maxHeight-8.3*\heightUnits}) {\HP Harvested Ingredients};
+	
+	\draw[rounded corners, gray!70, fill = gray!20] ({\pouchWidth+\delta},{\maxHeight-5*\heightUnits}) rectangle ({\maxWidth-\delta},{\maxHeight - \alchemyHeight+\delta});
+	\node[anchor =north] at ({(\pouchWidth+\maxWidth)/2},{\maxHeight-5*\heightUnits}) {\HP Successful Recipes + Potion Notes};
+\end{tikzpicture}
 
 
 
