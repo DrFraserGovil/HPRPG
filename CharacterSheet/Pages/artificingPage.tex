@@ -90,6 +90,9 @@
 				}
 	}};
 
+
+
+	
 	%% alchemy
 	
 	\def\alchemyTop{\craftTop - \craftHeight - \delta}
@@ -132,9 +135,27 @@
 	\draw[rounded corners, gray!70, fill = gray!30] ({\subpouchWidth+\delta},{\alchemyTop-8.3*\heightUnits}) rectangle ({\pouchWidth-\delta},{\alchemyTop - \alchemyHeight+2*\delta});
 	\node[anchor =north] at ({(\subpouchWidth+\pouchWidth)/2},{\alchemyTop-8.3*\heightUnits}) {\HP Harvested Ingredients};
 	
-	\draw[rounded corners, gray!70, fill = gray!20] ({\pouchWidth+\delta},{\alchemyTop-5*\heightUnits}) rectangle ({\maxWidth-\delta},{\alchemyTop - \alchemyHeight+\delta});
-	\node[anchor =north] at ({(\pouchWidth+\maxWidth)/2},{\alchemyTop-5*\heightUnits}) {\HP Successful Recipes + Potion Notes};
+	%\draw[rounded corners, gray!70, fill = gray!20] ({\pouchWidth+\delta},{\alchemyTop-5*\heightUnits}) rectangle ({\maxWidth-\delta},{\alchemyTop - \alchemyHeight+\delta});
+	%\node[anchor =north] at ({(\pouchWidth+\maxWidth)/2},{\alchemyTop-5*\heightUnits}) {\HP Successful Recipes + Potion Notes};
+	\node [anchor = north west] at ({\pouchWidth + \delta},{\alchemyTop - 5*\heightUnits}) {\parbox[t]{7.6 cm}{\scriptsize {\bf Mixing Potions}
+	\par
 	
+	All magical and alchemical ingredients have innate properties. By choosing at least three ingredients with complimentary or magically significant properties, you may mix them together to produce a potion of some kind.  
+	
+	\par
+	
+	Doing so requires a \imp{Alchemical Toolset}, as well as having the necessary ingredients to hand. Describe to the \imp{GM} the effects of the potion you wish to brew, and argue why your selected ingredients spin an alchemical narrative resulting in your design. The \imp{rarity} (i.e. the potency and level of effect) of a potion is almost always limited by the maximum \imp{rarity} of the ingredients used.
+	
+	\par
+	
+	Most potions are brewed in small batches of 1-3 samples, which are consumed when using them. You may brew larger batches by increasing the \imp{complexity}. 
+	
+	~
+	
+	{\bf Mixing Potions}
+	
+	Ingredients can be harvested from magical creatures and plants throughout the world, and stored in your pouch. When purchasing ingredients you can them `anonymous', deciding retroactively exactly what ingredient was purchased when needed. 
+	 }};
 	
 	
 	%% enchanting 
