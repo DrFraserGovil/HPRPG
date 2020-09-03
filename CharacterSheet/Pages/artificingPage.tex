@@ -1,0 +1,200 @@
+
+\begin{tikzpicture}
+	
+
+	\node at (0,0) {};
+	\node at (0,\maxHeight) {};
+	\node at (\maxWidth,\maxHeight) {};
+	\node at (\maxWidth,0) {};
+	\def\delta{1*\widthUnits}
+	%% crafting
+
+	\def\craftTop{\maxHeight - 1*\heightUnits}
+	\def\craftHeight{23*\heightUnits}
+	\draw[rounded corners, gray!70, fill = gray!10] ({0},{\craftTop}) rectangle ({\maxWidth},{\craftTop - \craftHeight});
+	\node[anchor = north] at ({\maxWidth/2}, {\craftTop}) {\HP \Large Artificing};
+
+
+	\node[anchor = north west] at ({\delta},{\craftTop-3*\heightUnits}) {\parbox[t]{10 cm}{\scriptsize \imp{Artificing} is the process whereby you can create new objects, both magical and mundane. More magical acts of creation (i.e. \key{Enchanting} and \key{Alchemy}) are governed by the \imp{Imbue} ability, whilst less magical creation (\key{Crafting} or \key{Art}) uses the \imp{Craft} ability. 
+	\par 
+	By design, artificing is left open ended and beyond the scope of the rules to encompass. You must work directly with your GM to design the mechanics and properties of your creations. 
+	
+	\par
+	
+	After describing the type of object you wish to create, and the type and potency of any magical or physical effects the item possesses, the \imp{GM} determines if the crafting is possible, and if so, the Difficulty and Complexity of the crafting. The Difficulty determines the DV, whilst the Complexity determines the number of successes required for the project to complete. 
+	
+	\par
+	
+	Artificing checks are carried out after every 6 hours spent working on the project. When you meet the required number of successes, you gain the use of the item!
+	}};
+	
+	
+	\def\dg{gray!50}
+	\def\lg{gray!20}
+	\node[anchor = north west] at ({\delta/2+\maxWidth/2},{\craftTop-3*\heightUnits})
+	{	\parbox[t]{10cm}{
+		\newcommand\ca[1]{\cellcolor{#1}}
+		\newcommand\tHeader[1]{ \ca{\dg} \imp{ #1} }
+		\newcommand\dvRow[7]{\ca{\lg}#1&\ca{\lg}#2&\ca{\lg}#3&\ca{\lg}#4&\ca{\lg}#5&\ca{\lg}#6&\ca{\lg}#7}
+		
+		\newcommand\dvTable[7]
+		{
+			\scriptsize
+			\begin{center}
+				\begin{rndtable}{@{} c r c c c c c c c @{}}
+					\ca{\dg} & \ca{\dg} & \multicolumn{7}{c}{\ca{\dg} \small \key{Artificing Ability}} 
+					\\
+					\ca{\dg} & \ca{\dg}	&	\tHeader{1}	&	\tHeader{2}	&	\tHeader{3}	&	\tHeader{4}	&	\tHeader{5}	&	\tHeader{6}	&	\tHeader{7}
+					\\
+					\ca{\dg} &  \tHeader{Abundant}	&	#1
+					\\
+					\ca{\dg} & \tHeader{Common} 	&	#2
+					\\
+					\ca{\dg} & \tHeader{Singular}	&	#3
+					\\
+					\ca{\dg} & \tHeader{Unusual}	&	#4
+					\\
+					\ca{\dg} & \tHeader{Rare}	&	#5
+					\\
+					\ca{\dg} & \tHeader{Extraordinary}	&	#6
+					\\
+					\multirow{-7}{*}{\rotatebox[origin=c]{90}{\ca{\dg} \small \key{Item Rarity}} } & \tHeader{Mythical} & #7
+				\end{rndtable}
+			
+			\end{center}
+			\normalsize
+		}
+		\vbox{\key{Artificing DV Table: }\label{T:ArtificingDV}
+				\dvTable
+				{
+					\dvRow{8}{7}{6}{5}{4}{3}{2}
+				}
+				{
+					\dvRow{9}{8}{7}{6}{5}{4}{3}
+				}
+				{
+					\dvRow{10}{9}{8}{7}{6}{5}{4}
+				}
+				{
+					\dvRow{11}{10}{9}{8}{7}{6}{5}
+				}
+				{
+					\dvRow{-}{11}{10}{9}{8}{7}{6}
+				}
+				{
+					\dvRow{-}{-}{11}{10}{9}{8}{7}
+				}
+				{
+					\dvRow{-}{-}{-}{11}{10}{9}{8}
+				}
+				}
+	}};
+
+	%% alchemy
+	
+	\def\alchemyTop{\craftTop - \craftHeight - \delta}
+	\def\alchemyHeight{33*\heightUnits}
+	\def\delta{1*\widthUnits}
+	\def\pouchWidth{60*\widthUnits}
+	
+	\draw[rounded corners, gray!70, fill = gray!10] ({0},{\alchemyTop}) rectangle ({\maxWidth},{\alchemyTop - \alchemyHeight});
+	\node[anchor = north] at ({\maxWidth/2}, {\alchemyTop-1*\heightUnits}) {\HP \Large Potion Making};
+	
+	\draw[rounded corners, gray!70, fill = gray!20] ({\delta},{\alchemyTop-5*\heightUnits}) rectangle ({\pouchWidth},{\alchemyTop - \alchemyHeight+\delta});
+
+	\node[anchor = north] at ({(\pouchWidth + \delta)/2}, {\alchemyTop-5*\heightUnits}) {\HP Ingredient Pouch};
+
+	\def\subpouchWidth{30*\widthUnits}
+	\def\gap{1.8*\heightUnits}
+	\foreach \rarity/\cost [count = \i from 1] in { {Abundant}/{~}, {Common}/{20 samples = \galleon{1}}, {Singular}/{10 samples = \galleon{1}}, {Unusual}/{3 samples = \galleon{1}}, {Rare}/{1 sample = \galleon{1}}, {Extraordinary}/{1 sample = \galleon{3}}, {Mythical}/{1 sample = \galleon{10+}} }
+	{
+		
+		
+		\if \i1
+			\def\ingy{\alchemyTop -5*\heightUnits - \i*2*\gap}	
+			\node[anchor = east] at ({\subpouchWidth - \delta - 11 * \boxSmall*1.42},{\ingy}) {\small \imp{\rarity{}:}}; 
+		
+			\node at ({\subpouchWidth - 1.5*\delta - 4 * \boxSmall*1.42},{\ingy}) {\footnotesize\textit{Always on hand}};
+		\else
+			\def\ingy{\alchemyTop -4*\heightUnits - \i*2*\gap}	
+			\node[anchor = east] at ({\subpouchWidth - \delta - 11 * \boxSmall*1.42},{\ingy}) {\small \imp{\rarity{}:}}; 
+			\node[anchor = east] at ({\subpouchWidth - \delta - 11 * \boxSmall*1.42},{\ingy-0.7*\gap}) {\tiny \textit{\cost{}}}; 
+		
+			\foreach \k in {0,1,2,3,...,9}
+			{
+				\def\xCirc{\subpouchWidth - 1.5*\delta - \k*(\boxSmall*1.42)};
+				\smallDot{\xCirc}{\ingy}{white}
+				\smallDot{\xCirc}{\ingy-1.42*\boxSmall}{white}
+			}
+		\fi
+	}
+	
+	\draw[rounded corners, gray!70, fill = gray!30] ({\subpouchWidth+\delta},{\alchemyTop-8.3*\heightUnits}) rectangle ({\pouchWidth-\delta},{\alchemyTop - \alchemyHeight+2*\delta});
+	\node[anchor =north] at ({(\subpouchWidth+\pouchWidth)/2},{\alchemyTop-8.3*\heightUnits}) {\HP Harvested Ingredients};
+	
+	\draw[rounded corners, gray!70, fill = gray!20] ({\pouchWidth+\delta},{\alchemyTop-5*\heightUnits}) rectangle ({\maxWidth-\delta},{\alchemyTop - \alchemyHeight+\delta});
+	\node[anchor =north] at ({(\pouchWidth+\maxWidth)/2},{\alchemyTop-5*\heightUnits}) {\HP Successful Recipes + Potion Notes};
+	
+	
+	
+	%% enchanting 
+	\def\enchantTop{\alchemyTop - \alchemyHeight-\delta}
+	\def\enchantHeight{40*\heightUnits}
+	\def\runeDelta{2*\delta}
+	\def\runegap{2.6*\delta}
+	\def\runeWidth{(\maxWidth-4*\runeDelta)/3}
+	\def\runeBoxTop{\enchantTop - \runeDelta * 2.3}
+	\draw[rounded corners, gray!70, fill = gray!10] ({0},{\enchantTop}) rectangle ({\maxWidth},{\enchantTop - \enchantHeight});
+	\node[anchor = north] at ({\maxWidth/2}, {\enchantTop-0*\heightUnits}) {\HP \Large Enchanting};
+	
+	\def\mod{12 * \heightUnits}
+	%~ \draw[rounded corners, gray!70, fill = gray!30] ({2*\runeDelta+\runeWidth},{\enchantTop-\runeDelta*2}) rectangle ({2*\runeDelta + 2*\runeWidth},{\enchantTop - \enchantHeight+\runeDelta});
+	%~ \draw[rounded corners, gray!70, fill = gray!30] ({3*\runeDelta+2*\runeWidth},{\enchantTop-\runeDelta*2}) rectangle ({2*\runeDelta + 3*\runeWidth},{\enchantTop - \enchantHeight+\runeDelta});
+	
+	
+	%{ {Control Runes}/{Used to determine what triggers the enchantment, and how the effect is controlled and manipulated}/{ {\animax}, {\fabulum}, {\iuxta}, {\mentis}, {\oculum}, {\salto}, {\seculum}, {\sessio}, {\vox} }, {Duration Runes}/{Used to determine how long the enchantment is active for, after being triggered. Shorter bursts produce more powerful effects, whilst longer durations have a more diluted power.}/{ {\displos}, {\velox}, {\lentus}, {\aeternum} }  }
+	
+	\foreach \i in {0,1,2}
+	{
+		\def\xl{(\i + 1)*\runeDelta + \i*\runeWidth}
+		\def\xr{(\i + 1)*(\runeDelta + \runeWidth)}
+		\def\xc{(\xl + \xr)/2}
+		
+		\if \i0
+			\def\runeName{Control Rune}
+			\def\runeDesc{Used to determine what triggers the enchantment, and how the effect is controlled and manipulated.}
+			\def\runelist{ {\animax}/{animax}/{Sentience}, {\fabulum}/{fabulum}/{Arcane}, {\iuxta}/{iuxta}/{Proximity}, {\mentis}/{mentis}/{Mental}, {\oculum}/{oculum}/{Visual}, {\salto}/{Salto}/{Movement}, {\seculum}/{seculum}/{Timed}, {\sessio}/{sessio}/{Passive}, {\vox}/{vox}/{Vocal}  }
+			\def\jump{7*\heightUnits}
+			\def\deltaMod{\mod}
+		\else
+			\if \i1
+				\def\runeName{Duration Rune}
+				\def\runeDesc{Used to determine how long the enchantment is active for, after being triggered. Shorter bursts produce more powerful effects, whilst longer durations have a more diluted power.}
+				\def\runelist{ {\displos}/{displos}/{Instant}, {\velox}/{velox}/{rapid}, {\lentus}/{lentus}/{Long}, {\aeternum}/{aeternum}/{Eternal} }
+				\def\jump{9*\heightUnits}
+				\def\deltaMod{\mod}
+			\else
+				\def\runeName{Domain Rune}
+				\def\runeDesc{Used to determine the resonance of the magical \imp{nexus} and tune it to magic from a specific school.}
+				\def\runelist{ {\aevum}/{aevum}/{Temporal}, {\animus}/{animus}/{Cerebral}, {\basiorum}/{basiorum}/{Hexes}, {\canto}/{canto}/{Bewitchment}, {\clypus}/{clypus}/{Warding}, {\genero}/{genero}/{Conjuration}, {\lues}/{lues}/{Necromancy}, {\morbus}/{morbus}/{Curses}, {\motu}/{motu}/{Kinesis}, {\muto}/{muto}/{Alteration}, {\primum}/{primum}/{Elemental}, {\ritus}/{ritus}/{Occultism}, {\sarco}/{sarco}/{Hermetics}, {\vinco}/{vinco}/{Psionics} }
+				\def\jump{7*\heightUnits}
+				\def\deltaMod{\delta}
+			\fi
+		\fi
+		
+		\draw[rounded corners, gray!70, fill = gray!30] ({\xl},{\runeBoxTop}) rectangle ({\xr},{\enchantTop - \enchantHeight+\deltaMod});
+		\node[anchor = north] at ({\xc},{\runeBoxTop}) {\key{\runeName{}s}};
+		\node[anchor = north] at ({\xc},{\runeBoxTop - 1.5*\heightUnits}) {\parbox[t]{6.3cm}{ \it \scriptsize \runeDesc} };
+		
+		\foreach \truerune/\engrune/\translate [count = \j from 0] in \runelist
+		{
+			\def\yr{\runeBoxTop - \jump - \j*\runegap}
+			\square{\xl + 2*\widthUnits}{\yr}{}{white};
+			\node[anchor = west] at ({\xl + 2*\widthUnits+\boxDim},{\yr}) {\rune{\truerune}};
+			\node[anchor = west] at  ({\xl + 4*\widthUnits+\boxDim},{\yr}) {{\scriptsize \key{\engrune{}}, the \imp{\translate{}} rune}};
+		}
+	}
+	
+	\node[anchor = north west] at ({\runeDelta},{\enchantTop - \enchantHeight + \mod - 0.5*\heightUnits}) {\parbox[t]{13.2cm}{\scriptsize {\bf Enchantment Ritual} \\ \imp{Enchanting} allows you to use your \imp{imbue} ability to infuse physical objects with magical effects. \\ To enchant an item, you need \imp{Runic Tools}, and an item to enchant. Then you must describe to the \imp{GM} the effect you wish to create, and pick at least 3 runes (1 from each category), describing why they combine to produce your effect.\\ The \imp{GM} uses the description to determine a \imp{difficulty} (DV) and \imp{complexity} (number of successes). Every 6 hours you may roll an \imp{Imbue} check to add towards the project. \\ With an appropriate rune-tome, runes take 8-hours to memorise, -1 hour for each success on a DV7 \imp{Intelligence (investigation)} check. }};
+	
+\end{tikzpicture}
