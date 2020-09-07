@@ -1,4 +1,4 @@
-\begin{tikzpicture}
+\begin{tikzpicture}[rotate = 180, transform shape]
 
 
 \node at (0,0) {};
@@ -52,7 +52,7 @@
 	\node[anchor=north] at ({(\maxWidth + \abilityRight + \widthUnits)/2},{\abilityTop}) {\HP \Large Full Ability List};
 	
 	\newcommand\entry[2]{ \ca{#2} \parbox[t]{2.5cm}{\centering #1} } 
-	\newcommand\ca[1]{\cellcolor{#1}}
+
 
 	\newcommand\abilityRow[3]
 	{
@@ -116,6 +116,7 @@
 				\expRow{Increase Health or Fortitude}{ = 10 + 4 for each previous purchase}
 			\end{rndtable}
 	};
+	
 	
 	
 \end{tikzpicture}

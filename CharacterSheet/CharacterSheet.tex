@@ -13,6 +13,14 @@
 \newcommand\boxDim{1.3*\widthUnits}
 \newcommand\boxSmall{0.9*\widthUnits}
 \newcommand\boxTiny{0.5*\widthUnits}
+
+
+\def\ddg{gray!70}
+\def\dg{gray!50}
+\def\mg{gray!30}
+\def\lg{gray!20}
+\def\llg{gray!10}
+\newcommand\ca[1]{\cellcolor{#1}}
 \renewcommand\square[4]
 {
 	\draw[fill=#4,rotate around ={45:({#1},{#2})},#3] ({#1-\boxDim/2},{#2-\boxDim/2}) rectangle ({#1+\boxDim/2},{#2+\boxDim/2});
@@ -44,6 +52,7 @@
 \def\heightUnits{\maxHeight/100}
 \def\widthUnits{\maxWidth/100}
 
+\input{Pages/secondary}
 \input{Pages/artificingPage}
 
 
