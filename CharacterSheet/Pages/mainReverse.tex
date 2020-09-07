@@ -84,17 +84,17 @@
 	\def\quarterTop{\maxHeight - \abilityBoxHeight - \delta}
 	\def\quarterHeight{(\maxHeight - \abilityBoxHeight - 3*\delta)/2};
 	
-	\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 + \delta/2},{\quarterTop}) rectangle ({\maxWidth},{\quarterTop - \quarterHeight});
-	\node[anchor = north] at ({3*\maxWidth/4 + \delta/4},{\quarterTop}) {\HP \Large Carried Items};
+	\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 + \delta/2},{\quarterTop}) rectangle ({\maxWidth},{\delta});
+	\node[anchor = north] at ({3*\maxWidth/4 + \delta/4},{\quarterTop}) {\HP \Large Notes};
 	
 	
 	
 	
 	\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 - \delta/2},{\quarterTop}) rectangle ({0},{\quarterTop - \quarterHeight});
-	\node[anchor = north] at ({\maxWidth/4 + \delta/4},{\quarterTop}) {\HP \Large Full Spell List};
+	\node[anchor = north] at ({\maxWidth/4 + \delta/4},{\quarterTop}) {\HP \Large Character Background};
 	
-	\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 + \delta/2},{\quarterTop-\quarterHeight - \delta}) rectangle ({\maxWidth},{\delta});
-	\node[anchor = north] at ({3* \maxWidth/4 + \delta/4},{\quarterTop-\quarterHeight - \delta}) {\HP \Large Stored Items};
+	%~ \draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 + \delta/2},{\quarterTop-\quarterHeight - \delta}) rectangle ({\maxWidth},{\delta});
+	%~ \node[anchor = north] at ({3* \maxWidth/4 + \delta/4},{\quarterTop-\quarterHeight - \delta}) {\HP \Large Stored Items};
 	
 	
 	%\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 - \delta/2},{\quarterTop-\quarterHeight - \delta}) rectangle ({0},{\delta});
