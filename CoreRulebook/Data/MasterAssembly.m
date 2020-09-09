@@ -6,7 +6,7 @@ function MasterAssembly(quitMode)
     addpath('Disciplines/');
     addpath('Functions/');
     addpath('Items/');
-    %addpath('Potions/');
+    addpath('Statuses/');
 	addpath('Artificing/')
     addpath('Archetype/')
     addpath('Feats/')
@@ -20,6 +20,8 @@ function MasterAssembly(quitMode)
     disp('Assembling Skills');
     assembleFeats('../');
     
+    disp('Assembling Statuses');
+    assembleStatus('../');
     
     disp('Assembling Weapons');
     assembleWeapons('../');
