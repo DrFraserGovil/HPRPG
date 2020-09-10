@@ -14,7 +14,7 @@ In addition to the 30 base \imp{Abilities}, some beasts have additional abilitie
 \newcommand\abilityRow[2]
 {
 
-	\key{#1} & \parbox[t]{6.8 cm}{\raggedright #2} \\
+	\parbox[t]{2 cm}{\key{#1}} & \parbox[t]{6.8 cm}{\raggedright #2} \\
 }
 
 \newcommand\abilityTable[1]
@@ -30,15 +30,29 @@ In addition to the 30 base \imp{Abilities}, some beasts have additional abilitie
 
 \abilityTable
 {
-	\abilityRow{Climb}{Many beings have the ability to climb trees, and adhere to solid surfaces. A high rating means they can move without hinderance.}
+	\abilityRow{Climb}{Many beings have the ability to climb trees, and adhere to solid surfaces. A non-zero rating grants a being an inherent climb speed - the higher the rating, the faster they can climb.}
 	\abilityRow{Command}{Some creatures command their lessers and may order them to do their bidding - a higher rating indicates the level of control they have over their forces.}
 	\abilityRow{Elusion}{Elusion is the natural camouflaging ability of a being - morphing into the background, changing colour and even turning invisible.}
 	\abilityRow{Flight}{A creature with the flying ability may defy gravity, either with wings, or innate magical levitation. A higher rating means faster flight and more elaborate maneouvers.}
 	\abilityRow{Regeneration}{This ability allows a creature to heal themselves rapidly as their physical form regenerates.}
-	\abilityRow{Senses}{Many creatures have senses beyond those that humans have: the ability to sense tremors in the ground, see in the dark, as well as more arcane abilities such as the ability to detect magic.}
+	\abilityRow{Inhuman Senses}{Many creatures have senses beyond those that humans have: the ability to sense tremors in the ground, see in the dark, as well as more arcane abilities such as the ability to detect magic.}
 	\abilityRow{Shapechange}{A creature with this ability may alter their shape and form - a higher rating means more drastic changes to their appearance.}
 	\abilityRow{Spellcasting}{A replacement for individual \imp{Affinities}. A creature with this ability can innately cast magic using this statistic.} 
+	\abilityRow{Swimming}{Aquatic creatures have a natural affinity for moving within the water - a high \imp{Swimming} shows an ability to move quickly and navigate in 3D. }
+	\abilityRow{Tunnelling}{Whilst we are most familiar with creatures which walk on land, or soar above it, some rare creatures make a living beneath it. A high \imp{Tunnel} ability allows a being to move smoothly through seemingly solid earth and rock.}
 }
+
+
+\section{Movement}
+
+Some of these abilities - notably \imp{Climb}, \imp{Flight}, \imp{Swimming} and \imp{Tunnelling} - grant creatures additional means of traversing around an environment, beyond the usual walking and running that humans are used to. 
+
+It can generally be assumed that a zero-rating in this field menas that a given mode of transport is not possible. This should, of course, be taken with a hint of salt - few creatures with a zero \imp{speed} rating are physically unable to walk, and equally, a mighty \imp{Archangel} is not going to hesitate to dive into a pool, despite not having a \imp{Swimming} rating. However, a \imp{Nogtail} is not suddenly going to be able to fly, no matter how slowly. 
+
+If a beast is using an alternative means of transportation, their rating for that means supercedes the normal rules about movement - if a \imp{Hippogriff} is currently in flight, all checks which might normally rely on \imp{speed} are instead made using \imp{flight}.
+
+This also applies to a creature 
+
 
 \clearpage
 \input{Chapters/Beasts/BeastDefinitions}

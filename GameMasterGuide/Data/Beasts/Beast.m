@@ -62,6 +62,14 @@ classdef Beast
         
         ImageStack
         Empty;
+        
+        WalkSpeed;
+        FlySpeed;
+        TunnelSpeed;
+        SwimSpeed;
+        ClimbSpeed;
+        
+        Movement;
     end
     
     methods
@@ -109,6 +117,12 @@ classdef Beast
             obj.Defy = tableLine.Defy(1);
             obj.Dodge = tableLine.Dodge(1);
             
+            obj.WalkSpeed = tableLine.Walk(1);
+            obj.SwimSpeed = tableLine.Swim(1);
+            obj.ClimbSpeed = tableLine.Climb(1);
+            obj.FlySpeed = tableLine.Fly(1);
+            obj.TunnelSpeed = tableLine.Tunnel(1);
+            
             obj.Resistant = tableLine.Resistant{1};
             obj.Immune = tableLine.Immune{1};
             obj.Susceptible = tableLine.Susceptible{1};
@@ -118,9 +132,10 @@ classdef Beast
                 obj.HasLanguages = false;
             end
             obj.Skills = tableLine.Skills{1};
+            obj = obj.parseAbilities();
             obj.HasSkills = true;
             if (obj.Skills == "")
-                obj.HasSkills = false;
+                obj.HasSkills = false;     
             end
             obj.Armaments = tableLine.Armaments{1};
             obj.HasArmaments = true;
@@ -151,8 +166,8 @@ classdef Beast
                    text = "\\speciesBeast{"; 
                 end
 
-                titles = ["name", "species","mind","category","rating","abilities","article"];
-                array = [string(obj.Name), string(obj.Species), string(obj.Mind), string(obj.Category),string(obj.Rating),string(obj.Abilities),string(obj.Article)];
+                titles = ["name", "species","mind","category","rating","abilities","article","movement"];
+                array = [string(obj.Name), string(obj.Species), string(obj.Mind), string(obj.Category),string(obj.Rating),string(obj.Abilities),string(obj.Article),string(obj.Movement)];
 
                 for i = 1:length(array)
                     text = text + prepareText(titles(i)) + " = " + prepareText(array(i)) + ", ";
@@ -240,6 +255,61 @@ classdef Beast
            
            
         end
+        
+        function obj =  parseAbilities(obj)
+            MoveRatings = [obj.WalkSpeed, obj.SwimSpeed, obj.ClimbSpeed, obj.FlySpeed, obj.TunnelSpeed];
+            MoveNames = ["Speed", "Swim","Climb", "Flight","Tunnelling"];
+            TrueNames = ["Walking", "Swimming", "Climbing", "Flying", "Tunnelling"];
+            MoveBase = [3,0,0,0,0];
+            MoveMult = [1,0.5,0.5,3,0.25];
+            
+            
+            [starts, ends] = regexp(obj.Skills,"\\skill{[^}]*}{\d*}");
+            
+            names = string.empty;
+            ratings = [];
+            f = char(obj.Skills);
+            
+            for i = 1:length(starts)
+                [a,b] = skillExtractor(string(f(starts(i):ends(i))));
+                if ~any(a == MoveNames)
+                    names(end+1) = a;
+                    ratings(end+1) = b;
+                end
+            end
+            
+            
+            s = "\speeds{";
+            for i = 1:length(MoveRatings)
+               if MoveRatings(i) > 0
+                  names(end+1) = MoveNames(i);
+                  ratings(end+1) = MoveRatings(i);
+               end
+                
+               speed = MoveBase(i) + MoveMult(i) * MoveRatings(i);
+               if speed > 0
+                   s = s + "\speedrating{" + TrueNames(i) + "}{" + num2str(speed) + "}";
+               end
+            end
+            s = s + "}";
+            obj.Movement = s;
+            
+            
+            [newRates,I] = sort(ratings);
+            newNames = names(I);
+            
+            newSkills = "";
+            for i = length(newNames):-1:1
+                newSkills = newSkills + "\\skill{" + newNames(i) + "}{" + num2str(newRates(i)) + "}\n";
+            end
+            obj.Skills = sprintf(newSkills);            
+        end
     end
+end
+
+function [name, rating] = skillExtractor(skill)
+    [~,r] = strtok(skill,'}{');
+    [name,r2] = strtok(r,'}{');
+    rating = str2num(strtok(r2,'}{'));
 end
 

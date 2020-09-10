@@ -64,7 +64,7 @@
 \define@key{beast}{hasImage}{\def\hasImage{#1}}
 \define@key{beast}{image}{\def\image{#1}}
 \define@key{beast}{imageStack}{\def\imageStack{#1}}
-
+\define@key{beast}{movement}{\def\movement{#1}}
 \define@key{beast}{speciesOnly}{\def\speciesOnly{#1}}
 %~ \define@key{beast}{hasImmune}{\def\immuneMode{#1}}
 %~ \define@key{beast}{immune}{\def\immune{#1}}
@@ -107,7 +107,7 @@
 
 \def\defaultSetter
 {
-	\setkeys{beast}{name = none, species = None, mind = none, rating = Unset, category = none, description = None, fit =0, prs = 0, vit =0, cha = 0, dec = 0, ins = 0, int = 0, wil =0, pcp = 0, nUnharmed =0, nBruised = 0, nHurt = 0, nInjured = 0, nWounded = 0, nMangled = 0,fortitude = 0, skills = 0, hasSkills = 0, block = 0, dodge = 0, defy = 0,hasDamage = 0, damage = , abilities = ,hasAttacks = 0, attacks = None,article = A, hasLanguages = 0, languages = None, hasImage = 0, image = None, speciesOnly = 0}
+	\setkeys{beast}{name = none, species = None, mind = none, rating = Unset, category = none, description = None, fit =0, prs = 0, vit =0, cha = 0, dec = 0, ins = 0, int = 0, wil =0, pcp = 0, nUnharmed =0, nBruised = 0, nHurt = 0, nInjured = 0, nWounded = 0, nMangled = 0,fortitude = 0, skills = 0, hasSkills = 0, block = 0, dodge = 0, defy = 0,hasDamage = 0, damage = , abilities = ,hasAttacks = 0, attacks = None,article = A, hasLanguages = 0, languages = None, hasImage = 0, image = None, speciesOnly = 0, movement = \speedrating{Walking}{0}}
 }
 \newcounter{yCount}
 \newcounter{nonZeroCount}
@@ -190,7 +190,21 @@
 }
 
 
+\newcommand\speedrating[2]
+{
+	\key{#1 Speed:} &	#2 metres per cycle\\	
+}
+\newcommand\speeds[1]
+{
 
+		{\begin{tabular}{@{} l	c}
+			#1
+		\end{tabular}
+		
+		}
+	%fi
+
+}
 
 \newcommand\understands[1]
 {
@@ -353,10 +367,14 @@
 
 	\if\hasSkills1
 		\vspace{0.7cm}
+		
+		
 		\skillBlock{}
 	\fi
 
 	\dndlineFade{black}
+	
+	\movement{}
 	
 	\abilities{}
 	
@@ -377,7 +395,7 @@
 
 \newcommand\species[3]
 {
-	%\clearpage
+	\newpage
 
 		{ \Huge{\MakeUppercase{#1} }}
 		
@@ -395,6 +413,7 @@
 
 \newcommand\speciesBeast[1]
 {
+	\newpage
 	\beast{#1, speciesOnly = 1}
 }
 
