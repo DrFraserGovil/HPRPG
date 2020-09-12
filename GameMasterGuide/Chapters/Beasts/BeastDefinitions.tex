@@ -214,9 +214,18 @@
 {
 	\imp{Speaks: } #1
 }
+
+\newcounter{tableCounter}
 \newcommand\skill[2]
 {
-	~& \imp{#1}: & \ratingB{#2} \\
+	\parbox[t]{2cm}{\imp{#1}:} & \parbox[t]{2cm}{\ratingB{#2}} &
+	\stepcounter{tableCounter}
+	\if\thetableCounter2
+		\\
+		\setcounter{tableCounter}{0}
+	\fi
+	
+	
 		
 }
 \newcommand\titleBlock
@@ -224,10 +233,10 @@
 	\if\speciesOnly0
 	\definecolor{rulered}{HTML}{9C2B1B} 
 		\dndline
-		{ \huge \color{titlered}{\MakeUppercase{\name{}} }}
+		{ \Huge \color{titlered}{\MakeUppercase{\name{}} }}
 		\addcontentsline{toc}{subsection}{\name{}}
 	\else
-		{ \Huge{\MakeUppercase{\name{}} }}
+		\resizebox{\linewidth}{!}{\MakeUppercase{\name}}
 		\addcontentsline{toc}{section}{\name{}}
 	\fi
 	
@@ -238,7 +247,8 @@
 {
 	\key{Abilities:}
 	
-	\begin{tabular}{@{} p{2cm} r c @{} }
+	\begin{tabular}{@{} r c r c c@{} }
+		\setcounter{tableCounter}{0}
 		 \skills{}
 		 
 		
@@ -253,6 +263,8 @@
 {
 	\normalsize
 	
+	~
+	
 	\healthBox{}
 		
 	\begin{tabular}{m{4cm} m{4cm}}
@@ -266,6 +278,8 @@
 								\\\hline\hline
 						\end{tabular}
 	\end{tabular}
+	
+	~
 	
 	\damage{}
 	
@@ -291,6 +305,10 @@
 {
 \textbf{\textit{#1}}: #2
 }
+\newcommand\extendedmelee[6]
+{
+\parbox[t]{9.5cm}{\textbf{\textit{#1}}: ({\it melee attack, range: #6m #2 dice, DV \fpeval{7+#3}}) \\ Effect: \imp{#4}, with Power #5}
+}
 \newcommand\melee[5]
 {
 \parbox[t]{9.5cm}{\textbf{\textit{#1}}: ({\it melee attack, #2 dice, DV \fpeval{7+#3}}) \\ Effect: \imp{#4}, with Power #5}
@@ -299,6 +317,10 @@
 \newcommand\meleeConsequence[6]
 {
 	\parbox[t]{9.5cm}{\textbf{\textit{#1}}: ({\it melee attack, #2 dice, DV \fpeval{7+#3}}) \\ Effect: \imp{#4}, with Power #5 \\ {\it #6}}
+}
+\newcommand\extendedmeleeConsequence[7]
+{
+	\parbox[t]{9.5cm}{\textbf{\textit{#1}}: ({\it melee attack, range #7m,  #2 dice, DV \fpeval{7+#3}}) \\ Effect: \imp{#4}, with Power #5 \\ {\it #6}}
 }
 \newcommand\ranged[6]
 {
@@ -352,7 +374,7 @@
 		\if\hasImage0
 			\description{}
 		\fi
-	}	
+		
 		\if\hasImage1
 			\if\imageStack1
 				\verticalStack
@@ -360,7 +382,7 @@
 				\sideBySide
 			\fi
 		\fi
-	
+	}
 
 	
 	\statBlock
@@ -395,10 +417,10 @@
 
 \newcommand\species[3]
 {
-	\newpage
+	%\newpage
 
-		{ \Huge{\MakeUppercase{#1} }}
-		
+		%~ { \Huge{\MakeUppercase{#1} }}
+	\resizebox{\linewidth}{!}{\MakeUppercase{#1}}
 	\addcontentsline{toc}{section}{#1}
 	~
 	
@@ -413,7 +435,7 @@
 
 \newcommand\speciesBeast[1]
 {
-	\newpage
+	%\newpage
 	\beast{#1, speciesOnly = 1}
 }
 

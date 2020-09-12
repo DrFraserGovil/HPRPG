@@ -1,3 +1,9 @@
+\def\Feats
+{
+	\feat{}{}{0}{}
+	\feat{}{}{0}{}
+}
+
 \def\DruidFeats
 {
 	\feat{A Friend to All}{Whenever a magical effect  or spell specifies that it works on \imp{Beasts}\comma{} you may also use this ability on all \imp{non\minus{}sapient} creatures\comma{} including \imp{Monsters} and \imp{Elementals}. Such creatures are also much less likely to attack you on sight\comma{} but will retaliate if provoked.}{0}{}
@@ -132,6 +138,26 @@ Each day\comma{} you get 4 free dots\comma{} which you may temporarily allocate 
 	\feat{Wandless Casting}{You are able to perform limited feats of magic without needing the crutch of a wand or ritualistic movements\comma{} so attempts to disarm your or bind you in place do not affect your spellcasting efforts. You take a 1d penalty on all wandless spellcasting efforts. All wandless actions are also silent.}{1}{Silent Casting}
 }
 
+\def\ResponderFeats
+{
+	\feat{Apothecary}{Whenever you take a \imp{Short Rest} whilst in possession of a \imp{First Aid Kit} or a \imp{Alchemy Set}\comma{} you can brew a quick healing potion\comma{} gaining a base\minus{}level \imp{Wiggenweld Potion} (see page \pageref{P:Wiggenweld}). You cannot store more than 5 such potions using this ability.}{0}{}
+	\feat{Beacon of Life}{Your \imp{Hermetics} spells now channel so much positive energy that they deal \imp{harm} to unliving and evil creatures such as \imp{Demons}\comma{} \imp{Abominations}\comma{} \imp{Phantasms} and \imp{Undead}. When you deal harm using this ability\comma{} you restore health to yourself equal to half the damage dealt.}{0}{}
+	\feat{Emergency Procedure}{When performing a \imp{Healing} check\comma{} or a \imp{Defensive} check you may choose to automatically roll the maximum number of successes. If an enemy reduces the power of this action to zero\comma{} you (or your patient\comma{} as appropriate)\comma{} fall into the \imp{Critical Condition} status. You cannot use this ability again until you take a \imp{Long Rest}.}{0}{}
+	\feat{Healer}{Whenever you restore Health to a being\comma{} or remove a negative status effect\comma{} gain one additional auto\minus{}success.}{0}{}
+	\feat{Matyr}{Whenever a being which you have successfully cast a \imp{Hermetics} spell on takes damage (but before they \imp{Resist})\comma{} you may elect to transfer the damage to yourself\comma{} performing the \imp{Resist} yourself. The list of targets for this ability resets whenever you take a \imp{short} or \imp{long} rest.}{0}{}
+	\feat{Plague Doctor}{You release a virulent pathogen around you\comma{} infecting all those within 5m of your current position (you may expend a \imp{Fortitude} point to exclude any number of allies). You may choose the effect of the pathogen:
+\begin{itemize}
+\item \key{Poisoned}: 2 damage per turn\comma{} power = your \imp{Pathology} rating
+\item \key{Blinded}: power = your \imp{Willpower} rating
+\item \key{Enraged}: power = your \imp{Deception} rating
+\end{itemize}
+Targets make a check to \imp{Resist} at the onset of this effect\comma{} and then again at the end of every subsequent cycle. You can use this ability a number of times equal to your \imp{Pathology} rating before requiring a \imp{Long Rest}.}{0}{}
+	\feat{Preventative Treatment}{You gain +2d to any \imp{Defensive} actions used to reduce the effectiveness of an incoming attack. If you reduce the \imp{Power} of an attack to zero\comma{} the target(s) of the attack gain 1 point of healing.}{0}{}
+	\feat{Red Cross}{By expending a \imp{Fortitude} point\comma{} you may use a \imp{Minor Action} to designate a target within \imp{Wandtip} range as a non\minus{}combatant. Any being which attempts to harm the designated target (either with a targeted attack\comma{} or an Area\minus{}of\minus{}Effect attack) must first perform a \imp{Willpower (Conviction)} check (or similar) with a DV equal to 5 + your \imp{Willpower} rating. On a failure\comma{} the attack falters and the attacker’s turn ends. This effect lasts until the target re\minus{}enters combat.}{0}{}
+	\feat{Stabilising Presence}{When a target within 10m falls into the \imp{Critical Condition} status\comma{} you may expend a \imp{Fortitude} point to instead place them into \imp{Critical But Stable}.}{0}{}
+	\feat{Warden}{Whenever you use a \imp{Major Action} to restore \imp{Health} to a being\comma{} or remove a negative  status effect\comma{} you may use an \imp{instantaneous} reaction to cast a defensive spell from the \imp{Warding} discipline. You can do this a number of times equal to your \imp{Triage} rating\comma{} before needing a \imp{Long Rest}}{0}{}
+}
+
 \def\OutlawFeats
 {
 	\feat{Cover Identity}{Given enough time – perhaps a day or two – you can forge yourself a completely new identity\comma{} with the necessary paperwork and credentials to reasonably pass as whoever you desire. This may not stand up to high\minus{}level scrutiny\comma{} but most people should be easily fooled.}{0}{}
@@ -151,7 +177,6 @@ Each day\comma{} you get 4 free dots\comma{} which you may temporarily allocate 
 \def\ScholarFeats
 {
 	\feat{Flexible Knowledge}{You may spend a day completely immersing yourself in a new set of knowledge and expertise. Convert a number of your \imp{Knowledge} dots back into experience points. You must then reassign at least this number of experience points back into your \imp{Knowledge} abilities in any new combination you wish.}{0}{}
-	\feat{Healer}{Whenever you restore Health to a being\comma{} heal an additional level of \imp{Harm} to all allies within 10m.}{0}{}
 	\feat{Learn From Failure}{When performing a check of any kind\comma{} for every consectutive previous roll which failed\comma{} you gain +2d (up to a maximum of your \imp{Stubbornness} rating).}{0}{}
 	\feat{Library Lover}{When you perform an intelligence\minus{}based check whilst in a library\comma{} or similar repository of knowledge\comma{} the dice associated with your \imp{Intelligence} are all counted as successes. You need only roll your \imp{Ability} dice.}{0}{}
 	\feat{Magical Prodigy}{When initiating a \imp{Spellcasting} action\comma{} you may automatically reduce the DV required to cast it by 2. You may do this a number of times equal to your \imp{Intelligence} rating before you require a \imp{Long Rest}.}{0}{}

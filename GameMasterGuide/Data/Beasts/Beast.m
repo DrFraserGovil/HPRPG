@@ -261,7 +261,7 @@ classdef Beast
             MoveNames = ["Speed", "Swim","Climb", "Flight","Tunnelling"];
             TrueNames = ["Walking", "Swimming", "Climbing", "Flying", "Tunnelling"];
             MoveBase = [3,0,0,0,0];
-            MoveMult = [1,0.5,0.5,3,0.25];
+            MoveMult = [1,0.5,0.5,4,0.25];
             
             
             [starts, ends] = regexp(obj.Skills,"\\skill{[^}]*}{\d*}");

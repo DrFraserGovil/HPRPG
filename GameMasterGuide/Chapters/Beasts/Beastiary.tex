@@ -51,9 +51,26 @@ It can generally be assumed that a zero-rating in this field menas that a given 
 
 If a beast is using an alternative means of transportation, their rating for that means supercedes the normal rules about movement - if a \imp{Hippogriff} is currently in flight, all checks which might normally rely on \imp{speed} are instead made using \imp{flight}.
 
-This also applies to a creature 
+The calculations used to determine a creature's movement speed by a given vector is as follows:
 
+\newcommand\moveRow[2]
+{
+	\imp{#1}	&	#2	\\
+}
+\begin{center}
+	\begin{rndtable}{l c}
+		\key{Type}	&	\key{Speed} \\
+		\moveRow{Walking}{3 + \imp{Speed} Rating}
+		\moveRow{Flying}{4 $\times$ \imp{Flight} Rating}
+		\moveRow{Climbing}{0.5 $\times$ \imp{Climb} Rating}
+		\moveRow{Swimming}{0.5 $\times$ \imp{Swim} Rating}
+		\moveRow{Tunneling}{0.25 $\times$ \imp{Tunneling} Rating}
+	\end{rndtable}
+\end{center}
 
+A creature may use up to two different types of movement in a given turn, but the maximum movement distance for each mode of transport is capped at half the usual value. For instance, if a beast with a 6m walking speed and a 10m flight speed were to both walk and fly in a single turn, it could walk no more than 3m and fly no more than 5m. Using only 1m of flight does not impact the amount of walking that could be performed.
+
+Some creatures do not follow this rule - most of those are those with a \imp{Speed} rating of 0, but who have a walking speed less than 3m. These are merely particularly slow creatures. Some others, however, have a walking speed greater than their \imp{speed} might suggest. This is usually the case with particularly large creatures such as \imp{Giants}, whose long strides grant them rapid movement, but not the nimbleness and quick reflexes that a high rating on a \imp{speed} check would imply. 
 \clearpage
 \input{Chapters/Beasts/BeastDefinitions}
 \input{Chapters/Beasts/BeastList}
