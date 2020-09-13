@@ -55,34 +55,38 @@
 \contentsline {subsection}{Phlogiston{}}{27}{section*.11}
 \contentsline {subsection}{Chalkydri{}}{28}{section*.11}
 \contentsline {section}{Whomping Willow{}}{29}{section*.11}
-\contentsline {chapter}{\numberline {3}Cosmology}{30}{chapter.3}
-\contentsline {subsection}{\numberline {3.0.1}The Mortal World}{30}{subsection.3.0.1}
-\contentsline {subsection}{\numberline {3.0.2}The Astral Realm}{30}{subsection.3.0.2}
-\contentsline {subsection}{\numberline {3.0.3}The Higher Planes}{30}{subsection.3.0.3}
-\contentsline {subsection}{\numberline {3.0.4}The Eldritch Domains}{30}{subsection.3.0.4}
-\contentsline {subsection}{\numberline {3.0.5}The Void}{30}{subsection.3.0.5}
-\contentsline {section}{\numberline {3.1}Higher Planes}{30}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Abyss: The Plane of Terror}{30}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Aeolus: The Plane of Storms and Winds}{31}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Eden: The Plane of Nature}{31}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Elysium: The Plane of Blessings}{31}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Hades: The Plane of Death}{31}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}Hyperborea: The Plane of Ice}{31}{subsection.3.1.6}
-\contentsline {subsection}{\numberline {3.1.7}Machina: The Plane of Order}{31}{subsection.3.1.7}
-\contentsline {subsection}{\numberline {3.1.8}Nirvana: The Plane of Peace}{31}{subsection.3.1.8}
-\contentsline {subsection}{\numberline {3.1.9}Pand{\ae }monium: The Plane of Chaos}{32}{subsection.3.1.9}
-\contentsline {subsection}{\numberline {3.1.10}Scholomancia: The Plane of Knowledge}{32}{subsection.3.1.10}
-\contentsline {subsection}{\numberline {3.1.11}Tartarus: The Plane of Torture}{32}{subsection.3.1.11}
-\contentsline {subsection}{\numberline {3.1.12}Valhalla: The Plane of Bravery}{32}{subsection.3.1.12}
-\contentsline {subsection}{\numberline {3.1.13}Vulcan: The Plane of Fire}{32}{subsection.3.1.13}
-\contentsline {chapter}{\numberline {4}Roll Statistics}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Analytic Probability}{33}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Difficulty = 3}{34}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Difficulty = 4}{34}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Difficulty = 5}{34}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Difficulty = 6}{35}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Difficulty = 7}{35}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}Difficulty = 8}{35}{subsection.4.1.6}
-\contentsline {subsection}{\numberline {4.1.7}Difficulty = 9}{36}{subsection.4.1.7}
-\contentsline {subsection}{\numberline {4.1.8}Difficulty = 10}{36}{subsection.4.1.8}
-\contentsline {subsection}{\numberline {4.1.9}Difficulty = 11}{36}{subsection.4.1.9}
+\contentsline {part}{II\hspace {1em}The Magical World}{30}{part.2}
+\contentsline {chapter}{\numberline {3}Cosmology}{31}{chapter.3}
+\contentsline {section}{\numberline {3.1}Traversing the Realms}{31}{section.3.1}
+\contentsline {section}{\numberline {3.2}Cataloguing the Realms}{31}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}The Mortal World}{31}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}The Astral Realm}{31}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}The Higher Planes}{31}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}The Eldritch Domains}{31}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}The Void}{31}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Higher Planes}{31}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Abyss: The Plane of Terror}{31}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Aeolus: The Plane of Storms and Winds}{32}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Eden: The Plane of Nature}{32}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Elysium: The Plane of Blessings}{32}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Hades: The Plane of Death}{32}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Hyperborea: The Plane of Ice}{32}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}Machina: The Plane of Order}{32}{subsection.3.3.7}
+\contentsline {subsection}{\numberline {3.3.8}Nirvana: The Plane of Peace}{32}{subsection.3.3.8}
+\contentsline {subsection}{\numberline {3.3.9}Pand{\ae }monium: The Plane of Chaos}{33}{subsection.3.3.9}
+\contentsline {subsection}{\numberline {3.3.10}Scholomancia: The Plane of Knowledge}{33}{subsection.3.3.10}
+\contentsline {subsection}{\numberline {3.3.11}Tartarus: The Plane of Torture}{33}{subsection.3.3.11}
+\contentsline {subsection}{\numberline {3.3.12}Valhalla: The Plane of Bravery}{33}{subsection.3.3.12}
+\contentsline {subsection}{\numberline {3.3.13}Vulcan: The Plane of Fire}{33}{subsection.3.3.13}
+\contentsline {part}{III\hspace {1em}GM Tools}{34}{part.3}
+\contentsline {chapter}{\numberline {4}Roll Statistics}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Analytic Probability}{35}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Difficulty = 3}{36}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Difficulty = 4}{36}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Difficulty = 5}{36}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Difficulty = 6}{37}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Difficulty = 7}{37}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}Difficulty = 8}{37}{subsection.4.1.6}
+\contentsline {subsection}{\numberline {4.1.7}Difficulty = 9}{38}{subsection.4.1.7}
+\contentsline {subsection}{\numberline {4.1.8}Difficulty = 10}{38}{subsection.4.1.8}
+\contentsline {subsection}{\numberline {4.1.9}Difficulty = 11}{38}{subsection.4.1.9}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.3.20)  11 SEP 2020 12:39
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.18)  13 SEP 2020 12:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1887,12 +1887,11 @@ LaTeX Font Info:    Font shape `TU/texgyrebonum-regular.otf(0)/m/sl' in size <9
 (Font)              Font shape `TU/texgyrebonum-regular.otf(0)/m/it' tried inst
 ead on input line 41.
  [2]
-(./Chapters/actions.tex) (./Chapters/Beasts/BeastMaster.tex [3
+(./Chapters/Beasts/BeastMaster.tex [3
 
 
 
-]
-(./Chapters/Beasts/ClassifyingBeasts.tex
+] (./Chapters/Beasts/ClassifyingBeasts.tex
 Chapter 1.
 
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 22--22
@@ -3815,8 +3814,8 @@ Overfull \hbox (10.35841pt too wide) in paragraph at lines 598--598
 [] 
  []
 
-File: ../Images/Humbaba.jpg Graphic file (type bmp)
-<../Images/Humbaba.jpg>
+File: ../Images/Humbaba.png Graphic file (type bmp)
+<../Images/Humbaba.png>
 [25]
 Underfull \hbox (badness 10000) in paragraph at lines 598--598
 
@@ -4143,118 +4142,133 @@ Underfull \hbox (badness 10000) in paragraph at lines 696--696
 
  []
 
-))) (./Chapters/Cosmology.tex [29]
-Chapter 3.
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 21--21
-|[] 
- []
-
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 21.
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 29--29
-|[] 
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 39--39
-|[] 
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 50--50
-|[] 
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 56--56
-|[] 
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 64--64
-|[] 
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 66--66
-|[] 
- []
-
-[30
+))) (./Chapters/MagicalWorld/WorldMaster.tex [29] [30
 
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 76--76
+(./Chapters/MagicalWorld/Cosmology.tex
+Chapter 3.
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 16--16
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 88--88
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 20--20
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 96--96
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 36--36
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 106--106
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 44--44
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 118--118
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 54--54
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 128--128
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 65--65
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 138--138
-|[] 
- []
-
-[31]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 148--148
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 71--71
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 157--157
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 79--79
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 165--165
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 81--81
+|[] 
+ []
+
+[31
+
+
+
+]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 91--91
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 174--174
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 103--103
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 184--184
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 111--111
 |[] 
  []
 
-) (./Chapters/Statistics.tex [32]
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 121--121
+|[] 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 133--133
+|[] 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 143--143
+|[] 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 153--153
+|[] 
+ []
+
+[32]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 163--163
+|[] 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 172--172
+|[] 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 180--180
+|[] 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 189--189
+|[] 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 199--199
+|[] 
+ []
+
+)) (./Chapters/Tools/ToolMaster.tex [33] [34
+
+
+] (./Chapters/Tools/Statistics.tex
 Chapter 4.
 
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 5--5
 |[] 
  []
 
-[33
+[35
+
 
 ]
 \c@rowcount=\count357
@@ -4358,7 +4372,7 @@ Overfull \hbox (3.65227pt too wide) in paragraph at lines 166--166
 []|\TU/texgyrebonum-regular.otf(0)/bx/n/6 14| 
  []
 
-[34
+[36
 
 ]
 Overfull \hbox (3.65227pt too wide) in paragraph at lines 184--184
@@ -4435,7 +4449,7 @@ Overfull \hbox (3.65227pt too wide) in paragraph at lines 220--220
 []|\TU/texgyrebonum-regular.otf(0)/bx/n/6 14| 
  []
 
-[35]
+[37]
 Overfull \hbox (3.65227pt too wide) in paragraph at lines 238--238
 []|\TU/texgyrebonum-regular.otf(0)/bx/n/6 10| 
  []
@@ -4485,20 +4499,20 @@ Overfull \hbox (3.65227pt too wide) in paragraph at lines 256--256
 []|\TU/texgyrebonum-regular.otf(0)/bx/n/6 14| 
  []
 
-[36])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
+[38]))
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
  (./GMGuide.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 57.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 57.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 54.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 54.
  ) 
 Here is how much of TeX's memory you used:
- 41984 strings out of 493007
- 803375 string characters out of 6136719
- 996997 words of memory out of 5000000
+ 41988 strings out of 493007
+ 803532 string characters out of 6136718
+ 996039 words of memory out of 5000000
  45252 multiletter control sequences out of 15000+600000
  585392 words of font info for 183 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  62i,18n,75p,10412b,765s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on GMGuide.pdf (37 pages).
+Output written on GMGuide.pdf (39 pages).
