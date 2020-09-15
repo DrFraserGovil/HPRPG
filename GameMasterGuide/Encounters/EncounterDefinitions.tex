@@ -1,0 +1,109 @@
+\documentclass[oneside, twocolumn, 9pt, english]{extbook}
+\usepackage{../../HPpack}
+\usepackage{etoolbox}
+\usepackage{pgffor}
+\usepackage{xfp}
+\input{../Chapters/Beasts/BeastDefinitions}
+\def\ImageBase{../../Images/}
+
+
+\makeatletter
+\define@key{beast}{participants}{\def\participants{#1}}
+\makeatother
+
+\newcommand\encounterBeast[1]
+{
+	\begingroup
+	
+	\defaultSetter
+	\setkeys{beast}{#1}
+	%\setkeys{beast}{participants = {}, speciesOnly = 0 }
+	
+	
+	\vbox
+	{
+		
+		\titleBlock{}
+		\if\hasImage0
+			\description{}
+		\fi
+		
+		\if\hasImage1
+			\if\imageStack1
+				\verticalStack
+			\else
+				\sideBySide
+			\fi
+		\fi
+	}
+	
+	\statBlock{0}
+	
+	\if\hasSkills1
+		\vspace{0.7cm}
+		
+		
+		\skillBlock{}
+	\fi
+
+	\damage{}
+	
+	\dndlineFade{black}
+	
+	\movement{}
+	
+	\abilities{}
+	
+	\if\hasLanguages1
+		\ability{Languages}{\languages}
+	\fi
+		
+	\if\hasAttacks1
+		\subsubsection*{Armaments \& Attacks}
+		\attacks{}
+	\fi
+	
+	
+		{\normalsize \subsection*{\name{} Participants} }
+	
+	
+	\foreach  \member [count = \c from 0] in \participants
+	{
+		\subsubsection*{\member}
+		
+		{
+			\footnotesize
+			\uniqueBox{}
+		}
+	}
+	
+	%~ \begin{tikzpicture}
+		%~ \def\gap{3.3}
+		%~ \foreach \member [count = \c from 0] in \participants
+		%~ {
+			%~ \def\y{-\c*\gap}
+			%~ \node at (0,{\y}) {\parbox[t]{5 cm}{\subsubsection*{\member} 
+			
+						
+			%~ \footnotesize
+			%~ \uniqueBox{}
+			
+			%~ }
+			%~ };
+		%~ }
+	%\end{tikzpicture}
+	
+	\endgroup
+}
+
+\newcommand\encounter[3]
+{
+	\title{#1}
+	\maketitle
+	#2
+	
+	#3
+}
+
+
+

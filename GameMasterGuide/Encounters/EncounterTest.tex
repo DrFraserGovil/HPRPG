@@ -1,0 +1,24 @@
+\input{EncounterDefinitions}
+
+\begin{document}
+
+
+
+\encounter{Test}{This is a test of the encounter system}{
+
+
+\encounterBeast{name = Acromantula Hatchling, species = Acromantula, mind = Non\minus{}Sapient, category = Monstrosity, rating = III, abilities = \ability{Webwalker}{\article{} \name{} takes no movement penalty on webbed surfaces\comma{} and uses their \imp{Inhuman Senses} to sense vibrations in their webs.}
+
+\ability{Sticky Feet}{A \name{} may use their \imp{Climbing} ability to walk on any vertical surface.}
+
+\ability{Tiny}{\name{}s can occupy the same space as another being\comma{} climbing over them. Their small size also grants them a non\minus{}damaging terminal velocity.}, article = An, movement = \speeds{\speedrating{Walking}{5}\speedrating{Climbing}{1.5}}, fit =2, prs =3, vit =2, cha =0, dec =0, ins =1, int =1, wil =1, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{Poison\comma{} Falling Damage}, nUnharmed=1, nBruised=0, nHurt=2, nInjured=0, nWounded=0, nMangled=6, block=1, dodge=3, defy=1, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Covert}{4}
+\skill{Climb}{3}
+\skill{Speed}{2}
+\skill{Inhuman Senses}{2}
+, hasAttacks = 1, attacks = \meleeConsequence{Poison Fangs}{3}{0}{Stabbing Damage}{1+Successes}{If the attack deals any damage\comma{} the victim takes the \imp{Poisoned} status (1 \imp{harm}\comma{} requires 5 successes)}, hasLanguages = 1, languages = \understands{Spider Tongue}, hasImage =0 , description = A newborn \imp{acromantula} is tiny when compared to their full grown counterparts – though with a legspan of up to 40cm\comma{} they are still significantly larger than almost all non\minus{}magical spiders. 
+
+Their body is covered in a shiny\comma{} hairless and pale\minus{}grey carapace\comma{} which hardens and grows darker as they grow older – eventually they shed this skin as they enter the adult phase of their life. , participants = {{Acro1}, {Acro2}, {Acro3}, {Acro4} } }
+
+
+}
+\end{document}

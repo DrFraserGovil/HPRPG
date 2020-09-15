@@ -1,0 +1,10 @@
+#!/bin/bash
+if [ $1 -eq 1 ]
+then
+	cd Data;
+	matlab -nodisplay -nodesktop < "MasterAssembly.m"
+	cd ..
+fi
+
+xelatex EncounterTest.tex
+xdg-open EncounterTest.pdf

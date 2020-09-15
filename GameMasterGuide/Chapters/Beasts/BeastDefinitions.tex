@@ -66,49 +66,14 @@
 \define@key{beast}{imageStack}{\def\imageStack{#1}}
 \define@key{beast}{movement}{\def\movement{#1}}
 \define@key{beast}{speciesOnly}{\def\speciesOnly{#1}}
-%~ \define@key{beast}{hasImmune}{\def\immuneMode{#1}}
-%~ \define@key{beast}{immune}{\def\immune{#1}}
-%~ \define@key{beast}{hasResistance}{\def\resistanceMode{#1}}
-%~ \define@key{beast}{resistance}{\def\resistance{#1}}
-%~ \define@key{beast}{hasSusceptible}{\def\susceptibleMode{#1}}
-%~ \define@key{beast}{susceptible}{\def\susceptible{#1}}
-%~ \define@key{beast}{hasAbilities}{\def\abilitiesMode{#1}}
-%~ \define@key{beast}{abilities}{\def\abilities{#1}}
-%~ \define@key{beast}{hasSkills}{\def\skillsMode{#1}}
-%~ \define@key{beast}{skills}{\def\skills{#1}}
-%~ \define@key{beast}{hasActions}{\def\actionMode{#1}}
-%~ \define@key{beast}{actions}{\def\actions{#1}}
-%~ \define@key{beast}{habitat}{\def\habitat{#1}}
-%~ \define@key{beast}{sizeName}{\def\sizeName{#1}}
-%~ \define@key{beast}{size}{\def\size{#1}}
-%~ \define@key{beast}{abilityBlock}{\def\aBlock{#1}}
-%~ 
-%~ \define@key{beast}{image}{\def\image{#1}}
-%~ \define@key{beast}{hasImage}{\def\imageMode{#1}}
-%~ \define@key{beast}{imPosition}{\def\imagePos{#1}}
-%~ \define@key{beast}{hasLanguages}{\def\languageMode{#1}}
-%~ \define@key{beast}{language}{\def\languages{#1}}
-%~ \define@key{beast}{needsLine}{\def\needsLine{#1}}
-%~ \define@key{beast}{comprehend}{\def\comprehend{#1}}
-%~ \define@key{beast}{hasComprehend}{\def\comprehendMode{#1}}
-%~ \define@key{beast}{imageHeight}{\def\imageHeight{#1}}
-%~ \define@key{beast}{habitat}{\def\habitat{#1}}
-%~ \define@key{beast}{needsPage}{\def\needsPage{#1}}
-%~ 
-%~ \define@key{beast}{hasHabitat}{\def\hasHabitat{#1}}
-%~ \define@key{beast}{hasLair}{\def\hasLair{#1}}
-%~ \define@key{beast}{lairActions}{\def\lairActions{#1}}
-%~ \define@key{beast}{hasSenses}{\def\hasSenses{#1}}
-%~ \define@key{beast}{senses}{\def\senses{#1}}
-%~ \define@key{beast}{hasConditionImmune}{\def\hasConditionImmune{#1}}
-%~ \define@key{beast}{conditionImmune}{\def\conditionImmune{#1}}
-%%keyEnd    
+
 \makeatother
 
 \def\defaultSetter
 {
 	\setkeys{beast}{name = none, species = None, mind = none, rating = Unset, category = none, description = None, fit =0, prs = 0, vit =0, cha = 0, dec = 0, ins = 0, int = 0, wil =0, pcp = 0, nUnharmed =0, nBruised = 0, nHurt = 0, nInjured = 0, nWounded = 0, nMangled = 0,fortitude = 0, skills = 0, hasSkills = 0, block = 0, dodge = 0, defy = 0,hasDamage = 0, damage = , abilities = ,hasAttacks = 0, attacks = None,article = A, hasLanguages = 0, languages = None, hasImage = 0, image = None, speciesOnly = 0, movement = \speedrating{Walking}{0}}
 }
+
 \newcounter{yCount}
 \newcounter{nonZeroCount}
 \def\bx{0.45}
@@ -259,12 +224,9 @@
 {
 	\parbox[t]{\w cm}{\vspace{0.3cm} \centering \key{#1} \\ \large \ratingB{#2}}
 }
-\newcommand\statBlock
+
+\newcommand\uniqueBox
 {
-	\normalsize
-	
-	~
-	
 	\healthBox{}
 		
 	\begin{tabular}{m{4cm} m{4cm}}
@@ -281,7 +243,17 @@
 	
 	~
 	
-	\damage{}
+	
+}
+\newcommand\statBlock[1]
+{
+	%\normalsize
+	
+	\if#11
+		\uniqueBox{}
+	\fi
+	
+	
 	
 	{\centering
 	\footnotesize
@@ -337,13 +309,15 @@
 	\parbox[t]{9.5cm}{\textbf{\textit{#1}}: ({\it area attack: #2, #3 dice, DV \fpeval{7+#4}}) \\ Effect: \imp{#5}, with Power #6}	
 }
 
+\def\ImageBase{../Images/}
 
 \newcommand\sideBySide
 {
 	\begin{minipage}{0.2 \textwidth}
-	\includegraphics[width = 0.98 \textwidth, keepaspectratio=true]{../Images/\image}
+	\includegraphics[width = 0.98 \textwidth, keepaspectratio=true]{\ImageBase\image}
 	\end{minipage}
 	\begin{minipage}{0.29\textwidth}
+	\small
 	\description{}
 	\end{minipage}
 
@@ -352,11 +326,13 @@
 {
 	\begin{center}
 	
-	\includegraphics[width = 0.4 \textwidth, keepaspectratio=true]{../Images/\image}
+	\includegraphics[width = 0.4 \textwidth, keepaspectratio=true]{\ImageBase\image}
 	\end{center}
 	
+	{
+	\small
 	\description{}
-
+	}
 }
 
 
@@ -385,7 +361,7 @@
 	}
 
 	
-	\statBlock
+	\statBlock{1}
 
 	\if\hasSkills1
 		\vspace{0.7cm}
@@ -393,7 +369,9 @@
 		
 		\skillBlock{}
 	\fi
-
+	
+	\damage{}
+	
 	\dndlineFade{black}
 	
 	\movement{}
