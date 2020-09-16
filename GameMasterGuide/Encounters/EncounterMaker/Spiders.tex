@@ -1,0 +1,56 @@
+\input{EncounterDefinitions}
+
+\begin{document}
+\encounter{Spidery Doom}
+{A test run for a more spider\minus{}themed encounter}{\encounterBeast{name = Acromantula Hatchling, species = Acromantula, mind = Non\minus{}Sapient, category = Monstrosity, rating = III, abilities = \ability{Webwalker}{\article{} \name{} takes no movement penalty on webbed surfaces\comma{} and uses their \imp{Inhuman Senses} to sense vibrations in their webs.}
+
+\ability{Sticky Feet}{A \name{} may use their \imp{Climbing} ability to walk on any vertical surface.}
+
+\ability{Tiny}{\name{}s can occupy the same space as another being\comma{} climbing over them. Their small size also grants them a non\minus{}damaging terminal velocity.}, article = A, movement = \speeds{\speedrating{Walking}{5}\speedrating{Climbing}{1.5}}, fit =2, prs =3, vit =2, cha =0, dec =0, ins =1, int =1, wil =1, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{Poison\comma{} Falling Damage}, nUnharmed=1, nBruised=0, nHurt=2, nInjured=0, nWounded=0, nMangled=1, block=1, dodge=3, defy=1, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Covert}{4}
+\skill{Climb}{3}
+\skill{Speed}{2}
+\skill{Inhuman Senses}{2}
+, hasAttacks = 1, attacks = \meleeConsequence{Poison Fangs}{3}{0}{Stabbing Damage}{1+Successes}{If the attack deals any damage\comma{} the victim takes the \imp{Poisoned} status (1 \imp{harm}\comma{} requires 5 successes)}, hasLanguages = 1, languages = \understands{Spider Tongue}, hasImage = 1, image = babyAcro, 
+participants = { {Acromantula Hatchling 1}, {Acromantula Hatchling 2}, {Acromantula Hatchling 3}, {Acromantula Hatchling 4}, {Acromantula Hatchling 5}}, 
+description = A newborn \imp{acromantula} is tiny when compared to their full grown counterparts – though with a legspan of up to 40cm\comma{} they are still significantly larger than almost all non\minus{}magical spiders. 
+
+Their body is covered in a shiny\comma{} hairless and pale\minus{}grey carapace\comma{} which hardens and grows darker as they grow older – eventually they shed this skin as they enter the adult phase of their life. 
+
+Despite their limited intelligence and diluted poison\comma{} \name{}s are often encountered in nauseating flocks of thousands upon thousands\comma{} and in such large numbers\comma{} they pose a deadly threat to even the most powerful magic user.}\encounterBeast{name = Acromantula Adult, species = Acromantula, mind = Sapient, category = Monstrosity, rating = V, abilities = \ability{Webwalker}{\article{} \name{} takes no movement penalty on webbed surfaces\comma{} and uses their \imp{Inhuman Senses} to sense vibrations in their webs.}
+
+
+\ability{Sticky Feet}{A \name{} may use their \imp{Climbing} ability to walk on any vertical surface.}, article = A, movement = \speeds{\speedrating{Walking}{8}\speedrating{Climbing}{3}}, fit =5, prs =4, vit =4, cha =0, dec =1, ins =1, int =4, wil =3, pcp =3, hasDamage = 1, damage =\key{Immune} to \textit{Poison} and \key{Resistant} to \textit{Falling Damage}, nUnharmed=3, nBruised=2, nHurt=1, nInjured=1, nWounded=1, nMangled=2, block=3, dodge=4, defy=3, fortitude=3, imageStack=0, hasSkills = 1, skills = \skill{Climb}{6}
+\skill{Speed}{5}
+\skill{Inhuman Senses}{5}
+\skill{Covert}{4}
+\skill{Strength}{3}
+, hasAttacks = 1, attacks = \meleeConsequence{Poison Fangs}{6}{0}{Stabbing Damage}{1+Successes}{If the attack deals any damage\comma{} the victim takes the \imp{Poisoned} status (2 \imp{harm}\comma{} requires 8 successes)}
+
+\ranged{Websac}{10}{6}{0}{Trapped Status}{1 + Successes}, hasLanguages = 1, languages = \understands{Human Languages}
+\speaks{Spider Tongue}, hasImage = 1, image = Acromantula, 
+participants = { {Acromantula Adult 1}, {Acromantula Adult 2}, {Acromantula Adult 3}, {Acromantula Adult 4}, {Acromantula Adult 5}}, 
+description = From a nest of several thousand \imp{Hatchlings}\comma{} only one or two survive the brutal and vicious ascent to adulthood within an \imp{Acromantula} colony\comma{} shedding their final adolescant carapace to become a full\minus{}grown \imp{Acromantula}.
+
+As a result of this violent and competitive environment\comma{} a fully grown \imp{Acromantula} is something to be greatly feared. No \imp{Acromantula} survives this long without a willingness and ability to brutally slay even their closest allies\comma{} so that only the most murderous\comma{} brutal and cunning spiders remain. 
+
+Though  they can run incredibly quickly and they utilise a ranged web attack to ensnare their pray\comma{} the most terrifying aspect of a full\minus{}grown \imp{Acromantula} is their above\minus{}human level of intelligence\comma{} not only can they liquiefy your innards\comma{} they can counter even the most elaborate plan to outwit them.}\encounterBeast{name = Acromantula Patriarch, species = Acromantula, mind = Sapient, category = Monstrosity, rating = VI, abilities = \ability{Webwalker}{\article{} \name{} takes no movement penalty on webbed surfaces\comma{} and uses their \imp{Inhuman Senses} to sense vibrations in their webs.}
+
+
+\ability{Sticky Feet}{A \name{} may use their \imp{Climbing} ability to walk on any vertical surface.}, article = A, movement = \speeds{\speedrating{Walking}{4}\speedrating{Climbing}{0.5}}, fit =1, prs =3, vit =3, cha =2, dec =5, ins =5, int =6, wil =6, pcp =4, hasDamage = 1, damage =\key{Immune} to \textit{Poison}, nUnharmed=4, nBruised=1, nHurt=1, nInjured=1, nWounded=1, nMangled=2, block=2, dodge=2, defy=6, fortitude=5, imageStack=1, hasSkills = 1, skills = \skill{Inhuman Senses}{7}
+\skill{Command}{7}
+\skill{Strength}{4}
+\skill{Climb}{1}
+\skill{Speed}{1}
+, hasAttacks = 1, attacks = \meleeConsequence{Poison Fangs}{3}{0}{Stabbing Damage}{4+Successes}{If the attack deals any damage\comma{} the victim takes the \imp{Poisoned} status (5 \imp{harm}\comma{} requires 10 successes)}
+
+\ranged{Websac}{30}{10}{0}{Trapped}{1 + Successes}
+
+\ability{Summon Legions}{Whilst within their lair\comma{} a \name{} may use a DV 7 \imp{Command} action to summon a number of \imp{Acromantula Adults} and \imp{Acromantula Hatchlings} to serve them.}, hasLanguages = 1, languages = \speaks{Human Languages\comma{} Spider Tongue}, hasImage = 1, image = aragog, 
+participants = { {Aragog}}, 
+description = If it is rare for a \imp{Hatchling} to survive to adulthood\comma{} it is even rarer for an \imp{Acromantula} to grow old\comma{} and gain the mantle of the \imp{Patriarch}. 
+
+As the \imp{Acromantula} never stop growing\comma{} by the time they reach 40 or 50 years old\comma{} they have reached truly gargantuan sizes\comma{} with legspans up to 10m\comma{} with an exoskeleton that is so thick that almost nothing can penetrate it. 
+
+Though they cut a truly terrifying figure\comma{} their bodies have become decrepit with age\comma{} and they do not retain the nimbleness of their younger forms\comma{} instead relying on their formidable intellect and their ability to command legions of their brood to protect them.}}
+
+\end{document}

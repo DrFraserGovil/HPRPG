@@ -1,10 +1,10 @@
-\documentclass[oneside, twocolumn, 9pt, english]{extbook}
-\usepackage{../../HPpack}
+\documentclass[oneside, twocolumn, 9pt, english]{article}
+\usepackage{../../../HPpack}
 \usepackage{etoolbox}
 \usepackage{pgffor}
 \usepackage{xfp}
-\input{../Chapters/Beasts/BeastDefinitions}
-\def\ImageBase{../../Images/}
+\input{../../Chapters/Beasts/BeastDefinitions}
+\def\ImageBase{../../../Images/}
 
 
 \makeatletter
@@ -13,6 +13,7 @@
 
 \newcommand\encounterBeast[1]
 {
+	
 	\begingroup
 	
 	\defaultSetter
@@ -94,11 +95,13 @@
 	%\end{tikzpicture}
 	
 	\endgroup
+	\newpage
 }
 
 \newcommand\encounter[3]
 {
-	\title{#1}
+	\title{\vspace{- 3ex} #1}
+	\date{\vspace{-5ex}}
 	\maketitle
 	#2
 	

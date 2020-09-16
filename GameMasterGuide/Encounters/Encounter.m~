@@ -1,0 +1,55 @@
+classdef Encounter
+    
+    properties
+        Name
+        Description
+        Beasts
+        Names
+    end
+    
+    methods
+        function obj = Encounter(tableLine, beasts)
+            obj.Name = tableLine.Name{1};
+            obj.Description = tableLine.Description{1};
+            obj.Beasts = Beast.empty;
+%             obj.Beasts(1) = beasts(1);
+%             obj.Beasts(2) = beasts(2);
+            obj.Names = {};
+            w = width(tableLine);
+            for j = 3:2:w
+               species = tableLine{1,j};
+               collected = [obj.Beasts.Name];
+               if ~isempty(obj.Beasts) && any(collected == species)
+                   n = string(tableLine{1,j+1});
+                   id = find(collected == species);
+                   if n == "" || isempty(n) || n == 
+                       
+                       n = obj.Beasts(id).Name + length(obj.Names{id});
+                   end
+                   obj.Names{id}
+                   obj.Names{id}{end+1} = n;
+                   
+                   
+               else
+                   all = [beasts.Name];
+                   Z = find(all == species);
+                   obj.Beasts(end+1) = beasts(all == species);
+                   n = string(tableLine{1,j+1});
+                   if n == "" || isempty(n)
+                       n = obj.Beasts(end).Name + " 1";
+                   end
+                   obj.Names{end+1} ={ n};
+               end       
+                
+            end
+            obj.Names{1}
+        end
+        
+        function outputArg = method1(obj,inputArg)
+            %METHOD1 Summary of this method goes here
+            %   Detailed explanation goes here
+            outputArg = obj.Property1 + inputArg;
+        end
+    end
+end
+

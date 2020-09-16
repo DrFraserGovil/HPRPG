@@ -75,7 +75,7 @@ classdef Beast
     methods
         function obj = Beast(tableLine)
             obj.Order = tableLine.SpeciesOrder(1);
-            obj.Name = tableLine.Name{1};
+            obj.Name = string(tableLine.Name{1});
             
             obj.Article = "A";
             if any(obj.Name(1) == ["A","E","I","O","U"])
@@ -153,7 +153,7 @@ classdef Beast
             obj.ImageStack = tableLine.Stack(1);
         end
         
-        function [text, added] = print(obj,mode)
+        function [text, added] = print(obj,mode,participants)
             if nargin < 2
                 mode = 0;
             end
@@ -164,6 +164,8 @@ classdef Beast
                 text = "\\beast{";
                 if mode == 1
                    text = "\\speciesBeast{"; 
+                elseif mode == 2
+                    text = "\\encounterBeast{";
                 end
 
                 titles = ["name", "species","mind","category","rating","abilities","article","movement"];
@@ -196,7 +198,18 @@ classdef Beast
                    end
 
                 end
-
+                
+                
+                if mode == 2
+                    s = "participants = { ";
+                   for j = 1:length(participants)
+                       s = s + "{" +prepareText(participants{j}) + "}";
+                       if j < length(participants)
+                           s = s + ", ";
+                       end
+                   end
+                   text = text + "\n" + s + "}, \n";
+                end
                text = text + "description = " + prepareText(obj.Description) + "}";
             end
         end

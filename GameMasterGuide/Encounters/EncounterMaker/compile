@@ -6,5 +6,5 @@ then
 	cd ..
 fi
 
-xelatex EncounterTest.tex
-xdg-open EncounterTest.pdf
+xelatex Spiders.tex
+xdg-open Spiders.pdf
