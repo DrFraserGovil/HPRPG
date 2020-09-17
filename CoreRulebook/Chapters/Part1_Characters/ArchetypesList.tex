@@ -1,17 +1,38 @@
 
-\newcommand\ability[4]
+\newcommand\ability[3]
 {
-	\subsubsection{\imp{#1 Ability: #2}}
+	\vspace{-1.3ex}
+	\subsubsection*{\imp{#1 Ability: #2}}
 	
-	#3
-
-	%#4
-
+	{\footnotesize #3}
 }
-
-\newcommand\bname
+\newcommand\gold[2]
 {
-	\imp{\name}
+	\if#20
+		\item \galleon{#1} in your pocket
+	\else
+		\item \galleon{#1} in your pocket \& \galleon{#2} in your vault
+	\fi
+}
+\newcommand\orr[2]
+{
+	\item #1 \key{or} #2
+}
+\newcommand\orrr[3]
+{
+	\item #1, #2, \key{or} #3
+}
+\newcommand\spells[1]
+{
+	\item #1 spells from the \imp{Basic Spells Table}
+}
+\newcommand\spellchoice[4]
+{
+	\item #4 choice of the \imp{#1}, \imp{#2} \key{or} \imp{#3} spells
+}
+\def\bname
+{
+\imp{\name{}}
 }
 
 
@@ -31,40 +52,21 @@
 \define@key{archetype}{description}{\def\description{#1}}
 \define@key{archetype}{innateAbility}{\def\innateAbility{#1}}
 \define@key{archetype}{innateDescription}{\def\innateDescription{#1}}
-\define@key{archetype}{innateNil}{\def\innateNil{#1}}
-\define@key{archetype}{innateI}{\def\innateI{#1}}
-\define@key{archetype}{innateII}{\def\innateII{#1}}
-\define@key{archetype}{innateIII}{\def\innateIII{#1}}
-\define@key{archetype}{innateIV}{\def\innateIV{#1}}
-\define@key{archetype}{innateV}{\def\innateV{#1}}
-\define@key{archetype}{innateVI}{\def\innateVI{#1}}
-\define@key{archetype}{innateVII}{\def\innateVII{#1}}
+
 \define@key{archetype}{knowledgeAbility}{\def\knowledgeAbility{#1}}
 \define@key{archetype}{knowledgeDescription}{\def\knowledgeDescription{#1}}
 \define@key{archetype}{knowledgeNil}{\def\knowledgeNil{#1}}
-\define@key{archetype}{knowledgeI}{\def\knowledgeI{#1}}
-\define@key{archetype}{knowledgeII}{\def\knowledgeII{#1}}
-\define@key{archetype}{knowledgeIII}{\def\knowledgeIII{#1}}
-\define@key{archetype}{knowledgeIV}{\def\knowledgeIV{#1}}
-\define@key{archetype}{knowledgeV}{\def\knowledgeV{#1}}
-\define@key{archetype}{knowledgeVI}{\def\knowledgeVI{#1}}
-\define@key{archetype}{knowledgeVII}{\def\knowledgeVII{#1}}
+
 \define@key{archetype}{practicalAbility}{\def\practicalAbility{#1}}
 \define@key{archetype}{practicalDescription}{\def\practicalDescription{#1}}
-\define@key{archetype}{practicalNil}{\def\practicalNil{#1}}
-\define@key{archetype}{practicalI}{\def\practicalI{#1}}
-\define@key{archetype}{practicalII}{\def\practicalII{#1}}
-\define@key{archetype}{practicalIII}{\def\practicalIII{#1}}
-\define@key{archetype}{practicalIV}{\def\practicalIV{#1}}
-\define@key{archetype}{practicalV}{\def\practicalV{#1}}
-\define@key{archetype}{practicalVI}{\def\practicalVI{#1}}
-\define@key{archetype}{practicalVII}{\def\practicalVII{#1}}
+
+\define@key{archetype}{starting}{\def\starting{#1}}
 \makeatother
 
 \newcommand\archetype[1]
 {
 	\begingroup
-	\setkeys{archetype}{name= None,article = A, bonuses = , description= None,innateAbility= None,innateDescription= None,innateNil= None,innateI= None,innateII= None,innateIII= None,innateIV= None,innateV= None,innateVI= None,innateVII= None,knowledgeAbility= None,knowledgeDescription= None,knowledgeNil= None,knowledgeI= None,knowledgeII= None,knowledgeIII= None,knowledgeIV= None,knowledgeV= None,knowledgeVI= None,knowledgeVII= None,practicalAbility= None,practicalDescription= None,practicalNil= None,practicalI= None,practicalII= None,practicalIII= None,practicalIV= None,practicalV= None,practicalVI= None,practicalVII= None,bonusWidth = 3, feats = , experience = \item Do something } 
+	\setkeys{archetype}{name= None,article = A, bonuses = , description= None,innateAbility= None,innateDescription= None,knowledgeAbility= None,knowledgeDescription= None,practicalAbility= None,practicalDescription= None,bonusWidth = 3, feats = , experience = \item Do something, starting = \item Nothing } 
 
 	\setkeys{archetype}{#1}
 	
@@ -74,10 +76,12 @@
 	\index{Feats!Archetype Feats!\name{} Feats}
 	\addcontentsline{toc}{section}{\name}
 	
-	\small 
+	{
+	\footnotesize
 	\description
 	
-	\section*{\imp{\name{}} {Capabilities} }
+	
+	\subsection*{\imp{\name{}} {Capabilities} }
 	
 	\article{} \imp{\name} gets the following bonuses to their \imp{Aspects}, \imp{Abilities} and \imp{Affinities}. Where a choice is given, you cannot make the same choice twice. Note that these are {\it bonuses} on top of those granted by other abilities and natural starting values. 
 	
@@ -91,26 +95,39 @@
 	
 	
 	%\section*{\name{} Experience}
+	
+	
+	
+	\subsection*{\name{} Starting \imp{Skills} \& \imp{Equipment} }
+	
+	\begin{itemize}
+		\item A \imp{Wand} and a set of \imp{Wizard}'s robes
+		\item One \imp{Feat} (from the \bname{} list, or the list on page \pageref{S:AllFeats})
+		\starting
+	\end{itemize}
+	
 	\index{Progression!Additional Triggers}
 	\article{} \imp{\name} gains additional experience when they:
 	\begin{itemize}[itemsep = 0cm]
 		\experience
 	\end{itemize}
 	
-	\section*{\name{} Special \imp{Abilities}}
+	\subsection*{\name{} Special \imp{Abilities}}
 	\index{Abilities!Archetype Abilities}
 	A character following the path of the \imp{\name{}} can use the following special abilities: \key{\innateAbility}, \key{\practicalAbility} and \key{\knowledgeAbility}. At Character Creation each of these skills has a rating of one, with a further three dots distributed amongst them at your design.
 	
-	\ability{Innate}{\innateAbility}{\innateDescription}{\ratingTable{\innateNil}{\innateI}{\innateII}{\innateIII}{\innateIV}{\innateV}{\innateVI}{\innateVII}}
-	\ability{Practical}{\practicalAbility}{\practicalDescription}{\ratingTable{\practicalNil}{\practicalI}{\practicalII}{\practicalIII}{\practicalIV}{\practicalV}{\practicalVI}{\practicalVII}}
-	\ability{Knowledge}{\knowledgeAbility}{\knowledgeDescription}{\ratingTable{\knowledgeNil}{\knowledgeI}{\knowledgeII}{\knowledgeIII}{\knowledgeIV}{\knowledgeV}{\knowledgeVI}{\knowledgeVII}}
+	\ability{Innate}{\innateAbility}{\innateDescription}
+	\ability{Practical}{\practicalAbility}{\practicalDescription}
+	\ability{Knowledge}{\knowledgeAbility}{\knowledgeDescription}
 	
 	
-	\section*{\imp{\name} Feats}
+	\subsection*{\imp{\name} Feats}
 	
 	\article{} \bname{} choose to take some of the following feats as they increase their abilities:
 	
 	\feats
+	
+	}
 	\endgroup
 	
 }
@@ -123,11 +140,16 @@
 \archetype
 {
 	name = Artificer,
-	description = {\bname{}}s are those individuals who revel in the act of creation\comma{} in making things more than the sum of their parts. 
+	description = \bname{}s are those individuals who revel in the act of creation\comma{} in making things more than the sum of their parts. 
 
 Coming in many varieties – from the magic\minus{}item driven \imp{Enchanters} to the potion\minus{}mixing \imp{Alchemists} and even the more muggle\minus{}minded \imp{Technicians}\comma{} an \imp{Artificer} is both creative and technical\comma{} addressing challenges with a little something they prepared earlier. 
 
 Many \imp{Artificers} seal themselves away in their laboratories\comma{} only surfacing for air when absolutely necessary – but it is not unusual for some to take a more liberal approach to `field testing’ their equipment. What’s the point of creating the ultimate magical weapon if you don’t get to shoot it at things?,
+	starting = \spells{2}
+\spellchoice{Animate}{Forge}{Trap}{1}
+\item A choice from Potioneering Set\comma{} Runic Tools\comma{} or any mundane crafting tools.
+\orrr{The knowledge of 3 enchanting runes}{\galleon{2} of potion ingredients}{A large quantity of non\minus{}magical raw material}
+\gold{2}{1},
 	experience = \item Solve a problem using technical knowledge\comma{} innovation or one of their creations
 \item Create something new and impressive,
 	bonuses = \bonus{Imbue or Craft}{\twoCape}
@@ -160,13 +182,17 @@ This ability may be used in order to determine the purpose or properties of a ta
 Their pursuit of justice often puts them in harm's way\comma{} and so the budding \auror{} is encouraged to focus on magic which allows them to protect themselves from harm\comma{} as well as incapacitate their foes. 
 
 However\comma{} the defining trait of an \auror{} is not their combat abilities but instead their ability to discover clues\comma{} intuit motives and hunt down their foes.,
+	starting = \spells{2}
+\spellchoice{Conceal}{Halt}{Recall}{1}
+\orrr{First Aid Kit}{Navigation Tools}{Detective’s Tools}
+\item A basic weapon such as a dagger or quarterstaff
+\gold{2}{1},
 	experience = \item Solve a problem using investigation\comma{} tracking and detective work
 \item Track down or hunt an elusive target or solve a significant mystery,
 	bonuses = \bonus{Insight}{\twoCape}
 \bonus{Investigation}{\twoCape}
-\bonus{Perception}{\oneCape}
-\bonus{Brawl}{\oneCape}
-\bonus{Survival}{\oneCape},
+\bonus{Perception or Perception}{\twoCape}
+\bonus{Brawl}{\oneCape},
 	innateAbility = Intuition,
 	innateDescription = \imp{\innateAbility} is the inherent\comma{} instinctive understanding of the minds of others possessed by an insightful and trained mind. Bypassing all \imp{Logic} and conscious reasoning\comma{} \imp{intuition} allows an \name{} to make great strides in their understanding of people and their actions by getting inside their heads and understanding the way that they think. Though not useful for solving traditional intellectual puzzles\comma{} \imp{\innateAbility} can allow an \bname{} to suddenly have a flash of insight into the motives\comma{} aims or drive of another being. 
 
@@ -184,11 +210,13 @@ Whilst \imp{Intuition} relies on a general understanding of the target's thought
 \archetype
 {
 	name = Druid,
-	description = A {\bname{}} is a witch or wizard who has dedicated their life to the understanding\comma{} protection and preservation of the natural order of things. 
-
-From the smallest fungus\comma{} to the most vicious of dragons\comma{} as well as the very bones of the Earth\comma{} and the stars in the sky – all {\bname{}}s feel a deep connection to them all. From this connection to nature\comma{} the \bname{}s draw their powers their understanding of all forms of magic is shaped into how it affects and relates to nature.
+	description = A {\bname{}} is a witch or wizard who has dedicated their life to the understanding\comma{} protection and preservation of the natural order of things. From the smallest fungus\comma{} to the most vicious of dragons\comma{} and the very bones of the Earth\comma{} and the stars in the sky – all {\bname{}}s feel a deep connection to them all. From this connection to nature\comma{} the \bname{}s draw their powers and understanding of magic.
 
 In the popular mythology of \bname{}s\comma{} even in the Wizarding world\comma{} they are seen as eccentric pacifists\comma{} a pushover afraid to even hurt a fly. However\comma{} a true \bname{} understands that death and destruction are a part of the every day cycle of nature. If an old tree must burn so that a dozen new flowers may blossom\comma{} a \imp{Druid} is often more than happy to oblige.,
+	starting = \spells{1}
+\item Any two spells from the \imp{Elemental} or \imp{Bewitchment} disciplines
+\orr{First Aid Kit}{Herbology Tools}
+\item A basic weapon such as a dagger or quarterstaff,
 	experience = \item Solve a problem by using their connection to nature
 \item Protect some aspect of nature from signifiant harm,
 	bonuses = \bonus{Willpower}{\twoCape}
@@ -198,9 +226,7 @@ In the popular mythology of \bname{}s\comma{} even in the Wizarding world\comma{
 	innateAbility = Belonging,
 	innateDescription = A \bname{} with a high innate sense of \imp{Belonging} has an intuitive\comma{} almost supernatural ability to determine when the natural\comma{} organic\comma{} order of things has been disrupted or influenced.
 
-By looking at a lone tree in an underground cave\comma{} such a character may attempt to discover if it \imp{Belongs} here\comma{} simply growing naturally\comma{} or if it was placed there and forced to grow by other means\comma{} or if a pack of dogs attacked out of natural instinct\comma{} or trained instructions. 
-
-The sense of \imp{Belonging} is not an exact art\comma{} but merely gives a \bname{} an additional insight into disruptions and alterations of nature.,
+By looking at a lone tree in an underground cave\comma{} such a character may attempt to discover if it \imp{Belongs} here\comma{} simply growing naturally\comma{} or if it was placed there and forced to grow by other means\comma{} or if a pack of dogs attacked out of natural instinct\comma{} or trained instructions.,
 	practicalAbility = Nurture,
 	practicalDescription = The ability to nurture life\comma{} in all its forms\comma{} is critical to the role of a \bname{}. A high \imp{Nuture} score allows a \bname{} to care for plants\comma{} animals and nature in general\comma{} providing them with the support\comma{} nutrition and guidance they need.
 
@@ -219,6 +245,10 @@ The way in which nature responds is often esoteric and open to interpretation\co
 	description = A \bname{} is a person who has dedicated themselves to the art of self\minus{}improvement\comma{} on both a spiritual level\comma{} and on a magical level. 
 
 \bname{}s follow the belief that before you can help others\comma{} you must first be able to help yourself. For this reason\comma{} most of their magics and abilities are focussed inwards\comma{} allowing them to improve and grow their natural abilities to supernatural levels.,
+	starting = \spells{3}
+\spellchoice{Sustain}{Prophesy}{Seek}{1}
+\item Any choice of tool 
+\gold{1}{0},
 	experience = \item Overcome an obstacle using inner strength\comma{} or by fortifying their natural abilities
 \item Manifest a new or unusual magical effect within their own bodies,
 	bonuses = \bonus{Conviction}{\twoCape}
@@ -247,11 +277,14 @@ A high knowledge in \imp{Self} allows a \bname{} to identify any ongoing effects
 \archetype
 {
 	name = Outlaw,
-	description = An \bname{} is someone who sits outside the normal constraints of the law (or \comma{} at Hogwarts\comma{} the rules laid down by teachers). Eternally at conflict between their own desires and those of society\comma{} many \bname{}s end up starting into a life of crime\comma{} putting their skills to more nefarious use. 
-
-Others turn this defiance of law and order to become perennial tricksters\comma{} revelling in chaos and uncertainty. 
+	description = An \bname{} is someone who sits outside the normal constraints of the law (or \comma{} at Hogwarts\comma{} the rules laid down by teachers). Eternally at conflict between their own desires and those of society\comma{} many \bname{}s end up starting into a life of crime\comma{} putting their skills to more nefarious use. Others turn this defiance of law and order to become perennial tricksters\comma{} revelling in chaos and uncertainty. 
 
 An \bname{}\comma{} whichever path they take in life\comma{} lives and dies by their preparedness and ability to surprise those would ensnare and imprison them. Those who would catch an \bname{} should prepare to have every trick in the book thrown at them.,
+	starting = \spells{2}
+\spellchoice{Conceal}{Seek}{Bypass}{1}
+\orrr{Climbing Supplies}{Thieving Toolkit}{Tinkering Tools}
+\item A basic weapon such as a dagger or quarterstaff
+\gold{3}{0},
 	experience = \item Solve a problem using trickery\comma{} deception or subterfuge
 \item Further their own aims or self\minus{}interest at the expense of the law or local rules,
 	bonuses = \bonus{Covert}{\threeCape}
@@ -274,7 +307,7 @@ You must take care that you do this unnoticed\comma{} as people tend to get a bi
 	knowledgeDescription = The local \bname{} always knows a few secrets – where to get your hands on a certain black market item\comma{} and the location of secret passages and escape routes. 
 
 As an adult\comma{} they are probably familiar with the workings of the penal system (and how to exploit it)\comma{} whilst in Hogwarts\comma{} this knowledge can be used when questions about Detention come up.,
-	article = A,
+	article = An,
 	bonusWidth = 3, feats = \OutlawFeats
 }
 
@@ -286,6 +319,11 @@ As an adult\comma{} they are probably familiar with the workings of the penal sy
 Whilst many serve as dedicated medics in hospitals\comma{} others find themselves on the front line in the struggle against the forces of evil\comma{} patching up their allies at a crucial moment.
 
 Some responders recognise that preventing injuries in the first place is more effective than trying to deal with the aftermath\comma{} and so train themselves in the negation of incoming attacks.,
+	starting = \spells{2}
+\spellchoice{Purify}{Resist}{Halt}{1}
+\item A \imp{First Aid Kit}\comma{} plus one other tool
+\item A light shield\comma{} bearing the symbol of the Red Cross
+\gold{2}{1},
 	experience = \item Overcome a problem with care\comma{} compassion\comma{} before considering violence. 
 \item Treat a serious wound\comma{} heal an injured ally,
 	bonuses = \bonus{Insight or Willpower}{\twoCape}
@@ -317,6 +355,10 @@ Though it might not help a broken ankle\comma{} a high \imp{Pathology} rating al
 Whilst the conventional \bname{} is most at home with a chalkboard covered in symbols\comma{} or ensconced in a dusty library\comma{} most scholars these days appreciate that information\comma{} both new and old\comma{} requires stepping outside your traditional comfort zones. You can’t exactly study the behaviour of dragons without going and poking a few dragons\comma{} after all. 
 
 Whilst they prefer to term their adventures `field work’\comma{} there is no doubt that scholarship can sometimes be a dangerous experience. Most \bname{}s will stop at nothing\comma{} however\comma{} to help further their research.,
+	starting = \spells{3}
+\item One further spell of your choice from the full spell list 
+\orr{Two non\minus{}spell books}{Any tool}
+\gold{1}{0},
 	experience = \item Use intelligence and knowledge to overcome a significant obstacle
 \item Discover something new or undiscovered relating to your field of expertise.,
 	bonuses = \bonus{Investigation}{\twoCape}
@@ -349,6 +391,10 @@ Speculation allows you to draw disperate threads of knowledge\comma{} in order t
 Many people believe that \name{}s are born into their suave\comma{} charm and connections to those in the upper echelons of society\comma{} but there are of those who have struggled up the ranks of class and affluence to attain the status of \bname{}. Though these people may be privately regarded as interlopers by the old\minus{}guard\comma{} they are every bit as affluent and influential. 
 
 There are still others who are simply bluffing their way through\comma{} running the long\minus{}con and hoping nobody catches on…,
+	starting = \spells{2}
+\spellchoice{Inspire}{Delude}{Seek}{1}
+\item A fine set of clothes
+\gold{2}{3},
 	experience = \item Overcome a  problem using rumours\comma{} gossip or skills of persuasion and deception
 \item Turn an enemy into a friend\comma{} or otherwise significantly manipulate someone,
 	bonuses = \bonus{Eloquence}{\threeCape}
@@ -378,6 +424,11 @@ A high \imp{Society} knowledge means that you know everyone who is anyone. You a
 Warriors range from delicate and refined duelists\comma{} to axe\minus{}wielding maniacs. Being a warrior is more than just being handy with a weapon\comma{} however. A great warrior never goes into battle unprepared\comma{} and study and knowledge of tactics\comma{} history and the weaknesses of your foes is vital in achieving victory. 
 
 No matter what weapons they wield\comma{} a warrior carefully balances their combat skills\comma{} their tactical knowledge and a deep\minus{}seated rage against those who would defy them.,
+	starting = \spells{2}
+\spellchoice{Infect}{Resist}{Inspire}{1}
+\item Any weapon with a proficiency requirement less than a 4\minus{}dot rating
+\item A set of medium armour
+\gold{1}{1},
 	experience = \item Overcome a problem with combat and martial prowess.
 \item Defeat a worthy opponent in battle
 Or execute a novel or interesting stratagem,

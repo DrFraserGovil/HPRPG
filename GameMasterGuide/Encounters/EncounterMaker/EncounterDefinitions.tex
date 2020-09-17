@@ -2,6 +2,8 @@
 \usepackage{../../../HPpack}
 \usepackage{etoolbox}
 \usepackage{pgffor}
+\usepackage{xr}
+\externaldocument[GM-]{../../GMGuide}
 \usepackage{xfp}
 \input{../../Chapters/Beasts/BeastDefinitions}
 \def\ImageBase{../../../Images/}
@@ -19,6 +21,7 @@
 	\defaultSetter
 	\setkeys{beast}{#1}
 	%\setkeys{beast}{participants = {}, speciesOnly = 0 }
+	
 	
 	
 	\vbox
@@ -64,7 +67,7 @@
 		\attacks{}
 	\fi
 	
-	
+	{\it For full \name{} entry, see GM Guide page \pageref{GM-B:\name{}}}
 		{\normalsize \subsection*{\name{} Participants} }
 	
 	

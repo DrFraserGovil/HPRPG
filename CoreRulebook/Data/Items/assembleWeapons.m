@@ -1,4 +1,4 @@
-function assembleWeapons(fileNameRoot)
+function assembleWeapons(fileRoot)
    
     %if no target given, assume that called directly, else assume called by
     %master
@@ -6,10 +6,10 @@ function assembleWeapons(fileNameRoot)
     if nargin < 1
         disp('Insufficient inputs provided');
         addpath('../../../CoreRulebook/Data/Functions/');
-        fileNameRoot = '../../Chapters/Part3_Items/';
+        fileRoot = '../../';
  
     end
-    
+    fileNameRoot = fileRoot + "Chapters/Part3_Items/";
     f = readtable("Weapons.xlsx");
     f = sortrows(f,1);
     f = sortrows(f,6);

@@ -1,9 +1,10 @@
-function assembleTools(fileNameRoot)
+function assembleTools(fileRoot)
     if nargin < 1
         disp('Insufficient inputs provided');
         addpath('../Functions/');
-        fileNameRoot = '../../Chapters/Part3_Items/';
+        fileRoot = '../../';
     end
+    fileNameRoot = fileRoot + "Chapters/Part3_Items/";
     tools = readtable('tools.xlsx');
     tools = sortrows(tools);
 
