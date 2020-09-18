@@ -4,7 +4,7 @@
 	\vspace{-1.3ex}
 	\subsubsection*{\imp{#1 Ability: #2}}
 	
-	{\footnotesize #3}
+	{ #3}
 }
 \newcommand\gold[2]
 {
@@ -39,7 +39,7 @@
 
 \newcommand\bonus[2]
 {
-	\imp{#1}	&	#2 \\
+	\parbox[t]{2 cm}{\raggedright \imp{#1}}	&	#2 \\
 }
 
 \makeatletter
@@ -63,6 +63,28 @@
 \define@key{archetype}{starting}{\def\starting{#1}}
 \makeatother
 
+
+\newcommand\bonusBlock
+{
+	\begin{minipage}{0.22\textwidth}
+		\begin{center}
+		\footnotesize
+		\begin{rndtable}{r c}
+			\bf Capability	&	\bf Bonus Rating \\
+			\bonuses
+		\end{rndtable}
+		\end{center}
+	\end{minipage}\begin{minipage}{0.05\textwidth}
+	~
+	\end{minipage}\begin{minipage}{0.22\textwidth}
+		\imp{\name} Experience Triggers:
+		\begin{itemize}[itemsep = 0cm, leftmargin = 5pt]
+			\experience
+		\end{itemize}
+	\end{minipage}
+
+}
+
 \newcommand\archetype[1]
 {
 	\begingroup
@@ -77,7 +99,7 @@
 	\addcontentsline{toc}{section}{\name}
 	
 	{
-	\footnotesize
+	\small
 	\description
 	
 	
@@ -85,33 +107,21 @@
 	
 	\article{} \imp{\name} gets the following bonuses to their \imp{Aspects}, \imp{Abilities} and \imp{Affinities}. Where a choice is given, you cannot make the same choice twice. Note that these are {\it bonuses} on top of those granted by other abilities and natural starting values. 
 	
-	\begin{center}
-	\begin{rndtable}{r c}
-		\bf Capability	&	\bf Bonus Rating \\
-		\bonuses
-	\end{rndtable}
-	\end{center}
+	\imp{\name{}}s also gain additional experience according to the listed \imp{EXP Triggers}:
 	
-	
-	
-	%\section*{\name{} Experience}
-	
-	
+	\bonusBlock{}
 	
 	\subsection*{\name{} Starting \imp{Skills} \& \imp{Equipment} }
+
+	\article{} \imp{\name} starts with the following items and abilities:
 	
-	\begin{itemize}
+	\begin{itemize}[leftmargin = 5pt, itemsep = 0cm]
 		\item A \imp{Wand} and a set of \imp{Wizard}'s robes
 		\item One \imp{Feat} (from the \bname{} list, or the list on page \pageref{S:AllFeats})
 		\starting
 	\end{itemize}
 	
-	\index{Progression!Additional Triggers}
-	\article{} \imp{\name} gains additional experience when they:
-	\begin{itemize}[itemsep = 0cm]
-		\experience
-	\end{itemize}
-	
+
 	\subsection*{\name{} Special \imp{Abilities}}
 	\index{Abilities!Archetype Abilities}
 	A character following the path of the \imp{\name{}} can use the following special abilities: \key{\innateAbility}, \key{\practicalAbility} and \key{\knowledgeAbility}. At Character Creation each of these skills has a rating of one, with a further three dots distributed amongst them at your design.
@@ -191,7 +201,7 @@ However\comma{} the defining trait of an \auror{} is not their combat abilities 
 \item Track down or hunt an elusive target or solve a significant mystery,
 	bonuses = \bonus{Insight}{\twoCape}
 \bonus{Investigation}{\twoCape}
-\bonus{Perception or Perception}{\twoCape}
+\bonus{Perception or Willpower}{\twoCape}
 \bonus{Brawl}{\oneCape},
 	innateAbility = Intuition,
 	innateDescription = \imp{\innateAbility} is the inherent\comma{} instinctive understanding of the minds of others possessed by an insightful and trained mind. Bypassing all \imp{Logic} and conscious reasoning\comma{} \imp{intuition} allows an \name{} to make great strides in their understanding of people and their actions by getting inside their heads and understanding the way that they think. Though not useful for solving traditional intellectual puzzles\comma{} \imp{\innateAbility} can allow an \bname{} to suddenly have a flash of insight into the motives\comma{} aims or drive of another being. 
