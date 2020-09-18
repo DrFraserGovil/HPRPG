@@ -8,7 +8,7 @@
 \node at (\maxWidth,\maxHeight) {};
 \node at (\maxWidth,0) {};
 \def\characterBoxTop{\maxHeight - 1*\heightUnits}
-\def\characterGap{4.5 * \heightUnits}
+\def\characterGap{4 * \heightUnits}
 
 
 \def\leftLimit{0*\widthUnits}
@@ -20,30 +20,34 @@
 
 
 
-\draw[rounded corners,gray!70,fill=gray!10] ({\leftLimit},{\halfDivider+ 0.5*\heightUnits})rectangle ({\rightColumn},{\characterBoxTop});
+\draw[rounded corners,\ddg,fill=\llg] ({\leftLimit},{\halfDivider+ 0.5*\heightUnits})rectangle ({\rightColumn},{\characterBoxTop});
 
-\def\entryTop{\characterBoxTop - 3*\heightUnits};
+\def\entryTop{\characterBoxTop - 2.5*\heightUnits};
 
 \node at ({(\leftLimit + \rightColumn)/2},{\entryTop}) {\HP \LARGE Character};
 \foreach \entry [count = \c from 1] in {{Name}, {Family}, {Personality}, {Archetype} }
 {
-	\def\y{\entryTop-\c*\characterGap};
+	\def\y{\entryTop-\c*\characterGap+0.5*\heightUnits};
 	\node[anchor = west] (A) at ({\leftLimit}, {\y})  {\large \key{\entry:}};
 }
-\def\subBoxesTop{\entryTop - 3*\heightUnits - 4*\characterGap}
-\def\subBoxesDelta{\widthUnits};
-\def\subBoxesBottom{\halfDivider + 1.2*\heightUnits};
+\def\subBoxesTop{\entryTop - 2.5*\heightUnits - 4*\characterGap}
+\def\subBoxesDelta{0.5*\widthUnits};
+\def\subBoxesBottom{\halfDivider + 12*\heightUnits};
 \def\subBoxesWidth{(\rightColumn-\leftLimit)/2 - 2*\subBoxesDelta};
 
+%%Status Box
+
+\draw[rounded corners, \ddg, fill = \mg]  ({\leftLimit + \subBoxesDelta}, {\subBoxesBottom - \heightUnits}) rectangle ({\rightColumn - \subBoxesDelta}, {\halfDivider + \heightUnits});
+\node[anchor=north] at ({(\leftLimit + \rightColumn)/2},{\subBoxesBottom - \heightUnits}) {\imp{Current Status}};
 
 
 %%EXP box
-\draw[rounded corners, gray!70, fill = gray!35] ({\leftLimit+\subBoxesDelta}, {\subBoxesTop}) rectangle ({(\rightColumn+\leftLimit)/2 - \subBoxesDelta},{\subBoxesBottom}); 
+\draw[rounded corners, \ddg, fill = \mg] ({\leftLimit+\subBoxesDelta}, {\subBoxesTop}) rectangle ({(\rightColumn+\leftLimit)/2 - \subBoxesDelta},{\subBoxesBottom}); 
 \def\gapFac{1.5}
 \def\miniBoxesWidth{\boxDim*6*\gapFac};
 \def\modDelta{(\subBoxesWidth-\miniBoxesWidth)/2};
 \def\initX{\leftLimit + \subBoxesDelta+\modDelta}
-\def\expGap{5 * \heightUnits}
+\def\expGap{3.5 * \heightUnits}
 \node at ({\leftLimit + \subBoxesDelta + (\subBoxesWidth)/2},{\subBoxesTop-\heightUnits}) {\imp{Experience}};
 
 \foreach \c in {0,1,2,3,4,5,6}
@@ -52,17 +56,25 @@
 	\square{\x}{\subBoxesTop - \expGap}{}{white}
 }
 
-\node[anchor = west] at ({\leftLimit + \subBoxesDelta},{\subBoxesTop -\expGap - 2.5 *\boxDim}) {\scriptsize Experience Triggers:};
-\def\subExpGap{3.3*\heightUnits}
+\node[anchor = west] at ({\leftLimit + \subBoxesDelta},{\subBoxesTop -\expGap - 2 *\boxDim}) {\scriptsize Experience Triggers:};
+\def\subExpGap{3*\heightUnits}
 \def\bulletR{0.2*\heightUnits}
-\foreach \c in {1,2,3,4,5}
+\foreach \c in {1,2,3,4}
 {
-	\def\y{\subBoxesTop - \expGap - 2.5*\boxDim - \c*\subExpGap}
+	\def\y{\subBoxesTop - \expGap - 2*\boxDim - \c*\subExpGap}
 	\draw[fill = black] ({\leftLimit + \subBoxesDelta + \subExpGap}, {\y+\bulletR}) circle (\bulletR);
-	\draw[gray!70]({\leftLimit + \subBoxesDelta + \subExpGap+6*\bulletR}, {\y-4*\bulletR}) -- ({\leftLimit + \subBoxesDelta + \subBoxesWidth - \subBoxesDelta}, {\y-4*\bulletR});
+	\if\c1
+		\node[anchor=west] at ({\leftLimit + \subBoxesDelta +\subExpGap + 6*\bulletR}, {\y}) {\scriptsize \imp{Overcome Obstacle }};
+	\else
+		\if\c2
+			\node[anchor=west] at ({\leftLimit + \subBoxesDelta +\subExpGap + 6*\bulletR}, {\y}) {\scriptsize \imp{Character Growth}};
+		\else
+			\draw[\ddg]({\leftLimit + \subBoxesDelta + \subExpGap+6*\bulletR}, {\y-4*\bulletR}) -- ({\leftLimit + \subBoxesDelta + \subBoxesWidth - \subBoxesDelta}, {\y-4*\bulletR});
+		\fi
+	\fi
 }
 
-\draw[rounded corners, gray!70, fill = gray!35] ({(\rightColumn+\leftLimit)/2 + \subBoxesDelta}, {\subBoxesTop}) rectangle ({\rightColumn - \subBoxesDelta},{\subBoxesBottom}); 
+\draw[rounded corners, \ddg, fill = \mg] ({(\rightColumn+\leftLimit)/2 + \subBoxesDelta}, {\subBoxesTop}) rectangle ({\rightColumn - \subBoxesDelta},{\subBoxesBottom}); 
 \node at ({\leftLimit + \subBoxesDelta + (\subBoxesWidth)/2},{\subBoxesTop-\heightUnits}) {\imp{Experience}};
 
 
@@ -70,21 +82,21 @@
 
 \newdimen\myunit
 \pgfextractx{\myunit}{\pgfpointxy{{\subBoxesWidth-\subBoxesDelta/2}}{0}}
-\node[anchor = north west] at ({\leftLimit + 3*\subBoxesDelta + (\subBoxesWidth)},{\subBoxesTop-2.8*\heightUnits}) {\parbox[t]{1\myunit}{\raggedright \scriptsize Doing \imp{Nourishing} activities restores \key{Fortitude}}};
+\node[anchor = north west] at ({\leftLimit + 3*\subBoxesDelta + (\subBoxesWidth)},{\subBoxesTop-2.1*\heightUnits}) {\parbox[t]{1\myunit}{\raggedright \scriptsize \it Doing \imp{Nourishing} activities restores \key{Fortitude}}};
 
-\node[anchor = west] at ({\leftLimit + 3*\subBoxesDelta + (\subBoxesWidth)},{\subBoxesTop -\expGap - 2.5 *\boxDim}) {\scriptsize Nourishment Triggers:};
-\foreach \c in {1,2,3,4,5}
+\node[anchor = west] at ({\leftLimit + 3*\subBoxesDelta + (\subBoxesWidth)},{\subBoxesTop -\expGap - 2 *\boxDim}) {\scriptsize Nourishment Triggers:};
+\foreach \c in {1,2,3,4}
 {
-	\def\y{\subBoxesTop - \expGap - 2.5*\boxDim - \c*\subExpGap}
+	\def\y{\subBoxesTop - \expGap - 2*\boxDim - \c*\subExpGap}
 	\draw[fill = black] ({\leftLimit + \subBoxesWidth + 3*\subBoxesDelta + \subExpGap}, {\y}) circle (\bulletR);
 	
 	\if\c1
 			\node[anchor=west] at ({\leftLimit + +\subBoxesWidth + 3*\subBoxesDelta + \subExpGap+6*\bulletR}, {\y}) {\scriptsize \imp{Sleeping (1/day)}};
 	\else
 		\if\c2
-			\node[anchor = west] at ({\leftLimit + +\subBoxesWidth + 3*\subBoxesDelta + \subExpGap+6*\bulletR}, {\y}) {\scriptsize \imp{Eating (2/day)}};
+			\node[anchor = west] at ({\leftLimit + +\subBoxesWidth + 3*\subBoxesDelta + \subExpGap+6*\bulletR}, {\y}) {\scriptsize \imp{Hot Meal (1/day)}};
 		\else
-			\draw[gray!70]({\leftLimit + +\subBoxesWidth + 3*\subBoxesDelta + \subExpGap+6*\bulletR}, {\y-4*\bulletR}) -- ({\rightColumn - 2*\subBoxesDelta}, {\y-4*\bulletR});
+			\draw[\ddg]({\leftLimit + +\subBoxesWidth + 3*\subBoxesDelta + \subExpGap+6*\bulletR}, {\y-4*\bulletR}) -- ({\rightColumn - 2*\subBoxesDelta}, {\y-4*\bulletR});
 		\fi
 	\fi
 }
@@ -106,7 +118,7 @@
 \def\aspectTop{\halfDivider - 0.2*\heightUnits};
 \def\aspectVerticalGap{2*\heightUnits}
 \def\interDotGap{(\aspectSectionSize - 7*1.42*\boxSmall)/8};
-\draw[rounded corners, gray!70, fill = gray!10] ({\leftLimit},{\halfDivider - 0.5*\heightUnits}) rectangle ({\rightColumn},{0});
+\draw[rounded corners, \ddg, fill = \llg] ({\leftLimit},{\halfDivider - 0.5*\heightUnits}) rectangle ({\rightColumn},{0});
 \node[anchor=north] at ({(\leftLimit + \rightColumn)/2},{\aspectTop}) {\HP \LARGE Aspects};
 
 
@@ -118,11 +130,11 @@
 	{
 		\def\x{ \leftLimit + \subBoxesDelta + \aspectSectionSize/2+ \j * (\aspectSectionSize+\interAspectGap) }
 		
-		\draw[rounded corners,gray!70,fill=gray!35] ({\x- \aspectSectionSize/2},{\y+\aspectSectionSize/6}) rectangle ({\x+ \aspectSectionSize/2},{\y -\aspectBoxHeight});
+		\draw[rounded corners,\ddg,fill=\mg] ({\x- \aspectSectionSize/2},{\y+\aspectSectionSize/6}) rectangle ({\x+ \aspectSectionSize/2},{\y -\aspectBoxHeight});
 		\node at ({\x}, {\y}) {\key{\entry}};
 		
 	
-		\draw[domain = 0:360, variable = \t,samples = 30,gray!70,fill = gray!20] plot ({\x + (\aspectSectionSize/2)*cos(\t))}, {\y-\aspectBoxHeight-\ry*sin(\t)});
+		\draw[domain = 0:360, variable = \t,samples = 30,\ddg,fill = \lg] plot ({\x + (\aspectSectionSize/2)*cos(\t))}, {\y-\aspectBoxHeight-\ry*sin(\t)});
 		
 		\foreach \k in {0,1,2,3,4,5,6}
 		{
@@ -142,35 +154,38 @@
 
 
 %%% ABILITIES BOX
-\def\secondColumn{\rightColumn + 1*\widthUnits}
+\def\secondColumn{(\rightColumn + 1*\widthUnits)}
 \def\secondRight{100*\widthUnits}
-\def\gap{\textcolor{gray!70}{\underline{\hspace{1.8cm}}}}
+\def\gap{\textcolor{\ddg}{\underline{\hspace{2.6cm}}}}
 \def\abilityBoxHeight{\halfDivider  - 23*\heightUnits}
 
-\draw[rounded corners, gray!70, fill = gray!20] ({\secondColumn},{\halfDivider - 0.5*\heightUnits}) rectangle ({\secondRight},{\abilityBoxHeight});
+\draw[rounded corners, \ddg, fill = \lg] ({\secondColumn},{\halfDivider - 0.5*\heightUnits}) rectangle ({\secondRight},{\abilityBoxHeight});
 \node[anchor=north] at ({(\secondColumn + \secondRight)/2},{\aspectTop}) {\HP \Large Major Abilities};
 
-\def\interAbilityGap{0.3*\widthUnits}
-\def\abilityHeight{2.7*\heightUnits}
-\def\abilityWidth{((\secondRight - \secondColumn) - 4 * \interAbilityGap)/3}
+\def\interAbilityGap{0.4*\widthUnits}
+\def\abilityHeight{2.78*\heightUnits}
+\def\abilityWidth{ ((\secondRight - \secondColumn)/3)    }
 
 \def\columnStart{\aspectTop - 5*\heightUnits}
+
+
 \foreach \Header [count = \i from 0] in  {  {Innate}, {Practical}, {Knowledge} }
 {
-	\def\x{\secondColumn + \interAbilityGap + \i*(\interAbilityGap + \abilityWidth)}
+	\def\x{\secondColumn + \i*(\abilityWidth)}
+	
 	
 	\node at ({\x+\abilityWidth/2},{\columnStart}) {\key{\Header}};
 	
 	\foreach \j in {1,...,5,6}
 	{
-		\def\y{\columnStart - \interAbilityGap - \j*\abilityHeight}
+		\def\y{\columnStart + 0*\heightUnits - \j*\abilityHeight}
 		
 		\node[anchor = west] at ({\x},{\y}) {\footnotesize\imp{\gap}:};
 	
 		\foreach \k in {0,1,2,3,4,5,6}
 		{
 			
-			\def\xCirc{\x + - 4 * \widthUnits + \abilityWidth - \k*(\boxSmall*1.42)};
+			\def\xCirc{\x + \abilityWidth - (\k+1)*(\boxSmall*1.42)};
 			
 			\smallDot{\xCirc}{\y}{white}
 
@@ -188,7 +203,7 @@
 \def\spellTop{\abilityBoxHeight - 0.72*\heightUnits}
 \def\yC{\spellTop - 5.4*\heightUnits}
 \def\spellHeight{2.3*\heightUnits}
-\draw[rounded corners, gray!70, fill = gray!20] ({\secondColumn},{\abilityBoxHeight - 1*\heightUnits}) rectangle ({\spellLimit},{0});
+\draw[rounded corners, \ddg, fill = \lg] ({\secondColumn},{\abilityBoxHeight - 1*\heightUnits}) rectangle ({\spellLimit},{0});
 \node[anchor=north] at ({(\secondColumn + \spellLimit)/2},{\spellTop}) {\HP \Large Magical Affinities};
 
 
@@ -219,7 +234,7 @@
 
 \def\heroHeight{6.85*\widthUnits}
 
-\draw[rounded corners,gray!70,fill=gray!10] ({\spellLimit + 1*\widthUnits},{\abilityBoxHeight - 1*\heightUnits})rectangle ({\secondRight},{\heroHeight+1*\heightUnits});
+\draw[rounded corners,\ddg,fill=\llg] ({\spellLimit + 1*\widthUnits},{\abilityBoxHeight - 1*\heightUnits})rectangle ({\secondRight},{\heroHeight+1*\heightUnits});
 
 \def\x{(\spellLimit + 1*\widthUnits + \secondRight)/2}
 
@@ -255,9 +270,9 @@
 }
 
 %%% HEROISM BOX
-\draw[rounded corners,gray!70,fill=gray!10] ({\spellLimit+\widthUnits},{\heroHeight+0.5*\heightUnits})rectangle ({\secondRight},{0});
-\def\yH{\heroHeight+0.4*\heightUnits}
-\node[anchor=north] at ({\x},{\yH}) {\HP {Current Status}};
+\draw[rounded corners,\ddg,fill=\llg] ({\spellLimit+\widthUnits},{\heroHeight+0.5*\heightUnits})rectangle ({\secondRight},{0});
+\def\yH{\heroHeight+0.5*\heightUnits}
+\node[anchor=north] at ({\x},{\yH}) {\HP {Movement Speeds}};
 
 
 
@@ -274,14 +289,14 @@
 
 \def\skinnyWidth{23*\widthUnits}
 \def\skinnyLimit{\secondColumn + \skinnyWidth}
-\draw[rounded corners,gray!70,fill=gray!10] ({\secondColumn},{\halfDivider + 0.5*\heightUnits})rectangle ({\skinnyLimit},{\characterBoxTop});
+\draw[rounded corners,\ddg,fill=\llg] ({\secondColumn},{\halfDivider + 0.5*\heightUnits})rectangle ({\skinnyLimit},{\characterBoxTop});
 
 \def\healthGap{0.5*\widthUnits}
 \def\healthWidth{(\skinnyWidth - 3*(\healthGap))/2}
 
 %%%Health
 \def\top{\characterBoxTop}
-\draw[rounded corners,gray!70,fill=gray!30] ({\secondColumn+\healthGap},{\top-\boxHeight})rectangle ({\secondColumn+\healthGap+\healthWidth},{\characterBoxTop-\healthGap});
+\draw[rounded corners,\ddg,fill=\mg] ({\secondColumn+\healthGap},{\top-\boxHeight})rectangle ({\secondColumn+\healthGap+\healthWidth},{\characterBoxTop-\healthGap});
 
 
 
@@ -302,18 +317,18 @@
 }
 
 \def\lineHeight{\ytop - 9*1.42*\boxDim}
-\draw[gray!70] ({\secondColumn + \healthGap}, {\lineHeight})--++({\healthWidth},0);
+\draw[\ddg] ({\secondColumn + \healthGap}, {\lineHeight})--++({\healthWidth},0);
 \def\bigH{\lineHeight + \boxHeight  - \top}
 \def\deltaH{(\bigH - \sqrtTwo*\boxDim)/2}
 
 
 \foreach \k in {-2,-1,0,1,2}
 {
-	\square{\x+\k*1.42*\boxDim}{\lineHeight + \deltaH - \sqrtTwo/2*\boxDim}{dotted}{gray!20}
+	\square{\x+\k*1.42*\boxDim}{\lineHeight + \deltaH - \sqrtTwo/2*\boxDim}{dotted}{\lg}
 }
 
 
-\draw[rounded corners,gray!70,fill=gray!30] ({\secondColumn+2*\healthGap+\healthWidth},{\top-\boxHeight})rectangle ({\skinnyLimit - \healthGap},{\characterBoxTop-\healthGap});
+\draw[rounded corners,\ddg,fill=\mg] ({\secondColumn+2*\healthGap+\healthWidth},{\top-\boxHeight})rectangle ({\skinnyLimit - \healthGap},{\characterBoxTop-\healthGap});
 
 \def\x{\secondColumn + 2* \healthGap + 3/2*(\healthWidth)}
 \def\xCirc{\secondColumn + 2*\healthGap + \healthWidth+0.7*1.42*\boxDim}
@@ -326,12 +341,12 @@
 	\node[anchor = west] at ({\xCirc+\boxDim},{\yCirc}) {\parbox[t]{1\healthX}{\scriptsize\imp{\a}}};
 }
 \def\sqrtTwo{1.4142135623730951}
-\draw[gray!70] ({\secondColumn + 2*\healthGap + \healthWidth}, {\lineHeight})--++({\healthWidth},0);
+\draw[\ddg] ({\secondColumn + 2*\healthGap + \healthWidth}, {\lineHeight})--++({\healthWidth},0);
 
 
 \foreach \k in {-2,-1,0,1,2}
 {
-	\square{\x+\k*1.42*\boxDim}{\lineHeight + \deltaH - \sqrtTwo/2*\boxDim}{dotted}{gray!20}
+	\square{\x+\k*1.42*\boxDim}{\lineHeight + \deltaH - \sqrtTwo/2*\boxDim}{dotted}{\lg}
 }
 
 
@@ -361,7 +376,7 @@
 
 
 %%%% Inventory Box
-\draw[rounded corners,gray!70,fill=gray!10] ({\secondLeft},{\halfUp + 0.5*\heightUnits})rectangle ({\secondRight},{\characterBoxTop});
+\draw[rounded corners,\ddg,fill=\llg] ({\secondLeft},{\halfUp + 0.5*\heightUnits})rectangle ({\secondRight},{\characterBoxTop});
 \def\yC{\characterBoxTop - 1.5*\heightUnits}
 \node at ({\xC},{\yC-0.2*\heightUnits}) {\Large \HP Inventory};
 
@@ -374,7 +389,7 @@
 \def\subHeight{\yC - 2*\heightUnits}
 \def\textHeight{\subHeight - 1*\heightUnits}
 
-\draw[rounded corners,gray!70,fill=gray!30] ({\secondLeft+\invGap},{\halfUp + 0.5*\heightUnits+\wealthHeight})rectangle ({\secondLeft+\invGap + \invWidth},{\subHeight});
+\draw[rounded corners,\ddg,fill=\mg] ({\secondLeft+\invGap},{\halfUp + 0.5*\heightUnits+\wealthHeight})rectangle ({\secondLeft+\invGap + \invWidth},{\subHeight});
 \node at ({\secondLeft+\invGap + \invWidth/2},{\textHeight}) {\key{Equipment}};
 
 
@@ -396,14 +411,14 @@
 		\def\y{\HStart+\equipHGap + \HJump/2 + \j*(\HJump + \equipHGap)}
 		
 		\smallDot{\x-\XJump/2}{\y}{white};
-		\draw[gray!70]  ({\x-\XJump/2+\sqrtTwo*\boxSmall},{\y-\sqrtTwo/2*\boxSmall})--({\x+\XJump/2},{\y-\sqrtTwo/2*\boxSmall});
+		\draw[\ddg]  ({\x-\XJump/2+\sqrtTwo*\boxSmall},{\y-\sqrtTwo/2*\boxSmall})--({\x+\XJump/2},{\y-\sqrtTwo/2*\boxSmall});
 	}
 }
 
 
 
 
-\draw[rounded corners,gray!70,fill=gray!30] ({\secondLeft+2*\invGap + \invWidth},{\halfUp + 0.5*\heightUnits+\wealthHeight})rectangle ({\secondRight - \invGap},{\subHeight});
+\draw[rounded corners,\ddg,fill=\mg] ({\secondLeft+2*\invGap + \invWidth},{\halfUp + 0.5*\heightUnits+\wealthHeight})rectangle ({\secondRight - \invGap},{\subHeight});
 \def\xW{\secondRight - \invGap - \wealthWidth/2}
 \node at ({\xW},{\textHeight}) {\small \key{Galleons}};
 \def\moneyGap{(\boxSmall*1.42)}

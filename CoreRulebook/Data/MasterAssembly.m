@@ -32,8 +32,9 @@ function MasterAssembly(quitMode)
     
     path(pathdef)
     
-    disp('Data Transfer complete. Beginning xelatex compilation now');
+    
     if quitMode == 1
+        disp('Data Transfer complete. Beginning xelatex compilation now');
         quit;
     end
 end

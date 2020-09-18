@@ -13,22 +13,22 @@
 	\def\abilityLeft{0}
 	\def\abilityRight{65*\widthUnits}
 
-	\def\gap{\textcolor{gray!70}{\underline{\hspace{1.8cm}}}}
+	\def\gap{\textcolor{\ddg}{\underline{\hspace{2.6cm}}}}
 	\def\abilityBoxHeight{27*\heightUnits}
 	\def\abilityTop{\maxHeight - 1 * \heightUnits}
 	
-	\draw[rounded corners, gray!70, fill = gray!20] ({\abilityLeft},{\abilityTop}) rectangle ({\abilityRight},{\maxHeight-\abilityBoxHeight});
+	\draw[rounded corners, \ddg, fill = \lg] ({\abilityLeft},{\abilityTop}) rectangle ({\abilityRight},{\maxHeight-\abilityBoxHeight});
 	\node[anchor=north] at ({(\abilityLeft + \abilityRight)/2},{\abilityTop}) {\HP \Large Minor Abilities};
 
 	\def\interAbilityGap{0.3*\widthUnits}
-	\def\abilityHeight{2.7*\heightUnits}
-	\def\abilityWidth{((\abilityRight - \abilityLeft) - 4 * \interAbilityGap)/3}
+	\def\abilityHeight{2.94*\heightUnits}
+	\def\abilityWidth{(((\abilityRight - \abilityLeft) - 4 * \interAbilityGap)/3)}
 	
 	\def\columnStart{\abilityTop - 5*\heightUnits}
 	\foreach \Header [count = \i from 0] in  {  {Innate}, {Practical}, {Knowledge} }
 	{
 		\def\x{\abilityLeft+ \interAbilityGap + \i*(\interAbilityGap + \abilityWidth)}
-		
+		ss
 		\node at ({\x+\abilityWidth/2},{\columnStart}) {\key{\Header}};
 		
 		\foreach \j in {1,...,5,6}
@@ -39,7 +39,7 @@
 		
 			\foreach \k in {0,1,2,3,4,5,6}
 			{
-				\def\xCirc{\x + - 4 * \widthUnits + \abilityWidth - \k*(\boxSmall*1.42)};
+				\def\xCirc{\x + \abilityWidth - (\k+1)*(\boxSmall*1.42)};
 				\smallDot{\xCirc}{\y}{white}
 			}
 		
@@ -48,7 +48,7 @@
 	}	
 	
 	%%ability list
-	%\draw[rounded corners, gray!70, fill = gray!20] ({\abilityRight + \widthUnits},{\abilityTop}) rectangle ({\maxWidth},{\maxHeight-\abilityBoxHeight});
+	%\draw[rounded corners, \ddg, fill = \lg] ({\abilityRight + \widthUnits},{\abilityTop}) rectangle ({\maxWidth},{\maxHeight-\abilityBoxHeight});
 	\node[anchor=north] at ({(\maxWidth + \abilityRight + \widthUnits)/2},{\abilityTop}) {\HP \Large Full Ability List};
 	
 	\newcommand\entry[2]{ \ca{#2} \parbox[t]{2.5cm}{\centering #1} } 
@@ -56,7 +56,7 @@
 
 	\newcommand\abilityRow[3]
 	{
-		\entry{#1}{gray!20}	& 	\entry{#2}{gray!20} & 	\entry{#3}{gray!20} \\
+		\entry{#1}{\lg}	& 	\entry{#2}{\lg} & 	\entry{#3}{\lg} \\
 	}
 	\node[anchor = north] at ({(\maxWidth + \abilityRight + \widthUnits)/2},{\abilityTop-4*\heightUnits})
 	{
@@ -64,7 +64,7 @@
 		\setlength\extrarowheight{-3pt}
 		\begin{rndtable}{c c c}
 		
-		\entry{\key{Innate}}{gray!70}	&	\entry{\key{Practical}}{gray!70} & \entry{\key{Knowledge}}{gray!70} \\
+		\entry{\key{Innate}}{\ddg}	&	\entry{\key{Practical}}{\ddg} & \entry{\key{Knowledge}}{\ddg} \\
 	\abilityRow{Alertness}{Acrobatics}{Arcane}
 	\abilityRow{Bravery}{Brawl}{General}
 	\abilityRow{Conviction}{Covert}{History}
@@ -84,28 +84,28 @@
 	\def\quarterTop{\maxHeight - \abilityBoxHeight - \delta}
 	\def\quarterHeight{(\maxHeight - \abilityBoxHeight - 3*\delta)/2};
 	
-	\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 + \delta/2},{\quarterTop}) rectangle ({\maxWidth},{\delta});
+	\draw[rounded corners, \ddg, fill = \lg] ({\maxWidth/2 + \delta/2},{\quarterTop}) rectangle ({\maxWidth},{\delta});
 	\node[anchor = north] at ({3*\maxWidth/4 + \delta/4},{\quarterTop}) {\HP \Large Notes};
 	
 	
 	
 	
-	\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 - \delta/2},{\quarterTop}) rectangle ({0},{\quarterTop - \quarterHeight});
+	\draw[rounded corners, \ddg, fill = \lg] ({\maxWidth/2 - \delta/2},{\quarterTop}) rectangle ({0},{\quarterTop - \quarterHeight});
 	\node[anchor = north] at ({\maxWidth/4 + \delta/4},{\quarterTop}) {\HP \Large Character Background};
 	
-	%~ \draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 + \delta/2},{\quarterTop-\quarterHeight - \delta}) rectangle ({\maxWidth},{\delta});
+	%~ \draw[rounded corners, \ddg, fill = \lg] ({\maxWidth/2 + \delta/2},{\quarterTop-\quarterHeight - \delta}) rectangle ({\maxWidth},{\delta});
 	%~ \node[anchor = north] at ({3* \maxWidth/4 + \delta/4},{\quarterTop-\quarterHeight - \delta}) {\HP \Large Stored Items};
 	
 	
-	%\draw[rounded corners, gray!70, fill = gray!20] ({\maxWidth/2 - \delta/2},{\quarterTop-\quarterHeight - \delta}) rectangle ({0},{\delta});
+	%\draw[rounded corners, \ddg, fill = \lg] ({\maxWidth/2 - \delta/2},{\quarterTop-\quarterHeight - \delta}) rectangle ({0},{\delta});
 	\node[anchor = north] at ({\maxWidth/4 + \delta/4},{\quarterTop-\quarterHeight - \delta}) {\HP \Large Character Progression};
 	
 	\node at ({\maxWidth/4 + \delta/4},{(\quarterTop-\quarterHeight)/2-\delta}) 
 	{
 		\small
-		\newcommand\expRow[2]{\ca{gray!20}{\bf #1}	&	\ca{gray!20}\parbox[t]{6cm}{#2}	\\}
+		\newcommand\expRow[2]{\ca{\lg}{\bf #1}	&	\ca{\lg}\parbox[t]{6cm}{#2}	\\}
 			\begin{rndtable}{r l}
-				\ca{gray!70}\bf Ability	&	\ca{gray!70}\bf Exp Cost
+				\ca{\ddg}\bf Ability	&	\ca{\ddg}\bf Exp Cost
 				\\
 				\expRow{Increase Aspect Rating}{$=~2\times$ new attribute score}
 				\expRow{Increase Affinity Rating}{$=~3\times$ new affinity score}

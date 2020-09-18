@@ -11,7 +11,7 @@
 
 	\def\craftTop{\maxHeight - 1*\heightUnits}
 	\def\craftHeight{23*\heightUnits}
-	\draw[rounded corners, gray!70, fill = gray!10] ({0},{\craftTop}) rectangle ({\maxWidth},{\craftTop - \craftHeight});
+	\draw[rounded corners, \ddg, fill = \llg] ({0},{\craftTop}) rectangle ({\maxWidth},{\craftTop - \craftHeight});
 	\node[anchor = north] at ({\maxWidth/2}, {\craftTop}) {\HP \Large Artificing};
 
 
@@ -103,10 +103,10 @@
 	\def\delta{1*\widthUnits}
 	\def\pouchWidth{60*\widthUnits}
 	
-	\draw[rounded corners, gray!70, fill = gray!10] ({0},{\alchemyTop}) rectangle ({\maxWidth},{\alchemyTop - \alchemyHeight});
+	\draw[rounded corners, \ddg, fill = \llg] ({0},{\alchemyTop}) rectangle ({\maxWidth},{\alchemyTop - \alchemyHeight});
 	\node[anchor = north] at ({\maxWidth/2}, {\alchemyTop-1*\heightUnits}) {\HP \Large Potion Making};
 	
-	\draw[rounded corners, gray!70, fill = gray!20] ({\delta},{\alchemyTop-5*\heightUnits}) rectangle ({\pouchWidth},{\alchemyTop - \alchemyHeight+\delta});
+	\draw[rounded corners, \ddg, fill = \lg] ({\delta},{\alchemyTop-5*\heightUnits}) rectangle ({\pouchWidth},{\alchemyTop - \alchemyHeight+\delta});
 
 	\node[anchor = north] at ({(\pouchWidth + \delta)/2}, {\alchemyTop-5*\heightUnits}) {\HP Ingredient Pouch};
 
@@ -135,10 +135,10 @@
 		\fi
 	}
 	
-	\draw[rounded corners, gray!70, fill = gray!30] ({\subpouchWidth+\delta},{\alchemyTop-8.3*\heightUnits}) rectangle ({\pouchWidth-\delta},{\alchemyTop - \alchemyHeight+2*\delta});
+	\draw[rounded corners, \ddg, fill = \mg] ({\subpouchWidth+\delta},{\alchemyTop-8.3*\heightUnits}) rectangle ({\pouchWidth-\delta},{\alchemyTop - \alchemyHeight+2*\delta});
 	\node[anchor =north] at ({(\subpouchWidth+\pouchWidth)/2},{\alchemyTop-8.3*\heightUnits}) {\HP Harvested Ingredients};
 	
-	%\draw[rounded corners, gray!70, fill = gray!20] ({\pouchWidth+\delta},{\alchemyTop-5*\heightUnits}) rectangle ({\maxWidth-\delta},{\alchemyTop - \alchemyHeight+\delta});
+	%\draw[rounded corners, \ddg, fill = \lg] ({\pouchWidth+\delta},{\alchemyTop-5*\heightUnits}) rectangle ({\maxWidth-\delta},{\alchemyTop - \alchemyHeight+\delta});
 	%\node[anchor =north] at ({(\pouchWidth+\maxWidth)/2},{\alchemyTop-5*\heightUnits}) {\HP Successful Recipes + Potion Notes};
 	\node [anchor = north west] at ({\pouchWidth + \delta},{\alchemyTop - 5*\heightUnits}) {\parbox[t]{7.6 cm}{\scriptsize {\bf Mixing Potions}
 	\par
@@ -168,12 +168,12 @@
 	\def\runegap{2.6*\delta}
 	\def\runeWidth{(\maxWidth-4*\runeDelta)/3}
 	\def\runeBoxTop{\enchantTop - \runeDelta * 2.3}
-	\draw[rounded corners, gray!70, fill = gray!10] ({0},{\enchantTop}) rectangle ({\maxWidth},{\enchantTop - \enchantHeight});
+	\draw[rounded corners, \ddg, fill = \llg] ({0},{\enchantTop}) rectangle ({\maxWidth},{\enchantTop - \enchantHeight});
 	\node[anchor = north] at ({\maxWidth/2}, {\enchantTop-0*\heightUnits}) {\HP \Large Enchanting};
 	
 	\def\mod{12 * \heightUnits}
-	%~ \draw[rounded corners, gray!70, fill = gray!30] ({2*\runeDelta+\runeWidth},{\enchantTop-\runeDelta*2}) rectangle ({2*\runeDelta + 2*\runeWidth},{\enchantTop - \enchantHeight+\runeDelta});
-	%~ \draw[rounded corners, gray!70, fill = gray!30] ({3*\runeDelta+2*\runeWidth},{\enchantTop-\runeDelta*2}) rectangle ({2*\runeDelta + 3*\runeWidth},{\enchantTop - \enchantHeight+\runeDelta});
+	%~ \draw[rounded corners, \ddg, fill = \mg] ({2*\runeDelta+\runeWidth},{\enchantTop-\runeDelta*2}) rectangle ({2*\runeDelta + 2*\runeWidth},{\enchantTop - \enchantHeight+\runeDelta});
+	%~ \draw[rounded corners, \ddg, fill = \mg] ({3*\runeDelta+2*\runeWidth},{\enchantTop-\runeDelta*2}) rectangle ({2*\runeDelta + 3*\runeWidth},{\enchantTop - \enchantHeight+\runeDelta});
 	
 	
 	%{ {Control Runes}/{Used to determine what triggers the enchantment, and how the effect is controlled and manipulated}/{ {\animax}, {\fabulum}, {\iuxta}, {\mentis}, {\oculum}, {\salto}, {\seculum}, {\sessio}, {\vox} }, {Duration Runes}/{Used to determine how long the enchantment is active for, after being triggered. Shorter bursts produce more powerful effects, whilst longer durations have a more diluted power.}/{ {\displos}, {\velox}, {\lentus}, {\aeternum} }  }
@@ -206,7 +206,7 @@
 			\fi
 		\fi
 		
-		\draw[rounded corners, gray!70, fill = gray!30] ({\xl},{\runeBoxTop}) rectangle ({\xr},{\enchantTop - \enchantHeight+\deltaMod});
+		\draw[rounded corners, \ddg, fill = \mg] ({\xl},{\runeBoxTop}) rectangle ({\xr},{\enchantTop - \enchantHeight+\deltaMod});
 		\node[anchor = north] at ({\xc},{\runeBoxTop}) {\key{\runeName{}s}};
 		\node[anchor = north] at ({\xc},{\runeBoxTop - 1.5*\heightUnits}) {\parbox[t]{6.3cm}{ \it \scriptsize \runeDesc} };
 		

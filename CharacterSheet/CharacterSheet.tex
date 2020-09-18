@@ -17,11 +17,23 @@
 \newcommand\boxTiny{0.5*\widthUnits}
 
 
-\def\ddg{gray!70}
-\def\dg{gray!50}
-\def\mg{gray!30}
-\def\lg{gray!20}
-\def\llg{gray!10}
+\def\printerFriendly{0}
+
+\if\printerFriendly0
+	\def\ddg{gray!70}
+	\def\dg{gray!50}
+	\def\mg{gray!35}
+	\def\lg{gray!20}
+	\def\llg{gray!10}
+\else
+	\def\ddg{gray!100}
+	\def\dg{gray!0}
+	\def\mg{gray!0}
+	\def\lg{gray!0}
+	\def\llg{gray!0}
+\fi
+
+
 \newcommand\ca[1]{\cellcolor{#1}}
 \renewcommand\square[4]
 {
