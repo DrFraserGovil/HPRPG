@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.3.20)  18 SEP 2020 18:52
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.3.20)  19 SEP 2020 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1654,6 +1654,9 @@ File: ttlkeys.def 2016/03/15
 \tablebox=\box105
 \enitdp@spellitemize=\count352
 )
+(/usr/share/texlive/texmf-dist/tex/latex/ms/multitoc.sty
+Package: multitoc 1999/06/08 v2.01 MultiToc Package (MS)
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
@@ -1714,61 +1717,61 @@ Package csquotes Info: ... none found.
  (./GMGuide.aux)
 \openout1 = `GMGuide.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for LRC/fruc/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for LRA/frua/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for LRN/frun/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for LRT/frut/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for LRL/frul/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for LRM/frum/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 19.
-LaTeX Font Info:    Try loading font information for LS1+stix on input line 19.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for LRC/fruc/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for LRA/frua/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for LRN/frun/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for LRT/frut/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for LRL/frul/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for LRM/frum/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 20.
+LaTeX Font Info:    Try loading font information for LS1+stix on input line 20.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/stix/ls1stix.fd
 File: ls1stix.fd 2015/04/17 v1.1.2-latex STIX LS1 font definitions
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 19.
-LaTeX Font Info:    Try loading font information for LS2+stix on input line 19.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 20.
+LaTeX Font Info:    Try loading font information for LS2+stix on input line 20.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/stix/ls2stix.fd
 File: ls2stix.fd 2015/04/17 v1.1.2-latex STIX LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for LPH/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for LPH/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1811,7 +1814,7 @@ Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 99.
 
 )
 ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 19.
+Package hyperref Info: Link coloring OFF on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1821,9 +1824,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count354
 )
-LaTeX Info: Redefining \ref on input line 19.
-LaTeX Info: Redefining \pageref on input line 19.
-LaTeX Info: Redefining \nameref on input line 19.
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
 
 (./GMGuide.out) (./GMGuide.out)
 \@outlinefile=\write6
@@ -1885,19 +1888,15 @@ LaTeX Font Info:    Try loading font information for LS2+stixtt on input line 1
 (/usr/share/texlive/texmf-dist/tex/latex/stix/ls2stixtt.fd
 File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
 
-) [1
-
-
-])
+))
 \tf@toc=\write7
 \openout7 = `GMGuide.toc'.
 
-LaTeX Font Info:    Font shape `TU/texgyrebonum-regular.otf(0)/m/sl' in size <9
-> not available
-(Font)              Font shape `TU/texgyrebonum-regular.otf(0)/m/it' tried inst
-ead on input line 41.
- [2]
-(./Chapters/Beasts/BeastMaster.tex [3
+ [1
+
+
+]
+(./Chapters/Beasts/BeastMaster.tex [2
 
 
 
@@ -1928,7 +1927,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 51--51
 |[] 
  []
 
-[4
+[3
 
 
 
@@ -1954,7 +1953,12 @@ Overfull \hbox (13.53198pt too wide) in paragraph at lines 156--157
  [] 
  []
 
-) (./Chapters/Beasts/Beastiary.tex [5]
+) (./Chapters/Beasts/Beastiary.tex
+LaTeX Font Info:    Font shape `TU/texgyrebonum-regular.otf(0)/m/sl' in size <9
+> not available
+(Font)              Font shape `TU/texgyrebonum-regular.otf(0)/m/it' tried inst
+ead on input line 1.
+ [4]
 Chapter 2.
 
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 7--7
@@ -1981,7 +1985,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 46--46
 |[] 
  []
 
-[6
+[5
 
 ] (./Chapters/Beasts/BeastDefinitions.tex
 \c@yCount=\count355
@@ -2070,7 +2074,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--63
 
  []
 
-[7
+[6
 
 ]
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 63--63
@@ -2149,7 +2153,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--63
 
  []
 
-[8]
+[7]
 Overfull \hbox (10.35841pt too wide) in paragraph at lines 176--176
 [] 
  []
@@ -2233,7 +2237,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--176
 
  []
 
-[9]
+[8]
 Overfull \hbox (21.64786pt too wide) in paragraph at lines 176--176
 [][]
  []
@@ -2295,7 +2299,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 176--176
 [] 
  []
 
-[10]
+[9]
 Overfull \hbox (10.35841pt too wide) in paragraph at lines 176--176
 [] 
  []
@@ -2373,7 +2377,7 @@ Overfull \hbox (6.02252pt too wide) in paragraph at lines 222--222
 []$[]$ $[]$ 
  []
 
-[11]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 222--222
 
  []
@@ -2468,7 +2472,7 @@ Overfull \hbox (6.02252pt too wide) in paragraph at lines 222--222
 []$[]$ $[]$ 
  []
 
-[12]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 222--222
 
  []
@@ -2571,7 +2575,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--283
 
  []
 
-[13]
+[12]
 Overfull \hbox (10.35841pt too wide) in paragraph at lines 283--283
 [] 
  []
@@ -2682,7 +2686,7 @@ Overfull \hbox (6.02252pt too wide) in paragraph at lines 283--283
 []$[]$ $[]$ 
  []
 
-[14]
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 283--283
 
  []
@@ -2748,7 +2752,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 327--327
 [] 
  []
 
-[15]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 327--327
 []
  []
@@ -2856,7 +2860,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 375--375
 
  []
 
-[16]
+[15]
 Overfull \hbox (21.64786pt too wide) in paragraph at lines 375--375
 [][]
  []
@@ -2964,7 +2968,7 @@ Overfull \hbox (6.02252pt too wide) in paragraph at lines 415--415
 []$[]$ $[]$ 
  []
 
-[17]
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 415--415
 
  []
@@ -3061,7 +3065,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 415--415
 
  []
 
-[18]
+[17]
 Overfull \hbox (10.35841pt too wide) in paragraph at lines 415--415
 [] 
  []
@@ -3135,7 +3139,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 441--441
 [] 
  []
 
-[19]
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 441--441
 [][]
  []
@@ -3268,7 +3272,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 500--500
 
  []
 
-[20]
+[19]
 Overfull \hbox (19.08786pt too wide) in paragraph at lines 500--500
 [][]
  []
@@ -3340,7 +3344,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 500--500
 [] 
  []
 
-[21]
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 500--500
 []
  []
@@ -3348,6 +3352,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 500--500
 
 Underfull \hbox (badness 10000) in paragraph at lines 500--500
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+[][]
  []
 
 
@@ -3359,93 +3368,17 @@ Overfull \hbox (10.35841pt too wide) in paragraph at lines 543--543
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 543.
 
-File: ../Images/raiju.png Graphic file (type bmp)
-<../Images/raiju.png>
+File: ../Images/hidebehind.jpeg Graphic file (type bmp)
+<../Images/hidebehind.jpeg>
 
-Underfull \hbox (badness 1147) in paragraph at lines 543--543
-[]\TU/texgyrebonum-regular.otf(0)/m/n/8 After an ambitious magical experiment
+Underfull \hbox (badness 1406) in paragraph at lines 543--543
+[]\TU/texgyrebonum-regular.otf(0)/m/n/8 Hidebehinds are highly intelligent, but
+
  []
 
 
 Overfull \hbox (6.02252pt too wide) in paragraph at lines 543--543
 []$[]$ $[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-
- []
-
-
-Overfull \hbox (19.08786pt too wide) in paragraph at lines 543--543
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 543--543
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-
- []
-
-
-Overfull \hbox (12.63342pt too wide) in paragraph at lines 543--543
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-
- []
-
-
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 543--543
-[] 
- []
-
-File: ../Images/Nephelai.jpg Graphic file (type bmp)
-<../Images/Nephelai.jpg>
-
-Underfull \hbox (badness 2351) in paragraph at lines 543--543
-\TU/texgyrebonum-regular.otf(0)/m/n/8 incorporeal form into near any shape
- []
-
-
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 543--543
-[]$[]$ $[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-[]\TU/texgyrebonum-regular.otf(0)/m/sc/8 Inhuman
  []
 
 
@@ -3463,9 +3396,14 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 543--543
 [] 
  []
 
-[22]
-Overfull \hbox (12.63342pt too wide) in paragraph at lines 543--543
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
 []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+
  []
 
 
@@ -3479,397 +3417,594 @@ Underfull \hbox (badness 10000) in paragraph at lines 543--543
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 543--543
+[] 
+ []
+
+File: ../Images/screwt.png Graphic file (type bmp)
+<../Images/screwt.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+
+ []
+
+[21]
+Overfull \hbox (21.64786pt too wide) in paragraph at lines 543--543
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 543--543
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 586--586
 [] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 598.
+(hyperref)                be the same. Added a new anchor on input line 586.
 
-File: ../Images/cyclops.jpg Graphic file (type bmp)
-<../Images/cyclops.jpg>
+File: ../Images/raiju.png Graphic file (type bmp)
+<../Images/raiju.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 1147) in paragraph at lines 586--586
+[]\TU/texgyrebonum-regular.otf(0)/m/n/8 After an ambitious magical experiment
+ []
+
+
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 586--586
+[]$[]$ $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 586--586
 
  []
 
 
-Overfull \hbox (21.64786pt too wide) in paragraph at lines 598--598
+Overfull \hbox (19.08786pt too wide) in paragraph at lines 586--586
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 586--586
 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 598--598
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 586--586
 [] 
  []
 
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+
+Underfull \hbox (badness 10000) in paragraph at lines 586--586
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 586--586
 
  []
 
 
-Overfull \hbox (12.63342pt too wide) in paragraph at lines 598--598
+Overfull \hbox (12.63342pt too wide) in paragraph at lines 586--586
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 586--586
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 586--586
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 586--586
+
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 586--586
+[] 
+ []
+
+File: ../Images/Nephelai.jpg Graphic file (type bmp)
+<../Images/Nephelai.jpg>
+
+Underfull \hbox (badness 2351) in paragraph at lines 586--586
+\TU/texgyrebonum-regular.otf(0)/m/n/8 incorporeal form into near any shape
+ []
+
+
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 586--586
+[]$[]$ $[]$ 
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 586--586
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 586--586
+[]\TU/texgyrebonum-regular.otf(0)/m/sc/8 Inhuman
+ []
+
+
+Overfull \hbox (21.64786pt too wide) in paragraph at lines 586--586
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 586--586
+
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 586--586
+[] 
+ []
+
+
+Overfull \hbox (12.63342pt too wide) in paragraph at lines 586--586
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 586--586
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 586--586
+
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 641--641
+[] 
+ []
+
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 641.
+
+File: ../Images/cyclops.jpg Graphic file (type bmp)
+<../Images/cyclops.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
+
+ []
+
+[23]
+Overfull \hbox (21.64786pt too wide) in paragraph at lines 641--641
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
+
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 641--641
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
+
+ []
+
+
+Overfull \hbox (12.63342pt too wide) in paragraph at lines 641--641
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
+
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 641--641
 [] 
  []
 
 File: ../Images/jotun.jpg Graphic file (type bmp)
 <../Images/jotun.jpg>
 
-Underfull \hbox (badness 1442) in paragraph at lines 598--598
+Underfull \hbox (badness 1442) in paragraph at lines 641--641
 []\TU/texgyrebonum-regular.otf(0)/m/n/8 Whilst many of the \TU/texgyrebonum-reg
 ular.otf(0)/m/sc/8 True Giants \TU/texgyrebonum-regular.otf(0)/m/n/8 have
  []
 
 
-Underfull \hbox (badness 1314) in paragraph at lines 598--598
+Underfull \hbox (badness 1314) in paragraph at lines 641--641
 \TU/texgyrebonum-regular.otf(0)/m/n/8 sion of muggle civilsation, the Jotun’s
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 598--598
+Underfull \hbox (badness 1097) in paragraph at lines 641--641
 \TU/texgyrebonum-regular.otf(0)/m/n/8 have pushed this to the extreme, and
  []
 
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 598--598
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 641--641
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
 
  []
 
 
-Overfull \hbox (21.64786pt too wide) in paragraph at lines 598--598
+Overfull \hbox (21.64786pt too wide) in paragraph at lines 641--641
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 598--598
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 641--641
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
 
  []
 
 
-Overfull \hbox (12.63342pt too wide) in paragraph at lines 598--598
+Overfull \hbox (12.63342pt too wide) in paragraph at lines 641--641
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 598--598
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 641--641
 [] 
  []
 
 File: ../Images/Humbaba.jpg Graphic file (type bmp)
 <../Images/Humbaba.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
 
  []
 
-
-Overfull \hbox (21.64786pt too wide) in paragraph at lines 598--598
+[24]
+Overfull \hbox (21.64786pt too wide) in paragraph at lines 641--641
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 598--598
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 641--641
 [] 
  []
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 598--598
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 641--641
 [] 
  []
 
 File: ../Images/basajaun.jpg Graphic file (type bmp)
 <../Images/basajaun.jpg>
 
-Underfull \hbox (badness 4084) in paragraph at lines 598--598
+Underfull \hbox (badness 4084) in paragraph at lines 641--641
 []\TU/texgyrebonum-regular.otf(0)/m/n/8 Their fur-covered appearance, lack of
  []
 
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 598--598
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 641--641
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
 
  []
 
 
-Overfull \hbox (19.08786pt too wide) in paragraph at lines 598--598
+Overfull \hbox (19.08786pt too wide) in paragraph at lines 641--641
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 598--598
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 641--641
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 641--641
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 651--651
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 694--694
 [] 
  []
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 651.
+(hyperref)                be the same. Added a new anchor on input line 694.
 
 File: ../Images/solon.jpg Graphic file (type bmp)
 <../Images/solon.jpg>
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 651--651
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 694--694
 []$[]$ $[]$ 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 651--651
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 
  []
 
 
-Overfull \hbox (19.08786pt too wide) in paragraph at lines 651--651
+Overfull \hbox (19.08786pt too wide) in paragraph at lines 694--694
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--651
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 651--651
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 694--694
 [] 
  []
 
-[25]
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 651--651
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 694--694
 [] 
  []
 
 File: ../Images/phlogiston.jpg Graphic file (type bmp)
 <../Images/phlogiston.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--651
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--651
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []$\LS1/stixbb/m/it/8 ààààààà$ \TU/texgyrebonum-regular.otf(0)/m/n/8 +
  []
 
 
-Overfull \hbox (5.4225pt too wide) in paragraph at lines 651--651
+Overfull \hbox (5.4225pt too wide) in paragraph at lines 694--694
 []\TU/texgyrebonum-regular.otf(0)/m/sc/8 Shapechanging\TU/texgyrebonum-regular.
 otf(0)/m/n/8 : 
  []
 
 
-Overfull \hbox (21.64786pt too wide) in paragraph at lines 651--651
+Overfull \hbox (21.64786pt too wide) in paragraph at lines 694--694
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--651
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 651--651
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 694--694
 [] 
  []
 
 
-Overfull \hbox (12.63342pt too wide) in paragraph at lines 651--651
+Overfull \hbox (12.63342pt too wide) in paragraph at lines 694--694
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--651
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 
  []
 
 
-Overfull \hbox (10.35841pt too wide) in paragraph at lines 651--651
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 694--694
 [] 
  []
 
 File: ../Images/chalkydri.jpg Graphic file (type bmp)
 <../Images/chalkydri.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 651--651
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 
  []
 
-[26]
-Overfull \hbox (21.64786pt too wide) in paragraph at lines 651--651
+
+Overfull \hbox (21.64786pt too wide) in paragraph at lines 694--694
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--651
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 651--651
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 694--694
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--651
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--651
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--651
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--651
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--651
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--651
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
 
  []
 
 File: ../Images/whomp.png Graphic file (type bmp)
 <../Images/whomp.png>
 
-Overfull \hbox (6.02252pt too wide) in paragraph at lines 696--696
+Overfull \hbox (6.02252pt too wide) in paragraph at lines 739--739
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 696--696
+Underfull \hbox (badness 10000) in paragraph at lines 739--739
 
  []
 
 
-Overfull \hbox (21.64786pt too wide) in paragraph at lines 696--696
+Overfull \hbox (21.64786pt too wide) in paragraph at lines 739--739
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 696--696
+Underfull \hbox (badness 10000) in paragraph at lines 739--739
 
  []
 
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 696--696
+[27]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 739--739
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 696--696
+Underfull \hbox (badness 10000) in paragraph at lines 739--739
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 696--696
+Underfull \hbox (badness 10000) in paragraph at lines 739--739
 
  []
 
-))) (./Chapters/MagicalWorld/WorldMaster.tex [27] [28
+))) (./Chapters/MagicalWorld/WorldMaster.tex [28
+
+] [29
 
 
 ]
@@ -3899,7 +4034,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 82--82
 
 File: ../Images/astral.jpg Graphic file (type bmp)
 <../Images/astral.jpg>
-[29
+[30
 
 
 
@@ -3924,89 +4059,85 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 135--135
 
 File: ../Images/higherplane.jpg Graphic file (type bmp)
 <../Images/higherplane.jpg>
-[30]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 138--138
+[31] [32
+
+]
+Chapter 4.
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 148--148
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 143--143
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 163--163
+|[] 
+ []
+
+File: ../Images/abyss.jpg Graphic file (type bmp)
+<../Images/abyss.jpg>
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 180--180
+|[] 
+ []
+
+File: ../Images/hades.jpg Graphic file (type bmp)
+<../Images/hades.jpg>
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 189--189
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 153--153
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 203--203
+|[] 
+ []
+
+File: ../Images/elysium.jpg Graphic file (type bmp)
+<../Images/elysium.jpg>
+[33
+
+]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 207--207
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 165--165
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 223--223
+|[] 
+ []
+
+File: ../Images/scholomancia.jpg Graphic file (type bmp)
+<../Images/scholomancia.jpg>
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 226--226
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 173--173
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 248--248
 |[] 
  []
 
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 183--183
+File: ../Images/aeolus.png Graphic file (type bmp)
+<../Images/aeolus.png>
+[34]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 258--258
 |[] 
  []
 
-[31]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 195--195
-|[] 
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 205--205
-|[] 
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 215--215
-|[] 
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 225--225
-|[] 
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 234--234
-|[] 
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 242--242
-|[] 
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 251--251
-|[] 
- []
-
-[32]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 261--261
-|[] 
- []
-
-)) (./Chapters/Tools/ToolMaster.tex [33
-
-] [34
+File: ../Images/eden.jpg Graphic file (type bmp)
+<../Images/eden.jpg>
+)) (./Chapters/Tools/ToolMaster.tex [35] [36
 
 
 ] (./Chapters/Tools/Statistics.tex
-Chapter 4.
+Chapter 5.
 
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 5--5
 |[] 
  []
 
-[35
+[37
 
 
 ]
@@ -4111,7 +4242,7 @@ Overfull \hbox (3.65227pt too wide) in paragraph at lines 166--166
 []|\TU/texgyrebonum-regular.otf(0)/bx/n/6 14| 
  []
 
-[36
+[38
 
 ]
 Overfull \hbox (3.65227pt too wide) in paragraph at lines 184--184
@@ -4188,7 +4319,7 @@ Overfull \hbox (3.65227pt too wide) in paragraph at lines 220--220
 []|\TU/texgyrebonum-regular.otf(0)/bx/n/6 14| 
  []
 
-[37]
+[39]
 Overfull \hbox (3.65227pt too wide) in paragraph at lines 238--238
 []|\TU/texgyrebonum-regular.otf(0)/bx/n/6 10| 
  []
@@ -4238,20 +4369,20 @@ Overfull \hbox (3.65227pt too wide) in paragraph at lines 256--256
 []|\TU/texgyrebonum-regular.otf(0)/bx/n/6 14| 
  []
 
-[38]))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
+[40]))
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (./GMGuide.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 54.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 54.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 56.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 56.
  ) 
 Here is how much of TeX's memory you used:
- 42088 strings out of 493007
- 804992 string characters out of 6136719
- 1000289 words of memory out of 5000000
- 45346 multiletter control sequences out of 15000+600000
- 585384 words of font info for 182 fonts, out of 8000000 for 9000
+ 42155 strings out of 493007
+ 806567 string characters out of 6136719
+ 1000933 words of memory out of 5000000
+ 45399 multiletter control sequences out of 15000+600000
+ 585408 words of font info for 185 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  62i,18n,75p,10412b,733s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on GMGuide.pdf (39 pages).
+Output written on GMGuide.pdf (41 pages).

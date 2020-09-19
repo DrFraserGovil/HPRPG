@@ -9,7 +9,7 @@
 \def\coreMode{1}
 %%%
 
-
+\usepackage[toc]{multitoc}
 \begin{document}
 
 \begin{titlepage}
@@ -35,10 +35,13 @@
     {\HP \fontsize{22}{0} \selectfont Version 4.0$\alpha$ \hfill Jack Fraser}
 \end{titlepage}
 
-\setcounter{tocdepth}{1}  
+\setcounter{tocdepth}{2}  
+\setcounter{secnumdepth}{0}
 \begin{spacing}{0.8}
 \footnotesize
-\tableofcontents
+    %\begin{multicols}{2}
+    \tableofcontents
+    %\end{multicols}
 \normalsize
 \end{spacing}
 
