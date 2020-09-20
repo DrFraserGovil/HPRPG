@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.3.20)  19 SEP 2020 14:12
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.18)  20 SEP 2020 19:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3735,8 +3735,8 @@ Overfull \hbox (10.35841pt too wide) in paragraph at lines 641--641
 [] 
  []
 
-File: ../Images/Humbaba.jpg Graphic file (type bmp)
-<../Images/Humbaba.jpg>
+File: ../Images/Humbaba.png Graphic file (type bmp)
+<../Images/Humbaba.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 641--641
 
@@ -4052,14 +4052,14 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 124--124
 
 File: ../Images/lowerplanes.jpg Graphic file (type bmp)
 <../Images/lowerplanes.jpg>
-
+[31]
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 135--135
 |[] 
  []
 
 File: ../Images/higherplane.jpg Graphic file (type bmp)
 <../Images/higherplane.jpg>
-[31] [32
+[32
 
 ]
 Chapter 4.
@@ -4073,12 +4073,20 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 163--163
 |[] 
  []
 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 163.
+
 File: ../Images/abyss.jpg Graphic file (type bmp)
 <../Images/abyss.jpg>
 
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 180--180
 |[] 
  []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 180.
 
 File: ../Images/hades.jpg Graphic file (type bmp)
 <../Images/hades.jpg>
@@ -4088,46 +4096,152 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 189--189
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 203--203
-|[] 
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 189.
 
-File: ../Images/elysium.jpg Graphic file (type bmp)
-<../Images/elysium.jpg>
+File: ../Images/tartarus.jpg Graphic file (type bmp)
+<../Images/tartarus.jpg>
 [33
 
 ]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 207--207
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 191--191
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 223--223
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 205--205
 |[] 
  []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 205.
+
+File: ../Images/elysium.jpg Graphic file (type bmp)
+<../Images/elysium.jpg>
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 215--215
+|[] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 215.
+
+File: ../Images/nirvana.jpg Graphic file (type bmp)
+<../Images/nirvana.jpg>
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 217--217
+|[] 
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 232--232
+|[] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 232.
+
+File: ../Images/machina.jpg Graphic file (type bmp)
+<../Images/machina.jpg>
+[34]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 243--243
+|[] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 243.
 
 File: ../Images/scholomancia.jpg Graphic file (type bmp)
 <../Images/scholomancia.jpg>
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 226--226
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 246--246
 |[] 
  []
 
 
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 248--248
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 268--268
 |[] 
  []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 268.
 
 File: ../Images/aeolus.png Graphic file (type bmp)
 <../Images/aeolus.png>
-[34]
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 258--258
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 278--278
 |[] 
  []
 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 278.
+
 File: ../Images/eden.jpg Graphic file (type bmp)
 <../Images/eden.jpg>
-)) (./Chapters/Tools/ToolMaster.tex [35] [36
+[35]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 286--286
+|[] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 286.
+
+File: ../Images/hyperborea.jpg Graphic file (type bmp)
+<../Images/hyperborea.jpg>
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 292--292
+|[] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 292.
+
+File: ../Images/irkalla.jpg Graphic file (type bmp)
+<../Images/irkalla.jpg>
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 296--296
+|[] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 296.
+
+File: ../Images/lemuria.jpg Graphic file (type bmp)
+<../Images/lemuria.jpg>
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 302--302
+|[] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 302.
+
+File: ../Images/radiantgardens.jpg Graphic file (type bmp)
+<../Images/radiantgardens.jpg>
+[36]
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 311--311
+|[] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 311.
+
+File: ../Images/vulcan.jpg Graphic file (type bmp)
+<../Images/vulcan.jpg>
+)) (./Chapters/Tools/ToolMaster.tex [37
+
+] [38
 
 
 ] (./Chapters/Tools/Statistics.tex
@@ -4137,7 +4251,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 5--5
 |[] 
  []
 
-[37
+[39
 
 
 ]
@@ -4242,7 +4356,7 @@ Overfull \hbox (3.65227pt too wide) in paragraph at lines 166--166
 []|\TU/texgyrebonum-regular.otf(0)/bx/n/6 14| 
  []
 
-[38
+[40
 
 ]
 Overfull \hbox (3.65227pt too wide) in paragraph at lines 184--184
@@ -4319,7 +4433,7 @@ Overfull \hbox (3.65227pt too wide) in paragraph at lines 220--220
 []|\TU/texgyrebonum-regular.otf(0)/bx/n/6 14| 
  []
 
-[39]
+[41]
 Overfull \hbox (3.65227pt too wide) in paragraph at lines 238--238
 []|\TU/texgyrebonum-regular.otf(0)/bx/n/6 10| 
  []
@@ -4369,7 +4483,7 @@ Overfull \hbox (3.65227pt too wide) in paragraph at lines 256--256
 []|\TU/texgyrebonum-regular.otf(0)/bx/n/6 14| 
  []
 
-[40]))
+[42]))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (./GMGuide.aux)
@@ -4377,12 +4491,12 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 56.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 56.
  ) 
 Here is how much of TeX's memory you used:
- 42155 strings out of 493007
- 806567 string characters out of 6136719
- 1000933 words of memory out of 5000000
- 45399 multiletter control sequences out of 15000+600000
+ 42188 strings out of 493007
+ 807308 string characters out of 6136718
+ 1001346 words of memory out of 5000000
+ 45424 multiletter control sequences out of 15000+600000
  585408 words of font info for 185 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  62i,18n,75p,10412b,733s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on GMGuide.pdf (41 pages).
+Output written on GMGuide.pdf (43 pages).
