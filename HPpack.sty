@@ -561,21 +561,14 @@ Gain an additional #1 #2 damage \forEvery{}.
 
 \newcommand\expRow[2]{{\bf #1}	&	\parbox[t]{4cm}{#2}	\\}
 
-\def\progressionTable
+\def\progressionCosts
 {
-	\begin{center}
-		\begin{rndtable}{r l}
-			\bf Ability	&	\bf Exp Cost
-			\\
-			\expRow{Increase Aspect Rating}{$=~2\times$ new attribute score}
-			\expRow{Increase Affinity Rating}{$=~3\times$ new affinity score}
-			\expRow{Increase Major Ability Rating}{=~New \imp{Ability} score}
+			\expRow{Increase Aspect Rating}{$=~2~\times$ new attribute score}
+			\expRow{Increase Affinity Rating}{$=~3~\times$ new affinity score}
+			\expRow{Increase Major Ability Rating}{=~ New \imp{Ability} score}
 			\expRow{Increase Minor Ability Rating}{=~ 1 + New \imp{Ability} score}
 			\expRow{Swap Major and Minor Ability}{ =~ 1 \imp{Exp}}
-			\expRow{Gain New Feat}{ =~ 5 + Current number of feats}
-			\expRow{Increase Health or Fortitude}{ = 10 + 4 for each previous purchase}
-		\end{rndtable}
-	
-	\end{center}
+			\expRow{Gain New Feat}{ =~ 7 \imp{Exp}}
+			\expRow{Increase Health or Fortitude}{ =$~$ 10 + 4 for each previous purchase}
 }
 

@@ -69,11 +69,11 @@
 	\abilityRow{Bravery}{Brawl}{General}
 	\abilityRow{Conviction}{Covert}{History}
 	\abilityRow{Eloquence}{Craft}{Investigation}
-	\abilityRow{Intimidation}{Imbue}{Medicine}
-	\abilityRow{Kindness}{Marksmanship}{Muggle}
-	\abilityRow{Kinship}{Performance}{Nature}
-	\abilityRow{Logic}{Pilot}{Science}
-	\abilityRow{Speed}{Skirmish}{Technology}
+	\abilityRow{Intimidation}{Imbue}{Linguistics}
+	\abilityRow{Kindness}{Marksmanship}{Medicine}
+	\abilityRow{Kinship}{Performance}{Muggle}
+	\abilityRow{Logic}{Pilot}{Nature}
+	\abilityRow{Speed}{Skirmish}{Science}
 	\abilityRow{Strength}{Survival}{World}
 	\abilityRow{+1 from archetype}{+1 from archetype}{+1 from archetype}
 		\end{rndtable}
@@ -103,7 +103,12 @@
 	\node at ({\maxWidth/4 + \delta/4},{(\quarterTop-\quarterHeight)/2-\delta}) 
 	{
 		\small
-		\progressionTable{}
+		\renewcommand\expRow[2]{\ca{\lg}{\bf #1}	&	\ca{\lg}\parbox[t]{6cm}{#2}	\\}
+		\begin{rndtable}{r l}
+				\ca{\ddg}\bf Ability	&	\ca{\ddg}\bf Exp Cost
+				\\
+				\progressionCosts
+			\end{rndtable}
 	};
 	
 	
