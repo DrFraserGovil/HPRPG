@@ -20,6 +20,20 @@ You may only attack targets that are within the range of the attack you are maki
 
 In addition, to determining if the target is in range, you must determine if it is a valid target - you cannot shoot arrows around walls, after all. You must be able to see a target in order to attack it (or see below for rules on fighting invisible enemies), and you may need to consider the fact that a target has cover. 
 
+\subsubsection{Moving Targets}
+
+For the most part, as actions (including movement) are only implemented {\it at the end} of the combat cycle, a good rule of thumb is that you may only attack targets that {\it began} the turn cycle as viable targets. However, there are certainly cases where, either as a result of your own movement, or the movement of other characters before you, that your choice of targets changes. 
+
+The most generous interpretation of this rule is that a character can target a being if it meets the following criteria:
+\begin{itemize}
+	\item It has not yet declared its action, and began the turn as a viable target, or became one as a result of any movement you use on your turn
+	\item It has already declared its action, and at any point during its turn it became a viable target
+\end{itemize}
+
+Therefore characters who rolled better \imp{Reflex} rolls have many more viable targets as beings reveal themselves and move around over the course of the \imp{combat cycle}. It is imperative that you pay attention to where characters have moved even before you declare your action!
+
+There might be a situational need to restrict this rule somewhat: a character sprinting past an open doorway does not provide much time for noticing them and performing an attack. If however, they stopped in front of the doorway to loose an attack of their own, then they are surely fair game. The \imp{GM} is the ultimate arbiter of which characters are considered viable targets for attacks. 
+
 \section{Performing Attacks}
 
 If you are performing an attack using a magical spell, you simply cast the spell using the rules discussed on page \pageref{S:CastingChecks}: using your \imp{spellcasting pool} to manifest the desired effect. 
@@ -113,7 +127,7 @@ Note that though some ranged weapons (i.e. crossbows and firearms) require you t
 
 \subsubsection{Aim}
 
-You may take a turn to steady your self and take aim at a foe. You gain +1d to your next attack for every consecutive turn spent aiming. 
+You may take a turn to steady your self and take aim at a foe. You gain +1d to your next attack for every consecutive turn spent aiming. If you take damage harm at any point before the attack is made, the bonus resets to +1. 
 
 The maximum bonus you can gain is equal to your \imp{Marksmanship} rating. 
 
@@ -176,7 +190,7 @@ Note that, due to the simultaneous nature of combat cycles, if you move out of c
 	\\
 	\coverRow{None}{Open areas, completely visible}{+0}{+0}
 	\coverRow{Light}{Lying prone, heavy mist, approx. half your body visible}{+1}{+0}
-	\coverRow{Strong}{Behind tree, or partially around a corner, approx 1/4 of your body visible}{+2}{+1}
+	\coverRow{Normal}{Behind tree, or partially around a corner, approx 1/4 of your body visible}{+2}{+1}
 	\coverRow{Strong}{Crouched behind wall, only head visibe}{+3}{+3}
 	\coverRow{Total}{Completely obscured}{-}{-}
 	\end{rndtable}
