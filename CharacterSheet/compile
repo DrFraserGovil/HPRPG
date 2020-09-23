@@ -1,9 +1,13 @@
 #!/bin/bash
-echo $1
-if [ $1 -eq  1 ] 
+
+mode=$1
+
+if [ -z "$1" ]
 then
-	matlab -nodisplay -nodesktop < "assembleSkills.m"
+	mode="0"
 fi
+string="\def\printerFriendly{"$mode"}"
+echo $string > printermode.tex
 xelatex CharacterSheet.tex
 #pdfjam CharacterSheet.pdf 2-3	--paper a4paper -o CharacterSheet.pdf
 xdg-open CharacterSheet.pdf

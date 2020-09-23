@@ -275,195 +275,196 @@
 \contentsline {subsubsection}{\textsc {\textbf {Burned}}}{62}{subsubsection*.257}
 \contentsline {subsubsection}{\textsc {\textbf {Charmed}}}{62}{subsubsection*.258}
 \contentsline {subsubsection}{\textsc {\textbf {Confused}}}{62}{subsubsection*.259}
-\contentsline {subsubsection}{\textsc {\textbf {Critical Condition}}}{62}{subsubsection*.260}
-\contentsline {subsubsection}{\textsc {\textbf {Deaf}}}{63}{subsubsection*.261}
-\contentsline {subsubsection}{\textsc {\textbf {Enraged}}}{63}{subsubsection*.262}
-\contentsline {subsubsection}{\textsc {\textbf {Exhausted}}}{63}{subsubsection*.263}
-\contentsline {subsubsection}{\textsc {\textbf {Frostbite}}}{63}{subsubsection*.264}
-\contentsline {subsubsection}{\textsc {\textbf {Immobilised}}}{63}{subsubsection*.265}
-\contentsline {subsubsection}{\textsc {\textbf {Poisoned}}}{63}{subsubsection*.266}
-\contentsline {subsubsection}{\textsc {\textbf {Prone Position}}}{63}{subsubsection*.267}
-\contentsline {subsubsection}{\textsc {\textbf {Terrified}}}{63}{subsubsection*.268}
-\contentsline {subsubsection}{\textsc {\textbf {Trapped}}}{63}{subsubsection*.269}
-\contentsline {subsubsection}{\textsc {\textbf {Unconscious}}}{64}{subsubsection*.270}
+\contentsline {subsubsection}{\textsc {\textbf {Critical But Stable}}}{62}{subsubsection*.260}
+\contentsline {subsubsection}{\textsc {\textbf {Critical Condition}}}{63}{subsubsection*.261}
+\contentsline {subsubsection}{\textsc {\textbf {Deaf}}}{63}{subsubsection*.262}
+\contentsline {subsubsection}{\textsc {\textbf {Enraged}}}{63}{subsubsection*.263}
+\contentsline {subsubsection}{\textsc {\textbf {Exhausted}}}{63}{subsubsection*.264}
+\contentsline {subsubsection}{\textsc {\textbf {Frostbite}}}{63}{subsubsection*.265}
+\contentsline {subsubsection}{\textsc {\textbf {Immobilised}}}{63}{subsubsection*.266}
+\contentsline {subsubsection}{\textsc {\textbf {Poisoned}}}{63}{subsubsection*.267}
+\contentsline {subsubsection}{\textsc {\textbf {Prone Position}}}{63}{subsubsection*.268}
+\contentsline {subsubsection}{\textsc {\textbf {Terrified}}}{64}{subsubsection*.269}
+\contentsline {subsubsection}{\textsc {\textbf {Trapped}}}{64}{subsubsection*.270}
+\contentsline {subsubsection}{\textsc {\textbf {Unconscious}}}{64}{subsubsection*.271}
 \contentsline {part}{III\hspace {1em}Items}{65}{part.3}
 \contentsline {chapter}{\numberline {17}Item Basics}{66}{chapter.17}
-\contentsline {section}{Equipped, Carried Stored Items}{66}{section*.271}
-\contentsline {subsection}{Equipped Item}{66}{subsection*.272}
-\contentsline {subsection}{Carried Items}{66}{subsection*.273}
-\contentsline {subsection}{Stored Items}{66}{subsection*.274}
-\contentsline {section}{Item Weight}{66}{section*.275}
-\contentsline {section}{Item Rarity}{67}{section*.276}
-\contentsline {section}{Item Quality}{67}{section*.277}
+\contentsline {section}{Equipped, Carried Stored Items}{66}{section*.272}
+\contentsline {subsection}{Equipped Item}{66}{subsection*.273}
+\contentsline {subsection}{Carried Items}{66}{subsection*.274}
+\contentsline {subsection}{Stored Items}{66}{subsection*.275}
+\contentsline {section}{Item Weight}{66}{section*.276}
+\contentsline {section}{Item Rarity}{67}{section*.277}
+\contentsline {section}{Item Quality}{67}{section*.278}
 \contentsline {chapter}{\numberline {18}Currency \& the Economy}{68}{chapter.18}
-\contentsline {section}{Abstracted Wealth}{68}{section*.278}
-\contentsline {subsubsection}{Introducing Granularity}{68}{subsubsection*.279}
-\contentsline {subsubsection}{Abusing the System}{68}{subsubsection*.280}
-\contentsline {subsubsection}{Magical Currency}{68}{subsubsection*.281}
-\contentsline {subsection}{Carrying Money}{68}{subsection*.282}
-\contentsline {section}{Vaults}{68}{section*.283}
-\contentsline {section}{Purchasing, Selling \& Prices}{69}{section*.284}
-\contentsline {subsection}{Prices}{69}{subsection*.285}
-\contentsline {subsection}{Selling \& Bartering}{69}{subsection*.286}
+\contentsline {section}{Abstracted Wealth}{68}{section*.279}
+\contentsline {subsubsection}{Introducing Granularity}{68}{subsubsection*.280}
+\contentsline {subsubsection}{Abusing the System}{68}{subsubsection*.281}
+\contentsline {subsubsection}{Magical Currency}{68}{subsubsection*.282}
+\contentsline {subsection}{Carrying Money}{68}{subsection*.283}
+\contentsline {section}{Vaults}{68}{section*.284}
+\contentsline {section}{Purchasing, Selling \& Prices}{69}{section*.285}
+\contentsline {subsection}{Prices}{69}{subsection*.286}
+\contentsline {subsection}{Selling \& Bartering}{69}{subsection*.287}
 \contentsline {chapter}{\numberline {19}Weapons}{70}{chapter.19}
-\contentsline {section}{Melee Weapons}{70}{section*.287}
-\contentsline {section}{Ranged Weapons}{70}{section*.288}
-\contentsline {section}{Weapon Range}{71}{section*.289}
-\contentsline {section}{Proficiency}{71}{section*.290}
-\contentsline {section}{Weapon Difficulties}{71}{section*.291}
-\contentsline {section}{Weapon Damage}{71}{section*.292}
-\contentsline {section}{Other Weapon Properties}{71}{section*.293}
-\contentsline {subsection}{Weapon Cost}{72}{subsection*.294}
+\contentsline {section}{Melee Weapons}{70}{section*.288}
+\contentsline {section}{Ranged Weapons}{70}{section*.289}
+\contentsline {section}{Weapon Range}{71}{section*.290}
+\contentsline {section}{Proficiency}{71}{section*.291}
+\contentsline {section}{Weapon Difficulties}{71}{section*.292}
+\contentsline {section}{Weapon Damage}{71}{section*.293}
+\contentsline {section}{Other Weapon Properties}{71}{section*.294}
+\contentsline {subsection}{Weapon Cost}{72}{subsection*.295}
 \contentsline {chapter}{\numberline {20}Clothing \& Armour}{73}{chapter.20}
-\contentsline {section}{Armour Types}{73}{section*.295}
-\contentsline {subsubsection}{Outfits}{73}{subsubsection*.296}
-\contentsline {section}{Clothing}{73}{section*.297}
-\contentsline {subsubsection}{Formalwear}{73}{subsubsection*.298}
-\contentsline {subsubsection}{Muggle Civvies}{73}{subsubsection*.299}
-\contentsline {subsubsection}{Sports Outfit}{73}{subsubsection*.300}
-\contentsline {subsubsection}{Wizards Robes}{73}{subsubsection*.301}
-\contentsline {section}{Light Armour}{73}{section*.302}
-\contentsline {subsubsection}{Padded Fabrics}{73}{subsubsection*.303}
-\contentsline {subsubsection}{Warded Cloth}{74}{subsubsection*.304}
-\contentsline {section}{Medium Armour}{74}{section*.305}
-\contentsline {subsubsection}{Battlemage Robe}{74}{subsubsection*.306}
-\contentsline {subsubsection}{Kevlar Vest}{74}{subsubsection*.307}
-\contentsline {section}{Heavy Armour}{74}{section*.308}
-\contentsline {subsubsection}{Runic Plate}{74}{subsubsection*.309}
-\contentsline {subsubsection}{Tactical Response Suit}{74}{subsubsection*.310}
+\contentsline {section}{Armour Types}{73}{section*.296}
+\contentsline {subsubsection}{Outfits}{73}{subsubsection*.297}
+\contentsline {section}{Clothing}{73}{section*.298}
+\contentsline {subsubsection}{Formalwear}{73}{subsubsection*.299}
+\contentsline {subsubsection}{Muggle Civvies}{73}{subsubsection*.300}
+\contentsline {subsubsection}{Sports Outfit}{73}{subsubsection*.301}
+\contentsline {subsubsection}{Wizards Robes}{73}{subsubsection*.302}
+\contentsline {section}{Light Armour}{73}{section*.303}
+\contentsline {subsubsection}{Padded Fabrics}{73}{subsubsection*.304}
+\contentsline {subsubsection}{Warded Cloth}{74}{subsubsection*.305}
+\contentsline {section}{Medium Armour}{74}{section*.306}
+\contentsline {subsubsection}{Battlemage Robe}{74}{subsubsection*.307}
+\contentsline {subsubsection}{Kevlar Vest}{74}{subsubsection*.308}
+\contentsline {section}{Heavy Armour}{74}{section*.309}
+\contentsline {subsubsection}{Runic Plate}{74}{subsubsection*.310}
+\contentsline {subsubsection}{Tactical Response Suit}{74}{subsubsection*.311}
 \contentsline {chapter}{\numberline {21}Books}{75}{chapter.21}
-\contentsline {section}{Spellbooks}{75}{section*.311}
-\contentsline {subsection}{Depleted Spellbooks}{75}{subsection*.312}
-\contentsline {subsection}{Acquiring Spellbooks}{75}{subsection*.313}
-\contentsline {section}{Academic Texts}{75}{section*.314}
-\contentsline {section}{Non-Academic Texts}{75}{section*.315}
+\contentsline {section}{Spellbooks}{75}{section*.312}
+\contentsline {subsection}{Depleted Spellbooks}{75}{subsection*.313}
+\contentsline {subsection}{Acquiring Spellbooks}{75}{subsection*.314}
+\contentsline {section}{Academic Texts}{75}{section*.315}
+\contentsline {section}{Non-Academic Texts}{75}{section*.316}
 \contentsline {chapter}{\numberline {22}Tools}{76}{chapter.22}
 \contentsline {part}{IV\hspace {1em}Magic}{78}{part.4}
 \contentsline {chapter}{\numberline {23}Understanding Magic}{79}{chapter.23}
-\contentsline {section}{Schools, Disciplines \& \textsc {Affinities}}{79}{section*.316}
-\contentsline {subsection}{\textsc {\textbf {Affinities}}}{79}{subsection*.317}
-\contentsline {section}{Discipline Descriptions}{79}{section*.318}
-\contentsline {subsection}{Charms}{79}{subsection*.319}
-\contentsline {subsection}{Divination}{79}{subsection*.320}
-\contentsline {subsection}{Illusion}{80}{subsection*.321}
-\contentsline {subsection}{Invocation}{80}{subsection*.322}
-\contentsline {subsection}{Malediction}{80}{subsection*.323}
-\contentsline {subsection}{Transfiguration}{80}{subsection*.324}
-\contentsline {subsection}{Dark Arts}{80}{subsection*.325}
+\contentsline {section}{Schools, Disciplines \& \textsc {Affinities}}{79}{section*.317}
+\contentsline {subsection}{\textsc {\textbf {Affinities}}}{79}{subsection*.318}
+\contentsline {section}{Discipline Descriptions}{79}{section*.319}
+\contentsline {subsection}{Charms}{79}{subsection*.320}
+\contentsline {subsection}{Divination}{79}{subsection*.321}
+\contentsline {subsection}{Illusion}{80}{subsection*.322}
+\contentsline {subsection}{Invocation}{80}{subsection*.323}
+\contentsline {subsection}{Malediction}{80}{subsection*.324}
+\contentsline {subsection}{Transfiguration}{80}{subsection*.325}
+\contentsline {subsection}{Dark Arts}{80}{subsection*.326}
 \contentsline {chapter}{\numberline {24}Casting Spells}{81}{chapter.24}
-\contentsline {section}{Choosing the Spell}{81}{section*.326}
-\contentsline {subsection}{Spell Level}{81}{subsection*.327}
-\contentsline {subsubsection}{A Note on Roleplaying}{81}{subsubsection*.328}
-\contentsline {section}{Casting Checks}{82}{section*.329}
-\contentsline {subsection}{Casting Failure}{82}{subsection*.330}
-\contentsline {section}{Spellcasting Success}{82}{section*.331}
-\contentsline {subsection}{Required Successes}{83}{subsection*.332}
-\contentsline {subsubsection}{Insufficient Successes}{83}{subsubsection*.333}
-\contentsline {subsection}{Calculating Effect}{83}{subsection*.334}
-\contentsline {subsubsection}{Power}{83}{subsubsection*.335}
-\contentsline {subsubsection}{Allocating Successes}{83}{subsubsection*.336}
-\contentsline {section}{Example Spellcasting}{83}{section*.337}
-\contentsline {subsubsection}{Jane vs The Whompong Willow}{83}{subsubsection*.338}
-\contentsline {subsubsection}{Michael's Training}{84}{subsubsection*.339}
-\contentsline {section}{Extended Casting}{84}{section*.340}
-\contentsline {subsection}{Concentration}{84}{subsection*.341}
-\contentsline {subsection}{Catch-Casting}{84}{subsection*.342}
-\contentsline {subsection}{Rituals}{84}{subsection*.343}
-\contentsline {section}{Combined Casting}{84}{section*.344}
+\contentsline {section}{Choosing the Spell}{81}{section*.327}
+\contentsline {subsection}{Spell Level}{81}{subsection*.328}
+\contentsline {subsubsection}{A Note on Roleplaying}{81}{subsubsection*.329}
+\contentsline {section}{Casting Checks}{82}{section*.330}
+\contentsline {subsection}{Casting Failure}{82}{subsection*.331}
+\contentsline {section}{Spellcasting Success}{82}{section*.332}
+\contentsline {subsection}{Required Successes}{83}{subsection*.333}
+\contentsline {subsubsection}{Insufficient Successes}{83}{subsubsection*.334}
+\contentsline {subsection}{Calculating Effect}{83}{subsection*.335}
+\contentsline {subsubsection}{Power}{83}{subsubsection*.336}
+\contentsline {subsubsection}{Allocating Successes}{83}{subsubsection*.337}
+\contentsline {section}{Example Spellcasting}{83}{section*.338}
+\contentsline {subsubsection}{Jane vs The Whompong Willow}{83}{subsubsection*.339}
+\contentsline {subsubsection}{Michael's Training}{84}{subsubsection*.340}
+\contentsline {section}{Extended Casting}{84}{section*.341}
+\contentsline {subsection}{Concentration}{84}{subsection*.342}
+\contentsline {subsection}{Catch-Casting}{84}{subsection*.343}
+\contentsline {subsection}{Rituals}{84}{subsection*.344}
+\contentsline {section}{Combined Casting}{84}{section*.345}
 \contentsline {chapter}{\numberline {25}Learning Spells}{86}{chapter.25}
-\contentsline {section}{Teachers}{86}{section*.345}
-\contentsline {section}{Books}{86}{section*.346}
-\contentsline {section}{Trial and Error}{86}{section*.347}
-\contentsline {section}{Finalising the Learning}{86}{section*.348}
+\contentsline {section}{Teachers}{86}{section*.346}
+\contentsline {section}{Books}{86}{section*.347}
+\contentsline {section}{Trial and Error}{86}{section*.348}
+\contentsline {section}{Finalising the Learning}{86}{section*.349}
 \contentsline {chapter}{\numberline {26}Negating Spells}{87}{chapter.26}
-\contentsline {section}{Resisting Against Magic}{87}{section*.349}
-\contentsline {section}{Using Magic to Resist}{87}{section*.350}
-\contentsline {subsection}{Limitations}{87}{subsection*.351}
+\contentsline {section}{Resisting Against Magic}{87}{section*.350}
+\contentsline {section}{Using Magic to Resist}{87}{section*.351}
+\contentsline {subsection}{Limitations}{87}{subsection*.352}
 \contentsline {chapter}{\numberline {27}Spells}{88}{chapter.27}
-\contentsline {section}{Spell Summary}{88}{section*.352}
-\contentsline {section}{Alteration Spells}{88}{section*.353}
-\contentsline {section}{Bewitchment Spells}{88}{section*.354}
-\contentsline {section}{Cerebral Spells}{89}{section*.355}
-\contentsline {section}{Conjuration Spells}{90}{section*.356}
-\contentsline {section}{Curse Spells}{90}{section*.357}
-\contentsline {section}{Elemental Spells}{91}{section*.358}
-\contentsline {section}{Hermetics Spells}{92}{section*.359}
-\contentsline {section}{Hex Spells}{93}{section*.360}
-\contentsline {section}{Kinesis Spells}{93}{section*.361}
-\contentsline {section}{Necromancy Spells}{94}{section*.362}
-\contentsline {section}{Occultism Spells}{95}{section*.363}
-\contentsline {section}{Psionics Spells}{95}{section*.364}
-\contentsline {section}{Temporal Spells}{96}{section*.365}
-\contentsline {section}{Warding Spells}{96}{section*.366}
+\contentsline {section}{Spell Summary}{88}{section*.353}
+\contentsline {section}{Alteration Spells}{88}{section*.354}
+\contentsline {section}{Bewitchment Spells}{88}{section*.355}
+\contentsline {section}{Cerebral Spells}{89}{section*.356}
+\contentsline {section}{Conjuration Spells}{90}{section*.357}
+\contentsline {section}{Curse Spells}{90}{section*.358}
+\contentsline {section}{Elemental Spells}{91}{section*.359}
+\contentsline {section}{Hermetics Spells}{92}{section*.360}
+\contentsline {section}{Hex Spells}{93}{section*.361}
+\contentsline {section}{Kinesis Spells}{93}{section*.362}
+\contentsline {section}{Necromancy Spells}{94}{section*.363}
+\contentsline {section}{Occultism Spells}{95}{section*.364}
+\contentsline {section}{Psionics Spells}{95}{section*.365}
+\contentsline {section}{Temporal Spells}{96}{section*.366}
+\contentsline {section}{Warding Spells}{96}{section*.367}
 \contentsline {chapter}{\numberline {28}Laws of Magic}{98}{chapter.28}
-\contentsline {section}{The Prime Law}{98}{section*.367}
-\contentsline {section}{Fundamental Law of Conjuration}{98}{section*.368}
-\contentsline {section}{Tenets of Shapeshifting}{98}{section*.369}
-\contentsline {section}{Wandlore}{99}{section*.370}
-\contentsline {section}{Magic \& Technology}{99}{section*.371}
+\contentsline {section}{The Prime Law}{98}{section*.368}
+\contentsline {section}{Fundamental Law of Conjuration}{98}{section*.369}
+\contentsline {section}{Tenets of Shapeshifting}{98}{section*.370}
+\contentsline {section}{Wandlore}{99}{section*.371}
+\contentsline {section}{Magic \& Technology}{99}{section*.372}
 \contentsline {part}{V\hspace {1em}Artificing}{100}{part.5}
 \contentsline {chapter}{\numberline {29}Artificing Basics}{101}{chapter.29}
-\contentsline {section}{Basic Outline}{101}{section*.372}
-\contentsline {subsubsection}{Designing the Product}{101}{subsubsection*.373}
-\contentsline {subsubsection}{Assigning Difficulty}{101}{subsubsection*.374}
-\contentsline {subsubsection}{Determining Complexity}{101}{subsubsection*.375}
-\contentsline {subsubsection}{Gathering Tools}{101}{subsubsection*.376}
-\contentsline {subsubsection}{Performing the Rolls}{102}{subsubsection*.377}
-\contentsline {subsubsection}{Describing the Item}{102}{subsubsection*.378}
-\contentsline {subsection}{A Note to Players}{102}{subsection*.379}
+\contentsline {section}{Basic Outline}{101}{section*.373}
+\contentsline {subsubsection}{Designing the Product}{101}{subsubsection*.374}
+\contentsline {subsubsection}{Assigning Difficulty}{101}{subsubsection*.375}
+\contentsline {subsubsection}{Determining Complexity}{101}{subsubsection*.376}
+\contentsline {subsubsection}{Gathering Tools}{101}{subsubsection*.377}
+\contentsline {subsubsection}{Performing the Rolls}{102}{subsubsection*.378}
+\contentsline {subsubsection}{Describing the Item}{102}{subsubsection*.379}
+\contentsline {subsection}{A Note to Players}{102}{subsection*.380}
 \contentsline {chapter}{\numberline {30}Potions}{103}{chapter.30}
-\contentsline {section}{Mixing a Potion}{103}{section*.380}
-\contentsline {subsection}{Ingredients}{103}{subsection*.381}
-\contentsline {subsubsection}{Improvised Ingredients}{103}{subsubsection*.382}
-\contentsline {subsection}{Preparing the Project}{103}{subsection*.383}
-\contentsline {section}{Ingredient Properties}{104}{section*.384}
-\contentsline {section}{Ingredients}{105}{section*.385}
-\contentsline {subsection}{Harvesting \& Acquiring Ingredients}{105}{subsection*.386}
-\contentsline {subsection}{Retroactive Purchases}{105}{subsection*.387}
-\contentsline {subsection}{Ingredient Rarity}{105}{subsection*.388}
-\contentsline {subsection}{ Abundant Ingredients}{105}{subsection*.389}
-\contentsline {subsection}{ Common Ingredients}{106}{subsection*.390}
-\contentsline {subsection}{ Singular Ingredients}{106}{subsection*.391}
-\contentsline {subsection}{ Unusual Ingredients}{106}{subsection*.392}
-\contentsline {subsection}{ Rare Ingredients}{107}{subsection*.393}
-\contentsline {subsection}{ Extraordinary Ingredients}{107}{subsection*.394}
-\contentsline {subsection}{ Mythical Ingredients}{107}{subsection*.395}
-\contentsline {section}{Selected Recipes}{107}{section*.396}
-\contentsline {subsubsection}{Antidote to Common Poisons}{108}{subsubsection*.397}
-\contentsline {subsubsection}{Amortentia}{108}{subsubsection*.398}
-\contentsline {subsubsection}{Baruffio's Brain Elixir}{108}{subsubsection*.399}
-\contentsline {subsubsection}{Draught of the Living Death}{108}{subsubsection*.400}
-\contentsline {subsubsection}{Felix Felices}{108}{subsubsection*.401}
-\contentsline {subsubsection}{Pepperup Potion}{108}{subsubsection*.402}
-\contentsline {subsubsection}{Nirvan's Noxious Clouds}{108}{subsubsection*.403}
-\contentsline {subsubsection}{Wiggenweld Potion}{108}{subsubsection*.404}
+\contentsline {section}{Mixing a Potion}{103}{section*.381}
+\contentsline {subsection}{Ingredients}{103}{subsection*.382}
+\contentsline {subsubsection}{Improvised Ingredients}{103}{subsubsection*.383}
+\contentsline {subsection}{Preparing the Project}{103}{subsection*.384}
+\contentsline {section}{Ingredient Properties}{104}{section*.385}
+\contentsline {section}{Ingredients}{105}{section*.386}
+\contentsline {subsection}{Harvesting \& Acquiring Ingredients}{105}{subsection*.387}
+\contentsline {subsection}{Retroactive Purchases}{105}{subsection*.388}
+\contentsline {subsection}{Ingredient Rarity}{105}{subsection*.389}
+\contentsline {subsection}{ Abundant Ingredients}{105}{subsection*.390}
+\contentsline {subsection}{ Common Ingredients}{106}{subsection*.391}
+\contentsline {subsection}{ Singular Ingredients}{106}{subsection*.392}
+\contentsline {subsection}{ Unusual Ingredients}{106}{subsection*.393}
+\contentsline {subsection}{ Rare Ingredients}{107}{subsection*.394}
+\contentsline {subsection}{ Extraordinary Ingredients}{107}{subsection*.395}
+\contentsline {subsection}{ Mythical Ingredients}{107}{subsection*.396}
+\contentsline {section}{Selected Recipes}{107}{section*.397}
+\contentsline {subsubsection}{Antidote to Common Poisons}{108}{subsubsection*.398}
+\contentsline {subsubsection}{Amortentia}{108}{subsubsection*.399}
+\contentsline {subsubsection}{Baruffio's Brain Elixir}{108}{subsubsection*.400}
+\contentsline {subsubsection}{Draught of the Living Death}{108}{subsubsection*.401}
+\contentsline {subsubsection}{Felix Felices}{108}{subsubsection*.402}
+\contentsline {subsubsection}{Pepperup Potion}{108}{subsubsection*.403}
+\contentsline {subsubsection}{Nirvan's Noxious Clouds}{108}{subsubsection*.404}
+\contentsline {subsubsection}{Wiggenweld Potion}{108}{subsubsection*.405}
 \contentsline {chapter}{\numberline {31}Enchanting}{109}{chapter.31}
-\contentsline {section}{The Nexus}{109}{section*.405}
-\contentsline {section}{Runes}{109}{section*.406}
-\contentsline {subsection}{Control}{109}{subsection*.407}
-\contentsline {subsection}{Duration}{109}{subsection*.408}
-\contentsline {subsection}{Esoteric}{110}{subsection*.409}
-\contentsline {subsection}{Learning Runes}{110}{subsection*.410}
-\contentsline {section}{The Enchanting Ritual}{110}{section*.411}
-\contentsline {subsection}{Enchantment Success}{110}{subsection*.412}
-\contentsline {subsection}{Enchantment Failure}{110}{subsection*.413}
-\contentsline {section}{The Limits of Enchanting}{110}{section*.414}
-\contentsline {section}{Multiple Effects}{111}{section*.415}
-\contentsline {subsection}{Complimentary Effects}{111}{subsection*.416}
-\contentsline {subsection}{Non-Complimentary Effects}{111}{subsection*.417}
-\contentsline {section}{Some Examples}{111}{section*.418}
-\contentsline {subsubsection}{Abundant}{111}{subsubsection*.419}
-\contentsline {subsubsection}{Common}{111}{subsubsection*.420}
-\contentsline {subsubsection}{Singular}{111}{subsubsection*.421}
-\contentsline {subsubsection}{Unusual}{111}{subsubsection*.422}
-\contentsline {subsubsection}{Rare}{111}{subsubsection*.423}
-\contentsline {subsubsection}{Extraordinary}{111}{subsubsection*.424}
-\contentsline {subsubsection}{Mythical}{111}{subsubsection*.425}
+\contentsline {section}{The Nexus}{109}{section*.406}
+\contentsline {section}{Runes}{109}{section*.407}
+\contentsline {subsection}{Control}{109}{subsection*.408}
+\contentsline {subsection}{Duration}{109}{subsection*.409}
+\contentsline {subsection}{Esoteric}{110}{subsection*.410}
+\contentsline {subsection}{Learning Runes}{110}{subsection*.411}
+\contentsline {section}{The Enchanting Ritual}{110}{section*.412}
+\contentsline {subsection}{Enchantment Success}{110}{subsection*.413}
+\contentsline {subsection}{Enchantment Failure}{110}{subsection*.414}
+\contentsline {section}{The Limits of Enchanting}{110}{section*.415}
+\contentsline {section}{Multiple Effects}{111}{section*.416}
+\contentsline {subsection}{Complimentary Effects}{111}{subsection*.417}
+\contentsline {subsection}{Non-Complimentary Effects}{111}{subsection*.418}
+\contentsline {section}{Some Examples}{111}{section*.419}
+\contentsline {subsubsection}{Abundant}{111}{subsubsection*.420}
+\contentsline {subsubsection}{Common}{111}{subsubsection*.421}
+\contentsline {subsubsection}{Singular}{111}{subsubsection*.422}
+\contentsline {subsubsection}{Unusual}{111}{subsubsection*.423}
+\contentsline {subsubsection}{Rare}{111}{subsubsection*.424}
+\contentsline {subsubsection}{Extraordinary}{111}{subsubsection*.425}
+\contentsline {subsubsection}{Mythical}{111}{subsubsection*.426}
 \contentsline {part}{VI\hspace {1em}Appendices}{113}{part.6}
 \contentsline {chapter}{\numberline {32}Changelog}{114}{chapter.32}
-\contentsline {section}{Changes in V4.0}{114}{section*.426}
-\contentsline {subsection}{Core System Change}{114}{subsection*.427}
-\contentsline {subsection}{Spells}{114}{subsection*.428}
-\contentsline {subsection}{Money}{114}{subsection*.429}
-\contentsline {section}{To Do List}{114}{section*.430}
+\contentsline {section}{Changes in V4.0}{114}{section*.427}
+\contentsline {subsection}{Core System Change}{114}{subsection*.428}
+\contentsline {subsection}{Spells}{114}{subsection*.429}
+\contentsline {subsection}{Money}{114}{subsection*.430}
+\contentsline {section}{To Do List}{114}{section*.431}
 \contentsline {part}{VII\hspace {1em}Character Sheet}{115}{part.7}

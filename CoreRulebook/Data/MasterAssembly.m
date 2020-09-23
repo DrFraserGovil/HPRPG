@@ -3,7 +3,7 @@ function MasterAssembly(quitMode)
         quitMode = 0;
     end
     
-    addpath('Disciplines/');
+    addpath('Spells/');
     addpath('Functions/');
     addpath('Items/');
     addpath('Statuses/');
