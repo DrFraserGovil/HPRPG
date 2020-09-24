@@ -1,0 +1,105 @@
+
+\begin{tikzpicture}
+	
+
+	\node at (0,0) {};
+	\node at (0,\maxHeight) {};
+	\node at (\maxWidth,\maxHeight) {};
+	\node at (\maxWidth,0) {};
+	\def\delta{1*\widthUnits}
+	
+	
+	
+	\def\featTop{\maxHeight-1*\heightUnits}
+	\def\featHeight{30 * \heightUnits}
+	
+	\draw[rounded corners, \ddg, fill = \llg] ({0},{\featTop}) rectangle ({\maxWidth},{\featTop - \featHeight});
+	
+	\node[anchor = north] at ({\maxWidth/2}, {\featTop}) {\HP \Large Feats \& Abilities};
+	
+	
+	\def\nv{3}
+	\def\nh{3}
+	\def\boxdeltah{1*\heightUnits}
+	\def\boxdeltaw{1*\widthUnits}
+	\def\jh{3*\heightUnits}
+	\def\boxh{ (\featHeight - \jh - (\nv+1)*\boxdeltah)/\nv}
+	\def\boxw{(\maxWidth - (\nh+1)*\boxdeltah)/\nh} 
+	\foreach \i in {1,...,\nv}
+	{
+		\def\yt{(\featTop - \jh- (\i)*\boxdeltah - (\i-1)*\boxh)}
+		
+		\foreach \j in {1,...,\nh}
+		{	
+			\def\xl{\boxdeltaw*\j + (\j-1)*\boxw}
+			\def\yc{ \yt - \boxh/2}
+			\def\xs{\xl+2*\widthUnits}
+			\draw[rounded corners, \ddg, fill = \mg] ({\xl},{\yt}) rectangle ({\xl + \boxw},{\yt - \boxh});
+			\square{\xl+2*\widthUnits}{\yc}{}{white};
+			\def\linegap{2.65*\heightUnits}
+			\draw[\ddg] ({\xs + \boxDim}, {\yc - \linegap/2})--({\xl + \boxw-1*\widthUnits},  {\yc - \linegap/2});
+			\draw[\ddg] ({\xs + \boxDim}, {\yc + \linegap/2})--({\xl + \boxw-1*\widthUnits},  {\yc + \linegap/2});
+		}
+	}
+	
+	\def\inventTop{\featTop - \featHeight - \delta}
+	\def\inventHeight{35*\heightUnits}
+	\def\subgap{4*\heightUnits}
+	\draw[rounded corners, \ddg, fill = \llg] ({0},{\inventTop}) rectangle ({\maxWidth},{\inventTop - \inventHeight});
+	
+	\node[anchor = north] at ({\maxWidth/2}, {\inventTop}) {\HP \Large Full Inventory};
+	
+	\draw[rounded corners, \ddg, fill = \lg] ({\delta},{\inventTop-\subgap}) rectangle ({(\maxWidth-\delta)/2},{\inventTop - \inventHeight+\delta});
+	\draw[rounded corners, \ddg, fill = \lg] ({(\maxWidth + \delta)/2},{\inventTop-\subgap}) rectangle ({(\maxWidth-\delta)},{\inventTop - \inventHeight+\delta});
+	\node[anchor = north] at ({(\maxWidth+\delta)/4}, {\inventTop-\subgap}) {\key{Carried Items}};
+	\node[anchor = north] at ({(3*\maxWidth+\delta)/4}, {\inventTop-\subgap}) {\key{Stored Items}};
+	\node[anchor = north west] at ({(\maxWidth+\delta)/2}, {\inventTop-\subgap-2*\heightUnits}) {\imp{Storage Location:}};
+	
+	
+	
+	
+	%% magic
+	
+	\def\magicTop{\inventTop - \inventHeight - \delta}
+	\draw[rounded corners, \ddg, fill = \llg] ({0},{\magicTop}) rectangle ({\maxWidth},{0});
+	\node[anchor = north] at ({\maxWidth/2}, {\magicTop}) {\HP \Large Magic \& Spells};
+	
+	\def\spellWidth{42*\widthUnits}
+	\def\spellTop{\magicTop - 3*\heightUnits}
+	\draw[rounded corners, \ddg, fill = \lg] ({\delta},{\spellTop}) rectangle ({\spellWidth},{\delta});
+	\node[anchor = north] at ({(\spellWidth + \delta)/2}, {\spellTop} ) {\key{Memorised Spells}};
+	
+	\newdimen\spellunit
+	\pgfextractx{\spellunit}{\pgfpointxy{{\maxWidth-3* \delta -\spellWidth}}{0}}
+	\node[anchor = north west] at ({\spellWidth + \delta},{\spellTop-0.5*\heightUnits}) {
+	\parbox[t]{1\spellunit}{\footnotesize
+	\key{Spellcasting}
+	
+	You can cast any time you have your wand and are able to move and speak. Choose a spell that you have \imp{memorised}, and describe an effect you wish to manifest using that spell. The \imp{GM} will determine the `power level' of the casting (from 0, \levelZero{} to 7,  \levelSeven{}). The DV of the casting is \key{8 + Power Level - Affinity}.
+	
+	~
+	
+	The minimum number of successes required depends on the target of the spell:
+	{\tiny
+	\newcommand\rrow[3]
+	{
+		\ca{\lg}{\scriptsize\key{#1}}	&		\ca{\lg}{\parbox[t]{3cm}{\scriptsize \centering  #3}} \\
+	}
+	\begin{center}
+		\begin{rndtable}{c c}
+		\ca{\dg}{\bf \scriptsize Range}	&	\ca{\dg}{\scriptsize \bf Successes}
+		\\
+		\rrow{Self}{Casting a spell on yourself}{1}
+		\rrow{Wandtip}{Casting a spell on a target you can place your wand or hands upon}{+1 per target}
+		\rrow{Ranged}{Cast a spell on a target at a distance}{+2 per target}
+		\rrow{Mass}{Cast a spell on a large area, affecting everyone in the region}{+4 and up}
+		\end{rndtable}
+	\end{center}
+	}
+	Every spell has a \imp{base power} equal to their \imp{power level}. This is used to the strength of the spell (i.e. the damage dealt). Every additional success after the minimum number can be used to increase this power by 1 (\imp{overpower}), increase the DV for resisting the spell (\imp{defy}) by one, or increase the duration of a time-limited spell (\imp{extend}).
+	
+	
+	}
+	
+	};  
+\end{tikzpicture}
