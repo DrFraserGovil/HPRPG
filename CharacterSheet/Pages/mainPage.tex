@@ -270,10 +270,16 @@
 }
 
 %%% HEROISM BOX
-\draw[rounded corners,\ddg,fill=\llg] ({\spellLimit+\widthUnits},{\heroHeight+0.5*\heightUnits})rectangle ({\secondRight},{0});
-\def\yH{\heroHeight+0.5*\heightUnits}
-\node[anchor=north] at ({\x},{\yH}) {\HP {Movement Speeds}};
 
+\def\moveWidth{(\secondRight - \spellLimit - \widthUnits)/2}
+
+\draw[rounded corners,\ddg,fill=\llg] ({\spellLimit+\widthUnits},{\heroHeight+0.5*\heightUnits})rectangle ({\spellLimit+\widthUnits + \moveWidth},{0});
+\draw[rounded corners,\ddg,fill=\llg] ({\spellLimit+1.5*\widthUnits+\moveWidth},{\heroHeight+0.5*\heightUnits})rectangle ({\secondRight},{0});
+
+\def\yH{\heroHeight+0.75*\heightUnits}
+
+\node[anchor=north] at ({\spellLimit+\widthUnits+\moveWidth/2},{\yH}) {\HP {Movement}};
+\node[anchor=north] at ({\spellLimit+1.5*\widthUnits+1.5*\moveWidth},{\yH}) {\HP {Reflexes}};
 
 
 
