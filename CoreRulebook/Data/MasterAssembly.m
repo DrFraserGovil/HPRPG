@@ -29,6 +29,8 @@ function MasterAssembly(quitMode)
     disp('Assembling Tools');
     assembleTools('../');
 
+    disp('Assembling Potions');
+    assemblePotions('../')
     
     path(pathdef)
     
