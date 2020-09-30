@@ -1,5 +1,5 @@
 
-\chapter{Defence}\label{S:Accuracy}\label{S:Defence}
+\breaklesschapter{Defence}\label{S:Accuracy}\label{S:Defence}
 
 A good fighter knows that all-out attack is rarely the path to victory: defending onself against incoming attacks is just as important. 
 
@@ -63,6 +63,12 @@ Generally speaking, you can only perform one \imp{Defensive} check with a single
 
 In addition, you may still use a \imp{Quick Defence} (see below) on any attack to which you have dedicated zero successes from your original defence. Doing so on the same turn as a \imp{Full Turn Defense} does not incure \imp{Drain}. 
 
+\subsection{Early Defence}
+
+You may attempt to defend yourself even before you spot an attack, declaring a \imp{Full Action Defence} even before 
+
+The fact that you are unaware of the attack means that you are at a disadvantage
+
 \section{Quick Defence}
 
 If you do not wish to devote your entire turn to defending yourself, do not fret, as you still have an instinctive ability to negate attacks incoming attacks: \imp{Quick defense}. As before, there are three ways to negate these attacks (\key{Quickblock}, \key{Quickdodge} and \key{Quickendure}).
@@ -77,7 +83,8 @@ Even the most highly trained warrior has their limits - they cannot keep on duck
 
 This process is modelled through \key{Drain}. 
 
-Whenever you use a \imp{quickdefence} reaction without pairing it with a \imp{Full-turn defence}, you add one level of \imp{Drain} to the associated statistic. Each level of drain reduces the \imp{rating} available, and persists until you are able to get a quick breather and take a \imp{short rest}.
+Whenever you use a \imp{quickdefence} reaction without pairing it with a \imp{Full-turn defence} or a \imp{Bolstered Defence}, you add one level of \imp{Drain} to the associated statistic at the end of the turn cycle. Each level of drain reduces the \imp{rating} available, and persists until you are able to get a quick breather and take a \imp{short rest}.
+
 
 Consider a character with a the following defence statistics:
 
@@ -142,6 +149,7 @@ This process continues each time you use a \imp{quickdefence} action, reducing y
 
 At this point, the character is consider \key{Fully Drained}, and cannot \imp{resist} further attacks using that statistic any more. 
 
+Drain is added at the end of a turn cycle, so you may perform multiple \imp{quickdefences} over the course of a single turn cycle without taking a penalty - but at the end of the round, you suffer the cumulative effects all at once. 
 
 \subsection{Restoring Drain}
 

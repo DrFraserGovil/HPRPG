@@ -16,7 +16,7 @@
 \usepackage{cuted}
 \usepackage{csquotes}
 \usepackage{graphicx}
-\usepackage[left = 0.35in, right = 0.35	 in, top = 0.42in, bottom = 0.3in]{geometry}
+\usepackage[left = 0.25in, right = 0.25	 in, top = 0.43in, bottom = 0.25in]{geometry}
 \usepackage{titlesec}
 \usepackage{pdfpages}
 \usepackage{lscape}
@@ -48,6 +48,8 @@
 \usepackage[hidelinks]{hyperref}
 
 \usepackage{phaistos}
+
+
 
 %%Page setup
 \setlength{\parskip}{4pt}
@@ -138,11 +140,34 @@ Gain an additional #1 #2 damage \forEvery{}.
 }
 
 %%Chapter and section heads
-\titleformat{\chapter} {\vspace{-14ex}\normalfont\bfseries\centering\color{titlered}\HP\Huge}{}{0pt}{\dndline\thechapter: }[\vspace{-1.6ex}\dndline\vspace{-3ex}]
+\titleformat{\chapter}{\vspace{-14ex}\normalfont\bfseries\centering\color{titlered}\HP\Huge}{}{0pt}{\dndline\thechapter: }[\vspace{-1.6ex}\dndline\vspace{-3ex}]
 \titleformat{name=\chapter,numberless}{\vspace{-14ex}\normalfont\bfseries\centering\color{titlered}\HP\Huge}{}{0pt}{\dndline }[\vspace{-1.6ex}\dndline\vspace{-3ex}]
 \titleformat{\section}{\normalfont\huge\color{titlered} }{}{0em}{}[{\vspace{-0.55 cm}\dndlineFade{rulered}}]
 \titleformat{name=\subsection}{\LARGE \color{titlered}}{}{0pt}{}[{\vspace{-0.43 cm}\dndlineFade{rulered}}]
 \titleformat{name=\subsubsection}{\large }{}{0pt}{}[{\vspace{-0.35 cm}\dndlineThird{black}}]
+
+\newcommand\breaklesschapter[1]
+{
+	%~ \begin{strip}
+		%~ %\chapter{#1}
+		%~ \stepcounter{chapter}
+		%~ \addcontentsline{toc}{chapter}{#1}
+		
+		%~ {
+		%~ \normalfont\bfseries\centering\color{titlered}\HP
+		%~ \dndlineLong
+		
+		%~ \Huge\thechapter: #1
+		
+		%~ \dndlineLong
+		
+		%~ }
+	%~ \end{strip}
+	\chapter{#1}
+}
+
+
+
 
 %%Cute Roundtable environment
 
