@@ -2,7 +2,7 @@
 if [ $1 -eq 1 ]
 then
 	cd Data;
-	#matlab -nodisplay -nodesktop < "MasterAssembly.m"
+	matlab -nodisplay -nodesktop -r 'GameMasterAssembly(1)';
 	cd ..
 fi
 

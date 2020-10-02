@@ -141,7 +141,15 @@ Those who have attempted to study the \imp{Void} and the \imp{Eldritch Horrors} 
 \chapter{The Charted Worlds}
 \newcommand\subrealm[4]
 {
-		\realm{\key{#1}\\ {\normalsize #2}}{#3}{#4}
+
+		
+		\subsection*{#1\\ {\normalsize #2}}
+		\addcontentsline{toc}{subsection}{#1}
+	\begin{center}
+		\includegraphics[width = 0.48\textwidth, keepaspectratio = true]{../Images/#3}
+	\end{center}
+
+	#4
 }
 Exploratory and scientific expeditions to study the \imp{Lower Planes} have been incredibly limited in their scope (and indeed - entirely limited to the \imp{Lower Planes}, rather than their distant \imp{Higher} companions). 
 

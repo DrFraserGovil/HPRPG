@@ -545,7 +545,17 @@ Due to Hagrid’s well documented and extreme negligence\comma{} a number of \na
 
 
 
+\speciesBeast{name = Demiguise, species = Demiguise, mind = Non\minus{}sapient, category = Beast, rating = III, abilities = \ability{Invisibility}{A \name{} may use their \imp{Elusion} skill to become completely invisible to the naked eye. By expending a \imp{Fortitude} point\comma{} they may also evade magical detection.}
 
+\ability{Precognition}{A \name{} sees slightly into the future\comma{} and so always beats all other \imp{Reflex} rolls\comma{} and gains +4d to one \imp{Resist} roll per cycle. 
+
+In the case of multiple creatures possessing this ability\comma{} they perform their own \imp{Reflex} roll amongst themselves to determine who goes first. }, article = A, movement = \speeds{\speedrating{Walking}{4}\speedrating{Climbing}{1}}, fit =2, prs =5, vit =1, cha =3, dec =0, ins =4, int =2, wil =1, pcp =3, hasDamage = 0, nUnharmed=1, nBruised=1, nHurt=0, nInjured=2, nWounded=1, nMangled=0, block=1, dodge=3, defy=1, fortitude=2, imageStack=0, hasSkills = 1, skills = \skill{Elusion}{7}
+\skill{Covert}{5}
+\skill{Climb}{2}
+\skill{Speed}{1}
+, hasAttacks = 1, attacks = \melee{Bite}{3}{\minus{}2}{Stabbing Damage}{1 + Successes}, hasImage = 1, image = demiguise, description = Demiguise are peaceful\comma{} herbivorous magical creatures native to the Far East. These highly magical creatures have been hunted to near\minus{}extinction by wizardkind due to their incredible ability to turn invisible – the pelt of a Demiguise can therefore be used in the construction of \imp{Cloaks of Invisibility}. 
+
+Demiguise have precious little ability to defend themselves\comma{} though they do have \imp{Precognitive Sight} which allows them to see just a few seconds into the future\comma{} and hence they excel at evading threats\comma{} if not negating them.}
 
 
 
@@ -582,6 +592,67 @@ After an ambitious magical experiment went awry in 15th century Japan\comma{} a 
 The \name{} are spirits of energy and thunder\comma{} their physical form (if you can really call it `physical’) composed of violent\comma{} turbulent stormclouds\comma{} bent into the twisted form of a humanoid. As spirits of the storm\comma{} they are almost mindless in their destructive wrath\comma{} though they are neither cruel or evil. 
 
 Wielding the ability to generate immense bolts of lightning\comma{} and twist their near\minus{}incorporeal form into near any shape imaginable\comma{} the \name{} are agents of immense chaos when they escape from their natural habitat.}
+
+}
+
+
+
+
+\species{Elves}
+{
+	Modern muggle culture frequently imagines Elves to be superhuman\comma{} immortal and otherworldly creatures – outwardly appearing as impossibly beautiful humans and wielding immense\comma{} primal magic. This is primarly due to the influence of the muggle writer Tolkein (who was himself a squib). In reality\comma{} elves are much closer to those envisaged in medieval Germanic mythology – small\comma{} impish tricksters. 
+
+Though they have a love for tricks and fun\comma{} the most common form of elf throughout history\comma{} the {\it Br{\'u}nb{\'a}su}\comma{} or {\it Common Brownie} often helped humans by performing small chores for them. In one of the more shameful acts of wizarding history\comma{} the Br{\'u}nb{\'a}su were then systematically enslaved and brainwashed into eternal servitude\comma{} leading to the creation of the race of House\minus{}Elves. Witnessing this horrific act of human cruelty\comma{} many of the other elf species retreated into relative obscurity.
+
+\ability{Diminutive Frame}{Almost all species of Elf are tiny in stature – rarely reaching more than 3ft in height – with skinny and spindly arms and legs. They rely on magic for physical acts that their size denies them. }
+
+\ability{Elfin Magics}{Elf magic is unlike any that is understood by humans\comma{} who often look down on it as inferior. Some scholars\comma{} however\comma{} have hypothesised that elfin magic is in fact far superior to wizard magic. It is only due to the elfin spirit and its dislike of organisation and study (and probably helped by wizard oppression) that they have not learned to harness it to its full potential. The most prominent quirk of elfin magic is their ability to ignore even the strongest magical wards and boundaries.}  
+
+\ability{Fond of Trickery}{All elves (except perhaps the brainwashed House Elves) are fond of trickery and fun. They play endless pranks on one another\comma{} delighting in causing small amounts of chaos. Even those who are dedicated to cleaning and tidying play the occassional trick: muggles notice this in the form of missing socks\comma{} or keys never quite being where they were left.}
+
+\ability{Holding Court}{Elven society is chaotic and unorganised. They rarely recognise a leader\comma{} though they sometimes assemble themselves into bands and groups for the purpose of safety. This all changes when one of the Elven Princes summons them to their Seelie Court. Every free\minus{}elf belongs to one of these courts\comma{} which is presided over by one of the more powerful Hulduf{\'o}lk. Court is only summoned in times of great emergency\comma{} such as conflict with another court\comma{} or when a great external threat is detected.}
+}
+{
+\beast{name = House\minus{}Elf, species = Elves, mind = Sapient, category = Imp, rating = I, abilities = \ability{Elf Magic}{Elf\minus{}Magic is almost completely alien to wizardkind. \imp{Abjure} spells do not dispel their magic\comma{} and wards to prevent their  inherent ability to teleport do not work.}
+
+\ability{Teleporting Step}{\name{} may use their natural magical ability to \imp{Teleport} their movement\comma{} rather than walk it. They can use this to escape from non\minus{}magical bindings holding them in place. }, article = A, movement = \speeds{\speedrating{Walking}{2}}, fit =1, prs =4, vit =1, cha =1, dec =0, ins =1, int =3, wil =2, pcp =3, hasDamage = 1, damage =\key{Susceptible} to \textit{Crushing damage}, nUnharmed=2, nBruised=2, nHurt=0, nInjured=0, nWounded=0, nMangled=0, block=1, dodge=4, defy=1, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Spellcasting}{3}
+\skill{Covert}{2}
+, hasAttacks = 1, attacks = \ability{Elf Magic}{A \name{} can use their \imp{Spellcasting} ability to cast the \imp{Apparate}\comma{} \imp{Force}\comma{} \imp{Move}\comma{} \imp{Repair}\comma{} \imp{Animate} and \imp{Shield} spells}
+
+\melee{Kitchen Knife}{4}{\minus{}1}{Stabbing/Cutting damage}{1 + Successes}, hasLanguages = 1, languages = \speaks{Human languages}, hasImage = 1, image = brownie, description = A House\minus{}Elf is a small impish humanoid creature which has been bound\comma{} or inherited a binding\comma{} to a given master. House\minus{}Elves are incredibly devoted to these masters\comma{} and will obey every order given to them. Typically treated as household servants\comma{} their magic is dedicated to the upkeep of the home and\comma{} on incredibly rare occasions\comma{} the repelling of intruders.}
+\beast{name = Br{\'u}nb{\'a}su, species = Elves, mind = Sapient, category = Imp, rating = II, abilities = \ability{Elf Magic}{Elf\minus{}Magic is almost completely alien to wizardkind. \imp{Abjure} spells do not dispel their magic\comma{} and wards to prevent their  inherent ability to teleport do not work.}
+
+\ability{Teleporting Step}{\name{} may use their natural magical ability to \imp{Teleport} their movement\comma{} rather than walk it. They can use this to escape from non\minus{}magical bindings holding them in place. }
+
+\ability{Free Spirit}{Free from their long enslavement\comma{} the \name{} are in no hurry to lose their free will once again: they gain +4d to any check to compel\comma{} control\comma{} charm or otherwise remove their ability to think for themselves.}, article = A, movement = \speeds{\speedrating{Walking}{2}}, fit =2, prs =4, vit =2, cha =3, dec =1, ins =2, int =3, wil =4, pcp =3, hasDamage = 1, damage =\key{Susceptible} to \textit{Crushing damage}, nUnharmed=2, nBruised=2, nHurt=1, nInjured=0, nWounded=0, nMangled=0, block=2, dodge=4, defy=3, fortitude=2, imageStack=0, hasSkills = 1, skills = \skill{Spellcasting}{4}
+\skill{Covert}{3}
+, hasAttacks = 1, attacks = \ability{Elf Magic}{A \name{} can use their \imp{Spellcasting} ability to cast the \imp{Apparate}\comma{} \imp{Force}\comma{} \imp{Move}\comma{} \imp{Repair}\comma{} \imp{Animate}\comma{} \imp{Heal}\comma{} \imp{Slumber}\comma{} \imp{Compel} and \imp{Shield} spells}, hasLanguages = 1, languages = \speaks{Human languages\comma{} Fey}, hasImage = 1, image = dobby, description = It is said that the \name{} (or `Brownies’) were the original species that were enslaved and magically altered over generations to become the House\minus{}Elves. Long considered extinct\comma{} the freeing of Dobby the House\minus{}Elf\comma{} the first Free\minus{}Elf in 1000 years\comma{} has led to a resurgence in the \name{} as a newly re\minus{}recognised species. 
+
+Though rejecting their former enslavement\comma{} the \name{} retain a love of order and cleanliness\comma{} and will often do chores for a household – on the condition of respect and equitable payment. They are easily offended\comma{} and if they feel denigrated or slighted\comma{} they will wreck the place\comma{} and will never return.}
+\beast{name = \ellengaest, species = Elves, mind = Sapient, category = Imp, rating = II, abilities = \ability{Elf Magic}{Elf\minus{}Magic is almost completely alien to wizardkind. \imp{Abjure} spells do not dispel their magic\comma{} and wards to prevent their  inherent ability to teleport do not work.}  \ability{Teleporting Step}{\name{} may use their natural magical ability to \imp{Teleport} their movement\comma{} rather than walk it. They can use this to escape from non\minus{}magical bindings holding them in place. }, article = A, movement = \speeds{\speedrating{Walking}{3}}, fit =2, prs =5, vit =1, cha =2, dec =4, ins =3, int =2, wil =3, pcp =3, hasDamage = 1, damage =\key{Susceptible} to \textit{Crushing damage}, nUnharmed=2, nBruised=1, nHurt=1, nInjured=1, nWounded=0, nMangled=0, block=1, dodge=4, defy=2, fortitude=2, imageStack=0, hasSkills = 1, skills = \skill{Spellcasting}{4}
+\skill{Covert}{3}
+, hasAttacks = 1, attacks = \ability{Elf Magic}{A \name{} can use their \imp{Spellcasting} ability to cast the \imp{Apparate}\comma{} \imp{Conceal}\comma{} \imp{Distract}\comma{} \imp{Mirage}\comma{} \imp{Move}\comma{} \imp{Delude}\comma{} \imp{Bypass} and \imp{Corrupt} spells}  
+
+\ability{Pickpocket}{When making contact with a being\comma{} a \name{} can use a \imp{Major Action} to steal a random item from the \imp{Inventory} of the target.}, hasLanguages = 1, languages = \speaks{Human languages\comma{} Fey}, hasImage = 1, image = imp, description = The archetypal impish prankster\comma{} the \name{}\comma{} also known as a `Puck’\comma{} or a `True Imp’ competes only with the Poltergeist for the mischief\minus{}maker\apos{}s crown. They adore slapstick comedy and petty theft\comma{} often building themselves a nest out of their stolen objects. 
+
+Visually\comma{} an \name{} appears to be a small\comma{} flightless fairy; a slender humanoid\comma{} approximately a foot tall. Their mouth is filled with a disturbing number of teeth\comma{} but they’re too small to harm a human\comma{} and are used to supply their mostly\minus{}insect based diet.}
+\beast{name = \dunaelf, species = Elves, mind = Sapient, category = Imp, rating = III, abilities = \ability{Elf Magic}{Elf\minus{}Magic is almost completely alien to wizardkind. \imp{Abjure} spells do not dispel their magic\comma{} and wards to prevent their  inherent ability to teleport do not work.}, article = A, movement = \speeds{\speedrating{Walking}{5}\speedrating{Climbing}{1}}, fit =3, prs =4, vit =2, cha =1, dec =2, ins =2, int =2, wil =3, pcp =4, hasDamage = 1, damage =\key{Susceptible} to \textit{Crushing damage}, nUnharmed=2, nBruised=2, nHurt=2, nInjured=0, nWounded=0, nMangled=1, block=2, dodge=5, defy=2, fortitude=3, imageStack=1, hasSkills = 1, skills = \skill{Covert}{5}
+\skill{Marksmanship}{4}
+\skill{Elusion}{4}
+\skill{Climb}{2}
+\skill{Speed}{2}
+, hasAttacks = 1, attacks = \ability{Elfin Strike}{A \name{} performs a \imp{Precision (Elusion)} check against the highest passive \imp{Perception} of their foes. On a success\comma{} the \name{} uses a single major action to \imp{Move}\comma{} make an \imp{Elfshot} and then \imp{Phase}\comma{} on a failure\comma{} their turn ends.}
+
+\ability{Phase}{A \name{} may use a \imp{MInor} action to use their \imp{Elusion} ability to become invisible}
+
+\rangedConsequence{Elfshot}{25}{7}{\minus{}1}{Psychic/Stabbing}{1 + Successes}{For each previous \imp{Elfshot} a target has suffered damage from\comma{} the \name{} gets one additional auto\minus{}success.}, hasLanguages = 1, languages = \speaks{Human languages\comma{} Fey}, hasImage = 1, image = dunaelf, description = The warriors and guardians of the Elves\comma{} the \name{} make great use of their nimble nature and their ability to turn invisible\comma{} more than making up for their diminutive stature. The \name{} also wield magical bows which inflict agonising pain on their targets.}
+\beast{name = Vaettir, species = Elves, mind = Sapient, category = Imp, rating = III, abilities = \ability{Elf Magic}{Elf\minus{}Magic is almost completely alien to wizardkind. \imp{Abjure} spells do not dispel their magic\comma{} and wards to prevent their  inherent ability to teleport do not work.}, article = A, movement = \speeds{\speedrating{Walking}{2}\speedrating{Flying}{4}}, fit =1, prs =2, vit =1, cha =2, dec =3, ins =3, int =4, wil =4, pcp =3, hasDamage = 1, damage =\key{Susceptible} to \textit{Crushing damage}, nUnharmed=2, nBruised=2, nHurt=1, nInjured=0, nWounded=1, nMangled=0, block=1, dodge=4, defy=3, fortitude=2, imageStack=0, hasSkills = 1, skills = \skill{Spellcasting}{5}
+\skill{Flight}{1}
+, hasAttacks = 1, attacks = \ability{Elf Magic}{A \name{} can use their \imp{Spellcasting} ability to cast all spells from the \imp{Elemental} discipline\comma{} as well as the \imp{Move}\comma{} \imp{Apparate}\comma{} \imp{Stun} and \imp{Shield} spells.}
+
+\ability{Primal Feedback}{As a \imp{Defensive Action}\comma{} a \name{} may turn all the successes rolled on an \imp{Elemental} spellcasting effort into \imp{Catastrophes}. }, hasLanguages = 1, languages = \speaks{Human languages\comma{} Fey}, hasImage = 1, image = vaettir, description = The least human\minus{}like of the elves\comma{} the \name{} are a species of elves which have an affinity for the primal elements\comma{} and the associated magics. 
+
+Though capable of wielding all of the elements\comma{} many \name{} find themselves drawn to one element in particular. This reflects in their outwards appearance\comma{} which slowly begins to shift and change. A fire\minus{}bound \name{} grows a fiery red beard and orange eyes\comma{} whilst a water\minus{}bound \name{}\apos{}s skin turns blue and appears permanently damp. Current arcane knowledge has found no additional abilities granted with this change\comma{} so it is unknown if there is any particular reason for this `bonding’ process to occur.}
 
 }
 
@@ -656,17 +727,17 @@ The \imp{Radiant Gardens} are an almost heaven\minus{}like domain\comma{} filled
 Just as no two rainbows are perfectly alike\comma{} so too are \imp{Light Elements} unique and distinct creatures\comma{} with wildly varying morphology and characteristics – some appear as perfectly normal solid creatures\comma{} whilst others seem to be made up of pure\comma{} distilled light.
 }
 {
-\beast{name = Solon, species = Light Elemental, mind = Non\minus{}Sapient, category = Elemental, rating = III, abilities = \ability{Floating}{The \name{} naturally floats in the air using its \imp{Flight} ability.}, article = A, movement = \speeds{\speedrating{Flying}{8}}, fit =2, prs =3, vit =3, cha =2, dec =0, ins =1, int =1, wil =3, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{Celestial}\comma{} \key{Resistant} to \textit{Fire} and \key{Susceptible} to \textit{Bludgeoning}, nUnharmed=1, nBruised=1, nHurt=1, nInjured=1, nWounded=0, nMangled=0, block=4, dodge=1, defy=2, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Spellcasting}{3}
+\beast{name = Solon, species = Light Elemental, mind = Non\minus{}Sapient, category = Elemental, rating = III, abilities = \ability{Floating}{The \name{} naturally floats in the air using its \imp{Flight} ability.}, article = A, movement = \speeds{\speedrating{Flying}{8}}, fit =2, prs =3, vit =3, cha =2, dec =0, ins =1, int =1, wil =3, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{Incandescent}\comma{} \key{Resistant} to \textit{Fire} and \key{Susceptible} to \textit{Bludgeoning}, nUnharmed=1, nBruised=1, nHurt=1, nInjured=1, nWounded=0, nMangled=0, block=4, dodge=1, defy=2, fortitude=1, imageStack=0, hasSkills = 1, skills = \skill{Spellcasting}{3}
 \skill{Flight}{2}
 , hasAttacks = 1, attacks = \ability{Crystal Shards}{Whenever the \name{} takes physical damage\comma{} they may choose to take an additional level of harm to deflect fragments of their body into a creatue within 2m\comma{} dealing level 5 \imp{Stabbing} damage.}
 
-\ability{Elemental Magic}{The solon may use its \imp{Spellcasting} ability to cast spells. It knows the \imp{Illuminate}\comma{} \imp{Sense} and \imp{Move} spells.}, hasLanguages = 1, languages = \speaks{Celestial}, hasImage = 1, image = solon, description = \name{}s are lesser elementals hailing from the Radiant Gardens\comma{} the Elemental plane of light. They are crystalline creatures\comma{} and glow with an inner radiance which shifts and refracts through their bodies as they move.}
-\beast{name = Phlogiston, species = Light Elemental, mind = Ineffable, category = Elemental, rating = IV, abilities = \ability{Phaseshift}{The \name{} may use its \imp{Shapechanging} ability to morph into gaseous form\comma{} where it may use its flight speed\comma{} but loses the ability to use \imp{Evaporating Blast}. It may use this ability again to morph back into liquid form.}, article = A, movement = \speeds{\speedrating{Walking}{2}\speedrating{Flying}{40}}, fit =1, prs =5, vit =3, cha =4, dec =0, ins =3, int =5, wil =3, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{Celestial} and \key{Resistant} to \textit{All physical damage}, nUnharmed=6, nBruised=0, nHurt=0, nInjured=0, nWounded=1, nMangled=0, block=0, dodge=4, defy=3, fortitude=4, imageStack=1, hasSkills = 1, skills = \skill{Flight}{10}
+\ability{Elemental Magic}{The solon may use its \imp{Spellcasting} ability to cast spells. It knows the \imp{Illuminate}\comma{} \imp{Sense} and \imp{Move} spells.}, hasLanguages = 1, languages = \speaks{Empyrean}, hasImage = 1, image = solon, description = \name{}s are lesser elementals hailing from the Radiant Gardens\comma{} the Elemental plane of light. They are crystalline creatures\comma{} and glow with an inner radiance which shifts and refracts through their bodies as they move.}
+\beast{name = Phlogiston, species = Light Elemental, mind = Ineffable, category = Elemental, rating = IV, abilities = \ability{Phaseshift}{The \name{} may use its \imp{Shapechanging} ability to morph into gaseous form\comma{} where it may use its flight speed\comma{} but loses the ability to use \imp{Evaporating Blast}. It may use this ability again to morph back into liquid form.}, article = A, movement = \speeds{\speedrating{Walking}{2}\speedrating{Flying}{40}}, fit =1, prs =5, vit =3, cha =4, dec =0, ins =3, int =5, wil =3, pcp =2, hasDamage = 1, damage =\key{Immune} to \textit{Incandescent} and \key{Resistant} to \textit{All physical damage}, nUnharmed=6, nBruised=0, nHurt=0, nInjured=0, nWounded=1, nMangled=0, block=0, dodge=4, defy=3, fortitude=4, imageStack=1, hasSkills = 1, skills = \skill{Flight}{10}
 \skill{Shapechanging}{5}
 \skill{Spellcasting}{5}
-, hasAttacks = 1, attacks = \ranged{Evaporating Blast}{100}{6}{\minus{}1}{Celestial}{1 + Successes}
+, hasAttacks = 1, attacks = \ranged{Evaporating Blast}{100}{6}{\minus{}1}{Incandescent}{1 + Successes}
 
-\ability{Elemental Magic}{The \name{} may use its \imp{Spellcasting} ability to cast spells. It knows the \imp{Illuminate}\comma{} \imp{Fire} and \imp{Move} spells.}, hasLanguages = 1, languages = \speaks{Celestial}, hasImage = 1, image = phlogiston, description = A highly unusual magical creature\comma{} originating from the Plane of Light\comma{} but subsequently spreading to all corners of reality\comma{} A phlogiston is a creature of liquid light\comma{} a sentient\comma{} glowing pool of power and warmth. 
+\ability{Elemental Magic}{The \name{} may use its \imp{Spellcasting} ability to cast spells. It knows the \imp{Illuminate}\comma{} \imp{Fire} and \imp{Move} spells.}, hasLanguages = 1, languages = \speaks{Empyrean}, hasImage = 1, image = phlogiston, description = A highly unusual magical creature\comma{} originating from the Plane of Light\comma{} but subsequently spreading to all corners of reality\comma{} A phlogiston is a creature of liquid light\comma{} a sentient\comma{} glowing pool of power and warmth. 
 
 Though normally calm and blissful creatures\comma{} when angered or afraid\comma{} the phlogiston can shift into a gaseous form\comma{} or evaporate parts of its form entirely into powerful blasts of light.}
 \beast{name = Chalkydri, species = Light Elemental, mind = Non\minus{}sapient, category = Elemental, rating = V, abilities = \ability{Winged Herald}{The \name{} may use its \imp{Flight} skill to take to the skies\comma{} gaining a flying speed of 30m per round}
@@ -683,7 +754,7 @@ Though normally calm and blissful creatures\comma{} when angered or afraid\comma
 
 \area{Downdraft}{circle 10m radius below current flying position)}{8}{0}{Prone}{1 + Successes}
 
-\ability{Bringer of Dawn}{The \name{} may use its \imp{Spellcasting} ability to cast the \imp{Illuminate} spell.}, hasLanguages = 1, languages = \speaks{Celestial}, hasImage = 1, image = chalkydri, description = Also known as the `Heralds of Dawn’\comma{} these copper\minus{}skinned\comma{} winged serpent\minus{}like creatures were often mistaken for a species of \imp{Dragon} throughout history\comma{} and it is only recently that their true origins have been determined. 
+\ability{Bringer of Dawn}{The \name{} may use its \imp{Spellcasting} ability to cast the \imp{Illuminate} spell.}, hasLanguages = 1, languages = \speaks{Empyrean}, hasImage = 1, image = chalkydri, description = Also known as the `Heralds of Dawn’\comma{} these copper\minus{}skinned\comma{} winged serpent\minus{}like creatures were often mistaken for a species of \imp{Dragon} throughout history\comma{} and it is only recently that their true origins have been determined. 
 
 Possessing the face and tail of a crocodile\comma{} but the body of a lion and rows upon rows of rainbow\minus{}coloured wings (up to 14 pairs on the oldest known specimen)\comma{} these creatures typically reside within the coronosphere of a sun\comma{} or near some other cosmically powerful source of light\comma{} descending planetside only for a few hours per year\comma{} and even then\comma{} they appear only during the first few moments of dawn. 
 

@@ -1,5 +1,5 @@
 
-function assembleBeasts(fileNameRoot)
+function assembleBeasts(fileRoot)
    
     %if no target given, assume that called directly, else assume called by
     %master
@@ -7,9 +7,10 @@ function assembleBeasts(fileNameRoot)
     if nargin < 1
         disp('Insufficient inputs provided');
         addpath('../../../CoreRulebook/Data/Functions/');
-        fileNameRoot = '../../Chapters/Beasts/';
+        fileRoot = '../../';
  
     end
+    fileNameRoot = fileRoot + "Chapters/Beasts/";
     
     f = readtable("Species.xlsx");
     f = sortrows(f);
