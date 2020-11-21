@@ -27,9 +27,10 @@
 \contentsline {subsection}{Howling Tick{}}{12}{section*.12}
 \contentsline {subsection}{Spraying Mantis{}}{13}{section*.12}
 \contentsline {subsection}{Brood Mother{}}{13}{section*.12}
+\contentsline {section}{Armoured Guardian{}}{14}{section*.12}
 \contentsline {section}{Beast Demon}{14}{section*.12}
 \contentsline {subsection}{Nogtail{}}{14}{section*.13}
-\contentsline {subsection}{Kishi{}}{14}{section*.13}
+\contentsline {subsection}{Kishi{}}{15}{section*.13}
 \contentsline {section}{Bowtruckle}{15}{section*.13}
 \contentsline {subsection}{Softwood Bowtruckle{}}{15}{section*.14}
 \contentsline {subsection}{Hardwood Bowtruckle{}}{16}{section*.14}
@@ -38,32 +39,33 @@
 \contentsline {subsection}{Erumpent{}}{17}{section*.15}
 \contentsline {subsection}{Re'em{}}{17}{section*.15}
 \contentsline {section}{Chimera{}}{18}{section*.15}
-\contentsline {section}{Cloakwraiths}{18}{section*.15}
-\contentsline {subsection}{Lethifold{}}{18}{section*.16}
+\contentsline {section}{Cloakwraiths}{19}{section*.15}
+\contentsline {subsection}{Lethifold{}}{19}{section*.16}
 \contentsline {subsection}{Dementor{}}{19}{section*.16}
 \contentsline {subsection}{Shuagh{}}{20}{section*.16}
-\contentsline {section}{Creations}{20}{section*.16}
-\contentsline {subsection}{Hidebehind{}}{20}{section*.17}
+\contentsline {section}{Creations}{21}{section*.16}
+\contentsline {subsection}{Hidebehind{}}{21}{section*.17}
 \contentsline {subsection}{Blast-{}Ended Skrewt{}}{21}{section*.17}
-\contentsline {section}{Demiguise{}}{21}{section*.17}
+\contentsline {section}{Demiguise{}}{22}{section*.17}
 \contentsline {section}{Electric Elemental}{22}{section*.17}
 \contentsline {subsection}{Raiju{}}{22}{section*.18}
-\contentsline {subsection}{Nephelai{}}{22}{section*.18}
+\contentsline {subsection}{Nephelai{}}{23}{section*.18}
 \contentsline {section}{Elves}{23}{section*.18}
-\contentsline {subsection}{House-{}Elf{}}{23}{section*.19}
+\contentsline {subsection}{House-{}Elf{}}{24}{section*.19}
 \contentsline {subsection}{Br{\'u}nb{\'a}su{}}{24}{section*.19}
-\contentsline {subsection}{Ellengaest{}}{24}{section*.19}
+\contentsline {subsection}{Ellengaest{}}{25}{section*.19}
 \contentsline {subsection}{Dunaelf{}}{25}{section*.19}
-\contentsline {subsection}{Vaettir{}}{25}{section*.19}
-\contentsline {section}{Giantkin}{25}{section*.19}
+\contentsline {subsection}{Vaettir{}}{26}{section*.19}
+\contentsline {section}{Giantkin}{26}{section*.19}
 \contentsline {subsection}{Cyclopes{}}{26}{section*.20}
-\contentsline {subsection}{Jotun{}}{26}{section*.20}
+\contentsline {subsection}{Jotun{}}{27}{section*.20}
 \contentsline {subsection}{Humbaba{}}{27}{section*.20}
-\contentsline {subsection}{Basajaun{}}{27}{section*.20}
+\contentsline {subsection}{Basajaun{}}{28}{section*.20}
 \contentsline {section}{Light Elemental}{28}{section*.20}
 \contentsline {subsection}{Solon{}}{28}{section*.21}
-\contentsline {subsection}{Phlogiston{}}{28}{section*.21}
+\contentsline {subsection}{Phlogiston{}}{29}{section*.21}
 \contentsline {subsection}{Chalkydri{}}{29}{section*.21}
+<<<<<<< HEAD
 \contentsline {section}{Living Book{}}{29}{section*.21}
 \contentsline {section}{Mundane Animal}{30}{section*.21}
 \contentsline {subsection}{Crows{}}{30}{section*.22}
@@ -152,3 +154,88 @@
 \contentsline {subsection}{Difficulty = 9}{49}{subsection*.86}
 \contentsline {subsection}{Difficulty = 10}{49}{subsection*.87}
 \contentsline {subsection}{Difficulty = 11}{49}{subsection*.88}
+=======
+\contentsline {section}{Whomping Willow{}}{30}{section*.21}
+\contentsline {part}{II\hspace {1em}The Magical World}{31}{part.2}
+\contentsline {chapter}{\numberline {3}Hogwarts}{32}{chapter.3}
+\contentsline {section}{Students \& School System}{33}{section*.22}
+\contentsline {subsubsection}{Optional Rule: Higher Education}{33}{subsubsection*.23}
+\contentsline {subsection}{Grounds}{33}{subsection*.24}
+\contentsline {subsection}{Keep}{33}{subsection*.25}
+\contentsline {subsubsection}{Basement}{33}{subsubsection*.26}
+\contentsline {subsubsection}{Ground Floor}{33}{subsubsection*.27}
+\contentsline {subsubsection}{First Floor}{33}{subsubsection*.28}
+\contentsline {subsubsection}{Second Floor}{33}{subsubsection*.29}
+\contentsline {subsubsection}{Third Floor}{33}{subsubsection*.30}
+\contentsline {subsubsection}{Fourth Floor}{33}{subsubsection*.31}
+\contentsline {subsubsection}{Fifth Floor}{33}{subsubsection*.32}
+\contentsline {subsubsection}{Sixth Floor}{34}{subsubsection*.33}
+\contentsline {subsubsection}{Seventh Floor}{34}{subsubsection*.34}
+\contentsline {subsubsection}{Multiple Floors}{34}{subsubsection*.35}
+\contentsline {subsection}{Central Tower}{34}{subsection*.36}
+\contentsline {subsubsection}{Ground Floor}{34}{subsubsection*.37}
+\contentsline {subsubsection}{First Floor}{34}{subsubsection*.38}
+\contentsline {subsubsection}{Second Floor}{34}{subsubsection*.39}
+\contentsline {subsubsection}{Seventh Floor}{34}{subsubsection*.40}
+\contentsline {subsubsection}{Fifth Floor}{34}{subsubsection*.41}
+\contentsline {subsection}{Barbican}{34}{subsection*.42}
+\contentsline {subsubsection}{Ground Floor}{34}{subsubsection*.43}
+\contentsline {subsubsection}{First Floor}{34}{subsubsection*.44}
+\contentsline {subsubsection}{}{34}{subsubsection*.45}
+\contentsline {subsubsection}{Multiple Floors}{34}{subsubsection*.46}
+\contentsline {subsection}{North Tower}{34}{subsection*.47}
+\contentsline {subsubsection}{Fifth Floor}{34}{subsubsection*.48}
+\contentsline {subsubsection}{Ground Floor}{34}{subsubsection*.49}
+\contentsline {subsubsection}{First Floor}{35}{subsubsection*.50}
+\contentsline {subsubsection}{Second Floor}{35}{subsubsection*.51}
+\contentsline {subsubsection}{Third Floor}{35}{subsubsection*.52}
+\contentsline {subsubsection}{Fourth Floor}{35}{subsubsection*.53}
+\contentsline {subsubsection}{Sixth Floor}{35}{subsubsection*.54}
+\contentsline {subsection}{Astronomy Tower}{35}{subsection*.55}
+\contentsline {subsubsection}{First – Sixth floors}{35}{subsubsection*.56}
+\contentsline {subsubsection}{Seventh-Eight Floors}{35}{subsubsection*.57}
+\contentsline {subsubsection}{Ninth Floor}{35}{subsubsection*.58}
+\contentsline {subsection}{Gryffindor Tower}{35}{subsection*.59}
+\contentsline {subsection}{Ravenclaw Tower}{35}{subsection*.60}
+\contentsline {subsection}{Dungeons}{35}{subsection*.61}
+\contentsline {subsection}{Headmaster’s Tower}{35}{subsection*.62}
+\contentsline {chapter}{\numberline {4}Cosmology}{36}{chapter.4}
+\contentsline {section}{Traversing the Realms}{36}{section*.63}
+\contentsline {section}{Cataloguing the Realms}{36}{section*.64}
+\contentsline {subsection}{The Mortal World}{36}{subsection*.65}
+\contentsline {subsection}{The Astral Realm}{36}{subsection*.66}
+\contentsline {subsection}{Voidic Continuum}{37}{subsection*.67}
+\contentsline {subsection}{The Lower Planes}{37}{subsection*.68}
+\contentsline {subsection}{The Higher Planes}{38}{subsection*.69}
+\contentsline {chapter}{\numberline {5}The Charted Worlds}{39}{chapter.5}
+\contentsline {section}{The \textsc {Hells}}{39}{section*.70}
+\contentsline {subsection}{Abyss}{39}{section*.71}
+\contentsline {subsection}{Hades}{39}{section*.71}
+\contentsline {subsection}{Tartarus}{40}{section*.71}
+\contentsline {section}{The \textsc {Heavens}}{40}{section*.72}
+\contentsline {subsection}{Elysium}{40}{section*.73}
+\contentsline {subsection}{Nirvana}{40}{section*.73}
+\contentsline {section}{The \textsc {Daedal Domains}}{40}{section*.74}
+\contentsline {subsection}{Machina}{41}{section*.75}
+\contentsline {subsection}{Scholomancia}{41}{section*.75}
+\contentsline {section}{The \textsc {Primal Expanse}}{41}{section*.76}
+\contentsline {subsection}{Aeolus}{41}{section*.77}
+\contentsline {subsection}{Eden}{42}{section*.77}
+\contentsline {subsection}{Hyperborea}{42}{section*.77}
+\contentsline {subsection}{Irkalla}{42}{section*.77}
+\contentsline {subsection}{Lemuria}{42}{section*.77}
+\contentsline {subsection}{T\'ir Na N\'og}{43}{section*.77}
+\contentsline {subsection}{Vulcan}{43}{section*.77}
+\contentsline {part}{III\hspace {1em}GM Tools}{44}{part.3}
+\contentsline {chapter}{\numberline {6}Roll Statistics}{45}{chapter.6}
+\contentsline {section}{Analytic Probability}{45}{section*.78}
+\contentsline {subsection}{Difficulty = 3}{46}{subsection*.79}
+\contentsline {subsection}{Difficulty = 4}{46}{subsection*.80}
+\contentsline {subsection}{Difficulty = 5}{46}{subsection*.81}
+\contentsline {subsection}{Difficulty = 6}{47}{subsection*.82}
+\contentsline {subsection}{Difficulty = 7}{47}{subsection*.83}
+\contentsline {subsection}{Difficulty = 8}{47}{subsection*.84}
+\contentsline {subsection}{Difficulty = 9}{48}{subsection*.85}
+\contentsline {subsection}{Difficulty = 10}{48}{subsection*.86}
+\contentsline {subsection}{Difficulty = 11}{48}{subsection*.87}
+>>>>>>> 8d98bd0fccbc5f660a98190f42df0731d544ff36
