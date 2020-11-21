@@ -29,7 +29,8 @@ function assembleEncounters(beastRoot)
     e= readtable("../Encounters.xlsx");
     E = Encounter.empty;
     for i = 1:height(e)
-       E(end+1) = Encounter(e(i,:), beasts);
+        en= Encounter(e(i,:), beasts)
+        E(end+1) = en;
     end
     
     

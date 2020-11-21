@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.3.20)  2 OCT 2020 11:50
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.18)  17 OCT 2020 18:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3614,36 +3614,100 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 765--765
 [] 
  []
 
-File: ../Images/whomp.png Graphic file (type bmp)
-<../Images/whomp.png>
 
-Overfull \hbox (5.87784pt too wide) in paragraph at lines 810--810
-[]$[]$ $[]$ 
+Underfull \hbox (badness 10000) in paragraph at lines 771--771
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
-
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 771--771
+[] 
  []
 
 [29]
-Overfull \hbox (14.42041pt too wide) in paragraph at lines 810--810
+Underfull \hbox (badness 10000) in paragraph at lines 793--793
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--810
-
- []
-
-
-Overfull \hbox (9.95842pt too wide) in paragraph at lines 810--810
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 793--793
 [] 
  []
 
-))) (./Chapters/MagicalWorld/WorldMaster.tex [30
 
-] [31
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 793.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 793--793
+
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 793--793
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 793--793
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 793--793
+
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 793--793
+[] 
+ []
+
+
+Overfull \hbox (10.35841pt too wide) in paragraph at lines 793--793
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 793--793
+
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 793--793
+[] 
+ []
+
+File: ../Images/whomp.png Graphic file (type bmp)
+<../Images/whomp.png>
+
+Overfull \hbox (5.87784pt too wide) in paragraph at lines 834--834
+[]$[]$ $[]$ 
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 834--834
+
+ []
+
+
+Overfull \hbox (14.42041pt too wide) in paragraph at lines 834--834
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 834--834
+
+ []
+
+
+Overfull \hbox (9.95842pt too wide) in paragraph at lines 834--834
+[] 
+ []
+
+))) (./Chapters/MagicalWorld/WorldMaster.tex [31
+
+] [32
 
 
 ]
@@ -3699,7 +3763,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Warning: Optional argument of \twocolumn too tall on page 32(1 stulpelis)
+LaTeX Warning: Optional argument of \twocolumn too tall on page 33(1 stulpelis)
 .
 
 
@@ -3707,7 +3771,7 @@ Overfull \vbox (1.13622pt too high) has occurred while \output is active []
 
 
 
-LaTeX Warning: Text page 32 contains only floats.
+LaTeX Warning: Text page 33 contains only floats.
 
 
 Overfull \vbox (1.13622pt too high) has occurred while \output is active []
@@ -3716,7 +3780,7 @@ Overfull \vbox (1.13622pt too high) has occurred while \output is active []
 Overfull \vbox (62.78229pt too high) has occurred while \output is active []
 
 
-[32
+[33
 
 
 ]
@@ -3734,7 +3798,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 60--60
 |[] 
  []
 
-[33]
+[34]
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 82--82
 |[] 
  []
@@ -3749,7 +3813,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 124--124
 |[] 
  []
 
-[34]
+[35]
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 136--136
 |[] 
  []
@@ -3774,7 +3838,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 161--161
 |[] 
  []
 
-)) (./Chapters/MagicalWorld/Cosmology.tex [35]
+)) (./Chapters/MagicalWorld/Cosmology.tex [36]
 Chapter 4.
 
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 16--16
@@ -3800,7 +3864,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 82--82
 
 File: ../Images/astral.jpg Graphic file (type bmp)
 <../Images/astral.jpg>
-[36
+[37
 
 
 ]
@@ -3817,14 +3881,14 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 124--124
 
 File: ../Images/lowerplanes.jpg Graphic file (type bmp)
 <../Images/lowerplanes.jpg>
-[37]
+[38]
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 135--135
 |[] 
  []
 
 File: ../Images/higherplane.jpg Graphic file (type bmp)
 <../Images/higherplane.jpg>
-[38
+[39
 
 ]
 Chapter 5.
@@ -3858,7 +3922,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 197--197
 
 File: ../Images/tartarus.jpg Graphic file (type bmp)
 <../Images/tartarus.jpg>
-[39
+[40
 
 ]
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 199--199
@@ -3899,7 +3963,7 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 
 File: ../Images/machina.jpg Graphic file (type bmp)
 <../Images/machina.jpg>
-[40]
+[41]
 Underfull \hbox (badness 1112) in paragraph at lines 240--240
 []\TU/texgyrebonum-regular.otf(0)/m/n/8 Fearing the chaos inherent in biologica
 l systems, the denizens of
@@ -3935,7 +3999,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 286--286
 
 File: ../Images/eden.jpg Graphic file (type bmp)
 <../Images/eden.jpg>
-[41]
+[42]
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 294--294
 |[] 
  []
@@ -3963,16 +4027,16 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 310--310
 
 File: ../Images/radiantgardens.jpg Graphic file (type bmp)
 <../Images/radiantgardens.jpg>
-[42]
+[43]
 Overfull \hbox (9.95842pt too wide) in paragraph at lines 319--319
 |[] 
  []
 
 File: ../Images/vulcan.jpg Graphic file (type bmp)
 <../Images/vulcan.jpg>
-)) (./Chapters/Tools/ToolMaster.tex [43
+)) (./Chapters/Tools/ToolMaster.tex [44
 
-] [44
+] [45
 
 
 ] (./Chapters/Tools/Statistics.tex
@@ -3982,7 +4046,7 @@ Overfull \hbox (9.95842pt too wide) in paragraph at lines 5--5
 |[] 
  []
 
-[45
+[46
 
 
 ]
@@ -4087,7 +4151,7 @@ Overfull \hbox (3.65227pt too wide) in paragraph at lines 166--166
 []|\TU/texgyrebonum-regular.otf(0)/bx/n/6 14| 
  []
 
-[46
+[47
 
 ]
 Overfull \hbox (3.65227pt too wide) in paragraph at lines 184--184
@@ -4164,7 +4228,7 @@ Overfull \hbox (3.65227pt too wide) in paragraph at lines 220--220
 []|\TU/texgyrebonum-regular.otf(0)/bx/n/6 14| 
  []
 
-[47]
+[48]
 Overfull \hbox (3.65227pt too wide) in paragraph at lines 238--238
 []|\TU/texgyrebonum-regular.otf(0)/bx/n/6 10| 
  []
@@ -4214,20 +4278,24 @@ Overfull \hbox (3.65227pt too wide) in paragraph at lines 256--256
 []|\TU/texgyrebonum-regular.otf(0)/bx/n/6 14| 
  []
 
-[48]))
+[49]))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (./GMGuide.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 56.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 56.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 42232 strings out of 493007
- 808089 string characters out of 6136719
- 1001759 words of memory out of 5000000
- 45459 multiletter control sequences out of 15000+600000
+ 42238 strings out of 493007
+ 808177 string characters out of 6136718
+ 1001866 words of memory out of 5000000
+ 45465 multiletter control sequences out of 15000+600000
  585392 words of font info for 183 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  62i,18n,75p,10412b,842s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on GMGuide.pdf (49 pages).
+Output written on GMGuide.pdf (50 pages).

@@ -7,7 +7,7 @@ function assembleBeasts(fileRoot)
     if nargin < 1
         disp('Insufficient inputs provided');
         addpath('../../../CoreRulebook/Data/Functions/');
-        fileRoot = '../../';
+        fileRoot = '../../';    
  
     end
     fileNameRoot = fileRoot + "Chapters/Beasts/";
