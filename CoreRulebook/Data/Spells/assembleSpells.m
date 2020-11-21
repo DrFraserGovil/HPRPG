@@ -11,7 +11,7 @@ function assembleSpells(fileRoot)
     fileNameRoot = strcat(fileRoot,'Chapters/Part4_Magic/');
     %% open file
 
-    f = readtable("Spells.xlsx");   
+    f = readtable("Spells.xlsx");
     headers = f.Properties.VariableNames;
      f = sortrows(f,1);
     f = sortrows(f,2);

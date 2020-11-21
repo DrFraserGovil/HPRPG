@@ -87,11 +87,11 @@ Magic is invoked through the casting of a magic spell.
 	\summaryRow{Conjuration}{Bind, Forge, Manifest, Vanish}
 	\summaryRow{Curse}{Corrupt, Disarm, Infect, Stun}
 	\summaryRow{Elemental}{Burn, Flood, Freeze, Gust, Illuminate, Sculpt, Shock}
-	\summaryRow{Hermetics}{Heal, Purify, Restore, Sustain}
+	\summaryRow{Hermetics}{Purify, Regenerate, Restore, Sustain}
 	\summaryRow{Hex}{Disintegrate, Force, Jinx, Strike}
 	\summaryRow{Kinesis}{Apparate, Halt, Move, Repair, Seek}
 	\summaryRow{Necromancy}{Blight, Defile, Drain, Kill, Raise}
-	\summaryRow{Occultism}{Attune, Consort, Eclipse}
+	\summaryRow{Occultism}{Attune, Bestow, Consort, Eclipse}
 	\summaryRow{Psionics}{Compel, Delude, Remind, Torture}
 	\summaryRow{Temporal}{Identify, Prophesy, Scry, Traverse}
 	\summaryRow{Warding}{Abjure, Bypass, Resist, Shield, Trap}
@@ -105,7 +105,8 @@ Animation spells typically required continued \imp{concentration} from the caste
 
 	\spell{name = Degrade, incantation = Abissio, book = Transmutation and Transformative Tricks, description = When you \imp{degrade} a target\comma{} you cheapen and deteriorate it\comma{} weaken its structure and make it less appealing \minus{} though without fundamentally altering its nature. 
 
-Physical objects become tarnished and pockmarked\comma{} losing their effectiveness\comma{} whilst living beings find their muscles temporarily weakened\comma{} and their mind clouded over., haszero=1, zero=\spExample{Dirty}{Add a layer of dirt of grime to the target}, hasone=1, one=\spExample{Blemish}{Create small imperfections in the surface of an object. }
+Physical objects become tarnished and pockmarked\comma{} losing their effectiveness\comma{} whilst living beings find their muscles temporarily weakened\comma{} and their mind clouded over. 
+, haszero=1, zero=\spExample{Dirty}{Add a layer of dirt of grime to the target}, hasone=1, one=\spExample{Blemish}{Create small imperfections in the surface of an object. }
 
 \spExample{Minor Deteriorate}{Suppress a foe’s abilities\comma{} temporarily weakening their muscles or clouding their mind\comma{} making their next action just a bit harder.}, hastwo=0, hasthree=0, hasfour=0, hasfive=0, hassix=0, hasseven=1, seven=\spExample{True Degredation}{Make the target into the worst of its form; the worst\comma{} weakest and most ugly of its type.}, hasExamples = 1}
 
@@ -207,19 +208,28 @@ You might also \imp{concentrate} on an existing fire and manipulate it\comma{} s
 
 \spExample{Smother}{Douse tiny embers and sparks.}
 
-\spExample{Flicker}{Cause mundane fires to flicker\comma{} dance or glow brighter.}, hasone=1, one=\spExample{Flame}{A small\comma{} continuous jet of flame extends from your wand\comma{} causing burns on contact.}
+\spExample{Flicker}{Cause mundane fires to flicker\comma{} dance or glow brighter.}
+, hasone=1, one=\spExample{Flame}{A small\comma{} continuous jet of flame extends from your wand\comma{} causing burns on contact.}
 
 \spExample{Sense Fire}{Sense the presence of fires.}
 
-\spExample{Minor Manipulation}{Control and manipulate the shape of nearby fire\comma{} causing it to take on a chosen shape\comma{} or to direct it to slowly move in a certain direction.}, hastwo=1, two=\spExample{Far\minus{}Flung Flames}{Ignite a stationary target from a distance.}
+\spExample{Minor Manipulation}{Control and manipulate the shape of nearby fire\comma{} causing it to take on a chosen shape\comma{} or to direct it to slowly move in a certain direction.}
+, hastwo=1, two=\spExample{Far\minus{}Flung Flames}{Ignite a stationary target from a distance.}
 
 \spExample{Extinguish}{Suppress and extinguish a fire over a small region.}, hasthree=1, three=\spExample{Firebolt}{Fire a bolt of flame at a foe\comma{} dealing increased \imp{Harm}}
 
-\spExample{Red\minus{}hot}{Summon fire which is hot enough to ignite even resistant materials such as damp wood}, hasfour=1, four=\spExample{Fireball}{Launch a fireball which explodes on contact\comma{} hurting nearby foes with fiery concussive force}
+\spExample{Red\minus{}hot}{Summon fire which is hot enough to ignite even resistant materials such as damp wood} 
 
-\spExample{Firebending}{Rapidly control an existing fire at great distance\comma{} causing it to float through space or lash out at a foe like a weapon.}, hasfive=1, five=\spExample{Firewall}{Create an enormous wall of fire as a barrier across a defined space\comma{} incinerating those who would pass through it.}, hassix=1, six=\spExample{White\minus{}hot}{Summon and project fire hot enough to melt through metal and liquefy stone. }, hasseven=1, seven=\spExample{Firestorm}{Summon a fiery maelstrom to envelop a large area such as an entire building\comma{} or devastate huge numbers of foes}, hasExamples = 1}
+, hasfour=1, four=\spExample{Fireball}{Launch a fireball which explodes on contact\comma{} hurting nearby foes with fiery concussive force}
 
-	\spell{name = Flood, incantation = Augamente, book = Laughable Liquidation, description = With the \imp{Flood} spell\comma{} one gains the ability to manipulate elemental water – as well as any fluidic substance which contains a large amount of water. You can also summon jets of pure water from the end of your wand – either for drinking purposes\comma{} to put out a raging inferno\comma{} or to blast an enemy in the face with., haszero=1, zero=\spExample{Mist}{Summon a fine mist from the tip of your wand.}, hasone=1, one=\spExample{Minor Manipulation}{Control and manipulate the shape of nearby bodies of water\comma{} causing the\comma{} to take on a chosen shape\comma{} or to direct it to flow in a certain direction.}, hastwo=0, hasthree=0, hasfour=0, hasfive=0, hassix=0, hasseven=1, seven=\spExample{Tsunami}{An enormous tidal wave surges from your wand\comma{} enough to destroy buildings and decimate armies.}, hasExamples = 1}
+\spExample{Firebending}{Rapidly control an existing fire at great distance\comma{} causing it to float through space or lash out at a foe like a weapon.}
+, hasfive=1, five=\spExample{Firewall}{Create an enormous wall of fire as a barrier across a defined space\comma{} incinerating those who would pass through it.}
+
+, hassix=1, six=\spExample{White\minus{}hot}{Summon and project fire hot enough to melt through metal and liquefy stone. }, hasseven=1, seven=\spExample{Firestorm}{Summon a fiery maelstrom to envelop a large area such as an entire building\comma{} or devastate huge numbers of foes}, hasExamples = 1}
+
+	\spell{name = Flood, incantation = Augamente, book = Laughable Liquidation, description = With the \imp{Flood} spell\comma{} one gains the ability to manipulate elemental water – as well as any fluidic substance which contains a large amount of water. You can also summon jets of pure water from the end of your wand – either for drinking purposes\comma{} to put out a raging inferno\comma{} or to blast an enemy in the face with. 
+
+, haszero=1, zero=\spExample{Mist}{Summon a fine mist from the tip of your wand.}, hasone=1, one=\spExample{Minor Manipulation}{Control and manipulate the shape of nearby bodies of water\comma{} causing the\comma{} to take on a chosen shape\comma{} or to direct it to flow in a certain direction.}, hastwo=0, hasthree=0, hasfour=0, hasfive=0, hassix=0, hasseven=1, seven=\spExample{Tsunami}{An enormous tidal wave surges from your wand\comma{} enough to destroy buildings and decimate armies.}, hasExamples = 1}
 
 	\spell{name = Freeze, incantation = Glacius, book = Secrets of Elemental Sorcery, description = Project and control freezing blasts of air\comma{} and manipulate ice and other frozen objects\comma{} or summon a blizzard of snow to obscure and protect your allies from view. 
 
@@ -251,17 +261,17 @@ The ability to manipulate the force of electricity is somewhat more nuanced\comm
 
 \discipline{Hermetics}
 {
-	\spell{name = Heal, incantation = Enervate, book = Cures\comma{} Cantrips and Coughs, description = A \imp{Healing} spell restores life to the target\comma{} causing their wounds to knit shut\comma{} broken bones to set and repair and torn muscles to heal. Basic healing spells simply heal the surface wounds – more complex injuries require a more powerful version of the spell\comma{} and the ability to regrow limbs or repair organs from 
-
-A basic \imp{Heal} spell removes one level of harm for each point of \imp{Power}\comma{} but cannot remove \imp{status} effects\comma{} and has no effect on patients who are in a \imp{critical condition} or worse\comma{} \imp{dead}., haszero=1, zero=\spExample{Kind Words}{Sooth a patient\comma{} heal tiny scrapes and bruises\comma{} but not restoring any \imp{Damage}.}, hasone=1, one=\spExample{Minor Healin}{Channel life\minus{}giving energy into a patient\comma{} giving their body the energy to heal itself\comma{} restoring one level of \imp{Harm}. }, hastwo=0, hasthree=1, three=\spExample{Knit Bones}{Cause broken bones to rapidly repair themselves\comma{} healing larger amounts of harm.}, hasfour=0, hasfive=0, hassix=1, six=\spExample{Regeneration}{Regenerate lost limbs\comma{} regrow bones\comma{} and otherwise vastly accelerate the natural healing process.}, hasseven=1, seven=\spExample{Spark of Life}{Nurture a being which has suffered so much damage it seems dead\comma{} reignite the final sparks of life in a being which died only a few moments ago. Cannot truly revive the dead\comma{} but merely save those who are about to pass the threshold.}, hasExamples = 1}
-
 	\spell{name = Purify, incantation = Expecto Patronum, book = Manipulating the Forces of Life, description = The \imp{Purify} spell\comma{} also known as the `Patronus charm’\comma{} projects powerful positive energies which protect against necrotic or necromantic forces. 
 
 This energy can burn away rot and decay from food\comma{} counter powerful curses and protect against defiling spells which raise \imp{Inferi}. 
 
 Beings which are an antithesis to life\comma{} such as demons and dementors\comma{} find this energy repulsive and harmful – some mages have been known to summon a powerful corporeal guardian using this spell\comma{} though this is recognised as an incredibly advanced feat., haszero=0, hasone=0, hastwo=0, hasthree=0, hasfour=0, hasfive=0, hassix=0, hasseven=0, hasExamples = 0}
 
-	\spell{name = Restore, incantation = Episkey, book = Journals of St. Mungo\comma{} the Master Healer, description = Not all afflictions take the form of cuts and bruises – for more complex afflictions you will need to rely on the \imp{Restore} spell. This spell helps cure poisons and diseases\comma{} remove the effects of magical terror and counter other negative status effects originating from within the body., haszero=0, hasone=1, one=\spExample{Minor Restoration}{Remove minor status effects such as weak poison\comma{} weak burns etc.}, hastwo=0, hasthree=1, three=\spExample{Sustain Life}{Remove the \imp{Critical Condition} status from a being which has been unconscious for 30 seconds or less.}, hasfour=0, hasfive=0, hassix=0, hasseven=1, seven=\spExample{Master Reset}{Remove all ailments from a target\comma{} restoring their body to perfect health in every possible way – even down to correcting vision\comma{} straightening spines. The target is left as perfect as possible.}, hasExamples = 1}
+	\spell{name = Regenerate, incantation = Enervate, book = Cures\comma{} Cantrips and Coughs, description = A \imp{Regenerating} spell restores life to the target\comma{} causing their wounds to knit shut\comma{} broken bones to set and repair and torn muscles to heal. Basic healing spells simply heal the surface wounds – more complex injuries require a more powerful version of the spell\comma{} and the ability to regrow limbs or repair organs from 
+
+A basic \imp{Regenerate} spell removes one level of harm for each point of \imp{Power}\comma{} but cannot remove \imp{status} effects\comma{} and has no effect on patients who are in a \imp{critical condition} or worse\comma{} \imp{dead}., haszero=1, zero=\spExample{Kind Words}{Sooth a patient\comma{} heal tiny scrapes and bruises\comma{} but not restoring any \imp{Damage}.}, hasone=1, one=\spExample{Minor Healin}{Channel life\minus{}giving energy into a patient\comma{} giving their body the energy to heal itself\comma{} restoring one level of \imp{Harm}. }, hastwo=0, hasthree=1, three=\spExample{Knit Bones}{Cause broken bones to rapidly repair themselves\comma{} healing larger amounts of harm.}, hasfour=0, hasfive=0, hassix=1, six=\spExample{Regeneration}{Regenerate lost limbs\comma{} regrow bones\comma{} and otherwise vastly accelerate the natural healing process.}, hasseven=1, seven=\spExample{Spark of Life}{Nurture a being which has suffered so much damage it seems dead\comma{} reignite the final sparks of life in a being which died only a few moments ago. Cannot truly revive the dead\comma{} but merely save those who are about to pass the threshold.}, hasExamples = 1}
+
+	\spell{name = Restore, incantation = Episkey, book = Journals of St. Mungo\comma{} the Master Healer, description = Not all afflictions take the form of cuts and bruises which can be patched back together with a \imp{Regeneration} spell. For more complex afflictions you will need to rely on the \imp{Restore} spell. This spell helps cure poisons and diseases\comma{} remove the effects of magical terror and counter other negative status effects originating from within the body., haszero=0, hasone=1, one=\spExample{Minor Restoration}{Remove minor status effects such as weak poison\comma{} weak burns etc.}, hastwo=0, hasthree=1, three=\spExample{Sustain Life}{Remove the \imp{Critical Condition} status from a being which has been unconscious for 30 seconds or less.}, hasfour=0, hasfive=0, hassix=0, hasseven=1, seven=\spExample{Master Reset}{Remove all ailments from a target\comma{} restoring their body to perfect health in every possible way – even down to correcting vision\comma{} straightening spines. The target is left as perfect as possible.}, hasExamples = 1}
 
 	\spell{name = Sustain, incantation = Omnium, book = Life\comma{} and How to Preserve it, description = The \imp{Sustain} spell allows one to project nourishing energy into a target. 
 
@@ -325,7 +335,8 @@ Plants subjected to this spell will wither and die\comma{} and the wounds on liv
 
 	\spell{name = Defile, incantation = Sanguinus, book = Magick Moste Evile, description = When one uses a spell to \imp{Defile}\comma{} you conduct a profane blood\minus{}ritual which allows you to place powerful life\minus{}long curses on entire bloodlines\comma{} or corrupt powerful enchantments on a place\comma{} turning them to darkness for your own end. 
 
-The most powerful curses are cast using a \imp{Defile} spell., haszero=0, hasone=0, hastwo=1, two=\spExample{Bloodcurse}{Cause the blood of a target to boil like acid in their veins\comma{} causing immeasurable pain.}, hasthree=0, hasfour=0, hasfive=0, hassix=0, hasseven=0, hasExamples = 1}
+The most powerful curses are cast using a \imp{Defile} spell. 
+, haszero=0, hasone=0, hastwo=1, two=\spExample{Bloodcurse}{Cause the blood of a target to boil like acid in their veins\comma{} causing immeasurable pain.}, hasthree=0, hasfour=0, hasfive=0, hassix=0, hasseven=0, hasExamples = 1}
 
 	\spell{name = Drain, incantation = Exbibo Maledictum, book = Necromancy: A Misunderstood Skill, description = The \imp{Drain} spell uses vampiric energy to channel life force and other magical energies out of a living being\comma{} and into another being. 
 
@@ -344,6 +355,12 @@ If a \imp{Kill} spell would reduce a target to \imp{Critical Condition}\comma{} 
 \discipline{Occultism}
 {
 	\spell{name = Attune, incantation = Thanatos, book = Theories on the World Beyond, description = When you use magics which allow you to \imp{Attune}\comma{} you focus your mind on the realm of the spirits and ghosts. You can use this spell to see them\comma{} and manipulate spiritual creatures on the \imp{Mortal Realm} and beyond to your desire\comma{} compelling or persuading them to follow your requests., haszero=0, hasone=1, one=\spExample{Ghostcall}{Speak the name of a ghost aloud\comma{} and they will feel the urge to come and talk to you.}, hastwo=0, hasthree=0, hasfour=0, hasfive=0, hassix=0, hasseven=0, hasExamples = 1}
+
+	\spell{name = Bestow, incantation = Donus Magicus Altarius, book = The Gray Arts?, description = The act of \imp{Bestowing} is the act of giving a gift\comma{} and with this spell\comma{} one may grant and ask for gifts of all kinds. 
+
+Whether it be granting your allies a fragment of your own power in a moment of crisis\comma{} or if you beg for a boon from some nigh\minus{}omnipotent being\comma{} when your own power is insufficient\comma{} or you wish to help fuel another’s attempts\comma{} the \imp{Bestow} spell can be of great use. 
+
+Those who stumble upon this spell are often surprised that is considered a taboo `Dark Art’. Throughout history\comma{} however\comma{} the act of communing with great powers beyond human comprehension\comma{} and of asking for gifts of powers from them\comma{} has traditionally been associated with those heading down a dark and dangerous path., haszero=0, hasone=0, hastwo=0, hasthree=0, hasfour=0, hasfive=0, hassix=0, hasseven=0, hasExamples = 0}
 
 	\spell{name = Consort, incantation = Profundo Diabolus, book = The Outer Planes, description = \imp{Consorting} is a dangerous set of magic which allows one to summon\comma{} command and converse with demonic entities. 
 

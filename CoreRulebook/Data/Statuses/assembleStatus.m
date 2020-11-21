@@ -5,8 +5,8 @@ function assembleStatus(fileRoot)
         addpath('../Functions/');
         fileRoot = '../../';
     end
-
-    statuses= readtable('Statuses.xlsx');
+    opts = detectImportOptions("Statuses.xlsx","ReadVariableNames",true,"NumHeaderLines",0);
+    statuses= readtable('Statuses.xlsx',opts);
     statuses = sortrows(statuses);
 
     
