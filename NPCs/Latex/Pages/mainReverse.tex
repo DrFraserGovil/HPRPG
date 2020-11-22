@@ -1,0 +1,150 @@
+\begin{tikzpicture}[rotate = 180, transform shape]
+
+
+\node at (0,0) {};
+\node at (0,\maxHeight) {};
+\node at (\maxWidth,\maxHeight) {};
+\node at (\maxWidth,0) {};
+
+
+	
+	
+	%%% ABILITIES BOX
+	\def\abilityLeft{0}
+	\def\abilityRight{65*\widthUnits}
+
+	\def\gap{\textcolor{\ddg}{\underline{\hspace{2.6cm}}}}
+	\def\abilityBoxHeight{27*\heightUnits}
+	\def\abilityTop{\maxHeight - 1 * \heightUnits}
+	
+	\draw[rounded corners, \ddg, fill = \lg] ({\abilityLeft},{\abilityTop}) rectangle ({\abilityRight},{\maxHeight-\abilityBoxHeight});
+	\node[anchor=north] at ({(\abilityLeft + \abilityRight)/2},{\abilityTop}) {\HP \Large Minor Abilities};
+
+	\def\interAbilityGap{0.3*\widthUnits}
+	\def\abilityHeight{2.94*\heightUnits}
+	\def\abilityWidth{(((\abilityRight - \abilityLeft) - 4 * \interAbilityGap)/3)}
+	
+	\def\columnStart{\abilityTop - 5*\heightUnits}
+	\foreach \Header [count = \i from 0] in  {  {Innate}, {Practical}, {Knowledge} }
+	{
+		\def\x{\abilityLeft+ \interAbilityGap + \i*(\interAbilityGap + \abilityWidth)}
+		ss
+		\node at ({\x+\abilityWidth/2},{\columnStart}) {\key{\Header}};
+		
+		\foreach \j in {1,...,5,6}
+		{
+			\def\y{\columnStart - \interAbilityGap - \j*\abilityHeight}
+			
+			\node[anchor = west] at ({\x},{\y}) {\footnotesize\imp{\gap}:};
+		
+			\foreach \k in {0,1,2,3,4,5,6}
+			{
+				\def\xCirc{\x + \abilityWidth - (\k+1)*(\boxSmall*1.42)};
+				\smallDot{\xCirc}{\y}{white}
+			}
+		
+		}
+		
+	}	
+	
+	%%ability list
+	%\draw[rounded corners, \ddg, fill = \lg] ({\abilityRight + \widthUnits},{\abilityTop}) rectangle ({\maxWidth},{\maxHeight-\abilityBoxHeight});
+	\node[anchor=north] at ({(\maxWidth + \abilityRight + \widthUnits)/2},{\abilityTop}) {\HP \Large Full Ability List};
+	
+	\newcommand\entry[2]{ \ca{#2} \parbox[t]{2.5cm}{\centering #1} } 
+
+
+	\newcommand\abilityRow[3]
+	{
+		\entry{#1}{\lg}	& 	\entry{#2}{\lg} & 	\entry{#3}{\lg} \\
+	}
+	\node[anchor = north] at ({(\maxWidth + \abilityRight + \widthUnits)/2},{\abilityTop-4*\heightUnits})
+	{
+		\scriptsize
+		\setlength\extrarowheight{-3pt}
+		\begin{rndtable}{c c c}
+		
+		\entry{\key{Innate}}{\ddg}	&	\entry{\key{Practical}}{\ddg} & \entry{\key{Knowledge}}{\ddg} \\
+	\abilityRow{Alertness}{Acrobatics}{Arcane}
+	\abilityRow{Bravery}{Brawl}{First Aid}
+	\abilityRow{Conviction}{Covert}{History}
+	\abilityRow{Eloquence}{Craft}{Investigation}
+	\abilityRow{Intimidation}{Imbue}{Linguistics}
+	\abilityRow{Kindness}{Marksmanship}{Muggle}
+	\abilityRow{Kinship}{Performance}{Nature}
+	\abilityRow{Logic}{Pilot}{Science}
+	\abilityRow{Speed}{Skirmish}{Un-nature}
+	\abilityRow{Strength}{Survival}{World}
+	\abilityRow{+1 from archetype}{+1 from archetype}{+1 from archetype}
+		\end{rndtable}
+	};
+	
+	
+	\def\delta{1.5*\heightUnits}
+	\def\quarterTop{\maxHeight - \abilityBoxHeight - \delta}
+	\def\quarterHeight{(\maxHeight - \abilityBoxHeight - 3*\delta)/2};
+	
+	\def\notesHeight{\quarterTop-\quarterHeight}
+	
+	
+	\draw[rounded corners, \ddg, fill = \lg] ({\maxWidth/2 + \delta/2},{\quarterTop}) rectangle ({\maxWidth},{\notesHeight});
+	\node[anchor = north] at ({3*\maxWidth/4 + \delta/4},{\quarterTop}) {\HP \Large Notes};
+	
+	\draw[rounded corners, \ddg, fill = \lg] ({\maxWidth/2 + \delta/2},{\notesHeight-\delta}) rectangle ({\maxWidth},{\delta});
+	
+	\node[anchor = north west] at ({\maxWidth/2 + \delta/2},{\notesHeight - \delta }) {
+	
+	\parbox[t]{13.3 cm}{
+	{\large \key{Character Creation}}
+	
+	\scriptsize
+	At character creation, decide on a \imp{Personality}, \imp{Family} and an \imp{Archetype}. Then:
+	\begin{itemize}[itemsep=0cm]
+		\keyItem{Aspects}{All start at 1 + plus bonuses, plus 8 free dots}
+		\keyItem{Abilities}{Choose 5 major abilities: All start at 0 + bonuses, then rate \imp{Innate}/\imp{Practical}/\imp{Knowledge}, assigning 10, 5 and 3 dots to each field respectively}
+		\keyItem{Archetype Abilities}{All start at 1 + 3 free dots}
+		\keyItem{Affinities}{Choose 2 fields for 2-dot rating, 5 fields for 1-dot rating. All others zero.}
+	\end{itemize}
+	At creation, you should not exceed a 4 dot rating in any field. 
+	\\
+	~
+	\\
+	{\centering \large \key{Combat Actions}}
+	\scriptsize
+	\par
+	During combat, you may take a full \imp{Movement} on your turn, and either 1 \imp{Major} or two \imp{Minor Actions}: 
+	
+	\vspace{0.5ex}
+	
+	\key{Major Actions}: Make an \imp{Attack}, Perform a \imp{Combat Manouevre}, cast a \imp{Spell}, Use an \imp{Item}, prepare a \imp{Full-Round Defense} or \imp{Negate} an action, {Hide} from sight, \imp{Interact} with the creatures or the environment, or perform an additional full \imp{Movement}.
+	
+	\vspace{0.5 ex}
+	
+	\key{Minor Actions}: \imp{Take Stock} to improve reflexes, \imp{Communicate} among allies, move again with \imp{Half-Movement}, use a \imp{Small Item}, \imp{Reload} your weapon, or \imp{Bolster Defences}
+	}
+	};
+	
+	\draw[rounded corners, \ddg, fill = \lg] ({\maxWidth/2 - \delta/2},{\quarterTop}) rectangle ({0},{\quarterTop - \quarterHeight});
+	\node[anchor = north] at ({\maxWidth/4 + \delta/4},{\quarterTop}) {\HP \Large Character Background};
+	
+	%~ \draw[rounded corners, \ddg, fill = \lg] ({\maxWidth/2 + \delta/2},{\quarterTop-\quarterHeight - \delta}) rectangle ({\maxWidth},{\delta});
+	%~ \node[anchor = north] at ({3* \maxWidth/4 + \delta/4},{\quarterTop-\quarterHeight - \delta}) {\HP \Large Stored Items};
+	
+	
+	%\draw[rounded corners, \ddg, fill = \lg] ({\maxWidth/2 - \delta/2},{\quarterTop-\quarterHeight - \delta}) rectangle ({0},{\delta});
+	\node[anchor = north] at ({\maxWidth/4 + \delta/4},{\quarterTop-\quarterHeight - \delta}) {\HP \Large Character Progression};
+	
+	\node at ({\maxWidth/4 + \delta/4},{(\quarterTop-\quarterHeight)/2-\delta}) 
+	{
+		\small
+		\renewcommand\expRow[2]{\ca{\lg}{\bf #1}	&	\ca{\lg}\parbox[t]{6cm}{#2}	\\}
+		\begin{rndtable}{r l}
+				\ca{\ddg}\bf Ability	&	\ca{\ddg}\bf Exp Cost
+				\\
+				\progressionCosts
+			\end{rndtable}
+	};
+	
+	
+	
+\end{tikzpicture}
